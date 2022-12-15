@@ -1,2 +1,4 @@
 # uv-dx-pq
-This is for project: Data exchange industry – Pharmaceutical Quality (Dxi-PQ)  Project Proposal (accepted): PSS-2137 PSS (draft): PSS-2145
+This repository is for the Data exchange industry – Pharmaceutical Quality (Dx-PQ) project.
+Project Proposal: PSS-2137 
+PSS: PSS-2145
