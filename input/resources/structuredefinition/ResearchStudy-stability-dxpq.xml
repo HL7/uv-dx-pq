@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ResearchStudy-stability-dxpq"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2022-12-21T16:23:18.103+00:00"/>
+        <source value="#n8oUsPRbjOvbxL5f"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
+    <name value="ResearchStudyStabilityDxPq"/>
+    <title value="ResearchStudy - Stability dx-PQ"/>
+    <status value="active"/>
+    <description value="Section 11: Stability Study"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ResearchStudy"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ResearchStudy"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ResearchStudy">
+            <path value="ResearchStudy"/>
+        </element>
+        <element id="ResearchStudy.id">
+            <path value="ResearchStudy.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.contained">
+            <path value="ResearchStudy.contained"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.extension">
+            <path value="ResearchStudy.extension"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.identifier">
+            <path value="ResearchStudy.identifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.title">
+            <path value="ResearchStudy.title"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.protocol">
+            <path value="ResearchStudy.protocol"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.status">
+            <path value="ResearchStudy.status"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.primaryPurposeType">
+            <path value="ResearchStudy.primaryPurposeType"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.focus">
+            <path value="ResearchStudy.focus"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.description">
+            <path value="ResearchStudy.description"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.period">
+            <path value="ResearchStudy.period"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.objective">
+            <path value="ResearchStudy.objective"/>
+        </element>
+    </differential>
+</StructureDefinition>

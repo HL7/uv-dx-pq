@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-reference-standard-test-dxpq"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2022-12-21T15:29:41.175+00:00"/>
+        <source value="#epBquvrnHUalTNti"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-reference-standard-test-dxpq"/>
+    <name value="ObservationDefinitionReferenceStandardTestDxPq"/>
+    <title value="ObservationDefinition - Reference Standard Test dx-PQ"/>
+    <status value="active"/>
+    <description value="Section 2.2 - Reference Standard - Test"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ObservationDefinition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ObservationDefinition">
+            <path value="ObservationDefinition"/>
+        </element>
+        <element id="ObservationDefinition.id">
+            <path value="ObservationDefinition.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ObservationDefinition.category">
+            <path value="ObservationDefinition.category"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ObservationDefinition.code">
+            <path value="ObservationDefinition.code"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

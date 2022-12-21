@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="PlanDefinition-mnf-process-dxpq"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-12-21T16:12:39.665+00:00"/>
+        <source value="#O2DNl9EALSgBl0O7"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+    <name value="PlanDefinitionMnfProcessDxPq"/>
+    <title value="PlanDefinition - Manufacturing Process dx-PQ"/>
+    <status value="active"/>
+    <description value="Section 5 - Manufacturing Process"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="PlanDefinition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="PlanDefinition">
+            <path value="PlanDefinition"/>
+        </element>
+        <element id="PlanDefinition.id">
+            <path value="PlanDefinition.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="PlanDefinition.extension">
+            <path value="PlanDefinition.extension"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="PlanDefinition.type">
+            <path value="PlanDefinition.type"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="PlanDefinition.status">
+            <path value="PlanDefinition.status"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="PlanDefinition.subject[x]">
+            <path value="PlanDefinition.subject[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="PlanDefinition.goal">
+            <path value="PlanDefinition.goal"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="PlanDefinition.action">
+            <path value="PlanDefinition.action"/>
+        </element>
+    </differential>
+</StructureDefinition>

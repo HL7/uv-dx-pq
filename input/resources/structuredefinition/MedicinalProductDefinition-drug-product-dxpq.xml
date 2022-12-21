@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MedicinalProductDefinition-drug-product-dxpq"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2022-12-21T14:28:24.319+00:00"/>
+        <source value="#vSS680WNbo08nrPT"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+    <name value="MedicinalProductDefinitionDrugProductDxPq"/>
+    <title value="MedicinalProductDefinition - Drug Product  dx-PQ"/>
+    <status value="active"/>
+    <description value="Section 1.1 - Drug Product Identification"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="MedicinalProduct"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProduct"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="MedicinalProduct">
+            <path value="MedicinalProduct"/>
+        </element>
+        <element id="MedicinalProduct.id">
+            <path value="MedicinalProduct.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicinalProduct.contained">
+            <path value="MedicinalProduct.contained"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicinalProduct.extension">
+            <path value="MedicinalProduct.extension"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>
