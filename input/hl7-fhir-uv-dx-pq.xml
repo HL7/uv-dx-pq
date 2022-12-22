@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-uv-dx-pq"/>
     <meta>
-        <versionId value="120"/>
-        <lastUpdated value="2022-12-21T17:01:22.329+00:00"/>
-        <source value="#jNFeiqZwcMZWELke"/>
+        <versionId value="123"/>
+        <lastUpdated value="2022-12-22T22:38:02.448+00:00"/>
+        <source value="#d29R090TbMasgBJJ"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/ImplementationGuide/hl7-fhir-uv-dx-pq"/>
     <version value="0.1"/>
@@ -29,7 +29,7 @@
         </coding>
         <text value="World"/>
     </jurisdiction>
-    <packageId value="hl7.fhir.uv.dx.pq"/>
+    <packageId value="hl7.fhir.uv.dx-pq"/>
     <fhirVersion value="4.0.1"/>
     <definition>
         <grouping id="b1-id">
