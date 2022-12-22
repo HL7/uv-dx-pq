@@ -11,6 +11,6 @@
 				}
 	],
 	"title": "Data exchange industry – Pharmaceutical Quality (dx-PQ)",
-	"package-id": "hl7.fhir.uv.dx.pq",
+	"package-id": "hl7.fhir.uv.dx-pq",
 	"category": "Biomedical Research and Regulation"
 }
