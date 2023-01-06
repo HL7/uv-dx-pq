@@ -15,8 +15,6 @@ The scope of the current project covers the entirety of the CMC domain (as descr
 * DP Specifications
 * Batch or Lot Information
 * Manufacturing Process 
-
-***Expectations for future versions include:***
 * DP Composition
 * DP Impurities
 * Batch Analysis
