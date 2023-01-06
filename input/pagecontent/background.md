@@ -11,12 +11,12 @@ The scope of the current project covers the entirety of the CMC domain (as descr
 ***STU 1 covers:***
 * Stability Study
 * Organization
-* DP Identification
-* DP Specifications
+* DS and DP Identification
+* DS and DP Specifications
 * Batch or Lot Information
 * Manufacturing Process 
-* DP Composition
-* DP Impurities
+* DS and DP Composition
+* DS and DP Impurities
 * Batch Analysis
 * Container Closure System
 * Analytical Methods
