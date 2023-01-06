@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="MedicinalProductDefinition-drug-product-dxpq"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-12-21T14:28:24.319+00:00"/>
-        <source value="#vSS680WNbo08nrPT"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-01-02T14:45:07.672+00:00"/>
+        <source value="#9DaoKzOUalt0bLJS"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
     <name value="MedicinalProductDefinitionDrugProductDxPq"/>
-    <title value="MedicinalProductDefinition - Drug Product  dx-PQ"/>
+    <title value="MedicinalProductDefinition - Drug Product dx-PQ"/>
     <status value="active"/>
     <description value="Section 1.1 - Drug Product Identification"/>
     <fhirVersion value="4.0.1"/>
@@ -30,8 +30,16 @@
             <path value="MedicinalProduct.contained"/>
             <mustSupport value="true"/>
         </element>
-        <element id="MedicinalProduct.extension">
-            <path value="MedicinalProduct.extension"/>
+        <element id="MedicinalProduct.combinedPharmaceuticalDoseForm">
+            <path value="MedicinalProduct.combinedPharmaceuticalDoseForm"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicinalProduct.name">
+            <path value="MedicinalProduct.name"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicinalProduct.name.modifierExtension">
+            <path value="MedicinalProduct.name.modifierExtension"/>
             <mustSupport value="true"/>
         </element>
     </differential>

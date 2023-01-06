@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ResearchStudy-stability-dxpq"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-12-21T16:23:18.103+00:00"/>
-        <source value="#n8oUsPRbjOvbxL5f"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-01-02T15:04:23.477+00:00"/>
+        <source value="#Y5nGfmU9VST7yFUS"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
     <name value="ResearchStudyStabilityDxPq"/>
@@ -32,6 +32,9 @@
         </element>
         <element id="ResearchStudy.extension">
             <path value="ResearchStudy.extension"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
             <mustSupport value="true"/>
         </element>
         <element id="ResearchStudy.identifier">

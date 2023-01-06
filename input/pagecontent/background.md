@@ -4,8 +4,10 @@ CMC content can be reused throughout the medicinal product lifecycle. For exampl
 Other key areas of the medicinal product lifecycle are transitioning to FHIR and are already in HL7 working group portfolios (e.g., Adverse Event reporting***[add links to IG]***; Real World Data (RWD)***[add links to IG]***; electronic Product Information (ePI)***[add links to IG]***; and Pharmaceutical Quality)***[add links to IG]***. Therefore, there is great value in ensuring industry’s CMC data exchange is also defined in FHIR.
 
 ### Current Project
-The current phase of this project is a universal realm implementation guide (IG) with profiles that define the structure and exchange of CMC data internationally within biopharmaceutical companies and between a company and stakeholders. This IG builds on and align with BR&R’s PQ project ***[add link and formal name]*** where possible. 
-The scope of the current project covers the entirety of the CMC domain (as described ICH’s M4Q table of contents). ***[add link]*** It defines universal realm structured data elements to support structured authoring (e.g., master data; advanced analysis) for the creation and exchange of CMC documents internationally ( i.e., outside of the US realm). 
+The current phase of this project is a universal realm implementation guide (IG) with profiles that define the structure and exchange of CMC data internationally within biopharmaceutical companies and between a company and stakeholders. This IG builds on and align with BR&R’s PQ/CMC project ***[add link and formal name]*** where possible. 
+
+The scope of the current project covers the entirety of the CMC domain (as described ICH’s M4Q table of contents). ***[add link]*** It defines universal realm structured data elements to support structured authoring (e.g., master data; advanced analysis) for the creation and exchange of CMC documents internationally (i.e., outside of the US realm). 
+
 ***STU 1 covers:***
 * Stability Study
 * Organization
@@ -13,6 +15,7 @@ The scope of the current project covers the entirety of the CMC domain (as descr
 * DP Specifications
 * Batch or Lot Information
 * Manufacturing Process 
+
 ***Expectations for future versions include:***
 * DP Composition
 * DP Impurities
@@ -24,7 +27,7 @@ The scope of the current project covers the entirety of the CMC domain (as descr
 * Compatibility
 
 ### Scenarios
-This IG defines resources to support several scenarios.
+This IG defines resources to support many scenarios, for example:
 
 1. Manufacturer already has an authorization to sell a drug. That authorization locks the manufacturer into manufacturing the drug with a specific process, specific equipment, and at a specific location.
 1. Manufacturer wants to change the type of milling machine used in the drug manufacturing process. 

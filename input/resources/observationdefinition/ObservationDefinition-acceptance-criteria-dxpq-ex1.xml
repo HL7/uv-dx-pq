@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-acceptance-criteria-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-03T14:38:17.013+00:00"/>
+        <source value="#qKZq9i4HCVHxYhyU"/>
+    </meta>
+    <category>
+        <coding>
+            <!--product or substance-->
+            <system value="http://example.org/fhir/code/testCategory"/>
+            <code value="C123457"/>
+            <display value="Substance Procedure"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <!--possibly LOINC-->
+            <system value="http://example.org/fhir/code/testMethod"/>
+            <code value="545454"/>
+            <display value="Water Activity"/>
+        </coding>
+        <text value="Test name free text"/>
+    </code>
+</ObservationDefinition>

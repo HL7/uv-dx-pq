@@ -4,8 +4,6 @@
 
 ### FHIR Paradigms Supported by This IG
 * RESTful API
-* Document Bundle
-* Message Bundle
 
 ### Capabilities Statement(s)
 TBD

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-actual-yield-dxpq"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2023-01-02T14:18:05.602+00:00"/>
+        <source value="#8ybuLGXjJLxPlDmu"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq"/>
+    <name value="ExtensionActualYieldDxPq"/>
+    <title value="Extension - Actual Yield dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+    </differential>
+</StructureDefinition>

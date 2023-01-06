@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication
+    xmlns="http://hl7.org/fhir">
+    <id value="Medication-batch-information-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-04T02:00:21.123+00:00"/>
+        <source value="#QwNMqtYYBJy0cCD1"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText"/></div>
+    </text>
+    <code>
+        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-instance-of-dxpq">
+            <valueReference>
+                <reference value="MedicinalProductDefinition/product"/>
+            </valueReference>
+        </extension>
+    </code>
+    <batch>
+        <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="manufacturingDate">
+                <valueDateTime value="2019-09-07"/>
+            </extension>
+            <extension url="batchQuantity">
+                <valueQuantity>
+                    <!--#26-->
+                    <value value="5"/>
+                    <!--#27-->
+                    <unit value="kg"/>
+                </valueQuantity>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                <valueQuantity>
+                    <value value="4.8"/>
+                    <unit value="kg"/>
+                </valueQuantity>
+            </extension>
+            <extension url="batchUtilization">
+                <valueCodeableConcept>
+                    <coding>
+                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        </extension>
+                        <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <code value="C133991"/>
+                        <display value="Development"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <extension url="assignedManufacturer">
+                <valueReference>
+                    <reference value="Organization/manufacturer"/>
+                </valueReference>
+            </extension>
+        </extension>
+        <lotNumber value="3483732"/>
+    </batch>
+</Medication>

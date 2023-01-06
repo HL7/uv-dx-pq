@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-limit-of-quantification-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-03T14:36:04.812+00:00"/>
+        <source value="#JWYXz6ZX1q1lRU5U"/>
+    </meta>
+    <code>
+        <coding>
+            <system value="http://example.org/fhir/code/processValidationCriteria"/>
+            <code value="545ddf54"/>
+            <display value="Limit of Quantification"/>
+        </coding>
+    </code>
+</ObservationDefinition>

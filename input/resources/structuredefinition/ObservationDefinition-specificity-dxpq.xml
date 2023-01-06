@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="ObservationDefinition-specificity-dxpq"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-12-21T15:33:17.387+00:00"/>
-        <source value="#qasRvX4ofZjvnk5p"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-01-04T14:58:36.658+00:00"/>
+        <source value="#9fPI4ZMu8mLfpblI"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-specificity-dxpq"/>
     <name value="ObservationDefinitionSpecificityDxPq"/>
     <title value="ObservationDefinition - Specificity dx-PQ"/>
     <status value="active"/>
-    <description value="Section 13.1 - Process Validation, Validation protocol"/>
+    <description value="Section 13.1 - Process Validation, Validation protocol - Specificity"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

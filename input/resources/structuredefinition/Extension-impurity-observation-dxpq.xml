@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-impurity-observation-dxpq"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-02T14:25:13.190+00:00"/>
+        <source value="#92MeGQq96uXKqWSh"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-impurity-observation-dxpq"/>
+    <name value="ExtensionImpurityObservationDxPq"/>
+    <title value="Extension - Impurity Observation dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+    </differential>
+</StructureDefinition>
