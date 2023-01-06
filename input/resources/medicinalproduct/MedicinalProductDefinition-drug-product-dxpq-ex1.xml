@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicinalProduct
+    xmlns="http://hl7.org/fhir">
+    <id value="MedicinalProductDefinition-drug-product-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-04T02:01:16.008+00:00"/>
+        <source value="#m3RjCYg7LsBhKQhU"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-reference-standard-dxpq">
+        <extension url="category">
+            <valueCoding>
+                <!--#40-->
+                <system value="http://example.org/fhir/extension/referenceStandardCategory"/>
+                <code value="1111"/>
+                <display value="Primary Standard"/>
+            </valueCoding>
+        </extension>
+        <extension url="referenceSubstance">
+            <!--reference standard substance-->
+            <valueReference>
+                <reference value="#referenceSubstance"/>
+            </valueReference>
+        </extension>
+        <extension url="appliesTo">
+            <extension url="component">
+                <valueReference>
+                    <!--#38-->
+                    <reference value="Ingredient/ingredient1"/>
+                </valueReference>
+            </extension>
+            <extension url="purity">
+                <valueQuantity>
+                    <value value="68.7"/>
+                    <unit value="%"/>
+                </valueQuantity>
+            </extension>
+        </extension>
+        <extension url="test">
+            <valueReference>
+                <reference value="#standardTest"/>
+            </valueReference>
+        </extension>
+    </extension>
+    <combinedPharmaceuticalDoseForm>
+        <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+            <code value="100000073667"/>
+            <display value="Gastro-resistant tablet"/>
+        </coding>
+    </combinedPharmaceuticalDoseForm>
+    <name>
+        <productName value="Wonderpill"/>
+    </name>
+    <name>
+        <productName value="Acetaminophen"/>
+    </name>
+</MedicinalProduct>

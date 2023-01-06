@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport
+    xmlns="http://hl7.org/fhir">
+    <id value="DiagnosticReport-stability-study-results-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-04T01:59:09.042+00:00"/>
+        <source value="#T6JuNyM726e4cDyE"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText"> Stability Study Report </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Status</td>
+                        <td>FINAL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://example.org/fhir/code/reportType"/>
+            <code value="111"/>
+            <display value="Stability Study Report"/>
+        </coding>
+    </code>
+    <effectiveDateTime value="2019-09-08">
+        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-time-point-description-dxpq">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://example.org/fhir/code/timePointDescription"/>
+                    <code value="222"/>
+                    <display value="Delayed Start Code"/>
+                </coding>
+                <text value="Refrigerated delayed testing"/>
+            </valueCodeableConcept>
+        </extension>
+    </effectiveDateTime>
+    <result>
+        <reference value="#Observation-stability-study-test-result-dxpq-ex1"/>
+    </result>
+</DiagnosticReport>

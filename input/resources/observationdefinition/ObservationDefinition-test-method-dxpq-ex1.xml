@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-test-method-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-03T14:34:54.464+00:00"/>
+        <source value="#wvqLz2iItNGf5y8b"/>
+    </meta>
+    <category>
+        <coding>
+            <system value="http://example.org/fhir/code/testCatgeory"/>
+            <code value="545454"/>
+            <!--#128-->
+            <display value="Physico-chemical properties"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://example.org/fhir/code/testMethod"/>
+            <!--possibly LOINC-->
+            <code value="545454"/>
+            <display value="ph"/>
+        </coding>
+        <text value="Test name"/>
+    </code>
+</ObservationDefinition>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-batch-accept-criteria-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-03T14:36:43.948+00:00"/>
+        <source value="#0MVQ3fQxdAnnTGkz"/>
+    </meta>
+    <code>
+        <coding>
+            <system value="http://example.org/fhir/code/testCriteria"/>
+            <!--LOINC possibly-->
+            <code value="545454"/>
+            <display value="Acidity"/>
+        </coding>
+    </code>
+</ObservationDefinition>

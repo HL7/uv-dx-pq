@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-medication-substance-dxpq"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-02T14:25:13.775+00:00"/>
+        <source value="#Wc6sI5OBJMK0wxwP"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-substance-dxpq"/>
+    <name value="ExtensionMedicationSubstanceDxPq"/>
+    <title value="Extension - Medication Substance dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+    </differential>
+</StructureDefinition>

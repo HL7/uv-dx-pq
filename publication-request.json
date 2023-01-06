@@ -1,16 +1,11 @@
 {
-"list": [
-		{
-			"status": "ci-build",
-			"version": "current",
-			"path": "http://build.fhir.org/ig/HL7/uv-dx-pq",
-			"desc": "Continuous Integration Build (latest in version control)",
-			"fhirversion": "4.0.1",
-			"current": true,
-			"sequence": "STU 1"
-		}
-		],
 	"title": "Biopharmaceutical Industry CMC Data Exchange",
+	"version": "current",
+	"desc": "Continuous Integration Build (latest in version control)",
+	"status": "draft",
 	"package-id": "hl7.fhir.uv.dx-pq",
-	"category": "Biomedical Research and Regulation"
+	"sequence": "Draft",
+	"category": "Biomedical Research and Regulation",
+	"ci-build": "http://build.fhir.org/ig/HL7/uv-dx-pq",
+	"introduction": "TBD"
 }

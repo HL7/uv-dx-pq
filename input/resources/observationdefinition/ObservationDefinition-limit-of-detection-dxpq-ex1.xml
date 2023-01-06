@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-limit-of-detection-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-03T14:37:07.018+00:00"/>
+        <source value="#IJbKKg2lNn3ezwmQ"/>
+    </meta>
+    <code>
+        <coding>
+            <system value="http://example.org/fhir/code/processValidationCriteria"/>
+            <code value="545ddf54"/>
+            <display value="Limit of Detection"/>
+        </coding>
+    </code>
+</ObservationDefinition>

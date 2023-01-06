@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization
+    xmlns="http://hl7.org/fhir">
+    <id value="Organization-cap-manufacturer-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-04T02:03:54.044+00:00"/>
+        <source value="#lu4TowKth5XUcFGE"/>
+    </meta>
+    <identifier>
+        <!--FDA Regulatory Compliance Service (2.16.840.1.113883.4.82) establishment identifier-->
+        <system value="urn:oid:2.16.840.1.113883.4.82"/>
+        <value value="3008816891"/>
+    </identifier>
+    <name value="A+ Secure Packaging, LLC"/>
+    <address>
+        <line value="339 Mason Rd"/>
+        <city value="La Vergne"/>
+        <state value="Tennessee"/>
+        <postalCode value="37086"/>
+        <country value="USA"/>
+    </address>
+</Organization>

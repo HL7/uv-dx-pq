@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization
+    xmlns="http://hl7.org/fhir">
+    <id value="Organization-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-04T02:03:54.048+00:00"/>
+        <source value="#imOCwUpNxC2jcHS8"/>
+    </meta>
+    <name value="general organization"/>
+</Organization>

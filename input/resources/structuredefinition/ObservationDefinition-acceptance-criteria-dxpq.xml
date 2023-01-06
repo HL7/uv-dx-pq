@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ObservationDefinition-acceptance-criteria-dxpq"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-12-21T12:53:51.501+00:00"/>
-        <source value="#YylarpjXWxNy7kV0"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-01-06T02:57:55.516+00:00"/>
+        <source value="#JqPQyL1vcXADMDcy"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
     <name value="ObservationDefinitionAcceptanceCriteriaDxPq"/>
@@ -24,10 +24,6 @@
         </element>
         <element id="ObservationDefinition.id">
             <path value="ObservationDefinition.id"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="ObservationDefinition.category">
-            <path value="ObservationDefinition.category"/>
             <mustSupport value="true"/>
         </element>
         <element id="ObservationDefinition.code">
