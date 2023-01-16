@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentReference
+    xmlns="http://hl7.org/fhir">
+    <id value="DocumentReference-process-flow-diagram-dxpq-ex1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-12T17:57:08.898+00:00"/>
+        <source value="#n4xHiP0iat7deVDt"/>
+    </meta>
+    <identifier>
+        <system value="http://example.org/fhir/identifier/document"/>
+        <value value="FLOW-001"/>
+    </identifier>
+    <status value="current"/>
+    <type>
+        <coding>
+            <system value="http://example.org/fhir/code/diagramType"/>
+            <code value="11111111111"/>
+            <display value="ProcessFlowDiagram"/>
+        </coding>
+    </type>
+    <content>
+        <attachment>
+            <url value="https://example.org/docStore/flow-001"/>
+        </attachment>
+    </content>
+</DocumentReference>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-time-point-description-dxpq"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-02T14:25:14.286+00:00"/>
-        <source value="#UW5j3YaSyrL2H3oR"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-01-11T02:08:38.094+00:00"/>
+        <source value="#xCLeOYLFssl4TVmZ"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-time-point-description-dxpq"/>
     <name value="ExtensionTimePointDescriptionDxPq"/>
@@ -14,12 +14,20 @@
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="DiagnosticReport.effective.ofType(dateTime), dateTime"/>
+    </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Extension">
             <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-time-point-description-dxpq"/>
         </element>
     </differential>
 </StructureDefinition>

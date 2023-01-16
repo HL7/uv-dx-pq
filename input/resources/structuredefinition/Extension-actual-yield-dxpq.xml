@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-actual-yield-dxpq"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-01-02T14:18:05.602+00:00"/>
-        <source value="#8ybuLGXjJLxPlDmu"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-01-11T00:24:14.050+00:00"/>
+        <source value="#aC7m8PAcOnzwmzOK"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq"/>
     <name value="ExtensionActualYieldDxPq"/>
@@ -14,12 +14,20 @@
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Medication"/>
+    </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Extension">
             <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq"/>
         </element>
     </differential>
 </StructureDefinition>

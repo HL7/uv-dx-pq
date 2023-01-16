@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ResearchStudy-stability-dxpq"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2023-01-02T15:04:23.477+00:00"/>
-        <source value="#Y5nGfmU9VST7yFUS"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-01-12T21:37:14.231+00:00"/>
+        <source value="#eUGbaZteFnGwEnFp"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
     <name value="ResearchStudyStabilityDxPq"/>
@@ -30,11 +30,22 @@
             <path value="ResearchStudy.contained"/>
             <mustSupport value="true"/>
         </element>
-        <element id="ResearchStudy.extension">
+        <element id="ResearchStudy.extension:Extension-statistical-model-dxpq">
             <path value="ResearchStudy.extension"/>
-            <slicing>
-                <rules value="open"/>
-            </slicing>
+            <sliceName value="Extension-statistical-model-dxpq"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-statistical-model-dxpq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ResearchStudy.extension:Extension-container-orientation-dxpq">
+            <path value="ResearchStudy.extension"/>
+            <sliceName value="Extension-container-orientation-dxpq"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-container-orientation-dxpq"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="ResearchStudy.identifier">
