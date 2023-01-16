@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-uv-dx-pq"/>
     <meta>
-        <versionId value="384"/>
-        <lastUpdated value="2023-01-16T17:07:19.467+00:00"/>
-        <source value="#bYytKpSYz1dB1tu0"/>
+        <versionId value="392"/>
+        <lastUpdated value="2023-01-16T21:53:21.191+00:00"/>
+        <source value="#s39Pia0YutuY97KE"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/ImplementationGuide/hl7-fhir-uv-dx-pq"/>
-    <version value="0.1"/>
+    <version value="current"/>
     <name value="DataExchangeIndustryPharmaceuticalQuality"/>
     <title value="Data Exchange Industry – Pharmaceutical Quality (dx-PQ)"/>
     <status value="draft"/>
@@ -92,26 +92,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-actual-yield-dxpq"/>
-                <display value="ExtensionActualYieldDxPq"/>
-            </reference>
-            <name value="Extension - Actual Yield dx-PQ"/>
-            <description value="Extension - Actual Yield dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-batch-formula-for-dxpq"/>
-                <display value="ExtensionBatchFormulaForDxPq"/>
-            </reference>
-            <name value="Extension - Batch Formula For dx-PQ"/>
-            <description value="Extension - Batch Formula For dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Extension-batch-instance-of-dxpq"/>
                 <display value="ExtensionBatchInstanceOfDxPq"/>
             </reference>
@@ -192,16 +172,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-instance-comment-dxpq"/>
-                <display value="ExtensionInstanceCommentDxPq"/>
-            </reference>
-            <name value="Extension - Instance Comment dx-PQ"/>
-            <description value="Extension - Instance Comment dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Extension-is-compendial-dxpq"/>
                 <display value="ExtensionIsCompendialDxPq"/>
             </reference>
@@ -252,26 +222,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-overage-dxpq"/>
-                <display value="ExtensionOverageDxPq"/>
-            </reference>
-            <name value="Extension - Overage dx-PQ"/>
-            <description value="Extension - Overage dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-overage-justification-dxpq"/>
-                <display value="ExtensionOverageJustificationDxPq"/>
-            </reference>
-            <name value="Extension - Overage Justification dx-PQ"/>
-            <description value="Extension - Overage Justification dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Extension-plan-document-reference-dxpq"/>
                 <display value="ExtensionPlanDocumentReferenceDxPq"/>
             </reference>
@@ -287,16 +237,6 @@
             </reference>
             <name value="Extension - Qualified Value Text dx-PQ"/>
             <description value="Extension - Qualified Value Text dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-reference-standard-category-dxpq"/>
-                <display value="ExtensionReferenceStandardCategoryDxPq"/>
-            </reference>
-            <name value="Extension - Reference Standard Category dx-PQ"/>
-            <description value="Extension - Reference Standard Category dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -377,16 +317,6 @@
             </reference>
             <name value="Extension - Test Origin dx-PQ"/>
             <description value="Extension - Test Origin dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-theoretical-yield-dxpq"/>
-                <display value="ExtensionTheoreticalYieldDxPq"/>
-            </reference>
-            <name value="Extension - Theoretical Yield dx-PQ"/>
-            <description value="Extension - Theoretical Yield dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -815,17 +745,6 @@
             <name value="ResearchStudy - Stability dx-PQ"/>
             <description value="ResearchStudy - Stability dx-PQ"/>
             <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ResearchStudy/ResearchStudy-stability-dxpq-ex1"/>
-                <display value="Stability Study"/>
-            </reference>
-            <name value="ResearchStudy - Stability dx-PQ - Example 1"/>
-            <description value="ResearchStudy - Stability dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
         <resource>
