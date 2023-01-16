@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-origin-of-substance-dxpq"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-02T14:25:13.809+00:00"/>
-        <source value="#bHhaEMbZVjmhkpeY"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-01-11T01:20:20.521+00:00"/>
+        <source value="#P8L7FadSs8SgZFxZ"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-origin-of-substance-dxpq"/>
     <name value="ExtensionOriginOfSubstanceDxPq"/>
@@ -14,12 +14,20 @@
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Ingredient"/>
+    </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Extension">
             <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-origin-of-substance-dxpq"/>
         </element>
     </differential>
 </StructureDefinition>

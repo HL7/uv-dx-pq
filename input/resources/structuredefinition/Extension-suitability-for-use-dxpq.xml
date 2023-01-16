@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-suitability-for-use-dxpq"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-02T14:25:14.046+00:00"/>
-        <source value="#B371PZUQ0SjnIIPE"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-01-11T01:36:58.142+00:00"/>
+        <source value="#buccNgbNkyJZZMC5"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-suitability-for-use-dxpq"/>
     <name value="ExtensionSuitabilityForUseDxPq"/>
@@ -14,12 +14,24 @@
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="ObservationDefinition"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Ingredient"/>
+    </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Extension">
             <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-suitability-for-use-dxpq"/>
         </element>
     </differential>
 </StructureDefinition>

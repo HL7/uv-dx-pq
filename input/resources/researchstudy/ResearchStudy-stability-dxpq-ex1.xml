@@ -3,47 +3,30 @@
     xmlns="http://hl7.org/fhir">
     <id value="ResearchStudy-stability-dxpq-ex1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-04T02:05:16.324+00:00"/>
-        <source value="#KM4yFq2JVQuZ64rs"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-12T19:37:00.950+00:00"/>
+        <source value="#KwYGf0IyYyUn89r0"/>
     </meta>
     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-statistical-model-dxpq">
         <valueCodeableConcept>
-            <!--#223-->
-            <!--Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then 
-                            have no place to put a context. Ideally this would be a code/code pair. 
-                            Code says "statistical model", code (or text) then says what it is-->
             <text value="information about statistical model utilized to interpret stability study results"/>
         </valueCodeableConcept>
     </extension>
-    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-container-orientation-dxpq">
-        <valueCodeableConcept>
-            <!--#227-->
-            <!--Considered ObservatioDefinition.usageContext-->
-            <text value="Horizontal"/>
-        </valueCodeableConcept>
-    </extension>
-    <!--#215-->
     <identifier>
         <system value="https://eudract.europa.eu/example/identifier"/>
         <value value="STA2022"/>
     </identifier>
-    <!--#217-->
     <title value="Stability Study"/>
     <protocol>
-        <reference value="#studyProtocol"/>
+        <reference value="PlanDefinition/PlanDefinition-stability-study-protocol-dxpq-ex1"/>
     </protocol>
     <status value="active"/>
     <primaryPurposeType>
-        <!--#219-->
-        <text value="Text - rationale for submitting the stability data "/>
+        <text value="Text - rationale for submitting the stability data"/>
     </primaryPurposeType>
-    <!--#220-->
     <description value="Description of the study study plan which includes tests, time points, storage conditions, method"/>
     <period>
-        <!--#228-->
         <start value="2019-09-07"/>
-        <!--#229-->
         <end value="2019-11-07"/>
     </period>
 </ResearchStudy>

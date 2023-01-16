@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-uv-dx-pq"/>
     <meta>
-        <versionId value="364"/>
-        <lastUpdated value="2023-01-06T16:02:09.333+00:00"/>
-        <source value="#iazh7wEd4eKtlQKg"/>
+        <versionId value="384"/>
+        <lastUpdated value="2023-01-16T17:07:19.467+00:00"/>
+        <source value="#bYytKpSYz1dB1tu0"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/ImplementationGuide/hl7-fhir-uv-dx-pq"/>
     <version value="0.1"/>
@@ -74,6 +74,9 @@
         <grouping id="b14-compatibility">
             <name value="Core Content Block 14: Compatibility"/>
         </grouping>
+        <grouping id="extensions1">
+            <name value="Extensions"/>
+        </grouping>
         <grouping id="examples1">
             <name value="Examples"/>
         </grouping>
@@ -89,21 +92,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="DiagnosticReport/DiagnosticReport-stability-study-results-dxpq-ex1"/></reference>
-            <name value="DiagnosticReport - Stability Study Results dx-PQ - Example 1"/>
-            <description value="DiagnosticReport - Stability Study Results dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-dxpq"/>
                 <display value="ExtensionActualYieldDxPq"/>
             </reference>
             <name value="Extension - Actual Yield dx-PQ"/>
             <description value="Extension - Actual Yield dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -113,6 +108,7 @@
             <name value="Extension - Batch Formula For dx-PQ"/>
             <description value="Extension - Batch Formula For dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -122,15 +118,7 @@
             <name value="Extension - Batch Instance Of dx-PQ"/>
             <description value="Extension - Batch Instance Of dx-PQ"/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
-                <display value="ExtensionBatchReleaseDateDxPq"/>
-            </reference>
-            <name value="Extension - Batch Release Date dx-PQ"/>
-            <description value="Extension - Batch Release Date dx-PQ"/>
-            <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -140,6 +128,7 @@
             <name value="Extension - Comment dx-PQ"/>
             <description value="Extension - Comment dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -149,6 +138,7 @@
             <name value="Extension - Container Orientation dx-PQ"/>
             <description value="Extension - Container Orientation dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -158,6 +148,7 @@
             <name value="Extension - Impurity Classification dx-PQ"/>
             <description value="Extension - Impurity Classification dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -167,6 +158,7 @@
             <name value="Extension - Impurity Level dx-PQ"/>
             <description value="Extension - Impurity Level dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -176,6 +168,7 @@
             <name value="Extension - Impurity Method dx-PQ"/>
             <description value="Extension - Impurity Method dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -185,6 +178,7 @@
             <name value="Extension - Impurity Observation dx-PQ"/>
             <description value="Extension - Impurity Observation dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -194,6 +188,7 @@
             <name value="Extension - Impurity Specified dx-PQ"/>
             <description value="Extension - Impurity Specified dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -203,6 +198,7 @@
             <name value="Extension - Instance Comment dx-PQ"/>
             <description value="Extension - Instance Comment dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -212,6 +208,7 @@
             <name value="Extension - Is Compendial dx-PQ"/>
             <description value="Extension - Is Compendial dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -221,6 +218,7 @@
             <name value="Extension - Medication Definition dx-PQ"/>
             <description value="Extension - Medication Definition dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -230,6 +228,7 @@
             <name value="Extension - Medication Substance dx-PQ"/>
             <description value="Extension - Medication Substance dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -239,6 +238,7 @@
             <name value="Extension - Novel Excipient dx-PQ"/>
             <description value="Extension - Novel Excipient dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -248,6 +248,7 @@
             <name value="Extension - Origin Of Substance dx-PQ"/>
             <description value="Extension - Origin Of Substance dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -257,6 +258,7 @@
             <name value="Extension - Overage dx-PQ"/>
             <description value="Extension - Overage dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -266,6 +268,7 @@
             <name value="Extension - Overage Justification dx-PQ"/>
             <description value="Extension - Overage Justification dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -275,6 +278,7 @@
             <name value="Extension - Plan Document Reference dx-PQ"/>
             <description value="Extension - Plan Document Reference dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -284,6 +288,7 @@
             <name value="Extension - Qualified Value Text dx-PQ"/>
             <description value="Extension - Qualified Value Text dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -293,6 +298,7 @@
             <name value="Extension - Reference Standard Category dx-PQ"/>
             <description value="Extension - Reference Standard Category dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -302,6 +308,7 @@
             <name value="Extension - Reference Standard dx-PQ"/>
             <description value="Extension - Reference Standard dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -311,6 +318,7 @@
             <name value="Extension - Site Utilization dx-PQ"/>
             <description value="Extension - Site Utilization dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -320,6 +328,7 @@
             <name value="Extension - Statistical Model dx-PQ"/>
             <description value="Extension - Statistical Model dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -329,6 +338,7 @@
             <name value="Extension - Substance Compendial dx-PQ"/>
             <description value="Extension - Substance Compendial dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -338,6 +348,7 @@
             <name value="Extension - Suitability For Use dx-PQ"/>
             <description value="Extension - Suitability For Use dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -347,6 +358,7 @@
             <name value="Extension - Suitability Verification Data dx-PQ"/>
             <description value="Extension - Suitability Verification Data dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -356,6 +368,7 @@
             <name value="Extension - System Parameters dx-PQ"/>
             <description value="Extension - System Parameters dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -365,6 +378,7 @@
             <name value="Extension - Test Origin dx-PQ"/>
             <description value="Extension - Test Origin dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -374,6 +388,7 @@
             <name value="Extension - Theoretical Yield dx-PQ"/>
             <description value="Extension - Theoretical Yield dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -383,6 +398,7 @@
             <name value="Extension - Time Point Description dx-PQ"/>
             <description value="Extension - Time Point Description dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -392,6 +408,7 @@
             <name value="Extension - TSEBSE Status dx-PQ"/>
             <description value="Extension - TSEBSE Status dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
         </resource>
         <resource>
             <reference>
@@ -401,15 +418,6 @@
             <name value="Medication - Batch Formula dx-PQ"/>
             <description value="Medication - Batch Formula dx-PQ"/>
             <exampleBoolean value="false"/>
-            <groupingId value="b7-batchformula"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/Medication-batch-formula-dxpq-ex1"/></reference>
-            <name value="Medication - Batch Formula dx-PQ - Example 1"/>
-            <description value="Medication - Batch Formula dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-formula-dxpq"/>
             <groupingId value="b7-batchformula"/>
         </resource>
         <resource>
@@ -424,15 +432,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Medication/Medication-batch-information-dxpq-ex1"/></reference>
-            <name value="Medication - Batch Information dx-PQ - Example 1"/>
-            <description value="Medication - Batch Information dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
-            <groupingId value="b8-batchinfo"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
                 <display value="MedicinalProductDefinitionDrugProductDxPq"/>
             </reference>
@@ -443,30 +442,12 @@
         </resource>
         <resource>
             <reference>
-                <reference value="MedicinalProduct/MedicinalProductDefinition-drug-product-dxpq-ex1"/></reference>
-            <name value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
-            <description value="MedicinalProductDefinition - Drug Product  dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
-            <groupingId value="b1-id"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Observation-impurity-dxpq"/>
                 <display value="ObservationImpurityDxPq"/>
             </reference>
             <name value="Observation - Impurity dx-PQ"/>
             <description value="Observation - Impurity dx-PQ"/>
             <exampleBoolean value="false"/>
-            <groupingId value="b3-impurities"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Observation-impurity-dxpq-ex1"/></reference>
-            <name value="Observation - Impurity dx-PQ - Example 1"/>
-            <description value="Observation - Impurity  dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-impurity-dxpq"/>
             <groupingId value="b3-impurities"/>
         </resource>
         <resource>
@@ -729,58 +710,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Organization-bottle-manufacturer-dxpq"/>
-                <display value="OrganizationBottleManufacturerDxPq"/>
-            </reference>
-            <name value="Organization - Bottle Manufacturer dx-PQ"/>
-            <description value="Organization - Bottle Manufacturer dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/Organization-bottle-manufacturer-dxpq-ex1"/>
-                <display value="Acupac Packaging Inc."/>
-            </reference>
-            <name value="Organization - Bottle Manufacturer dx-PQ - Example 1"/>
-            <description value="Organization - Bottle Manufacturer dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-bottle-manufacturer-dxpq"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Organization-box-manufacturer-dxpq"/>
-                <display value="OrganizationBoxManufacturerDxPq"/>
-            </reference>
-            <name value="Organization - Box Manufacturer dx-PQ"/>
-            <description value="Organization - Box Manufacturer dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Organization-cap-manufacturer-dxpq"/>
-                <display value="OrganizationCapManufacturerDxPq"/>
-            </reference>
-            <name value="Organization - Cap Manufacturer dx-PQ"/>
-            <description value="Organization - Cap Manufacturer dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/Organization-cap-manufacturer-dxpq-ex1"/>
-                <display value="A+ Secure Packaging, LLC"/>
-            </reference>
-            <name value="Organization - Cap Manufacturer dx-PQ - Example 1"/>
-            <description value="Organization - Cap Manufacturer dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-cap-manufacturer-dxpq"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Organization-dxpq"/>
                 <display value="OrganizationDxPq"/>
             </reference>
@@ -798,69 +727,6 @@
             <description value="Organization - dx-PQ: Example 1"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Organization-manufacturer-dxpq"/>
-                <display value="OrganizationManufacturerDxPq"/>
-            </reference>
-            <name value="Organization - Manufacturer dx-PQ"/>
-            <description value="Organization - Manufacturer dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/Organization-manufacturer-dxpq-ex1"/>
-                <display value="AAA Pharmaceutical, Inc."/>
-            </reference>
-            <name value="Organization - Manufacturer dx-PQ - Example 1"/>
-            <description value="Organization - Manufacturer dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-manufacturer-dxpq"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Organization-supplier-dxpq"/>
-                <display value="OrganizationSupplierDxPq"/>
-            </reference>
-            <name value="Organization - Supplier dx-PQ"/>
-            <description value="Organization - Supplier dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/Organization-supplier-dxpq-ex1"/>
-                <display value="Supplier Name"/>
-            </reference>
-            <name value="Organization - Supplier dx-PQ - Example 1"/>
-            <description value="Organization - Supplier dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-supplier-dxpq"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Organization-tester-dxpq"/>
-                <display value="OrganizationTesterDxPq"/>
-            </reference>
-            <name value="Organization - Tester dx-PQ"/>
-            <description value="Organization - Tester dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/Organization-tester-dxpq-ex1"/>
-                <display value="Advanced Analytical Testing Laboratories Inc."/>
-            </reference>
-            <name value="Organization - Tester dx-PQ - Example 1"/>
-            <description value="Organization - Tester dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-tester-dxpq"/>
             <groupingId value="b4-organizations"/>
         </resource>
         <resource>
@@ -910,15 +776,6 @@
             <name value="PlanDefinition - Manufacturing Process dx-PQ"/>
             <description value="PlanDefinition - Manufacturing Process dx-PQ"/>
             <exampleBoolean value="false"/>
-            <groupingId value="b5-mnf"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PlanDefinition/PlanDefinition-mnf-process-dxpq-ex1"/></reference>
-            <name value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
-            <description value="PlanDefinition - Manufacturing Process dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
             <groupingId value="b5-mnf"/>
         </resource>
         <resource>
@@ -989,6 +846,25 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
             <groupingId value="b12-specification"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DocumentReference-process-flow-diagram-dxpq"/>
+                <display value="DocumentReferenceProcessFlowDiagramDxPq"/>
+            </reference>
+            <name value="DocumentReference - Process Flow Diagram dxPQ"/>
+            <description value="DocumentReference - Process Flow Diagram dxPQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b5-mnf"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/></reference>
+            <name value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
+            <description value="DocumentReference - Process Flow Diagram dxPQ: Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-process-flow-diagram-dxpq"/>
+            <groupingId value="b5-mnf"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
