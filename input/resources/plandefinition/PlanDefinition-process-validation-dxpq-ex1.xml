@@ -3,16 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="PlanDefinition-process-validation-dxpq-ex1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-04T02:04:42.618+00:00"/>
-        <source value="#Gn4R5eaX4bHe9bpQ"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-17T19:26:37.057+00:00"/>
+        <source value="#IRyYpNt3MFqfmg1G"/>
     </meta>
-    <!--#256-->
     <identifier>
         <system value="http://example.org/fhir/sponsor/alphaidentitier/protocol"/>
         <value value="SPONSOR-PROT-1234"/>
     </identifier>
-    <!--#257-->
     <identifier>
         <system value="http://example.org/fhir/sponsor/identitier/protocol"/>
         <value value="123345234234"/>
@@ -25,7 +23,6 @@
         </coding>
     </type>
     <status value="active"/>
-    <!--description value="Narrative description of manufacturing process (5)"/-->
     <action>
         <action>
             <definitionCanonical value="ObservationDefinition/ObservationDefinition-specificity-dxpq"/>

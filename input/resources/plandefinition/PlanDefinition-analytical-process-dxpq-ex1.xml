@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="PlanDefinition-analytical-process-dxpq-ex1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-04T02:04:42.618+00:00"/>
-        <source value="#i3ZhEO3PGSZ695Em"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-17T19:27:03.823+00:00"/>
+        <source value="#7jkPvo5cWF9wqlHJ"/>
     </meta>
     <type>
         <coding>
@@ -16,10 +16,8 @@
     </type>
     <status value="active"/>
     <description value="Narrative description of analytical process (6)"/>
-    <!--step 1 shows use of an "inline" action-->
     <action>
         <prefix value="Test 1"/>
-        <!--#130-->
         <code>
             <coding>
                 <system value="http://example.org/fhir/code/manufacturingStep"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-uv-dx-pq"/>
     <meta>
-        <versionId value="392"/>
-        <lastUpdated value="2023-01-16T21:53:21.191+00:00"/>
-        <source value="#s39Pia0YutuY97KE"/>
+        <versionId value="407"/>
+        <lastUpdated value="2023-01-18T01:41:27.253+00:00"/>
+        <source value="#RPUDeZugvvnMXF69"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/ImplementationGuide/hl7-fhir-uv-dx-pq"/>
     <version value="current"/>
@@ -772,7 +772,7 @@
                 <display value="DocumentReferenceProcessFlowDiagramDxPq"/>
             </reference>
             <name value="DocumentReference - Process Flow Diagram dxPQ"/>
-            <description value="DocumentReference - Process Flow Diagram dxPQ"/>
+            <description value="DocumentReference - Process Flow Diagram dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="b5-mnf"/>
         </resource>
@@ -784,6 +784,26 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-process-flow-diagram-dxpq"/>
             <groupingId value="b5-mnf"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Substance-reference-standard-dxpq"/>
+                <display value="Substance - Reference Standard dx-PQ"/>
+            </reference>
+            <name value="Substance - Reference Standard dx-PQ"/>
+            <description value="Substance - Reference Standard dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b2-comp"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ObservationDefinition-release-test-result-dxpq"/>
+                <display value="ObservationDefinition - Release Test Result dx-PQ"/>
+            </reference>
+            <name value="ObservationDefinition - Release Test Result dx-PQ"/>
+            <description value="ObservationDefinition - Release Test Result dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b9-batchanalyses"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

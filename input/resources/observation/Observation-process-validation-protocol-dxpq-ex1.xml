@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-process-validation-protocol-dxpq-ex1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-04T02:02:19.621+00:00"/>
-        <source value="#Q2mvTH76uOPLNJkS"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-17T19:22:05.947+00:00"/>
+        <source value="#1kacHzsk7XgZmJMQ"/>
     </meta>
     <status value="final"/>
     <code>
@@ -16,7 +16,6 @@
         </coding>
     </code>
     <valueQuantity>
-        <!--#268-->
         <value value="0.72"/>
         <unit value="%"/>
     </valueQuantity>
