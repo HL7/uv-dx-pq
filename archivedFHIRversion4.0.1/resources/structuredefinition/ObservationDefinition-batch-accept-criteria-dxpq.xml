@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-batch-accept-criteria-dxpq"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2023-01-04T14:22:26.603+00:00"/>
+        <source value="#vnjTVJTZp9Jenf4D"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-batch-accept-criteria-dxpq"/>
+    <name value="ObservationDefinitionBatchAcceptCriteriaDxPq"/>
+    <title value="ObservationDefinition - Batch Acceptance Criteria dx-PQ"/>
+    <status value="active"/>
+    <description value="Section 9.1 - Release Testing Protocol - Criteria"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ObservationDefinition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ObservationDefinition">
+            <path value="ObservationDefinition"/>
+        </element>
+        <element id="ObservationDefinition.id">
+            <path value="ObservationDefinition.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ObservationDefinition.code">
+            <path value="ObservationDefinition.code"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

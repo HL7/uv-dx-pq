@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-process-validation-protocol-dxpq-ex1"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-17T19:22:05.947+00:00"/>
+        <source value="#1kacHzsk7XgZmJMQ"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://example.org/fhir/code/processValidationTest"/>
+            <code value="22dddd2"/>
+            <display value="Precision Check"/>
+        </coding>
+    </code>
+    <valueQuantity>
+        <value value="0.72"/>
+        <unit value="%"/>
+    </valueQuantity>
+</Observation>

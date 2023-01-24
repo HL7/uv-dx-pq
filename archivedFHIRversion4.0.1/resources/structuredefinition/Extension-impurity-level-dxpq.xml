@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-impurity-level-dxpq"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2023-01-11T01:08:56.646+00:00"/>
+        <source value="#5KcGwJh72n7K8tLq"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-impurity-level-dxpq"/>
+    <name value="ExtensionImpurityLevelDxPq"/>
+    <title value="Extension - Impurity Level dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="MedicinalProduct"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-impurity-level-dxpq"/>
+        </element>
+    </differential>
+</StructureDefinition>
