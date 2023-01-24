@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-uv-dx-pq"/>
     <meta>
-        <versionId value="411"/>
-        <lastUpdated value="2023-01-24T00:05:21.636+00:00"/>
-        <source value="#f9tlHWrrpXSkGg06"/>
+        <versionId value="436"/>
+        <lastUpdated value="2023-01-24T19:52:16.368+00:00"/>
+        <source value="#V2WvA769NWoeGcjV"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/ImplementationGuide/hl7-fhir-uv-dx-pq"/>
     <version value="current"/>
@@ -420,226 +420,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/ObservationDefinition-accuracy-dxpq"/>
-                <display value="ObservationDefinitionAccuracyDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Accuracy dx-PQ"/>
-            <description value="ObservationDefinition - Accuracy dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/observationdefinition-accuracy-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Accuracy dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Accuracy dx-PQ: Example 1&#xA;"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-accuracy-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-analytical-method-dxpq"/>
-                <display value="ObservationDefinitionAnalyticalMethodDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Analytical Method dx-PQ"/>
-            <description value="ObservationDefinition - Analytical Method dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-analytical-method-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Analytical Method dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Analytical Method dx-PQ: Example 1&#xA;"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-analytical-method-dxpq"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-batch-accept-criteria-dxpq"/>
-                <display value="ObservationDefinitionBatchAcceptCriteriaDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Batch Acceptance Criteria dx-PQ"/>
-            <description value="ObservationDefinition - Batch Acceptance Criteria dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-batch-accept-criteria-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Batch Acceptance Criteria dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Batch Acceptance Criteria dx-PQ: Example 1&#xA;"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-batch-accept-criteria-dxpq"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-limit-of-detection-dxpq"/>
-                <display value="ObservationDefinitionLimitOfDetectionDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Limit of Detection dx-PQ"/>
-            <description value="ObservationDefinition - Limit of Detection dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-limit-of-detection-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Limit of Detection dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Limit of Detection dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-limit-of-detection-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-limit-of-quantification-dxpq"/>
-                <display value="ObservationDefinitionLimitOfQuantificationDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Limit of Quantification dx-PQ"/>
-            <description value="ObservationDefinition - Limit of Quantification dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-limit-of-quantification-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Limit of Quantification dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Limit of Quantification dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-limit-of-quantification-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-linearity-dxpq"/>
-                <display value="ObservationDefinitionLinearityDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Linearity dx-PQ"/>
-            <description value="ObservationDefinition - Linearity dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-precision-dxpq"/>
-                <display value="ObservationDefinitionPrecisionDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Precision dx-PQ"/>
-            <description value="ObservationDefinition - Precision dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-precision-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Precision dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Precision dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-precision-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-range-dxpq"/>
-                <display value="ObservationDefinitionRangeDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Range dx-PQ"/>
-            <description value="ObservationDefinition - Range dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-range-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Range dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Range dx-PQ: Example 1&#xA;"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-range-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-reference-standard-test-dxpq"/>
-                <display value="ObservationDefinitionReferenceStandardTestDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Reference Standard Test dx-PQ"/>
-            <description value="ObservationDefinition - Reference Standard Test dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b2-comp"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-robustness-dxpq"/>
-                <display value="ObservationDefinitionRobustnessDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Robustness dx-PQ"/>
-            <description value="ObservationDefinition - Robustness dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-robustness-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Robustness dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Robustness dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-robustness-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-specificity-dxpq"/>
-                <display value="ObservationDefinitionSpecificityDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Specificity dx-PQ"/>
-            <description value="ObservationDefinition - Specificity dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-specificity-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Specificity dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Specificity dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-specificity-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-stability-study-protocol-condition-dxpq"/>
-                <display value="ObservationDefinitionStabilityStudyProtocolConditionDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Stability Study Protocol Condition dx-PQ"/>
-            <description value="ObservationDefinition - Stability Study Protocol Condition dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-test-method-dxpq"/>
-                <display value="ObservationDefinitionTestMethodDxPq"/>
-            </reference>
-            <name value="ObservationDefinition - Test Method dx-PQ"/>
-            <description value="ObservationDefinition - Test Method dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-test-method-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Test Method dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Organization-dxpq"/>
                 <display value="OrganizationDxPq"/>
             </reference>
@@ -749,25 +529,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
-                <display value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            </reference>
-            <name value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            <description value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b12-specification"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/ObservationDefinition-acceptance-criteria-dxpq-ex1"/></reference>
-            <name value="ObservationDefinition - Acceptance Criteria dx-PQ - Example 1"/>
-            <description value="ObservationDefinition - Acceptance Criteria dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
-            <groupingId value="b12-specification"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/DocumentReference-process-flow-diagram-dxpq"/>
                 <display value="DocumentReferenceProcessFlowDiagramDxPq"/>
             </reference>
@@ -797,13 +558,23 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/ObservationDefinition-release-test-result-dxpq"/>
-                <display value="ObservationDefinition - Release Test Result dx-PQ"/>
+                <reference value="StructureDefinition/ObservationDefinition-stability-test-method-dxpq"/>
+                <display value="ObservationDefinition - Stability Test Method dx-PQ"/>
             </reference>
-            <name value="ObservationDefinition - Release Test Result dx-PQ"/>
-            <description value="ObservationDefinition - Release Test Result dx-PQ"/>
+            <name value="ObservationDefinition - Stability Test Method dx-PQ"/>
+            <description value="ObservationDefinition - Stability Test Method dx-PQ"/>
             <exampleBoolean value="false"/>
-            <groupingId value="b9-batchanalyses"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ObservationDefinition-validation-test-dxpq"/>
+                <display value="ObservationDefinition - Validation Testdx-PQ"/>
+            </reference>
+            <name value="ObservationDefinition - Validation Test dx-PQ"/>
+            <description value="ObservationDefinition - Validation Protocol dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b13-processvalidation"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

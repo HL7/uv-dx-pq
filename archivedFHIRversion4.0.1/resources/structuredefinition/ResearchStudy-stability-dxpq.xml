@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ResearchStudy-stability-dxpq"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2023-01-16T20:20:26.958+00:00"/>
-        <source value="#L3LBv0o1hLM2fOOY"/>
+        <versionId value="20"/>
+        <lastUpdated value="2023-01-24T16:45:06.294+00:00"/>
+        <source value="#Redzb6rsnPjSKyLW"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
     <name value="ResearchStudyStabilityDxPq"/>

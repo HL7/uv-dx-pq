@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="ObservationDefinition-robustness-dxpq"/>
+    <id value="ObservationDefinition-stability-test-method-dxpq"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-12-21T15:31:19.483+00:00"/>
-        <source value="#srsypuqvgcuFVS8T"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-24T18:19:04.090+00:00"/>
+        <source value="#exYJ7u18zlv0zZQN"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-robustness-dxpq"/>
-    <name value="ObservationDefinitionRobustnessDxPq"/>
-    <title value="ObservationDefinition - Robustness dx-PQ"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-stability-test-method-dxpq"/>
+    <name value="ObservationDefinitionStabilityTestMethodDxPq"/>
+    <title value="ObservationDefinition - Stability Test Method dx-PQ"/>
     <status value="active"/>
-    <description value="Section 13.1 - Process Validation, Validation protocol - Robustness"/>
+    <description value="Section 11 - Stability Study"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -24,6 +24,9 @@
         </element>
         <element id="ObservationDefinition.id">
             <path value="ObservationDefinition.id"/>
+        </element>
+        <element id="ObservationDefinition.category">
+            <path value="ObservationDefinition.category"/>
             <mustSupport value="true"/>
         </element>
         <element id="ObservationDefinition.code">
