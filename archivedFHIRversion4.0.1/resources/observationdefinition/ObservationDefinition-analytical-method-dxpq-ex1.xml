@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-analytical-method-dxpq-ex1"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-17T19:24:43.746+00:00"/>
+        <source value="#SaHSl04mf4Ps3Fzm"/>
+    </meta>
+    <category>
+        <coding>
+            <system value="http://example.org/fhir/code/testCatgeory"/>
+            <code value="545454"/>
+            <display value="Biological properties"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://example.org/fhir/code/testMethod"/>
+            <code value="545454"/>
+            <display value="Microbial limits"/>
+        </coding>
+        <text value="Test name free text"/>
+    </code>
+    <method>
+        <text value="Method free text"/>
+    </method>
+</ObservationDefinition>

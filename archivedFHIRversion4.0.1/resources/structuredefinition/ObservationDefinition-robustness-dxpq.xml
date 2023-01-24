@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ObservationDefinition-robustness-dxpq"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-12-21T15:31:19.483+00:00"/>
+        <source value="#srsypuqvgcuFVS8T"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-robustness-dxpq"/>
+    <name value="ObservationDefinitionRobustnessDxPq"/>
+    <title value="ObservationDefinition - Robustness dx-PQ"/>
+    <status value="active"/>
+    <description value="Section 13.1 - Process Validation, Validation protocol - Robustness"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ObservationDefinition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ObservationDefinition">
+            <path value="ObservationDefinition"/>
+        </element>
+        <element id="ObservationDefinition.id">
+            <path value="ObservationDefinition.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ObservationDefinition.code">
+            <path value="ObservationDefinition.code"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

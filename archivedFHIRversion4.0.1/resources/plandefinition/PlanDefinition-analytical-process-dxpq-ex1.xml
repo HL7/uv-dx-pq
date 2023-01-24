@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="PlanDefinition-analytical-process-dxpq-ex1"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-17T19:27:03.823+00:00"/>
+        <source value="#7jkPvo5cWF9wqlHJ"/>
+    </meta>
+    <type>
+        <coding>
+            <system value="http://example.org/fhir/code/planType"/>
+            <code value="1244766"/>
+            <display value="Analytical Process"/>
+        </coding>
+    </type>
+    <status value="active"/>
+    <description value="Narrative description of analytical process (6)"/>
+    <action>
+        <prefix value="Test 1"/>
+        <code>
+            <coding>
+                <system value="http://example.org/fhir/code/manufacturingStep"/>
+                <code value="step-type-1"/>
+            </coding>
+            <text value="Step 1 in the analytic process"/>
+        </code>
+        <action>
+            <prefix value="Stage 1.1"/>
+            <definitionCanonical value="ObservationDefinition/analytical-test1"/>
+        </action>
+        <action>
+            <prefix value="Stage 1.2"/>
+            <definitionCanonical value="ObservationDefinition/analytical-test2"/>
+        </action>
+    </action>
+</PlanDefinition>

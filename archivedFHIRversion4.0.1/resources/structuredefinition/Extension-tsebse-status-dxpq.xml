@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-tsebse-status-dxpq"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2023-01-11T01:43:09.505+00:00"/>
+        <source value="#u21frcLzYHMXw2e6"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tsebse-status-dxpq"/>
+    <name value="ExtensionTsebseStatusDxPq"/>
+    <title value="Extension - TSEBSE Status dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Ingredient"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tsebse-status-dxpq"/>
+        </element>
+    </differential>
+</StructureDefinition>
