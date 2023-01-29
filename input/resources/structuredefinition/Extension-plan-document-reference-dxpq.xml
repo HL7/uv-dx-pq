@@ -11,7 +11,7 @@
     <name value="ExtensionPlanDocumentReferenceDxPq"/>
     <title value="Extension - Plan Document Reference dx-PQ"/>
     <status value="active"/>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>

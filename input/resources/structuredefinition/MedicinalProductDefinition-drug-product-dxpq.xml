@@ -12,34 +12,26 @@
     <title value="MedicinalProductDefinition - Drug Product dx-PQ"/>
     <status value="active"/>
     <description value="Section 1.1 - Drug Product Identification"/>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="resource"/>
     <abstract value="false"/>
-    <type value="MedicinalProduct"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProduct"/>
+    <type value="MedicinalProductDefinition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="MedicinalProduct">
-            <path value="MedicinalProduct"/>
+        <element id="MedicinalProductDefinition">
+            <path value="MedicinalProductDefinition"/>
         </element>
-        <element id="MedicinalProduct.id">
-            <path value="MedicinalProduct.id"/>
+        <element id="MedicinalProductDefinition.identifier">
+            <path value="MedicinalProductDefinition.identifier"/>
             <mustSupport value="true"/>
         </element>
-        <element id="MedicinalProduct.contained">
-            <path value="MedicinalProduct.contained"/>
+        <element id="MedicinalProductDefinition.combinedPharmaceuticalDoseForm">
+            <path value="MedicinalProductDefinition.combinedPharmaceuticalDoseForm"/>
             <mustSupport value="true"/>
         </element>
-        <element id="MedicinalProduct.combinedPharmaceuticalDoseForm">
-            <path value="MedicinalProduct.combinedPharmaceuticalDoseForm"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="MedicinalProduct.name">
-            <path value="MedicinalProduct.name"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="MedicinalProduct.name.modifierExtension">
-            <path value="MedicinalProduct.name.modifierExtension"/>
+        <element id="MedicinalProductDefinition.name">
+            <path value="MedicinalProductDefinition.name"/>
             <mustSupport value="true"/>
         </element>
     </differential>
