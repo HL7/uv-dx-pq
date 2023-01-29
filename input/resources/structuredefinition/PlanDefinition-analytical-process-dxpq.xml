@@ -12,7 +12,7 @@
     <title value="PlanDefinition - Analytical Process dx-PQ"/>
     <status value="active"/>
     <description value="Section 6.1 - Analytical Methods"/>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="PlanDefinition"/>

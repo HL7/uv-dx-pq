@@ -30,7 +30,7 @@
         <text value="World"/>
     </jurisdiction>
     <packageId value="hl7.fhir.uv.dx-pq"/>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="5.0.0-snapshot3"/>
     <definition>
         <grouping id="b1-id">
             <name value="Core Content Block 1: Drug Product Identification"/>
@@ -606,13 +606,6 @@
                 <generation value="markdown"/>
             </page>
         </page>
-        <parameter>
-            <code value="copyrightyear"/>
-            <value value="2020+"/>
-        </parameter>
-        <parameter>
-            <code value="releaselabel"/>
-            <value value="CI Build"/>
-        </parameter>
+
     </definition>
 </ImplementationGuide>
