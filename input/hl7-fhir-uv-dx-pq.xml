@@ -591,36 +591,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
-        <page>
-            <nameUrl value="index.md"/>
-            <title value="Home Page"/>
-            <generation value="markdown"/>
-            <page>
-                <nameUrl value="background.md"/>
-                <title value="Background"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="best_practices.md"/>
-                <title value="Best Practices"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="specification.md"/>
-                <title value="Specification"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="resources.md"/>
-                <title value="Resources"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="downloads.md"/>
-                <title value="Downloads"/>
-                <generation value="markdown"/>
-            </page>
-        </page>
+
 
     </definition>
 </ImplementationGuide>
