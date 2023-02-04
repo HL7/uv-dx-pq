@@ -591,6 +591,56 @@
             <exampleBoolean value="false"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+                <display value="SpecimenDefinition - Stability dx-PQ"/>
+            </reference>
+            <name value="SpecimenDefinition - Stability dx-PQ"/>
+            <description value="TBD"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+                <display value="ActivityDefinition - Stability Test dx-PQ"/>
+            </reference>
+            <name value="ActivityDefinition - Stability Test dx-PQ"/>
+            <description value="Section 5.2 - Unit Operation/Equipment Information"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b5-mnf"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-stability-dxpq"/>
+                <display value="Specimen - Stability dx-PQ"/>
+            </reference>
+            <name value="Specimen - Stability dx-PQ"/>
+            <description value="TBD"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Ingredient-dxpq"/>
+                <display value="Ingredient dx-Pq"/>
+            </reference>
+            <name value="Ingredient dx-Pq"/>
+            <description value="Section 2.1 - DP Composition"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b2-comp"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+                <display value="SubstanceDefinition - Component Substance dx-PQ"/>
+            </reference>
+            <name value="SubstanceDefinition - Component Substance dx-PQ"/>
+            <description value="Section 2.1 - DP Composition - Product Component"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b2-comp"/>
+        </resource>
         <page>
             <name value="index.html"/>
             <title value="Home Page"/>

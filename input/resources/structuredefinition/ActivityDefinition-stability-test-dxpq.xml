@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ActivityDefinition-stability-test-dxpq"/>
+  <url
+    value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+  <name value="ActivityDefinitionStabilityTestDxPq"/>
+  <title value="ActivityDefinition - Stability Test dx-PQ"/>
+  <status value="active"/>
+  <description value="Section 5.2 - Unit Operation/Equipment Information"/>
+  <fhirVersion value="5.0.0-snapshot3"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="ActivityDefinition"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="ActivityDefinition">
+      <path value="ActivityDefinition"/>
+    </element>
+    <element id="ActivityDefinition.status">
+      <path value="ActivityDefinition.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ActivityDefinition.observationRequirement">
+      <path value="ActivityDefinition.observationRequirement"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>
