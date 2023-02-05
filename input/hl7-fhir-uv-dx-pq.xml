@@ -693,6 +693,36 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
+                <display value="ExtensionBatchReleaseDateDxPq"/>
+            </reference>
+            <name value="Extension - Batch Release Date dx-PQ"/>
+            <description value="Extension - Batch Release Date dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-batch-storage-duration-dxpq"/>
+                <display value="ExtensionBatchStorageDurationDxPq"/>
+            </reference>
+            <name value="Extension - Batch Storage Duration dx-PQ"/>
+            <description value="Extension - Batch Storage Duration dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
+                <display value="ExtensionBatchSubstanceBatchDxPq"/>
+            </reference>
+            <name value="Extension - Batch Substance Batch dx-PQ"/>
+            <description value="Extension - Batch Substance Batch dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-assigned-manufacturer-dxpq"/>
                 <display value="ExtensionAssignedManufacturerDxPq"/>
             </reference>
@@ -711,6 +741,16 @@
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>   
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-workflow-triggered-by-dxpq"/>
+                <display value="ExtensionWorkflowTriggeredByDxPq"/>
+            </reference>
+            <name value="Extension - Workflow Triggered By dx-PQ"/>
+            <description value="Extension - Workflow Triggered By dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
+        </resource> 
         <page>
             <name value="index.html"/>
             <title value="Home Page"/>
