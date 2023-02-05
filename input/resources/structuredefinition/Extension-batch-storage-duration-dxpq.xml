@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-storage-duration-dxpq"/>
-    <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-01-11T01:43:09.505+00:00"/>
-        <source value="#u21frcLzYHMXw2e6"/>
-    </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-storage-duration-dxpq"/>
     <name value="ExtensionBatchStorageDurationDxPq"/>
     <title value="Extension - Batch Storage Duration dx-PQ"/>
