@@ -31,11 +31,6 @@
     </jurisdiction>
     <packageId value="hl7.fhir.uv.dx-pq"/>
     <fhirVersion value="5.0.0-snapshot3"/>
-    <dependsOn id="higtools">
-        <uri value="http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools"/>
-        <packageId value="hl7.fhir.uv.tools"/>
-        <version value="current"/>
-    </dependsOn>
     <dependsOn id="hl7tx">
         <extension
             url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -708,16 +703,6 @@
             </reference>
             <name value="Extension - Batch Storage Duration dx-PQ"/>
             <description value="Extension - Batch Storage Duration dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
-                <display value="ExtensionBatchSubstanceBatchDxPq"/>
-            </reference>
-            <name value="Extension - Batch Substance Batch dx-PQ"/>
-            <description value="Extension - Batch Substance Batch dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>
