@@ -678,16 +678,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-instance-comment-dxpq"/>
-                <display value="ExtensionInstanceCommentDxPq"/>
-            </reference>
-            <name value="Extension - Instance Comment dx-PQ"/>
-            <description value="Extension - Instance Comment dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
                 <display value="ExtensionBatchReleaseDateDxPq"/>
             </reference>
