@@ -25,28 +25,28 @@
     <status value="active"/>
     <action>
         <action>
-            <definitionCanonical value="ObservationDefinition/ObservationDefinition-specificity-dxpq"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/ObservationDefinition-specificity-dxpq"/>
         </action>
         <action>
-            <definitionCanonical value="ObservationDefinition/ObservationDefinition-linearity-dxpq"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/ObservationDefinition-linearity-dxpq"/>
         </action>
         <action>
-            <definitionCanonical value="ObservationDefinition/ObservationDefinition-accuracy-dxpq"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/ObservationDefinition-accuracy-dxpq"/>
         </action>
         <action>
-            <definitionCanonical value="ObservationDefinition/ObservationDefinition-precision-dxpq"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/ObservationDefinition-precision-dxpq"/>
         </action>
         <action>
-            <definitionCanonical value="ObservationDefinition/ObservationDefinition-limit-of-detection-dxpq"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/ObservationDefinition-limit-of-detection-dxpq"/>
         </action>
         <action>
-            <definitionCanonical value="ObservationDefinition/ObservationDefinition-limit-of-quantification-dxpq"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/ObservationDefinition-limit-of-quantification-dxpq"/>
         </action>
         <action>
-            <definitionCanonical value="ObservationDefinition/ObservationDefinition-robustness-dxpq"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/ObservationDefinition-robustness-dxpq"/>
         </action>
         <action>
-            <definitionCanonical value="ObservationDefinition/ObservationDefinition-range-dxpq"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/ObservationDefinition-range-dxpq"/>
         </action>
     </action>
 </PlanDefinition>

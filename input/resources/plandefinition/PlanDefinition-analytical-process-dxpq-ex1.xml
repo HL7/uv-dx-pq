@@ -27,11 +27,11 @@
         </code>
         <action>
             <prefix value="Stage 1.1"/>
-            <definitionCanonical value="ObservationDefinition/analytical-test1"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/analytical-test1"/>
         </action>
         <action>
             <prefix value="Stage 1.2"/>
-            <definitionCanonical value="ObservationDefinition/analytical-test2"/>
+            <definitionCanonical value="http://example.org/ObservationDefinition/analytical-test2"/>
         </action>
     </action>
 </PlanDefinition>
