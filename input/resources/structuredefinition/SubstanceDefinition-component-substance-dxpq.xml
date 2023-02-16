@@ -12,7 +12,7 @@
   <abstract value="false"/>
   <type value="SubstanceDefinition"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SubstanceDefinition"/>
-  <derivation value="specialization"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="SubstanceDefinition">
       <path value="SubstanceDefinition"/>

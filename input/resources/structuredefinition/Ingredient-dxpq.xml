@@ -12,7 +12,7 @@
   <abstract value="false"/>
   <type value="Ingredient"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Ingredient"/>
-  <derivation value="specialization"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Ingredient">
       <path value="Ingredient"/>

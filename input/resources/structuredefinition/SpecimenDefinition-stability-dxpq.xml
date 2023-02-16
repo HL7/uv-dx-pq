@@ -12,7 +12,7 @@
   <abstract value="false"/>
   <type value="SpecimenDefinition"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SpecimenDefinition"/>
-  <derivation value="specialization"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="SpecimenDefinition">
       <path value="SpecimenDefinition"/>

@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <type value="ActivityDefinition"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
-  <derivation value="specialization"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="ActivityDefinition">
       <path value="ActivityDefinition"/>
