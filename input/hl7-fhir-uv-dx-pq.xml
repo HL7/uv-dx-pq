@@ -42,47 +42,47 @@
         <version value="5.0.0"/>
     </dependsOn>
     <definition>
-        <grouping id="b1-id">
-            <name value="Core Content Block 1: Drug Product Identification"/>
-        </grouping>
-        <grouping id="b2-comp">
-            <name value="Core Content Block 2: Drug Product Composition"/>
-        </grouping>
-        <grouping id="b3-impurities">
-            <name value="Core Content Block 3: Drug Product Impurities"/>
+        <grouping id="b11-stabilitystudy">
+            <name value="Stability Study"/>
         </grouping>
         <grouping id="b4-organizations">
-            <name value="Core Content Block 4: Organizations"/>
+            <name value="Organizations"/>
         </grouping>
-        <grouping id="b5-mnf">
-            <name value="Core Content Block 5: Manufacturing Process Information"/>
-        </grouping>
-        <grouping id="b6-analytical">
-            <name value="Core Content Block 6: Analytical Methods"/>
-        </grouping>
-        <grouping id="b7-batchformula">
-            <name value="Core Content Block 7: Batch Formula"/>
-        </grouping>
-        <grouping id="b8-batchinfo">
-            <name value="Core Content Block 8: Batch or Lot Information"/>
-        </grouping>
-        <grouping id="b9-batchanalyses">
-            <name value="Core Content Block 9: Batch Analyses"/>
-        </grouping>
-        <grouping id="b10-container">
-            <name value="Core Content Block 10: Container Closure System"/>
-        </grouping>
-        <grouping id="b11-stabilitystudy">
-            <name value="Core Content Block 11: Stability Study"/>
+        <grouping id="b1-id">
+            <name value="Drug Product Identification"/>
         </grouping>
         <grouping id="b12-specification">
-            <name value="Core Content Block 12: Specification"/>
+            <name value="Specification"/>
+        </grouping>
+        <grouping id="b8-batchinfo">
+            <name value="Batch or Lot Information"/>
+        </grouping>
+        <grouping id="b5-mnf">
+            <name value="Manufacturing Process Information"/>
+        </grouping>
+        <grouping id="b2-comp">
+            <name value="Composition"/>
+        </grouping>
+        <grouping id="b3-impurities">
+            <name value="Impurities"/>
+        </grouping>
+        <grouping id="b9-batchanalyses">
+            <name value="Batch Analysis"/>
+        </grouping>
+        <grouping id="b10-container">
+            <name value="Container Closure System"/>
+        </grouping>
+        <grouping id="b6-analytical">
+            <name value="Analytical Methods"/>
+        </grouping>
+        <grouping id="b7-batchformula">
+            <name value="Batch Formula"/>
         </grouping>
         <grouping id="b13-processvalidation">
-            <name value="Core Content Block 13: Process Validation"/>
+            <name value="Process Validation"/>
         </grouping>
         <grouping id="b14-compatibility">
-            <name value="Core Content Block 14: Compatibility"/>
+            <name value="Compatibility"/>
         </grouping>
         <grouping id="extensions1">
             <name value="Extensions"/>
