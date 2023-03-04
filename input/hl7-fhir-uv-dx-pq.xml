@@ -100,6 +100,51 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+                <display value="BundleDrugSubstanceSpecificationDxPq"/>
+            </reference>
+            <name value="Bundle – Drug Substance Specification dx-PQ"/>
+            <description value="Bundle – Drug Substance Specification dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b12-specification"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-product-specification-dxpq"/>
+                <display value="BundleDrugProductSpecificationDxPq"/>
+            </reference>
+            <name value="Bundle – Drug Product Specification dx-PQ"/>
+            <description value="Bundle – Drug Product Specification dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b12-specification"/>
+        </resource>   
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
+                <display value="BundleDrugSubstanceStabilityDxPq"/>
+            </reference>
+            <name value="Bundle – Drug Substance Stability dx-PQ"/>
+            <description value="Bundle – Drug Substance Stability dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>   
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-product-stability-dxpq"/>
+                <display value="BundleDrugProductStabilityDxPq"/>
+            </reference>
+            <name value="Bundle – Drug Product Stability dx-PQ"/>
+            <description value="Bundle – Drug Product Stability dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>   
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-instance-of-dxpq"/>

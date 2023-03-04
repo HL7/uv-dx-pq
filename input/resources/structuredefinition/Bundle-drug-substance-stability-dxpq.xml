@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Bundle-drug-substance-stability-dxpq"/>
+  <url
+    value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
+  <name value="BundleDrugSubstanceStabilityDxPq"/>
+  <title value="Bundle – Drug Substance Stability dx-PQ"/>
+  <status value="active"/>
+  <description value="Bundle – Drug Substance Stability dx-PQ"/>
+  <fhirVersion value="5.0.0-snapshot3"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <short value="collection"/>
+      <fixedCode value="collection"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      
+      <slicing>
+        <discriminator>
+          <type value="profile"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="closed"/>
+      </slicing>
+      <min value="7"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="Bundle.entry:ResearchStudy">
+      <path value="Bundle.entry"/>
+      <sliceName value="ResearchStudy"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Bundle.entry:ResearchStudy.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:ResearchStudy.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="ResearchStudy"/>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:PlanDefinition">
+      <path value="Bundle.entry"/>
+      <sliceName value="PlanDefinition"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Bundle.entry:PlanDefinition.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:PlanDefinition.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="PlanDefinition"/>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:SpecimenDefinition">
+      <path value="Bundle.entry"/>
+      <sliceName value="SpecimenDefinition"/>
+    </element>
+    <element id="Bundle.entry:SpecimenDefinition.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:SpecimenDefinition.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="SpecimenDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Specimen">
+      <path value="Bundle.entry"/>
+      <sliceName value="Specimen"/>
+    </element>
+    <element id="Bundle.entry:Specimen.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:Specimen.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="Specimen"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:ActivityDefinition">
+      <path value="Bundle.entry"/>
+      <sliceName value="SpecimenDefinition"/>
+    </element>
+    <element id="Bundle.entry:ActivityDefinition.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:ActivityDefinition.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="ActivityDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:ObservationDefinition">
+      <path value="Bundle.entry"/>
+      <sliceName value="ObservationDefinition"/>
+    </element>
+    <element id="Bundle.entry:ObservationDefinition.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:ObservationDefinition.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="ObservationDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-stability-test-definition-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:ObservationDefinition">
+      <path value="Bundle.entry"/>
+      <sliceName value="ObservationDefinition"/>
+    </element>
+    <element id="Bundle.entry:ObservationDefinition.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:ObservationDefinition.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="ObservationDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
+      </type>
+    </element>
+ 
+    <element id="Bundle.entry:Observation">
+      <path value="Bundle.entry"/>
+      <sliceName value="Observation"/>
+    </element>
+    <element id="Bundle.entry:Observation.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:Observation.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="Observation"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-stability-study-test-result-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:SubstanceDefinition">
+      <path value="Bundle.entry"/>
+      <sliceName value="ObservationDefinition"/>
+    </element>
+    <element id="Bundle.entry:SubstanceDefinition.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:SubstanceDefinition.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="SubstanceDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+      </type>
+    </element>
+  
+    <element id="Bundle.entry:Substance">
+      <path value="Bundle.entry"/>
+      <sliceName value="Substance"/>
+    </element>
+    <element id="Bundle.entry:Substance.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:Substance.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="Substance"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+      </type>
+    </element>  
+    
+    <element id="Bundle.entry:DiagnosticReport">
+      <path value="Bundle.entry"/>
+      <sliceName value="DiagnosticReport"/>
+    </element>
+    <element id="Bundle.entry:DiagnosticReport.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:DiagnosticReport.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="DiagnosticReport"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Organization">
+      <path value="Bundle.entry"/>
+      <sliceName value="Organization"/>
+    </element>
+    <element id="Bundle.entry:Organization.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:Organization.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="Organization"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
