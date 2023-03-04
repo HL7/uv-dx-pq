@@ -52,17 +52,17 @@
       <mustSupport value="true"/>
     </element>
     
-    <element id="Bundle.entry:PlanDefinition">
+    <element id="Bundle.entry:PlanDefinition-DS-Spec">
       <path value="Bundle.entry"/>
-      <sliceName value="PlanDefinition"/>
+      <sliceName value="PlanDefinition-DS-Spec"/>
       <min value="1"/>
       <max value="1"/>
     </element>
-    <element id="Bundle.entry:PlanDefinition.fullUrl">
+    <element id="Bundle.entry:PlanDefinition-DS-Spec.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
       <min value="1"/>
     </element>
-    <element id="Bundle.entry:PlanDefinition.resource">
+    <element id="Bundle.entry:PlanDefinition-DS-Spec.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
       <type>
@@ -71,15 +71,15 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:ObservationDefinition">
+    <element id="Bundle.entry:ObservationDefinition-acceptance-criteria">
       <path value="Bundle.entry"/>
-      <sliceName value="ObservationDefinition"/>
+      <sliceName value="ObservationDefinition-acceptance-criteria"/>
     </element>
-    <element id="Bundle.entry:ObservationDefinition.fullUrl">
+    <element id="Bundle.entry:ObservationDefinition-acceptance-criteria.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
       <min value="1"/>
     </element>
-    <element id="Bundle.entry:ObservationDefinition.resource">
+    <element id="Bundle.entry:ObservationDefinition-acceptance-criteria.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
       <type>
@@ -89,15 +89,15 @@
       </type>
     </element>
  
-    <element id="Bundle.entry:SubstanceDefinition">
+    <element id="Bundle.entry:SubstanceDefinition-component-substance">
       <path value="Bundle.entry"/>
-      <sliceName value="ObservationDefinition"/>
+      <sliceName value="SubstanceDefinition-component-substance"/>
     </element>
-    <element id="Bundle.entry:SubstanceDefinition.fullUrl">
+    <element id="Bundle.entry:SubstanceDefinition-component-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
       <min value="1"/>
     </element>
-    <element id="Bundle.entry:SubstanceDefinition.resource">
+    <element id="Bundle.entry:SubstanceDefinition-component-substance.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
       <type>
