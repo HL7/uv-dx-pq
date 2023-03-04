@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="ObservationDefinition-stability-test-method-dxpq"/>
+    <id value="ObservationDefinition-stability-test-definition-dxpq"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2023-01-24T18:19:04.090+00:00"/>
         <source value="#exYJ7u18zlv0zZQN"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-stability-test-method-dxpq"/>
-    <name value="ObservationDefinitionStabilityTestMethodDxPq"/>
-    <title value="ObservationDefinition - Stability Test Method dx-PQ"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-stability-test-definition-dxpq"/>
+    <name value="ObservationDefinitionStabilityTestDefinitionDxPq"/>
+    <title value="ObservationDefinition - Stability Test Definition dx-PQ"/>
     <status value="active"/>
     <description value="Section 11 - Stability Study"/>
     <fhirVersion value="5.0.0-snapshot3"/>

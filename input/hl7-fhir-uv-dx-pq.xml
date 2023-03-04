@@ -568,18 +568,28 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/ObservationDefinition-stability-test-method-dxpq"/>
-                <display value="ObservationDefinition - Stability Test Method dx-PQ"/>
+                <reference value="StructureDefinition/ObservationDefinition-stability-test-definition-dxpq"/>
+                <display value="ObservationDefinition - Stability Test Definition dx-PQ"/>
             </reference>
-            <name value="ObservationDefinition - Stability Test Method dx-PQ"/>
-            <description value="ObservationDefinition - Stability Test Method dx-PQ"/>
+            <name value="ObservationDefinition - Stability Test Definition dx-PQ"/>
+            <description value="ObservationDefinition - Stability Test Definition dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
+                <display value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
+            </reference>
+            <name value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
+            <description value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-validation-test-dxpq"/>
-                <display value="ObservationDefinition - Validation Testdx-PQ"/>
+                <display value="ObservationDefinition - Validation Test dx-PQ"/>
             </reference>
             <name value="ObservationDefinition - Validation Test dx-PQ"/>
             <description value="ObservationDefinition - Validation Protocol dx-PQ"/>
