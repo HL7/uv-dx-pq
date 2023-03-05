@@ -656,11 +656,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Substance-reference-standard-dxpq"/>
-                <display value="Substance - Reference Standard dx-PQ"/>
+                <reference value="StructureDefinition/Substance-dxpq"/>
+                <display value="Substance - dx-PQ"/>
             </reference>
-            <name value="Substance - Reference Standard dx-PQ"/>
-            <description value="Substance - Reference Standard dx-PQ"/>
+            <name value="Substance - dx-PQ"/>
+            <description value="Substance - dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="b2-comp"/>
         </resource>
