@@ -90,16 +90,6 @@
         <grouping id="examples1">
             <name value="Examples"/>
         </grouping>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
-                <display value="DiagnosticReportStabilityStudyResultsDxPq"/>
-            </reference>
-            <name value="DiagnosticReport - Stability Study Results dx-PQ"/>
-            <description value="DiagnosticReport - Stability Study Results dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
         
         <resource>
             <reference>
@@ -144,6 +134,106 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>   
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ResearchStudy-stability-dxpq"/>
+                <display value="ResearchStudyStabilityDxPq"/>
+            </reference>
+            <name value="ResearchStudy - Stability dx-PQ"/>
+            <description value="ResearchStudy - Stability dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
+                <display value="PlanDefinitionStabilityStudyProtocolDxPq"/>
+            </reference>
+            <name value="PlanDefinition - Stability Study Protocol dx-PQ"/>
+            <description value="PlanDefinition - Stability Study Protocol dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+                <display value="DiagnosticReportStabilityStudyResultsDxPq"/>
+            </reference>
+            <name value="DiagnosticReport - Stability Study Results dx-PQ"/>
+            <description value="DiagnosticReport - Stability Study Results dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ObservationDefinition-stability-test-definition-dxpq"/>
+                <display value="ObservationDefinition - Stability Test Definition dx-PQ"/>
+            </reference>
+            <name value="ObservationDefinition - Stability Test Definition dx-PQ"/>
+            <description value="ObservationDefinition - Stability Test Definition dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
+                <display value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
+            </reference>
+            <name value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
+            <description value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-stability-study-test-result-dxpq"/>
+                <display value="ObservationStabilityStudyTestResultDxPq"/>
+            </reference>
+            <name value="Observation - Stability Study Test Result dx-PQ"/>
+            <description value="Observation - Stability Study Test Result dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/Observation-stability-study-test-result-dxpq-ex1"/></reference>
+            <name value="Observation - Stability Study Test Result dx-PQ - Example 1"/>
+            <description value="Observation - Stability Study Test Result dx-PQ: Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-stability-study-test-result-dxpq"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+                <display value="SpecimenDefinition - Stability dx-PQ"/>
+            </reference>
+            <name value="SpecimenDefinition - Stability dx-PQ"/>
+            <description value="TBD"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-stability-dxpq"/>
+                <display value="Specimen - Stability dx-PQ"/>
+            </reference>
+            <name value="Specimen - Stability dx-PQ"/>
+            <description value="TBD"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        
+        
+        
         
         <resource>
             <reference>
@@ -454,25 +544,7 @@
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-process-validation-protocol-dxpq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-stability-study-test-result-dxpq"/>
-                <display value="ObservationStabilityStudyTestResultDxPq"/>
-            </reference>
-            <name value="Observation - Stability Study Test Result dx-PQ"/>
-            <description value="Observation - Stability Study Test Result dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Observation-stability-study-test-result-dxpq-ex1"/></reference>
-            <name value="Observation - Stability Study Test Result dx-PQ - Example 1"/>
-            <description value="Observation - Stability Study Test Result dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-stability-study-test-result-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Organization-dxpq"/>
@@ -562,26 +634,7 @@
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
-                <display value="PlanDefinitionStabilityStudyProtocolDxPq"/>
-            </reference>
-            <name value="PlanDefinition - Stability Study Protocol dx-PQ"/>
-            <description value="PlanDefinition - Stability Study Protocol dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ResearchStudy-stability-dxpq"/>
-                <display value="ResearchStudyStabilityDxPq"/>
-            </reference>
-            <name value="ResearchStudy - Stability dx-PQ"/>
-            <description value="ResearchStudy - Stability dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/DocumentReference-process-flow-diagram-dxpq"/>
@@ -611,26 +664,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b2-comp"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-stability-test-definition-dxpq"/>
-                <display value="ObservationDefinition - Stability Test Definition dx-PQ"/>
-            </reference>
-            <name value="ObservationDefinition - Stability Test Definition dx-PQ"/>
-            <description value="ObservationDefinition - Stability Test Definition dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
-                <display value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            </reference>
-            <name value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            <description value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-validation-test-dxpq"/>
@@ -641,16 +675,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
-                <display value="SpecimenDefinition - Stability dx-PQ"/>
-            </reference>
-            <name value="SpecimenDefinition - Stability dx-PQ"/>
-            <description value="TBD"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
@@ -661,16 +686,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b5-mnf"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Specimen-stability-dxpq"/>
-                <display value="Specimen - Stability dx-PQ"/>
-            </reference>
-            <name value="Specimen - Stability dx-PQ"/>
-            <description value="TBD"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Ingredient-dxpq"/>
