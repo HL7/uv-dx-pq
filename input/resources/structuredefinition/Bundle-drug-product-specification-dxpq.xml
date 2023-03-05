@@ -19,28 +19,23 @@
     <element id="Bundle">
       <path value="Bundle"/>
     </element>
-
     <element id="Bundle.identifier">
       <path value="Bundle.identifier"/>
       <mustSupport value="true"/>
     </element>
-    
     <element id="Bundle.type">
       <path value="Bundle.type"/>
       <short value="collection"/>
       <fixedCode value="collection"/>
       <mustSupport value="true"/>
     </element>
-    
     <element id="Bundle.timestamp">
       <path value="Bundle.timestamp"/>
-      <min value="1"/>
       <mustSupport value="true"/>
     </element>
-    
+ 
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
-      
       <slicing>
         <discriminator>
           <type value="profile"/>
@@ -55,16 +50,12 @@
     <element id="Bundle.entry:DP-Spec">
       <path value="Bundle.entry"/>
       <sliceName value="DP-Spec"/>
-      <min value="1"/>
-      <max value="1"/>
     </element>
     <element id="Bundle.entry:DP-Spec.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-      <min value="1"/>
     </element>
     <element id="Bundle.entry:DP-Spec.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
       <type>
         <code value="PlanDefinition"/>
         <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
@@ -77,11 +68,9 @@
     </element>
     <element id="Bundle.entry:Acceptance-criteria.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-      <min value="1"/>
     </element>
     <element id="Bundle.entry:Acceptance-criteria.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
       <type>
         <code value="ObservationDefinition"/>
         <profile
@@ -95,11 +84,9 @@
     </element>
     <element id="Bundle.entry:MedicinalProductDefinition.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-      <min value="1"/>
     </element>
     <element id="Bundle.entry:MedicinalProductDefinition.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
       <type>
         <code value="MedicinalProductDefinition"/>
         <profile
@@ -114,11 +101,9 @@
     </element>
     <element id="Bundle.entry:Ingredient.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-      <min value="1"/>
     </element>
     <element id="Bundle.entry:Ingredient.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
       <type>
         <code value="Ingredient"/>
         <profile
@@ -132,11 +117,9 @@
     </element>
     <element id="Bundle.entry:Component-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-      <min value="1"/>
     </element>
     <element id="Bundle.entry:Component-substance.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
       <type>
         <code value="SubstanceDefinition"/>
         <profile
@@ -150,11 +133,9 @@
     </element>
     <element id="Bundle.entry:Organization.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-      <min value="1"/>
     </element>
     <element id="Bundle.entry:Organization.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
       <type>
         <code value="Organization"/>
         <profile
