@@ -637,25 +637,6 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/DocumentReference-process-flow-diagram-dxpq"/>
-                <display value="DocumentReferenceProcessFlowDiagramDxPq"/>
-            </reference>
-            <name value="DocumentReference - Process Flow Diagram dxPQ"/>
-            <description value="DocumentReference - Process Flow Diagram dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b5-mnf"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/></reference>
-            <name value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
-            <description value="DocumentReference - Process Flow Diagram dxPQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-process-flow-diagram-dxpq"/>
-            <groupingId value="b5-mnf"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Substance-dxpq"/>
                 <display value="Substance - dx-PQ"/>
             </reference>
