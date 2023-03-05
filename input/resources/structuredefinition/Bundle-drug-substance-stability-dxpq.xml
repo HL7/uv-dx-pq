@@ -87,15 +87,15 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:SpecimenDefinition">
+    <element id="Bundle.entry:SpecimenStorage">
       <path value="Bundle.entry"/>
-      <sliceName value="SpecimenDefinition"/>
+      <sliceName value="SpecimenStorage"/>
     </element>
-    <element id="Bundle.entry:SpecimenDefinition.fullUrl">
+    <element id="Bundle.entry:SpecimenStorage.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
       <min value="1"/>
     </element>
-    <element id="Bundle.entry:SpecimenDefinition.resource">
+    <element id="Bundle.entry:SpecimenStorage.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
       <type>
