@@ -125,7 +125,7 @@
     
     <element id="Bundle.entry:ActivityDefinition">
       <path value="Bundle.entry"/>
-      <sliceName value="SpecimenDefinition"/>
+      <sliceName value="ActivityDefinition"/>
     </element>
     <element id="Bundle.entry:ActivityDefinition.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
@@ -213,15 +213,15 @@
       </type>
     </element>
   
-    <element id="Bundle.entry:Substance">
+    <element id="Bundle.entry:actual-batch-substance">
       <path value="Bundle.entry"/>
-      <sliceName value="Substance"/>
+      <sliceName value="actual-batch-substance"/>
     </element>
-    <element id="Bundle.entry:Substance.fullUrl">
+    <element id="Bundle.entry:actual-batch-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
       <min value="1"/>
     </element>
-    <element id="Bundle.entry:Substance.resource">
+    <element id="Bundle.entry:actual-batch-substance.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
       <type>

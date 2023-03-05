@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Substance-reference-standard-dxpq"/>
-    <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-17T17:02:45.829+00:00"/>
-        <source value="#7y6lvlws0JdIQdYC"/>
-    </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-reference-standard-dxpq"/>
-    <name value="SubstanceReferenceStandardDxPq"/>
-    <title value="Substance - Reference Standard dx-PQ"/>
+    <id value="Substance-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+    <name value="SubstanceDxPq"/>
+    <title value="Substance - dx-PQ"/>
     <status value="active"/>
     <description value="Section 2.2 - Reference Standard Substance"/>
     <fhirVersion value="5.0.0-snapshot3"/>
