@@ -48,7 +48,7 @@
         </discriminator>
         <rules value="closed"/>
       </slicing>
-      <min value="7"/>
+      <min value="6"/>
       <mustSupport value="true"/>
     </element>
     
@@ -93,7 +93,7 @@
       <path value="Bundle.entry"/>
       <sliceName value="MedicinalProductDefinition"/>
     </element>
-    <element id="Bundle.entry:SubstanceDefinition.fullUrl">
+    <element id="Bundle.entry:MedicinalProductDefinition.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
       <min value="1"/>
     </element>
