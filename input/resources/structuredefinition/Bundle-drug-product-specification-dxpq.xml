@@ -43,7 +43,7 @@
         </discriminator>
         <rules value="closed"/>
       </slicing>
-      <min value="6"/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     
