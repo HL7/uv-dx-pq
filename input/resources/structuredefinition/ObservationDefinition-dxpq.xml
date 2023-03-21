@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="ObservationDefinition-dxpq.xml"/>
+    <id value="ObservationDefinition-dxpq"/>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-dxpq"/>
     <name value="ObservationDefinitionDxPq"/>
     <title value="ObservationDefinition - dx-PQ"/>
