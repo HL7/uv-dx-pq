@@ -414,9 +414,5 @@
             </code> 
             <value value="version"/> 
         </parameter> 
-        <parameter>
-            <code value="copyrightyear"/>
-            <value value="2020+"/>
-        </parameter>
     </definition>
 </ImplementationGuide>
