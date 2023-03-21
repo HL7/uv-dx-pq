@@ -2,11 +2,11 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="ObservationDefinition-dxpq.xml"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-dxpq.xml"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-dxpq"/>
     <name value="ObservationDefinitionDxPq"/>
     <title value="ObservationDefinition - dx-PQ"/>
     <status value="active"/>
-    <description value="Stability Study"/>
+    <description value="TBD"/>
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="resource"/>
     <abstract value="false"/>
