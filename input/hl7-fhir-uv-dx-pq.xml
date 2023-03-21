@@ -193,6 +193,16 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-test-result-dxpq"/>
+                <display value="ObservationTestResultDxPq"/>
+            </reference>
+            <name value="Observation - Test Result dx-PQ"/>
+            <description value="Observation - Test Result dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
         
         <resource>
             <reference>
