@@ -407,13 +407,16 @@
                 <generation value="markdown"/>
             </page>
         </page>
+        <parameter> 
+            <code> 
+                <system value="http://hl7.org/fhir/guide-parameter-code"/> 
+                <code value="apply"/> 
+            </code> 
+            <value value="version"/> 
+        </parameter> 
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
-        </parameter>
-        <parameter>
-            <code value="releaselabel"/>
-            <value value="CI Build"/>
         </parameter>
     </definition>
 </ImplementationGuide>
