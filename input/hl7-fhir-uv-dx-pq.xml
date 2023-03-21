@@ -254,7 +254,7 @@
         </resource>
 
 
-
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
                 <display value="MedicationBatchInformationDxPq"/>
@@ -263,6 +263,7 @@
             <description value="Medication - Batch Information dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="b8-batchinfo"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
