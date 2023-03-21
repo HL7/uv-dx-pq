@@ -192,15 +192,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Observation-stability-study-test-result-dxpq-ex1"/></reference>
-            <name value="Observation - Stability Study Test Result dx-PQ - Example 1"/>
-            <description value="Observation - Stability Study Test Result dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-stability-study-test-result-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
+
         
         <resource>
             <reference>
@@ -269,15 +261,7 @@
         </resource>
 
 
-        <resource>
-            <reference>
-                <reference value="Observation/Observation-process-validation-protocol-dxpq-ex1"/></reference>
-            <name value="Observation - Process Validation Protocol dx-PQ - Example 1"/>
-            <description value="Observation - Process Validation Protocol dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-process-validation-protocol-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
+
 
         <resource>
             <reference>
@@ -289,27 +273,8 @@
             <exampleBoolean value="false"/>
             <groupingId value="b4-organizations"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/Organization-dxpq-ex1"/>
-                <display value="general organization"/>
-            </reference>
-            <name value="Organization - dx-PQ - Example 1"/>
-            <description value="Organization - dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
 
-        <resource>
-            <reference>
-                <reference value="PlanDefinition/PlanDefinition-analytical-process-dxpq-ex1"/></reference>
-            <name value="PlanDefinition - Analytical Process dx-PQ - Example 1"/>
-            <description value="PlanDefinition - Analytical Process dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-analytical-process-dxpq"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
+
 
         <resource>
             <reference>
