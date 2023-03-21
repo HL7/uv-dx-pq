@@ -12,6 +12,7 @@
     <name value="DataExchangeIndustryPharmaceuticalQuality"/>
     <title value="Data Exchange Industry – Pharmaceutical Quality (dx-PQ)"/>
     <status value="active"/>
+    <experimental value="false"/> 
     <publisher value="HL7 Biomedical Research and Regulation Work Group (http://www.hl7.org/Special/committees/rcrim/index.cfm)"/>
     <contact>
         <name value="HL7 International - Biomedical Research and Regulation"/>
@@ -90,7 +91,6 @@
         <grouping id="examples1">
             <name value="Examples"/>
         </grouping>
-        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
@@ -407,6 +407,12 @@
                 <generation value="markdown"/>
             </page>
         </page>
-
+        <parameter> 
+            <code> 
+                <system value="http://hl7.org/fhir/guide-parameter-code"/> 
+                <code value="apply"/> 
+            </code> 
+            <value value="version"/> 
+        </parameter> 
     </definition>
 </ImplementationGuide>
