@@ -284,26 +284,8 @@
             <exampleBoolean value="false"/>
             <groupingId value="b1-id"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-impurity-dxpq"/>
-                <display value="ObservationImpurityDxPq"/>
-            </reference>
-            <name value="Observation - Impurity dx-PQ"/>
-            <description value="Observation - Impurity dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b3-impurities"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-process-validation-protocol-dxpq"/>
-                <display value="ObservationProcessValidationProtocolDxPq"/>
-            </reference>
-            <name value="Observation - Process Validation Protocol dx-PQ"/>
-            <description value="Observation - Process Validation Protocol dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
+
+
         <resource>
             <reference>
                 <reference value="Observation/Observation-process-validation-protocol-dxpq-ex1"/></reference>
@@ -335,16 +317,7 @@
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
             <groupingId value="b4-organizations"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlanDefinition-analytical-process-dxpq"/>
-                <display value="PlanDefinitionAnalyticalProcessDxPq"/>
-            </reference>
-            <name value="PlanDefinition - Analytical Process dx-PQ"/>
-            <description value="PlanDefinition - Analytical Process dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="PlanDefinition/PlanDefinition-analytical-process-dxpq-ex1"/></reference>
@@ -354,16 +327,7 @@
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-analytical-process-dxpq"/>
             <groupingId value="b6-analytical"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlanDefinition-batch-analysis-plan-dxpq"/>
-                <display value="PlanDefinitionBatchAnalysisPlanDxPq"/>
-            </reference>
-            <name value="PlanDefinition - Batch Analysis Plan dx-PQ"/>
-            <description value="PlanDefinition - Batch Analysis Plan dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
@@ -374,35 +338,8 @@
             <exampleBoolean value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
-                <display value="PlanDefinitionMnfProcessDxPq"/>
-            </reference>
-            <name value="PlanDefinition - Manufacturing Process dx-PQ"/>
-            <description value="PlanDefinition - Manufacturing Process dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b5-mnf"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlanDefinition-process-validation-dxpq"/>
-                <display value="PlanDefinitionProcessValidationDxPq"/>
-            </reference>
-            <name value="PlanDefinition - Process Validation dx-PQ"/>
-            <description value="PlanDefinition - Process Validation dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PlanDefinition/PlanDefinition-process-validation-dxpq-ex1"/></reference>
-            <name value="PlanDefinition - Process Validation dx-PQ - Example 1"/>
-            <description value="PlanDefinition - Process Validation dx-PQ: Example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-process-validation-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
+
+
 
         <resource>
             <reference>
@@ -415,16 +352,7 @@
             <groupingId value="b2-comp"/>
         </resource>
 
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-validation-test-dxpq"/>
-                <display value="ObservationDefinition - Validation Test dx-PQ"/>
-            </reference>
-            <name value="ObservationDefinition - Validation Test dx-PQ"/>
-            <description value="ObservationDefinition - Validation Protocol dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
+
 
         <resource>
             <reference>
