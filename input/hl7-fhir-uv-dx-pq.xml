@@ -85,6 +85,9 @@
         <grouping id="b14-compatibility">
             <name value="Compatibility"/>
         </grouping>
+        <grouping id="building-blocks-1">
+            <name value="Building Blocks"/>
+        </grouping>
         <grouping id="extensions1">
             <name value="Extensions"/>
         </grouping>
@@ -170,23 +173,13 @@
         
         <resource>
             <reference>
-                <reference value="StructureDefinition/ObservationDefinition-stability-test-definition-dxpq"/>
-                <display value="ObservationDefinition - Stability Test Definition dx-PQ"/>
+                <reference value="StructureDefinition/ObservationDefinition-dxpq"/>
+                <display value="ObservationDefinition - dx-PQ"/>
             </reference>
-            <name value="ObservationDefinition - Stability Test Definition dx-PQ"/>
-            <description value="ObservationDefinition - Stability Test Definition dx-PQ"/>
+            <name value="ObservationDefinition - dx-PQ"/>
+            <description value="ObservationDefinition - dx-PQ"/>
             <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ObservationDefinition-acceptance-criteria-dxpq"/>
-                <display value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            </reference>
-            <name value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            <description value="ObservationDefinition - Acceptance Criteria dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
+            <groupingId value="building-blocks-1"/>
         </resource>
         
         <resource>
