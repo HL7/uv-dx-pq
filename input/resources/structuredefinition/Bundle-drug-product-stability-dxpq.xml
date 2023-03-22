@@ -285,5 +285,22 @@
           value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
       </type>
     </element>
+    
+    <element id="Bundle.entry:Substances">
+      <path value="Bundle.entry"/>
+      <sliceName value="Substances"/>
+    </element>
+    <element id="Bundle.entry:Substances.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:Substances.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Substance"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+      </type>
+    </element>
+    
   </differential>
 </StructureDefinition>

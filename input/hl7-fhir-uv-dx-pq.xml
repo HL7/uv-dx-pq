@@ -46,15 +46,19 @@
         <grouping id="b11-stabilitystudy">
             <name value="Stability Study"/>
         </grouping>
-        <grouping id="b4-organizations">
-            <name value="Organizations"/>
-        </grouping>
-        <grouping id="b1-id">
-            <name value="Drug Product Identification"/>
-        </grouping>
         <grouping id="b12-specification">
             <name value="Specification"/>
         </grouping>
+        <grouping id="b9-batchanalyses">
+            <name value="Batch Analysis"/>
+        </grouping>
+        <grouping id="b1-id">
+            <name value="Drug Identification"/>
+        </grouping>
+        <grouping id="b4-organizations">
+            <name value="Organizations"/>
+        </grouping>
+
         <grouping id="b8-batchinfo">
             <name value="Batch or Lot Information"/>
         </grouping>
@@ -64,12 +68,7 @@
         <grouping id="b2-comp">
             <name value="Composition"/>
         </grouping>
-        <grouping id="b3-impurities">
-            <name value="Impurities"/>
-        </grouping>
-        <grouping id="b9-batchanalyses">
-            <name value="Batch Analysis"/>
-        </grouping>
+
         <grouping id="b10-container">
             <name value="Container Closure System"/>
         </grouping>

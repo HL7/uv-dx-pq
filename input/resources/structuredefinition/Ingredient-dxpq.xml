@@ -17,6 +17,20 @@
     <element id="Ingredient">
       <path value="Ingredient"/>
    </element>
+    <element id="Ingredient.identifier">
+      <path value="Ingredient.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Ingredient.substance.code">
+      <path value="Ingredient.substance.code"/>
+      <short value="Ingredient Substance"/>
+      <type>
+        <code value="CodeableReference"/>
+        <targetProfile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
     <element id="Ingredient.substance.strength.referenceStrength">
       <path value="Ingredient.substance.strength.referenceStrength"/>
       <mustSupport value="true"/>
