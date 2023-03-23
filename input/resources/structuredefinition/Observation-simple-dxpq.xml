@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-test-result-dxpq"/>
+    <id value="Observation-simple-dxpq"/>
     <meta>
         <versionId value="5"/>
         <lastUpdated value="2022-12-21T15:45:12.730+00:00"/>
         <source value="#85sGshju1xdy9VCv"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
-    <name value="ObservationTestResultDxPq"/>
-    <title value="Observation - Test Result dx-PQ"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
+    <name value="ObservationSimpleDxPq"/>
+    <title value="Observation - Simple - dx-PQ"/>
     <status value="active"/>
     <description value="Test Result"/>
     <fhirVersion value="5.0.0-snapshot3"/>

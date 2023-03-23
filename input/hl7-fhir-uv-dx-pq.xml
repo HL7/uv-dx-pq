@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide
-    xmlns="http://hl7.org/fhir">
+<ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-uv-dx-pq"/>
     <meta>
         <versionId value="436"/>
@@ -12,8 +11,9 @@
     <name value="DataExchangeIndustryPharmaceuticalQuality"/>
     <title value="Data Exchange Industry – Pharmaceutical Quality (dx-PQ)"/>
     <status value="active"/>
-    <experimental value="false"/> 
-    <publisher value="HL7 Biomedical Research and Regulation Work Group (http://www.hl7.org/Special/committees/rcrim/index.cfm)"/>
+    <experimental value="false"/>
+    <publisher
+        value="HL7 Biomedical Research and Regulation Work Group (http://www.hl7.org/Special/committees/rcrim/index.cfm)"/>
     <contact>
         <name value="HL7 International - Biomedical Research and Regulation"/>
         <telecom>
@@ -21,7 +21,8 @@
             <value value="http://www.hl7.org/Special/committees/rcrim"/>
         </telecom>
     </contact>
-    <description value="***Content TBD***&#xA;&#xA;This IG is developed for the Data exchange industry – Pharmaceutical Quality (dx-PQ) project &#xA;* [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)&#xA;* [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)"/>
+    <description
+        value="***Content TBD***&#xA;&#xA;This IG is developed for the Data exchange industry – Pharmaceutical Quality (dx-PQ) project &#xA;* [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)&#xA;* [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)"/>
     <jurisdiction>
         <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -43,18 +44,21 @@
         <version value="5.0.0"/>
     </dependsOn>
     <definition>
-        <grouping id="b11-stabilitystudy">
-            <name value="Stability Study"/>
+        <grouping id="b1-id">
+            <name value="Drug Identification"/>
         </grouping>
         <grouping id="b12-specification">
             <name value="Specification"/>
         </grouping>
+
+        <grouping id="b11-stabilitystudy">
+            <name value="Stability Study"/>
+        </grouping>
+
         <grouping id="b9-batchanalyses">
             <name value="Batch Analysis"/>
         </grouping>
-        <grouping id="b1-id">
-            <name value="Drug Identification"/>
-        </grouping>
+
         <grouping id="b4-organizations">
             <name value="Organizations"/>
         </grouping>
@@ -93,6 +97,18 @@
         <grouping id="examples1">
             <name value="Examples"/>
         </grouping>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+                <display value="MedicinalProductDefinitionDrugProductDxPq"/>
+            </reference>
+            <name value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+            <description value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b1-id"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
@@ -103,7 +119,6 @@
             <exampleBoolean value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
-        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-specification-dxpq"/>
@@ -113,8 +128,18 @@
             <description value="Bundle – Drug Product Specification dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="b12-specification"/>
-        </resource>   
-        
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+                <display value="PlanDefinitionDrugSpecificationDxPq"/>
+            </reference>
+            <name value="PlanDefinition - Drug Specification dx-PQ"/>
+            <description value="PlanDefinition - Drug Specification dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b12-specification"/>
+        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
@@ -124,8 +149,7 @@
             <description value="Bundle – Drug Substance Stability dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>   
-        
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-stability-dxpq"/>
@@ -135,8 +159,7 @@
             <description value="Bundle – Drug Product Stability dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>   
-        
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/ResearchStudy-stability-dxpq"/>
@@ -147,7 +170,6 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
@@ -158,7 +180,6 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
@@ -169,27 +190,109 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
         <resource>
             <reference>
-                <reference value="StructureDefinition/ObservationDefinition-dxpq"/>
-                <display value="ObservationDefinition - dx-PQ"/>
+                <reference value="StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+                <display value="ActivityDefinitionStabilityTestDxPq"/>
             </reference>
-            <name value="ObservationDefinition - dx-PQ"/>
-            <description value="ObservationDefinition - dx-PQ"/>
+            <name value="ActivityDefinition - Stability Test dx-PQ"/>
+            <description value="Section 5.2 - Unit Operation/Equipment Information"/>
             <exampleBoolean value="false"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+                <display value="SpecimenDefinitionStabilityDxPq"/>
+            </reference>
+            <name value="SpecimenDefinition - Stability dx-PQ"/>
+            <description value="TBD"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
         </resource>
         
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-stability-study-test-result-dxpq"/>
-                <display value="ObservationStabilityStudyTestResultDxPq"/>
+                <reference value="StructureDefinition/Specimen-stability-dxpq"/>
+                <display value="SpecimenStabilityDxPq"/>
             </reference>
-            <name value="Observation - Stability Study Test Result dx-PQ"/>
-            <description value="Observation - Stability Study Test Result dx-PQ"/>
+            <name value="Specimen - Stability dx-PQ"/>
+            <description value="TBD"/>
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-batch-analysis-dxpq"/>
+                <display value="BundleBatchAnalysisDxPq"/>
+            </reference>
+            <name value="Bundle – Batch Analysis dx-PQ"/>
+            <description value="Bundle – Batch Analysis dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
+                <display value="MedicationBatchInformationDxPq"/>
+            </reference>
+            <name value="Medication - Batch Information dx-PQ"/>
+            <description value="Medication - Batch Information dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+                <display value="PlanDefinitionMnfProcessDxPq"/>
+            </reference>
+            <name value="PlanDefinition - Manufacturing Process dx-PQ"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Organization-dxpq"/>
+                <display value="OrganizationDxPq"/>
+            </reference>
+            <name value="Organization - dx-PQ"/>
+            <description value="Organization - dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b4-organizations"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ObservationDefinition-simple-dxpq"/>
+                <display value="ObservationDefinitionSimpleDxPq"/>
+            </reference>
+            <name value="ObservationDefinition - Simple dx-PQ"/>
+            <description value="TBD"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+                <display value="ObservationDefinitionTestMethodDxPq"/>
+            </reference>
+            <name value="ObservationDefinition - Test Method dx-PQ"/>
+            <description value="TBD"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-simple-dxpq"/>
+                <display value="ObservationSimpleDxPq"/>
+            </reference>
+            <name value="Observation - Simple dx-PQ"/>
+            <description value="Observation - Simple dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="building-blocks-1"/>
         </resource>
 
         <resource>
@@ -202,29 +305,41 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
+
+
         <resource>
             <reference>
-                <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
-                <display value="SpecimenDefinition - Stability dx-PQ"/>
+                <reference value="StructureDefinition/Ingredient-dxpq"/>
+                <display value="IngredientDxPq"/>
             </reference>
-            <name value="SpecimenDefinition - Stability dx-PQ"/>
-            <description value="TBD"/>
+            <name value="Ingredient dx-Pq"/>
+            <description value="Section 2.1 - DP Composition"/>
             <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
+            <groupingId value="building-blocks-1"/>
         </resource>
-        
         <resource>
             <reference>
-                <reference value="StructureDefinition/Specimen-stability-dxpq"/>
-                <display value="Specimen - Stability dx-PQ"/>
+                <reference value="StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+                <display value="SubstanceDefinitionComponentSubstanceDxPq"/>
             </reference>
-            <name value="Specimen - Stability dx-PQ"/>
-            <description value="TBD"/>
+            <name value="SubstanceDefinition - Component Substance dx-PQ"/>
+            <description value="Section 2.1 - DP Composition - Product Component"/>
             <exampleBoolean value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
+            <groupingId value="building-blocks-1"/>
         </resource>
- 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Substance-dxpq"/>
+                <display value="SubstanceDxPq"/>
+            </reference>
+            <name value="Substance - dx-PQ"/>
+            <description value="Substance - dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-dxpq"/>
@@ -235,7 +350,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-statistical-model-dxpq"/>
@@ -246,103 +361,6 @@
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
-                <display value="MedicationBatchInformationDxPq"/>
-            </reference>
-            <name value="Medication - Batch Information dx-PQ"/>
-            <description value="Medication - Batch Information dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b8-batchinfo"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
-                <display value="MedicinalProductDefinitionDrugProductDxPq"/>
-            </reference>
-            <name value="MedicinalProductDefinition - Drug Product dx-PQ"/>
-            <description value="MedicinalProductDefinition - Drug Product dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b1-id"/>
-        </resource>
-
-
-
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Organization-dxpq"/>
-                <display value="OrganizationDxPq"/>
-            </reference>
-            <name value="Organization - dx-PQ"/>
-            <description value="Organization - dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-
-
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
-                <display value="PlanDefinitionDrugSpecificationDxPq"/>
-            </reference>
-            <name value="PlanDefinition - Drug Specification dx-PQ"/>
-            <description value="PlanDefinition - Drug Specification dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b12-specification"/>
-        </resource>
-
-
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Substance-dxpq"/>
-                <display value="Substance - dx-PQ"/>
-            </reference>
-            <name value="Substance - dx-PQ"/>
-            <description value="Substance - dx-PQ"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b2-comp"/>
-        </resource>
-
-
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
-                <display value="ActivityDefinition - Stability Test dx-PQ"/>
-            </reference>
-            <name value="ActivityDefinition - Stability Test dx-PQ"/>
-            <description value="Section 5.2 - Unit Operation/Equipment Information"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b5-mnf"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Ingredient-dxpq"/>
-                <display value="Ingredient dx-Pq"/>
-            </reference>
-            <name value="Ingredient dx-Pq"/>
-            <description value="Section 2.1 - DP Composition"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b2-comp"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
-                <display value="SubstanceDefinition - Component Substance dx-PQ"/>
-            </reference>
-            <name value="SubstanceDefinition - Component Substance dx-PQ"/>
-            <description value="Section 2.1 - DP Composition - Product Component"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="b2-comp"/>
-        </resource>
-
 
         <page>
             <name value="index.html"/>
@@ -374,12 +392,12 @@
                 <generation value="markdown"/>
             </page>
         </page>
-        <parameter> 
-            <code> 
-                <system value="http://hl7.org/fhir/guide-parameter-code"/> 
-                <code value="apply"/> 
-            </code> 
-            <value value="version"/> 
-        </parameter> 
+        <parameter>
+            <code>
+                <system value="http://hl7.org/fhir/guide-parameter-code"/>
+                <code value="apply"/>
+            </code>
+            <value value="version"/>
+        </parameter>
     </definition>
 </ImplementationGuide>

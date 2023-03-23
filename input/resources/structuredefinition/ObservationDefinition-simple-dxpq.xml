@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="ObservationDefinition-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-dxpq"/>
-    <name value="ObservationDefinitionDxPq"/>
-    <title value="ObservationDefinition - dx-PQ"/>
+    <id value="ObservationDefinition-simple-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+    <name value="ObservationDefinitionSimpleDxPq"/>
+    <title value="ObservationDefinition - Simple dx-PQ"/>
     <status value="active"/>
     <description value="TBD"/>
     <fhirVersion value="5.0.0-snapshot3"/>
