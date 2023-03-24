@@ -7,6 +7,7 @@
    </meta>
    <type value="collection"/>
    <entry>
+      <fullUrl value="http://example.org/organization/manufacturer"/> 
       <resource>
          <Organization>
             <id value="manufacturer"/>
@@ -29,6 +30,7 @@
       </resource>
    </entry>
    <entry>
+      <fullUrl value="http://example.org/organization/manufacturer2"/> 
       <resource>
          <Organization>
             <id value="manufacturer2"/>
@@ -51,6 +53,7 @@
       </resource>
    </entry>
    <entry>
+      <fullUrl value="http://example.org/organization/capManufacturer"/> 
       <resource>
          <Organization>
             <id value="capManufacturer"/>
@@ -72,6 +75,7 @@
       </resource>
    </entry>
    <entry>
+      <fullUrl value="http://example.org/organization/bottleManufacturer"/> 
       <resource>
          <Organization>
             <id value="bottleManufacturer"/>
@@ -93,6 +97,7 @@
       </resource>
    </entry>
    <entry>
+      <fullUrl value="http://example.org/organization/tester2"/> 
       <resource>
          <Organization>
             <id value="tester2"/>
@@ -114,6 +119,7 @@
       </resource>
    </entry>
    <entry>
+      <fullUrl value="http://example.org/organization/tester"/> 
       <resource>
          <Organization>
             <id value="tester"/>
