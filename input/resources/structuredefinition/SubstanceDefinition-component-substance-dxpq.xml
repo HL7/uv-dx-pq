@@ -47,8 +47,6 @@
     
     <element id="SubstanceDefinition.sourceMaterial">
       <path value="SubstanceDefinition.sourceMaterial"/>
-      <min value="1"/>
-      <max value="1"/>
       <mustSupport value="true"/>
     </element>
   </differential>
