@@ -46,14 +46,14 @@
       <mustSupport value="true"/>
     </element>
 
-    <element id="Bundle.entry:ProductManufacturer">
+    <element id="Bundle.entry:AllOrganizations">
       <path value="Bundle.entry"/>
-      <sliceName value="Product-Manufacturer"/>
+      <sliceName value="AllOrganizations"/>
     </element>
-    <element id="Bundle.entry:ProductManufacturer.fullUrl">
+    <element id="Bundle.entry:AllOrganizations.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
     </element>
-    <element id="Bundle.entry:ProductManufacturer.resource">
+    <element id="Bundle.entry:AllOrganizations.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Organization"/>
@@ -62,20 +62,6 @@
       </type>
     </element>
 
-    <element id="Bundle.entry:SubstanceManufacturer">
-      <path value="Bundle.entry"/>
-      <sliceName value="Substance-Manufacturer"/>
-    </element>
-    <element id="Bundle.entry:SubstanceManufacturer.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element>
-    <element id="Bundle.entry:SubstanceManufacturer.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Organization"/>
-        <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
-      </type>
-    </element>
+
   </differential>
 </StructureDefinition>
