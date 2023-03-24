@@ -265,8 +265,8 @@
         </resource>     
         <resource>
             <reference>
-                <reference value="Bundle/bundle-organizations-dxpq-ex1"/></reference>
-            <name value="Bundle-organizations-dxpq-ex1"/>
+                <reference value="bundle/bundle-organizations-dxpq-ex1"/></reference>
+            <name value="bundle-organizations-dxpq-ex1"/>
             <description value="Bundle - Organizations - Example 1"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
