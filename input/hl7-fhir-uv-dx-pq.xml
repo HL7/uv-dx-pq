@@ -265,7 +265,7 @@
         </resource>     
         <resource>
             <reference>
-                <reference value="bundle/bundle-organizations-dxpq-ex1"/></reference>
+                <reference value="Bundle/bundle-organizations-dxpq-ex1"/></reference>
             <name value="Bundle-organizations-dxpq-ex1"/>
             <description value="Bundle - Organizations - Example 1"/>
             <exampleBoolean value="false"/>
