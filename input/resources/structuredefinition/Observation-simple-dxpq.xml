@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Observation-simple-dxpq"/>
-    <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-12-21T15:45:12.730+00:00"/>
-        <source value="#85sGshju1xdy9VCv"/>
-    </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
     <name value="ObservationSimpleDxPq"/>
     <title value="Observation - Simple - dx-PQ"/>
@@ -36,6 +31,42 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <type>
+                <code value="string"/>
+            </type>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <type>
+                <code value="integer"/>
+            </type>
+            <type>
+                <code value="Range"/>
+            </type>
+            <type>
+                <code value="Ratio"/>
+            </type>
+            <type>
+                <code value="SampledData"/>
+            </type>
+            <type>
+                <code value="time"/>
+            </type>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <type>
+                <code value="Period"/>
+            </type>
+            <type>
+                <code value="Attachment"/>
+            </type>
             <mustSupport value="true"/>
         </element>
     </differential>
