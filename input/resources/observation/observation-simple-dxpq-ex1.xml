@@ -2,7 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
     <id value="observation-simple-dxpq-ex1"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/observation-simple-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
     </meta>
     <instantiatesReference>
         <reference value="ObservationDefinition/Description"/>
