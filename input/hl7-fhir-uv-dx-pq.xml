@@ -274,6 +274,15 @@
             <exampleBoolean value="false"/>
             <groupingId value="b4-organizations"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/Organization-dxpq-ex1"/></reference>
+            <name value="Organization-dxpq-ex1"/>
+            <description value="Organization - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+            <groupingId value="b4-organizations"/>     
+        </resource>
         
         <resource>
             <reference>
