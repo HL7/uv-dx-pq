@@ -359,6 +359,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="SubstanceDefinition/SubstanceDefinition-component-substance-dxpq-ex1"/></reference>
+            <name value="SubstanceDefinition-component-substance-dxpq-ex1"/>
+            <description value="SubstanceDefinition - Component Substance - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+            <groupingId value="building-blocks-1"/>     
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Substance-dxpq"/>
                 <display value="SubstanceDxPq"/>
             </reference>
@@ -366,6 +375,15 @@
             <description value="Substance - dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Substance/Substance-dxpq-ex1"/></reference>
+            <name value="Substance-dxpq"/>
+            <description value="Substance - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            <groupingId value="building-blocks-1"/>     
         </resource>
 
 
