@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-test-result-dxpq-ex1"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/observation-test-result-dxpq"/>
+    </meta>
+    <instantiatesReference>
+        <reference value="ObservationDefinition/Impurities"/>
+    </instantiatesReference>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="DGP"/>
+            <display value="Impurities"/>
+        </coding>
+        <text value="Impurities"/>
+    </code>
+    <subject>
+        <reference value="Substance/actual-batch-substance"/>
+    </subject>
+    <valueQuantity>
+        <value value="0.5"/>
+        <unit value="% w/w"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="% {w/w}"/>
+    </valueQuantity>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="IMP"/>
+                <display value="Impurity"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <text value="Impurity 1"/>
+        </valueCodeableConcept>
+    </component>
+</Observation>

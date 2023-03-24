@@ -265,7 +265,7 @@
         </resource>     
         <resource>
             <reference>
-                <reference value="Bundle/Bundle-organizations-dxpq-ex1"/></reference>
+                <reference value="bundle/bundle-organizations-dxpq-ex1"/></reference>
             <name value="Bundle-organizations-dxpq-ex1"/>
             <description value="Bundle - Organizations - Example 1"/>
             <exampleBoolean value="false"/>
@@ -285,7 +285,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/Organization-dxpq-ex1"/></reference>
+                <reference value="organization/organization-dxpq-ex1"/></reference>
             <name value="Organization-dxpq-ex1"/>
             <description value="Organization - Example 1"/>
             <exampleBoolean value="false"/>
@@ -303,6 +303,9 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
+        
+        
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-test-method-dxpq"/>
@@ -313,6 +316,9 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
+        
+        
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-simple-dxpq"/>
@@ -326,6 +332,15 @@
 
         <resource>
             <reference>
+                <reference value="observation/observation-simple-dxpq-ex1"/></reference>
+            <name value="Observation-simple-dxpq-ex1"/>
+            <description value="Observation-simple-dxpq - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
+            <groupingId value="building-blocks-1"/>     
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-test-result-dxpq"/>
                 <display value="ObservationTestResultDxPq"/>
             </reference>
@@ -335,7 +350,15 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-
+        <resource>
+            <reference>
+                <reference value="observation/observation-test-result-dxpq-ex1"/></reference>
+            <name value="Observation-test-result-dxpq-ex1"/>
+            <description value="Observation-test-result-dxpq - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="building-blocks-1"/>     
+        </resource>
 
         <resource>
             <reference>
@@ -347,6 +370,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="ingredient/ingredient-dxpq-ex1"/></reference>
+            <name value="ingredient-dxpq-ex1"/>
+            <description value="Ingredient - dxpq - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
+            <groupingId value="building-blocks-1"/>     
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
@@ -359,7 +393,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="SubstanceDefinition/SubstanceDefinition-component-substance-dxpq-ex1"/></reference>
+                <reference value="substancedefinition/substancedefinition-component-substance-dxpq-ex1"/></reference>
             <name value="SubstanceDefinition-component-substance-dxpq-ex1"/>
             <description value="SubstanceDefinition - Component Substance - Example 1"/>
             <exampleBoolean value="false"/>
@@ -378,7 +412,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Substance/Substance-dxpq-ex1"/></reference>
+                <reference value="substance/substance-dxpq-ex1"/></reference>
             <name value="Substance-dxpq"/>
             <description value="Substance - Example 1"/>
             <exampleBoolean value="false"/>

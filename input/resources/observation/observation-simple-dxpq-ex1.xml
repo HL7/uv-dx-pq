@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-simple-dxpq-ex1"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/observation-simple-dxpq"/>
+    </meta>
+    <instantiatesReference>
+        <reference value="ObservationDefinition/Description"/>
+    </instantiatesReference>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="XXX"/>
+            <display value="Description"/>
+        </coding>
+        <text value="Description"/>
+    </code>
+    <subject>
+        <reference value="Substance/actual-batch-substance"/>
+    </subject>
+    <valueCodeableConcept>
+        <text value="Pass"/>
+    </valueCodeableConcept>
+</Observation>
