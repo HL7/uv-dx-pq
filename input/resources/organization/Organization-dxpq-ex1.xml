@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization
+    xmlns="http://hl7.org/fhir">
+    <id value="Organization-dxpq-ex1"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+    </meta>
+    <identifier>
+        <!-- FDA establishment identifier -->
+        <system value="urn:oid:2.16.840.1.113883.4.82"/>
+        <value value="3003040516"/>
+    </identifier>
+    <name value="AAA Molybdenum Products, Inc."/>
+    <contact>
+        <address>
+            <line value="7233 W 116th Pl"/>
+            <line value="Ste C"/>
+            <city value="Broomfield"/>
+            <state value="Colorado"/>
+            <postalCode value="80020"/>
+            <country value="USA"/>
+        </address>
+    </contact>
+</Organization>
