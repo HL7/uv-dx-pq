@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Bundle-organizations-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
+  <name value="BundleOrganizationsDxPq"/>
+  <title value="Bundle - Organizations dx-PQ"/>
+  <status value="active"/>
+  <description value="Bundle - Organizations dx-PQ"/>
+  <fhirVersion value="5.0.0-snapshot3"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <short value="collection"/>
+      <fixedCode value="collection"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="profile"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="closed"/>
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Bundle.entry:ProductManufacturer">
+      <path value="Bundle.entry"/>
+      <sliceName value="Product-Manufacturer"/>
+    </element>
+    <element id="Bundle.entry:ProductManufacturer.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:ProductManufacturer.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Organization"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:SubstanceManufacturer">
+      <path value="Bundle.entry"/>
+      <sliceName value="Substance-Manufacturer"/>
+    </element>
+    <element id="Bundle.entry:SubstanceManufacturer.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:SubstanceManufacturer.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Organization"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

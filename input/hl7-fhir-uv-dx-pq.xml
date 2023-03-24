@@ -255,6 +255,17 @@
         
         <resource>
             <reference>
+                <reference value="StructureDefinition/Bundle-organizations-dxpq"/>
+                <display value="BundleOrganizationsDxPq"/>
+            </reference>
+            <name value="Bundle - Organizations dx-PQ"/>
+            <description value="Bundle - Organizations dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="b4-organizations"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Organization-dxpq"/>
                 <display value="OrganizationDxPq"/>
             </reference>
