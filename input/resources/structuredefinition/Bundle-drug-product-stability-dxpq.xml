@@ -134,11 +134,10 @@
     </element>
     <element id="Bundle.entry:Stability-Test-Def.resource">
       <path value="Bundle.entry.resource"/>
-
       <type>
         <code value="ObservationDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-dxpq"/>
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
       </type>
     </element>
  
@@ -154,7 +153,7 @@
       <type>
         <code value="ObservationDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-dxpq"/>
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
       </type>
     </element>
  

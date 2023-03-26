@@ -140,11 +140,29 @@
       <type>
         <code value="ObservationDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-dxpq"
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
         />
       </type>
     </element>
 
+
+    <element id="Bundle.entry:Stability-Test-Component">
+      <path value="Bundle.entry"/>
+      <sliceName value="Stability-Test-Def"/>
+    </element>
+    <element id="Bundle.entry:Stability-Test-Component.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:Stability-Test-Component.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="ObservationDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+        />
+      </type>
+    </element>
+    
     <element id="Bundle.entry:Acceptance-criteria">
       <path value="Bundle.entry"/>
       <sliceName value="Acceptance-criteria"/>
