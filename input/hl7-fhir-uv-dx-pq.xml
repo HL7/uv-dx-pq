@@ -285,7 +285,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b4-organizations"/>
         </resource>
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="Bundle/Bundle-organizations-dxpq-ex1"/>
             </reference>
@@ -353,7 +353,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
+                />
             </reference>
             <name value="observationdefinition-test-method-dxpq-ex1"/>
             <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
@@ -374,16 +375,18 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        <!--
+
         <resource>
             <reference>
-                <reference value="Observation/observation-simple-dxpq-ex1"/></reference>
+                <reference value="Observation/observation-simple-dxpq-ex1"/>
+            </reference>
             <name value="Observation-simple-dxpq-ex1"/>
             <description value="Observation-simple-dxpq - Example 1"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
-            <groupingId value="building-blocks-1"/>     
-        </resource>-->
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-test-result-dxpq"/>
@@ -455,15 +458,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        <!--        <resource>
+        <resource>
             <reference>
-                <reference value="Substance/substance-dxpq-ex1"/></reference>
+                <reference value="Substance/substance-dxpq-ex1"/>
+            </reference>
             <name value="Substance-dxpq"/>
             <description value="Substance - Example 1"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
-            <groupingId value="building-blocks-1"/>     
-        </resource>-->
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
 
         <resource>
@@ -496,8 +501,8 @@
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
-        
+
+
 
         <page>
             <name value="index.html"/>
