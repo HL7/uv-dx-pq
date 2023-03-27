@@ -18,7 +18,9 @@
         <text value="Visual inspection"/>
     </method>
     <qualifiedValue>
-        <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+<!--        Removed Bundle example extension-->
+<!--<extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
             <valueString value="A white to brown powder"/>
         </extension>
     </qualifiedValue>

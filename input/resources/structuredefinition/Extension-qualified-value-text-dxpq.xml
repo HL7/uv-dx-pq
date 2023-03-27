@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-qualified-value-text-dxpq"/>
-    <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-01-11T01:26:12.226+00:00"/>
-        <source value="#EggLPtX5dJNcZGt5"/>
-    </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq"/>
     <name value="ExtensionQualifiedValueTextDxPq"/>
     <title value="Extension - Qualified Value Text dx-PQ"/>

@@ -454,7 +454,16 @@
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-qualified-value-text-dxpq"/>
+                <display value="ExtensionQualifiedValueTextDxPq"/>
+            </reference>
+            <name value="Extension - Qualified Value Text dx-PQ"/>
+            <description value="Extension - Qualified Value Text dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-statistical-model-dxpq"/>
@@ -465,6 +474,8 @@
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        
+        
 
         <page>
             <name value="index.html"/>
