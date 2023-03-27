@@ -307,6 +307,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+            </reference>
+            <name value="observationdefinition-simple-dxpq-ex1"/>
+            <description value="ObservationDefinition - Simple dxPQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
         <resource>
             <reference>
@@ -318,7 +329,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            </reference>
+            <name value="observationdefinition-test-method-dxpq-ex1"/>
+            <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
 
         <resource>
