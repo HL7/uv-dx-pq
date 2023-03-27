@@ -444,7 +444,7 @@
                 <reference
                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
             </reference>
-            <name value="SubstanceDefinition-component-substance-dxpq-ex1"/>
+            <name value="substancedefinition-component-substance-dxpq-ex1"/>
             <description value="SubstanceDefinition - Component Substance - Example 1"/>
             <exampleBoolean value="false"/>
             <exampleCanonical
