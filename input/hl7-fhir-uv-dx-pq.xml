@@ -439,15 +439,18 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        <!--        <resource>
+        <resource>
             <reference>
-                <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/></reference>
+                <reference
+                    value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+            </reference>
             <name value="SubstanceDefinition-component-substance-dxpq-ex1"/>
             <description value="SubstanceDefinition - Component Substance - Example 1"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
-            <groupingId value="building-blocks-1"/>     
-        </resource>-->
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Substance-dxpq"/>

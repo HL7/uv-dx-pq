@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SubstanceDefinition xmlns="http://hl7.org/fhir">
+<Substance xmlns="http://hl7.org/fhir">
     <id value="substance-dxpq-ex1"/>
+    <!--    <id value="actual-batch-substance"/>-->
     <meta>
         <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
     </meta>
-    <id value="substance1"/>
-    <manufacturer>
-        <reference value="Organization/substance-manufacturer"/>
-    </manufacturer>
-    <name>
-        <name value="Stelbatolol"/>
-    </name>
-</SubstanceDefinition>
+    <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+        <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">
+            <valueDateTime value="2019-09-08"/>
+            <!-- #173 -->
+        </extension>
+        <extension url="http://accumulus.org/fhir/extension/batchRetestDate">
+            <valueDateTime value="2022-09-08"/>
+            <!-- #221 -->
+        </extension>
+        <extension url="manufacturingDate">
+            <valueDateTime value="2019-09-07"/>
+            <!-- #159 -->
+        </extension>
+        <extension url="batchQuantity">
+            <!-- #157 -->
+            <valueQuantity>
+                <value value="5"/>
+                <unit value="kg"/>
+                <!-- #158 -->
+            </valueQuantity>
+        </extension>
+        <extension url="http://accumulus.org/fhir/extension/actualYield">
+            <valueQuantity>
+                <value value="4.8"/>
+                <unit value="kg"/>
+            </valueQuantity>
+        </extension>
+        <extension url="batchUtilization">
+            <!-- #161 -->
+            <valueCodeableConcept>
+                <coding>
+                    <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
+                        <valueString
+                            value="Comment: This has a value set defined in PQ/CMC but no code system"
+                        />
+                    </extension>
+                    <system
+                        value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                    <code value="C133991"/>
+                    <display value="Development"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="assignedManufacturer">
+            <!-- #160 -->
+            <valueReference>
+                <reference value="Organization/substance-manufacturer"/>
+            </valueReference>
+        </extension>
+    </extension>
+    <identifier>
+        <value value="CAT1"/>
+        <!-- #155 -->
+    </identifier>
+    <instance value="true"/>
+    <code>
+        <reference>
+            <reference value="SubstanceDefinition/substance1"/>
+        </reference>
+    </code>
+</Substance>
