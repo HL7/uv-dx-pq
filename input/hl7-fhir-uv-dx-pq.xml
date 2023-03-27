@@ -221,6 +221,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-stability-dxpq-ex1"/>
+            </reference>
+            <name value="specimen-stability-dxpq-ex1"/>
+            <description value="Specimen - Stability dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+            <groupingId value="b4-organizations"/>
+        </resource>
 
         <resource>
             <reference>
