@@ -308,7 +308,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
             </reference>
@@ -318,7 +318,7 @@
             <exampleCanonical
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
