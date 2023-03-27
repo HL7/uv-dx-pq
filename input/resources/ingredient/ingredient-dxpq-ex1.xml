@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Ingredient xmlns="http://hl7.org/fhir">
-    <id value="ingredient-dxpq-ex1.xml"/>
+    <id value="ingredient-dxpq-ex1"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
     </meta>
