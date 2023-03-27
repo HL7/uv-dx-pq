@@ -150,6 +150,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-drug-specification-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-drug-specification-dxpq-ex1"/>
+            <description value="PlanDefinition - Drug Specification dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+            <groupingId value="b12-specification"/>
+        </resource>
 
         <resource>
             <reference>
@@ -191,6 +202,18 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-stability-study-protocol-dxpq-ex1"/>
+            <description value="PlanDefinition - Stability Study Protocol dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
@@ -283,6 +306,17 @@
             <name value="PlanDefinition - Manufacturing Process dx-PQ"/>
             <description value="PlanDefinition - Manufacturing Process dx-PQ"/>
             <exampleBoolean value="false"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
 
