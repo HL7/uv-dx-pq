@@ -108,7 +108,18 @@
             <exampleBoolean value="false"/>
             <groupingId value="b1-id"/>
         </resource>
-
+        <resource>
+            <reference>
+                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </reference>
+            <name value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+            <groupingId value="b1-id"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
@@ -418,16 +429,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-
-        <!--        <resource>
+        <resource>
             <reference>
-                <reference value="Ingredient/ingredient-dxpq-ex1"/></reference>
+                <reference value="Ingredient/ingredient-dxpq-ex1"/>
+            </reference>
             <name value="ingredient-dxpq-ex1"/>
             <description value="Ingredient - dxpq - Example 1"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
-            <groupingId value="building-blocks-1"/>     
-        </resource>-->
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
         <resource>
             <reference>

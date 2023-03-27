@@ -6,7 +6,8 @@
     </meta>
     <status value="active"/>
     <for>
-        <reference value="MedicinalProductDefinition/product"/>
+<!--        <reference value="MedicinalProductDefinition/product"/>-->
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
     </for>
     <role>
         <coding>
@@ -18,7 +19,8 @@
     <substance>
         <code>
             <reference>
-                <reference value="SubstanceDefinition/substance1"/>
+<!--                <reference value="SubstanceDefinition/substance1"/>-->
+                <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
             </reference>
         </code>
     </substance>
