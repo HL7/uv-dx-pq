@@ -148,7 +148,7 @@
 
     <element id="Bundle.entry:Stability-Test-Component">
       <path value="Bundle.entry"/>
-      <sliceName value="Stability-Test-Def"/>
+      <sliceName value="Stability-Test-Component"/>
     </element>
     <element id="Bundle.entry:Stability-Test-Component.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
