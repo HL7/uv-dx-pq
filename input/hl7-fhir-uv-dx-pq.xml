@@ -32,7 +32,7 @@
         <text value="World"/>
     </jurisdiction>
     <packageId value="hl7.fhir.uv.dx-pq"/>
-    <fhirVersion value="5.0.0-snapshot3"/>
+    <fhirVersion value="5.0.0"/>
     <dependsOn id="hl7tx">
         <extension
             url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
