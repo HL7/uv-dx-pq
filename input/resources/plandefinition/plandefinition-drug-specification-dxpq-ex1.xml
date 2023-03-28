@@ -137,7 +137,6 @@
                 </code>
                 <definitionUri value="ObservationDefinition/WaterEnd"/>
             </action>
-            <action> </action>
         </action>
     </action>
 </PlanDefinition>
