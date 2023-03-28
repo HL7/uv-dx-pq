@@ -34,49 +34,49 @@
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/Description"/>
+                <definitionUri value="ObservationDefinition/Description"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/Identification"/>
+                <definitionUri value="ObservationDefinition/Identification"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/Assay"/>
+                <definitionUri value="ObservationDefinition/Assay"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/Degradation"/>
+                <definitionUri value="ObservationDefinition/Degradation"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/Dissolution"/>
+                <definitionUri value="ObservationDefinition/Dissolution"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/Uniformity"/>
+                <definitionUri value="ObservationDefinition/Uniformity"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/Microbiological"/>
+                <definitionUri value="ObservationDefinition/Microbiological"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/Water"/>
+                <definitionUri value="ObservationDefinition/Water"/>
             </action>
         </action>
         <action>
@@ -93,49 +93,49 @@
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/DescriptionEnd"/>
+                <definitionUri value="ObservationDefinition/DescriptionEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/IdentificationEnd"/>
+                <definitionUri value="ObservationDefinition/IdentificationEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/AssayEnd"/>
+                <definitionUri value="ObservationDefinition/AssayEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/DegradationEnd"/>
+                <definitionUri value="ObservationDefinition/DegradationEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/DissolutionEnd"/>
+                <definitionUri value="ObservationDefinition/DissolutionEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/UniformityEnd"/>
+                <definitionUri value="ObservationDefinition/UniformityEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/MicrobiologicalEnd"/>
+                <definitionUri value="ObservationDefinition/MicrobiologicalEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="ObservationDefinition/WaterEnd"/>
+                <definitionUri value="ObservationDefinition/WaterEnd"/>
             </action>
             <action> </action>
         </action>
