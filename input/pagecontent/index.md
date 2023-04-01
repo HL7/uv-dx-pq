@@ -10,7 +10,7 @@ This IG is developed for the Data Exchange Industry – Pharmaceutical Quality (
 This project aligns with BR&R’s PQ/CMC project where possible.
 
 ### Technical Overview
-This implementation guide is based upon **FHIR version 5.0.0-snapshot3** and is a Universal Realm Specification.
+This implementation guide is based upon **FHIR version 5.0.0** and is a Universal Realm Specification.
 
 ### Audience
 This guide is primarily meant for developers of structured content authoring solutions, medicinal product manufacturers who produce CMC data, and those involved in pharmacovigilance analysis. Business analysts and policy managers can also benefit from the descriptions of the CMC data model provided in this guide.
