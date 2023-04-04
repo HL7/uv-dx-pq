@@ -98,6 +98,7 @@
             <name value="Examples"/>
         </grouping>
 
+<!--Drug Identification-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
@@ -120,6 +121,7 @@
             <groupingId value="b1-id"/>
         </resource>
         
+<!--Specification -->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
@@ -130,6 +132,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-specification-dxpq"/>
@@ -140,6 +153,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
@@ -162,6 +186,7 @@
             <groupingId value="b12-specification"/>
         </resource>
 
+<!--Stability Study-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
@@ -172,6 +197,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-stability-dxpq"/>
@@ -182,6 +218,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/ResearchStudy-stability-dxpq"/>
@@ -192,6 +239,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
@@ -213,7 +271,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+    
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
@@ -224,6 +282,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
@@ -234,6 +303,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
@@ -277,7 +357,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-
+<!--Batch Analysis -->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-batch-analysis-dxpq"/>
@@ -288,6 +368,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
@@ -298,6 +389,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
+        <!--        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+            </reference>
+            <name value="plandefinition-mnf-process-dxpq-ex1"/>
+            <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
@@ -320,6 +422,7 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>-->
 
+<!--Organizations-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-organizations-dxpq"/>
@@ -364,6 +467,23 @@
             <groupingId value="b4-organizations"/>
         </resource>
 
+<!--Batch or Lot Information-->
+        
+<!--Manufacturing Process Information-->
+
+<!--Composition-->
+
+<!--Container Closure System-->
+
+<!--Analytical Methods-->
+
+<!--Batch Formula-->
+
+<!--Process Validation-->
+
+<!--Compatibility-->
+
+<!--Building Blocks-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-simple-dxpq"/>
@@ -519,7 +639,7 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-
+<!--Extensions-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-dxpq"/>
