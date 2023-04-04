@@ -6,35 +6,19 @@
             value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
         />
     </meta>
-    <name value="Assay"/>
-    <status value="active"/>
-    <code>
-        <coding>
-            <system value="http://loinc.org"/>
-            <code value="XXX"/>
-            <display value="Assay"/>
-        </coding>
-        <text value="Assay"/>
-    </code>
-    <method>
-        <text value="Assay by LC"/>
-    </method>
-    <qualifiedValue>
-        <range>
-            <low>
-                <value value="98"/>
-                <unit value="% w/w"/>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="%{w/w}"/>
-                <!-- not sure this is a correct ucum code -->
-            </low>
-            <high>
-                <value value="102"/>
-                <unit value="% w/w"/>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="%{w/w}"/>
-                <!-- not sure this is a correct ucum code -->
-            </high>
-        </range>
-    </qualifiedValue>
-</ObservationDefinition>
+        <name value="X"/>
+        <status value="active"/>
+        <category>
+            <text value="Long-term"/>
+        </category>
+        <code>
+            <text value="Battery of tests 'X' at 25°C/60% RH"/>
+        </code>
+        <specimen>
+            <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
+        </specimen>
+        <hasMember>
+            <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+        </hasMember>
+    </ObservationDefinition>
+</resource>

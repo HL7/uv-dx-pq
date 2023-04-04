@@ -4,24 +4,22 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
-    <name value="Description"/>
+    <name value="Water Content (% w/w) (Mean)"/>
     <status value="active"/>
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="XXX"/>
-            <display value="Description"/>
+            <code value="WWW"/>
+            <display value="Water Content"/>
         </coding>
-        <text value="Description"/>
+        <text value="Water Content"/>
     </code>
-    <method>
-        <text value="Visual inspection"/>
-    </method>
     <qualifiedValue>
-<!--        Removed Bundle example extension-->
-<!--<extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-            <valueString value="A white to brown powder"/>
-        </extension>
+        <range>
+            <high>
+                <value value="0.2"/>
+                <unit value="% w/w"/>
+            </high>
+        </range>
     </qualifiedValue>
 </ObservationDefinition>
