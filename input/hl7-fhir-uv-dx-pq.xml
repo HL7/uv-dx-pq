@@ -660,6 +660,16 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Extension-medication-definition-dxpq"/>
+                <display value="ExtensionMedicationDefinitionDxPq"/>
+            </reference>
+            <name value="Extension - Medication Definition dx-PQ"/>
+            <description value="Extension - Medication Definition dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-text-dxpq"/>
                 <display value="ExtensionQualifiedValueTextDxPq"/>
             </reference>
