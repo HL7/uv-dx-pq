@@ -496,7 +496,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
             </reference>
@@ -506,7 +506,7 @@
             <exampleCanonical
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="building-blocks-1"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
@@ -518,7 +518,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
                 />
@@ -529,7 +529,7 @@
             <exampleCanonical
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="building-blocks-1"/>
-        </resource>
+        </resource>-->
 
 
         <resource>
@@ -564,16 +564,17 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        <!--
+        
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-dxpq-ex1"/>
+            </reference>
             <name value="observation-test-result-dxpq-ex1"/>
             <description value="Observation-test-result-dxpq - Example 1"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="building-blocks-1"/>     
-        </resource>-->
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
         <resource>
             <reference>
