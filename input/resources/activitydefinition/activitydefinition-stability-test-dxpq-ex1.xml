@@ -12,6 +12,6 @@
     <status value="active"/>
     <!--    <observationRequirement value="ObservationDefinition/longTerm25X"/>-->
     <observationRequirement
-        value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
+        value="http://hl7.org/fhir/uv/dx-pq/observationdefinition/observationdefinition-test-method-dxpq-ex1"
     />
 </ActivityDefinition>
