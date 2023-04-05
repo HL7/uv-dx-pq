@@ -2,7 +2,7 @@
 <ActivityDefinition xmlns="http://hl7.org/fhir">
     <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
     <!--    <id value="activityLongTerm25X-3"/>-->
-    <id value="activityDefinition-stability-test-dxpq-ex1"/>
+    <id value="activitydefinition-stability-test-dxpq-ex1"/>
     <meta>
         <profile
             value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
