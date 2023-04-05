@@ -98,7 +98,7 @@
             <name value="Examples"/>
         </grouping>
 
-<!--Drug Identification-->
+        <!--Drug Identification-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
@@ -111,7 +111,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                <reference
+                    value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+                />
             </reference>
             <name value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
             <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
@@ -120,8 +122,8 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
             <groupingId value="b1-id"/>
         </resource>
-        
-<!--Specification -->
+
+        <!--Specification -->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
@@ -186,7 +188,7 @@
             <groupingId value="b12-specification"/>
         </resource>
 
-<!--Stability Study-->
+        <!--Stability Study-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
@@ -271,7 +273,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-    
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
@@ -282,9 +284,10 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        <!--        <resource>
+        <resource>
             <reference>
-                <reference value="DiagnosticReport/diagnosticreport-stability-study-results-dxpq-ex1"/>
+                <reference
+                    value="DiagnosticReport/diagnosticreport-stability-study-results-dxpq-ex1"/>
             </reference>
             <name value="diagnosticreport-stability-study-results-dxpq-ex1"/>
             <description value="DiagnosticReport - Stability Study Results dx-PQ - Example 1"/>
@@ -292,7 +295,7 @@
             <exampleCanonical
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
@@ -358,7 +361,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
-        
+
         <!--Batch Analysis -->
         <resource>
             <reference>
@@ -412,7 +415,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
             </reference>
@@ -424,7 +427,7 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>-->
 
-<!--Organizations-->
+        <!--Organizations-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-organizations-dxpq"/>
@@ -469,23 +472,23 @@
             <groupingId value="b4-organizations"/>
         </resource>
 
-<!--Batch or Lot Information-->
-        
-<!--Manufacturing Process Information-->
+        <!--Batch or Lot Information-->
 
-<!--Composition-->
+        <!--Manufacturing Process Information-->
 
-<!--Container Closure System-->
+        <!--Composition-->
 
-<!--Analytical Methods-->
+        <!--Container Closure System-->
 
-<!--Batch Formula-->
+        <!--Analytical Methods-->
 
-<!--Process Validation-->
+        <!--Batch Formula-->
 
-<!--Compatibility-->
+        <!--Process Validation-->
 
-<!--Building Blocks-->
+        <!--Compatibility-->
+
+        <!--Building Blocks-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-simple-dxpq"/>
@@ -564,7 +567,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-dxpq-ex1"/>
@@ -572,7 +575,8 @@
             <name value="observation-test-result-dxpq-ex1"/>
             <description value="Observation-test-result-dxpq - Example 1"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
+            <exampleCanonical
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
@@ -620,7 +624,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Substance-dxpq"/>
@@ -643,7 +647,7 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-<!--Extensions-->
+        <!--Extensions-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-dxpq"/>

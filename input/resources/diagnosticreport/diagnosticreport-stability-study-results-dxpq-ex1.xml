@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
+    <!-- <id value="studyResultsReport"/>-->
+    <id value="diagnosticreport-stability-study-results-dxpq-ex1"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://example.org/fhir/code/reportType"/>
+            <code value="111"/>
+            <display value="Stability Study Report - 18 months"/>
+        </coding>
+    </code>
+    <effectiveDateTime value="2020-12">
+        <!-- start of stability test -->
+<!--        To Fix: create extension-->
+<!--        <extension url="http://accumulus.org/fhir/extension/timePointDescription">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://example.org/fhir/code/timePointDescription"/>
+                    <code value="222"/>
+                    <display value="Delayed Start Code"/>
+                </coding>
+                <text value="Refrigerated delayed testing"/>
+            </valueCodeableConcept>
+        </extension>-->
+    </effectiveDateTime>
+    <result>
+<!--        <reference value="Observation/LongTerm25C-initial-1"/>-->
+        <reference value="Observation/observation-test-result-dxpq-ex1"/>
+    </result>
+<!--    <result>
+        <reference value="Observation/LongTerm25C-initial-2"/>
+    </result>
+    <result>
+        <reference value="Observation/LongTerm25C-initial-3"/>
+    </result>
+    <!-\- skipping middle months -\->
+    <result>
+        <reference value="Observation/LongTerm25C-18m-1"/>
+    </result>
+    <result>
+        <reference value="Observation/LongTerm25C-18m-2"/>
+    </result>
+    <result>
+        <reference value="Observation/LongTerm25C-18m-3"/>
+    </result>
+    <!-\- Accelerated -\->
+    <result>
+        <reference value="Observation/Accelerated40C-3-1"/>
+    </result>-->
+    <!-- skipping rest of Accelerated -->
+    <conclusion value="The samples have been assessed and the conclusion is..."/>
+</DiagnosticReport>
