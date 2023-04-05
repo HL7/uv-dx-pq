@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->   
     <!--        <id value="stabilityStudyProtocol"/>-->
     <id value="plandefinition-stability-study-protocol-dxpq-ex1"/>
     <meta>
@@ -53,8 +54,9 @@
                     <definitionUri value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
                 </action>
             </action>
+ <!--           
             <action>
-                <!-- 3 months -->
+                <!-\- 3 months -\->
                 <title value="3"/>
                 <timingTiming>
                     <repeat>
@@ -81,7 +83,7 @@
                 </action>
             </action>
             <action>
-                <!-- 6 months -->
+                <!-\- 6 months -\->
                 <title value="6"/>
                 <timingTiming>
                     <repeat>
@@ -108,7 +110,7 @@
                 </action>
             </action>
             <action>
-                <!-- 9 months -->
+                <!-\- 9 months -\->
                 <title value="9"/>
                 <timingTiming>
                     <repeat>
@@ -135,7 +137,7 @@
                 </action>
             </action>
             <action>
-                <!-- 12 months -->
+                <!-\- 12 months -\->
                 <title value="12"/>
                 <timingTiming>
                     <repeat>
@@ -162,7 +164,7 @@
                 </action>
             </action>
             <action>
-                <!-- 18 months -->
+                <!-\- 18 months -\->
                 <title value="18"/>
                 <timingTiming>
                     <repeat>
@@ -188,12 +190,13 @@
                     <definitionUri value="ActivityDefinition/activityLongTerm25XY-18"/>
                 </action>
             </action>
+        -->
         </action>
         <!-- end of long term -->
-        <action>
+<!--        <action>
             <title value="Accelerated"/>
             <description value="40°C/75% RH"/>
-            <!-- 0 months - but results for this are not needed, because and zero months is the same for both long term and accelerated -->
+            <!-\- 0 months - but results for this are not needed, because and zero months is the same for both long term and accelerated -\->
             <action>
                 <title value="Initial"/>
                 <timingTiming>
@@ -222,7 +225,7 @@
                 </action>
             </action>
             <action>
-                <!-- 3 months -->
+                <!-\- 3 months -\->
                 <title value="3"/>
                 <timingTiming>
                     <repeat>
@@ -249,7 +252,7 @@
                 </action>
             </action>
             <action>
-                <!-- 6 months -->
+                <!-\- 6 months -\->
                 <title value="6"/>
                 <timingTiming>
                     <repeat>
@@ -276,7 +279,7 @@
                 </action>
             </action>
             <action>
-                <!-- 9 months -->
+                <!-\- 9 months -\->
                 <title value="9"/>
                 <timingTiming>
                     <repeat>
@@ -298,12 +301,12 @@
                     </repeat>
                 </timingTiming>
                 <action>
-                    <!-- none -->
+                    <!-\- none -\->
                     <title value="-"/>
                 </action>
             </action>
             <action>
-                <!-- 12 months -->
+                <!-\- 12 months -\->
                 <title value="12"/>
                 <timingTiming>
                     <repeat>
@@ -325,12 +328,12 @@
                     </repeat>
                 </timingTiming>
                 <action>
-                    <!-- none -->
+                    <!-\- none -\->
                     <title value="-"/>
                 </action>
             </action>
             <action>
-                <!-- 18 months -->
+                <!-\- 18 months -\->
                 <title value="18"/>
                 <timingTiming>
                     <repeat>
@@ -352,11 +355,11 @@
                     </repeat>
                 </timingTiming>
                 <action>
-                    <!-- none -->
+                    <!-\- none -\->
                     <title value="-"/>
                 </action>
             </action>
-        </action>
+        </action>-->
         <!-- end of accelerated -->
     </action>
 </PlanDefinition>
