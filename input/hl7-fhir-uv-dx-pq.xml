@@ -241,7 +241,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        <!--        <resource>
+                <resource>
             <reference>
                 <reference value="ResearchStudy/researchstudy-stability-dxpq-ex1"/>
             </reference>
@@ -251,7 +251,7 @@
             <exampleCanonical
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
