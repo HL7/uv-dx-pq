@@ -496,7 +496,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-<!--        <resource>
+        <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
             </reference>
@@ -506,7 +506,7 @@
             <exampleCanonical
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="building-blocks-1"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>

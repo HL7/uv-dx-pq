@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
+    <!--    <id value="Water"/>-->
+    <id value="observationdefinition-simple-dxpq-ex1"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+        />
+    </meta>
+    <name value="Water Content (% w/w) (Mean)"/>
+    <status value="active"/>
+    <code>
+ <!--       To fix: create local code system-->
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="WWW"/>
+            <display value="Water Content"/>
+        </coding>
+        <text value="Water Content"/>
+    </code>
+    <qualifiedValue>
+        <range>
+            <high>
+                <value value="0.2"/>
+                <unit value="% w/w"/>
+            </high>
+        </range>
+    </qualifiedValue>
+</ObservationDefinition>
