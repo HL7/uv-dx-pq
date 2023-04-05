@@ -306,7 +306,7 @@
             <exampleBoolean value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
             </reference>
@@ -316,7 +316,7 @@
             <exampleCanonical
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
