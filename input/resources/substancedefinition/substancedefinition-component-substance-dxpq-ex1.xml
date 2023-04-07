@@ -8,7 +8,8 @@
         />
     </meta>
     <manufacturer>
-        <reference value="Organization/substance-manufacturer"/>
+<!--        <reference value="Organization/substance-manufacturer"/>-->
+        <reference value="http://hl7.org/fhir/uv/dx-pq/Organization/organization-dxpq-ex1"/>
     </manufacturer>
     <name>
         <name value="Stelbatolol"/>
