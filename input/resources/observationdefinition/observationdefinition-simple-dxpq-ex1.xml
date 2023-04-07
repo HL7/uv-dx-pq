@@ -13,7 +13,8 @@
     <code>
  <!--       To fix: create local code system-->
         <coding>
-            <system value="http://loinc.org"/>
+<!--            <system value="http://loinc.org"/>-->
+            <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
             <code value="WWW"/>
             <display value="Water Content"/>
         </coding>

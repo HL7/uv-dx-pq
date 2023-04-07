@@ -10,8 +10,10 @@
     <status value="final"/>
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="XXX"/>
+<!--            <system value="http://loinc.org"/>-->
+            <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
+<!--            <code value="XXX"/>-->
+            <code value="XXX-2"/>
             <display value="Description"/>
         </coding>
         <text value="Description"/>
