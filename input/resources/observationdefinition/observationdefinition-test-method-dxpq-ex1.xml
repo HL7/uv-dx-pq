@@ -17,17 +17,17 @@
         <text value="Battery of tests 'X' at 25°C/60% RH"/>
     </code>
     <specimen>
-        <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
+        <reference value="specimensefinition/specimendefinition-stability-dxpq-ex1"/>
     </specimen>
-    <hasMember>
+<!--    <hasMember>
         <reference value="ObservationDefinition/Description"/>
     </hasMember>
     <hasMember>
         <reference value="ObservationDefinition/Degradation"/>
-    </hasMember>
+    </hasMember>-->
     <hasMember>
         <!--        <reference value="ObservationDefinition/Water"/>-->
-        <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+        <reference value="observationdefinition/observationdefinition-simple-dxpq-ex1"/>
     </hasMember>
     <!-- can have others -->
 </ObservationDefinition>
