@@ -4,9 +4,9 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
     </meta>
-    <instantiatesReference>
+<!--    <instantiatesReference>
         <reference value="ObservationDefinition/Impurities"/>
-    </instantiatesReference>
+    </instantiatesReference>-->
     <status value="final"/>
     <code>
         <coding>
