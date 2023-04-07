@@ -695,7 +695,7 @@
 <!--Terminology-->
         <resource>
             <reference>
-                <reference value="Codesystem/CodeSystem-local-codes-dxpq"/>
+                <reference value="CodeSystem/CodeSystem-local-codes-dxpq"/>
                 <display value="CodeSystemLocalCodesDxPQ"/>
             </reference>
             <name value="CodeSystem - Local Codes - dx-PQ"/>
