@@ -4,7 +4,7 @@
     <!--    <id value="substance1"/>-->
     <meta>
         <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substancedefinition-component-substance-dxpq"
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
         />
     </meta>
     <manufacturer>
