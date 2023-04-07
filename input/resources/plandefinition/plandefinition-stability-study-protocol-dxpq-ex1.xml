@@ -12,8 +12,9 @@
     <status value="active"/>
     <subjectReference>
 <!--        <reference value="MedicinalProductDefinition/product"/>-->
-        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1
-            "/>
+<!--        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1
+            "/>-->
+        <reference value="http://hl7.org/fhir/uv/dx-pq/MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
     </subjectReference>
     <description value="Narrative description of Stability Study"/>
     <!-- new "tabular" style -->
