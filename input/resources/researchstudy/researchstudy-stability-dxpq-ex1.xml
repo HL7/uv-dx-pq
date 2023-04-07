@@ -109,7 +109,7 @@
         </role>
         <party>
 <!--            <reference value="Organization/tester"/>-->
-            <reference value="Organization/organization-organization-dxpq-ex1"/>
+            <reference value="Organization/organization-dxpq-ex1"/>
         </party>
     </associatedParty>
     <objective>
