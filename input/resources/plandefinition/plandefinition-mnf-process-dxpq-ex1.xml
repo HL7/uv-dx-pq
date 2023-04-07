@@ -19,6 +19,6 @@
     </type>
     <status value="active"/>
 <!--    <subjectCanonical value="MedicinalProductDefinition/product"/>-->
-    <subjectCanonical value="http://hl7.org/fhir/uv/dx-pq/medicinalproductdefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+    <subjectCanonical value="http://hl7.org/fhir/uv/dx-pq/MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
     <!-- #83 -->
 </PlanDefinition>
