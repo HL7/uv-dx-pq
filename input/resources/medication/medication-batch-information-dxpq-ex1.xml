@@ -12,7 +12,7 @@
     <code>
         <!--        <extension url="http://accumulus.org/fhir/extension/medicationDefinition">-->
         <extension
-            url="http://hl7.org/fhir/StructureDefinition/extension-medication-definition-dxpq">
+            url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
             <valueReference>
                 <!-- todo consider change this be the MID? -->
                 <!--                <reference value="MedicinalProductDefinition/product"/>-->
@@ -24,7 +24,7 @@
     </code>
     <batch>
         <!--        <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">-->
-        <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+        <extension url="http://hl7.org/fhir/StructureDefinition/Medication-manufacturingBatch">
             <!-- <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                 <valueDateTime value="2019-09-08"/>
