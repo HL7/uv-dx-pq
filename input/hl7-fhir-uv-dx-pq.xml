@@ -94,6 +94,9 @@
         <grouping id="extensions1">
             <name value="Extensions"/>
         </grouping>
+        <grouping id="term">
+            <name value="Terminology"/>
+        </grouping>
         <grouping id="examples1">
             <name value="Examples"/>
         </grouping>
@@ -689,8 +692,19 @@
             <groupingId value="extensions1"/>
         </resource>
 
-
-
+<!--Terminology-->
+        <resource>
+            <reference>
+                <reference value="Codesystem/CodeSystem-local-codes-dxpq"/>
+                <display value="CodeSystemLocalCodesDxPQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - dx-PQ"/>
+            <description value="CodeSystem - Local Codes - dx-PQ"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="term"/>
+        </resource>
+        
+<!-- Narrative pages      --> 
         <page>
             <name value="index.html"/>
             <title value="Home Page"/>
