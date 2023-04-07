@@ -10,25 +10,30 @@
     <status value="final"/>
     <code>
         <coding>
-            <system value="http://loinc.org"/>
+<!--            <system value="http://loinc.org"/>-->
+            <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
             <code value="DGP"/>
-            <display value="Impurities"/>
+<!--            <display value="Impurities"/>-->
+            <display value="Degradation Product"/>         
         </coding>
         <text value="Impurities"/>
     </code>
     <subject>
-        <reference value="Substance/actual-batch-substance"/>
+<!--        <reference value="Substance/actual-batch-substance"/>-->
+        <reference value="Substance/substance-dxpq-ex1"/>
     </subject>
     <valueQuantity>
         <value value="0.5"/>
         <unit value="% w/w"/>
-        <system value="http://unitsofmeasure.org"/>
+<!--        <system value="http://unitsofmeasure.org"/>-->
+        <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
         <code value="% {w/w}"/>
     </valueQuantity>
     <component>
         <code>
             <coding>
-                <system value="http://loinc.org"/>
+<!--                <system value="http://loinc.org"/>-->
+                <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
                 <code value="IMP"/>
                 <display value="Impurity"/>
             </coding>
