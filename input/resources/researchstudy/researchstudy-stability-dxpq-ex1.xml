@@ -102,7 +102,11 @@
     <associatedParty>
         <role>
             <coding>
-                <system value="http://hl7.org/fhir/research-study-classifiers"/>
+<!--                <system value="http://hl7.org/fhir/research-study-classifiers"/>
+                <code value="primary-investigator"/>
+                <display value="Primary Investigator"/>-->
+<!--                TEMP-->
+                <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
                 <code value="primary-investigator"/>
                 <display value="Primary Investigator"/>
             </coding>

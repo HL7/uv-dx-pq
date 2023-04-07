@@ -101,5 +101,10 @@
     <code value="ZZZX"/>
     <display value="DissolutionQuantity"/>
   </concept>
-
+  
+  <concept>
+  <code value="primary-investigator"/>
+  <display value="Primary Investigator"/>
+  </concept>
+  
 </CodeSystem>
