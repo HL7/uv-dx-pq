@@ -27,7 +27,8 @@
         <unit value="% w/w"/>
 <!--        <system value="http://unitsofmeasure.org"/>-->
         <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
-        <code value="% {w/w}"/>
+<!--        <code value="% {w/w}"/>-->
+        <code value="% w/w"/>
     </valueQuantity>
     <component>
         <code>
