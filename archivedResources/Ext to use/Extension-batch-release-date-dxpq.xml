@@ -6,7 +6,7 @@
     <name value="ExtensionBatchReleaseDateDxPq"/>
     <title value="Extension - Batch Release Date dx-PQ"/>
     <status value="active"/>
-    <fhirVersion value="5.0.0-snapshot3"/>
+<!--    <fhirVersion value="5.0.0-snapshot3"/>-->
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
