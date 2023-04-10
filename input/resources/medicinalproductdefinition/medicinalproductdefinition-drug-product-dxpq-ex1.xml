@@ -25,7 +25,7 @@
         <productName value="Stelbat Tablets, 20mg"/>
         <type>
             <coding>
-                <system value="http://example.org/fhir/code/productNameType"/>
+                            <system value="http://accumulus.org/fhir/code/productNameType"/>
                 <code value="1234"/>
                 <display value="Proprietary"/>
             </coding>
@@ -36,7 +36,7 @@
                 <coding>
                     <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
                     <code value="StrengthPart"/>
-                    <display value="Strenth part"/>
+                				<display value="Strength part"/>
                 </coding>
             </type>
         </part>
