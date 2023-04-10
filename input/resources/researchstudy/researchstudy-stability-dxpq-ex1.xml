@@ -3,10 +3,9 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
     <!--    <id value="study-id"/>-->
     <id value="researchstudy-stability-dxpq-ex1"/>
-    <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
-    </meta>
+                 <meta>
+                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
+                 </meta>
 
     <!--    <extension url="http://accumulus.org/fhir/extension/statisticalModel">-->
     <extension
@@ -16,9 +15,7 @@
             <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then 
                             have no place to put a context. Ideally this would be a code/code pair. 
                             Code says "statistical model", code (or text) then says what it is -->
-            <text
-                value="information about statistical model utilized to interpret stability study results"
-            />
+                         <text value="information about statistical model utilized to interpret stability study results"/>
         </valueCodeableConcept>
     </extension>
     <!--    <extension url="http://accumulus.org/fhir/extension/containerOrientation">-->
@@ -46,34 +43,14 @@
     <status value="active"/>
     <primaryPurposeType>
         <!-- #219 -->
-        <text value="Text - rationale for submitting the stability data "/>
+                    <text value="Text - rationale for submitting the stability data"/>
     </primaryPurposeType>
-    <!-- new in R5 Build Sept 2022, but doesn't seem helpful for 223 -->
-    <!-- #223 -->
-    <!--studyDesign> 
-                    <text value="information about statistical model utilized to interpret stability study results"/>
-                </studyDesign-->
-    <!-- TODO this changes in newest build -->
-    <!--focus>
-                    <productCode>
-                        <extension url="http://accumulus.org/fhir/extension/medicationDefinition">
-                            <valueReference>
-                                <reference value="MedicinalProductDefinition/product">
-			                        <extension url="http://nprogram.co.uk/fhir/extension/viewer/businessName">
-			                            <valueString value="Study has this product as the focus"/>
-			                        </extension>
-								</reference>
-                            </valueReference>
-                        </extension>
-                    </productCode>
-                    <focusType>
-                        <coding>
-                            <system value="http://hl7.org/fhir/research-study-classifiers"/>
-                            <code value="medication"/>
-                            <display value="Medication"/>
-                        </coding>
-                    </focusType>
-                </focus-->
+    
+                                
+                
+                 
+                 
+                 
     <focus>
         <reference>
 <!--            <reference value="Medication/medication-actual-batch"/>-->
@@ -91,26 +68,22 @@
         </reference>
     </focus>-->
     <!-- #220 -->
-    <description
-        value="Description of the study study plan which includes tests, time points, storage conditions, method"/>
+                
+                <description value="Description of the study study plan which includes tests, time points, storage conditions, method"/>
     <period>
         <!-- #228 -->
         <start value="2020-12"/>
         <!-- #229 -->
         <end value="2022-06"/>
     </period>
-    <associatedParty>
-        <role>
-            <coding>
-<!--                <system value="http://hl7.org/fhir/research-study-classifiers"/>
-                <code value="primary-investigator"/>
-                <display value="Primary Investigator"/>-->
-<!--                TEMP-->
-                <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
-                <code value="primary-investigator"/>
-                <display value="Primary Investigator"/>
-            </coding>
-        </role>
+                <associatedParty>
+                    <role>
+                        <coding>
+                            <system value="http://hl7.org/fhir/research-study-party-role"/>
+                            <code value="primary-investigator"/>
+                            <display value="primary-investigator"/>
+                        </coding>
+                    </role>
         <party>
 <!--            <reference value="Organization/tester"/>-->
             <reference value="Organization/organization-dxpq-ex1"/>
