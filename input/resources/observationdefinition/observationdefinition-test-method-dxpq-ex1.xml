@@ -4,15 +4,11 @@
     <!--    <id value="longTerm25X"/>-->
     <id value="observationdefinition-test-method-dxpq-ex1"/>
     <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
-        />
-    </meta>
-    <name value="X"/>
-    <status value="active"/>
-    <category>
-        <text value="Long-term"/>
-    </category>
+                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+                </meta>
+                
+                <title value="X"/>
+                <status value="active"/>
     <code>
         <text value="Battery of tests 'X' at 25°C/60% RH"/>
     </code>
