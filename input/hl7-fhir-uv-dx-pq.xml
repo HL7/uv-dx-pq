@@ -651,16 +651,15 @@
         </resource>
 
         <!--Extensions-->
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
                 <display value="ExtensionBatchReleaseDateDxPq"/>
             </reference>
             <name value="Extension - Batch Release Date dx-PQ"/>
-            <description value="Extension - Batch Release Date dx-PQ"/>
             <exampleBoolean value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-dxpq"/>
