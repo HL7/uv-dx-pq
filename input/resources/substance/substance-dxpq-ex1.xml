@@ -36,13 +36,7 @@
             <!-- #161 -->
             <valueCodeableConcept>
                 <coding>
-                    <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                        <valueString
-                            value="Comment: This has a value set defined in PQ/CMC but no code system"
-                        />
-                    </extension>
-                    <system
-                        value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+				    				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                     <code value="C133991"/>
                     <display value="Development"/>
                 </coding>
