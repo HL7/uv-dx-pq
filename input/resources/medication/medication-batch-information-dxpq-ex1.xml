@@ -24,13 +24,14 @@
     </code>
     <batch>
         <!--        <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">-->
-        <extension url="http://hl7.org/fhir/StructureDefinition/Medication-batch-information-dxpq">
+        <!-- <extension
+            url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"> -->
             <!-- <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                 <valueDateTime value="2019-09-08"/>
                 <!-- #171 -->
             </extension>
-<!--            <!-\- <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">            -\->
+            <!--            <!-\- <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">            -\->
             <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">
                 <valueReference>
 <!-\-                    <reference value="Substance/actual-batch-substance"/>-\->
@@ -95,7 +96,7 @@
                     <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
                 </extension>
             </extension>-->
-        </extension>
+        <!-- </extension> -->
         <!-- #153 -->
         <lotNumber value="33445"/>
     </batch>
