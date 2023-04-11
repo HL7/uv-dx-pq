@@ -638,6 +638,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Extension-batch-retest-date-dxpq"/>
+                <display value="ExtensionBatchRetestDateDxPq"/>
+            </reference>
+            <name value="Extension - Batch Retest Date dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-dxpq"/>
                 <display value="ExtensionContainerOrientationDxPq"/>
             </reference>
@@ -676,8 +685,18 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference
+                    value="StructureDefinition/Extension-actual-yield-dxpq"/>
+                <display value="ExtensionActualYieldDxPq"/>
+            </reference>
+            <name value="Extension - Actual Yield dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
 
-<!--Terminology-->
+        <!--Terminology-->
         <resource>
             <reference>
                 <reference value="CodeSystem/CodeSystem-local-codes-dxpq"/>
@@ -688,8 +707,8 @@
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
-        
-<!-- Narrative pages      --> 
+
+        <!-- Narrative pages      --> 
         <page>
             <name value="index.html"/>
             <title value="Home Page"/>
