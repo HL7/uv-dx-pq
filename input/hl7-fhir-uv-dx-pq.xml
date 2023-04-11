@@ -627,7 +627,7 @@
         </resource>
 
         <!--Extensions-->
-<!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
                 <display value="ExtensionBatchReleaseDateDxPq"/>
@@ -635,7 +635,7 @@
             <name value="Extension - Batch Release Date dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-dxpq"/>
