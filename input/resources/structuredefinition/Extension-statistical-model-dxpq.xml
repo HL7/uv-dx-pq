@@ -11,7 +11,7 @@
     <name value="ExtensionStatisticalModelDxPq"/>
     <title value="Extension - Statistical Model dx-PQ"/>
     <status value="active"/>
-    <fhirVersion value="5.0.0-snapshot3"/>
+    <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>

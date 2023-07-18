@@ -7,7 +7,7 @@
   <title value="Specimen - Stability dx-PQ"/>
   <status value="active"/>
   <description value="A sample used for analysis."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Specimen"/>

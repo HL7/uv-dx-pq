@@ -8,7 +8,7 @@
   <title value="Bundle – Drug Product Specification dx-PQ"/>
   <status value="active"/>
   <description value="Bundle – Drug Product Specification dx-PQ"/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Bundle"/>

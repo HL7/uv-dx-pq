@@ -8,7 +8,7 @@
   <title value="SubstanceDefinition - Component Substance dx-PQ"/>
   <status value="active"/>
   <description value="Section 2.1 - DP Composition - Product Component"/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="SubstanceDefinition"/>
