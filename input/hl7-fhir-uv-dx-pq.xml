@@ -626,6 +626,39 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
+<!--New for wave 2-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/PackagedProductDefinition-dxpq"/>
+                <display value="PackagedProductDefinitionDxPq"/>
+            </reference>
+            <name value="PackagedProductDefinition - dx-PQ"/>
+            <description value="PackagedProductDefinition - dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DocumentReference-dxpq"/>
+                <display value="DocumentReferenceDxPq"/>
+            </reference>
+            <name value="DocumentReference - dx-PQ"/>
+            <description value="DocumentReference - dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DeviceDefinition-dxpq"/>
+                <display value="DeviceDefinitionDxPq"/>
+            </reference>
+            <name value="DeviceDefinition - dx-PQ"/>
+            <description value="DeviceDefinition - dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
         <!--Extensions-->
         <resource>
             <reference>
