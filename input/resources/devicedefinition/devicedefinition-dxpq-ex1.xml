@@ -5,7 +5,7 @@
 
     <meta>
         <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq"
         />
     </meta>
 
