@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference>
     <id value="documentreference-process-flow-diagram-dxpq-ex1"/>
+
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-12T17:57:08.898+00:00"/>
-        <source value="#n4xHiP0iat7deVDt"/>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq"/>
     </meta>
+
     <identifier>
         <system value="http://accumulus.org/fhir/identifier/document"/>
         <value value="FLOW-001"/>
