@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceDefinition>
+<!--    <id value="impeller"/>-->
+    <id value="devicedefinition-dxpq-ex1"/>
+    <deviceName>
+        <name value="Rotating Impeller with 1.5mm screen"/>
+        <!-- #89 Equiment subclass -->
+        <type value="registered-name"/>
+    </deviceName>
+    <property>
+        <type>
+            <coding>
+                <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                <code value="121212"/>
+                <!-- #90 Working capacity -->
+                <display value="Maximum Speed"/>
+            </coding>
+        </type>
+        <valueQuantity>
+            <value value="5000"/>
+            <unit value="RPM"/>
+        </valueQuantity>
+    </property>
+</DeviceDefinition>
