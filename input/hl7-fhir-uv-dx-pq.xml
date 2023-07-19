@@ -760,7 +760,7 @@
         </resource>
 
         <!--New Examples for wave 2-->
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="PackagedProductDefinition/packagedproductdefinition-dxpq-ex1"/>
             </reference>
@@ -769,7 +769,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
             <groupingId value="building-blocks-1"/>
-        </resource>
+        </resource>-->
         
         <resource>
             <reference>
