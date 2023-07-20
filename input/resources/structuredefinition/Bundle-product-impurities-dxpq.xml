@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Bundle-product-impurities-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-impurities-dxpq"/>
+  <name value="BundleProductImpuritiesDxPq"/>
+  <title value="Bundle - Product Impurities dx-PQ"/>
+  <status value="active"/>
+  <description value="TBD"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <short value="collection"/>
+      <fixedCode value="collection"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="profile"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="closed"/>
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+
+
+    <element id="Bundle.entry:Product-Impurities-Results-Report">
+      <path value="Bundle.entry"/>
+      <sliceName value="Results-Report"/>
+    </element>
+    <element id="Bundle.entry:Results-Report.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:Results-Report.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="DiagnosticReport"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"
+        />
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Batch-Lot-Information">
+      <path value="Bundle.entry"/>
+      <sliceName value="Batch-Lot-Information"/>
+    </element>
+    <element id="Bundle.entry:Batch-Lot-Information.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:Batch-Lot-Information.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Medication"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"
+        />
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Impurities-Observations">
+      <path value="Bundle.entry"/>
+      <sliceName value="Impurities-Observations"/>
+    </element>
+    <element id="Bundle.entry:Impurities-Observations.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:Impurities-Observations.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Observation"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"
+        />
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Component-impurity">
+      <path value="Bundle.entry"/>
+      <sliceName value="Component-impurity"/>
+    </element>
+    <element id="Bundle.entry:Component-impurity.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:Component-impurity.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="SubstanceDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Product-Identification">
+      <path value="Bundle.entry"/>
+      <sliceName value="Product-Identification"/>
+    </element>
+    <element id="Bundle.entry:Product-Identification.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:Product-Identification.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="MedicinalProductDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"
+        />
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Organizations">
+      <path value="Bundle.entry"/>
+      <sliceName value="Organizations"/>
+    </element>
+    <element id="Bundle.entry:Organizations.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element>
+    <element id="Bundle.entry:Organizations.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Organization"/>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+      </type>
+    </element>
+
+  </differential>
+</StructureDefinition>

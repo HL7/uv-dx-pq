@@ -536,13 +536,40 @@
 
         <!--Batch or Lot Information-->
 
-        <!--Manufacturing Process -->
+        <!--Manufacturing Process Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-product-manufacturing-dxpq"/>
+                <display value="BundleProductManufacturingDxPq"/>
+            </reference>
+            <name value="Bundle - Product Manufacturing dx-PQ"/>
+            <description value="Bundle - Product Manufacturing dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b5-mnf"/>
+        </resource>
 
-
-        <!--Process Validation-->
-
-        <!--Impurities-->
-
+        <!--Process Validation Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-product-process-validation-dxpq"/>
+                <display value="BundleProductProcessValidationDxPq"/>
+            </reference>
+            <name value="Bundle - Product Process Validation dx-PQ"/>
+            <description value="Bundle - Product Process Validation dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b13-processvalidation"/>
+        </resource>
+        <!--Impurities Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-product-impurities-dxpq"/>
+                <display value="BundleProductImpuritiesDxPq"/>
+            </reference>
+            <name value="Bundle - Product Impurities dx-PQ"/>
+            <description value="Bundle - Product Impurities dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b15-impurities"/>
+        </resource>
         <!--Analytical Procedures-->
 
         <!--Container Closure System-->
