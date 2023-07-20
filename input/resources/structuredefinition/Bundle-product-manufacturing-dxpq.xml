@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Bundle-product-manufacturing-dxpq.xml"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq.xml"/>
+  <id value="Bundle-product-manufacturing-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
   <name value="BundleProductManufacturingDxPq"/>
   <title value="Bundle - Product Manufacturing dx-PQ"/>
   <status value="active"/>
