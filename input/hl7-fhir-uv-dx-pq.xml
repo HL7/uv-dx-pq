@@ -41,7 +41,7 @@
         </extension>
         <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
         <packageId value="hl7.terminology.r5"/>
-        <version value="5.1.0"/>
+        <version value="5.0.0"/>
     </dependsOn>
     <definition>
         <!--        WAVE 1 topics-->
@@ -158,7 +158,7 @@
         </resource>
 
         <!--Specification -->
-<!--        Specification Profiles-->
+        <!--        Specification Profiles-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
@@ -169,7 +169,7 @@
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-specification-dxpq"/>
@@ -180,7 +180,7 @@
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
@@ -191,7 +191,7 @@
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
-        
+
         <!--        Specification Examples-->
         <!--        <resource>
             <reference>
@@ -228,7 +228,7 @@
         </resource>
 
         <!--Stability-->
-<!--        Stability Profiles-->
+        <!--        Stability Profiles-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
@@ -239,7 +239,7 @@
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-stability-dxpq"/>
@@ -250,7 +250,7 @@
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ResearchStudy-stability-dxpq"/>
@@ -261,7 +261,7 @@
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
@@ -272,7 +272,7 @@
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
@@ -283,7 +283,7 @@
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
@@ -294,7 +294,7 @@
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
@@ -305,7 +305,7 @@
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Specimen-stability-dxpq"/>
@@ -317,7 +317,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
         <!--        Stability Examples-->
-        
+
         <!--        <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-stability-dxpq-ex1"/>
@@ -401,7 +401,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
-        
+
         <resource>
             <reference>
                 <reference value="Specimen/specimen-stability-dxpq-ex1"/>
@@ -427,7 +427,7 @@
             <isExample value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
@@ -438,7 +438,7 @@
             <isExample value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
@@ -449,9 +449,9 @@
             <isExample value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-        
+
         <!--Batch Analysis Examples -->
-        
+
         <!--        <resource>
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex1"/>
@@ -499,7 +499,7 @@
             <isExample value="false"/>
             <groupingId value="b4-organizations"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Organization-dxpq"/>
@@ -510,7 +510,7 @@
             <isExample value="false"/>
             <groupingId value="b4-organizations"/>
         </resource>
-        
+
         <!--Organization Examples -->
         <!--        <resource>
             <reference>
@@ -559,7 +559,7 @@
 
         <!--Building Blocks-->
         <!--Building Block Profiles -->
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-simple-dxpq"/>
@@ -570,7 +570,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-test-method-dxpq"/>
@@ -581,8 +581,8 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
-        
+
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-simple-dxpq"/>
@@ -593,7 +593,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-test-result-dxpq"/>
@@ -604,7 +604,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Ingredient-dxpq"/>
@@ -615,7 +615,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
@@ -626,7 +626,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Substance-dxpq"/>
@@ -637,7 +637,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <!--New for wave 2-->
         <resource>
             <reference>
@@ -649,7 +649,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/DocumentReference-dxpq"/>
@@ -660,7 +660,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/DeviceDefinition-dxpq"/>
@@ -671,9 +671,9 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <!--Building Block Examples -->
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
@@ -710,7 +710,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-       
+
 
         <resource>
             <reference>
@@ -767,13 +767,15 @@
             <name value="packagedproductdefinition-dxpq-ex1"/>
             <description value="PackagedProductDefinition dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
-                <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"/>
+                <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"
+                />
             </reference>
             <name value="documentreference-process-flow-diagram-dxpq-ex1"/>
             <description value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
@@ -781,7 +783,7 @@
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="DeviceDefinition/devicedefinition-dxpq-ex1"/>
