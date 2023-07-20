@@ -107,7 +107,7 @@
     <element id="Bundle.entry:Product-Definition.resource">
       <path value="Bundle.entry.resource"/>
       <type>
-        <code value="Organization"/>
+        <code value="MedicinalProductDefinition"/>
         <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
       </type>
     </element>
