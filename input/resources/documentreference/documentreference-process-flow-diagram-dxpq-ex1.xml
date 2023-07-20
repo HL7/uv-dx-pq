@@ -6,11 +6,11 @@
         <profile
             value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq"/>       
     </meta>
-    <status value="current"/> 
     <identifier>
         <system value="http://accumulus.org/fhir/identifier/document"/>
         <value value="FLOW-001"/>
     </identifier>
+    <status value="current"/> 
     <type>
         <coding>
             <system value="http://accumulus.org/fhir/code/diagramType"/>
