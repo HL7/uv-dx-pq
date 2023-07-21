@@ -474,6 +474,17 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/medication-batch-information-dxpq-ex2"/>
+            </reference>
+            <name value="medication-batch-information-dxpq-ex2"/>
+            <description value="Medication - Batch Information dx-PQ - Example 2"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>
 
         <resource>
             <reference>
@@ -830,25 +841,62 @@
                 <display value="ExtensionActualYieldDxPq"/>
             </reference>
             <name value="Extension - Actual Yield dx-PQ"/>
+            <description value="Extension - Actual Yield dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
     
         <resource>
             <reference>
+                <reference value="StructureDefinition/Extension-actual-yield-unfiltered-dxpq"/>
+                <display value="ExtensionActualYieldUnfilteredDxPq"/>
+            </reference>
+            <name value="Extension - Actual Yield Unfiltered dx-PQ"/>
+            <description value="Extension - Actual Yield Unfiltered dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-batch-designation-dxpq"/>
+                <display value="ExtensionBatchDesignationDxPq"/>
+            </reference>
+            <name value="Extension - Batch Designation dx-PQ"/>
+            <description value="Extension - Batch Designation dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-batch-number-of-vials-dxpq"/>
+                <display value="ExtensionBatchNumberOf-VialsDxPq"/>
+            </reference>
+            <name value="Extension - Batch Number of Vials dx-PQ"/> 
+            <description value="Extension - Batch Number of Vials dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
                 <display value="ExtensionBatchReleaseDateDxPq"/>
             </reference>
             <name value="Extension - Batch Release Date dx-PQ"/>
+            <description value="Extension - Batch Release Date dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-retest-date-dxpq"/>
                 <display value="ExtensionBatchRetestDateDxPq"/>
             </reference>
             <name value="Extension - Batch Retest Date dx-PQ"/>
+            <description value="Extension - Batch Retest Date dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -859,6 +907,7 @@
                 <display value="ExtensionBatchSubstanceBatchDxPq"/>
             </reference>
             <name value="Extension - Batch Substance Batch dx-PQ"/>
+            <description value="Extension - Batch Substance Batch dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -939,6 +988,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-statistical-model-dxpq"/>
@@ -946,6 +996,17 @@
             </reference>
             <name value="Extension - Statistical Model dx-PQ"/>
             <description value="Extension - Statistical Model dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-target-fill-weight-dxpq"/>
+                <display value="ExtensionTargetFillWeightDxPq"/>
+            </reference>
+            <name value="Extension - Target Fill Weight dx-PQ"/>
+            <description value="Extension - Target Fill Weight dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
