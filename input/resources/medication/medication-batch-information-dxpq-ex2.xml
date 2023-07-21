@@ -14,7 +14,7 @@
             url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
             <valueReference>
                 <reference
-                    value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex2"
+                    value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
                 />
             </valueReference>
         </extension>
