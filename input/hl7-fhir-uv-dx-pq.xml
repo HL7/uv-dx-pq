@@ -823,7 +823,17 @@
         </resource>
 
 
-        <!--Extensions-->
+        <!--Extensions in alpha order -->        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-actual-yield-dxpq"/>
+                <display value="ExtensionActualYieldDxPq"/>
+            </reference>
+            <name value="Extension - Actual Yield dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+    
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
@@ -842,6 +852,17 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-batch-substance-batch-dxpq"/>
+                <display value="ExtensionBatchSubstanceBatchDxPq"/>
+            </reference>
+            <name value="Extension - Batch Substance Batch dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-dxpq"/>
@@ -852,6 +873,29 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-instance-comment-dxpq"/>
+                <display value="ExtensionInstanceCommentDxPq"/>
+            </reference>
+            <name value="Extension - Instance Comment dx-PQ"/>
+            <description value="Extension - Instance Comment dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-manufacturing-process-dxpq"/>
+                <display value="ExtensionManufacturingProcessDxPq"/>
+            </reference>
+            <name value="Extension - Manufacturing Process dx-PQ"/>
+            <description value="Extension - Manufacturing Process dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>   
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-medication-definition-dxpq"/>
@@ -862,6 +906,29 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-packaging-date-dxpq"/>
+                <display value="ExtensionPackagingDateDxPq"/>
+            </reference>
+            <name value="Extension - Packaging Date dx-PQ"/>
+            <description value="Extension - Packaging Date dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-packaging-site-dxpq"/>
+                <display value="ExtensionPackagingSiteDxPq"/>
+            </reference>
+            <name value="Extension - Packaging Site dx-PQ"/>
+            <description value="Extension - Packaging Site dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-text-dxpq"/>
@@ -882,15 +949,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-actual-yield-dxpq"/>
-                <display value="ExtensionActualYieldDxPq"/>
-            </reference>
-            <name value="Extension - Actual Yield dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>
+
 
         <!--Terminology-->
         <resource>
