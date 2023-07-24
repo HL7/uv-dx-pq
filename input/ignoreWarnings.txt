@@ -4,9 +4,11 @@ This element does not match any known slice defined in the profile http://hl7.or
 
 # The following code systems are external or are examples and not supported by terminology server
 Code System URI 'http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology' is unknown so the code cannot be validated
+Code System URI 'http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation' is unknown so the code cannot be validated
 Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
 Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated
 Code System URI 'http://accumulus.org/fhir/code/productNameType' is unknown so the code cannot be validated
+Code System URI 'http://accumulus.org/fhir/code/deviceProperty' is unknown so the code cannot be validated
 Code System URI 'http://accumulus.org/fhir/code/diagramType' is unknown so the code cannot be validated
 Code System URI 'http://accumulus.org/fhir/code/reportType' is unknown so the code cannot be validated
 Code System URI 'http://accumulus.org/fhir/code/planType' is unknown so the code cannot be validated
