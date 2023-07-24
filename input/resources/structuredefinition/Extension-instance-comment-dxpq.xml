@@ -33,6 +33,9 @@
             <type>
                 <code value="string"/>
             </type>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>
