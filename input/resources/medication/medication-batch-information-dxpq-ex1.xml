@@ -114,14 +114,14 @@
                 <!-- #159 -->
                 <valueCodeableConcept>
                     <coding>
-                        <!-- Extension custom for this IG -->
+<!--                        <!-\- Extension custom for this IG -\->
                         <extension
                             url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                            <!--                            <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                            <!-\-                            <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-\->
                             <valueCodeableConcept value="Comment: This has a value set defined in PQ/CMC but no code system"
                             />                            
-<!--                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>-->
-                        </extension>
+<!-\-                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>-\->
+                        </extension>-->
                         <system
                             value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C185328"/>
