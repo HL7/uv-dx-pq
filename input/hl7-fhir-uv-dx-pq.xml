@@ -457,7 +457,7 @@
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-product"/>
             </reference>
             <name value="bundle-batch-analysis-dxpq-ex1-product"/>
-            <description value="Bundle – Batch Analysis dx-PQ - Example 1 (product)"/>
+            <description value="Bundle – Batch Analysis dx-PQ - Example 1, product"/>
             <isExample value="true"/>
             <profile
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
@@ -469,7 +469,7 @@
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-substance"/>
             </reference>
             <name value="bundle-batch-analysis-dxpq-ex1-product"/>
-            <description value="Bundle – Batch Analysis dx-PQ - Example 2 (substance)"/>
+            <description value="Bundle – Batch Analysis dx-PQ - Example 2, substance"/>
             <isExample value="true"/>
             <profile
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
