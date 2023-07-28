@@ -7,8 +7,8 @@
          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"
       />
    </meta>
-   <title value="TBD"/>
-   <status value="active"/>
+<!--   <title value="TBD"/>
+   <status value="active"/>-->
    <type value="collection"/>
    <entry>
       <fullUrl value="https://www.example.org/Organization/manufacturer"/>
