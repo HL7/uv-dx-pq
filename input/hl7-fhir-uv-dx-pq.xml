@@ -523,7 +523,7 @@
         </resource>
 
         <!--Organization Examples -->
-        <!--        <resource>
+                <resource>
             <reference>
                 <reference value="Bundle/bundle-organizations-dxpq-ex1"/>
             </reference>
@@ -532,7 +532,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
             <groupingId value="b4-organizations"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
