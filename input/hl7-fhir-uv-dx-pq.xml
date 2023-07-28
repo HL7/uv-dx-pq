@@ -452,17 +452,30 @@
 
         <!--Batch Analysis Examples -->
 
-        <!--        <resource>
+        <resource>
             <reference>
-                <reference value="Bundle/bundle-batch-analysis-dxpq-ex1"/>
+                <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-product"/>
             </reference>
-            <name value="bundle-batch-analysis-dxpq-ex1"/>
-            <description value="Bundle – Batch Analysis dx-PQ - Example 1"/>
+            <name value="bundle-batch-analysis-dxpq-ex1-product"/>
+            <description value="Bundle – Batch Analysis dx-PQ - Example 1 (product)"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
+            <groupingId value="b9-batchanalyses"/>
+        </resource>
+
+<!--        <resource>
+            <reference>
+                <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-substance"/>
+            </reference>
+            <name value="bundle-batch-analysis-dxpq-ex1-product"/>
+            <description value="Bundle – Batch Analysis dx-PQ - Example 2 (substance)"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>-->
-
+        
         <resource>
             <reference>
                 <reference value="Medication/medication-batch-information-dxpq-ex1"/>
@@ -523,14 +536,15 @@
         </resource>
 
         <!--Organization Examples -->
-                <resource>
+        <resource>
             <reference>
                 <reference value="Bundle/bundle-organizations-dxpq-ex1"/>
             </reference>
             <name value="bundle-organizations-dxpq-ex1"/>
             <description value="Bundle - Organizations dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
             <groupingId value="b4-organizations"/>
         </resource>
 
@@ -834,7 +848,7 @@
         </resource>
 
 
-        <!--Extensions in alpha order -->        
+        <!--Extensions in alpha order -->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-dxpq"/>
@@ -845,7 +859,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-    
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-unfiltered-dxpq"/>
@@ -856,7 +870,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-designation-dxpq"/>
@@ -867,18 +881,18 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-number-of-vials-dxpq"/>
                 <display value="ExtensionBatchNumberOf-VialsDxPq"/>
             </reference>
-            <name value="Extension - Batch Number of Vials dx-PQ"/> 
+            <name value="Extension - Batch Number of Vials dx-PQ"/>
             <description value="Extension - Batch Number of Vials dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
@@ -889,7 +903,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-retest-date-dxpq"/>
@@ -900,7 +914,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-substance-batch-dxpq"/>
@@ -922,7 +936,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-instance-comment-dxpq"/>
@@ -933,7 +947,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-process-dxpq"/>
@@ -943,8 +957,8 @@
             <description value="Extension - Manufacturing Process dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>   
-        
+        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-medication-definition-dxpq"/>
@@ -955,7 +969,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-date-dxpq"/>
@@ -966,7 +980,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-site-dxpq"/>
@@ -977,7 +991,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-text-dxpq"/>
@@ -988,7 +1002,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-statistical-model-dxpq"/>
@@ -999,7 +1013,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-target-fill-weight-dxpq"/>
