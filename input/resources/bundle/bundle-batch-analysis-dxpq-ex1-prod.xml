@@ -2,7 +2,7 @@
 <!-- Product Specification -->
 <!-- Based on file: Accumulus FHIR Product Example - Specification, posted on 05-31-2023 -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-batch-analysis-dxpq-ex1-product"/>
+   <id value="bundle-batch-analysis-dxpq-ex1-prod"/>
 <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>

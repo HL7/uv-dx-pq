@@ -454,9 +454,9 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-product"/>
+                <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-prod"/>
             </reference>
-            <name value="bundle-batch-analysis-dxpq-ex1-product"/>
+            <name value="bundle-batch-analysis-dxpq-ex1-prod"/>
             <description value="Bundle – Batch Analysis dx-PQ - Example 1, product"/>
             <isExample value="true"/>
             <profile
