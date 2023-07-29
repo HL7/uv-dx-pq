@@ -13,7 +13,10 @@
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
-    <abstract value="false"/>
+    <abstract value="false"/>\    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
     <context>
         <type value="element"/>
         <expression value="ResearchStudy"/>

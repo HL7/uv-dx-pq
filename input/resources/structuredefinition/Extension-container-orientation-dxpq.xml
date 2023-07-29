@@ -16,6 +16,10 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
+    <context>
+        <type value="element"/>
         <expression value="ResearchStudy"/>
     </context>
     <type value="Extension"/>
