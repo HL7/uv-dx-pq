@@ -3,7 +3,7 @@
 <!-- Based on file Accumulus FHIR Substance Example - Specification, posted 05-31-23 -->
 <!-- For this example, changed all system value="http://example-like-loinc.org"/> to <system value="http://example-like-loinc.org"/>-->
 <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://example-like-unitsofmeasure.org"/>-->
-<!--For this example, changed <quantitativeDetails> to <permittedUnit> in <ObservationDefinition> -->
+<!-- May need to change <quantitativeDetails> to <permittedUnit> in <ObservationDefinition> -->
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="bundle-drug-substance-specification-dxpq-ex1"/>
     <!--    <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
@@ -203,7 +203,7 @@
                 <method>
                     <text value="Organic impurities by LC"/>
                 </method>
-                <permittedUnit>
+                <quantitativeDetails>
                     <unit>
                         <coding>
                             <system value="http://example-like-unitsofmeasure.org"/>
@@ -216,7 +216,7 @@
                             <code value="% w/w"/>
                         </coding>
                     </customaryUnit>
-                </permittedUnit>
+                </quantitativeDetails>
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -292,7 +292,7 @@
                 <method>
                     <text value="Impurity 5 content by LC-MS"/>
                 </method>
-                <permittedUnit>
+                <quantitativeDetails>
                     <unit>
                         <coding>
                             <system value="http://example-like-unitsofmeasure.org"/>
@@ -304,7 +304,7 @@
                             <code value="ppm"/>
                         </coding>
                     </customaryUnit>
-                </permittedUnit>
+                </quantitativeDetails>
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -381,7 +381,7 @@
                 <method>
                     <text value="Residual solvents by headspace GC"/>
                 </method>
-                <permittedUnit>
+                <quantitativeDetails>
                     <unit>
                         <coding>
                             <system value="http://example-like-unitsofmeasure.org"/>
@@ -394,7 +394,7 @@
                             <code value="% w/w"/>
                         </coding>
                     </customaryUnit>
-                </permittedUnit>
+                </quantitativeDetails>
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -481,7 +481,7 @@
                 <method>
                     <text value="Laser diffraction"/>
                 </method>
-                <permittedUnit>
+                <quantitativeDetails>
                     <unit>
                         <coding>
                             <system value="http://example-like-unitsofmeasure.org"/>
@@ -493,7 +493,7 @@
                             <code value="µm"/>
                         </coding>
                     </customaryUnit>
-                </permittedUnit>
+                </quantitativeDetails>
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
