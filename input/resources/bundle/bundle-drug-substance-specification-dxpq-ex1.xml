@@ -3,91 +3,86 @@
 <!-- 2023-02-26 -->
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="bundle-drug-substance-specification-dxpq-ex1"/>
-<!--    <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
+    <!--    <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
     <meta>
-        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
-<!--        <profile value="http://accumulus.org/fhir/dx-cmc/specification"/>-->
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+        <!--        <profile value="http://accumulus.org/fhir/dx-cmc/specification"/>-->
     </meta>
     <type value="collection"/>
-    
     <entry>
         <fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/>
         <resource>
-            
             <PlanDefinition>
                 <id value="specificationProtocol"/>
-                
                 <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
-
                 <status value="active"/>
-                
                 <subjectReference>
                     <reference value="SubstanceDefinition/substance1"/>
                 </subjectReference>
-
                 <description value="Narrative description of specifications"/>
-                
                 <!-- new "tabular" style -->
-                <action> <!-- this is then entire thing -->
+                <action>
+                    <!-- this is then entire thing -->
                     <title value="Specification for Drug Substance"/>
-               <code>
-                  <text value="Overall set of actions"/>
-               </code>
+                    <code>
+                        <text value="Overall set of actions"/>
+                    </code>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Description"/>
                     </action>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Identification"/>
                     </action>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Assay"/>
                     </action>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Impurities"/>
                     </action>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Mutagenic"/>
                     </action>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Enantiomeric"/>
                     </action>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Solvents"/>
                     </action>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Water"/>
                     </action>
                     <action>
-                  <code>
-                     <text value="Test"/>
-                  </code>
+                        <code>
+                            <text value="Test"/>
+                        </code>
                         <definitionCanonical value="ObservationDefinition/Particles"/>
                     </action>
-                 </action>
+                </action>
             </PlanDefinition>
         </resource>
     </entry>
@@ -100,9 +95,11 @@
                 <name value="Description"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
-                        <code value="XXX"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
+                        <code value="description"/>
+<!--                        <code value="XXX"/>-->
                         <display value="Description"/>
                     </coding>
                     <text value="Description"/>
@@ -111,7 +108,7 @@
                     <text value="Visual inspection"/>
                 </method>
                 <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                    <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
                         <valueString value="A white to brown powder"/>
                     </extension>
                 </qualifiedValue>
@@ -126,9 +123,11 @@
                 <name value="Identification"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
-                        <code value="XXX"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
+                        <code value="identification"/>
+<!--                        <code value="XXX"/>-->
                         <display value="Identification"/>
                     </coding>
                     <text value="Identification"/>
@@ -137,7 +136,7 @@
                     <text value="Identification by IR spectroscopy Identification by HPLC"/>
                 </method>
                 <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                    <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
                         <valueString value="Conforms with reference"/>
                     </extension>
                 </qualifiedValue>
@@ -152,9 +151,11 @@
                 <name value="Assay"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
-                        <code value="XXX"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
+                        <code value="assay"/>
+<!--                        <code value="XXX"/>-->
                         <display value="Assay"/>
                     </coding>
                     <text value="Assay"/>
@@ -168,13 +169,15 @@
                             <value value="98"/>
                             <unit value="% w/w"/>
                             <system value="http://unitsofmeasure.org"/>
-                            <code value="%{w/w}"/> <!-- not sure this is a correct ucum code -->
+                            <code value="%{w/w}"/>
+                            <!-- not sure this is a correct ucum code -->
                         </low>
                         <high>
                             <value value="102"/>
                             <unit value="% w/w"/>
                             <system value="http://unitsofmeasure.org"/>
-                            <code value="%{w/w}"/> <!-- not sure this is a correct ucum code -->
+                            <code value="%{w/w}"/>
+                            <!-- not sure this is a correct ucum code -->
                         </high>
                     </range>
                 </qualifiedValue>
@@ -189,8 +192,9 @@
                 <name value="Drug Substance Related Organic impurities"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
                         <code value="DGP"/>
                         <display value="Drug Substance Related Organic impurities"/>
                     </coding>
@@ -202,7 +206,8 @@
                     <unit>
                         <coding>
                             <system value="http://unitsofmeasure.org"/>
-                            <code value="%{w/w}"/> <!-- not sure this is a correct ucum code -->
+                            <code value="%{w/w}"/>
+                            <!-- not sure this is a correct ucum code -->
                         </coding>
                     </unit>
                     <customaryUnit>
@@ -212,7 +217,8 @@
                     </customaryUnit>
                 </quantitativeDetails>
                 <qualifiedValue>
-                    <appliesTo> <!-- could be a code -->
+                    <appliesTo>
+                        <!-- could be a code -->
                         <text value="Impurity 1"/>
                     </appliesTo>
                     <range>
@@ -255,10 +261,12 @@
                         </high>
                     </range>
                 </qualifiedValue>
-                <component> <!-- are expected to have a component that says what impurity this one is -->
+                <component>
+                    <!-- are expected to have a component that says what impurity this one is -->
                     <code>
-                        <coding> 
-                            <system value="http://loinc.org"/>
+                        <coding>
+                            <system value="http://example.org/codes"/>
+<!--                            <system value="http://loinc.org"/>-->
                             <code value="IMP"/>
                             <display value="Impurity"/>
                         </coding>
@@ -275,14 +283,15 @@
                 <name value="Mutagenic impurities"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
                         <code value="MUT"/>
                         <display value="Mutagenic impurities"/>
                     </coding>
                 </code>
                 <method>
-               <text value="Impurity 5 content by LC-MS"/>
+                    <text value="Impurity 5 content by LC-MS"/>
                 </method>
                 <quantitativeDetails>
                     <unit>
@@ -298,7 +307,8 @@
                     </customaryUnit>
                 </quantitativeDetails>
                 <qualifiedValue>
-                    <appliesTo> <!-- could be a code -->
+                    <appliesTo>
+                        <!-- could be a code -->
                         <text value="Impurity - Mutagenic"/>
                     </appliesTo>
                     <range>
@@ -310,10 +320,12 @@
                         </high>
                     </range>
                 </qualifiedValue>
-                <component> <!-- are expected to have a component that says what impurity this one is -->
+                <component>
+                    <!-- are expected to have a component that says what impurity this one is -->
                     <code>
-                        <coding> 
-                            <system value="http://loinc.org"/>
+                        <coding>
+                            <system value="http://example.org/codes"/>
+<!--                            <system value="http://loinc.org"/>-->
                             <code value="IMP"/>
                             <display value="Impurity"/>
                         </coding>
@@ -330,9 +342,11 @@
                 <name value="Enantiomeric purity"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
-                        <code value="ZZZ"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
+                        <code value="enantiomeric-purity"/>
+<!--                        <code value="ZZZ"/>-->
                         <display value="Enantiomeric purity"/>
                     </coding>
                     <text value="Enantiomeric purity"/>
@@ -361,8 +375,9 @@
                 <name value="Residual solvents"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
                         <code value="SOL"/>
                         <display value="Residual solvents"/>
                     </coding>
@@ -374,7 +389,8 @@
                     <unit>
                         <coding>
                             <system value="http://unitsofmeasure.org"/>
-                            <code value="%{w/w}"/> <!-- not sure this is a correct ucum code -->
+                            <code value="%{w/w}"/>
+                            <!-- not sure this is a correct ucum code -->
                         </coding>
                     </unit>
                     <customaryUnit>
@@ -384,7 +400,8 @@
                     </customaryUnit>
                 </quantitativeDetails>
                 <qualifiedValue>
-                    <appliesTo> <!-- could be a code -->
+                    <appliesTo>
+                        <!-- could be a code -->
                         <text value="Solvent 1"/>
                     </appliesTo>
                     <range>
@@ -405,10 +422,12 @@
                         </high>
                     </range>
                 </qualifiedValue>
-                <component> <!-- are expected to have a component that says what solvent this one is -->
+                <component>
+                    <!-- are expected to have a component that says what solvent this one is -->
                     <code>
-                        <coding> 
-                            <system value="http://loinc.org"/>
+                        <coding>
+                            <system value="http://example.org/codes"/>
+<!--                            <system value="http://loinc.org"/>-->
                             <code value="SOLV"/>
                             <display value="Solvent"/>
                         </coding>
@@ -417,7 +436,7 @@
             </ObservationDefinition>
         </resource>
     </entry>
-    
+
     <entry>
         <fullUrl value="https://www.example.org/ObservationDefinition/Water"/>
         <resource>
@@ -426,9 +445,11 @@
                 <name value="Water Content"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
-                        <code value="WWW"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
+                        <code value="water-content"/>
+<!--                        <code value="WWW"/>-->
                         <display value="Water Content"/>
                     </coding>
                     <text value="Water Content"/>
@@ -437,17 +458,17 @@
                     <text value="USP Karl Fischer titration"/>
                 </method>
                 <qualifiedValue>
-               <range>
-                  <high>
-                     <value value="1.0"/>
-                     <unit value="% w/w"/>
-                  </high>
-               </range>
-            </qualifiedValue>
-         </ObservationDefinition>
-      </resource>
-   </entry>
-    
+                    <range>
+                        <high>
+                            <value value="1.0"/>
+                            <unit value="% w/w"/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+
     <entry>
         <fullUrl value="https://www.example.org/ObservationDefinition/Particles"/>
         <resource>
@@ -456,9 +477,11 @@
                 <name value="Particle size distribution"/>
                 <status value="active"/>
                 <code>
-                    <coding> 
-                        <system value="http://loinc.org"/>
-                        <code value="PART"/>
+                    <coding>
+                        <system value="http://example.org/codes"/>
+<!--                        <system value="http://loinc.org"/>-->
+                        <code value="particle-size-distribution"/>
+<!--                        <code value="PART"/>-->
                         <display value="Particle size distribution"/>
                     </coding>
                 </code>
@@ -479,7 +502,8 @@
                     </customaryUnit>
                 </quantitativeDetails>
                 <qualifiedValue>
-                    <appliesTo> <!-- could be a code -->
+                    <appliesTo>
+                        <!-- could be a code -->
                         <text value="D(v,0.9)"/>
                     </appliesTo>
                     <range>
@@ -492,7 +516,8 @@
                     </range>
                 </qualifiedValue>
                 <qualifiedValue>
-                    <appliesTo> <!-- could be a code -->
+                    <appliesTo>
+                        <!-- could be a code -->
                         <text value="D(v,0.5)"/>
                     </appliesTo>
                     <range>
@@ -505,7 +530,8 @@
                     </range>
                 </qualifiedValue>
                 <qualifiedValue>
-                    <appliesTo> <!-- could be a code -->
+                    <appliesTo>
+                        <!-- could be a code -->
                         <text value="D(v,0.1)"/>
                     </appliesTo>
                     <range>
@@ -517,11 +543,14 @@
                         </high>
                     </range>
                 </qualifiedValue>
-                <component> <!-- are expected to have a component that says what solvent this one is -->
+                <component>
+                    <!-- are expected to have a component that says what solvent this one is -->
                     <code>
-                        <coding> 
-                            <system value="http://loinc.org"/>
-                            <code value="PARTS"/>
+                        <coding>
+                            <system value="http://example.org/codes"/>
+<!--                            <system value="http://loinc.org"/>-->
+                            <code value="particle-size"/>
+<!--                            <code value="PARTS"/>-->
                             <display value="Particle size"/>
                         </coding>
                     </code>
@@ -529,45 +558,47 @@
             </ObservationDefinition>
         </resource>
     </entry>
-    
+
     <entry>
         <fullUrl value="https://www.example.org/SubstanceDefinition/substance1"/>
         <resource>
-        	<SubstanceDefinition>
-        		<id value="substance1"/>
-        		
-        		<manufacturer>
-        			<reference value="Organization/substance-manufacturer"/>
-        		</manufacturer>
-        		<name>
-        			<name value="Stelbatolol"/> <!-- #4 -->
-        		</name>
-        		
-        	</SubstanceDefinition>
+            <SubstanceDefinition>
+                <id value="substance1"/>
+
+                <manufacturer>
+                    <reference value="Organization/substance-manufacturer"/>
+                </manufacturer>
+                <name>
+                    <name value="Stelbatolol"/>
+                    <!-- #4 -->
+                </name>
+
+            </SubstanceDefinition>
         </resource>
     </entry>
-	<entry>
-	    <fullUrl value="https://www.example.org/Organization/substance-manufacturer"/>
-		<resource>
-			<Organization>
-				<id value="substance-manufacturer"/>
-				<identifier>
-					<!-- FDA establishment identifier --><system value="urn:oid:2.16.840.1.113883.4.82"/> 
-					<value value="3003040516"/>
-				</identifier>
-				<name value="AAA Molybdenum Products, Inc."/>
-				<contact>
-				    <address>
-				        <line value="7233 W 116th Pl"/>
-				        <line value="Ste C"/>
-				        <city value="Broomfield"/>
-				        <state value="Colorado"/>
-				        <postalCode value="80020"/>
-				        <country value="USA"/>
-				    </address>
-				</contact>
-			</Organization>        
-		</resource>
-	</entry>
+    <entry>
+        <fullUrl value="https://www.example.org/Organization/substance-manufacturer"/>
+        <resource>
+            <Organization>
+                <id value="substance-manufacturer"/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value="urn:oid:2.16.840.1.113883.4.82"/>
+                    <value value="3003040516"/>
+                </identifier>
+                <name value="AAA Molybdenum Products, Inc."/>
+                <contact>
+                    <address>
+                        <line value="7233 W 116th Pl"/>
+                        <line value="Ste C"/>
+                        <city value="Broomfield"/>
+                        <state value="Colorado"/>
+                        <postalCode value="80020"/>
+                        <country value="USA"/>
+                    </address>
+                </contact>
+            </Organization>
+        </resource>
+    </entry>
 
 </Bundle>
