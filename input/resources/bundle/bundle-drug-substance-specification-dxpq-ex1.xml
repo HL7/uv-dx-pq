@@ -108,7 +108,8 @@
                     <text value="Visual inspection"/>
                 </method>
                 <qualifiedValue>
-                    <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--                    <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                         <valueString value="A white to brown powder"/>
                     </extension>
                 </qualifiedValue>
@@ -136,7 +137,8 @@
                     <text value="Identification by IR spectroscopy Identification by HPLC"/>
                 </method>
                 <qualifiedValue>
-                    <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--                        <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                         <valueString value="Conforms with reference"/>
                     </extension>
                 </qualifiedValue>
