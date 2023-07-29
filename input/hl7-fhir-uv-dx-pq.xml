@@ -193,16 +193,17 @@
         </resource>
 
         <!--        Specification Examples-->
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-specification-dxpq-ex1"/>
             </reference>
             <name value="bundle-drug-substance-specification-dxpq-ex1"/>
             <description value="Bundle – Drug Substance Specification dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
             <groupingId value="b12-specification"/>
-        </resource>-->
+        </resource>
 
         <!--        <resource>
             <reference>
@@ -464,7 +465,7 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-substance"/>
             </reference>
@@ -475,7 +476,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>-->
-        
+
         <resource>
             <reference>
                 <reference value="Medication/medication-batch-information-dxpq-ex1"/>
