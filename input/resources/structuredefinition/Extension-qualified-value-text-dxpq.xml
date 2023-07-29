@@ -11,7 +11,7 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Bundle"/>
+        <expression value="Bundle.entry.resource"/>
     </context>
     <context>
         <type value="element"/>

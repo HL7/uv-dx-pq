@@ -203,12 +203,12 @@
                 <method>
                     <text value="Organic impurities by LC"/>
                 </method>
-                <quantitativeDetails>
+<!--                <quantitativeDetails>
                     <unit>
                         <coding>
                             <system value="http://example-like-unitsofmeasure.org"/>
                             <code value="%{w/w}"/>
-                            <!-- not sure this is a correct ucum code -->
+                            <!-\- not sure this is a correct ucum code -\->
                         </coding>
                     </unit>
                     <customaryUnit>
@@ -216,7 +216,14 @@
                             <code value="% w/w"/>
                         </coding>
                     </customaryUnit>
-                </quantitativeDetails>
+                </quantitativeDetails>-->
+                <!--                Added 7/29/23 as temp replacement for quantitativeDetails above. See also: https://hl7.org/fhir/valueset-ucum-common.html -->
+                <permittedUnit> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="g%"/> 
+                    <display value="gram percent"/> 
+                </permittedUnit> 
+                
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -292,7 +299,7 @@
                 <method>
                     <text value="Impurity 5 content by LC-MS"/>
                 </method>
-                <quantitativeDetails>
+<!--                <quantitativeDetails>
                     <unit>
                         <coding>
                             <system value="http://example-like-unitsofmeasure.org"/>
@@ -304,7 +311,14 @@
                             <code value="ppm"/>
                         </coding>
                     </customaryUnit>
-                </quantitativeDetails>
+                </quantitativeDetails>-->
+                <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
+                <permittedUnit> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="ppm"/> 
+                    <display value="part per million"/> 
+                </permittedUnit> 
+                
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -381,12 +395,12 @@
                 <method>
                     <text value="Residual solvents by headspace GC"/>
                 </method>
-                <quantitativeDetails>
+<!--                <quantitativeDetails>
                     <unit>
                         <coding>
                             <system value="http://example-like-unitsofmeasure.org"/>
                             <code value="%{w/w}"/>
-                            <!-- not sure this is a correct ucum code -->
+                            <!-\- not sure this is a correct ucum code -\->
                         </coding>
                     </unit>
                     <customaryUnit>
@@ -394,7 +408,14 @@
                             <code value="% w/w"/>
                         </coding>
                     </customaryUnit>
-                </quantitativeDetails>
+                </quantitativeDetails>-->
+                <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
+                <permittedUnit> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="g%"/> 
+                    <display value="gram percent"/> 
+                </permittedUnit> 
+                
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -481,7 +502,7 @@
                 <method>
                     <text value="Laser diffraction"/>
                 </method>
-                <quantitativeDetails>
+<!--                <quantitativeDetails>
                     <unit>
                         <coding>
                             <system value="http://example-like-unitsofmeasure.org"/>
@@ -493,7 +514,14 @@
                             <code value="µm"/>
                         </coding>
                     </customaryUnit>
-                </quantitativeDetails>
+                </quantitativeDetails>-->
+                <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
+                <permittedUnit> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="um"/> 
+                    <display value="micrometer"/> 
+                </permittedUnit> 
+                
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
