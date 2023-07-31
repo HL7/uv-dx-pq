@@ -191,7 +191,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy..org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="description"/>
                   <!--                  <code value="XXX"/>-->
                   <display value="Description"/>
