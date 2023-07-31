@@ -26,3 +26,5 @@ Thumbs.db
 ################
 *.bak
 /fsh/build
+/input/images-source/*.bkp
+/input/images-source/.$stability_FHIR_resources.drawio.dtmp

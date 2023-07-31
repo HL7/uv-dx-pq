@@ -5,7 +5,7 @@
         <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
     </meta>
     <collection>
-        <collectedDateTime value="2020-12"/>
+    	<collectedDateTime value="2020-12-01"/> 
     </collection>
     <processing>
         <description value="No storage"/>

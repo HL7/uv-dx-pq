@@ -62,9 +62,7 @@
             </extension>
             <extension
                 url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
-                <!--                <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
-                <!-- #159 -->
-                <valueDateTime value="2020-08"/>
+                            <valueDateTime value="2020-08"/>
             </extension>
             <extension
                 url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
@@ -122,12 +120,11 @@
                             />                            
 <!-\-                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>-\->
                         </extension>-->
-                        <system
-                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
-                        <code value="C185328"/>
-                        <display value="Stability Study"/>
-                    </coding>
-                    <text value="PPQ / Stability"/>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                                    <code value="C133990"/>
+                                    <display value="Commercial"/> 
+                                </coding>
+                            	<text value="Production"/>
                 </valueCodeableConcept>
             </extension>
             <extension url="assignedManufacturer">
@@ -137,9 +134,9 @@
                 </valueReference>
             </extension>
             <extension url="container">
-                <extension url="closureSystemDescription">
-                    <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
-                </extension>
+                    		<extension url="closureSystemDescription">
+                    			<valueString value="100 cc HDPE Bottle 2 g desiccant"/>		
+                    		</extension>
             </extension>
         </extension>
         <!-- #153 -->
