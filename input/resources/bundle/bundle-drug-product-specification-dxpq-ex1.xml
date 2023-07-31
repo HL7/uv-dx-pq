@@ -8,7 +8,7 @@
    <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
    <meta>
       <profile
-         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
       <!--      <profile value="http://accumulus.org/fhir/dx-cmc/specification"/>-->
    </meta>
    <type value="collection"/>
