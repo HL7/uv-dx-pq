@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Specification -->
-<!-- Based on file Accumulus FHIR Substance Example - Specification, posted 05-31-23 -->
-<!-- For this example, changed all system value="http://example-like-loinc.org"/> to <system value="http://example-like-loinc.org"/>-->
-<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://example-like-unitsofmeasure.org"/>-->
-<!-- May need to change <quantitativeDetails> to <permittedUnit> in <ObservationDefinition> -->
+<!-- Based on file Accumulus FHIR Substance Example - Specification, emailed by Rik 7/31/2023 -->
+<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="dummy.unitsofmeasure.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="bundle-drug-substance-specification-dxpq-ex1"/>
     <!--    <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
@@ -95,11 +93,11 @@
         <resource>
             <ObservationDefinition>
                 <id value="Description"/>
-                <name value="Description"/>
+                <title value="Description"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="description"/>
 <!--                        <code value="XXX"/>-->
                         <display value="Description"/>
@@ -123,11 +121,11 @@
         <resource>
             <ObservationDefinition>
                 <id value="Identification"/>
-                <name value="Identification"/>
+                <title value="Identification"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="identification"/>
 <!--                        <code value="XXX"/>-->
                         <display value="Identification"/>
@@ -151,11 +149,11 @@
         <resource>
             <ObservationDefinition>
                 <id value="Assay"/>
-                <name value="Assay"/>
+                <title value="Assay"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="assay"/>
 <!--                        <code value="XXX"/>-->
                         <display value="Assay"/>
@@ -170,14 +168,14 @@
                         <low>
                             <value value="98"/>
                             <unit value="% w/w"/>
-                            <system value="http://example-like-unitsofmeasure.org"/>
+                            <system value="http://dummy.unitsofmeasure.org"/>
                             <code value="%{w/w}"/>
                             <!-- not sure this is a correct ucum code -->
                         </low>
                         <high>
                             <value value="102"/>
                             <unit value="% w/w"/>
-                            <system value="http://example-like-unitsofmeasure.org"/>
+                            <system value="http://dummy.unitsofmeasure.org"/>
                             <code value="%{w/w}"/>
                             <!-- not sure this is a correct ucum code -->
                         </high>
@@ -191,12 +189,11 @@
         <resource>
             <ObservationDefinition>
                 <id value="Impurities"/>
-                <name value="Drug_Substance_Related_Organic_impurities"/>
-<!--                <name value="Drug Substance Related Organic impurities"/>-->
+                <title value="Drug Substance Related Organic impurities"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="DGP"/>
                         <display value="Drug Substance Related Organic impurities"/>
                     </coding>
@@ -204,27 +201,6 @@
                 <method>
                     <text value="Organic impurities by LC"/>
                 </method>
-<!--                <quantitativeDetails>
-                    <unit>
-                        <coding>
-                            <system value="http://example-like-unitsofmeasure.org"/>
-                            <code value="%{w/w}"/>
-                            <!-\- not sure this is a correct ucum code -\->
-                        </coding>
-                    </unit>
-                    <customaryUnit>
-                        <coding>
-                            <code value="% w/w"/>
-                        </coding>
-                    </customaryUnit>
-                </quantitativeDetails>-->
-                <!--                Added 7/29/23 as temp replacement for quantitativeDetails above. See also: https://hl7.org/fhir/valueset-ucum-common.html -->
-<!--                <permittedUnit> 
-                    <system value="http://unitsofmeasure.org"/> 
-                    <code value="g%"/> 
-                    <display value="gram percent"/> 
-                </permittedUnit> -->
-                
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -274,7 +250,7 @@
                     <!-- are expected to have a component that says what impurity this one is -->
                     <code>
                         <coding>
-                            <system value="http://example-like-loinc.org"/>
+                            <system value="http://dummy.loinc.org"/>
                             <code value="IMP"/>
                             <display value="Impurity"/>
                         </coding>
@@ -288,39 +264,18 @@
         <resource>
             <ObservationDefinition>
                 <id value="Mutagenic"/>
-                <name value="Mutagenic_impurities"/>
-<!--                <name value="Mutagenic impurities"/>-->
+                <title value="Mutagenic impurities"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="MUT"/>
                         <display value="Mutagenic impurities"/>
                     </coding>
                 </code>
                 <method>
                     <text value="Impurity 5 content by LC-MS"/>
-                </method>
-<!--                <quantitativeDetails>
-                    <unit>
-                        <coding>
-                            <system value="http://example-like-unitsofmeasure.org"/>
-                            <code value="ppm"/>
-                        </coding>
-                    </unit>
-                    <customaryUnit>
-                        <coding>
-                            <code value="ppm"/>
-                        </coding>
-                    </customaryUnit>
-                </quantitativeDetails>-->
-                <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
-<!--                <permittedUnit> 
-                    <system value="http://unitsofmeasure.org"/> 
-                    <code value="ppm"/> 
-                    <display value="part per million"/> 
-                </permittedUnit> -->
-                
+                </method>               
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -330,7 +285,7 @@
                         <high>
                             <value value="50"/>
                             <unit value="ppm"/>
-                            <system value="http://example-like-unitsofmeasure.org"/>
+                            <system value="http://dummy.unitsofmeasure.org"/>
                             <code value="ppm"/>
                         </high>
                     </range>
@@ -339,7 +294,7 @@
                     <!-- are expected to have a component that says what impurity this one is -->
                     <code>
                         <coding>
-                            <system value="http://example-like-loinc.org"/>
+                            <system value="http://dummy.loinc.org"/>
                             <code value="IMP"/>
                             <display value="Impurity"/>
                         </coding>
@@ -353,12 +308,11 @@
         <resource>
             <ObservationDefinition>
                 <id value="Enantiomeric"/>
-                <name value="Enantiomeric_purity"/>
-<!--                <name value="Enantiomeric purity"/>-->
+                <title value="Enantiomeric purity"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="enantiomeric-purity"/>
 <!--                        <code value="ZZZ"/>-->
                         <display value="Enantiomeric purity"/>
@@ -373,7 +327,7 @@
                         <low>
                             <value value="99.6"/>
                             <unit value="%"/>
-                            <system value="http://example-like-unitsofmeasure.org"/>
+                            <system value="http://dummy.unitsofmeasure.org"/>
                             <code value="%"/>
                         </low>
                     </range>
@@ -386,40 +340,18 @@
         <resource>
             <ObservationDefinition>
                 <id value="Solvents"/>
-                <name value="Residual_solvents"/>
-<!--                <name value="Residual solvents"/>-->
+                <title value="Residual solvents"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="SOL"/>
                         <display value="Residual solvents"/>
                     </coding>
                 </code>
                 <method>
                     <text value="Residual solvents by headspace GC"/>
-                </method>
-<!--                <quantitativeDetails>
-                    <unit>
-                        <coding>
-                            <system value="http://example-like-unitsofmeasure.org"/>
-                            <code value="%{w/w}"/>
-                            <!-\- not sure this is a correct ucum code -\->
-                        </coding>
-                    </unit>
-                    <customaryUnit>
-                        <coding>
-                            <code value="% w/w"/>
-                        </coding>
-                    </customaryUnit>
-                </quantitativeDetails>-->
-                <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
-<!--                <permittedUnit> 
-                    <system value="http://unitsofmeasure.org"/> 
-                    <code value="g%"/> 
-                    <display value="gram percent"/> 
-                </permittedUnit> -->
-                
+                </method> 
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -447,7 +379,7 @@
                     <!-- are expected to have a component that says what solvent this one is -->
                     <code>
                         <coding>
-                            <system value="http://example-like-loinc.org"/>
+                            <system value="http://dummy.loinc.org"/>
                             <code value="SOLV"/>
                             <display value="Solvent"/>
                         </coding>
@@ -462,12 +394,11 @@
         <resource>
             <ObservationDefinition>
                 <id value="Water"/>
-                <name value="Water_Content"/>
-<!--                <name value="Water Content"/>-->
+                <title value="Water Content"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="water-content"/>
 <!--                        <code value="WWW"/>-->
                         <display value="Water Content"/>
@@ -494,12 +425,11 @@
         <resource>
             <ObservationDefinition>
                 <id value="ParticleS"/>
-                <name value="Particle_size_distribution"/>
-<!--                <name value="Particle size distribution"/>-->
+                <title value="Particle size distribution"/>
                 <status value="active"/>
                 <code>
                     <coding>
-                        <system value="http://example-like-loinc.org"/>
+                        <system value="http://dummy.loinc.org"/>
                         <code value="particle-size-distribution"/>
 <!--                        <code value="PART"/>-->
                         <display value="Particle size distribution"/>
@@ -508,26 +438,6 @@
                 <method>
                     <text value="Laser diffraction"/>
                 </method>
-<!--                <quantitativeDetails>
-                    <unit>
-                        <coding>
-                            <system value="http://example-like-unitsofmeasure.org"/>
-                            <code value="um"/>
-                        </coding>
-                    </unit>
-                    <customaryUnit>
-                        <coding>
-                            <code value="µm"/>
-                        </coding>
-                    </customaryUnit>
-                </quantitativeDetails>-->
-                <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
-<!--                <permittedUnit> 
-                    <system value="http://unitsofmeasure.org"/> 
-                    <code value="um"/> 
-                    <display value="micrometer"/> 
-                </permittedUnit> -->
-                
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
@@ -537,7 +447,7 @@
                         <high>
                             <value value="319"/>
                             <unit value="µm"/>
-                            <system value="http://example-like-unitsofmeasure.org"/>
+                            <system value="http://dummy.unitsofmeasure.org"/>
                             <code value="um"/>
                         </high>
                     </range>
@@ -551,7 +461,7 @@
                         <high>
                             <value value="145"/>
                             <unit value="µm"/>
-                            <system value="http://example-like-unitsofmeasure.org"/>
+                            <system value="http://dummy.unitsofmeasure.org"/>
                             <code value="um"/>
                         </high>
                     </range>
@@ -565,7 +475,7 @@
                         <high>
                             <value value="20"/>
                             <unit value="µm"/>
-                            <system value="http://example-like-unitsofmeasure.org"/>
+                            <system value="http://dummy.unitsofmeasure.org"/>
                             <code value="um"/>
                         </high>
                     </range>
@@ -574,7 +484,7 @@
                     <!-- are expected to have a component that says what solvent this one is -->
                     <code>
                         <coding>
-                            <system value="http://example-like-loinc.org"/>
+                            <system value="http://dummy.loinc.org"/>
                             <code value="particle-size"/>
 <!--                            <code value="PARTS"/>-->
                             <display value="Particle size"/>
