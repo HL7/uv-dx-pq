@@ -87,7 +87,6 @@
             </PlanDefinition>
         </resource>
     </entry>
-
     <entry>
         <fullUrl value="https://www.example.org/ObservationDefinition/Description"/>
         <resource>
@@ -388,7 +387,6 @@
             </ObservationDefinition>
         </resource>
     </entry>
-
     <entry>
         <fullUrl value="https://www.example.org/ObservationDefinition/Water"/>
         <resource>
@@ -418,7 +416,6 @@
             </ObservationDefinition>
         </resource>
     </entry>
-
     <entry>
         <fullUrl value="https://www.example.org/ObservationDefinition/Particles"/>
         <resource>
@@ -493,7 +490,6 @@
             </ObservationDefinition>
         </resource>
     </entry>
-
     <entry>
         <fullUrl value="https://www.example.org/SubstanceDefinition/substance1"/>
         <resource>
@@ -535,5 +531,4 @@
             </Organization>
         </resource>
     </entry>
-
 </Bundle>
