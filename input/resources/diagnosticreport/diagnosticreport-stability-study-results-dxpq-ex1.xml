@@ -53,5 +53,5 @@
         <reference value="Observation/Accelerated40C-3-1"/>
     </result>-->
     <!-- skipping rest of Accelerated -->
-    <conclusion value="The samples have been assessed and the conclusion is..."/>
+                <conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 18 months."/>
 </DiagnosticReport>
