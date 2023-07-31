@@ -157,7 +157,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Description"/>
-            <name value="Description"/>
+            <title value="Description"/>
             <status value="active"/>
             <code>
                <coding>
@@ -186,7 +186,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DescriptionEnd"/>
-            <name value="Description"/>
+            <title value="Description"/>
             <status value="active"/>
             <code>
                <coding>
@@ -212,7 +212,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Identification"/>
-            <name value="Identification"/>
+            <title value="Identification"/>
             <status value="active"/>
             <code>
                <coding>
@@ -243,7 +243,7 @@
       <resource>
          <ObservationDefinition>
             <id value="IdentificationEnd"/>
-            <name value="Identification"/>
+            <title value="Identification"/>
             <status value="active"/>
             <code>
                <coding>
@@ -269,7 +269,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Assay"/>
-            <name value="Assay"/>
+            <title value="Assay"/>
             <status value="active"/>
             <code>
                <coding>
@@ -298,7 +298,7 @@
       <resource>
          <ObservationDefinition>
             <id value="AssayEnd"/>
-            <name value="Assay"/>
+            <title value="Assay"/>
             <status value="active"/>
             <code>
                <coding>
@@ -324,7 +324,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Degradation"/>
-            <name value="Degradation Products"/>
+            <title value="Degradation Products"/>
             <status value="active"/>
             <code>
                <coding>
@@ -336,11 +336,11 @@
             <method>
                <text value="Degradation products by UHPLC"/>
             </method>
-            <quantitativeDetails>
+            <!--<quantitativeDetails>
                <unit>
                   <coding>
                      <system value="http://dummy.unitsofmeasure.org"/>
-                     <!--<code value="-->%{w/w}"/> <!-- not sure this is a correct ucum code -->
+                     <!-\-<code value="-\->%{w/w}"/> <!-\- not sure this is a correct ucum code -\->
                   </coding>
                </unit>
                <customaryUnit>
@@ -348,7 +348,7 @@
                      <code value="% w/w"/>
                   </coding>
                </customaryUnit>
-            </quantitativeDetails>
+            </quantitativeDetails>-->
             <qualifiedValue>
                <appliesTo>
                   <!-- could be a code -->
@@ -423,7 +423,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DegradationEnd"/>
-            <name value="Degradation Products"/>
+            <title value="Degradation Products"/>
             <status value="active"/>
             <code>
                <coding>
@@ -432,12 +432,12 @@
                   <display value="Degradation Products"/>
                </coding>
             </code>
-            <quantitativeDetails>
+           <!-- <quantitativeDetails>
                <unit>
                   <coding>
                      <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
-                     <!-- not sure this is a correct ucum code -->
+                     <!-\- not sure this is a correct ucum code -\->
                   </coding>
                </unit>
                <customaryUnit>
@@ -445,7 +445,7 @@
                      <code value="% w/w"/>
                   </coding>
                </customaryUnit>
-            </quantitativeDetails>
+            </quantitativeDetails>-->
             <qualifiedValue>
                <appliesTo>
                   <!-- could be a code -->
@@ -520,7 +520,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Dissolution"/>
-            <name value="Dissolution"/>
+            <title value="Dissolution"/>
             <status value="active"/>
             <code>
                <coding>
@@ -551,7 +551,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DissolutionEnd"/>
-            <name value="Dissolution"/>
+            <title value="Dissolution"/>
             <status value="active"/>
             <code>
                <coding>
@@ -580,7 +580,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Water"/>
-            <name value="Water Content"/>
+            <title value="Water Content"/>
             <status value="active"/>
             <code>
                <coding>
@@ -609,7 +609,7 @@
       <resource>
          <ObservationDefinition>
             <id value="WaterEnd"/>
-            <name value="Water Content"/>
+            <title value="Water Content"/>
             <status value="active"/>
             <code>
                <coding>
@@ -638,7 +638,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Microbiological"/>
-            <name value="Microbiological"/>
+            <title value="Microbiological"/>
             <status value="active"/>
             <code>
                <coding>
@@ -666,7 +666,7 @@
       <resource>
          <ObservationDefinition>
             <id value="MicrobiologicalEnd"/>
-            <name value="Microbiological"/>
+            <title value="Microbiological"/>
             <status value="active"/>
             <code>
                <coding>
@@ -694,7 +694,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Uniformity"/>
-            <name value="Uniformity of dosage"/>
+            <title value="Uniformity of dosage"/>
             <status value="active"/>
             <code>
                <coding>
@@ -724,7 +724,7 @@
       <resource>
          <ObservationDefinition>
             <id value="UniformityEnd"/>
-            <name value="Uniformity of dosage"/>
+            <title value="Uniformity of dosage"/>
             <status value="active"/>
             <code>
                <coding>
