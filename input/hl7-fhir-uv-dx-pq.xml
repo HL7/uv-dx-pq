@@ -212,7 +212,7 @@
             <name value="bundle-drug-product-specification-dxpq-ex1"/>
             <description value="Bundle – Drug Product Specification dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
+                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
             <groupingId value="b12-specification"/>
         </resource>
 
