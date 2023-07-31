@@ -1072,12 +1072,12 @@
                 <generation value="markdown"/>
             </page>
         </page>
-        <parameter>
+<!--        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/guide-parameter-code"/>
                 <code value="apply"/>
             </code>
             <value value="version"/>
-        </parameter>
+        </parameter>-->
     </definition>
 </ImplementationGuide>
