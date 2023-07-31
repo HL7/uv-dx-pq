@@ -19,7 +19,7 @@
         <text value="Description"/>
     </code>
     <subject>
-<!--        Adjusted Ri'k Example-->
+<!--        Adjusted Rik Example-->
 <!--        <reference value="Substance/actual-batch-substance"/>-->
         <reference value="Substance/substance-dxpq-ex1"/>
     </subject>
