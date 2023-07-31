@@ -191,7 +191,8 @@
         <resource>
             <ObservationDefinition>
                 <id value="Impurities"/>
-                <name value="Drug Substance Related Organic impurities"/>
+                <name value="Drug_Substance_Related_Organic_impurities"/>
+<!--                <name value="Drug Substance Related Organic impurities"/>-->
                 <status value="active"/>
                 <code>
                     <coding>
@@ -287,7 +288,8 @@
         <resource>
             <ObservationDefinition>
                 <id value="Mutagenic"/>
-                <name value="Mutagenic impurities"/>
+                <name value="Mutagenic_impurities"/>
+<!--                <name value="Mutagenic impurities"/>-->
                 <status value="active"/>
                 <code>
                     <coding>
@@ -351,7 +353,8 @@
         <resource>
             <ObservationDefinition>
                 <id value="Enantiomeric"/>
-                <name value="Enantiomeric purity"/>
+                <name value="Enantiomeric_purity"/>
+<!--                <name value="Enantiomeric purity"/>-->
                 <status value="active"/>
                 <code>
                     <coding>
@@ -383,7 +386,8 @@
         <resource>
             <ObservationDefinition>
                 <id value="Solvents"/>
-                <name value="Residual solvents"/>
+                <name value="Residual_solvents"/>
+<!--                <name value="Residual solvents"/>-->
                 <status value="active"/>
                 <code>
                     <coding>
@@ -458,7 +462,8 @@
         <resource>
             <ObservationDefinition>
                 <id value="Water"/>
-                <name value="Water Content"/>
+                <name value="Water_Content"/>
+<!--                <name value="Water Content"/>-->
                 <status value="active"/>
                 <code>
                     <coding>
@@ -488,8 +493,9 @@
         <fullUrl value="https://www.example.org/ObservationDefinition/Particles"/>
         <resource>
             <ObservationDefinition>
-                <id value="Particles"/>
-                <name value="Particle size distribution"/>
+                <id value="ParticleS"/>
+                <name value="Particle_size_distribution"/>
+<!--                <name value="Particle size distribution"/>-->
                 <status value="active"/>
                 <code>
                     <coding>
