@@ -17,3 +17,4 @@ Code System URI 'http://example-like-loinc.org' is unknown so the code cannot be
 Code System URI 'http://example-like-unitsofmeasure.org' is unknown so the code cannot be validated
 Code System URI 'http://example.accumulus.org/fhir/code/packageProperty' is unknown so the code cannot be validated
 Code System URI 'http://example.accumulus.org/fhir/code/grade' is unknown so the code cannot be validated
+Code System URI 'http://dummy.unitsofmeasure.org' is unknown so the code cannot be validated
