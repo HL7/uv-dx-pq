@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Specification -->
+<!-- Based on file Accumulus FHIR Product Example - Specification, posted 05-31-2023 -->
+<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
+<!--For this example, changed <system value="http://dummy.loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="bundle-drug-product-specification-dxpq-ex1"/>
+   <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
+   <meta>
+      <profile
+         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/specification"/>-->
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/>
+      <resource>
+         <PlanDefinition>
+            <id value="specificationProtocol"/>
+            <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
+            <status value="active"/>
+            <subjectReference>
+               <reference value="MedicinalProductDefinition/product"/>
+            </subjectReference>
+            <description value="Narrative description of specifications"/>
+            <action>
+               <!-- this is then entire thing -->
+               <title value="Specification(s) for Drug Product"/>
+               <code>
+                  <text value="Overall set of actions"/>
+               </code>
+               <action>
+                  <title value="Release"/>
+                  <code>
+                     <text value="Timing Group"/>
+                  </code>
+                  <timingTiming>
+                     <code>
+                        <text value="Release time"/>
+                     </code>
+                  </timingTiming>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Description"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Identification"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Assay"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Degradation"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Dissolution"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Uniformity"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Microbiological"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Water"/>
+                  </action>
+               </action>
+               <action>
+                  <title value="End of shelf life"/>
+                  <code>
+                     <text value="Timing Group"/>
+                  </code>
+                  <timingTiming>
+                     <code>
+                        <text value="At end of shelf life"/>
+                     </code>
+                  </timingTiming>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DescriptionEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/IdentificationEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/AssayEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DegradationEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DissolutionEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/UniformityEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/MicrobiologicalEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/WaterEnd"/>
+                  </action>
+                  <action> </action>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Description"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Description"/>
+            <name value="Description"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="description"/>
+                  <!--<code value="-->XXX"/> 
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <method>
+               <text value="Visual inspection"/>
+            </method>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/DescriptionEnd"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DescriptionEnd"/>
+            <name value="Description"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy..org"/>
+                  <code value="description"/>
+                  <!--<code value="-->XXX"/> 
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Identification"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Identification"/>
+            <name value="Identification"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="identification"/>
+                  <!--<code value="-->XXX"/> 
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <method>
+               <text value="ID by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="Consistent with the retention time and UV spectrum of the reference standard"
+                  />
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/IdentificationEnd"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="IdentificationEnd"/>
+            <name value="Identification"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="identification"/>
+                  <!-- <code value="XXX"/>-->
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Assay"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Assay"/>
+            <name value="Assay"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="assay"/>
+                  <!--<code value="-->XXX"/> 
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <method>
+               <text value="Assay by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="95% to 105% of label claim"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/AssayEnd"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="AssayEnd"/>
+            <name value="Assay"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="assay"/>
+                  <!--<code value="-->XXX"/> 
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Degradation"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Degradation"/>
+            <name value="Degradation Products"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP-p"/>
+                  <display value="Degradation Products"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Degradation products by UHPLC"/>
+            </method>
+            <quantitativeDetails>
+               <unit>
+                  <coding>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <!--<code value="-->%{w/w}"/> <!-- not sure this is a correct ucum code -->
+                  </coding>
+               </unit>
+               <customaryUnit>
+                  <coding>
+                     <code value="% w/w"/>
+                  </coding>
+               </customaryUnit>
+            </quantitativeDetails>
+            <qualifiedValue>
+               <appliesTo>
+                  <!-- could be a code -->
+                  <text value="Impurity 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.2"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.3"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 3"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.3"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Individual unspecified degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.2"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Total degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="1.4"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component>
+               <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/DegradationEnd"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DegradationEnd"/>
+            <name value="Degradation Products"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP-p"/>
+                  <display value="Degradation Products"/>
+               </coding>
+            </code>
+            <quantitativeDetails>
+               <unit>
+                  <coding>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{w/w}"/>
+                     <!-- not sure this is a correct ucum code -->
+                  </coding>
+               </unit>
+               <customaryUnit>
+                  <coding>
+                     <code value="% w/w"/>
+                  </coding>
+               </customaryUnit>
+            </quantitativeDetails>
+            <qualifiedValue>
+               <appliesTo>
+                  <!-- could be a code -->
+                  <text value="Impurity 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.8"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.4"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 3"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.4"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Individual unspecified degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.3"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Total degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.3"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component>
+               <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Dissolution"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Dissolution"/>
+            <name value="Dissolution"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="dissolution"/>
+<!--                  <code value="ZZZ"/>-->
+                  <display value="Dissolution"/>
+               </coding>
+               <text value="Dissolution"/>
+            </code>
+            <method>
+               <text value="Apparatus 2 (paddles), UV measurement"/>
+            </method>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes"
+                  />
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/DissolutionEnd"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DissolutionEnd"/>
+            <name value="Dissolution"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="dissolution"/>
+                  <!-- <code value="ZZZ"/>-->
+                  <display value="Dissolution"/>
+               </coding>
+               <text value="Dissolution"/>
+            </code>
+            <method>
+               <text value="Apparatus 2 (paddles), UV measurement"/>
+            </method>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Water"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Water"/>
+            <name value="Water Content"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="WWW"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <method>
+               <text value="USP &lt;921&gt;"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <high>
+                     <value value="1.0"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/WaterEnd"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="WaterEnd"/>
+            <name value="Water Content"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="WWW"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <method>
+               <text value="USP &lt;921&gt;"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <high>
+                     <value value="2.0"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Microbiological"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Microbiological"/>
+            <name value="Microbiological"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <method>
+               <text value="Ph Eur"/>
+            </method>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="Shall comply with the requirements of the Ph Eur"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/MicrobiologicalEnd"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="MicrobiologicalEnd"/>
+            <name value="Microbiological"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <method>
+               <text value="Ph Eur"/>
+            </method>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Uniformity"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Uniformity"/>
+            <name value="Uniformity of dosage"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="uniformity-dosage"/>
+<!--                  <code value="ZZZ"/>-->
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <method>
+               <text value="Weight variation"/>
+            </method>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/UniformityEnd"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="UniformityEnd"/>
+            <name value="Uniformity of dosage"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="uniformity-dosage"/>
+<!--                  <code value="ZZZ"/>-->
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <qualifiedValue>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="https://www.example.org/MedicinalProductDefinition/product"/>
+      <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
+      <resource>
+         <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="product"/>
+            <description value="Textual description of the product"/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+                  <code value="100000073667"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+                  <code value="100000073619"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <name>
+               <productName value="Stelbat Tablets, 20mg"/>
+               <type>
+                  <coding>
+                     <system value="http://example.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+               <part>
+                  <part value="20mg"/>
+                  <type>
+                     <coding>
+                        <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                        <code value="StrengthPart"/>
+                        <display value="Strenth part"/>
+                     </coding>
+                  </type>
+               </part>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/Ingredient/productIngredient"/>
+      <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
+      <resource>
+         <Ingredient>
+            <id value="productIngredient"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/product"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072072"/>
+                  <display value="Active"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/substance1"/>
+                  </reference>
+               </code>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/SubstanceDefinition/substance1"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substance1"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="https://www.example.org/Organization/substance-manufacturer"/>
+      <resource>
+         <Organization>
+            <id value="substance-manufacturer"/>
+            <identifier>
+               <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+</Bundle>

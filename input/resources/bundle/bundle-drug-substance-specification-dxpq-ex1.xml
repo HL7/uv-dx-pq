@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Specification -->
 <!-- Based on file Accumulus FHIR Substance Example - Specification, emailed by Rik 7/31/2023 -->
-<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="dummy.unitsofmeasure.org"/>-->
+<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="bundle-drug-substance-specification-dxpq-ex1"/>
     <!--    <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
@@ -194,7 +194,7 @@
                 <code>
                     <coding>
                         <system value="http://dummy.loinc.org"/>
-                        <code value="DGP"/>
+                        <code value="DGP-s"/>
                         <display value="Drug Substance Related Organic impurities"/>
                     </coding>
                 </code>
@@ -399,8 +399,7 @@
                 <code>
                     <coding>
                         <system value="http://dummy.loinc.org"/>
-                        <code value="water-content"/>
-<!--                        <code value="WWW"/>-->
+                        <code value="WWW"/>
                         <display value="Water Content"/>
                     </coding>
                     <text value="Water Content"/>
