@@ -562,6 +562,7 @@
 
         <!--Batch or Lot Information-->
 
+        <!--Manufacturing Process -->
         <!--Manufacturing Process Profiles-->
         <resource>
             <reference>
@@ -574,6 +575,19 @@
             <groupingId value="b5-mnf"/>
         </resource>
 
+        <!--Manufacturing Process Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-manufacturing-dxpq-ex1"/>
+            </reference>
+            <name value="bundle-product-manufacturing-dxpq-ex1"/>
+            <description value="Bundle - Product Manufacturing dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
+            <groupingId value="b5-mnf"/>
+        </resource>
+        
         <!--Process Validation Profiles-->
         <resource>
             <reference>
