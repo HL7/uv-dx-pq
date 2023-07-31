@@ -218,11 +218,11 @@
                     </customaryUnit>
                 </quantitativeDetails>-->
                 <!--                Added 7/29/23 as temp replacement for quantitativeDetails above. See also: https://hl7.org/fhir/valueset-ucum-common.html -->
-                <permittedUnit> 
+<!--                <permittedUnit> 
                     <system value="http://unitsofmeasure.org"/> 
                     <code value="g%"/> 
                     <display value="gram percent"/> 
-                </permittedUnit> 
+                </permittedUnit> -->
                 
                 <qualifiedValue>
                     <appliesTo>
@@ -313,11 +313,11 @@
                     </customaryUnit>
                 </quantitativeDetails>-->
                 <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
-                <permittedUnit> 
+<!--                <permittedUnit> 
                     <system value="http://unitsofmeasure.org"/> 
                     <code value="ppm"/> 
                     <display value="part per million"/> 
-                </permittedUnit> 
+                </permittedUnit> -->
                 
                 <qualifiedValue>
                     <appliesTo>
@@ -410,11 +410,11 @@
                     </customaryUnit>
                 </quantitativeDetails>-->
                 <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
-                <permittedUnit> 
+<!--                <permittedUnit> 
                     <system value="http://unitsofmeasure.org"/> 
                     <code value="g%"/> 
                     <display value="gram percent"/> 
-                </permittedUnit> 
+                </permittedUnit> -->
                 
                 <qualifiedValue>
                     <appliesTo>
@@ -516,11 +516,11 @@
                     </customaryUnit>
                 </quantitativeDetails>-->
                 <!--                Added 7/29/23 as temp replacement for quantitativeDetails above -->
-                <permittedUnit> 
+<!--                <permittedUnit> 
                     <system value="http://unitsofmeasure.org"/> 
                     <code value="um"/> 
                     <display value="micrometer"/> 
-                </permittedUnit> 
+                </permittedUnit> -->
                 
                 <qualifiedValue>
                     <appliesTo>
