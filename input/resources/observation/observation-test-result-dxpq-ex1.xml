@@ -19,7 +19,7 @@
                             <text value="Degradation Products"/>
     </code>
     <valueQuantity>
-                            <value value="0.1"/>
+                            <value value="0.101"/>
                             <unit value="% w/w"/>
                             <system value="http://unitsofmeasure.org"/>
                             <code value="%{ w/w}"/>
