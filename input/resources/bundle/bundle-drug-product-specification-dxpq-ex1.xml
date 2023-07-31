@@ -146,7 +146,8 @@
                      </code>
                      <definitionCanonical value="ObservationDefinition/WaterEnd"/>
                   </action>
-<!--                  <action> </action>-->
+                  <!-- Empty action tags seem to have caused a publishing error "Not a JSON Object: null" -->
+                  <!--                  <action> </action>-->
                </action>
             </action>
          </PlanDefinition>
@@ -163,7 +164,7 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="description"/>
-                  <!--<code value="-->XXX"/> 
+<!--                  <code value="XXX"/>-->
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -192,7 +193,7 @@
                <coding>
                   <system value="http://dummy..org"/>
                   <code value="description"/>
-                  <!--<code value="-->XXX"/> 
+                  <!--                  <code value="XXX"/>-->
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -218,7 +219,7 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="identification"/>
-                  <!--<code value="-->XXX"/> 
+                  <!--                  <code value="XXX"/>-->
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -249,7 +250,7 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="identification"/>
-                  <!-- <code value="XXX"/>-->
+                  <!--                  <code value="XXX"/>-->
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -275,7 +276,7 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="assay"/>
-                  <!--<code value="-->XXX"/> 
+                  <!--                  <code value="XXX"/>-->
                   <display value="Assay"/>
                </coding>
                <text value="Assay"/>
@@ -304,7 +305,7 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="assay"/>
-                  <!--<code value="-->XXX"/> 
+                  <!--                  <code value="XXX"/>-->
                   <display value="Assay"/>
                </coding>
                <text value="Assay"/>
@@ -783,7 +784,8 @@
                      <coding>
                         <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
                         <code value="StrengthPart"/>
-                        <display value="Strenth part"/>
+<!--                        <display value="Strenth part"/>-->
+                        <display value="Strength part"/>
                      </coding>
                   </type>
                </part>
