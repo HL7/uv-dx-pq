@@ -244,8 +244,9 @@
                         <!--                     <extension url="http://accumulus.org/fhir/extension/testComment">-->
                         <valueString
                            value="Impurity 3 was included in the release specification throughout clinical development, and no longer forms a part of a commercial release specification; see Section S.4.5 Justification of Specification and Section S.2.5 Validation (PPQ) for additional data">
-                           <extension
-                              url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">
+                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
+                           <!--<extension
+                              url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
                               <valueString value="[2]"/>
                            </extension>
                         </valueString>

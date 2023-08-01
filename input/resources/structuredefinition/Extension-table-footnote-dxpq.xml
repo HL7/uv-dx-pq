@@ -34,7 +34,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq"/>
         </element>
 
     </differential>
