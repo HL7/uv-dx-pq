@@ -179,7 +179,9 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
                </extension>
             </qualifiedValue>
@@ -202,7 +204,9 @@
                <text value="Description"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -228,7 +232,9 @@
                <text value="ID by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString
                      value="Consistent with the retention time and UV spectrum of the reference standard"
                   />
@@ -253,7 +259,9 @@
                <text value="Identification"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -279,7 +287,9 @@
                <text value="Assay by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="95% to 105% of label claim"/>
                </extension>
             </qualifiedValue>
@@ -302,7 +312,9 @@
                <text value="Assay"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -326,12 +338,12 @@
             <method>
                <text value="Degradation products by UHPLC"/>
             </method>
-            <quantitativeDetails>
+            <!--            <quantitativeDetails>
                <unit>
                   <coding>
                      <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
-                     <!-- not sure this is a correct ucum code -->
+                     <!-\- not sure this is a correct ucum code -\->
                   </coding>
                </unit>
                <customaryUnit>
@@ -339,7 +351,7 @@
                      <code value="% w/w"/>
                   </coding>
                </customaryUnit>
-            </quantitativeDetails>
+            </quantitativeDetails>-->
             <qualifiedValue>
                <appliesTo>
                   <!-- could be a code -->
@@ -423,12 +435,12 @@
                   <display value="Degradation Products"/>
                </coding>
             </code>
-            <quantitativeDetails>
+            <!--            <quantitativeDetails>
                <unit>
                   <coding>
                      <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
-                     <!-- not sure this is a correct ucum code -->
+                     <!-\- not sure this is a correct ucum code -\->
                   </coding>
                </unit>
                <customaryUnit>
@@ -436,7 +448,7 @@
                      <code value="% w/w"/>
                   </coding>
                </customaryUnit>
-            </quantitativeDetails>
+            </quantitativeDetails>-->
             <qualifiedValue>
                <appliesTo>
                   <!-- could be a code -->
@@ -525,7 +537,9 @@
                <text value="Apparatus 2 (paddles), UV measurement"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString
                      value="Shall comply with the requirements of the harmonised USP/JP/Ph"/>
                </extension>
@@ -582,7 +596,9 @@
                <text value="Apparatus 2 (paddles), UV measurement"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -666,7 +682,9 @@
                <text value="Ph Eur"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Shall comply with the requirements of the Ph Eur"/>
                </extension>
             </qualifiedValue>
@@ -692,7 +710,9 @@
                <text value="Ph Eur"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -718,7 +738,9 @@
                <text value="Weight variation"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString
                      value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
                </extension>
@@ -742,7 +764,9 @@
                <text value="uniformity of dosage units (by weight)"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -756,7 +780,9 @@
          <Medication>
             <id value="medication-actual-batch"/>
             <code>
-               <extension url="http://accumulus.org/fhir/extension/medicationDefinition">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/medicationDefinition">-->
                   <valueReference>
                      <!-- todo consider change this be the MID? -->
                      <reference value="MedicinalProductDefinition/product"/>
@@ -767,11 +793,15 @@
             <batch>
                <extension
                   url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <!--                     <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">-->
                      <valueReference>
                         <reference value="PlanDefinition/manufacturingProcess"/>
                      </valueReference>
@@ -786,11 +816,14 @@
                      <!-- #157 -->
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingDate">
-                     <!-- #159 -->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                     <!--<extension url="http://accumulus.org-->/fhir/extension/packagingDate"> <!-- #159 -->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingSite">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -804,7 +837,9 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/actualYield">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                     <!--<extension url="http://accumulus.org/fhir/extension/actualYield">-->
                      <valueQuantity>
                         <!-- #160 -->
                         <value value="4.8"/>
@@ -815,7 +850,9 @@
                      <!-- #159 -->
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
+                           <extension
+                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
                               <valueString
                                  value="Comment: This has a value set defined in PQ/CMC but no code system"
                               />
@@ -853,7 +890,9 @@
          <Medication>
             <id value="medication-actual-batch-2"/>
             <code>
-               <extension url="http://accumulus.org/fhir/extension/medicationDefinition">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/medicationDefinition">-->
                   <valueReference>
                      <reference value="MedicinalProductDefinition/product"/>
                   </valueReference>
@@ -862,10 +901,14 @@
             <batch>
                <extension
                   url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">-->
                      <valueReference>
                         <reference value="PlanDefinition/manufacturingProcess"/>
                      </valueReference>
@@ -879,10 +922,14 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingDate">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                     <!--<extension url="http://accumulus.org/fhir/extension/packagingDate">-->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingSite">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -893,7 +940,9 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/actualYield">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                     <!--<extension url="http://accumulus.org/fhir/extension/actualYield">-->
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -902,7 +951,9 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
+                           <extension
+                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
                               <valueString
                                  value="Comment: This has a value set defined in PQ/CMC but no code system"
                               />
@@ -938,7 +989,9 @@
          <Medication>
             <id value="medication-actual-batch-3"/>
             <code>
-               <extension url="http://accumulus.org/fhir/extension/medicationDefinition">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+                  <!-- <extension url="http://accumulus.org/fhir/extension/medicationDefinition">-->
                   <valueReference>
                      <reference value="MedicinalProductDefinition/product"/>
                   </valueReference>
@@ -947,10 +1000,14 @@
             <batch>
                <extension
                   url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">-->
                      <valueReference>
                         <reference value="PlanDefinition/manufacturingProcess"/>
                      </valueReference>
@@ -958,21 +1015,28 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingDate">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                     <!--  <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingSite">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                     <!--  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
                   </extension>
+
                   <extension url="batchQuantity">
                      <valueQuantity>
                         <value value="100125"/>
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/actualYield">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/actualYield">-->
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -981,7 +1045,9 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
+                           <extension
+                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
                               <valueString
                                  value="Comment: This has a value set defined in PQ/CMC but no code system"
                               />
@@ -1035,7 +1101,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/manufacturer"/>
+      <fullUrl value="https://www.example.org/Organization/packaging"/>
       <resource>
          <Organization>
             <id value="packaging"/>
