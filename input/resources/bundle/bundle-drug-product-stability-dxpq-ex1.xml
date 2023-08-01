@@ -5,10 +5,11 @@
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-stability-dxpq-ex1"/>
-<!--   <id value="product-stability-study"/>-->
+   <!--   <id value="product-stability-study"/>-->
    <meta>
-      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/stability"/>-->
+      <profile
+         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
+      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/stability"/>-->
    </meta>
    <type value="collection"/>
    <!-- Section 11 - Stability Study - Results -->
@@ -16,32 +17,39 @@
       <fullUrl value="urn:uuid:6f4a3311-92c5-2b4a-533e-76341e414c63"/>
       <resource>
          <DiagnosticReport>
-                <!-- <id value="studyResultsReport"/>-->
+            <!-- <id value="studyResultsReport"/>-->
             <id value="diagnosticreport-stability-study-results-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"
+               />
             </meta>
             <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/businessName">
                     <valueString value="Section 11 - Stability Study - Results"/>
                 </extension-->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
+                  <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"
+                  />
                </valueReference>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/statisticalModel">
+                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-statistical-model-dxpq">
+<!--            <extension url="http://accumulus.org/fhir/extension/statisticalModel">-->
                <valueCodeableConcept>
-                         <!-- #223 -->
-                         <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then
+                  <!-- #223 -->
+                  <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then
                             have no place to put a context. Ideally this would be a code/code pair.
                             Code says "statistical model", code (or text) then says what it is -->
-                  <text value="information about statistical model utilized to interpret stability study results"/>
+                  <text
+                     value="information about statistical model utilized to interpret stability study results"
+                  />
                </valueCodeableConcept>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/containerOrientation">
+                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-container-orientation-dxpq">
+<!--            <extension url="http://accumulus.org/fhir/extension/containerOrientation">-->
                <valueCodeableConcept>
-                         <!-- #227 -->
-                         <!-- Considered ObservatioDefinition.usageContext -->
+                  <!-- #227 -->
+                  <!-- Considered ObservatioDefinition.usageContext -->
                   <text value="Horizontal"/>
                </valueCodeableConcept>
             </extension>
@@ -57,8 +65,10 @@
                   <display value="Stability Study Report - 18 months"/>
                </coding>
             </code>
-            <effectiveDateTime value="2020-12"> <!-- start of stability test -->
-               <extension url="http://accumulus.org/fhir/extension/timePointDescription">
+            <effectiveDateTime value="2020-12">
+               <!-- start of stability test -->
+                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-time-point-description-dxpq">
+<!--               <extension url="http://accumulus.org/fhir/extension/timePointDescription">-->
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://accumulus.org/fhir/code/timePointDescription"/>
@@ -100,7 +110,8 @@
                <reference value="Observation/Accelerated40C-3-1"/>
             </result>
             <!-- skipping rest of Accelerated -->
-            <conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 18 months."/>
+            <conclusion
+               value="The samples have been assessed and the conclusion is that the shelf life can be 18 months."/>
             <!-- NEW DATA -->
             <!--conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 24 months."/-->
          </DiagnosticReport>
@@ -109,27 +120,35 @@
    <entry>
       <fullUrl value="urn:uuid:c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
       <resource>
-            
-            <!-- Section 11 - Stability Study - Protocol -->
+
+         <!-- Section 11 - Stability Study - Protocol -->
          <PlanDefinition>
-                <!--<id value="stabilityStudyProtocol"/>-->
+            <!--<id value="stabilityStudyProtocol"/>-->
             <id value="plandefinition-stability-study-protocol-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"
+               />
             </meta>
             <title value="Stability Monitoring Program"/>
             <status value="active"/>
             <subjectReference>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference
+                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+               />
             </subjectReference>
             <description value="Narrative description of Stability Study"/>
             <!-- new "tabular" style -->
-            <action> <!-- this is then entire thing -->
-               <title value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbat Tablets, 20 mg"/>
-               <action> <!-- TODO add codes here for the different levels? -->
+            <action>
+               <!-- this is then entire thing -->
+               <title
+                  value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbat Tablets, 20 mg"/>
+               <action>
+                  <!-- TODO add codes here for the different levels? -->
                   <title value="Long-Term"/>
                   <description value="25°C/60% RH"/>
-                  <action> <!-- 0 months -->
+                  <action>
+                     <!-- 0 months -->
                      <title value="Initial"/>
                      <timingTiming>
                         <repeat>
@@ -150,13 +169,16 @@
                            <frequency value="1"/>
                         </repeat>
                      </timingTiming>
-                     <action> <!-- the categories to do at this step -->
+                     <action>
+                        <!-- the categories to do at this step -->
                         <title value="XYZ"/>
                         <!-- Long term -->
-                        <definitionCanonical value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                        <definitionCanonical
+                           value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
                      </action>
                   </action>
-                  <action> <!-- 3 months -->
+                  <action>
+                     <!-- 3 months -->
                      <title value="3"/>
                      <timingTiming>
                         <repeat>
@@ -179,10 +201,12 @@
                      </timingTiming>
                      <action>
                         <title value="X"/>
-                        <definitionCanonical value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
+                        <definitionCanonical
+                           value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
                      </action>
                   </action>
-                  <action> <!-- 6 months -->
+                  <action>
+                     <!-- 6 months -->
                      <title value="6"/>
                      <timingTiming>
                         <repeat>
@@ -208,7 +232,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25X-6"/>
                      </action>
                   </action>
-                  <action> <!-- 9 months -->
+                  <action>
+                     <!-- 9 months -->
                      <title value="9"/>
                      <timingTiming>
                         <repeat>
@@ -234,7 +259,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25X-9"/>
                      </action>
                   </action>
-                  <action> <!-- 12 months -->
+                  <action>
+                     <!-- 12 months -->
                      <title value="12"/>
                      <timingTiming>
                         <repeat>
@@ -260,7 +286,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25XY-12"/>
                      </action>
                   </action>
-                  <action> <!-- 18 months -->
+                  <action>
+                     <!-- 18 months -->
                      <title value="18"/>
                      <timingTiming>
                         <repeat>
@@ -286,7 +313,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25XY-18"/>
                      </action>
                   </action>
-                  <action> <!-- 24 months -->
+                  <action>
+                     <!-- 24 months -->
                      <title value="24"/>
                      <timingTiming>
                         <repeat>
@@ -341,10 +369,12 @@
                      </timingTiming>
                      <action>
                         <title value="XYZ"/>
-                        <definitionCanonical value="ActivityDefinition/activityAccelerated40XYZ-Initial"/>
+                        <definitionCanonical
+                           value="ActivityDefinition/activityAccelerated40XYZ-Initial"/>
                      </action>
                   </action>
-                  <action> <!-- 3 months -->
+                  <action>
+                     <!-- 3 months -->
                      <title value="3"/>
                      <timingTiming>
                         <repeat>
@@ -370,7 +400,8 @@
                         <definitionCanonical value="ActivityDefinition/activityAccelerated40X-3"/>
                      </action>
                   </action>
-                  <action> <!-- 6 months -->
+                  <action>
+                     <!-- 6 months -->
                      <title value="6"/>
                      <timingTiming>
                         <repeat>
@@ -396,7 +427,8 @@
                         <definitionCanonical value="ActivityDefinition/activityAccelerated40X-6"/>
                      </action>
                   </action>
-                  <action> <!-- 9 months -->
+                  <action>
+                     <!-- 9 months -->
                      <title value="9"/>
                      <timingTiming>
                         <repeat>
@@ -417,11 +449,13 @@
                            <frequency value="1"/>
                         </repeat>
                      </timingTiming>
-                     <action> <!-- none -->
+                     <action>
+                        <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 12 months -->
+                  <action>
+                     <!-- 12 months -->
                      <title value="12"/>
                      <timingTiming>
                         <repeat>
@@ -443,11 +477,12 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
+                        <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 18 months -->
+                  <action>
+                     <!-- 18 months -->
                      <title value="18"/>
                      <timingTiming>
                         <repeat>
@@ -469,11 +504,12 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
+                        <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 24 months -->
+                  <action>
+                     <!-- 24 months -->
                      <title value="24"/>
                      <timingTiming>
                         <repeat>
@@ -495,7 +531,7 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
+                        <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
@@ -510,10 +546,12 @@
       <fullUrl value="urn:uuid:3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
       <resource>
          <SpecimenDefinition>
-                <!--<id value="specimenDefStoredAt25"/>-->
+            <!--<id value="specimenDefStoredAt25"/>-->
             <id value="specimendefinition-stability-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"
+               />
             </meta>
             <status value="active"/>
             <typeTested>
@@ -529,14 +567,17 @@
       <fullUrl value="urn:uuid:610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
       <resource>
          <ActivityDefinition>
-                <!-- <id value="activityLongTerm25X-3"/>-->
+            <!-- <id value="activityLongTerm25X-3"/>-->
             <id value="activitydefinition-stability-test-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
+               />
             </meta>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            <observationRequirement
+               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
             <!-- longTerm25X -->
          </ActivityDefinition>
       </resource>
@@ -548,7 +589,8 @@
             <id value="activityLongTerm25X-6"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            <observationRequirement
+               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -559,7 +601,8 @@
             <id value="activityLongTerm25X-9"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            <observationRequirement
+               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -570,7 +613,8 @@
             <id value="activityLongTerm25XYZ-Initial"/>
             <title value="Long-term - 25°C/60% RH - XYZ"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            <observationRequirement
+               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
             <observationRequirement value="ObservationDefinition/longTerm25Y"/>
             <observationRequirement value="ObservationDefinition/longTerm25Z"/>
          </ActivityDefinition>
@@ -583,7 +627,8 @@
             <id value="activityLongTerm25XY-12"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            <observationRequirement
+               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
             <observationRequirement value="ObservationDefinition/longTerm25Y"/>
          </ActivityDefinition>
       </resource>
@@ -595,7 +640,8 @@
             <id value="activityLongTerm25XY-18"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            <observationRequirement
+               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
             <observationRequirement value="ObservationDefinition/longTerm25Y"/>
          </ActivityDefinition>
       </resource>
@@ -607,7 +653,8 @@
             <id value="activityLongTerm25XY-24"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            <observationRequirement
+               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
             <observationRequirement value="ObservationDefinition/longTerm25Y"/>
          </ActivityDefinition>
       </resource>
@@ -616,10 +663,12 @@
       <fullUrl value="urn:uuid:b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
       <resource>
          <ObservationDefinition>
-                <!--<id value="longTerm25X"/>-->
+            <!--<id value="longTerm25X"/>-->
             <id value="observationdefinition-test-method-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
+               />
             </meta>
             <title value="X"/>
             <status value="active"/>
@@ -658,9 +707,11 @@
                <text value="Description"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="An orange film-coated tablet, debossed with 175 on one side">
-                     <extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">
+                                          <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
+<!--                     <extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
                         <valueString value="Note 1"/>
                      </extension>
                   </valueString>
@@ -684,7 +735,8 @@
                </coding>
             </code>
             <qualifiedValue>
-               <appliesTo> <!-- could be a code -->
+               <appliesTo>
+                  <!-- could be a code -->
                   <text value="Impurity 1"/>
                </appliesTo>
                <range>
@@ -748,7 +800,8 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component> <!-- are expected to have a component that says what impurity this one is -->
+            <component>
+               <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -764,10 +817,12 @@
       <fullUrl value="urn:uuid:186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
       <resource>
          <ObservationDefinition>
-                <!-- <id value="Water"/> -->
+            <!-- <id value="Water"/> -->
             <id value="observationdefinition-simple-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+               />
             </meta>
             <title value="Water Content (% w/w) (Mean)"/>
             <status value="active"/>
@@ -828,7 +883,8 @@
                <text value="Microbiological Quality"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Complies with PhEur"/>
                </extension>
             </qualifiedValue>
@@ -871,7 +927,8 @@
                <text value="uniformity of dosage units (by weight)"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Complies"/>
                </extension>
             </qualifiedValue>
@@ -996,10 +1053,11 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
       <resource>
          <Specimen>
-                <!--id value="stabilityInitial-1"/-->
+            <!--id value="stabilityInitial-1"/-->
             <id value="specimen-stability-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-01"/>
@@ -1020,7 +1078,8 @@
          <Specimen>
             <id value="stabilityInitial-2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-02"/>
@@ -1041,7 +1100,8 @@
          <Specimen>
             <id value="stabilityInitial-3"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-03"/>
@@ -1084,10 +1144,12 @@
             </contained>
             <contained>
                <Observation>
-                        <!--id value="LongTerm25C-initial-1-Degradation-imp1"/-->
+                  <!--id value="LongTerm25C-initial-1-Degradation-imp1"/-->
                   <id value="observation-test-result-dxpq-ex1"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
+                     <profile
+                        value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"
+                     />
                   </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
@@ -1116,7 +1178,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity 1"/>
                      </valueCodeableConcept>
                   </component>
@@ -1267,7 +1329,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Water"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"
+                     />
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1618,7 +1681,8 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-storage-duration-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">-->
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1647,7 +1711,8 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-storage-duration-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">-->
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1676,7 +1741,8 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-storage-duration-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">-->
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1723,7 +1789,9 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Degradation-imp1"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
+                     <profile
+                        value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"
+                     />
                   </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
@@ -1752,7 +1820,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity 1"/>
                      </valueCodeableConcept>
                   </component>
@@ -1903,7 +1971,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Water"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"
+                     />
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2155,7 +2224,8 @@
             <processing>
                <description value="Store for 3 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-storage-duration-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">-->
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -2569,7 +2639,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                    			<!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity 1"/>
                      </valueCodeableConcept>
                   </component>
@@ -2605,7 +2675,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-            					<!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity 2"/>
                      </valueCodeableConcept>
                   </component>
@@ -2721,7 +2791,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Water"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"
+                     />
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2829,61 +2900,82 @@
       <fullUrl value="urn:uuid:7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
       <resource>
          <Medication>
-                <!-- <id value="medication-actual-batch"/> -->
+            <!-- <id value="medication-actual-batch"/> -->
             <id value="medication-batch-information-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"
+               />
             </meta>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
-                  <valueReference> <!-- todo consider change this be the MID? -->
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference>
+                     <!-- todo consider change this be the MID? -->
+                     <reference
+                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                      <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
                         <reference value="Substance/substance-dxpq-ex1"/>
                      </valueReference>
                   </extension>
-                  <extension url="manufacturingDate"> <!-- #157 -->
+                  <extension url="manufacturingDate">
+                     <!-- #157 -->
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingDate"> <!-- #159 -->
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
+                     <!-- #159 -->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingSite">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
                      <valueQuantity>
-                                <!-- #26 --><!-- #155 --><!-- need to see if one of these needs changing -->
+                        <!-- #26 -->
+                        <!-- #155 -->
+                        <!-- need to see if one of these needs changing -->
                         <value value="100100"/>
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
-                     <valueQuantity> <!-- #160 -->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                     <valueQuantity>
+                        <!-- #160 -->
                         <value value="4.8"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="batchUtilization"> <!-- #159 -->
+                  <extension url="batchUtilization">
+                     <!-- #159 -->
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+<!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
                            <display value="Commercial"/>
                            <!-- could also be C185328 Stability Study? -->
@@ -2892,7 +2984,8 @@
                      </valueCodeableConcept>
                   </extension>
                   <extension url="assignedManufacturer">
-                     <valueReference> <!-- #158 -->
+                     <valueReference>
+                        <!-- #158 -->
                         <reference value="Organization/manufacturer"/>
                      </valueReference>
                   </extension>
@@ -2920,18 +3013,24 @@
          <Medication>
             <id value="medication-actual-batch-2"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference
+                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+                     />
                   </valueReference>
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
                         <reference value="Substance/actual-batch-substance-2"/>
                      </valueReference>
@@ -2939,10 +3038,12 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingDate">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingSite">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -2953,7 +3054,8 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -2962,10 +3064,14 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+<!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
                            <display value="Commercial"/>
                            <!-- could also be C185328 Stability Study? -->
@@ -2998,18 +3104,24 @@
          <Medication>
             <id value="medication-actual-batch-3"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference
+                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+                     />
                   </valueReference>
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
                         <reference value="Substance/actual-batch-substance-3"/>
                      </valueReference>
@@ -3017,10 +3129,12 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingDate">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingSite">
+                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -3031,7 +3145,8 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -3040,10 +3155,14 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                                                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+<!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
                            <display value="Commercial"/>
                            <!-- could also be C185328 Stability Study? -->
@@ -3076,7 +3195,7 @@
          <Organization>
             <id value="manufacturer"/>
             <identifier>
-                    <!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3010027650"/>
             </identifier>
@@ -3085,7 +3204,8 @@
                     <address></address>
                 </contact-->
             <contact>
-               <address> <!-- todo change to be contact/address -->
+               <address>
+                  <!-- todo change to be contact/address -->
                   <line value="681 Main Street"/>
                   <city value="Lumberton"/>
                   <state value="New Jersey"/>
@@ -3133,12 +3253,14 @@
    <entry>
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
-            <!-- Section 1.1 - DP Identification -->
+         <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-                <!-- <id value="product"/> -->
+            <!-- <id value="product"/> -->
             <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"
+               />
             </meta>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -3183,15 +3305,17 @@
       <!-- manual correction of dupe -->
       <resource>
          <Ingredient>
-				<!--id value="productIngredient"/-->
+            <!--id value="productIngredient"/-->
             <id value="ingredient-dxpq-ex1"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
             </meta>
             <status value="active"/>
             <for>
-				    <!--reference value="MedicinalProductDefinition/product"/-->
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <!--reference value="MedicinalProductDefinition/product"/-->
+               <reference
+                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+               />
             </for>
             <role>
                <coding>
@@ -3203,7 +3327,9 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                     <reference
+                        value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"
+                     />
                   </reference>
                </code>
             </substance>
@@ -3216,7 +3342,9 @@
          <SubstanceDefinition>
             <id value="substancedefinition-component-substance-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
+               />
             </meta>
             <manufacturer>
                <reference value="Organization/organization-dxpq-ex1"/>
@@ -3232,13 +3360,13 @@
       <fullUrl value="urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
       <resource>
          <Organization>
-			    <!--id value="substance-manufacturer"/-->
+            <!--id value="substance-manufacturer"/-->
             <id value="organization-dxpq-ex1"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
             </meta>
             <identifier>
-					<!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
@@ -3260,17 +3388,19 @@
       <fullUrl value="urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b"/>
       <resource>
          <Substance>
-			    <!--<id value="actual-batch-substance"/>-->
+            <!--<id value="actual-batch-substance"/>-->
             <id value="substance-dxpq-ex1"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3278,32 +3408,40 @@
                   <valueDateTime value="2019-09-07"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                                             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/organization-dxpq-ex1"/>
                   </valueReference>
@@ -3316,7 +3454,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <reference
+                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -3328,11 +3467,13 @@
          <Substance>
             <id value="actual-batch-substance-2"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3340,32 +3481,40 @@
                   <valueDateTime value="2019-09-07"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                                             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/organization-dxpq-ex1"/>
                   </valueReference>
@@ -3377,7 +3526,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <reference
+                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -3389,11 +3539,13 @@
          <Substance>
             <id value="actual-batch-substance-3"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3401,32 +3553,41 @@
                   <valueDateTime value="2019-09-07"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        <extension
+                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/organization-dxpq-ex1"/>
                   </valueReference>
@@ -3439,7 +3600,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <reference
+                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
                </reference>
             </code>
          </Substance>
