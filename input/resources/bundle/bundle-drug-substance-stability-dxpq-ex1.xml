@@ -5,11 +5,11 @@
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-substance-stability-dxpq-ex1"/>
-<!--   <id value="substance-stability-study"/>-->
+   <!--   <id value="substance-stability-study"/>-->
    <meta>
       <profile
          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/stability-study-substance"/>-->
+      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/stability-study-substance"/>-->
    </meta>
    <type value="collection"/>
    <!-- Section 11 - Stability Study - Results -->
@@ -23,19 +23,25 @@
                   <reference value="PlanDefinition/stabilityStudyProtocol"/>
                </valueReference>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/statisticalModel">
+            <extension
+               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-statistical-model-dxpq">
+               <!--            <extension url="http://accumulus.org/fhir/extension/statisticalModel">-->
                <valueCodeableConcept>
-                        <!-- #223 -->
-                        <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then 
+                  <!-- #223 -->
+                  <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then 
                             have no place to put a context. Ideally this would be a code/code pair. 
                             Code says "statistical model", code (or text) then says what it is -->
-                  <text value="information about statistical model utilized to interpret stability study results"/>
+                  <text
+                     value="information about statistical model utilized to interpret stability study results"
+                  />
                </valueCodeableConcept>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/containerOrientation">
+            <extension
+               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-container-orientation-dxpq">
+               <!--            <extension url="http://accumulus.org/fhir/extension/containerOrientation">-->
                <valueCodeableConcept>
-                        <!-- #227 -->
-                        <!-- Considered ObservatioDefinition.usageContext -->
+                  <!-- #227 -->
+                  <!-- Considered ObservatioDefinition.usageContext -->
                   <text value="Horizontal"/>
                </valueCodeableConcept>
             </extension>
@@ -52,7 +58,9 @@
                </coding>
             </code>
             <effectiveDateTime value="2019-09-08">
-               <extension url="http://accumulus.org/fhir/extension/timePointDescription">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-time-point-description-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/timePointDescription">-->
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://accumulus.org/fhir/code/timePointDescription"/>
@@ -94,8 +102,8 @@
    <entry>
       <fullUrl value="urn:uuid:c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
       <resource>
-            
-            <!-- Section 11 - Stability Study - Protocol -->
+
+         <!-- Section 11 - Stability Study - Protocol -->
          <PlanDefinition>
             <id value="stabilityStudyProtocol"/>
             <title value="Stability Monitoring Program"/>
@@ -106,14 +114,18 @@
             <!-- unclear if want subject here, because it may apply to different ones -->
             <!--subjectCanonical value="MedicinalProductDefinition/product"/-->
             <!-- this isn't followed at the moment, if it isnt in the file -->
-            <description value="Description of the study study plan which includes tests, time points, storage conditions, method"/>
+            <description
+               value="Description of the study study plan which includes tests, time points, storage conditions, method"/>
             <!-- new "tabular" style -->
             <action>
-               <title value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbatolol"/>
-               <action> <!-- TODO add codes here for the different levels? -->
+               <title
+                  value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbatolol"/>
+               <action>
+                  <!-- TODO add codes here for the different levels? -->
                   <title value="Long-Term"/>
                   <description value="30°C/65% RH"/>
-                  <action> <!-- 0 months -->
+                  <action>
+                     <!-- 0 months -->
                      <title value="Initial"/>
                      <timingTiming>
                         <repeat>
@@ -134,13 +146,16 @@
                            <frequency value="1"/>
                         </repeat>
                      </timingTiming>
-                     <action> <!-- the categories to do at this step -->
+                     <action>
+                        <!-- the categories to do at this step -->
                         <title value="XY"/>
                         <!-- Long term -->
-                        <definitionCanonical value="ActivityDefinition/activityLongTerm30XY-Initial"/>
+                        <definitionCanonical value="ActivityDefinition/activityLongTerm30XY-Initial"
+                        />
                      </action>
                   </action>
-                  <action> <!-- 3 months -->
+                  <action>
+                     <!-- 3 months -->
                      <title value="3"/>
                      <timingTiming>
                         <repeat>
@@ -166,7 +181,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm30X-3"/>
                      </action>
                   </action>
-                  <action> <!-- 6 months -->
+                  <action>
+                     <!-- 6 months -->
                      <title value="6"/>
                      <timingTiming>
                         <repeat>
@@ -192,7 +208,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm30X-6"/>
                      </action>
                   </action>
-                  <action> <!-- 9 months -->
+                  <action>
+                     <!-- 9 months -->
                      <title value="9"/>
                      <timingTiming>
                         <repeat>
@@ -218,7 +235,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm30X-9"/>
                      </action>
                   </action>
-                  <action> <!-- 12 months -->
+                  <action>
+                     <!-- 12 months -->
                      <title value="12"/>
                      <timingTiming>
                         <repeat>
@@ -244,7 +262,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm30X-12"/>
                      </action>
                   </action>
-                  <action> <!-- 18 months -->
+                  <action>
+                     <!-- 18 months -->
                      <title value="18"/>
                      <timingTiming>
                         <repeat>
@@ -270,7 +289,8 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm30X-18"/>
                      </action>
                   </action>
-                  <action> <!-- 24 months -->
+                  <action>
+                     <!-- 24 months -->
                      <title value="24"/>
                      <timingTiming>
                         <repeat>
@@ -358,7 +378,8 @@
                <action>
                   <title value="Accelerated"/>
                   <description value="40°C/75% RH"/>
-                  <action> <!-- 0 months -->
+                  <action>
+                     <!-- 0 months -->
                      <title value="Initial"/>
                      <timingTiming>
                         <repeat>
@@ -379,12 +400,15 @@
                            <frequency value="1"/>
                         </repeat>
                      </timingTiming>
-                     <action> <!-- second category at this step -->
+                     <action>
+                        <!-- second category at this step -->
                         <title value="XY"/>
-                        <definitionCanonical value="ActivityDefinition/activityAccelerated40XY-Initial"/>
+                        <definitionCanonical
+                           value="ActivityDefinition/activityAccelerated40XY-Initial"/>
                      </action>
                   </action>
-                  <action> <!-- 3 months -->
+                  <action>
+                     <!-- 3 months -->
                      <title value="3"/>
                      <timingTiming>
                         <repeat>
@@ -410,7 +434,8 @@
                         <definitionCanonical value="ActivityDefinition/activityAccelerated40X-3"/>
                      </action>
                   </action>
-                  <action> <!-- 6 months -->
+                  <action>
+                     <!-- 6 months -->
                      <title value="6"/>
                      <timingTiming>
                         <repeat>
@@ -436,7 +461,8 @@
                         <definitionCanonical value="ActivityDefinition/activityAccelerated40X-6"/>
                      </action>
                   </action>
-                  <action> <!-- 9 months -->
+                  <action>
+                     <!-- 9 months -->
                      <title value="9"/>
                      <timingTiming>
                         <repeat>
@@ -457,11 +483,13 @@
                            <frequency value="1"/>
                         </repeat>
                      </timingTiming>
-                     <action> <!-- none -->
+                     <action>
+                        <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 12 months -->
+                  <action>
+                     <!-- 12 months -->
                      <title value="12"/>
                      <timingTiming>
                         <repeat>
@@ -483,11 +511,12 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
+                        <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 18 months -->
+                  <action>
+                     <!-- 18 months -->
                      <title value="18"/>
                      <timingTiming>
                         <repeat>
@@ -509,11 +538,12 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
+                        <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 24 months -->
+                  <action>
+                     <!-- 24 months -->
                      <title value="24"/>
                      <timingTiming>
                         <repeat>
@@ -535,7 +565,7 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
+                        <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
@@ -758,7 +788,9 @@
                <text value="Description"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="A white to brown powder"/>
                </extension>
             </qualifiedValue>
@@ -814,7 +846,8 @@
                </coding>
             </code>
             <qualifiedValue>
-               <appliesTo> <!-- could be a code -->
+               <appliesTo>
+                  <!-- could be a code -->
                   <text value="Impurity"/>
                </appliesTo>
                <range>
@@ -865,7 +898,8 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component> <!-- are expected to have a component that says what impurity this one is -->
+            <component>
+               <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -913,7 +947,9 @@
                <text value="Identification"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Complies"/>
                </extension>
             </qualifiedValue>
@@ -1088,7 +1124,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -1355,7 +1391,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -1622,7 +1658,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -1826,7 +1862,9 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-storage-duration-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">-->
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1853,7 +1891,9 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-storage-duration-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">-->
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1880,7 +1920,9 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-storage-duration-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">-->
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1951,7 +1993,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -2202,7 +2244,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -2453,7 +2495,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -2720,7 +2762,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -2922,7 +2964,7 @@
          <Organization>
             <id value="manufacturer"/>
             <identifier>
-                    <!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
@@ -2975,7 +3017,10 @@
                <value value="4444455555"/>
             </identifier>
             <manufacturer>
-               <extension url="http://accumulus.org/fhir/extension/siteUtilization"> <!-- #53 -->
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-site-utilization-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/siteUtilization">-->
+                  <!-- #53 -->
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/productSiteUtilizationType"/>
                      <code value="12334"/>
@@ -2997,7 +3042,7 @@
          <Organization>
             <id value="substance-manufacturer"/>
             <identifier>
-                    <!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
@@ -3021,11 +3066,13 @@
          <Substance>
             <id value="actual-batch-substance"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3033,26 +3080,33 @@
                   <valueDateTime value="2020-01"/>
                   <!-- #157 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="120"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -3060,7 +3114,8 @@
                      <text value="Production"/>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/substance-manufacturer"/>
                   </valueReference>
@@ -3092,11 +3147,13 @@
          <Substance>
             <id value="actual-batch-substance-2"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3104,26 +3161,33 @@
                   <valueDateTime value="2020-02"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="120"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -3131,7 +3195,8 @@
                      <text value="Production"/>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/substance-manufacturer"/>
                   </valueReference>
@@ -3155,11 +3220,13 @@
          <Substance>
             <id value="actual-batch-substance-3"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3167,26 +3234,33 @@
                   <valueDateTime value="2020-03"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="120"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -3194,7 +3268,8 @@
                      <text value="Production"/>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/substance-manufacturer"/>
                   </valueReference>
