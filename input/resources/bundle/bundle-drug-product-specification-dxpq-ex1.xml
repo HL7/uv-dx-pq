@@ -2,7 +2,7 @@
 <!-- Product Specification -->
 <!-- Based on file Accumulus FHIR Product Example - Specification, posted 05-31-2023 -->
 <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
-<!-- For this example, changed <system value="http://dummy.loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
+<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-specification-dxpq-ex1"/>
    <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
