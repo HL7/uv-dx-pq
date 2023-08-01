@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-<!-- Product Batch Analysis -->
-<!-- Based on file: Accumulus FHIR Product Example - Batch Analysis, posted on 05-31-2023 -->
-<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
-<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
+   <!-- Product Batch Analysis -->
+   <!-- Based on file: Accumulus FHIR Product Example - Batch Analysis, posted on 05-31-2023 -->
+   <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
+   <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
+   <!-- For this example, changed "http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology" to "http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
    <id value="bundle-batch-analysis-dxpq-ex1-prod"/>
-<!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
+   <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/batch-analysis"/>-->
+      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/batch-analysis"/>-->
    </meta>
    <type value="collection"/>
-    <entry>
-       <fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/>
+   <entry>
+      <fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/>
       <resource>
          <PlanDefinition>
             <id value="specificationProtocol"/>
@@ -23,7 +24,8 @@
             </subjectReference>
             <description value="Narrative description of analysis"/>
             <!-- new "tabular" style -->
-            <action> <!-- this is then entire thing -->
+            <action>
+               <!-- this is then entire thing -->
                <title value="Batch Results for Drug Product"/>
                <code>
                   <text value="Overall set of actions"/>
@@ -151,15 +153,15 @@
                      </code>
                      <definitionCanonical value="ObservationDefinition/WaterEnd"/>
                   </action>
-<!--                  <action>
+                  <!--                  <action>
                     </action>-->
                </action>
             </action>
          </PlanDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/Description"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Description"/>
       <resource>
          <ObservationDefinition>
             <id value="Description"/>
@@ -184,8 +186,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/DescriptionEnd"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/DescriptionEnd"/>
       <resource>
          <ObservationDefinition>
             <id value="DescriptionEnd"/>
@@ -207,8 +209,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/Identification"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Identification"/>
       <resource>
          <ObservationDefinition>
             <id value="Identification"/>
@@ -227,14 +229,16 @@
             </method>
             <qualifiedValue>
                <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
-                  <valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
+                  <valueString
+                     value="Consistent with the retention time and UV spectrum of the reference standard"
+                  />
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/IdentificationEnd"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/IdentificationEnd"/>
       <resource>
          <ObservationDefinition>
             <id value="IdentificationEnd"/>
@@ -256,8 +260,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/Assay"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Assay"/>
       <resource>
          <ObservationDefinition>
             <id value="Assay"/>
@@ -282,8 +286,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/AssayEnd"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/AssayEnd"/>
       <resource>
          <ObservationDefinition>
             <id value="AssayEnd"/>
@@ -305,8 +309,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/Degradation"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Degradation"/>
       <resource>
          <ObservationDefinition>
             <id value="Degradation"/>
@@ -337,7 +341,8 @@
                </customaryUnit>
             </quantitativeDetails>
             <qualifiedValue>
-               <appliesTo> <!-- could be a code -->
+               <appliesTo>
+                  <!-- could be a code -->
                   <text value="Impurity 1"/>
                </appliesTo>
                <range>
@@ -391,7 +396,8 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component> <!-- are expected to have a component that says what impurity this one is -->
+            <component>
+               <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -403,8 +409,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/DegradationEnd"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/DegradationEnd"/>
       <resource>
          <ObservationDefinition>
             <id value="DegradationEnd"/>
@@ -432,7 +438,8 @@
                </customaryUnit>
             </quantitativeDetails>
             <qualifiedValue>
-               <appliesTo> <!-- could be a code -->
+               <appliesTo>
+                  <!-- could be a code -->
                   <text value="Impurity 1"/>
                </appliesTo>
                <range>
@@ -486,7 +493,8 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component> <!-- are expected to have a component that says what impurity this one is -->
+            <component>
+               <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -498,8 +506,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/Dissolution"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Dissolution"/>
       <resource>
          <ObservationDefinition>
             <id value="Dissolution"/>
@@ -518,14 +526,15 @@
             </method>
             <qualifiedValue>
                <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
-                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph"/>
+                  <valueString
+                     value="Shall comply with the requirements of the harmonised USP/JP/Ph"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/DissolutionQ80"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/DissolutionQ80"/>
       <resource>
          <ObservationDefinition>
             <id value="DissolutionQ80"/>
@@ -554,8 +563,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/DissolutionEnd"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/DissolutionEnd"/>
       <resource>
          <ObservationDefinition>
             <id value="DissolutionEnd"/>
@@ -580,8 +589,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/Water"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Water"/>
       <resource>
          <ObservationDefinition>
             <id value="Water"/>
@@ -609,8 +618,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/WaterEnd"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/WaterEnd"/>
       <resource>
          <ObservationDefinition>
             <id value="WaterEnd"/>
@@ -638,8 +647,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/Microbiological"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Microbiological"/>
       <resource>
          <ObservationDefinition>
             <id value="Microbiological"/>
@@ -664,8 +673,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/MicrobiologicalEnd"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/MicrobiologicalEnd"/>
       <resource>
          <ObservationDefinition>
             <id value="MicrobiologicalEnd"/>
@@ -690,8 +699,8 @@
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/Uniformity"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/Uniformity"/>
       <resource>
          <ObservationDefinition>
             <id value="Uniformity"/>
@@ -710,14 +719,15 @@
             </method>
             <qualifiedValue>
                <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
-                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
+                  <valueString
+                     value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/ObservationDefinition/UniformityEnd"/>
+   <entry>
+      <fullUrl value="https://www.example.org/ObservationDefinition/UniformityEnd"/>
       <resource>
          <ObservationDefinition>
             <id value="UniformityEnd"/>
@@ -740,21 +750,23 @@
       </resource>
    </entry>
    <!-- Section 8 - Batch or Lot Information (batch 1 of 3) -->
-    <entry>
-       <fullUrl value="https://www.example.org/Medication/medication-actual-batch"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Medication/medication-actual-batch"/>
       <resource>
          <Medication>
             <id value="medication-actual-batch"/>
             <code>
                <extension url="http://accumulus.org/fhir/extension/medicationDefinition">
-                  <valueReference> <!-- todo consider change this be the MID? -->
+                  <valueReference>
+                     <!-- todo consider change this be the MID? -->
                      <reference value="MedicinalProductDefinition/product"/>
                      <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
@@ -770,10 +782,12 @@
                     			<reference value="Substance/actual-batch-substance"/>
                     		</valueReference>                   
                     	</extension-->
-                  <extension url="manufacturingDate"> <!-- #157 -->
+                  <extension url="manufacturingDate">
+                     <!-- #157 -->
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/packagingDate"> <!-- #159 -->
+                  <extension url="http://accumulus.org/fhir/extension/packagingDate">
+                     <!-- #159 -->
                      <valueDateTime value="2020-08"/>
                   </extension>
                   <extension url="http://accumulus.org/fhir/extension/packagingSite">
@@ -783,24 +797,31 @@
                   </extension>
                   <extension url="batchQuantity">
                      <valueQuantity>
-                                <!-- #26 --><!-- #155 --><!-- need to see if one of these needs changing -->
+                        <!-- #26 -->
+                        <!-- #155 -->
+                        <!-- need to see if one of these needs changing -->
                         <value value="100100"/>
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
                   <extension url="http://accumulus.org/fhir/extension/actualYield">
-                     <valueQuantity> <!-- #160 -->
+                     <valueQuantity>
+                        <!-- #160 -->
                         <value value="4.8"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="batchUtilization"> <!-- #159 -->
+                  <extension url="batchUtilization">
+                     <!-- #159 -->
                      <valueCodeableConcept>
                         <coding>
                            <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
                         </coding>
@@ -808,7 +829,8 @@
                      </valueCodeableConcept>
                   </extension>
                   <extension url="assignedManufacturer">
-                     <valueReference> <!-- #158 -->
+                     <valueReference>
+                        <!-- #158 -->
                         <reference value="Organization/manufacturer"/>
                      </valueReference>
                   </extension>
@@ -825,8 +847,8 @@
       </resource>
    </entry>
    <!-- Section 8 - Batch or Lot Information (another batch 2 of 3) -->
-    <entry>
-       <fullUrl value="https://www.example.org/Medication/medication-actual-batch-2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Medication/medication-actual-batch-2"/>
       <resource>
          <Medication>
             <id value="medication-actual-batch-2"/>
@@ -838,7 +860,8 @@
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
@@ -880,9 +903,12 @@
                      <valueCodeableConcept>
                         <coding>
                            <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
                         </coding>
@@ -906,8 +932,8 @@
       </resource>
    </entry>
    <!-- Section 8 - Batch or Lot Information (another batch 3 of 3) -->
-    <entry>
-       <fullUrl value="https://www.example.org/Medication/medication-actual-batch-3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Medication/medication-actual-batch-3"/>
       <resource>
          <Medication>
             <id value="medication-actual-batch-3"/>
@@ -919,7 +945,8 @@
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
@@ -955,9 +982,12 @@
                      <valueCodeableConcept>
                         <coding>
                            <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
                         </coding>
@@ -981,13 +1011,13 @@
       </resource>
    </entry>
    <!-- Section 4.1 - Manufacturer -->
-    <entry>
-       <fullUrl value="https://www.example.org/Organization/manufacturer"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Organization/manufacturer"/>
       <resource>
          <Organization>
             <id value="manufacturer"/>
             <identifier>
-                    <!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3010027650"/>
             </identifier>
@@ -1004,8 +1034,8 @@
          </Organization>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Organization/manufacturer"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Organization/manufacturer"/>
       <resource>
          <Organization>
             <id value="packaging"/>
@@ -1014,11 +1044,11 @@
       </resource>
    </entry>
    <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
-    <entry>
-       <fullUrl value="https://www.example.org/DiagnosticReport/batchAnalysisReport"/>
+   <entry>
+      <fullUrl value="https://www.example.org/DiagnosticReport/batchAnalysisReport"/>
       <resource>
          <DiagnosticReport>
-                <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
+            <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
             <id value="batchAnalysisReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
@@ -1156,8 +1186,8 @@
          </DiagnosticReport>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDescription"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDescription"/>
       <resource>
          <Observation>
             <id value="observationDescription"/>
@@ -1182,8 +1212,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDescription2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDescription2"/>
       <resource>
          <Observation>
             <id value="observationDescription2"/>
@@ -1208,8 +1238,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDescription3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDescription3"/>
       <resource>
          <Observation>
             <id value="observationDescription3"/>
@@ -1234,8 +1264,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationIdentification"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationIdentification"/>
       <resource>
          <Observation>
             <id value="observationIdentification"/>
@@ -1260,8 +1290,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationIdentification2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationIdentification2"/>
       <resource>
          <Observation>
             <id value="observationIdentification2"/>
@@ -1286,8 +1316,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationIdentification3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationIdentification3"/>
       <resource>
          <Observation>
             <id value="observationIdentification3"/>
@@ -1312,8 +1342,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationAssay"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationAssay"/>
       <resource>
          <Observation>
             <id value="observationAssay"/>
@@ -1341,8 +1371,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationAssay2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationAssay2"/>
       <resource>
          <Observation>
             <id value="observationAssay2"/>
@@ -1370,8 +1400,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationAssay3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationAssay3"/>
       <resource>
          <Observation>
             <id value="observationAssay3"/>
@@ -1399,8 +1429,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp1"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp1"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp1"/>
@@ -1422,7 +1452,7 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1435,15 +1465,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 1"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp1-2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp1-2"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp1-2"/>
@@ -1465,7 +1495,7 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1478,15 +1508,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 1"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp1-3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp1-3"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp1-3"/>
@@ -1508,7 +1538,7 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1521,15 +1551,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 1"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp2"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp2"/>
@@ -1551,7 +1581,7 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1564,15 +1594,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 2"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp2-2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp2-2"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp2-2"/>
@@ -1594,7 +1624,7 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1607,15 +1637,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 2"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp2-3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp2-3"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp2-3"/>
@@ -1637,7 +1667,7 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1650,15 +1680,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 2"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp3"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp3"/>
@@ -1680,7 +1710,7 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1693,15 +1723,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 3"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp3-2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp3-2"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp3-2"/>
@@ -1723,7 +1753,7 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1736,15 +1766,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 3"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp3-3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp3-3"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp3-3"/>
@@ -1766,7 +1796,7 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1779,15 +1809,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 3"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-unspecified"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-unspecified"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp-unspecified"/>
@@ -1809,7 +1839,7 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1822,15 +1852,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Individual unspecified degradation products"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-unspecified-2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-unspecified-2"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp-unspecified-2"/>
@@ -1852,7 +1882,7 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1865,15 +1895,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Individual unspecified degradation products"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-unspecified-3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-unspecified-3"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp-unspecified-3"/>
@@ -1895,7 +1925,7 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1908,15 +1938,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Individual unspecified degradation products"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-total"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-total"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp-total"/>
@@ -1938,7 +1968,7 @@
             <valueQuantity>
                <value value="0.6"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1951,15 +1981,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Total degradation products"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-total-2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-total-2"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp-total-2"/>
@@ -1981,7 +2011,7 @@
             <valueQuantity>
                <value value="0.7"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -1994,15 +2024,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Total degradation products"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-total-3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDegradation-imp-total-3"/>
       <resource>
          <Observation>
             <id value="observationDegradation-imp-total-3"/>
@@ -2024,7 +2054,7 @@
             <valueQuantity>
                <value value="0.6"/>
                <unit value="% w/w"/>
-               
+
                <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
@@ -2037,15 +2067,15 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Total degradation products"/>
                </valueCodeableConcept>
             </component>
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDissolution"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDissolution"/>
       <resource>
          <Observation>
             <id value="observationDissolution"/>
@@ -2070,8 +2100,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDissolution2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDissolution2"/>
       <resource>
          <Observation>
             <id value="observationDissolution2"/>
@@ -2096,8 +2126,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDissolution3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDissolution3"/>
       <resource>
          <Observation>
             <id value="observationDissolution3"/>
@@ -2122,8 +2152,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDissolutionQ80"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDissolutionQ80"/>
       <resource>
          <Observation>
             <id value="observationDissolutionQ80"/>
@@ -2150,8 +2180,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDissolutionQ802"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDissolutionQ802"/>
       <resource>
          <Observation>
             <id value="observationDissolutionQ802"/>
@@ -2178,8 +2208,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationDissolutionQ803"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationDissolutionQ803"/>
       <resource>
          <Observation>
             <id value="observationDissolutionQ803"/>
@@ -2206,8 +2236,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationUniformity"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationUniformity"/>
       <resource>
          <Observation>
             <id value="observationUniformity"/>
@@ -2232,8 +2262,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationUniformity2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationUniformity2"/>
       <resource>
          <Observation>
             <id value="observationUniformity2"/>
@@ -2258,8 +2288,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationUniformity3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationUniformity3"/>
       <resource>
          <Observation>
             <id value="observationUniformity3"/>
@@ -2284,8 +2314,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationMicro"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationMicro"/>
       <resource>
          <Observation>
             <id value="observationMicro"/>
@@ -2310,8 +2340,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationMicro2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationMicro2"/>
       <resource>
          <Observation>
             <id value="observationMicro2"/>
@@ -2336,8 +2366,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationMicro3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationMicro3"/>
       <resource>
          <Observation>
             <id value="observationMicro3"/>
@@ -2362,8 +2392,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationWater"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationWater"/>
       <resource>
          <Observation>
             <id value="observationWater"/>
@@ -2391,8 +2421,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationWater2"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationWater2"/>
       <resource>
          <Observation>
             <id value="observationWater2"/>
@@ -2420,8 +2450,8 @@
          </Observation>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Observation/observationWater3"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Observation/observationWater3"/>
       <resource>
          <Observation>
             <id value="observationWater3"/>
@@ -2450,11 +2480,11 @@
       </resource>
    </entry>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
-    <entry>
-       <fullUrl value="https://www.example.org/MedicinalProductDefinition/product"/>
-<!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
+   <entry>
+      <fullUrl value="https://www.example.org/MedicinalProductDefinition/product"/>
+      <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
       <resource>
-            <!-- Section 1.1 - DP Identification -->
+         <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
             <id value="product"/>
             <description value="Textual description of the product"/>
@@ -2487,7 +2517,7 @@
                      <coding>
                         <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
                         <code value="StrengthPart"/>
-                        <display value="Strenth part"/>
+                        <display value="Strength part"/>
                      </coding>
                   </type>
                </part>
@@ -2495,9 +2525,9 @@
          </MedicinalProductDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Ingredient/productIngredient"/>
-<!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
+   <entry>
+      <fullUrl value="https://www.example.org/Ingredient/productIngredient"/>
+      <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
       <resource>
          <Ingredient>
             <id value="productIngredient"/>
@@ -2522,8 +2552,8 @@
          </Ingredient>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/SubstanceDefinition/substance1"/>
+   <entry>
+      <fullUrl value="https://www.example.org/SubstanceDefinition/substance1"/>
       <resource>
          <SubstanceDefinition>
             <id value="substance1"/>
@@ -2537,13 +2567,13 @@
          </SubstanceDefinition>
       </resource>
    </entry>
-    <entry>
-       <fullUrl value="https://www.example.org/Organization/substance-manufacturer"/>
+   <entry>
+      <fullUrl value="https://www.example.org/Organization/substance-manufacturer"/>
       <resource>
          <Organization>
             <id value="substance-manufacturer"/>
             <identifier>
-					<!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
@@ -2562,8 +2592,8 @@
       </resource>
    </entry>
    <!-- Section 5 - Manufacturing Process -->
-    <entry>
-       <fullUrl value="https://www.example.org/PlanDefinition/manufacturingProcess"/>
+   <entry>
+      <fullUrl value="https://www.example.org/PlanDefinition/manufacturingProcess"/>
       <resource>
          <PlanDefinition>
             <id value="manufacturingProcess"/>

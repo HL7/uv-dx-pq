@@ -7,7 +7,7 @@
    <id value="bundle-product-process-validation-dxpq-ex1"/>
 <!--   <id value="product-batch-analysis"/>-->
    <meta>
-      <profile value="      http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
 <!--      <profile value="http://accumulus.org/fhir/dx-cmc/process-validation"/>-->
    </meta>
    <type value="collection"/>

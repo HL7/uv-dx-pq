@@ -3,6 +3,7 @@
 <!-- Based on file: Accumulus FHIR Substance Example - Batch Analysis, posted on 05-31-2023 -->
 <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
+<!-- For this example, changed "http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology" to "http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-batch-analysis-dxpq-ex2-sub"/>
 <!--   <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
@@ -588,7 +589,7 @@
                         <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
                         </extension>
-                        <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -652,7 +653,7 @@
                         <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
                         </extension>
-                        <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -715,7 +716,7 @@
                         <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
                         </extension>
-                        <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
