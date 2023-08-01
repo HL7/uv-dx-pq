@@ -1156,17 +1156,16 @@
             <groupingId value="extensions1"/>
         </resource>
 
-        <!--        <resource>
+                <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-table-footnote-dxpq"/>
-                UPDATE
                 <display value="ExtensionTableFootnoteDxPq"/>
             </reference>
             <name value="Extension - Table Footnote dx-PQ"/>
             <description value="Extension - Table Footnote dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
         <!--        <resource>
             <reference>
@@ -1205,17 +1204,17 @@
         </resource>-->
 
 
-        <!--        <resource>
+                <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-test-comment-dxpq"/>
-                UPDATE
                 <display value="ExtensionTestCommentDxPq"/>
             </reference>
             <name value="Extension - Test Comment dx-PQ"/>
             <description value="Extension - Test Comment dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-target-fill-weight-dxpq"/>
