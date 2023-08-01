@@ -465,7 +465,7 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>-->
 
-        <!--        <resource>
+                <resource>
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-substance"/>
             </reference>
@@ -475,7 +475,7 @@
             <profile
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>

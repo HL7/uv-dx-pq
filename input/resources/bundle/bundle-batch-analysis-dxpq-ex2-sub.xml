@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Batch Analysis -->
 <!-- Based on file: Accumulus FHIR Substance Example - Batch Analysis, posted on 05-31-2023 -->
+<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
+<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-batch-analysis-dxpq-ex2-sub"/>
 <!--   <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
@@ -92,7 +94,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Description"/>
                </coding>
@@ -118,7 +120,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Identification"/>
                </coding>
@@ -144,7 +146,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Assay"/>
                </coding>
@@ -158,14 +160,14 @@
                   <low>
                      <value value="98"/>
                      <unit value="% w/w"/>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
                      <!-- not sure this is a correct ucum code -->
                   </low>
                   <high>
                      <value value="102"/>
                      <unit value="% w/w"/>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
                      <!-- not sure this is a correct ucum code -->
                   </high>
@@ -183,7 +185,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Drug Substance Related Organic impurities"/>
                </coding>
@@ -194,7 +196,7 @@
             <quantitativeDetails>
                <unit>
                   <coding>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
                      <!-- not sure this is a correct ucum code -->
                   </coding>
@@ -271,7 +273,7 @@
             <component> <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -289,7 +291,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="MUT"/>
                   <display value="Mutagenic impurities"/>
                </coding>
@@ -300,7 +302,7 @@
             <quantitativeDetails>
                <unit>
                   <coding>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="ppm"/>
                   </coding>
                </unit>
@@ -318,7 +320,7 @@
                   <high>
                      <value value="50"/>
                      <unit value="ppm"/>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="ppm"/>
                   </high>
                </range>
@@ -326,7 +328,7 @@
             <component> <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -344,7 +346,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="ZZZ"/>
                   <display value="Enantiomeric purity"/>
                </coding>
@@ -358,7 +360,7 @@
                   <low>
                      <value value="99.6"/>
                      <unit value="%"/>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="%"/>
                   </low>
                </range>
@@ -375,7 +377,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -386,7 +388,7 @@
             <quantitativeDetails>
                <unit>
                   <coding>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
                      <!-- not sure this is a correct ucum code -->
                   </coding>
@@ -422,7 +424,7 @@
             <component> <!-- are expected to have a component that says what solvent this one is -->
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
@@ -440,7 +442,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="WWW"/>
                   <display value="Water Content"/>
                </coding>
@@ -477,7 +479,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -488,7 +490,7 @@
             <quantitativeDetails>
                <unit>
                   <coding>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="um"/>
                   </coding>
                </unit>
@@ -506,7 +508,7 @@
                   <high>
                      <value value="319"/>
                      <unit value="µm"/>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="um"/>
                   </high>
                </range>
@@ -519,7 +521,7 @@
                   <high>
                      <value value="145"/>
                      <unit value="µm"/>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="um"/>
                   </high>
                </range>
@@ -532,7 +534,7 @@
                   <high>
                      <value value="20"/>
                      <unit value="µm"/>
-                     <system value="http://unitsofmeasure.org"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
                      <code value="um"/>
                   </high>
                </range>
@@ -540,7 +542,7 @@
             <component> <!-- are expected to have a component that says what solvent this one is -->
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="PARTS"/>
                      <display value="Particle size"/>
                   </coding>
@@ -1006,7 +1008,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Description"/>
                </coding>
@@ -1032,7 +1034,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Description"/>
                </coding>
@@ -1058,7 +1060,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Description"/>
                </coding>
@@ -1084,7 +1086,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Identification"/>
                </coding>
@@ -1110,7 +1112,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Identification"/>
                </coding>
@@ -1136,7 +1138,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Identification"/>
                </coding>
@@ -1162,7 +1164,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Assay"/>
                </coding>
@@ -1174,7 +1176,7 @@
             <valueQuantity>
                <value value="94"/>
                <unit value="%"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -1198,7 +1200,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Assay"/>
                </coding>
@@ -1210,7 +1212,7 @@
             <valueQuantity>
                <value value="95"/>
                <unit value="%"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -1234,7 +1236,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Assay"/>
                </coding>
@@ -1246,7 +1248,7 @@
             <valueQuantity>
                <value value="96"/>
                <unit value="%"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -1270,7 +1272,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1282,13 +1284,13 @@
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1311,7 +1313,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
@@ -1323,13 +1325,13 @@
             <valueQuantity>
                <value value="0.4"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1352,7 +1354,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1364,13 +1366,13 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1393,7 +1395,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1405,13 +1407,13 @@
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1434,7 +1436,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1446,13 +1448,13 @@
             <valueQuantity>
                <value value="0.4"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1475,7 +1477,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1487,13 +1489,13 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1516,7 +1518,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1528,13 +1530,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1557,7 +1559,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1569,13 +1571,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1598,7 +1600,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1610,13 +1612,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1639,7 +1641,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1651,13 +1653,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1680,7 +1682,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1692,13 +1694,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1721,7 +1723,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1733,13 +1735,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1763,7 +1765,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1775,13 +1777,13 @@
             <valueQuantity>
                <value value="0.02"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Ima"/>
                   </coding>
@@ -1804,7 +1806,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1816,13 +1818,13 @@
             <valueQuantity>
                <value value="0.02"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1845,7 +1847,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="DGP"/>
                   <display value="Impurities"/>
                </coding>
@@ -1857,13 +1859,13 @@
             <valueQuantity>
                <value value="0.02"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1887,7 +1889,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Mutagenic"/>
                </coding>
@@ -1898,13 +1900,13 @@
             <valueQuantity>
                <value value="20"/>
                <unit value="ppm"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="ppm"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1927,7 +1929,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Mutagenic"/>
                </coding>
@@ -1939,7 +1941,7 @@
             <valueQuantity>
                <value value="22"/>
                <unit value="%"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
          </Observation>
@@ -1956,7 +1958,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Mutagenic"/>
                </coding>
@@ -1968,7 +1970,7 @@
             <valueQuantity>
                <value value="18"/>
                <unit value="%"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
          </Observation>
@@ -1985,7 +1987,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="ZZZ"/>
                   <display value="Enantiomeric purity"/>
                </coding>
@@ -1997,7 +1999,7 @@
             <valueQuantity>
                <value value="91.5"/>
                <unit value="%"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -2021,7 +2023,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="ZZZ"/>
                   <display value="Enantiomeric purity"/>
                </coding>
@@ -2033,7 +2035,7 @@
             <valueQuantity>
                <value value="91.5"/>
                <unit value="%"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -2057,7 +2059,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="ZZZ"/>
                   <display value="Enantiomeric purity"/>
                </coding>
@@ -2069,7 +2071,7 @@
             <valueQuantity>
                <value value="91.5"/>
                <unit value="%"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -2093,7 +2095,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2104,13 +2106,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SOL"/>
                      <display value="Solvent"/>
                   </coding>
@@ -2133,7 +2135,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2144,13 +2146,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SOL"/>
                      <display value="Solvent"/>
                   </coding>
@@ -2173,7 +2175,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2184,13 +2186,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SOL"/>
                      <display value="Solvent"/>
                   </coding>
@@ -2213,7 +2215,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2224,13 +2226,13 @@
             <valueQuantity>
                <value value="1.4"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SOL"/>
                      <display value="Solvent"/>
                   </coding>
@@ -2253,7 +2255,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2264,13 +2266,13 @@
             <valueQuantity>
                <value value="1.5"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SOL"/>
                      <display value="Solvent"/>
                   </coding>
@@ -2293,7 +2295,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2304,13 +2306,13 @@
             <valueQuantity>
                <value value="1.2"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SOL"/>
                      <display value="Solvent"/>
                   </coding>
@@ -2333,7 +2335,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="WWW"/>
                   <display value="Water Content"/>
                </coding>
@@ -2345,7 +2347,7 @@
             <valueQuantity>
                <value value="0.8"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
          </Observation>
@@ -2362,7 +2364,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="WWW"/>
                   <display value="Water Content"/>
                </coding>
@@ -2374,7 +2376,7 @@
             <valueQuantity>
                <value value="0.8"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
          </Observation>
@@ -2391,7 +2393,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="XXX"/>
                   <display value="Water Content"/>
                </coding>
@@ -2403,7 +2405,7 @@
             <valueQuantity>
                <value value="0.8"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
          </Observation>
@@ -2420,7 +2422,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2431,13 +2433,13 @@
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -2460,7 +2462,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2471,13 +2473,13 @@
             <valueQuantity>
                <value value="0.4"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -2500,7 +2502,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2511,13 +2513,13 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SIZE"/>
                      <display value="Particle Size"/>
                   </coding>
@@ -2540,7 +2542,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2551,13 +2553,13 @@
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SIZE"/>
                      <display value="Particle Size"/>
                   </coding>
@@ -2580,7 +2582,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2591,13 +2593,13 @@
             <valueQuantity>
                <value value="0.4"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SIZE"/>
                      <display value="Particle Size"/>
                   </coding>
@@ -2620,7 +2622,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2631,13 +2633,13 @@
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SIZE"/>
                      <display value="Particle Size"/>
                   </coding>
@@ -2660,7 +2662,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2671,13 +2673,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SIZE"/>
                      <display value="Particle Size"/>
                   </coding>
@@ -2700,7 +2702,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2711,13 +2713,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SIZE"/>
                      <display value="Particle Size"/>
                   </coding>
@@ -2740,7 +2742,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://loinc.org"/>
+                  <system value="http://dummy.loinc.org"/>
                   <code value="PART"/>
                   <display value="Particle size distribution"/>
                </coding>
@@ -2751,13 +2753,13 @@
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://unitsofmeasure.org"/>
+               <system value="http://dummy.unitsofmeasure.org"/>
                <code value="% {w/w}"/>
             </valueQuantity>
             <component>
                <code>
                   <coding>
-                     <system value="http://loinc.org"/>
+                     <system value="http://dummy.loinc.org"/>
                      <code value="SIZE"/>
                      <display value="Particle Size"/>
                   </coding>
