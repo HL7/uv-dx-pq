@@ -587,7 +587,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
         </resource>
-        
+        <!--Process Validation -->  
         <!--Process Validation Profiles-->
         <resource>
             <reference>
@@ -599,6 +599,21 @@
             <isExample value="false"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
+        <!--Process Validation Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-process-validation-dxpq-ex1"/>
+            </reference>
+            <name value="bundle-product-process-validation-dxpq-ex1"/>
+            <description value="Bundle - Product Process Validation dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
+            <groupingId value="b13-processvalidation"/>
+        </resource>
+        
+        
+        
         <!--Impurities Profiles-->
         <resource>
             <reference>

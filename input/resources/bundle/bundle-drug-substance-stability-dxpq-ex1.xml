@@ -2,7 +2,7 @@
 <!-- Substance Stability Study -->
 <!-- Based on file Accumulus FHIR Substance Example - Stability, posted 05-31-2023 -->
 <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
-<!-- For this example, changed <system value="http://dummy.loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
+<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-substance-stability-dxpq-ex1"/>
 <!--   <id value="substance-stability-study"/>-->
