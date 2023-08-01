@@ -205,14 +205,15 @@
             <groupingId value="b12-specification"/>
         </resource>
 
-                <resource>
+        <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-product-specification-dxpq-ex1"/>
             </reference>
             <name value="bundle-drug-product-specification-dxpq-ex1"/>
             <description value="Bundle – Drug Product Specification dx-PQ - Example 1"/>
             <isExample value="true"/>
-                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
             <groupingId value="b12-specification"/>
         </resource>
 
@@ -319,25 +320,27 @@
         </resource>
         <!--        Stability Examples-->
 
-                <resource>
+        <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-stability-dxpq-ex1"/>
             </reference>
             <name value="bundle-drug-substance-stability-dxpq-ex1"/>
             <description value="Bundle – Drug Substance Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
-                <resource>
+        <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-product-stability-dxpq-ex1"/>
             </reference>
             <name value="bundle-drug-product-stability-dxpq-ex1"/>
             <description value="Bundle – Drug Product Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
@@ -465,11 +468,11 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>-->
 
-                <resource>
+        <resource>
             <reference>
-                <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-substance"/>
+                <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-sub"/>
             </reference>
-            <name value="bundle-batch-analysis-dxpq-ex1-product"/>
+            <name value="bundle-batch-analysis-dxpq-ex2-sub"/>
             <description value="Bundle – Batch Analysis dx-PQ - Example 2, substance"/>
             <isExample value="true"/>
             <profile
@@ -587,7 +590,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
         </resource>
-        <!--Process Validation -->  
+        <!--Process Validation -->
         <!--Process Validation Profiles-->
         <resource>
             <reference>
@@ -611,9 +614,9 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
-        
-        
-        
+
+
+
         <!--Impurities Profiles-->
         <resource>
             <reference>
@@ -1101,7 +1104,7 @@
                 <generation value="markdown"/>
             </page>
         </page>
-<!--        <parameter>
+        <!--        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/guide-parameter-code"/>
                 <code value="apply"/>
