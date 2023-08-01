@@ -456,7 +456,7 @@
 
         <!--Batch Analysis Examples -->
 
-        <!--<resource>
+        <resource>
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-prod"/>
             </reference>
@@ -466,7 +466,7 @@
             <profile
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
