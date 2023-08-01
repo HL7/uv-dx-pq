@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Extension-time-point-description-dxpq"/>
-    <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-01-11T02:08:38.094+00:00"/>
-        <source value="#xCLeOYLFssl4TVmZ"/>
-    </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-time-point-description-dxpq"/>
-    <name value="ExtensionTimePointDescriptionDxPq"/>
-    <title value="Extension - Time Point Description dx-PQ"/>
+    <id value="Extension-plan-document-reference-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq"/>
+    <name value="ExtensionPlanDocumentReferenceDxPq"/>
+    <title value="Extension - Plan Document Reference dx-PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="DiagnosticReport.effective.ofType(dateTime), dateTime"/>
+        <expression value="PlanDefinition"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -27,7 +22,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-time-point-description-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq"/>
         </element>
     </differential>
 </StructureDefinition>

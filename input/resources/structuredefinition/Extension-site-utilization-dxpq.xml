@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Extension-plan-document-reference-dxpq"/>
-    <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-01-11T01:23:14.373+00:00"/>
-        <source value="#qtmp1CmslPA4qtkH"/>
-    </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq"/>
-    <name value="ExtensionPlanDocumentReferenceDxPq"/>
-    <title value="Extension - Plan Document Reference dx-PQ"/>
+    <id value="Extension-site-utilization-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-site-utilization-dxpq"/>
+    <name value="ExtensionSiteUtilizationDxPq"/>
+    <title value="Extension - Site Utilization dx-PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="PlanDefinition"/>
+        <expression value="MedicinalProduct"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -27,7 +22,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-site-utilization-dxpq"/>
         </element>
     </differential>
 </StructureDefinition>
