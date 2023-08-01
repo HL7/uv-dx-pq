@@ -616,7 +616,7 @@
         </resource>
 
 
-
+        <!--Impurities -->
         <!--Impurities Profiles-->
         <resource>
             <reference>
@@ -628,6 +628,19 @@
             <isExample value="false"/>
             <groupingId value="b15-impurities"/>
         </resource>
+        <!--Impurities Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-impurities-dxpq-ex1"/>
+            </reference>
+            <name value="bundle-product-impurities-dxpq-ex1"/>
+            <description value="Bundle - Product Impurities dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-impurities-dxpq"/>
+            <groupingId value="b15-impurities"/>
+        </resource>
+        
         <!--Analytical Procedures-->
 
         <!--Container Closure System-->
