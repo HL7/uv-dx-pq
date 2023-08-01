@@ -818,7 +818,8 @@
                   </extension>
                   <extension
                      url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
-                     <!--<extension url="http://accumulus.org-->/fhir/extension/packagingDate"> <!-- #159 -->
+                     <!--<extension url="http://accumulus.org/fhir/extension/packagingDate">-->
+                     <!-- #159 -->
                      <valueDateTime value="2020-08"/>
                   </extension>
                   <extension
@@ -2673,7 +2674,9 @@
                </coding>
             </type>
             <status value="active"/>
-            <subjectCanonical value="MedicinalProductDefinition/product"/>
+            <subjectCanonical value="https://www.example.org/MedicinalProductDefinition/product"/>
+<!--            <subjectCanonical value="MedicinalProductDefinition/product"/>-->
+            <!--Canonical URLs must be absolute URLs if they are not fragment references (MedicinalProductDefinition/product)-->
             <!-- #83 -->
          </PlanDefinition>
       </resource>

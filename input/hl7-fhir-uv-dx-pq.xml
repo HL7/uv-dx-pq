@@ -961,17 +961,16 @@
             <groupingId value="extensions1"/>
         </resource>
 
-        <!--        <resource>
+                <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-storage-duration-dxpq"/>
-                UPDATE
                 <display value="ExtensionBatchStorageDurationDxPq"/>
             </reference>
             <name value="Extension - Batch Storage Duration dx-PQ"/>
             <description value="Extension - Batch Storage Duration dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
