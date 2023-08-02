@@ -3638,7 +3638,8 @@
    </entry>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>
-      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <fullUrl value="urn:uuid:medicinalproductdefinition-drug-product-dxpq-ex1"/>
+<!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
