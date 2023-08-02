@@ -10,9 +10,20 @@
     </meta>
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
-<!--    <observationRequirement
-        value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
-    />-->
+    <observationRequirement>
+        <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+<!--        <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+    </observationRequirement>
+
+    <!--    <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+
     <!--    <observationRequirement value="ObservationDefinition/longTerm25X"/>-->
-        <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+
+    <!--<observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+    
+    <!--    <observationRequirement id="longTerm25X">
+        <title value="longTerm25X"/> 
+        <definitionCanonical value="#longTerm25X"/> 
+    </observationRequirement> -->
+    
 </ActivityDefinition>
