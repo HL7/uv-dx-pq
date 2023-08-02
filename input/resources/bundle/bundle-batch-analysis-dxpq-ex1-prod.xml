@@ -17,6 +17,9 @@
       <resource>
          <PlanDefinition>
             <id value="specificationProtocol"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+            </meta>
             <title value="P.5.4 BATCH ANALYSIS"/>
             <status value="active"/>
             <subjectReference>
@@ -2671,6 +2674,9 @@
       <resource>
          <PlanDefinition>
             <id value="manufacturingProcess"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            </meta>
             <!-- abridged version only -->
             <title value="Process 1.0"/>
             <type>

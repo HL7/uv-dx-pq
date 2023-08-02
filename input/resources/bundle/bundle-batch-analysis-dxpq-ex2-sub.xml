@@ -17,6 +17,9 @@
       <resource>
          <PlanDefinition>
             <id value="specificationProtocol"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+            </meta>
             <title value="S.4.4 BATCH ANALYSIS"/>
             <status value="active"/>
             <subjectReference>
