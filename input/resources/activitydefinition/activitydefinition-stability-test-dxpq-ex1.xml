@@ -11,7 +11,7 @@
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
     <observationRequirement>
-        <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+        <canonical value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
 <!--        <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
     </observationRequirement>
 
