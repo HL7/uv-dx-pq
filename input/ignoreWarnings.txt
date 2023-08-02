@@ -34,5 +34,6 @@ Code System URI 'http://example-like-loinc.org' is unknown so the code cannot be
 Code System URI 'http://example-like-unitsofmeasure.org' is unknown so the code cannot be validated
 Code System URI 'http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology' is unknown so the code cannot be validated
 Code System URI 'http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation' is unknown so the code cannot be validated
+Code System URI 'http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step' is unknown so the code cannot be validated
 Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated
 Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
