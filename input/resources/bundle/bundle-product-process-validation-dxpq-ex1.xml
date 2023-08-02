@@ -13,6 +13,7 @@
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:validationProtocol"/>
+      <!--      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>-->
       <resource>
          <PlanDefinition>
             <id value="validationProtocol"/>
