@@ -961,7 +961,7 @@
             <groupingId value="extensions1"/>
         </resource>
 
-                <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-storage-duration-dxpq"/>
                 <display value="ExtensionBatchStorageDurationDxPq"/>
@@ -995,17 +995,16 @@
         </resource>
 
 
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-history-of-process-dxpq"/>
-                UPDATE
                 <display value="ExtensionHistoryOfProcessDxPq"/>
             </reference>
             <name value="Extension - History of Process dx-PQ"/>
             <description value="Extension - History of Process dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
@@ -1018,18 +1017,16 @@
             <groupingId value="extensions1"/>
         </resource>
 
-
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-participant-dxpq"/>
-                UPDATE
                 <display value="ExtensionManufacturingParticipantDxPq"/>
             </reference>
             <name value="Extension - Manufacturing Participant dx-PQ"/>
             <description value="Extension - Manufacturing Participant dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
@@ -1086,41 +1083,38 @@
             <groupingId value="extensions1"/>
         </resource>
 
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-parameters-dxpq"/>
-                UPDATE
                 <display value="ExtensionProcessParametersDxPq"/>
             </reference>
             <name value="Extension  - Process Parameters dx-PQ"/>
             <description value="Extension  - Process Parameters dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-step-scale-dxpq"/>
-                UPDATE
                 <display value="ExtensionProcessStepScaleDxPq"/>
             </reference>
             <name value="Extension - Process Step Scale dx-PQ"/>
             <description value="Extension - Process Step Scale dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-display-dxpq"/>
-                UPDATE
                 <display value="ExtensionQualifiedValueDisplayDxPq"/>
             </reference>
             <name value="Extension - Qualified Value Display dx-PQ"/>
             <description value="Extension - Qualified Value Display dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
@@ -1136,7 +1130,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-site-utilization-dxpq"/>
-                    <display value="ExtensionSiteUtilizationDxPq"/>
+                <display value="ExtensionSiteUtilizationDxPq"/>
             </reference>
             <name value="Extension - Site Utilization dx-PQ"/>
             <description value="Extension - Site Utilization dx-PQ"/>
@@ -1155,7 +1149,7 @@
             <groupingId value="extensions1"/>
         </resource>
 
-                <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-table-footnote-dxpq"/>
                 <display value="ExtensionTableFootnoteDxPq"/>
@@ -1166,44 +1160,40 @@
             <groupingId value="extensions1"/>
         </resource>
 
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-batches-in-rows-dxpq"/>
-                UPDATE
                 <display value="ExtensionTabulateBatchesInRowsDxPq"/>
             </reference>
             <name value="Extension - Tabulate Batches in Rows dx-PQ"/>
             <description value="Extension - Tabulate Batches in Rows dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-batch-impurities-dxpq"/>
-                UPDATE
                 <display value="ExtensionTabulateBatchImpuritiesDxPq"/>
             </reference>
             <name value="Extension - Tabulate Batch Impurities dx-PQ"/>
             <description value="Extension - Tabulate Batch Impurities dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-equipment-dxpq"/>
-                UPDATE
                 <display value="ExtensionTabulateEquipmentDxPq"/>
             </reference>
             <name value="Extension - Tabulate Equipment dx-PQ"/>
             <description value="Extension - Tabulate Equipment dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
-
-                <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-test-comment-dxpq"/>
                 <display value="ExtensionTestCommentDxPq"/>
@@ -1213,7 +1203,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-target-fill-weight-dxpq"/>

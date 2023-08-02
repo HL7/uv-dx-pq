@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="Extension-process-step-scale-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq"/>
+    <name value="ExtensionProcessStepScaleDxPq"/>
+    <title value="Extension - Process Step Scale dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="5.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Element"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Extension"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq"/>
+        </element>
+    </differential>
+</StructureDefinition>
