@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ActivityDefinition xmlns="http://hl7.org/fhir">
-    <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
+    <!-- Based on file Accumulus FHIR Product Example - Stability, posted 05-31-2023 -->
     <!--    <id value="activityLongTerm25X-3"/>-->
     <id value="activitydefinition-stability-test-dxpq-ex1"/>
     <meta>
@@ -14,7 +14,6 @@
         value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
     />-->
     <!--    <observationRequirement value="ObservationDefinition/longTerm25X"/>-->
-    <!--    <observationRequirement
-        value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
-    />-->
+        <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
+    />
 </ActivityDefinition>
