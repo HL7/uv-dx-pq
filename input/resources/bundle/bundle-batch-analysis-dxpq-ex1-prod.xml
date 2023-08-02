@@ -326,7 +326,8 @@
       <resource>
          <ObservationDefinition>
             <id value="Degradation"/>
-            <name value="Degradation Products"/>
+            <name value="Degradation_Products"/>
+<!--            <name value="Degradation Products"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -426,7 +427,8 @@
       <resource>
          <ObservationDefinition>
             <id value="DegradationEnd"/>
-            <name value="Degradation Products"/>
+            <name value="Degradation_Products"/>
+<!--            <name value="Degradation Products"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -552,6 +554,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DissolutionQ80"/>
+            <name value="Dissolution_(Q)"/>
             <name value="Dissolution (Q)"/>
             <status value="active"/>
             <code>
@@ -610,7 +613,8 @@
       <resource>
          <ObservationDefinition>
             <id value="Water"/>
-            <name value="Water Content"/>
+            <name value="Water_Content"/>
+<!--            <name value="Water Content"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -639,7 +643,8 @@
       <resource>
          <ObservationDefinition>
             <id value="WaterEnd"/>
-            <name value="Water Content"/>
+            <name value="Water_Content"/>
+<!--            <name value="Water Content"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -724,7 +729,8 @@
       <resource>
          <ObservationDefinition>
             <id value="Uniformity"/>
-            <name value="Uniformity of dosage"/>
+            <name value="Uniformity_of_dosage"/>
+<!--            <name value="Uniformity of dosage"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -753,7 +759,8 @@
       <resource>
          <ObservationDefinition>
             <id value="UniformityEnd"/>
-            <name value="Uniformity of dosage"/>
+            <name value="Uniformity_of_dosage"/>
+<!--            <name value="Uniformity of dosage"/>-->
             <status value="active"/>
             <code>
                <coding>
