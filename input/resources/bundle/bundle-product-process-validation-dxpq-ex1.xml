@@ -12,7 +12,8 @@
    </meta>
    <type value="collection"/>
    <entry>
-      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+      <fullUrl value="urn:uuid:validationProtocol"/>
+<!--      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>-->
       <resource>
          <PlanDefinition>
             <id value="validationProtocol"/>
@@ -299,7 +300,8 @@
    </entry>
    <!-- compounding step -->
    <entry>
-      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+      <fullUrl value="urn:uuid:compoundingpHPre"/>
+<!--      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>-->
       <resource>
          <ObservationDefinition>
             <id value="compoundingpHPre"/>
@@ -333,7 +335,8 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
+      <fullUrl value="urn:uuid:compoundingpHPost"/>
+<!--      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>-->
       <resource>
          <ObservationDefinition>
             <id value="compoundingpHPost"/>
@@ -367,7 +370,8 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+      <fullUrl value="urn:uuid:compoundingAssayPre"/>
+<!--      <fullUrl value="urn:uuid:fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>-->
       <resource>
          <ObservationDefinition>
             <id value="compoundingAssayPre"/>
