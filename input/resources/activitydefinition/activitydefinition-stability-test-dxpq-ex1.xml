@@ -8,11 +8,13 @@
             value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
         />
     </meta>
+    <!-- SG: Added url -->
+    <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
     <!--Tried this and got no error, but not sure it is the right way to go.-->
     <observationRequirement
-        value="http://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/ActivityDefinition-activitydefinition-stability-test-dxpq-ex1.html"/>
+        value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
 
 
     <!--    Tried this and got "error: Canonical URLs must be absolute URLs if they are not fragment references (ObservationDefinition/longTerm25X)"

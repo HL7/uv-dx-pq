@@ -8,7 +8,8 @@
             value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
         />
     </meta>
-
+    <!-- SG: Added url -->
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
     <title value="X"/>
     <status value="active"/>
     <code>
