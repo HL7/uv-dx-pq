@@ -12,7 +12,7 @@
     <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
-    <!--Tried this and got no error, but not sure it is the right way to go.-->
+    
     <observationRequirement
         value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
 
