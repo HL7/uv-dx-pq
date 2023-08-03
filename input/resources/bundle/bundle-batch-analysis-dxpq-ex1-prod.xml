@@ -18,7 +18,8 @@
          <PlanDefinition>
             <id value="specificationProtocol"/>
             <meta>
-               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+<!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
             </meta>
             <title value="P.5.4 BATCH ANALYSIS"/>
             <status value="active"/>
@@ -2675,7 +2676,8 @@
          <PlanDefinition>
             <id value="manufacturingProcess"/>
             <meta>
-               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-mnf-process-dxpq.html"/>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+<!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-mnf-process-dxpq.html"/>-->
             </meta>
             <!-- abridged version only -->
             <title value="Process 1.0"/>
