@@ -12,11 +12,12 @@
    </meta>
    <type value="collection"/>
    <entry>
-      <fullUrl value="urn:uuid:validationProtocol"/>
+      <fullUrl value="urn:uuid:validation-protocol"/>
       <!--      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>-->
       <resource>
          <PlanDefinition>
-            <id value="validationProtocol"/>
+            <id value="validation-protocol"/>
+<!--            <id value="validationProtocol"/>-->
             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tabulate-batches-in-rows-dxpq">
 <!--            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows">-->
                <valueBoolean value="true"/>
@@ -63,19 +64,22 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/compoundingpHPre"/>
+                     <definitionCanonical value="ObservationDefinition/compounding-ph-pre"/>
+<!--                     <definitionCanonical value="ObservationDefinition/compoundingpHPre"/>-->
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/compoundingpHPost"/>
+                     <definitionCanonical value="ObservationDefinition/compounding-ph-post"/>
+<!--                     <definitionCanonical value="ObservationDefinition/compoundingpHPost"/>-->
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/compoundingAssayPre"/>
+                     <definitionCanonical value="ObservationDefinition/compounding-assay-pre"/>
+<!--                     <definitionCanonical value="ObservationDefinition/compoundingAssayPre"/>-->
                   </action>
                   <action>
                      <code>
@@ -300,11 +304,12 @@
    </entry>
    <!-- compounding step -->
    <entry>
-      <fullUrl value="urn:uuid:compoundingpHPre"/>
+      <fullUrl value="urn:uuid:compounding-ph-pre"/>
 <!--      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>-->
       <resource>
          <ObservationDefinition>
-            <id value="compoundingpHPre"/>
+            <id value="compounding-ph-pre"/>
+<!--            <id value="compoundingpHPre"/>-->
             <title value="pH (adjustment of pre-clarification bulk solution)"/>
             <status value="active"/>
             <code>
@@ -335,11 +340,12 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:compoundingpHPost"/>
+      <fullUrl value="urn:uuid:compounding-ph-post"/>
 <!--      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>-->
       <resource>
          <ObservationDefinition>
-            <id value="compoundingpHPost"/>
+            <id value="compounding-ph-post"/>
+<!--            <id value="compoundingpHPost"/>-->
             <title value="pH (post-dilution bulk solution)"/>
             <status value="active"/>
             <code>
@@ -370,11 +376,12 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:compoundingAssayPre"/>
+      <fullUrl value="urn:uuid:compounding-assay-pre"/>
 <!--      <fullUrl value="urn:uuid:fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>-->
       <resource>
          <ObservationDefinition>
-            <id value="compoundingAssayPre"/>
+            <id value="compounding-assay-pre"/>
+<!--            <id value="compoundingAssayPre"/>-->
             <title value="Assay (pre-clarification filtration) (mg/mL)"/>
             <status value="active"/>
             <code>
@@ -1632,7 +1639,8 @@
             <id value="processValidationReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/validationProtocol"/>
+                  <reference value="PlanDefinition/validation-protocol"/>
+<!--                  <reference value="PlanDefinition/validationProtocol"/>-->
                </valueReference>
             </extension>
             <status value="final"/>
@@ -1981,7 +1989,8 @@
          <Observation>
             <id value="compoundingpHPre1"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingpHPre"/>
+               <reference value="ObservationDefinition/compounding-ph-pre"/>
+<!--               <reference value="ObservationDefinition/compoundingpHPre"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2010,7 +2019,8 @@
          <Observation>
             <id value="compoundingpHPre2"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingpHPre"/>
+               <reference value="ObservationDefinition/compounding-ph-pre"/>
+<!--               <reference value="ObservationDefinition/compoundingpHPre"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2039,7 +2049,8 @@
          <Observation>
             <id value="compoundingpHPre3"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingpHPre"/>
+               <reference value="ObservationDefinition/compounding-ph-pre"/>
+<!--               <reference value="ObservationDefinition/compoundingpHPre"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2068,7 +2079,8 @@
          <Observation>
             <id value="compoundingpHPost1"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingpHPost"/>
+               <reference value="ObservationDefinition/compounding-ph-post"/>
+<!--               <reference value="ObservationDefinition/compoundingpHPost"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2097,7 +2109,8 @@
          <Observation>
             <id value="compoundingpHPost2"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingpHPost"/>
+               <reference value="ObservationDefinition/compounding-ph-post"/>
+<!--               <reference value="ObservationDefinition/compoundingpHPost"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2126,7 +2139,8 @@
          <Observation>
             <id value="compoundingpHPost3"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingpHPost"/>
+               <reference value="ObservationDefinition/compounding-ph-post"/>
+<!--               <reference value="ObservationDefinition/compoundingpHPost"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2155,7 +2169,8 @@
          <Observation>
             <id value="compoundingAssayPre1"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingAssayPre"/>
+               <reference value="ObservationDefinition/compounding-assay-pre"/>
+<!--               <reference value="ObservationDefinition/compoundingAssayPre"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2184,7 +2199,8 @@
          <Observation>
             <id value="compoundingAssayPre2"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingAssayPre"/>
+               <reference value="ObservationDefinition/compounding-assay-pre"/>
+               <!--               <reference value="ObservationDefinition/compoundingAssayPre"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2213,7 +2229,8 @@
          <Observation>
             <id value="compoundingAssayPre3"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compoundingAssayPre"/>
+               <reference value="ObservationDefinition/compounding-assay-pre"/>
+               <!--               <reference value="ObservationDefinition/compoundingAssayPre"/>-->
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3642,6 +3659,7 @@
    </entry>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>
+      <!--      Error on this fullUrl: UUIDs must be valid and lowercase (medicinalproductdefinition-drug-product-dxpq-ex1)-->
       <fullUrl value="urn:uuid:medicinalproductdefinition-drug-product-dxpq-ex1"/>
 <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
       <resource>
