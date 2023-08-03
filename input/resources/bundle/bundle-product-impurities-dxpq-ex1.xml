@@ -1129,7 +1129,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189A"/>
+      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189a"/>
       <resource>
          <Observation>
             <id value="observationDegradation-impCu-2"/>
