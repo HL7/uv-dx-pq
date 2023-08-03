@@ -11,10 +11,17 @@
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
 
+    <observationRequirement
+        value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+
+    <!--Tried this and got 
+            "error: Undefined element 'title' at /f:ActivityDefinition/f:observationRequirement"
+            "error: Undefined element 'definitionCanonical' at /f:ActivityDefinition/f:observationRequirement"
+            "error: Rule ele-1: 'All FHIR elements must have a @value or children' Failed"
     <observationRequirement id="longTerm25X">
         <title value="longTerm25X"/>
         <definitionCanonical value="#longTerm25X"/>
-    </observationRequirement>
+    </observationRequirement>-->
 
     <!--Tried the following and got "error: Undefined element 'definitionCanonical' at /f:ActivityDefinition/f:observationRequirement"
     <observationRequirement>
@@ -33,8 +40,6 @@
         <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
     </observationRequirement>-->
 
-
-
     <!-- Tried the following and got
         <observationRequirement>
         <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -42,9 +47,6 @@
 
     <!--  Tried the following and got
         <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
-
-    <!--  Tried the following and got
-        <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
 
     <!--  Tried the following and got
         <observationRequirement value="ObservationDefinition/longTerm25X"/>-->
