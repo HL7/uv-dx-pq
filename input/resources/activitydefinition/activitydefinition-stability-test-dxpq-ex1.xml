@@ -12,7 +12,11 @@
     <status value="active"/>
 
     <observationRequirement
-        value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+        value="http://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/ActivityDefinition-activitydefinition-stability-test-dxpq-ex1.html"/>
+    
+    <!--Tried this and got "error: Canonical URL 'http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1' does not resolve"
+    <observationRequirement
+        value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
 
     <!--Tried this and got 
             "error: Undefined element 'title' at /f:ActivityDefinition/f:observationRequirement"
