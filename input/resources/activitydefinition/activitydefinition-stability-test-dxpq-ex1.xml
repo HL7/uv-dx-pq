@@ -11,13 +11,18 @@
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
 
+    <observationRequirement id="longTerm25X">
+        <title value="longTerm25X"/>
+        <definitionCanonical value="#longTerm25X"/>
+    </observationRequirement>
 
+    <!--Tried the following and got "error: Undefined element 'definitionCanonical' at /f:ActivityDefinition/f:observationRequirement"
     <observationRequirement>
         <definitionCanonical value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
         />
-    </observationRequirement>
+    </observationRequirement>-->
 
-    <!--  Tried the following and got: Undefined element 'canonical' at /f:ActivityDefinition/f:observationRequirement
+    <!--  Tried the following and got "error: Undefined element 'canonical' at /f:ActivityDefinition/f:observationRequirement
         <observationRequirement>
         <canonical
             value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -27,6 +32,8 @@
     <observationRequirement>
         <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
     </observationRequirement>-->
+
+
 
     <!-- Tried the following and got
         <observationRequirement>
@@ -43,10 +50,6 @@
         <observationRequirement value="ObservationDefinition/longTerm25X"/>-->
 
 
-    <!--  Tried the following and got
-        <observationRequirement id="longTerm25X">
-        <title value="longTerm25X"/> 
-        <definitionCanonical value="#longTerm25X"/> 
-    </observationRequirement> -->
+
 
 </ActivityDefinition>
