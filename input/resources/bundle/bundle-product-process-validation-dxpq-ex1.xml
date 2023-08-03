@@ -5,21 +5,22 @@
 <!-- For this example, changed <system value="http:/loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-product-process-validation-dxpq-ex1"/>
-<!--   <id value="product-batch-analysis"/>-->
+   <!--   <id value="product-batch-analysis"/>-->
    <meta>
-      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/process-validation"/>-->
+      <profile
+         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
+      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/process-validation"/>-->
    </meta>
    <type value="collection"/>
    <entry>
-      <fullUrl value="urn:uuid:validation-protocol"/>
-      <!--      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>-->
+      <!--   Error "UUIDs must be valid and lowercase" on  <fullUrl value="urn:uuid:validation-protocol"/> & <fullUrl value="urn:uuid:validationProtocol"/>-->
+      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <id value="validation-protocol"/>
-<!--            <id value="validationProtocol"/>-->
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tabulate-batches-in-rows-dxpq">
-<!--            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows">-->
+            <id value="validationProtocol"/>
+            <extension
+               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tabulate-batches-in-rows-dxpq">
+               <!--            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows">-->
                <valueBoolean value="true"/>
             </extension>
             <title value="DP PROCESS VALIDATION"/>
@@ -37,14 +38,18 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference
+                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+               />
             </subjectReference>
-            <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
+            <description
+               value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
             <action>
                <title value="Compounding Step"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+                     <system
+                        value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
                      <code value="compounding"/>
                      <display value="Compounding Step"/>
                   </coding>
@@ -64,22 +69,19 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/compounding-ph-pre"/>
-<!--                     <definitionCanonical value="ObservationDefinition/compoundingpHPre"/>-->
+                     <definitionCanonical value="ObservationDefinition/compoundingpHPre"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/compounding-ph-post"/>
-<!--                     <definitionCanonical value="ObservationDefinition/compoundingpHPost"/>-->
+                     <definitionCanonical value="ObservationDefinition/compoundingpHPost"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/compounding-assay-pre"/>
-<!--                     <definitionCanonical value="ObservationDefinition/compoundingAssayPre"/>-->
+                     <definitionCanonical value="ObservationDefinition/compoundingAssayPre"/>
                   </action>
                   <action>
                      <code>
@@ -93,7 +95,8 @@
                <title value="Filling Steps"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+                     <system
+                        value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
                      <code value="filling"/>
                      <display value="Filling Step"/>
                   </coding>
@@ -132,13 +135,15 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/FillWeightAverageFromTarget"/>
+                     <definitionCanonical value="ObservationDefinition/FillWeightAverageFromTarget"
+                     />
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/HoldTimeFiltrationToFilling"/>
+                     <definitionCanonical value="ObservationDefinition/HoldTimeFiltrationToFilling"
+                     />
                   </action>
                   <action>
                      <code>
@@ -158,7 +163,8 @@
                <title value="Lyophilization Step"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+                     <system
+                        value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
                      <code value="lyophilization"/>
                      <display value="Lyophilization Step"/>
                   </coding>
@@ -205,7 +211,8 @@
                <title value="Release Step"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+                     <system
+                        value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
                      <code value="release"/>
                      <display value="Release Step"/>
                   </coding>
@@ -304,12 +311,11 @@
    </entry>
    <!-- compounding step -->
    <entry>
-      <fullUrl value="urn:uuid:compounding-ph-pre"/>
-<!--      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>-->
+      <!--      Error "UUIDs must be valid and lowercase" on <fullUrl value="urn:uuid:compoundingpHPre"/> & <fullUrl value="urn:uuid:compounding-ph-pre"/>-->
+      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <id value="compounding-ph-pre"/>
-<!--            <id value="compoundingpHPre"/>-->
+            <id value="compoundingpHPre"/>
             <title value="pH (adjustment of pre-clarification bulk solution)"/>
             <status value="active"/>
             <code>
@@ -340,12 +346,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:compounding-ph-post"/>
-<!--      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>-->
+      <!--      Error "UUIDs must be valid and lowercase" on <fullUrl value="urn:uuid:compoundingpHPost"/> & <fullUrl value="urn:uuid:compounding-ph-post"/>-->
+      <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
       <resource>
          <ObservationDefinition>
-            <id value="compounding-ph-post"/>
-<!--            <id value="compoundingpHPost"/>-->
+            <id value="compoundingpHPost"/>
             <title value="pH (post-dilution bulk solution)"/>
             <status value="active"/>
             <code>
@@ -376,12 +381,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:compounding-assay-pre"/>
-<!--      <fullUrl value="urn:uuid:fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>-->
+      <!--      Error "UUIDs must be valid and lowercase" on <fullUrl value="urn:uuid:compoundingAssayPre"/> & <fullUrl value="urn:uuid:compounding-assay-pre"/>-->
+      <fullUrl value="urn:uuid:fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <id value="compounding-assay-pre"/>
-<!--            <id value="compoundingAssayPre"/>-->
+            <id value="compoundingAssayPre"/>
             <title value="Assay (pre-clarification filtration) (mg/mL)"/>
             <status value="active"/>
             <code>
@@ -462,8 +466,9 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
                </extension>
             </qualifiedValue>
@@ -489,9 +494,12 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="1)  Clear glass vial sealed with a gray rubber stopper and a flip off overseal 2)  No visible damage or breach of vial container or closure"/>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="1)  Clear glass vial sealed with a gray rubber stopper and a flip off overseal 2)  No visible damage or breach of vial container or closure"
+                  />
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -516,9 +524,12 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="White to off white cake or powder, essentially free from evidence of contamination with no visible foreign particulates"/>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="White to off white cake or powder, essentially free from evidence of contamination with no visible foreign particulates"
+                  />
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -543,9 +554,12 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="Clear, colorless to slightly yellow solution, essentially free of visible particulates"/>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="Clear, colorless to slightly yellow solution, essentially free of visible particulates"
+                  />
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -570,9 +584,12 @@
                <text value="ID by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="Consistent with the retention time and UV spectrum of the reference standard"
+                  />
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -597,8 +614,9 @@
                <text value="Assay by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="95% to 105% of label claim"/>
                </extension>
             </qualifiedValue>
@@ -623,7 +641,8 @@
                <text value="Degradation products by UHPLC"/>
             </method>
             <qualifiedValue>
-               <appliesTo> <!-- could be a code -->
+               <appliesTo>
+                  <!-- could be a code -->
                   <text value="Impurity 1"/>
                </appliesTo>
                <range>
@@ -687,7 +706,8 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component> <!-- are expected to have a component that says what impurity this one is -->
+            <component>
+               <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -706,7 +726,8 @@
             <id value="Dissolution"/>
             <title value="Dissolution"/>
             <status value="active"/>
-            <code> <!-- possibly "G1113" -->
+            <code>
+               <!-- possibly "G1113" -->
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="ZZZ"/>
@@ -718,9 +739,11 @@
                <text value="Apparatus 2 (paddles), UV measurement"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph"/>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="Shall comply with the requirements of the harmonised USP/JP/Ph"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -837,8 +860,9 @@
                <text value="Ph Eur"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Shall comply with the requirements of the Ph Eur"/>
                </extension>
             </qualifiedValue>
@@ -864,9 +888,11 @@
                <text value="Weight variation"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -877,7 +903,8 @@
       <resource>
          <ObservationDefinition>
             <id value="UniformityUSP"/>
-            <title value="Uniformity of Dosage Units, Weight Variation - Meets USP / Ph. Eur. requirements (% label claim)"/>
+            <title
+               value="Uniformity of Dosage Units, Weight Variation - Meets USP / Ph. Eur. requirements (% label claim)"/>
             <status value="active"/>
             <code>
                <coding>
@@ -914,7 +941,8 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="ZZZ"/>
-                  <display value="Uniformity of Dosage Units, Weight Variation - Acceptance Value (AV)"/>
+                  <display
+                     value="Uniformity of Dosage Units, Weight Variation - Acceptance Value (AV)"/>
                </coding>
                <text value="Uniformity of Dosage Units, Weight Variation - Acceptance Value (AV)"/>
             </code>
@@ -1035,10 +1063,11 @@
                   <display value="Fill Weight Average"/>
                </coding>
             </code>
-            <qualifiedValue>  
-                    <!-- todo probably want to just not have this, detect that, and show as N/A -->
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+            <qualifiedValue>
+               <!-- todo probably want to just not have this, detect that, and show as N/A -->
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="N/A"/>
                </extension>
             </qualifiedValue>
@@ -1059,9 +1088,11 @@
                   <display value="Fill Weight Target (g)"/>
                </coding>
             </code>
-            <qualifiedValue>  <!-- todo probably want to just not have this, detect that, and show as N/A -->
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+            <qualifiedValue>
+               <!-- todo probably want to just not have this, detect that, and show as N/A -->
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="N/A"/>
                </extension>
             </qualifiedValue>
@@ -1083,8 +1114,9 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueDisplay">-->
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueDisplay">-->
                   <valueString value="± 2% target (%)"/>
                </extension>
                <range>
@@ -1227,8 +1259,9 @@
                <text value="Assay by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueDisplay">-->
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq">
+                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueDisplay">-->
                   <valueString value="95% to 105% of label claim"/>
                </extension>
                <range>
@@ -1246,7 +1279,8 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component> <!-- are expected to have a component that says number of locations -->
+            <component>
+               <!-- are expected to have a component that says number of locations -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -1265,16 +1299,21 @@
          <Medication>
             <id value="medication-actual-batch"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
-                  <valueReference> <!-- todo consider change this be the MID? -->
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference>
+                     <!-- todo consider change this be the MID? -->
+                     <reference
+                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                      <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
@@ -1283,74 +1322,92 @@
                                 <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
                             </valueReference>
                         </extension-->
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-designation-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-designation-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
                         </coding>
                         <text value="Maximum"/>
                      </valueCodeableConcept>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-number-of-vials-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-number-of-vials-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
                      <valuePositiveInt value="3"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
                         <reference value="Substance/actual-batch-substance"/>
                      </valueReference>
                   </extension>
-                  <extension url="manufacturingDate"> <!-- #157 -->
+                  <extension url="manufacturingDate">
+                     <!-- #157 -->
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/packagingDate"> 
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/packagingDate"> 
                         <!-\- #159 -\->-->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                              <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
                      <valueQuantity>
-                                <!-- #26 --><!-- #155 --><!-- need to see if one of these needs changing -->
+                        <!-- #26 -->
+                        <!-- #155 -->
+                        <!-- need to see if one of these needs changing -->
                         <value value="100100"/>
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
-                     <valueQuantity> <!-- #160 -->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                     <valueQuantity>
+                        <!-- #160 -->
                         <value value="4.81"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
                      <valueQuantity>
                         <value value="4.91"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-target-fill-weight-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-target-fill-weight-dxpq">
                      <valueQuantity>
                         <value value="30"/>
                         <unit value="g"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="batchUtilization"> <!-- #159 -->
+                  <extension url="batchUtilization">
+                     <!-- #159 -->
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                           <extension
+                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
                         </coding>
@@ -1358,7 +1415,8 @@
                      </valueCodeableConcept>
                   </extension>
                   <extension url="assignedManufacturer">
-                     <valueReference> <!-- #158 -->
+                     <valueReference>
+                        <!-- #158 -->
                         <reference value="Organization/manufacturer"/>
                      </valueReference>
                   </extension>
@@ -1381,15 +1439,20 @@
          <Medication>
             <id value="medication-actual-batch-2"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference
+                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+                     />
                   </valueReference>
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
                   <!--extension url="http://accumulus.org/fhir/extension/manufacturingProcess">
@@ -1397,23 +1460,27 @@
                                 <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
                             </valueReference>
                         </extension-->
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-designation-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-designation-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
                         </coding>
                         <text value="Maximum"/>
                      </valueCodeableConcept>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-number-of-vials-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-number-of-vials-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
                      <valuePositiveInt value="4"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
                         <reference value="Substance/actual-batch-substance-2"/>
                      </valueReference>
@@ -1421,12 +1488,14 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
-<!--                     <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                     <!--                     <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -1437,19 +1506,22 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity>
                         <value value="4.82"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
                      <valueQuantity>
                         <value value="4.92"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-target-fill-weight-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-target-fill-weight-dxpq">
                      <valueQuantity>
                         <value value="30"/>
                         <unit value="g"/>
@@ -1458,11 +1530,15 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                           <extension
+                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
                         </coding>
@@ -1492,15 +1568,20 @@
          <Medication>
             <id value="medication-actual-batch-3"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference
+                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+                     />
                   </valueReference>
                </extension>
             </code>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
                   <!--extension url="http://accumulus.org/fhir/extension/manufacturingProcess">
@@ -1508,23 +1589,27 @@
                                 <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
                             </valueReference>
                         </extension-->
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-designation-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-designation-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
                         </coding>
                         <text value="Maximum"/>
                      </valueCodeableConcept>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-number-of-vials-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-number-of-vials-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
                      <valuePositiveInt value="3"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
                         <reference value="Substance/actual-batch-substance-3"/>
                      </valueReference>
@@ -1532,12 +1617,14 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                     <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -1548,19 +1635,22 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity>
                         <value value="4.83"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
                      <valueQuantity>
                         <value value="4.93"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-target-fill-weight-dxpq">
+                  <extension
+                     url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-target-fill-weight-dxpq">
                      <valueQuantity>
                         <value value="30"/>
                         <unit value="g"/>
@@ -1569,11 +1659,15 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                           <extension
+                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                              <valueString
+                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
+                              />
                            </extension>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <system
+                              value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
                         </coding>
@@ -1603,7 +1697,7 @@
          <Organization>
             <id value="manufacturer"/>
             <identifier>
-                    <!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3010027650"/>
             </identifier>
@@ -1634,13 +1728,12 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
       <resource>
          <DiagnosticReport>
-                <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
+            <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
             <id value="processValidationReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/validation-protocol"/>
-<!--                  <reference value="PlanDefinition/validationProtocol"/>-->
+                  <reference value="PlanDefinition/validationProtocol"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -1989,8 +2082,7 @@
          <Observation>
             <id value="compoundingpHPre1"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-ph-pre"/>
-<!--               <reference value="ObservationDefinition/compoundingpHPre"/>-->
+               <reference value="ObservationDefinition/compoundingpHPre"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2019,8 +2111,7 @@
          <Observation>
             <id value="compoundingpHPre2"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-ph-pre"/>
-<!--               <reference value="ObservationDefinition/compoundingpHPre"/>-->
+               <reference value="ObservationDefinition/compoundingpHPre"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2049,8 +2140,7 @@
          <Observation>
             <id value="compoundingpHPre3"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-ph-pre"/>
-<!--               <reference value="ObservationDefinition/compoundingpHPre"/>-->
+               <reference value="ObservationDefinition/compoundingpHPre"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2079,8 +2169,7 @@
          <Observation>
             <id value="compoundingpHPost1"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-ph-post"/>
-<!--               <reference value="ObservationDefinition/compoundingpHPost"/>-->
+               <reference value="ObservationDefinition/compoundingpHPost"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2109,8 +2198,7 @@
          <Observation>
             <id value="compoundingpHPost2"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-ph-post"/>
-<!--               <reference value="ObservationDefinition/compoundingpHPost"/>-->
+               <reference value="ObservationDefinition/compoundingpHPost"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2139,8 +2227,7 @@
          <Observation>
             <id value="compoundingpHPost3"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-ph-post"/>
-<!--               <reference value="ObservationDefinition/compoundingpHPost"/>-->
+               <reference value="ObservationDefinition/compoundingpHPost"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2169,8 +2256,7 @@
          <Observation>
             <id value="compoundingAssayPre1"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-assay-pre"/>
-<!--               <reference value="ObservationDefinition/compoundingAssayPre"/>-->
+               <reference value="ObservationDefinition/compoundingAssayPre"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2199,8 +2285,7 @@
          <Observation>
             <id value="compoundingAssayPre2"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-assay-pre"/>
-               <!--               <reference value="ObservationDefinition/compoundingAssayPre"/>-->
+               <reference value="ObservationDefinition/compoundingAssayPre"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2229,8 +2314,7 @@
          <Observation>
             <id value="compoundingAssayPre3"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/compounding-assay-pre"/>
-               <!--               <reference value="ObservationDefinition/compoundingAssayPre"/>-->
+               <reference value="ObservationDefinition/compoundingAssayPre"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2462,7 +2546,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 1"/>
                </valueCodeableConcept>
             </component>
@@ -2504,7 +2588,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 1"/>
                </valueCodeableConcept>
             </component>
@@ -2546,7 +2630,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 1"/>
                </valueCodeableConcept>
             </component>
@@ -2588,7 +2672,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 2"/>
                </valueCodeableConcept>
             </component>
@@ -2630,7 +2714,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 2"/>
                </valueCodeableConcept>
             </component>
@@ -2672,7 +2756,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 2"/>
                </valueCodeableConcept>
             </component>
@@ -2714,7 +2798,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 3"/>
                </valueCodeableConcept>
             </component>
@@ -2756,7 +2840,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 3"/>
                </valueCodeableConcept>
             </component>
@@ -2798,7 +2882,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Impurity 3"/>
                </valueCodeableConcept>
             </component>
@@ -2840,7 +2924,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Individual unspecified degradation products"/>
                </valueCodeableConcept>
             </component>
@@ -2882,7 +2966,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Individual unspecified degradation products"/>
                </valueCodeableConcept>
             </component>
@@ -2924,7 +3008,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Individual unspecified degradation products"/>
                </valueCodeableConcept>
             </component>
@@ -2966,7 +3050,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Total degradation products"/>
                </valueCodeableConcept>
             </component>
@@ -3008,7 +3092,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Total degradation products"/>
                </valueCodeableConcept>
             </component>
@@ -3050,7 +3134,7 @@
                   </coding>
                </code>
                <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                   <text value="Total degradation products"/>
                </valueCodeableConcept>
             </component>
@@ -3660,10 +3744,10 @@
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>
       <!--      Error on this fullUrl: UUIDs must be valid and lowercase (medicinalproductdefinition-drug-product-dxpq-ex1)-->
-      <fullUrl value="urn:uuid:medicinalproductdefinition-drug-product-dxpq-ex1"/>
-<!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
+      <!--      Error "UUIDs must be valid and lowercase" on <fullUrl value="urn:uuid:medicinalproductdefinition-drug-product-dxpq-ex1"/>-->
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
-            <!-- Section 1.1 - DP Identification -->
+         <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
             <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
             <description value="Textual description of the product"/>
@@ -3711,7 +3795,9 @@
             <id value="productIngredient"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference
+                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+               />
             </for>
             <role>
                <coding>
@@ -3751,7 +3837,7 @@
          <Organization>
             <id value="substance-manufacturer"/>
             <identifier>
-					<!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
@@ -3780,11 +3866,13 @@
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3792,45 +3880,55 @@
                   <valueDateTime value="2019-09-07"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.81"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
                   <valueQuantity>
                      <value value="4.9"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-target-fill-weight-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-target-fill-weight-dxpq">
                   <valueQuantity>
                      <value value="30"/>
                      <unit value="g"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        <extension
+                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/organization-dxpq-ex1"/>
                   </valueReference>
@@ -3843,7 +3941,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <reference
+                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -3855,11 +3954,13 @@
          <Substance>
             <id value="actual-batch-substance-2"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3867,39 +3968,48 @@
                   <valueDateTime value="2019-09-07"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.82"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
                   <valueQuantity>
                      <value value="4.9"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        <extension
+                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/organization-dxpq-ex1"/>
                   </valueReference>
@@ -3911,7 +4021,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <reference
+                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -3923,11 +4034,13 @@
          <Substance>
             <id value="actual-batch-substance-3"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3935,33 +4048,41 @@
                   <valueDateTime value="2019-09-07"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
+                  <!-- #157 -->
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension
+                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
+                  <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        <extension
+                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
+                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
+                           <valueString
+                              value="Comment: This has a value set defined in PQ/CMC but no code system"
+                           />
                         </extension>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system
+                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
+                  <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/organization-dxpq-ex1"/>
                   </valueReference>
@@ -3974,7 +4095,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <reference
+                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -3986,7 +4108,9 @@
          <SubstanceDefinition>
             <id value="substancedefinition-component-substance-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
+               />
             </meta>
             <manufacturer>
                <reference value="Organization/organization-dxpq-ex1"/>
@@ -4002,13 +4126,13 @@
       <fullUrl value="urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
       <resource>
          <Organization>
-                <!--id value="substance-manufacturer"/-->
+            <!--id value="substance-manufacturer"/-->
             <id value="organization-dxpq-ex1"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
             </meta>
             <identifier>
-                    <!-- FDA establishment identifier -->
+               <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
@@ -4034,14 +4158,16 @@
             <id value="manufacturingProcess-subset-unlinked"/>
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
                <tag>
                   <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
                   <code value="SUBSETTED"/>
                </tag>
             </meta>
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
-<!--            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">-->
+            <extension
+               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
+               <!--            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">-->
                <valueMarkdown value="This can be text about the history"/>
             </extension>
             <title value="Process 1.0"/>
@@ -4060,7 +4186,9 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference
+                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+               />
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
             <!-- #85 -->
