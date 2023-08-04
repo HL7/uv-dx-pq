@@ -27,7 +27,6 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Process Parameters"/>
         </element>
         <element id="Extension.extension">
             <path value="Extension.extension"/>
@@ -42,7 +41,7 @@
             <path value="Extension.extension.extension"/>
         </element>
         <element id="Extension.extension:parameter.url">
-            <path value="Extension.parameter.url"/>
+            <path value="Extension.extension.url"/>
             <fixedUri value="parameter"/>
         </element>
         <element id="Extension.extension:parameter.value[x]">
@@ -61,7 +60,7 @@
             <path value="Extension.extension.extension"/>
         </element>
         <element id="Extension.extension:value.url">
-            <path value="Extension.value.url"/>
+            <path value="Extension.extension.url"/>
             <fixedUri value="value"/>
         </element>
         <element id="Extension.extension:value.value[x]">
