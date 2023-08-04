@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Substance Example - Batch Analysis (05-31-2023) -->
+    <id value="Impurities"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+        />
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Impurities"/>
+    <name value="Drug_Substance_Related_Organic_impurities"/>
+    <!--            <name value="Drug Substance Related Organic impurities"/>-->
+    <status value="active"/>
+    <code>
+        <coding>
+            <system value="http://dummy.loinc.org"/>
+            <code value="DGP"/>
+            <display value="Drug Substance Related Organic impurities"/>
+        </coding>
+    </code>
+    <method>
+        <text value="Organic impurities by LC"/>
+    </method>
+    <qualifiedValue>
+        <appliesTo>
+            <!-- could be a code -->
+            <text value="Impurity 1"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="0.5"/>
+                <unit value="% w/w"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <qualifiedValue>
+        <appliesTo>
+            <text value="Impurity 2"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="0.5"/>
+                <unit value="% w/w"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <qualifiedValue>
+        <appliesTo>
+            <text value="Impurity 3">
+                <extension
+                    url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
+                    <!--                     <extension url="http://accumulus.org/fhir/extension/testComment">-->
+                    <valueString
+                        value="Impurity 3 was included in the release specification throughout clinical development, and no longer forms a part of a commercial release specification; see Section S.4.5 Justification of Specification and Section S.2.5 Validation (PPQ) for additional data">
+                        <extension
+                            url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
+                            <!--<extension
+                              url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
+                            <valueString value="[2]"/>
+                        </extension>
+                    </valueString>
+                </extension>
+            </text>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="0.5"/>
+                <unit value="% w/w"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <qualifiedValue>
+        <appliesTo>
+            <text value="Any individual unspecified impurity"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="0.10"/>
+                <unit value="% w/w"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <qualifiedValue>
+        <appliesTo>
+            <text value="Total impurities"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="2.0"/>
+                <unit value="% w/w"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <component>
+        <!-- are expected to have a component that says what impurity this one is -->
+        <code>
+            <coding>
+                <system value="http://dummy.loinc.org"/>
+                <code value="IMP"/>
+                <display value="Impurity"/>
+            </coding>
+        </code>
+    </component>
+</ObservationDefinition>

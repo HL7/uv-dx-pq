@@ -1349,6 +1349,18 @@
 
         <resource>
             <reference>
+                <reference value="ObservationDefinition/Assay"/>
+            </reference>
+            <name value="Assay"/>
+            <description value="ObservationDefinition - Assay"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
                 <reference value="ObservationDefinition/Degradation"/>
             </reference>
             <name value="Degradation"/>
@@ -1358,13 +1370,37 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
-
+        
         <resource>
             <reference>
                 <reference value="ObservationDefinition/Description"/>
             </reference>
             <name value="Description"/>
             <description value="ObservationDefinition - Description"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/Identification"/>
+            </reference>
+            <name value="Identification"/>
+            <description value="ObservationDefinition - Identification"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/Impurities"/>
+            </reference>
+            <name value="v"/>
+            <description value="ObservationDefinition - v"/>
             <isExample value="true"/>
             <profile
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
@@ -1382,6 +1418,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
+        
         <resource>
             <reference>
                 <reference value="ObservationDefinition/Uniformity"/>
