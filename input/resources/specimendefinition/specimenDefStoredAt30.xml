@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpecimenDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in file Accumulus FHIR Substance Example - Stability, posted 05-31-2023 -->
+    <id value="specimenDefStoredAt30"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"
+        />
+    </meta>
+    <status value="active"/>
+    <typeTested>
+        <preference value="preferred"/>
+        <handling>
+            <instruction value="30°C/65% RH"/>
+            <!-- easier than temp range? which doesnt have humidity -->
+        </handling>
+    </typeTested>
+</SpecimenDefinition>
