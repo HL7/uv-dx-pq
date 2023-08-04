@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-manufacturing-participant-dxpq"/>
-    <url
-        value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq"/>
     <name value="ExtensionManufacturingParticipantDxPq"/>
     <title value="Extension - Manufacturing Participant dx-PQ"/>
     <status value="active"/>
@@ -39,6 +38,5 @@
                 <code value="Reference"/>
             </type>
         </element>
-
     </differential>
 </StructureDefinition>
