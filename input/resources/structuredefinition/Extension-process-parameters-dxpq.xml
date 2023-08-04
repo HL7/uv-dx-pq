@@ -27,6 +27,45 @@
         <element id="Extension">
             <path value="Extension"/>
         </element>
+        
+        <element id="Extension.extension:parameter">
+            <path value="Extension.extension"/>
+            <sliceName value="parameter"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:parameter.extension">
+            <path value="Extension.extension.extension"/>
+        </element>
+        <element id="Extension.extension:parameter.url">
+            <path value="Extension.parameter.url"/>
+            <fixedUri value="parameter"/>
+        </element>
+        <element id="Extension.extension:parameter.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        
+        <element id="Extension.extension:value">
+            <path value="Extension.extension"/>
+            <sliceName value="value"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:value.extension">
+            <path value="Extension.extension.extension"/>
+        </element>
+        <element id="Extension.extension:value.url">
+            <path value="Extension.value.url"/>
+            <fixedUri value="value"/>
+        </element>
+        <element id="Extension.extension:value.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
