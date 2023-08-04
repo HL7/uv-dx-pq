@@ -3,7 +3,7 @@
     <id value="Extension-process-parameters-dxpq"/>
     <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq"/>
     <name value="ExtensionProcessParametersDxPq"/>
-    <title value="Extension  - Process Parameters dx-PQ"/>
+    <title value="Extension - Process Parameters dx-PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
@@ -23,9 +23,14 @@
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Extension">
             <path value="Extension"/>
+            <short value="Process Parameters"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
         </element>
         
         <element id="Extension.extension:parameter">
@@ -71,9 +76,9 @@
             <fixedUri
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq"/>
         </element>
-        <element id="Extension.value[x]">
+<!--        <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
-            <max value="0"/>
-        </element>
+<!-\-            <max value="0"/>-\->
+        </element>-->
     </differential>
 </StructureDefinition>

@@ -1092,7 +1092,7 @@
             <groupingId value="extensions1"/>
         </resource>
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-parameters-dxpq"/>
                 <display value="ExtensionProcessParametersDxPq"/>
@@ -1101,7 +1101,7 @@
             <description value="Extension  - Process Parameters dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
