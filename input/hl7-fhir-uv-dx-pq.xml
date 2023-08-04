@@ -1321,6 +1321,30 @@
             <groupingId value="examples1"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/longTerm30X"/>
+            </reference>
+            <name value="longTerm30X"/>
+            <description value="ObservationDefinition - longTerm30X"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/longTerm30Y"/>
+            </reference>
+            <name value="longTerm30Y"/>
+            <description value="ObservationDefinition - longTerm30Y"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+        
         <!--examples of ObservationDefinition-simple-dxpq-->
 
         <resource>

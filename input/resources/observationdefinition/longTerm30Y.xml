@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
+    <id value="longTerm30Y"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
+        />
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30Y"/>
+        <title value="Y"/>
+        <status value="active"/>
+        <code>
+            <text value="Battery of tests 'Y' at 30°C/65% RH"/>
+        </code>
+        <specimen>
+            <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
+        </specimen>
+        <hasMember>
+            <reference value="ObservationDefinition/Identification"/>
+        </hasMember>
+</ObservationDefinition>
