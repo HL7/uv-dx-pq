@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
+    <id value="accelerated40Z"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
+        />
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z"/>
+        <title value="Z"/>
+        <status value="active"/>
+        <code>
+            <text value="Battery of tests 'Z' at 25°C/60% RH"/>
+        </code>
+        <specimen>
+            <reference value="SpecimenDefinition/specimenDefStoredAt40"/>
+        </specimen>
+        <hasMember>
+            <reference value="ObservationDefinition/Uniformity"/>
+        </hasMember>
+</ObservationDefinition>

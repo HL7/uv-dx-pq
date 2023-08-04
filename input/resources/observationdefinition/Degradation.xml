@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
+    <id value="Degradation"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+        />
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Degradation"/>
+    <title value="Degradation Products by HPLC (% w/w)"/>
+    <status value="active"/>
+    <code>
+        <coding>
+            <system value="http://dummy.loinc.org"/>
+            <code value="DGP"/>
+            <display value="Degradation Products"/>
+        </coding>
+    </code>
+    <qualifiedValue>
+        <appliesTo>
+            <!-- could be a code -->
+            <text value="Impurity 1"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="0.8"/>
+                <unit value="% w/w"/>
+                <system value="http://dummy.unitsofmeasure.org"/>
+                <code value="%{ w/w}"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <qualifiedValue>
+        <appliesTo>
+            <text value="Impurity 2"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="0.4"/>
+                <unit value="% w/w"/>
+                <system value="http://dummy.unitsofmeasure.org"/>
+                <code value="%{ w/w}"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <qualifiedValue>
+        <appliesTo>
+            <text value="Impurity 3"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="0.4"/>
+                <unit value="% w/w"/>
+                <system value="http://dummy.unitsofmeasure.org"/>
+                <code value="%{ w/w}"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <qualifiedValue>
+        <appliesTo>
+            <text value="Any Unspecified Degradation Impurity"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="0.2"/>
+                <unit value="% w/w"/>
+                <system value="http://dummy.unitsofmeasure.org"/>
+                <code value="%{ w/w}"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <qualifiedValue>
+        <appliesTo>
+            <text value="Total Degradation Impurities"/>
+        </appliesTo>
+        <range>
+            <high>
+                <value value="2.3"/>
+                <unit value="% w/w"/>
+                <system value="http://dummy.unitsofmeasure.org"/>
+                <code value="%{ w/w}"/>
+            </high>
+        </range>
+    </qualifiedValue>
+    <component>
+        <!-- are expected to have a component that says what impurity this one is -->
+        <code>
+            <coding>
+                <system value="http://dummy.loinc.org"/>
+                <code value="IMP"/>
+                <display value="Impurity"/>
+            </coding>
+        </code>
+    </component>
+</ObservationDefinition>

@@ -118,7 +118,16 @@
             <name value="Terminology"/>
         </grouping>
         <grouping id="examples1">
-            <name value="Additional Examples"/>
+            <name value="Additional ObservationDefinition Examples"/>
+        </grouping>
+        <grouping id="examples2">
+            <name value="Additional XX Examples"/>
+        </grouping>
+        <grouping id="examples3">
+            <name value="Additional YY Examples"/>
+        </grouping>
+        <grouping id="examples4">
+            <name value="Additional ZZ Examples"/>
         </grouping>
 
 
@@ -1238,6 +1247,147 @@
         </resource>
 
         <!--Additional Examples -->
+        <!-- Additional ObservationDefinition Examples (examples1)-->
+        <!--  examples of ObservationDefinition-test-method-dxpq      -->
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/accelerated40X"/>
+            </reference>
+            <name value="accelerated40X"/>
+            <description value="ObservationDefinition - accelerated40X"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/accelerated40Y"/>
+            </reference>
+            <name value="accelerated40Y"/>
+            <description value="ObservationDefinition - accelerated40Y"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/accelerated40Z"/>
+            </reference>
+            <name value="accelerated40Z"/>
+            <description value="ObservationDefinition - accelerated40Z"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/longTerm25X"/>
+            </reference>
+            <name value="longTerm25X"/>
+            <description value="ObservationDefinition - longTerm25X"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/longTerm25Y"/>
+            </reference>
+            <name value="longTerm25Y"/>
+            <description value="ObservationDefinition - longTerm25Y"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/longTerm25Z"/>
+            </reference>
+            <name value="longTerm25Z"/>
+            <description value="ObservationDefinition - longTerm25Z"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <!--examples of ObservationDefinition-simple-dxpq-->
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/Degradation"/>
+            </reference>
+            <name value="Degradation"/>
+            <description value="ObservationDefinition - Degradation"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/Description"/>
+            </reference>
+            <name value="Description"/>
+            <description value="ObservationDefinition - Description"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/Microbiological"/>
+            </reference>
+            <name value="Microbiological"/>
+            <description value="ObservationDefinition - Microbiological"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/Uniformity"/>
+            </reference>
+            <name value="Uniformity"/>
+            <description value="ObservationDefinition - Uniformity"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/Water"/>
+            </reference>
+            <name value="Water"/>
+            <description value="ObservationDefinition - Water"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <groupingId value="examples1"/>
+        </resource>
+        <!-- Additional XX Examples (examples2)-->
+
+        <!-- Additional YY Examples (examples3)-->
+
+        <!--Additional ZZ Examples (examples4)-->
+
+
+
 
         <!-- Narrative pages      -->
         <page>

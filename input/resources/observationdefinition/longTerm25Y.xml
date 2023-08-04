@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ObservationDefinition xmlns="http://hl7.org/fhir">
-    <id value="observationdefinition-test-method-dxpq-ex1"/>
+    <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
+    <id value="longTerm25Y"/>
     <meta>
         <profile
             value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
         />
     </meta>
-    <!-- SG: Added url -->
-    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
-    <title value="X"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
+    <title value="Y"/>
     <status value="active"/>
     <code>
-        <text value="Battery of tests 'X' at 25°C/60% RH"/>
+        <text value="Battery of tests 'Y' at 25°C/60% RH"/>
     </code>
     <specimen>
         <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
     </specimen>
     <hasMember>
-        <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+        <reference value="ObservationDefinition/Microbiological"/>
     </hasMember>
 </ObservationDefinition>

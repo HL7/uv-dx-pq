@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ObservationDefinition xmlns="http://hl7.org/fhir">
-    <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
-    <id value="observationdefinition-simple-dxpq-ex1"/>
+    <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
+    <id value="Water"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+        />
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Water"/>
     <title value="Water Content (% w/w) (Mean)"/>
     <status value="active"/>
     <code>
-        <!--       To fix: create local code system-->
         <coding>
             <system value="http://dummy.loinc.org"/>
             <code value="WWW"/>
@@ -22,7 +23,7 @@
             <high>
                 <value value="0.2"/>
                 <unit value="% w/w"/>
-                <system value="http://unitsofmeasure.org"/>
+                <system value="http://dummy.unitsofmeasure.org"/>
                 <code value="%{ w/w}"/>
             </high>
         </range>

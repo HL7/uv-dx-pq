@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
+    <id value="Description"/>
+    <meta>
+        <profile
+            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+        />
+    </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description"/>
+    <title value="Description"/>
+    <status value="active"/>
+    <code>
+        <coding>
+            <system value="http://dummy.loinc.org"/>
+            <code value="XXX"/>
+            <display value="Description"/>
+        </coding>
+        <text value="Description"/>
+    </code>
+    <qualifiedValue>
+        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+            <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+            <valueString value="An orange film-coated tablet, debossed with 175 on one side">
+                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
+                    <!--                     <extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
+                    <valueString value="Note 1"/>
+                </extension>
+            </valueString>
+        </extension>
+    </qualifiedValue>
+</ObservationDefinition>
