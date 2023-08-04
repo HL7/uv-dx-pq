@@ -4,50 +4,12 @@
     <!--    <id value="activityLongTerm25X-3"/>-->
     <id value="activitydefinition-stability-test-dxpq-ex1"/>
     <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-        />
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
     </meta>
     <!-- SG: Added url -->
     <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
-    
     <observationRequirement
         value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
-
-
-    <!--    Tried this and got "error: Canonical URLs must be absolute URLs if they are not fragment references (ObservationDefinition/longTerm25X)"
-    <observationRequirement value="ObservationDefinition/longTerm25X"/>-->
-
-    <!--Tried this and got "error: Canonical URL 'http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1' does not resolve"
-    <observationRequirement
-        value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
-
-    <!--Tried this and got 
-            "error: Undefined element 'title' at /f:ActivityDefinition/f:observationRequirement"
-            "error: Undefined element 'definitionCanonical' at /f:ActivityDefinition/f:observationRequirement"
-            "error: Rule ele-1: 'All FHIR elements must have a @value or children' Failed"
-    <observationRequirement id="longTerm25X">
-        <title value="longTerm25X"/>
-        <definitionCanonical value="#longTerm25X"/>
-    </observationRequirement>-->
-
-    <!--Tried this and got "error: Undefined element 'definitionCanonical' at /f:ActivityDefinition/f:observationRequirement"
-    <observationRequirement>
-        <definitionCanonical value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
-        />
-    </observationRequirement>-->
-
-    <!--  Tried this and got "error: Undefined element 'canonical' at /f:ActivityDefinition/f:observationRequirement
-        <observationRequirement>
-        <canonical
-            value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
-    </observationRequirement>-->
-
-    <!-- Tried the following and got "error: Undefined element 'reference' at /f:ActivityDefinition/f:observationRequirement"
-    <observationRequirement>
-        <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
-    </observationRequirement>-->
-
 </ActivityDefinition>

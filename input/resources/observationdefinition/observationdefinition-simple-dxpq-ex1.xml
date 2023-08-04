@@ -4,14 +4,15 @@
     <!--    <id value="Water"/>-->
     <id value="observationdefinition-simple-dxpq-ex1"/>
     <meta>
-                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
-                <title value="Water Content (% w/w) (Mean)"/>
+    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+    <title value="Water Content (% w/w) (Mean)"/>
     <status value="active"/>
     <code>
- <!--       To fix: create local code system-->
+        <!--       To fix: create local code system-->
         <coding>
-                        <system value="http://dummy.loinc.org"/>
+            <system value="http://dummy.loinc.org"/>
             <code value="WWW"/>
             <display value="Water Content"/>
         </coding>
@@ -22,8 +23,8 @@
             <high>
                 <value value="0.2"/>
                 <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%{ w/w}"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="%{ w/w}"/>
             </high>
         </range>
     </qualifiedValue>
