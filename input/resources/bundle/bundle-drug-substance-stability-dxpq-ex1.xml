@@ -652,8 +652,8 @@
             <id value="activityLongTerm30XY-Initial"/>
             <title value="Long-term - 30°C/65% RH - XY"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/longTerm30X"/>
-            <observationRequirement value="ObservationDefinition/longTerm30Y"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30Y"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -664,7 +664,7 @@
             <id value="activityLongTerm30X-3"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/longTerm30X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -675,7 +675,7 @@
             <id value="activityLongTerm30X-6"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/longTerm30X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -686,7 +686,7 @@
             <id value="activityLongTerm30X-9"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/longTerm30X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -697,7 +697,7 @@
             <id value="activityLongTerm30X-12"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/longTerm30X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -708,7 +708,7 @@
             <id value="activityLongTerm30X-18"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/longTerm30X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -719,7 +719,7 @@
             <id value="activityLongTerm30X-24"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/longTerm30X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -730,7 +730,7 @@
             <id value="activityLongTerm30X-36"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/longTerm30X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -742,7 +742,7 @@
                 <id value="activityLongTerm30X-48"/>
                 <title value="Long-term - 30°C/65% RH - X"/>
                 <status value="active"/>
-                <observationRequirement value="ObservationDefinition/longTerm30X"/>
+                <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
             </ActivityDefinition>
         </resource>
     </entry-->
@@ -979,8 +979,8 @@
             <id value="activityAccelerated40XY-Initial"/>
             <title value="Accelerated - 40°C/70% RH - XY"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/accelerated40X"/>
-            <observationRequirement value="ObservationDefinition/accelerated40Y"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -991,7 +991,7 @@
             <id value="activityAccelerated40X-3"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/accelerated40X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1002,7 +1002,7 @@
             <id value="activityAccelerated40X-6"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/accelerated40X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
          </ActivityDefinition>
       </resource>
    </entry>
