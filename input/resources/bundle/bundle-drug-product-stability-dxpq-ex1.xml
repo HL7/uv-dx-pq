@@ -567,17 +567,16 @@
       <fullUrl value="urn:uuid:610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
       <resource>
          <ActivityDefinition>
-            <!-- <id value="activityLongTerm25X-3"/>-->
-            <id value="activitydefinition-stability-test-dxpq-ex1"/>
+             <id value="activityLongTerm25X-3"/>
+<!--            <id value="activitydefinition-stability-test-dxpq-ex1"/>-->
             <meta>
-               <profile
-                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-3"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
-            <observationRequirement
-               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+<!--            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!-- longTerm25X -->
          </ActivityDefinition>
       </resource>
@@ -587,10 +586,16 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25X-6"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-6"/>      
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <observationRequirement
-               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+<!--            <observationRequirement
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
          </ActivityDefinition>
       </resource>
    </entry>
@@ -599,10 +604,16 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25X-9"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-9"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <observationRequirement
-               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+<!--            <observationRequirement
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
          </ActivityDefinition>
       </resource>
    </entry>
@@ -611,12 +622,16 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25XYZ-Initial"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XYZ-Initial"/>
             <title value="Long-term - 25°C/60% RH - XYZ"/>
             <status value="active"/>
-            <observationRequirement
-               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
-            <observationRequirement value="ObservationDefinition/longTerm25Y"/>
-            <observationRequirement value="ObservationDefinition/longTerm25Z"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+<!--            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -625,11 +640,17 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25XY-12"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-12"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <observationRequirement
-               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
-            <observationRequirement value="ObservationDefinition/longTerm25Y"/>
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+<!--            <observationRequirement
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -638,11 +659,17 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25XY-18"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-18"/>  
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <observationRequirement
-               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
-            <observationRequirement value="ObservationDefinition/longTerm25Y"/>
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+<!--            <observationRequirement
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -651,11 +678,17 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25XY-24"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-24"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <observationRequirement
-               value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
-            <observationRequirement value="ObservationDefinition/longTerm25Y"/>
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+<!--            <observationRequirement
+               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -663,13 +696,14 @@
       <fullUrl value="urn:uuid:b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
       <resource>
          <ObservationDefinition>
-            <!--<id value="longTerm25X"/>-->
-            <id value="observationdefinition-test-method-dxpq-ex1"/>
+            <id value="longTerm25X"/>
+<!--            <id value="observationdefinition-test-method-dxpq-ex1"/>-->
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
                />
             </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -696,6 +730,12 @@
       <resource>
          <ObservationDefinition>
             <id value="Description"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description"/>
             <title value="Description"/>
             <status value="active"/>
             <code>
@@ -725,6 +765,12 @@
       <resource>
          <ObservationDefinition>
             <id value="Degradation"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Degradation"/>
             <title value="Degradation Products by HPLC (% w/w)"/>
             <status value="active"/>
             <code>
@@ -817,13 +863,14 @@
       <fullUrl value="urn:uuid:186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
       <resource>
          <ObservationDefinition>
-            <!-- <id value="Water"/> -->
-            <id value="observationdefinition-simple-dxpq-ex1"/>
+             <id value="Water"/> 
+<!--            <id value="observationdefinition-simple-dxpq-ex1"/>-->
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
                />
             </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Water"/>
             <title value="Water Content (% w/w) (Mean)"/>
             <status value="active"/>
             <code>
@@ -852,6 +899,12 @@
       <resource>
          <ObservationDefinition>
             <id value="longTerm25Y"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
             <title value="Y"/>
             <status value="active"/>
             <code>
@@ -872,6 +925,12 @@
       <resource>
          <ObservationDefinition>
             <id value="Microbiological"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Microbiological"/>
             <title value="Microbiological"/>
             <status value="active"/>
             <code>
@@ -896,6 +955,12 @@
       <resource>
          <ObservationDefinition>
             <id value="longTerm25Z"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z"/>
             <title value="Z"/>
             <status value="active"/>
             <code>
@@ -916,6 +981,12 @@
       <resource>
          <ObservationDefinition>
             <id value="Uniformity"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Uniformity"/>
             <title value="Uniformity of dosage"/>
             <status value="active"/>
             <code>
@@ -956,9 +1027,13 @@
       <resource>
          <ActivityDefinition>
             <id value="activityAccelerated40X-3"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-3"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/accelerated40X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -967,9 +1042,13 @@
       <resource>
          <ActivityDefinition>
             <id value="activityAccelerated40X-6"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-6"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/accelerated40X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -978,11 +1057,15 @@
       <resource>
          <ActivityDefinition>
             <id value="activityAccelerated40XYZ-Initial"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40XYZ-Initial"/>
             <title value="Accelerated - 40°C/70% RH - XYZ"/>
             <status value="active"/>
-            <observationRequirement value="ObservationDefinition/accelerated40X"/>
-            <observationRequirement value="ObservationDefinition/accelerated40Y"/>
-            <observationRequirement value="ObservationDefinition/accelerated40Z"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y"/>
+            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -991,6 +1074,12 @@
       <resource>
          <ObservationDefinition>
             <id value="accelerated40X"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -1014,6 +1103,12 @@
       <resource>
          <ObservationDefinition>
             <id value="accelerated40Y"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y"/>
             <title value="Y"/>
             <status value="active"/>
             <code>
@@ -1034,6 +1129,12 @@
       <resource>
          <ObservationDefinition>
             <id value="accelerated40Z"/>
+            <meta>
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
+               />
+            </meta>
+            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z"/>
             <title value="Z"/>
             <status value="active"/>
             <code>
