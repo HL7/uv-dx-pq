@@ -1025,7 +1025,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-<!--
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-participant-dxpq"/>
@@ -1035,7 +1035,7 @@
             <description value="Extension - Manufacturing Participant dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
