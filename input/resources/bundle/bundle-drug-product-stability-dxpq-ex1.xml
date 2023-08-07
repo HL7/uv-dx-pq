@@ -18,7 +18,8 @@
       <resource>
          <DiagnosticReport>
             <!-- <id value="studyResultsReport"/>-->
-            <id value="diagnosticreport-stability-study-results-dxpq-ex1"/>
+            <!--<id value="diagnosticreport-stability-study-results-dxpq-ex1"/>-->
+            <id value="6f4a3311-92c5-2b4a-533e-76341e414c63"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"
@@ -29,7 +30,8 @@
                 </extension-->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"
+                  <!--<reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"-->
+                  <reference value="PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54"
                   />
                </valueReference>
             </extension>
@@ -124,7 +126,8 @@
          <!-- Section 11 - Stability Study - Protocol -->
          <PlanDefinition>
             <!--<id value="stabilityStudyProtocol"/>-->
-            <id value="plandefinition-stability-study-protocol-dxpq-ex1"/>
+            <!--<id value="plandefinition-stability-study-protocol-dxpq-ex1"/>-->
+            <id value="c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"
@@ -173,8 +176,8 @@
                         <!-- the categories to do at this step -->
                         <title value="XYZ"/>
                         <!-- Long term -->
-                        <definitionCanonical
-                           value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                        <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
+                        <definitionCanonical value="urn:uuid:c8eeee01-0c65-4ee5-8fe5-e8b0df191570"/>
                      </action>
                   </action>
                   <action>
@@ -201,8 +204,10 @@
                      </timingTiming>
                      <action>
                         <title value="X"/>
+                           <!--<definitionCanonical
+                           value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>-->
                         <definitionCanonical
-                           value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
+                           value="urn:uuid:16f99610-548d-48cd-bf0d-d0df1a854a0f"/>
                      </action>
                   </action>
                   <action>
@@ -229,7 +234,8 @@
                      </timingTiming>
                      <action>
                         <title value="X"/>
-                        <definitionCanonical value="ActivityDefinition/activityLongTerm25X-6"/>
+                        <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25X-6"/>-->
+                        <definitionCanonical value="urn_uuid:c526f9c8-25ff-4245-96f7-b98781c60674"/>
                      </action>
                   </action>
                   <action>
@@ -256,7 +262,8 @@
                      </timingTiming>
                      <action>
                         <title value="X"/>
-                        <definitionCanonical value="ActivityDefinition/activityLongTerm25X-9"/>
+                        <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25X-9"/>-->
+                        <definitionCanonical value="urn:uuid:e23f5690-c663-429d-b1eb-fc405ffcaa34"/>
                      </action>
                   </action>
                   <action>
@@ -547,7 +554,8 @@
       <resource>
          <SpecimenDefinition>
             <!--<id value="specimenDefStoredAt25"/>-->
-            <id value="specimendefinition-stability-dxpq-ex1"/>
+            <!--<id value="specimendefinition-stability-dxpq-ex1"/>-->
+            <id value="3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"
@@ -567,12 +575,14 @@
       <fullUrl value="urn:uuid:610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
       <resource>
          <ActivityDefinition>
-             <id value="activityLongTerm25X-3"/>
-<!--            <id value="activitydefinition-stability-test-dxpq-ex1"/>-->
+            <!--<id value="activityLongTerm25X-3"/>-->
+            <id value="610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
+            <!--            <id value="activitydefinition-stability-test-dxpq-ex1"/>-->
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-3"/>
+            <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-3"/>-->
+            <url value="urn:uuid:16f99610-548d-48cd-bf0d-d0df1a854a0f"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
@@ -585,11 +595,13 @@
       <fullUrl value="urn:uuid:d99c1b63-2d32-4887-8157-525cc8ae4732"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityLongTerm25X-6"/>
+            <!--<id value="activityLongTerm25X-6"/>-->
+            <id value="d99c1b63-2d32-4887-8157-525cc8ae4732"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-6"/>      
+            <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-6"/>-->
+            <url value="urn:uuid:c526f9c8-25ff-4245-96f7-b98781c60674"/>      
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <observationRequirement
@@ -603,11 +615,13 @@
       <fullUrl value="urn:uuid:38704856-0acf-95f0-000f-a933b6862fa0"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityLongTerm25X-9"/>
+            <!--<id value="activityLongTerm25X-9"/>-->
+            <id value="38704856-0acf-95f0-000f-a933b6862fa0"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-9"/>
+            <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-9"/>-->
+            <url value="urn:uuid:e23f5690-c663-429d-b1eb-fc405ffcaa34"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <observationRequirement
@@ -621,11 +635,13 @@
       <fullUrl value="urn:uuid:4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityLongTerm25XYZ-Initial"/>
+            <!--<id value="activityLongTerm25XYZ-Initial"/>-->
+            <id value="4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+            <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
+            <url value="urn:uuid:c8eeee01-0c65-4ee5-8fe5-e8b0df191570"/>
             <title value="Long-term - 25°C/60% RH - XYZ"/>
             <status value="active"/>
             <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
@@ -710,7 +726,8 @@
                <text value="Battery of tests 'X' at 25°C/60% RH"/>
             </code>
             <specimen>
-               <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
+               <!--<reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>-->
+               <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
                <reference value="ObservationDefinition/Description"/>
@@ -911,7 +928,8 @@
                <text value="Battery of tests 'Y' at 25°C/60% RH"/>
             </code>
             <specimen>
-               <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
+               <!--<reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>-->
+               <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
                <reference value="ObservationDefinition/Microbiological"/>
@@ -967,7 +985,8 @@
                <text value="Battery of tests 'Z' at 25°C/60% RH"/>
             </code>
             <specimen>
-               <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
+               <!--<reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>-->
+               <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
                <reference value="ObservationDefinition/Uniformity"/>
@@ -1489,7 +1508,8 @@
             </contained>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                  <!--<reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
+                  <reference value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -1621,7 +1641,8 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                  <!--<reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
+                  <reference value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -1741,7 +1762,8 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                  <!--<reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
+                  <reference value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                </valueReference>
             </extension>
             <status value="final"/>
