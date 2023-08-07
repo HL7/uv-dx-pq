@@ -28,56 +28,16 @@
         <element id="Extension">
             <path value="Extension"/>
         </element>
-        <element id="Extension.extension">
-            <path value="Extension.extension"/>
-        </element>
-        
-        <element id="Extension.extension:parameter">
-            <path value="Extension.extension"/>
-            <sliceName value="parameter"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Extension.extension:parameter.extension">
-            <path value="Extension.extension.extension"/>
-        </element>
-        <element id="Extension.extension:parameter.url">
-            <path value="Extension.extension.url"/>
-            <fixedUri value="parameter"/>
-        </element>
-        <element id="Extension.extension:parameter.value[x]">
-            <path value="Extension.extension.value[x]"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-        </element>
-        
-        <element id="Extension.extension:value">
-            <path value="Extension.extension"/>
-            <sliceName value="value"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Extension.extension:value.extension">
-            <path value="Extension.extension.extension"/>
-        </element>
-        <element id="Extension.extension:value.url">
-            <path value="Extension.extension.url"/>
-            <fixedUri value="value"/>
-        </element>
-        <element id="Extension.extension:value.value[x]">
-            <path value="Extension.extension.value[x]"/>
-            <type>
-                <code value="Quantity"/>
-            </type>
-        </element>
-        
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq"/>
         </element>
-<!--        <element id="Extension.value[x]">
+        <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
-<!-\-            <max value="0"/>-\->
-        </element>-->
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
     </differential>
 </StructureDefinition>
