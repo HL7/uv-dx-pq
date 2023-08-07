@@ -22,11 +22,13 @@
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"
                />
             </meta>
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tabulate-equipment-dxpq">
-<!--            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateEquipment">-->
+            <extension
+               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tabulate-equipment-dxpq">
+               <!--            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateEquipment">-->
                <valueBoolean value="true"/>
             </extension>
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq">
+            <extension
+               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq">
                <!--            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">-->
                <valueReference>
                   <!-- Process flow diagram -->
@@ -36,7 +38,8 @@
                      value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
                </valueReference>
             </extension>
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
+            <extension
+               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
                <!--            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">-->
                <valueMarkdown value="This can be text about the history"/>
             </extension>
