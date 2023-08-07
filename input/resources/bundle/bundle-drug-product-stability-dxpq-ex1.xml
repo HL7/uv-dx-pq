@@ -635,8 +635,8 @@
       <fullUrl value="urn:uuid:4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityLongTerm25XYZ-Initial"/>
-<!--            <id value="4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>-->
+            <!--<id value="activityLongTerm25XYZ-Initial"/>-->
+            <id value="4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
@@ -655,7 +655,6 @@
       <fullUrl value="urn:uuid:f19a68b0-4ba1-7288-635e-12783035935b"/>
       <resource>
          <ActivityDefinition>
-<!--            <id value="urn:uuid:f19a68b0-4ba1-7288-635e-12783035935b"/>-->
             <id value="activityLongTerm25XY-12"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
@@ -675,7 +674,6 @@
       <fullUrl value="urn:uuid:ce2df6ab-5087-435c-35cb-a84572e756a2"/>
       <resource>
          <ActivityDefinition>
-<!--            <id value="urn:uuid:ce2df6ab-5087-435c-35cb-a84572e756a2"/>-->
             <id value="activityLongTerm25XY-18"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
@@ -695,7 +693,6 @@
       <fullUrl value="urn:uuid:cf2df6ab-5087-435c-35cb-a84572e756a2"/>
       <resource>
          <ActivityDefinition>
-<!--            <id value="urn:uuid:cf2df6ab-5087-435c-35cb-a84572e756a2"/>-->
             <id value="activityLongTerm25XY-24"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
@@ -715,7 +712,6 @@
       <fullUrl value="urn:uuid:b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
       <resource>
          <ObservationDefinition>
-<!--            <id value="urn:uuid:b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>-->
             <id value="longTerm25X"/>
 <!--            <id value="observationdefinition-test-method-dxpq-ex1"/>-->
             <meta>
@@ -750,7 +746,6 @@
       <fullUrl value="urn:uuid:1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
       <resource>
          <ObservationDefinition>
-<!--            <id value="urn:uuid:1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>-->
             <id value="Description"/>
             <meta>
                <profile
