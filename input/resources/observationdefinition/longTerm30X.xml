@@ -16,12 +16,15 @@
             <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
         </specimen>
         <hasMember>
-            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description"/>
+            <reference value="ObservationDefinition/Description"/>
+<!--            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description"/>-->
         </hasMember>
         <hasMember>
-            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay"/>
+            <reference value="ObservationDefinition/Assay"/>
+<!--            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay"/>-->
         </hasMember>
         <hasMember>
-            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Impurities"/>
+            <reference value="ObservationDefinition/Impurities"/>
+<!--            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Impurities"/>-->
         </hasMember>
 </ObservationDefinition>
