@@ -43,6 +43,7 @@
 
         <element id="Extension.extension:parameter">
             <path value="Extension.extension"/>
+            <sliceName value="parameter"/>
             <type>
                 <code value="Extension"/>
             </type>
@@ -61,6 +62,7 @@
 
         <element id="Extension.extension:value">
             <path value="Extension.extension"/>
+            <sliceName value="value"/>
             <type>
                 <code value="Extension"/>
             </type>
