@@ -38,6 +38,10 @@
       <path value="Bundle.entry"/>
       <slicing>
         <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <discriminator>
           <type value="profile"/>
           <path value="resource"/>
         </discriminator>
@@ -51,9 +55,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="DP-Spec"/>
     </element>
-    <element id="Bundle.entry:DP-Spec.fullUrl">
+    <!-- <element id="Bundle.entry:DP-Spec.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:DP-Spec.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -66,9 +70,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Acceptance-criteria"/>
     </element>
-    <element id="Bundle.entry:Acceptance-criteria.fullUrl">
+    <!-- <element id="Bundle.entry:Acceptance-criteria.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Acceptance-criteria.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -82,9 +86,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="MedicinalProductDefinition"/>
     </element>
-    <element id="Bundle.entry:MedicinalProductDefinition.fullUrl">
+    <!-- <element id="Bundle.entry:MedicinalProductDefinition.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:MedicinalProductDefinition.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -99,9 +103,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Ingredient"/>
     </element>
-    <element id="Bundle.entry:Ingredient.fullUrl">
+    <!-- <element id="Bundle.entry:Ingredient.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Ingredient.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -115,9 +119,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Component-substance"/>
     </element>
-    <element id="Bundle.entry:Component-substance.fullUrl">
+    <!-- <element id="Bundle.entry:Component-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Component-substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -131,9 +135,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Organization"/>
     </element>
-    <element id="Bundle.entry:Organization.fullUrl">
+    <!-- <element id="Bundle.entry:Organization.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Organization.resource">
       <path value="Bundle.entry.resource"/>
       <type>

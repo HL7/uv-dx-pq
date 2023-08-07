@@ -37,6 +37,10 @@
       <path value="Bundle.entry"/>
       <slicing>
         <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <discriminator>
           <type value="profile"/>
           <path value="resource"/>
         </discriminator>
@@ -50,9 +54,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Process-Validation-Plan"/>
     </element>
-    <element id="Bundle.entry:Process-Validation-Plan.fullUrl">
+    <!-- <element id="Bundle.entry:Process-Validation-Plan.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Process-Validation-Plan.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -66,9 +70,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Validation-Steps"/>
     </element>
-    <element id="Bundle.entry:Validation-Steps.fullUrl">
+    <!-- <element id="Bundle.entry:Validation-Steps.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Validation-Steps.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -83,9 +87,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Batch-Lot-Information"/>
     </element>
-    <element id="Bundle.entry:Batch-Lot-Information.fullUrl">
+    <!-- <element id="Bundle.entry:Batch-Lot-Information.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Batch-Lot-Information.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -100,9 +104,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Organizations"/>
     </element>
-    <element id="Bundle.entry:Organizations.fullUrl">
+    <!-- <element id="Bundle.entry:Organizations.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Organizations.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -116,9 +120,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Results-Report"/>
     </element>
-    <element id="Bundle.entry:Results-Report.fullUrl">
+    <!-- <element id="Bundle.entry:Results-Report.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Results-Report.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -133,9 +137,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Result-Observations"/>
     </element>
-    <element id="Bundle.entry:Result-Observations.fullUrl">
+    <!-- <element id="Bundle.entry:Result-Observations.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Result-Observations.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -150,9 +154,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Product-Identification"/>
     </element>
-    <element id="Bundle.entry:Product-Identification.fullUrl">
+    <!-- <element id="Bundle.entry:Product-Identification.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Product-Identification.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -167,9 +171,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Product-Ingredient"/>
     </element>
-    <element id="Bundle.entry:Product-Ingredient.fullUrl">
+    <!-- <element id="Bundle.entry:Product-Ingredient.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Product-Ingredient.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -184,9 +188,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Component-substance"/>
     </element>
-    <element id="Bundle.entry:Component-substance.fullUrl">
+    <!-- <element id="Bundle.entry:Component-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Component-substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -201,9 +205,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Actual-batch-substance"/>
     </element>
-    <element id="Bundle.entry:Actual-batch-substance.fullUrl">
+    <!-- <element id="Bundle.entry:Actual-batch-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Actual-batch-substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -216,9 +220,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Manufacturing-Process"/>
     </element>
-    <element id="Bundle.entry:Manufacturing-Process.fullUrl">
+    <!-- <element id="Bundle.entry:Manufacturing-Process.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Manufacturing-Process.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -232,9 +236,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Equipment-Information"/>
     </element>
-    <element id="Bundle.entry:Equipment-Information.fullUrl">
+    <!-- <element id="Bundle.entry:Equipment-Information.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Equipment-Information.resource">
       <path value="Bundle.entry.resource"/>
       <type>

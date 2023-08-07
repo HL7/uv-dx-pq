@@ -37,6 +37,10 @@
       <path value="Bundle.entry"/>
       <slicing>
         <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <discriminator>
           <type value="profile"/>
           <path value="resource"/>
         </discriminator>

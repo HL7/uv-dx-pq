@@ -37,6 +37,10 @@
       <path value="Bundle.entry"/>
       <slicing>
         <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <discriminator>
           <type value="profile"/>
           <path value="resource"/>
         </discriminator>
@@ -50,9 +54,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Study"/>
     </element>
-    <element id="Bundle.entry:Stability-Study.fullUrl">
+    <!-- <element id="Bundle.entry:Stability-Study.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Stability-Study.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -66,9 +70,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Monitoring-Prog"/>
     </element>
-    <element id="Bundle.entry:Stability-Monitoring-Prog.fullUrl">
+    <!-- <element id="Bundle.entry:Stability-Monitoring-Prog.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Stability-Monitoring-Prog.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -83,9 +87,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="SpecimenStorage"/>
     </element>
-    <element id="Bundle.entry:SpecimenStorage.fullUrl">
+    <!-- <element id="Bundle.entry:SpecimenStorage.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:SpecimenStorage.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -100,9 +104,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Specimen"/>
     </element>
-    <element id="Bundle.entry:Specimen.fullUrl">
+    <!-- <element id="Bundle.entry:Specimen.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Specimen.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -115,9 +119,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="ActivityDefinition"/>
     </element>
-    <element id="Bundle.entry:ActivityDefinition.fullUrl">
+    <!-- <element id="Bundle.entry:ActivityDefinition.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:ActivityDefinition.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -132,9 +136,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Test-Def"/>
     </element>
-    <element id="Bundle.entry:Stability-Test-Def.fullUrl">
+    <!-- <element id="Bundle.entry:Stability-Test-Def.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Stability-Test-Def.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -150,9 +154,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Test-Component"/>
     </element>
-    <element id="Bundle.entry:Stability-Test-Component.fullUrl">
+    <!-- <element id="Bundle.entry:Stability-Test-Component.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Stability-Test-Component.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -184,9 +188,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Test-Result"/>
     </element>
-    <element id="Bundle.entry:Stability-Test-Result.fullUrl">
+    <!-- <element id="Bundle.entry:Stability-Test-Result.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Stability-Test-Result.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -201,9 +205,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Component-substance"/>
     </element>
-    <element id="Bundle.entry:Component-substance.fullUrl">
+    <!-- <element id="Bundle.entry:Component-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Component-substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -218,9 +222,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="actual-batch-substance"/>
     </element>
-    <element id="Bundle.entry:actual-batch-substance.fullUrl">
+    <!-- <element id="Bundle.entry:actual-batch-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:actual-batch-substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -233,9 +237,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="StudyResultsReport"/>
     </element>
-    <element id="Bundle.entry:StudyResultsReport.fullUrl">
+    <!-- <element id="Bundle.entry:StudyResultsReport.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:StudyResultsReport.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -250,9 +254,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Organization"/>
     </element>
-    <element id="Bundle.entry:Organization.fullUrl">
+    <!-- <element id="Bundle.entry:Organization.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element>
+    </element> -->
     <element id="Bundle.entry:Organization.resource">
       <path value="Bundle.entry.resource"/>
       <type>
