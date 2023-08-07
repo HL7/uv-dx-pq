@@ -29,17 +29,17 @@
             <path value="Extension"/>
         </element>
         
-        <element id="Extension.extension">
+<!--        <element id="Extension.extension">
             <path value="Extension.extension"/>
-            <!--            <slicing>
+            <!-\-            <slicing>
                 <discriminator>
                     <type value="value"/>
                     <path value="url"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-            <min value="1"/>-->
-        </element>
+            <min value="1"/>-\->
+        </element>-->
 
         <element id="Extension.extension:parameter">
             <path value="Extension.extension"/>
