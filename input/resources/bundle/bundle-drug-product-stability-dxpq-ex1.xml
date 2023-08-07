@@ -82,7 +82,8 @@
                </extension>
             </effectiveDateTime>
             <performer>
-               <reference value="Organization/tester"/>
+               <reference value="urn:uuid:e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+<!--               <reference value="Organization/tester"/>-->
             </performer>
             <result>
                <reference value="Observation/LongTerm25C-initial-1"/>
@@ -3353,7 +3354,8 @@
       <fullUrl value="urn:uuid:e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
       <resource>
          <Organization>
-            <id value="tester"/>
+            <id value="urn:uuid:e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+<!--            <id value="tester"/>-->
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3007270600"/>
