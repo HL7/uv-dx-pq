@@ -110,17 +110,17 @@
             <!-- skipping middle months -->
             <result>
                <reference value="Observation/e803ad6d-0cb3-87dd-6af1-4b88c654a47c"/>
-<!--               <reference value="e803ad6d-0cb3-87dd-6af1-4b88c654a47c"/>-->
+               <!--               <reference value="e803ad6d-0cb3-87dd-6af1-4b88c654a47c"/>-->
                <!--               <reference value="Observation/LongTerm25C-18m-1"/>-->
             </result>
             <result>
                <reference value="Observation/3519f84a-2889-90a0-a6b7-ff2f1be66a73"/>
-<!--               <reference value="3519f84a-2889-90a0-a6b7-ff2f1be66a73"/>-->
+               <!--               <reference value="3519f84a-2889-90a0-a6b7-ff2f1be66a73"/>-->
                <!--               <reference value="Observation/LongTerm25C-18m-2"/>-->
             </result>
             <result>
                <reference value="Observation/2ef362f1-0b65-3578-7f06-fbd74a24694a"/>
-<!--               <reference value="2ef362f1-0b65-3578-7f06-fbd74a24694a"/>-->
+               <!--               <reference value="2ef362f1-0b65-3578-7f06-fbd74a24694a"/>-->
                <!--               <reference value="Observation/LongTerm25C-18m-3"/>-->
             </result>
             <!-- NEW DATA -->
@@ -129,7 +129,8 @@
                 </result-->
             <!-- Accelerated -->
             <result>
-               <reference value="Observation/Accelerated40C-3-1"/>
+               <reference value="Observation/72e0640b-094b-909e-5268-3dee92af4bbd"/>
+               <!--               <reference value="Observation/Accelerated40C-3-1"/>-->
             </result>
             <!-- skipping rest of Accelerated -->
             <conclusion
@@ -156,9 +157,8 @@
             <title value="Stability Monitoring Program"/>
             <status value="active"/>
             <subjectReference>
-               <reference
-                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
-               />
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+               <!--               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>-->
             </subjectReference>
             <description value="Narrative description of Stability Study"/>
             <!-- new "tabular" style -->
@@ -2777,7 +2777,8 @@
       <fullUrl value="urn:uuid:72e0640b-094b-909e-5268-3dee92af4bbd"/>
       <resource>
          <Observation>
-            <id value="Accelerated40C-3-1"/>
+            <id value="72e0640b-094b-909e-5268-3dee92af4bbd"/>
+            <!--            <id value="Accelerated40C-3-1"/>-->
             <contained>
                <Observation>
                   <id value="Accelerated40C-3-1-Description"/>
@@ -3102,7 +3103,7 @@
                   <valueReference>
                      <!-- todo consider change this be the MID? -->
                      <reference
-                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                        value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                      <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
@@ -3210,8 +3211,8 @@
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
                      <reference
-                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
-                     />
+                        value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                     <!--               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>-->
                   </valueReference>
                </extension>
             </code>
@@ -3305,8 +3306,8 @@
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
                      <reference
-                        value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
-                     />
+                        value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                     <!--               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>-->
                   </valueReference>
                </extension>
             </code>
@@ -3458,7 +3459,8 @@
          <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
             <!-- <id value="product"/> -->
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            <!--            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>-->
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"
@@ -3515,9 +3517,8 @@
             <status value="active"/>
             <for>
                <!--reference value="MedicinalProductDefinition/product"/-->
-               <reference
-                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
-               />
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+               <!--               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>-->
             </for>
             <role>
                <coding>
