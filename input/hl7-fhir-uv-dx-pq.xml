@@ -1490,84 +1490,84 @@
                 <generation value="markdown"/>
                 
                 <page>
-                    <nameUrl value="identification.html"/>
+                    <name value="identification.html"/>
                     <title value="Identification"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
-                    <nameUrl value="composition.html"/>
+                    <name value="composition.html"/>
                     <title value="Composition"/>
                     <generation value="markdown"/>
                 </page>
                 
                 <page>
-                    <nameUrl value="impurities.html"/>
+                    <name value="impurities.html"/>
                     <title value="Impurities"/>
                     <generation value="markdown"/>
                 </page>
                 
                 <page>
-                    <nameUrl value="organizations.html"/>
+                    <name value="organizations.html"/>
                     <title value="Organizations"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
-                    <nameUrl value="batch_info.html"/>
+                    <name value="batch_info.html"/>
                     <title value="Batch/Lot Information"/>
                     <generation value="markdown"/>
                 </page>
                 
                 <page>
-                    <nameUrl value="batch_anal.html"/>
+                    <name value="batch_anal.html"/>
                     <title value="Batch Analysis"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
-                    <nameUrl value="batch_formula.html"/>
+                    <name value="batch_formula.html"/>
                     <title value="Batch Formula"/>
                     <generation value="markdown"/>
                 </page>
                 
                 <page>
-                    <nameUrl value="mnf_process.html"/>
+                    <name value="mnf_process.html"/>
                     <title value="Manufacturing Process"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
-                    <nameUrl value="process_valid.html"/>
+                    <name value="process_valid.html"/>
                     <title value="Process Validation"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
-                    <nameUrl value="anal_proc.html"/>
+                    <name value="anal_proc.html"/>
                     <title value="Analytical Procedures"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
-                    <nameUrl value="container.html"/>
+                    <name value="container.html"/>
                     <title value="Container Closure System"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
-                    <nameUrl value="stability.html"/>
+                    <name value="stability.html"/>
                     <title value="Stability Study"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
-                    <nameUrl value="drug_specification.html"/>
+                    <name value="drug_specification.html"/>
                     <title value="Drug Specification"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
-                    <nameUrl value="compatibility.html"/>
+                    <name value="compatibility.html"/>
                     <title value="Compatibility"/>
                     <generation value="markdown"/>
                 </page>
@@ -1594,6 +1594,7 @@
                 <generation value="markdown"/>
             </page>
         </page>
+        
         <!--        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/guide-parameter-code"/>
