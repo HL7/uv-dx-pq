@@ -978,7 +978,8 @@
                <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Microbiological"/>
+               <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Microbiological"/>-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -988,7 +989,8 @@
       <fullUrl value="urn:uuid:73d9d304-a0b8-31b6-1165-346563b9305e"/>
       <resource>
          <ObservationDefinition>
-            <id value="Microbiological"/>
+            <id value="73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--            <id value="Microbiological"/>-->
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
@@ -1036,7 +1038,8 @@
                <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Uniformity"/>
+               <reference value="ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
+<!--               <reference value="ObservationDefinition/Uniformity"/>-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -1046,7 +1049,8 @@
       <fullUrl value="urn:uuid:ef781c18-8e86-7859-209b-469ee9ad42d8"/>
       <resource>
          <ObservationDefinition>
-            <id value="Uniformity"/>
+            <id value="ef781c18-8e86-7859-209b-469ee9ad42d8"/>            
+<!--            <id value="Uniformity"/>-->
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
@@ -1198,7 +1202,8 @@
                <reference value="SpecimenDefinition/specimenDefStoredAt40"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Microbiological"/>
+               <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Microbiological"/>-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -1224,7 +1229,8 @@
                <reference value="SpecimenDefinition/specimenDefStoredAt40"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Uniformity"/>
+               <reference value="ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
+               <!--               <reference value="ObservationDefinition/Uniformity"/>-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -1540,7 +1546,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Microbiological"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Microbiological"/>
+                     <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+                     <!--               <reference value="ObservationDefinition/Microbiological"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1559,7 +1566,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Uniformity"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Uniformity"/>
+                     <reference value="ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
+                     <!--               <reference value="ObservationDefinition/Uniformity"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1676,7 +1684,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-2-Microbiological"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Microbiological"/>
+                     <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+                     <!--               <reference value="ObservationDefinition/Microbiological"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1693,7 +1702,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-2-Uniformity"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Uniformity"/>
+                     <reference value="ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
+                     <!--               <reference value="ObservationDefinition/Uniformity"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1798,7 +1808,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-3-Microbiological"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Microbiological"/>
+                     <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+                     <!--               <reference value="ObservationDefinition/Microbiological"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1817,7 +1828,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-3-Uniformity"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Uniformity"/>
+                     <reference value="ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
+                     <!--               <reference value="ObservationDefinition/Uniformity"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2201,7 +2213,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Microbiological"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Microbiological"/>
+                     <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+                     <!--               <reference value="ObservationDefinition/Microbiological"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2218,7 +2231,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Uniformity"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Uniformity"/>
+                     <reference value="ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
+                     <!--               <reference value="ObservationDefinition/Uniformity"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2312,7 +2326,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-2-Microbiological"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Microbiological"/>
+                     <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+                     <!--               <reference value="ObservationDefinition/Microbiological"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2383,7 +2398,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-3-Microbiological"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Microbiological"/>
+                     <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+                     <!--               <reference value="ObservationDefinition/Microbiological"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -3033,7 +3049,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Microbiological"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Microbiological"/>
+                     <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+                     <!--               <reference value="ObservationDefinition/Microbiological"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -3052,7 +3069,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Uniformity"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Uniformity"/>
+                     <reference value="ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
+                     <!--               <reference value="ObservationDefinition/Uniformity"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
