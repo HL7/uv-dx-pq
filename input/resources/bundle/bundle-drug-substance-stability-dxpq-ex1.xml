@@ -20,7 +20,8 @@
             <id value="studyResultsReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/stabilityStudyProtocol"/>
+                  <reference value="PlanDefinition/c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
+<!--                  <reference value="PlanDefinition/stabilityStudyProtocol"/>-->
                </valueReference>
             </extension>
             <extension
@@ -72,28 +73,36 @@
                </extension>
             </effectiveDateTime>
             <performer>
-               <reference value="Organization/tester"/>
+               <reference value="Organization/6049d921-9935-90b7-4efc-894a66483c00"/>
+<!--               <reference value="Organization/tester"/>-->
             </performer>
             <result>
-               <reference value="Observation/LongTerm30C-initial-1"/>
+               <reference value="Observation/588a6787-0454-55ef-0b8a-4c8941b6976c"/>
+<!--               <reference value="Observation/LongTerm30C-initial-1"/>-->
             </result>
             <result>
-               <reference value="Observation/LongTerm30C-Initial-2"/>
+               <reference value="Observation/930c7f69-2546-7148-2069-b3be3a755edf"/>
+<!--               <reference value="Observation/LongTerm30C-Initial-2"/>-->
             </result>
             <result>
-               <reference value="Observation/LongTerm30C-Initial-3"/>
+               <reference value="Observation/8070745c-30c4-a52e-41fd-600a913578d4"/>
+<!--               <reference value="Observation/LongTerm30C-Initial-3"/>-->
             </result>
             <result>
-               <reference value="Observation/LongTerm30C-18m"/>
+               <reference value="Observation/f16113fe-27e7-0aa2-6787-9415f5051900"/>
+<!--               <reference value="Observation/LongTerm30C-18m"/>-->
             </result>
             <result>
-               <reference value="Observation/LongTerm30C-18m-2"/>
+               <reference value="Observation/1b25eb25-9149-02f6-9676-c87f90c64904"/>
+<!--               <reference value="Observation/LongTerm30C-18m-2"/>-->
             </result>
             <result>
-               <reference value="Observation/LongTerm30C-18m-3"/>
+               <reference value="Observation/004ed877-7729-834e-3b6b-a2cf4bdb2377"/>
+<!--               <reference value="Observation/LongTerm30C-18m-3"/>-->
             </result>
             <result>
-               <reference value="Observation/Accelerated40C-3m"/>
+               <reference value="Observation/f958e1e9-6023-4e39-2ffe-a9c8f135a2dd"/>
+<!--               <reference value="Observation/Accelerated40C-3m"/>-->
             </result>
             <conclusion value="The samples have been assessed and the conclusion is..."/>
          </DiagnosticReport>
@@ -1074,7 +1083,8 @@
       <fullUrl value="urn:uuid:588a6787-0454-55ef-0b8a-4c8941b6976c"/>
       <resource>
          <Observation>
-            <id value="LongTerm30C-initial-1"/>
+            <id value="588a6787-0454-55ef-0b8a-4c8941b6976c"/>
+<!--            <id value="LongTerm30C-initial-1"/>-->
             <contained>
                <Observation>
                   <id value="LongTerm30C-initial-1-Description"/>
@@ -1341,7 +1351,8 @@
       <fullUrl value="urn:uuid:930c7f69-2546-7148-2069-b3be3a755edf"/>
       <resource>
          <Observation>
-            <id value="LongTerm30C-Initial-2"/>
+            <id value="930c7f69-2546-7148-2069-b3be3a755edf"/>
+<!--            <id value="LongTerm30C-Initial-2"/>-->
             <contained>
                <Observation>
                   <id value="LongTerm30C-initial-2-Description"/>
@@ -1608,7 +1619,8 @@
       <fullUrl value="urn:uuid:8070745c-30c4-a52e-41fd-600a913578d4"/>
       <resource>
          <Observation>
-            <id value="LongTerm30C-Initial-3"/>
+            <id value="8070745c-30c4-a52e-41fd-600a913578d4"/>
+<!--            <id value="LongTerm30C-Initial-3"/>-->
             <contained>
                <Observation>
                   <id value="LongTerm30C-initial-3-Description"/>
@@ -1943,7 +1955,8 @@
       <fullUrl value="urn:uuid:f16113fe-27e7-0aa2-6787-9415f5051900"/>
       <resource>
          <Observation>
-            <id value="LongTerm30C-18m"/>
+            <id value="f16113fe-27e7-0aa2-6787-9415f5051900"/>
+<!--            <id value="LongTerm30C-18m"/>-->
             <contained>
                <Observation>
                   <id value="LongTerm30C-18m-1-Description"/>
@@ -2194,7 +2207,8 @@
       <fullUrl value="urn:uuid:1b25eb25-9149-02f6-9676-c87f90c64904"/>
       <resource>
          <Observation>
-            <id value="LongTerm30C-18m-2"/>
+            <id value="1b25eb25-9149-02f6-9676-c87f90c64904"/>
+<!--            <id value="LongTerm30C-18m-2"/>-->
             <contained>
                <Observation>
                   <id value="LongTerm30C-18m-2-Description"/>
@@ -2445,7 +2459,8 @@
       <fullUrl value="urn:uuid:004ed877-7729-834e-3b6b-a2cf4bdb2377"/>
       <resource>
          <Observation>
-            <id value="LongTerm30C-18m-3"/>
+            <id value="004ed877-7729-834e-3b6b-a2cf4bdb2377"/>
+<!--            <id value="LongTerm30C-18m-3"/>-->
             <contained>
                <Observation>
                   <id value="LongTerm30C-18m-3-Description"/>
@@ -2712,7 +2727,8 @@
       <fullUrl value="urn:uuid:f958e1e9-6023-4e39-2ffe-a9c8f135a2dd"/>
       <resource>
          <Observation>
-            <id value="Accelerated40C-3m"/>
+            <id value="f958e1e9-6023-4e39-2ffe-a9c8f135a2dd"/>
+<!--            <id value="Accelerated40C-3m"/>-->
             <contained>
                <Observation>
                   <id value="Accelerated40C-3m-1-Description"/>
@@ -2988,7 +3004,8 @@
       <fullUrl value="urn:uuid:6049d921-9935-90b7-4efc-894a66483c00"/>
       <resource>
          <Organization>
-            <id value="tester"/>
+            <id value="6049d921-9935-90b7-4efc-894a66483c00"/>
+<!--            <id value="tester"/>-->
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3007270600"/>
