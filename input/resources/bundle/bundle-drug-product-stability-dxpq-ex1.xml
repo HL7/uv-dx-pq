@@ -774,7 +774,8 @@
 <!--               <reference value="ObservationDefinition/Description"/>-->
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/Degradation"/>
+               <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--               <reference value="ObservationDefinition/Degradation"/>-->
             </hasMember>
             <hasMember>
                <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
@@ -825,7 +826,8 @@
       <fullUrl value="urn:uuid:2c5683d6-6e94-825b-056a-129a04c95e2f"/>
       <resource>
          <ObservationDefinition>
-            <id value="Degradation"/>
+            <id value="2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--            <id value="Degradation"/>-->
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
@@ -1333,7 +1335,8 @@
                      />
                   </meta>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+                     <!--               <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1369,7 +1372,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-imp2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+                     <!--               <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1404,7 +1408,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-imp3"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+                     <!--               <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1439,7 +1444,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-impUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+                     <!--               <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1475,7 +1481,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-impTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+                     <!--               <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1645,7 +1652,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-2-Degradation"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1766,7 +1774,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-3-Degradation"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1987,7 +1996,8 @@
                      />
                   </meta>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2023,7 +2033,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Degradation-imp2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2058,7 +2069,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Degradation-imp3"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2093,7 +2105,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Degradation-impUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2129,7 +2142,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Degradation-impTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2813,7 +2827,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Degradation-imp1"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2849,7 +2864,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Degradation-imp2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2885,7 +2901,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Degradation-imp3"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2920,7 +2937,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Degradation-impUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2956,7 +2974,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Degradation-impTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Degradation"/>
+                     <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
+<!--                     <reference value="ObservationDefinition/Degradation"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
