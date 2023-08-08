@@ -3,12 +3,30 @@
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="background.html">Background</a></li>
 
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Domains<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="domains.html">Domains Overview</a></li>
+      <li><a href="identification.html">Identification</a></li>
+      <li><a href="composition.html">Composition</a></li>
+      <li><a href="impurities.html">Impurities</a></li>
+      <li><a href="organizations.html">Organizations</a></li>
+      <li><a href="batch_info.html">Batch/Lot Information</a></li>
+      <li><a href="batch_anal.html">Batch Analysis</a></li>
+      <li><a href="batch_formula.html">Batch Formula</a></li>
+      <li><a href="mnf_process.html">Manufacturing Process</a></li>
+      <li><a href="process_valid.html">Process Validation</a></li>
+      <li><a href="anal_proc.html">Analytical Procedures</a></li>
+      <li><a href="container.html">Container Closure System</a></li>
+      <li><a href="stability.html">Stability Study</a></li>
+      <li><a href="drug_specification.html">Drug Specification</a></li>
+      <li><a href="compatibility.html">Compatibility</a></li>    
+    </ul>
+  </li>
+  
   <li><a href="best_practices.html">Best Practices</a></li>
-
   <li><a href="specification.html">Specification</a></li>
-
   <!-- <li><a href="resources.html">Resources</a></li> -->
-
   <li><a href="downloads.html">Downloads</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>

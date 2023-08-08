@@ -1332,7 +1332,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/longTerm30Y"/>
@@ -1344,7 +1344,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
-        
+
         <!--examples of ObservationDefinition-simple-dxpq-->
 
         <resource>
@@ -1370,7 +1370,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/Description"/>
@@ -1394,7 +1394,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/Impurities"/>
@@ -1418,7 +1418,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/Uniformity"/>
@@ -1441,7 +1441,7 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
-        
+
         <!-- Additional SpecimenDefinition Examples (examples2)-->
         <resource>
             <reference>
@@ -1483,6 +1483,96 @@
                 <title value="Background"/>
                 <generation value="markdown"/>
             </page>
+
+<!--            <page>
+                <name value="domains.html"/>
+                <title value="Domains"/>
+                <generation value="markdown"/>
+                
+                <page>
+                    <nameUrl value="identification.html"/>
+                    <title value="Identification"/>
+                    <generation value="markdown"/>
+                </page>
+
+                <page>
+                    <nameUrl value="composition.html"/>
+                    <title value="Composition"/>
+                    <generation value="markdown"/>
+                </page>
+                
+                <page>
+                    <nameUrl value="impurities.html"/>
+                    <title value="Impurities"/>
+                    <generation value="markdown"/>
+                </page>
+                
+                <page>
+                    <nameUrl value="organizations.html"/>
+                    <title value="Organizations"/>
+                    <generation value="markdown"/>
+                </page>
+
+                <page>
+                    <nameUrl value="batch_info.html"/>
+                    <title value="Batch/Lot Information"/>
+                    <generation value="markdown"/>
+                </page>
+                
+                <page>
+                    <nameUrl value="batch_anal.html"/>
+                    <title value="Batch Analysis"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="batch_formula.html"/>
+                    <title value="Batch Formula"/>
+                    <generation value="markdown"/>
+                </page>
+                
+                <page>
+                    <nameUrl value="mnf_process.html"/>
+                    <title value="Manufacturing Process"/>
+                    <generation value="markdown"/>
+                </page>
+
+                <page>
+                    <nameUrl value="process_valid.html"/>
+                    <title value="Process Validation"/>
+                    <generation value="markdown"/>
+                </page>
+
+                <page>
+                    <nameUrl value="anal_proc.html"/>
+                    <title value="Analytical Procedures"/>
+                    <generation value="markdown"/>
+                </page>
+
+                <page>
+                    <nameUrl value="container.html"/>
+                    <title value="Container Closure System"/>
+                    <generation value="markdown"/>
+                </page>
+
+                <page>
+                    <nameUrl value="stability.html"/>
+                    <title value="Stability Study"/>
+                    <generation value="markdown"/>
+                </page>
+
+                <page>
+                    <nameUrl value="drug_specification.html"/>
+                    <title value="Drug Specification"/>
+                    <generation value="markdown"/>
+                </page>
+
+                <page>
+                    <nameUrl value="compatibility.html"/>
+                    <title value="Compatibility"/>
+                    <generation value="markdown"/>
+                </page>
+            </page>-->
+
             <page>
                 <name value="best_practices.html"/>
                 <title value="Best Practices"/>
