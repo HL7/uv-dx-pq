@@ -1484,9 +1484,9 @@
                 <generation value="markdown"/>
             </page>
 
-<!--            <page>
+            <page>
                 <name value="domains.html"/>
-                <title value="Domains"/>
+                <title value="Domains Overview"/>
                 <generation value="markdown"/>
                 
                 <page>
@@ -1571,7 +1571,7 @@
                     <title value="Compatibility"/>
                     <generation value="markdown"/>
                 </page>
-            </page>-->
+            </page>
 
             <page>
                 <name value="best_practices.html"/>
