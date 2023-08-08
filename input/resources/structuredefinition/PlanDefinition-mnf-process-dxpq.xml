@@ -26,10 +26,20 @@
             <path value="PlanDefinition.id"/>
             <mustSupport value="true"/>
         </element>
+        
         <element id="PlanDefinition.extension">
             <path value="PlanDefinition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
             <mustSupport value="true"/>
         </element>
+    
         <element id="PlanDefinition.type">
             <path value="PlanDefinition.type"/>
             <mustSupport value="true"/>
