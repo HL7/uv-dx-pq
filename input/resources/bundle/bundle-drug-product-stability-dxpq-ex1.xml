@@ -770,7 +770,8 @@
                <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Description"/>
+               <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
             </hasMember>
             <hasMember>
                <reference value="ObservationDefinition/Degradation"/>
@@ -786,7 +787,8 @@
       <fullUrl value="urn:uuid:1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
       <resource>
          <ObservationDefinition>
-            <id value="Description"/>
+            <id value="1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--            <id value="Description"/>-->
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
@@ -1164,7 +1166,8 @@
                <reference value="SpecimenDefinition/specimenDefStoredAt40"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Description"/>
+               <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
             </hasMember>
             <hasMember>
                <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
@@ -1303,7 +1306,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                     <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--                     <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1620,7 +1624,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-2-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                     <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--                     <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1740,7 +1745,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-3-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                     <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--                     <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1955,7 +1961,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                     <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--                     <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2270,7 +2277,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-2-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                     <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--                     <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2340,7 +2348,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-3-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                     <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--                     <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2783,7 +2792,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                     <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
+<!--                     <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
