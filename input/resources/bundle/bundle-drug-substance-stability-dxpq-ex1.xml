@@ -102,10 +102,10 @@
    <entry>
       <fullUrl value="urn:uuid:c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
       <resource>
-
          <!-- Section 11 - Stability Study - Protocol -->
          <PlanDefinition>
-            <id value="stabilityStudyProtocol"/>
+            <id value="c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
+<!--            <id value="stabilityStudyProtocol"/>-->
             <title value="Stability Monitoring Program"/>
             <status value="active"/>
             <subjectReference>
@@ -633,7 +633,8 @@
       <fullUrl value="urn:uuid:643d8b44-71f4-2b58-07e8-51c22b294b25"/>
       <resource>
          <SpecimenDefinition>
-            <id value="specimenDefStoredAt30"/>
+            <id value="643d8b44-71f4-2b58-07e8-51c22b294b25"/>
+<!--            <id value="specimenDefStoredAt30"/>-->
             <status value="active"/>
             <typeTested>
                <preference value="preferred"/>
