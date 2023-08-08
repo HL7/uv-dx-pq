@@ -118,7 +118,8 @@
             <title value="Stability Monitoring Program"/>
             <status value="active"/>
             <subjectReference>
-               <reference value="SubstanceDefinition/substance1"/>
+               <reference value="SubstanceDefinition/2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
+<!--               <reference value="SubstanceDefinition/substance1"/>-->
             </subjectReference>
             <!-- unclear if want subject here, because it may apply to different ones -->
             <!--subjectCanonical value="MedicinalProductDefinition/product"/-->
@@ -770,13 +771,16 @@
                <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Description"/>
+                              <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/Assay"/>
+                              <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/Impurities"/>
+                              <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -786,7 +790,8 @@
       <fullUrl value="urn:uuid:559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
       <resource>
          <ObservationDefinition>
-            <id value="Description"/>
+            <id value="559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--            <id value="Description"/>-->
             <title value="Description"/>
             <status value="active"/>
             <code>
@@ -811,7 +816,8 @@
       <fullUrl value="urn:uuid:7943795a-2abe-666f-545f-133e23b97119"/>
       <resource>
          <ObservationDefinition>
-            <id value="Assay"/>
+            <id value="7943795a-2abe-666f-545f-133e23b97119"/>
+<!--            <id value="Assay"/>-->
             <title value="Assay (% w/w) (Mean)"/>
             <status value="active"/>
             <code>
@@ -845,7 +851,8 @@
       <fullUrl value="urn:uuid:73d9d304-a0b8-31b6-1165-346563b9305e"/>
       <resource>
          <ObservationDefinition>
-            <id value="Impurities"/>
+            <id value="73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--            <id value="Impurities"/>-->
             <title value="Drug-related Impurities Content by LC (% w/w)"/>
             <status value="active"/>
             <code>
@@ -935,7 +942,8 @@
                <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Identification"/>
+               <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -945,7 +953,8 @@
       <fullUrl value="urn:uuid:6b96124b-1a44-0b6b-6783-d6c49360230b"/>
       <resource>
          <ObservationDefinition>
-            <id value="Identification"/>
+            <id value="6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--            <id value="Identification"/>-->
             <title value="Identification"/>
             <status value="active"/>
             <code>
@@ -1030,10 +1039,12 @@
                <reference value="SpecimenDefinition/specimenDefStoredAt40"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Description"/>
+                              <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/Assay"/>
+                              <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -1053,7 +1064,8 @@
                <reference value="SpecimenDefinition/specimenDefStoredAt40"/>
             </specimen>
             <hasMember>
-               <reference value="ObservationDefinition/Identification"/>
+               <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -1089,7 +1101,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                                    <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1109,7 +1122,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Impurity1"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1145,7 +1159,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Impurity2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1180,7 +1195,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1216,7 +1232,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-ImpurityTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1251,7 +1268,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Assay"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Assay"/>
+                                    <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1273,7 +1291,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Identification"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Identification"/>
+                     <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1357,7 +1376,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                                    <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1377,7 +1397,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Degradation-imp1"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1413,7 +1434,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Degradation-imp2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1448,7 +1470,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Degradation-impUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1484,7 +1507,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Degradation-impTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1519,7 +1543,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Assay"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Assay"/>
+                                    <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1541,7 +1566,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Identification"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Identification"/>
+                                    <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1625,7 +1651,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                                    <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1645,7 +1672,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Degradation-imp1"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1681,7 +1709,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Degradation-imp2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1716,7 +1745,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Degradation-impUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1752,7 +1782,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Degradation-impTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1787,7 +1818,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Assay"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Assay"/>
+                                    <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1809,7 +1841,8 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Identification"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Identification"/>
+                                    <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1961,7 +1994,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                                    <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1981,7 +2015,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Impurity1"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2017,7 +2052,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Impurity2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2052,7 +2088,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2088,7 +2125,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-ImpurityTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2123,7 +2161,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Assay"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Assay"/>
+                                    <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2145,7 +2184,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Identification"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Identification"/>
+                                    <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2213,7 +2253,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                                    <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2233,7 +2274,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Impurity1"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2269,7 +2311,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Impurity2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2304,7 +2347,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2340,7 +2384,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-ImpurityTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2375,7 +2420,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Assay"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Assay"/>
+                                    <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2397,7 +2443,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Identification"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Identification"/>
+                                    <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2465,7 +2512,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                                    <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2485,7 +2533,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Impurity1"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2521,7 +2570,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Impurity2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2556,7 +2606,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2592,7 +2643,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-ImpurityTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2627,7 +2679,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Assay"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Assay"/>
+                                    <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2649,7 +2702,8 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Identification"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Identification"/>
+                                    <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2733,7 +2787,8 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Description"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Description"/>
+                                    <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+<!--               <reference value="ObservationDefinition/Description"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2753,7 +2808,8 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Impurity1"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2789,7 +2845,8 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Impurity2"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2824,7 +2881,8 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2860,7 +2918,8 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-ImpurityTotal"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Impurities"/>
+                                    <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
+<!--               <reference value="ObservationDefinition/Impurities"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2895,7 +2954,8 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Assay"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Assay"/>
+                                    <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
+<!--               <reference value="ObservationDefinition/Assay"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2917,7 +2977,8 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Identification"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/Identification"/>
+                                    <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+<!--               <reference value="ObservationDefinition/Identification"/>-->
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -3028,7 +3089,8 @@
       <fullUrl value="urn:uuid:2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance1"/>
+            <id value="2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
+<!--            <id value="substance1"/>-->
             <identifier>
                <system value="http://example.company.org/companySubstanceIdentifier"/>
                <!-- #11 -->
@@ -3153,7 +3215,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substance1"/>
+                  <reference value="SubstanceDefinition/2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
+<!--                  <reference value="SubstanceDefinition/substance1"/>-->
                </reference>
             </code>
          </Substance>
@@ -3226,7 +3289,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substance1"/>
+                  <reference value="SubstanceDefinition/2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
+<!--                  <reference value="SubstanceDefinition/substance1"/>-->
                </reference>
             </code>
          </Substance>
@@ -3300,7 +3364,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substance1"/>
+                  <reference value="SubstanceDefinition/2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
+<!--                  <reference value="SubstanceDefinition/substance1"/>-->
                </reference>
             </code>
          </Substance>
