@@ -1,0 +1,17 @@
+<Organization>
+	<!-- note no id -->
+	<identifier>
+		<system value="urn:oid:2.16.840.1.113883.4.82"/>
+		<value value="000000"/>
+	</identifier>
+	<name value="Your Company or make up one"/>
+	<contact>
+		<address>
+			<line value="123 etc"/>
+			<city value="city here"/>
+			<state value="state here"/>
+			<postalCode value="zip here"/>
+			<country value="country here"/>
+		</address>
+	</contact>
+</Organization>
