@@ -41,5 +41,6 @@
             <type>
                 <code value="string"/>
             </type>
-        </element>e </differential>
+        </element>
+    </differential>
 </StructureDefinition>
