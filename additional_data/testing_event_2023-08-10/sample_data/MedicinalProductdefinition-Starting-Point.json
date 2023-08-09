@@ -15,14 +15,14 @@
         }]
     },
     "route":
-    {
+    [{
         "coding":
         [{
             "system": "https://spor.ema.europa.eu/v1/lists/100000073345",
             "code": "100000073619",
             "display": "Oral use"
         }]
-    },
+    }],
     "name":
     [{
         "productName": "(Put your drug name here)",
