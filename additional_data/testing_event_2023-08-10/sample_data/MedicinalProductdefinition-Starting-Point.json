@@ -1,53 +1,52 @@
 {
-    "resourceType": "MedicinalProductDefinition",
-    "meta": {
-        "profile": ["http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"]
+    "resourceType":"MedicinalProductDefinition",
+    "meta":
+    {
+        "profile":[ "http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq" ]
     },
     "description": "(Add your own description here e.g. A drug to cure hair pain)",
-    "combinedPharmaceuticalDoseForm": {
-        "coding": [
-            {
-                "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
-                "code": "100000073667",
-                "display": "Gastro-resistant tablet"
-            }
-        ]
+    "combinedPharmaceuticalDoseForm":
+    {
+        "coding":
+        [{
+            "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+            "code": "100000073667",
+            "display": "Gastro-resistant tablet"
+        }]
     },
-    "route": {
-        "coding": [
-            {
-                "system": "https://spor.ema.europa.eu/v1/lists/100000073345",
-                "code": "100000073619",
-                "display": "Oral use"
-            }
-        ]
+    "route":
+    {
+        "coding":
+        [{
+            "system": "https://spor.ema.europa.eu/v1/lists/100000073345",
+            "code": "100000073619",
+            "display": "Oral use"
+        }]
     },
-    "name": [
+    "name":
+    [{
+        "productName": "(Put your drug name here)",
+        "type":
         {
-            "productName": "(Put your drug name here)",
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://accumulus.org/fhir/code/productNameType",
-                        "code": "1234",
-                        "display": "Proprietary"
-                    }
-                ]
-            },
-            "part": [
-                {
-                    "part": "20mg",
-                    "type": {
-                        "coding": [
-                            {
-                                "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
-                                "code": "StrengthPart",
-                                "display": "Strength part"
-                            }
-                        ]
-                    }
-                }
-            ]
-        }
-    ]
+            "coding":
+            [{
+                "system": "http://accumulus.org/fhir/code/productNameType",
+                "code": "1234",
+                "display": "Proprietary"
+            }]
+        },
+        "part":
+        [{
+            "part": "20mg",
+            "type":
+            {
+                "coding":
+                [{
+                    "system": "http://hl7.org/fhir/medicinal-product-name-part-type",
+                    "code": "StrengthPart",
+                    "display": "Strength part"
+                }]
+            }
+        }]
+    }]
 }
