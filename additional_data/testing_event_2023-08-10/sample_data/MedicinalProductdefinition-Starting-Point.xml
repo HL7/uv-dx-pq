@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicinalProductDefinition xmlns="http://hl7.org/fhir">
+	<!-- note that this has no id - it will be assigned one when this is POSTed to a server -->
+	<meta>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+    </meta>
+	<description value="(Add your own description here e.g. A drug to cure hair pain)"/>
+	<combinedPharmaceuticalDoseForm>
+		<coding>
+			<system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+			<code value="100000073667"/>
+			<display value="Gastro-resistant tablet"/>
+		</coding>
+	</combinedPharmaceuticalDoseForm>
+	<route>
+		<coding>
+			<system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+			<code value="100000073619"/>
+			<display value="Oral use"/>
+		</coding>
+	</route>
+	<name>
+		<productName value="(Put your drug name here)"/>
+		<type>
+			<coding>
+				<system value="http://accumulus.org/fhir/code/productNameType"/>
+				<code value="1234"/>
+				<display value="Proprietary"/>
+			</coding>
+		</type>
+		<part>
+			<part value="20mg"/>
+			<type>
+				<coding>
+					<system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+					<code value="StrengthPart"/>
+					<display value="Strength part"/>
+				</coding>
+			</type>
+		</part>
+	</name>
+	<!-- currently no Manufacturer -->
+</MedicinalProductDefinition>
