@@ -1,0 +1,9 @@
+<SubstanceDefinition>
+	<!-- note no id -->
+	<manufacturer>
+		<reference value="Organization/{id-of-of-your-organization}"/>
+	</manufacturer>
+	<name>
+		<name value="put your substance name here"/>
+	</name>
+</SubstanceDefinition>
