@@ -18,8 +18,9 @@
          <PlanDefinition>
             <id value="specificationProtocol"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
-<!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+               <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
             </meta>
             <title value="P.5.4 BATCH ANALYSIS"/>
             <status value="active"/>
@@ -331,7 +332,7 @@
          <ObservationDefinition>
             <id value="Degradation"/>
             <name value="Degradation_Products"/>
-<!--            <name value="Degradation Products"/>-->
+            <!--            <name value="Degradation Products"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -432,7 +433,7 @@
          <ObservationDefinition>
             <id value="DegradationEnd"/>
             <name value="Degradation_Products"/>
-<!--            <name value="Degradation Products"/>-->
+            <!--            <name value="Degradation Products"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -559,7 +560,7 @@
          <ObservationDefinition>
             <id value="DissolutionQ80"/>
             <name value="Dissolution_(Q)"/>
-<!--            <name value="Dissolution (Q)"/>-->
+            <!--            <name value="Dissolution (Q)"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -618,7 +619,7 @@
          <ObservationDefinition>
             <id value="Water"/>
             <name value="Water_Content"/>
-<!--            <name value="Water Content"/>-->
+            <!--            <name value="Water Content"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -648,7 +649,7 @@
          <ObservationDefinition>
             <id value="WaterEnd"/>
             <name value="Water_Content"/>
-<!--            <name value="Water Content"/>-->
+            <!--            <name value="Water Content"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -734,7 +735,7 @@
          <ObservationDefinition>
             <id value="Uniformity"/>
             <name value="Uniformity_of_dosage"/>
-<!--            <name value="Uniformity of dosage"/>-->
+            <!--            <name value="Uniformity of dosage"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -764,7 +765,7 @@
          <ObservationDefinition>
             <id value="UniformityEnd"/>
             <name value="Uniformity_of_dosage"/>
-<!--            <name value="Uniformity of dosage"/>-->
+            <!--            <name value="Uniformity of dosage"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -2676,9 +2677,18 @@
          <PlanDefinition>
             <id value="manufacturingProcess"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
-<!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-mnf-process-dxpq.html"/>-->
+               <profile
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+               <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-mnf-process-dxpq.html"/>-->
             </meta>
+            <!--     Included Extension-history-of-process-dxpq to differential from PlanDefinition-drug-specification-dxpq-->
+            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="temp-unknown"/>
+               </extension>
+<!--               <display value="Temporarily Unknown"/>-->
+               <display value="Process History Unknown"/>
+            </extension>
             <!-- abridged version only -->
             <title value="Process 1.0"/>
             <type>
@@ -2690,7 +2700,7 @@
             </type>
             <status value="active"/>
             <subjectCanonical value="https://www.example.org/MedicinalProductDefinition/product"/>
-<!--            <subjectCanonical value="MedicinalProductDefinition/product"/>-->
+            <!--            <subjectCanonical value="MedicinalProductDefinition/product"/>-->
             <!--Canonical URLs must be absolute URLs if they are not fragment references (MedicinalProductDefinition/product)-->
             <!-- #83 -->
          </PlanDefinition>
