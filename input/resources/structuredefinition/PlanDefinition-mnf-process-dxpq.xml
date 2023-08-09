@@ -22,6 +22,7 @@
         <element id="PlanDefinition">
             <path value="PlanDefinition"/>
         </element>
+        
         <element id="PlanDefinition.id">
             <path value="PlanDefinition.id"/>
             <mustSupport value="true"/>
@@ -39,6 +40,73 @@
             </slicing>
             <mustSupport value="true"/>
         </element>
+             
+    <element id="PlanDefinition.extension:process_history">
+      <path value="PlanDefinition.extension"/>
+      <sliceName value="process_history"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq"/>
+      </type>
+    </element>
+        
+<!--            <element id="PlanDefinition.extension:mnf_participant">
+      <path value="PlanDefinition.extension"/>
+      <sliceName value="mnf_participant"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/XYZ"/>
+      </type>
+    </element>
+    
+        <element id="PlanDefinition.extension:plan_document">
+      <path value="PlanDefinition.extension"/>
+      <sliceName value="plan_document"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/XYZ"/>
+      </type>
+    </element>
+    
+        <element id="PlanDefinition.extension:process_parameters">
+      <path value="PlanDefinition.extension"/>
+      <sliceName value="process_parameters"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/XYZ"/>
+      </type>
+    </element>
+    
+            <element id="PlanDefinition.extension:process_step_scale">
+      <path value="PlanDefinition.extension"/>
+      <sliceName value="process_step_scale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/XYZ"/>
+      </type>
+    </element>
+    
+            <element id="PlanDefinition.extension:equipment">
+      <path value="PlanDefinition.extension"/>
+      <sliceName value="equipment"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/XYZ"/>
+      </type>
+    </element>-->
+        
     
         <element id="PlanDefinition.type">
             <path value="PlanDefinition.type"/>
