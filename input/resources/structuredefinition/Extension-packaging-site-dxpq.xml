@@ -36,6 +36,7 @@
             <path value="Extension.value[x]"/>
             <type>
                 <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/> 
             </type>
         </element>
     </differential>

@@ -24,5 +24,12 @@
             <path value="Extension.url"/>
             <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq"/>
         </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/> 
+            <type> 
+                <code value="Reference"/> 
+                <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq"/> 
+            </type> 
+        </element>
     </differential>
 </StructureDefinition>
