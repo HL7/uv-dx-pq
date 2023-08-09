@@ -1,0 +1,22 @@
+<Ingredient xmlns="http://hl7.org/fhir">
+	<!-- note no id -->
+	<status value="active"/>
+	<for>
+		<reference value="MedicinalProductDefinition/{your-id}"/>
+	</for>
+	<role>
+		<coding>
+			<system value="http://hl7.org/fhir/ingredient-role"/>
+			<code value="100000072072"/>
+			<display value="Active"/>
+		</coding>
+	</role>
+	<substance>
+		<code>
+			<concept>
+				<!-- a code can go here, or text -->
+				<text value="Substance name"/>
+			</concept>
+		</code>
+	</substance>
+</Ingredient>

@@ -1,0 +1,27 @@
+{
+    "resourceType":"Ingredient",
+    "status": "active",
+    "for":
+    {
+        "reference": "MedicinalProductDefinition/{your-id}"
+    },
+    "role":
+    {
+        "coding":
+        [{
+            "system": "http://hl7.org/fhir/ingredient-role",
+            "code": "100000072072",
+            "display": "Active"
+        }]
+    },
+    "substance":
+    {
+        "code":
+        {
+            "concept":
+            {
+                "text": "Substance name"
+            }
+        }
+    }
+}
