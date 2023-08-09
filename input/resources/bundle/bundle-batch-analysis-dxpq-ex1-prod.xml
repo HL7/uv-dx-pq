@@ -2683,11 +2683,7 @@
             </meta>
             <!--     Included Extension-history-of-process-dxpq to differential from PlanDefinition-drug-specification-dxpq-->
             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
-               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                  <valueCode value="temp-unknown"/>
-               </extension>
-<!--               <display value="Temporarily Unknown"/>-->
-               <display value="Process History Unknown"/>
+               <valueMarkdown value="Process has no history recorded yet"/>
             </extension>
             <!-- abridged version only -->
             <title value="Process 1.0"/>
