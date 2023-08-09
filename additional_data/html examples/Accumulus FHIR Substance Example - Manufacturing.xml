@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Manufacturing -->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="product-manufacturing"/>
+   <meta>
+      <profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
+      <resource>
+         <PlanDefinition>
+            <id value="manufacturingProcess-unlinked"/>
+            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">
+               <valueReference>
+                        <!-- Process flow diagram -->
+                        <!-- or could be a Binary -->
+                        <!-- #84 -->
+                  <reference value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
+               </valueReference>
+            </extension>
+            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">
+               <valueMarkdown value="This can be text about the history"/>
+            </extension>
+            <type>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <code value="1244566"/>
+                  <display value="Manufacturing Process"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <!-- #83 -->
+            <subjectReference>
+               <reference value="SubstanceDefinition/substance1"/>
+            </subjectReference>
+            <description value="Narrative description of substance manufacturing process"/>
+            <!-- #85 -->
+            <goal id="goal-control-pH">
+               <category>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <code value="C123456"/>
+                     <display value="Physical Property"/>
+                  </coding>
+               </category>
+               <description>
+                  <text value="Controls - pH"/>
+                  <!-- this is mandatory, even though we don't really want it -->
+               </description>
+               <priority>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                     <code value="critical"/>
+                     <display value="Critical"/>
+                  </coding>
+               </priority>
+               <target>
+                  <measure>
+                     <coding>
+                        <system value="http://dummy.loinc.org"/>
+                        <code value="PH"/>
+                        <display value="pH Level"/>
+                     </coding>
+                     <text value="Long description of the acceptance criteria - pH must be in range 6.9 to 7.1"/>
+                  </measure>
+                  <!--detailString value="can also be a string"-->
+                  <detailRange>
+                     <low>
+                        <value value="6.9"/>
+                        <unit value="pH"/>
+                     </low>
+                     <high>
+                        <value value="7.1"/>
+                        <unit value="pH"/>
+                     </high>
+                  </detailRange>
+               </target>
+            </goal>
+            <goal id="goal-control-temp">
+               <category>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <code value="C123456"/>
+                     <display value="Physical Property"/>
+                  </coding>
+               </category>
+               <description>
+                  <text value="Controls - Temperature"/>
+                  <!-- this is mandatory, even though we don't really want it -->
+               </description>
+               <priority>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                     <code value="noncritical"/>
+                     <display value="Non Critical"/>
+                  </coding>
+               </priority>
+               <target>
+                  <measure>
+                     <coding>
+                        <system value="http://dummy.loinc.org"/>
+                        <code value="TEMP"/>
+                        <display value="Temperature"/>
+                     </coding>
+                     <text value="Long description of the control value - Temperature must be below 150°C"/>
+                  </measure>
+                  <!--detailString value="can also be a string"-->
+                  <detailRange>
+                     <high>
+                        <value value="150"/>
+                        <unit value="°C"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="Cel"/>
+                     </high>
+                  </detailRange>
+               </target>
+            </goal>
+            <!-- outer action is the whole thing, if needed -->
+            <action>
+               <code>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <code value="overall process"/>
+                  </coding>
+                  <text value="overall process"/>
+               </code>
+               <action>
+                  <extension url="http://accumulus.org/fhir/extension/processStepScale">
+                     <valueCoding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                        <code value="ABCD"/>
+                        <display value="Production Scale"/>
+                     </valueCoding>
+                  </extension>
+                  <extension url="http://accumulus.org/fhir/extension/processParameters">
+                     <extension url="parameter">
+                        <valueCodeableConcept>
+                           <coding>
+                              <system value="http://accumulus.org/fhir/code/processParameter"/>
+                              <code value="SPEED"/>
+                              <display value="Mix speed"/>
+                           </coding>
+                        </valueCodeableConcept>
+                     </extension>
+                     <extension url="value">
+                        <valueQuantity>
+                           <value value="1500"/>
+                           <unit value="rpm"/>
+                        </valueQuantity>
+                     </extension>
+                  </extension>
+                  <prefix value="1"/>
+                  <description value="Description of this step"/>
+                  <code>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                        <code value="2222"/>
+                        <display value="Particle Size Reduction"/>
+                     </coding>
+                     <!--text value="Step 2 in the process - free text is possible"/-->
+                  </code>
+                  <documentation>
+                     <type value="specification-of"/>
+                     <resourceReference>
+                        <reference value="DocumentReference/DocumentReference-image"/>
+                     </resourceReference>
+                  </documentation>
+                  <goalId value="goal-control-pH"/>
+                  <goalId value="goal-control-temp"/>
+                  <participant>
+                     <typeReference>
+                                <!-- this is new in R5 and is not in R4B -->
+                        <reference value="DeviceDefinition/impeller"/>
+                     </typeReference>
+                     <role>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                           <code value="example"/>
+                           <!-- #88 Equipment class -->
+                           <display value="Compression Milling"/>
+                        </coding>
+                     </role>
+                  </participant>
+                  <participant>
+                     <typeReference>
+                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                           <valueReference>
+                              <reference value="SubstanceDefinition/startingMaterial"/>
+                           </valueReference>
+                        </extension>
+                     </typeReference>
+                     <role>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                           <code value="example"/>
+                           <display value="StartingMaterial"/>
+                        </coding>
+                     </role>
+                  </participant>
+                  <participant>
+                     <typeReference>
+                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                           <valueReference>
+                              <reference value="SubstanceDefinition/processingMaterial"/>
+                           </valueReference>
+                        </extension>
+                     </typeReference>
+                     <role>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                           <code value="example"/>
+                           <display value="ProcessingMaterial"/>
+                        </coding>
+                     </role>
+                  </participant>
+                  <participant>
+                     <typeReference>
+                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                           <valueReference>
+                              <reference value="SubstanceDefinition/resultingMaterial"/>
+                           </valueReference>
+                        </extension>
+                     </typeReference>
+                     <role>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                           <code value="example"/>
+                           <display value="ResultingMaterial"/>
+                        </coding>
+                     </role>
+                  </participant>
+                  <!--action>
+                            <code>
+                                <text value="Control"/>
+                            </code>
+                            <definitionCanonical value="ObservationDefinition/ControlPH"/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value="Control"/>
+                            </code>
+                            <definitionCanonical value="ObservationDefinition/ControlTemperature"/>
+                        </action-->
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <!-- Section 5.2 - Unit Operation/Equipment Information -->
+   <entry>
+      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
+      <resource>
+         <DeviceDefinition>
+            <id value="impeller"/>
+            <deviceName>
+               <name value="Rotating Impeller with 1.5mm screen"/>
+               <!-- #89 Equiment subclass -->
+               <type value="registered-name"/>
+            </deviceName>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <code value="121212"/>
+                     <!-- #90 Working capacity -->
+                     <display value="Maximum Speed"/>
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="5000"/>
+                  <unit value="RPM"/>
+               </valueQuantity>
+            </property>
+         </DeviceDefinition>
+      </resource>
+   </entry>
+   <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
+   <entry>
+      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
+      <resource>
+            <!-- #84 -->
+         <DocumentReference>
+            <id value="DocumentReference-process-flow-diagram-dxpq-ex1"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2023-01-12T17:57:08.898+00:00"/>
+               <source value="#n4xHiP0iat7deVDt"/>
+            </meta>
+            <identifier>
+               <system value="http://accumulus.org/fhir/identifier/document"/>
+               <value value="FLOW-001"/>
+            </identifier>
+            <status value="current"/>
+            <type>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/diagramType"/>
+                  <code value="11111111111"/>
+                  <display value="ProcessFlowDiagram"/>
+               </coding>
+            </type>
+            <content>
+               <attachment>
+                  <url value="https://accumulus.org/docStore/flow-001"/>
+               </attachment>
+            </content>
+         </DocumentReference>
+      </resource>
+   </entry>
+   <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
+   <entry>
+      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev"/>
+      <resource>
+            <!-- #84 -->
+         <DocumentReference>
+            <id value="DocumentReference-image"/>
+            <status value="current"/>
+            <content>
+               <attachment>
+                  <url value="https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png"/>
+               </attachment>
+            </content>
+         </DocumentReference>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substance1"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
+      <resource>
+         <Organization>
+            <id value="substance-manufacturer"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="startingMaterial"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatosubstance"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="resultingMaterial"/>
+            <name>
+               <name value="Resultothane"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="processingMaterial"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Processohol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+</Bundle>

@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Manufacturing -->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="product-manufacturing"/>
+   <meta>
+      <profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
+      <resource>
+         <PlanDefinition>
+            <id value="manufacturingProcess-unlinked"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            </meta>
+            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateEquipment">
+               <valueBoolean value="true"/>
+            </extension>
+            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">
+               <valueReference>
+                        <!-- Process flow diagram -->
+                        <!-- or could be a Binary -->
+                        <!-- #84 -->
+                  <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"/>
+               </valueReference>
+            </extension>
+            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">
+               <valueMarkdown value="This can be text about the history"/>
+            </extension>
+            <title value="Process 1.0"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+                  <code value="workflow-definition"/>
+                  <display value="Workflow Definition"/>
+               </coding>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <code value="manufacturing-process"/>
+                  <display value="Manufacturing Process"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <!-- #83 -->
+            <subjectReference>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subjectReference>
+            <description value="Narrative description of manufacturing process (5)"/>
+            <!-- #85 -->
+            <goal id="goal-control-pH">
+               <category>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <code value="C123456"/>
+                     <display value="Physical Property"/>
+                  </coding>
+               </category>
+               <description>
+                  <text value="Controls - pH"/>
+                  <!-- this is mandatory, even though we don't really want it -->
+               </description>
+               <priority>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                     <code value="critical"/>
+                     <display value="Critical"/>
+                  </coding>
+               </priority>
+               <target>
+                  <measure>
+                     <coding>
+                        <system value="http://dummy.loinc.org"/>
+                        <code value="PH"/>
+                        <display value="pH Level"/>
+                     </coding>
+                     <text value="pH must be in range 6.9 to 7.1"/>
+                  </measure>
+                  <!--detailString value="can also be a string"-->
+                  <detailRange>
+                     <low>
+                        <value value="6.9"/>
+                        <unit value="pH"/>
+                     </low>
+                     <high>
+                        <value value="7.1"/>
+                        <unit value="pH"/>
+                     </high>
+                  </detailRange>
+               </target>
+            </goal>
+            <goal id="goal-control-water-content">
+               <category>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <code value="C123456"/>
+                     <display value="Physical Property"/>
+                  </coding>
+               </category>
+               <description>
+                  <text value="Controls - Water Content"/>
+                  <!-- this is mandatory, even though we don't really want it -->
+               </description>
+               <priority>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                     <code value="critical"/>
+                     <display value="Critical"/>
+                  </coding>
+               </priority>
+               <target>
+                  <measure>
+                     <coding>
+                        <system value="http://dummy.loinc.org"/>
+                        <code value="WaterContent"/>
+                        <display value="Water content"/>
+                     </coding>
+                     <text value="Under 2%"/>
+                  </measure>
+                  <!--detailString value="can also be a string"-->
+                  <detailRange>
+                     <high>
+                        <value value="2"/>
+                        <unit value="%"/>
+                     </high>
+                  </detailRange>
+               </target>
+            </goal>
+            <goal id="goal-control-particle-size">
+               <category>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <code value="C123456"/>
+                     <display value="Physical Property"/>
+                  </coding>
+               </category>
+               <description>
+                  <text value="Controls - Particle Size"/>
+               </description>
+               <priority>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                     <code value="critical"/>
+                     <display value="Critical"/>
+                  </coding>
+               </priority>
+               <target>
+                  <measure>
+                     <coding>
+                        <system value="http://dummy.loinc.org"/>
+                        <code value="ParticleSize"/>
+                        <display value="Particle Size"/>
+                     </coding>
+                     <text value="Under 200 microns"/>
+                  </measure>
+                  <!--detailString value="can also be a string"-->
+                  <detailRange>
+                     <high>
+                        <value value="200"/>
+                        <unit value="microns"/>
+                     </high>
+                  </detailRange>
+               </target>
+            </goal>
+            <actor>
+               <option>
+                  <typeReference>
+                     <reference value="DeviceDefinition/mixing-vessel"/>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <code value="mixing-vessel"/>
+                        <display value="Mixing Vessel"/>
+                     </coding>
+                  </role>
+               </option>
+            </actor>
+            <actor>
+               <option>
+                  <typeReference>
+                     <reference value="DeviceDefinition/receiving-tank"/>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <code value="receiving-vessel"/>
+                        <display value="Receiving Vessel"/>
+                     </coding>
+                  </role>
+               </option>
+            </actor>
+            <!-- outer action is the whole thing, if needed -->
+            <!-- step 1 mixing -->
+            <action>
+               <extension url="http://accumulus.org/fhir/extension/processStepScale">
+                  <valueCoding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <code value="ABCD"/>
+                     <display value="Production Scale"/>
+                  </valueCoding>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="parameter">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <code value="CAPACITY"/>
+                           <display value="Capacity"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="value">
+                     <valueQuantity>
+                        <value value="750"/>
+                        <unit value="litres"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="parameter">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <code value="TEMP-MAX"/>
+                           <display value="Temperature"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="value">
+                     <valueQuantity>
+                        <value value="150"/>
+                        <unit value="°C"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="Cel"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>
+               <prefix value="1"/>
+               <description value="Mixing of ingredients"/>
+               <code>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <code value="1111"/>
+                     <display value="Mixing of ingredients"/>
+                  </coding>
+               </code>
+               <documentation>
+                  <type value="specification-of"/>
+                  <resourceReference>
+                     <reference value="DocumentReference/DocumentReference-image"/>
+                  </resourceReference>
+               </documentation>
+               <goalId value="goal-control-pH"/>
+               <!--goalId value="goal-control-temp"/-->
+               <participant>
+                  <typeReference>
+                                <!-- this is new in R5 and is not in R4B -->
+                     <reference value="DeviceDefinition/mixer"/>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <code value="example"/>
+                        <display value="Blender"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/startingMaterial"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="example"/>
+                        <display value="StartingMaterial"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/processingMaterial"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="example"/>
+                        <display value="ProcessingMaterial"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="example"/>
+                        <display value="ResultingMaterial"/>
+                     </coding>
+                  </role>
+               </participant>
+               <!--action>
+                            <code>
+                                <text value="Control"/>
+                            </code>
+                            <definitionCanonical value="ObservationDefinition/ControlPH"/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value="Control"/>
+                            </code>
+                            <definitionCanonical value="ObservationDefinition/ControlTemperature"/>
+                        </action-->
+            </action>
+            <!-- step 2 drying -->
+            <action>
+               <extension url="http://accumulus.org/fhir/extension/processStepScale">
+                  <valueCoding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <code value="ABCD"/>
+                     <display value="Production Scale"/>
+                  </valueCoding>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="parameter">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <!-- TODO LOINC? -->
+                           <code value="TEMPMAX"/>
+                           <display value="Maximum Temperature"/>
+                        </coding>
+                        <text value="Process temperature must be below 40°C"/>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="value">  <!-- todo want a range here -->
+                     <valueQuantity>
+                        <value value="40"/>
+                        <unit value="°C"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="Cel"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>
+               <prefix value="2"/>
+               <description value="Drying using a heater"/>
+               <code>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <code value="12121"/>
+                     <display value="Drying"/>
+                  </coding>
+                  <!--text value="Step 2 in the process - free text is possible"/-->
+               </code>
+               <documentation>
+                  <type value="specification-of"/>
+                  <resourceReference>
+                     <reference value="DocumentReference/DocumentReference-image"/>
+                  </resourceReference>
+               </documentation>
+               <goalId value="goal-control-water-content"/>
+               <participant>
+                  <typeReference>
+                                <!-- this is new in R5 and is not in R4B -->
+                     <reference value="DeviceDefinition/dryer"/>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <code value="example"/>
+                        <display value="Dryer"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="example"/>
+                        <display value="StartingMaterial"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/StelbatololGranules"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="example"/>
+                        <display value="ResultingMaterial"/>
+                     </coding>
+                  </role>
+               </participant>
+            </action>
+            <!-- step 3 particle size -->
+            <action>
+               <extension url="http://accumulus.org/fhir/extension/processStepScale">
+                  <valueCoding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <code value="ABCD"/>
+                     <display value="Production Scale"/>
+                  </valueCoding>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="parameter">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <code value="ROTATIONSPEED"/>
+                           <display value="Rotational Speed"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="value">
+                     <valueQuantity>
+                        <value value="2500"/>
+                        <unit value="rpm"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>
+               <prefix value="3"/>
+               <description value="Particle Size Reduction by using a rotating impeller"/>
+               <code>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <code value="2222"/>
+                     <display value="Particle Size Reduction"/>
+                  </coding>
+                  <!--text value="Step 2 in the process - free text is possible"/-->
+               </code>
+               <documentation>
+                  <type value="specification-of"/>
+                  <resourceReference>
+                     <reference value="DocumentReference/DocumentReference-image"/>
+                  </resourceReference>
+               </documentation>
+               <goalId value="goal-control-particle-size"/>
+               <participant>
+                  <typeReference>
+                                <!-- this is new in R5 and is not in R4B -->
+                     <reference value="DeviceDefinition/devicedefinition-dxpq-ex1"/>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <code value="example"/>
+                        <!-- #88 Equipment class -->
+                        <display value="Compression Milling"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/StelbatololGranules"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="example"/>
+                        <display value="StartingMaterial"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/Stelbatolol"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="example"/>
+                        <display value="ResultingMaterial"/>
+                     </coding>
+                  </role>
+               </participant>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <!-- using goal for this now -->
+   <!--entry>
+        <fullUrl value="urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06042"/>
+        <resource>
+            <ObservationDefinition>
+                <id value="ControlPH"/>
+                <title value="pH"/>
+                <status value="active"/>
+                <category>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/controlCriticality"/>
+                        <code value="critical"/>
+                        <display value="Critical"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/testCategory"/>
+                        <code value="C123456"/>
+                        <display value="Physical Property"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding> 
+                        <system value="http://dummy.loinc.org"/>
+                        <code value="PH"/>
+                        <display value="pH Level"/>
+                    </coding>
+                    <text value="Long description of the acceptance criteria - pH must be in range 6.9 to 7.1"/>
+                </code>
+                <qualifiedValue>
+                    <range>
+                        <low>
+                            <value value="6.9"/>
+                            <unit value="pH"/> 
+                        </low> 
+                        <high>
+                            <value value="7.1"/>
+                            <unit value="pH"/>
+                        </high>
+                        
+                    </range>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    
+    <entry>
+        <fullUrl value="urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06043"/>
+        <resource>
+            <ObservationDefinition>
+                <id value="ControlTemperature"/>
+                <title value="Temperature"/>
+                <status value="active"/>
+                <category>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/controlCriticality"/>
+                        <code value="noncritical"/>
+                        <display value="Non Critical"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/testCategory"/>
+                        <code value="C123456"/>
+                        <display value="Physical Property"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding> 
+                        <system value="http://dummy.loinc.org"/>
+                        <code value="TEMP"/>
+                        <display value="Temperature"/>
+                    </coding>
+                    <text value="Long description of the control value - Temperatuure must be below 150°C"/>
+                </code>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value="150"/>
+                            <unit value="°C"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="Cel"/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry-->
+   <!-- Section 5.2 - Unit Operation/Equipment Information -->
+   <entry>
+      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
+      <resource>
+         <DeviceDefinition>
+            <id value="devicedefinition-dxpq-ex1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq"/>
+            </meta>
+            <deviceName>
+               <name value="Rotating Impeller with 1.5mm screen"/>
+               <!-- #89 Equiment subclass -->
+               <type value="registered-name"/>
+            </deviceName>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <code value="121212"/>
+                     <!-- #90 Working capacity -->
+                     <display value="Maximum Speed"/>
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="5000"/>
+                  <unit value="RPM"/>
+               </valueQuantity>
+            </property>
+         </DeviceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
+      <resource>
+         <DeviceDefinition>
+            <id value="dryer"/>
+            <deviceName>
+               <name value="Heated dryer"/>
+               <!-- #89 Equiment subclass -->
+               <type value="registered-name"/>
+            </deviceName>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <code value="121212"/>
+                     <display value="Power"/>
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="3"/>
+                  <unit value="kW"/>
+               </valueQuantity>
+            </property>
+         </DeviceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
+      <resource>
+         <DeviceDefinition>
+            <id value="mixer"/>
+            <deviceName>
+               <name value="Blender"/>
+               <type value="registered-name"/>
+            </deviceName>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <code value="121212"/>
+                     <display value="Maximum capacity"/>
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="1000"/>
+                  <unit value="litres"/>
+               </valueQuantity>
+            </property>
+         </DeviceDefinition>
+      </resource>
+   </entry>
+   <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
+   <entry>
+      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
+      <resource>
+            <!-- #84 -->
+         <DocumentReference>
+            <id value="documentreference-process-flow-diagram-dxpq-ex1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq"/>
+            </meta>
+            <identifier>
+               <system value="http://accumulus.org/fhir/identifier/document"/>
+               <value value="FLOW-001"/>
+            </identifier>
+            <status value="current"/>
+            <type>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/diagramType"/>
+                  <code value="11111111111"/>
+                  <display value="ProcessFlowDiagram"/>
+               </coding>
+            </type>
+            <content>
+               <attachment>
+                  <contentType value="image/x-png"/>
+                  <data value="iVBORw0KGgoAAAANSUhEUgAAAgQAAAApCAYAAABKrzFXAAAAAXNSR0IArs4c6QAAEjl0RVh0bXhmaWxlACUzQ214ZmlsZSUyMGhvc3QlM0QlMjJFbGVjdHJvbiUyMiUyMG1vZGlmaWVkJTNEJTIyMjAyMy0wNy0wNlQxMyUzQTA4JTNBMDguNDgzWiUyMiUyMGFnZW50JTNEJTIyTW96aWxsYSUyRjUuMCUyMChXaW5kb3dzJTIwTlQlMjAxMC4wJTNCJTIwV2luNjQlM0IlMjB4NjQpJTIwQXBwbGVXZWJLaXQlMkY1MzcuMzYlMjAoS0hUTUwlMkMlMjBsaWtlJTIwR2Vja28pJTIwZHJhdy5pbyUyRjIxLjYuMSUyMENocm9tZSUyRjExMi4wLjU2MTUuMjA0JTIwRWxlY3Ryb24lMkYyNC42LjElMjBTYWZhcmklMkY1MzcuMzYlMjIlMjBldGFnJTNEJTIyNkMxTlFraVpHaXdVNTVadFBEMUQlMjIlMjB2ZXJzaW9uJTNEJTIyMjEuNi4xJTIyJTIwdHlwZSUzRCUyMmRldmljZSUyMiUzRSUwQSUyMCUyMCUzQ2RpYWdyYW0lMjBpZCUzRCUyMkM1UkJzNDNvRGEtS2R6WmVOdHV5JTIyJTIwbmFtZSUzRCUyMlBhZ2UtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUzQ214R3JhcGhNb2RlbCUyMGR4JTNEJTIyMTAzNiUyMiUyMGR5JTNEJTIyMTc4MyUyMiUyMGdyaWQlM0QlMjIxJTIyJTIwZ3JpZFNpemUlM0QlMjIxMCUyMiUyMGd1aWRlcyUzRCUyMjElMjIlMjB0b29sdGlwcyUzRCUyMjElMjIlMjBjb25uZWN0JTNEJTIyMSUyMiUyMGFycm93cyUzRCUyMjElMjIlMjBmb2xkJTNEJTIyMSUyMiUyMHBhZ2UlM0QlMjIxJTIyJTIwcGFnZVNjYWxlJTNEJTIyMSUyMiUyMHBhZ2VXaWR0aCUzRCUyMjgyNyUyMiUyMHBhZ2VIZWlnaHQlM0QlMjIxMTY5JTIyJTIwYmFja2dyb3VuZCUzRCUyMm5vbmUlMjIlMjBtYXRoJTNEJTIyMCUyMiUyMHNoYWRvdyUzRCUyMjAlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlM0Nyb290JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0wJTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMCUyMiUyMCUyRiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214Q2VsbCUyMGlkJTNEJTIyS2g2VVdDcUxFb3V5cUZPSzdudE0tOSUyMiUyMHZhbHVlJTNEJTIyJTIyJTIwc3R5bGUlM0QlMjJlbmRBcnJvdyUzRGNsYXNzaWMlM0JodG1sJTNEMSUzQnJvdW5kZWQlM0QwJTNCZXhpdFglM0QxJTNCZXhpdFklM0QwLjUlM0JleGl0RHglM0QwJTNCZXhpdER5JTNEMCUzQmVudHJ5WCUzRDAlM0JlbnRyeVklM0QwLjUlM0JlbnRyeUR4JTNEMCUzQmVudHJ5RHklM0QwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHNvdXJjZSUzRCUyMktoNlVXQ3FMRW91eXFGT0s3bnRNLTI1JTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMCUyMiUyMGVkZ2UlM0QlMjIxJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHdpZHRoJTNEJTIyNTAlMjIlMjBoZWlnaHQlM0QlMjI1MCUyMiUyMHJlbGF0aXZlJTNEJTIyMSUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjQ4MS40MzAwMDAwMDAwMDAwNiUyMiUyMHklM0QlMjItNjAlMjIlMjBhcyUzRCUyMnNvdXJjZVBvaW50JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMDYlMjIlMjB5JTNEJTIyLTE2MCUyMiUyMGFzJTNEJTIydGFyZ2V0UG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteEdlb21ldHJ5JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJLaDZVV0NxTEVvdXlxRk9LN250TS0yNSUyMiUyMHZhbHVlJTNEJTIyU3RlcCUyMDElMjZsdCUzQmJyJTI2Z3QlM0IlMjZsdCUzQmklMjZndCUzQk1peGluZyUyNmx0JTNCJTJGaSUyNmd0JTNCJTIyJTIwc3R5bGUlM0QlMjJyb3VuZGVkJTNEMSUzQndoaXRlU3BhY2UlM0R3cmFwJTNCaHRtbCUzRDElM0Jmb250U2l6ZSUzRDEyJTNCZ2xhc3MlM0QwJTNCc3Ryb2tlV2lkdGglM0QxJTNCc2hhZG93JTNEMCUzQmZpbGxDb2xvciUzRCUyM2Y4Y2VjYyUzQnN0cm9rZUNvbG9yJTNEJTIzYjg1NDUwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHZlcnRleCUzRCUyMjElMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteEdlb21ldHJ5JTIweCUzRCUyMjEyMCUyMiUyMHklM0QlMjItMjMwJTIyJTIwd2lkdGglM0QlMjIxMjAlMjIlMjBoZWlnaHQlM0QlMjI0MCUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteENlbGwlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteENlbGwlMjBpZCUzRCUyMkY2Ml9CeG4wcng3Z2czVlJZcjVoLTAlMjIlMjB2YWx1ZSUzRCUyMlN0ZXAlMjAyJTI2bHQlM0JiciUyNmd0JTNCJTI2bHQlM0JpJTI2Z3QlM0JEcnlpbmclMjZsdCUzQiUyRmklMjZndCUzQiUyMiUyMHN0eWxlJTNEJTIycm91bmRlZCUzRDElM0J3aGl0ZVNwYWNlJTNEd3JhcCUzQmh0bWwlM0QxJTNCZm9udFNpemUlM0QxMiUzQmdsYXNzJTNEMCUzQnN0cm9rZVdpZHRoJTNEMSUzQnNoYWRvdyUzRDAlM0JmaWxsQ29sb3IlM0QlMjNmOGNlY2MlM0JzdHJva2VDb2xvciUzRCUyM2I4NTQ1MCUzQiUyMiUyMHZlcnRleCUzRCUyMjElMjIlMjBwYXJlbnQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHglM0QlMjIyODAlMjIlMjB5JTNEJTIyLTIzMCUyMiUyMHdpZHRoJTNEJTIyMTIwJTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0zJTIyJTIwdmFsdWUlM0QlMjJTdGVwJTIwMyUyNmx0JTNCYnIlMjZndCUzQiUyNmx0JTNCaSUyNmd0JTNCUGFydGljbGUlMjBTaXplJTIwUmVkdWN0aW9uJTI2bHQlM0IlMkZpJTI2Z3QlM0IlMjIlMjBzdHlsZSUzRCUyMnJvdW5kZWQlM0QxJTNCd2hpdGVTcGFjZSUzRHdyYXAlM0JodG1sJTNEMSUzQmZvbnRTaXplJTNEMTIlM0JnbGFzcyUzRDAlM0JzdHJva2VXaWR0aCUzRDElM0JzaGFkb3clM0QwJTNCZmlsbENvbG9yJTNEJTIzZjhjZWNjJTNCc3Ryb2tlQ29sb3IlM0QlMjNiODU0NTAlM0IlMjIlMjB2ZXJ0ZXglM0QlMjIxJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB4JTNEJTIyNDQwJTIyJTIweSUzRCUyMi0yMzAlMjIlMjB3aWR0aCUzRCUyMjE5NC41JTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC01JTIyJTIwdmFsdWUlM0QlMjIlMjIlMjBzdHlsZSUzRCUyMmVuZEFycm93JTNEY2xhc3NpYyUzQmh0bWwlM0QxJTNCcm91bmRlZCUzRDAlM0JleGl0WCUzRDElM0JleGl0WSUzRDAuNSUzQmV4aXREeCUzRDAlM0JleGl0RHklM0QwJTNCZW50cnlYJTNEMCUzQmVudHJ5WSUzRDAuNSUzQmVudHJ5RHglM0QwJTNCZW50cnlEeSUzRDAlM0IlMjIlMjBlZGdlJTNEJTIyMSUyMiUyMHBhcmVudCUzRCUyMldJeVdsTGs2R0pRc3FhVUJLVE5WLTElMjIlMjBzb3VyY2UlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0wJTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMyUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB3aWR0aCUzRCUyMjUwJTIyJTIwaGVpZ2h0JTNEJTIyNTAlMjIlMjByZWxhdGl2ZSUzRCUyMjElMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMTYlMjIlMjB5JTNEJTIyLTE5MCUyMiUyMGFzJTNEJTIyc291cmNlUG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjMwNiUyMiUyMHklM0QlMjItODAlMjIlMjBhcyUzRCUyMnRhcmdldFBvaW50JTIy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"/>
+               </attachment>
+            </content>
+         </DocumentReference>
+      </resource>
+   </entry>
+   <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
+   <entry>
+      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev"/>
+      <resource>
+            <!-- #84 -->
+         <DocumentReference>
+            <id value="DocumentReference-image"/>
+            <status value="current"/>
+            <content>
+               <attachment>
+                  <url value="https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png"/>
+               </attachment>
+            </content>
+         </DocumentReference>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="Textual description of the product"/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+                  <code value="100000073667"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+                  <code value="100000073619"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <name>
+               <productName value="Stelbat Tablets, 20mg"/>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+               <part>
+                  <part value="20mg"/>
+                  <type>
+                     <coding>
+                        <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                        <code value="StrengthPart"/>
+                        <display value="Strength part"/>
+                     </coding>
+                  </type>
+               </part>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
+      <resource>
+         <Ingredient>
+            <id value="productIngredient"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072072"/>
+                  <display value="Active"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/Stelbatolol"/>
+                  </reference>
+               </code>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="Stelbatolol"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="StelbatololGranules"/>
+            <name>
+               <name value="Stelbatolol Granules"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
+      <resource>
+         <Organization>
+            <id value="substance-manufacturer"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a"/>
+      <resource>
+         <Organization>
+            <id value="manufacturerProcessingMaterial"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3010027650"/>
+            </identifier>
+            <name value="AAA Pharmaceutical, Inc."/>
+            <contact>
+               <address>
+                  <line value="681 Main Street"/>
+                  <city value="Lumberton"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08048"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="startingMaterial"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatosubstance"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="StelbatololAqueousSolution"/>
+            <name>
+               <name value="Stelbatolol Aqueous Solution"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="processingMaterial"/>
+            <manufacturer>
+               <reference value="Organization/manufacturerProcessingMaterial"/>
+            </manufacturer>
+            <name>
+               <name value="Processohol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
+      <resource>
+         <DeviceDefinition>
+            <id value="mixing-vessel"/>
+            <deviceName>
+               <name value="Mixing Vessel"/>
+               <type value="registered-name"/>
+            </deviceName>
+            <classification>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/deviceType"/>
+                     <code value="mixing-vessel"/>
+                     <display value="Mixing Vessel"/>
+                  </coding>
+               </type>
+            </classification>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <code value="capacity"/>
+                     <display value="Capacity"/>
+                     <!-- seems a little different to "maximum capacity -->
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="1000"/>
+                  <unit value="litres"/>
+               </valueQuantity>
+            </property>
+         </DeviceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
+      <resource>
+         <DeviceDefinition>
+            <id value="receiving-tank"/>
+            <deviceName>
+               <name value="Receiving Tank"/>
+               <type value="registered-name"/>
+            </deviceName>
+            <classification>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/deviceType"/>
+                     <code value="receiving-tank"/>
+                     <display value="Receiving Tank"/>
+                  </coding>
+               </type>
+            </classification>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <code value="capacity"/>
+                     <display value="Capacity"/>
+                     <!-- seems a little different to "maximum capacity -->
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="1200"/>
+                  <unit value="litres"/>
+               </valueQuantity>
+            </property>
+         </DeviceDefinition>
+      </resource>
+   </entry>
+</Bundle>

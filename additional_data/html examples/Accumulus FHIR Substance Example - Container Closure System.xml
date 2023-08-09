@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="container-closure-substance"/>
+   <meta>
+      <profile value="http://accumulus.org/fhir/dx-cmc/container-closure-substance"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:878c2849-792c-6469-21a2-c2b920930962"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substance1"/>
+            <contained> <!-- contained may not be right -->
+               <Substance>
+                  <id value="referenceSubstance"/>
+                  <extension url="http://accumulus.org/fhir/extension/substanceCompendial"> <!-- #82 -->
+                     <valueBoolean value="false"/>
+                  </extension>
+                  <identifier>
+                     <system value="http://accumulus.org/fhir/identifier/batchNumber"/>
+                     <!-- #85 -->
+                     <value value="batch-ref-001"/>
+                  </identifier>
+                  <instance value="true"/>
+                  <code>
+                     <concept> <!-- #81 -->
+                        <text value="Reference Substance Name"/>
+                        <!-- can also be a code or a reference to a SubstanceDefintion -->
+                     </concept>
+                  </code>
+                  <expiry value="2019-09-07"/>
+                  <!-- #91 -->
+               </Substance>
+            </contained>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b107a2ba-32d8-0124-7855-4096057c52a9"/>
+      <resource>
+         <PackagedProductDefinition>
+            <id value="packageDefinition"/>
+            <!-- no product referenced, instead link works via the contained manufactured item -->
+            <!-- #176 -->
+            <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
+            <!-- secondary packaging -->
+            <packaging> <!-- #189 -->
+               <type> <!-- #191 -->
+                  <coding>
+                     <system value="http://hl7.org/fhir/packaging-type"/>
+                     <code value="100000073493"/>
+                     <display value="Bag"/>
+                  </coding>
+               </type>
+               <material> <!-- #192 -->
+                  <coding>
+                     <system value="http://hl7.org/fhir/package-material"/>
+                     <code value="200000003216"/>
+                     <display value="Low Density PolyEthylene"/>
+                  </coding>
+               </material>
+               <property>
+                  <type>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
+                        <code value="xxxx"/>
+                        <display value="Quality Specification"/>
+                     </coding>
+                  </type>
+                  <valueCodeableConcept>
+                     <text value="Complies with FDA 21 CFR 177.1520 (c) 2.2 (olefin polymers)"/>
+                  </valueCodeableConcept>
+               </property>
+               <property>
+                  <type>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
+                        <code value="xxxx"/>
+                        <display value="Quality Specification"/>
+                     </coding>
+                  </type>
+                  <valueCodeableConcept>
+                     <text value="Complies with Commission Regulation (EU) No. 10/2011 including its amendments EU 321/2011, EU  1282/2011, EU 1183/2012, EU 202/2014 and EU 2015/174 Complies with Ph. Eur. 3.2.2"/>
+                  </valueCodeableConcept>
+               </property>
+               <containedItem>
+                  <item>
+                     <reference>
+                        <reference value="ManufacturedItemDefinition/packaged-item"/>
+                     </reference>
+                  </item>
+               </containedItem>
+               <!-- closure for secondary
+                        packaging -->
+            </packaging>
+         </PackagedProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b107a2ba-32d8-0124-7855-4096057c52b9"/>
+      <resource>
+         <PackagedProductDefinition>
+            <id value="packageDefinition2"/>
+            <!-- no product referenced, instead link works via the contained manufactured item -->
+            <!-- #176 -->
+            <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
+            <!-- secondary packaging -->
+            <packaging> <!-- #189 -->
+               <type> <!-- #191 -->
+                  <coding>
+                     <system value="http://hl7.org/fhir/packaging-type"/>
+                     <code value="xxxx"/>
+                     <display value="Pail"/>
+                  </coding>
+               </type>
+               <material> <!-- #192 -->
+                  <coding>
+                     <system value="http://hl7.org/fhir/package-material"/>
+                     <code value="200000003215"/>
+                     <display value="High Density PolyEthylene"/>
+                  </coding>
+               </material>
+               <containedItem>
+                  <item>
+                     <reference>
+                        <reference value="ManufacturedItemDefinition/packaged-item"/>
+                     </reference>
+                  </item>
+               </containedItem>
+               <!-- closure for secondary
+                        packaging -->
+            </packaging>
+         </PackagedProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
+      <resource>
+         <ManufacturedItemDefinition>
+            <id value="packaged-item"/>
+            <status value="active"/>
+            <manufacturedDoseForm>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unsupported"/>
+               </extension>
+            </manufacturedDoseForm>
+         </ManufacturedItemDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f26b997a-3ab9-7552-a6cc-fd771d1f1863"/>
+      <resource>
+        	<!-- ingredient is only needed to link substance to packaging, via manufactured item -->
+         <Ingredient>
+            <id value="ingredient1"/>
+            <status value="active"/>
+            <for>
+               <reference value="ManufacturedItemDefinition/packaged-item"/>
+            </for>
+            <role>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="not-applicable"/>
+               </extension>
+            </role>
+            <substance>
+               <code>
+                  <reference> <!-- this links this to the substance -->
+                     <reference value="SubstanceDefinition/substance1"/>
+                     <display value="WizzoSubstance"/>
+                  </reference>
+               </code>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
+      <resource>
+         <PlanDefinition>
+            <id value="packagingSpecification-unlinked"/>
+            <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic">
+                    <valueBoolean value="true"/>
+                </extension-->
+            <title value="Specification and Analytical Procedures"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+                  <code value="workflow-definition"/>
+                  <display value="Workflow Definition"/>
+               </coding>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <code value="container-specification"/>
+                  <display value="Container Specification"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+               <reference value="PackagedProductDefinition/packageDefinition"/>
+            </subjectReference>
+            <description value="Packaging components are sampled, tested, and examined for conformance with written specifications.                The specification for the primary packaging component are provided in Table 1."/>
+            <action>
+               <title value="Container Specification"/>
+               <code>
+                  <coding>
+                     <system value="http://temp.hl7.org/fhir/CodeSystem/specification-type"/>
+                     <!-- did I already use similar? -->
+                     <code value="ContainerSpecification"/>
+                     <display value="Container Specification"/>
+                  </coding>
+                  <text value="Container Specification"/>
+               </code>
+               <action>
+                  <description value="Container Type"/>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/VisualInspection"/>
+               </action>
+               <action>
+                  <description value="Material Identification"/>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/InfraredSpectroscopy"/>
+               </action>
+               <action>
+                  <description value="Material Conformity"/>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/SupplierCertificateofAnalysis"/>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958524"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="VisualInspection"/>
+            <title value="Visual Inspection"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="VisualInspection"/>
+               </coding>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="Corresponds"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958525"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="InfraredSpectroscopy"/>
+            <title value="Infrared Spectroscopy"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="InfraredSpectroscopy"/>
+               </coding>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="Corresponds with reference"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958535"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="SupplierCertificateofAnalysis"/>
+            <title value="Supplier Certificate of Analysis"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="SupplierCertificateofAnalysis"/>
+               </coding>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="Corresponds"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+</Bundle>

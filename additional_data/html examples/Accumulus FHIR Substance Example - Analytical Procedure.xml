@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Substance Analytical Procedure -->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="substance-analytical-procedure"/>
+   <meta>
+      <profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
+      <resource>
+         <PlanDefinition>
+            <id value="analyticalProcedure"/>
+            <title value="Analytical Procedure"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+                  <code value="workflow-definition"/>
+                  <display value="Workflow Definition"/>
+               </coding>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <code value="analytical-procedure"/>
+                  <display value="Analytical Procedure"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+               <reference value="SubstanceDefinition/substance1"/>
+            </subjectReference>
+            <action>
+               <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="parameter">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <code value="OPTICAL"/>
+                           <display value="Optical properties"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="valueText">
+                     <valueString value="Same as for blue light"/>
+                  </extension>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="parameter">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <code value="THEORY"/>
+                           <display value="Theory"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="valueText">
+                     <valueString value="MIE"/>
+                  </extension>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="parameter">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <code value="STIR"/>
+                           <display value="Stir Time"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="value">
+                     <valueQuantity>
+                        <value value="1"/>
+                        <unit value="minute"/>
+                        <!-- todo ucum -->
+                     </valueQuantity>
+                  </extension>
+               </extension>
+               <title value="Determination of Particle Size of Stelbat by Laser Diffraction (G1112)"/>
+               <!-- can have device here or as ObsDef.device -->
+               <!--participant>
+                        <typeReference>
+                            <reference value="DeviceDefinition/laser"/>
+                        </typeReference>
+                        <role>
+                            <coding>
+                                <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                                <code value="example"/>
+                                <display value="Analyzer"/> 
+                            </coding>
+                        </role>
+                    </participant-->
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/dispersant"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="dispersant"/>
+                        <display value="Dispersant"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/resultingMaterial"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="ResultingMaterial"/>
+                        <display value="Resulting Material"/>
+                     </coding>
+                  </role>
+               </participant>
+               <action>
+                  <title value="Sample Preparation"/>
+                  <action>
+                     <title value="Instructions"/>
+                     <description value="Vortex approximately 30 seconds. Mix briefly by vortexing immediately before use."/>
+                  </action>
+               </action>
+               <action>
+                  <title value="Sample Analysis"/>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/ParticleSize"/>
+                  </action>
+               </action>
+               <action>
+                  <title value="Sample Calculation"/>
+                  <description value="The particle size result is calculated automatically by the instrument software for each sample."/>
+                  <code>
+                     <text value="Calculation"/>
+                  </code>
+               </action>
+               <action>
+                  <title value="Reporting"/>
+                  <description value="Report the average value as per specification"/>
+                  <code>
+                     <text value="Reporting"/>
+                  </code>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substance1"/>
+            <name>
+               <name value="Stelbatolol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="dispersant"/>
+            <property>
+               <type>
+                  <text value="Shelf life"/>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Refer to local laboratory expiration date (may be extended with supporting data)"/>
+               </valueCodeableConcept>
+            </property>
+            <name>
+               <name value="0.1% Sorbitan monooleate (Span 80) in hexanes (m/v)"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="resultingMaterial"/>
+            <name>
+               <name value="Stelbat in dispersant (approximately 10 mg/mL)"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="ParticleSize"/>
+            <title value="Particle Size"/>
+            <status value="active"/>
+            <description value="Number of Analyses: 1 replicate for each sample preparation"/>
+            <code>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unsupported"/>
+               </extension>
+            </code>
+            <specimen>
+               <reference value="SpecimenDefinition/specimendefinition"/>
+            </specimen>
+            <device>
+               <reference value="DeviceDefinition/laser"/>
+            </device>
+            <hasMember>
+               <reference value="ObservationDefinition/ParticleSizeObscuration"/>
+            </hasMember>
+            <hasMember>
+               <reference value="ObservationDefinition/ParticleRI"/>
+            </hasMember>
+            <hasMember>
+               <reference value="ObservationDefinition/ParticleSizeRSD"/>
+            </hasMember>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="ParticleSizeObscuration"/>
+            <title value="Obscuration"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Obscuration"/>
+               </coding>
+               <text value="Obscuration (%)"/>
+            </code>
+            <qualifiedValue>
+               <range>
+                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueTarget">
+                     <valueQuantity>
+                        <value value="15"/>
+                        <unit value="%"/>
+                     </valueQuantity>
+                  </extension>
+                  <low>
+                     <value value="10"/>
+                     <unit value="%"/>
+                  </low>
+                  <high>
+                     <value value="30"/>
+                     <unit value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="ParticleRI"/>
+            <title value="Particle refractive index"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Refractive index"/>
+               </coding>
+               <text value="Particle refractive index"/>
+            </code>
+            <qualifiedValue>
+               <range>
+                  <low>
+                     <value value="1.75"/>
+                     <!-- unitless -->
+                  </low>
+                  <high>
+                     <value value="1.75"/>
+                     <!-- unitless -->
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="ParticleSizeRSD"/>
+            <title value="Particle Size RSD"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Particle Size RSD"/>
+               </coding>
+               <text value="Particle Size RSD"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="The %RSD for the D(v, 0.9) must be not more than 15%"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
+      <resource>
+         <SpecimenDefinition>
+            <id value="specimendefinition"/>
+            <status value="active"/>
+            <description value="Number of Preparations: 3"/>
+         </SpecimenDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9495c"/>
+      <resource>
+         <DeviceDefinition>
+            <id value="laser"/>
+            <description value="Analyzer with disperser and temperature control accessory, or equivalent"/>
+            <classification>
+               <type>
+                  <text value="Particle Size Analyzer with Laser Diffraction"/>
+               </type>
+            </classification>
+         </DeviceDefinition>
+      </resource>
+   </entry>
+</Bundle>

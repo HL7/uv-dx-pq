@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="d0f67879-9bdf-4f63-80eb-144912b0db60"/>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a"/>
+      <resource>
+         <Organization>
+            <id value="manufacturer"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3010027650"/>
+            </identifier>
+            <name value="AAA Pharmaceutical, Inc."/>
+            <contact>
+               <address>
+                  <line value="681 Main Street"/>
+                  <city value="Lumberton"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08048"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a09539a3-a337-596b-086c-d350e4371b55"/>
+      <resource>
+         <Organization>
+            <id value="manufacturer2"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="2246707"/>
+            </identifier>
+            <name value="AAA Pharmaceutical, Inc."/>
+            <contact>
+               <address>
+                  <line value="157-160 West Jefferson Street"/>
+                  <city value="Paulsboro"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08066"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:432b0b5a-3a73-6d7f-6dbd-64a3f410a02e"/>
+      <resource>
+         <Organization>
+            <id value="capManufacturer"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3008816891"/>
+            </identifier>
+            <name value="A+ Secure Packaging, LLC"/>
+            <contact>
+               <address>
+                  <line value="339 Mason Rd"/>
+                  <city value="La Vergne"/>
+                  <state value="Tennessee"/>
+                  <postalCode value="37086"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:695d1c6b-7330-1a72-2f47-ffee49460bb5"/>
+      <resource>
+         <Organization>
+            <id value="bottleManufacturer"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="2244725"/>
+            </identifier>
+            <name value="Acupac Packaging Inc."/>
+            <contact>
+               <address>
+                  <line value="55 Ramapo Valley Road"/>
+                  <city value="Mahwah"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="07430"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:8ac517ba-25ab-5c1a-8427-83437bf553c8"/>
+      <resource>
+         <Organization>
+            <id value="tester2"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003367682"/>
+            </identifier>
+            <name value="A &amp; M STABTEST Labor für Analytik und Stabilitätsprüfung"/>
+            <contact>
+               <address>
+                  <line value="Kopernikusstr. 6"/>
+                  <city value="Bergheim"/>
+                  <state value="North-rhine Westphalia"/>
+                  <postalCode value="50126"/>
+                  <country value="Germany"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4ef3c750-46cc-1693-1942-0cba16a21ccc"/>
+      <resource>
+         <Organization>
+            <id value="tester"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3007270600"/>
+            </identifier>
+            <name value="Advanced Analytical Testing Laboratories Inc."/>
+            <contact>
+               <address>
+                  <line value="30 Silverline Drive"/>
+                  <city value="North Brunswick"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08902"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+</Bundle>

@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Substance Process Validation -->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="product-batch-analysis"/>
+   <meta>
+      <profile value="http://accumulus.org/fhir/dx-cmc/process-validation-substance"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+      <resource>
+         <PlanDefinition>
+            <id value="validationProtocol"/>
+            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-substance">
+               <valueBoolean value="true"/>
+            </extension>
+            <title value="DP PROCESS VALIDATION"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+                  <code value="workflow-definition"/>
+                  <display value="Workflow Definition"/>
+               </coding>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <code value="process-validation"/>
+                  <display value="Process Validation"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+               <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+            </subjectReference>
+            <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
+            <action>
+               <extension url="http://accumulus.org/fhir/extension/processStepScale">
+                  <valueCoding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <code value="ABCD"/>
+                     <display value="Production Scale"/>
+                  </valueCoding>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="parameter">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <code value="SPEED"/>
+                           <display value="Mix speed"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="value">
+                     <valueQuantity>
+                        <value value="1500"/>
+                        <unit value="rpm"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>
+               <prefix value="1"/>
+               <title value="Step 1 Yield"/>
+               <description value="Description of this step"/>
+               <code>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <code value="particleSizeReduction"/>
+                     <display value="Particle Size Reduction"/>
+                  </coding>
+                  <!--text value="Step 2 in the process - free text is possible"/-->
+               </code>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/startingMaterial"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="StartingMaterial"/>
+                        <display value="Starting Material"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/intermediateMaterial"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="IntermediateMaterial"/>
+                        <display value="Intermediate Material"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/resultingMaterial"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="ResultingMaterial"/>
+                        <display value="Resulting Material"/>
+                     </coding>
+                  </role>
+               </participant>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/Step1Yield"/>
+               </action>
+            </action>
+            <action>
+               <title value="Step 1 In-Process Control Data"/>
+               <code>
+                  <coding>
+                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+                     <code value="Step1In-ProcessControlData"/>
+                     <display value="Step 1 In-Process Control Data"/>
+                  </coding>
+               </code>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/ResidualWaterContent"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/ResidualStartingMaterial1byHPLC"/>
+               </action>
+            </action>
+            <action>
+               <title value="Step 1 DS Release Testing Results"/>
+               <code>
+                  <coding>
+                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+                     <code value="Step1DSReleaseTestingResults"/>
+                     <display value="Step 1 DS Release Testing Results"/>
+                  </coding>
+               </code>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/AppearanceSubstance"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/IdentificationSubstance"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/AssaySubstance"/>
+               </action>
+            </action>
+            <action>
+               <extension url="http://accumulus.org/fhir/extension/processStepScale">
+                  <valueCoding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <code value="ABCD"/>
+                     <display value="Production Scale"/>
+                  </valueCoding>
+               </extension>
+               <prefix value="2"/>
+               <title value="Step 2 Yield"/>
+               <description value="Description of this step"/>
+               <code>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <code value="drying"/>
+                     <display value="Drying"/>
+                  </coding>
+                  <!--text value="Step 2 in the process - free text is possible"/-->
+               </code>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/startingMaterialStep2"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="StartingMaterial"/>
+                        <display value="Starting Material"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/intermediateMaterialStep2"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="IntermediateMaterial"/>
+                        <display value="Intermediate Material"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/resultingMaterialStep2"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="ResultingMaterial"/>
+                        <display value="Resulting Material"/>
+                     </coding>
+                  </role>
+               </participant>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/Step2Yield"/>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
+   <entry>
+      <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
+      <resource>
+         <DiagnosticReport>
+                <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
+                     however the observations themselves do have subjects -->
+            <id value="processValidationReport"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+               <valueReference>
+                  <reference value="PlanDefinition/validationProtocol"/>
+               </valueReference>
+            </extension>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/reportType"/>
+                  <code value="1113"/>
+                  <display value="Process Validation Report"/>
+               </coding>
+            </code>
+            <effectiveDateTime value="2020-12"/>
+            <result>
+               <reference value="Observation/step1Yield1"/>
+            </result>
+            <result>
+               <reference value="Observation/step1Yield2"/>
+            </result>
+            <result>
+               <reference value="Observation/step1Yield3"/>
+            </result>
+            <result>
+               <reference value="Observation/residualWaterContent1"/>
+            </result>
+            <result>
+               <reference value="Observation/residualWaterContent2"/>
+            </result>
+            <result>
+               <reference value="Observation/residualWaterContent3"/>
+            </result>
+            <result>
+               <reference value="Observation/appearanceSubstance1"/>
+            </result>
+            <result>
+               <reference value="Observation/appearanceSubstance2"/>
+            </result>
+            <result>
+               <reference value="Observation/appearanceSubstance3"/>
+            </result>
+            <result>
+               <reference value="Observation/identificationSubstance1"/>
+            </result>
+            <result>
+               <reference value="Observation/identificationSubstance2"/>
+            </result>
+            <result>
+               <reference value="Observation/identificationSubstance3"/>
+            </result>
+            <result>
+               <reference value="Observation/step2Yield1"/>
+            </result>
+            <result>
+               <reference value="Observation/step2Yield2"/>
+            </result>
+            <result>
+               <reference value="Observation/step2Yield3"/>
+            </result>
+            <conclusion value="The samples have been assessed and the conclusion is..."/>
+         </DiagnosticReport>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="AppearanceSubstance"/>
+            <title value="Appearance"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Appearance"/>
+               </coding>
+               <text value="Appearance"/>
+            </code>
+            <method>
+               <text value="Visual inspection"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="White to off-white, to red, to orange, to brown solid"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="IdentificationSubstance"/>
+            <title value="ID by HPLC"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="ID by HPLC"/>
+            </code>
+            <method>
+               <text value="ID by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="Conforms to standard"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="AssaySubstance"/>
+            <title value="Assay by HPLC (as is) (w/w%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay by HPLC (as is) (w/w%)"/>
+            </code>
+            <method>
+               <text value="Assay by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <low>
+                     <value value="95"/>
+                     <unit value="%"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </low>
+                  <high>
+                     <value value="101"/>
+                     <unit value="%"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Step1Yield"/>
+            <title value="Yield (%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Yield (%)"/>
+               </coding>
+               <text value="Yield (%)"/>
+            </code>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Step2Yield"/>
+            <title value="Yield (%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Yield (%)"/>
+               </coding>
+               <text value="Yield (%)"/>
+            </code>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="ResidualWaterContent"/>
+            <title value="Residual Water Content (w/w%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Residual Water Content (w/w%)"/>
+               </coding>
+               <text value="Residual Water Content (w/w%)"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueCriticality">
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/qualifiedValueCriticality"/>
+                        <code value="non-critical"/>
+                        <display value="Non-critical"/>
+                     </coding>
+                     <text value="Non-critical"/>
+                  </valueCodeableConcept>
+               </extension>
+               <range>
+                  <high>
+                     <value value="7.15"/>
+                     <unit value="%"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc27b5d6-9ff1-91c2-2d16-57cb5b295e72"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="ResidualStartingMaterial1byHPLC"/>
+            <title value="Reaction conversion: residual starting material 1 by HPLC (Step Aa) (LC area %)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
+               </coding>
+               <text value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueCriticality">
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/qualifiedValueCriticality"/>
+                        <code value="critical"/>
+                        <display value="Critical"/>
+                     </coding>
+                     <text value="Critical"/>
+                  </valueCodeableConcept>
+               </extension>
+               <range>
+                  <high>
+                     <value value="23"/>
+                     <unit value="%"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <!-- Section 4.1 - Manufacturer -->
+   <entry>
+      <fullUrl value="urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+      <resource>
+         <Organization>
+            <id value="manufacturer"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3010027650"/>
+            </identifier>
+            <name value="AAA Pharmaceutical, Inc."/>
+            <contact>
+               <address>
+                  <line value="681 Main Street"/>
+                  <city value="Lumberton"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08048"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07"/>
+      <resource>
+         <Organization>
+            <id value="packaging"/>
+            <name value="MySite"/>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="appearanceSubstance1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/AppearanceSubstance"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Appearance"/>
+               </coding>
+               <text value="Appearance"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-1"/>
+            </subject>
+            <valueString value="Off-white solid"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="appearanceSubstance2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/AppearanceSubstance"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Appearance"/>
+               </coding>
+               <text value="Appearance"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-2"/>
+            </subject>
+            <valueString value="Off-white solid"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33"/>
+      <resource>
+         <Observation>
+            <id value="appearanceSubstance3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/AppearanceSubstance"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Appearance"/>
+               </coding>
+               <text value="Appearance"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-3"/>
+            </subject>
+            <valueString value="Off-white solid"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="identificationSubstance1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/IdentificationSubstance"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="ID by HPLC"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-1"/>
+            </subject>
+            <valueString value="Conforms"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="identificationSubstance2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/IdentificationSubstance"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="ID by HPLC"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-2"/>
+            </subject>
+            <valueString value="Conforms"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33"/>
+      <resource>
+         <Observation>
+            <id value="identificationSubstance3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/IdentificationSubstance"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="ID by HPLC"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-3"/>
+            </subject>
+            <valueString value="Does not conform"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="step1Yield1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Step1Yield"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Yield (%)"/>
+               </coding>
+               <text value="Yield (%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-1"/>
+            </subject>
+            <valueQuantity>
+               <value value="75"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="step1Yield2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Step1Yield"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Yield (%)"/>
+               </coding>
+               <text value="Yield (%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-2"/>
+            </subject>
+            <valueQuantity>
+               <value value="77"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="step1Yield3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Step1Yield"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Yield (%)"/>
+               </coding>
+               <text value="Yield (%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-3"/>
+            </subject>
+            <valueQuantity>
+               <value value="76"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="step2Yield1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Step2Yield"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Yield (%)"/>
+               </coding>
+               <text value="Yield (%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-step2-1"/>
+            </subject>
+            <valueQuantity>
+               <value value="85"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="step2Yield2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Step2Yield"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Yield (%)"/>
+               </coding>
+               <text value="Yield (%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-step2-2"/>
+            </subject>
+            <valueQuantity>
+               <value value="87"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="step2Yield3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Step2Yield"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Yield (%)"/>
+               </coding>
+               <text value="Yield (%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-step2-3"/>
+            </subject>
+            <valueQuantity>
+               <value value="86"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="residualWaterContent1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/ResidualWaterContent"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="ResidualWaterContent (w/w%)"/>
+               </coding>
+               <text value="ResidualWaterContent (w/w%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-1"/>
+            </subject>
+            <valueQuantity>
+               <value value="6.9"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="residualWaterContent2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/ResidualWaterContent"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="ResidualWaterContent (w/w%)"/>
+               </coding>
+               <text value="ResidualWaterContent (w/w%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-2"/>
+            </subject>
+            <valueQuantity>
+               <value value="7.0"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="residualWaterContent3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/ResidualWaterContent"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="ResidualWaterContent (w/w%)"/>
+               </coding>
+               <text value="ResidualWaterContent (w/w%)"/>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-itermediate-3"/>
+            </subject>
+            <valueQuantity>
+               <value value="6.8"/>
+               <unit value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
+      <resource>
+         <Organization>
+            <id value="substance-manufacturer"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substancedefinition-component-substance-dxpq-ex1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+            </meta>
+            <manufacturer>
+               <reference value="Organization/organization-dxpq-ex1"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="startingMaterial"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatosubstance"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-starting-1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-01"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="8.1"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Start1Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/startingMaterial"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178762-81d5-5656-9744-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-starting-2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-01"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="8.2"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Start2Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/startingMaterial"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178762-81d5-5656-9744-23c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-starting-3"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-01"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="8.3"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Start3Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/startingMaterial"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="resultingMaterial"/>
+            <name>
+               <name value="Resultothane"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="intermediateMaterial"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Processohol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-itermediate-1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="9.1"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+                  <valueReference>
+                     <reference value="Substance/actual-batch-substance-starting-1"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Intermed1Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/intermediateMaterial"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-itermediate-2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="9.2"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+                  <valueReference>
+                     <reference value="Substance/actual-batch-substance-starting-2"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Intermed2Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/intermediateMaterial"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-itermediate-3"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="9.3"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+                  <valueReference>
+                     <reference value="Substance/actual-batch-substance-starting-3"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Intermed3Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/intermediateMaterial"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-8cb8-428e-83f7-8a205f821153"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="startingMaterialStep2"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatosubstance2"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-starting-step2-1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-02"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="7.1"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Start1Step2Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/startingMaterialStep2"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178762-81d5-5656-9744-13c7ad1e596b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-starting-step2-2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-02"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="7.2"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Start2Step2Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/startingMaterialStep2"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178762-81d5-5656-9744-23c7ad1e597b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-starting-step2-3"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-02"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="7.3"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Start3Step2Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/startingMaterialStep2"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-84f7-8a205f821155"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="intermediateMaterialStep2"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="ProcessoholStep2"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-itermediate-step2-1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="10.1"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+                  <valueReference>
+                     <reference value="Substance/actual-batch-substance-starting-step2-1"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Intermed1Step2Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/intermediateMaterialStep2"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-itermediate-step2-2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="10.2"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+                  <valueReference>
+                     <reference value="Substance/actual-batch-substance-starting-step2-2"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Intermed2Step2Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/intermediateMaterialStep2"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-itermediate-step2-3"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="10.3"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+                  <valueReference>
+                     <reference value="Substance/actual-batch-substance-starting-step2-3"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="Intermed3Step2Amgen"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/intermediateMaterialStep2"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-8cb8-428e-83f7-8a205f821154"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="resultingMaterialStep2"/>
+            <name>
+               <name value="ResultothaneStep2"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
+      <resource>
+         <Organization>
+                <!--id value="substance-manufacturer"/-->
+            <id value="organization-dxpq-ex1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+            </meta>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:59d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
+      <resource>
+         <Organization>
+				<!--id value="substance-manufacturer"/-->
+            <id value="testerSiteA"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="2003040516"/>
+            </identifier>
+            <name value="Site A"/>
+            <contact>
+               <address>
+                  <line value="Site A"/>
+                  <city value="Site City"/>
+                  <state value="Colorado"/>
+                  <postalCode value="90020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b"/>
+      <resource>
+         <Substance>
+                <!--<id value="actual-batch-substance"/>-->
+            <id value="substance-dxpq-ex1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+            </meta>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <valueDateTime value="2019-09-08"/>
+                  <!-- #173 -->
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+                  <valueDateTime value="2022-09-08"/>
+                  <!-- #221 -->
+               </extension>
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-07"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="5.1"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization"><!-- #161 -->
+                  <valueCodeableConcept>
+                     <coding>
+                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
+                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        </extension>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <code value="C133991"/>
+                        <display value="Development"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer"> <!-- #160 -->
+                  <valueReference>
+                     <reference value="Organization/organization-dxpq-ex1"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="SUB1Amgen"/>
+            </identifier>
+            <identifier>
+               <value value="SUB1SiteA"/>
+               <assigner>
+                  <reference value="Organization/testerSiteA"/>
+               </assigner>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-2"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <valueDateTime value="2019-09-08"/>
+                  <!-- #173 -->
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+                  <valueDateTime value="2022-09-08"/>
+                  <!-- #221 -->
+               </extension>
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-07"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="5.2"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization"><!-- #161 -->
+                  <valueCodeableConcept>
+                     <coding>
+                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
+                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        </extension>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <code value="C133991"/>
+                        <display value="Development"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer"> <!-- #160 -->
+                  <valueReference>
+                     <reference value="Organization/organization-dxpq-ex1"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="SUB2Amgen"/>
+            </identifier>
+            <identifier>
+               <value value="SUB2SiteA"/>
+               <assigner>
+                  <reference value="Organization/testerSiteA"/>
+               </assigner>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-3"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <valueDateTime value="2019-09-08"/>
+                  <!-- #173 -->
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+                  <valueDateTime value="2022-09-08"/>
+                  <!-- #221 -->
+               </extension>
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2019-09-07"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="5.3"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization"><!-- #161 -->
+                  <valueCodeableConcept>
+                     <coding>
+                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
+                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
+                        </extension>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <code value="C133991"/>
+                        <display value="Development"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer"> <!-- #160 -->
+                  <valueReference>
+                     <reference value="Organization/organization-dxpq-ex1"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="SUB3Amgen"/>
+               <!-- #155 -->
+            </identifier>
+            <identifier>
+               <value value="SUB3SiteA"/>
+               <assigner>
+                  <reference value="Organization/testerSiteA"/>
+               </assigner>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+</Bundle>

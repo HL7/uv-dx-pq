@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Specification -->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="product-specification"/>
+   <meta>
+      <profile value="http://accumulus.org/fhir/dx-cmc/specification"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
+      <resource>
+         <PlanDefinition>
+                <!-- <id value="specificationProtocol"/> -->
+            <id value="plandefinition-drug-specification-dxpq-ex1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+            </meta>
+            <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
+            <status value="active"/>
+            <subjectReference>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subjectReference>
+            <description value="Narrative description of specifications"/>
+            <!-- new "tabular" style -->
+            <action> <!-- this is then entire thing -->
+               <title value="Specification(s) for Drug Product"/>
+               <code>
+                  <text value="Overall set of actions"/>
+               </code>
+               <action>
+                  <title value="Release"/>
+                  <code>
+                     <text value="Timing Group"/>
+                  </code>
+                  <timingTiming>
+                     <code>
+                        <text value="Release time"/>
+                     </code>
+                  </timingTiming>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Description"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Identification"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Assay"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Degradation"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Dissolution"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Uniformity"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Microbiological"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Water"/>
+                  </action>
+               </action>
+               <action>
+                  <title value="End of shelf life"/>
+                  <code>
+                     <text value="Timing Group"/>
+                  </code>
+                  <timingTiming>
+                     <code>
+                        <text value="At end of shelf life"/>
+                     </code>
+                  </timingTiming>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DescriptionEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/IdentificationEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/AssayEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DegradationEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DissolutionEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/UniformityEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/MicrobiologicalEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/WaterEnd"/>
+                  </action>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:77e7020a-270c-6bed-2e55-28e9e942546c"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Description"/>
+            <title value="Description"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <method>
+               <text value="Visual inspection"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d24ce3cd-213d-4935-97cf-8e2dd03721ec"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DescriptionEnd"/>
+            <title value="Description"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:0d0ef4cf-242c-1cb1-81c4-c41837ee9a12"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Identification"/>
+            <title value="Identification"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <method>
+               <text value="ID by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f77ba972-5ef8-a178-9a5f-fe7f54da7499"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="IdentificationEnd"/>
+            <title value="Identification"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c0f05343-5b98-6073-1a0f-873aaf4f59bc"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Assay"/>
+            <title value="Assay"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <method>
+               <text value="Assay by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="95% to 105% of label claim"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f4a74fd3-876e-38ce-021f-04e5a8fb6a3f"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="AssayEnd"/>
+            <title value="Assay"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06041"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Degradation"/>
+            <title value="Degradation Products"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Degradation products by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Impurity 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.2"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.3"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 3"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.3"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Individual unspecified degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.2"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Total degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="1.4"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ef72eeb7-211a-3c16-8460-8725ca43584f"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DegradationEnd"/>
+            <title value="Degradation Products"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+            </code>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Impurity 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.8"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.4"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 3"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.4"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Individual unspecified degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.3"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Total degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.3"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:bb11322b-9470-4f13-91b5-c8a5253380eb"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Dissolution"/>
+            <title value="Dissolution"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="Dissolution"/>
+               </coding>
+               <text value="Dissolution"/>
+            </code>
+            <method>
+               <text value="Apparatus 2 (paddles), UV measurement"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DissolutionEnd"/>
+            <title value="Dissolution"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="Dissolution"/>
+               </coding>
+               <text value="Dissolution"/>
+            </code>
+            <method>
+               <text value="Apparatus 2 (paddles), UV measurement"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6ce8ab6d-55e2-0412-5fb1-ab33763f30b1"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Water"/>
+            <title value="Water Content"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="WWW"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <method>
+               <text value="USP &lt;921&gt;"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <high>
+                     <value value="1.0"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:91391017-774b-5c77-93fa-642534278851"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="WaterEnd"/>
+            <title value="Water Content"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="WWW"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <method>
+               <text value="USP &lt;921&gt;"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <high>
+                     <value value="2.0"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:64972eb3-99ee-7eae-2f63-733e5ae84f71"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Microbiological"/>
+            <title value="Microbiological"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <method>
+               <text value="Ph Eur"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="Shall comply with the requirements of the Ph Eur"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:e582e504-36ec-3b50-4043-51bf1147124e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="MicrobiologicalEnd"/>
+            <title value="Microbiological"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <method>
+               <text value="Ph Eur"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:e7e2fe59-5433-5cc0-84b1-d5f30032790c"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Uniformity"/>
+            <title value="Uniformity of dosage"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <method>
+               <text value="Weight variation"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:43dbc2a3-00c4-6f79-6b11-63768b412aa3"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="UniformityEnd"/>
+            <title value="Uniformity of dosage"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="Textual description of the product"/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+                  <code value="100000073667"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+                  <code value="100000073619"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <name>
+               <productName value="Stelbat Tablets, 20mg"/>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+               <part>
+                  <part value="20mg"/>
+                  <type>
+                     <coding>
+                        <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                        <code value="StrengthPart"/>
+                        <display value="Strength part"/>
+                     </coding>
+                  </type>
+               </part>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
+      <resource>
+         <Ingredient>
+            <id value="productIngredient"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072072"/>
+                  <display value="Active"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/substance1"/>
+                  </reference>
+               </code>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substance1"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
+      <resource>
+         <Organization>
+            <id value="substance-manufacturer"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+</Bundle>
