@@ -1,0 +1,29 @@
+{
+    "resourceType":"PlanDefinition",
+    "title": "DP Batch Analysis",
+    "type":
+    {
+        "coding":
+        [{
+            "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+            "code": "workflow-definition",
+            "display": "Workflow Definition"
+        },
+        {
+            "system": "http://accumulus.org/fhir/code/planType",
+            "code": "batch-analysis",
+            "display": "Batch Analysis"
+        }]
+    },
+    "status": "active",
+    "subjectReference":
+    {
+        "reference": "MedicinalProductDefinition/{your-product}"
+    },
+    "description": "Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process studies...",
+    "action":
+    [{
+        "title": "Batch Analysis",
+        "definitionCanonical": "ObservationDefinition/{obs-def-id}"
+    }]
+}
