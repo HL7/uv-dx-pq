@@ -1,0 +1,21 @@
+{
+    "resourceType":"Observation",
+    "status": "final",
+    "code":
+    {
+        "coding":
+        [{
+            "system": "http://dummy.loinc.org",
+            "code": "ph",
+            "display": "pH"
+        }]
+    },
+    "subject":
+    {
+        "reference": "Medication/{your-medication-id}"
+    },
+    "valueQuantity":
+    {
+        "value": 6.91
+    }
+}

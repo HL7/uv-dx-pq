@@ -1,0 +1,15 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://accumulus.org/fhir/code/reportType"/>
+			<code value="1113"/>
+			<display value="Batch Analysis Report"/>
+		</coding>
+	</code>
+	<effectiveDateTime value="2023-08-10"/>
+	<result>
+		<reference value="Observation/{observation-id}"/>
+	</result>
+	<conclusion value="The samples have been assessed and the conclusion is..."/>
+</DiagnosticReport>

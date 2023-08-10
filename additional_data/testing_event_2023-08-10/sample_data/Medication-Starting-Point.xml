@@ -1,0 +1,13 @@
+<Medication xmlns="http://hl7.org/fhir">
+	<!-- no id -->
+	<code>
+		<extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+			<valueReference>
+				<reference value="MedicinalProductDefinition/{your-product}"/>
+			</valueReference>
+		</extension>
+	</code>
+	<batch>
+		<lotNumber value="33445"/>
+	</batch>
+</Medication>

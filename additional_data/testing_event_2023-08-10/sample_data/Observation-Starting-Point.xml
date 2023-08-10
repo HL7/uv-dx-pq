@@ -1,0 +1,17 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<!-- no id -->
+	<status value="final"/>
+	<code>
+		<coding> 
+			<system value="http://dummy.loinc.org"/>
+			<code value="ph"/>
+			<display value="pH"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Medication/{your-medication-id}"/>
+	</subject>
+	<valueQuantity>
+		<value value="6.91"/>
+	</valueQuantity>
+</Observation>
