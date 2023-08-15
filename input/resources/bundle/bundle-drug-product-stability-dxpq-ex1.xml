@@ -197,7 +197,7 @@
                         <title value="XYZ"/>
                         <!-- Long term -->
                         <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
-                        <definitionCanonical value="urn:uuid:c8eeee01-0c65-4ee5-8fe5-e8b0df191570"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                      </action>
                   </action>
                   <action>
@@ -226,7 +226,7 @@
                         <title value="X"/>
                         <!--<definitionCanonical
                            value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>-->
-                        <definitionCanonical value="urn:uuid:16f99610-548d-48cd-bf0d-d0df1a854a0f"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
                      </action>
                   </action>
                   <action>
@@ -254,7 +254,7 @@
                      <action>
                         <title value="X"/>
                         <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25X-6"/>-->
-                        <definitionCanonical value="urn:uuid:c526f9c8-25ff-4245-96f7-b98781c60674"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
                      </action>
                   </action>
                   <action>
@@ -282,7 +282,7 @@
                      <action>
                         <title value="X"/>
                         <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25X-9"/>-->
-                        <definitionCanonical value="urn:uuid:e23f5690-c663-429d-b1eb-fc405ffcaa34"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
                      </action>
                   </action>
                   <action>
@@ -309,7 +309,9 @@
                      </timingTiming>
                      <action>
                         <title value="XY"/>
-                        <definitionCanonical value="ActivityDefinition/activityLongTerm25XY-12"/>
+                        <!--ActivityDefinition/activityLongTerm25XY-12-->
+                        <definitionCanonical
+                           value="ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b"/>
                      </action>
                   </action>
                   <action>
@@ -336,7 +338,9 @@
                      </timingTiming>
                      <action>
                         <title value="XY"/>
-                        <definitionCanonical value="ActivityDefinition/activityLongTerm25XY-18"/>
+                        <!--ActivityDefinition/activityLongTerm25XY-18-->
+                        <definitionCanonical
+                           value="ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
                      </action>
                   </action>
                   <action>
@@ -363,7 +367,9 @@
                      </timingTiming>
                      <action>
                         <title value="XY"/>
-                        <definitionCanonical value="ActivityDefinition/activityLongTerm25XY-24"/>
+                        <!--ActivityDefinition/activityLongTerm25XY-24-->
+                        <definitionCanonical
+                           value="ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2"/>
                      </action>
                   </action>
                </action>
@@ -395,8 +401,9 @@
                      </timingTiming>
                      <action>
                         <title value="XYZ"/>
+                        <!--ActivityDefinition/activityAccelerated40XYZ-Initial-->
                         <definitionCanonical
-                           value="ActivityDefinition/activityAccelerated40XYZ-Initial"/>
+                           value="ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                      </action>
                   </action>
                   <action>
@@ -423,7 +430,9 @@
                      </timingTiming>
                      <action>
                         <title value="X"/>
-                        <definitionCanonical value="ActivityDefinition/activityAccelerated40X-3"/>
+                        <!--ActivityDefinition/activityAccelerated40X-3-->
+                        <definitionCanonical
+                           value="ActivityDefinition/096e3f32-798e-6792-76ad-4ea783521c50"/>
                      </action>
                   </action>
                   <action>
@@ -450,7 +459,9 @@
                      </timingTiming>
                      <action>
                         <title value="X"/>
-                        <definitionCanonical value="ActivityDefinition/activityAccelerated40X-6"/>
+                        <!--ActivityDefinition/activityAccelerated40X-6-->
+                        <definitionCanonical
+                           value="ActivityDefinition/77f86b13-8193-3df7-8362-ab5e79ba541d"/>
                      </action>
                   </action>
                   <action>
@@ -603,11 +614,14 @@
                />
             </meta>
             <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-3"/>-->
-            <url value="urn:uuid:16f99610-548d-48cd-bf0d-d0df1a854a0f"/>
+            <!--urn:uuid:16f99610-548d-48cd-bf0d-d0df1a854a0f-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!-- longTerm25X -->
          </ActivityDefinition>
@@ -625,11 +639,14 @@
                />
             </meta>
             <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-6"/>-->
-            <url value="urn:uuid:c526f9c8-25ff-4245-96f7-b98781c60674"/>
+            <!--urn:uuid:c526f9c8-25ff-4245-96f7-b98781c60674-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
          </ActivityDefinition>
@@ -647,11 +664,14 @@
                />
             </meta>
             <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-9"/>-->
-            <url value="urn:uuid:e23f5690-c663-429d-b1eb-fc405ffcaa34"/>
+            <!--urn:uuid:e23f5690-c663-429d-b1eb-fc405ffcaa34-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
          </ActivityDefinition>
@@ -662,6 +682,7 @@
       <resource>
          <ActivityDefinition>
             <!--<id value="activityLongTerm25XYZ-Initial"/>-->
+            <!--4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90-->
             <id value="4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <meta>
                <profile
@@ -669,16 +690,22 @@
                />
             </meta>
             <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
-            <url value="urn:uuid:c8eeee01-0c65-4ee5-8fe5-e8b0df191570"/>
+            <!--urn:uuid:c8eeee01-0c65-4ee5-8fe5-e8b0df191570-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <title value="Long-term - 25°C/60% RH - XYZ"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z"/>
+               value="http://example-server.com/fhir/ObservationDefinition/363384c8-0d79-5ff0-5538-4933f99d6409"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -686,21 +713,27 @@
       <fullUrl value="urn:uuid:f19a68b0-4ba1-7288-635e-12783035935b"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityLongTerm25XY-12"/>
+            <!--activityLongTerm25XY-12-->
+            <id value="f19a68b0-4ba1-7288-635e-12783035935b"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-12"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-12-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -708,21 +741,27 @@
       <fullUrl value="urn:uuid:ce2df6ab-5087-435c-35cb-a84572e756a2"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityLongTerm25XY-18"/>
+            <!--activityLongTerm25XY-18-->
+            <id value="ce2df6ab-5087-435c-35cb-a84572e756a2"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-18"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-18-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -730,21 +769,27 @@
       <fullUrl value="urn:uuid:cf2df6ab-5087-435c-35cb-a84572e756a2"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityLongTerm25XY-24"/>
+            <!--activityLongTerm25XY-24-->
+            <id value="cf2df6ab-5087-435c-35cb-a84572e756a2"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-24"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-24-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
+               value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -752,14 +797,17 @@
       <fullUrl value="urn:uuid:b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
       <resource>
          <ObservationDefinition>
-            <id value="longTerm25X"/>
+            <!--longTerm25X-->
+            <id value="b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <id value="observationdefinition-test-method-dxpq-ex1"/>-->
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -778,7 +826,8 @@
                <!--               <reference value="ObservationDefinition/Degradation"/>-->
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+               <!--ObservationDefinition/observationdefinition-simple-dxpq-ex1-->
+               <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -795,7 +844,9 @@
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
             <title value="Description"/>
             <status value="active"/>
             <code>
@@ -810,13 +861,7 @@
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="An orange film-coated tablet, debossed with 175 on one side">
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                        <!--                     <extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                        <valueString value="Note 1"/>
-                     </extension>
-                  </valueString>
+                  <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -833,7 +878,9 @@
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Degradation"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Degradation-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
             <title value="Degradation Products by HPLC (% w/w)"/>
             <status value="active"/>
             <code>
@@ -927,13 +974,16 @@
       <resource>
          <ObservationDefinition>
             <!--id value="Water"/-->
-            <id value="observationdefinition-simple-dxpq-ex1"/>
+            <!--observationdefinition-simple-dxpq-ex1-->
+            <id value="186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Water"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Water-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             <title value="Water Content (% w/w) (Mean)"/>
             <status value="active"/>
             <code>
@@ -961,13 +1011,16 @@
       <fullUrl value="urn:uuid:b62b9524-53af-84ae-1071-2867a2169851"/>
       <resource>
          <ObservationDefinition>
-            <id value="longTerm25Y"/>
+            <!--longTerm25Y-->
+            <id value="b62b9524-53af-84ae-1071-2867a2169851"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
             <title value="Y"/>
             <status value="active"/>
             <code>
@@ -996,7 +1049,9 @@
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Microbiological"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Microbiological-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
             <title value="Microbiological"/>
             <status value="active"/>
             <code>
@@ -1021,13 +1076,16 @@
       <fullUrl value="urn:uuid:363384c8-0d79-5ff0-5538-4933f99d6409"/>
       <resource>
          <ObservationDefinition>
-            <id value="longTerm25Z"/>
+            <!--longTerm25Z-->
+            <id value="363384c8-0d79-5ff0-5538-4933f99d6409"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/363384c8-0d79-5ff0-5538-4933f99d6409"/>
             <title value="Z"/>
             <status value="active"/>
             <code>
@@ -1056,7 +1114,9 @@
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Uniformity"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Uniformity-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
             <title value="Uniformity of dosage"/>
             <status value="active"/>
             <code>
@@ -1099,17 +1159,22 @@
       <fullUrl value="urn:uuid:096e3f32-798e-6792-76ad-4ea783521c50"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityAccelerated40X-3"/>
+            <!--activityAccelerated40X-3-->
+            <id value="096e3f32-798e-6792-76ad-4ea783521c50"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-3"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-3-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/096e3f32-798e-6792-76ad-4ea783521c50"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1117,17 +1182,22 @@
       <fullUrl value="urn:uuid:77f86b13-8193-3df7-8362-ab5e79ba541d"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityAccelerated40X-6"/>
+            <!--activityAccelerated40X-6-->
+            <id value="77f86b13-8193-3df7-8362-ab5e79ba541d"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-6"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-6-->
+            <url
+               value="http://example-server.com/fhir/ActivityDefinition/77f86b13-8193-3df7-8362-ab5e79ba541d"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1135,22 +1205,28 @@
       <fullUrl value="urn:uuid:6b96124b-1a44-0b6b-6783-d6c49360230b"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityAccelerated40XYZ-Initial"/>
+            <!--activityAccelerated40XYZ-Initial-->
+            <id value="6b96124b-1a44-0b6b-6783-d6c49360230b"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
                />
             </meta>
+            <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40XYZ-Initial-->
             <url
-               value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40XYZ-Initial"/>
+               value="http://example-server.com/fhir/ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
             <title value="Accelerated - 40°C/70% RH - XYZ"/>
             <status value="active"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
+               value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y"/>
+               value="http://example-server.com/fhir/ObservationDefinition/58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z-->
             <observationRequirement
-               value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z"/>
+               value="http://example-server.com/fhir/ObservationDefinition/9bc183ee-6017-789b-8a6f-6a5c339f9ae0"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1158,13 +1234,16 @@
       <fullUrl value="urn:uuid:792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
       <resource>
          <ObservationDefinition>
-            <id value="accelerated40X"/>
+            <!--accelerated40X-->
+            <id value="792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -1172,14 +1251,17 @@
             </code>
             <specimen>
                <!--reference value="SpecimenDefinition/specimenDefStoredAt40"/-->
+               <!--SpecimenDefinition/e95109ac-5ef9-1723-3506-2ef2f2e33d87-->
                <reference value="SpecimenDefinition/e95109ac-5ef9-1723-3506-2ef2f2e33d87"/>
             </specimen>
             <hasMember>
+               <!--ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774-->
                <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
                <!--               <reference value="ObservationDefinition/Description"/>-->
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+               <!--ObservationDefinition/observationdefinition-simple-dxpq-ex1-->
+               <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -1189,13 +1271,16 @@
       <fullUrl value="urn:uuid:58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
       <resource>
          <ObservationDefinition>
-            <id value="accelerated40Y"/>
+            <!--accelerated40Y-->
+            <id value="58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
             <title value="Y"/>
             <status value="active"/>
             <code>
@@ -1217,13 +1302,16 @@
       <fullUrl value="urn:uuid:9bc183ee-6017-789b-8a6f-6a5c339f9ae0"/>
       <resource>
          <ObservationDefinition>
-            <id value="accelerated40Z"/>
+            <!--accelerated40Z-->
+            <id value="9bc183ee-6017-789b-8a6f-6a5c339f9ae0"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
                />
             </meta>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/9bc183ee-6017-789b-8a6f-6a5c339f9ae0"/>
             <title value="Z"/>
             <status value="active"/>
             <code>
@@ -1246,7 +1334,8 @@
       <resource>
          <Specimen>
             <!--id value="stabilityInitial-1"/-->
-            <id value="specimen-stability-dxpq-ex1"/>
+            <!--specimen-stability-dxpq-ex1-->
+            <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
@@ -1268,7 +1357,8 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955be"/>
       <resource>
          <Specimen>
-            <id value="stabilityInitial-2"/>
+            <!--stabilityInitial-2-->
+            <id value="b664977d-799d-a1ce-928a-5def2a9955be"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
@@ -1290,7 +1380,8 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928b-5def2a9955be"/>
       <resource>
          <Specimen>
-            <id value="stabilityInitial-3"/>
+            <!--stabilityInitial-3-->
+            <id value="b664977d-799d-a1ce-928b-5def2a9955be"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
@@ -1528,8 +1619,8 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Water"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"
-                     />
+                     <!--ObservationDefinition/observationdefinition-simple-dxpq-ex1-->
+                     <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1551,6 +1642,7 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Microbiological"/>
                   <instantiatesReference>
+                     <!--ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                      <!--               <reference value="ObservationDefinition/Microbiological"/>-->
                   </instantiatesReference>
@@ -1598,10 +1690,12 @@
                <text value="Test Components - Long-term 25C etc - Initial (XYZ)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+               <!--Medication/medication-batch-information-dxpq-ex1-->
+               <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             </subject>
             <specimen>
-               <reference value="Specimen/specimen-stability-dxpq-ex1"/>
+               <!--Specimen/specimen-stability-dxpq-ex1-->
+               <reference value="Specimen/b664977d-799d-a1ce-928a-5def2a9955bd"/>
             </specimen>
             <hasMember>
                <reference value="#LongTerm25C-initial-1-Description"/>
@@ -1736,10 +1830,12 @@
                <text value="Test Components - Long-term 25C etc - Initial (XYZ)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-2"/>
+               <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/8306cfc5-158f-1a53-a683-048b226060d9"/>
             </subject>
             <specimen>
-               <reference value="Specimen/stabilityInitial-2"/>
+               <!--Specimen/stabilityInitial-2-->
+               <reference value="Specimen/b664977d-799d-a1ce-928a-5def2a9955be"/>
             </specimen>
             <hasMember>
                <reference value="#LongTerm25C-initial-2-Description"/>
@@ -1862,10 +1958,12 @@
                <text value="Test Components - Long-term 25C etc - Initial (XYZ)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-3"/>
+               <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/f54d4666-7ae3-4e30-8c5a-6d13838c4f3b"/>
             </subject>
             <specimen>
-               <reference value="Specimen/stabilityInitial-3"/>
+               <!--Specimen/stabilityInitial-3-->
+               <reference value="Specimen/b664977d-799d-a1ce-928b-5def2a9955be"/>
             </specimen>
             <hasMember>
                <reference value="#LongTerm25C-initial-3-Description"/>
@@ -1887,7 +1985,8 @@
       <fullUrl value="urn:uuid:18826818-10c4-972c-618e-01694ff06c78"/>
       <resource>
          <Specimen>
-            <id value="stability18months-1"/>
+            <!--stability18months-1-->
+            <id value="18826818-10c4-972c-618e-01694ff06c78"/>
             <collection>
                <collectedDateTime value="2020-12-01"/>
                <!-- when sample first taken, before the timed periods start -->
@@ -1918,7 +2017,8 @@
       <fullUrl value="urn:uuid:18826818-10c4-972c-618e-01694ff06c88"/>
       <resource>
          <Specimen>
-            <id value="stability18months-2"/>
+            <!--stability18months-2-->
+            <id value="18826818-10c4-972c-618e-01694ff06c88"/>
             <collection>
                <collectedDateTime value="2020-12-02"/>
                <!-- when sample first taken, before the timed periods start -->
@@ -1949,7 +2049,8 @@
       <fullUrl value="urn:uuid:18826818-10c4-972c-618e-01694ff06c89"/>
       <resource>
          <Specimen>
-            <id value="stability18months-3"/>
+            <!--stability18months-3-->
+            <id value="18826818-10c4-972c-618e-01694ff06c89"/>
             <collection>
                <collectedDateTime value="2020-12-03"/>
                <!-- when sample first taken, before the timed periods start -->
@@ -2195,8 +2296,8 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Water"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"
-                     />
+                     <!--ObservationDefinition/observationdefinition-simple-dxpq-ex1-->
+                     <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2256,7 +2357,8 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XY-18"/>
+                  <!--ActivityDefinition/activityLongTerm25XY-18-->
+                  <reference value="ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2264,10 +2366,12 @@
                <text value="Test Components - Long-term 25C etc - 18 months (XY)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+               <!--Medication/medication-batch-information-dxpq-ex1-->
+               <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             </subject>
             <specimen>
-               <reference value="Specimen/stability18months-1"/>
+               <!--Specimen/stability18months-1-->
+               <reference value="Specimen/18826818-10c4-972c-618e-01694ff06c78"/>
             </specimen>
             <hasMember>
                <reference value="#LongTerm25C-18m-1-Description"/>
@@ -2349,7 +2453,8 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XY-18"/>
+                  <!--ActivityDefinition/activityLongTerm25XY-18-->
+                  <reference value="ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2357,10 +2462,12 @@
                <text value="Test Components - Long-term 25C etc - 18 months (XY)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-2"/>
+               <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/8306cfc5-158f-1a53-a683-048b226060d9"/>
             </subject>
             <specimen>
-               <reference value="Specimen/stability18months-2"/>
+               <!--Specimen/stability18months-2-->
+               <reference value="Specimen/18826818-10c4-972c-618e-01694ff06c88"/>
             </specimen>
             <hasMember>
                <reference value="#LongTerm25C-18m-2-Description"/>
@@ -2421,7 +2528,8 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XY-18"/>
+                  <!--ActivityDefinition/activityLongTerm25XY-18-->
+                  <reference value="ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2429,10 +2537,12 @@
                <text value="Test Components - Long-term 25C etc - 18 months (XY)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-3"/>
+               <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/f54d4666-7ae3-4e30-8c5a-6d13838c4f3b"/>
             </subject>
             <specimen>
-               <reference value="Specimen/stability18months-3"/>
+               <!--Specimen/stability18months-3-->
+               <reference value="Specimen/18826818-10c4-972c-618e-01694ff06c89"/>
             </specimen>
             <hasMember>
                <reference value="#LongTerm25C-18m-3-Description"/>
@@ -2448,7 +2558,8 @@
       <fullUrl value="urn:uuid:8a7771db-5cc0-33f8-966a-b2f792bf5785"/>
       <resource>
          <Specimen>
-            <id value="stabilityInitialAcc-3"/>
+            <!--stabilityInitialAcc-3-->
+            <id value="8a7771db-5cc0-33f8-966a-b2f792bf5785"/>
             <collection>
                <collectedDateTime value="2020-12-01"/>
                <!-- when sample first taken, before the timed periods start -->
@@ -3031,8 +3142,8 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Water"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"
-                     />
+                     <!--ObservationDefinition/observationdefinition-simple-dxpq-ex1-->
+                     <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -3094,7 +3205,8 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityAccelerated40X-3"/>
+                  <!--ActivityDefinition/activityAccelerated40X-3-->
+                  <reference value="ActivityDefinition/096e3f32-798e-6792-76ad-4ea783521c50"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -3102,10 +3214,12 @@
                <text value="Test Components - Accelerated 40C etc - 3 Months (X)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+               <!--Medication/medication-batch-information-dxpq-ex1-->
+               <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             </subject>
             <specimen>
-               <reference value="Specimen/stabilityInitialAcc-3"/>
+               <!--Specimen/stabilityInitialAcc-3-->
+               <reference value="Specimen/8a7771db-5cc0-33f8-966a-b2f792bf5785"/>
             </specimen>
             <hasMember>
                <reference value="#Accelerated40C-3-1-Description"/>
@@ -3143,7 +3257,8 @@
       <resource>
          <Medication>
             <!-- <id value="medication-actual-batch"/> -->
-            <id value="medication-batch-information-dxpq-ex1"/>
+            <!--medication-batch-information-dxpq-ex1-->
+            <id value="7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"
@@ -3172,7 +3287,8 @@
                      url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
-                        <reference value="Substance/substance-dxpq-ex1"/>
+                        <!--Substance/substance-dxpq-ex1-->
+                        <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
                      </valueReference>
                   </extension>
                   <extension url="manufacturingDate">
@@ -3189,7 +3305,8 @@
                      url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
-                        <reference value="Organization/packaging"/>
+                        <!--Organization/packaging-->
+                        <reference value="Organization/2dd49242-4bf1-9ec1-5f1e-22ba8d4d5ccc"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
@@ -3213,13 +3330,6 @@
                      <!-- #159 -->
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
@@ -3232,7 +3342,8 @@
                   <extension url="assignedManufacturer">
                      <valueReference>
                         <!-- #158 -->
-                        <reference value="Organization/manufacturer"/>
+                        <!--Organization/manufacturer-->
+                        <reference value="Organization/033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -3257,7 +3368,8 @@
       <fullUrl value="urn:uuid:8306cfc5-158f-1a53-a683-048b226060d9"/>
       <resource>
          <Medication>
-            <id value="medication-actual-batch-2"/>
+            <!--medication-actual-batch-2-->
+            <id value="8306cfc5-158f-1a53-a683-048b226060d9"/>
             <code>
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
@@ -3279,7 +3391,8 @@
                      url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
-                        <reference value="Substance/actual-batch-substance-2"/>
+                        <!--Substance/actual-batch-substance-2-->
+                        <reference value="Substance/cb31d747-2338-88d5-342c-8e9c097e4dad"/>
                      </valueReference>
                   </extension>
                   <extension url="manufacturingDate">
@@ -3294,7 +3407,8 @@
                      url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
-                        <reference value="Organization/packaging"/>
+                        <!--Organization/packaging-->
+                        <reference value="Organization/2dd49242-4bf1-9ec1-5f1e-22ba8d4d5ccc"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
@@ -3313,13 +3427,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
@@ -3331,7 +3438,8 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference>
-                        <reference value="Organization/manufacturer"/>
+                        <!--Organization/manufacturer-->
+                        <reference value="Organization/033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -3352,7 +3460,8 @@
       <fullUrl value="urn:uuid:f54d4666-7ae3-4e30-8c5a-6d13838c4f3b"/>
       <resource>
          <Medication>
-            <id value="medication-actual-batch-3"/>
+            <!--medication-actual-batch-3-->
+            <id value="f54d4666-7ae3-4e30-8c5a-6d13838c4f3b"/>
             <code>
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
@@ -3374,7 +3483,8 @@
                      url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                      <valueReference>
-                        <reference value="Substance/actual-batch-substance-3"/>
+                        <!--Substance/actual-batch-substance-3-->
+                        <reference value="Substance/1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
                      </valueReference>
                   </extension>
                   <extension url="manufacturingDate">
@@ -3389,7 +3499,8 @@
                      url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
-                        <reference value="Organization/packaging"/>
+                        <!--Organization/packaging-->
+                        <reference value="Organization/2dd49242-4bf1-9ec1-5f1e-22ba8d4d5ccc"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
@@ -3408,13 +3519,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
@@ -3426,7 +3530,8 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference>
-                        <reference value="Organization/manufacturer"/>
+                        <!--Organization/manufacturer-->
+                        <reference value="Organization/033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -3447,7 +3552,8 @@
       <fullUrl value="urn:uuid:033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
       <resource>
          <Organization>
-            <id value="manufacturer"/>
+            <!--manufacturer-->
+            <id value="033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
             <identifier>
                <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -3474,7 +3580,8 @@
       <fullUrl value="urn:uuid:2dd49242-4bf1-9ec1-5f1e-22ba8d4d5ccc"/>
       <resource>
          <Organization>
-            <id value="packaging"/>
+            <!--packaging-->
+            <id value="2dd49242-4bf1-9ec1-5f1e-22ba8d4d5ccc"/>
             <name value="MySite"/>
          </Organization>
       </resource>
@@ -3484,6 +3591,7 @@
       <fullUrl value="urn:uuid:e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
       <resource>
          <Organization>
+            <!--e3d2bc19-2f10-2b4d-1741-e4135fe612a9-->
             <id value="e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             <!--            <id value="tester"/>-->
             <identifier>
@@ -3562,7 +3670,8 @@
       <resource>
          <Ingredient>
             <!--id value="productIngredient"/-->
-            <id value="ingredient-dxpq-ex1"/>
+            <!--ingredient-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
             </meta>
@@ -3582,9 +3691,8 @@
             <substance>
                <code>
                   <reference>
-                     <reference
-                        value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"
-                     />
+                     <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                     <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                   </reference>
                </code>
             </substance>
@@ -3595,14 +3703,16 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substancedefinition-component-substance-dxpq-ex1"/>
+            <!--substancedefinition-component-substance-dxpq-ex1-->
+            <id value="57a9af63-315d-1585-a261-0e337b289390"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
                />
             </meta>
             <manufacturer>
-               <reference value="Organization/organization-dxpq-ex1"/>
+               <!--Organization/organization-dxpq-ex1-->
+               <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -3616,7 +3726,8 @@
       <resource>
          <Organization>
             <!--id value="substance-manufacturer"/-->
-            <id value="organization-dxpq-ex1"/>
+            <!--organization-dxpq-ex1-->
+            <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
             </meta>
@@ -3644,7 +3755,8 @@
       <resource>
          <Substance>
             <!--<id value="actual-batch-substance"/>-->
-            <id value="substance-dxpq-ex1"/>
+            <!--substance-dxpq-ex1-->
+            <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
             </meta>
@@ -3682,13 +3794,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension
-                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
@@ -3699,7 +3804,8 @@
                <extension url="assignedManufacturer">
                   <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-dxpq-ex1"/>
+                     <!--Organization/organization-dxpq-ex1-->
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -3710,8 +3816,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference
-                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
@@ -3721,7 +3827,8 @@
       <fullUrl value="urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-2"/>
+            <!--actual-batch-substance-2-->
+            <id value="cb31d747-2338-88d5-342c-8e9c097e4dad"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
@@ -3756,13 +3863,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension
-                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
@@ -3773,7 +3873,8 @@
                <extension url="assignedManufacturer">
                   <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-dxpq-ex1"/>
+                     <!--Organization/organization-dxpq-ex1-->
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -3783,8 +3884,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference
-                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
@@ -3794,7 +3895,8 @@
       <fullUrl value="urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-3"/>
+            <!--actual-batch-substance-3-->
+            <id value="1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
@@ -3829,13 +3931,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension
-                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
@@ -3846,7 +3941,8 @@
                <extension url="assignedManufacturer">
                   <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-dxpq-ex1"/>
+                     <!--Organization/organization-dxpq-ex1-->
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -3857,8 +3953,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference
-                     value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                  <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
