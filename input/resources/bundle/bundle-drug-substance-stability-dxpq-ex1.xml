@@ -1044,7 +1044,7 @@
             </hasMember>
             <hasMember>
                               <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
-<!--               <reference value="ObservationDefinition/Assay"/>-->-->
+<!--               <reference value="ObservationDefinition/Assay"/>-->
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -3179,12 +3179,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
@@ -3261,12 +3255,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
@@ -3335,12 +3323,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
