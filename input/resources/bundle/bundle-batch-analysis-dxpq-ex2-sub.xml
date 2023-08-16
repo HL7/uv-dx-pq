@@ -95,7 +95,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Description"/>
-            <name value="Description"/>
+            <title value="Description"/>
             <status value="active"/>
             <code>
                <coding>
@@ -123,7 +123,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Identification"/>
-            <name value="Identification"/>
+            <title value="Identification"/>
             <status value="active"/>
             <code>
                <coding>
@@ -151,7 +151,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Assay"/>
-            <name value="Assay"/>
+            <title value="Assay"/>
             <status value="active"/>
             <code>
                <coding>
@@ -190,8 +190,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Impurities"/>
-            <name value="Drug_Substance_Related_Organic_impurities"/>
-<!--            <name value="Drug Substance Related Organic impurities"/>-->
+            <title value="Drug Substance Related Organic impurities"/>
             <status value="active"/>
             <code>
                <coding>
@@ -248,11 +247,6 @@
                         <!--                     <extension url="http://accumulus.org/fhir/extension/testComment">-->
                         <valueString
                            value="Impurity 3 was included in the release specification throughout clinical development, and no longer forms a part of a commercial release specification; see Section S.4.5 Justification of Specification and Section S.2.5 Validation (PPQ) for additional data">
-                           <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                           <!--<extension
-                              url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                              <valueString value="[2]"/>
-                           </extension>
                         </valueString>
                      </extension>
                   </text>
@@ -304,7 +298,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Mutagenic"/>
-            <name value="Mutagenic_impurities"/>
+            <title value="Mutagenic impurities"/>
 <!--            <name value="Mutagenic impurities"/>-->
             <status value="active"/>
             <code>
@@ -340,7 +334,7 @@
                      <value value="50"/>
                      <unit value="ppm"/>
                      <system value="http://dummy.unitsofmeasure.org"/>
-                     <code value="ppm"/>
+                     <code value="[ppm]"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -362,7 +356,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Enantiomeric"/>
-            <name value="Enantiomeric_purity"/>
+            <title value="Enantiomeric purity"/>
 <!--            <name value="Enantiomeric purity"/>-->
             <status value="active"/>
             <code>
@@ -394,7 +388,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Solvents"/>
-            <name value="Residual_solvents"/>
+            <title value="Residual solvents"/>
 <!--            <name value="Residual solvents"/>-->
             <status value="active"/>
             <code>
@@ -462,7 +456,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Water"/>
-            <name value="Water_Content"/>
+            <title value="Water Content"/>
 <!--            <name value="Water Content"/>-->
             <status value="active"/>
             <code>
@@ -492,20 +486,16 @@
       <resource>
          <ObservationDefinition>
             <id value="Particles"/>
-            <name value="Particle_size_distribution">
+            <title value="Particle size distribution">
                <!--<name value="Particle size distribution">-->
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/testComment">-->
                   <valueString
                      value="Particle Size Distribution was included in the release specification throughout clinical development, and no longer forms a part of the commercial release specification; See Section S.4.5 Justification of Specification for data and rationale.">
-                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                     <!--<extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                        <valueString value="[4]"/>
-                     </extension>
                   </valueString>
                </extension>
-            </name>
+            </title>
             <status value="active"/>
             <code>
                <coding>
@@ -627,12 +617,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
@@ -704,12 +688,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
@@ -780,12 +758,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-<!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
@@ -1255,10 +1227,6 @@
             <note>
                <text
                   value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                  <!--<extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                     <valueString value="[1]"/>
-                  </extension>
                </text>
             </note>
          </Observation>
@@ -1293,10 +1261,6 @@
             <note>
                <text
                   value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                  <!--<extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                     <valueString value="[1]"/>
-                  </extension>
                </text>
             </note>
          </Observation>
@@ -1331,10 +1295,6 @@
             <note>
                <text
                   value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                  <!--<extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                     <valueString value="[1]"/>
-                  </extension>
                </text>
             </note>
          </Observation>
@@ -1364,7 +1324,7 @@
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1405,7 +1365,7 @@
                <value value="0.4"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1446,7 +1406,7 @@
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1487,7 +1447,7 @@
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1528,7 +1488,7 @@
                <value value="0.4"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1569,7 +1529,7 @@
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1610,7 +1570,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1651,7 +1611,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1692,7 +1652,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1733,7 +1693,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1774,7 +1734,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1815,7 +1775,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1857,7 +1817,7 @@
                <value value="0.02"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1898,7 +1858,7 @@
                <value value="0.02"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1939,7 +1899,7 @@
                <value value="0.02"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1980,7 +1940,7 @@
                <value value="20"/>
                <unit value="ppm"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="ppm"/>
+               <code value="[ppm]"/>
             </valueQuantity>
             <component>
                <code>
@@ -2084,10 +2044,6 @@
             <note>
                <text
                   value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                  <!--<extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                     <valueString value="[1]"/>
-                  </extension>
                </text>
             </note>
          </Observation>
@@ -2122,10 +2078,6 @@
             <note>
                <text
                   value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                  <!--<extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                     <valueString value="[1]"/>
-                  </extension>
                </text>
             </note>
          </Observation>
@@ -2160,10 +2112,6 @@
             <note>
                <text
                   value="Batch 3 did not originally meet specification criteria, and was subject to reprocessing and repurification. The updated result is presented in this table. The lot was not distributed for human use.">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                  <!--<extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                     <valueString value="[3]"/>
-                  </extension>
                </text>
             </note>
          </Observation>
@@ -2192,7 +2140,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2232,7 +2180,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2272,7 +2220,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2312,7 +2260,7 @@
                <value value="1.4"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2352,7 +2300,7 @@
                <value value="1.5"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2392,7 +2340,7 @@
                <value value="1.2"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2433,7 +2381,7 @@
                <value value="0.8"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -2462,7 +2410,7 @@
                <value value="0.8"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -2491,7 +2439,7 @@
                <value value="0.8"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -2519,7 +2467,7 @@
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2559,7 +2507,7 @@
                <value value="0.4"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2599,7 +2547,7 @@
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2639,7 +2587,7 @@
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2679,7 +2627,7 @@
                <value value="0.4"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2719,7 +2667,7 @@
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2759,7 +2707,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2799,7 +2747,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2839,7 +2787,7 @@
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
