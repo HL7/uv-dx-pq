@@ -18,11 +18,6 @@
       <resource>
          <PlanDefinition>
             <id value="validationProtocol"/>
-            <extension
-               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tabulate-batches-in-rows-dxpq">
-               <!--            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows">-->
-               <valueBoolean value="true"/>
-            </extension>
             <title value="DP PROCESS VALIDATION"/>
             <type>
                <coding>
@@ -1399,13 +1394,6 @@
                      <!-- #159 -->
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
@@ -1530,13 +1518,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
@@ -1659,13 +1640,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
@@ -3913,13 +3887,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension
-                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
@@ -3994,13 +3961,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension
-                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
@@ -4067,13 +4027,6 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension
-                           url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                           <!--                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                           <valueString
-                              value="Comment: This has a value set defined in PQ/CMC but no code system"
-                           />
-                        </extension>
                         <system
                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
