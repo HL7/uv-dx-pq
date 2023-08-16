@@ -31,7 +31,7 @@
             <!-- new "tabular" style -->
             <action>
                <!-- this is then entire thing -->
-               <title value="Batch Results for Drug Product"/>
+               <title value="Batch Specification for Drug Product"/>
                <code>
                   <text value="Overall set of actions"/>
                </code>
@@ -170,7 +170,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Description"/>
-            <name value="Description"/>
+            <title value="Description"/>
             <status value="active"/>
             <code>
                <coding>
@@ -198,7 +198,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DescriptionEnd"/>
-            <name value="Description"/>
+            <title value="Description"/>
             <status value="active"/>
             <code>
                <coding>
@@ -223,7 +223,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Identification"/>
-            <name value="Identification"/>
+            <title value="Identification"/>
             <status value="active"/>
             <code>
                <coding>
@@ -253,7 +253,7 @@
       <resource>
          <ObservationDefinition>
             <id value="IdentificationEnd"/>
-            <name value="Identification"/>
+            <title value="Identification"/>
             <status value="active"/>
             <code>
                <coding>
@@ -278,7 +278,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Assay"/>
-            <name value="Assay"/>
+            <title value="Assay"/>
             <status value="active"/>
             <code>
                <coding>
@@ -306,7 +306,7 @@
       <resource>
          <ObservationDefinition>
             <id value="AssayEnd"/>
-            <name value="Assay"/>
+            <title value="Assay"/>
             <status value="active"/>
             <code>
                <coding>
@@ -331,7 +331,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Degradation"/>
-            <name value="Degradation_Products"/>
+            <title value="Degradation Products"/>
             <!--            <name value="Degradation Products"/>-->
             <status value="active"/>
             <code>
@@ -367,6 +367,8 @@
                   <high>
                      <value value="0.2"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -378,6 +380,8 @@
                   <high>
                      <value value="0.3"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -389,6 +393,8 @@
                   <high>
                      <value value="0.3"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -400,6 +406,8 @@
                   <high>
                      <value value="0.2"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -411,6 +419,8 @@
                   <high>
                      <value value="1.4"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -432,7 +442,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DegradationEnd"/>
-            <name value="Degradation_Products"/>
+            <title value="Degradation Products"/>
             <!--            <name value="Degradation Products"/>-->
             <status value="active"/>
             <code>
@@ -465,6 +475,8 @@
                   <high>
                      <value value="0.8"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -476,6 +488,8 @@
                   <high>
                      <value value="0.4"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -487,6 +501,8 @@
                   <high>
                      <value value="0.4"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -498,6 +514,8 @@
                   <high>
                      <value value="2.3"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -509,6 +527,8 @@
                   <high>
                      <value value="2.3"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -530,7 +550,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Dissolution"/>
-            <name value="Dissolution"/>
+            <title value="Dissolution"/>
             <status value="active"/>
             <code>
                <coding>
@@ -559,7 +579,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DissolutionQ80"/>
-            <name value="Dissolution_(Q)"/>
+            <title value="Dissolution (Q)"/>
             <!--            <name value="Dissolution (Q)"/>-->
             <status value="active"/>
             <code>
@@ -590,7 +610,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DissolutionEnd"/>
-            <name value="Dissolution"/>
+            <title value="Dissolution"/>
             <status value="active"/>
             <code>
                <coding>
@@ -618,7 +638,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Water"/>
-            <name value="Water_Content"/>
+            <title value="Water Content"/>
             <!--            <name value="Water Content"/>-->
             <status value="active"/>
             <code>
@@ -648,7 +668,7 @@
       <resource>
          <ObservationDefinition>
             <id value="WaterEnd"/>
-            <name value="Water_Content"/>
+            <title value="Water Content"/>
             <!--            <name value="Water Content"/>-->
             <status value="active"/>
             <code>
@@ -667,6 +687,8 @@
                   <high>
                      <value value="2.0"/>
                      <unit value="% w/w"/>
+                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <code value="%{ w/w}"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -678,7 +700,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Microbiological"/>
-            <name value="Microbiological"/>
+            <title value="Microbiological"/>
             <status value="active"/>
             <code>
                <coding>
@@ -706,7 +728,7 @@
       <resource>
          <ObservationDefinition>
             <id value="MicrobiologicalEnd"/>
-            <name value="Microbiological"/>
+            <title value="Microbiological"/>
             <status value="active"/>
             <code>
                <coding>
@@ -734,7 +756,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Uniformity"/>
-            <name value="Uniformity_of_dosage"/>
+            <title value="Uniformity of dosage"/>
             <!--            <name value="Uniformity of dosage"/>-->
             <status value="active"/>
             <code>
@@ -764,7 +786,7 @@
       <resource>
          <ObservationDefinition>
             <id value="UniformityEnd"/>
-            <name value="Uniformity_of_dosage"/>
+            <title value="Uniformity of dosage"/>
             <!--            <name value="Uniformity of dosage"/>-->
             <status value="active"/>
             <code>
@@ -863,13 +885,6 @@
                      <!-- #159 -->
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
@@ -964,13 +979,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
@@ -1058,13 +1066,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension
-                              url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-instance-comment-dxpq">
-                              <!--                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-->
-                              <valueString
-                                 value="Comment: This has a value set defined in PQ/CMC but no code system"
-                              />
-                           </extension>
                            <system
                               value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C185328"/>
@@ -1533,7 +1534,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1576,7 +1577,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1619,7 +1620,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1662,7 +1663,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1705,7 +1706,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1748,7 +1749,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1791,7 +1792,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1834,7 +1835,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1877,7 +1878,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1920,7 +1921,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -1963,7 +1964,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2006,7 +2007,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2049,7 +2050,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2092,7 +2093,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2135,7 +2136,7 @@
                <unit value="% w/w"/>
 
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
             <component>
                <code>
@@ -2495,7 +2496,7 @@
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -2524,7 +2525,7 @@
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -2553,7 +2554,7 @@
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="% {w/w}"/>
+               <code value="%{ w/w}"/>
             </valueQuantity>
          </Observation>
       </resource>
