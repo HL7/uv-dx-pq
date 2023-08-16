@@ -420,7 +420,7 @@
         <fullUrl value="https://www.example.org/ObservationDefinition/Particles"/>
         <resource>
             <ObservationDefinition>
-                <id value="ParticleS"/>
+                <id value="Particles"/>
                 <title value="Particle size distribution"/>
                 <status value="active"/>
                 <code>

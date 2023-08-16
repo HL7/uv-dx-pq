@@ -20,10 +20,6 @@
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
             </meta>
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tabulate-batch-impurities-dxpq">
-<!--            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchImpurities">-->
-               <valueBoolean value="true"/>
-            </extension>
             <identifier>
                <system value="https://eudract.europa.eu/example/identifier"/>
                <value value="ABC1234"/>
