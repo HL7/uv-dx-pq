@@ -693,12 +693,13 @@
                value="http://example-server.com/fhir/ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
             <title value="Long-term - 30°C/65% RH - XY"/>
             <status value="active"/>
-            <!--ObservationDefinition/longTerm30X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
             <observationRequirement
-               value="ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
-            <!--ObservationDefinition/longTerm30Y-->
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30Y-->
             <observationRequirement
-               value="ObservationDefinition/31abea79-81da-17f8-9d8c-94e9bb75876e"/>
+               value="http://example-server.com/fhir/ObservationDefinition/31abea79-81da-17f8-9d8c-94e9bb75876e"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -713,9 +714,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/480a61f8-14b3-233e-8e5f-7f0db9696a1e"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/longTerm30X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
             <observationRequirement
-               value="ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -730,9 +732,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/bee486c4-6ab5-6293-4114-d4be24f303d3"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/longTerm30X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
             <observationRequirement
-               value="ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -747,9 +750,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/99893d3c-520c-8d7b-6d73-f46b1a662201"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/longTerm30X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
             <observationRequirement
-               value="ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -764,9 +768,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/b3254b8e-6fc3-88d3-7d38-0afcf13c4f67"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/longTerm30X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
             <observationRequirement
-               value="ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -781,9 +786,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/longTerm30X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
             <observationRequirement
-               value="ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -798,9 +804,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/d6f7de9d-57a5-6a2c-1c2f-0d65718860f2"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/longTerm30X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
             <observationRequirement
-               value="ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -815,9 +822,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/75073965-82eb-407d-34cf-3a7767a38149"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/longTerm30X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
             <observationRequirement
-               value="ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -839,6 +847,9 @@
          <ObservationDefinition>
             <!--longTerm30X-->
             <id value="18762cff-9e29-6e71-1184-e9202fee8cba"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -870,6 +881,9 @@
          <ObservationDefinition>
             <!--Description-->
             <id value="559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
             <title value="Description"/>
             <status value="active"/>
             <code>
@@ -895,6 +909,9 @@
          <ObservationDefinition>
             <!--Assay-->
             <id value="7943795a-2abe-666f-545f-133e23b97119"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
             <title value="Assay (% w/w) (Mean)"/>
             <status value="active"/>
             <code>
@@ -930,6 +947,9 @@
          <ObservationDefinition>
             <!--Impurities-->
             <id value="73d9d304-a0b8-31b6-1165-346563b9305e"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Impurities-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
             <title value="Drug-related Impurities Content by LC (% w/w)"/>
             <status value="active"/>
             <code>
@@ -1011,6 +1031,9 @@
          <ObservationDefinition>
             <!--longTerm30Y-->
             <id value="31abea79-81da-17f8-9d8c-94e9bb75876e"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30Y-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/31abea79-81da-17f8-9d8c-94e9bb75876e"/>
             <title value="Y"/>
             <status value="active"/>
             <code>
@@ -1034,6 +1057,9 @@
          <ObservationDefinition>
             <!--Identification-->
             <id value="6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Identification-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
             <title value="Identification"/>
             <status value="active"/>
             <code>
@@ -1081,12 +1107,13 @@
                value="http://example-server.com/fhir/ActivityDefinition/1b43a536-3c29-3427-0b93-e35866ef8495"/>
             <title value="Accelerated - 40°C/70% RH - XY"/>
             <status value="active"/>
-            <!--ObservationDefinition/accelerated40X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
             <observationRequirement
-               value="ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
-            <!--ObservationDefinition/accelerated40Y-->
+               value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y-->
             <observationRequirement
-               value="ObservationDefinition/accb8802-4223-61e2-8c79-2282e22a2bb6"/>
+               value="http://example-server.com/fhir/ObservationDefinition/accb8802-4223-61e2-8c79-2282e22a2bb6"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1101,9 +1128,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/accelerated40X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
             <observationRequirement
-               value="ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
+               value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1118,9 +1146,10 @@
                value="http://example-server.com/fhir/ActivityDefinition/cf2f00df-971f-0bab-8768-4251b1ad0817"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/accelerated40X-->
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
             <observationRequirement
-               value="ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
+               value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"
+            />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1130,6 +1159,9 @@
          <ObservationDefinition>
             <!--accelerated40X-->
             <id value="35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -1157,6 +1189,9 @@
          <ObservationDefinition>
             <!--accelerated40Y-->
             <id value="accb8802-4223-61e2-8c79-2282e22a2bb6"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y-->
+            <url
+               value="http://example-server.com/fhir/ObservationDefinition/accb8802-4223-61e2-8c79-2282e22a2bb6"/>
             <title value="Y"/>
             <status value="active"/>
             <code>
