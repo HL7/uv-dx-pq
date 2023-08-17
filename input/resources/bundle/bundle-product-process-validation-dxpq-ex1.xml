@@ -884,13 +884,13 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="WWWH"/>
-                  <display value="Water Content Homogeneity "/>
+                  <display value="Water Content Homogeneity"/>
                </coding>
                <text value="Moisture (%)"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueDisplay">
-                  <valueString value=" ± 1.4 % (w/w)"/>
+                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq">
+                  <valueString value="± 1.4 % (w/w)"/>
                </extension>
                <range>
                   <low>
@@ -964,13 +964,13 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="ASSH"/>
-                  <display value="Assay Content Homogeneity "/>
+                        <display value="Assay Content Homogeneity"/>
                </coding>
                <text value="Assay by HPLC (% Main Peak)"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueDisplay">
-                  <valueString value=" ± 2.3%"/>
+                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq">
+                  <valueString value="± 2.3%"/>
                </extension>
                <range>
                   <low>
@@ -1340,7 +1340,7 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueDisplay">
+                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq"> 
                   <valueString value="± 2% target (%)"/>
                </extension>
                <range>
@@ -1519,7 +1519,7 @@
                <text value="Assay by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueDisplay">
+                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq"> 
                   <valueString value="95% to 105% of label claim"/>
                </extension>
                <range>
