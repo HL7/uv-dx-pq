@@ -50,13 +50,31 @@
       <mustSupport value="true"/>
     </element>
 
-    <element id="Bundle.entry:Batch-Analysis-Plan">
+    <element id="Bundle.entry:Plans">
       <path value="Bundle.entry"/>
-      <sliceName value="Batch-Analysis-Plan"/>
+      <sliceName value="Plans"/>
     </element>
     <!-- <element id="Bundle.entry:Batch-Analysis-Plan.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
     </element> -->
+    <element id="Bundle.entry:Plans.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="PlanDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+        <profile
+          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+      </type>
+    </element>
+    
+<!--    <element id="Bundle.entry:Batch-Analysis-Plan">
+      <path value="Bundle.entry"/>
+      <sliceName value="Batch-Analysis-Plan"/>
+    </element>
+    <!-\- <element id="Bundle.entry:Batch-Analysis-Plan.fullUrl">
+      <path value="Bundle.entry.fullUrl"/>
+    </element> -\->
     <element id="Bundle.entry:Batch-Analysis-Plan.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -64,7 +82,7 @@
         <profile
           value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
       </type>
-    </element>
+    </element>-->
 
     <element id="Bundle.entry:Tests">
       <path value="Bundle.entry"/>
@@ -200,13 +218,13 @@
       </type>
     </element>
 
-    <element id="Bundle.entry:Manufacturing-Process">
+<!--    <element id="Bundle.entry:Manufacturing-Process">
       <path value="Bundle.entry"/>
       <sliceName value="Manufacturing-Process"/>
     </element>
-    <!-- <element id="Bundle.entry:Manufacturing-Process.fullUrl">
+    <!-\- <element id="Bundle.entry:Manufacturing-Process.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element> -->
+    </element> -\->
     <element id="Bundle.entry:Manufacturing-Process.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -214,7 +232,7 @@
         <profile
           value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
       </type>
-    </element>
+    </element>-->
 
   </differential>
 </StructureDefinition>
