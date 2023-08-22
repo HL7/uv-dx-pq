@@ -23,6 +23,14 @@
                <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
             </meta>
             <title value="P.5.4 BATCH ANALYSIS"/>
+<!--            Added type (8/22/2023)-->
+            <type>
+               <coding>
+                  <system value="http://example.org/fhir/code/planType"/>
+                  <code value="1244577"/>
+                  <display value="Specification Protocol"/>
+               </coding>
+            </type>
             <status value="active"/>
             <subjectReference>
                <reference value="MedicinalProductDefinition/product"/>

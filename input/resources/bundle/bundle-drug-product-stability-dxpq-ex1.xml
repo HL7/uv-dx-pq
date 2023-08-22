@@ -155,6 +155,14 @@
                />
             </meta>
             <title value="Stability Monitoring Program"/>
+            <!--            Added type (8/22/2023)-->
+            <type>
+               <coding>
+                  <system value="http://example.org/fhir/code/planType"/>
+                  <code value="1244588"/>
+                  <display value="Stability Study Protocol"/>
+               </coding>
+            </type>
             <status value="active"/>
             <subjectReference>
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>

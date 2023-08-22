@@ -111,6 +111,14 @@
             <!--stabilityStudyProtocol-->
             <id value="c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
             <title value="Stability Monitoring Program"/>
+            <!--            Added type (8/22/2023)-->
+            <type>
+               <coding>
+                  <system value="http://example.org/fhir/code/planType"/>
+                  <code value="1244588"/>
+                  <display value="Stability Study Protocol"/>
+               </coding>
+            </type>
             <status value="active"/>
             <subjectReference>
                <!--SubstanceDefinition/substance1-->
