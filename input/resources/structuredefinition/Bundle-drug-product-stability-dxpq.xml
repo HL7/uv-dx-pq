@@ -204,13 +204,13 @@
       </type>
     </element>
   
-    <element id="Bundle.entry:actual-batch-substance">
+<!--    <element id="Bundle.entry:actual-batch-substance">
       <path value="Bundle.entry"/>
       <sliceName value="actual-batch-substance"/>
     </element>
-    <!-- <element id="Bundle.entry:actual-batch-substance.fullUrl">
+    <!-\- <element id="Bundle.entry:actual-batch-substance.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element> -->
+    </element> -\->
     <element id="Bundle.entry:actual-batch-substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -218,7 +218,7 @@
         <profile
           value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
       </type>
-    </element>  
+    </element> --> 
     
     <element id="Bundle.entry:StudyResultsReport">
       <path value="Bundle.entry"/>
