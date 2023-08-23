@@ -124,7 +124,7 @@
             <name value="Additional SpecimenDefinition Examples"/>
         </grouping>
         <grouping id="examples3">
-            <name value="Additional YY Examples"/>
+            <name value="Additional SubstanceDefinition Examples"/>
         </grouping>
         <grouping id="examples4">
             <name value="Additional ZZ Examples"/>
@@ -1466,8 +1466,33 @@
             <groupingId value="examples2"/>
         </resource>
 
-        <!-- Additional YY Examples (examples3)-->
-
+        <!-- Additional SubstanceDefinition Examples (examples3)-->
+        
+        <resource>
+            <reference>
+                <reference
+                    value="SubstanceDefinition/StelbatololAqueousSolution"/>
+            </reference>
+            <name value="StelbatololAqueousSolution"/>
+            <description value="Stelbatolol Aqueous Solution"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+            <groupingId value="examples3"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference
+                    value="SubstanceDefinition/StelbatololGranules"/>
+            </reference>
+            <name value="StelbatololGranules"/>
+            <description value="Stelbatolol Granules"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+            <groupingId value="examples3"/>
+        </resource>
         <!--Additional ZZ Examples (examples4)-->
 
 
