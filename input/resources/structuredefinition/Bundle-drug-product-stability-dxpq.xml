@@ -129,13 +129,24 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Stability-Test-Def">
+    <element id="Bundle.entry:Test-Definitions">
+      <path value="Bundle.entry"/>
+      <sliceName value="Test-Definitions"/>
+    </element>
+    <element id="Bundle.entry:Test-Definitions.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="ObservationDefinition"/>
+      </type>
+    </element>
+    
+<!--    <element id="Bundle.entry:Stability-Test-Def">
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Test-Def"/>
     </element>
-    <!-- <element id="Bundle.entry:Stability-Test-Def.fullUrl">
+    <!-\- <element id="Bundle.entry:Stability-Test-Def.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element> -->
+    </element> -\->
     <element id="Bundle.entry:Stability-Test-Def.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -143,15 +154,15 @@
         <profile
           value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
       </type>
-    </element>
+    </element>-->
  
-    <element id="Bundle.entry:Acceptance-criteria">
+<!--    <element id="Bundle.entry:Acceptance-criteria">
       <path value="Bundle.entry"/>
       <sliceName value="Acceptance-criteria"/>
     </element>
-    <!-- <element id="Bundle.entry:Acceptance-criteria.fullUrl">
+    <!-\- <element id="Bundle.entry:Acceptance-criteria.fullUrl">
       <path value="Bundle.entry.fullUrl"/>
-    </element> -->
+    </element> -\->
     <element id="Bundle.entry:Acceptance-criteria.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -159,7 +170,7 @@
         <profile
           value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
       </type>
-    </element>
+    </elemen-->t>
  
     <element id="Bundle.entry:Stability-Test-Result">
       <path value="Bundle.entry"/>
