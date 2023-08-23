@@ -280,6 +280,7 @@
                   <typeReference>
                      <!-- this is new in R5 and is not in R4B -->
                      <reference value="DeviceDefinition/mixer"/>
+                     <display value="Mixer"/>
                   </typeReference>
                   <role>
                      <coding>

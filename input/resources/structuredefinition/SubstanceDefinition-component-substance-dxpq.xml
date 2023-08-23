@@ -31,8 +31,8 @@
     
     <element id="SubstanceDefinition.manufacturer">
       <path value="SubstanceDefinition.manufacturer"/>
-      <min value="1"/>
-      <max value="1"/>
+<!--      <min value="1"/>
+      <max value="1"/>-->
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
