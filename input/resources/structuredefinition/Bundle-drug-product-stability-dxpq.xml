@@ -156,7 +156,7 @@
       </type>
     </element>-->
  
-<!--    <element id="Bundle.entry:Acceptance-criteria">
+   <!-- <element id="Bundle.entry:Acceptance-criteria">
       <path value="Bundle.entry"/>
       <sliceName value="Acceptance-criteria"/>
     </element>
@@ -170,7 +170,7 @@
         <profile
           value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
       </type>
-    </elemen-->t>
+    </element>-->
  
     <element id="Bundle.entry:Stability-Test-Result">
       <path value="Bundle.entry"/>
