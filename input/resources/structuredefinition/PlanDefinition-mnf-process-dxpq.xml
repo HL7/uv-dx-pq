@@ -44,8 +44,8 @@
     <element id="PlanDefinition.extension:process_history">
       <path value="PlanDefinition.extension"/>
       <sliceName value="process_history"/>
-      <min value="1"/>
-      <max value="1"/>
+<!--      <min value="1"/>
+      <max value="1"/>-->
       <type>
         <code value="Extension"/>
           <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq"/>
