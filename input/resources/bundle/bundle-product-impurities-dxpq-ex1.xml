@@ -129,7 +129,7 @@
             </result>
             <result>
                <!--Observation/observationDegradation-impCu-2-->
-			            <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c189A"/>
+			            <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c189a"/>
             </result>
             <result>
                <!--Observation/observationDegradation-impCu-3-->
@@ -1205,11 +1205,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189A"/>
+      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189a"/>
       <resource>
          <Observation>
             <!--observationDegradation-impCu-2-->
-            <id value="6a78bcde-4781-226c-946e-a4b6915c189A"/>
+            <id value="6a78bcde-4781-226c-946e-a4b6915c189a"/>
             <status value="final"/>
             <code>
                <coding>
