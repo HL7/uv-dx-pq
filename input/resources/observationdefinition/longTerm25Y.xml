@@ -3,11 +3,9 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="longTerm25Y"/>
     <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
-        />
+                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y"/>
+    <url value="http://example-server.com/fhir/ObservationDefinition/longTerm25Y"/>
     <title value="Y"/>
     <status value="active"/>
     <code>

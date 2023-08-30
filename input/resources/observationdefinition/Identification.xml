@@ -3,12 +3,10 @@
     <!-- Contained in Accumulus FHIR Product Example - Batch Analysis (05-31-2023) -->
     <id value="Identification"/>
     <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
-        />
+    	<profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Identification"/>
-    <name value="Identification"/>
+    <url value="http://example-server.com/fhir/ObservationDefinition/Identification"/>
+    <title value="Identification"/>
     <status value="active"/>
     <code>
         <coding>
@@ -22,12 +20,8 @@
         <text value="ID by UHPLC"/>
     </method>
     <qualifiedValue>
-        <extension
-            url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-            <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-            <valueString
-                value="Consistent with the retention time and UV spectrum of the reference standard"
-            />
+    	<extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq"> 
+        	<valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
         </extension>
     </qualifiedValue>
 </ObservationDefinition>

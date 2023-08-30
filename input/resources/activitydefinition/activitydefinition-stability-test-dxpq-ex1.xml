@@ -7,9 +7,8 @@
         <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
     </meta>
     <!-- SG: Added url -->
-    <url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
+                <url value="http://example-server.com/fhir/ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
-    <observationRequirement
-        value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+    <observationRequirement value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
 </ActivityDefinition>
