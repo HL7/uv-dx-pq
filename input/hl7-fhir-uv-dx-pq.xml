@@ -739,6 +739,17 @@
 
         <resource>
             <reference>
+                <reference value="StructureDefinition/PlanDefinition-dxpq"/>
+                <display value="PlanDefinition-DxPq"/>
+            </reference>
+            <name value="PlanDefinition- dx-PQ"/>
+            <description value="TBD"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/ObservationDefinition-simple-dxpq"/>
                 <display value="ObservationDefinitionSimpleDxPq"/>
             </reference>
