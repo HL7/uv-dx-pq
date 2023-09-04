@@ -15,7 +15,8 @@
             <contained> <!-- contained may not be right -->
                <Substance>
                   <id value="referenceSubstance"/>
-                  <extension url="http://accumulus.org/fhir/extension/substanceCompendial"> <!-- #82 -->
+                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-substance-compendial-dxpq">
+                  <!--<extension url="http://accumulus.org/fhir/extension/substanceCompendial"> <!-\- #82 -\->-->
                      <valueBoolean value="false"/>
                   </extension>
                   <identifier>
