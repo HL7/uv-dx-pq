@@ -847,7 +847,31 @@
         </resource>
 
         <!--Building Block Examples -->
+           
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex1-validation-protocol"/>
+            </reference>
+            <name value="PlanDefinition - dxPQ - Example 1, Validation Protocol"/>
+            <description value="PlanDefinition plandefinition-dxpq-ex1-validation-protocol"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex2-manufacturing-plan"/>
+            </reference>
+            <name value="plandefinition-dxpq-ex2-manufacturing-plan"/>
+            <description value="PlanDefinition - dxPQ - Example 2, Manufacturing Plan"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>

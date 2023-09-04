@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- manufacturing plan from Accumulus FHIR Product Example - Process Validation - biologic -->
+<PlanDefinition xmlns="http://hl7.org/fhir">
+<!--            <id value="manufacturingProcess-subset-unlinked"/>-->
+            <!-- indicate this is as subset of the resource. In practice it would have it all -->
+    <id value="plandefinition-dxpq-ex2-manufacturing-plan"/>
+            <meta>
+                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                <tag>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+                    <code value="SUBSETTED"/>
+                </tag>
+            </meta>
+            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">
+                <valueMarkdown value="This can be text about the history"/>
+            </extension>
+            <title value="Process 1.0"/>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+                    <code value="workflow-definition"/>
+                    <display value="Workflow Definition"/>
+                </coding>
+                <coding>
+                    <system value="http://accumulus.org/fhir/code/planType"/>
+                    <code value="manufacturing-process"/>
+                    <display value="Manufacturing Process"/>
+                </coding>
+            </type>
+            <status value="active"/>
+            <!-- #83 -->
+            <subjectReference>
+                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subjectReference>
+            <description value="Narrative description of manufacturing process (5)"/>
+            <!-- #85 -->
+            <goal id="goal-control-pH">
+                <category>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/testCategory"/>
+                        <code value="C123456"/>
+                        <display value="Physical Property"/>
+                    </coding>
+                </category>
+                <description>
+                    <text value="Controls - pH"/>
+                    <!-- this is mandatory, even though we don't really want it -->
+                </description>
+                <priority>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                        <code value="critical"/>
+                        <display value="Critical"/>
+                    </coding>
+                </priority>
+                <target>
+                    <measure>
+                        <coding>
+                            <system value="http://dummy.loinc.org"/>
+                            <code value="PH"/>
+                            <display value="pH Level"/>
+                        </coding>
+                        <text value="pH must be in range 6.9 to 7.1"/>
+                    </measure>
+                    <!--detailString value="can also be a string"-->
+                    <detailRange>
+                        <low>
+                            <value value="6.9"/>
+                            <unit value="pH"/>
+                        </low>
+                        <high>
+                            <value value="7.1"/>
+                            <unit value="pH"/>
+                        </high>
+                    </detailRange>
+                </target>
+            </goal>
+            <goal id="goal-control-water-content">
+                <category>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/testCategory"/>
+                        <code value="C123456"/>
+                        <display value="Physical Property"/>
+                    </coding>
+                </category>
+                <description>
+                    <text value="Controls - Water Content"/>
+                    <!-- this is mandatory, even though we don't really want it -->
+                </description>
+                <priority>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                        <code value="critical"/>
+                        <display value="Critical"/>
+                    </coding>
+                </priority>
+                <target>
+                    <measure>
+                        <coding>
+                            <system value="http://dummy.loinc.org"/>
+                            <code value="WaterContent"/>
+                            <display value="Water content"/>
+                        </coding>
+                        <text value="Under 2%"/>
+                    </measure>
+                    <!--detailString value="can also be a string"-->
+                    <detailRange>
+                        <high>
+                            <value value="2"/>
+                            <unit value="%"/>
+                        </high>
+                    </detailRange>
+                </target>
+            </goal>
+            <goal id="goal-control-particle-size">
+                <category>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/testCategory"/>
+                        <code value="C123456"/>
+                        <display value="Physical Property"/>
+                    </coding>
+                </category>
+                <description>
+                    <text value="Controls - Particle Size"/>
+                </description>
+                <priority>
+                    <coding>
+                        <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                        <code value="critical"/>
+                        <display value="Critical"/>
+                    </coding>
+                </priority>
+                <target>
+                    <measure>
+                        <coding>
+                            <system value="http://dummy.loinc.org"/>
+                            <code value="ParticleSize"/>
+                            <display value="Particle Size"/>
+                        </coding>
+                        <text value="Under 200 microns"/>
+                    </measure>
+                    <!--detailString value="can also be a string"-->
+                    <detailRange>
+                        <high>
+                            <value value="200"/>
+                            <unit value="microns"/>
+                        </high>
+                    </detailRange>
+                </target>
+            </goal>
+            <actor>
+                <option>
+                    <typeReference>
+                        <reference value="DeviceDefinition/mixing-vessel"/>
+                    </typeReference>
+                    <role>
+                        <coding>
+                            <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                            <code value="mixing-vessel"/>
+                            <display value="Mixing Vessel"/>
+                        </coding>
+                    </role>
+                </option>
+            </actor>
+            <actor>
+                <option>
+                    <typeReference>
+                        <reference value="DeviceDefinition/receiving-tank"/>
+                    </typeReference>
+                    <role>
+                        <coding>
+                            <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                            <code value="receiving-vessel"/>
+                            <display value="Receiving Vessel"/>
+                        </coding>
+                    </role>
+                </option>
+            </actor>
+            <!-- another outer action can be the whole thing, if needed -->
+            <!-- removed the main actions for brevity (see manufacturing example) -->
+        </PlanDefinition>
