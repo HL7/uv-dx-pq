@@ -1,4 +1,10 @@
 == Suppressed Messages ==
+# Information messages about reference to deprecated items
+Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+# Information messages about reference to draft status items
+Reference to draft item http://hl7.org/fhir/standards-status|1.0.0
+
 # Examples have optional slices that are not defined in the profile - not matching is expected behavior
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch|1.0.0
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq|0.1.0
