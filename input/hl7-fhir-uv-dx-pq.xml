@@ -76,7 +76,7 @@
         <grouping id="b6-analytical">
             <name value="Analytical Procedures"/>
         </grouping>
-        
+
         <grouping id="b10-container">
             <name value="Container Closure System"/>
         </grouping>
@@ -90,8 +90,8 @@
             <name value="Compatibility"/>
         </grouping>
 
-<!--Old groupings. No longer needed?-->
-<!--        <grouping id="b16-characterization">
+        <!--Old groupings. No longer needed?-->
+        <!--        <grouping id="b16-characterization">
             <name value="Characterization"/>
         </grouping>
         <grouping id="b18-refstd">
@@ -663,6 +663,29 @@
         </resource>
 
         <!--Analytical Procedures Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-analytical-procedure-dxpq-ex1-prod"/>
+            </reference>
+            <name value="bundle-analytical-procedure-dxpq-ex1-prod"/>
+            <description value="Bundle – Analytical Procedure dx-PQ - Example 1, drug product"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+            <groupingId value="b6-analytical"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-analytical-procedure-dxpq-ex2-sub"/>
+            </reference>
+            <name value="bundle-analytical-procedure-dxpq-ex2-sub"/>
+            <description value="Bundle – Analytical Procedure dx-PQ - Example 2, drug substance"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+            <groupingId value="b6-analytical"/>
+        </resource>
 
         <!--Container Closure System-->
         <!--Container Closure System Profiles-->
@@ -689,18 +712,30 @@
         </resource>
 
         <!--Container Closure System Examples-->
-        <!--        <resource>
+        <resource>
             <reference>
-                <reference value="Bundle/bundle-container-closure-system-dxpq-ex1"/>
+                <reference value="Bundle/bundle-container-closure-system-dxpq-ex1-prod"/>
             </reference>
-            <name value="bundle-container-closure-system-dxpq-ex1"/>
-            <description value="Bundle - Container Closure System dx-PQ - Example 1, Substance"/>
+            <name value="bundle-container-closure-system-dxpq-ex1-prod"/>
+            <description value="Bundle - Container Closure System dx-PQ - Example 1, drug product"/>
             <isExample value="true"/>
             <profile
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
             <groupingId value="b10-container"/>
-        </resource>-->
+        </resource>
 
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-container-closure-system-dxpq-ex2-sub"/>
+            </reference>
+            <name value="bundle-container-closure-system-dxpq-ex2-sub"/>
+            <description value="Bundle - Container Closure System dx-PQ - Example 2, drug substance"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+            <groupingId value="b10-container"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
@@ -847,7 +882,7 @@
         </resource>
 
         <!--Building Block Examples -->
-           
+
         <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-dxpq-ex1-validation-protocol"/>
@@ -855,8 +890,7 @@
             <name value="PlanDefinition - dxPQ - Example 1, Validation Protocol"/>
             <description value="PlanDefinition plandefinition-dxpq-ex1-validation-protocol"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
@@ -867,11 +901,10 @@
             <name value="plandefinition-dxpq-ex2-manufacturing-plan"/>
             <description value="PlanDefinition - dxPQ - Example 2, Manufacturing Plan"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
