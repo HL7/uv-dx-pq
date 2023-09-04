@@ -247,7 +247,8 @@
             </code>
             <qualifiedValue>
                <range>
-                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueTarget">
+                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-target-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueTarget">-->
                      <valueQuantity>
                         <value value="15"/>
                         <unit value="%"/>
@@ -312,7 +313,8 @@
                <text value="Particle Size RSD"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="The %RSD for the D(v, 0.9) must be not more than 15%"/>
                </extension>
             </qualifiedValue>
