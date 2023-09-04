@@ -257,7 +257,8 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>
@@ -279,7 +280,8 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Corresponds with reference"/>
                </extension>
             </qualifiedValue>
@@ -301,7 +303,8 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>
