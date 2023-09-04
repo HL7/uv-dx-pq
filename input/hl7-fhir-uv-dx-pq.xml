@@ -624,7 +624,18 @@
             <groupingId value="b13-processvalidation"/>
         </resource>
 
-
+<!--        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-process-validation-dxpq-ex2"/>
+            </reference>
+            <name value="bundle-product-process-validation-dxpq-ex2"/>
+            <description value="Bundle - Product Process Validation dx-PQ - Example 2, Substance"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
+            <groupingId value="b13-processvalidation"/>
+        </resource>-->
+        
         <!--Impurities -->
         <!--Impurities Profiles-->
         <resource>
@@ -651,10 +662,23 @@
         </resource>
 
         <!--Analytical Procedures-->
+        <!--Analytical Procedures Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+                <display value="BundleAnalyticalProcedureDxPq"/>
+            </reference>
+            <name value="Bundle – Analytical Procedure dx-PQ"/>
+            <description value="Bundle – Analytical Procedure dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b6-analytical"/>
+        </resource>
+
+        <!--Analytical Procedures Examples-->
 
         <!--Container Closure System-->
         <!--Container Closure System Profiles-->
-        <!--        <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-container-closure-system-dxpq"/>
                 <display value="BundleContainerClosureSystemDxPq"/>
@@ -663,7 +687,7 @@
             <description value="Bundle - Container Closure System dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b10-container"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
