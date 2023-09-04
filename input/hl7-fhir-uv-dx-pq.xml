@@ -653,7 +653,53 @@
         <!--Analytical Procedures-->
 
         <!--Container Closure System-->
+        <!--Container Closure System Profiles-->
+        <!--        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-container-closure-system-dxpq"/>
+                <display value="BundleContainerClosureSystemDxPq"/>
+            </reference>
+            <name value="Bundle - Container Closure System dx-PQ"/>
+            <description value="Bundle - Container Closure System dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b10-container"/>
+        </resource>-->
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+                <display value="ManufacturedItemDefinitionDxPq"/>
+            </reference>
+            <name value="ManufacturedItemDefinition dx-PQ"/>
+            <description value="ManufacturedItemDefinition dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b10-container"/>
+        </resource>
+
+        <!--Container Closure System Examples-->
+        <!--        <resource>
+            <reference>
+                <reference value="Bundle/bundle-container-closure-system-dxpq-ex1"/>
+            </reference>
+            <name value="bundle-container-closure-system-dxpq-ex1"/>
+            <description value="Bundle - Container Closure System dx-PQ - Example 1, Substance"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+            <groupingId value="b10-container"/>
+        </resource>-->
+
+        <resource>
+            <reference>
+                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+            </reference>
+            <name value="manufactureditemdefinition-dxpq-ex1"/>
+            <description value="ManufacturedItemDefinition dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+            <groupingId value="b10-container"/>
+        </resource>
         <!--Characterization-->
 
         <!--Batch Formula-->
@@ -1467,11 +1513,10 @@
         </resource>
 
         <!-- Additional SubstanceDefinition Examples (examples3)-->
-        
+
         <resource>
             <reference>
-                <reference
-                    value="SubstanceDefinition/StelbatololAqueousSolution"/>
+                <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
             </reference>
             <name value="StelbatololAqueousSolution"/>
             <description value="Stelbatolol Aqueous Solution"/>
@@ -1480,11 +1525,10 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             <groupingId value="examples3"/>
         </resource>
-        
+
         <resource>
             <reference>
-                <reference
-                    value="SubstanceDefinition/StelbatololGranules"/>
+                <reference value="SubstanceDefinition/StelbatololGranules"/>
             </reference>
             <name value="StelbatololGranules"/>
             <description value="Stelbatolol Granules"/>
@@ -1513,7 +1557,7 @@
                 <name value="domains.html"/>
                 <title value="Domains Overview"/>
                 <generation value="markdown"/>
-                
+
                 <page>
                     <name value="identification.html"/>
                     <title value="Identification"/>
@@ -1525,13 +1569,13 @@
                     <title value="Composition"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="impurities.html"/>
                     <title value="Impurities"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="organizations.html"/>
                     <title value="Organizations"/>
@@ -1543,7 +1587,7 @@
                     <title value="Batch/Lot Information"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="batch_anal.html"/>
                     <title value="Batch Analysis"/>
@@ -1554,7 +1598,7 @@
                     <title value="Batch Formula"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="mnf_process.html"/>
                     <title value="Manufacturing Process"/>
@@ -1619,7 +1663,7 @@
                 <generation value="markdown"/>
             </page>
         </page>
-        
+
         <!--        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/guide-parameter-code"/>
