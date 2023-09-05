@@ -44,39 +44,35 @@
         <version value="5.0.0"/>
     </dependsOn>
     <definition>
-        <!--        WAVE 1 topics-->
+        <!-- Reordered to match domains graphic-->
         <grouping id="b1-id">
             <name value="Drug Identification"/>
         </grouping>
-        <grouping id="b12-specification">
-            <name value="Specification"/>
+        <grouping id="b17-composition">
+            <name value="Composition"/>
         </grouping>
-
-        <grouping id="b11-stabilitystudy">
-            <name value="Stability"/>
-        </grouping>
-
-        <grouping id="b9-batchanalyses">
-            <name value="Batch Analysis"/>
-        </grouping>
-
-        <grouping id="b4-organizations">
-            <name value="Organizations"/>
-        </grouping>
-
-        <!--        WAVE 2 topics -->
-        <grouping id="b5-mnf">
-            <name value="Manufacturing Process"/>
-        </grouping>
-
-        <grouping id="b13-processvalidation">
-            <name value="Process Validation"/>
-        </grouping>
-
         <grouping id="b15-impurities">
             <name value="Impurities"/>
         </grouping>
+        <grouping id="b4-organizations">
+            <name value="Organizations"/>
+        </grouping>
+        <grouping id="b8-batchinfo">
+            <name value="Batch or Lot Information"/>
+        </grouping>
+        <grouping id="b9-batchanalyses">
+            <name value="Batch Analysis"/>
+        </grouping>
+        <grouping id="b7-batchformula">
+            <name value="Batch Formula"/>
+        </grouping>
 
+        <grouping id="b5-mnf">
+            <name value="Manufacturing Process"/>
+        </grouping>
+        <grouping id="b13-processvalidation">
+            <name value="Process Validation"/>
+        </grouping>
         <grouping id="b6-analytical">
             <name value="Analytical Procedures"/>
         </grouping>
@@ -84,28 +80,23 @@
         <grouping id="b10-container">
             <name value="Container Closure System"/>
         </grouping>
-
-        <!--WAVE 3 topics-->
-        <grouping id="b16-characterization">
-            <name value="Characterization"/>
+        <grouping id="b11-stabilitystudy">
+            <name value="Stability"/>
         </grouping>
-
-        <grouping id="b7-batchformula">
-            <name value="Batch Formula"/>
+        <grouping id="b12-specification">
+            <name value="Specification"/>
         </grouping>
-
-        <grouping id="b17-composition">
-            <name value="Composition"/>
-        </grouping>
-
         <grouping id="b14-compatibility">
             <name value="Compatibility"/>
         </grouping>
 
-
+        <!--Old groupings. No longer needed?-->
+        <!--        <grouping id="b16-characterization">
+            <name value="Characterization"/>
+        </grouping>
         <grouping id="b18-refstd">
             <name value="Reference Standards"/>
-        </grouping>
+        </grouping>-->
 
         <!--        Additional Groupings -->
         <grouping id="building-blocks-1">
@@ -131,10 +122,7 @@
         </grouping>
 
 
-        <!--        Old grouping; not yet used -->
-        <!--        <grouping id="b8-batchinfo">
-            <name value="Batch or Lot Information"/>
-        </grouping>-->
+
 
 
 
@@ -624,6 +612,17 @@
             <groupingId value="b13-processvalidation"/>
         </resource>
 
+        <!--        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-process-validation-dxpq-ex2"/>
+            </reference>
+            <name value="bundle-product-process-validation-dxpq-ex2"/>
+            <description value="Bundle - Product Process Validation dx-PQ - Example 2, Substance"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
+            <groupingId value="b13-processvalidation"/>
+        </resource>-->
 
         <!--Impurities -->
         <!--Impurities Profiles-->
@@ -651,10 +650,103 @@
         </resource>
 
         <!--Analytical Procedures-->
+        <!--Analytical Procedures Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+                <display value="BundleAnalyticalProcedureDxPq"/>
+            </reference>
+            <name value="Bundle – Analytical Procedure dx-PQ"/>
+            <description value="Bundle – Analytical Procedure dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b6-analytical"/>
+        </resource>
+
+        <!--Analytical Procedures Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-analytical-procedure-dxpq-ex1-prod"/>
+            </reference>
+            <name value="bundle-analytical-procedure-dxpq-ex1-prod"/>
+            <description value="Bundle – Analytical Procedure dx-PQ - Example 1, drug product"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+            <groupingId value="b6-analytical"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-analytical-procedure-dxpq-ex2-sub"/>
+            </reference>
+            <name value="bundle-analytical-procedure-dxpq-ex2-sub"/>
+            <description value="Bundle – Analytical Procedure dx-PQ - Example 2, drug substance"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+            <groupingId value="b6-analytical"/>
+        </resource>
 
         <!--Container Closure System-->
+        <!--Container Closure System Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-container-closure-system-dxpq"/>
+                <display value="BundleContainerClosureSystemDxPq"/>
+            </reference>
+            <name value="Bundle - Container Closure System dx-PQ"/>
+            <description value="Bundle - Container Closure System dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b10-container"/>
+        </resource>
 
-        <!--Characterization-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+                <display value="ManufacturedItemDefinitionDxPq"/>
+            </reference>
+            <name value="ManufacturedItemDefinition dx-PQ"/>
+            <description value="ManufacturedItemDefinition dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b10-container"/>
+        </resource>
+
+        <!--Container Closure System Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-container-closure-system-dxpq-ex1-prod"/>
+            </reference>
+            <name value="bundle-container-closure-system-dxpq-ex1-prod"/>
+            <description value="Bundle - Container Closure System dx-PQ - Example 1, drug product"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+            <groupingId value="b10-container"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-container-closure-system-dxpq-ex2-sub"/>
+            </reference>
+            <name value="bundle-container-closure-system-dxpq-ex2-sub"/>
+            <description value="Bundle - Container Closure System dx-PQ - Example 2, drug substance"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+            <groupingId value="b10-container"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+            </reference>
+            <name value="manufactureditemdefinition-dxpq-ex1"/>
+            <description value="ManufacturedItemDefinition dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile
+                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+            <groupingId value="b10-container"/>
+        </resource>
 
         <!--Batch Formula-->
 
@@ -662,10 +754,20 @@
 
         <!--Compatibility-->
 
-        <!-- Reference Standards-->
 
         <!--Building Blocks-->
         <!--Building Block Profiles -->
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/PlanDefinition-dxpq"/>
+                <display value="PlanDefinition-DxPq"/>
+            </reference>
+            <name value="PlanDefinition- dx-PQ"/>
+            <description value="TBD"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
         <resource>
             <reference>
@@ -780,6 +882,28 @@
         </resource>
 
         <!--Building Block Examples -->
+
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex1-validation-protocol"/>
+            </reference>
+            <name value="PlanDefinition - dxPQ - Example 1, Validation Protocol"/>
+            <description value="PlanDefinition plandefinition-dxpq-ex1-validation-protocol"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex2-manufacturing-plan"/>
+            </reference>
+            <name value="plandefinition-dxpq-ex2-manufacturing-plan"/>
+            <description value="PlanDefinition - dxPQ - Example 2, Manufacturing Plan"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
         <resource>
             <reference>
@@ -1467,11 +1591,10 @@
         </resource>
 
         <!-- Additional SubstanceDefinition Examples (examples3)-->
-        
+
         <resource>
             <reference>
-                <reference
-                    value="SubstanceDefinition/StelbatololAqueousSolution"/>
+                <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
             </reference>
             <name value="StelbatololAqueousSolution"/>
             <description value="Stelbatolol Aqueous Solution"/>
@@ -1480,11 +1603,10 @@
                 value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             <groupingId value="examples3"/>
         </resource>
-        
+
         <resource>
             <reference>
-                <reference
-                    value="SubstanceDefinition/StelbatololGranules"/>
+                <reference value="SubstanceDefinition/StelbatololGranules"/>
             </reference>
             <name value="StelbatololGranules"/>
             <description value="Stelbatolol Granules"/>
@@ -1513,7 +1635,7 @@
                 <name value="domains.html"/>
                 <title value="Domains Overview"/>
                 <generation value="markdown"/>
-                
+
                 <page>
                     <name value="identification.html"/>
                     <title value="Identification"/>
@@ -1525,13 +1647,13 @@
                     <title value="Composition"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="impurities.html"/>
                     <title value="Impurities"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="organizations.html"/>
                     <title value="Organizations"/>
@@ -1543,7 +1665,7 @@
                     <title value="Batch/Lot Information"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="batch_anal.html"/>
                     <title value="Batch Analysis"/>
@@ -1554,7 +1676,7 @@
                     <title value="Batch Formula"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="mnf_process.html"/>
                     <title value="Manufacturing Process"/>
@@ -1619,7 +1741,7 @@
                 <generation value="markdown"/>
             </page>
         </page>
-        
+
         <!--        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/guide-parameter-code"/>

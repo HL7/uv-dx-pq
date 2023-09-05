@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <!--Based on Accumulus FHIR Product Example - Analytical Procedure (2023-08-22)-->
+   <!-- Product Analytical Procedure -->
+   <id value="bundle-analytical-procedure-dxpq-ex1-prod"/>
+   <!--   <id value="product-analytical-procedure"/>-->
+   <meta>
+      <profile
+         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/>-->
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+      <resource>
+         <PlanDefinition>
+            <id value="analyticalProcedure"/>
+            <title value="Analytical Procedure"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+                  <code value="workflow-definition"/>
+                  <display value="Workflow Definition"/>
+               </coding>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <code value="analytical-procedure"/>
+                  <display value="Analytical Procedure"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+               <reference
+                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
+               />
+            </subjectReference>
+            <action>
+               <title value="Preparation and Analysis of Drug Product Samples"/>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/diluent"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="diluent"/>
+                        <display value="Diluent"/>
+                     </coding>
+                  </role>
+               </participant>
+               <participant>
+                  <typeReference>
+                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <valueReference>
+                           <reference value="SubstanceDefinition/resultingMaterial"/>
+                        </valueReference>
+                     </extension>
+                  </typeReference>
+                  <role>
+                     <coding>
+                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <code value="ResultingMaterial"/>
+                        <display value="Resulting Material"/>
+                     </coding>
+                  </role>
+               </participant>
+               <action>
+                  <title value="Sample Preparation"/>
+                  <action>
+                     <title value="Instructions"/>
+                     <description
+                        value="Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge."
+                     />
+                  </action>
+               </action>
+               <action>
+                  <title value="Sample Analysis"/>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/SampleAnalysis"/>
+                  </action>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f81"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="diluent"/>
+            <name>
+               <name value="0.05 % trifluoroacetic acid (TFA) in 50:50 acetonitrile: water (v/v)"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="resultingMaterial"/>
+            <name>
+               <name value="Stelbat in Diluent (approximately 0.36 mg/mL)"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="SampleAnalysis"/>
+            <title value="Sample Analysis"/>
+            <status value="active"/>
+            <description value="Number of Injections: 1 of each preparation"/>
+            <code>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unsupported"/>
+               </extension>
+            </code>
+            <specimen>
+               <reference value="SpecimenDefinition/specimendefinition"/>
+            </specimen>
+            <hasMember>
+               <reference value="ObservationDefinition/Assay"/>
+            </hasMember>
+            <hasMember>
+               <reference value="ObservationDefinition/Identity"/>
+            </hasMember>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Assay"/>
+
+            <!--            <text>
+               <extension url="http://nprogram.co.uk/fhir/extension/viewer/showText">
+                  <valueBoolean value="true"/>
+               </extension>
+               <status value="additional"/>
+               <div xmlns="http://www.w3.org/1999/xhtml">
+                  <div style="font-family: 'Times New Roman', Times, serif;">
+                     <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
+                     <p>
+                        <img alt="formula"
+                             width="203"
+                             height="34"
+                             style="display: block; margin-left: auto; margin-right: auto;"
+                             src="#imageResource"/>
+                     </p>
+                     <p>
+                        <span>Where:</span>
+                     </p>
+                     <p>
+                        <span>A
+                                <sub>SPL</sub>      =  Area of Stelbat in the sample 
+                            </span>
+                     </p>
+                     <p>
+                        <span>ANSR   =  Average normalized standard response factor of standard injections</span>
+                     </p>
+                     <p>
+                        <span>DF     =  Overall sample dilution factor</span>
+                     </p>
+                     <p>
+                        <span>N      = Number of tablets in sample preparation</span>
+                     </p>
+                     <p>
+                        <span>Determine the % label claim of the sample as follows:</span>
+                     </p>
+                     <p>
+                        <img alt="formula"
+                             width="220"
+                             height="34"
+                             style="display: block; margin-left: auto; margin-right: auto;"
+                             src="#imageResource2"/>
+                     </p>
+                     <p>
+                        <span>Where:</span>
+                     </p>
+                     <p>
+                        <span>LC       =          Label claim (mg/tablet) of tested sample</span>
+                     </p>
+                  </div>
+               </div>
+            </text>
+           -->
+            <contained>
+               <Binary>
+                  <id value="imageResource"/>
+                  <!-- example format -->
+                  <contentType value="image/png"/>
+                  <!-- data is base 64 encoded, actual bytes of the image png file -->
+                  <data
+                     value="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"/>"</Binary>
+            </contained>
+            <contained>
+               <Binary>
+                  <id value="imageResource2"/>
+                  <!-- example format -->
+                  <contentType value="image/png"/>
+                  <!-- data is base 64 encoded, actual bytes of the image png file -->
+                  <data
+                     value="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"/>"</Binary>
+            </contained>
+            <title value="Assay (w/w%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay (w/w%)"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <!--<extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString value="The %RSD between the two assay results must be ≤ 1.5%"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Identity"/>
+            <title value="Identity"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identity"/>
+               </coding>
+               <text value="Identity"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05."
+                  />
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
+                  <valueString
+                     value="2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm."
+                  />
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
+      <resource>
+         <SpecimenDefinition>
+            <id value="specimendefinition"/>
+            <status value="active"/>
+            <description value="Number of Preparations: 2 (only 1 is required for identity)"/>
+            <typeTested>
+               <preference value="preferred"/>
+               <handling>
+                  <maxDuration>
+                     <value value="4"/>
+                     <unit value="days"/>
+                  </maxDuration>
+                  <instruction
+                     value="at ambient or refrigerated conditions protected from light (may be extended with supporting data)"
+                  />
+               </handling>
+            </typeTested>
+         </SpecimenDefinition>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+                  <code value="100000073667"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+                  <code value="100000073619"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <name>
+               <productName value="Stelbat Tablets, 20mg"/>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+               <part>
+                  <part value="20mg"/>
+                  <type>
+                     <coding>
+                        <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                        <code value="StrengthPart"/>
+                        <display value="Strength part"/>
+                     </coding>
+                  </type>
+               </part>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+</Bundle>

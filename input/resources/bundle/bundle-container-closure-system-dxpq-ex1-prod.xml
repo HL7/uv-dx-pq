@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <!--Based on Accumulus FHIR Product Example - Analytical Procedure (2023-08-22)-->
+   <id value="bundle-container-closure-system-dxpq-ex1-prod"/>
+<!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+   </meta>
+   
+   <type value="collection"/>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="Textual description of the product"/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+                  <code value="100000073667"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+                  <code value="100000073619"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <name>
+               <productName value="Stelbat Tablets, 20mg"/>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+               <part>
+                  <part value="20mg"/>
+                  <type>
+                     <coding>
+                        <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                        <code value="StrengthPart"/>
+                        <display value="Strength part"/>
+                     </coding>
+                  </type>
+               </part>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <!-- Section 10 - Container Closure System #1 - bottle -->
+   <entry>
+      <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
+      <resource>
+         <PackagedProductDefinition>
+            <id value="packagedproductdefinition-dxpq-ex1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
+            </meta>
+            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
+            		<valueString value="packagedproductdefinition/{id}.xml"/>
+            	</extension-->
+            <packageFor>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </packageFor>
+            <containedItemQuantity>
+               <value value="28"/>
+               <unit value="tablets"/>
+            </containedItemQuantity>
+            <!-- #174 -->
+            <description value="The container closure system consists of a bottle and closure.  The bottle is manufactured from white high-density polyethylene (HDPE). The 2-piece child-resistant closure is manufactured from polypropylene (PP) and contains a multi-layer aluminum foil seal liner for tamper evidence.  The bottle and closure provide an adequate barrier to moisture and light, which protect the drug product.  The container closure system has demonstrated suitability for storage of the drug product based on stability studies shown in 3.2.P.8.3.      The HDPE bottle has demonstrated compliance with USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction and PhEur 3.1.3 Polyolefins.  The product contacting aluminum foil seal liner has demonstrated compliance with USP &lt;661&gt;. The vendor has confirmed compliance with 21 CFR 175.300, in addition to compliance with limitation of heavy metals per EU 94/62/EC, Article 11. The container closure system has demonstrated child resistance in compliance with 16 CFR 1700. Detailed information pertaining to the bottle and closure is described in 3.2.P.7."/>
+            <packaging>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/packaging-type"/>
+                     <code value="100000073497"/>
+                     <display value="Bottle"/>
+                  </coding>
+               </type>
+               <material> <!-- #178 -->
+                  <coding>
+                     <system value="http://hl7.org/fhir/package-material"/>
+                     <code value="200000003215"/>
+                     <display value="High Density PolyEthylene"/>
+                  </coding>
+               </material>
+               <manufacturer>
+                  <display value="Container Co. of America"/>
+               </manufacturer>
+               <property>
+                  <type>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <code value="xxxx"/>
+                        <display value="Color"/>
+                     </coding>
+                  </type>
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/color"/>
+                        <code value="white"/>
+                        <display value="White"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </property>
+               <property>
+                  <type>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <code value="xxxx"/>
+                        <display value="Quality Standard"/>
+                     </coding>
+                  </type>
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/grade"/>
+                        <code value="USP"/>
+                        <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </property>
+               <property>
+                  <type>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <code value="xxxx"/>
+                        <display value="Quality Standard"/>
+                     </coding>
+                  </type>
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/grade"/>
+                        <code value="PhEur"/>
+                        <display value="PhEur 3.1.3 Polyolefins"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </property>
+               <packaging>
+                  <type>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                        <code value="112344"/>
+                        <display value="Child Proof Cap"/>
+                     </coding>
+                  </type>
+                  <componentPart value="true"/>
+                  <material>
+                     <coding>
+                        <system value="http://hl7.org/fhir/package-material"/>
+                        <!-- TODO use EMA ones -->
+                        <code value="200000003219"/>
+                        <display value="PolyPropylene"/>
+                     </coding>
+                  </material>
+                  <property>
+                     <type>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <code value="xxxx"/>
+                           <display value="Quality Standard"/>
+                        </coding>
+                     </type>
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/grade"/>
+                           <code value="16CFR1700"/>
+                           <display value="16 CFR 1700"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </property>
+                  <packaging>
+                     <type>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                           <code value="112344dd"/>
+                           <display value="Multi-layer Foil Seal Liner"/>
+                        </coding>
+                     </type>
+                     <componentPart value="true"/>
+                     <material>
+                        <coding>
+                           <system value="http://hl7.org/fhir/package-material"/>
+                           <code value="200000003200"/>
+                           <display value="Aluminium"/>
+                        </coding>
+                     </material>
+                     <property>
+                        <type>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <code value="xxxx"/>
+                              <display value="Quality Standard"/>
+                           </coding>
+                        </type>
+                        <valueCodeableConcept>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/grade"/>
+                              <code value="21CFR175.300"/>
+                              <display value="21 CFR 175.300"/>
+                           </coding>
+                        </valueCodeableConcept>
+                     </property>
+                     <property>
+                        <type>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <code value="xxxx"/>
+                              <display value="Quality Standard"/>
+                           </coding>
+                        </type>
+                        <valueCodeableConcept>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/grade"/>
+                              <code value="EU-94-62-EC"/>
+                              <display value="EU 94/62/EC"/>
+                           </coding>
+                        </valueCodeableConcept>
+                     </property>
+                  </packaging>
+               </packaging>
+            </packaging>
+         </PackagedProductDefinition>
+      </resource>
+   </entry>
+   <!-- Section 10 - Container Closure System #1 - blister -->
+   <entry>
+      <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f24bc3923"/>
+      <resource>
+         <PackagedProductDefinition>
+            <id value="packagedproductdefinition-dxpq-ex2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
+            </meta>
+            <packageFor>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </packageFor>
+            <containedItemQuantity>
+               <value value="28"/>
+               <unit value="tablets"/>
+            </containedItemQuantity>
+            <description value="The container closure system consists of a blister film of 150 µm thick polyvinyl chloride (PVC) and a blister lidding of 10 µm hard temper push-through aluminum foil with a product contact heat seal layer of polyvinyl chloride (PVC) laminated in Aclar. The PVC blister film effectively seals with the aluminum foil heat seal layer during final packaging.  The blister film and foil materials have demonstrated suitability for product storage based on stability studies shown in 3.2.P.8.3 and additional testing.                The film has demonstrated compliance with USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction,  PhEur 3.1.11 Materials Based on Non-Plasticised Poly Vinyl Chloride for Containers for Solid Dosage Forms and Oral Administration, and PhEur 3.2.2 Plastic Containers and Closures for Pharmaceutical Use. Additionally, the film conforms to European Union Regulation 10/2011.                 The lidding foil has demonstrated compliance with USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction.  The foil complex is stated to conform to European Commission Regulation 1935/2004 and the heat seal layer conforms to European Union Council Directive 78/142/EEC.  Additionally, an infrared reflectance spectrum was obtained to confirm the identity of the material. Detailed information pertaining to the blisters is described in 3.2.P.7.                 "/>
+            <packaging> 
+                   
+                    <!--type>
+                        
+                    </type-->
+ 
+ 				   <!-- technically this is a property of the "foil complex" -->
+               <property>
+                  <type>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <code value="xxxx"/>
+                        <display value="Quality Standard"/>
+                     </coding>
+                  </type>
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/grade"/>
+                        <code value="EU1935-2004"/>
+                        <display value="European Commission Regulation 1935/2004"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </property>
+               <!-- technically this is a property of the "heat seal layer" -->
+               <property>
+                  <type>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <code value="xxxx"/>
+                        <display value="Quality Standard"/>
+                     </coding>
+                  </type>
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/grade"/>
+                        <code value="EU78-142"/>
+                        <display value="European Union Council Directive 78/142/EEC"/>
+                     </coding>
+                  </valueCodeableConcept>
+               </property>
+               <packaging>
+                  <type>
+                     <coding>
+                        <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                        <code value="100000073495"/>
+                        <display value="Blister"/>
+                        <!-- the actual blister -->
+                     </coding>
+                  </type>
+                  <quantity value="2"/>
+                  <material> <!-- #178 -->
+                     <coding>
+                        <system value="http://hl7.org/fhir/package-material"/>
+                        <code value="200000003222"/>
+                        <display value="PolyVinyl Chloride"/>
+                     </coding>
+                  </material>
+                  <manufacturer>
+                     <display value="Plastics of America"/>
+                  </manufacturer>
+                  <property>
+                     <type>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <code value="xxxx"/>
+                           <display value="Thickness"/>
+                        </coding>
+                     </type>
+                     <valueQuantity>
+                        <value value="150"/>
+                        <unit value="µm"/>
+                        <!-- todo ucum -->
+                     </valueQuantity>
+                  </property>
+                  <property>
+                     <type>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <code value="xxxx"/>
+                           <display value="Quality Standard"/>
+                        </coding>
+                     </type>
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/grade"/>
+                           <code value="USP"/>
+                           <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </property>
+                  <property>
+                     <type>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <code value="xxxx"/>
+                           <display value="Quality Standard"/>
+                        </coding>
+                     </type>
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/grade"/>
+                           <code value="PhEur3111"/>
+                           <display value="Materials Based on Non-Plasticised Poly Vinyl Chloride for Containers for Solid Dosage Forms and Oral Administration"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </property>
+                  <property>
+                     <type>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <code value="xxxx"/>
+                           <display value="Quality Standard"/>
+                        </coding>
+                     </type>
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/grade"/>
+                           <code value="PhEur322"/>
+                           <display value="Plastic Containers and Closures for Pharmaceutical Use"/>
+                        </coding>
+                     </valueCodeableConcept>
+                  </property>
+                  <containedItem>
+                     <item>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                           <valueCode value="unsupported"/>
+                        </extension>
+                     </item>
+                     <amount>
+                        <value value="14"/>
+                        <unit value="tablets"/>
+                     </amount>
+                  </containedItem>
+                  <packaging>
+                     <type>
+                        <coding>
+                           <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                           <code value="112344bb"/>
+                           <display value="Blister Foil Lidding"/>
+                        </coding>
+                     </type>
+                     <componentPart value="true"/>
+                     <material>
+                        <coding>
+                           <system value="http://hl7.org/fhir/package-material"/>
+                           <!-- TODO use EMA ones -->
+                           <code value="200000003200"/>
+                           <display value="Aluminium"/>
+                        </coding>
+                     </material>
+                     <manufacturer>
+                        <display value="Reynolds Wrap USA"/>
+                     </manufacturer>
+                     <property>
+                        <type>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <code value="xxxx"/>
+                              <display value="Quality Standard"/>
+                           </coding>
+                        </type>
+                        <valueCodeableConcept>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/grade"/>
+                              <code value="USP"/>
+                              <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
+                           </coding>
+                        </valueCodeableConcept>
+                     </property>
+                     <property>
+                        <type>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <code value="xxxx"/>
+                              <display value="Quality Standard"/>
+                           </coding>
+                        </type>
+                        <valueCodeableConcept>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/grade"/>
+                              <code value="EU10-2011"/>
+                              <display value="European Union Regulation 10/2011"/>
+                           </coding>
+                        </valueCodeableConcept>
+                     </property>
+                     <property>
+                        <type>
+                           <coding>
+                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <code value="xxxx"/>
+                              <display value="Thickness"/>
+                           </coding>
+                        </type>
+                        <valueQuantity>
+                           <value value="10"/>
+                           <unit value="µm"/>
+                           <!-- todo ucum -->
+                        </valueQuantity>
+                     </property>
+                  </packaging>
+               </packaging>
+            </packaging>
+         </PackagedProductDefinition>
+      </resource>
+   </entry>
+</Bundle>
