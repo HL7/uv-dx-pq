@@ -1,0 +1,29 @@
+{
+    "resourceType":"ObservationDefinition",
+    "title": "pH",
+    "status": "active",
+    "code":
+    {
+        "coding":
+        [{
+            "system": "http://dummy.loinc.org",
+            "code": "XXX",
+            "display": "pH"
+        }],
+        "text": "pH"
+    },
+    "qualifiedValue":
+    [{
+        "range":
+        {
+            "low":
+            {
+                "value": 6.9
+            },
+            "high":
+            {
+                "value": 7.1
+            }
+        }
+    }]
+}

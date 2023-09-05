@@ -1,0 +1,20 @@
+{
+    "resourceType":"Organization",
+    "identifier":
+    [{
+        "system": "urn:oid:2.16.840.1.113883.4.82",
+        "value": "000000"
+    }],
+    "name": "Your Company or make up one",
+    "contact":
+    [{
+        "address":
+        {
+            "line":[ "123 etc" ],
+            "city": "city here",
+            "state": "state here",
+            "postalCode": "zip here",
+            "country": "country here"
+        }
+    }]
+}

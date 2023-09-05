@@ -1,0 +1,19 @@
+{
+    "resourceType":"DiagnosticReport",
+    "status": "final",
+    "code":
+    {
+        "coding":
+        [{
+            "system": "http://accumulus.org/fhir/code/reportType",
+            "code": "1113",
+            "display": "Batch Analysis Report"
+        }]
+    },
+    "effectiveDateTime": "2023-08-10",
+    "result":
+    [{
+        "reference": "Observation/{observation-id}"
+    }],
+    "conclusion": "The samples have been assessed and the conclusion is..."
+}

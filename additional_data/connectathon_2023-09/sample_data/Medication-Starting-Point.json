@@ -1,0 +1,18 @@
+{
+    "resourceType":"Medication",
+    "code":
+    {
+        "extension":
+        [{
+            "url": "http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq", 
+            "valueReference":
+            {
+                "reference": "MedicinalProductDefinition/{your-product}"
+            }
+        }]
+    },
+    "batch":
+    [{
+        "lotNumber": "33445"
+    }]
+}

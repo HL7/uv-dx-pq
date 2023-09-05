@@ -1,0 +1,11 @@
+{
+    "resourceType":"SubstanceDefinition",
+    "manufacturer":
+    [{
+        "reference": "Organization/{id-of-of-your-organization}"
+    }],
+    "name":
+    [{
+        "name": "put your substance name here"
+    }]
+}

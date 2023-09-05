@@ -1,0 +1,30 @@
+<PlanDefinition xmlns="http://hl7.org/fhir">
+    <title value="DP Batch Analysis"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+            <code value="workflow-definition"/>
+            <display value="Workflow Definition"/>
+        </coding>
+        <coding>
+            <system value="http://accumulus.org/fhir/code/planType"/>
+            <code value="batch-analysis"/>
+            <display value="Batch Analysis"/>
+        </coding>
+    </type>
+
+    <status value="active"/>
+
+    <subjectReference>
+        <reference value="MedicinalProductDefinition/{your-product}"/>
+    </subjectReference>
+
+    <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process studies..."/>
+
+    <action>
+        <title value="Batch Analysis"/>
+        <!-- note that this really should be a "canonical reference by full url", but for simplicity and learning we are using a plain reference  -->
+        <definitionCanonical value="ObservationDefinition/{obs-def-id}"/>
+    </action>
+
+</PlanDefinition>

@@ -1,0 +1,22 @@
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+    <title value="pH"/>
+    <status value="active"/>
+    <code>
+        <coding>
+            <system value="http://dummy.loinc.org"/>
+            <code value="XXX"/>
+            <display value="pH"/>
+        </coding>
+        <text value="pH"/>
+    </code>
+    <qualifiedValue>
+        <range>
+            <low>
+                <value value="6.9"/>
+            </low>
+            <high>
+                <value value="7.1"/>
+            </high>
+        </range>
+    </qualifiedValue>
+</ObservationDefinition>
