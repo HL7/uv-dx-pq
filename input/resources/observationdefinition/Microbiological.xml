@@ -3,9 +3,7 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="Microbiological"/>
     <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
-        />
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Microbiological"/>
     <title value="Microbiological"/>
@@ -18,10 +16,13 @@
         </coding>
         <text value="Microbiological Quality"/>
     </code>
+                <method>
+                    <text value="Ph Eur"/>
+                </method>
     <qualifiedValue>
         <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
             <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-            <valueString value="Complies with PhEur"/>
+                        <valueString value="Shall comply with the requirements of the Ph Eur"/>
         </extension>
     </qualifiedValue>
 </ObservationDefinition>
