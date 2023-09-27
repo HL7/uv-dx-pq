@@ -53,7 +53,7 @@
                     <property> 
                         <type>
                             <coding>
-                                <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                <system value="http://accumulus.org/fhir/code/packageProperty"/>
                                 <code value="xxxx"/>
                                 <display value="Functional"/>
                             </coding>
@@ -63,14 +63,14 @@
                     <property>
                         <type>
                             <coding>
-                            	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                            	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                 <code value="xxxx"/>
                                 <display value="Quality Standard"/>
                             </coding>
                         </type>
                         <valueCodeableConcept>
                             <coding>
-                            	<system value="http://example.accumulus.org/fhir/code/grade"/>
+                            	<system value="http://accumulus.org/fhir/code/grade"/>
                                 <code value="USP"/>
                                 <display value="USP"/>
                             </coding>
@@ -84,7 +84,7 @@
                         
                         <type> 
                             <coding>
-                            	<system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                            	<system value="http://accumulus.org/fhir/code/closureTypes"/>
                                 <code value="1d2344"/>
                                 <display value="Tape"/>
                             </coding>
@@ -109,7 +109,7 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                     <code value="xxxx"/>
                                     <display value="Quality Specification"/>
                                 </coding>
@@ -123,14 +123,14 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                     <code value="xxxx"/>
                                     <display value="Quality Standard"/>
                                 </coding>
                             </type>
                             <valueCodeableConcept>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/grade"/>
+                                	<system value="http://accumulus.org/fhir/code/grade"/>
                                     <code value="BP"/>
                                     <display value="Closure Quality Standard"/>
                                 </coding>
@@ -141,7 +141,7 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                     <code value="xxxx"/>
                                     <display value="Narrative"/>
                                 </coding>
@@ -154,7 +154,7 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/closureProperties"/>
+                                	<system value="http://accumulus.org/fhir/code/closureProperties"/>
                                     <code value="1123ss"/>
                                     <display value="Integrity Test"/>
                                 </coding>
@@ -199,7 +199,7 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                     <code value="xxxx"/>
                                     <display value="Quality Specification"/>
                                 </coding>
@@ -212,7 +212,7 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                     <code value="xxxx"/>
                                     <display value="Quality Standard"/>
                                 </coding>
@@ -229,7 +229,7 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                     <code value="xxxx"/>
                                     <display value="Narrative"/>
                                 </coding>
@@ -242,7 +242,7 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                     <code value="xxxx"/>
                                     <display value="Container Size"/>
                                 </coding>
@@ -276,7 +276,7 @@
                             
                             <type> 
                                 <coding>
-                                    <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                                    <system value="http://accumulus.org/fhir/code/closureTypes"/>
                                     <code value="112344"/>
                                     <display value="Child Proof Cap"/>
                                 </coding>
@@ -287,7 +287,7 @@
                             <material> 
                                 <coding>
                                     
-                                	<system value="http://example.accumulus.org/fhir/code/material"/>
+                                	<system value="http://accumulus.org/fhir/code/material"/>
                                     <code value="112344ss"/>
                                     <display value="PVC"/>
                                 </coding>
@@ -302,7 +302,7 @@
                             <property> 
                                 <type>
                                     <coding>
-                                    	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                    	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                         <code value="xxxx"/>
                                         <display value="Quality Specification"/>
                                     </coding>
@@ -315,14 +315,14 @@
                             <property> 
                                 <type>
                                     <coding>
-                                    	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                    	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                         <code value="xxxx"/>
                                         <display value="Quality Standard"/>
                                     </coding>
                                 </type>
                                 <valueCodeableConcept>
                                     <coding>
-                                    	<system value="http://example.accumulus.org/fhir/code/grade"/>
+                                    	<system value="http://accumulus.org/fhir/code/grade"/>
                                         <code value="BP"/>
                                         <display value="Closure Quality Standard"/>
                                     </coding>
@@ -332,7 +332,7 @@
                             <property> 
                                 <type>
                                     <coding>
-                                    	<system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                                    	<system value="http://accumulus.org/fhir/code/packageProperty"/>
                                         <code value="xxxx"/>
                                         <display value="Narrative"/>
                                     </coding>
@@ -345,7 +345,7 @@
                             <property> 
                                 <type>
                                     <coding>
-                                    	<system value="http://example.accumulus.org/fhir/code/closureProperties"/>
+                                    	<system value="http://accumulus.org/fhir/code/closureProperties"/>
                                         <code value="1123ss"/>
                                         <display value="Integrity Test"/>
                                     </coding>

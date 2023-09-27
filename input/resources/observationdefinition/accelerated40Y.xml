@@ -5,7 +5,7 @@
     <meta>
                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
     </meta>
-                <url value="http://example-server.com/fhir/ObservationDefinition/accelerated40Y"/>
+                <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y"/>
         <title value="Y"/>
         <status value="active"/>
         <code>

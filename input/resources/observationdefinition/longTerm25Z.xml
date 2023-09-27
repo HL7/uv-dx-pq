@@ -5,7 +5,7 @@
     <meta>
     	<profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
     </meta>
-    <url value="http://example-server.com/fhir/ObservationDefinition/longTerm25Z"/>
+                <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z"/>
     <title value="Z"/>
     <status value="active"/>
     <code>
