@@ -3,10 +3,9 @@
     <!-- Contained in file Accumulus FHIR Substance Example - Stability, posted 05-31-2023 -->
     <id value="specimenDefStoredAt40"/>
     <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"
-        />
+                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
     </meta>
+                <url value="http://hl7.org/fhir/uv/dx-pq/SpecimenDefinition/specimenDefStoredAt40"/>
     <status value="active"/>
     <typeTested>
         <preference value="preferred"/>
