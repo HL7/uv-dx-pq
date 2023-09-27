@@ -5,7 +5,7 @@
     <meta>
                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
-                <url value="http://example-server.com/fhir/ObservationDefinition/Description"/>
+                <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description"/>
     <title value="Description"/>
     <status value="active"/>
     <code>
@@ -20,10 +20,7 @@
         <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
             <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
             <valueString value="An orange film-coated tablet, debossed with 175 on one side">
-                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-table-footnote-dxpq">
-                    <!--                     <extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">-->
-                    <valueString value="Note 1"/>
-                </extension>
+	                        
             </valueString>
         </extension>
     </qualifiedValue>
