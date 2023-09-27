@@ -6,6 +6,15 @@
                 <meta>
                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
                 </meta>
+                <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+                    <valueReference>
+                        <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
+                    </valueReference>
+                </extension>
+                <identifier>
+                    <system value="https://eudract.europa.eu/example/identifier"/>
+                    <value value="ABC1234"/>
+                </identifier>
     <status value="final"/>
     <code>
         <coding>
@@ -38,7 +47,6 @@
     <result>
         <reference value="Observation/LongTerm25C-initial-3"/>
     </result>
-    <!-\- skipping middle months -\->
     <result>
         <reference value="Observation/LongTerm25C-18m-1"/>
     </result>
