@@ -5,7 +5,7 @@
     <meta>
                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
-                <url value="http://example-server.com/fhir/ObservationDefinition/Degradation"/>
+                <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Degradation"/>
     <title value="Degradation Products by HPLC (% w/w)"/>
     <status value="active"/>
     <code>
@@ -24,8 +24,8 @@
             <high>
                 <value value="0.8"/>
                 <unit value="% w/w"/>
-                <system value="http://dummy.unitsofmeasure.org"/>
-                <code value="%{ w/w}"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
@@ -37,8 +37,8 @@
             <high>
                 <value value="0.4"/>
                 <unit value="% w/w"/>
-                <system value="http://dummy.unitsofmeasure.org"/>
-                <code value="%{ w/w}"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
@@ -50,8 +50,8 @@
             <high>
                 <value value="0.4"/>
                 <unit value="% w/w"/>
-                <system value="http://dummy.unitsofmeasure.org"/>
-                <code value="%{ w/w}"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
@@ -63,8 +63,8 @@
             <high>
                 <value value="0.2"/>
                 <unit value="% w/w"/>
-                <system value="http://dummy.unitsofmeasure.org"/>
-                <code value="%{ w/w}"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
@@ -76,13 +76,12 @@
             <high>
                 <value value="2.3"/>
                 <unit value="% w/w"/>
-                <system value="http://dummy.unitsofmeasure.org"/>
-                <code value="%{ w/w}"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
     <component>
-        <!-- are expected to have a component that says what impurity this one is -->
         <code>
             <coding>
                 <system value="http://dummy.loinc.org"/>
