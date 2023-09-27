@@ -51,7 +51,7 @@
         </extension>
     </extension>
     <identifier>
-        <value value="CAT1"/>
+                    <value value="SUB1"/>			
         <!-- #155 -->
     </identifier>
     <instance value="true"/>
