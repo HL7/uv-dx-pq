@@ -3,12 +3,10 @@
     <!-- Contained in Accumulus FHIR Product Example - Batch Analysis (05-31-2023) -->
     <id value="Assay"/>
     <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
-        />
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay"/>
-        <name value="Assay"/>
+                <title value="Assay"/>
         <status value="active"/>
         <code>
             <coding>
@@ -22,8 +20,7 @@
             <text value="Assay by UHPLC"/>
         </method>
         <qualifiedValue>
-            <extension
-                url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                 <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                 <valueString value="95% to 105% of label claim"/>
             </extension>
