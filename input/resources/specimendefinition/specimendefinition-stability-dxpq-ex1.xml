@@ -6,6 +6,7 @@
     <meta>
                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
     </meta>
+                <url value="http://hl7.org/fhir/uv/dx-pq/SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
     <status value="active"/>
     <typeTested>
         <preference value="preferred"/>

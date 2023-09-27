@@ -6,6 +6,7 @@
                 <meta>
                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
                 </meta>
+                <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-drug-specification-dxpq-ex1"/>
     <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
     <status value="active"/>
     <subjectReference>

@@ -6,6 +6,7 @@
                 <meta>
                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
                 </meta>
+                <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
     <title value="Stability Monitoring Program"/>
     <status value="active"/>
                 <subjectReference>
