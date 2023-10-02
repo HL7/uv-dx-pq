@@ -1,10 +1,8 @@
 Content TBD
 <html>
   <body>
-    <p>Open a PDF file <a href="/example-html/32P8.3StabilityReport.pdf">example 32P8.3StabilityReport.pdf with relative URL</a>.</p>
-    <p>Open a PDF file <a href="https://build.fhir.org/example-html/32P8.3StabilityReport.pdf">example 32P8.3StabilityReport.pdf with absolute URL</a>.</p>
- <p>Open a PDF file <a href="http://www.hl7.org/documentcenter/public/HL7/HL7%202021%20Annual%20Report%20v071822%20FINAL.pdf">example pdf</a>.</p>
-  
+<p>Open a PDF file <a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/stability.htmlexample-html/32P8.3StabilityReport.pdf">example 32P8.3StabilityReport.pdf with absolute URL to build.fhir.org</a>.</p>
+<p>Open a PDF file <a href="https://github.com/HL7/uv-dx-pq/blob/master/input/example-html/32P8.3%20Stability%20Report.pdf">example 32P8.3StabilityReport.pdf with absolute URL to GitHub</a>.</p>
   </body>
 </html>
 
