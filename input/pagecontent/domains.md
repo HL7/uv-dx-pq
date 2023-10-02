@@ -10,4 +10,8 @@ Test links:
 1. [32P8.3StabilityReport.pdf in example-html](/example-html/32P8.3StabilityReport.pdf)
 1. [Home](index.html): Summary description and technical overview
 
-<embed src="/example-html/32P8.3StabilityReport.pdf" type="application/pdf">
+<object data="32P8.3StabilityReport.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="32P8.3StabilityReport.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="32P8.3StabilityReport.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
