@@ -2,7 +2,11 @@
 Provides details about a stability study that includes test, test criteria, test results, and the batches of medicinal product subject to testing.
 
 ### Component Diagram
-<table><tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" /></td></tr></table>
+<table>
+<tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" /></td></tr>
+<tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" width="200"/></td></tr>
+<tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" height="100"/></td></tr>
+</table>
 
 ### Description of Components
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
