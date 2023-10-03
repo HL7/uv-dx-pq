@@ -3,9 +3,7 @@ Provides details about a stability study that includes test, test criteria, test
 
 ### Component Diagram
 <table>
-<tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" /></td></tr>
-<tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" width="200"/></td></tr>
-<tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" height="100"/></td></tr>
+<tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" width="450"/></td></tr>
 </table>
 
 ### Description of Components
@@ -29,7 +27,6 @@ Provides details about a stability study that includes test, test criteria, test
 
 **Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
-
 ### Typical Steps
 1. Select Ingredients
 2. Select Substances
@@ -41,12 +38,11 @@ Provides details about a stability study that includes test, test criteria, test
 8. Populate test results
 9. Populate final report with conclusions
 
-
 ### Examples
 <html>
-  <body>
+<body>
 <p><b>Synthetic CMC sample</b> (PDF): <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/32P8.3StabilityReport.pdf">32P8.3StabilityReport.pdf</a>.</p>
-      </body>
+</body>
 </html>
 
 **HTML Version of the sample**: [link to sub-page]
@@ -54,25 +50,3 @@ Provides details about a stability study that includes test, test criteria, test
 **FHIR XML/JSON** (links to validated Bundle examples in this IG):
 * [Bundle – Drug Substance Stability dx-PQ - Example 1](https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-substance-stability-dxpq-ex1.html)
 * [Bundle – Drug Product Stability dx-PQ - Example 1](https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-product-stability-dxpq-ex1.html)
-
-
-<html>
-  <body>
-<p>Open a PDF file <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/32P8.3StabilityReport.pdf">example 32P8.3StabilityReport.pdf with absolute URL to GitHub, raw .pdf</a>.</p>
-      </body>
-</html>
-
-
-### Heading 2
-Basic text...
-
-Bullet List:
-* A
-* B
-* C
-
-**Bold text**
-*Italics text*
-
-**Links**
-The [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) profile requires ...
