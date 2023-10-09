@@ -1,0 +1,41 @@
+<mxfile host="Electron" modified="2023-10-09T12:19:34.608Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="tmCllGwloI3RQdkOgapL" version="22.0.2" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1037" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="PtvGfc8u3fFPzmpzfyYF-7" value="MedicinalProductDefintion&amp;nbsp;&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Stelbat Tablets, 20mg&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe699;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="224.5" y="-100" width="156" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fafH0U7rZojqmzMNoOSG-42" value="PackagedProductDefinition&lt;br&gt;&lt;i&gt;Blister&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#A6C499;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="305" y="21.25" width="156" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Kh6UWCqLEouyqFOK7ntM-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="PtvGfc8u3fFPzmpzfyYF-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="20" as="sourcePoint" />
+            <mxPoint x="340" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kh6UWCqLEouyqFOK7ntM-27" value="package for" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Kh6UWCqLEouyqFOK7ntM-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.4009" y="1" relative="1" as="geometry">
+            <mxPoint x="-14" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEeFdyCGopTc3gh3-DFE-13" value="PackagedProductDefinition&lt;br&gt;&lt;i&gt;Bottle&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#A6C499;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="139.5" y="21.25" width="156" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vVK2JaOc1j1Is1GUJe7x-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fafH0U7rZojqmzMNoOSG-42" target="PtvGfc8u3fFPzmpzfyYF-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="30" as="sourcePoint" />
+            <mxPoint x="274" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vVK2JaOc1j1Is1GUJe7x-2" value="package for" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vVK2JaOc1j1Is1GUJe7x-1">
+          <mxGeometry x="-0.4009" y="1" relative="1" as="geometry">
+            <mxPoint x="-14" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
