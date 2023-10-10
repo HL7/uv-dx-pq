@@ -1,29 +1,59 @@
-<mxfile host="Electron" modified="2023-10-09T01:37:18.302Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="XXDH3iv1eSgYJc2VVCVV" version="22.0.2" type="device">
+<mxfile host="Electron" modified="2023-10-10T19:44:56.102Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="VyomwEoBxBt-yfH6Jlaz" version="21.6.8" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1037" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1276" dy="1726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="PtvGfc8u3fFPzmpzfyYF-7" value="MedicinalProductDefintion&amp;nbsp;&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Stelbat Tablets, 20mg&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe699;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="9" y="-90" width="156" height="40" as="geometry" />
+          <mxGeometry x="10" y="-1130" width="156" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Kh6UWCqLEouyqFOK7ntM-25" value="Ingredient" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="230" y="-60" width="120" height="40" as="geometry" />
+        <mxCell id="Kh6UWCqLEouyqFOK7ntM-25" value="Ingredient - &lt;i&gt;Active&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="231" y="-1160" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Kh6UWCqLEouyqFOK7ntM-26" value="for" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kh6UWCqLEouyqFOK7ntM-25" target="PtvGfc8u3fFPzmpzfyYF-7" edge="1">
           <mxGeometry x="-0.3333" y="-2" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="461.43000000000006" y="-50" as="sourcePoint" />
-            <mxPoint x="370" y="-40" as="targetPoint" />
+            <mxPoint x="462.43000000000006" y="-1150" as="sourcePoint" />
+            <mxPoint x="371" y="-1140" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="IEeFdyCGopTc3gh3-DFE-2" value="SubstanceDefinition&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Stelbatolol&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#c1f0da;strokeColor=#9ebda2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="413" y="-60" width="150" height="40" as="geometry" />
+          <mxGeometry x="390" y="-1160" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="IEeFdyCGopTc3gh3-DFE-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kh6UWCqLEouyqFOK7ntM-25" target="IEeFdyCGopTc3gh3-DFE-2" edge="1">
           <mxGeometry x="-0.3333" y="-2" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="490" y="-110" as="sourcePoint" />
-            <mxPoint x="640" y="-120" as="targetPoint" />
+            <mxPoint x="491" y="-1210" as="sourcePoint" />
+            <mxPoint x="641" y="-1220" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3v1VWZy3YVTV6VQQd-Bb-0" value="Ingredient - &lt;i&gt;Excipient, Diluent&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="231" y="-1110" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3v1VWZy3YVTV6VQQd-Bb-1" value="SubstanceDefinition&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Mannitol&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#c1f0da;strokeColor=#9ebda2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="390" y="-1110" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3v1VWZy3YVTV6VQQd-Bb-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-0.3333" y="-2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="351" y="-1090.5" as="sourcePoint" />
+            <mxPoint x="390" y="-1090" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3v1VWZy3YVTV6VQQd-Bb-3" value="for" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3v1VWZy3YVTV6VQQd-Bb-0" target="PtvGfc8u3fFPzmpzfyYF-7">
+          <mxGeometry x="-0.3333" y="-2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="241" y="-1130" as="sourcePoint" />
+            <mxPoint x="176" y="-1160" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3v1VWZy3YVTV6VQQd-Bb-7" value="PackagedProductDefiniton&lt;br&gt;&lt;i&gt;Container Closure Description&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#b6d7a8;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="181" y="-1050" width="170" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="3v1VWZy3YVTV6VQQd-Bb-8" value="package for" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3v1VWZy3YVTV6VQQd-Bb-7" target="PtvGfc8u3fFPzmpzfyYF-7">
+          <mxGeometry x="0.0862" y="2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="241" y="-1080" as="sourcePoint" />
+            <mxPoint x="176" y="-1100" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
