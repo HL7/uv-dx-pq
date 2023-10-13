@@ -49,9 +49,9 @@ Provides details about a stability study, including protocol (tests and acceptan
 <li>3.2.P.8 Stability </li>
 <ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.8.3_Stability_Data.pdf ">3.2.P.8.3 Stability Data</a></li></ul>
 </ul>
-<p><<b>HTML rendering</b> of Synthetic CMC data:</p>
-<ul><li>><a href="stability_rend_s.html">Drug Substance Stability</a> </li>
-<li>><a href="stability_rend_p.html">Drug Product Stability</a> </li></ul>
+<p><b>HTML rendering</b> of Synthetic CMC data:</p>
+<ul><li><a href="stability_rend_s.html">Drug Substance Stability</a> </li>
+<li><a href="stability_rend_p.html">Drug Product Stability</a> </li></ul>
 
 <p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
 <ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-substance-stability-dxpq-ex1.html">Bundle – Drug Substance Stability dx-PQ - Example 1</a></li>
