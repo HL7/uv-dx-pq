@@ -1763,8 +1763,13 @@
                     <generation value="markdown"/>
                 </page>
                 <page>
-                    <name value="stability_rend.html"/>
-                    <title value="Stability Study: CMC synthetic data rendering"/>
+                    <name value="stability_rend_s.html"/>
+                    <title value="Stability Study: CMC synthetic data rendering - drug substance"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="stability_rend_p.html"/>
+                    <title value="Stability Study: CMC synthetic data rendering - drug product"/>
                     <generation value="markdown"/>
                 </page>
 
