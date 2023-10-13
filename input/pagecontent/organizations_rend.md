@@ -1,5 +1,7 @@
 The HTML rendering below shows a synthetic CMC data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s). 
+
 The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is similar.
+
 
 <html>
 <body>
