@@ -3,9 +3,7 @@
    <id value="bundle-organizations-dxpq-ex1"/>   
 <!--   <id value="d0f67879-9bdf-4f63-80eb-144912b0db60"/>-->
    <meta>
-      <profile
-         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"
-      />
+      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
    </meta>
    <type value="collection"/>
    <entry>
