@@ -5,8 +5,7 @@
    <id value="bundle-analytical-procedure-dxpq-ex1-prod"/>
    <!--   <id value="product-analytical-procedure"/>-->
    <meta>
-      <profile
-         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
       <!--      <profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/>-->
    </meta>
    <type value="collection"/>
@@ -30,9 +29,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <reference
-                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
-               />
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </subjectReference>
             <action>
                <title value="Preparation and Analysis of Drug Product Samples"/>
@@ -72,9 +69,7 @@
                   <title value="Sample Preparation"/>
                   <action>
                      <title value="Instructions"/>
-                     <description
-                        value="Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge."
-                     />
+                     <description  value="Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge."/>
                   </action>
                </action>
                <action>
@@ -250,15 +245,11 @@
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
 <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString
-                     value="1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05."
-                  />
+                  <valueString value="1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05." />
                </extension>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
 <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString
-                     value="2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm."
-                  />
+                  <valueString value="2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm."/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -278,9 +269,7 @@
                      <value value="4"/>
                      <unit value="days"/>
                   </maxDuration>
-                  <instruction
-                     value="at ambient or refrigerated conditions protected from light (may be extended with supporting data)"
-                  />
+                  <instruction value="at ambient or refrigerated conditions protected from light (may be extended with supporting data)"/>
                </handling>
             </typeTested>
          </SpecimenDefinition>
