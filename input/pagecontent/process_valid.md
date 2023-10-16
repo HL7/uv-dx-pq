@@ -22,8 +22,6 @@ Provide details about manufacturing process validation protocols and results.
 <li><a href="stability_rend_p.html">Drug Product Stability</a> </li></ul>
 
 <p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
-<ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-substance-stability-dxpq-ex1.html">Bundle – Drug Substance Stability dx-PQ - Example 1</a></li>
-<li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-product-stability-dxpq-ex1.html">Bundle – Drug Product Stability dx-PQ - Example 1</a></li>
-</ul>
+<ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-product-process-validation-dxpq-ex1.html">Bundle - Product Process Validation dx-PQ - Example 1</a></li></ul>
 </body>
 </html>
