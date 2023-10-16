@@ -18,17 +18,9 @@
          <PlanDefinition>
             <id value="manufacturingProcess-unlinked"/>
             <meta>
-               <profile
-                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq" />
             </meta>
-            <extension
-               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-tabulate-equipment-dxpq">
-               <!--            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateEquipment">-->
-               <valueBoolean value="true"/>
-            </extension>
-            <extension
-               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq">
+            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq">
                <!--            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">-->
                <valueReference>
                   <!-- Process flow diagram -->
@@ -58,9 +50,7 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
-               <reference
-                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
-               />
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
             <!-- #85 -->
@@ -253,7 +243,7 @@
                      <valueQuantity>
                         <value value="150"/>
                         <unit value="°C"/>
-                        <system value="http://dummy.unitsofmeasure.org"/>
+                        <system value="http://unitsofmeasure.org"/>
                         <code value="Cel"/>
                      </valueQuantity>
                   </extension>
@@ -279,7 +269,6 @@
                   <typeReference>
                      <!-- this is new in R5 and is not in R4B -->
                      <reference value="DeviceDefinition/mixer"/>
-                     <display value="Mixer"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -298,6 +287,7 @@
                            <reference value="SubstanceDefinition/startingMaterial"/>
                         </valueReference>
                      </extension>
+                     <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -316,6 +306,7 @@
                            <reference value="SubstanceDefinition/processingMaterial"/>
                         </valueReference>
                      </extension>
+                     <display value="processing material"/> <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -334,6 +325,7 @@
                            <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
                         </valueReference>
                      </extension>
+                     <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -381,7 +373,7 @@
                         <text value="Process temperature must be below 40°C"/>
                      </valueCodeableConcept>
                   </extension>
-                  <extension url="value">                     <!-- todo want a range here -->
+                  <extension url="value">  <!-- todo want a range here -->
                      <valueQuantity>
                         <value value="40"/>
                         <unit value="°C"/>
@@ -429,6 +421,7 @@
                            <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
                         </valueReference>
                      </extension>
+                     <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -447,6 +440,7 @@
                            <reference value="SubstanceDefinition/StelbatololGranules"/>
                         </valueReference>
                      </extension>
+                     <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -527,6 +521,7 @@
                            <reference value="SubstanceDefinition/StelbatololGranules"/>
                         </valueReference>
                      </extension>
+                     <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -545,6 +540,7 @@
                            <reference value="SubstanceDefinition/Stelbatolol"/>
                         </valueReference>
                      </extension>
+                     <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -738,8 +734,6 @@
          <!-- #84 -->
          <DocumentReference>
             <id value="DocumentReference-process-flow-diagram-dxpq-ex1"/>
-            <meta>
-            </meta>
             <identifier>
                <system value="http://accumulus.org/fhir/identifier/document"/>
                <value value="FLOW-001"/>

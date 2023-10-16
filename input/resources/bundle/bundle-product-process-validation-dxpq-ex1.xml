@@ -227,11 +227,6 @@
                   <code>
                      <text value="???"/>
                   </code>
-                  <!--timingTiming>
-                            <code>
-                                <text value="Release time"/>
-                            </code>
-                        </timingTiming-->
                   <action>
                      <code>
                         <text value="Test"/>
@@ -295,22 +290,6 @@
                      <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/UniformityAcceptance-->
 			                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a5a4-9168-2602140548d8"/>
                   </action>
-                  <!--action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Dissolution"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/DissolutionQ80"/>
-                        </action-->
-                  <!--action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Microbiological"/>
-                        </action-->
-                  <!--action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description"/>
-                        </action-->
                   <action>
                      <code>
                         <text value="Test"/>
@@ -4240,6 +4219,7 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                   <valueCode value="unsupported"/>
                </extension>
+               <display value="all batches"/> 
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -4273,6 +4253,7 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                   <valueCode value="unsupported"/>
                </extension>
+               <display value="all batches"/> 
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
