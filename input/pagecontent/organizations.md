@@ -3,7 +3,7 @@ Provides details about each facility that is a manufacturer, supplier, or test s
 
 ### Component Diagram
 <table>
-<tr><td><img src="organizations_FHIR_resources.png" width="850"/></td></tr>
+<tr><td><img src="organizations_FHIR_resources.png" width="200"/></td></tr>
 </table>
  
 ### Description of Components

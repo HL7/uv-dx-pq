@@ -3,7 +3,7 @@ Provide details about primary and secondary packaging components for drug substa
 
 ### Component Diagram
 <table>
-<tr><td><img src="container_closure_system.png" width="850"/></td></tr>
+<tr><td><img src="container_closure_system.png" width="425"/></td></tr>
 </table>
  
 ### Description of Components
