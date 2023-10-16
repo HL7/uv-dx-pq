@@ -23,6 +23,10 @@
 <!--        <reference value="Substance/actual-batch-substance"/>-->
         <reference value="Substance/substance-dxpq-ex1"/>
     </subject>
+				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+				<performer>
+					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+				</performer>
     <valueCodeableConcept>
         <text value="Pass"/>
     </valueCodeableConcept>

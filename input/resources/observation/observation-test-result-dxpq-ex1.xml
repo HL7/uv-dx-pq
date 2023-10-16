@@ -18,6 +18,10 @@
         </coding>
                             <text value="Degradation Products"/>
     </code>
+				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+				<performer>
+					<reference value="Organization/tester"/>
+				</performer>
     <valueQuantity>
                             <value value="0.101"/>
                             <unit value="% w/w"/>
