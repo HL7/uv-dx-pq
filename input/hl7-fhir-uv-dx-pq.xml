@@ -12,8 +12,7 @@
     <title value="Data Exchange Industry – Pharmaceutical Quality (dx-PQ)"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher
-        value="HL7 Biomedical Research and Regulation Work Group (http://www.hl7.org/Special/committees/rcrim/index.cfm)"/>
+    <publisher value="HL7 Biomedical Research and Regulation Work Group (http://www.hl7.org/Special/committees/rcrim/index.cfm)"/>
     <contact>
         <name value="HL7 International - Biomedical Research and Regulation"/>
         <telecom>
@@ -21,8 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/rcrim"/>
         </telecom>
     </contact>
-    <description
-        value="***Content TBD***&#xA;&#xA;This IG is developed for the Data exchange industry – Pharmaceutical Quality (dx-PQ) project &#xA;* [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)&#xA;* [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)"/>
+    <description value="***Content TBD***&#xA;&#xA;This IG is developed for the Data exchange industry – Pharmaceutical Quality (dx-PQ) project &#xA;* [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)&#xA;* [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)"/>
     <jurisdiction>
         <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -34,10 +32,8 @@
     <packageId value="hl7.fhir.uv.dx-pq"/>
     <fhirVersion value="5.0.0"/>
     <dependsOn id="hl7tx">
-        <extension
-            url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-            <valueMarkdown
-                value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+            <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
         </extension>
         <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
         <packageId value="hl7.terminology.r5"/>
@@ -47,6 +43,7 @@
         <!-- Reordered to match domains graphic-->
         <grouping id="b1-id">
             <name value="Drug Identification"/>
+            <description value="The following artifacts define the specific capabilities that different types of systems are expected to have to comply with this implementation guide. Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements."/>
         </grouping>
         <grouping id="b17-composition">
             <name value="Composition"/>
@@ -142,15 +139,12 @@
         <!--        ID Examples-->
         <resource>
             <reference>
-                <reference
-                    value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
-                />
+                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </reference>
             <name value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
             <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
             <groupingId value="b1-id"/>
         </resource>
 
@@ -197,8 +191,7 @@
             <name value="bundle-drug-substance-specification-dxpq-ex1"/>
             <description value="Bundle – Drug Substance Specification dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
             <groupingId value="b12-specification"/>
         </resource>
 
@@ -209,8 +202,7 @@
             <name value="bundle-drug-product-specification-dxpq-ex1"/>
             <description value="Bundle – Drug Product Specification dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
             <groupingId value="b12-specification"/>
         </resource>
 
@@ -221,8 +213,7 @@
             <name value="plandefinition-drug-specification-dxpq-ex1"/>
             <description value="PlanDefinition - Drug Specification dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
             <groupingId value="b12-specification"/>
         </resource>
 
@@ -324,8 +315,7 @@
             <name value="bundle-drug-substance-stability-dxpq-ex1"/>
             <description value="Bundle – Drug Substance Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
@@ -336,8 +326,7 @@
             <name value="bundle-drug-product-stability-dxpq-ex1"/>
             <description value="Bundle – Drug Product Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
@@ -348,8 +337,7 @@
             <name value="researchstudy-stability-dxpq-ex1"/>
             <description value="ResearchStudy - Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
@@ -360,21 +348,18 @@
             <name value="plandefinition-stability-study-protocol-dxpq-ex1"/>
             <description value="PlanDefinition - Stability Study Protocol dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
         <resource>
             <reference>
-                <reference
-                    value="DiagnosticReport/diagnosticreport-stability-study-results-dxpq-ex1"/>
+                <reference value="DiagnosticReport/diagnosticreport-stability-study-results-dxpq-ex1"/>
             </reference>
             <name value="diagnosticreport-stability-study-results-dxpq-ex1"/>
             <description value="DiagnosticReport - Stability Study Results dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
@@ -385,8 +370,7 @@
             <name value="activitydefinition-stability-test-dxpq-ex1"/>
             <description value="ActivityDefinition - Stability Test dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
@@ -397,8 +381,7 @@
             <name value="specimendefinition-stability-dxpq-ex1"/>
             <description value="SpecimenDefinition - Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
@@ -410,8 +393,7 @@
             <name value="specimen-stability-dxpq-ex1"/>
             <description value="Specimen - Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
@@ -460,8 +442,7 @@
             <name value="bundle-batch-analysis-dxpq-ex1-prod"/>
             <description value="Bundle – Batch Analysis dx-PQ - Example 1, product"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
 
@@ -472,8 +453,7 @@
             <name value="bundle-batch-analysis-dxpq-ex2-sub"/>
             <description value="Bundle – Batch Analysis dx-PQ - Example 2, substance"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
 
@@ -484,8 +464,7 @@
             <name value="medication-batch-information-dxpq-ex1"/>
             <description value="Medication - Batch Information dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
         <resource>
@@ -495,8 +474,7 @@
             <name value="medication-batch-information-dxpq-ex2"/>
             <description value="Medication - Batch Information dx-PQ - Example 2"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
 
@@ -507,8 +485,7 @@
             <name value="plandefinition-mnf-process-dxpq-ex1"/>
             <description value="PlanDefinition - Manufacturing Process dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
 
@@ -544,8 +521,7 @@
             <name value="bundle-organizations-dxpq-ex1"/>
             <description value="Bundle - Organizations dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
             <groupingId value="b4-organizations"/>
         </resource>
 
@@ -583,8 +559,7 @@
             <name value="bundle-product-manufacturing-dxpq-ex1"/>
             <description value="Bundle - Product Manufacturing dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
         </resource>
         <!--Process Validation -->
@@ -607,8 +582,7 @@
             <name value="bundle-product-process-validation-dxpq-ex1"/>
             <description value="Bundle - Product Process Validation dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
 
@@ -644,8 +618,7 @@
             <name value="bundle-product-impurities-dxpq-ex1"/>
             <description value="Bundle - Product Impurities dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-impurities-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-impurities-dxpq"/>
             <groupingId value="b15-impurities"/>
         </resource>
 
@@ -670,8 +643,7 @@
             <name value="bundle-analytical-procedure-dxpq-ex1-prod"/>
             <description value="Bundle – Analytical Procedure dx-PQ - Example 1, drug product"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
             <groupingId value="b6-analytical"/>
         </resource>
 
@@ -682,8 +654,7 @@
             <name value="bundle-analytical-procedure-dxpq-ex2-sub"/>
             <description value="Bundle – Analytical Procedure dx-PQ - Example 2, drug substance"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
             <groupingId value="b6-analytical"/>
         </resource>
 
@@ -719,8 +690,7 @@
             <name value="bundle-container-closure-system-dxpq-ex1-prod"/>
             <description value="Bundle - Container Closure System dx-PQ - Example 1, drug product"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
             <groupingId value="b10-container"/>
         </resource>
 
@@ -731,11 +701,10 @@
             <name value="bundle-container-closure-system-dxpq-ex2-sub"/>
             <description value="Bundle - Container Closure System dx-PQ - Example 2, drug substance"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
             <groupingId value="b10-container"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
@@ -743,8 +712,7 @@
             <name value="manufactureditemdefinition-dxpq-ex1"/>
             <description value="ManufacturedItemDefinition dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
             <groupingId value="b10-container"/>
         </resource>
 
@@ -912,21 +880,18 @@
             <name value="observationdefinition-simple-dxpq-ex1"/>
             <description value="ObservationDefinition - Simple dxPQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
         <resource>
             <reference>
-                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"
-                />
+                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
             </reference>
             <name value="observationdefinition-test-method-dxpq-ex1"/>
             <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
@@ -937,8 +902,7 @@
             <name value="observation-simple-dxpq-ex1"/>
             <description value="Observation-simple-dxpq - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-simple-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
@@ -950,8 +914,7 @@
             <name value="observation-test-result-dxpq-ex1"/>
             <description value="Observation-test-result-dxpq - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
@@ -968,14 +931,12 @@
 
         <resource>
             <reference>
-                <reference
-                    value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
             </reference>
             <name value="substancedefinition-component-substance-dxpq-ex1"/>
             <description value="SubstanceDefinition - Component Substance - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
@@ -998,15 +959,13 @@
             <name value="packagedproductdefinition-dxpq-ex1"/>
             <description value="PackagedProductDefinition dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
         <resource>
             <reference>
-                <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"
-                />
+                <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"/>
             </reference>
             <name value="documentreference-process-flow-diagram-dxpq-ex1"/>
             <description value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
@@ -1380,8 +1339,7 @@
             <name value="accelerated40X"/>
             <description value="ObservationDefinition - accelerated40X"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1392,8 +1350,7 @@
             <name value="accelerated40Y"/>
             <description value="ObservationDefinition - accelerated40Y"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1404,8 +1361,7 @@
             <name value="accelerated40Z"/>
             <description value="ObservationDefinition - accelerated40Z"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1416,8 +1372,7 @@
             <name value="longTerm25X"/>
             <description value="ObservationDefinition - longTerm25X"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1428,8 +1383,7 @@
             <name value="longTerm25Y"/>
             <description value="ObservationDefinition - longTerm25Y"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1440,8 +1394,7 @@
             <name value="longTerm25Z"/>
             <description value="ObservationDefinition - longTerm25Z"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1452,8 +1405,7 @@
             <name value="longTerm30X"/>
             <description value="ObservationDefinition - longTerm30X"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1464,8 +1416,7 @@
             <name value="longTerm30Y"/>
             <description value="ObservationDefinition - longTerm30Y"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1478,8 +1429,7 @@
             <name value="Assay"/>
             <description value="ObservationDefinition - Assay"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1490,8 +1440,7 @@
             <name value="Degradation"/>
             <description value="ObservationDefinition - Degradation"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1502,8 +1451,7 @@
             <name value="Description"/>
             <description value="ObservationDefinition - Description"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1514,8 +1462,7 @@
             <name value="Identification"/>
             <description value="ObservationDefinition - Identification"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1526,8 +1473,7 @@
             <name value="v"/>
             <description value="ObservationDefinition - v"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1538,8 +1484,7 @@
             <name value="Microbiological"/>
             <description value="ObservationDefinition - Microbiological"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1550,8 +1495,7 @@
             <name value="Uniformity"/>
             <description value="ObservationDefinition - Uniformity"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
         <resource>
@@ -1561,8 +1505,7 @@
             <name value="Water"/>
             <description value="ObservationDefinition - Water"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1574,8 +1517,7 @@
             <name value="specimenDefStoredAt30"/>
             <description value="specimenDefStoredAt30"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             <groupingId value="examples2"/>
         </resource>
         <resource>
@@ -1585,8 +1527,7 @@
             <name value="specimenDefStoredAt40"/>
             <description value="specimenDefStoredAt40"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             <groupingId value="examples2"/>
         </resource>
 
@@ -1599,8 +1540,7 @@
             <name value="StelbatololAqueousSolution"/>
             <description value="Stelbatolol Aqueous Solution"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             <groupingId value="examples3"/>
         </resource>
 
@@ -1611,8 +1551,7 @@
             <name value="StelbatololGranules"/>
             <description value="Stelbatolol Granules"/>
             <isExample value="true"/>
-            <profile
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             <groupingId value="examples3"/>
         </resource>
         <!--Additional ZZ Examples (examples4)-->
@@ -1625,12 +1564,7 @@
             <name value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
-
-<!--            <page>
-                <name value="mapping.html"/>
-                <title value="ICH CTD Mapping"/>
-                <generation value="markdown"/>
-            </page>-->
+        </page>
             <page>
                 <name value="use_cases.html"/>
                 <title value="Business Use Cases"/>
@@ -1731,7 +1665,7 @@
                     <title value="Batch Analysis: CMC synthetic data rendering - drug product"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="batch_formula.html"/>
                     <title value="Batch Formula"/>
@@ -1856,11 +1790,6 @@
                 <title value="Best Practices and Resources"/>
                 <generation value="markdown"/>
             </page>
-<!--            <page>
-                <name value="resources.html"/>
-                <title value="Resources"/>
-                <generation value="markdown"/>
-            </page>-->
             <page>
                 <name value="specification.html"/>
                 <title value="Specification"/>
@@ -1871,7 +1800,6 @@
                 <title value="Downloads"/>
                 <generation value="markdown"/>
             </page>
-        </page>
 
         <!--        <parameter>
             <code>
