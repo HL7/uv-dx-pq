@@ -1625,11 +1625,7 @@
             <name value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
-            <page>
-                <name value="background.html"/>
-                <title value="Background"/>
-                <generation value="markdown"/>
-            </page>
+
 <!--            <page>
                 <name value="mapping.html"/>
                 <title value="ICH CTD Mapping"/>
@@ -1857,14 +1853,14 @@
 
             <page>
                 <name value="best_practices.html"/>
-                <title value="Best Practices"/>
+                <title value="Best Practices and Resources"/>
                 <generation value="markdown"/>
             </page>
-            <page>
+<!--            <page>
                 <name value="resources.html"/>
                 <title value="Resources"/>
                 <generation value="markdown"/>
-            </page>
+            </page>-->
             <page>
                 <name value="specification.html"/>
                 <title value="Specification"/>
