@@ -1630,7 +1630,16 @@
                 <title value="Background"/>
                 <generation value="markdown"/>
             </page>
-
+<!--            <page>
+                <name value="mapping.html"/>
+                <title value="ICH CTD Mapping"/>
+                <generation value="markdown"/>
+            </page>-->
+            <page>
+                <name value="use_cases.html"/>
+                <title value="Business Use Cases"/>
+                <generation value="markdown"/>
+            </page>
             <page>
                 <name value="domains.html"/>
                 <title value="Domains Overview"/>
@@ -1852,13 +1861,13 @@
                 <generation value="markdown"/>
             </page>
             <page>
-                <name value="specification.html"/>
-                <title value="Specification"/>
+                <name value="resources.html"/>
+                <title value="Resources"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <name value="resources.html"/>
-                <title value="Resources"/>
+                <name value="specification.html"/>
+                <title value="Specification"/>
                 <generation value="markdown"/>
             </page>
             <page>
