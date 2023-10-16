@@ -11,7 +11,7 @@
                 	<reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                 </packageFor>
                 
-                <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/> 
+                <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
 
                 
                 
