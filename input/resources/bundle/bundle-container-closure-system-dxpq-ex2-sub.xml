@@ -12,29 +12,6 @@
       <resource>
          <SubstanceDefinition>
             <id value="substance1"/>
-            <contained> <!-- contained may not be right -->
-               <Substance>
-                  <id value="referenceSubstance"/>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-substance-compendial-dxpq">
-                  <!--<extension url="http://accumulus.org/fhir/extension/substanceCompendial"> <!-\- #82 -\->-->
-                     <valueBoolean value="false"/>
-                  </extension>
-                  <identifier>
-                     <system value="http://accumulus.org/fhir/identifier/batchNumber"/>
-                     <!-- #85 -->
-                     <value value="batch-ref-001"/>
-                  </identifier>
-                  <instance value="true"/>
-                  <code>
-                     <concept> <!-- #81 -->
-                        <text value="Reference Substance Name"/>
-                        <!-- can also be a code or a reference to a SubstanceDefintion -->
-                     </concept>
-                  </code>
-                  <expiry value="2019-09-07"/>
-                  <!-- #91 -->
-               </Substance>
-            </contained>
             <name>
                <name value="Stelbatolol"/>
                <!-- #4 -->
@@ -93,7 +70,8 @@
                <containedItem>
                   <item>
                      <reference>
-                        <reference value="ManufacturedItemDefinition/packaged-item"/>
+                        <!--ManufacturedItemDefinition/packaged-item-->
+                        <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
                      </reference>
                   </item>
                </containedItem>
@@ -116,8 +94,8 @@
                <type> <!-- #191 -->
                   <coding>
                      <system value="http://hl7.org/fhir/packaging-type"/>
-                     <code value="xxxx"/>
-                     <display value="Pail"/>
+                     <code value="100000073497"/>
+                     <display value="Bottle"/>
                   </coding>
                </type>
                <material> <!-- #192 -->
@@ -130,7 +108,8 @@
                <containedItem>
                   <item>
                      <reference>
-                        <reference value="ManufacturedItemDefinition/packaged-item"/>
+                        <!--ManufacturedItemDefinition/packaged-item-->
+                        <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
                      </reference>
                   </item>
                </containedItem>
@@ -162,7 +141,8 @@
             <id value="ingredient1"/>
             <status value="active"/>
             <for>
-               <reference value="ManufacturedItemDefinition/packaged-item"/>
+               <!--ManufacturedItemDefinition/packaged-item-->
+               <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
             </for>
             <role>
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
@@ -172,7 +152,8 @@
             <substance>
                <code>
                   <reference> <!-- this links this to the substance -->
-                     <reference value="SubstanceDefinition/substance1"/>
+                     <!--SubstanceDefinition/substance1-->
+                     <reference value="SubstanceDefinition/878c2849-792c-6469-21a2-c2b920930962"/>
                      <display value="WizzoSubstance"/>
                   </reference>
                </code>
@@ -188,6 +169,7 @@
             <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic">
                     <valueBoolean value="true"/>
                 </extension-->
+            <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Specification and Analytical Procedures"/>
             <type>
                <coding>
@@ -203,7 +185,8 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <reference value="PackagedProductDefinition/packageDefinition"/>
+               <!--PackagedProductDefinition/packageDefinition-->
+               <reference value="PackagedProductDefinition/b107a2ba-32d8-0124-7855-4096057c52a9"/>
             </subjectReference>
             <description value="Packaging components are sampled, tested, and examined for conformance with written specifications.                The specification for the primary packaging component are provided in Table 1."/>
             <action>
@@ -222,21 +205,24 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/VisualInspection"/>
+                  <!--ObservationDefinition/VisualInspection-->
+                  <definitionCanonical value="ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524"/>
                </action>
                <action>
                   <description value="Material Identification"/>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/InfraredSpectroscopy"/>
+                  <!--ObservationDefinition/InfraredSpectroscopy-->
+                  <definitionCanonical value="ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525"/>
                </action>
                <action>
                   <description value="Material Conformity"/>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/SupplierCertificateofAnalysis"/>
+                  <!--ObservationDefinition/SupplierCertificateofAnalysis-->
+                  <definitionCanonical value="ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535"/>
                </action>
             </action>
          </PlanDefinition>
@@ -247,6 +233,7 @@
       <resource>
          <ObservationDefinition>
             <id value="VisualInspection"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524"/>
             <title value="Visual Inspection"/>
             <status value="active"/>
             <code>
@@ -270,6 +257,7 @@
       <resource>
          <ObservationDefinition>
             <id value="InfraredSpectroscopy"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525"/>
             <title value="Infrared Spectroscopy"/>
             <status value="active"/>
             <code>
@@ -293,6 +281,7 @@
       <resource>
          <ObservationDefinition>
             <id value="SupplierCertificateofAnalysis"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535"/>
             <title value="Supplier Certificate of Analysis"/>
             <status value="active"/>
             <code>
