@@ -34,8 +34,7 @@
                   <!-- Process flow diagram -->
                   <!-- or could be a Binary -->
                   <!-- #84 -->
-                  <reference
-                     value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
+                  <reference   value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
                </valueReference>
             </extension>
             <extension
@@ -382,12 +381,11 @@
                         <text value="Process temperature must be below 40°C"/>
                      </valueCodeableConcept>
                   </extension>
-                  <extension url="value">
-                     <!-- todo want a range here -->
+                  <extension url="value">                     <!-- todo want a range here -->
                      <valueQuantity>
                         <value value="40"/>
                         <unit value="°C"/>
-                        <system value="http://dummy.unitsofmeasure.org"/>
+                        <system value="http://unitsofmeasure.org"/>
                         <code value="Cel"/>
                      </valueQuantity>
                   </extension>
@@ -741,9 +739,6 @@
          <DocumentReference>
             <id value="DocumentReference-process-flow-diagram-dxpq-ex1"/>
             <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2023-01-12T17:57:08.898+00:00"/>
-               <source value="#n4xHiP0iat7deVDt"/>
             </meta>
             <identifier>
                <system value="http://accumulus.org/fhir/identifier/document"/>
@@ -779,9 +774,7 @@
             <status value="current"/>
             <content>
                <attachment>
-                  <url
-                     value="https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png"
-                  />
+                  <url  value="https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png"/>
                </attachment>
             </content>
          </DocumentReference>
@@ -789,8 +782,7 @@
    </entry>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>
-      <fullUrl
-         value="https://www.example.org/MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+      <fullUrl  value="https://www.example.org/MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
       <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
       <resource>
          <!-- Section 1.1 - DP Identification -->
@@ -842,9 +834,7 @@
             <id value="productIngredient"/>
             <status value="active"/>
             <for>
-               <reference
-                  value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"
-               />
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </for>
             <role>
                <coding>
