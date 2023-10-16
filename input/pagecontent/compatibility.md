@@ -1,1 +1,23 @@
-Content TBD
+### Objective
+Provide details about compatibility studies and results.
+
+### Component Diagram
+ 
+### Description of Components
+
+### Typical Steps
+
+### Examples
+<html>
+<body>
+<p><b>Synthetic CMC samples</b> (PDF):</p>
+<ul>
+<li>3.2.P.2 Pharmaceutical Development</li>
+<ul><li>3.2.P.2.6 Compatibility</li></ul>
+</ul>
+<p><b>HTML rendering</b> of Synthetic CMC data:</p>
+<ul><li><a href="stability_rend_s.html">Drug Substance Stability</a> </li>
+<li><a href="stability_rend_p.html">Drug Product Stability</a> </li></ul>
+<p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
+</body>
+</html>
