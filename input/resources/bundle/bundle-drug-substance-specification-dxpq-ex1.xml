@@ -284,8 +284,8 @@
                         <high>
                             <value value="50"/>
                             <unit value="ppm"/>
-                            <system value="http://dummy.unitsofmeasure.org"/>
-                            <code value="ppm"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="[ppm]"/>
                         </high>
                     </range>
                 </qualifiedValue>
@@ -326,7 +326,7 @@
                         <low>
                             <value value="99.6"/>
                             <unit value="%"/>
-                            <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                             <code value="%"/>
                         </low>
                     </range>
@@ -443,7 +443,7 @@
                         <high>
                             <value value="319"/>
                             <unit value="µm"/>
-                            <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                             <code value="um"/>
                         </high>
                     </range>
@@ -457,7 +457,7 @@
                         <high>
                             <value value="145"/>
                             <unit value="µm"/>
-                            <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                             <code value="um"/>
                         </high>
                     </range>
@@ -471,7 +471,7 @@
                         <high>
                             <value value="20"/>
                             <unit value="µm"/>
-                            <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                             <code value="um"/>
                         </high>
                     </range>
