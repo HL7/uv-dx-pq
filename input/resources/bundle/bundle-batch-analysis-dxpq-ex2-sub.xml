@@ -178,14 +178,14 @@
                      <value value="98"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{w/w}"/>
+                     <code value="%"/>
                      <!-- not sure this is a correct ucum code -->
                   </low>
                   <high>
                      <value value="102"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{w/w}"/>
+                     <code value="%"/>
                      <!-- not sure this is a correct ucum code -->
                   </high>
                </range>
@@ -754,6 +754,33 @@
          </Substance>
       </resource>
    </entry>
+   <!-- Section 5 - Manufacturing Process -->
+   <entry>
+      <fullUrl value="urn:uuid:b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+      <resource>
+         <PlanDefinition>
+            <!--manufacturingProcess-->
+            <id value="b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+            <!-- abridged version only -->
+            <!--http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975-->
+            <url value="http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+            <title value="Process 1.1"/>
+            <type>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <code value="1244566"/>
+                  <display value="Manufacturing Process"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+               <!--SubstanceDefinition/substance1-->
+               <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+               <!-- #83 -->
+            </subjectReference>
+         </PlanDefinition>
+      </resource>
+   </entry>
    <entry>
       <fullUrl value="https://www.example.org/SubstanceDefinition/substance1"/>
       <resource>
@@ -1070,6 +1097,10 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Pass"/>
             </valueCodeableConcept>
@@ -1096,6 +1127,11 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            
             <valueCodeableConcept>
                <text value="Pass"/>
             </valueCodeableConcept>
@@ -1224,8 +1260,7 @@
                <code value="%"/>
             </valueQuantity>
             <note>
-               <text
-                  value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
+               <text value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
                </text>
             </note>
          </Observation>
@@ -1251,6 +1286,11 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="95"/>
                <unit value="%"/>
@@ -1258,8 +1298,7 @@
                <code value="%"/>
             </valueQuantity>
             <note>
-               <text
-                  value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
+               <text value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
                </text>
             </note>
          </Observation>
