@@ -23,7 +23,7 @@ Provide details about primary and secondary packaging components for drug substa
 <li><a href="container_rend_p.html">Drug Product Container Closure System</a> </li></ul>
 
 <p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
-<ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/undle-bundle-container-closure-system-dxpq-ex2-sub.html">Bundle - Container Closure System dx-PQ - Example 2, drug substance</a></li>
+<ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-container-closure-system-dxpq-ex2-sub.html">Bundle - Container Closure System dx-PQ - Example 2, drug substance</a></li>
 <li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-container-closure-system-dxpq-ex1-prod.html">Bundle - Container Closure System dx-PQ - Example 1, drug product</a></li>
 </ul>
 </body>
