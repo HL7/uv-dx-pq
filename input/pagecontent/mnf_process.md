@@ -2,6 +2,9 @@
 Provide a manufacturing process overview and details about unit operations, process parameters, and in-process controls.
 
 ### Component Diagram
+<table>
+<tr><td><img src="manufacturing_process_FHIR_resources [2023-07-28 Rik].png" width="850"/></td></tr>
+</table>
  
 ### Description of Components
 

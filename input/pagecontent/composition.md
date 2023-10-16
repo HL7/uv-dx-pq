@@ -1,6 +1,10 @@
 ### Objective
 Provide details about drug substance and drug product components, materials, and Quality reference standards.
+
 ### Component Diagram
+<table>
+<tr><td><img src="fhir-logo-www.png" width="850"/></td></tr>
+</table>
  
 ### Description of Components
 

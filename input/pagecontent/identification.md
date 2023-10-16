@@ -2,6 +2,9 @@
 Provide details about drug substances and drug products with names and identifiers; structure & structure characterization; physico-chemical properties; and dosage form & characterization (for drug products)
 
 ### Component Diagram
+<table>
+<tr><td><img src="identification_FHIR_resources.png" width="850"/></td></tr>
+</table>
  
 ### Description of Components
 

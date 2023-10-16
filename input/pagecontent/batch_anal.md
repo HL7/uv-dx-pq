@@ -2,6 +2,9 @@
 Provide details about drug substance and drug product batch release testing and results.
 
 ### Component Diagram
+<table>
+<tr><td><img src="batch_analysis_FHIR_resources.png" width="850"/></td></tr>
+</table>
  
 ### Description of Components
 

@@ -2,6 +2,9 @@
 Provide details about impurity identification and characterization.
 
 ### Component Diagram
+<table>
+<tr><td><img src="impurities_FHIR_resources.png" width="850"/></td></tr>
+</table>
  
 ### Description of Components
 
