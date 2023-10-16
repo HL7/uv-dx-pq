@@ -4,8 +4,7 @@
    <id value="bundle-product-process-validation-dxpq-ex1"/>
    <!--   <id value="product-batch-analysis"/>-->
    <meta>
-      <profile
-         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
       <!--      <profile value="http://accumulus.org/fhir/dx-cmc/process-validation"/>-->
    </meta>
    <type value="collection"/>
@@ -674,7 +673,7 @@
                      <value value="0.2"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -687,7 +686,7 @@
                      <value value="0.3"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -700,7 +699,7 @@
                      <value value="0.3"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -713,7 +712,7 @@
                      <value value="0.2"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -726,7 +725,7 @@
                      <value value="1.4"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -829,7 +828,7 @@
                      <value value="1.0"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -863,7 +862,7 @@
                      <value value="1.2"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -897,13 +896,13 @@
                      <value value="-1.5"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </low>
                   <high>
                      <value value="1.5"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -1340,7 +1339,7 @@
                </coding>
             </code>
             <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq"> 
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq">
                   <valueString value="± 2% target (%)"/>
                </extension>
                <range>
@@ -1519,7 +1518,7 @@
                <text value="Assay by UHPLC"/>
             </method>
             <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq"> 
+                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-display-dxpq">
                   <valueString value="95% to 105% of label claim"/>
                </extension>
                <range>
@@ -1913,6 +1912,16 @@
          </Organization>
       </resource>
    </entry>
+   <entry>
+      <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+      <resource>
+         <Organization>
+            <!--testing lab-->
+            <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            <name value="Testing Lab"/>
+         </Organization>
+      </resource>
+   </entry>
    <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
    <entry>
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
@@ -2210,8 +2219,12 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+			      <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -2241,6 +2254,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Does not comply"/>
             </valueCodeableConcept>
@@ -2270,6 +2287,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -2299,6 +2320,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -2328,6 +2353,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Does not comply"/>
             </valueCodeableConcept>
@@ -2357,6 +2386,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -2386,6 +2419,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="6.91"/>
                <unit value="pH"/>
@@ -2418,6 +2455,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="6.92"/>
                <unit value="pH"/>
@@ -2450,6 +2491,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="6.93"/>
                <unit value="pH"/>
@@ -2482,6 +2527,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="7.01"/>
                <unit value="pH"/>
@@ -2514,6 +2563,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="7.02"/>
                <unit value="pH"/>
@@ -2546,6 +2599,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="6.93"/>
                <unit value="pH"/>
@@ -2578,6 +2635,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="21.1"/>
                <unit value="mg/mL"/>
@@ -2610,6 +2671,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="21.2"/>
                <unit value="mg/mL"/>
@@ -2642,6 +2707,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="21.3"/>
                <unit value="mg/mL"/>
@@ -2674,6 +2743,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="20.1"/>
                <unit value="mg/mL"/>
@@ -2706,6 +2779,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="20.2"/>
                <unit value="mg/mL"/>
@@ -2738,6 +2815,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="20.3"/>
                <unit value="mg/mL"/>
@@ -2770,6 +2851,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="103"/>
                <unit value="%"/>
@@ -2802,6 +2887,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="102"/>
                <unit value="%"/>
@@ -2834,6 +2923,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="101"/>
                <unit value="%"/>
@@ -2866,11 +2959,15 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2911,11 +3008,15 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2956,11 +3057,15 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3001,11 +3106,15 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3046,11 +3155,15 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3091,11 +3204,15 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3136,11 +3253,15 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3181,11 +3302,15 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3226,11 +3351,15 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3271,11 +3400,15 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3316,11 +3449,15 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3361,11 +3498,15 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3406,11 +3547,15 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.6"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3451,11 +3596,15 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.7"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3496,11 +3645,15 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.6"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -3541,6 +3694,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3570,6 +3727,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3599,6 +3760,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3627,6 +3792,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="90"/>
                <unit value="%"/>
@@ -3658,6 +3827,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="92"/>
                <unit value="%"/>
@@ -3689,6 +3862,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="95"/>
                <unit value="%"/>
@@ -3721,6 +3898,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3750,6 +3931,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3779,6 +3964,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3808,6 +3997,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3837,6 +4030,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3866,6 +4063,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -3895,11 +4096,15 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -3927,11 +4132,15 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -3959,11 +4168,15 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
                <system value="http://unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <code value="%"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -3991,6 +4204,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="9.1"/>
                <unit value="CFU/100ml"/>
@@ -4018,7 +4235,16 @@
                </coding>
                <text value="Conclusion"/>
             </code>
-            <!-- no subject -->
+            <!-- no subject because it applies to all the samples -->
+            <subject>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unsupported"/>
+               </extension>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueString value="Conclusion of filling tests...."/>
          </Observation>
       </resource>
@@ -4042,7 +4268,16 @@
                </coding>
                <text value="Conclusion"/>
             </code>
-            <!-- no subject -->
+            <!-- no subject because it applies to all the samples -->
+            <subject>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unsupported"/>
+               </extension>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueString value="Conclusion of lyophilization tests...."/>
          </Observation>
       </resource>
@@ -4070,6 +4305,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="1234"/>
             </valueQuantity>
@@ -4099,6 +4338,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="1235"/>
             </valueQuantity>
@@ -4128,6 +4371,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="1236"/>
             </valueQuantity>
@@ -4157,6 +4404,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="97"/>
                <unit value="%"/>
@@ -4199,6 +4450,10 @@
                <!--Medication/medication-actual-batch-2-->
 			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="98"/>
                <unit value="%"/>
@@ -4241,6 +4496,10 @@
                <!--Medication/medication-actual-batch-3-->
 			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <valueQuantity>
                <value value="96"/>
                <unit value="%"/>
@@ -4283,6 +4542,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <component>
                <code>
                   <coding>
@@ -4359,6 +4622,10 @@
                <!--Medication/medication-batch-information-dxpq-ex1-->
 			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
+			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
+			<performer>
+				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+			</performer>
             <component>
                <code>
                   <coding>
