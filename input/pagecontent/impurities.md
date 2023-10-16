@@ -21,8 +21,7 @@ Provide details about impurity identification and characterization.
 <ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.5.5_Characterisation_of_Impurities.pdf ">3.2.P.5.5 Characterisation of Impurities</a></li></ul>
 </ul>
 <p><b>HTML rendering</b> of Synthetic CMC data:</p>
-<ul><li><a href="impurities_rend_s.html">Drug Substance Impurities</a> </li>
-<li><a href="impurities_rend_p.html">Drug Product Impurities</a> </li></ul>
+<ul><li><a href="impurities_rend_p.html">Drug Product Impurities</a> </li></ul>
 
 <p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
 <ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-product-impurities-dxpq-ex1.html">Bundle - Product Impurities dx-PQ - Example 1</a></li>
