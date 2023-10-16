@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Batch Analysis -->
 <!-- Based on file: Accumulus FHIR Substance Example - Batch Analysis, posted on 05-31-2023 -->
-<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
+<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://unitsofmeasure.org"/>-->
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <!-- For this example, changed "http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology" to "http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
@@ -36,7 +36,7 @@
             <description value="Narrative description of analysis"/>
             <action>
                <!-- this is then entire thing -->
-               <title value="Batch Results for Drug Substance"/>
+               <title value="Batch Specification for Drug Substance"/>
                <code>
                   <text value="Overall set of actions"/>
                </code>
@@ -177,14 +177,14 @@
                   <low>
                      <value value="98"/>
                      <unit value="% w/w"/>
-                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
                      <!-- not sure this is a correct ucum code -->
                   </low>
                   <high>
                      <value value="102"/>
                      <unit value="% w/w"/>
-                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                      <code value="%{w/w}"/>
                      <!-- not sure this is a correct ucum code -->
                   </high>
@@ -210,20 +210,6 @@
             <method>
                <text value="Organic impurities by LC"/>
             </method>
-            <!--            <quantitativeDetails>
-               <unit>
-                  <coding>
-                     <system value="http://dummy.unitsofmeasure.org"/>
-                     <code value="%{w/w}"/>
-                     <!-\- not sure this is a correct ucum code -\->
-                  </coding>
-               </unit>
-               <customaryUnit>
-                  <coding>
-                     <code value="% w/w"/>
-                  </coding>
-               </customaryUnit>
-            </quantitativeDetails>-->
             <qualifiedValue>
                <appliesTo>
                   <!-- could be a code -->
@@ -253,8 +239,7 @@
                      <extension
                         url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/testComment">-->
-                        <valueString
-                           value="Impurity 3 was included in the release specification throughout clinical development, and no longer forms a part of a commercial release specification; see Section S.4.5 Justification of Specification and Section S.2.5 Validation (PPQ) for additional data">
+                        <valueString value="Impurity 3 was included in the release specification throughout clinical development, and no longer forms a part of a commercial release specification; see Section S.4.5 Justification of Specification and Section S.2.5 Validation (PPQ) for additional data">
                         </valueString>
                      </extension>
                   </text>
@@ -319,19 +304,6 @@
             <method>
                <text value="Impurity 5 content by LC-MS"/>
             </method>
-            <!--            <quantitativeDetails>
-               <unit>
-                  <coding>
-                     <system value="http://dummy.unitsofmeasure.org"/>
-                     <code value="ppm"/>
-                  </coding>
-               </unit>
-               <customaryUnit>
-                  <coding>
-                     <code value="ppm"/>
-                  </coding>
-               </customaryUnit>
-            </quantitativeDetails>-->
             <qualifiedValue>
                <appliesTo>
                   <!-- could be a code -->
@@ -341,7 +313,7 @@
                   <high>
                      <value value="50"/>
                      <unit value="ppm"/>
-                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                      <code value="[ppm]"/>
                   </high>
                </range>
@@ -383,7 +355,7 @@
                   <low>
                      <value value="99.6"/>
                      <unit value="%"/>
-                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                      <code value="%"/>
                   </low>
                </range>
@@ -409,20 +381,7 @@
             <method>
                <text value="Residual solvents by headspace GC"/>
             </method>
-            <!--            <quantitativeDetails>
-               <unit>
-                  <coding>
-                     <system value="http://dummy.unitsofmeasure.org"/>
-                     <code value="%{w/w}"/>
-                     <!-\- not sure this is a correct ucum code -\->
-                  </coding>
-               </unit>
-               <customaryUnit>
-                  <coding>
-                     <code value="% w/w"/>
-                  </coding>
-               </customaryUnit>
-            </quantitativeDetails>-->
+
             <qualifiedValue>
                <appliesTo>
                   <!-- could be a code -->
@@ -518,7 +477,7 @@
             <!--            <quantitativeDetails>
                <unit>
                   <coding>
-                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                      <code value="um"/>
                   </coding>
                </unit>
@@ -537,7 +496,7 @@
                   <high>
                      <value value="319"/>
                      <unit value="µm"/>
-                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                      <code value="um"/>
                   </high>
                </range>
@@ -551,7 +510,7 @@
                   <high>
                      <value value="145"/>
                      <unit value="µm"/>
-                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                      <code value="um"/>
                   </high>
                </range>
@@ -565,7 +524,7 @@
                   <high>
                      <value value="20"/>
                      <unit value="µm"/>
-                     <system value="http://dummy.unitsofmeasure.org"/>
+                     <system value="http://unitsofmeasure.org"/>
                      <code value="um"/>
                   </high>
                </range>
@@ -834,6 +793,17 @@
          </Organization>
       </resource>
    </entry>
+   <entry>
+      <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+      <resource>
+         <Organization>
+                <!--testing lab-->
+            <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
+            <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            <name value="Testing Lab"/>
+         </Organization>
+      </resource>
+   </entry>
    <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
    <entry>
       <fullUrl value="https://www.example.org/DiagnosticReport/batchAnalysisReport"/>
@@ -1070,6 +1040,10 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Pass"/>
             </valueCodeableConcept>
@@ -1148,6 +1122,10 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Conforms"/>
             </valueCodeableConcept>
@@ -1174,6 +1152,10 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Does not conform"/>
             </valueCodeableConcept>
@@ -1200,6 +1182,10 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Conforms"/>
             </valueCodeableConcept>
@@ -1226,10 +1212,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="94"/>
                <unit value="%"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -1263,7 +1254,7 @@
             <valueQuantity>
                <value value="95"/>
                <unit value="%"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -1294,10 +1285,14 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="96"/>
                <unit value="%"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -1328,11 +1323,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1369,11 +1368,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.4"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1410,11 +1413,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1451,11 +1458,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1492,11 +1503,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.4"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1533,11 +1548,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1574,11 +1593,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1615,11 +1638,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1656,11 +1683,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1697,11 +1728,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1738,11 +1773,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1779,11 +1818,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1821,11 +1864,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.02"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1862,11 +1909,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.02"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1903,11 +1954,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.02"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -1944,10 +1999,14 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="20"/>
                <unit value="ppm"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="[ppm]"/>
             </valueQuantity>
             <component>
@@ -1985,10 +2044,14 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="22"/>
                <unit value="%"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
          </Observation>
@@ -2014,10 +2077,14 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="18"/>
                <unit value="%"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
          </Observation>
@@ -2043,10 +2110,14 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="91.5"/>
                <unit value="%"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -2077,10 +2148,14 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="91.5"/>
                <unit value="%"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -2111,10 +2186,14 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="91.5"/>
                <unit value="%"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
+               <system value="http://unitsofmeasure.org"/>
                <code value="%"/>
             </valueQuantity>
             <note>
@@ -2144,11 +2223,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2184,11 +2267,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2224,11 +2311,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2264,11 +2355,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="1.4"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2304,11 +2399,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="1.5"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2344,11 +2443,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="1.2"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2385,11 +2488,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.8"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -2414,11 +2521,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.8"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -2443,11 +2554,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.8"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
          </Observation>
       </resource>
@@ -2471,11 +2586,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2511,11 +2630,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.4"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2551,11 +2674,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2591,11 +2718,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2631,11 +2762,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.4"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2671,11 +2806,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2711,11 +2850,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2751,11 +2894,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
@@ -2791,11 +2938,15 @@
             <subject>
                <reference value="Substance/actual-batch-substance-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
-               <system value="http://dummy.unitsofmeasure.org"/>
-               <code value="%{ w/w}"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
             </valueQuantity>
             <component>
                <code>
