@@ -66,7 +66,8 @@
             		<valueString value="packagedproductdefinition/{id}.xml"/>
             	</extension-->
             <packageFor>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </packageFor>
             <containedItemQuantity>
                <value value="28"/>
@@ -95,14 +96,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
                         <code value="xxxx"/>
                         <display value="Color"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/color"/>
+                        <system value="http://accumulus.org/fhir/code/color"/>
                         <code value="white"/>
                         <display value="White"/>
                      </coding>
@@ -111,14 +112,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
                         <code value="xxxx"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/grade"/>
+                        <system value="http://accumulus.org/fhir/code/grade"/>
                         <code value="USP"/>
                         <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
                      </coding>
@@ -127,14 +128,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
                         <code value="xxxx"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/grade"/>
+                        <system value="http://accumulus.org/fhir/code/grade"/>
                         <code value="PhEur"/>
                         <display value="PhEur 3.1.3 Polyolefins"/>
                      </coding>
@@ -143,7 +144,7 @@
                <packaging>
                   <type>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                        <system value="http://accumulus.org/fhir/code/closureTypes"/>
                         <code value="112344"/>
                         <display value="Child Proof Cap"/>
                      </coding>
@@ -160,14 +161,14 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <system value="http://accumulus.org/fhir/code/packageProperty"/>
                            <code value="xxxx"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/grade"/>
+                           <system value="http://accumulus.org/fhir/code/grade"/>
                            <code value="16CFR1700"/>
                            <display value="16 CFR 1700"/>
                         </coding>
@@ -176,7 +177,7 @@
                   <packaging>
                      <type>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                           <system value="http://accumulus.org/fhir/code/closureTypes"/>
                            <code value="112344dd"/>
                            <display value="Multi-layer Foil Seal Liner"/>
                         </coding>
@@ -192,14 +193,14 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <system value="http://accumulus.org/fhir/code/packageProperty"/>
                               <code value="xxxx"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/grade"/>
+                              <system value="http://accumulus.org/fhir/code/grade"/>
                               <code value="21CFR175.300"/>
                               <display value="21 CFR 175.300"/>
                            </coding>
@@ -208,14 +209,14 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <system value="http://accumulus.org/fhir/code/packageProperty"/>
                               <code value="xxxx"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/grade"/>
+                              <system value="http://accumulus.org/fhir/code/grade"/>
                               <code value="EU-94-62-EC"/>
                               <display value="EU 94/62/EC"/>
                            </coding>
@@ -237,7 +238,8 @@
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
             </meta>
             <packageFor>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </packageFor>
             <containedItemQuantity>
                <value value="28"/>
@@ -254,14 +256,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
                         <code value="xxxx"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/grade"/>
+                        <system value="http://accumulus.org/fhir/code/grade"/>
                         <code value="EU1935-2004"/>
                         <display value="European Commission Regulation 1935/2004"/>
                      </coding>
@@ -271,14 +273,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
                         <code value="xxxx"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/grade"/>
+                        <system value="http://accumulus.org/fhir/code/grade"/>
                         <code value="EU78-142"/>
                         <display value="European Union Council Directive 78/142/EEC"/>
                      </coding>
@@ -287,7 +289,7 @@
                <packaging>
                   <type>
                      <coding>
-                        <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                        <system value="http://accumulus.org/fhir/code/closureTypes"/>
                         <code value="100000073495"/>
                         <display value="Blister"/>
                         <!-- the actual blister -->
@@ -307,7 +309,7 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <system value="http://accumulus.org/fhir/code/packageProperty"/>
                            <code value="xxxx"/>
                            <display value="Thickness"/>
                         </coding>
@@ -321,14 +323,14 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <system value="http://accumulus.org/fhir/code/packageProperty"/>
                            <code value="xxxx"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/grade"/>
+                           <system value="http://accumulus.org/fhir/code/grade"/>
                            <code value="USP"/>
                            <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
                         </coding>
@@ -337,14 +339,14 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <system value="http://accumulus.org/fhir/code/packageProperty"/>
                            <code value="xxxx"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/grade"/>
+                           <system value="http://accumulus.org/fhir/code/grade"/>
                            <code value="PhEur3111"/>
                            <display value="Materials Based on Non-Plasticised Poly Vinyl Chloride for Containers for Solid Dosage Forms and Oral Administration"/>
                         </coding>
@@ -353,14 +355,14 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                           <system value="http://accumulus.org/fhir/code/packageProperty"/>
                            <code value="xxxx"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/grade"/>
+                           <system value="http://accumulus.org/fhir/code/grade"/>
                            <code value="PhEur322"/>
                            <display value="Plastic Containers and Closures for Pharmaceutical Use"/>
                         </coding>
@@ -380,7 +382,7 @@
                   <packaging>
                      <type>
                         <coding>
-                           <system value="http://example.accumulus.org/fhir/code/closureTypes"/>
+                           <system value="http://accumulus.org/fhir/code/closureTypes"/>
                            <code value="112344bb"/>
                            <display value="Blister Foil Lidding"/>
                         </coding>
@@ -400,14 +402,14 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <system value="http://accumulus.org/fhir/code/packageProperty"/>
                               <code value="xxxx"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/grade"/>
+                              <system value="http://accumulus.org/fhir/code/grade"/>
                               <code value="USP"/>
                               <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
                            </coding>
@@ -416,14 +418,14 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <system value="http://accumulus.org/fhir/code/packageProperty"/>
                               <code value="xxxx"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/grade"/>
+                              <system value="http://accumulus.org/fhir/code/grade"/>
                               <code value="EU10-2011"/>
                               <display value="European Union Regulation 10/2011"/>
                            </coding>
@@ -432,7 +434,7 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://example.accumulus.org/fhir/code/packageProperty"/>
+                              <system value="http://accumulus.org/fhir/code/packageProperty"/>
                               <code value="xxxx"/>
                               <display value="Thickness"/>
                            </coding>
