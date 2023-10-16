@@ -458,8 +458,7 @@
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/testComment">-->
-                  <valueString
-                     value="Particle Size Distribution was included in the release specification throughout clinical development, and no longer forms a part of the commercial release specification; See Section S.4.5 Justification of Specification for data and rationale.">
+                  <valueString value="Particle Size Distribution was included in the release specification throughout clinical development, and no longer forms a part of the commercial release specification; See Section S.4.5 Justification of Specification for data and rationale.">
                   </valueString>
                </extension>
             </title>
@@ -564,6 +563,12 @@
                   <valueDateTime value="2020-01"/>
                   <!-- #157 -->
                </extension>
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq">
+                  <valueReference>
+                     <!--PlanDefinition/manufacturingProcess-->
+                     <reference value="PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+                  </valueReference>
+               </extension>
                <extension url="batchQuantity">
                   <!-- #157 -->
                   <valueQuantity>
@@ -584,8 +589,7 @@
                   <!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <system
-                           value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -775,7 +779,8 @@
             <status value="active"/>
             <subjectReference>
                <!--SubstanceDefinition/substance1-->
-               <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+               <reference value="SubstanceDefinition/substance1"/>
+               <!--reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/-->
                <!-- #83 -->
             </subjectReference>
          </PlanDefinition>
@@ -1335,8 +1340,7 @@
                <code value="%"/>
             </valueQuantity>
             <note>
-               <text
-                  value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
+               <text value="CAT1, CAT2 and CAT3 met the clinical specification in place at time of testing; clinical specification release limit for Assay was 93% w/w; clinical specification release limit for Enantiomeric Purity was NLT 91.0%">
                </text>
             </note>
          </Observation>
