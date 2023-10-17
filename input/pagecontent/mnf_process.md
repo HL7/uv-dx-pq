@@ -8,7 +8,6 @@ Provide a manufacturing process overview and details about unit operations, proc
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>

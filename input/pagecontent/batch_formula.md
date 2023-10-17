@@ -8,7 +8,6 @@ Provide details about drug substance and drug product master batch properties an
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>

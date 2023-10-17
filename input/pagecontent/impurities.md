@@ -8,7 +8,6 @@ Provide details about impurity identification and characterization.
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>

@@ -27,16 +27,6 @@ Provides details about a stability study, including protocol (tests and acceptan
 
 **Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
-### Typical Steps
-1. Select Ingredients
-2. Select Substances
-3. Select Medicinal Product
-4. Select individual tests and acceptance criteria
-5. Select storage conditions
-6. Populate stability study details
-7. Select Batch references
-8. Populate test results
-9. Populate final report with conclusions
 
 ### Examples
 <html>

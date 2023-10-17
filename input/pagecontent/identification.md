@@ -8,7 +8,6 @@ Provide details about drug substances and drug products with names and identifie
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>

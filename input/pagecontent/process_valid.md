@@ -8,8 +8,6 @@ Provide details about manufacturing process validation protocols and results.
 
 ### Description of Components
 
-### Typical Steps
-
 ### Examples
 <html>
 <body>
