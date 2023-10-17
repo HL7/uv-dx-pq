@@ -37,9 +37,9 @@
             </valueCodeableConcept>
         </extension>-->
     </effectiveDateTime>
-                <performer>
-                    <reference value="Organization/tester"/>
-                </performer>
+                <!--performer>
+               		<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+                </performer-->
     <result>
 <!--        <reference value="Observation/LongTerm25C-initial-1"/>-->
         <reference value="Observation/observation-test-result-dxpq-ex1"/>

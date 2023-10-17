@@ -13,7 +13,6 @@
 <!--            <system value="http://loinc.org"/>-->
                                 <system value="http://dummy.loinc.org"/>
             <code value="DGP"/>
-<!--            <display value="Impurities"/>-->
                                 <display value="Degradation Products"/>
         </coding>
                             <text value="Degradation Products"/>
@@ -23,7 +22,7 @@
                         </subject>
 				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 				<performer>
-					<reference value="Organization/tester"/>
+				    <reference value="Organization/organization-dxpq-ex1"/>
 				</performer>
     <valueQuantity>
                             <value value="0.101"/>
