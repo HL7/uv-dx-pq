@@ -1,1 +1,17836 @@
-The HTML rendering below shows a synthetic CMC data example for Common Technical Document (CTD) Module 3: Quality, sections ...
+The HTML rendering below shows a synthetic CMC data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses.
+
+<html>
+<body>
+<div class="greyable">
+<div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
+<div class="divBody">
+<div class="debugOffBorder">
+<div class="bundleBorder">
+<div class="debugOff">
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: product-batch-analysis)
+Profile: http://accumulus.org/fhir/dx-cmc/batch-analysis 
+
+<Bundle>
+    <id value=&quot;product-batch-analysis&quot;/>
+    <meta>
+        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/batch-analysis&quot;/>
+    </meta>
+    <type value=&quot;collection&quot;/>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
+        <resource>
+            <PlanDefinition>
+                <id value=&quot;specificationProtocol&quot;/>
+                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/businessName&quot;>
+                    <valueString value=&quot;Section 11 - Stability Study - Protocol&quot;/>
+                </extension-->
+                <title value=&quot;P.5.4 BATCH ANALYSIS&quot;/>
+                <status value=&quot;active&quot;/>
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>
+                <description value=&quot;Narrative description of analysis&quot;/>
+                <!-- new &quot;tabular&quot; style -->
+                <action>
+                    <!-- this is then entire thing -->
+                    <title value=&quot;Batch Specification for Drug Product&quot;/>
+                    <code>
+                        <text value=&quot;Overall set of actions&quot;/>
+                    </code>
+                    <action>
+                        <title value=&quot;Release&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;Release time&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                        </action>
+                    </action>
+                    <action>
+                        <title value=&quot;End of shelf life&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;At end of shelf life&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                        </action>
+                    </action>
+                </action>
+            </PlanDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:fc07b5d5-9fe1-91c2-2d06-47cb5b295e72&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Description&quot;/>
+                <title value=&quot;Description&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Visual inspection&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:220059d8-5aed-6d9e-563f-aac39b315c05&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;DescriptionEnd&quot;/>
+                <title value=&quot;Description&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:3b0e878e-4bc9-8864-862f-e28b21233e8d&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Identification&quot;/>
+                <title value=&quot;Identification&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;ID by UHPLC&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:7c01a2fc-7ced-92b5-3ce7-8279d9df2421&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;IdentificationEnd&quot;/>
+                <title value=&quot;Identification&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Assay&quot;/>
+                <title value=&quot;Assay&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Assay by UHPLC&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;95% to 105% of label claim&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:9d1fd19a-9265-7b02-865e-75c12e952ad4&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;AssayEnd&quot;/>
+                <title value=&quot;Assay&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:8bdea820-4197-7c7d-0990-7be06bf78aaf&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Degradation&quot;/>
+                <title value=&quot;Degradation Products&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                </code>
+                <method>
+                    <text value=&quot;Degradation products by UHPLC&quot;/>
+                </method>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;1.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <component>
+                    <!-- are expected to have a component that says what impurity this one is -->
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                </component>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:d5d084d0-37c9-3e1e-1d3f-97e7798540a9&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;DegradationEnd&quot;/>
+                <title value=&quot;Degradation Products&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                </code>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.8&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <component>
+                    <!-- are expected to have a component that says what impurity this one is -->
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                </component>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:8f5d8abf-2cf4-8617-1e41-a74d90210dcc&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Dissolution&quot;/>
+                <title value=&quot;Dissolution&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <!-- possibly &quot;G1113&quot; -->
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:33a9d578-6e6b-7606-72bc-6775d36c1930&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;DissolutionQ80&quot;/>
+                <title value=&quot;Dissolution (Q)&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQuantity&quot;/>
+                    </coding>
+                    <!--text value=&quot;Dissolution (Q)&quot;/-->
+                </code>
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>
+                </method>
+                <qualifiedValue>
+                    <condition value=&quot;at 30 minutes&quot;/>
+                    <range>
+                        <low>
+                            <value value=&quot;80&quot;/>
+                            <unit value=&quot;%&quot;/>
+                        </low>
+                    </range>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;DissolutionEnd&quot;/>
+                <title value=&quot;Dissolution&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <!--text value=&quot;Dissolution&quot;/-->
+                </code>
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:31e29d22-5fcb-546e-24fd-52a4a4004467&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Water&quot;/>
+                <title value=&quot;Water Content&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;USP <921>&quot;/>
+                </method>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:7d0b63fc-5194-33d0-3e4a-0aef5edf7ba6&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;WaterEnd&quot;/>
+                <title value=&quot;Water Content&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;USP <921>&quot;/>
+                </method>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;2.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:d999ee06-6595-762c-1bda-0818ab1c6c0e&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Microbiological&quot;/>
+                <title value=&quot;Microbiological&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Ph Eur&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:60529d20-a55e-2575-4cb7-9f207ef8a2a1&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;MicrobiologicalEnd&quot;/>
+                <title value=&quot;Microbiological&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Ph Eur&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Uniformity&quot;/>
+                <title value=&quot;Uniformity of dosage&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Weight variation&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:2b01c026-1687-24c7-4c8c-e5d98ada8683&quot;/>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;UniformityEnd&quot;/>
+                <title value=&quot;Uniformity of dosage&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>
+            </ObservationDefinition>
+        </resource>
+    </entry>
+    <!-- Section 8 - Batch or Lot Information (batch 1 of 3) -->
+    <entry>
+        <fullUrl value=&quot;urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51&quot;/>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>
+                    </extension>
+                </code>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                            <!-- #171 -->
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <!-- #157 -->
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <!-- #159 -->
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <!-- #26 -->
+                                <!-- #155 -->
+                                <!-- need to see if one of these needs changing -->
+                                <value value=&quot;100100&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <!-- #160 -->
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <!-- #159 -->
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <!-- #158 -->
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <!-- #153 -->
+                    <lotNumber value=&quot;33445&quot;/>
+                </batch>
+            </Medication>
+        </resource>
+    </entry>
+    <!-- Section 8 - Batch or Lot Information (another batch 2 of 3) -->
+    <entry>
+        <fullUrl value=&quot;urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc&quot;/>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch-2&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                </code>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance-2&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100050&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <lotNumber value=&quot;33446&quot;/>
+                </batch>
+            </Medication>
+        </resource>
+    </entry>
+    <!-- Section 8 - Batch or Lot Information (another batch 3 of 3) -->
+    <entry>
+        <fullUrl value=&quot;urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06&quot;/>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch-3&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                </code>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance-3&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100125&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <lotNumber value=&quot;33447&quot;/>
+                </batch>
+            </Medication>
+        </resource>
+    </entry>
+    <!-- Section 4.1 - Manufacturer -->
+    <entry>
+        <fullUrl value=&quot;urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a&quot;/>
+        <resource>
+            <Organization>
+                <id value=&quot;manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>
+                </identifier>
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;/>
+                        <city value=&quot;Lumberton&quot;/>
+                        <state value=&quot;New Jersey&quot;/>
+                        <postalCode value=&quot;08048&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07&quot;/>
+        <resource>
+            <Organization>
+                <id value=&quot;packaging&quot;/>
+                <name value=&quot;MySite&quot;/>
+            </Organization>
+        </resource>
+    </entry>
+    <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
+    <entry>
+        <fullUrl value=&quot;urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd&quot;/>
+        <resource>
+            <DiagnosticReport>
+                <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
+                     however the observations themselves do have subjects -->
+                <id value=&quot;batchAnalysisReport&quot;/>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy&quot;>
+                    <valueReference>
+                        <reference value=&quot;PlanDefinition/specificationProtocol&quot;/>
+                    </valueReference>
+                </extension>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
+                        <code value=&quot;111&quot;/>
+                        <display value=&quot;Batch Analysis Report&quot;/>
+                    </coding>
+                </code>
+                <effectiveDateTime value=&quot;2020-12&quot;/>
+                <!-- start of stability test -->
+                <result>
+                    <reference value=&quot;Observation/observationDescription&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDescription2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDescription3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationIdentification&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationIdentification2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationIdentification3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationAssay&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationAssay2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationAssay3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolution&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolution2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolution3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ80&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ802&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ803&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationUniformity&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationUniformity2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationUniformity3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationMicro&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationMicro2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationMicro3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationWater&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationWater2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationWater3&quot;/>
+                </result>
+                <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;/>
+            </DiagnosticReport>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:ba1b4227-8a67-a605-1152-e86e4d614fc3&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Does not comply&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:2d628dc2-0b9e-9494-55b3-2621e50938c5&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Does not comply&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;103&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;102&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;101&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:be016630-8754-7414-9014-21e020ad66c6&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.7&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:7316e094-2094-5710-4f11-75d3effc995e&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:1cedf9c1-8e89-5dbb-0e1f-0363a9ca4893&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:c350f0b1-9495-0165-2555-83ebd79da682&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:4b97e406-3fb0-9f65-0979-910ea1b9254f&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ80&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;90&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:bbfc28df-49bc-986c-1a0e-75e3160268b9&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ802&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;92&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:d6955449-16b4-107f-851d-2f99d0b47b96&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ803&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;95&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:591f5d75-1b2f-299b-6885-f325e4228bda&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:1dd8e506-08cf-8a15-8cd0-7c7cf1d88731&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:d136c4f5-62da-81eb-4fc8-144f9182589e&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:3ab5e4eb-673b-0e66-3d2c-86d64ced0e86&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:cec7ce65-57d7-a654-9ad6-21d162186eb9&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+    <entry>
+        <fullUrl value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/>
+        <resource>
+            <!-- Section 1.1 - DP Identification -->
+            <MedicinalProductDefinition>
+                <id value=&quot;medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                <description value=&quot;Textual description of the product&quot;/>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>
+                </combinedPharmaceuticalDoseForm>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>
+                </route>
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>
+                </name>
+            </MedicinalProductDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6&quot;/>
+        <resource>
+            <Ingredient>
+                <id value=&quot;productIngredient&quot;/>
+                <status value=&quot;active&quot;/>
+                <for>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </for>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>
+                </role>
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>
+                </substance>
+            </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95&quot;/>
+        <resource>
+            <SubstanceDefinition>
+                <id value=&quot;substance1&quot;/>
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>
+                </manufacturer>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;/>
+                    <!-- #4 -->
+                </name>
+            </SubstanceDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2&quot;/>
+        <resource>
+            <Organization>
+                <id value=&quot;substance-manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>
+            </Organization>
+        </resource>
+    </entry>
+    <!-- Section 5 - Manufacturing Process -->
+    <entry>
+        <fullUrl value=&quot;urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1&quot;/>
+        <resource>
+            <PlanDefinition>
+                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
+                <id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                </meta>
+                <title value=&quot;Process 1.0&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>
+                </type>
+                <status value=&quot;active&quot;/>
+                <!-- #83 -->
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>
+            </PlanDefinition>
+        </resource>
+    </entry>" id="Bundle-product-batch-analysis">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: product-batch-analysis</div>
+<div class="debugOff"></div>
+<div><span title="
+<Bundle>
+    ...
+    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+</div>
+</div>
+<div class="org indent"><span class="bold">Batch Analysis Report - Product, on Stelbat Tablets, 20mg</span><br><br style="line-height:6px;"><div class="htmlTableRemove"><span>Details of Batches</span><br style="line-height:6px;"><div class="indent-no-border"><span class="debugOff">Batches Table</span><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+<tr>
+<td><b>Drug Product Batch Number</b></td>
+<td class="centred">33445</td>
+<td class="centred">33446</td>
+<td class="centred">33447</td>
+</tr>
+<tr>
+<td>Batch Size (Tablets)</td>
+<td class="centred">100100</td>
+<td class="centred">100050</td>
+<td class="centred">100125</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td class="centred">PPQ / Stability</td>
+<td class="centred">PPQ / Stability</td>
+<td class="centred">PPQ / Stability</td>
+</tr>
+<tr>
+<td>Site of Manufacture</td>
+<td class="centred">AAA Pharmaceutical, Inc., Lumberton</td>
+<td class="centred">AAA Pharmaceutical, Inc., Lumberton</td>
+<td class="centred">AAA Pharmaceutical, Inc., Lumberton</td>
+</tr>
+<tr>
+<td>Date of Manufacture</td>
+<td class="centred">2020-06</td>
+<td class="centred">2020-06</td>
+<td class="centred">2020-06</td>
+</tr>
+<td>Manufacturing Process</td>
+<td class="centred">Process 1.0</td>
+<td class="centred">Process 1.0</td>
+<td class="centred">Process 1.0</td>
+</table>
+</div>
+</div><br style="line-height:6px;"><div ondblclick="summaryHandler(event)" class="indent summaryUnit comp"><a class="plainLink"><span class="bold" title="DiagnosticReport (id: batchAnalysisReport)(fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)
+
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
+                     however the observations themselves do have subjects -->
+                <id value=&quot;batchAnalysisReport&quot;/>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy&quot;>
+                    <valueReference>
+                        <reference value=&quot;PlanDefinition/specificationProtocol&quot;/>
+                    </valueReference>
+                </extension>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
+                        <code value=&quot;111&quot;/>
+                        <display value=&quot;Batch Analysis Report&quot;/>
+                    </coding>
+                </code>
+                <effectiveDateTime value=&quot;2020-12&quot;/>
+                <!-- start of stability test -->
+                <result>
+                    <reference value=&quot;Observation/observationDescription&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDescription2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDescription3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationIdentification&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationIdentification2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationIdentification3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationAssay&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationAssay2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationAssay3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total-2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total-3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolution&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolution2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolution3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ80&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ802&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ803&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationUniformity&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationUniformity2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationUniformity3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationMicro&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationMicro2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationMicro3&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationWater&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationWater2&quot;/>
+                </result>
+                <result>
+                    <reference value=&quot;Observation/observationWater3&quot;/>
+                </result>
+                <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;/>" id="DiagnosticReport-batchAnalysisReport">Diagnostic Report<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <code>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
+                        <code value=&quot;111&quot;/>
+                        <display value=&quot;Batch Analysis Report&quot;/>">Batch Analysis Report<span class="greyOff"> [111]</span><span class="greyOff"> (http://accumulus.org/fhir/code/reportType)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/diagnosticreport.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/diagnosticreport.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/diagnosticreport.html#tt-uml">R6</a>]</span><div class="debugOff">id: batchAnalysisReport</div>
+<div class="debugOff"> fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd</div>
+<div class="summaryHiddenOff"></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <effectiveDateTime value=&quot;2020-12&quot;>">Date: 2020-12</span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
+                        <code value=&quot;111&quot;/>
+                        <display value=&quot;Batch Analysis Report&quot;/>
+                    </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <code>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
+                        <code value=&quot;111&quot;/>
+                        <display value=&quot;Batch Analysis Report&quot;/>">Batch Analysis Report<span class="greyOff"> [111]</span><span class="greyOff"> (http://accumulus.org/fhir/code/reportType)</span></span></span></div>
+<div class="summaryHiddenOff"></div>
+<div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy&quot;>
+                    <valueReference>
+                        <reference value=&quot;PlanDefinition/specificationProtocol&quot;/>
+                    </valueReference>">Triggered By</span>: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span></span><div class="summaryHiddenOff"></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;>">Conclusion: </span><span>The samples have been assessed and the conclusion is...</span></div>
+<div class="summaryHiddenOff"></div>
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <title value=&quot;Batch Specification for Drug Product&quot;>">Results: </span><span>Batch Specification for Drug Product</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<tr>
+<th colspan="3"></th>
+<th colspan="3">Lot Number</th>
+</tr>
+<tr>
+<th rowspan="1">Test Procedure</th>
+<th colspan="0">Acceptance Criteria</th>
+<th rowspan="1">Method Reference</th><th><a href="#Medication-medication-actual-batch" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    ...
+                    <lotNumber value=&quot;33445&quot;>" class="noUnderline">33445</a></th>
+<th><a href="#Medication-medication-actual-batch-2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    ...
+                    <lotNumber value=&quot;33446&quot;>" class="noUnderline">33446</a></th>
+<th><a href="#Medication-medication-actual-batch-3" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    ...
+                    <lotNumber value=&quot;33447&quot;>" class="noUnderline">33447</a></th>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Description" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Description&quot;>" class="noUnderline">Description</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;>">An orange film-coated tablet, debossed with 175 on one side</span></td>
+<td class="centred">Visual inspection</td>
+<td class="centred"><a href="#Observation-observationDescription" class="noUnderline">Complies</a></td>
+<td class="centred"><a href="#Observation-observationDescription2" class="noUnderline">Does not comply</a></td>
+<td class="centred"><a href="#Observation-observationDescription3" class="noUnderline">Complies</a></td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Identification" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Identification&quot;>" class="noUnderline">Identification</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;>">Consistent with the retention time and UV spectrum of the reference standard</span></td>
+<td class="centred">ID by UHPLC</td>
+<td class="centred"><a href="#Observation-observationIdentification" class="noUnderline">Complies</a></td>
+<td class="centred"><a href="#Observation-observationIdentification2" class="noUnderline">Does not comply</a></td>
+<td class="centred"><a href="#Observation-observationIdentification3" class="noUnderline">Complies</a></td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Assay" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Assay&quot;>" class="noUnderline">Assay</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;95% to 105% of label claim&quot;>">95% to 105% of label claim</span></td>
+<td class="centred">Assay by UHPLC</td>
+<td class="centred"><a href="#Observation-observationAssay" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;103&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">103</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationAssay2" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;102&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">102</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationAssay3" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;101&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">101</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></a></td>
+</tr>
+<tr>
+<td colspan="6">Degradation Products</td>
+<tr>
+<td style="padding-left:20px">Impurity 1</td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 0.2 % w/w</span></td>
+<td rowspan="5" class="centred">Degradation products by UHPLC</td>
+<td class="centred"><a href="#Observation-observationDegradation-imp1" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.1</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp1-2" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp1-3" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+</tr>
+<tr>
+<td style="padding-left:20px">Impurity 2</td>
+<td class="centred" style="border-right: 1px solid black;"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 0.3 % w/w</span></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp2" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp2-2" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp2-3" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+</tr>
+<tr>
+<td style="padding-left:20px">Impurity 3</td>
+<td class="centred" style="border-right: 1px solid black;"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 0.3 % w/w</span></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp3" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp3-2" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp3-3" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+</tr>
+<tr>
+<td style="padding-left:20px">Individual unspecified degradation products</td>
+<td class="centred" style="border-right: 1px solid black;"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 0.2 % w/w</span></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp-unspecified" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.1</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp-unspecified-2" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.1</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp-unspecified-3" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.1</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+</tr>
+<tr>
+<td style="padding-left:20px">Total degradation products</td>
+<td class="centred" style="border-right: 1px solid black;"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;1.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 1.4 % w/w</span></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp-total" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.6</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp-total-2" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.7&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.7</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDegradation-imp-total-3" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.6</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+</tr>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Dissolution" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution&quot;>" class="noUnderline">Dissolution</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph&quot;>">Shall comply with the requirements of the harmonised USP/JP/Ph</span></td>
+<td class="centred">Apparatus 2 (paddles), UV measurement</td>
+<td class="centred"><a href="#Observation-observationDissolution" class="noUnderline">Complies</a></td>
+<td class="centred"><a href="#Observation-observationDissolution2" class="noUnderline">Complies</a></td>
+<td class="centred"><a href="#Observation-observationDissolution3" class="noUnderline">Complies</a></td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-DissolutionQ80" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution (Q)&quot;>" class="noUnderline">Dissolution (Q)</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <low>
+                            <value value=&quot;80&quot;/>
+                            <unit value=&quot;%&quot;/>
+                        </low>">NLT 80 %</span> <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <condition value=&quot;at 30 minutes&quot;>">at 30 minutes</span></td>
+<td class="centred">Apparatus 2 (paddles), UV measurement</td>
+<td class="centred"><a href="#Observation-observationDissolutionQ80" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;90&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">90</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDissolutionQ802" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;92&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">92</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationDissolutionQ803" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;95&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">95</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></a></td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Uniformity" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Uniformity of dosage&quot;>" class="noUnderline">Uniformity of dosage</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;>">Shall comply with the requirements of the harmonised USP/JP/Ph Eur</span></td>
+<td class="centred">Weight variation</td>
+<td class="centred"><a href="#Observation-observationUniformity" class="noUnderline">Complies</a></td>
+<td class="centred"><a href="#Observation-observationUniformity2" class="noUnderline">Complies</a></td>
+<td class="centred"><a href="#Observation-observationUniformity3" class="noUnderline">Complies</a></td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Microbiological" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Microbiological&quot;>" class="noUnderline">Microbiological</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;>">Shall comply with the requirements of the Ph Eur</span></td>
+<td class="centred">Ph Eur</td>
+<td class="centred"><a href="#Observation-observationMicro" class="noUnderline">Complies</a></td>
+<td class="centred"><a href="#Observation-observationMicro2" class="noUnderline">Complies</a></td>
+<td class="centred"><a href="#Observation-observationMicro3" class="noUnderline">Complies</a></td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Water" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Water Content&quot;>" class="noUnderline">Water Content</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 1.0 % w/w</span></td>
+<td class="centred">USP &lt;921&gt;</td>
+<td class="centred"><a href="#Observation-observationWater" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.5</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationWater2" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.5</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+<td class="centred"><a href="#Observation-observationWater3" class="noUnderline"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.5</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></a></td>
+</tr>
+</table>
+</div><br style="line-height:6px;"></div>
+<div class="indent compText summaryUnit"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDescription&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDescription2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDescription3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationIdentification&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationIdentification2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationIdentification3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationAssay&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationAssay2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationAssay3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1-2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp1-3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2-2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp2-3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3-2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp3-3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified-2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-unspecified-3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total-2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDegradation-imp-total-3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDissolution&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDissolution2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDissolution3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ80&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ802&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDissolutionQ803&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationUniformity&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationUniformity2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationUniformity3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationMicro&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationMicro2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationMicro3&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationWater&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationWater2&quot;/>
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationWater3&quot;/>">Result</span><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDescription)(fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationDescription">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDescription</div><div class="debugOff"> fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Description - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Description" title="click to see target - id=Description">ObservationDefinition</a>)<span class="debugOff"> id: Description</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDescription2)(fullUrl: urn:uuid:ba1b4227-8a67-a605-1152-e86e4d614fc3)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Does not comply&quot;/>
+                </valueCodeableConcept>" id="Observation-observationDescription2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDescription2</div><div class="debugOff"> fullUrl: urn:uuid:ba1b4227-8a67-a605-1152-e86e4d614fc3</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Does not comply&quot;/>">
+				Value:
+				<span style="white-space:normal;">Does not comply</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Does not comply&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Description - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Description" title="click to see target - id=Description">ObservationDefinition</a>)<span class="debugOff"> id: Description</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDescription3)(fullUrl: urn:uuid:2d628dc2-0b9e-9494-55b3-2621e50938c5)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationDescription3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDescription3</div><div class="debugOff"> fullUrl: urn:uuid:2d628dc2-0b9e-9494-55b3-2621e50938c5</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Description&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Description - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Description" title="click to see target - id=Description">ObservationDefinition</a>)<span class="debugOff"> id: Description</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationIdentification)(fullUrl: urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationIdentification">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationIdentification</div><div class="debugOff"> fullUrl: urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Identification - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Identification" title="click to see target - id=Identification">ObservationDefinition</a>)<span class="debugOff"> id: Identification</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationIdentification2)(fullUrl: urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Does not comply&quot;/>
+                </valueCodeableConcept>" id="Observation-observationIdentification2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationIdentification2</div><div class="debugOff"> fullUrl: urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Does not comply&quot;/>">
+				Value:
+				<span style="white-space:normal;">Does not comply</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Does not comply&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Identification - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Identification" title="click to see target - id=Identification">ObservationDefinition</a>)<span class="debugOff"> id: Identification</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationIdentification3)(fullUrl: urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationIdentification3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationIdentification3</div><div class="debugOff"> fullUrl: urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationIdentification3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Identification&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Identification - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Identification" title="click to see target - id=Identification">ObservationDefinition</a>)<span class="debugOff"> id: Identification</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationAssay)(fullUrl: urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;103&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>" id="Observation-observationAssay">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationAssay</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;103&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;103&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">103%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;103&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>">Instantiates</span>: Assay - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Assay" title="click to see target - id=Assay">ObservationDefinition</a>)<span class="debugOff"> id: Assay</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationAssay2)(fullUrl: urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;102&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>" id="Observation-observationAssay2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationAssay2</div><div class="debugOff"> fullUrl: urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;102&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;102&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">102%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;102&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>">Instantiates</span>: Assay - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Assay" title="click to see target - id=Assay">ObservationDefinition</a>)<span class="debugOff"> id: Assay</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationAssay3)(fullUrl: urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;101&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>" id="Observation-observationAssay3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationAssay3</div><div class="debugOff"> fullUrl: urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;101&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;101&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">101%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationAssay3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Assay&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;101&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>">Instantiates</span>: Assay - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Assay" title="click to see target - id=Assay">ObservationDefinition</a>)<span class="debugOff"> id: Assay</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp1)(fullUrl: urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp1">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp1</div><div class="debugOff"> fullUrl: urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.1% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 1</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp1-2)(fullUrl: urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp1-2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp1-2</div><div class="debugOff"> fullUrl: urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 1</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp1-3)(fullUrl: urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp1-3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp1-3</div><div class="debugOff"> fullUrl: urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp1-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 1&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 1</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp2)(fullUrl: urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp2</div><div class="debugOff"> fullUrl: urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 2</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp2-2)(fullUrl: urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp2-2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp2-2</div><div class="debugOff"> fullUrl: urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 2</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp2-3)(fullUrl: urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp2-3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp2-3</div><div class="debugOff"> fullUrl: urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp2-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 2&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 2</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp3)(fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp3</div><div class="debugOff"> fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 3</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp3-2)(fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c6)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp3-2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp3-2</div><div class="debugOff"> fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c6</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 3</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp3-3)(fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp3-3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp3-3</div><div class="debugOff"> fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp3-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.2&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Impurity 3&quot;/>">
+				Value:
+				<span style="white-space:normal;">Impurity 3</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp-unspecified)(fullUrl: urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp-unspecified">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp-unspecified</div><div class="debugOff"> fullUrl: urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.1% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>">
+				Value:
+				<span style="white-space:normal;">Individual unspecified degradation products</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp-unspecified-2)(fullUrl: urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp-unspecified-2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp-unspecified-2</div><div class="debugOff"> fullUrl: urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.1% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>">
+				Value:
+				<span style="white-space:normal;">Individual unspecified degradation products</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp-unspecified-3)(fullUrl: urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp-unspecified-3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp-unspecified-3</div><div class="debugOff"> fullUrl: urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.1% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-unspecified-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.1&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Individual unspecified degradation products&quot;/>">
+				Value:
+				<span style="white-space:normal;">Individual unspecified degradation products</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp-total)(fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp-total">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp-total</div><div class="debugOff"> fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.6% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>">
+				Value:
+				<span style="white-space:normal;">Total degradation products</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp-total-2)(fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.7&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp-total-2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp-total-2</div><div class="debugOff"> fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.7&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.7&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.7% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total-2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.7&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>">
+				Value:
+				<span style="white-space:normal;">Total degradation products</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDegradation-imp-total-3)(fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>" id="Observation-observationDegradation-imp-total-3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-imp-total-3</div><div class="debugOff"> fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.6% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDegradation-imp-total-3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Degradation&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                    <text value=&quot;Degradation Products&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.6&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>
+                </component>">Instantiates</span>: Degradation Products - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Degradation" title="click to see target - id=Degradation">ObservationDefinition</a>)<span class="debugOff"> id: Degradation</span></span><div class="indent obsl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>
+                    </valueCodeableConcept>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    ...
+                    <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                        <text value=&quot;Total degradation products&quot;/>">
+				Value:
+				<span style="white-space:normal;">Total degradation products</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDissolution)(fullUrl: urn:uuid:7316e094-2094-5710-4f11-75d3effc995e)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationDissolution">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDissolution</div><div class="debugOff"> fullUrl: urn:uuid:7316e094-2094-5710-4f11-75d3effc995e</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Dissolution - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Dissolution" title="click to see target - id=Dissolution">ObservationDefinition</a>)<span class="debugOff"> id: Dissolution</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDissolution2)(fullUrl: urn:uuid:1cedf9c1-8e89-5dbb-0e1f-0363a9ca4893)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationDissolution2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDissolution2</div><div class="debugOff"> fullUrl: urn:uuid:1cedf9c1-8e89-5dbb-0e1f-0363a9ca4893</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Dissolution - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Dissolution" title="click to see target - id=Dissolution">ObservationDefinition</a>)<span class="debugOff"> id: Dissolution</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDissolution3)(fullUrl: urn:uuid:c350f0b1-9495-0165-2555-83ebd79da682)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationDissolution3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDissolution3</div><div class="debugOff"> fullUrl: urn:uuid:c350f0b1-9495-0165-2555-83ebd79da682</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolution3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Dissolution - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Dissolution" title="click to see target - id=Dissolution">ObservationDefinition</a>)<span class="debugOff"> id: Dissolution</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDissolutionQ80)(fullUrl: urn:uuid:4b97e406-3fb0-9f65-0979-910ea1b9254f)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ80&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;90&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>" id="Observation-observationDissolutionQ80">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>">DissolutionQ<span class="greyOff"> [ZZZX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDissolutionQ80</div><div class="debugOff"> fullUrl: urn:uuid:4b97e406-3fb0-9f65-0979-910ea1b9254f</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>">DissolutionQ<span class="greyOff"> [ZZZX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;90&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;90&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">90%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ80&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;90&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>">Instantiates</span>: DissolutionQuantity - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-DissolutionQ80" title="click to see target - id=DissolutionQ80">ObservationDefinition</a>)<span class="debugOff"> id: DissolutionQ80</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDissolutionQ802)(fullUrl: urn:uuid:bbfc28df-49bc-986c-1a0e-75e3160268b9)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ802&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;92&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>" id="Observation-observationDissolutionQ802">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>">DissolutionQ<span class="greyOff"> [ZZZX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDissolutionQ802</div><div class="debugOff"> fullUrl: urn:uuid:bbfc28df-49bc-986c-1a0e-75e3160268b9</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>">DissolutionQ<span class="greyOff"> [ZZZX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;92&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;92&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">92%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ802&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;92&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>">Instantiates</span>: DissolutionQuantity - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-DissolutionQ80" title="click to see target - id=DissolutionQ80">ObservationDefinition</a>)<span class="debugOff"> id: DissolutionQ80</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDissolutionQ803)(fullUrl: urn:uuid:d6955449-16b4-107f-851d-2f99d0b47b96)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ803&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;95&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>" id="Observation-observationDissolutionQ803">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>">DissolutionQ<span class="greyOff"> [ZZZX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDissolutionQ803</div><div class="debugOff"> fullUrl: urn:uuid:d6955449-16b4-107f-851d-2f99d0b47b96</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>">DissolutionQ<span class="greyOff"> [ZZZX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;95&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;95&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>">95%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDissolutionQ803&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQ&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;95&quot;/>
+                    <unit value=&quot;%&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%&quot;/>
+                </valueQuantity>">Instantiates</span>: DissolutionQuantity - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-DissolutionQ80" title="click to see target - id=DissolutionQ80">ObservationDefinition</a>)<span class="debugOff"> id: DissolutionQ80</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationUniformity)(fullUrl: urn:uuid:591f5d75-1b2f-299b-6885-f325e4228bda)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationUniformity">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationUniformity</div><div class="debugOff"> fullUrl: urn:uuid:591f5d75-1b2f-299b-6885-f325e4228bda</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: uniformity of dosage units (by weight) - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Uniformity" title="click to see target - id=Uniformity">ObservationDefinition</a>)<span class="debugOff"> id: Uniformity</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationUniformity2)(fullUrl: urn:uuid:1dd8e506-08cf-8a15-8cd0-7c7cf1d88731)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationUniformity2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationUniformity2</div><div class="debugOff"> fullUrl: urn:uuid:1dd8e506-08cf-8a15-8cd0-7c7cf1d88731</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: uniformity of dosage units (by weight) - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Uniformity" title="click to see target - id=Uniformity">ObservationDefinition</a>)<span class="debugOff"> id: Uniformity</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationUniformity3)(fullUrl: urn:uuid:ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationUniformity3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationUniformity3</div><div class="debugOff"> fullUrl: urn:uuid:ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationUniformity3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: uniformity of dosage units (by weight) - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Uniformity" title="click to see target - id=Uniformity">ObservationDefinition</a>)<span class="debugOff"> id: Uniformity</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationMicro)(fullUrl: urn:uuid:d136c4f5-62da-81eb-4fc8-144f9182589e)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationMicro">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationMicro</div><div class="debugOff"> fullUrl: urn:uuid:d136c4f5-62da-81eb-4fc8-144f9182589e</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Microbiological Quality - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Microbiological" title="click to see target - id=Microbiological">ObservationDefinition</a>)<span class="debugOff"> id: Microbiological</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationMicro2)(fullUrl: urn:uuid:3ab5e4eb-673b-0e66-3d2c-86d64ced0e86)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationMicro2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationMicro2</div><div class="debugOff"> fullUrl: urn:uuid:3ab5e4eb-673b-0e66-3d2c-86d64ced0e86</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Microbiological Quality - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Microbiological" title="click to see target - id=Microbiological">ObservationDefinition</a>)<span class="debugOff"> id: Microbiological</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationMicro3)(fullUrl: urn:uuid:cec7ce65-57d7-a654-9ad6-21d162186eb9)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationMicro3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationMicro3</div><div class="debugOff"> fullUrl: urn:uuid:cec7ce65-57d7-a654-9ad6-21d162186eb9</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationMicro3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>">Instantiates</span>: Microbiological Quality - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Microbiological" title="click to see target - id=Microbiological">ObservationDefinition</a>)<span class="debugOff"> id: Microbiological</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationWater)(fullUrl: urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>" id="Observation-observationWater">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationWater</div><div class="debugOff"> fullUrl: urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.5% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span>: Lot Number: 33445 (<a href="#Medication-medication-actual-batch" title="click to see target - id=medication-actual-batch">Medication</a>)<span class="debugOff"> id: medication-actual-batch</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>">Instantiates</span>: Water Content - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Water" title="click to see target - id=Water">ObservationDefinition</a>)<span class="debugOff"> id: Water</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationWater2)(fullUrl: urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>" id="Observation-observationWater2">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationWater2</div><div class="debugOff"> fullUrl: urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.5% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>">Subject</span>: Lot Number: 33446 (<a href="#Medication-medication-actual-batch-2" title="click to see target - id=medication-actual-batch-2">Medication</a>)<span class="debugOff"> id: medication-actual-batch-2</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater2&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>">Instantiates</span>: Water Content - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Water" title="click to see target - id=Water">ObservationDefinition</a>)<span class="debugOff"> id: Water</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationWater3)(fullUrl: urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>" id="Observation-observationWater3">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationWater3</div><div class="debugOff"> fullUrl: urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">
+				Value:
+				<span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>">0.5% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>">Subject</span>: Lot Number: 33447 (<a href="#Medication-medication-actual-batch-3" title="click to see target - id=medication-actual-batch-3">Medication</a>)<span class="debugOff"> id: medication-actual-batch-3</span></div><div></div><span class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationWater3&quot;/>
+                <instantiatesReference>
+                    <reference value=&quot;ObservationDefinition/Water&quot;/>
+                </instantiatesReference>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
+                </subject>
+                <valueQuantity>
+                    <value value=&quot;0.5&quot;/>
+                    <unit value=&quot;% w/w&quot;/>
+                    <system value=&quot;http://unitsofmeasure.org&quot;/>
+                    <code value=&quot;%{ w/w}&quot;/>
+                </valueQuantity>">Instantiates</span>: Water Content - Plan: P.5.4 BATCH ANALYSIS (<a href="#PlanDefinition-specificationProtocol" title="click to see target - id=specificationProtocol">PlanDefinition</a>)<span class="debugOff"> id: specificationProtocol</span> (<a href="#ObservationDefinition-Water" title="click to see target - id=Water">ObservationDefinition</a>)<span class="debugOff"> id: Water</span></span><div class="summaryHiddenOff"></div></div>
+</div>
+</div>
+</div>
+<div class="org indent"><span class="bold">Report Specification</span><div class="indent plan summaryUnit" ondblclick="summaryHandler(event)">
+<div class="debugOff"><span>Found a parent (DiagnosticReport/valueReference, id: batchAnalysisReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="PlanDefinition (id: specificationProtocol)(fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)
+
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <id value=&quot;specificationProtocol&quot;/>
+                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/businessName&quot;>
+                    <valueString value=&quot;Section 11 - Stability Study - Protocol&quot;/>
+                </extension-->
+                <title value=&quot;P.5.4 BATCH ANALYSIS&quot;/>
+                <status value=&quot;active&quot;/>
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>
+                <description value=&quot;Narrative description of analysis&quot;/>
+                <!-- new &quot;tabular&quot; style -->
+                <action>
+                    <!-- this is then entire thing -->
+                    <title value=&quot;Batch Specification for Drug Product&quot;/>
+                    <code>
+                        <text value=&quot;Overall set of actions&quot;/>
+                    </code>
+                    <action>
+                        <title value=&quot;Release&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;Release time&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                        </action>
+                    </action>
+                    <action>
+                        <title value=&quot;End of shelf life&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;At end of shelf life&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                        </action>
+                    </action>
+                </action>" id="PlanDefinition-specificationProtocol">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: specificationProtocol</div>
+<div class="debugOff"> fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f</div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <title value=&quot;P.5.4 BATCH ANALYSIS&quot;>">Title: </span><span>P.5.4 BATCH ANALYSIS</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <description value=&quot;Narrative description of analysis&quot;>">Description: </span><span>Narrative description of analysis</span></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <id value=&quot;specificationProtocol&quot;/>
+                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/businessName&quot;>
+                    <valueString value=&quot;Section 11 - Stability Study - Protocol&quot;/>
+                </extension-->
+                <title value=&quot;P.5.4 BATCH ANALYSIS&quot;/>
+                <status value=&quot;active&quot;/>
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>
+                <description value=&quot;Narrative description of analysis&quot;/>
+                <!-- new &quot;tabular&quot; style -->
+                <action>
+                    <!-- this is then entire thing -->
+                    <title value=&quot;Batch Specification for Drug Product&quot;/>
+                    <code>
+                        <text value=&quot;Overall set of actions&quot;/>
+                    </code>
+                    <action>
+                        <title value=&quot;Release&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;Release time&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                        </action>
+                    </action>
+                    <action>
+                        <title value=&quot;End of shelf life&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;At end of shelf life&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                        </action>
+                    </action>
+                </action>">Subject</span><div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-dxpq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
+
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <id value=&quot;medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                <description value=&quot;Textual description of the product&quot;/>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>
+                </combinedPharmaceuticalDoseForm>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>
+                </route>
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>
+                </name>" id="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1">Product</span></a><span class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medicinalproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medicinalproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medicinalproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: medicinalproductdefinition-drug-product-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5</div></span><div class="summaryHiddenOff"></div><span class="summaryShowsOff"><b> - </b></span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>" class="bold"><span class="summaryHiddenOff">Name: </span><span>Stelbat Tablets, 20mg</span></span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>">Name type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://accumulus.org/fhir/code/productNameType)</span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>"><span>Strength name part: </span><span>20mg</span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <description value=&quot;Textual description of the product&quot;>">Description: </span><span>Textual description of the product</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>">Route of Administration: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>">Dose Form (combination of all parts): </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <id value=&quot;productIngredient&quot;/>
+                <status value=&quot;active&quot;/>
+                <for>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </for>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>
+                </role>
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>
+                </substance>" id="Ingredient-productIngredient">Ingredient</span></a><span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: productIngredient</div><div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6</div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>">Role: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div></div><div class="indent ingsub"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95)
+
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <id value=&quot;substance1&quot;/>
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>
+                </manufacturer>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;/>
+                    <!-- #4 -->
+                </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                ...
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: substance-manufacturer)(fullUrl: urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;substance-manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div></span><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <title value=&quot;Batch Specification for Drug Product&quot;>">Action: </span><span>Batch Specification for Drug Product</span></div><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<tr>
+<th rowspan="2">Test Procedure</th>
+<th colspan="2">Acceptance Criteria</th>
+<th rowspan="2">Method Reference</th></tr>
+<tr>
+<th width="30%" style="border-right: 0.1px solid black;">Release</th>
+<th width="30%" style="border-right: 0.1px solid black;">End of shelf life</th>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Description" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Description&quot;>" class="noUnderline">Description</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;>">An orange film-coated tablet, debossed with 175 on one side</span></td>
+<td class="centred"><span title="
+<qualifiedValue>
+    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+        <valueString value=&quot;As for release&quot;>">As for release</span></td>
+<td class="centred">Visual inspection</td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Identification" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Identification&quot;>" class="noUnderline">Identification</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;>">Consistent with the retention time and UV spectrum of the reference standard</span></td>
+<td class="centred"><span title="
+<qualifiedValue>
+    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+        <valueString value=&quot;As for release&quot;>">As for release</span></td>
+<td class="centred">ID by UHPLC</td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Assay" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Assay&quot;>" class="noUnderline">Assay</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;95% to 105% of label claim&quot;>">95% to 105% of label claim</span></td>
+<td class="centred"><span title="
+<qualifiedValue>
+    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+        <valueString value=&quot;As for release&quot;>">As for release</span></td>
+<td class="centred">Assay by UHPLC</td>
+</tr>
+<tr>
+<td colspan="8">Degradation Products</td>
+<tr>
+<td style="padding-left:20px">Impurity 1</td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 0.2 % w/w</span></td>
+<td class="centred"><span title="
+<qualifiedValue>
+    ...
+    <range>
+        <high>
+            <value value=&quot;0.8&quot;/>
+            <unit value=&quot;% w/w&quot;/>
+            <system value=&quot;http://unitsofmeasure.org&quot;/>
+            <code value=&quot;%{ w/w}&quot;/>
+        </high>">NMT 0.8 % w/w</span></td>
+<td rowspan="5" class="centred">Degradation products by UHPLC</td>
+</tr>
+<tr>
+<td style="padding-left:20px">Impurity 2</td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 0.3 % w/w</span></td>
+<td class="centred" style="border-right: 1px solid black;"><span title="
+<qualifiedValue>
+    ...
+    <range>
+        <high>
+            <value value=&quot;0.4&quot;/>
+            <unit value=&quot;% w/w&quot;/>
+            <system value=&quot;http://unitsofmeasure.org&quot;/>
+            <code value=&quot;%{ w/w}&quot;/>
+        </high>">NMT 0.4 % w/w</span></td>
+</tr>
+<tr>
+<td style="padding-left:20px">Impurity 3</td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 0.3 % w/w</span></td>
+<td class="centred" style="border-right: 1px solid black;"><span title="
+<qualifiedValue>
+    ...
+    <range>
+        <high>
+            <value value=&quot;0.4&quot;/>
+            <unit value=&quot;% w/w&quot;/>
+            <system value=&quot;http://unitsofmeasure.org&quot;/>
+            <code value=&quot;%{ w/w}&quot;/>
+        </high>">NMT 0.4 % w/w</span></td>
+</tr>
+<tr>
+<td style="padding-left:20px">Individual unspecified degradation products</td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 0.2 % w/w</span></td>
+<td class="centred" style="border-right: 1px solid black;"><span title="
+<qualifiedValue>
+    ...
+    <range>
+        <high>
+            <value value=&quot;2.3&quot;/>
+            <unit value=&quot;% w/w&quot;/>
+            <system value=&quot;http://unitsofmeasure.org&quot;/>
+            <code value=&quot;%{ w/w}&quot;/>
+        </high>">NMT 2.3 % w/w</span></td>
+</tr>
+<tr>
+<td style="padding-left:20px">Total degradation products</td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;1.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 1.4 % w/w</span></td>
+<td class="centred" style="border-right: 1px solid black;"><span title="
+<qualifiedValue>
+    ...
+    <range>
+        <high>
+            <value value=&quot;2.3&quot;/>
+            <unit value=&quot;% w/w&quot;/>
+            <system value=&quot;http://unitsofmeasure.org&quot;/>
+            <code value=&quot;%{ w/w}&quot;/>
+        </high>">NMT 2.3 % w/w</span></td>
+</tr>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Dissolution" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution&quot;>" class="noUnderline">Dissolution</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph&quot;>">Shall comply with the requirements of the harmonised USP/JP/Ph</span></td>
+<td class="centred"><span title="
+<qualifiedValue>
+    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+        <valueString value=&quot;As for release&quot;>">As for release</span></td>
+<td class="centred">Apparatus 2 (paddles), UV measurement</td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-DissolutionQ80" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution (Q)&quot;>" class="noUnderline">Dissolution (Q)</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <low>
+                            <value value=&quot;80&quot;/>
+                            <unit value=&quot;%&quot;/>
+                        </low>">NLT 80 %</span> <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <condition value=&quot;at 30 minutes&quot;>">at 30 minutes</span></td>
+<td class="centred"><span title="
+<qualifiedValue>
+    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+        <valueString value=&quot;As for release&quot;>">As for release</span></td>
+<td class="centred">Apparatus 2 (paddles), UV measurement</td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Uniformity" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Uniformity of dosage&quot;>" class="noUnderline">Uniformity of dosage</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;>">Shall comply with the requirements of the harmonised USP/JP/Ph Eur</span></td>
+<td class="centred"><span title="
+<qualifiedValue>
+    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+        <valueString value=&quot;As for release&quot;>">As for release</span></td>
+<td class="centred">Weight variation</td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Microbiological" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Microbiological&quot;>" class="noUnderline">Microbiological</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;>">Shall comply with the requirements of the Ph Eur</span></td>
+<td class="centred"><span title="
+<qualifiedValue>
+    <range>
+        <high>
+            <value value=&quot;2.0&quot;/>
+            <unit value=&quot;% w/w&quot;/>
+            <system value=&quot;http://unitsofmeasure.org&quot;/>
+            <code value=&quot;%{ w/w}&quot;/>
+        </high>">NMT 2.0 % w/w</span></td>
+<td class="centred">Ph Eur</td>
+</tr>
+<tr>
+<td><a href="#ObservationDefinition-Water" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Water Content&quot;>" class="noUnderline">Water Content</a></td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>">NMT 1.0 % w/w</span></td>
+<td class="centred"></td>
+<td class="centred">USP &lt;921&gt;</td>
+</tr>
+</table>
+</div><br style="line-height:6px;"></div>
+<div class="indent summaryUnit initialSummary" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <action>
+                    <!-- this is then entire thing -->
+                    <title value=&quot;Batch Specification for Drug Product&quot;/>
+                    <code>
+                        <text value=&quot;Overall set of actions&quot;/>
+                    </code>
+                    <action>
+                        <title value=&quot;Release&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;Release time&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                        </action>
+                    </action>
+                    <action>
+                        <title value=&quot;End of shelf life&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;At end of shelf life&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                        </action>
+                    </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <title value=&quot;Batch Specification for Drug Product&quot;>"> - Batch Specification for Drug Product</span> - <span style="white-space:normal;">Overall set of actions</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <title value=&quot;Batch Specification for Drug Product&quot;>">Title: </span><span>Batch Specification for Drug Product</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <code>
+                        <text value=&quot;Overall set of actions&quot;/>">Code: </span><span style="white-space:normal;">Overall set of actions</span></div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <action>
+                        <title value=&quot;Release&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;Release time&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                        </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <title value=&quot;Release&quot;>"> - Release</span> - <span style="white-space:normal;">Timing Group</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <title value=&quot;Release&quot;>">Title: </span><span>Release</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>">Code: </span><span style="white-space:normal;">Timing Group</span></div>
+<div class="indent planl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;Release time&quot;/>
+                            </code>">Timing</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;Release time&quot;/>">Code: </span><span><span style="white-space:normal;">Release time</span></span></div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDescription2 fullUrl: urn:uuid:ba1b4227-8a67-a605-1152-e86e4d614fc3)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDescription3 fullUrl: urn:uuid:2d628dc2-0b9e-9494-55b3-2621e50938c5)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Description)(fullUrl: urn:uuid:fc07b5d5-9fe1-91c2-2d06-47cb5b295e72)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Description&quot;/>
+                <title value=&quot;Description&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Visual inspection&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-Description">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Description</div>
+<div class="debugOff"> fullUrl: urn:uuid:fc07b5d5-9fe1-91c2-2d06-47cb5b295e72</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Description&quot;>">Title: </span><span>Description</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Visual inspection&quot;/>">Method: </span><span><span style="white-space:normal;">Visual inspection</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>">Text: </span><span>An orange film-coated tablet, debossed with 175 on one side</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationIdentification fullUrl: urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationIdentification2 fullUrl: urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationIdentification3 fullUrl: urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Identification)(fullUrl: urn:uuid:3b0e878e-4bc9-8864-862f-e28b21233e8d)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Identification&quot;/>
+                <title value=&quot;Identification&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;ID by UHPLC&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-Identification">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Identification</div>
+<div class="debugOff"> fullUrl: urn:uuid:3b0e878e-4bc9-8864-862f-e28b21233e8d</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Identification&quot;>">Title: </span><span>Identification</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;ID by UHPLC&quot;/>">Method: </span><span><span style="white-space:normal;">ID by UHPLC</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;/>">Text: </span><span>Consistent with the retention time and UV spectrum of the reference standard</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationAssay fullUrl: urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationAssay2 fullUrl: urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationAssay3 fullUrl: urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Assay)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Assay&quot;/>
+                <title value=&quot;Assay&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Assay by UHPLC&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;95% to 105% of label claim&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-Assay">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Assay</div>
+<div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Assay&quot;>">Title: </span><span>Assay</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Assay by UHPLC&quot;/>">Method: </span><span><span style="white-space:normal;">Assay by UHPLC</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;95% to 105% of label claim&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;95% to 105% of label claim&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;95% to 105% of label claim&quot;/>">Text: </span><span>95% to 105% of label claim</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp1 fullUrl: urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp1-2 fullUrl: urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp1-3 fullUrl: urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp2 fullUrl: urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp2-2 fullUrl: urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp2-3 fullUrl: urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp3 fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp3-2 fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c6)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp3-3 fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp-unspecified fullUrl: urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp-unspecified-2 fullUrl: urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp-unspecified-3 fullUrl: urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp-total fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp-total-2 fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDegradation-imp-total-3 fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Degradation)(fullUrl: urn:uuid:8bdea820-4197-7c7d-0990-7be06bf78aaf)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Degradation&quot;/>
+                <title value=&quot;Degradation Products&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                </code>
+                <method>
+                    <text value=&quot;Degradation products by UHPLC&quot;/>
+                </method>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;1.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <component>
+                    <!-- are expected to have a component that says what impurity this one is -->
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                </component>" id="ObservationDefinition-Degradation">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Degradation</div>
+<div class="debugOff"> fullUrl: urn:uuid:8bdea820-4197-7c7d-0990-7be06bf78aaf</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Degradation Products&quot;>">Title: </span><span>Degradation Products</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Degradation products by UHPLC&quot;/>">Method: </span><span><span style="white-space:normal;">Degradation products by UHPLC</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 1</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 2</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">0.3% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 3</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;0.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">0.3% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>">Applies To: </span><span><span style="white-space:normal;">Individual unspecified degradation products</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;0.2&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">0.2% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;1.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;1.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>">Applies To: </span><span><span style="white-space:normal;">Total degradation products</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">1.4% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <component>
+                    <!-- are expected to have a component that says what impurity this one is -->
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDissolution fullUrl: urn:uuid:7316e094-2094-5710-4f11-75d3effc995e)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDissolution2 fullUrl: urn:uuid:1cedf9c1-8e89-5dbb-0e1f-0363a9ca4893)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDissolution3 fullUrl: urn:uuid:c350f0b1-9495-0165-2555-83ebd79da682)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Dissolution)(fullUrl: urn:uuid:8f5d8abf-2cf4-8617-1e41-a74d90210dcc)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Dissolution&quot;/>
+                <title value=&quot;Dissolution&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <!-- possibly &quot;G1113&quot; -->
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-Dissolution">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Dissolution</div>
+<div class="debugOff"> fullUrl: urn:uuid:8f5d8abf-2cf4-8617-1e41-a74d90210dcc</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution&quot;>">Title: </span><span>Dissolution</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <!-- possibly &quot;G1113&quot; -->
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <text value=&quot;Dissolution&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>">Method: </span><span><span style="white-space:normal;">Apparatus 2 (paddles), UV measurement</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph&quot;/>">Text: </span><span>Shall comply with the requirements of the harmonised USP/JP/Ph</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionQ80&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDissolutionQ80 fullUrl: urn:uuid:4b97e406-3fb0-9f65-0979-910ea1b9254f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDissolutionQ802 fullUrl: urn:uuid:bbfc28df-49bc-986c-1a0e-75e3160268b9)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationDissolutionQ803 fullUrl: urn:uuid:d6955449-16b4-107f-851d-2f99d0b47b96)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DissolutionQ80)(fullUrl: urn:uuid:33a9d578-6e6b-7606-72bc-6775d36c1930)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;DissolutionQ80&quot;/>
+                <title value=&quot;Dissolution (Q)&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQuantity&quot;/>
+                    </coding>
+                    <!--text value=&quot;Dissolution (Q)&quot;/-->
+                </code>
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>
+                </method>
+                <qualifiedValue>
+                    <condition value=&quot;at 30 minutes&quot;/>
+                    <range>
+                        <low>
+                            <value value=&quot;80&quot;/>
+                            <unit value=&quot;%&quot;/>
+                        </low>
+                    </range>
+                </qualifiedValue>" id="ObservationDefinition-DissolutionQ80">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQuantity&quot;/>">DissolutionQuantity<span class="greyOff"> [ZZZX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DissolutionQ80</div>
+<div class="debugOff"> fullUrl: urn:uuid:33a9d578-6e6b-7606-72bc-6775d36c1930</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution (Q)&quot;>">Title: </span><span>Dissolution (Q)</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQuantity&quot;/>
+                    </coding>
+                    <!--text value=&quot;Dissolution (Q)&quot;/-->">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZX&quot;/>
+                        <display value=&quot;DissolutionQuantity&quot;/>">DissolutionQuantity<span class="greyOff"> [ZZZX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>">Method: </span><span><span style="white-space:normal;">Apparatus 2 (paddles), UV measurement</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <condition value=&quot;at 30 minutes&quot;/>
+                    <range>
+                        <low>
+                            <value value=&quot;80&quot;/>
+                            <unit value=&quot;%&quot;/>
+                        </low>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <condition value=&quot;at 30 minutes&quot;/>
+                    <range>
+                        <low>
+                            <value value=&quot;80&quot;/>
+                            <unit value=&quot;%&quot;/>
+                        </low>
+                    </range>">
+						Range: from <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <low>
+                            <value value=&quot;80&quot;/>
+                            <unit value=&quot;%&quot;/>">80%</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <condition value=&quot;at 30 minutes&quot;>">Condition: </span><span>at 30 minutes</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationUniformity fullUrl: urn:uuid:591f5d75-1b2f-299b-6885-f325e4228bda)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationUniformity2 fullUrl: urn:uuid:1dd8e506-08cf-8a15-8cd0-7c7cf1d88731)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationUniformity3 fullUrl: urn:uuid:ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Uniformity)(fullUrl: urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Uniformity&quot;/>
+                <title value=&quot;Uniformity of dosage&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Weight variation&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-Uniformity">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Uniformity</div>
+<div class="debugOff"> fullUrl: urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Uniformity of dosage&quot;>">Title: </span><span>Uniformity of dosage</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Weight variation&quot;/>">Method: </span><span><span style="white-space:normal;">Weight variation</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>">Text: </span><span>Shall comply with the requirements of the harmonised USP/JP/Ph Eur</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationMicro fullUrl: urn:uuid:d136c4f5-62da-81eb-4fc8-144f9182589e)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationMicro2 fullUrl: urn:uuid:3ab5e4eb-673b-0e66-3d2c-86d64ced0e86)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationMicro3 fullUrl: urn:uuid:cec7ce65-57d7-a654-9ad6-21d162186eb9)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Microbiological)(fullUrl: urn:uuid:d999ee06-6595-762c-1bda-0818ab1c6c0e)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Microbiological&quot;/>
+                <title value=&quot;Microbiological&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Ph Eur&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-Microbiological">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Microbiological</div>
+<div class="debugOff"> fullUrl: urn:uuid:d999ee06-6595-762c-1bda-0818ab1c6c0e</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Microbiological&quot;>">Title: </span><span>Microbiological</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Ph Eur&quot;/>">Method: </span><span><span style="white-space:normal;">Ph Eur</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>">Text: </span><span>Shall comply with the requirements of the Ph Eur</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationWater fullUrl: urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationWater2 fullUrl: urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: observationWater3 fullUrl: urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Water)(fullUrl: urn:uuid:31e29d22-5fcb-546e-24fd-52a4a4004467)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;Water&quot;/>
+                <title value=&quot;Water Content&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;USP <921>&quot;/>
+                </method>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>" id="ObservationDefinition-Water">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WWW]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Water</div>
+<div class="debugOff"> fullUrl: urn:uuid:31e29d22-5fcb-546e-24fd-52a4a4004467</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Water Content&quot;>">Title: </span><span>Water Content</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WWW]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;USP <921>&quot;/>">Method: </span><span><span style="white-space:normal;">USP <921></span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">1.0% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <action>
+                        <title value=&quot;End of shelf life&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;At end of shelf life&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                        </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <title value=&quot;End of shelf life&quot;>"> - End of shelf life</span> - <span style="white-space:normal;">Timing Group</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <title value=&quot;End of shelf life&quot;>">Title: </span><span>End of shelf life</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>">Code: </span><span style="white-space:normal;">Timing Group</span></div>
+<div class="indent planl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;At end of shelf life&quot;/>
+                            </code>">Timing</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;At end of shelf life&quot;/>">Code: </span><span><span style="white-space:normal;">At end of shelf life</span></span></div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DescriptionEnd)(fullUrl: urn:uuid:220059d8-5aed-6d9e-563f-aac39b315c05)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;DescriptionEnd&quot;/>
+                <title value=&quot;Description&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-DescriptionEnd">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DescriptionEnd</div>
+<div class="debugOff"> fullUrl: urn:uuid:220059d8-5aed-6d9e-563f-aac39b315c05</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Description&quot;>">Title: </span><span>Description</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: IdentificationEnd)(fullUrl: urn:uuid:7c01a2fc-7ced-92b5-3ce7-8279d9df2421)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;IdentificationEnd&quot;/>
+                <title value=&quot;Identification&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>
+                </code>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-IdentificationEnd">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: IdentificationEnd</div>
+<div class="debugOff"> fullUrl: urn:uuid:7c01a2fc-7ced-92b5-3ce7-8279d9df2421</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Identification&quot;>">Title: </span><span>Identification</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: AssayEnd)(fullUrl: urn:uuid:9d1fd19a-9265-7b02-865e-75c12e952ad4)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;AssayEnd&quot;/>
+                <title value=&quot;Assay&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>
+                </code>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-AssayEnd">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AssayEnd</div>
+<div class="debugOff"> fullUrl: urn:uuid:9d1fd19a-9265-7b02-865e-75c12e952ad4</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Assay&quot;>">Title: </span><span>Assay</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;XXX&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DegradationEnd)(fullUrl: urn:uuid:d5d084d0-37c9-3e1e-1d3f-97e7798540a9)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;DegradationEnd&quot;/>
+                <title value=&quot;Degradation Products&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>
+                </code>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.8&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>
+                <component>
+                    <!-- are expected to have a component that says what impurity this one is -->
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>
+                </component>" id="ObservationDefinition-DegradationEnd">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DegradationEnd</div>
+<div class="debugOff"> fullUrl: urn:uuid:d5d084d0-37c9-3e1e-1d3f-97e7798540a9</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Degradation Products&quot;>">Title: </span><span>Degradation Products</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>
+                    </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;DGP&quot;/>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.8&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.8&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 1</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;0.8&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">0.8% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 2</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">0.4% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 3&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 3</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;0.4&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">0.4% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>">Applies To: </span><span><span style="white-space:normal;">Individual unspecified degradation products</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">2.3% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>
+                    </appliesTo>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total degradation products&quot;/>">Applies To: </span><span><span style="white-space:normal;">Total degradation products</span></span></div>
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;2.3&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">2.3% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <component>
+                    <!-- are expected to have a component that says what impurity this one is -->
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>
+                    </code>">
+		Component
+		<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DissolutionEnd)(fullUrl: urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;DissolutionEnd&quot;/>
+                <title value=&quot;Dissolution&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <!--text value=&quot;Dissolution&quot;/-->
+                </code>
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-DissolutionEnd">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DissolutionEnd</div>
+<div class="debugOff"> fullUrl: urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution&quot;>">Title: </span><span>Dissolution</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>
+                    </coding>
+                    <!--text value=&quot;Dissolution&quot;/-->">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>">Method: </span><span><span style="white-space:normal;">Apparatus 2 (paddles), UV measurement</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: UniformityEnd)(fullUrl: urn:uuid:2b01c026-1687-24c7-4c8c-e5d98ada8683)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;UniformityEnd&quot;/>
+                <title value=&quot;Uniformity of dosage&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
+                </code>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-UniformityEnd">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: UniformityEnd</div>
+<div class="debugOff"> fullUrl: urn:uuid:2b01c026-1687-24c7-4c8c-e5d98ada8683</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Uniformity of dosage&quot;>">Title: </span><span>Uniformity of dosage</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
+                    </coding>
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;ZZZ&quot;/>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: MicrobiologicalEnd)(fullUrl: urn:uuid:60529d20-a55e-2575-4cb7-9f207ef8a2a1)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;MicrobiologicalEnd&quot;/>
+                <title value=&quot;Microbiological&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;Ph Eur&quot;/>
+                </method>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>
+                </qualifiedValue>" id="ObservationDefinition-MicrobiologicalEnd">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: MicrobiologicalEnd</div>
+<div class="debugOff"> fullUrl: urn:uuid:60529d20-a55e-2575-4cb7-9f207ef8a2a1</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Microbiological&quot;>">Title: </span><span>Microbiological</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>
+                    </coding>
+                    <text value=&quot;Microbiological Quality&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;YYY&quot;/>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [YYY]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Ph Eur&quot;/>">Method: </span><span><span style="white-space:normal;">Ph Eur</span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>
+                    </extension>">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: WaterEnd)(fullUrl: urn:uuid:7d0b63fc-5194-33d0-3e4a-0aef5edf7ba6)
+
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <id value=&quot;WaterEnd&quot;/>
+                <title value=&quot;Water Content&quot;/>
+                <status value=&quot;active&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>
+                </code>
+                <method>
+                    <text value=&quot;USP <921>&quot;/>
+                </method>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;2.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>
+                </qualifiedValue>" id="ObservationDefinition-WaterEnd">Observation Definition<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WWW]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: WaterEnd</div>
+<div class="debugOff"> fullUrl: urn:uuid:7d0b63fc-5194-33d0-3e4a-0aef5edf7ba6</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Water Content&quot;>">Title: </span><span>Water Content</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <coding>
+                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <code value=&quot;WWW&quot;/>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WWW]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;USP <921>&quot;/>">Method: </span><span><span style="white-space:normal;">USP <921></span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent obsDefl2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;2.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+				Acceptable Value
+				<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;2.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>
+                        </high>
+                    </range>">
+						Range:  to <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;2.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%{ w/w}&quot;/>">2.0% w/w</span><span class="greyOff"> [%{ w/w}] (http://unitsofmeasure.org)</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="indent planl2 summaryHiddenOff"><span title="PlanDefinition (id: specificationProtocol)(fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)
+
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <id value=&quot;specificationProtocol&quot;/>
+                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/businessName&quot;>
+                    <valueString value=&quot;Section 11 - Stability Study - Protocol&quot;/>
+                </extension-->
+                <title value=&quot;P.5.4 BATCH ANALYSIS&quot;/>
+                <status value=&quot;active&quot;/>
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>
+                <description value=&quot;Narrative description of analysis&quot;/>
+                <!-- new &quot;tabular&quot; style -->
+                <action>
+                    <!-- this is then entire thing -->
+                    <title value=&quot;Batch Specification for Drug Product&quot;/>
+                    <code>
+                        <text value=&quot;Overall set of actions&quot;/>
+                    </code>
+                    <action>
+                        <title value=&quot;Release&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;Release time&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                        </action>
+                    </action>
+                    <action>
+                        <title value=&quot;End of shelf life&quot;/>
+                        <code>
+                            <text value=&quot;Timing Group&quot;/>
+                        </code>
+                        <timingTiming>
+                            <code>
+                                <text value=&quot;At end of shelf life&quot;/>
+                            </code>
+                        </timingTiming>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Test&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                        </action>
+                    </action>
+                </action>">Triggered</span>: Batch Analysis Report (<a href="#DiagnosticReport-batchAnalysisReport" title="click to see target - id=batchAnalysisReport">DiagnosticReport</a>)<span class="debugOff"> id: batchAnalysisReport</span></div>
+</div>
+</div>
+<div class="org indent"><span class="bold">Subjects of Batch Analysis Report</span><br><br style="line-height:6px;"><div class="indent med summaryUnit" ondblclick="summaryHandler(event)">
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationIdentification fullUrl: urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationAssay fullUrl: urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp1 fullUrl: urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp2 fullUrl: urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp3 fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp-unspecified fullUrl: urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp-total fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDissolution fullUrl: urn:uuid:7316e094-2094-5710-4f11-75d3effc995e)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDissolutionQ80 fullUrl: urn:uuid:4b97e406-3fb0-9f65-0979-910ea1b9254f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationUniformity fullUrl: urn:uuid:591f5d75-1b2f-299b-6885-f325e4228bda)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationMicro fullUrl: urn:uuid:d136c4f5-62da-81eb-4fc8-144f9182589e)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationWater fullUrl: urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>
+                    </extension>
+                </code>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                            <!-- #171 -->
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <!-- #157 -->
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <!-- #159 -->
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <!-- #26 -->
+                                <!-- #155 -->
+                                <!-- need to see if one of these needs changing -->
+                                <value value=&quot;100100&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <!-- #160 -->
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <!-- #159 -->
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <!-- #158 -->
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <!-- #153 -->
+                    <lotNumber value=&quot;33445&quot;/>
+                </batch>" id="Medication-medication-actual-batch">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch</div>
+<div class="debugOff"> fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51</div><span class="summaryShowsOff"><b> - 33445</b></span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>">Definition</span>: Stelbat Tablets, 20mg (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div>
+<div class="summaryHiddenOff">
+<div class="indent medl2 summaryUnit"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                ...
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                            <!-- #171 -->
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <!-- #157 -->
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <!-- #159 -->
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <!-- #26 -->
+                                <!-- #155 -->
+                                <!-- need to see if one of these needs changing -->
+                                <value value=&quot;100100&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <!-- #160 -->
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <!-- #159 -->
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <!-- #158 -->
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <!-- #153 -->
+                    <lotNumber value=&quot;33445&quot;/>">Batch</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    ...
+                    <lotNumber value=&quot;33445&quot;>">Lot Number: </span><span>33445</span></div>
+<div class="summaryHiddenOff">
+<div class="indent medl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                            <!-- #171 -->
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <!-- #157 -->
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <!-- #159 -->
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <!-- #26 -->
+                                <!-- #155 -->
+                                <!-- need to see if one of these needs changing -->
+                                <value value=&quot;100100&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <!-- #160 -->
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <!-- #159 -->
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <!-- #158 -->
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>">Manufacturing</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;>">Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;>">2020-06</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <!-- #26 -->
+                                <!-- #155 -->
+                                <!-- need to see if one of these needs changing -->
+                                <value value=&quot;100100&quot;/>
+                                <unit value=&quot;tablets&quot;/>">Quantity: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <!-- #26 -->
+                                <!-- #155 -->
+                                <!-- need to see if one of these needs changing -->
+                                <value value=&quot;100100&quot;/>
+                                <unit value=&quot;tablets&quot;/>">100100 tablets</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <!-- #160 -->
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <!-- #160 -->
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>">4.8 kg</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;batchUtilization&quot;>
+                            <!-- #159 -->
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>">Utilization: </span><span title="Comment: This has a value set defined in PQ/CMC but no code system" class="instanceComment">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+<div class="indent medl4"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>">Container</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>">Closure System: </span><span>100 cc HDPE Bottle 2 g desiccant</span></div>
+</div>
+<div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <!-- #158 -->
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturer)(fullUrl: urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>
+                </identifier>
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;/>
+                        <city value=&quot;Lumberton&quot;/>
+                        <state value=&quot;New Jersey&quot;/>
+                        <postalCode value=&quot;08048&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a</div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;/>
+                        <city value=&quot;Lumberton&quot;/>
+                        <state value=&quot;New Jersey&quot;/>
+                        <postalCode value=&quot;08048&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;>">681 Main Street</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Lumberton&quot;>">Lumberton</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;New Jersey&quot;>">New Jersey</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;08048&quot;>">08048</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>">Manufacturing Process</span><div class="indent plan summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="PlanDefinition (id: plandefinition-mnf-process-dxpq-ex1)(fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1)
+Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq 
+
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
+                <id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                </meta>
+                <title value=&quot;Process 1.0&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>
+                </type>
+                <status value=&quot;active&quot;/>
+                <!-- #83 -->
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>" id="PlanDefinition-plandefinition-mnf-process-dxpq-ex1">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: plandefinition-mnf-process-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <title value=&quot;Process 1.0&quot;>">Title: </span><span>Process 1.0</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>">Manufacturing Process<span class="greyOff"> [1244566]</span><span class="greyOff"> (http://accumulus.org/fhir/code/planType)</span></span></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
+                <id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                </meta>
+                <title value=&quot;Process 1.0&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>
+                </type>
+                <status value=&quot;active&quot;/>
+                <!-- #83 -->
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>">Subject</span><div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-dxpq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
+
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <id value=&quot;medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                <description value=&quot;Textual description of the product&quot;/>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>
+                </combinedPharmaceuticalDoseForm>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>
+                </route>
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>
+                </name>" id="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1">Product</span></a><span class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medicinalproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medicinalproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medicinalproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: medicinalproductdefinition-drug-product-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5</div></span><div class="summaryHiddenOff"></div><span class="summaryShowsOff"><b> - </b></span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>" class="bold"><span class="summaryHiddenOff">Name: </span><span>Stelbat Tablets, 20mg</span></span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>">Name type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://accumulus.org/fhir/code/productNameType)</span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>"><span>Strength name part: </span><span>20mg</span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <description value=&quot;Textual description of the product&quot;>">Description: </span><span>Textual description of the product</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>">Route of Administration: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>">Dose Form (combination of all parts): </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <id value=&quot;productIngredient&quot;/>
+                <status value=&quot;active&quot;/>
+                <for>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </for>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>
+                </role>
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>
+                </substance>" id="Ingredient-productIngredient">Ingredient</span></a><span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: productIngredient</div><div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6</div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>">Role: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div></div><div class="indent ingsub"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95)
+
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <id value=&quot;substance1&quot;/>
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>
+                </manufacturer>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;/>
+                    <!-- #4 -->
+                </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                ...
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: substance-manufacturer)(fullUrl: urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;substance-manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div></span></div></span><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: packaging)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;packaging&quot;/>
+                <name value=&quot;MySite&quot;/>" id="Organization-packaging">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: packaging</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07</div><span class="summaryShowsOff"> - MySite</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;MySite&quot;>">Name: </span><span>MySite</span></div></div></div></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="indent med summaryUnit" ondblclick="summaryHandler(event)">
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription2 fullUrl: urn:uuid:ba1b4227-8a67-a605-1152-e86e4d614fc3)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationIdentification2 fullUrl: urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationAssay2 fullUrl: urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp1-2 fullUrl: urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp2-2 fullUrl: urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp3-2 fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c6)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp-unspecified-2 fullUrl: urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp-total-2 fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDissolution2 fullUrl: urn:uuid:1cedf9c1-8e89-5dbb-0e1f-0363a9ca4893)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDissolutionQ802 fullUrl: urn:uuid:bbfc28df-49bc-986c-1a0e-75e3160268b9)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationUniformity2 fullUrl: urn:uuid:1dd8e506-08cf-8a15-8cd0-7c7cf1d88731)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationMicro2 fullUrl: urn:uuid:3ab5e4eb-673b-0e66-3d2c-86d64ced0e86)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationWater2 fullUrl: urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch-2)(fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch-2&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                </code>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance-2&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100050&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <lotNumber value=&quot;33446&quot;/>
+                </batch>" id="Medication-medication-actual-batch-2">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch-2</div>
+<div class="debugOff"> fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc</div><span class="summaryShowsOff"><b> - 33446</b></span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                        </valueReference>">Definition</span>: Stelbat Tablets, 20mg (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div>
+<div class="summaryHiddenOff">
+<div class="indent medl2 summaryUnit"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                ...
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance-2&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100050&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <lotNumber value=&quot;33446&quot;/>">Batch</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    ...
+                    <lotNumber value=&quot;33446&quot;>">Lot Number: </span><span>33446</span></div>
+<div class="summaryHiddenOff">
+<div class="indent medl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance-2&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100050&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>">Manufacturing</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;>">Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;>">2020-06</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100050&quot;/>
+                                <unit value=&quot;tablets&quot;/>">Quantity: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100050&quot;/>
+                                <unit value=&quot;tablets&quot;/>">100050 tablets</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>">4.8 kg</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>">Utilization: </span><span title="Comment: This has a value set defined in PQ/CMC but no code system" class="instanceComment">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+<div class="indent medl4"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>">Container</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>">Closure System: </span><span>100 cc HDPE Bottle 2 g desiccant</span></div>
+</div>
+<div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturer)(fullUrl: urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>
+                </identifier>
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;/>
+                        <city value=&quot;Lumberton&quot;/>
+                        <state value=&quot;New Jersey&quot;/>
+                        <postalCode value=&quot;08048&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a</div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;/>
+                        <city value=&quot;Lumberton&quot;/>
+                        <state value=&quot;New Jersey&quot;/>
+                        <postalCode value=&quot;08048&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;>">681 Main Street</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Lumberton&quot;>">Lumberton</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;New Jersey&quot;>">New Jersey</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;08048&quot;>">08048</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>">Manufacturing Process</span><div class="indent plan summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="PlanDefinition (id: plandefinition-mnf-process-dxpq-ex1)(fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1)
+Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq 
+
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
+                <id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                </meta>
+                <title value=&quot;Process 1.0&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>
+                </type>
+                <status value=&quot;active&quot;/>
+                <!-- #83 -->
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>" id="PlanDefinition-plandefinition-mnf-process-dxpq-ex1">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: plandefinition-mnf-process-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <title value=&quot;Process 1.0&quot;>">Title: </span><span>Process 1.0</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>">Manufacturing Process<span class="greyOff"> [1244566]</span><span class="greyOff"> (http://accumulus.org/fhir/code/planType)</span></span></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
+                <id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                </meta>
+                <title value=&quot;Process 1.0&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>
+                </type>
+                <status value=&quot;active&quot;/>
+                <!-- #83 -->
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>">Subject</span><div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-dxpq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
+
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <id value=&quot;medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                <description value=&quot;Textual description of the product&quot;/>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>
+                </combinedPharmaceuticalDoseForm>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>
+                </route>
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>
+                </name>" id="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1">Product</span></a><span class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medicinalproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medicinalproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medicinalproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: medicinalproductdefinition-drug-product-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5</div></span><div class="summaryHiddenOff"></div><span class="summaryShowsOff"><b> - </b></span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>" class="bold"><span class="summaryHiddenOff">Name: </span><span>Stelbat Tablets, 20mg</span></span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>">Name type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://accumulus.org/fhir/code/productNameType)</span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>"><span>Strength name part: </span><span>20mg</span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <description value=&quot;Textual description of the product&quot;>">Description: </span><span>Textual description of the product</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>">Route of Administration: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>">Dose Form (combination of all parts): </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <id value=&quot;productIngredient&quot;/>
+                <status value=&quot;active&quot;/>
+                <for>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </for>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>
+                </role>
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>
+                </substance>" id="Ingredient-productIngredient">Ingredient</span></a><span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: productIngredient</div><div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6</div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>">Role: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div></div><div class="indent ingsub"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95)
+
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <id value=&quot;substance1&quot;/>
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>
+                </manufacturer>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;/>
+                    <!-- #4 -->
+                </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                ...
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: substance-manufacturer)(fullUrl: urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;substance-manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div></span></div></span><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: packaging)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;packaging&quot;/>
+                <name value=&quot;MySite&quot;/>" id="Organization-packaging">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: packaging</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07</div><span class="summaryShowsOff"> - MySite</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;MySite&quot;>">Name: </span><span>MySite</span></div></div></div></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="indent med summaryUnit" ondblclick="summaryHandler(event)">
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription3 fullUrl: urn:uuid:2d628dc2-0b9e-9494-55b3-2621e50938c5)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationIdentification3 fullUrl: urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationAssay3 fullUrl: urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp1-3 fullUrl: urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp2-3 fullUrl: urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp3-3 fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp-unspecified-3 fullUrl: urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDegradation-imp-total-3 fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDissolution3 fullUrl: urn:uuid:c350f0b1-9495-0165-2555-83ebd79da682)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationDissolutionQ803 fullUrl: urn:uuid:d6955449-16b4-107f-851d-2f99d0b47b96)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationUniformity3 fullUrl: urn:uuid:ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationMicro3 fullUrl: urn:uuid:cec7ce65-57d7-a654-9ad6-21d162186eb9)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Observation/subject, id: observationWater3 fullUrl: urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch-3)(fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch-3&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                </code>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance-3&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100125&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <lotNumber value=&quot;33447&quot;/>
+                </batch>" id="Medication-medication-actual-batch-3">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch-3</div>
+<div class="debugOff"> fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06</div><span class="summaryShowsOff"><b> - 33447</b></span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                        <valueReference>
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                        </valueReference>">Definition</span>: Stelbat Tablets, 20mg (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div>
+<div class="summaryHiddenOff">
+<div class="indent medl2 summaryUnit"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                ...
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance-3&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100125&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>
+                    </extension>
+                    <lotNumber value=&quot;33447&quot;/>">Batch</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    ...
+                    <lotNumber value=&quot;33447&quot;>">Lot Number: </span><span>33447</span></div>
+<div class="summaryHiddenOff">
+<div class="indent medl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>
+                        </extension>
+                        <!-- removed extension for substance batch -->
+                        <!--extension url=&quot;http://accumulus.org/fhir/extension/batchSubstanceBatch&quot;>
+                    		<valueReference>
+                    			<reference value=&quot;Substance/actual-batch-substance-3&quot;/>
+                    		</valueReference>                   
+                    	</extension-->
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;/>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100125&quot;/>
+                                <unit value=&quot;tablets&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>
+                        </extension>
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>
+                        </extension>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>
+                        </extension>">Manufacturing</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;>">Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;manufacturingDate&quot;>
+                            <valueDateTime value=&quot;2020-06&quot;>">2020-06</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq&quot;>
+                            <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100125&quot;/>
+                                <unit value=&quot;tablets&quot;/>">Quantity: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;batchQuantity&quot;>
+                            <valueQuantity>
+                                <value value=&quot;100125&quot;/>
+                                <unit value=&quot;tablets&quot;/>">100125 tablets</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;4.8&quot;/>
+                                <unit value=&quot;kg&quot;/>">4.8 kg</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;batchUtilization&quot;>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <code value=&quot;C185328&quot;/>
+                                    <display value=&quot;Stability Study&quot;/>
+                                </coding>
+                                <text value=&quot;PPQ / Stability&quot;/>
+                            </valueCodeableConcept>">Utilization: </span><span title="Comment: This has a value set defined in PQ/CMC but no code system" class="instanceComment">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+<div class="indent medl4"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
+                            </extension>">Container</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        <extension url=&quot;container&quot;>
+                            <extension url=&quot;closureSystemDescription&quot;>
+                                <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>">Closure System: </span><span>100 cc HDPE Bottle 2 g desiccant</span></div>
+</div>
+<div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;assignedManufacturer&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/manufacturer&quot;/>
+                            </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturer)(fullUrl: urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>
+                </identifier>
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;/>
+                        <city value=&quot;Lumberton&quot;/>
+                        <state value=&quot;New Jersey&quot;/>
+                        <postalCode value=&quot;08048&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a</div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;/>
+                        <city value=&quot;Lumberton&quot;/>
+                        <state value=&quot;New Jersey&quot;/>
+                        <postalCode value=&quot;08048&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;681 Main Street&quot;>">681 Main Street</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Lumberton&quot;>">Lumberton</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;New Jersey&quot;>">New Jersey</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;08048&quot;>">08048</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingProcess&quot;>
+                            <valueReference>
+                                <reference value=&quot;PlanDefinition/plandefinition-mnf-process-dxpq-ex1&quot;/>
+                            </valueReference>">Manufacturing Process</span><div class="indent plan summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="PlanDefinition (id: plandefinition-mnf-process-dxpq-ex1)(fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1)
+Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq 
+
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
+                <id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                </meta>
+                <title value=&quot;Process 1.0&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>
+                </type>
+                <status value=&quot;active&quot;/>
+                <!-- #83 -->
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>" id="PlanDefinition-plandefinition-mnf-process-dxpq-ex1">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: plandefinition-mnf-process-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <title value=&quot;Process 1.0&quot;>">Title: </span><span>Process 1.0</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>">Manufacturing Process<span class="greyOff"> [1244566]</span><span class="greyOff"> (http://accumulus.org/fhir/code/planType)</span></span></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
+                <id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                </meta>
+                <title value=&quot;Process 1.0&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>
+                </type>
+                <status value=&quot;active&quot;/>
+                <!-- #83 -->
+                <subjectReference>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </subjectReference>">Subject</span><div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-dxpq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
+
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <id value=&quot;medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                <description value=&quot;Textual description of the product&quot;/>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>
+                </combinedPharmaceuticalDoseForm>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>
+                </route>
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>
+                </name>" id="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1">Product</span></a><span class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medicinalproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medicinalproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medicinalproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: medicinalproductdefinition-drug-product-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5</div></span><div class="summaryHiddenOff"></div><span class="summaryShowsOff"><b> - </b></span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <name>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>" class="bold"><span class="summaryHiddenOff">Name: </span><span>Stelbat Tablets, 20mg</span></span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>
+                        </coding>">Name type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    <type>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <code value=&quot;1234&quot;/>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://accumulus.org/fhir/code/productNameType)</span></span></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>"><span>Strength name part: </span><span>20mg</span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <description value=&quot;Textual description of the product&quot;>">Description: </span><span>Textual description of the product</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>
+                    </coding>">Route of Administration: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <route>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
+                        <code value=&quot;100000073619&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>
+                    </coding>">Dose Form (combination of all parts): </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <combinedPharmaceuticalDoseForm>
+                    <coding>
+                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
+                        <code value=&quot;100000073667&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <id value=&quot;productIngredient&quot;/>
+                <status value=&quot;active&quot;/>
+                <for>
+                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                </for>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>
+                </role>
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>
+                </substance>" id="Ingredient-productIngredient">Ingredient</span></a><span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: productIngredient</div><div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6</div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>
+                    </coding>">Role: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <role>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
+                        <code value=&quot;100000072072&quot;/>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div></div><div class="indent ingsub"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <substance>
+                    <code>
+                        <reference>
+                            <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                        </reference>
+                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95)
+
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <id value=&quot;substance1&quot;/>
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>
+                </manufacturer>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;/>
+                    <!-- #4 -->
+                </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                ...
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: substance-manufacturer)(fullUrl: urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;substance-manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div></span></div></span><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                        ...
+                        <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq&quot;>
+                            <valueReference>
+                                <reference value=&quot;Organization/packaging&quot;/>
+                            </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: packaging)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;packaging&quot;/>
+                <name value=&quot;MySite&quot;/>" id="Organization-packaging">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: packaging</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07</div><span class="summaryShowsOff"> - MySite</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;MySite&quot;>">Name: </span><span>MySite</span></div></div></div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="debugOff"></div>
+</div>
+</div>
+</body>
+<style>
+
+@media all {
+
+    /* consolas works better if text has to align but doesn't look so good.
+       text size adjust gives better scaling on mobile devices, and also overrides default behaviour where
+       only "full with" text gets scaled (so some divs do, and others dont) 150% looks ok on iPad Safari, but too big on iPad Chrome */
+    .divBody { font:10pt 'Verdana'; margin-right:1.5em; margin-top:0.5em; -webkit-text-size-adjust:150%; }
+
+    .indent {
+        margin-left:1em; 	/* controls line to line indent */
+        text-indent:-1em; 	/* moves text back to right, so that other parts of the div are still at the left */
+        margin-right:1em;
+        text-indent:0em;
+        margin-right:0em;
+        margin-top:0.2em;
+        margin-bottom:-0.1em;
+        padding-bottom:0.1em; /* at bottom of text */
+        background-Color:#E6E0E1;
+        border:2px solid white;
+	    transform:translate(-2px, -2px);
+	    border-radius: 5px;
+	    visibility:visible; /* this is so that the outer border doesn't hide these */
+    }
+    .indent-no-border {
+        margin-left:1em; 	/* controls line to line indent */
+        text-indent:-1em; 	/* moves text back to right, so that other parts of the div are still at the left */
+        margin-right:1em;
+        text-indent:0em;
+        margin-right:0em;
+        margin-top:0.2em;
+        margin-bottom:-0.1em;
+        padding-bottom:0.1em; /* at bottom of text */
+	    transform:translate(-2px, -2px);
+		visibility:visible;
+    }
+	.bundle { background-Color: #e0dede }
+    .bundleBorder {
+        border:2px solid #cfcfcf;
+	    border-radius: 5px;
+	    margin: -1px;
+        background-Color: #e0dede;
+    }
+    .visible { visibility:visible }
+
+    .modifierExtension { font-weight:bold; color:red; }
+
+    .white { background-Color:white }
+
+    .pat { background-Color:#ffe699 }
+    .patl2 { background-Color:#fae8b1 }
+    .patl3 { background-Color:#fff1c7 }
+    .patl4 { background-Color:#fff4d4 }
+    
+    .body { background-Color:#e3cd8a }
+    .bodyl2 { background-Color:#e0cf99 }
+
+    .comp { background-Color:#F5DEB3 }
+    .compl2 { background-Color:#f5e4c4 }
+    .compl3 { background-Color:#f5e8d0 }
+    .compText { background-Color:#f5e8d0 }
+
+    .mpd { background-Color:#ffe699 }
+    .mpdl2 { background-Color:#fcebb6 }
+    .mpdl3 { background-Color:#fcf0ca }
+
+    .task { background-Color:#fcb568 }
+    .task2 { background-Color:#ffd8ad }
+    .task3 { background-Color:#ffdfbd }
+
+    .proc { background-Color:#fcb568 }
+    .procl2 { background-Color:#ffd8ad }
+    .procl3 { background-Color:#ffdfbd }
+
+    .prov { background-Color:#b4b4b4 }
+
+    .cui { background-Color:#d9d2e9 }
+    .cuidetails { background-Color:#e6e1f0 }
+
+    .sbd,.hcs { background-Color:#affad5 }
+    .sbddetails,.hcsl2 { background-Color:#c7fce2 }
+    .sbddetails2,.hcsl3 { background-Color:#d4fae8 }
+    .sbddetails3 { background-Color:#e3fcf0 }
+
+    .apd { background-Color:#d5a6bd; word-wrap:break-all; }
+    .apdl2 { background-Color:#e3c5d4; }
+    .apdl3 { background-Color:#edd1df; }
+
+    .allergy { background-Color:#d5a6bd; }
+    .allergyl2 { background-Color:#d6bcc9; }
+    .allergyl3 { background-Color:#d9cad1; }
+    .allergyl4 { background-Color:#d9d4d6; }
+
+    .adverseEvent { background-Color:#d6bcc9; }
+    .adverseEventl2 { background-Color:#d9cad1; }
+    .adverseEventl3 { background-Color:#d9d4d6; }
+
+    .ppd { background-Color:#b6d7a8; width:60%; }
+    .ppdl2, .ppdpackage { background-Color:#c2deb6 }
+    .ppdl3, .ppdpackageitem { background-Color:#daf0d1 }
+    .ppdl4  { background-Color:#e4f2df }
+
+    .obs { background-Color:#b6d7a8; width:75%; }
+    .obsl2 { background-Color:#c2deb6 }
+    .obsl3 { background-Color:#d4ebca }
+
+    .obsDef { background-Color:#93ad87; width:75%; }
+    .obsDefl2 { background-Color:#a8c79b; }
+    .obsDefl3 { background-Color:#b6d7a8; }
+
+    .enc { background-Color:#d8f7a3 }
+    .encl2 { background-Color: #e1fcb3 }
+    .encl3 { background-Color:#e7ffbd }
+
+    .prr { background-Color:#bfbfbf }
+    .prrl2 { background-Color:#cfcfcf }
+    
+    .orgdark { background-Color:#bfbfbf }
+    .file { background-Color:#bfbfbf }
+
+    .pra { background-Color:#cfcfcf }
+    .org { background-Color:#cfcfcf }
+    .act { background-Color:#cfcfcf }
+    .plan { background-Color:#cfcfcf }
+
+    .imm { background-Color:#83bdd6 }
+    .imml2 { background-Color: #98c5d9 }
+    .imml3 { background-Color: #afcedb }
+
+    .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
+    .loc { background-Color:#dfdfdf }
+    .org3,.act3,.planl3 { background-Color:#ededed }
+	.org4,.act4,.planl4 { background-Color:#f2f2f2 }
+	.org5 { background-Color:#f7f7f7 }
+
+    .man {  background-Color:#a4c1f4 }
+    .manl2 { background-Color:#c2d7fc }
+    .manl3 { background-Color:#d9e7ff }
+    .manl4 { background-Color:#e8f1ff }
+    .manl5 { background-Color:#f5f9ff }
+
+    .med {  background-Color:#a4c1f4 }
+    .medl2 { background-Color:#b8cef5 }
+    .medl3 { background-Color:#cedcf5 }
+    .medl4 { background-Color:#dfe7f7 }
+
+    .ing { background-Color:#f4cccc }
+    .ingsub { background-Color:#f7d7d7 }
+    .ingsubstr { background-Color:#fce3e3 }
+    .ingrefsub { background-Color:#ffeded }
+
+    .subd { background-Color:#b4a7d6 }
+    .regauth { background-Color:#82e0dc }
+    .regauthl2 { background-Color:#98ebe7 }
+    .regauthcase { background-Color:#98ebe7 }
+    .regauthcaseapp { background-Color:#aaf2ef }
+
+    .medreq { background-Color:#82e0dc }
+    .medreql2 { background-Color:#98ebe7 }
+
+    .medstat { background-Color:#82e0dc }
+    .medstatl2 { background-Color:#c2fffc }
+    .medstatl3 { background-Color:#d4fffd }
+    .medstatl4 { background-Color:#e8fcfc }
+    .medstatl5 { background-Color:#f2fcfc }
+
+    .serviceReq { background-Color:#c2fffc }
+    .serviceReql2 { background-Color:#d4fffd }
+    .serviceReql3 { background-Color:#e8fcfc }
+    .serviceReql4 { background-Color:#f2fcfc }
+
+	.cond { background-Color:#f4cccc }
+    .condl2 { background-Color:#f5dcdc }
+    .condl3 { background-Color:#f5e6e6 }
+
+    .devd { background-Color:#b7b7b7 }
+    .devdl2 { background-Color:#cfcfcf }
+    .devdl3  { background-Color:#e3e3e3 }
+
+    .flag { background-Color:#fffd8f }
+    .flagl2 { background-Color:#fffda1 }
+    .flagl3 { background-Color:#fcfbb6 }
+
+    .consent { background-Color:#ffb68f }
+    .consentl2 { background-Color:#fcc7ac }
+    .consentl3 { background-Color: #ffd3bd }
+    .consentl4 { background-Color: #ffe0d1 }
+
+	.openButton { width: 12px;
+					position: absolute;
+        			top: 0px;
+       				right: 2px;
+       				color:white;
+       				visibility:hidden }
+
+ 	div:has(div.summaryHidden) > span.openButton { visibility:visible }
+
+	.noUnderline { text-decoration: none; color: inherit; }
+	.noUnderline:hover { text-decoration: underline; color: revert; }
+
+    .grey { color:dimgray  }
+    .greyOff { color:dimgray; display:none  }
+    .debug { color:#990000  }
+    .debugOff { display:none }
+    .debugBorder { visibility:visible }
+    .debugOffBorder { visibility:hidden }
+
+    .summaryHiddenOff { }
+    .summaryHidden { display:none }
+    .summaryShowsOff { display:none }
+    .summaryShows { }
+
+    .remove,.imageRemove,.commentRemove,.provenanceRemove,.taskRemove,.htmlTableRemove { }
+    .removeOff,.imageRemoveOff,.commentRemoveOff,.provenanceRemoveOff,.taskRemoveOff,.htmlTableRemoveOff { display:none }
+
+    .resetDebug { visibility:visible; }
+
+	.controls { position: sticky;
+				top:8px;
+				float:right;
+				clear:right;
+				width:290px;
+				overflow: hidden;
+				height:18px;
+				border: solid 1px grey;
+				border-radius: 5px;
+				margin-right: 23px;
+				z-index:99;
+				background-Color:#ffe699;
+				font:10pt 'Verdana';
+	}
+
+	.image { position: sticky;
+				top:8px;
+				float:right;
+				clear:right;
+				border: solid 1px grey;
+				border-radius: 5px;
+				padding: 2px;
+				z-index:99;
+				margin-right: 23px;
+				background-color:white;
+				font:10pt 'Verdana';
+	}
+
+	.comment { position: sticky;
+				top:8px;
+				width:297.5px;
+				border-radius: 5px;
+				float:right;
+				clear:right;
+				border: solid 1px grey;
+				z-index:99;
+				margin-right: 23px;
+				padding-left: 8px;
+				background-color:white;
+				font:10pt 'Verdana';
+	}
+	.instanceComment { text-decoration-line: underline;
+					   text-decoration-style: dotted;
+					   text-decoration-color: red; cursor: help; }
+
+	.narrativeLink { text-decoration-line: underline;
+					   text-decoration-style: dotted;
+					   text-decoration-color: green; }
+					   
+    .bold { font-weight:bold; }
+    .italic { font-style:italic; }
+
+	.hand { cursor: pointer; }
+    .button { text-decoration:underline; cursor: pointer; color:gray; }
+    .buttonLabel { color:gray; }
+    .buttonNoUnderline { cursor: pointer; color:gray; }
+    .buttonNoUnderlineHidden { cursor: pointer; color:#ffe699; }
+    .buttonNoUnderlineHidden:hover { color:gray; }
+
+	sup { cursor: default; }
+	.rotate-left { transform: rotate(-90deg) }
+
+	.plainLink  { text-decoration: none; color: inherit; }
+	.plainLink:visited { text-decoration: none; color: inherit; }
+
+	.greyScale { -moz-filter:grayscale(100%);webkit-filter:grayscale(100%);filter:gray;filter:grayscale(100%) }
+	
+    .json-key { color:#000096 }
+    .json-string { color:#994328 }
+    .json-number { color:blue }
+    .json-boolean { color:red }
+    .json-null { color:green }
+	
+	th { background-color: #81BEF7; }
+	td { padding: 3px; font:10pt 'Verdana'; }
+	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+	table.rounded-corners {
+	 	/* Change these properties */
+	 	--border: 1px solid black;
+	 	border-radius: 5px;
+		font:10pt 'Verdana';
+	
+	 	/* Don't change these properties */
+	 	border-spacing: 0;
+	 	border-collapse: separate;
+	 	border: var(--border);
+	 	overflow: hidden;
+	}
+	table.white { background-color:white; }
+	
+	/* Apply a border to the right of all but the last column */
+	table.rounded-corners th:not(:last-child),
+	table.rounded-corners td:not(:last-child) {
+	 border-right: var(--border);
+	}
+	
+	/* Apply a border to the bottom of all but the last row */
+	table.rounded-corners>thead>tr:not(:last-child)>th,
+	table.rounded-corners>thead>tr:not(:last-child)>td,
+	table.rounded-corners>tbody>tr:not(:last-child)>th,
+	table.rounded-corners>tbody>tr:not(:last-child)>td,
+	table.rounded-corners>tfoot>tr:not(:last-child)>th,
+	table.rounded-corners>tfoot>tr:not(:last-child)>td,
+	table.rounded-corners>tr:not(:last-child)>td,
+	table.rounded-corners>tr:not(:last-child)>th,
+	table.rounded-corners>thead:not(:last-child),
+	table.rounded-corners>tbody:not(:last-child),
+	table.rounded-corners>tfoot:not(:last-child) {
+	 border-bottom: var(--border);
+	}
+	td.centred { text-align:center; }
+}
+	</style><SCRIPT><!--
+
+		window.onload=function()
+		{
+			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
+			var nodesSpan = document.querySelectorAll("span");
+			for (var i=0; i < nodesSpan.length; i++) {
+				var node = nodesSpan[i];
+				node.ondblclick = function() { event.stopPropagation(); };
+			}
+			
+			// add a hidden plus to anything that is a summary unit
+			var nodes = document.querySelectorAll(".summaryUnit"); // header from tabular mode
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				var span = document.createElement('span');
+            	span.textContent = '+';
+            	span.title = 'This element is summarised - click to expand (or double-click the element background)';
+            	span.className = 'openButton summaryUnit';
+            	span.style.cursor = 'pointer';
+            	node.prepend(span);
+            	span.onclick = function() { summaryHandlerParent(event); };
+			}
+
+			// allow certain sections to load summarised
+			var nodesIs = document.querySelectorAll(".initialSummary");
+			for (var i=0; i < nodesIs.length; i++) {
+				var node = nodesIs[i];
+				toggleSummaryItem(node);
+			}
+
+		}
+
+		function togglePlainMode(item)
+		{
+			toggleBlackAndWhite(item, true);
+		}
+		
+		function toggleBlackAndWhite(item, plain = false)
+		{
+			handleBlackAndWhite(document.getElementsByClassName("greyable")[0]);
+	
+			var nodesTh = document.querySelectorAll("th"); // header from tabular mode
+			for (var i=0; i < nodesTh.length; i++) {
+				var node = nodesTh[i];
+				if (getComputedStyle(node).backgroundColor == 'rgb(255, 255, 255)')
+					node.style.backgroundColor = '#81BEF7'; // blue. should not be hard coded
+				else
+					node.style.backgroundColor = 'white';
+			}
+
+			// not clear why this is needed if have "greyable" above
+			var nodes = document.getElementsByClassName("indent");
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				if (getComputedStyle(node).borderColor == 'rgb(255, 255, 255)') // this will fail if another mode has changed it
+				{
+					if (plain!=true) // leave at white - so it disappears in effect
+						node.style.borderColor = '#686868'; // grey
+				}
+				else
+					node.style.borderColor = 'white';
+			}
+		}
+		function handleBlackAndWhite(item)
+		{
+			var nodes = item.childNodes	;
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+			    if (node.nodeName.toLowerCase() == 'div')
+			    {
+					if (node.hasAttribute('oldStyle')) // undo b&w
+					{
+      					node.style.background = node.getAttribute('oldStyle');
+						node.removeAttribute('oldStyle');
+					}
+					else
+					{
+						node.setAttribute('oldStyle', getComputedStyle(node).backgroundColor);
+      					node.style.background = 'white';
+					}
+			     }
+			     handleBlackAndWhite(node);
+		     }
+		}
+		function toggleDarkMode(item)
+		{
+			var htmlElement = document.getElementsByTagName("html")[0];
+
+			// make sure B&W mode isn't on because this messes up if it is (but the other way around does work)
+			if (document.querySelectorAll('[oldStyle]').length!=0)
+				return;
+
+			var label = document.getElementById('renderTextLabel');
+			var input = document.getElementById('renderInputfield');
+			var inputPaste = document.getElementById('renderInputfieldPaste');
+			//var renderLabel = document.getElementById('renderLabel'); // this is styled by the app, not here
+			var img = document.getElementById('imgFhirLogo');
+			var table = document.getElementById('tabularModeTable');
+
+			// detect starting as white
+			if ( getComputedStyle(htmlElement).backgroundColor == "rgba(0, 0, 0, 0)" ||   // what happens at first (strangely)
+				 getComputedStyle(htmlElement).backgroundColor == "rgb(255, 255, 255)" || // what happens after we set to "black"
+				 getComputedStyle(htmlElement).backgroundColor == "" ) 		
+			{
+				htmlElement.style.backgroundColor = 'black';
+				if (label) label.style.color = 'gray';
+				if (img) img.classList.add ('greyScale');
+				if (input) input.style.backgroundColor = 'gray';
+				if (inputPaste) inputPaste.style.backgroundColor = 'gray';
+				if (table) {
+					table.style.color = 'gray';
+					table.style.borderColor = 'gray';
+					var td = table.getElementsByTagName("td");
+			  		for (i = 0; i < td.length; i++)
+					    td[i].style.borderColor = "gray";
+				}
+			}
+			else
+			{
+				htmlElement.style.backgroundColor = 'white';
+				if (label) label.style.color = 'black';
+				//if (renderLabel) renderLabel.style.color = 'black';
+				if (input) input.style.backgroundColor = 'white';
+				if (inputPaste) inputPaste.style.backgroundColor = 'white';
+				if (img) img.classList.remove ('greyScale');
+				if (table) {
+					table.style.color = 'black';
+					table.style.borderColor = 'black';
+					var td = table.getElementsByTagName("td");
+			  		for (i = 0; i < td.length; i++)
+					    td[i].style.borderColor = "black";
+				}
+			}
+			// tried using a brightness filter but it doesn't work, because it must change text etc too.
+
+			var nodes = document.querySelectorAll('.indent, .bundle, .bundleBorder, .controls, .renderInputfield');
+			for (var i=0; i < nodes.length; i++)
+			{
+				var node = nodes[i];
+				if (node.hasAttribute('oldBrightColour')) // undo dark mode
+				{
+    				node.style.backgroundColor = node.getAttribute('oldBrightColour');
+					node.removeAttribute('oldBrightColour');
+    				node.style.borderColor = node.getAttribute('oldBrightBorder');
+					node.removeAttribute('oldBrightBorder');
+				}
+				else
+				{
+					var colourRGB = getComputedStyle(node).backgroundColor; // but some browsers may not give it as RGB?
+					var borderRGB = getComputedStyle(node).borderColor;
+					var darkerColour = lightenDarkenColor(rgb2hex(colourRGB), -50);
+					var darkerBorder = lightenDarkenColor(rgb2hex(borderRGB), -50);
+					node.setAttribute('oldBrightColour', colourRGB);
+					node.setAttribute('oldBrightBorder', borderRGB);
+					node.style.backgroundColor = darkerColour;
+					node.style.borderColor = darkerBorder;
+				}
+			}
+			var textXMLnodes = document.querySelectorAll('.text');
+			for (var i=0; i < textXMLnodes.length; i++)
+			{
+				var node = textXMLnodes[i];
+				if (node.hasAttribute('oldDarkText')) // undo dark mode
+				{
+    				node.style.color = node.getAttribute('oldDarkText');
+					node.removeAttribute('oldDarkText');
+				}
+				else
+				{
+					var colourRGB = getComputedStyle(node).color; // but some browsers may not give it as RGB?
+					var lighterColour = 'grey';
+					node.setAttribute('oldDarkText', colourRGB);
+					node.style.color = lighterColour;
+				}
+			}
+		}
+
+		function rgb2hex(rgb)
+		{
+		    if (/^#[0-9A-F]{6}$/i.test(rgb)) return rgb;
+		
+		    rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+		    function hex(x) {
+		        return ("0" + parseInt(x).toString(16)).slice(-2);
+		    }
+		    return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+		}
+
+		function lightenDarkenColor(col,amt) {
+		    var usePound = false;
+		    if ( col[0] == "#" ) {
+		        col = col.slice(1);
+		        usePound = true;
+		    }
+		
+		    var num = parseInt(col,16);
+		
+		    var r = (num >> 16) + amt;
+		
+		    if ( r > 255 ) r = 255;
+		    else if  (r < 0) r = 0;
+		
+		    var b = ((num >> 8) & 0x00FF) + amt;
+		
+		    if ( b > 255 ) b = 255;
+		    else if  (b < 0) b = 0;
+		
+		    var g = (num & 0x0000FF) + amt;
+		
+		    if ( g > 255 ) g = 255;
+		    else if  ( g < 0 ) g = 0;
+		
+		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+		}
+
+		function toggleSummary(item)
+		{
+			toggleSummaryItem(document);
+			
+			if (item.innerHTML=='summary off')
+				item.innerHTML='summary on';
+			else
+				item.innerHTML='summary off';
+		}
+
+		function toggleSummaryItem(item)
+		{
+			var els = item.querySelectorAll('.summaryHiddenOff');
+
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'summaryHiddenTemp';
+			}
+			els = item.querySelectorAll('.summaryHidden'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'summaryHiddenOff';
+			}
+			els = item.querySelectorAll('.summaryHiddenTemp'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'summaryHidden';
+			}
+			var els = item.querySelectorAll('.summaryShowsOff'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'summaryShowsTemp';
+			}
+			els = item.querySelectorAll('.summaryShows'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'summaryShowsOff';
+			}
+			els = item.querySelectorAll('.summaryShowsTemp'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'summaryShows';
+			}
+		}
+
+		function toggleCodes(item)
+		{
+			var els = document.querySelectorAll('.greyOff'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'greyTemp';
+			}
+			els = document.querySelectorAll('.grey'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'greyOff';
+			}
+			els = document.querySelectorAll('.greyTemp'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'grey';
+			}
+			if (item.innerHTML=='hide codes')
+				item.innerHTML='show codes';
+			else
+				item.innerHTML='hide codes';
+		}
+		function toggleDebug(item)
+		{
+			var els = document.querySelectorAll('.debugOff'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'debugTemp';
+			}
+			els = document.querySelectorAll('.debug'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'debugOff';
+			}
+			els = document.querySelectorAll('.debugTemp'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'debug';
+			}
+
+			els = document.querySelectorAll('.debugOffBorder'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'debugTemp';
+			}
+			els = document.querySelectorAll('.debugBorder'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'debugOffBorder';
+			}
+			els = document.querySelectorAll('.debugTemp'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'debugBorder';
+			}
+
+			if (item.innerHTML=='hide debug')
+				item.innerHTML='show debug';
+			else
+				item.innerHTML='hide debug';
+		}
+		function debugIsActive()
+		{
+			if (document.getElementsByClassName('debug')[0])
+				return true;
+			else
+				return false;
+		}
+		function summaryIsActive()
+		{
+			if (document.getElementsByClassName('summaryHidden')[0])
+				return true;
+			else
+				return false;
+		}
+		function codeViewIsActive()
+		{
+			if (document.getElementsByClassName('grey')[0])
+				return true;
+			else
+				return false;
+		}
+
+		function toggleRemove(item)
+		{
+			var els = document.querySelectorAll('.removeOff'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'removeTemp';
+			}
+			els = document.querySelectorAll('.remove'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'removeOff';
+			}
+			els = document.querySelectorAll('.removeTemp'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = 'remove';
+			}
+		}
+		function toggleRemoveProvenance(item)
+		{
+			toggleRemoveStyle('provenance');
+			if (item.innerHTML=='hide provenance')
+				item.innerHTML='show provenance';
+			else
+				item.innerHTML='hide provenance';
+		}
+		function toggleRemoveTask(item)
+		{
+			toggleRemoveStyle('task');
+			if (item.innerHTML=='hide task')
+				item.innerHTML='show task';
+			else
+				item.innerHTML='hide task';
+		}
+		function toggleRemoveTables(item)
+		{
+			toggleRemoveStyle('htmlTable');
+			if (item.innerHTML=='hide tables')
+				item.innerHTML='show tables';
+			else
+				item.innerHTML='hide tables';
+		}
+		function toggleApplyGreyscale(item)
+		{
+			var element = document.getElementsByClassName("greyable")[0];
+			if (element.style.cssText.includes("grayscale"))
+				element.style.cssText = "";
+			else
+				element.style.cssText = "-moz-filter:grayscale(100%);webkit-filter:grayscale(100%);filter:gray;filter:grayscale(100%)";
+		}
+		function toggleRemoveImage(item)
+		{
+			toggleRemoveStyle('image');
+		}
+		function toggleRemoveComment(item)
+		{
+			toggleRemoveStyle('comment');
+		}
+		function toggleRemoveStyle(style)
+		{
+			var els = document.querySelectorAll('.'+style+'RemoveOff'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = style+'RemoveTemp';
+			}
+			els = document.querySelectorAll('.'+style+'Remove'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = style+'RemoveOff';
+			}
+			els = document.querySelectorAll('.'+style+'RemoveTemp'), i;
+			for (i = 0; i < els.length; i++) {
+   		 		els[i].className = style+'Remove';
+			}
+		}
+		function toggleLowerControls(item)
+		{
+			var elements = document.getElementsByClassName("controls"); // because span is clicked, not the "item"
+			if (item.textContent.includes('v') && (elements[0].style.height === ''||elements[0].style.height == "18px"))
+			{
+				//item.innerHTML = "<sup title='shrink this''>v</sup>";
+		 		//elements[0].style.height = "36px";
+		 		elements[0].style.height = "54px";
+			}
+			else
+			{
+				//item.innerHTML = "<sup title='expand this'>v&nbsp;</sup>";
+		 		elements[0].style.height = "18px";
+			}
+		}
+
+		function summaryHandler(event)
+		{
+			summaryHandlerCore(event,event.target);		
+   		}
+		function summaryHandlerParent(event)
+		{
+			summaryHandlerCore(event,event.target.parentElement);
+		}
+		function summaryHandlerCore(event,itemToUse)
+		{
+			// start from parent-or-self that has "summaryUnit" class
+			if (itemToUse.classList.contains('summaryUnit')==false)
+				itemToUse = findAncestor(event.target,'summaryUnit');
+			toggleSummaryItem (itemToUse);
+		    event.cancelBubble = true;
+		    if (event.stopPropagation) event.stopPropagation();
+		}
+		function findAncestor (el, cls)
+		{
+		    while ((el = el.parentElement) && !el.classList.contains(cls));
+		    return el;
+		}
+
+      --></SCRIPT><!--
+		(Thanks for reading this far - Rik :-)
+		Status information:
+		First resource in bundle:PlanDefinition
+		Single resource bundle:false
+		Single resource bundle Not Patient Or Bundle:false
+		Single resource Not Patient:false
+		Patient document:false
+		General Bundle:false
+		Not patient related:true
+		=>Patient Centric Mode:false
+		SubstanceDef Centric Mode:false--></html>

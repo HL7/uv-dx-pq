@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic CMC data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.6 Container Closure System....
+The HTML rendering below shows a synthetic CMC data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.6 Container Closure System.
 
 <html>
 <body>
