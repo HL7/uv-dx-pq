@@ -21,6 +21,7 @@
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
             </meta>
+            <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="S.4.4 BATCH ANALYSIS"/>
             <!--            Added type (8/22/2023)-->
             <type>
@@ -1122,8 +1123,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
+                  <code value="XXX-2"/>
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
