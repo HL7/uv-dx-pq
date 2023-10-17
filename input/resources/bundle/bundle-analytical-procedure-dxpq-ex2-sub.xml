@@ -14,6 +14,7 @@
       <resource>
          <PlanDefinition>
             <id value="analyticalProcedure"/>
+            <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Analytical Procedure"/>
             <type>
                <coding>
@@ -29,7 +30,8 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <reference value="SubstanceDefinition/substance1"/>
+               <!--SubstanceDefinition/substance1-->
+               <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
             </subjectReference>
             <action>
                <extension url="http://accumulus.org/fhir/extension/processParameters">
@@ -96,7 +98,8 @@
                   <typeReference>
                      <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
                         <valueReference>
-                           <reference value="SubstanceDefinition/dispersant"/>
+                           <!--SubstanceDefinition/dispersant-->
+                           <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
                         </valueReference>
                      </extension>
                   </typeReference>
@@ -112,7 +115,8 @@
                   <typeReference>
                      <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
                         <valueReference>
-                           <reference value="SubstanceDefinition/resultingMaterial"/>
+                           <!--SubstanceDefinition/resultingMaterial-->
+                           <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
                         </valueReference>
                      </extension>
                   </typeReference>
@@ -137,7 +141,8 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/ParticleSize"/>
+                     <!--ObservationDefinition/ParticleSize-->
+                     <definitionCanonical value="ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
                   </action>
                </action>
                <action>
@@ -204,6 +209,7 @@
       <resource>
          <ObservationDefinition>
             <id value="ParticleSize"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
             <title value="Particle Size"/>
             <status value="active"/>
             <description value="Number of Analyses: 1 replicate for each sample preparation"/>
@@ -213,19 +219,24 @@
                </extension>
             </code>
             <specimen>
-               <reference value="SpecimenDefinition/specimendefinition"/>
+               <!--SpecimenDefinition/specimendefinition-->
+               <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <device>
-               <reference value="DeviceDefinition/laser"/>
+               <!--DeviceDefinition/laser-->
+               <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9495c"/>
             </device>
             <hasMember>
-               <reference value="ObservationDefinition/ParticleSizeObscuration"/>
+               <!--ObservationDefinition/ParticleSizeObscuration-->
+               <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/ParticleRI"/>
+               <!--ObservationDefinition/ParticleRI-->
+               <reference value="ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/ParticleSizeRSD"/>
+               <!--ObservationDefinition/ParticleSizeRSD-->
+               <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             </hasMember>
          </ObservationDefinition>
       </resource>
@@ -235,6 +246,7 @@
       <resource>
          <ObservationDefinition>
             <id value="ParticleSizeObscuration"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Obscuration"/>
             <status value="active"/>
             <code>
@@ -272,6 +284,7 @@
       <resource>
          <ObservationDefinition>
             <id value="ParticleRI"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Particle refractive index"/>
             <status value="active"/>
             <code>
@@ -302,6 +315,7 @@
       <resource>
          <ObservationDefinition>
             <id value="ParticleSizeRSD"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             <title value="Particle Size RSD"/>
             <status value="active"/>
             <code>
@@ -326,6 +340,7 @@
       <resource>
          <SpecimenDefinition>
             <id value="specimendefinition"/>
+            <url value="http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <status value="active"/>
             <description value="Number of Preparations: 3"/>
          </SpecimenDefinition>
