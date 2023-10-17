@@ -13,7 +13,7 @@
    </meta>
    <type value="collection"/>
    <entry>
-      <fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/>
+      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
             <id value="specificationProtocol"/>
@@ -71,7 +71,7 @@
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/Assay-->
-                     <definitionCanonical value="ObservationDefinition/"/>
+                     <definitionCanonical value="ObservationDefinition/Assay"/>
                   </action>
                   <action>
                      <code>
