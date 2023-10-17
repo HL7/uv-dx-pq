@@ -16,12 +16,14 @@
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <id value="specificationProtocol"/>
+            <!--id value="specificationProtocol"/-->
+            <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
                <profile
                   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
                <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
             </meta>
+            <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="P.5.4 BATCH ANALYSIS"/>
 <!--            Added type (8/22/2023)-->
             <type>
@@ -71,7 +73,7 @@
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/Assay-->
-                     <definitionCanonical value="ObservationDefinition/Assay"/>
+                     <definitionCanonical value="ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
                   </action>
                   <action>
                      <code>
@@ -301,11 +303,13 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay"/>
+        <!--fullUrl value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay"/-->
+      <fullUrl value="urn:uuid:39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
       <resource>
          <ObservationDefinition>
             <id value="Assay"/>
-            <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay"/>
+            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             <title value="Assay"/>
             <status value="active"/>
             <code>
@@ -1129,7 +1133,8 @@
       <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07"/>
       <resource>
          <Organization>
-            <id value="packaging"/>
+            <!--id value="packaging"/-->
+            <id value="378fbe5f-5926-3a5c-4c64-5428df877b07"/>
             <name value="MySite"/>
          </Organization>
       </resource>
@@ -1531,7 +1536,7 @@
             <id value="9c56948a-1a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
                <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
-               <reference value="http://example-server.com/fhir/ObservationDefinition/"/>
+               <reference value="ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -1568,7 +1573,7 @@
             <id value="1e20aed7-7626-1664-8d96-235f860d9a2c"/>
             <instantiatesReference>
                <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
-               <reference value="http://example-server.com/fhir/ObservationDefinition/"/>
+               <reference value="ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -1605,7 +1610,7 @@
             <id value="ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
             <instantiatesReference>
                <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
-               <reference value="http://example-server.com/fhir/ObservationDefinition/"/>
+               <reference value="ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
