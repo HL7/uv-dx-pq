@@ -17,7 +17,7 @@ Typical steps to assembling information for a FHIR Bundle, for example a Stabili
 1. Populate test results
 1. Populate final report with conclusions
 
-Assembling FHIR Bundles for other domains follow similar steps.
+Assembling FHIR Bundles for other domains follows similar steps.
 
 ### References
 The following external resources may be of interest to readers and implementers of this guide.
