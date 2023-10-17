@@ -8,8 +8,6 @@ Provide details about test methods used to analyze drug substances and drug prod
  
 ### Description of Components
 
-### Typical Steps
-
 ### Examples
 <html>
 <body>

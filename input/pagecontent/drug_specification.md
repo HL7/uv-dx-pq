@@ -8,7 +8,6 @@ Provide details about drug substance or drug product specification.
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>

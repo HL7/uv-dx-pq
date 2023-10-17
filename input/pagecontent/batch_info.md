@@ -8,6 +8,5 @@ Provide details about each drug substance and drug product batch with identifier
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples

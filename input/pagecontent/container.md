@@ -8,7 +8,6 @@ Provide details about primary and secondary packaging components for drug substa
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>

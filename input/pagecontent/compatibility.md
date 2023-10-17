@@ -8,7 +8,6 @@ Provide details about compatibility studies and results.
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>

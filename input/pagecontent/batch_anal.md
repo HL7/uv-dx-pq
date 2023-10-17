@@ -8,7 +8,6 @@ Provide details about drug substance and drug product batch release testing and 
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>

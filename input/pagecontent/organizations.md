@@ -8,7 +8,6 @@ Provides details about each facility that is a manufacturer, supplier, or test s
  
 ### Description of Components
 
-### Typical Steps
 
 ### Examples
 <html>
