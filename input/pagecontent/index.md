@@ -24,4 +24,4 @@ Other key areas of the medicinal product lifecycle are transitioning to FHIR and
 
 ### Current Project
 
-The FHIR resource profiles specified in this implementation guide represent structured data in the [ICH Quality Guidelines](https://www.ich.org/page/quality-guidelines). The structured data elements defined here support structured authoring (e.g., master data; advanced analysis) for the creation and exchange of Quality information internationally.
+The FHIR resource profiles specified in this implementation guide represent CMC structured data in the [ICH Quality Guidelines](https://www.ich.org/page/quality-guidelines). The structured data elements defined here support structured authoring (e.g., master data; advanced analysis) for the creation and exchange of Quality information internationally.
