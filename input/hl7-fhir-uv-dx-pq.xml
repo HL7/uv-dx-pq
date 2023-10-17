@@ -1722,7 +1722,11 @@
                     <title value="Process Validation: CMC synthetic data rendering - drug product"/>
                     <generation value="markdown"/>
                 </page>
-
+                <page>
+                    <name value="process_valid_rend_pb.html"/>
+                    <title value="Process Validation: CMC synthetic data rendering - drug product, biologic"/>
+                    <generation value="markdown"/>
+                </page>
                 <page>
                     <name value="anal_proc.html"/>
                     <title value="Analytical Procedures"/>
