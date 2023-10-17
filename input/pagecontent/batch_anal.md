@@ -22,7 +22,7 @@ Provide details about drug substance and drug product batch release testing and 
 </ul>
 <p><b>HTML rendering</b> of Synthetic CMC data:</p>
 <ul><li><a href="batch_anal_rend_s.html">Drug Substance Batch Analyses</a> </li>
-<li><a href="batch_anal_rend_p.html">Drug Product Analyses</a> </li></ul>
+<li><a href="batch_anal_rend_p.html">Drug Product Batch Analyses</a> </li></ul>
 
 <p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
 <ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-substance-stability-dxpq-ex1.html">Bundle – Batch Analysis dx-PQ - Example 2, substance</a></li>

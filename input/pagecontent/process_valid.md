@@ -20,7 +20,8 @@ Provide details about manufacturing process validation protocols and results.
 </ul>
 <p><b>HTML rendering</b> of Synthetic CMC data:</p>
 <ul><li><a href="process_valid_rend_s.html">Drug Substance Process Validation</a> </li>
-<li><a href="process_valid_rend_p.html">Drug Product Process Validation</a> </li></ul>
+<li><a href="process_valid_rend_p.html">Drug Product Process Validation</a> </li>
+<li><a href="process_valid_rend_pb.html">Drug Product Process Validation - Biologic</a></li></ul>
 
 <p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
 <ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-product-process-validation-dxpq-ex1.html">Bundle - Product Process Validation dx-PQ - Example 1</a></li></ul>
