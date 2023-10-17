@@ -6,6 +6,9 @@
         <lastUpdated value="2023-01-24T19:52:16.368+00:00"/>
         <source value="#V2WvA769NWoeGcjV"/>
     </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueString value="brr"/>
+    </extension>
     <url value="http://hl7.org/fhir/uv/dx-pq/ImplementationGuide/hl7-fhir-uv-dx-pq"/>
     <version value="0.1.0"/>
     <name value="DataExchangeIndustryPharmaceuticalQuality"/>
@@ -13,7 +16,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher
-        value="HL7 Biomedical Research and Regulation Work Group (http://www.hl7.org/Special/committees/rcrim/index.cfm)"/>
+        value="HL7 International / Biomedical Research and Regulation"/>
     <contact>
         <name value="HL7 International - Biomedical Research and Regulation"/>
         <telecom>
@@ -120,10 +123,6 @@
         <grouping id="examples4">
             <name value="Additional ZZ Examples"/>
         </grouping>
-
-
-
-
 
 
         <!--Drug Identification-->
@@ -1616,8 +1615,6 @@
             <groupingId value="examples3"/>
         </resource>
         <!--Additional ZZ Examples (examples4)-->
-
-
 
 
         <!-- Narrative pages      -->
