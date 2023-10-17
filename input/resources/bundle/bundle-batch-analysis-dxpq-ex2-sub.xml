@@ -13,7 +13,8 @@
    </meta>
    <type value="collection"/>
    <entry>
-      <fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/>
+      <!--fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/-->
+      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
             <id value="specificationProtocol"/>
@@ -31,6 +32,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
+               <!--SubstanceDefinition/substance1-->
                <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
             </subjectReference>
             <description value="Narrative description of analysis"/>
@@ -44,54 +46,63 @@
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Description-->
                   <definitionCanonical value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Identification-->
                   <definitionCanonical value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Assay-->
                   <definitionCanonical value="ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Impurities-->
                   <definitionCanonical value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Mutagenic-->
                   <definitionCanonical value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Enantiomeric-->
                   <definitionCanonical value="ObservationDefinition/4e67725b-20c8-158e-9d53-1810bfa58d87"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Solvents-->
                   <definitionCanonical value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Water-->
                   <definitionCanonical value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
+                  <!--ObservationDefinition/Particles-->
                   <definitionCanonical value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
                </action>
             </action>
@@ -118,8 +129,7 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="A white to brown powder"/>
                </extension>
@@ -147,8 +157,7 @@
                <text value="Identification by IR spectroscopy Identification by HPLC"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Conforms with reference"/>
                </extension>
@@ -182,14 +191,12 @@
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
                      <code value="%"/>
-                     <!-- not sure this is a correct ucum code -->
                   </low>
                   <high>
                      <value value="102"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
                      <code value="%"/>
-                     <!-- not sure this is a correct ucum code -->
                   </high>
                </range>
             </qualifiedValue>
@@ -215,8 +222,7 @@
                <text value="Organic impurities by LC"/>
             </method>
             <qualifiedValue>
-               <appliesTo>
-                  <!-- could be a code -->
+               <appliesTo> <!-- could be a code -->
                   <text value="Impurity 1"/>
                </appliesTo>
                <range>
@@ -240,8 +246,7 @@
             <qualifiedValue>
                <appliesTo>
                   <text value="Impurity 3">
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
+                     <extension  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/testComment">-->
                         <valueString value="Impurity 3 was included in the release specification throughout clinical development, and no longer forms a part of a commercial release specification; see Section S.4.5 Justification of Specification and Section S.2.5 Validation (PPQ) for additional data">
                         </valueString>
@@ -464,8 +469,7 @@
             <url value="http://example-server.com/fhir/ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             <title value="Particle size distribution">
                <!--<name value="Particle size distribution">-->
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/testComment">-->
                   <valueString value="Particle Size Distribution was included in the release specification throughout clinical development, and no longer forms a part of the commercial release specification; See Section S.4.5 Justification of Specification for data and rationale.">
                   </valueString>
@@ -482,22 +486,8 @@
             <method>
                <text value="Laser diffraction"/>
             </method>
-            <!--            <quantitativeDetails>
-               <unit>
-                  <coding>
-                     <system value="http://unitsofmeasure.org"/>
-                     <code value="um"/>
-                  </coding>
-               </unit>
-               <customaryUnit>
-                  <coding>
-                     <code value="µm"/>
-                  </coding>
-               </customaryUnit>
-            </quantitativeDetails>-->
             <qualifiedValue>
-               <appliesTo>
-                  <!-- could be a code -->
+               <appliesTo> <!-- could be a code -->
                   <text value="D(v,0.9)"/>
                </appliesTo>
                <range>
@@ -510,8 +500,7 @@
                </range>
             </qualifiedValue>
             <qualifiedValue>
-               <appliesTo>
-                  <!-- could be a code -->
+               <appliesTo> <!-- could be a code -->
                   <text value="D(v,0.5)"/>
                </appliesTo>
                <range>
@@ -524,8 +513,7 @@
                </range>
             </qualifiedValue>
             <qualifiedValue>
-               <appliesTo>
-                  <!-- could be a code -->
+               <appliesTo> <!-- could be a code -->
                   <text value="D(v,0.1)"/>
                </appliesTo>
                <range>
@@ -537,8 +525,7 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component>
-               <!-- are expected to have a component that says what solvent this one is -->
+            <component> <!-- are expected to have a component that says what solvent this one is -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -896,6 +883,7 @@
                <reference value="Observation/6deb4306-1193-24ae-a565-f73225652bdd"/>
             </result>
             <result>
+               <!--Observation/observationAssay2-->
                <reference value="Observation/f6aabd2f-5902-57e7-6126-eccd9158a5b5"/>
             </result>
             <result>
@@ -1075,6 +1063,7 @@
                <reference value="Observation/c2644a86-1684-286e-00e2-dcaf907a8970"/>
             </result>
             <result>
+               <!--Observation/observationWater2-->
                <reference value="Observation/cb5f6872-6eeb-727a-7c33-f2c438581a1c"/>
             </result>
             <result>
@@ -1188,6 +1177,7 @@
          <Observation>
             <id value="observationDescription3"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Description-->
                <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1262,6 +1252,7 @@
                <text value="Identification"/>
             </code>
             <subject>
+               <!--Substance/actual-batch-substance-2-->
                <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1323,6 +1314,7 @@
                <text value="Assay"/>
             </code>
             <subject>
+               <!--Substance/substance-dxpq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1349,6 +1341,7 @@
          <Observation>
             <id value="observationAssay2"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1361,6 +1354,7 @@
                <text value="Assay"/>
             </code>
             <subject>
+               <!--Substance/actual-batch-substance-2-->
                <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1387,6 +1381,7 @@
          <Observation>
             <id value="observationAssay3"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1425,6 +1420,7 @@
          <Observation>
             <id value="observationDegradation-imp1"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1470,6 +1466,7 @@
          <Observation>
             <id value="observationDegradation-imp1-2"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1482,6 +1479,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
+               <!--Substance/actual-batch-substance-2-->
                <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1515,6 +1513,7 @@
          <Observation>
             <id value="observationDegradation-imp1-3"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1561,6 +1560,7 @@
          <Observation>
             <id value="observationDegradation-imp2"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
             <status value="final"/>
@@ -2962,6 +2962,7 @@
          <Observation>
             <id value="observationParticleSize-size3"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Particles-->
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3017,6 +3018,7 @@
                </coding>
             </code>
             <subject>
+               <!--Substance/actual-batch-substance-2-->
                <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3050,6 +3052,7 @@
          <Observation>
             <id value="observationParticleSize-size3-3"/>
             <instantiatesReference>
+               <!--ObservationDefinition/Particles-->
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
             <status value="final"/>
