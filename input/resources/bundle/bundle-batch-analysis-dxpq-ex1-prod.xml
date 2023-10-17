@@ -248,8 +248,7 @@
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="Consistent with the retention time and UV spectrum of the reference standard"
-                  />
+                  <valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -1384,6 +1383,11 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Does not comply"/>
             </valueCodeableConcept>
