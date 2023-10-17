@@ -25,7 +25,7 @@
     </subject>
 				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+				    <reference value="Organization/organization-dxpq-ex1"/>
 				</performer>
     <valueCodeableConcept>
         <text value="Pass"/>
