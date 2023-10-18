@@ -25,7 +25,7 @@
     <element id="Bundle.type">
       <path value="Bundle.type"/>
       <short value="collection"/>
-      <fixedCode value="collection"/>
+      <patternCode value="collection"/>
       <mustSupport value="true"/>
     </element>
     <element id="Bundle.timestamp">
