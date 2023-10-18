@@ -2,17 +2,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="CodeSystem-local-codes-dxpq"/>
   <url value="http://hl7.org/fhir/uv/dx-pq/CodeSystem/CodeSystem-local-codes-dxpq"/>
-
   <name value="CodeSystemLocalCodesDxPQ"/>
   <title value="CodeSystem - Local Codes - dx-PQ"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="This code system contains temporary local codes for use in dx-PQ."/>
   <caseSensitive value="true"/>
-  <content value="complete"/>
-  
-  <count value="22" />
-  
+  <content value="example"/>
   <concept>
     <code value="111"/>
     <display value="Stability Study Report"/>
