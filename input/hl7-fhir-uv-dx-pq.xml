@@ -1869,5 +1869,21 @@
             </code>
             <value value="version"/>
         </parameter>-->
+        <parameter>
+            <code>
+                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+                <code value="special-url"/>
+            </code>
+            <value
+                value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-pharmaceutical-dosage-form-terminology"/>
+        </parameter>
+        <parameter>
+            <code>
+                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+                <code value="special-url"/>
+            </code>
+            <value
+                value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-pharmaceutical-dosage-form-terminology"/>
+        </parameter>
     </definition>
 </ImplementationGuide>

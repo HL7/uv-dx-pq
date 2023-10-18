@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SporPharmaceuticalDosageFormTerminologyAllCodes",
+  "id": "spor-pharmaceutical-dosage-form-terminology-all-codes",
+  "title": "SPOR Pharmaceutical Dosage Form Terminology (all codes)",
+  "description": "SPOR terminology used for representation of the information on pharmaceutical product dosage form - all codes value set.",
+  "url": "http://hl7.org/fhir/uv/dx-pq/ValueSet/spor-pharmaceutical-dosage-form-terminology-all-codes",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://spor.ema.europa.eu/v1/lists/200000000004"
+      }
+    ]
+  }
+}
