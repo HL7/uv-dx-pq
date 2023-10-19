@@ -7,7 +7,15 @@ Provide details about drug substance or drug product specification.
 </table>
  
 ### Description of Components
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
+**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the DP
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+
+**Observation Definition**: Each individual test and acceptance criteria; also test grouping
+
+**Plan Definition**: Describes the drug substance or drug product specification
 
 ### Examples
 <html>
@@ -15,9 +23,9 @@ Provide details about drug substance or drug product specification.
 <p><b>Synthetic CMC samples</b> (PDF):</p>
 <ul>
 <li>3.2.S.4 Control of Drug Substance</li>
-<ul><li>3.2.S.4.1 Specification</li></ul>
+<ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.4.1_Specification.pdf ">3.2.S.4.1 Specification</a></li></ul>
 <li>3.2.P.5 Control of Drug Product</li>
-<ul><li>3.2.P.5.1 Specification(s)</li></ul>
+<ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2P.5.1_Specification(s).pdf ">3.2.P.5.1 Specification(s)</a></li></ul>
 </ul>
 <p><b>HTML rendering</b> of Synthetic CMC data:</p>
 <ul><li><a href="drug_specification_rend_s.html">Drug Substance Specification</a> </li>

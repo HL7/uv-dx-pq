@@ -7,7 +7,13 @@ Provide a manufacturing process overview and details about unit operations, proc
 </table>
  
 ### Description of Components
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
+**Ingredient**: The API (stelbatalol) or the ingredients that make up the DP
+
+**Substance Definition**: Chemical or biological details about the substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+
+**Plan Definition**: Describes the manufacturing process protocol
 
 ### Examples
 <html>

@@ -7,7 +7,9 @@ Provide details about primary and secondary packaging components for drug substa
 </table>
  
 ### Description of Components
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
+**Packaged Product Definition**: The packaging for the drug product
 
 ### Examples
 <html>
