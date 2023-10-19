@@ -143,6 +143,7 @@
             <meta>
                <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"  />
             </meta>
+            <url value="http://example-server.com/fhir/PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
             <title value="Stability Monitoring Program"/>
             <!--            Added type (8/22/2023)-->
             <type>
@@ -395,8 +396,7 @@
                      <action>
                         <title value="XYZ"/>
                         <!--ActivityDefinition/activityAccelerated40XYZ-Initial-->
-                        <definitionCanonical
-                           value="ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+                        <definitionCanonical value="ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                      </action>
                   </action>
                   <action>
@@ -578,9 +578,9 @@
             <!--<id value="specimendefinition-stability-dxpq-ex1"/>-->
             <id value="3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             </meta>
+            <url value="http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <status value="active"/>
             <typeTested>
                <preference value="preferred"/>
@@ -599,8 +599,7 @@
             <id value="610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
             <!--            <id value="activitydefinition-stability-test-dxpq-ex1"/>-->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-3"/>-->
             <!--urn:uuid:16f99610-548d-48cd-bf0d-d0df1a854a0f-->
@@ -622,8 +621,7 @@
             <!--<id value="activityLongTerm25X-6"/>-->
             <id value="d99c1b63-2d32-4887-8157-525cc8ae4732"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-6"/>-->
             <!--urn:uuid:c526f9c8-25ff-4245-96f7-b98781c60674-->
@@ -645,8 +643,7 @@
             <!--<id value="activityLongTerm25X-9"/>-->
             <id value="38704856-0acf-95f0-000f-a933b6862fa0"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25X-9"/>-->
             <!--urn:uuid:e23f5690-c663-429d-b1eb-fc405ffcaa34-->
@@ -669,8 +666,7 @@
             <!--4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90-->
             <id value="4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--<url value="http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
             <!--urn:uuid:c8eeee01-0c65-4ee5-8fe5-e8b0df191570-->
@@ -684,8 +680,7 @@
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
             <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z-->
-            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/363384c8-0d79-5ff0-5538-4933f99d6409"
-            />
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/363384c8-0d79-5ff0-5538-4933f99d6409"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -696,8 +691,7 @@
             <!--activityLongTerm25XY-12-->
             <id value="f19a68b0-4ba1-7288-635e-12783035935b"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-12-->
             <url
@@ -705,12 +699,11 @@
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"
-            />
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -721,8 +714,7 @@
             <!--activityLongTerm25XY-18-->
             <id value="ce2df6ab-5087-435c-35cb-a84572e756a2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-18-->
             <url
@@ -730,12 +722,11 @@
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"
-            />
+            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -746,8 +737,7 @@
             <!--activityLongTerm25XY-24-->
             <id value="cf2df6ab-5087-435c-35cb-a84572e756a2"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm25XY-24-->
             <url
@@ -759,8 +749,7 @@
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Y-->
-            <observationRequirement   value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"
-            />
+            <observationRequirement   value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -772,12 +761,10 @@
             <id value="b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <id value="observationdefinition-test-method-dxpq-ex1"/>-->
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25X-->
-            <url
-               value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -829,7 +816,8 @@
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
+                  <valueString value="An orange film-coated tablet, debossed with 175 on one side">
+                  </valueString>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -1037,8 +1025,7 @@
             <!--longTerm25Z-->
             <id value="363384c8-0d79-5ff0-5538-4933f99d6409"/>
             <meta>
-               <profile   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
-               />
+               <profile   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm25Z-->
             <url
@@ -1067,8 +1054,7 @@
             <id value="ef781c18-8e86-7859-209b-469ee9ad42d8"/>
             <!--            <id value="Uniformity"/>-->
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Uniformity-->
             <url
@@ -1101,6 +1087,7 @@
 
             <!--id value="specimenDefStoredAt40"/-->
             <id value="e95109ac-5ef9-1723-3506-2ef2f2e33d87"/>
+            <url value="http://example-server.com/fhir/SpecimenDefinition/e95109ac-5ef9-1723-3506-2ef2f2e33d87"/>
             <status value="active"/>
             <typeTested>
                <preference value="preferred"/>
@@ -1118,8 +1105,7 @@
             <!--activityAccelerated40X-3-->
             <id value="096e3f32-798e-6792-76ad-4ea783521c50"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-3-->
             <url
@@ -1127,7 +1113,7 @@
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
-            <observationRequirement    value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b" />
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b" />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1148,7 +1134,7 @@
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
-            <observationRequirement   value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"  />
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"  />
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1167,12 +1153,11 @@
             <title value="Accelerated - 40°C/70% RH - XYZ"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40X-->
-            <observationRequirement   value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y-->
-            <observationRequirement    value="http://example-server.com/fhir/ObservationDefinition/58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/9bc183ee-6017-789b-8a6f-6a5c339f9ae0"
-            />
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/9bc183ee-6017-789b-8a6f-6a5c339f9ae0"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1219,8 +1204,7 @@
             <!--accelerated40Y-->
             <id value="58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y-->
             <url
@@ -1249,8 +1233,7 @@
             <!--accelerated40Z-->
             <id value="9bc183ee-6017-789b-8a6f-6a5c339f9ae0"/>
             <meta>
-               <profile   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"
-               />
+               <profile   value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Z-->
             <url
