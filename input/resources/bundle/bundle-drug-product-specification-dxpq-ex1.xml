@@ -17,6 +17,7 @@
       <resource>
          <PlanDefinition>
             <id value="specificationProtocol"/>
+            <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
             <status value="active"/>
             <subjectReference>
@@ -158,6 +159,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Description"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c"/>
             <title value="Description"/>
             <status value="active"/>
             <code>
@@ -187,6 +189,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DescriptionEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec"/>
             <title value="Description"/>
             <status value="active"/>
             <code>
@@ -213,6 +216,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Identification"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12"/>
             <title value="Identification"/>
             <status value="active"/>
             <code>
@@ -231,9 +235,7 @@
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString
-                     value="Consistent with the retention time and UV spectrum of the reference standard"
-                  />
+                  <valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -244,6 +246,7 @@
       <resource>
          <ObservationDefinition>
             <id value="IdentificationEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499"/>
             <title value="Identification"/>
             <status value="active"/>
             <code>
@@ -270,6 +273,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Assay"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc"/>
             <title value="Assay"/>
             <status value="active"/>
             <code>
@@ -299,6 +303,7 @@
       <resource>
          <ObservationDefinition>
             <id value="AssayEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f"/>
             <title value="Assay"/>
             <status value="active"/>
             <code>
@@ -325,6 +330,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Degradation"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041"/>
             <title value="Degradation Products"/>
             <status value="active"/>
             <code>
@@ -424,6 +430,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DegradationEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f"/>
             <title value="Degradation Products"/>
             <status value="active"/>
             <code>
@@ -521,6 +528,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Dissolution"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb"/>
             <title value="Dissolution"/>
             <status value="active"/>
             <code>
@@ -539,8 +547,7 @@
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString  value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes"
-                  />
+                  <valueString  value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -551,6 +558,7 @@
       <resource>
          <ObservationDefinition>
             <id value="DissolutionEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea"/>
             <title value="Dissolution"/>
             <status value="active"/>
             <code>
@@ -580,6 +588,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Water"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1"/>
             <title value="Water Content"/>
             <status value="active"/>
             <code>
@@ -609,6 +618,7 @@
       <resource>
          <ObservationDefinition>
             <id value="WaterEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851"/>
             <title value="Water Content"/>
             <status value="active"/>
             <code>
@@ -638,6 +648,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Microbiological"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71"/>
             <title value="Microbiological"/>
             <status value="active"/>
             <code>
@@ -666,6 +677,7 @@
       <resource>
          <ObservationDefinition>
             <id value="MicrobiologicalEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e"/>
             <title value="Microbiological"/>
             <status value="active"/>
             <code>
@@ -694,6 +706,7 @@
       <resource>
          <ObservationDefinition>
             <id value="Uniformity"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c"/>
             <title value="Uniformity of dosage"/>
             <status value="active"/>
             <code>
@@ -712,8 +725,7 @@
                <extension
                   url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString
-                     value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
+                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
                </extension>
             </qualifiedValue>
          </ObservationDefinition>
@@ -724,6 +736,7 @@
       <resource>
          <ObservationDefinition>
             <id value="UniformityEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3"/>
             <title value="Uniformity of dosage"/>
             <status value="active"/>
             <code>
