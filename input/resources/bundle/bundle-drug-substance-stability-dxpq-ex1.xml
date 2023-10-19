@@ -103,6 +103,7 @@
          <PlanDefinition>
             <!--stabilityStudyProtocol-->
             <id value="c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
+            <url value="http://example-server.com/fhir/PlanDefinition/c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
             <title value="Stability Monitoring Program"/>
             <!--            Added type (8/22/2023)-->
             <type>
@@ -233,7 +234,7 @@
                      <action>
                         <title value="X"/>
                         <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm30X-9-->
-                        <definitionCanonical   value="http://example-server.com/fhir/ActivityDefinition/99893d3c-520c-8d7b-6d73-f46b1a662201"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/99893d3c-520c-8d7b-6d73-f46b1a662201"/>
                      </action>
                   </action>
                   <action> <!-- 12 months -->
@@ -260,7 +261,7 @@
                      <action>
                         <title value="X"/>
                         <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm30X-12-->
-                        <definitionCanonical  value="http://example-server.com/fhir/ActivityDefinition/b3254b8e-6fc3-88d3-7d38-0afcf13c4f67"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/b3254b8e-6fc3-88d3-7d38-0afcf13c4f67"/>
                      </action>
                   </action>
                   <action> <!-- 18 months -->
@@ -287,7 +288,7 @@
                      <action>
                         <title value="X"/>
                         <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm30X-18-->
-                        <definitionCanonical  value="http://example-server.com/fhir/ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
                      </action>
                   </action>
                   <action> <!-- 24 months -->
@@ -314,7 +315,7 @@
                      <action>
                         <title value="X"/>
                         <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm30X-24-->
-                        <definitionCanonical  value="http://example-server.com/fhir/ActivityDefinition/d6f7de9d-57a5-6a2c-1c2f-0d65718860f2"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/d6f7de9d-57a5-6a2c-1c2f-0d65718860f2"/>
                      </action>
                   </action>
                   <!-- 36 months -->
@@ -343,7 +344,7 @@
                         <title value="(X)"/>
                         <requiredBehavior value="could"/>
                         <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm30X-36-->
-                        <definitionCanonical  value="http://example-server.com/fhir/ActivityDefinition/75073965-82eb-407d-34cf-3a7767a38149"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/75073965-82eb-407d-34cf-3a7767a38149"/>
                      </action>
                   </action>
                   <!-- NEW DATA -->
@@ -405,7 +406,7 @@
                         <!-- second category at this step -->
                         <title value="XY"/>
                         <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40XY-Initial-->
-                        <definitionCanonical   value="http://example-server.com/fhir/ActivityDefinition/1b43a536-3c29-3427-0b93-e35866ef8495"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/1b43a536-3c29-3427-0b93-e35866ef8495"/>
                      </action>
                   </action>
                   <action> <!-- 3 months -->
@@ -432,7 +433,7 @@
                      <action>
                         <title value="X"/>
                         <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-3-->
-                        <definitionCanonical  value="http://example-server.com/fhir/ActivityDefinition/8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
                      </action>
                   </action>
                   <action> <!-- 6 months -->
@@ -459,7 +460,7 @@
                      <action>
                         <title value="X"/>
                         <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityAccelerated40X-6-->
-                        <definitionCanonical  value="http://example-server.com/fhir/ActivityDefinition/cf2f00df-971f-0bab-8768-4251b1ad0817"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/cf2f00df-971f-0bab-8768-4251b1ad0817"/>
                      </action>
                   </action>
                   <action> <!-- 9 months -->
@@ -631,6 +632,8 @@
          <SpecimenDefinition>
             <!--specimenDefStoredAt30-->
             <id value="643d8b44-71f4-2b58-07e8-51c22b294b25"/>
+            <!--http://example-server.com/fhir/SpecimenDefinition/643d8b44-71f4-2b58-07e8-51c22b294b25-->
+            <url value="http://example-server.com/fhir/SpecimenDefinition/643d8b44-71f4-2b58-07e8-51c22b294b25"/>
             <status value="active"/>
             <typeTested>
                <preference value="preferred"/>
@@ -1011,6 +1014,8 @@
          <SpecimenDefinition>
             <!--specimenDefStoredAt40-->
             <id value="306637ec-1041-80e8-8e77-e7ca814253e1"/>
+            <!--http://example-server.com/fhir/SpecimenDefinition/306637ec-1041-80e8-8e77-e7ca814253e1-->
+            <url value="http://example-server.com/fhir/SpecimenDefinition/306637ec-1041-80e8-8e77-e7ca814253e1"/>
             <status value="active"/>
             <typeTested>
                <preference value="preferred"/>
@@ -1757,6 +1762,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
@@ -2076,7 +2082,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--http://hl7.org/fhir/uv/dx-pq/ActivityDefinition/activityLongTerm30XY-Initial-->
-                  <reference  value="http://example-server.com/fhir/ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
+                  <reference value="http://example-server.com/fhir/ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2487,6 +2493,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
@@ -3449,6 +3456,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
