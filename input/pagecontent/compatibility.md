@@ -15,7 +15,7 @@ Provide details about compatibility studies and results.
 <p><b>Synthetic CMC samples</b> (PDF):</p>
 <ul>
 <li>3.2.P.2 Pharmaceutical Development</li>
-<ul><li>3.2.P.2.6 Compatibility</li></ul>
+<ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.2.6_Compatibility.pdf ">3.2.P.2.6 Compatibility</a></li></ul>
 </ul>
 <p><b>HTML rendering</b> of Synthetic CMC data:</p>
 <ul><li><a href="compatibility_rend_p.html">Drug Compatibility</a> </li></ul>
