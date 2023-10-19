@@ -16,6 +16,7 @@
         <resource>
             <PlanDefinition>
                 <id value="specificationProtocol"/>
+            <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
                 <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
                 <status value="active"/>
                 <subjectReference>
@@ -92,6 +93,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Description"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9"/>
                 <title value="Description"/>
                 <status value="active"/>
                 <code>
@@ -120,6 +122,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Identification"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3"/>
                 <title value="Identification"/>
                 <status value="active"/>
                 <code>
@@ -148,6 +151,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Assay"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a"/>
                 <title value="Assay"/>
                 <status value="active"/>
                 <code>
@@ -167,15 +171,15 @@
                         <low>
                             <value value="98"/>
                             <unit value="% w/w"/>
-                            <system value="http://dummy.unitsofmeasure.org"/>
-                            <code value="%{w/w}"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
                             <!-- not sure this is a correct ucum code -->
                         </low>
                         <high>
                             <value value="102"/>
                             <unit value="% w/w"/>
-                            <system value="http://dummy.unitsofmeasure.org"/>
-                            <code value="%{w/w}"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
                             <!-- not sure this is a correct ucum code -->
                         </high>
                     </range>
@@ -188,6 +192,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Impurities"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
                 <title value="Drug Substance Related Organic impurities"/>
                 <status value="active"/>
                 <code>
@@ -263,6 +268,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Mutagenic"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
                 <title value="Mutagenic impurities"/>
                 <status value="active"/>
                 <code>
@@ -307,6 +313,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Enantiomeric"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d"/>
                 <title value="Enantiomeric purity"/>
                 <status value="active"/>
                 <code>
@@ -339,6 +346,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Solvents"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
                 <title value="Residual solvents"/>
                 <status value="active"/>
                 <code>
@@ -392,6 +400,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Water"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
                 <title value="Water Content"/>
                 <status value="active"/>
                 <code>
@@ -421,6 +430,7 @@
         <resource>
             <ObservationDefinition>
                 <id value="Particles"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f"/>
                 <title value="Particle size distribution"/>
                 <status value="active"/>
                 <code>
