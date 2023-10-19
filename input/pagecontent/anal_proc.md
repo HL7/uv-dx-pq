@@ -7,6 +7,15 @@ Provide details about test methods used to analyze drug substances and drug prod
 </table>
  
 ### Description of Components
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the API (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+
+**Plan Definition**: Describes the test protocol
+
+**Observation Definition**: Each individual test and acceptance criteria; also test grouping
+
+**Specimen Definition**: Describes the storage conditions and duration for each test
 
 ### Examples
 <html>

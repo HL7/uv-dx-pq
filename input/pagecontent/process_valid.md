@@ -7,6 +7,23 @@ Provide details about manufacturing process validation protocols and results.
 </table>
 
 ### Description of Components
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+
+**Ingredient**: The API (stelbatalol) or the ingredients that make up the DP
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the API (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+
+**Medication**: Describes the batches that underwent testing
+
+**Plan Definition**: Describes the process validation test protocol
+
+**Activity Definition**: Contains the Observation Definition resources that establish the list of tests and their acceptance criteria
+
+**Observation Definition**: Each individual test and acceptance criteria; also test grouping
+
+**Observation**: The results of a specific test mentioned in the Observation Definition
+
+**Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
 ### Examples
 <html>

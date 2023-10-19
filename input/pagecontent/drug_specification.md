@@ -7,7 +7,15 @@ Provide details about drug substance or drug product specification.
 </table>
  
 ### Description of Components
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
+**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the DP
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+
+**Observation Definition**: Each individual test and acceptance criteria; also test grouping
+
+**Plan Definition**: Describes the drug substance or drug product specification
 
 ### Examples
 <html>

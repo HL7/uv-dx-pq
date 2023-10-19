@@ -7,7 +7,17 @@ Provide details about impurity identification and characterization.
 </table>
  
 ### Description of Components
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
+**Substance Definition**: Chemical or biological details about substance(s) associated with the API (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+
+**Medication**: Describes the batches that underwent testing
+
+**Observation**: The results of a specific test
+
+**Diagnostic Report**: Contains all rest results as a group and captures conclusions
+
+**Organization**: The company/site that performed the testing or manufacturing
 
 ### Examples
 <html>

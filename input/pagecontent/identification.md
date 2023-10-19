@@ -7,6 +7,13 @@ Provide details about drug substances and drug products with names and identifie
 </table>
  
 ### Description of Components
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+
+**Ingredient**: The API (stelbatalol) or the ingredients that make up the DP
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the API (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+
+**Packaged Product Definition**: The packaging for the drug product
 
 
 ### Examples
