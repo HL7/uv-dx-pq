@@ -11,6 +11,20 @@
                         <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
                     </valueReference>
                 </extension>
+				<extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-statistical-model-dxpq">
+                     <valueCodeableConcept>
+                         
+                         
+                         <text value="information about statistical model utilized to interpret stability study results"/>
+                     </valueCodeableConcept>
+                 </extension>
+                 <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-container-orientation-dxpq">
+                     <valueCodeableConcept>
+                         
+                         
+                         <text value="Horizontal"/>
+                     </valueCodeableConcept>
+                 </extension>
                 <identifier>
                     <system value="https://eudract.europa.eu/example/identifier"/>
                     <value value="ABC1234"/>
@@ -37,9 +51,9 @@
             </valueCodeableConcept>
         </extension>-->
     </effectiveDateTime>
-                <!--performer>
-               		<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-                </performer-->
+                <performer>
+				    <reference value="Organization/organization-dxpq-ex1"/>
+                </performer>
     <result>
 <!--        <reference value="Observation/LongTerm25C-initial-1"/>-->
         <reference value="Observation/observation-test-result-dxpq-ex1"/>
