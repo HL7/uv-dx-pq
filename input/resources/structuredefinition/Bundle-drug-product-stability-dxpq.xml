@@ -77,7 +77,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="PlanDefinition"/>
-        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
       </type>
     </element>
     

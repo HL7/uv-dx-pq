@@ -265,7 +265,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
                 <display value="PlanDefinitionStabilityStudyProtocolDxPq"/>
@@ -274,7 +274,7 @@
             <description value="PlanDefinition - Stability Study Protocol dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
