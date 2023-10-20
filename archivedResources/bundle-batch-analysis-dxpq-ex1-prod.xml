@@ -20,7 +20,7 @@
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
                <profile
-                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
                <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>

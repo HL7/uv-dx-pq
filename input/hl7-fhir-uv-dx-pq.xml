@@ -254,7 +254,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/ResearchStudy-stability-dxpq"/>
                 <display value="ResearchStudyStabilityDxPq"/>
@@ -263,7 +263,7 @@
             <description value="ResearchStudy - Stability dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
@@ -343,7 +343,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="ResearchStudy/researchstudy-stability-dxpq-ex1"/>
             </reference>
@@ -352,7 +352,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
@@ -575,6 +575,7 @@
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
         </resource>
+
         <!--Process Validation -->
         <!--Process Validation Profiles-->
         <resource>
@@ -888,6 +889,39 @@
 
         <resource>
             <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex3-drug-specification"/>
+            </reference>
+            <name value="plandefinition-dxpq-ex3-drug-specification"/>
+            <description value="PlanDefinition - dxPQ - Example 3, Drug Specification"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
+            </reference>
+            <name value="plandefinition-dxpq-ex4-mnf-process"/>
+            <description value="PlanDefinition - dxPQ - Example 4, Manufacturing Process"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
+            </reference>
+            <name value="plandefinition-dxpq-ex5-stability-study-protocol"/>
+            <description value="PlanDefinition - dxPQ - Example 5, Stability Study Protocol"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+
+        <resource>
+            <reference>
                 <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
             </reference>
             <name value="observationdefinition-simple-dxpq-ex1"/>
@@ -1111,7 +1145,7 @@
             <groupingId value="extensions1"/>
         </resource>
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-instance-comment-dxpq"/>
                 <display value="ExtensionInstanceCommentDxPq"/>
@@ -1120,7 +1154,7 @@
             <description value="Extension - Instance Comment dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
@@ -1253,7 +1287,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-
+<!--
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-table-footnote-dxpq"/>
@@ -1263,9 +1297,9 @@
             <description value="Extension - Table Footnote dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-batches-in-rows-dxpq"/>
                 <display value="ExtensionTabulateBatchesInRowsDxPq"/>
@@ -1274,9 +1308,9 @@
             <description value="Extension - Tabulate Batches in Rows dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+ <!--       <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-batch-impurities-dxpq"/>
                 <display value="ExtensionTabulateBatchImpuritiesDxPq"/>
@@ -1285,9 +1319,9 @@
             <description value="Extension - Tabulate Batch Impurities dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-equipment-dxpq"/>
                 <display value="ExtensionTabulateEquipmentDxPq"/>
@@ -1296,7 +1330,7 @@
             <description value="Extension - Tabulate Equipment dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>

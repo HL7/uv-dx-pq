@@ -18,7 +18,7 @@
          <PlanDefinition>
             <id value="manufacturingProcess-unlinked"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq" />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq" />
             </meta>
             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq">
                <!--            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">-->
