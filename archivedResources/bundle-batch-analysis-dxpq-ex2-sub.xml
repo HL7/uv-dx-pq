@@ -5,7 +5,7 @@
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <!-- For this example, changed "http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology" to "http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-batch-analysis-dxpq-ex2-sub-b"/>
+   <id value="bundle-batch-analysis-dxpq-ex2-sub"/>
    <!--   <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
@@ -19,7 +19,7 @@
          <PlanDefinition>
             <id value="specificationProtocol"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="S.4.4 BATCH ANALYSIS"/>

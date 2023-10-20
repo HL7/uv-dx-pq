@@ -342,16 +342,6 @@
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-product-stability-dxpq-ex1-b"/>
-            </reference>
-            <name value="bundle-drug-product-stability-dxpq-ex1-b"/>
-            <description value="Bundle – Drug Product Stability dx-PQ - Example 1-b"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
 
 <!--        <resource>
             <reference>
@@ -606,16 +596,7 @@
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-product-manufacturing-dxpq-ex1-b"/>
-            </reference>
-            <name value="bundle-product-manufacturing-dxpq-ex1-b"/>
-            <description value="Bundle - Product Manufacturing dx-PQ - Example 1-b"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
-            <groupingId value="b5-mnf"/>
-        </resource>
+
         <!--Process Validation -->
         <!--Process Validation Profiles-->
         <resource>
@@ -635,16 +616,6 @@
             </reference>
             <name value="bundle-product-process-validation-dxpq-ex1"/>
             <description value="Bundle - Product Process Validation dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
-            <groupingId value="b13-processvalidation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-product-process-validation-dxpq-ex1-b"/>
-            </reference>
-            <name value="bundle-product-process-validation-dxpq-ex1-b"/>
-            <description value="Bundle - Product Process Validation dx-PQ - Example 1-b"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>

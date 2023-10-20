@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Product Process Validation -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-product-process-validation-dxpq-ex1-b"/>
+   <id value="bundle-product-process-validation-dxpq-ex1"/>
    <!--   <id value="product-batch-analysis"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-process-validation-dxpq"/>
@@ -4829,7 +4829,7 @@
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
                <tag>
                   <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
                   <code value="SUBSETTED"/>

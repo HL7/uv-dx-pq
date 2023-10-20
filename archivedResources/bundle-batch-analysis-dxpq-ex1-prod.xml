@@ -5,7 +5,7 @@
    <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
    <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
    <!-- For this example, changed "http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology" to "http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
-   <id value="bundle-batch-analysis-dxpq-ex1-prod-b"/>
+   <id value="bundle-batch-analysis-dxpq-ex1-prod"/>
    <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
@@ -20,7 +20,7 @@
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
                <profile
-                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
                <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>

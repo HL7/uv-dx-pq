@@ -4,7 +4,7 @@
 <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-drug-product-stability-dxpq-ex1-b"/>
+   <id value="bundle-drug-product-stability-dxpq-ex1"/>
    <!--   <id value="product-stability-study"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
@@ -141,7 +141,7 @@
             <!--<id value="plandefinition-stability-study-protocol-dxpq-ex1"/>-->
             <id value="c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"  />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"  />
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
             <title value="Stability Monitoring Program"/>

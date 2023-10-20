@@ -3,7 +3,7 @@
 <!-- Based on file Accumulus FHIR Product Example - Manufacturing, posted 07-11-2023 -->
 <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-product-manufacturing-dxpq-ex1-b"/>
+   <id value="bundle-product-manufacturing-dxpq-ex1"/>
    <!--   <id value="product-manufacturing"/>-->
    <meta>
       <profile
@@ -18,7 +18,7 @@
          <PlanDefinition>
             <id value="manufacturingProcess-unlinked"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq" />
+               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq" />
             </meta>
             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq">
                <!--            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">-->
