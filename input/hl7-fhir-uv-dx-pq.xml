@@ -184,7 +184,7 @@
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
-
+<!--
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
@@ -194,7 +194,7 @@
             <description value="PlanDefinition - Drug Specification dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
-        </resource>
+        </resource>-->
 
         <!--        Specification Examples-->
         <resource>
