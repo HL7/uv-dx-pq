@@ -12,7 +12,7 @@
     </meta>
     <type value="collection"/>
     <entry>
-        <fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/>
+      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
         <resource>
             <PlanDefinition>
                 <id value="specificationProtocol"/>
@@ -20,7 +20,7 @@
                 <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
                 <status value="active"/>
                 <subjectReference>
-                    <reference value="SubstanceDefinition/substance1"/>
+               <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
                 </subjectReference>
                 <description value="Narrative description of specifications"/>
                 <!-- new "tabular" style -->
@@ -34,62 +34,62 @@
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Description"/>
+                  <definitionCanonical value="ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9"/>
                     </action>
                     <action>
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Identification"/>
+                  <definitionCanonical value="ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3"/>
                     </action>
                     <action>
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Assay"/>
+                  <definitionCanonical value="ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a"/>
                     </action>
                     <action>
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Impurities"/>
+                  <definitionCanonical value="ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
                     </action>
                     <action>
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Mutagenic"/>
+                  <definitionCanonical value="ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
                     </action>
                     <action>
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Enantiomeric"/>
+                  <definitionCanonical value="ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d"/>
                     </action>
                     <action>
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Solvents"/>
+                  <definitionCanonical value="ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
                     </action>
                     <action>
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Water"/>
+                  <definitionCanonical value="ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
                     </action>
                     <action>
                         <code>
                             <text value="Test"/>
                         </code>
-                        <definitionCanonical value="ObservationDefinition/Particles"/>
+                  <definitionCanonical value="ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f"/>
                     </action>
                 </action>
             </PlanDefinition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Description"/>
+      <fullUrl value="urn:uuid:52176085-1f30-0c67-9ad7-523c486c82c9"/>
         <resource>
             <ObservationDefinition>
                 <id value="Description"/>
@@ -118,7 +118,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Identification"/>
+      <fullUrl value="urn:uuid:b50d892c-8980-0774-39d4-d449732873a3"/>
         <resource>
             <ObservationDefinition>
                 <id value="Identification"/>
@@ -147,7 +147,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Assay"/>
+      <fullUrl value="urn:uuid:d460b561-110c-7eb6-5d69-788abcca391a"/>
         <resource>
             <ObservationDefinition>
                 <id value="Assay"/>
@@ -188,7 +188,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Impurities"/>
+      <fullUrl value="urn:uuid:006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
         <resource>
             <ObservationDefinition>
                 <id value="Impurities"/>
@@ -264,7 +264,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Mutagenic"/>
+      <fullUrl value="urn:uuid:c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
         <resource>
             <ObservationDefinition>
                 <id value="Mutagenic"/>
@@ -309,7 +309,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Enantiomeric"/>
+      <fullUrl value="urn:uuid:18e20bae-1a24-202d-11d7-5f354c785e4d"/>
         <resource>
             <ObservationDefinition>
                 <id value="Enantiomeric"/>
@@ -342,7 +342,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Solvents"/>
+      <fullUrl value="urn:uuid:22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
         <resource>
             <ObservationDefinition>
                 <id value="Solvents"/>
@@ -396,7 +396,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Water"/>
+      <fullUrl value="urn:uuid:b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
         <resource>
             <ObservationDefinition>
                 <id value="Water"/>
@@ -426,7 +426,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/ObservationDefinition/Particles"/>
+      <fullUrl value="urn:uuid:233865df-2a71-528d-756c-85f36bd6685f"/>
         <resource>
             <ObservationDefinition>
                 <id value="Particles"/>
@@ -501,13 +501,14 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/SubstanceDefinition/substance1"/>
+      <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
         <resource>
             <SubstanceDefinition>
                 <id value="substance1"/>
 
                 <manufacturer>
-                    <reference value="Organization/substance-manufacturer"/>
+               <!--Organization/substance-manufacturer-->
+               <reference value="Organization/062bf235-44e2-55c4-9213-bbe5e12d5620"/>
                 </manufacturer>
                 <name>
                     <name value="Stelbatolol"/>
@@ -518,7 +519,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://www.example.org/Organization/substance-manufacturer"/>
+      <fullUrl value="urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620"/>
         <resource>
             <Organization>
                 <id value="substance-manufacturer"/>
