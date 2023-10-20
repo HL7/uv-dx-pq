@@ -219,7 +219,7 @@
             <groupingId value="b12-specification"/>
         </resource>
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-drug-specification-dxpq-ex1"/>
             </reference>
@@ -228,7 +228,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
             <groupingId value="b12-specification"/>
-        </resource>
+        </resource>-->
 
         <!--Stability-->
         <!--        Stability Profiles-->
@@ -354,7 +354,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
             </reference>
@@ -363,7 +363,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
