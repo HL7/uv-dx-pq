@@ -888,6 +888,39 @@
 
         <resource>
             <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex3-drug-specification"/>
+            </reference>
+            <name value="plandefinition-dxpq-ex3-drug-specification"/>
+            <description value="PlanDefinition - dxPQ - Example 3, Drug Specification"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
+            </reference>
+            <name value="plandefinition-dxpq-ex4-mnf-process"/>
+            <description value="PlanDefinition - dxPQ - Example 4, Manufacturing Process"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
+            </reference>
+            <name value="plandefinition-dxpq-ex5-stability-study-protocol"/>
+            <description value="PlanDefinition - dxPQ - Example 5, Stability Study Protocol"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+
+        <resource>
+            <reference>
                 <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
             </reference>
             <name value="observationdefinition-simple-dxpq-ex1"/>

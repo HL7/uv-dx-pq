@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->   
+    <!--        <id value="stabilityStudyProtocol"/>-->
+    <id value="plandefinition-dxpq-ex5-stability-study-protocol"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                </meta>
+    <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
+    <title value="Stability Monitoring Program"/>
+    <status value="active"/>
+                <subjectReference>
+                    <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                </subjectReference>
+    <description value="Narrative description of Stability Study"/>
+    <!-- new "tabular" style -->
+    <action>
+                    <title value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbat Tablets, 20 mg"/>
+        <action>
+            <!-- TODO add codes here for the different levels? -->
+            <title value="Long-Term"/>
+            <description value="25°C/60% RH"/>
+            <action>
+                <!-- 0 months -->
+                <title value="Initial"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="0"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="0"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <!-- the categories to do at this step -->
+                    <title value="XYZ"/>
+                    <!-- Long term -->
+                            	<definitionCanonical value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                </action>
+            </action>
+ <!--           
+            <action>
+                <!-\- 3 months -\->
+                <title value="3"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="3"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="3"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <title value="X"/>
+                    <definitionUri value="ActivityDefinition/activityLongTerm25X-3"/>
+                </action>
+            </action>
+            <action>
+                <!-\- 6 months -\->
+                <title value="6"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="6"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="6"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <title value="X"/>
+                    <definitionUri value="ActivityDefinition/activityLongTerm25X-6"/>
+                </action>
+            </action>
+            <action>
+                <!-\- 9 months -\->
+                <title value="9"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="9"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="9"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <title value="X"/>
+                    <definitionUri value="ActivityDefinition/activityLongTerm25X-9"/>
+                </action>
+            </action>
+            <action>
+                <!-\- 12 months -\->
+                <title value="12"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="12"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="12"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <title value="XY"/>
+                    <definitionUri value="ActivityDefinition/activityLongTerm25XY-12"/>
+                </action>
+            </action>
+            <action>
+                <!-\- 18 months -\->
+                <title value="18"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="18"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="18"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <title value="XY"/>
+                    <definitionUri value="ActivityDefinition/activityLongTerm25XY-18"/>
+                </action>
+            </action>
+        -->
+        </action>
+        <!-- end of long term -->
+<!--        <action>
+            <title value="Accelerated"/>
+            <description value="40°C/75% RH"/>
+            <!-\- 0 months - but results for this are not needed, because and zero months is the same for both long term and accelerated -\->
+            <action>
+                <title value="Initial"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="0"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="0"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <title value="XYZ"/>
+                    <definitionUri value="ActivityDefinition/activityAccelerated40XYZ-Initial"
+                    />
+                </action>
+            </action>
+            <action>
+                <!-\- 3 months -\->
+                <title value="3"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="3"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="3"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <title value="X"/>
+                    <definitionUri value="ActivityDefinition/activityAccelerated40X-3"/>
+                </action>
+            </action>
+            <action>
+                <!-\- 6 months -\->
+                <title value="6"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="6"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="6"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <title value="X"/>
+                    <definitionUri value="ActivityDefinition/activityAccelerated40X-6"/>
+                </action>
+            </action>
+            <action>
+                <!-\- 9 months -\->
+                <title value="9"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="9"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="9"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <!-\- none -\->
+                    <title value="-"/>
+                </action>
+            </action>
+            <action>
+                <!-\- 12 months -\->
+                <title value="12"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="12"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="12"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <!-\- none -\->
+                    <title value="-"/>
+                </action>
+            </action>
+            <action>
+                <!-\- 18 months -\->
+                <title value="18"/>
+                <timingTiming>
+                    <repeat>
+                        <boundsRange>
+                            <low>
+                                <value value="18"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </low>
+                            <high>
+                                <value value="18"/>
+                                <unit value="months"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="mo"/>
+                            </high>
+                        </boundsRange>
+                        <frequency value="1"/>
+                    </repeat>
+                </timingTiming>
+                <action>
+                    <!-\- none -\->
+                    <title value="-"/>
+                </action>
+            </action>
+        </action>-->
+        <!-- end of accelerated -->
+    </action>
+</PlanDefinition>
