@@ -458,17 +458,6 @@
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-        
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-prod-b"/>
-            </reference>
-            <name value="bundle-batch-analysis-dxpq-ex1-prod-b"/>
-            <description value="Bundle – Batch Analysis dx-PQ - Example 1, product-b"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
 
         <resource>
             <reference>
@@ -476,16 +465,6 @@
             </reference>
             <name value="bundle-batch-analysis-dxpq-ex2-sub"/>
             <description value="Bundle – Batch Analysis dx-PQ - Example 2, substance"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-sub-b"/>
-            </reference>
-            <name value="bundle-batch-analysis-dxpq-ex2-sub-b"/>
-            <description value="Bundle – Batch Analysis dx-PQ - Example 2, substance-b"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
