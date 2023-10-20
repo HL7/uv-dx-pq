@@ -1111,7 +1111,7 @@
             <groupingId value="extensions1"/>
         </resource>
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-instance-comment-dxpq"/>
                 <display value="ExtensionInstanceCommentDxPq"/>
@@ -1120,7 +1120,7 @@
             <description value="Extension - Instance Comment dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
@@ -1253,7 +1253,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-
+<!--
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-table-footnote-dxpq"/>
@@ -1263,9 +1263,9 @@
             <description value="Extension - Table Footnote dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-batches-in-rows-dxpq"/>
                 <display value="ExtensionTabulateBatchesInRowsDxPq"/>
@@ -1274,9 +1274,9 @@
             <description value="Extension - Tabulate Batches in Rows dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+ <!--       <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-batch-impurities-dxpq"/>
                 <display value="ExtensionTabulateBatchImpuritiesDxPq"/>
@@ -1285,9 +1285,9 @@
             <description value="Extension - Tabulate Batch Impurities dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-equipment-dxpq"/>
                 <display value="ExtensionTabulateEquipmentDxPq"/>
@@ -1296,7 +1296,7 @@
             <description value="Extension - Tabulate Equipment dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
