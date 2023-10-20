@@ -435,7 +435,7 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
                 <display value="PlanDefinitionMnfProcessDxPq"/>
@@ -444,7 +444,7 @@
             <description value="PlanDefinition - Manufacturing Process dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b9-batchanalyses"/>
-        </resource>
+        </resource>-->
 
         <!--Batch Analysis Examples -->
 
