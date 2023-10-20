@@ -755,6 +755,7 @@
          <ObservationDefinition>
             <!--DissolutionQ80-->
             <id value="33a9d578-6e6b-7606-72bc-6775d36c1930"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/33a9d578-6e6b-7606-72bc-6775d36c1930"/>
             <title value="Dissolution (Q)"/>
             <status value="active"/>
             <code>
@@ -1043,6 +1044,7 @@
          <ObservationDefinition>
             <!--Uniformity-->
             <id value="ef17cff1-6586-a4a4-9168-2602140548d7"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
             <title value="Uniformity of dosage"/>
             <status value="active"/>
             <code>
@@ -4838,6 +4840,7 @@
             <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
                <valueMarkdown value="This can be text about the history"/>
             </extension>
+            <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <title value="Process 1.0"/>
             <type>
                <coding>
