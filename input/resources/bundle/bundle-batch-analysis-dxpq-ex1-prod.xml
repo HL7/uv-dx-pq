@@ -19,8 +19,7 @@
             <!--id value="specificationProtocol"/-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
-               <profile
-                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
                <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
@@ -307,7 +306,7 @@
       <fullUrl value="urn:uuid:39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
       <resource>
          <ObservationDefinition>
-            <id value="Assay"/>
+            <id value="39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
             <url value="http://example-server.com/fhir/ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             <title value="Assay"/>
