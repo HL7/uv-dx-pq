@@ -4831,7 +4831,7 @@
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
                <tag>
                   <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
                   <code value="SUBSETTED"/>

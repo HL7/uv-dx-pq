@@ -1257,6 +1257,17 @@
 
         <resource>
             <reference>
+                <reference value="StructureDefinition/Extension-qualified-value-target-dxpq"/>
+                <display value="ExtensionQualifiedValueTargetDxPq"/>
+            </reference>
+            <name value="Extension - Qualified Value Text dx-PQ"/>
+            <description value="Extension - Qualified Value Target dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-text-dxpq"/>
                 <display value="ExtensionQualifiedValueTextDxPq"/>
             </reference>
