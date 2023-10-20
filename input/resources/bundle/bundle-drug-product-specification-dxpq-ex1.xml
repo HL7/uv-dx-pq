@@ -13,7 +13,7 @@
    </meta>
    <type value="collection"/>
    <entry>
-      <fullUrl value="https://www.example.org/PlanDefinition/specificationProtocol"/>
+      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
             <id value="specificationProtocol"/>
@@ -21,7 +21,7 @@
             <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
             <status value="active"/>
             <subjectReference>
-               <reference value="MedicinalProductDefinition/product"/>
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of specifications"/>
             <action>
@@ -44,49 +44,49 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/Description"/>
+                     <definitionCanonical value="ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/Identification"/>
+                     <definitionCanonical value="ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/Assay"/>
+                     <definitionCanonical value="ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/Degradation"/>
+                     <definitionCanonical value="ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/Dissolution"/>
+                     <definitionCanonical value="ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/Uniformity"/>
+                     <definitionCanonical value="ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/Microbiological"/>
+                     <definitionCanonical value="ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/Water"/>
+                     <definitionCanonical value="ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1"/>
                   </action>
                </action>
                <action>
@@ -103,49 +103,49 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/DescriptionEnd"/>
+                     <definitionCanonical value="ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/IdentificationEnd"/>
+                     <definitionCanonical value="ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/AssayEnd"/>
+                     <definitionCanonical value="ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/DegradationEnd"/>
+                     <definitionCanonical value="ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/DissolutionEnd"/>
+                     <definitionCanonical value="ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/UniformityEnd"/>
+                     <definitionCanonical value="ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/MicrobiologicalEnd"/>
+                     <definitionCanonical value="ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/WaterEnd"/>
+                     <definitionCanonical value="ObservationDefinition/91391017-774b-5c77-93fa-642534278851"/>
                   </action>
                   <!-- Empty action tags seem to have caused a publishing error "Not a JSON Object: null" -->
                   <!--                  <action> </action>-->
@@ -155,7 +155,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/Description"/>
+      <fullUrl value="urn:uuid:77e7020a-270c-6bed-2e55-28e9e942546c"/>
       <resource>
          <ObservationDefinition>
             <id value="Description"/>
@@ -185,7 +185,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/DescriptionEnd"/>
+      <fullUrl value="urn:uuid:d24ce3cd-213d-4935-97cf-8e2dd03721ec"/>
       <resource>
          <ObservationDefinition>
             <id value="DescriptionEnd"/>
@@ -212,7 +212,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/Identification"/>
+      <fullUrl value="urn:uuid:0d0ef4cf-242c-1cb1-81c4-c41837ee9a12"/>
       <resource>
          <ObservationDefinition>
             <id value="Identification"/>
@@ -242,7 +242,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/IdentificationEnd"/>
+      <fullUrl value="urn:uuid:f77ba972-5ef8-a178-9a5f-fe7f54da7499"/>
       <resource>
          <ObservationDefinition>
             <id value="IdentificationEnd"/>
@@ -269,7 +269,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/Assay"/>
+      <fullUrl value="urn:uuid:c0f05343-5b98-6073-1a0f-873aaf4f59bc"/>
       <resource>
          <ObservationDefinition>
             <id value="Assay"/>
@@ -299,7 +299,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/AssayEnd"/>
+      <fullUrl value="urn:uuid:f4a74fd3-876e-38ce-021f-04e5a8fb6a3f"/>
       <resource>
          <ObservationDefinition>
             <id value="AssayEnd"/>
@@ -326,7 +326,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/Degradation"/>
+      <fullUrl value="urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06041"/>
       <resource>
          <ObservationDefinition>
             <id value="Degradation"/>
@@ -426,7 +426,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/DegradationEnd"/>
+      <fullUrl value="urn:uuid:ef72eeb7-211a-3c16-8460-8725ca43584f"/>
       <resource>
          <ObservationDefinition>
             <id value="DegradationEnd"/>
@@ -524,7 +524,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/Dissolution"/>
+      <fullUrl value="urn:uuid:bb11322b-9470-4f13-91b5-c8a5253380eb"/>
       <resource>
          <ObservationDefinition>
             <id value="Dissolution"/>
@@ -554,7 +554,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/DissolutionEnd"/>
+      <fullUrl value="urn:uuid:6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea"/>
       <resource>
          <ObservationDefinition>
             <id value="DissolutionEnd"/>
@@ -584,7 +584,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/Water"/>
+      <fullUrl value="urn:uuid:6ce8ab6d-55e2-0412-5fb1-ab33763f30b1"/>
       <resource>
          <ObservationDefinition>
             <id value="Water"/>
@@ -614,7 +614,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/WaterEnd"/>
+      <fullUrl value="urn:uuid:91391017-774b-5c77-93fa-642534278851"/>
       <resource>
          <ObservationDefinition>
             <id value="WaterEnd"/>
@@ -644,7 +644,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/Microbiological"/>
+      <fullUrl value="urn:uuid:64972eb3-99ee-7eae-2f63-733e5ae84f71"/>
       <resource>
          <ObservationDefinition>
             <id value="Microbiological"/>
@@ -673,7 +673,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/MicrobiologicalEnd"/>
+      <fullUrl value="urn:uuid:e582e504-36ec-3b50-4043-51bf1147124e"/>
       <resource>
          <ObservationDefinition>
             <id value="MicrobiologicalEnd"/>
@@ -702,7 +702,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/Uniformity"/>
+      <fullUrl value="urn:uuid:e7e2fe59-5433-5cc0-84b1-d5f30032790c"/>
       <resource>
          <ObservationDefinition>
             <id value="Uniformity"/>
@@ -732,7 +732,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/ObservationDefinition/UniformityEnd"/>
+      <fullUrl value="urn:uuid:43dbc2a3-00c4-6f79-6b11-63768b412aa3"/>
       <resource>
          <ObservationDefinition>
             <id value="UniformityEnd"/>
@@ -760,8 +760,8 @@
    </entry>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>
-      <fullUrl value="https://www.example.org/MedicinalProductDefinition/product"/>
-      <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
+      <!--fullUrl value="https://www.example.org/MedicinalProductDefinition/product"/-->
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
          <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
@@ -806,14 +806,14 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Ingredient/productIngredient"/>
-      <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
+      <!--fullUrl value="https://www.example.org/Ingredient/productIngredient"/-->
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
       <resource>
          <Ingredient>
             <id value="productIngredient"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/product"/>
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -825,7 +825,7 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/substance1"/>
+                     <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
                   </reference>
                </code>
             </substance>
@@ -833,12 +833,13 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/SubstanceDefinition/substance1"/>
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
       <resource>
          <SubstanceDefinition>
             <id value="substance1"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+               <!--Organization/substance-manufacturer-->
+               <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -848,7 +849,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/substance-manufacturer"/>
+      <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
             <id value="substance-manufacturer"/>
