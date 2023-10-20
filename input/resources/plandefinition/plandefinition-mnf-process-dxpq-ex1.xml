@@ -7,6 +7,10 @@
                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
     </meta>
     <!-- abridged version only -->
+                
+                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
+                    <valueMarkdown value="Process has no history recorded yet"/>
+                </extension>
                 <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
     <title value="Process 1.0"/>
     <type>
