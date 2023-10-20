@@ -8,6 +8,14 @@
                 </meta>
                 <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
     <title value="Stability Monitoring Program"/>
+                <type>
+                    <coding>
+                        <system value="http://example.org/fhir/code/planType"/>
+                        <code value="1244588"/>
+                        <display value="Stability Study Protocol"/>
+                    </coding>
+                </type>
+                
     <status value="active"/>
                 <subjectReference>
                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
@@ -191,7 +199,6 @@
 <!--        <action>
             <title value="Accelerated"/>
             <description value="40°C/75% RH"/>
-            <!-\- 0 months - but results for this are not needed, because and zero months is the same for both long term and accelerated -\->
             <action>
                 <title value="Initial"/>
                 <timingTiming>
