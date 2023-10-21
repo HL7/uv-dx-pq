@@ -8,6 +8,13 @@
                 </meta>
     <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
     <title value="Stability Monitoring Program"/>
+                <type>
+                    <coding>
+                        <system value="http://example.org/fhir/code/planType"/>
+                        <code value="1244588"/>
+                        <display value="Stability Study Protocol"/>
+                    </coding>
+                </type>
     <status value="active"/>
                 <subjectReference>
                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
