@@ -39,6 +39,10 @@
     </context>
     <context>
         <type value="element"/>
+        <expression value="ObservationDefinition.qualifiedValue.range"/>
+    </context>
+    <context>
+        <type value="element"/>
         <expression value="BackboneElement"/>
     </context>
     
