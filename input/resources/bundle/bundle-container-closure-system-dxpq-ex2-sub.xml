@@ -11,7 +11,8 @@
       <fullUrl value="urn:uuid:878c2849-792c-6469-21a2-c2b920930962"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance1"/>
+            <!--substance1-->
+            <id value="878c2849-792c-6469-21a2-c2b920930962"/>
             <name>
                <name value="Stelbatolol"/>
                <!-- #4 -->
@@ -23,7 +24,8 @@
       <fullUrl value="urn:uuid:b107a2ba-32d8-0124-7855-4096057c52a9"/>
       <resource>
          <PackagedProductDefinition>
-            <id value="packageDefinition"/>
+            <!--packageDefinition-->
+            <id value="b107a2ba-32d8-0124-7855-4096057c52a9"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
             <!-- #176 -->
             <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
@@ -85,7 +87,8 @@
       <fullUrl value="urn:uuid:b107a2ba-32d8-0124-7855-4096057c52b9"/>
       <resource>
          <PackagedProductDefinition>
-            <id value="packageDefinition2"/>
+            <!--packageDefinition2-->
+            <id value="b107a2ba-32d8-0124-7855-4096057c52b9"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
             <!-- #176 -->
             <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
@@ -123,7 +126,8 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-            <id value="packaged-item"/>
+            <!--packaged-item-->
+            <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <status value="active"/>
             <manufacturedDoseForm>
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
@@ -138,7 +142,8 @@
       <resource>
         	<!-- ingredient is only needed to link substance to packaging, via manufactured item -->
          <Ingredient>
-            <id value="ingredient1"/>
+            <!--ingredient1-->
+            <id value="f26b997a-3ab9-7552-a6cc-fd771d1f1863"/>
             <status value="active"/>
             <for>
                <!--ManufacturedItemDefinition/packaged-item-->
@@ -165,7 +170,8 @@
       <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <id value="packagingSpecification-unlinked"/>
+            <!--packagingSpecification-unlinked-->
+            <id value="2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic">
                     <valueBoolean value="true"/>
                 </extension-->
@@ -194,7 +200,6 @@
                <code>
                   <coding>
                      <system value="http://temp.hl7.org/fhir/CodeSystem/specification-type"/>
-                     <!-- did I already use similar? -->
                      <code value="ContainerSpecification"/>
                      <display value="Container Specification"/>
                   </coding>
@@ -232,7 +237,8 @@
       <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958524"/>
       <resource>
          <ObservationDefinition>
-            <id value="VisualInspection"/>
+            <!--VisualInspection-->
+            <id value="64525b3c-5134-448a-9d19-939ce1958524"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524"/>
             <title value="Visual Inspection"/>
             <status value="active"/>
@@ -245,7 +251,6 @@
             </code>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>
@@ -256,7 +261,8 @@
       <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958525"/>
       <resource>
          <ObservationDefinition>
-            <id value="InfraredSpectroscopy"/>
+            <!--InfraredSpectroscopy-->
+            <id value="64525b3c-5134-448a-9d19-939ce1958525"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525"/>
             <title value="Infrared Spectroscopy"/>
             <status value="active"/>
@@ -269,7 +275,6 @@
             </code>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Corresponds with reference"/>
                </extension>
             </qualifiedValue>
@@ -280,7 +285,8 @@
       <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958535"/>
       <resource>
          <ObservationDefinition>
-            <id value="SupplierCertificateofAnalysis"/>
+            <!--SupplierCertificateofAnalysis-->
+            <id value="64525b3c-5134-448a-9d19-939ce1958535"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535"/>
             <title value="Supplier Certificate of Analysis"/>
             <status value="active"/>
@@ -293,7 +299,6 @@
             </code>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>
