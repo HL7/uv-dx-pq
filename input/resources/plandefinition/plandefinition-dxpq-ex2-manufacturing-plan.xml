@@ -11,7 +11,7 @@
                     <code value="SUBSETTED"/>
                 </tag>
             </meta>
-            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">
+                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
                 <valueMarkdown value="This can be text about the history"/>
             </extension>
                 <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-dxpq-ex2-manufacturing-plan"/>
@@ -149,7 +149,7 @@
                     </detailRange>
                 </target>
             </goal>
-            <actor>
+            <!--actor>
                 <option>
                     <typeReference>
                         <reference value="DeviceDefinition/mixing-vessel"/>
@@ -176,7 +176,7 @@
                         </coding>
                     </role>
                 </option>
-            </actor>
+            </actor-->
             <!-- another outer action can be the whole thing, if needed -->
             <!-- removed the main actions for brevity (see manufacturing example) -->
         </PlanDefinition>
