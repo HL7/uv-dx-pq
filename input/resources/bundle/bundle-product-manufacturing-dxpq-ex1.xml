@@ -12,7 +12,7 @@
    </meta>
    <type value="collection"/>
    <entry>
-      <fullUrl value="https://www.example.org/PlanDefinition/manufacturingProcess-unlinked"/>
+      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <!--      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>-->
       <resource>
          <PlanDefinition>
@@ -26,11 +26,10 @@
                   <!-- Process flow diagram -->
                   <!-- or could be a Binary -->
                   <!-- #84 -->
-                  <reference   value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
+                  <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
             </extension>
-            <extension
-               url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
+            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
                <!--            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">-->
                <valueMarkdown value="This can be text about the history"/>
             </extension>
@@ -51,7 +50,8 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
             <!-- #85 -->
@@ -172,7 +172,7 @@
             <actor>
                <option>
                   <typeReference>
-                     <reference value="DeviceDefinition/mixing-vessel"/>
+                     <reference value="DeviceDefinition/82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -186,7 +186,7 @@
             <actor>
                <option>
                   <typeReference>
-                     <reference value="DeviceDefinition/receiving-tank"/>
+                     <reference value="DeviceDefinition/82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -200,18 +200,14 @@
             <!-- outer action is the whole thing, if needed -->
             <!-- step 1 mixing -->
             <action>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/processStepScale">-->
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/processParameters">-->
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -228,9 +224,7 @@
                      </valueQuantity>
                   </extension>
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/processParameters">-->
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -261,7 +255,8 @@
                <documentation>
                   <type value="specification-of"/>
                   <resourceReference>
-                     <reference value="DocumentReference/DocumentReference-image"/>
+                     <!--DocumentReference/DocumentReference-image-->
+                     <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fee"/>
                   </resourceReference>
                </documentation>
                <goalId value="goal-control-pH"/>
@@ -269,7 +264,8 @@
                <participant>
                   <typeReference>
                      <!-- this is new in R5 and is not in R4B -->
-                     <reference value="DeviceDefinition/mixer"/>
+                     <!--DeviceDefinition/mixer-->
+                     <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -281,11 +277,11 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
-                           <reference value="SubstanceDefinition/startingMaterial"/>
+                           <!--SubstanceDefinition/startingMaterial-->
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                         </valueReference>
                      </extension>
                      <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
@@ -300,11 +296,10 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
-                           <reference value="SubstanceDefinition/processingMaterial"/>
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                         </valueReference>
                      </extension>
                      <display value="processing material"/> <!-- added to suppress IG warning about empty reference -->
@@ -319,11 +314,11 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
-                           <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
+                           <!--SubstanceDefinition/StelbatololAqueousSolution-->
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
                      <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
@@ -351,8 +346,7 @@
             </action>
             <!-- step 2 drying -->
             <action>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/processStepScale">-->
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
@@ -360,8 +354,7 @@
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
                   <!--                  <extension url="http://accumulus.org/fhir/extension/processParameters">-->
                   <extension url="parameter">
                      <valueCodeableConcept>
@@ -396,14 +389,15 @@
                <documentation>
                   <type value="specification-of"/>
                   <resourceReference>
-                     <reference value="DocumentReference/DocumentReference-image"/>
+                     <!--DocumentReference/DocumentReference-image-->
+                     <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fee"/>
                   </resourceReference>
                </documentation>
                <goalId value="goal-control-water-content"/>
                <participant>
                   <typeReference>
                      <!-- this is new in R5 and is not in R4B -->
-                     <reference value="DeviceDefinition/dryer"/>
+                     <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -415,11 +409,11 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
-                           <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
+                           <!--SubstanceDefinition/StelbatololAqueousSolution-->
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
                      <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
@@ -434,11 +428,10 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
-                           <reference value="SubstanceDefinition/StelbatololGranules"/>
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
                         </valueReference>
                      </extension>
                      <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
@@ -454,8 +447,7 @@
             </action>
             <!-- step 3 particle size -->
             <action>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
                   <!--                  <extension url="http://accumulus.org/fhir/extension/processStepScale">-->
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
@@ -463,8 +455,7 @@
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/processParameters">-->
                   <extension url="parameter">
                      <valueCodeableConcept>
@@ -495,14 +486,15 @@
                <documentation>
                   <type value="specification-of"/>
                   <resourceReference>
-                     <reference value="DocumentReference/DocumentReference-image"/>
+                     <!--DocumentReference/DocumentReference-image-->
+                     <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fee"/>
                   </resourceReference>
                </documentation>
                <goalId value="goal-control-particle-size"/>
                <participant>
                   <typeReference>
                      <!-- this is new in R5 and is not in R4B -->
-                     <reference value="DeviceDefinition/impeller"/>
+                     <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -515,11 +507,10 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
-                           <reference value="SubstanceDefinition/StelbatololGranules"/>
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
                         </valueReference>
                      </extension>
                      <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
@@ -534,11 +525,10 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension
-                        url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
-                           <reference value="SubstanceDefinition/Stelbatolol"/>
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
                         </valueReference>
                      </extension>
                      <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
@@ -646,8 +636,7 @@
     </entry-->
    <!-- Section 5.2 - Unit Operation/Equipment Information -->
    <entry>
-      <fullUrl value="https://www.example.org/DeviceDefinition/impeller"/>
-      <!--      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>-->
+      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
       <resource>
          <DeviceDefinition>
             <id value="impeller"/>
@@ -674,8 +663,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/DeviceDefinition/dryer"/>
-      <!--      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>-->
+      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
       <resource>
          <DeviceDefinition>
             <id value="dryer"/>
@@ -701,8 +689,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/DeviceDefinition/mixer"/>
-      <!--      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>-->
+      <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
             <id value="mixer"/>
@@ -728,9 +715,7 @@
    </entry>
    <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
    <entry>
-      <fullUrl
-         value="https://www.example.org/DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
-      <!--      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>-->
+      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
          <!-- #84 -->
          <DocumentReference>
@@ -758,8 +743,7 @@
    </entry>
    <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
    <entry>
-      <fullUrl value="https://www.example.org/DocumentReference/DocumentReference-image"/>
-      <!--      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev"/>-->
+      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee"/>
       <resource>
          <!-- #84 -->
          <DocumentReference>
@@ -775,8 +759,7 @@
    </entry>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>
-      <fullUrl  value="https://www.example.org/MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-      <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>-->
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
          <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
@@ -820,14 +803,14 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Ingredient/productIngredient"/>
-      <!--      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>-->
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
       <resource>
          <Ingredient>
             <id value="productIngredient"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -839,7 +822,7 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/Stelbatolol"/>
+                     <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
                   </reference>
                </code>
             </substance>
@@ -847,13 +830,13 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/SubstanceDefinition/Stelbatolol"/>
-      <!--      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>-->
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
       <resource>
          <SubstanceDefinition>
             <id value="Stelbatolol"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+               <!--Organization/substance-manufacturer-->
+               <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -863,8 +846,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/SubstanceDefinition/StelbatololGranules"/>
-      <!--      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113"/>-->
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113"/>
       <resource>
          <SubstanceDefinition>
             <id value="StelbatololGranules"/>
@@ -876,8 +858,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/substance-manufacturer"/>
-      <!--      <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>-->
+      <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
             <id value="substance-manufacturer"/>
@@ -901,8 +882,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/manufacturerProcessingMaterial"/>
-      <!--      <fullUrl value="urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a"/>-->
+      <fullUrl value="urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a"/>
       <resource>
          <Organization>
             <id value="manufacturerProcessingMaterial"/>
@@ -925,13 +905,13 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/SubstanceDefinition/startingMaterial"/>
-      <!--      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>-->
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>
       <resource>
          <SubstanceDefinition>
             <id value="startingMaterial"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+               <!--Organization/substance-manufacturer-->
+               <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
                <name value="Stelbatosubstance"/>
@@ -940,8 +920,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/SubstanceDefinition/StelbatololAqueousSolution"/>
-      <!--      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>-->
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>
       <resource>
          <SubstanceDefinition>
             <id value="StelbatololAqueousSolution"/>
@@ -952,13 +931,13 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/SubstanceDefinition/processingMaterial"/>
-      <!--      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>-->
+      <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>
       <resource>
          <SubstanceDefinition>
             <id value="processingMaterial"/>
             <manufacturer>
-               <reference value="Organization/manufacturerProcessingMaterial"/>
+               <!--Organization/manufacturerProcessingMaterial-->
+               <reference value="Organization/8d61736c-a6e3-8301-659f-17da402e012a"/>
             </manufacturer>
             <name>
                <name value="Processohol"/>
@@ -967,8 +946,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/DeviceDefinition/mixing-vessel"/>
-      <!--      <fullUrl value="urn:uuid:82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>-->
+      <fullUrl value="urn:uuid:82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
             <id value="mixing-vessel"/>
@@ -1003,8 +981,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/DeviceDefinition/receiving-tank"/>
-      <!--      <fullUrl value="urn:uuid:82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>-->
+      <fullUrl value="urn:uuid:82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
             <id value="receiving-tank"/>
