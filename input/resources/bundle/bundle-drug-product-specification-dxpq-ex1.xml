@@ -175,8 +175,7 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
                </extension>
@@ -202,8 +201,7 @@
                <text value="Description"/>
             </code>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -232,8 +230,7 @@
                <text value="ID by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
                </extension>
@@ -259,8 +256,7 @@
                <text value="Identification"/>
             </code>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -289,8 +285,7 @@
                <text value="Assay by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="95% to 105% of label claim"/>
                </extension>
@@ -316,8 +311,7 @@
                <text value="Assay"/>
             </code>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -544,8 +538,7 @@
                <text value="Apparatus 2 (paddles), UV measurement"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString  value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes"/>
                </extension>
@@ -574,8 +567,7 @@
                <text value="Apparatus 2 (paddles), UV measurement"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -663,8 +655,7 @@
                <text value="Ph Eur"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Shall comply with the requirements of the Ph Eur"/>
                </extension>
@@ -692,8 +683,7 @@
                <text value="Ph Eur"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -722,8 +712,7 @@
                <text value="Weight variation"/>
             </method>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
                </extension>
@@ -749,8 +738,7 @@
                <text value="uniformity of dosage units (by weight)"/>
             </code>
             <qualifiedValue>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
