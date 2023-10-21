@@ -15,7 +15,8 @@
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
         <resource>
             <PlanDefinition>
-                <id value="specificationProtocol"/>
+            <!--specificationProtocol-->
+            <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
                 <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
                 <status value="active"/>
@@ -92,7 +93,8 @@
       <fullUrl value="urn:uuid:52176085-1f30-0c67-9ad7-523c486c82c9"/>
         <resource>
             <ObservationDefinition>
-                <id value="Description"/>
+            <!--Description-->
+            <id value="52176085-1f30-0c67-9ad7-523c486c82c9"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9"/>
                 <title value="Description"/>
                 <status value="active"/>
@@ -121,7 +123,8 @@
       <fullUrl value="urn:uuid:b50d892c-8980-0774-39d4-d449732873a3"/>
         <resource>
             <ObservationDefinition>
-                <id value="Identification"/>
+            <!--Identification-->
+            <id value="b50d892c-8980-0774-39d4-d449732873a3"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3"/>
                 <title value="Identification"/>
                 <status value="active"/>
@@ -150,7 +153,8 @@
       <fullUrl value="urn:uuid:d460b561-110c-7eb6-5d69-788abcca391a"/>
         <resource>
             <ObservationDefinition>
-                <id value="Assay"/>
+            <!--Assay-->
+            <id value="d460b561-110c-7eb6-5d69-788abcca391a"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a"/>
                 <title value="Assay"/>
                 <status value="active"/>
@@ -191,7 +195,8 @@
       <fullUrl value="urn:uuid:006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
         <resource>
             <ObservationDefinition>
-                <id value="Impurities"/>
+            <!--Impurities-->
+            <id value="006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
                 <title value="Drug Substance Related Organic impurities"/>
                 <status value="active"/>
@@ -267,7 +272,8 @@
       <fullUrl value="urn:uuid:c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
         <resource>
             <ObservationDefinition>
-                <id value="Mutagenic"/>
+            <!--Mutagenic-->
+            <id value="c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
                 <title value="Mutagenic impurities"/>
                 <status value="active"/>
@@ -312,7 +318,8 @@
       <fullUrl value="urn:uuid:18e20bae-1a24-202d-11d7-5f354c785e4d"/>
         <resource>
             <ObservationDefinition>
-                <id value="Enantiomeric"/>
+            <!--Enantiomeric-->
+            <id value="18e20bae-1a24-202d-11d7-5f354c785e4d"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d"/>
                 <title value="Enantiomeric purity"/>
                 <status value="active"/>
@@ -345,7 +352,8 @@
       <fullUrl value="urn:uuid:22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
         <resource>
             <ObservationDefinition>
-                <id value="Solvents"/>
+            <!--Solvents-->
+            <id value="22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
                 <title value="Residual solvents"/>
                 <status value="active"/>
@@ -399,7 +407,8 @@
       <fullUrl value="urn:uuid:b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
         <resource>
             <ObservationDefinition>
-                <id value="Water"/>
+            <!--Water-->
+            <id value="b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
                 <title value="Water Content"/>
                 <status value="active"/>
@@ -429,7 +438,8 @@
       <fullUrl value="urn:uuid:233865df-2a71-528d-756c-85f36bd6685f"/>
         <resource>
             <ObservationDefinition>
-                <id value="Particles"/>
+            <!--Particles-->
+            <id value="233865df-2a71-528d-756c-85f36bd6685f"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f"/>
                 <title value="Particle size distribution"/>
                 <status value="active"/>
@@ -504,8 +514,8 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
         <resource>
             <SubstanceDefinition>
-                <id value="substance1"/>
-
+            <!--substance1-->
+            <id value="03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
                 <manufacturer>
                <!--Organization/substance-manufacturer-->
                <reference value="Organization/062bf235-44e2-55c4-9213-bbe5e12d5620"/>
@@ -522,7 +532,8 @@
       <fullUrl value="urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620"/>
         <resource>
             <Organization>
-                <id value="substance-manufacturer"/>
+            <!--substance-manufacturer-->
+            <id value="062bf235-44e2-55c4-9213-bbe5e12d5620"/>
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value="urn:oid:2.16.840.1.113883.4.82"/>
