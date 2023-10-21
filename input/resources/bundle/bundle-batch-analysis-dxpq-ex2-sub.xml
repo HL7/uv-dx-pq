@@ -17,7 +17,8 @@
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <id value="specificationProtocol"/>
+            <!--specificationProtocol-->
+            <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
             </meta>
@@ -37,8 +38,7 @@
                <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
             </subjectReference>
             <description value="Narrative description of analysis"/>
-            <action>
-               <!-- this is then entire thing -->
+            <action> <!-- this is then entire thing -->
                <title value="Batch Specification for Drug Substance"/>
                <code>
                   <text value="Overall set of actions"/>
@@ -114,7 +114,8 @@
       <fullUrl value="urn:uuid:13033a89-927a-10e0-503e-5f901bdca30f"/>
       <resource>
          <ObservationDefinition>
-            <id value="Description"/>
+            <!--Description-->
+            <id value="13033a89-927a-10e0-503e-5f901bdca30f"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
             <title value="Description"/>
             <status value="active"/>
@@ -131,7 +132,6 @@
             </method>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="A white to brown powder"/>
                </extension>
             </qualifiedValue>
@@ -142,7 +142,8 @@
       <fullUrl value="urn:uuid:8395ae1d-5064-0ab7-a297-6b20285b2230"/>
       <resource>
          <ObservationDefinition>
-            <id value="Identification"/>
+            <!--Identification-->
+            <id value="8395ae1d-5064-0ab7-a297-6b20285b2230"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
             <title value="Identification"/>
             <status value="active"/>
@@ -159,7 +160,6 @@
             </method>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Conforms with reference"/>
                </extension>
             </qualifiedValue>
@@ -170,7 +170,8 @@
       <fullUrl value="urn:uuid:2117208e-4185-9091-1f86-cce37b121838"/>
       <resource>
          <ObservationDefinition>
-            <id value="Assay"/>
+            <!--Assay-->
+            <id value="2117208e-4185-9091-1f86-cce37b121838"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
             <title value="Assay"/>
             <status value="active"/>
@@ -208,7 +209,8 @@
       <fullUrl value="urn:uuid:d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
       <resource>
          <ObservationDefinition>
-            <id value="Impurities"/>
+            <!--Impurities-->
+            <id value="d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             <title value="Drug Substance Related Organic impurities"/>
             <status value="active"/>
@@ -300,10 +302,10 @@
       <fullUrl value="urn:uuid:0634020c-8729-99fc-7637-89799d7c445b"/>
       <resource>
          <ObservationDefinition>
-            <id value="Mutagenic"/>
+            <!--Mutagenic-->
+            <id value="0634020c-8729-99fc-7637-89799d7c445b"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
             <title value="Mutagenic impurities"/>
-<!--            <name value="Mutagenic impurities"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -316,8 +318,7 @@
                <text value="Impurity 5 content by LC-MS"/>
             </method>
             <qualifiedValue>
-               <appliesTo>
-                  <!-- could be a code -->
+               <appliesTo> <!-- could be a code -->
                   <text value="Impurity - Mutagenic"/>
                </appliesTo>
                <range>
@@ -329,8 +330,7 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component>
-               <!-- are expected to have a component that says what impurity this one is -->
+            <component> <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -346,10 +346,10 @@
       <fullUrl value="urn:uuid:4e67725b-20c8-158e-9d53-1810bfa58d87"/>
       <resource>
          <ObservationDefinition>
-            <id value="Enantiomeric"/>
+            <!--Enantiomeric-->
+            <id value="4e67725b-20c8-158e-9d53-1810bfa58d87"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/4e67725b-20c8-158e-9d53-1810bfa58d87"/>
             <title value="Enantiomeric purity"/>
-<!--            <name value="Enantiomeric purity"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -379,10 +379,10 @@
       <fullUrl value="urn:uuid:2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
       <resource>
          <ObservationDefinition>
-            <id value="Solvents"/>
+            <!--Solvents-->
+            <id value="2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             <title value="Residual solvents"/>
-<!--            <name value="Residual solvents"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -394,10 +394,8 @@
             <method>
                <text value="Residual solvents by headspace GC"/>
             </method>
-
             <qualifiedValue>
-               <appliesTo>
-                  <!-- could be a code -->
+               <appliesTo> <!-- could be a code -->
                   <text value="Solvent 1"/>
                </appliesTo>
                <range>
@@ -418,8 +416,7 @@
                   </high>
                </range>
             </qualifiedValue>
-            <component>
-               <!-- are expected to have a component that says what solvent this one is -->
+            <component> <!-- are expected to have a component that says what solvent this one is -->
                <code>
                   <coding>
                      <system value="http://dummy.loinc.org"/>
@@ -435,10 +432,10 @@
       <fullUrl value="urn:uuid:17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
       <resource>
          <ObservationDefinition>
-            <id value="Water"/>
+            <!--Water-->
+            <id value="17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
             <title value="Water Content"/>
-<!--            <name value="Water Content"/>-->
             <status value="active"/>
             <code>
                <coding>
@@ -466,12 +463,11 @@
       <fullUrl value="urn:uuid:11fcfe6b-7498-132b-2def-efae51b302d4"/>
       <resource>
          <ObservationDefinition>
-            <id value="Particles"/>
+            <!--Particles-->
+            <id value="11fcfe6b-7498-132b-2def-efae51b302d4"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             <title value="Particle size distribution">
-               <!--<name value="Particle size distribution">-->
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-test-comment-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/testComment">-->
                   <valueString value="Particle Size Distribution was included in the release specification throughout clinical development, and no longer forms a part of the commercial release specification; See Section S.4.5 Justification of Specification for data and rationale.">
                   </valueString>
                </extension>
@@ -542,15 +538,14 @@
       <fullUrl value="urn:uuid:87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance"/>
+            <!--substance-dxpq-ex1-->
+            <id value="87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/batchRetestDate">-->
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -564,8 +559,7 @@
                      <reference value="PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
                   </valueReference>
                </extension>
-               <extension url="batchQuantity">
-                  <!-- #157 -->
+               <extension url="batchQuantity"> <!-- #157 -->
                   <valueQuantity>
                      <value value="120"/>
                      <unit value="kg"/>
@@ -573,14 +567,12 @@
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/actualYield">-->
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization">
-                  <!-- #161 -->
+               <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
@@ -591,8 +583,7 @@
                      <text value="Production"/>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer">
-                  <!-- #160 -->
+               <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                   </valueReference>
@@ -615,15 +606,14 @@
       <fullUrl value="urn:uuid:6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-2"/>
+            <!--actual-batch-substance-2-->
+            <id value="6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/batchRetestDate">-->
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -631,8 +621,7 @@
                   <valueDateTime value="2020-02"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity">
-                  <!-- #157 -->
+               <extension url="batchQuantity"> <!-- #157 -->
                   <valueQuantity>
                      <value value="120"/>
                      <unit value="kg"/>
@@ -640,14 +629,12 @@
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/actualYield">-->
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization">
-                  <!-- #161 -->
+               <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
@@ -658,8 +645,7 @@
                      <text value="Production"/>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer">
-                  <!-- #160 -->
+               <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                   </valueReference>
@@ -681,7 +667,8 @@
       <fullUrl value="urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-3"/>
+            <!--actual-batch-substance-3-->
+            <id value="ef17cff1-6586-a4a4-9168-2602140548d7"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
@@ -697,8 +684,7 @@
                   <valueDateTime value="2020-03"/>
                   <!-- #159 -->
                </extension>
-               <extension url="batchQuantity">
-                  <!-- #157 -->
+               <extension url="batchQuantity"> <!-- #157 -->
                   <valueQuantity>
                      <value value="120"/>
                      <unit value="kg"/>
@@ -706,14 +692,12 @@
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/actualYield">-->
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization">
-                  <!-- #161 -->
+               <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
@@ -724,8 +708,7 @@
                      <text value="Production"/>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer">
-                  <!-- #160 -->
+               <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
                      <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                   </valueReference>
@@ -749,7 +732,8 @@
       <fullUrl value="urn:uuid:b30a1024-37db-a1bc-05e5-cc4596d92975"/>
       <resource>
          <PlanDefinition>
-            <!--manufacturingProcess-->
+                <!--id value="manufacturingProcess"/--> <!-- abridged version only -->
+            <!--plandefinition-dxpq-ex4-mnf-process-->
             <id value="b30a1024-37db-a1bc-05e5-cc4596d92975"/>
             <!-- abridged version only -->
             <!--http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975-->
@@ -775,7 +759,8 @@
       <fullUrl value="urn:uuid:8dae93e0-048d-35a4-71ea-7c603184a130"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance1"/>
+            <!--substance1-->
+            <id value="8dae93e0-048d-35a4-71ea-7c603184a130"/>
             <manufacturer>
                <!--Organization/substance-manufacturer-->
                <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
@@ -791,9 +776,10 @@
       <fullUrl value="urn:uuid:3d399cbc-244e-9b5f-838b-b7daa0489330"/>
       <resource>
          <Organization>
-            <id value="substance-manufacturer"/>
+            <!--substance-manufacturer-->
+            <id value="3d399cbc-244e-9b5f-838b-b7daa0489330"/>
             <identifier>
-               <!-- FDA establishment identifier -->
+					<!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
@@ -827,9 +813,10 @@
       <fullUrl value="urn:uuid:01a5777c-4b48-a0df-2963-02cd63339006"/>
       <resource>
          <DiagnosticReport>
-            <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
+				<!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
-            <id value="batchAnalysisReport"/>
+            <!--batchAnalysisReport-->
+            <id value="01a5777c-4b48-a0df-2963-02cd63339006"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--PlanDefinition/specificationProtocol-->
@@ -1106,7 +1093,9 @@
       <fullUrl value="urn:uuid:81f552f9-8458-3cf4-8379-eea5417a9de2"/>
       <resource>
          <Observation>
-            <id value="observationDescription"/>
+            <!--observation-simple-dxpq-ex1-->
+            <id value="81f552f9-8458-3cf4-8379-eea5417a9de2"/>
+            <!-- was observationDescription -->
             <instantiatesReference>
                <!--ObservationDefinition/Description-->
                <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
@@ -1137,7 +1126,8 @@
       <fullUrl value="urn:uuid:50bf6f69-a3f5-678b-469b-c5df5cca4c86"/>
       <resource>
          <Observation>
-            <id value="observationDescription2"/>
+            <!--observationDescription2-->
+            <id value="50bf6f69-a3f5-678b-469b-c5df5cca4c86"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
             </instantiatesReference>
@@ -1167,7 +1157,8 @@
       <fullUrl value="urn:uuid:145fd3b7-3678-867f-4298-a6c781b86de3"/>
       <resource>
          <Observation>
-            <id value="observationDescription3"/>
+            <!--observationDescription3-->
+            <id value="145fd3b7-3678-867f-4298-a6c781b86de3"/>
             <instantiatesReference>
                <!--ObservationDefinition/Description-->
                <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
@@ -1200,7 +1191,8 @@
       <fullUrl value="urn:uuid:55c89944-60d1-4eea-a2c3-6c53e3622bc5"/>
       <resource>
          <Observation>
-            <id value="observationIdentification"/>
+            <!--observationIdentification-->
+            <id value="55c89944-60d1-4eea-a2c3-6c53e3622bc5"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
             </instantiatesReference>
@@ -1230,7 +1222,8 @@
       <fullUrl value="urn:uuid:adb51ab6-00a9-1078-69e5-d32c025a857c"/>
       <resource>
          <Observation>
-            <id value="observationIdentification2"/>
+            <!--observationIdentification2-->
+            <id value="adb51ab6-00a9-1078-69e5-d32c025a857c"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
             </instantiatesReference>
@@ -1261,7 +1254,8 @@
       <fullUrl value="urn:uuid:916a0ae2-9c43-72f0-a22a-c5f8ce902125"/>
       <resource>
          <Observation>
-            <id value="observationIdentification3"/>
+            <!--observationIdentification3-->
+            <id value="916a0ae2-9c43-72f0-a22a-c5f8ce902125"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
             </instantiatesReference>
@@ -1292,7 +1286,8 @@
       <fullUrl value="urn:uuid:6deb4306-1193-24ae-a565-f73225652bdd"/>
       <resource>
          <Observation>
-            <id value="observationAssay"/>
+            <!--observationAssay-->
+            <id value="6deb4306-1193-24ae-a565-f73225652bdd"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
             </instantiatesReference>
@@ -1331,7 +1326,8 @@
       <fullUrl value="urn:uuid:f6aabd2f-5902-57e7-6126-eccd9158a5b5"/>
       <resource>
          <Observation>
-            <id value="observationAssay2"/>
+            <!--observationAssay2-->
+            <id value="f6aabd2f-5902-57e7-6126-eccd9158a5b5"/>
             <instantiatesReference>
                <!--ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
@@ -1371,7 +1367,8 @@
       <fullUrl value="urn:uuid:32f598e4-a0e0-98dc-41dd-0f8397f953ad"/>
       <resource>
          <Observation>
-            <id value="observationAssay3"/>
+            <!--observationAssay3-->
+            <id value="32f598e4-a0e0-98dc-41dd-0f8397f953ad"/>
             <instantiatesReference>
                <!--ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
@@ -1410,7 +1407,8 @@
       <fullUrl value="urn:uuid:02d9e6be-833c-1c6d-a64a-baa3935c959d"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp1"/>
+            <!--observationDegradation-imp1-->
+            <id value="02d9e6be-833c-1c6d-a64a-baa3935c959d"/>
             <instantiatesReference>
                <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
@@ -1456,7 +1454,8 @@
       <fullUrl value="urn:uuid:d3e572b7-14fd-744b-4123-58741d75571e"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp1-2"/>
+            <!--observationDegradation-imp1-2-->
+            <id value="d3e572b7-14fd-744b-4123-58741d75571e"/>
             <instantiatesReference>
                <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
@@ -1503,7 +1502,8 @@
       <fullUrl value="urn:uuid:fe6ca484-a755-9a0b-a074-b6ee0a907ff8"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp1-3"/>
+            <!--observationDegradation-imp1-3-->
+            <id value="fe6ca484-a755-9a0b-a074-b6ee0a907ff8"/>
             <instantiatesReference>
                <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
@@ -1550,7 +1550,8 @@
       <fullUrl value="urn:uuid:da92c71f-a12a-1980-11a3-80e3d1852244"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp2"/>
+            <!--observationDegradation-imp2-->
+            <id value="da92c71f-a12a-1980-11a3-80e3d1852244"/>
             <instantiatesReference>
                <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
@@ -1596,7 +1597,8 @@
       <fullUrl value="urn:uuid:8bf75da1-9221-66fe-6725-c64cb45a57e6"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp2-2"/>
+            <!--observationDegradation-imp2-2-->
+            <id value="8bf75da1-9221-66fe-6725-c64cb45a57e6"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -1641,7 +1643,8 @@
       <fullUrl value="urn:uuid:31bfeff4-4a7d-3be5-878e-fb674d3d5487"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp2-3"/>
+            <!--observationDegradation-imp2-3-->
+            <id value="31bfeff4-4a7d-3be5-878e-fb674d3d5487"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -1687,7 +1690,8 @@
       <fullUrl value="urn:uuid:732237a9-4b3b-27cc-99ca-6b913e622a29"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp3"/>
+            <!--observationDegradation-imp3-->
+            <id value="732237a9-4b3b-27cc-99ca-6b913e622a29"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -1732,7 +1736,8 @@
       <fullUrl value="urn:uuid:52afbeb4-4958-a275-a0ca-d70b2b5240ec"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp3-2"/>
+            <!--observationDegradation-imp3-2-->
+            <id value="52afbeb4-4958-a275-a0ca-d70b2b5240ec"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -1777,7 +1782,8 @@
       <fullUrl value="urn:uuid:7fc395b1-59e4-78be-0512-cf92133c0fac"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp3-3"/>
+            <!--observationDegradation-imp3-3-->
+            <id value="7fc395b1-59e4-78be-0512-cf92133c0fac"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -1823,7 +1829,8 @@
       <fullUrl value="urn:uuid:9c98bd8a-7dda-2f01-0dbd-8c60b60e8572"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp-unspecified"/>
+            <!--observationDegradation-imp-unspecified-->
+            <id value="9c98bd8a-7dda-2f01-0dbd-8c60b60e8572"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -1868,7 +1875,8 @@
       <fullUrl value="urn:uuid:97b16ff8-8e0f-915a-9d65-7fab108f40c2"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp-unspecified-2"/>
+            <!--observationDegradation-imp-unspecified-2-->
+            <id value="97b16ff8-8e0f-915a-9d65-7fab108f40c2"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -1913,7 +1921,8 @@
       <fullUrl value="urn:uuid:0244eafe-3126-909b-7d8d-4253f45f525c"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp-unspecified-3"/>
+            <!--observationDegradation-imp-unspecified-3-->
+            <id value="0244eafe-3126-909b-7d8d-4253f45f525c"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -1960,7 +1969,8 @@
       <fullUrl value="urn:uuid:10b80cbd-45d3-9be1-63b9-29f04b47376c"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp-total"/>
+            <!--observationDegradation-imp-total-->
+            <id value="10b80cbd-45d3-9be1-63b9-29f04b47376c"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -2005,7 +2015,8 @@
       <fullUrl value="urn:uuid:84f015ac-9572-324f-8013-0b999cc95bbd"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp-total-2"/>
+            <!--observationDegradation-imp-total-2-->
+            <id value="84f015ac-9572-324f-8013-0b999cc95bbd"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -2050,7 +2061,8 @@
       <fullUrl value="urn:uuid:987daeaa-4c2a-72b7-780f-4a9403163a3e"/>
       <resource>
          <Observation>
-            <id value="observationDegradation-imp-total-3"/>
+            <!--observationDegradation-imp-total-3-->
+            <id value="987daeaa-4c2a-72b7-780f-4a9403163a3e"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             </instantiatesReference>
@@ -2097,7 +2109,8 @@
       <fullUrl value="urn:uuid:ff26533d-88a8-7f18-a275-42dc1373a388"/>
       <resource>
          <Observation>
-            <id value="observationMutagenic"/>
+            <!--observationMutagenic-->
+            <id value="ff26533d-88a8-7f18-a275-42dc1373a388"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
             </instantiatesReference>
@@ -2141,7 +2154,8 @@
       <fullUrl value="urn:uuid:c99666d2-7962-9a71-58f6-7b2e5aa662f5"/>
       <resource>
          <Observation>
-            <id value="observationMutagenic2"/>
+            <!--observationMutagenic2-->
+            <id value="c99666d2-7962-9a71-58f6-7b2e5aa662f5"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
             </instantiatesReference>
@@ -2174,7 +2188,8 @@
       <fullUrl value="urn:uuid:c18e21d3-7113-4d08-4ff3-0c9718596f64"/>
       <resource>
          <Observation>
-            <id value="observationMutagenic3"/>
+            <!--observationMutagenic3-->
+            <id value="c18e21d3-7113-4d08-4ff3-0c9718596f64"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
             </instantiatesReference>
@@ -2208,7 +2223,8 @@
       <fullUrl value="urn:uuid:66fdac46-2a6b-a66f-891b-8dcf67cc46c7"/>
       <resource>
          <Observation>
-            <id value="observationEnantiomericPurity"/>
+            <!--observationEnantiomericPurity-->
+            <id value="66fdac46-2a6b-a66f-891b-8dcf67cc46c7"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/4e67725b-20c8-158e-9d53-1810bfa58d87"/>
             </instantiatesReference>
@@ -2245,7 +2261,8 @@
       <fullUrl value="urn:uuid:8306cfc5-158f-1a53-a683-048b226060d9"/>
       <resource>
          <Observation>
-            <id value="observationEnantiomericPurity2"/>
+            <!--observationEnantiomericPurity2-->
+            <id value="8306cfc5-158f-1a53-a683-048b226060d9"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/4e67725b-20c8-158e-9d53-1810bfa58d87"/>
             </instantiatesReference>
@@ -2282,7 +2299,8 @@
       <fullUrl value="urn:uuid:fc49ad55-07d1-997d-6695-bbff44746e75"/>
       <resource>
          <Observation>
-            <id value="observationEnantiomericPurity3"/>
+            <!--observationEnantiomericPurity3-->
+            <id value="fc49ad55-07d1-997d-6695-bbff44746e75"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/4e67725b-20c8-158e-9d53-1810bfa58d87"/>
             </instantiatesReference>
@@ -2320,7 +2338,8 @@
       <fullUrl value="urn:uuid:f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
       <resource>
          <Observation>
-            <id value="observationSolvents-sol1"/>
+            <!--observationSolvents-sol1-->
+            <id value="f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             </instantiatesReference>
@@ -2364,7 +2383,8 @@
       <fullUrl value="urn:uuid:a531aee9-4c21-06af-352c-a3615b5d957e"/>
       <resource>
          <Observation>
-            <id value="observationSolvents-sol1-2"/>
+            <!--observationSolvents-sol1-2-->
+            <id value="a531aee9-4c21-06af-352c-a3615b5d957e"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             </instantiatesReference>
@@ -2408,7 +2428,8 @@
       <fullUrl value="urn:uuid:033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
       <resource>
          <Observation>
-            <id value="observationSolvents-sol1-3"/>
+            <!--observationSolvents-sol1-3-->
+            <id value="033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             </instantiatesReference>
@@ -2453,7 +2474,8 @@
       <fullUrl value="urn:uuid:ba8a182e-8571-6cbd-047b-612735d599d2"/>
       <resource>
          <Observation>
-            <id value="observationSolvents-sol2"/>
+            <!--observationSolvents-sol2-->
+            <id value="ba8a182e-8571-6cbd-047b-612735d599d2"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             </instantiatesReference>
@@ -2497,7 +2519,8 @@
       <fullUrl value="urn:uuid:0b5b94cc-7a1a-4ada-66c7-954ceb528d67"/>
       <resource>
          <Observation>
-            <id value="observationSolvents-sol2-2"/>
+            <!--observationSolvents-sol2-2-->
+            <id value="0b5b94cc-7a1a-4ada-66c7-954ceb528d67"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             </instantiatesReference>
@@ -2541,7 +2564,8 @@
       <fullUrl value="urn:uuid:6afaacee-11a6-58b2-47df-5f79722c66ac"/>
       <resource>
          <Observation>
-            <id value="observationSolvents-sol2-3"/>
+            <!--observationSolvents-sol2-3-->
+            <id value="6afaacee-11a6-58b2-47df-5f79722c66ac"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             </instantiatesReference>
@@ -2586,7 +2610,8 @@
       <fullUrl value="urn:uuid:c2644a86-1684-286e-00e2-dcaf907a8970"/>
       <resource>
          <Observation>
-            <id value="observationWater"/>
+            <!--observationWater-->
+            <id value="c2644a86-1684-286e-00e2-dcaf907a8970"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
             </instantiatesReference>
@@ -2619,7 +2644,8 @@
       <fullUrl value="urn:uuid:cb5f6872-6eeb-727a-7c33-f2c438581a1c"/>
       <resource>
          <Observation>
-            <id value="observationWater2"/>
+            <!--observationWater2-->
+            <id value="cb5f6872-6eeb-727a-7c33-f2c438581a1c"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
             </instantiatesReference>
@@ -2652,7 +2678,8 @@
       <fullUrl value="urn:uuid:7faaf980-7c10-7b9a-9572-1bacd485824e"/>
       <resource>
          <Observation>
-            <id value="observationWater3"/>
+            <!--observationWater3-->
+            <id value="7faaf980-7c10-7b9a-9572-1bacd485824e"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
             </instantiatesReference>
@@ -2686,7 +2713,8 @@
       <fullUrl value="urn:uuid:e4d2118a-8562-9eb1-2c14-4e145d2a95fc"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size1"/>
+            <!--observationParticleSize-size1-->
+            <id value="e4d2118a-8562-9eb1-2c14-4e145d2a95fc"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
@@ -2730,7 +2758,8 @@
       <fullUrl value="urn:uuid:ec078717-9512-4db4-77c6-2c7e29d213a6"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size1-2"/>
+            <!--observationParticleSize-size1-2-->
+            <id value="ec078717-9512-4db4-77c6-2c7e29d213a6"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
@@ -2774,7 +2803,8 @@
       <fullUrl value="urn:uuid:05cfb495-2580-561a-688d-ce6ea24c8962"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size1-3"/>
+            <!--observationParticleSize-size1-3-->
+            <id value="05cfb495-2580-561a-688d-ce6ea24c8962"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
@@ -2819,7 +2849,8 @@
       <fullUrl value="urn:uuid:d2a60ae5-96b4-3d13-38da-729c652347a3"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size2"/>
+            <!--observationParticleSize-size2-->
+            <id value="d2a60ae5-96b4-3d13-38da-729c652347a3"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
@@ -2863,7 +2894,8 @@
       <fullUrl value="urn:uuid:c3f51325-2f5f-194c-919b-2219ee1f5c45"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size2-2"/>
+            <!--observationParticleSize-size2-2-->
+            <id value="c3f51325-2f5f-194c-919b-2219ee1f5c45"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
@@ -2907,7 +2939,8 @@
       <fullUrl value="urn:uuid:e9d89693-11b1-13ed-5cde-606fc1b8372c"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size2-3"/>
+            <!--observationParticleSize-size2-3-->
+            <id value="e9d89693-11b1-13ed-5cde-606fc1b8372c"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
@@ -2952,7 +2985,8 @@
       <fullUrl value="urn:uuid:2659b000-96e2-1b8b-129b-0c00e1074b0f"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size3"/>
+            <!--observationParticleSize-size3-->
+            <id value="2659b000-96e2-1b8b-129b-0c00e1074b0f"/>
             <instantiatesReference>
                <!--ObservationDefinition/Particles-->
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
@@ -2997,7 +3031,8 @@
       <fullUrl value="urn:uuid:10b47328-36fa-343d-5699-5b32b30a6d33"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size3-2"/>
+            <!--observationParticleSize-size3-2-->
+            <id value="10b47328-36fa-343d-5699-5b32b30a6d33"/>
             <instantiatesReference>
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
             </instantiatesReference>
@@ -3042,7 +3077,8 @@
       <fullUrl value="urn:uuid:e6780766-317a-382f-92d2-79825f506cc5"/>
       <resource>
          <Observation>
-            <id value="observationParticleSize-size3-3"/>
+            <!--observationParticleSize-size3-3-->
+            <id value="e6780766-317a-382f-92d2-79825f506cc5"/>
             <instantiatesReference>
                <!--ObservationDefinition/Particles-->
                <reference value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
