@@ -144,7 +144,7 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <id value="Assay"/>
+            <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
 
             <!--            <text>
                <extension url="http://nprogram.co.uk/fhir/extension/viewer/showText">
@@ -240,7 +240,9 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
       <resource>
          <ObservationDefinition>
-            <id value="Identity"/>
+            <!--Identity-->
+            <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             <title value="Identity"/>
             <status value="active"/>
