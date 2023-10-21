@@ -167,7 +167,8 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance1"/>
+            <!--substance1-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821152"/>
             <name>
                <name value="Stelbatolol"/>
             </name>
@@ -178,7 +179,8 @@
       <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
       <resource>
          <SubstanceDefinition>
-            <id value="dispersant"/>
+            <!--dispersant-->
+            <id value="9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
             <property>
                <type>
                   <text value="Shelf life"/>
@@ -197,7 +199,8 @@
       <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
       <resource>
          <SubstanceDefinition>
-            <id value="resultingMaterial"/>
+            <!--resultingMaterial-->
+            <id value="9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
             <name>
                <name value="Stelbat in dispersant (approximately 10 mg/mL)"/>
             </name>
@@ -208,7 +211,9 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
       <resource>
          <ObservationDefinition>
-            <id value="ParticleSize"/>
+            <!--ParticleSize-->
+            <id value="12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
             <title value="Particle Size"/>
             <status value="active"/>
@@ -245,7 +250,9 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <id value="ParticleSizeObscuration"/>
+            <!--ParticleSizeObscuration-->
+            <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Obscuration"/>
             <status value="active"/>
@@ -260,7 +267,6 @@
             <qualifiedValue>
                <range>
                   <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-target-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueTarget">-->
                      <valueQuantity>
                         <value value="15"/>
                         <unit value="%"/>
@@ -283,7 +289,8 @@
       <fullUrl value="urn:uuid:12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <id value="ParticleRI"/>
+            <!--ParticleRI-->
+            <id value="12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Particle refractive index"/>
             <status value="active"/>
@@ -314,7 +321,8 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
       <resource>
          <ObservationDefinition>
-            <id value="ParticleSizeRSD"/>
+            <!--ParticleSizeRSD-->
+            <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             <title value="Particle Size RSD"/>
             <status value="active"/>
@@ -339,7 +347,8 @@
       <fullUrl value="urn:uuid:3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
       <resource>
          <SpecimenDefinition>
-            <id value="specimendefinition"/>
+            <!--specimendefinition-->
+            <id value="3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <url value="http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <status value="active"/>
             <description value="Number of Preparations: 3"/>
@@ -350,7 +359,8 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9495c"/>
       <resource>
          <DeviceDefinition>
-            <id value="laser"/>
+            <!--laser-->
+            <id value="82a39a18-91cf-a19d-76c1-a9e8bad9495c"/>
             <description value="Analyzer with disperser and temperature control accessory, or equivalent"/>
             <classification>
                <type>
