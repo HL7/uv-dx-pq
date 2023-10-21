@@ -16,7 +16,8 @@
       <!--      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>-->
       <resource>
          <PlanDefinition>
-            <id value="manufacturingProcess-unlinked"/>
+            <!--manufacturingProcess-unlinked-->
+            <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <meta>
                <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq" />
             </meta>
@@ -639,7 +640,8 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
       <resource>
          <DeviceDefinition>
-            <id value="impeller"/>
+            <!--devicedefinition-dxpq-ex1-->
+            <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
                <!-- #89 Equiment subclass -->
@@ -666,7 +668,8 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
       <resource>
          <DeviceDefinition>
-            <id value="dryer"/>
+            <!--dryer-->
+            <id value="82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
             <deviceName>
                <name value="Heated dryer"/>
                <!-- #89 Equiment subclass -->
@@ -692,7 +695,8 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
-            <id value="mixer"/>
+            <!--mixer-->
+            <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
             <deviceName>
                <name value="Blender"/>
                <type value="registered-name"/>
@@ -719,7 +723,8 @@
       <resource>
          <!-- #84 -->
          <DocumentReference>
-            <id value="DocumentReference-process-flow-diagram-dxpq-ex1"/>
+            <!--documentreference-process-flow-diagram-dxpq-ex1-->
+            <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
             <identifier>
                <system value="http://accumulus.org/fhir/identifier/document"/>
                <value value="FLOW-001"/>
@@ -747,7 +752,8 @@
       <resource>
          <!-- #84 -->
          <DocumentReference>
-            <id value="DocumentReference-image"/>
+            <!--DocumentReference-image-->
+            <id value="74d4c070-6596-8252-8ad9-afa515a41fee"/>
             <status value="current"/>
             <content>
                <attachment>
@@ -763,7 +769,8 @@
       <resource>
          <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
@@ -806,7 +813,8 @@
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
       <resource>
          <Ingredient>
-            <id value="productIngredient"/>
+            <!--productIngredient-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <status value="active"/>
             <for>
                <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
@@ -833,7 +841,8 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
       <resource>
          <SubstanceDefinition>
-            <id value="Stelbatolol"/>
+            <!--Stelbatolol-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821152"/>
             <manufacturer>
                <!--Organization/substance-manufacturer-->
                <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
@@ -849,7 +858,8 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113"/>
       <resource>
          <SubstanceDefinition>
-            <id value="StelbatololGranules"/>
+            <!--StelbatololGranules-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821113"/>
             <name>
                <name value="Stelbatolol Granules"/>
                <!-- #4 -->
@@ -861,7 +871,8 @@
       <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
-            <id value="substance-manufacturer"/>
+            <!--substance-manufacturer-->
+            <id value="9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             <identifier>
                <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -885,7 +896,8 @@
       <fullUrl value="urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a"/>
       <resource>
          <Organization>
-            <id value="manufacturerProcessingMaterial"/>
+            <!--manufacturerProcessingMaterial-->
+            <id value="8d61736c-a6e3-8301-659f-17da402e012a"/>
             <identifier>
                <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -908,7 +920,8 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>
       <resource>
          <SubstanceDefinition>
-            <id value="startingMaterial"/>
+            <!--startingMaterial-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821153"/>
             <manufacturer>
                <!--Organization/substance-manufacturer-->
                <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
@@ -923,7 +936,8 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>
       <resource>
          <SubstanceDefinition>
-            <id value="StelbatololAqueousSolution"/>
+            <!--StelbatololAqueousSolution-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821154"/>
             <name>
                <name value="Stelbatolol Aqueous Solution"/>
             </name>
@@ -934,7 +948,8 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>
       <resource>
          <SubstanceDefinition>
-            <id value="processingMaterial"/>
+            <!--processingMaterial-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821155"/>
             <manufacturer>
                <!--Organization/manufacturerProcessingMaterial-->
                <reference value="Organization/8d61736c-a6e3-8301-659f-17da402e012a"/>
@@ -949,7 +964,8 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
-            <id value="mixing-vessel"/>
+            <!--mixing-vessel-->
+            <id value="82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
             <deviceName>
                <name value="Mixing Vessel"/>
                <type value="registered-name"/>
@@ -984,7 +1000,8 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
-            <id value="receiving-tank"/>
+            <!--receiving-tank-->
+            <id value="82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
             <deviceName>
                <name value="Receiving Tank"/>
                <type value="registered-name"/>
