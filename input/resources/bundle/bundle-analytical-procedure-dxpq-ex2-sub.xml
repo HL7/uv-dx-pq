@@ -34,7 +34,7 @@
                <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
             </subjectReference>
             <action>
-               <extension url="http://accumulus.org/fhir/extension/processParameters">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -48,7 +48,7 @@
                      <valueString value="Same as for blue light"/>
                   </extension>
                </extension>
-               <extension url="http://accumulus.org/fhir/extension/processParameters">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -62,7 +62,7 @@
                      <valueString value="MIE"/>
                   </extension>
                </extension>
-               <extension url="http://accumulus.org/fhir/extension/processParameters">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -96,7 +96,7 @@
                     </participant-->
                <participant>
                   <typeReference>
-                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
                            <!--SubstanceDefinition/dispersant-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
@@ -113,7 +113,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
                            <!--SubstanceDefinition/resultingMaterial-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
