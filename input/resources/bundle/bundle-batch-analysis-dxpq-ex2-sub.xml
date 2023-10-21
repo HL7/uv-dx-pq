@@ -544,14 +544,12 @@
          <Substance>
             <id value="actual-batch-substance"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/batchRetestDate">-->
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
@@ -574,8 +572,7 @@
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <!--                  <extension url="http://accumulus.org/fhir/extension/actualYield">-->
                   <valueQuantity>
                      <value value="4.8"/>
@@ -620,14 +617,12 @@
          <Substance>
             <id value="actual-batch-substance-2"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/batchRetestDate">-->
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
@@ -644,8 +639,7 @@
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/actualYield">-->
                   <valueQuantity>
                      <value value="4.8"/>
@@ -689,14 +683,12 @@
          <Substance>
             <id value="actual-batch-substance-3"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/batchRetestDate">-->
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
@@ -713,8 +705,7 @@
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension
-                  url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/actualYield">-->
                   <valueQuantity>
                      <value value="4.8"/>
