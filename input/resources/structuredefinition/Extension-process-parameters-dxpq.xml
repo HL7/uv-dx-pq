@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-process-parameters-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq"/>
     <name value="ExtensionProcessParametersDxPq"/>
     <title value="Extension - Process Parameters dx-PQ"/>
     <status value="active"/>
@@ -88,7 +88,7 @@
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq"
+                value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq"
             />
         </element>
         <element id="Extension.value[x]">

@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-retest-date-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq"/>
     <name value="ExtensionBatchRetestDateDxPq"/>
     <title value="Extension - Batch Retest Date dx-PQ"/>
     <status value="active"/>
@@ -31,7 +31,7 @@
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq"/>
+                value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

@@ -7,7 +7,7 @@
    <!--   <id value="product-manufacturing"/>-->
    <meta>
       <profile
-         value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
+         value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
       <!--      <profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/>-->
    </meta>
    <type value="collection"/>
@@ -19,9 +19,9 @@
             <!--manufacturingProcess-unlinked-->
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq" />
+               <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq" />
             </meta>
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq">
                <!--            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">-->
                <valueReference>
                   <!-- Process flow diagram -->
@@ -30,7 +30,7 @@
                   <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
             </extension>
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
                <!--            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">-->
                <valueMarkdown value="This can be text about the history"/>
             </extension>
@@ -201,14 +201,14 @@
             <!-- outer action is the whole thing, if needed -->
             <!-- step 1 mixing -->
             <action>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -225,7 +225,7 @@
                      </valueQuantity>
                   </extension>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -278,7 +278,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <!--SubstanceDefinition/startingMaterial-->
@@ -297,7 +297,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
@@ -315,7 +315,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <!--SubstanceDefinition/StelbatololAqueousSolution-->
@@ -347,7 +347,7 @@
             </action>
             <!-- step 2 drying -->
             <action>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/processStepScale">-->
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
@@ -355,7 +355,7 @@
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
                   <!--                  <extension url="http://accumulus.org/fhir/extension/processParameters">-->
                   <extension url="parameter">
                      <valueCodeableConcept>
@@ -410,7 +410,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <!--SubstanceDefinition/StelbatololAqueousSolution-->
@@ -429,7 +429,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
@@ -448,7 +448,7 @@
             </action>
             <!-- step 3 particle size -->
             <action>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-step-scale-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
                   <!--                  <extension url="http://accumulus.org/fhir/extension/processStepScale">-->
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
@@ -456,7 +456,7 @@
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
                   <!--               <extension url="http://accumulus.org/fhir/extension/processParameters">-->
                   <extension url="parameter">
                      <valueCodeableConcept>
@@ -508,7 +508,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
@@ -526,7 +526,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>

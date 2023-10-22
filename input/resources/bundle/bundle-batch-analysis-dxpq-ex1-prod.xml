@@ -8,7 +8,7 @@
    <id value="bundle-batch-analysis-dxpq-ex1-prod"/>
    <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
    <meta>
-      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-batch-analysis-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq"/>
       <!--      <profile value="http://accumulus.org/fhir/dx-cmc/batch-analysis"/>-->
    </meta>
    <type value="collection"/>
@@ -19,7 +19,7 @@
             <!--id value="specificationProtocol"/-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
                <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-drug-specification-dxpq.html"/>-->
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
@@ -210,7 +210,7 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
                </extension>
@@ -237,7 +237,7 @@
                <text value="Description"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -265,7 +265,7 @@
                <text value="ID by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
                </extension>
@@ -292,7 +292,7 @@
                <text value="Identification"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -301,12 +301,12 @@
       </resource>
    </entry>
    <entry>
-        <!--fullUrl value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay"/-->
+        <!--fullUrl value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay"/-->
       <fullUrl value="urn:uuid:39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
       <resource>
          <ObservationDefinition>
             <id value="39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
-            <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
+            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
             <url value="http://example-server.com/fhir/ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             <title value="Assay"/>
             <status value="active"/>
@@ -322,7 +322,7 @@
                <text value="Assay by UHPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="95% to 105% of label claim"/>
                </extension>
@@ -348,7 +348,7 @@
                <text value="Assay"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -570,7 +570,7 @@
                <text value="Apparatus 2 (paddles), UV measurement"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph"/>
                </extension>
@@ -632,7 +632,7 @@
                <text value="Apparatus 2 (paddles), UV measurement"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -728,7 +728,7 @@
                <text value="Ph Eur"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Shall comply with the requirements of the Ph Eur"/>
                </extension>
@@ -757,7 +757,7 @@
                <text value="Ph Eur"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -786,7 +786,7 @@
                <text value="Weight variation"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
                </extension>
@@ -813,7 +813,7 @@
                <text value="uniformity of dosage units (by weight)"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
@@ -829,7 +829,7 @@
             <!--medication-actual-batch-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/medicationDefinition">-->
                   <valueReference>
                      <!-- todo consider change this be the MID? -->
@@ -840,12 +840,12 @@
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                      <!--                     <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">-->
                      <valueReference>
                         <!--PlanDefinition/plandefinition-mnf-process-dxpq-ex1-->
@@ -862,12 +862,12 @@
                      <!-- #157 -->
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
                      <!--<extension url="http://accumulus.org/fhir/extension/packagingDate">-->
                      <!-- #159 -->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <!--Organization/packaging-->
@@ -883,7 +883,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                      <!--<extension url="http://accumulus.org/fhir/extension/actualYield">-->
                      <valueQuantity>
                         <!-- #160 -->
@@ -928,7 +928,7 @@
             <!--medication-actual-batch-2-->
             <id value="a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/medicationDefinition">-->
                   <valueReference>
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
@@ -937,11 +937,11 @@
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">-->
                      <valueReference>
                         <!--PlanDefinition/plandefinition-mnf-process-dxpq-ex1-->
@@ -957,11 +957,11 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
                      <!--<extension url="http://accumulus.org/fhir/extension/packagingDate">-->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                      <valueReference>
                         <!--Organization/packaging-->
@@ -974,7 +974,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                      <!--<extension url="http://accumulus.org/fhir/extension/actualYield">-->
                      <valueQuantity>
                         <value value="4.8"/>
@@ -1016,7 +1016,7 @@
             <!--medication-actual-batch-3-->
             <id value="c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <!-- <extension url="http://accumulus.org/fhir/extension/medicationDefinition">-->
                   <valueReference>
                      <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
@@ -1026,11 +1026,11 @@
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/batchReleaseDate">-->
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
                      <!--                  <extension url="http://accumulus.org/fhir/extension/manufacturingProcess">-->
                      <valueReference>
                         <!--PlanDefinition/plandefinition-mnf-process-dxpq-ex1-->
@@ -1040,10 +1040,10 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <valueReference>
                         <!--Organization/packaging-->
                         <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
@@ -1055,7 +1055,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -1519,7 +1519,7 @@
             <!--observationAssay-->
             <id value="9c56948a-1a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
+               <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1556,7 +1556,7 @@
             <!--observationAssay2-->
             <id value="1e20aed7-7626-1664-8d96-235f860d9a2c"/>
             <instantiatesReference>
-               <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
+               <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1593,7 +1593,7 @@
             <!--observationAssay3-->
             <id value="ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
             <instantiatesReference>
-               <!--http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay-->
+               <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3036,11 +3036,11 @@
             <id value="246e9583-6253-6cc7-9c12-3b624f3308c1"/>
             <meta>
                <profile
-                  value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
                <!--               <profile value="https://build.fhir.org/ig/HL7/uv-dx-pq/StructureDefinition-PlanDefinition-mnf-process-dxpq.html"/>-->
             </meta>
             <!--     Included Extension-history-of-process-dxpq to differential from PlanDefinition-drug-specification-dxpq-->
-            <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
                <valueMarkdown value="Process has no history recorded yet"/>
             </extension>
             <!--http://example-server.com/fhir/PlanDefinition/246e9583-6253-6cc7-9c12-3b624f3308c1-->

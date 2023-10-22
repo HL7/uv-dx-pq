@@ -4,21 +4,21 @@
     <!-- <id value="studyResultsReport"/>-->
     <id value="diagnosticreport-stability-study-results-dxpq-ex1"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
                 </meta>
                 <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                     <valueReference>
                         <reference value="PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
                     </valueReference>
                 </extension>
-				<extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-statistical-model-dxpq">
+				<extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-dxpq">
                      <valueCodeableConcept>
                          
                          
                          <text value="information about statistical model utilized to interpret stability study results"/>
                      </valueCodeableConcept>
                  </extension>
-                 <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-container-orientation-dxpq">
+                 <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-dxpq">
                      <valueCodeableConcept>
                          
                          

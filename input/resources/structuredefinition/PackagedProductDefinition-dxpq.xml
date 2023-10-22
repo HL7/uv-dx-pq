@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="PackagedProductDefinition-dxpq"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
   <name value="PackagedProductDefinitionDxPq"/>
   <title value="active - dx-PQ"/>
   <status value="draft"/>

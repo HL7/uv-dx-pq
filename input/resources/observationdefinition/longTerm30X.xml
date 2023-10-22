@@ -3,9 +3,9 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="longTerm30X"/>
     <meta>
-    	<profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+    	<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/longTerm30X"/>
+                <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X"/>
         <title value="X"/>
         <status value="active"/>
         <code>
@@ -16,14 +16,14 @@
         </specimen>
         <hasMember>
             <reference value="ObservationDefinition/Description"/>
-<!--            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Description"/>-->
+<!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Description"/>-->
         </hasMember>
         <hasMember>
             <reference value="ObservationDefinition/Assay"/>
-<!--            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Assay"/>-->
+<!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay"/>-->
         </hasMember>
         <hasMember>
             <reference value="ObservationDefinition/Impurities"/>
-<!--            <reference value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Impurities"/>-->
+<!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Impurities"/>-->
         </hasMember>
 </ObservationDefinition>

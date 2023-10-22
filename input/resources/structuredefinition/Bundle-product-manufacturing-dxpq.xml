@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-product-manufacturing-dxpq"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
   <name value="BundleProductManufacturingDxPq"/>
   <title value="Bundle - Product Manufacturing dx-PQ"/>
   <status value="active"/>
@@ -62,7 +62,7 @@
       <type>
         <code value="PlanDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
       </type>
     </element>
 
@@ -79,7 +79,7 @@
       <type>
         <code value="DeviceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq"
         />
       </type>
     </element>
@@ -96,7 +96,7 @@
       <type>
         <code value="DocumentReference"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"
         />
       </type>
     </element>
@@ -112,7 +112,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="MedicinalProductDefinition"/>
-        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
       </type>
     </element>
 
@@ -128,7 +128,7 @@
       <type>
         <code value="Ingredient"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"
         />
       </type>
     </element>
@@ -145,7 +145,7 @@
       <type>
         <code value="SubstanceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
         />
       </type>
     </element>
@@ -163,7 +163,7 @@
       <type>
         <code value="Organization"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"
         />
       </type>
     </element>

@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="PlanDefinition-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
     <name value="PlanDefinitionDxPq"/>
     <title value="PlanDefinition - dx-PQ"/>
     <status value="active"/>

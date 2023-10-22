@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-actual-yield-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq"/>
     <name value="ExtensionActualYieldDxPq"/>
     <title value="Extension - Actual Yield dx-PQ"/>
     <status value="active"/>
@@ -32,7 +32,7 @@
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq"/>
+                value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

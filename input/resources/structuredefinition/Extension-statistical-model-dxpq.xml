@@ -7,7 +7,7 @@
         <lastUpdated value="2023-01-12T21:49:20.688+00:00"/>
         <source value="#U0MqteWpkVIsAL5q"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-statistical-model-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-dxpq"/>
     <name value="ExtensionStatisticalModelDxPq"/>
     <title value="Extension - Statistical Model dx-PQ"/>
     <status value="active"/>
@@ -37,7 +37,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-statistical-model-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

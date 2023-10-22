@@ -4,7 +4,7 @@
    <id value="bundle-container-closure-system-dxpq-ex1-prod"/>
 <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
    <meta>
-      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
    </meta>
    
    <type value="collection"/>
@@ -60,7 +60,7 @@
          <PackagedProductDefinition>
             <id value="packagedproductdefinition-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
             </meta>
             <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
             		<valueString value="packagedproductdefinition/{id}.xml"/>
@@ -235,7 +235,7 @@
          <PackagedProductDefinition>
             <id value="packagedproductdefinition-dxpq-ex2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PackagedProductDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
             </meta>
             <packageFor>
                <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->

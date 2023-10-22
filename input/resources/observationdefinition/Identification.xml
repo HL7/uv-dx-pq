@@ -3,9 +3,9 @@
     <!-- Contained in Accumulus FHIR Product Example - Batch Analysis (05-31-2023) -->
     <id value="Identification"/>
     <meta>
-    	<profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+    	<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Identification"/>
+                <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Identification"/>
     <title value="Identification"/>
     <status value="active"/>
     <code>
@@ -20,7 +20,7 @@
         <text value="ID by UHPLC"/>
     </method>
     <qualifiedValue>
-    	<extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq"> 
+    	<extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq"> 
         	<valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
         </extension>
     </qualifiedValue>

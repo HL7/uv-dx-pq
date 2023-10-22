@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-manufacturing-participant-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq"/>
     <name value="ExtensionManufacturingParticipantDxPq"/>
     <title value="Extension - Manufacturing Participant dx-PQ"/>
     <status value="active"/>
@@ -37,13 +37,13 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-participant-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/> 
+                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/> 
             </type>
         </element>
     </differential>

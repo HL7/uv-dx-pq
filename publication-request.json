@@ -1,7 +1,7 @@
 {
-  "package-id" : "hl7.fhir.uv.dx-pq",
+  "package-id" : "hl7.fhir.uv.pharm-quality",
   "version" : "0.1.0",
-  "path" : "http://hl7.org/fhir/uv/dx-pq",
+  "path" : "http://hl7.org/fhir/uv/pharm-quality",
   "mode" : "working",
   "status" : "draft",
   "sequence" : "Releases",

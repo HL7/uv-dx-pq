@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-qualified-value-target-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-target-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq"/>
     <name value="ExtensionQualifiedValueTargetDxPq"/>
     <title value="Extension - Qualified Value Target dx-PQ"/>
     <status value="active"/>
@@ -56,7 +56,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-target-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq"/>
 
         </element>
         <element id="Extension.value[x]">

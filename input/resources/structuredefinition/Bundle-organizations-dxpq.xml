@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-organizations-dxpq"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-organizations-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq"/>
   <name value="BundleOrganizationsDxPq"/>
   <title value="Bundle - Organizations dx-PQ"/>
   <status value="active"/>
@@ -60,7 +60,7 @@
       <type>
         <code value="Organization"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
       </type>
     </element>
 

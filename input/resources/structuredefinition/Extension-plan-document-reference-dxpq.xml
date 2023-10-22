@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-plan-document-reference-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq"/>
     <name value="ExtensionPlanDocumentReferenceDxPq"/>
     <title value="Extension - Plan Document Reference dx-PQ"/>
     <status value="active"/>
@@ -22,13 +22,13 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-plan-document-reference-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/> 
             <type> 
                 <code value="Reference"/> 
-                <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq"/> 
+                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/> 
             </type> 
         </element>
     </differential>

@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-manufacturing-process-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq"/>
     <name value="ExtensionManufacturingProcessDxPq"/>
     <title value="Extension - Manufacturing Process dx-PQ"/>
     <status value="active"/>
@@ -31,13 +31,13 @@
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-manufacturing-process-dxpq"/>
+                value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
             </type>
         </element>
     </differential>

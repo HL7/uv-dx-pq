@@ -4,10 +4,10 @@
     <id value="Water"/>
     <meta>
         <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"
+            value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"
         />
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Water"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Water"/>
     <title value="Water Content (% w/w) (Mean)"/>
     <status value="active"/>
     <code>

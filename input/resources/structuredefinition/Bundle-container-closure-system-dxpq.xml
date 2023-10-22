@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-container-closure-system-dxpq"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
   <name value="BundleContainerClosureSystemDxPq"/>
   <title value="Bundle – Container Closure System dx-PQ"/>
   <status value="active"/>

@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ActivityDefinition-stability-test-dxpq"/>
   <url
-    value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
   <name value="ActivityDefinitionStabilityTestDxPq"/>
   <title value="ActivityDefinition - Stability Test dx-PQ"/>
   <status value="active"/>

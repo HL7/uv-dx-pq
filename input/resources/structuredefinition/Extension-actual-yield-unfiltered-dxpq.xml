@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-actual-yield-unfiltered-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-dxpq"/>
     <name value="ExtensionActualYieldUnfilteredDxPq"/>
     <title value="Extension - Actual Yield Unfiltered dx-PQ"/>
     <status value="active"/>
@@ -31,7 +31,7 @@
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-unfiltered-dxpq"/>
+                value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

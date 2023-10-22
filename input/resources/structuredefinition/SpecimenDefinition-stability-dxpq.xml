@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="SpecimenDefinition-stability-dxpq"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
   <name value="SpecimenDefinitionStabilityDxPq"/>
   <title value="SpecimenDefinition - Stability dx-PQ"/>
   <status value="active"/>

@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DocumentReference-dxpq"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>
   <version value="5.0.0"/>
   <name value="DocumentReference"/>
   <title value="DocumentReference - dx-PQ"/>

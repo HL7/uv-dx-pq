@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Ingredient-dxpq"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"/>
   <name value="IngredientDxPq"/>
   <title value="Ingredient dx-Pq"/>
   <status value="active"/>
@@ -27,7 +27,7 @@
       <type>
         <code value="CodeableReference"/>
         <targetProfile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
       </type>
       <mustSupport value="true"/>
     </element>

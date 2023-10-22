@@ -7,7 +7,7 @@
    <id value="bundle-product-impurities-dxpq-ex1"/>
 <!--   <id value="product-impurities"/>-->
    <meta>
-      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-product-impurities-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
 <!--      <profile value="http://accumulus.org/fhir/dx-cmc/impurities"/>-->
    </meta>
    <type value="collection"/>
@@ -19,7 +19,7 @@
             <!--diagnosticreport-product-impurities-->
             <id value="6f4a3311-92c5-2b4a-533e-76341e414c63"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
             </meta>
             <identifier>
                <system value="https://eudract.europa.eu/example/identifier"/>
@@ -147,7 +147,7 @@
             <!--medication-actual-batch-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference> <!-- todo consider change this be the MID? -->
                      <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
 			                  <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
@@ -178,7 +178,7 @@
             <!--medication-actual-batch-2-->
             <id value="a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
                      <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
 			                  <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
@@ -207,7 +207,7 @@
             <!--medication-actual-batch-3-->
             <id value="c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
                      <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
 			                  <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>

@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-packaging-site-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq"/>
     <name value="ExtensionPackagingSiteDxPq"/>
     <title value="Extension - Packaging Site dx-PQ"/>
     <status value="active"/>
@@ -30,13 +30,13 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/> 
+                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/> 
             </type>
         </element>
     </differential>

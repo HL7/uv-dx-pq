@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="SubstanceDefinition-component-substance-dxpq"/>
   <url
-    value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
   <name value="SubstanceDefinitionComponentSubstanceDxPq"/>
   <title value="SubstanceDefinition - Component Substance dx-PQ"/>
   <status value="active"/>
@@ -35,7 +35,7 @@
       <max value="1"/>-->
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+        <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
       </type>
       <mustSupport value="true"/>
     </element>

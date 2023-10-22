@@ -7,7 +7,7 @@
         <lastUpdated value="2022-12-21T12:37:39.436+00:00"/>
         <source value="#ve6maHa6p0IrOZeY"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
     <name value="DiagnosticReportStabilityStudyResultsDxPq"/>
     <title value="DiagnosticReport - Stability Study Results dx-PQ"/>
     <status value="active"/>

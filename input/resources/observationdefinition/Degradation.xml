@@ -3,9 +3,9 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="Degradation"/>
     <meta>
-                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/Degradation"/>
+                <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Degradation"/>
     <title value="Degradation Products by HPLC (% w/w)"/>
     <status value="active"/>
     <code>

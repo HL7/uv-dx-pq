@@ -4,7 +4,7 @@
 <!--            <id value="validationProtocol"/>-->
    <id value="plandefinition-dxpq-ex1-validation-protocol"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
    </meta>
             <title value="DP PROCESS VALIDATION"/>
             <type>

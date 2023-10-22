@@ -5,16 +5,16 @@
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
     <id value="plandefinition-dxpq-ex2-manufacturing-plan"/>
             <meta>
-                <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
                 <tag>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
                     <code value="SUBSETTED"/>
                 </tag>
             </meta>
-                <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-history-of-process-dxpq">
+                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
                 <valueMarkdown value="This can be text about the history"/>
             </extension>
-                <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-dxpq-ex2-manufacturing-plan"/>
+                <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-dxpq-ex2-manufacturing-plan"/>
             <title value="Process 1.0"/>
             <type>
                 <coding>

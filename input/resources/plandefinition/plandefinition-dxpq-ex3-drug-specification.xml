@@ -4,9 +4,9 @@
     
     <id value="plandefinition-dxpq-ex3-drug-specification"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
                 </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-dxpq-ex3-drug-specification"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-dxpq-ex3-drug-specification"/>
     <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
     <status value="active"/>
     <subjectReference>

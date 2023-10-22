@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-drug-product-stability-dxpq"/>
   <url
-    value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
   <name value="BundleDrugProductStabilityDxPq"/>
   <title value="Bundle – Drug Product Stability dx-PQ"/>
   <status value="active"/>
@@ -62,7 +62,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="ResearchStudy"/>
-        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ResearchStudy-stability-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ResearchStudy-stability-dxpq"/>
       </type>
     </element>-->
     
@@ -77,7 +77,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="PlanDefinition"/>
-        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
       </type>
     </element>
     
@@ -93,7 +93,7 @@
       <type>
         <code value="SpecimenDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
       </type>
     </element>
     
@@ -109,7 +109,7 @@
       <type>
         <code value="Specimen"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
       </type>
     </element>
     
@@ -125,7 +125,7 @@
       <type>
         <code value="ActivityDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
       </type>
     </element>
     
@@ -152,7 +152,7 @@
       <type>
         <code value="ObservationDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
       </type>
     </element>-->
  
@@ -168,7 +168,7 @@
       <type>
         <code value="ObservationDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
       </type>
     </element>-->
  
@@ -184,7 +184,7 @@
       <type>
         <code value="Observation"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
       </type>
     </element>
     
@@ -200,7 +200,7 @@
       <type>
         <code value="SubstanceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
       </type>
     </element>
   
@@ -216,7 +216,7 @@
       <type>
         <code value="Substance"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
       </type>
     </element> --> 
     
@@ -232,7 +232,7 @@
       <type>
         <code value="DiagnosticReport"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
       </type>
     </element>
     
@@ -248,7 +248,7 @@
       <type>
         <code value="MedicinalProductDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
       </type>
     </element>
     
@@ -264,7 +264,7 @@
       <type>
         <code value="Medication"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
       </type>
     </element>
     
@@ -280,7 +280,7 @@
       <type>
         <code value="Ingredient"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"/>
       </type>
     </element>
     
@@ -296,7 +296,7 @@
       <type>
         <code value="Organization"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
       </type>
     </element>
     
@@ -312,7 +312,7 @@
       <type>
         <code value="Substance"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
       </type>
     </element>
     

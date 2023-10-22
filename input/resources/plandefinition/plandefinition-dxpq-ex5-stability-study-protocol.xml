@@ -4,9 +4,9 @@
     <!--        <id value="stabilityStudyProtocol"/>-->
     <id value="plandefinition-dxpq-ex5-stability-study-protocol"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
                 </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
     <title value="Stability Monitoring Program"/>
                 <type>
                     <coding>

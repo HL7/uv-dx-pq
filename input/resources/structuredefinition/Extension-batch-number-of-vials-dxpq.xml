@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-number-of-vials-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-number-of-vials-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-dxpq"/>
     <name value="ExtensionBatchNumberOfVialsDxPq"/>
     <title value="Extension - Batch Number of Vials dx-PQ"/>
     <status value="active"/>
@@ -31,7 +31,7 @@
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
-                value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-number-of-vials-dxpq"/>
+                value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

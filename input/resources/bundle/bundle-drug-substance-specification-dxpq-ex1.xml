@@ -7,7 +7,7 @@
     <!--    <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
     <meta>
         <profile
-            value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+            value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
         <!--        <profile value="http://accumulus.org/fhir/dx-cmc/specification"/>-->
     </meta>
     <type value="collection"/>
@@ -111,7 +111,7 @@
                     <text value="Visual inspection"/>
                 </method>
                 <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
 <!--                    <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                         <valueString value="A white to brown powder"/>
                     </extension>
@@ -141,7 +141,7 @@
                     <text value="Identification by IR spectroscopy Identification by HPLC"/>
                 </method>
                 <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
 <!--                        <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                         <valueString value="Conforms with reference"/>
                     </extension>

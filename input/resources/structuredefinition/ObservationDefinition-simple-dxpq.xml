@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="ObservationDefinition-simple-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     <name value="ObservationDefinitionSimpleDxPq"/>
     <title value="ObservationDefinition - Simple dx-PQ"/>
     <status value="active"/>

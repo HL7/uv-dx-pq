@@ -3,7 +3,7 @@
    <id value="bundle-container-closure-system-dxpq-ex2-sub"/>
 <!--   <id value="container-closure-substance"/>-->
    <meta>
-      <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
 <!--      <profile value="http://accumulus.org/fhir/dx-cmc/container-closure-substance"/>-->
    </meta>
    <type value="collection"/>
@@ -250,7 +250,7 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>
@@ -274,7 +274,7 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <valueString value="Corresponds with reference"/>
                </extension>
             </qualifiedValue>
@@ -298,7 +298,7 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>

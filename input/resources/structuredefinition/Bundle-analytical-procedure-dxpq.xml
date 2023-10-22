@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-analytical-procedure-dxpq"/>
-  <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
   <name value="BundleAnalyticalProcedureDxPq"/>
   <title value="Bundle – Analytical Procedure dx-PQ"/>
   <status value="active"/>

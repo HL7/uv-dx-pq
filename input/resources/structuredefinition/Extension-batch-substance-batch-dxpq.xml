@@ -2,7 +2,7 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-substance-batch-dxpq"/>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq"/>
     <name value="ExtensionBatchSubstanceBatchDxPq"/>
     <title value="Extension - Batch Substance Batch dx-PQ"/>
     <status value="active"/>
@@ -30,13 +30,13 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/> 
+                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/> 
             </type>
         </element>
        

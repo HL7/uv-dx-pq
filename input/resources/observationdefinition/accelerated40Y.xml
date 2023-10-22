@@ -3,9 +3,9 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="accelerated40Y"/>
     <meta>
-                    <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/dx-pq/ObservationDefinition/accelerated40Y"/>
+                <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/accelerated40Y"/>
         <title value="Y"/>
         <status value="active"/>
         <code>

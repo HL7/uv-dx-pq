@@ -7,7 +7,7 @@
         <lastUpdated value="2023-01-11T01:05:33.310+00:00"/>
         <source value="#Foor8aj0PDmWtY76"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-container-orientation-dxpq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-dxpq"/>
     <name value="ExtensionContainerOrientationDxPq"/>
     <title value="Extension - Container Orientation dx-PQ"/>
     <status value="active"/>
@@ -39,7 +39,7 @@
         </element>-->
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-container-orientation-dxpq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-dxpq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-drug-substance-specification-dxpq"/>
   <url
-    value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
   <name value="BundleDrugSubstanceSpecificationDxPq"/>
   <title value="Bundle – Drug Substance Specification dx-PQ"/>
   <status value="active"/>
@@ -62,7 +62,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="PlanDefinition"/>
-        <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
       </type>
     </element>
     
@@ -78,7 +78,7 @@
       <type>
         <code value="ObservationDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
       </type>
     </element>
  
@@ -94,7 +94,7 @@
       <type>
         <code value="SubstanceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
       </type>
     </element>
     
@@ -110,7 +110,7 @@
       <type>
         <code value="Organization"/>
         <profile
-          value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
       </type>
     </element>
   </differential>
