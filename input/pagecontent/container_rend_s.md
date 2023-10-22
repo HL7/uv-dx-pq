@@ -5,16 +5,19 @@ The HTML rendering below shows a synthetic CMC data example for Common Technical
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
+<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: container-closure-substance)
-Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-container-closure-system-dxpq-ex2-sub)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq 
 
 <Bundle>
-    <id value=&quot;container-closure-substance&quot;/>
+    <!--   <id value=&quot;container-closure-substance&quot;/>-->
+    <id value=&quot;bundle-container-closure-system-dxpq-ex2-sub&quot;/>
     <meta>
-        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/container-closure-substance&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq&quot;/>
+        <!--      <profile value=&quot;http://accumulus.org/fhir/dx-cmc/container-closure-substance&quot;/>-->
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
@@ -22,31 +25,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;substance1&quot;/>
-                <contained>
-                    <!-- contained may not be right -->
-                    <Substance>
-                        <id value=&quot;referenceSubstance&quot;/>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/substanceCompendial&quot;>
-                            <!-- #82 -->
-                            <valueBoolean value=&quot;false&quot;/>
-                        </extension>
-                        <identifier>
-                            <system value=&quot;http://accumulus.org/fhir/identifier/batchNumber&quot;/>
-                            <!-- #85 -->
-                            <value value=&quot;batch-ref-001&quot;/>
-                        </identifier>
-                        <instance value=&quot;true&quot;/>
-                        <code>
-                            <concept>
-                                <!-- #81 -->
-                                <text value=&quot;Reference Substance Name&quot;/>
-                                <!-- can also be a code or a reference to a SubstanceDefintion -->
-                            </concept>
-                        </code>
-                        <expiry value=&quot;2019-09-07&quot;/>
-                        <!-- #91 -->
-                    </Substance>
-                </contained>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
                     <!-- #4 -->
@@ -108,7 +86,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <containedItem>
                         <item>
                             <reference>
-                                <reference value=&quot;ManufacturedItemDefinition/packaged-item&quot;/>
+                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
                             </reference>
                         </item>
                     </containedItem>
@@ -133,8 +111,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
-                            <code value=&quot;xxxx&quot;/>
-                            <display value=&quot;Pail&quot;/>
+                            <code value=&quot;100000073497&quot;/>
+                            <display value=&quot;Bottle&quot;/>
                         </coding>
                     </type>
                     <material>
@@ -148,7 +126,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <containedItem>
                         <item>
                             <reference>
-                                <reference value=&quot;ManufacturedItemDefinition/packaged-item&quot;/>
+                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
                             </reference>
                         </item>
                     </containedItem>
@@ -162,7 +140,11 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <fullUrl value=&quot;urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44&quot;/>
         <resource>
             <ManufacturedItemDefinition>
-                <id value=&quot;packaged-item&quot;/>
+                <!--    <id value=&quot;packaged-item&quot;/>-->
+                <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
+                </meta>
                 <status value=&quot;active&quot;/>
                 <manufacturedDoseForm>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
@@ -180,7 +162,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                 <id value=&quot;ingredient1&quot;/>
                 <status value=&quot;active&quot;/>
                 <for>
-                    <reference value=&quot;ManufacturedItemDefinition/packaged-item&quot;/>
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
                 </for>
                 <role>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
@@ -207,6 +189,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                 <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension-->
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Specification and Analytical Procedures&quot;/>
                 <type>
                     <coding>
@@ -230,7 +213,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <code>
                         <coding>
                             <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <!-- did I already use similar? -->
                             <code value=&quot;ContainerSpecification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
@@ -266,6 +248,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;VisualInspection&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524&quot;/>
                 <title value=&quot;Visual Inspection&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -276,7 +259,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -288,6 +271,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;InfraredSpectroscopy&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525&quot;/>
                 <title value=&quot;Infrared Spectroscopy&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -298,7 +282,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -310,6 +294,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;SupplierCertificateofAnalysis&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535&quot;/>
                 <title value=&quot;Supplier Certificate of Analysis&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -320,20 +305,25 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>
                 </qualifiedValue>
             </ObservationDefinition>
         </resource>
-    </entry>" id="Bundle-container-closure-substance">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: container-closure-substance</div>
+    </entry>" id="Bundle-bundle-container-closure-system-dxpq-ex2-sub">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-container-closure-system-dxpq-ex2-sub</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq</span></div>
 <div><span title="
 <Bundle>
     ...
     <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
 </div>
 </div>
+<div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:f26b997a-3ab9-7552-a6cc-fd771d1f1863)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:878c2849-792c-6469-21a2-c2b920930962)
 
@@ -342,31 +332,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;substance1&quot;/>
-                <contained>
-                    <!-- contained may not be right -->
-                    <Substance>
-                        <id value=&quot;referenceSubstance&quot;/>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/substanceCompendial&quot;>
-                            <!-- #82 -->
-                            <valueBoolean value=&quot;false&quot;/>
-                        </extension>
-                        <identifier>
-                            <system value=&quot;http://accumulus.org/fhir/identifier/batchNumber&quot;/>
-                            <!-- #85 -->
-                            <value value=&quot;batch-ref-001&quot;/>
-                        </identifier>
-                        <instance value=&quot;true&quot;/>
-                        <code>
-                            <concept>
-                                <!-- #81 -->
-                                <text value=&quot;Reference Substance Name&quot;/>
-                                <!-- can also be a code or a reference to a SubstanceDefintion -->
-                            </concept>
-                        </code>
-                        <expiry value=&quot;2019-09-07&quot;/>
-                        <!-- #91 -->
-                    </Substance>
-                </contained>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
                     <!-- #4 -->
@@ -392,31 +357,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;substance1&quot;/>
-                <contained>
-                    <!-- contained may not be right -->
-                    <Substance>
-                        <id value=&quot;referenceSubstance&quot;/>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/substanceCompendial&quot;>
-                            <!-- #82 -->
-                            <valueBoolean value=&quot;false&quot;/>
-                        </extension>
-                        <identifier>
-                            <system value=&quot;http://accumulus.org/fhir/identifier/batchNumber&quot;/>
-                            <!-- #85 -->
-                            <value value=&quot;batch-ref-001&quot;/>
-                        </identifier>
-                        <instance value=&quot;true&quot;/>
-                        <code>
-                            <concept>
-                                <!-- #81 -->
-                                <text value=&quot;Reference Substance Name&quot;/>
-                                <!-- can also be a code or a reference to a SubstanceDefintion -->
-                            </concept>
-                        </code>
-                        <expiry value=&quot;2019-09-07&quot;/>
-                        <!-- #91 -->
-                    </Substance>
-                </contained>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
                     <!-- #4 -->
@@ -429,7 +369,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                 <id value=&quot;ingredient1&quot;/>
                 <status value=&quot;active&quot;/>
                 <for>
-                    <reference value=&quot;ManufacturedItemDefinition/packaged-item&quot;/>
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
                 </for>
                 <role>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
@@ -470,31 +410,47 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
             <Ingredient>
                 ...
                 <for>
-                    <reference value=&quot;ManufacturedItemDefinition/packaged-item&quot;/>">For</span><div class="indent man summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PackagedProductDefinition/item, id: packageDefinition fullUrl: urn:uuid:b107a2ba-32d8-0124-7855-4096057c52a9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (PackagedProductDefinition/item, id: packageDefinition2 fullUrl: urn:uuid:b107a2ba-32d8-0124-7855-4096057c52b9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Ingredient/for, id: ingredient1 fullUrl: urn:uuid:f26b997a-3ab9-7552-a6cc-fd771d1f1863)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ManufacturedItemDefinition (id: packaged-item)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>">For</span><div class="indent man summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PackagedProductDefinition/item, id: packageDefinition fullUrl: urn:uuid:b107a2ba-32d8-0124-7855-4096057c52a9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (PackagedProductDefinition/item, id: packageDefinition2 fullUrl: urn:uuid:b107a2ba-32d8-0124-7855-4096057c52b9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Ingredient/for, id: ingredient1 fullUrl: urn:uuid:f26b997a-3ab9-7552-a6cc-fd771d1f1863)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ManufacturedItemDefinition (id: manufactureditemdefinition-dxpq-ex1)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq 
 
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
-                <id value=&quot;packaged-item&quot;/>
+                <!--    <id value=&quot;packaged-item&quot;/>-->
+                <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
+                </meta>
                 <status value=&quot;active&quot;/>
                 <manufacturedDoseForm>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
                         <valueCode value=&quot;unsupported&quot;/>
                     </extension>
-                </manufacturedDoseForm>" id="ManufacturedItemDefinition-packaged-item">Manufactured Item</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/manufactureditemdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/manufactureditemdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/manufactureditemdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: packaged-item</div><div class="debugOff"> fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44</div><span class="summaryShowsOff"></span><div class="summaryHiddenOff"><div class="debugOff"><span title="
+                </manufacturedDoseForm>" id="ManufacturedItemDefinition-manufactureditemdefinition-dxpq-ex1">Manufactured Item</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/manufactureditemdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/manufactureditemdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/manufactureditemdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufactureditemdefinition-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ManufacturedItemDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq</span></div><span class="summaryShowsOff"></span><div class="summaryHiddenOff"><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div class="indent manl2"><span title="ManufacturedItemDefinition (id: packaged-item)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div class="indent manl2"><span title="ManufacturedItemDefinition (id: manufactureditemdefinition-dxpq-ex1)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq 
 
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
-                <id value=&quot;packaged-item&quot;/>
+                <!--    <id value=&quot;packaged-item&quot;/>-->
+                <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
+                </meta>
                 <status value=&quot;active&quot;/>
                 <manufacturedDoseForm>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
@@ -551,7 +507,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <containedItem>
                         <item>
                             <reference>
-                                <reference value=&quot;ManufacturedItemDefinition/packaged-item&quot;/>
+                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
                             </reference>
                         </item>
                     </containedItem>
@@ -721,8 +677,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
-                            <code value=&quot;xxxx&quot;/>
-                            <display value=&quot;Pail&quot;/>
+                            <code value=&quot;100000073497&quot;/>
+                            <display value=&quot;Bottle&quot;/>
                         </coding>
                     </type>
                     <material>
@@ -736,7 +692,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <containedItem>
                         <item>
                             <reference>
-                                <reference value=&quot;ManufacturedItemDefinition/packaged-item&quot;/>
+                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
                             </reference>
                         </item>
                     </containedItem>
@@ -750,8 +706,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
-                            <code value=&quot;xxxx&quot;/>
-                            <display value=&quot;Pail&quot;/>">Pail<span class="greyOff"> [xxxx]</span><span class="greyOff"> (http://hl7.org/fhir/packaging-type)</span></span></span><div class="summaryHiddenOff"><div><span title="
+                            <code value=&quot;100000073497&quot;/>
+                            <display value=&quot;Bottle&quot;/>">Bottle<span class="greyOff"> [100000073497]</span><span class="greyOff"> (http://hl7.org/fhir/packaging-type)</span></span></span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -761,8 +717,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
-                            <code value=&quot;xxxx&quot;/>
-                            <display value=&quot;Pail&quot;/>
+                            <code value=&quot;100000073497&quot;/>
+                            <display value=&quot;Bottle&quot;/>
                         </coding>">Type: </span><span title="
 <Bundle>
     <entry>
@@ -772,8 +728,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
-                            <code value=&quot;xxxx&quot;/>
-                            <display value=&quot;Pail&quot;/>">Pail<span class="greyOff"> [xxxx]</span><span class="greyOff"> (http://hl7.org/fhir/packaging-type)</span></span></div><div><span title="
+                            <code value=&quot;100000073497&quot;/>
+                            <display value=&quot;Bottle&quot;/>">Bottle<span class="greyOff"> [100000073497]</span><span class="greyOff"> (http://hl7.org/fhir/packaging-type)</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -811,8 +767,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                 <action>
                     <title value=&quot;Container Specification&quot;>">Table 1: </span><span>Container Specification</span></div><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
-<th rowspan="1">Attribute</th><th rowspan="1">Analytical Procedure</th>
-<th colspan="0">Acceptance Criteria</th>
+<th rowspan="1">Attribute</th><th rowspan="1">Analytical Procedure</th><th colspan="0">Acceptance Criteria</th>
 </tr>
 <tr>
 <td><a href="#urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f" title="
@@ -836,7 +791,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;>">Corresponds</span></td>
 </tr>
 <tr>
@@ -861,7 +816,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;>">Corresponds with reference</span></td>
 </tr>
 <tr>
@@ -886,7 +841,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;>">Corresponds</span></td>
 </tr>
 </table>
@@ -901,6 +856,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                 <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension-->
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Specification and Analytical Procedures&quot;/>
                 <type>
                     <coding>
@@ -924,7 +880,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <code>
                         <coding>
                             <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <!-- did I already use similar? -->
                             <code value=&quot;ContainerSpecification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
@@ -953,6 +908,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     </action>
                 </action>" id="PlanDefinition-packagingSpecification-unlinked">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: packagingSpecification-unlinked</div>
 <div class="debugOff"> fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f</div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1021,6 +977,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                 <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension-->
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Specification and Analytical Procedures&quot;/>
                 <type>
                     <coding>
@@ -1044,7 +1001,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <code>
                         <coding>
                             <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <!-- did I already use similar? -->
                             <code value=&quot;ContainerSpecification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
@@ -1071,7 +1027,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/SupplierCertificateofAnalysis&quot;/>
                     </action>
-                </action>">Subject: </span> Packaged Product Definition (<a href="#PackagedProductDefinition-packageDefinition" title="click to see target - id=packageDefinition">PackagedProductDefinition</a>)<span class="debugOff"> id: packageDefinition</span></span><div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+                </action>">Subject: </span>Packaged Product Definition (<a href="#PackagedProductDefinition-packageDefinition" title="click to see target - id=packageDefinition">PackagedProductDefinition</a>)<span class="debugOff"> id: packageDefinition</span></span><div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1082,7 +1038,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <code>
                         <coding>
                             <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <!-- did I already use similar? -->
                             <code value=&quot;ContainerSpecification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
@@ -1108,7 +1063,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                             <text value=&quot;Test&quot;/>
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/SupplierCertificateofAnalysis&quot;/>
-                    </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </action>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1123,7 +1078,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <code>
                         <coding>
                             <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <!-- did I already use similar? -->
                             <code value=&quot;ContainerSpecification&quot;/>
                             <display value=&quot;Container Specification&quot;/>">Container Specification<span class="greyOff"> [ContainerSpecification]</span><span class="greyOff"> (http://temp.hl7.org/fhir/CodeSystem/specification-type)</span></span><span style="white-space:normal;"> - Text: Container Specification</span></span></span><div class="summaryHiddenOff">
 <div><span title="
@@ -1143,7 +1097,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <code>
                         <coding>
                             <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <!-- did I already use similar? -->
                             <code value=&quot;ContainerSpecification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
@@ -1156,11 +1109,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <code>
                         <coding>
                             <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <!-- did I already use similar? -->
                             <code value=&quot;ContainerSpecification&quot;/>
                             <display value=&quot;Container Specification&quot;/>">Container Specification<span class="greyOff"> [ContainerSpecification]</span><span class="greyOff"> (http://temp.hl7.org/fhir/CodeSystem/specification-type)</span></span><span style="white-space:normal;"> - Text: Container Specification</span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1172,7 +1124,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/VisualInspection&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/VisualInspection&quot;/>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1192,13 +1144,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <action>
                         <description value=&quot;Container Type&quot;>">Description: </span><span>Container Type</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: packagingSpecification-unlinked fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: VisualInspection)(fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958524)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: packagingSpecification-unlinked fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: VisualInspection)(fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958524)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;VisualInspection&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524&quot;/>
                 <title value=&quot;Visual Inspection&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -1209,7 +1162,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-VisualInspection">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1223,6 +1176,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;VisualInspection&quot;/>">VisualInspection<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: VisualInspection</div>
 <div class="debugOff"> fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958524</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1274,18 +1228,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>">
 <div><span title="
@@ -1294,7 +1248,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>">Text: </span><span>Corresponds</span></div>
 </div>
 </div>
@@ -1302,7 +1256,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1314,7 +1268,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/InfraredSpectroscopy&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/InfraredSpectroscopy&quot;/>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1334,13 +1288,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <action>
                         <description value=&quot;Material Identification&quot;>">Description: </span><span>Material Identification</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: packagingSpecification-unlinked fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: InfraredSpectroscopy)(fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958525)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: packagingSpecification-unlinked fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: InfraredSpectroscopy)(fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958525)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;InfraredSpectroscopy&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525&quot;/>
                 <title value=&quot;Infrared Spectroscopy&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -1351,7 +1306,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-InfraredSpectroscopy">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1365,6 +1320,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;InfraredSpectroscopy&quot;/>">InfraredSpectroscopy<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: InfraredSpectroscopy</div>
 <div class="debugOff"> fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958525</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1416,18 +1372,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>
                     </extension>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>
                     </extension>">
 <div><span title="
@@ -1436,7 +1392,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>">Text: </span><span>Corresponds with reference</span></div>
 </div>
 </div>
@@ -1444,7 +1400,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1456,7 +1412,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/SupplierCertificateofAnalysis&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/SupplierCertificateofAnalysis&quot;/>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1476,13 +1432,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     <action>
                         <description value=&quot;Material Conformity&quot;>">Description: </span><span>Material Conformity</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: packagingSpecification-unlinked fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: SupplierCertificateofAnalysis)(fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958535)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: packagingSpecification-unlinked fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: SupplierCertificateofAnalysis)(fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958535)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;SupplierCertificateofAnalysis&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535&quot;/>
                 <title value=&quot;Supplier Certificate of Analysis&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -1493,7 +1450,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-SupplierCertificateofAnalysis">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1507,6 +1464,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;SupplierCertificateofAnalysis&quot;/>">SupplierCertificateofAnalysis<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SupplierCertificateofAnalysis</div>
 <div class="debugOff"> fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958535</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1558,18 +1516,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>">
 <div><span title="
@@ -1578,7 +1536,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>">Text: </span><span>Corresponds</span></div>
 </div>
 </div>
@@ -1590,11 +1548,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="debugOff"></div>
 </div>
 </div>
 </body>
-<style>
+<style onLoad="resolveGlobalLinksThatCanBeLocal();">
 
 @media all {
 
@@ -1691,7 +1651,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
     .adverseEventl2 { background-Color:#d9cad1; }
     .adverseEventl3 { background-Color:#d9d4d6; }
 
-    .ppd { background-Color:#b6d7a8; width:60%; }
+    .ppd { background-Color:#b6d7a8; width:70%; }
     .ppdl2, .ppdpackage { background-Color:#c2deb6 }
     .ppdl3, .ppdpackageitem { background-Color:#daf0d1 }
     .ppdl4  { background-Color:#e4f2df }
@@ -1935,7 +1895,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
 			}
 			
 			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit"); // header from tabular mode
+			var nodes = document.querySelectorAll(".summaryUnit");
 			for (var i=0; i < nodes.length; i++) {
 				var node = nodes[i];
 				var span = document.createElement('span');
@@ -2137,6 +2097,26 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
 		    else if  ( g < 0 ) g = 0;
 		
 		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+		}
+
+		function resolveGlobalLinksThatCanBeLocal()
+		{
+			var nodes = document.querySelectorAll('.external-link');
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				var href = node.href;
+   				var urlPath = href.split('?url=').pop();
+   				if (urlPath != href) {
+   					var localId = node.getAttribute("localLink");
+	   				var localElement = document.getElementById(localId);
+	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
+	   					node.href= '#' + localId;
+	   					node.removeAttribute("localLink");
+	   					node.removeAttribute("class"); // remove the external-link class
+	   					node.title = node.title.replace(" (via server)"," (in page)");
+	   				}
+			   	 }
+    			}
 		}
 
 		function toggleSummary(item)
@@ -2372,4 +2352,5 @@ Profile: http://accumulus.org/fhir/dx-cmc/container-closure-substance
 		General Bundle:false
 		Not patient related:true
 		=>Patient Centric Mode:false
-		SubstanceDef Centric Mode:true--></html>
+		SubstanceDef Centric Mode:true
+		Assumed profile:--></html>

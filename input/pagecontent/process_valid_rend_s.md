@@ -5,14 +5,15 @@ The HTML rendering below shows a synthetic CMC data example for Common Technical
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
+<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: product-batch-analysis)
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: substance-process-validation)
 Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance 
 
 <Bundle>
-    <id value=&quot;product-batch-analysis&quot;/>
+    <id value=&quot;substance-process-validation&quot;/>
     <meta>
         <profile value=&quot;http://accumulus.org/fhir/dx-cmc/process-validation-substance&quot;/>
     </meta>
@@ -25,6 +26,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-substance&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;DP PROCESS VALIDATION&quot;/>
                 <type>
                     <coding>
@@ -44,14 +46,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 </subjectReference>
                 <description value=&quot;Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...&quot;/>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -81,7 +83,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
@@ -97,7 +99,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
@@ -113,7 +115,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -185,7 +187,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </action>
                 </action>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -205,7 +207,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
@@ -221,7 +223,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
@@ -237,7 +239,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
@@ -337,6 +339,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;AppearanceSubstance&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72&quot;/>
                 <title value=&quot;Appearance&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -351,7 +354,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <text value=&quot;Visual inspection&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -363,6 +366,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;IdentificationSubstance&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d&quot;/>
                 <title value=&quot;ID by HPLC&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -377,7 +381,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <text value=&quot;ID by UHPLC&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -389,6 +393,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;AssaySubstance&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e&quot;/>
                 <title value=&quot;Assay by HPLC (as is) (w/w%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -426,6 +431,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Step1Yield&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72&quot;/>
                 <title value=&quot;Yield (%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -444,6 +450,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Step2Yield&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72&quot;/>
                 <title value=&quot;Yield (%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -462,6 +469,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ResidualWaterContent&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72&quot;/>
                 <title value=&quot;Residual Water Content (w/w%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -500,6 +508,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ResidualStartingMaterial1byHPLC&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72&quot;/>
                 <title value=&quot;Reaction conversion: residual starting material 1 by HPLC (Step Aa) (LC area %)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -533,39 +542,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             </ObservationDefinition>
         </resource>
     </entry>
-    <!-- Section 4.1 - Manufacturer -->
-    <entry>
-        <fullUrl value=&quot;urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a&quot;/>
-        <resource>
-            <Organization>
-                <id value=&quot;manufacturer&quot;/>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>
-                </identifier>
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
-                <contact>
-                    <address>
-                        <line value=&quot;681 Main Street&quot;/>
-                        <city value=&quot;Lumberton&quot;/>
-                        <state value=&quot;New Jersey&quot;/>
-                        <postalCode value=&quot;08048&quot;/>
-                        <country value=&quot;USA&quot;/>
-                    </address>
-                </contact>
-            </Organization>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value=&quot;urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07&quot;/>
-        <resource>
-            <Organization>
-                <id value=&quot;packaging&quot;/>
-                <name value=&quot;MySite&quot;/>
-            </Organization>
-        </resource>
-    </entry>
     <entry>
         <fullUrl value=&quot;urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33&quot;/>
         <resource>
@@ -586,6 +562,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Off-white solid&quot;/>
             </Observation>
         </resource>
@@ -610,6 +590,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Off-white solid&quot;/>
             </Observation>
         </resource>
@@ -634,6 +618,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Off-white solid&quot;/>
             </Observation>
         </resource>
@@ -658,6 +646,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Conforms&quot;/>
             </Observation>
         </resource>
@@ -682,6 +674,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Conforms&quot;/>
             </Observation>
         </resource>
@@ -706,6 +702,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Does not conform&quot;/>
             </Observation>
         </resource>
@@ -730,6 +730,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;75&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -757,6 +761,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;77&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -784,6 +792,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;76&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -811,6 +823,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;85&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -838,6 +854,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;87&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -865,6 +885,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;86&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -892,6 +916,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;6.9&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -919,6 +947,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;7.0&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -946,6 +978,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;6.8&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -978,12 +1014,22 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         </resource>
     </entry>
     <entry>
+        <fullUrl value=&quot;urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value=&quot;urn:uuid:57a9af63-315d-1585-a261-0e337b289390&quot;/>
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;substancedefinition-component-substance-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
                 </meta>
                 <manufacturer>
                     <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
@@ -1015,7 +1061,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1049,7 +1095,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1083,7 +1129,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1142,7 +1188,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1178,7 +1224,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1214,7 +1260,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1264,7 +1310,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1298,7 +1344,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1332,7 +1378,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1380,7 +1426,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1416,7 +1462,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1452,7 +1498,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1500,7 +1546,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -1521,45 +1567,43 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             </Organization>
         </resource>
     </entry>
-    <entry>
-        <fullUrl value=&quot;urn:uuid:59d2f0c0-4b28-9271-8aaf-2996a8b9739c&quot;/>
-        <resource>
-            <Organization>
-                <!--id value=&quot;substance-manufacturer&quot;/-->
-                <id value=&quot;testerSiteA&quot;/>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;2003040516&quot;/>
-                </identifier>
-                <name value=&quot;Site A&quot;/>
-                <contact>
-                    <address>
-                        <line value=&quot;Site A&quot;/>
-                        <city value=&quot;Site City&quot;/>
-                        <state value=&quot;Colorado&quot;/>
-                        <postalCode value=&quot;90020&quot;/>
-                        <country value=&quot;USA&quot;/>
-                    </address>
-                </contact>
-            </Organization>
-        </resource>
-    </entry>
+    <!--entry>
+		<fullUrl value=&quot;urn:uuid:59d2f0c0-4b28-9271-8aaf-2996a8b9739c&quot;/>
+		<resource>
+			<Organization>
+				<id value=&quot;testerSiteA&quot;/>
+				<identifier>
+					<system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/> 
+					<value value=&quot;2003040516&quot;/>
+				</identifier>
+				<name value=&quot;Site A&quot;/>
+				<contact>
+					<address>
+						<line value=&quot;Site A&quot;/>
+						<city value=&quot;Site City&quot;/>
+						<state value=&quot;Colorado&quot;/>
+						<postalCode value=&quot;90020&quot;/>
+						<country value=&quot;USA&quot;/>
+					</address>
+				</contact>
+			</Organization>        
+		</resource>
+	</entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b&quot;/>
         <resource>
             <Substance>
                 <!--<id value=&quot;actual-batch-substance&quot;/>-->
-                <id value=&quot;substance-dxpq-ex1&quot;/>
+                <id value=&quot;substance-dxpq-ex1-unlinked&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -1575,7 +1619,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -1604,7 +1648,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <identifier>
                     <value value=&quot;SUB1SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>
                 </identifier>
                 <instance value=&quot;true&quot;/>
@@ -1620,13 +1664,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <fullUrl value=&quot;urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad&quot;/>
         <resource>
             <Substance>
-                <id value=&quot;actual-batch-substance-2&quot;/>
+                <id value=&quot;actual-batch-substance-2-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -1642,7 +1686,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -1671,7 +1715,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <identifier>
                     <value value=&quot;SUB2SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>
                 </identifier>
                 <instance value=&quot;true&quot;/>
@@ -1687,13 +1731,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <fullUrl value=&quot;urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c&quot;/>
         <resource>
             <Substance>
-                <id value=&quot;actual-batch-substance-3&quot;/>
+                <id value=&quot;actual-batch-substance-3-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -1709,7 +1753,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -1739,7 +1783,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <identifier>
                     <value value=&quot;SUB3SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>
                 </identifier>
                 <instance value=&quot;true&quot;/>
@@ -1750,14 +1794,19 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 </code>
             </Substance>
         </resource>
-    </entry>" id="Bundle-product-batch-analysis">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: product-batch-analysis</div>
+    </entry>" id="Bundle-substance-process-validation">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-process-validation</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/process-validation-substance&quot;>">Profile: </span><span>http://accumulus.org/fhir/dx-cmc/process-validation-substance</span></div>
 <div><span title="
 <Bundle>
     ...
     <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
 </div>
 </div>
+<div>
 <div class="org indent"><span class="bold">Process Validation Report, on Stelbatolol</span><br><br style="line-height:6px;"><div class="htmlTableRemove">
 <div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span><b>Table 1. Batches Used in Stelbatolol Drug Substance Process Validation</b></span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
 <tr>
@@ -1778,7 +1827,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;>">2019-09-07</span></td>
-<td class="centred"><a href="#Substance-substance-dxpq-ex1" title="
+<td class="centred"><a href="#Substance-substance-dxpq-ex1-unlinked" title="
 <Bundle>
     <entry>
         <resource>
@@ -1797,7 +1846,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;>">2019-09-07</span></td>
-<td class="centred"><a href="#Substance-actual-batch-substance-2" title="
+<td class="centred"><a href="#Substance-actual-batch-substance-2-unlinked" title="
 <Bundle>
     <entry>
         <resource>
@@ -1816,7 +1865,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;>">2019-09-07</span></td>
-<td class="centred"><a href="#Substance-actual-batch-substance-3" title="
+<td class="centred"><a href="#Substance-actual-batch-substance-3-unlinked" title="
 <Bundle>
     <entry>
         <resource>
@@ -1958,7 +2007,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy&quot;>
                     <valueReference>
                         <reference value=&quot;PlanDefinition/validationProtocol&quot;/>
-                    </valueReference>">Triggered By</span>: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span></span><div class="summaryHiddenOff"></div>
+                    </valueReference>">Triggered By</span>: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span></span><div class="summaryHiddenOff"></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2067,8 +2116,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 <th colspan="3">Intermediate Batch Number</th>
 </tr>
 <tr>
-<th rowspan="1">Performance Indicator</th>
-<th><a href="#Substance-actual-batch-substance-itermediate-1" title="
+<th rowspan="1">Performance Indicator</th><th><a href="#Substance-actual-batch-substance-itermediate-1" title="
 <Bundle>
     <entry>
         <resource>
@@ -2140,8 +2188,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 <th colspan="3">Intermediate Batch Number</th>
 </tr>
 <tr>
-<th rowspan="1">Performance Indicator</th>
-<th colspan="0">Acceptance Criteria</th>
+<th rowspan="1">Performance Indicator</th><th colspan="0">Acceptance Criteria</th>
 <th rowspan="1">Classification</th><th><a href="#Substance-actual-batch-substance-itermediate-1" title="
 <Bundle>
     <entry>
@@ -2256,8 +2303,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 <th colspan="3">DS Batch Number</th>
 </tr>
 <tr>
-<th rowspan="1">Performance Indicator</th>
-<th colspan="0">Acceptance Criteria</th>
+<th rowspan="1">Performance Indicator</th><th colspan="0">Acceptance Criteria</th>
 <th><a href="#Substance-actual-batch-substance-itermediate-1" title="
 <Bundle>
     <entry>
@@ -2294,7 +2340,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;>">White to off-white, to red, to orange, to brown solid</span></td>
 <td class="centred"><a href="#Observation-appearanceSubstance1" class="noUnderline">Off-white solid</a></td>
 <td class="centred"><a href="#Observation-appearanceSubstance2" class="noUnderline">Off-white solid</a></td>
@@ -2314,7 +2360,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;>">Conforms to standard</span></td>
 <td class="centred"><a href="#Observation-identificationSubstance1" class="noUnderline">Conforms</a></td>
 <td class="centred"><a href="#Observation-identificationSubstance2" class="noUnderline">Conforms</a></td>
@@ -2453,8 +2499,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 <th colspan="3">Intermediate 2 Batch Number</th>
 </tr>
 <tr>
-<th rowspan="1">Performance Indicator</th>
-<th><a href="#Substance-actual-batch-substance-itermediate-step2-1" title="
+<th rowspan="1">Performance Indicator</th><th><a href="#Substance-actual-batch-substance-itermediate-step2-1" title="
 <Bundle>
     <entry>
         <resource>
@@ -2641,6 +2686,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Off-white solid&quot;/>" id="Observation-appearanceSubstance1">Observation<span class="summaryShowsOff"> - <span title="
 <Bundle>
     <entry>
@@ -2650,7 +2699,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2717,7 +2772,32 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
-                <valueString value=&quot;Off-white solid&quot;/>">Instantiates</span>: Appearance - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-AppearanceSubstance" title="click to see target - id=AppearanceSubstance">ObservationDefinition</a>)<span class="debugOff"> id: AppearanceSubstance</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: appearanceSubstance2)(fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
+                <valueString value=&quot;Off-white solid&quot;/>">Instantiates</span>: Appearance - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-AppearanceSubstance" title="click to see target - id=AppearanceSubstance">ObservationDefinition</a>)<span class="debugOff"> id: AppearanceSubstance</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: appearanceSubstance2)(fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -2739,6 +2819,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Off-white solid&quot;/>" id="Observation-appearanceSubstance2">Observation<span class="summaryShowsOff"> - <span title="
 <Bundle>
     <entry>
@@ -2748,7 +2832,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2815,7 +2905,32 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
-                <valueString value=&quot;Off-white solid&quot;/>">Instantiates</span>: Appearance - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-AppearanceSubstance" title="click to see target - id=AppearanceSubstance">ObservationDefinition</a>)<span class="debugOff"> id: AppearanceSubstance</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: appearanceSubstance3)(fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
+                <valueString value=&quot;Off-white solid&quot;/>">Instantiates</span>: Appearance - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-AppearanceSubstance" title="click to see target - id=AppearanceSubstance">ObservationDefinition</a>)<span class="debugOff"> id: AppearanceSubstance</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: appearanceSubstance3)(fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)
 
 <Bundle>
     <entry>
@@ -2837,6 +2952,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Off-white solid&quot;/>" id="Observation-appearanceSubstance3">Observation<span class="summaryShowsOff"> - <span title="
 <Bundle>
     <entry>
@@ -2846,7 +2965,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2913,7 +3038,32 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
-                <valueString value=&quot;Off-white solid&quot;/>">Instantiates</span>: Appearance - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-AppearanceSubstance" title="click to see target - id=AppearanceSubstance">ObservationDefinition</a>)<span class="debugOff"> id: AppearanceSubstance</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: identificationSubstance1)(fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
+                <valueString value=&quot;Off-white solid&quot;/>">Instantiates</span>: Appearance - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-AppearanceSubstance" title="click to see target - id=AppearanceSubstance">ObservationDefinition</a>)<span class="debugOff"> id: AppearanceSubstance</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: identificationSubstance1)(fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -2935,6 +3085,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Conforms&quot;/>" id="Observation-identificationSubstance1">Observation<span class="summaryShowsOff"> - <span title="
 <Bundle>
     <entry>
@@ -2944,7 +3098,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance1</div><div class="debugOff"> fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance1</div><div class="debugOff"> fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3011,7 +3171,32 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
-                <valueString value=&quot;Conforms&quot;/>">Instantiates</span>: ID by HPLC - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-IdentificationSubstance" title="click to see target - id=IdentificationSubstance">ObservationDefinition</a>)<span class="debugOff"> id: IdentificationSubstance</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: identificationSubstance2)(fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
+                <valueString value=&quot;Conforms&quot;/>">Instantiates</span>: ID by HPLC - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-IdentificationSubstance" title="click to see target - id=IdentificationSubstance">ObservationDefinition</a>)<span class="debugOff"> id: IdentificationSubstance</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: identificationSubstance2)(fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3033,6 +3218,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Conforms&quot;/>" id="Observation-identificationSubstance2">Observation<span class="summaryShowsOff"> - <span title="
 <Bundle>
     <entry>
@@ -3042,7 +3231,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance2</div><div class="debugOff"> fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance2</div><div class="debugOff"> fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3109,7 +3304,32 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
-                <valueString value=&quot;Conforms&quot;/>">Instantiates</span>: ID by HPLC - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-IdentificationSubstance" title="click to see target - id=IdentificationSubstance">ObservationDefinition</a>)<span class="debugOff"> id: IdentificationSubstance</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: identificationSubstance3)(fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
+                <valueString value=&quot;Conforms&quot;/>">Instantiates</span>: ID by HPLC - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-IdentificationSubstance" title="click to see target - id=IdentificationSubstance">ObservationDefinition</a>)<span class="debugOff"> id: IdentificationSubstance</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: identificationSubstance3)(fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)
 
 <Bundle>
     <entry>
@@ -3131,6 +3351,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueString value=&quot;Does not conform&quot;/>" id="Observation-identificationSubstance3">Observation<span class="summaryShowsOff"> - <span title="
 <Bundle>
     <entry>
@@ -3140,7 +3364,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance3</div><div class="debugOff"> fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance3</div><div class="debugOff"> fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3207,7 +3437,32 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
-                <valueString value=&quot;Does not conform&quot;/>">Instantiates</span>: ID by HPLC - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-IdentificationSubstance" title="click to see target - id=IdentificationSubstance">ObservationDefinition</a>)<span class="debugOff"> id: IdentificationSubstance</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step1Yield1)(fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
+                <valueString value=&quot;Does not conform&quot;/>">Instantiates</span>: ID by HPLC - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-IdentificationSubstance" title="click to see target - id=IdentificationSubstance">ObservationDefinition</a>)<span class="debugOff"> id: IdentificationSubstance</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step1Yield1)(fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3229,6 +3484,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;75&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -3241,7 +3500,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3314,10 +3579,35 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;75&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step1Yield" title="click to see target - id=Step1Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step1Yield</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step1Yield2)(fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)
+                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step1Yield" title="click to see target - id=Step1Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step1Yield</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step1Yield2)(fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3339,6 +3629,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;77&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -3351,7 +3645,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3424,10 +3724,35 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;77&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step1Yield" title="click to see target - id=Step1Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step1Yield</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step1Yield3)(fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)
+                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step1Yield" title="click to see target - id=Step1Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step1Yield</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step1Yield3)(fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3449,6 +3774,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;76&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -3461,7 +3790,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3534,10 +3869,35 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;76&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step1Yield" title="click to see target - id=Step1Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step1Yield</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step2Yield1)(fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)
+                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step1Yield" title="click to see target - id=Step1Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step1Yield</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step2Yield1)(fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3559,6 +3919,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;85&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -3571,7 +3935,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3644,10 +4014,35 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;85&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step2Yield" title="click to see target - id=Step2Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step2Yield</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step2Yield2)(fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)
+                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step2Yield" title="click to see target - id=Step2Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step2Yield</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step2Yield2)(fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3669,6 +4064,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;87&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -3681,7 +4080,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3754,10 +4159,35 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;87&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step2Yield" title="click to see target - id=Step2Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step2Yield</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step2Yield3)(fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)
+                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step2Yield" title="click to see target - id=Step2Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step2Yield</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: step2Yield3)(fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3779,6 +4209,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;86&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -3791,7 +4225,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3864,10 +4304,35 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-step2-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;86&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step2Yield" title="click to see target - id=Step2Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step2Yield</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: residualWaterContent1)(fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)
+                </valueQuantity>">Instantiates</span>: Yield (%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-Step2Yield" title="click to see target - id=Step2Yield">ObservationDefinition</a>)<span class="debugOff"> id: Step2Yield</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: residualWaterContent1)(fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3889,6 +4354,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;6.9&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -3901,7 +4370,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent1</div><div class="debugOff"> fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent1</div><div class="debugOff"> fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3974,10 +4449,35 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-1&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;6.9&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Residual Water Content (w/w%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-ResidualWaterContent" title="click to see target - id=ResidualWaterContent">ObservationDefinition</a>)<span class="debugOff"> id: ResidualWaterContent</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: residualWaterContent2)(fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)
+                </valueQuantity>">Instantiates</span>: Residual Water Content (w/w%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-ResidualWaterContent" title="click to see target - id=ResidualWaterContent">ObservationDefinition</a>)<span class="debugOff"> id: ResidualWaterContent</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: residualWaterContent2)(fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3999,6 +4499,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;7.0&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -4011,7 +4515,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent2</div><div class="debugOff"> fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent2</div><div class="debugOff"> fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4084,10 +4594,35 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-2&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;7.0&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Residual Water Content (w/w%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-ResidualWaterContent" title="click to see target - id=ResidualWaterContent">ObservationDefinition</a>)<span class="debugOff"> id: ResidualWaterContent</span></span><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: residualWaterContent3)(fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)
+                </valueQuantity>">Instantiates</span>: Residual Water Content (w/w%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-ResidualWaterContent" title="click to see target - id=ResidualWaterContent">ObservationDefinition</a>)<span class="debugOff"> id: ResidualWaterContent</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: residualWaterContent3)(fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -4109,6 +4644,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;6.8&quot;/>
                     <unit value=&quot;%&quot;/>
@@ -4121,7 +4660,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent3</div><div class="debugOff"> fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent3</div><div class="debugOff"> fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4194,18 +4739,43 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <subject>
                     <reference value=&quot;Substance/actual-batch-substance-itermediate-3&quot;/>
                 </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
                 <valueQuantity>
                     <value value=&quot;6.8&quot;/>
                     <unit value=&quot;%&quot;/>
-                </valueQuantity>">Instantiates</span>: Residual Water Content (w/w%) - Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-ResidualWaterContent" title="click to see target - id=ResidualWaterContent">ObservationDefinition</a>)<span class="debugOff"> id: ResidualWaterContent</span></span><div class="summaryHiddenOff"></div></div>
+                </valueQuantity>">Instantiates</span>: Residual Water Content (w/w%) - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-ResidualWaterContent" title="click to see target - id=ResidualWaterContent">ObservationDefinition</a>)<span class="debugOff"> id: ResidualWaterContent</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div>
 </div>
 </div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Substance/code, id: substance-dxpq-ex1 fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-2 fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-3 fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substancedefinition-component-substance-dxpq-ex1)(fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq 
+<div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/code, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substancedefinition-component-substance-dxpq-ex1)(fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq 
 
 <Bundle>
     <entry>
@@ -4213,7 +4783,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-co
             <SubstanceDefinition>
                 <id value=&quot;substancedefinition-component-substance-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
                 </meta>
                 <manufacturer>
                     <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
@@ -4224,6 +4794,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-co
                 </name>" id="SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substancedefinition-component-substance-dxpq-ex1</div>
 <div class="debugOff"> fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq</span></div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
 <div><span title="
@@ -4247,10 +4824,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-co
                 <manufacturer>
                     <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1 fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2 fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3 fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq 
+<div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/assigner, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq 
 
 <Bundle>
     <entry>
@@ -4259,7 +4839,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -4278,7 +4858,14 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </address>
                 </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div>
 <div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div>
-<div class="debugOff"></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -4375,25 +4962,25 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
 </div>
 </div>
 <div class="summaryHiddenOff">
-<div></div>Subject of Plan: Workflow Definition (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Substance (id: substance-dxpq-ex1)(fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+<div></div>Subject of Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span></div>
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Substance (id: substance-dxpq-ex1-unlinked)(fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <!--<id value=&quot;actual-batch-substance&quot;/>-->
-                <id value=&quot;substance-dxpq-ex1&quot;/>
+                <id value=&quot;substance-dxpq-ex1-unlinked&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -4409,7 +4996,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -4438,7 +5025,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                 <identifier>
                     <value value=&quot;SUB1SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>
                 </identifier>
                 <instance value=&quot;true&quot;/>
@@ -4446,7 +5033,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
                     </reference>
-                </code>" id="Substance-substance-dxpq-ex1">Substance</span></a><span class="summaryShowsOff"><b> - SUB1Amgen - SUB1SiteA</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-substance-dxpq-ex1-unlinked">Substance</span></a><span class="summaryShowsOff"><b> - SUB1Amgen - SUB1SiteA</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-dxpq-ex1-unlinked</div><div class="debugOff"> fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4475,7 +5068,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                 <identifier>
                     <value value=&quot;SUB1SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>">Identifier: </span><span title="
 <Bundle>
     <entry>
@@ -4485,7 +5078,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                 <identifier>
                     <value value=&quot;SUB1SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>">SUB1SiteA</span><div></div><span><span title="
 <Bundle>
     <entry>
@@ -4495,8 +5088,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                 <identifier>
                     <value value=&quot;SUB1SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
-                    </assigner>">Identifier Assigner</span><div></div> Site A,  Identifier: <span title="
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
+                    </assigner>">Identifier Assigner</span><div></div> AAA Molybdenum Products, Inc.,  Identifier: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -4505,25 +5098,27 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;2003040516&quot;/>">2003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span> (<a href="#Organization-testerSiteA" title="click to see target - id=testerSiteA">Organization</a>)<span class="debugOff"> id: testerSiteA</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span> (<a href="#Organization-organization-dxpq-ex1" title="click to see target - id=organization-dxpq-ex1">Organization</a>)<span class="debugOff"> id: organization-dxpq-ex1</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>">Definition: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
+                    </reference>">Definition: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -4539,7 +5134,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -4580,28 +5175,28 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
@@ -4628,7 +5223,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
@@ -4637,7 +5232,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
@@ -4655,7 +5250,18 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
-                        </valueCodeableConcept>">Utilization: </span><span title="Comment: This has a value set defined in PQ/CMC but no code system" class="instanceComment">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                        </valueCodeableConcept>">Utilization: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;batchUtilization&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <code value=&quot;C133991&quot;/>
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4666,8 +5272,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <!-- #160 -->
                         <valueReference>
                             <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
-                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1 fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2 fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3 fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq 
+                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq 
 
 <Bundle>
     <entry>
@@ -4676,7 +5282,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -4693,7 +5299,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                         <postalCode value=&quot;80020&quot;/>
                         <country value=&quot;USA&quot;/>
                     </address>
-                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div><div class="debugOff"></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4778,19 +5390,19 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <contact>
                     <address>
                         ...
-                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-2)(fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-2-unlinked)(fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)
 
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <id value=&quot;actual-batch-substance-2&quot;/>
+                <id value=&quot;actual-batch-substance-2-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -4806,7 +5418,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -4835,7 +5447,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <value value=&quot;SUB2SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>
                 </identifier>
                 <instance value=&quot;true&quot;/>
@@ -4843,7 +5455,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-2">Substance</span></a><span class="summaryShowsOff"><b> - SUB2Amgen - SUB2SiteA</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-2</div><div class="debugOff"> fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad</div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-2-unlinked">Substance</span></a><span class="summaryShowsOff"><b> - SUB2Amgen - SUB2SiteA</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-2-unlinked</div><div class="debugOff"> fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad</div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4872,7 +5484,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <value value=&quot;SUB2SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>">Identifier: </span><span title="
 <Bundle>
     <entry>
@@ -4882,7 +5494,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <value value=&quot;SUB2SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>">SUB2SiteA</span><div></div><span><span title="
 <Bundle>
     <entry>
@@ -4892,8 +5504,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <value value=&quot;SUB2SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
-                    </assigner>">Identifier Assigner</span><div></div> Site A,  Identifier: <span title="
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
+                    </assigner>">Identifier Assigner</span><div></div> AAA Molybdenum Products, Inc.,  Identifier: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -4902,25 +5514,27 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;2003040516&quot;/>">2003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span> (<a href="#Organization-testerSiteA" title="click to see target - id=testerSiteA">Organization</a>)<span class="debugOff"> id: testerSiteA</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span> (<a href="#Organization-organization-dxpq-ex1" title="click to see target - id=organization-dxpq-ex1">Organization</a>)<span class="debugOff"> id: organization-dxpq-ex1</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>">Definition: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
+                    </reference>">Definition: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -4936,7 +5550,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -4977,28 +5591,28 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
@@ -5025,7 +5639,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
@@ -5034,7 +5648,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
@@ -5052,7 +5666,18 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
-                        </valueCodeableConcept>">Utilization: </span><span title="Comment: This has a value set defined in PQ/CMC but no code system" class="instanceComment">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                        </valueCodeableConcept>">Utilization: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;batchUtilization&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <code value=&quot;C133991&quot;/>
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5063,8 +5688,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                         <!-- #160 -->
                         <valueReference>
                             <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
-                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1 fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2 fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3 fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq 
+                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq 
 
 <Bundle>
     <entry>
@@ -5073,7 +5698,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -5090,7 +5715,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                         <postalCode value=&quot;80020&quot;/>
                         <country value=&quot;USA&quot;/>
                     </address>
-                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div><div class="debugOff"></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5175,19 +5806,19 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <contact>
                     <address>
                         ...
-                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-3)(fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-3-unlinked)(fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)
 
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <id value=&quot;actual-batch-substance-3&quot;/>
+                <id value=&quot;actual-batch-substance-3-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -5203,7 +5834,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -5233,7 +5864,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <value value=&quot;SUB3SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>
                 </identifier>
                 <instance value=&quot;true&quot;/>
@@ -5241,7 +5872,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-3">Substance</span></a><span class="summaryShowsOff"><b> - SUB3Amgen - SUB3SiteA</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-3</div><div class="debugOff"> fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c</div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-3-unlinked">Substance</span></a><span class="summaryShowsOff"><b> - SUB3Amgen - SUB3SiteA</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-3-unlinked</div><div class="debugOff"> fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c</div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5272,7 +5903,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <value value=&quot;SUB3SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>">Identifier: </span><span title="
 <Bundle>
     <entry>
@@ -5282,7 +5913,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <value value=&quot;SUB3SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                     </assigner>">SUB3SiteA</span><div></div><span><span title="
 <Bundle>
     <entry>
@@ -5292,8 +5923,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <value value=&quot;SUB3SiteA&quot;/>
                     <assigner>
-                        <reference value=&quot;Organization/testerSiteA&quot;/>
-                    </assigner>">Identifier Assigner</span><div></div> Site A,  Identifier: <span title="
+                        <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
+                    </assigner>">Identifier Assigner</span><div></div> AAA Molybdenum Products, Inc.,  Identifier: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -5302,25 +5933,27 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;2003040516&quot;/>">2003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span> (<a href="#Organization-testerSiteA" title="click to see target - id=testerSiteA">Organization</a>)<span class="debugOff"> id: testerSiteA</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span> (<a href="#Organization-organization-dxpq-ex1" title="click to see target - id=organization-dxpq-ex1">Organization</a>)<span class="debugOff"> id: organization-dxpq-ex1</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>">Definition: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
+                    </reference>">Definition: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -5336,7 +5969,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -5377,28 +6010,28 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
@@ -5425,7 +6058,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
@@ -5434,7 +6067,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
@@ -5452,7 +6085,18 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
-                        </valueCodeableConcept>">Utilization: </span><span title="Comment: This has a value set defined in PQ/CMC but no code system" class="instanceComment">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                        </valueCodeableConcept>">Utilization: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;batchUtilization&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <code value=&quot;C133991&quot;/>
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5463,8 +6107,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                         <!-- #160 -->
                         <valueReference>
                             <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
-                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1 fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2 fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3 fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq 
+                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq 
 
 <Bundle>
     <entry>
@@ -5473,7 +6117,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -5490,7 +6134,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                         <postalCode value=&quot;80020&quot;/>
                         <country value=&quot;USA&quot;/>
                     </address>
-                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div><div class="debugOff"></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5591,6 +6241,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-substance&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;DP PROCESS VALIDATION&quot;/>
                 <type>
                     <coding>
@@ -5610,14 +6261,14 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 </subjectReference>
                 <description value=&quot;Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...&quot;/>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -5647,7 +6298,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
@@ -5663,7 +6314,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
@@ -5679,7 +6330,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -5751,7 +6402,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </action>
                 </action>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -5771,7 +6422,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
@@ -5787,7 +6438,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
@@ -5803,7 +6454,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
@@ -5825,6 +6476,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </action>
                 </action>" id="PlanDefinition-validationProtocol">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: validationProtocol</div>
 <div class="debugOff"> fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f</div>
 <div><span title="
 <Bundle>
     <entry>
@@ -5893,6 +6545,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-substance&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;DP PROCESS VALIDATION&quot;/>
                 <type>
                     <coding>
@@ -5912,14 +6565,14 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                 </subjectReference>
                 <description value=&quot;Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...&quot;/>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -5949,7 +6602,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
@@ -5965,7 +6618,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
@@ -5981,7 +6634,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -6053,7 +6706,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </action>
                 </action>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -6073,7 +6726,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
@@ -6089,7 +6742,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
@@ -6105,7 +6758,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
@@ -6125,21 +6778,21 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/Step2Yield&quot;/>
                     </action>
-                </action>">Subject: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span><div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+                </action>">Subject: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span><div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 ...
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -6169,7 +6822,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
@@ -6185,7 +6838,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
@@ -6201,7 +6854,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -6220,7 +6873,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                             <text value=&quot;Test&quot;/>
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/Step1Yield&quot;/>
-                    </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </action>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6299,7 +6952,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -6310,7 +6963,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -6322,7 +6975,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
             <PlanDefinition>
                 <action>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -6345,7 +6998,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -6359,7 +7012,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -6372,7 +7025,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;1500&quot;/>
@@ -6382,13 +7035,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;1500&quot;/>
                                 <unit value=&quot;rpm&quot;/>">1500 rpm</span></div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6397,7 +7050,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
@@ -6435,7 +7088,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
                                 <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [StartingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-starting-1 fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-starting-2 fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-starting-3 fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: startingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153)
@@ -6597,8 +7250,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-1 fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-1)(fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-1 fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-1)(fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -6606,7 +7259,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -6630,7 +7283,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-starting-1">Substance</span></a><span class="summaryShowsOff"><b> - Start1Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-1</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-starting-1">Substance</span></a><span class="summaryShowsOff"><b> - Start1Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-1</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6655,9 +7314,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>">Definition: </span>Stelbatosubstance (<a href="#SubstanceDefinition-startingMaterial" title="click to see target - id=startingMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
+                    </reference>">Definition: </span>Stelbatosubstance (<a href="#SubstanceDefinition-startingMaterial" title="click to see target - id=startingMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6710,7 +7371,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <value value=&quot;8.1&quot;/>
                             <unit value=&quot;kg&quot;/>
                             <!-- #158 -->">8.1 kg</span></div></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-2 fullUrl: urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-2)(fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -6718,7 +7379,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -6742,7 +7403,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-starting-2">Substance</span></a><span class="summaryShowsOff"><b> - Start2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-2</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-starting-2">Substance</span></a><span class="summaryShowsOff"><b> - Start2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-2</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6767,9 +7434,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>">Definition: </span>Stelbatosubstance (<a href="#SubstanceDefinition-startingMaterial" title="click to see target - id=startingMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
+                    </reference>">Definition: </span>Stelbatosubstance (<a href="#SubstanceDefinition-startingMaterial" title="click to see target - id=startingMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6822,7 +7491,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <value value=&quot;8.2&quot;/>
                             <unit value=&quot;kg&quot;/>
                             <!-- #158 -->">8.2 kg</span></div></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-3 fullUrl: urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-3)(fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -6830,7 +7499,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -6854,7 +7523,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-starting-3">Substance</span></a><span class="summaryShowsOff"><b> - Start3Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-3</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-starting-3">Substance</span></a><span class="summaryShowsOff"><b> - Start3Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-3</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6879,9 +7554,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>">Definition: </span>Stelbatosubstance (<a href="#SubstanceDefinition-startingMaterial" title="click to see target - id=startingMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
+                    </reference>">Definition: </span>Stelbatosubstance (<a href="#SubstanceDefinition-startingMaterial" title="click to see target - id=startingMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6938,7 +7615,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6947,7 +7624,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
@@ -6985,7 +7662,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>">Intermediate Material<span class="greyOff"> [IntermediateMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-itermediate-1 fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-itermediate-2 fullUrl: urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-itermediate-3 fullUrl: urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: intermediateMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155)
@@ -7147,8 +7824,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-1)(fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-1)(fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -7156,7 +7833,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -7182,7 +7859,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-itermediate-1">Substance</span></a><span class="summaryShowsOff"><b> - Intermed1Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-1</div><div class="debugOff"> fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-itermediate-1">Substance</span></a><span class="summaryShowsOff"><b> - Intermed1Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-1</div><div class="debugOff"> fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7207,9 +7890,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>">Definition: </span>Processohol (<a href="#SubstanceDefinition-intermediateMaterial" title="click to see target - id=intermediateMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
+                    </reference>">Definition: </span>Processohol (<a href="#SubstanceDefinition-intermediateMaterial" title="click to see target - id=intermediateMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7261,7 +7946,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-1&quot;/>
                         </valueReference>">Derived From</span>: Start1Amgen (<a href="#Substance-actual-batch-substance-starting-1" title="click to see target - id=actual-batch-substance-starting-1">Substance</a>)<span class="debugOff"> id: actual-batch-substance-starting-1</span></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-2)(fullUrl: urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -7269,7 +7954,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -7295,7 +7980,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-itermediate-2">Substance</span></a><span class="summaryShowsOff"><b> - Intermed2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-2</div><div class="debugOff"> fullUrl: urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-itermediate-2">Substance</span></a><span class="summaryShowsOff"><b> - Intermed2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-2</div><div class="debugOff"> fullUrl: urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7320,9 +8011,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>">Definition: </span>Processohol (<a href="#SubstanceDefinition-intermediateMaterial" title="click to see target - id=intermediateMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
+                    </reference>">Definition: </span>Processohol (<a href="#SubstanceDefinition-intermediateMaterial" title="click to see target - id=intermediateMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7374,7 +8067,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-2&quot;/>
                         </valueReference>">Derived From</span>: Start2Amgen (<a href="#Substance-actual-batch-substance-starting-2" title="click to see target - id=actual-batch-substance-starting-2">Substance</a>)<span class="debugOff"> id: actual-batch-substance-starting-2</span></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-3)(fullUrl: urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -7382,7 +8075,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -7408,7 +8101,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-itermediate-3">Substance</span></a><span class="summaryShowsOff"><b> - Intermed3Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-3</div><div class="debugOff"> fullUrl: urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-itermediate-3">Substance</span></a><span class="summaryShowsOff"><b> - Intermed3Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-3</div><div class="debugOff"> fullUrl: urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7433,9 +8132,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>">Definition: </span>Processohol (<a href="#SubstanceDefinition-intermediateMaterial" title="click to see target - id=intermediateMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
+                    </reference>">Definition: </span>Processohol (<a href="#SubstanceDefinition-intermediateMaterial" title="click to see target - id=intermediateMaterial">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterial</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7491,7 +8192,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7500,7 +8201,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -7538,7 +8239,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
 
 <Bundle>
     <entry>
@@ -7568,7 +8269,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7579,7 +8280,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Step1Yield&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Step1Yield&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -7590,7 +8291,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Step1Yield)(fullUrl: urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e72)
@@ -7600,6 +8301,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Step1Yield&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72&quot;/>
                 <title value=&quot;Yield (%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -7620,6 +8322,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Step1Yield</div>
 <div class="debugOff"> fullUrl: urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e72</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -7670,7 +8373,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7696,7 +8399,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <text value=&quot;Test&quot;/>
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/ResidualStartingMaterial1byHPLC&quot;/>
-                    </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </action>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7744,7 +8447,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <code value=&quot;Step1In-ProcessControlData&quot;/>
                             <display value=&quot;Step 1 In-Process Control Data&quot;/>">Step 1 In-Process Control Data<span class="greyOff"> [Step1In-ProcessControlData]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7755,7 +8458,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/ResidualWaterContent&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/ResidualWaterContent&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -7766,7 +8469,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ResidualWaterContent)(fullUrl: urn:uuid:fc27b5d6-9fe1-91c2-2d16-57cb5b295e72)
@@ -7776,6 +8479,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ResidualWaterContent&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72&quot;/>
                 <title value=&quot;Residual Water Content (w/w%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -7816,6 +8520,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Residual Water Content (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ResidualWaterContent</div>
 <div class="debugOff"> fullUrl: urn:uuid:fc27b5d6-9fe1-91c2-2d16-57cb5b295e72</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -7886,8 +8591,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <code value=&quot;%&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -7912,7 +8617,20 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <code value=&quot;%&quot;/>
                         </high>
                     </range>">
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;7.15&quot;/>
+                            <unit value=&quot;%&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -7923,7 +8641,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <value value=&quot;7.15&quot;/>
                             <unit value=&quot;%&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%&quot;/>">7.15%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span><div><span title="
+                            <code value=&quot;%&quot;/>">7.15%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div>
+<div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7955,7 +8674,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7966,7 +8685,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/ResidualStartingMaterial1byHPLC&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/ResidualStartingMaterial1byHPLC&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -7977,13 +8696,14 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ResidualStartingMaterial1byHPLC)(fullUrl: urn:uuid:fc27b5d6-9ff1-91c2-2d16-57cb5b295e72)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ResidualStartingMaterial1byHPLC)(fullUrl: urn:uuid:fc27b5d6-9ff1-91c2-2d16-57cb5b295e72)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ResidualStartingMaterial1byHPLC&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72&quot;/>
                 <title value=&quot;Reaction conversion: residual starting material 1 by HPLC (Step Aa) (LC area %)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -8024,6 +8744,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>">Reaction conversion: Residual Starting Material 1 by HPLC<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Reaction conversion: Residual Starting Material 1 by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ResidualStartingMaterial1byHPLC</div>
 <div class="debugOff"> fullUrl: urn:uuid:fc27b5d6-9ff1-91c2-2d16-57cb5b295e72</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -8094,8 +8815,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <code value=&quot;%&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -8120,7 +8841,20 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <code value=&quot;%&quot;/>
                         </high>
                     </range>">
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;23&quot;/>
+                            <unit value=&quot;%&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -8131,7 +8865,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <value value=&quot;23&quot;/>
                             <unit value=&quot;%&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%&quot;/>">23%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span><div><span title="
+                            <code value=&quot;%&quot;/>">23%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div>
+<div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8164,7 +8899,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8196,7 +8931,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <text value=&quot;Test&quot;/>
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/AssaySubstance&quot;/>
-                    </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </action>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8244,7 +8979,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <code value=&quot;Step1DSReleaseTestingResults&quot;/>
                             <display value=&quot;Step 1 DS Release Testing Results&quot;/>">Step 1 DS Release Testing Results<span class="greyOff"> [Step1DSReleaseTestingResults]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8255,7 +8990,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/AppearanceSubstance&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/AppearanceSubstance&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -8266,7 +9001,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: AppearanceSubstance)(fullUrl: urn:uuid:fc07b5d5-9fe1-92c2-2d06-57cb5b295e72)
@@ -8276,6 +9011,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <id value=&quot;AppearanceSubstance&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72&quot;/>
                 <title value=&quot;Appearance&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -8290,7 +9026,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <text value=&quot;Visual inspection&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-AppearanceSubstance">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -8304,6 +9040,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AppearanceSubstance</div>
 <div class="debugOff"> fullUrl: urn:uuid:fc07b5d5-9fe1-92c2-2d06-57cb5b295e72</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -8364,18 +9101,18 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>
                     </extension>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>
                     </extension>">
 <div><span title="
@@ -8384,7 +9121,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>">Text: </span><span>White to off-white, to red, to orange, to brown solid</span></div>
 </div>
 </div>
@@ -8392,7 +9129,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8403,7 +9140,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/IdentificationSubstance&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/IdentificationSubstance&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -8414,7 +9151,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: IdentificationSubstance)(fullUrl: urn:uuid:3b1e878e-4bc9-8864-862f-e28b21233e8d)
@@ -8424,6 +9161,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <id value=&quot;IdentificationSubstance&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d&quot;/>
                 <title value=&quot;ID by HPLC&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -8438,7 +9176,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <text value=&quot;ID by UHPLC&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-IdentificationSubstance">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -8452,6 +9190,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: IdentificationSubstance</div>
 <div class="debugOff"> fullUrl: urn:uuid:3b1e878e-4bc9-8864-862f-e28b21233e8d</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -8512,18 +9251,18 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>
                     </extension>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>
                     </extension>">
 <div><span title="
@@ -8532,7 +9271,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>">Text: </span><span>Conforms to standard</span></div>
 </div>
 </div>
@@ -8540,7 +9279,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8551,7 +9290,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/AssaySubstance&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/AssaySubstance&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -8562,13 +9301,14 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: AssaySubstance)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: AssaySubstance)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;AssaySubstance&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e&quot;/>
                 <title value=&quot;Assay by HPLC (as is) (w/w%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -8608,6 +9348,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay by HPLC (as is) (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AssaySubstance</div>
 <div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -8682,8 +9423,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <code value=&quot;%&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -8704,7 +9445,25 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <code value=&quot;%&quot;/>
                         </high>
                     </range>">
-						Range: from <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <low>
+                            <value value=&quot;95&quot;/>
+                            <unit value=&quot;%&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%&quot;/>
+                        </low>
+                        <high>
+                            <value value=&quot;101&quot;/>
+                            <unit value=&quot;%&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%&quot;/>
+                        </high>">Range: </span>from <span title="
 <Bundle>
     <entry>
         <resource>
@@ -8729,19 +9488,20 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
                             <code value=&quot;%&quot;/>">101%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div>
 </div>
+</div>
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 ...
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -8761,7 +9521,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
@@ -8777,7 +9537,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
@@ -8793,7 +9553,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
@@ -8812,7 +9572,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <text value=&quot;Test&quot;/>
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/Step2Yield&quot;/>
-                    </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </action>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8891,7 +9651,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -8902,12 +9662,12 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStepScale)</span></span></div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8916,7 +9676,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
@@ -8954,7 +9714,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                                 <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [StartingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-starting-step2-1 fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-starting-step2-2 fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e596b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-starting-step2-3 fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e597b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: startingMaterialStep2)(fullUrl: urn:uuid:c458791f-8cb8-428e-83f7-8a205f821153)
@@ -9116,8 +9876,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-step2-1 fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-step2-1)(fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-step2-1 fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-step2-1)(fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -9125,7 +9885,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -9149,7 +9909,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-starting-step2-1">Substance</span></a><span class="summaryShowsOff"><b> - Start1Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-step2-1</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-starting-step2-1">Substance</span></a><span class="summaryShowsOff"><b> - Start1Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-step2-1</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9174,9 +9940,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>">Definition: </span>Stelbatosubstance2 (<a href="#SubstanceDefinition-startingMaterialStep2" title="click to see target - id=startingMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
+                    </reference>">Definition: </span>Stelbatosubstance2 (<a href="#SubstanceDefinition-startingMaterialStep2" title="click to see target - id=startingMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9229,7 +9997,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <value value=&quot;7.1&quot;/>
                             <unit value=&quot;kg&quot;/>
                             <!-- #158 -->">7.1 kg</span></div></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-step2-2 fullUrl: urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-step2-2)(fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e596b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -9237,7 +10005,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -9261,7 +10029,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-starting-step2-2">Substance</span></a><span class="summaryShowsOff"><b> - Start2Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-step2-2</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e596b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-starting-step2-2">Substance</span></a><span class="summaryShowsOff"><b> - Start2Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-step2-2</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e596b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9286,9 +10060,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>">Definition: </span>Stelbatosubstance2 (<a href="#SubstanceDefinition-startingMaterialStep2" title="click to see target - id=startingMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
+                    </reference>">Definition: </span>Stelbatosubstance2 (<a href="#SubstanceDefinition-startingMaterialStep2" title="click to see target - id=startingMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9341,7 +10117,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                             <value value=&quot;7.2&quot;/>
                             <unit value=&quot;kg&quot;/>
                             <!-- #158 -->">7.2 kg</span></div></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-step2-3 fullUrl: urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-step2-3)(fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e597b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -9349,7 +10125,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -9373,7 +10149,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-starting-step2-3">Substance</span></a><span class="summaryShowsOff"><b> - Start3Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-step2-3</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e597b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-starting-step2-3">Substance</span></a><span class="summaryShowsOff"><b> - Start3Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-starting-step2-3</div><div class="debugOff"> fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e597b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9398,9 +10180,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>">Definition: </span>Stelbatosubstance2 (<a href="#SubstanceDefinition-startingMaterialStep2" title="click to see target - id=startingMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
+                    </reference>">Definition: </span>Stelbatosubstance2 (<a href="#SubstanceDefinition-startingMaterialStep2" title="click to see target - id=startingMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: startingMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9457,7 +10241,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9466,7 +10250,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
@@ -9504,7 +10288,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>">Intermediate Material<span class="greyOff"> [IntermediateMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-itermediate-step2-1 fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-itermediate-step2-2 fullUrl: urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-itermediate-step2-3 fullUrl: urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: intermediateMaterialStep2)(fullUrl: urn:uuid:c458791f-7cb8-428e-84f7-8a205f821155)
@@ -9666,8 +10450,8 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-step2-1)(fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-step2-1)(fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -9675,7 +10459,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -9701,7 +10485,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-itermediate-step2-1">Substance</span></a><span class="summaryShowsOff"><b> - Intermed1Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-step2-1</div><div class="debugOff"> fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-itermediate-step2-1">Substance</span></a><span class="summaryShowsOff"><b> - Intermed1Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-step2-1</div><div class="debugOff"> fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9726,9 +10516,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>">Definition: </span>ProcessoholStep2 (<a href="#SubstanceDefinition-intermediateMaterialStep2" title="click to see target - id=intermediateMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
+                    </reference>">Definition: </span>ProcessoholStep2 (<a href="#SubstanceDefinition-intermediateMaterialStep2" title="click to see target - id=intermediateMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9780,7 +10572,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-1&quot;/>
                         </valueReference>">Derived From</span>: Start1Step2Amgen (<a href="#Substance-actual-batch-substance-starting-step2-1" title="click to see target - id=actual-batch-substance-starting-step2-1">Substance</a>)<span class="debugOff"> id: actual-batch-substance-starting-step2-1</span></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-step2-2)(fullUrl: urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -9788,7 +10580,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -9814,7 +10606,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-itermediate-step2-2">Substance</span></a><span class="summaryShowsOff"><b> - Intermed2Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-step2-2</div><div class="debugOff"> fullUrl: urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-itermediate-step2-2">Substance</span></a><span class="summaryShowsOff"><b> - Intermed2Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-step2-2</div><div class="debugOff"> fullUrl: urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9839,9 +10637,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>">Definition: </span>ProcessoholStep2 (<a href="#SubstanceDefinition-intermediateMaterialStep2" title="click to see target - id=intermediateMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
+                    </reference>">Definition: </span>ProcessoholStep2 (<a href="#SubstanceDefinition-intermediateMaterialStep2" title="click to see target - id=intermediateMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9893,7 +10693,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-2&quot;/>
                         </valueReference>">Derived From</span>: Start2Step2Amgen (<a href="#Substance-actual-batch-substance-starting-step2-2" title="click to see target - id=actual-batch-substance-starting-step2-2">Substance</a>)<span class="debugOff"> id: actual-batch-substance-starting-step2-2</span></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-step2-3)(fullUrl: urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
 
 <Bundle>
     <entry>
@@ -9901,7 +10701,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -9927,7 +10727,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     <reference>
                         <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                     </reference>
-                </code>" id="Substance-actual-batch-substance-itermediate-step2-3">Substance</span></a><span class="summaryShowsOff"><b> - Intermed3Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-step2-3</div><div class="debugOff"> fullUrl: urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="summaryHiddenOff"><span title="
+                </code>" id="Substance-actual-batch-substance-itermediate-step2-3">Substance</span></a><span class="summaryShowsOff"><b> - Intermed3Step2Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: actual-batch-substance-itermediate-step2-3</div><div class="debugOff"> fullUrl: urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9952,9 +10758,11 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     <entry>
         <resource>
             <Substance>
+                ...
                 <code>
                     <reference>
-                        <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>">Definition: </span>ProcessoholStep2 (<a href="#SubstanceDefinition-intermediateMaterialStep2" title="click to see target - id=intermediateMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+                        <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
+                    </reference>">Definition: </span>ProcessoholStep2 (<a href="#SubstanceDefinition-intermediateMaterialStep2" title="click to see target - id=intermediateMaterialStep2">SubstanceDefinition</a>)<span class="debugOff"> id: intermediateMaterialStep2</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10010,7 +10818,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10019,7 +10827,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
@@ -10057,7 +10865,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterialStep2)(fullUrl: urn:uuid:c458791f-8cb8-428e-83f7-8a205f821154)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterialStep2)(fullUrl: urn:uuid:c458791f-8cb8-428e-83f7-8a205f821154)
 
 <Bundle>
     <entry>
@@ -10087,7 +10895,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10098,7 +10906,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Step2Yield&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Step2Yield&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -10109,7 +10917,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Step2Yield)(fullUrl: urn:uuid:fd17b5d7-9fe1-91c2-2d06-47cb5b295e72)
@@ -10119,6 +10927,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Step2Yield&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72&quot;/>
                 <title value=&quot;Yield (%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -10139,6 +10948,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                         <code value=&quot;XXX&quot;/>
                         <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Step2Yield</div>
 <div class="debugOff"> fullUrl: urn:uuid:fd17b5d7-9fe1-91c2-2d06-47cb5b295e72</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -10199,6 +11009,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-substance&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;DP PROCESS VALIDATION&quot;/>
                 <type>
                     <coding>
@@ -10218,14 +11029,14 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                 </subjectReference>
                 <description value=&quot;Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...&quot;/>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -10255,7 +11066,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
@@ -10271,7 +11082,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
@@ -10287,7 +11098,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -10359,7 +11170,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </action>
                 </action>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -10379,7 +11190,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
@@ -10395,7 +11206,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
@@ -10411,7 +11222,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
@@ -10436,11 +11247,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="debugOff"></div>
 </div>
 </div>
 </body>
-<style>
+<style onLoad="resolveGlobalLinksThatCanBeLocal();">
 
 @media all {
 
@@ -10537,7 +11350,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
     .adverseEventl2 { background-Color:#d9cad1; }
     .adverseEventl3 { background-Color:#d9d4d6; }
 
-    .ppd { background-Color:#b6d7a8; width:60%; }
+    .ppd { background-Color:#b6d7a8; width:70%; }
     .ppdl2, .ppdpackage { background-Color:#c2deb6 }
     .ppdl3, .ppdpackageitem { background-Color:#daf0d1 }
     .ppdl4  { background-Color:#e4f2df }
@@ -10781,7 +11594,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 			}
 			
 			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit"); // header from tabular mode
+			var nodes = document.querySelectorAll(".summaryUnit");
 			for (var i=0; i < nodes.length; i++) {
 				var node = nodes[i];
 				var span = document.createElement('span');
@@ -10983,6 +11796,26 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 		    else if  ( g < 0 ) g = 0;
 		
 		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+		}
+
+		function resolveGlobalLinksThatCanBeLocal()
+		{
+			var nodes = document.querySelectorAll('.external-link');
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				var href = node.href;
+   				var urlPath = href.split('?url=').pop();
+   				if (urlPath != href) {
+   					var localId = node.getAttribute("localLink");
+	   				var localElement = document.getElementById(localId);
+	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
+	   					node.href= '#' + localId;
+	   					node.removeAttribute("localLink");
+	   					node.removeAttribute("class"); // remove the external-link class
+	   					node.title = node.title.replace(" (via server)"," (in page)");
+	   				}
+			   	 }
+    			}
 		}
 
 		function toggleSummary(item)
@@ -11218,4 +12051,5 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq
 		General Bundle:false
 		Not patient related:true
 		=>Patient Centric Mode:false
-		SubstanceDef Centric Mode:true--></html>
+		SubstanceDef Centric Mode:true
+		Assumed profile:--></html>
