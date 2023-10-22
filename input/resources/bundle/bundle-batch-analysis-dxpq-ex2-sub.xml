@@ -743,7 +743,7 @@
             <title value="Process 1.1"/>
             <type>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <system value="http://example.org/fhir/code/planType"/>
                   <code value="1244566"/>
                   <display value="Manufacturing Process"/>
                </coding>
@@ -1098,6 +1098,9 @@
             <!--observation-simple-dxpq-ex1-->
             <id value="81f552f9-8458-3cf4-8379-eea5417a9de2"/>
             <!-- was observationDescription -->
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-simple-dxpq"/>
+            </meta>
             <instantiatesReference>
                <!--ObservationDefinition/Description-->
                <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
