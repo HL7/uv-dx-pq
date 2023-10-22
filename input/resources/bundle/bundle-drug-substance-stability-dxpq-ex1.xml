@@ -1424,7 +1424,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30XY-Initial-->
-                  <reference value="http://example-server.com/fhir/ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
+                  <reference value="ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -1763,7 +1763,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30XY-Initial-->
-                  <reference value="http://example-server.com/fhir/ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
+                  <reference value="ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2103,7 +2103,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30XY-Initial-->
-                  <reference value="http://example-server.com/fhir/ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
+                  <reference value="ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2508,7 +2508,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-18-->
-                  <reference value="http://example-server.com/fhir/ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
+                  <reference value="ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2831,7 +2831,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-18-->
-                  <reference value="http://example-server.com/fhir/ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
+                  <reference value="ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -3153,7 +3153,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-18-->
-                  <reference value="http://example-server.com/fhir/ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
+                  <reference value="ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -3492,7 +3492,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                   <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40X-3-->
-                  <reference value="http://example-server.com/fhir/ActivityDefinition/8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
+                  <reference value="ActivityDefinition/8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
                </valueReference>
             </extension>
             <status value="final"/>
