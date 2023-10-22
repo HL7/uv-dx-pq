@@ -14,7 +14,8 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
@@ -58,7 +59,8 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
       <resource>
          <PackagedProductDefinition>
-            <id value="packagedproductdefinition-dxpq-ex1"/>
+            <!--packagedproductdefinition-dxpq-ex1-->
+            <id value="88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
             </meta>
@@ -233,7 +235,8 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f24bc3923"/>
       <resource>
          <PackagedProductDefinition>
-            <id value="packagedproductdefinition-dxpq-ex2"/>
+            <!--packagedproductdefinition-dxpq-ex2-->
+            <id value="88a068e2-1d97-337b-3b9c-4b3f24bc3923"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
             </meta>
