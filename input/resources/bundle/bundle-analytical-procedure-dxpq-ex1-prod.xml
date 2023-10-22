@@ -2,11 +2,11 @@
 <Bundle xmlns="http://hl7.org/fhir">
    <!--Based on Accumulus FHIR Product Example - Analytical Procedure (2023-08-22)-->
    <!-- Product Analytical Procedure -->
+    <!--   <id value="product-analytical-procedure"/>-->
    <id value="bundle-analytical-procedure-dxpq-ex1-prod"/>
-   <!--   <id value="product-analytical-procedure"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
-      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/>-->
+      <!--profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/-->
    </meta>
    <type value="collection"/>
    <entry>
@@ -40,6 +40,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
+                           <!--SubstanceDefinition/diluent-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f81"/>
                         </valueReference>
                      </extension>
@@ -73,7 +74,7 @@
                   <title value="Sample Preparation"/>
                   <action>
                      <title value="Instructions"/>
-                     <description  value="Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge."/>
+                     <description value="Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge."/>
                   </action>
                </action>
                <action>
@@ -148,6 +149,7 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
+            <!--Assay-->
             <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
 
             <!--            <text>
@@ -233,7 +235,6 @@
             </code>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-               <!--<extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="The %RSD between the two assay results must be ≤ 1.5%"/>
                </extension>
             </qualifiedValue>
@@ -260,11 +261,9 @@
             </code>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                  <valueString value="1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05." />
+                  <valueString value="1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05."/>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm."/>
                </extension>
             </qualifiedValue>
