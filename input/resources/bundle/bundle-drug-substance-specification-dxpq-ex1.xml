@@ -5,552 +5,551 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="bundle-drug-substance-specification-dxpq-ex1"/>
     <!--    <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
-    <meta>
-        <profile
-            value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
-        <!--        <profile value="http://accumulus.org/fhir/dx-cmc/specification"/>-->
-    </meta>
-    <type value="collection"/>
-    <entry>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+      <!--profile value="http://accumulus.org/fhir/dx-cmc/specification"/-->
+   </meta>
+   <type value="collection"/>
+   <entry>
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
-        <resource>
-            <PlanDefinition>
+      <resource>
+         <PlanDefinition>
             <!--specificationProtocol-->
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
+            <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
-                <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
-                <status value="active"/>
-                <subjectReference>
+            <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
+            <status value="active"/>
+            <subjectReference>
+               <!--SubstanceDefinition/substance1-->
                <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
-                </subjectReference>
-                <description value="Narrative description of specifications"/>
-                <!-- new "tabular" style -->
-                <action>
-                    <!-- this is then entire thing -->
-                    <title value="Specification for Drug Substance"/>
-                    <code>
-                        <text value="Overall set of actions"/>
-                    </code>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+            </subjectReference>
+            <description value="Narrative description of specifications"/>
+            <!-- new "tabular" style -->
+            <action> <!-- this is then entire thing -->
+               <title value="Specification for Drug Substance"/>
+               <code>
+                  <text value="Overall set of actions"/>
+               </code>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Description-->
                   <definitionCanonical value="ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9"/>
-                    </action>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Identification-->
                   <definitionCanonical value="ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3"/>
-                    </action>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Assay-->
                   <definitionCanonical value="ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a"/>
-                    </action>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Impurities-->
                   <definitionCanonical value="ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
-                    </action>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Mutagenic-->
                   <definitionCanonical value="ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
-                    </action>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Enantiomeric-->
                   <definitionCanonical value="ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d"/>
-                    </action>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Solvents-->
                   <definitionCanonical value="ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
-                    </action>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Water-->
                   <definitionCanonical value="ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
-                    </action>
-                    <action>
-                        <code>
-                            <text value="Test"/>
-                        </code>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Particles-->
                   <definitionCanonical value="ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f"/>
-                    </action>
-                </action>
-            </PlanDefinition>
-        </resource>
-    </entry>
-    <entry>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:52176085-1f30-0c67-9ad7-523c486c82c9"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Description-->
             <id value="52176085-1f30-0c67-9ad7-523c486c82c9"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9-->
             <url value="http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9"/>
-                <title value="Description"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="description"/>
-<!--                        <code value="XXX"/>-->
-                        <display value="Description"/>
-                    </coding>
-                    <text value="Description"/>
-                </code>
-                <method>
-                    <text value="Visual inspection"/>
-                </method>
-                <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--                    <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                        <valueString value="A white to brown powder"/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+            <title value="Description"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="description"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <method>
+               <text value="Visual inspection"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="A white to brown powder"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:b50d892c-8980-0774-39d4-d449732873a3"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Identification-->
             <id value="b50d892c-8980-0774-39d4-d449732873a3"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3-->
             <url value="http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3"/>
-                <title value="Identification"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="identification"/>
-<!--                        <code value="XXX"/>-->
-                        <display value="Identification"/>
-                    </coding>
-                    <text value="Identification"/>
-                </code>
-                <method>
-                    <text value="Identification by IR spectroscopy Identification by HPLC"/>
-                </method>
-                <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--                        <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                        <valueString value="Conforms with reference"/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+            <title value="Identification"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="identification"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <method>
+               <text value="Identification by IR spectroscopy Identification by HPLC"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="Conforms with reference"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:d460b561-110c-7eb6-5d69-788abcca391a"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Assay-->
             <id value="d460b561-110c-7eb6-5d69-788abcca391a"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a-->
             <url value="http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a"/>
-                <title value="Assay"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="assay"/>
-<!--                        <code value="XXX"/>-->
-                        <display value="Assay"/>
-                    </coding>
-                    <text value="Assay"/>
-                </code>
-                <method>
-                    <text value="Assay by LC"/>
-                </method>
-                <qualifiedValue>
-                    <range>
-                        <low>
-                            <value value="98"/>
-                            <unit value="% w/w"/>
+            <title value="Assay"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="assay"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <method>
+               <text value="Assay by LC"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <low>
+                     <value value="98"/>
+                     <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
                      <code value="%"/>
-                            <!-- not sure this is a correct ucum code -->
-                        </low>
-                        <high>
-                            <value value="102"/>
-                            <unit value="% w/w"/>
+                     <!-- not sure this is a correct ucum code -->
+                  </low>
+                  <high>
+                     <value value="102"/>
+                     <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
                      <code value="%"/>
-                            <!-- not sure this is a correct ucum code -->
-                        </high>
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+                     <!-- not sure this is a correct ucum code -->
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Impurities-->
             <id value="006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121-->
             <url value="http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
-                <title value="Drug Substance Related Organic impurities"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="DGP-s"/>
-                        <display value="Drug Substance Related Organic impurities"/>
-                    </coding>
-                </code>
-                <method>
-                    <text value="Organic impurities by LC"/>
-                </method>
-                <qualifiedValue>
-                    <appliesTo>
-                        <!-- could be a code -->
-                        <text value="Impurity 1"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="0.5"/>
-                            <unit value="% w/w"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <qualifiedValue>
-                    <appliesTo>
-                        <text value="Impurity 2"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="0.5"/>
-                            <unit value="% w/w"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <qualifiedValue>
-                    <appliesTo>
-                        <text value="Any individual unspecified impurity"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="0.10"/>
-                            <unit value="% w/w"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <qualifiedValue>
-                    <appliesTo>
-                        <text value="Total impurities"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="2.0"/>
-                            <unit value="% w/w"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <component>
-                    <!-- are expected to have a component that says what impurity this one is -->
-                    <code>
-                        <coding>
-                            <system value="http://dummy.loinc.org"/>
-                            <code value="IMP"/>
-                            <display value="Impurity"/>
-                        </coding>
-                    </code>
-                </component>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+            <title value="Drug Substance Related Organic impurities"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP-s"/>
+                  <display value="Drug Substance Related Organic impurities"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Organic impurities by LC"/>
+            </method>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Impurity 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.5"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.5"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Any individual unspecified impurity"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.10"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Total impurities"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.0"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Mutagenic-->
             <id value="c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17-->
             <url value="http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
-                <title value="Mutagenic impurities"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="MUT"/>
-                        <display value="Mutagenic impurities"/>
-                    </coding>
-                </code>
-                <method>
-                    <text value="Impurity 5 content by LC-MS"/>
-                </method>               
-                <qualifiedValue>
-                    <appliesTo>
-                        <!-- could be a code -->
-                        <text value="Impurity - Mutagenic"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="50"/>
-                            <unit value="ppm"/>
+            <title value="Mutagenic impurities"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="MUT"/>
+                  <display value="Mutagenic impurities"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Impurity 5 content by LC-MS"/>
+            </method>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Impurity - Mutagenic"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="50"/>
+                     <unit value="ppm"/>
                      <system value="http://unitsofmeasure.org"/>
                      <code value="[ppm]"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <component>
-                    <!-- are expected to have a component that says what impurity this one is -->
-                    <code>
-                        <coding>
-                            <system value="http://dummy.loinc.org"/>
-                            <code value="IMP"/>
-                            <display value="Impurity"/>
-                        </coding>
-                    </code>
-                </component>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:18e20bae-1a24-202d-11d7-5f354c785e4d"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Enantiomeric-->
             <id value="18e20bae-1a24-202d-11d7-5f354c785e4d"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d-->
             <url value="http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d"/>
-                <title value="Enantiomeric purity"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="enantiomeric-purity"/>
-<!--                        <code value="ZZZ"/>-->
-                        <display value="Enantiomeric purity"/>
-                    </coding>
-                    <text value="Enantiomeric purity"/>
-                </code>
-                <method>
-                    <text value="Enantiomeric purity by LC"/>
-                </method>
-                <qualifiedValue>
-                    <range>
-                        <low>
-                            <value value="99.6"/>
-                            <unit value="%"/>
+            <title value="Enantiomeric purity"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="enantiomeric-purity"/>
+                  <display value="Enantiomeric purity"/>
+               </coding>
+               <text value="Enantiomeric purity"/>
+            </code>
+            <method>
+               <text value="Enantiomeric purity by LC"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <low>
+                     <value value="99.6"/>
+                     <unit value="%"/>
                      <system value="http://unitsofmeasure.org"/>
-                            <code value="%"/>
-                        </low>
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+                     <code value="%"/>
+                  </low>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Solvents-->
             <id value="22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
-                <title value="Residual solvents"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="SOL"/>
-                        <display value="Residual solvents"/>
-                    </coding>
-                </code>
-                <method>
-                    <text value="Residual solvents by headspace GC"/>
-                </method> 
-                <qualifiedValue>
-                    <appliesTo>
-                        <!-- could be a code -->
-                        <text value="Solvent 1"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="0.1"/>
-                            <unit value="% w/w"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <qualifiedValue>
-                    <appliesTo>
-                        <text value="Solvent 2"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="2.0"/>
-                            <unit value="% w/w"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <component>
-                    <!-- are expected to have a component that says what solvent this one is -->
-                    <code>
-                        <coding>
-                            <system value="http://dummy.loinc.org"/>
-                            <code value="SOLV"/>
-                            <display value="Solvent"/>
-                        </coding>
-                    </code>
-                </component>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+            <title value="Residual solvents"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Residual solvents by headspace GC"/>
+            </method>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Solvent 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.1"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Solvent 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.0"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what solvent this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Water-->
             <id value="b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d-->
             <url value="http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
-                <title value="Water Content"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="WWW"/>
-                        <display value="Water Content"/>
-                    </coding>
-                    <text value="Water Content"/>
-                </code>
-                <method>
-                    <text value="USP Karl Fischer titration"/>
-                </method>
-                <qualifiedValue>
-                    <range>
-                        <high>
-                            <value value="1.0"/>
-                            <unit value="% w/w"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+            <title value="Water Content"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="WWW"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <method>
+               <text value="USP Karl Fischer titration"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <high>
+                     <value value="1.0"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:233865df-2a71-528d-756c-85f36bd6685f"/>
-        <resource>
-            <ObservationDefinition>
+      <resource>
+         <ObservationDefinition>
             <!--Particles-->
             <id value="233865df-2a71-528d-756c-85f36bd6685f"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f-->
             <url value="http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f"/>
-                <title value="Particle size distribution"/>
-                <status value="active"/>
-                <code>
-                    <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="particle-size-distribution"/>
-<!--                        <code value="PART"/>-->
-                        <display value="Particle size distribution"/>
-                    </coding>
-                </code>
-                <method>
-                    <text value="Laser diffraction"/>
-                </method>
-                <qualifiedValue>
-                    <appliesTo>
-                        <!-- could be a code -->
-                        <text value="D(v,0.9)"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="319"/>
-                            <unit value="µm"/>
+            <title value="Particle size distribution"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="particle-size-distribution"/>
+                  <display value="Particle size distribution"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Laser diffraction"/>
+            </method>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="D(v,0.9)"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="319"/>
+                     <unit value="µm"/>
                      <system value="http://unitsofmeasure.org"/>
-                            <code value="um"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <qualifiedValue>
-                    <appliesTo>
-                        <!-- could be a code -->
-                        <text value="D(v,0.5)"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="145"/>
-                            <unit value="µm"/>
+                     <code value="um"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="D(v,0.5)"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="145"/>
+                     <unit value="µm"/>
                      <system value="http://unitsofmeasure.org"/>
-                            <code value="um"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <qualifiedValue>
-                    <appliesTo>
-                        <!-- could be a code -->
-                        <text value="D(v,0.1)"/>
-                    </appliesTo>
-                    <range>
-                        <high>
-                            <value value="20"/>
-                            <unit value="µm"/>
+                     <code value="um"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="D(v,0.1)"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="20"/>
+                     <unit value="µm"/>
                      <system value="http://unitsofmeasure.org"/>
-                            <code value="um"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-                <component>
-                    <!-- are expected to have a component that says what solvent this one is -->
-                    <code>
-                        <coding>
-                            <system value="http://dummy.loinc.org"/>
-                            <code value="particle-size"/>
-<!--                            <code value="PARTS"/>-->
-                            <display value="Particle size"/>
-                        </coding>
-                    </code>
-                </component>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    <entry>
+                     <code value="um"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what solvent this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="particle-size"/>
+                     <display value="Particle size"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
-        <resource>
-            <SubstanceDefinition>
+      <resource>
+         <SubstanceDefinition>
             <!--substance1-->
             <id value="03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
-                <manufacturer>
+            <manufacturer>
                <!--Organization/substance-manufacturer-->
                <reference value="Organization/062bf235-44e2-55c4-9213-bbe5e12d5620"/>
-                </manufacturer>
-                <name>
-                    <name value="Stelbatolol"/>
-                    <!-- #4 -->
-                </name>
-
-            </SubstanceDefinition>
-        </resource>
-    </entry>
-    <entry>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620"/>
-        <resource>
-            <Organization>
+      <resource>
+         <Organization>
             <!--substance-manufacturer-->
             <id value="062bf235-44e2-55c4-9213-bbe5e12d5620"/>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value="urn:oid:2.16.840.1.113883.4.82"/>
-                    <value value="3003040516"/>
-                </identifier>
-                <name value="AAA Molybdenum Products, Inc."/>
-                <contact>
-                    <address>
-                        <line value="7233 W 116th Pl"/>
-                        <line value="Ste C"/>
-                        <city value="Broomfield"/>
-                        <state value="Colorado"/>
-                        <postalCode value="80020"/>
-                        <country value="USA"/>
-                    </address>
-                </contact>
-            </Organization>
-        </resource>
-    </entry>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
 </Bundle>

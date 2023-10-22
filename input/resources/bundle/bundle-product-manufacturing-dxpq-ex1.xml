@@ -6,9 +6,8 @@
    <id value="bundle-product-manufacturing-dxpq-ex1"/>
    <!--   <id value="product-manufacturing"/>-->
    <meta>
-      <profile
-         value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
-      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/>-->
+        <!--profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/-->
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -19,14 +18,14 @@
             <!--manufacturingProcess-unlinked-->
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq" />
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
             </meta>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq">
-               <!--            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">-->
                <valueReference>
-                  <!-- Process flow diagram -->
-                  <!-- or could be a Binary -->
-                  <!-- #84 -->
+                        <!-- Process flow diagram -->
+                        <!-- or could be a Binary -->
+                        <!-- #84 -->
+                  <!--DocumentReference/documentreference-process-flow-diagram-dxpq-ex1-->
                   <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
             </extension>
@@ -173,6 +172,7 @@
             <actor>
                <option>
                   <typeReference>
+                     <!--DeviceDefinition/mixing-vessel-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
@@ -187,6 +187,7 @@
             <actor>
                <option>
                   <typeReference>
+                     <!--DeviceDefinition/receiving-tank-->
                      <reference value="DeviceDefinition/82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
@@ -201,6 +202,7 @@
             <!-- outer action is the whole thing, if needed -->
             <!-- step 1 mixing -->
             <action>
+                        <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
@@ -264,7 +266,7 @@
                <!--goalId value="goal-control-temp"/-->
                <participant>
                   <typeReference>
-                     <!-- this is new in R5 and is not in R4B -->
+                                <!-- this is new in R5 and is not in R4B -->
                      <!--DeviceDefinition/mixer-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
                   </typeReference>
@@ -279,13 +281,13 @@
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
-                        <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <!--SubstanceDefinition/startingMaterial-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                         </valueReference>
                      </extension>
-                     <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
+                     <display value="starting material"/>
+                     <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -298,12 +300,13 @@
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
-                        <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
+                           <!--SubstanceDefinition/processingMaterial-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                         </valueReference>
                      </extension>
-                     <display value="processing material"/> <!-- added to suppress IG warning about empty reference -->
+                     <display value="processing material"/>
+                     <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -316,13 +319,13 @@
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
-                        <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <!--SubstanceDefinition/StelbatololAqueousSolution-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
-                     <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
+                     <display value="resulting material"/>
+                     <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -347,8 +350,8 @@
             </action>
             <!-- step 2 drying -->
             <action>
+                        <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/processStepScale">-->
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                      <code value="ABCD"/>
@@ -356,7 +359,6 @@
                   </valueCoding>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/processParameters">-->
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -397,7 +399,8 @@
                <goalId value="goal-control-water-content"/>
                <participant>
                   <typeReference>
-                     <!-- this is new in R5 and is not in R4B -->
+                                <!-- this is new in R5 and is not in R4B -->
+                     <!--DeviceDefinition/dryer-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
                   </typeReference>
                   <role>
@@ -411,13 +414,13 @@
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
-                        <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
                            <!--SubstanceDefinition/StelbatololAqueousSolution-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
-                     <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
+                     <display value="starting material"/>
+                     <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -430,12 +433,13 @@
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
-                        <!--                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
+                           <!--SubstanceDefinition/StelbatololGranules-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
                         </valueReference>
                      </extension>
-                     <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
+                     <display value="resulting material"/>
+                     <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -448,8 +452,8 @@
             </action>
             <!-- step 3 particle size -->
             <action>
+                        <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/processStepScale">-->
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                      <code value="ABCD"/>
@@ -457,7 +461,6 @@
                   </valueCoding>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/processParameters">-->
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -494,7 +497,8 @@
                <goalId value="goal-control-particle-size"/>
                <participant>
                   <typeReference>
-                     <!-- this is new in R5 and is not in R4B -->
+                                <!-- this is new in R5 and is not in R4B -->
+                     <!--DeviceDefinition/devicedefinition-dxpq-ex1-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
                   </typeReference>
                   <role>
@@ -509,12 +513,13 @@
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
-                        <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
+                           <!--SubstanceDefinition/StelbatololGranules-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
                         </valueReference>
                      </extension>
-                     <display value="starting material"/> <!-- added to suppress IG warning about empty reference -->
+                     <display value="starting material"/>
+                     <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -527,12 +532,13 @@
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
-                        <!--                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">-->
                         <valueReference>
+                           <!--SubstanceDefinition/Stelbatolol-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
                         </valueReference>
                      </extension>
-                     <display value="resulting material"/> <!-- added to suppress IG warning about empty reference -->
+                     <display value="resulting material"/>
+                     <!-- added to suppress IG warning about empty reference -->
                   </typeReference>
                   <role>
                      <coding>
@@ -721,7 +727,7 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
-         <!-- #84 -->
+            <!-- #84 -->
          <DocumentReference>
             <!--documentreference-process-flow-diagram-dxpq-ex1-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
@@ -750,14 +756,14 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee"/>
       <resource>
-         <!-- #84 -->
+            <!-- #84 -->
          <DocumentReference>
             <!--DocumentReference-image-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41fee"/>
             <status value="current"/>
             <content>
                <attachment>
-                  <url  value="https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png"/>
+                  <url value="https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png"/>
                </attachment>
             </content>
          </DocumentReference>
@@ -767,7 +773,7 @@
    <entry>
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
-         <!-- Section 1.1 - DP Identification -->
+            <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
             <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
@@ -830,6 +836,7 @@
             <substance>
                <code>
                   <reference>
+                     <!--SubstanceDefinition/Stelbatolol-->
                      <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
                   </reference>
                </code>
@@ -874,7 +881,7 @@
             <!--substance-manufacturer-->
             <id value="9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             <identifier>
-               <!-- FDA establishment identifier -->
+					<!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
@@ -899,7 +906,7 @@
             <!--manufacturerProcessingMaterial-->
             <id value="8d61736c-a6e3-8301-659f-17da402e012a"/>
             <identifier>
-               <!-- FDA establishment identifier -->
+                    <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3010027650"/>
             </identifier>

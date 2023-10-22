@@ -6,7 +6,6 @@
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
    </meta>
-   
    <type value="collection"/>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>

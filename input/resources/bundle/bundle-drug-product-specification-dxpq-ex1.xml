@@ -27,8 +27,7 @@
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of specifications"/>
-            <action>
-               <!-- this is then entire thing -->
+            <action> <!-- this is then entire thing -->
                <title value="Specification(s) for Drug Product"/>
                <code>
                   <text value="Overall set of actions"/>
@@ -47,48 +46,56 @@
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/Description-->
                      <definitionCanonical value="ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/Identification-->
                      <definitionCanonical value="ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/Assay-->
                      <definitionCanonical value="ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/Degradation-->
                      <definitionCanonical value="ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/Dissolution-->
                      <definitionCanonical value="ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/Uniformity-->
                      <definitionCanonical value="ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/Microbiological-->
                      <definitionCanonical value="ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/Water-->
                      <definitionCanonical value="ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1"/>
                   </action>
                </action>
@@ -106,52 +113,58 @@
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/DescriptionEnd-->
                      <definitionCanonical value="ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/IdentificationEnd-->
                      <definitionCanonical value="ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/AssayEnd-->
                      <definitionCanonical value="ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/DegradationEnd-->
                      <definitionCanonical value="ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/DissolutionEnd-->
                      <definitionCanonical value="ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/UniformityEnd-->
                      <definitionCanonical value="ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/MicrobiologicalEnd-->
                      <definitionCanonical value="ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
+                     <!--ObservationDefinition/WaterEnd-->
                      <definitionCanonical value="ObservationDefinition/91391017-774b-5c77-93fa-642534278851"/>
                   </action>
-                  <!-- Empty action tags seem to have caused a publishing error "Not a JSON Object: null" -->
-                  <!--                  <action> </action>-->
                </action>
             </action>
          </PlanDefinition>
@@ -170,7 +183,6 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="description"/>
-<!--                  <code value="XXX"/>-->
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -180,7 +192,6 @@
             </method>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
                </extension>
             </qualifiedValue>
@@ -200,14 +211,12 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="description"/>
-                  <!--                  <code value="XXX"/>-->
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
             </code>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -227,7 +236,6 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="identification"/>
-                  <!--                  <code value="XXX"/>-->
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -257,7 +265,6 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="identification"/>
-                  <!--                  <code value="XXX"/>-->
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -284,7 +291,6 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="assay"/>
-                  <!--                  <code value="XXX"/>-->
                   <display value="Assay"/>
                </coding>
                <text value="Assay"/>
@@ -508,7 +514,6 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="dissolution"/>
-<!--                  <code value="ZZZ"/>-->
                   <display value="Dissolution"/>
                </coding>
                <text value="Dissolution"/>
@@ -537,7 +542,6 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="dissolution"/>
-                  <!-- <code value="ZZZ"/>-->
                   <display value="Dissolution"/>
                </coding>
                <text value="Dissolution"/>
@@ -637,7 +641,6 @@
             </method>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="Shall comply with the requirements of the Ph Eur"/>
                </extension>
             </qualifiedValue>
@@ -666,7 +669,6 @@
             </method>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-                  <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="As for release"/>
                </extension>
             </qualifiedValue>
@@ -728,7 +730,6 @@
    </entry>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>
-      <!--fullUrl value="https://www.example.org/MedicinalProductDefinition/product"/-->
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
             <!-- Section 1.1 - DP Identification -->
@@ -774,7 +775,6 @@
       </resource>
    </entry>
    <entry>
-      <!--fullUrl value="https://www.example.org/Ingredient/productIngredient"/-->
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
       <resource>
          <Ingredient>
@@ -794,6 +794,7 @@
             <substance>
                <code>
                   <reference>
+                     <!--SubstanceDefinition/substance1-->
                      <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
                   </reference>
                </code>

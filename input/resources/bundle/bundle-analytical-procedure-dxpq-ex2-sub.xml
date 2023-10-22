@@ -3,10 +3,9 @@
    <!--Based on Accumulus FHIR Substance Example - Analytical Procedure (2023-08-22)-->
    <!-- Substance Analytical Procedure -->
    <id value="bundle-analytical-procedure-dxpq-ex2-sub"/>
-<!--   <id value="substance-analytical-procedure"/>--> 
+   <!--   <id value="substance-analytical-procedure"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/>-->
    </meta>
    <type value="collection"/>
    <entry>
@@ -337,7 +336,6 @@
             </code>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
                   <valueString value="The %RSD for the D(v, 0.9) must be not more than 15%"/>
                </extension>
             </qualifiedValue>

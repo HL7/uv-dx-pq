@@ -2889,7 +2889,7 @@
             <id value="ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
             <instantiatesReference>
                <!--ObservationDefinition/Assay-->
-			            <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+               <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2902,7 +2902,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -2938,7 +2938,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -2974,7 +2974,7 @@
             <id value="4052f28b-64a2-392d-35e4-ec8e912434d2"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2987,7 +2987,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3023,7 +3023,7 @@
             <id value="34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3036,7 +3036,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3072,7 +3072,7 @@
             <id value="2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3085,7 +3085,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3121,7 +3121,7 @@
             <id value="332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3134,7 +3134,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3170,7 +3170,7 @@
             <id value="f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3183,7 +3183,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3219,7 +3219,7 @@
             <id value="7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3268,7 +3268,7 @@
             <id value="be016630-8754-7414-9014-21e020ad66c6"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3281,7 +3281,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3317,7 +3317,7 @@
             <id value="92568f68-78f3-908c-6935-ff5f3d574dd6"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3330,7 +3330,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3366,7 +3366,7 @@
             <id value="a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3379,7 +3379,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3415,7 +3415,7 @@
             <id value="d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3428,7 +3428,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3464,7 +3464,7 @@
             <id value="7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3477,7 +3477,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3513,7 +3513,7 @@
             <id value="27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3526,7 +3526,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3562,7 +3562,7 @@
             <id value="6a78bcde-4781-226c-946e-a4b6915c1899"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3575,7 +3575,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3611,7 +3611,7 @@
             <id value="f9f11088-7527-947c-3d3f-e71b32e13c78"/>
             <instantiatesReference>
                <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3624,7 +3624,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3660,7 +3660,7 @@
             <id value="7316e094-2094-5710-4f11-75d3effc995e"/>
             <instantiatesReference>
                <!--ObservationDefinition/Dissolution-->
-			            <reference value="ObservationDefinition/8f5d8abf-2cf4-8617-1e41-a74d90210dcc"/>
+               <reference value="ObservationDefinition/8f5d8abf-2cf4-8617-1e41-a74d90210dcc"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3673,7 +3673,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3706,7 +3706,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3739,7 +3739,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3771,7 +3771,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3806,7 +3806,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3829,7 +3829,7 @@
             <id value="d6955449-16b4-107f-851d-2f99d0b47b96"/>
             <instantiatesReference>
                <!--ObservationDefinition/DissolutionQ80-->
-			            <reference value="ObservationDefinition/33a9d578-6e6b-7606-72bc-6775d36c1930"/>
+               <reference value="ObservationDefinition/33a9d578-6e6b-7606-72bc-6775d36c1930"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3841,7 +3841,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3864,7 +3864,7 @@
             <id value="591f5d75-1b2f-299b-6885-f325e4228bda"/>
             <instantiatesReference>
                <!--ObservationDefinition/Uniformity-->
-			            <reference value="ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
+               <reference value="ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3877,7 +3877,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3897,7 +3897,7 @@
             <id value="1dd8e506-08cf-8a15-8cd0-7c7cf1d88731"/>
             <instantiatesReference>
                <!--ObservationDefinition/Uniformity-->
-			            <reference value="ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
+               <reference value="ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3910,7 +3910,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3930,7 +3930,7 @@
             <id value="ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3"/>
             <instantiatesReference>
                <!--ObservationDefinition/Uniformity-->
-			            <reference value="ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
+               <reference value="ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3943,7 +3943,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3963,7 +3963,7 @@
             <id value="d136c4f5-62da-81eb-4fc8-144f9182589e"/>
             <instantiatesReference>
                <!--ObservationDefinition/Microbiological-->
-			            <reference value="ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
+               <reference value="ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -3976,7 +3976,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -3996,7 +3996,7 @@
             <id value="3ab5e4eb-673b-0e66-3d2c-86d64ced0e86"/>
             <instantiatesReference>
                <!--ObservationDefinition/Microbiological-->
-			            <reference value="ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
+               <reference value="ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4009,7 +4009,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -4029,7 +4029,7 @@
             <id value="cec7ce65-57d7-a654-9ad6-21d162186eb9"/>
             <instantiatesReference>
                <!--ObservationDefinition/Microbiological-->
-			            <reference value="ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
+               <reference value="ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4062,7 +4062,7 @@
             <id value="66c2f585-678e-78b8-2235-1a3b37bd6e46"/>
             <instantiatesReference>
                <!--ObservationDefinition/Water-->
-			            <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
+               <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4075,7 +4075,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -4098,7 +4098,7 @@
             <id value="f8232d25-023d-679f-9c58-a6dc234b7a28"/>
             <instantiatesReference>
                <!--ObservationDefinition/Water-->
-			            <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
+               <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4111,7 +4111,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -4134,7 +4134,7 @@
             <id value="368b82be-75dd-1d97-3dbc-a7eed9869daa"/>
             <instantiatesReference>
                <!--ObservationDefinition/Water-->
-			            <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
+               <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4170,7 +4170,7 @@
             <id value="44aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/TAMC-->
-			            <reference value="ObservationDefinition/64505a3c-5034-448a-9c19-938ce1958424"/>
+               <reference value="ObservationDefinition/64505a3c-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4205,7 +4205,7 @@
             <id value="45aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/conclusion-->
-			            <reference value="ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
+               <reference value="ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4239,7 +4239,7 @@
             <id value="45ab47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizationConclusion-->
-			            <reference value="ObservationDefinition/22525a3c-5034-448a-9c19-938ce1958424"/>
+               <reference value="ObservationDefinition/22525a3c-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4273,7 +4273,7 @@
             <id value="37aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizerNumber-->
-			            <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
+               <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4306,7 +4306,7 @@
             <id value="38aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizerNumber-->
-			            <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
+               <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4339,7 +4339,7 @@
             <id value="38aa48fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizerNumber-->
-			            <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
+               <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4372,7 +4372,7 @@
             <id value="37aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizationAssay-->
-			            <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+               <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4385,7 +4385,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -4418,7 +4418,7 @@
             <id value="47aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizationAssay-->
-			            <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+               <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4431,7 +4431,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -4464,7 +4464,7 @@
             <id value="47aa47fd-7964-4f96-6495-b2bec7f160e8"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizationAssay-->
-			            <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+               <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4477,7 +4477,7 @@
             </code>
             <subject>
                <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -4510,7 +4510,7 @@
             <id value="47aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizationWaterHomogeneity-->
-			            <reference value="ObservationDefinition/32e29d22-6fcb-546e-24fd-52a4a4004467"/>
+               <reference value="ObservationDefinition/32e29d22-6fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4523,7 +4523,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -4590,7 +4590,7 @@
             <id value="47aa47fd-8964-5f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
                <!--ObservationDefinition/LyophilizationAssayHomogeneity-->
-			            <reference value="ObservationDefinition/32e29d32-6fcb-546e-24fd-52a4a4004467"/>
+               <reference value="ObservationDefinition/32e29d32-6fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -4603,7 +4603,7 @@
             </code>
             <subject>
                <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
 			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 			<performer>
@@ -4711,7 +4711,7 @@
             <status value="active"/>
             <for>
                <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
-			            <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -4724,7 +4724,7 @@
                <code>
                   <reference>
                      <!--SubstanceDefinition/substance1-->
-			                  <reference value="SubstanceDefinition/6eb94d34-48b4-5bb0-4c05-e183d2ea3e95"/>
+                     <reference value="SubstanceDefinition/6eb94d34-48b4-5bb0-4c05-e183d2ea3e95"/>
                   </reference>
                </code>
             </substance>
@@ -4739,7 +4739,7 @@
             <id value="6eb94d34-48b4-5bb0-4c05-e183d2ea3e95"/>
             <manufacturer>
                <!--Organization/substance-manufacturer-->
-			            <reference value="Organization/23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
+               <reference value="Organization/23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -4784,7 +4784,7 @@
             </meta>
             <manufacturer>
                <!--Organization/organization-dxpq-ex1-->
-			            <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
+               <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -4858,7 +4858,7 @@
             <!-- #83 -->
             <subjectReference>
                <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
-			            <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
             <!-- #85 -->
@@ -4980,7 +4980,7 @@
                <option>
                   <typeReference>
                      <!--DeviceDefinition/mixing-vessel-->
-			                  <reference value="DeviceDefinition/82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
+                     <reference value="DeviceDefinition/82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -4995,7 +4995,7 @@
                <option>
                   <typeReference>
                      <!--DeviceDefinition/receiving-tank-->
-			                  <reference value="DeviceDefinition/82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
+                     <reference value="DeviceDefinition/82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -5131,7 +5131,7 @@
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
                      <!--Organization/organization-dxpq-ex1-->
-			                  <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -5143,7 +5143,7 @@
             <code>
                <reference>
                   <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
-			               <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
@@ -5193,7 +5193,7 @@
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
                      <!--Organization/organization-dxpq-ex1-->
-			                  <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -5204,7 +5204,7 @@
             <code>
                <reference>
                   <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
-			               <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
@@ -5254,7 +5254,7 @@
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
                      <!--Organization/organization-dxpq-ex1-->
-			                  <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -5266,7 +5266,7 @@
             <code>
                <reference>
                   <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
-			               <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
