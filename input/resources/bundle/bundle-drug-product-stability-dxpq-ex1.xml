@@ -600,7 +600,7 @@
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+			         <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!-- longTerm25X -->
          </ActivityDefinition>
       </resource>
@@ -620,7 +620,7 @@
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X-->
-            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+			         <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
          </ActivityDefinition>
@@ -641,7 +641,7 @@
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X-->
-            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+			         <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
          </ActivityDefinition>
@@ -664,7 +664,7 @@
             <title value="Long-term - 25°C/60% RH - XYZ"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X-->
-            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+			         <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--            <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -687,7 +687,7 @@
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X-->
-            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+			         <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y-->
@@ -709,7 +709,7 @@
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X-->
-            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+			         <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y-->
@@ -731,7 +731,7 @@
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X-->
-            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+			         <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--            <observationRequirement
                value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y-->
@@ -740,17 +740,17 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+      <fullUrl value="urn:uuid:d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
       <resource>
          <ObservationDefinition>
             <!--longTerm25X-->
-            <id value="b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
             <!--            <id value="observationdefinition-test-method-dxpq-ex1"/>-->
+            <id value="d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <meta>
                <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X-->
-            <url value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <title value="X"/>
             <status value="active"/>
             <code>
