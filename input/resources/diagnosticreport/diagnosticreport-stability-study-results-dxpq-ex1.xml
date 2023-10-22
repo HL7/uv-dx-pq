@@ -38,19 +38,18 @@
         </coding>
     </code>
     <effectiveDateTime value="2020-12">
-        <!-- start of stability test -->
-<!--        To Fix: create extension-->
-<!--        <extension url="http://accumulus.org/fhir/extension/timePointDescription">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="http://example.org/fhir/code/timePointDescription"/>
-                    <code value="222"/>
-                    <display value="Delayed Start Code"/>
-                </coding>
-                <text value="Refrigerated delayed testing"/>
-            </valueCodeableConcept>
-        </extension>-->
-    </effectiveDateTime>
+                    
+                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-dxpq">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://accumulus.org/fhir/code/timePointDescription"/>
+                                <code value="222"/>
+                                <display value="Delayed Start Code"/>
+                            </coding>
+                            <text value="Refrigerated delayed testing"/>
+                        </valueCodeableConcept>
+                    </extension>
+                </effectiveDateTime>
                 <performer>
 				    <reference value="Organization/organization-dxpq-ex1"/>
                 </performer>
