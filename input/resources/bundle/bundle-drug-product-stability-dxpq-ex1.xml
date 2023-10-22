@@ -194,7 +194,7 @@
                         <title value="XYZ"/>
                         <!-- Long term -->
                         <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>-->
-                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
+                        <definitionCanonical value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                      </action>
                   </action>
                   <action>
@@ -223,7 +223,7 @@
                         <title value="X"/>
                         <!--<definitionCanonical
                            value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>-->
-                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
+                        <definitionCanonical value="ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
                      </action>
                   </action>
                   <action>
@@ -251,7 +251,7 @@
                      <action>
                         <title value="X"/>
                         <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25X-6"/>-->
-                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
+                        <definitionCanonical value="ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
                      </action>
                   </action>
                   <action>
@@ -279,7 +279,7 @@
                      <action>
                         <title value="X"/>
                         <!--<definitionCanonical value="ActivityDefinition/activityLongTerm25X-9"/>-->
-                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
+                        <definitionCanonical value="ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
                      </action>
                   </action>
                   <action>
@@ -1125,8 +1125,7 @@
             <id value="77f86b13-8193-3df7-8362-ab5e79ba541d"/>
             <meta>
                <profile
-                  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"
-               />
+                  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40X-6-->
             <url
@@ -1168,8 +1167,7 @@
             <!--accelerated40X-->
             <id value="792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
             <meta>
-               <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"
-               />
+               <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/accelerated40X-->
             <url
