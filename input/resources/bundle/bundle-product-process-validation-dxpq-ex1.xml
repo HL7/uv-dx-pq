@@ -1578,6 +1578,10 @@
 			                     <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
                      </valueReference>
                   </extension>
+                  <!--  Base FHIR Extensions-->
+                  <extension url="manufacturingDate">
+                     <valueDateTime value="2020-06"/>
+                  </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq"> <!-- #159 -->
                      <valueDateTime value="2020-08"/>
                   </extension>
@@ -1586,6 +1590,13 @@
                         <!--Organization/organization-dxpq-ex1-->
 			                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                      </valueReference>
+                  </extension>
+                  <!--  Base FHIR Extensions-->
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="100100"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity> <!-- #160 -->
@@ -1603,16 +1614,6 @@
                      <valueQuantity>
                         <value value="30"/>
                         <unit value="g"/>
-                     </valueQuantity>
-                  </extension>
-                  <extension url="manufacturingDate"> <!-- #157 -->
-                     <valueDateTime value="2020-06"/>
-                  </extension>
-                  <extension url="batchQuantity">
-                     <valueQuantity>
-                    			<!-- #26 --><!-- #155 --><!-- need to see if one of these needs changing -->
-                        <value value="100100"/>
-                        <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
                   <extension url="batchUtilization"> <!-- #159 -->
