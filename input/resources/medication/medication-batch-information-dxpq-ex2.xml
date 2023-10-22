@@ -8,8 +8,7 @@
             		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
     </meta>
     <code>
-        <extension
-            url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
             <valueReference>
                             <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                             
@@ -22,8 +21,7 @@
     <batch>
         <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
             <!-- Extensions custom for this IG -->
-            <extension
-                url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                 <valueDateTime value="2019-09-08"/>
                 <!-- #171 -->
             </extension>
@@ -32,8 +30,7 @@
                                 <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
                             </valueReference>
                         </extension-->
-            <extension
-                url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-dxpq">
                 <!--                <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
                 <valueCodeableConcept>
                     <coding>
@@ -44,13 +41,11 @@
                     <text value="Maximum"/>
                 </valueCodeableConcept>
             </extension>
-            <extension
-                url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-dxpq">
                 <!--                <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
                 <valuePositiveInt value="3"/>
             </extension>
-            <extension
-                url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq">
                 <!--                <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                 <valueReference>
                     <reference value="Substance/substance-dxpq-ex1"/>
@@ -85,23 +80,20 @@
                 </valueQuantity>
             </extension>
             <!-- Extensions custom for this IG -->
-            <extension
-                url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                 <valueQuantity>
                     <!-- #160 -->
                     <value value="4.81"/>
                     <unit value="kg"/>
                 </valueQuantity>
             </extension>
-            <extension
-                url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-dxpq">
                 <valueQuantity>
                     <value value="4.91"/>
                     <unit value="kg"/>
                 </valueQuantity>
             </extension>
-            <extension
-                url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-dxpq">
                 <valueQuantity>
                     <value value="30"/>
                     <unit value="g"/>
@@ -118,12 +110,11 @@
                             <valueCodeableConcept value="Comment: This has a value set defined in PQ/CMC but no code system"/>                            
 <!-\-                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>-\->
                         </extension>-->
-                        <system
-                            value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
-                        <code value="C185328"/>
-                        <display value="Stability Study"/>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                                	<code value="C133990"/>
+                                	<display value="Commercial"/> 
                     </coding>
-                    <text value="PPQ / Stability"/>
+                            	<text value="Production"/>
                 </valueCodeableConcept>
             </extension>
             <!--  Base FHIR Extension-->
