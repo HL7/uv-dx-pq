@@ -7,10 +7,11 @@
    </meta>
    <type value="collection"/>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/manufacturer"/>
+      <fullUrl value="urn:uuid:1f3ab002-429f-7f05-4dda-05467f2804d9"/>
       <resource>
          <Organization>
-            <id value="manufacturer"/>
+            <!--manufacturer-->
+            <id value="1f3ab002-429f-7f05-4dda-05467f2804d9"/>
             <identifier>
                     <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -30,10 +31,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/manufacturer2"/>
+      <fullUrl value="urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b"/>
       <resource>
          <Organization>
-            <id value="manufacturer2"/>
+            <!--manufacturer2-->
+            <id value="33cdead0-6b1c-4c11-3094-bed90e7c727b"/>
             <identifier>
 					<!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -53,10 +55,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/capManufacturer"/>
+      <fullUrl value="urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0"/>
       <resource>
          <Organization>
-            <id value="capManufacturer"/>
+            <!--capManufacturer-->
+            <id value="16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0"/>
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3008816891"/>
@@ -75,10 +78,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/bottleManufacturer"/>
+      <fullUrl value="urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28"/>
       <resource>
          <Organization>
-            <id value="bottleManufacturer"/>
+            <!--bottleManufacturer-->
+            <id value="4db6d77b-4a0d-2b1c-0409-753790811c28"/>
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="2244725"/>
@@ -97,10 +101,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/tester2"/>
+      <fullUrl value="urn:uuid:bc27122e-52b5-569e-1787-5d6d0f533516"/>
       <resource>
          <Organization>
-            <id value="tester2"/>
+            <!--tester2-->
+            <id value="bc27122e-52b5-569e-1787-5d6d0f533516"/>
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003367682"/>
@@ -119,10 +124,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="https://www.example.org/Organization/tester"/>
+      <fullUrl value="urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85"/>
       <resource>
          <Organization>
-            <id value="tester"/>
+            <!--tester-->
+            <id value="bb56d49f-4914-2191-6354-2c20f3c76d85"/>
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3007270600"/>
