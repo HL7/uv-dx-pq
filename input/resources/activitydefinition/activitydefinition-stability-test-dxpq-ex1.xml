@@ -10,5 +10,5 @@
                 <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
     <title value="Long-term - 25°C/60% RH - X"/>
     <status value="active"/>
-    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+                <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
 </ActivityDefinition>
