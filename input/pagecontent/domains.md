@@ -112,7 +112,3 @@ Each domain has a page that describes its objective and provides a component dia
     <td>3.2.P.2 Pharmaceutical Development
     <br>   3.2.P.2.6 Compatibility</td>
   </tr>
-</tbody>
-</table>
-</body>
-</html>
