@@ -38,15 +38,8 @@ The biopharmaceutical industry is about to transition into its third era or para
 - The second was the 2003 to 2023 era, it was defined by electronic paper documents (E.g., (PDF) or Microsoft Word) published and delivered to international health authorities via electronic submission gateways. Supported by simple/automation and effort intensive processes. Increased throughput but still limited throughput.
 - The third, which is about to begin, is the post 2023 era, it will be defined by structured data delivered via high frequency APIs and processed by AI agents. Advanced automation, low effort, high volume, high frequency, and high throughput.
 
-<html>
-<body>
-<table>
-<tr><td><b><i>Figure: Advancement of the Submission and Decision-Making Ecosystems***
-<tr><td>The biopharmaceutical industry has undergone previous transformation from paper-based submission to electronic paper submission. The industry is at the beginning of the next iteration of transformation, as signified by a transition to FHIR API data submission. This will be followed by further advancement as AI algorithms become increasingly prevalent. As the industry progresses in its journey towards digital maturity, faster submission and review processes will be made possible.</i></b></td></tr>
-<tr><td><img src="pharm_industry_timeline.png" width="850"/></td></tr>
-</table>
-</body>
-</html>
+***Figure: Advancement of the Submission and Decision-Making Ecosystems: *** The biopharmaceutical industry has undergone previous transformation from paper-based submission to electronic paper submission. The industry is at the beginning of the next iteration of transformation, as signified by a transition to FHIR API data submission. This will be followed by further advancement as AI algorithms become increasingly prevalent. As the industry progresses in its journey towards digital maturity, faster submission and review processes will be made possible.
+<table><tr><td><img src="pharm_industry_timeline.png" width="850"/></td></tr></table>
 
 Currently, the end-to-end timescale for the pharmaceutical regulatory workflow is measured in months and years. This new paradigm, facilitated by this Implementation Guide, will use FHIR APIs and other supporting technologies to reduce the potential time for data exchange from months to days, hours, minutes, and eventually sub-seconds. 
 
