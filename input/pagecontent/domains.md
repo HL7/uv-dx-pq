@@ -3,14 +3,16 @@ The Quality section of regulatory applications are organized into a table of con
 Rather than recreating the legacy table of contents format in FHIR, pharmaceutical quality data represented by FHIR in this guide are organized into 14 new domains (see figure). These 14 domains are designed to maximize the use of structured data and deliver benefits in terms of flexibility, efficiency, and data reuse.
 
 Each domain has a page that describes its objective and provides a component diagram (where applicable), description of components, and examples.
+<html>
+<body>
+<p><b><i>Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains</i></b>
+<br>The 14 PQ domains and their supporting sub-domains, in which each domain is based on a major PQ concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.</p>
 
 <table>
-<tr><td><b><i>Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains</i></b></td></tr>
-<tr><td>The 14 PQ domains and their supporting sub-domains, in which each domain is based on a major PQ concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.</td></tr>
 <tr><td><img src="all-domains-dx-PQ.png" width="850"/></td></tr>
 </table>
 
-**Table: Mapping the legacy CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains****
+<p><b><i>Table: Mapping the legacy CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains</i></b></p>
 
 <table>
 <thead>
@@ -112,3 +114,5 @@ Each domain has a page that describes its objective and provides a component dia
   </tr>
 </tbody>
 </table>
+</body>
+</html>
