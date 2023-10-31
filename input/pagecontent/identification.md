@@ -22,10 +22,9 @@ Provide details about the drug substance and drug product nomenclature; structur
 <p><b>CTD section samples </b> (PDF):</p>
 <ul>
 <li>3.2.S.1 General Information</li>
-<li>3.2.P.1 Description and Composition of the Drug Product</li>
+<li>3.2.P.1 Description and Composition of the Drug Product</li></ul>
 
 <p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
-<ul><li><a href="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1.html">MedicinalProductDefinition - Drug Product dx-PQ - Example 1</a></li>
-</ul>
+<ul><li><a href="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1.html">MedicinalProductDefinition - Drug Product dx-PQ - Example 1</a></li></ul>
 </body>
 </html>
