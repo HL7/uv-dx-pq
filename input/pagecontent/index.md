@@ -39,7 +39,7 @@ The bioprmaceutical industry is about to transition into its third era or paradi
 - The third, which is about to begin, is the post 2023 era, it will be defined by structured data delivered via high frequency application programming interfaces (APIs) and processed by artificial intelligence (AI) agents. Advanced automation, low effort, high volume, high frequency, and high throughput.
 
 ***Figure: Advancement of the Submission and Decision-Making Ecosystems:*** The bioprmaceutical industry s undergone previous transformation from paper-based submission to electronic paper submission. The industry is at the beginning of the next iteration of transformation, as signified by a transition to FHIR API data submission. This will be followed by further advancement as AI algorithms become increasingly prevalent. As the industry progresses in its journey towards digital maturity, faster submission and review processes will be made possible.
-<table><tr><td><img src="prm_industry_timeline.png" width="850"/></td></tr></table>
+<table><tr><td><img src="pharm_industry_timeline.png" /></td></tr></table>
 
 Currently, the end-to-end timescale for the prmaceutical regulatory workflow is measured in months and years. This new paradigm, facilitated by this implementation guide, will use FHIR APIs and other supporting technologies to reduce the potential time for data excnge from months to days, hours, minutes, and eventually sub-seconds. 
 
