@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 32P55 Characterization of Impurities -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="product-impurities"/>
+   <id value="bundle-product-impurities-dxpq-ex1"/>
    <meta>
-      <profile value="http://accumulus.org/fhir/dx-cmc/impurities"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -13,11 +13,9 @@
                 <!-- <id value="studyResultsReport"/>-->
             <id value="diagnosticreport-product-impurities"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
             </meta>
-            <extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchImpurities">
-               <valueBoolean value="true"/>
-            </extension>
+            
             <identifier>
                <system value="https://eudract.europa.eu/example/identifier"/>
                <value value="ABC1234"/>
@@ -118,10 +116,11 @@
          <Medication>
             <id value="medication-actual-batch"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference> <!-- todo consider change this be the MID? -->
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
+                     
+
                   </valueReference>
                </extension>
             </code>
@@ -146,7 +145,7 @@
          <Medication>
             <id value="medication-actual-batch-2"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                   </valueReference>
@@ -172,7 +171,7 @@
          <Medication>
             <id value="medication-actual-batch-3"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                   </valueReference>
@@ -232,6 +231,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="5"/>
                <comparator value="&lt;"/>
@@ -276,6 +279,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -314,6 +321,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -352,6 +363,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -390,6 +405,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -428,6 +447,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -466,6 +489,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="10"/>
                <comparator value="&lt;"/>
@@ -510,6 +537,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="10"/>
                <comparator value="&lt;"/>
@@ -554,6 +585,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="5"/>
                <comparator value="&lt;"/>
@@ -598,6 +633,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -636,6 +675,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="10"/>
                <comparator value="&lt;"/>
@@ -680,6 +723,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -718,6 +765,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="50"/>
                <comparator value="&lt;"/>
@@ -762,6 +813,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="50"/>
                <comparator value="&lt;"/>
@@ -806,6 +861,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="50"/>
                <comparator value="&lt;"/>
@@ -850,6 +909,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="10"/>
                <comparator value="&lt;"/>
@@ -894,6 +957,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="10"/>
                <comparator value="&lt;"/>
@@ -938,6 +1005,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="10"/>
                <comparator value="&lt;"/>
@@ -982,6 +1053,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -1020,6 +1095,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -1058,6 +1137,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueString value="ND"/>
             <component>
                <code>
@@ -1096,6 +1179,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="250"/>
                <unit value="ppm"/>
@@ -1123,7 +1210,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189A"/>
+      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189b"/>
       <resource>
          <Observation>
             <id value="observationDegradation-impCu-2"/>
@@ -1139,6 +1226,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="223"/>
                <unit value="ppm"/>
@@ -1182,6 +1273,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <valueQuantity>
                <value value="199"/>
                <unit value="ppm"/>
@@ -1209,10 +1304,10 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a3"/>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a3"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance-cadmium-unlinked"/>
+            <id value="substance-cadmium"/>
             <property>
                <type>
                   <coding>
@@ -1238,10 +1333,10 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a4"/>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a4"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance-lead-unlinked"/>
+            <id value="substance-lead"/>
             <property>
                <type>
                   <coding>
@@ -1267,10 +1362,10 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a5"/>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a5"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance-arsenic-unlinked"/>
+            <id value="substance-arsenic"/>
             <property>
                <type>
                   <coding>
@@ -1296,10 +1391,10 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a6"/>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a6"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance-mercury-unlinked"/>
+            <id value="substance-mercury"/>
             <property>
                <type>
                   <coding>
@@ -1325,10 +1420,10 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a7"/>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a7"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance-cobalt-unlinked"/>
+            <id value="substance-cobalt"/>
             <property>
                <type>
                   <coding>
@@ -1354,10 +1449,10 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a8"/>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a8"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance-vanadium-unlinked"/>
+            <id value="substance-vanadium"/>
             <property>
                <type>
                   <coding>
@@ -1383,10 +1478,10 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a9"/>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a9"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance-nickel-unlinked"/>
+            <id value="substance-nickel"/>
             <property>
                <type>
                   <coding>
@@ -1412,10 +1507,10 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a0"/>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a0"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance-copper-unlinked"/>
+            <id value="substance-copper"/>
             <property>
                <type>
                   <coding>
@@ -1462,6 +1557,46 @@
                   <display value="Oral use"/>
                </coding>
             </route>
+            <impurity>
+               <reference>
+                  <reference value="SubstanceDefinition/substance-cadmium"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                  <reference value="SubstanceDefinition/substance-lead"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                  <reference value="SubstanceDefinition/substance-arsenic"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                  <reference value="SubstanceDefinition/substance-mercury"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                  <reference value="SubstanceDefinition/substance-cobalt"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                  <reference value="SubstanceDefinition/substance-copper"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                  <reference value="SubstanceDefinition/substance-vanadium"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                  <reference value="SubstanceDefinition/substance-nickel"/>
+               </reference>
+            </impurity>
             <name>
                <productName value="Stelbat Tablets, 20mg"/>
                <type>

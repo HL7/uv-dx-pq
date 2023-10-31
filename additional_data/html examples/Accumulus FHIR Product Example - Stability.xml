@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Product Stability Study -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="product-stability-study"/>
+   <id value="bundle-drug-product-stability-dxpq-ex1"/>
+   <!--   <id value="product-stability-study"/>-->
    <meta>
-      <profile value="http://accumulus.org/fhir/dx-cmc/stability"/>
+        
+
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
    </meta>
    <type value="collection"/>
    <!-- Section 11 - Stability Study - Results -->
@@ -14,17 +17,14 @@
                 <!-- <id value="studyResultsReport"/>-->
             <id value="diagnosticreport-stability-study-results-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
             </meta>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/businessName">
-                    <valueString value="Section 11 - Stability Study - Results"/>
-                </extension-->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
+                  <reference value="PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
                </valueReference>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/statisticalModel">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-dxpq">
                <valueCodeableConcept>
                          <!-- #223 -->
                          <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then
@@ -33,7 +33,7 @@
                   <text value="information about statistical model utilized to interpret stability study results"/>
                </valueCodeableConcept>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/containerOrientation">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-dxpq">
                <valueCodeableConcept>
                          <!-- #227 -->
                          <!-- Considered ObservatioDefinition.usageContext -->
@@ -50,13 +50,12 @@
                   <system value="http://accumulus.org/fhir/code/reportType"/>
                   <code value="111"/>
                   <display value="Stability Study Report - 18 months"/>
-                  <!-- NEW DATA
-                            <code value="111"/>
-                            <display value="Stability Study Report - 24 months"/-->
+                  
+
                </coding>
             </code>
             <effectiveDateTime value="2020-12"> <!-- start of stability test -->
-               <extension url="http://accumulus.org/fhir/extension/timePointDescription">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-dxpq">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://accumulus.org/fhir/code/timePointDescription"/>
@@ -67,39 +66,65 @@
                   </valueCodeableConcept>
                </extension>
             </effectiveDateTime>
+            
+
             <performer>
                <reference value="Organization/tester"/>
             </performer>
+            
+
+            
+
             <result>
+                    
+
                <reference value="Observation/LongTerm25C-initial-1"/>
+               
+
+               
+
             </result>
+            
+
             <result>
                <reference value="Observation/LongTerm25C-initial-2"/>
             </result>
+            
+
             <result>
                <reference value="Observation/LongTerm25C-initial-3"/>
             </result>
             <!-- skipping middle months -->
+            
+
             <result>
                <reference value="Observation/LongTerm25C-18m-1"/>
             </result>
+            
+
             <result>
                <reference value="Observation/LongTerm25C-18m-2"/>
             </result>
+            
+
             <result>
                <reference value="Observation/LongTerm25C-18m-3"/>
             </result>
-            <!-- NEW DATA -->
+            
+
             <!--result>
                     <reference value="Observation/LongTerm25C-24m-1"/>
                 </result-->
             <!-- Accelerated -->
+            
+
             <result>
                <reference value="Observation/Accelerated40C-3-1"/>
             </result>
             <!-- skipping rest of Accelerated -->
             <conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 18 months."/>
-            <!-- NEW DATA -->
+            
+
             <!--conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 24 months."/-->
          </DiagnosticReport>
       </resource>
@@ -111,11 +136,23 @@
             <!-- Section 11 - Stability Study - Protocol -->
          <PlanDefinition>
                 <!--<id value="stabilityStudyProtocol"/>-->
-            <id value="plandefinition-stability-study-protocol-dxpq-ex1"/>
+                
+
+            <id value="plandefinition-dxpq-ex5-stability-study-protocol"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
             </meta>
+            <url value="http://example-server.com/fhir/PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
             <title value="Stability Monitoring Program"/>
+            
+
+            <type>
+               <coding>
+                  <system value="http://example.org/fhir/code/planType"/>
+                  <code value="1244588"/>
+                  <display value="Stability Study Protocol"/>
+               </coding>
+            </type>
             <status value="active"/>
             <subjectReference>
                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
@@ -154,7 +191,11 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
                      </action>
                   </action>
-                  <action> <!-- 3 months -->
+                  <!-- 3 months -->
+                  
+
+                  <!-- todo put comments back in? -->
+                  <action>
                      <title value="3"/>
                      <timingTiming>
                         <repeat>
@@ -180,7 +221,10 @@
                         <definitionCanonical value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
                      </action>
                   </action>
-                  <action> <!-- 6 months -->
+                  <!-- 6 months -->
+                  
+
+                  <action>
                      <title value="6"/>
                      <timingTiming>
                         <repeat>
@@ -206,7 +250,10 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25X-6"/>
                      </action>
                   </action>
-                  <action> <!-- 9 months -->
+                  <!-- 9 months -->
+                  
+
+                  <action>
                      <title value="9"/>
                      <timingTiming>
                         <repeat>
@@ -232,7 +279,10 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25X-9"/>
                      </action>
                   </action>
-                  <action> <!-- 12 months -->
+                  <!-- 12 months -->
+                  
+
+                  <action>
                      <title value="12"/>
                      <timingTiming>
                         <repeat>
@@ -258,7 +308,10 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25XY-12"/>
                      </action>
                   </action>
-                  <action> <!-- 18 months -->
+                  <!-- 18 months -->
+                  
+
+                  <action>
                      <title value="18"/>
                      <timingTiming>
                         <repeat>
@@ -284,7 +337,10 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm25XY-18"/>
                      </action>
                   </action>
-                  <action> <!-- 24 months -->
+                  <!-- 24 months -->
+                  
+
+                  <action>
                      <title value="24"/>
                      <timingTiming>
                         <repeat>
@@ -312,10 +368,12 @@
                   </action>
                </action>
                <!-- end of long term -->
+               <!-- 0 months is first one - but results for this are not needed, because and zero months is the same for both long term and accelerated -->
+               
+
                <action>
                   <title value="Accelerated"/>
                   <description value="40°C/75% RH"/>
-                  <!-- 0 months - but results for this are not needed, because and zero months is the same for both long term and accelerated -->
                   <action>
                      <title value="Initial"/>
                      <timingTiming>
@@ -342,7 +400,7 @@
                         <definitionCanonical value="ActivityDefinition/activityAccelerated40XYZ-Initial"/>
                      </action>
                   </action>
-                  <action> <!-- 3 months -->
+                  <action>
                      <title value="3"/>
                      <timingTiming>
                         <repeat>
@@ -368,7 +426,7 @@
                         <definitionCanonical value="ActivityDefinition/activityAccelerated40X-3"/>
                      </action>
                   </action>
-                  <action> <!-- 6 months -->
+                  <action>
                      <title value="6"/>
                      <timingTiming>
                         <repeat>
@@ -394,7 +452,7 @@
                         <definitionCanonical value="ActivityDefinition/activityAccelerated40X-6"/>
                      </action>
                   </action>
-                  <action> <!-- 9 months -->
+                  <action>
                      <title value="9"/>
                      <timingTiming>
                         <repeat>
@@ -415,11 +473,11 @@
                            <frequency value="1"/>
                         </repeat>
                      </timingTiming>
-                     <action> <!-- none -->
+                     <action>
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 12 months -->
+                  <action>
                      <title value="12"/>
                      <timingTiming>
                         <repeat>
@@ -441,11 +499,10 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 18 months -->
+                  <action>
                      <title value="18"/>
                      <timingTiming>
                         <repeat>
@@ -467,11 +524,10 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
-                  <action> <!-- 24 months -->
+                  <action>
                      <title value="24"/>
                      <timingTiming>
                         <repeat>
@@ -493,7 +549,6 @@
                         </repeat>
                      </timingTiming>
                      <action>
-                                <!-- none -->
                         <title value="-"/>
                      </action>
                   </action>
@@ -511,8 +566,9 @@
                 <!--<id value="specimenDefStoredAt25"/>-->
             <id value="specimendefinition-stability-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             </meta>
+            <url value="http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <status value="active"/>
             <typeTested>
                <preference value="preferred"/>
@@ -530,10 +586,12 @@
                 <!-- <id value="activityLongTerm25X-3"/>-->
             <id value="activitydefinition-stability-test-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
             </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
+            <!-- changed here to not have url in front -->
             <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
             <!-- longTerm25X -->
          </ActivityDefinition>
@@ -544,6 +602,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25X-6"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -555,6 +617,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25X-9"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -566,6 +632,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25XYZ-Initial"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <title value="Long-term - 25°C/60% RH - XYZ"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -579,6 +649,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25XY-12"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -591,6 +665,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25XY-18"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -603,6 +681,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityLongTerm25XY-24"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -611,14 +693,18 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b40d24f0-1c09-4a46-8849-b73524ca8ab1"/>
+      <fullUrl value="urn:uuid:d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
       <resource>
          <ObservationDefinition>
-                <!--<id value="longTerm25X"/>-->
+                
+
             <id value="observationdefinition-test-method-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
+            
+
+            <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -628,11 +714,23 @@
                <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
             </specimen>
             <hasMember>
+                    
+
                <reference value="ObservationDefinition/Description"/>
+               
+
+               
+
+               
+
             </hasMember>
+            
+
             <hasMember>
                <reference value="ObservationDefinition/Degradation"/>
             </hasMember>
+            
+
             <hasMember>
                <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
             </hasMember>
@@ -645,6 +743,10 @@
       <resource>
          <ObservationDefinition>
             <id value="Description"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
             <title value="Description"/>
             <status value="active"/>
             <code>
@@ -656,11 +758,9 @@
                <text value="Description"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <valueString value="An orange film-coated tablet, debossed with 175 on one side">
-                     <extension url="http://nprogram.co.uk/fhir/extension/viewer/tableFootnote">
-                        <valueString value="Note 1"/>
-                     </extension>
+                     
                   </valueString>
                </extension>
             </qualifiedValue>
@@ -672,6 +772,10 @@
       <resource>
          <ObservationDefinition>
             <id value="Degradation"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
             <title value="Degradation Products by HPLC (% w/w)"/>
             <status value="active"/>
             <code>
@@ -690,7 +794,7 @@
                      <value value="0.8"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -703,7 +807,7 @@
                      <value value="0.4"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -716,7 +820,7 @@
                      <value value="0.4"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -729,7 +833,7 @@
                      <value value="0.2"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -742,7 +846,7 @@
                      <value value="2.3"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -765,8 +869,9 @@
                 <!-- <id value="Water"/> -->
             <id value="observationdefinition-simple-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             <title value="Water Content (% w/w) (Mean)"/>
             <status value="active"/>
             <code>
@@ -783,7 +888,7 @@
                      <value value="0.2"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </high>
                </range>
             </qualifiedValue>
@@ -795,6 +900,10 @@
       <resource>
          <ObservationDefinition>
             <id value="longTerm25Y"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
             <title value="Y"/>
             <status value="active"/>
             <code>
@@ -815,6 +924,10 @@
       <resource>
          <ObservationDefinition>
             <id value="Microbiological"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
             <title value="Microbiological"/>
             <status value="active"/>
             <code>
@@ -826,7 +939,7 @@
                <text value="Microbiological Quality"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <valueString value="Complies with PhEur"/>
                </extension>
             </qualifiedValue>
@@ -838,6 +951,10 @@
       <resource>
          <ObservationDefinition>
             <id value="longTerm25Z"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/363384c8-0d79-5ff0-5538-4933f99d6409"/>
             <title value="Z"/>
             <status value="active"/>
             <code>
@@ -858,6 +975,10 @@
       <resource>
          <ObservationDefinition>
             <id value="Uniformity"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
             <title value="Uniformity of dosage"/>
             <status value="active"/>
             <code>
@@ -869,7 +990,7 @@
                <text value="uniformity of dosage units (by weight)"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <valueString value="Complies"/>
                </extension>
             </qualifiedValue>
@@ -882,6 +1003,7 @@
       <resource>
          <SpecimenDefinition>
             <id value="specimenDefStoredAt40"/>
+            <url value="http://example-server.com/fhir/SpecimenDefinition/e95109ac-5ef9-1723-3506-2ef2f2e33d87"/>
             <status value="active"/>
             <typeTested>
                <preference value="preferred"/>
@@ -897,6 +1019,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityAccelerated40X-3"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/096e3f32-798e-6792-76ad-4ea783521c50"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/accelerated40X"/>
@@ -908,6 +1034,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityAccelerated40X-6"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/77f86b13-8193-3df7-8362-ab5e79ba541d"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/accelerated40X"/>
@@ -919,6 +1049,10 @@
       <resource>
          <ActivityDefinition>
             <id value="activityAccelerated40XYZ-Initial"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
             <title value="Accelerated - 40°C/70% RH - XYZ"/>
             <status value="active"/>
             <observationRequirement value="ObservationDefinition/accelerated40X"/>
@@ -932,6 +1066,10 @@
       <resource>
          <ObservationDefinition>
             <id value="accelerated40X"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
             <title value="X"/>
             <status value="active"/>
             <code>
@@ -955,6 +1093,10 @@
       <resource>
          <ObservationDefinition>
             <id value="accelerated40Y"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
             <title value="Y"/>
             <status value="active"/>
             <code>
@@ -975,6 +1117,10 @@
       <resource>
          <ObservationDefinition>
             <id value="accelerated40Z"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/9bc183ee-6017-789b-8a6f-6a5c339f9ae0"/>
             <title value="Z"/>
             <status value="active"/>
             <code>
@@ -994,10 +1140,11 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
       <resource>
          <Specimen>
-                <!--id value="stabilityInitial-1"/-->
+                
+
             <id value="specimen-stability-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-01"/>
@@ -1018,7 +1165,7 @@
          <Specimen>
             <id value="stabilityInitial-2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-02"/>
@@ -1039,7 +1186,7 @@
          <Specimen>
             <id value="stabilityInitial-3"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Specimen-stability-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-03"/>
@@ -1075,6 +1222,13 @@
                      </coding>
                      <text value="Description"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1082,11 +1236,14 @@
             </contained>
             <contained>
                <Observation>
-                        <!--id value="LongTerm25C-initial-1-Degradation-imp1"/-->
+                        
+
                   <id value="observation-test-result-dxpq-ex1"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
                   </meta>
+                  
+
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
                   </instantiatesReference>
@@ -1099,11 +1256,24 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                            
+
+                     <reference value="Organization/tester"/>
+                     
+
+                     
+
+                  </performer>
                   <valueQuantity>
                      <value value="0.101"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1135,11 +1305,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.201"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1170,11 +1347,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.201"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1205,12 +1389,19 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.101"/>
                      <comparator value="&lt;"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1241,11 +1432,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.801"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1275,11 +1473,18 @@
                         <display value="Water Content"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.1501"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                </Observation>
             </contained>
@@ -1297,6 +1502,13 @@
                         <display value="Microbiological Quality"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1316,6 +1528,13 @@
                         <display value="Uniformity of dosage units (by weight)"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1333,6 +1552,10 @@
             <subject>
                <reference value="Medication/medication-batch-information-dxpq-ex1"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <specimen>
                <reference value="Specimen/specimen-stability-dxpq-ex1"/>
             </specimen>
@@ -1387,6 +1610,13 @@
                      </coding>
                      <text value="Description"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-2"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1407,11 +1637,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-2"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.1"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                </Observation>
             </contained>
@@ -1429,6 +1666,13 @@
                         <display value="Microbiological Quality"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-2"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueString value="Complies"/>
                </Observation>
             </contained>
@@ -1446,6 +1690,13 @@
                         <display value="Uniformity of dosage units (by weight)"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-2"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1465,6 +1716,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <specimen>
                <reference value="Specimen/stabilityInitial-2"/>
             </specimen>
@@ -1505,6 +1760,13 @@
                      </coding>
                      <text value="Description"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-3"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1525,11 +1787,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-3"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.1"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                </Observation>
             </contained>
@@ -1547,6 +1816,13 @@
                         <display value="Microbiological Quality"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-3"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1566,6 +1842,13 @@
                         <display value="Uniformity of dosage units (by weight)"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-3"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1585,6 +1868,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <specimen>
                <reference value="Specimen/stabilityInitial-3"/>
             </specimen>
@@ -1616,7 +1903,7 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1645,7 +1932,7 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1674,7 +1961,7 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -1712,6 +1999,13 @@
                      </coding>
                      <text value="Description"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1721,7 +2015,7 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Degradation-imp1"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
                   </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
@@ -1735,11 +2029,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.118"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1771,11 +2072,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.218"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1806,11 +2114,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.218"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1841,12 +2156,19 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.118"/>
                      <comparator value="&lt;"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1877,11 +2199,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.818"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -1911,11 +2240,18 @@
                         <display value="Water Content"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.1518"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                </Observation>
             </contained>
@@ -1933,6 +2269,13 @@
                         <display value="Microbiological Quality"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueString value="Complies"/>
                </Observation>
             </contained>
@@ -1950,6 +2293,13 @@
                         <display value="Uniformity of dosage units (by weight)"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -1969,6 +2319,10 @@
             <subject>
                <reference value="Medication/medication-batch-information-dxpq-ex1"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <specimen>
                <reference value="Specimen/stability18months-1"/>
             </specimen>
@@ -2023,6 +2377,13 @@
                      </coding>
                      <text value="Description"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-2"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -2042,6 +2403,13 @@
                         <display value="Microbiological Quality"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-2"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueString value="Does not comply"/>
                </Observation>
             </contained>
@@ -2059,6 +2427,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-2"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <specimen>
                <reference value="Specimen/stability18months-2"/>
             </specimen>
@@ -2092,6 +2464,13 @@
                      </coding>
                      <text value="Description"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-3"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -2111,6 +2490,13 @@
                         <display value="Microbiological Quality"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-actual-batch-3"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueString value="Does not comply"/>
                </Observation>
             </contained>
@@ -2128,6 +2514,10 @@
             <subject>
                <reference value="Medication/medication-actual-batch-3"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <specimen>
                <reference value="Specimen/stability18months-3"/>
             </specimen>
@@ -2153,7 +2543,7 @@
             <processing>
                <description value="Store for 3 months"/>
                <timePeriod>
-                  <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -2170,347 +2560,14 @@
          </Specimen>
       </resource>
    </entry>
-   <!-- NEW DATA - Section 11 - Stability Study - Results - Test Result - Long Term XY - 24M - on batch 1 -->
-   <!--entry>
-      <fullUrl value="urn:uuid:e903ad6d-0cb3-87dd-6af1-4b88c654a47c"/>
-        <resource>
-            <Observation>
-                <id value="LongTerm25C-24m-1"/>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Description"/>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/Description"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding> 
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="XXX"/>
-                                <display value="Description"/>
-                            </coding>
-                            <text value="Description"/>
-                        </code>
-                    	<valueCodeableConcept>
-                    		<text value="Complies"/>
-                    	</valueCodeableConcept>
-                    </Observation>
-                </contained>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Degradation-imp1"/>
-                        <meta>
-                            <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Observation-test-result-dxpq"/>
-                        </meta>
-                        <extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
-                            <valueString value="observation/{id}.xml"/>
-                        </extension>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/Degradation"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding> 
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="DGP"/>
-                                <display value="Degradation Products"/>
-                            </coding>
-                            <text value="Degradation Products"/>
-                        </code>
-                        <valueQuantity>
-                            <value value="0.124"/>
-                            <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%{ w/w}"/>
-                        </valueQuantity>
-                        <component>
-                            <code>
-                                <coding> 
-                                    <system value="http://dummy.loinc.org"/>
-                                    <code value="IMP"/>
-                                    <display value="Impurity"/>
-                                </coding>
-                            </code>
-                            <valueCodeableConcept>
-                                <text value="Impurity 1"/>
-                            </valueCodeableConcept>
-                        </component>
-                    </Observation>
-                </contained>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Degradation-imp2"/>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/Degradation"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding> 
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="DGP"/>
-                                <display value="Degradation Products"/>
-                            </coding>
-                            <text value="Degradation Products"/>
-                        </code>
-                        <valueQuantity>
-                            <value value="0.224"/>
-                            <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%{ w/w}"/>
-                        </valueQuantity>
-                        <component>
-                            <code>
-                                <coding> 
-                                    <system value="http://dummy.loinc.org"/>
-                                    <code value="IMP"/>
-                                    <display value="Impurity"/>
-                                </coding>
-                            </code>
-                            <valueCodeableConcept>
-                                <text value="Impurity 2"/>
-                            </valueCodeableConcept>
-                        </component>
-                    </Observation>
-                </contained>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Degradation-imp3"/>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/Degradation"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding> 
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="DGP"/>
-                                <display value="Degradation Products"/>
-                            </coding>
-                            <text value="Degradation Products"/>
-                        </code>
-                        <valueQuantity>
-                            <value value="0.224"/>
-                            <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%{ w/w}"/>
-                        </valueQuantity>
-                        <component>
-                            <code>
-                                <coding> 
-                                    <system value="http://dummy.loinc.org"/>
-                                    <code value="IMP"/>
-                                    <display value="Impurity"/>
-                                </coding>
-                            </code>
-                            <valueCodeableConcept>
-                                <text value="Impurity 3"/>
-                            </valueCodeableConcept>
-                        </component>
-                    </Observation>
-                </contained>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Degradation-impUnspecified"/>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/Degradation"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding> 
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="DGP"/>
-                                <display value="Degradation Products"/>
-                            </coding>
-                            <text value="Degradation Products"/>
-                        </code>
-                        <valueQuantity>
-                            <value value="0.124"/>
-                            <comparator value="&lt;"/>
-                            <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%{ w/w}"/>
-                        </valueQuantity>
-                        <component>
-                            <code>
-                                <coding> 
-                                    <system value="http://dummy.loinc.org"/>
-                                    <code value="IMP"/>
-                                    <display value="Impurity"/>
-                                </coding>
-                            </code>
-                            <valueCodeableConcept>
-                                <text value="Any Unspecified Degradation Impurity"/>
-                            </valueCodeableConcept>
-                        </component>
-                    </Observation>
-                </contained>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Degradation-impTotal"/>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/Degradation"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding> 
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="DGP"/>
-                                <display value="Degradation Products"/>
-                            </coding>
-                            <text value="Degradation Products"/>
-                        </code>
-                        <valueQuantity>
-                            <value value="0.824"/>
-                            <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%{ w/w}"/>
-                        </valueQuantity>
-                        <component>
-                            <code>
-                                <coding> 
-                                    <system value="http://dummy.loinc.org"/>
-                                    <code value="IMP"/>
-                                    <display value="Impurity"/>
-                                </coding>
-                            </code>
-                            <valueCodeableConcept>
-                                <text value="Total Degradation Impurities"/>
-                            </valueCodeableConcept>
-                        </component>
-                    </Observation>
-                </contained>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Water"/>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding> 
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="WWW"/>
-                                <display value="Water Content"/>
-                            </coding>
-                        </code>
-                        <valueQuantity>
-                            <value value="0.1524"/>
-                            <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%{ w/w}"/>
-                        </valueQuantity>
-                    </Observation>
-                </contained>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Microbiological"/>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/Microbiological"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding> 
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="YYY"/>
-                                <display value="Microbiological Quality"/>
-                            </coding>
-                        </code>
-                        <valueString value="Complies"/>
-                    </Observation>
-                </contained>
-                <contained>
-                    <Observation>
-                        <id value="LongTerm25C-24m-1-Uniformity"/>
-                        <instantiatesReference>
-                            <reference value="ObservationDefinition/Uniformity"/>
-                        </instantiatesReference>
-                        <status value="final"/>
-                        <code>
-                            <coding>
-                                <system value="http://dummy.loinc.org"/>
-                                <code value="ZZZ"/>
-                                <display value="Uniformity of dosage units (by weight)"/>
-                            </coding>
-                        </code>
-                        <valueCodeableConcept>
-                            <text value="Complies"/>
-                        </valueCodeableConcept>
-                    </Observation>
-                </contained>
-                <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
-                    <valueReference>
-                    	<reference value="ActivityDefinition/activityLongTerm25XY-24"/>
-                    </valueReference>
-                </extension>
-                <status value="final"/>
-                <code>
-                    <text value="Test Components - Long-term 25C etc - 24 months (XY)"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-batch-information-dxpq-ex1"/>
-                </subject>
-                <specimen>
-                    <reference value="Specimen/stability24months-1"/>
-                </specimen>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Description"/>
-                </hasMember>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Degradation-imp1"/>
-                </hasMember>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Degradation-imp2"/>
-                </hasMember>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Degradation-imp3"/>
-                </hasMember>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Degradation-impUnspecified"/>
-                </hasMember>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Degradation-impTotal"/>
-                </hasMember>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Water"/>
-                </hasMember>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Microbiological"/>
-                </hasMember>
-                <hasMember>
-                    <reference value="#LongTerm25C-24m-1-Uniformity"/>
-                </hasMember>
-                
-            </Observation>
-        </resource>
-    </entry-->
-   <!-- specimen 24 months sample 1 -->
-   <!-- NEW DATA -->
-   <!--entry>
-        <fullUrl value="urn:uuid:18926818-10c4-972c-618e-01694ff06c78"/>
-        <resource>
-            <Specimen>
-                <id value="stability24months-1"/>
-                <collection>
-                    <collectedDateTime value="2020-12-01"/>
-                </collection>
-                <processing>
-                    <description value="Store for 24 months"/>	
-                    <timePeriod>
-                        <extension url="http://accumulus.org/fhir/extension/batchStorageDuration">
-                            <valueDuration>
-                                <value value="24"/>
-                                <unit value="month"/>
-                            </valueDuration>
-                        </extension>
-                        <start value="2020-12"/>
-                        <end value="2022-12"/>
-                    </timePeriod>
-                </processing>
-                <processing>
-                    <description value="25°C/60% RH"/>
-                </processing>
-            </Specimen>
-        </resource>
-    </entry-->
+   
+
+   
+
+   
+
+   
+
    <!-- Section 11 - Stability Study - Results - Test Result - Accelerated XYZ - Initial - on batch 1 -->
    <entry>
       <fullUrl value="urn:uuid:72e0640b-094b-909e-5268-3dee92af4bbd"/>
@@ -2532,6 +2589,13 @@
                      </coding>
                      <text value="Description"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -2552,11 +2616,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.143"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -2588,11 +2659,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.243"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -2624,11 +2702,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.201"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -2659,12 +2744,19 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.101"/>
                      <comparator value="&lt;"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -2695,11 +2787,18 @@
                      </coding>
                      <text value="Degradation Products"/>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.801"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                   <component>
                      <code>
@@ -2729,11 +2828,18 @@
                         <display value="Water Content"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueQuantity>
                      <value value="0.1501"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
-                     <code value="%{ w/w}"/>
+                     <code value="%"/>
                   </valueQuantity>
                </Observation>
             </contained>
@@ -2751,6 +2857,13 @@
                         <display value="Microbiological Quality"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -2770,6 +2883,13 @@
                         <display value="Uniformity of dosage units (by weight)"/>
                      </coding>
                   </code>
+                  <subject>
+                     <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                  </subject>
+                  <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                  <performer>
+                     <reference value="Organization/tester"/>
+                  </performer>
                   <valueCodeableConcept>
                      <text value="Complies"/>
                   </valueCodeableConcept>
@@ -2789,6 +2909,10 @@
             <subject>
                <reference value="Medication/medication-batch-information-dxpq-ex1"/>
             </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/tester"/>
+            </performer>
             <specimen>
                <reference value="Specimen/stabilityInitialAcc-3"/>
             </specimen>
@@ -2830,26 +2954,26 @@
                 <!-- <id value="medication-actual-batch"/> -->
             <id value="medication-batch-information-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Medication-batch-information-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
             </meta>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
-                    <valueString value="medication/{id}.xml"/>
-                </extension-->
+            
+
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference> <!-- todo consider change this be the MID? -->
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
+                     
+
                   </valueReference>
                </extension>
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <valueReference>
                         <reference value="Substance/substance-dxpq-ex1"/>
                      </valueReference>
@@ -2857,10 +2981,10 @@
                   <extension url="manufacturingDate"> <!-- #157 -->
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq"> <!-- #159 -->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq"> <!-- #159 -->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -2872,7 +2996,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity> <!-- #160 -->
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -2881,9 +3005,6 @@
                   <extension url="batchUtilization"> <!-- #159 -->
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                           </extension>
                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
                            <display value="Commercial"/>
@@ -2921,7 +3042,7 @@
          <Medication>
             <id value="medication-actual-batch-2"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                   </valueReference>
@@ -2929,10 +3050,10 @@
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <valueReference>
                         <reference value="Substance/actual-batch-substance-2"/>
                      </valueReference>
@@ -2940,10 +3061,10 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -2954,7 +3075,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -2963,9 +3084,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                           </extension>
                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
                            <display value="Commercial"/>
@@ -2999,7 +3117,7 @@
          <Medication>
             <id value="medication-actual-batch-3"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                   </valueReference>
@@ -3007,10 +3125,10 @@
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-substance-batch-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <valueReference>
                         <reference value="Substance/actual-batch-substance-3"/>
                      </valueReference>
@@ -3018,10 +3136,10 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -3032,7 +3150,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -3041,9 +3159,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-                           <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                              <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                           </extension>
                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                            <code value="C133990"/>
                            <display value="Commercial"/>
@@ -3139,7 +3254,7 @@
                 <!-- <id value="product"/> -->
             <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
             </meta>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -3184,14 +3299,16 @@
       <!-- manual correction of dupe -->
       <resource>
          <Ingredient>
-				<!--id value="productIngredient"/-->
+				
+
             <id value="ingredient-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Ingredient-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"/>
             </meta>
             <status value="active"/>
             <for>
-				    <!--reference value="MedicinalProductDefinition/product"/-->
+				    
+
                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </for>
             <role>
@@ -3217,11 +3334,10 @@
          <SubstanceDefinition>
             <id value="substancedefinition-component-substance-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             </meta>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
-        	        <valueString value="substancedefinition/{id}.xml"/>
-        	    </extension-->
+            
+
             <manufacturer>
                <reference value="Organization/organization-dxpq-ex1"/>
             </manufacturer>
@@ -3236,10 +3352,11 @@
       <fullUrl value="urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
       <resource>
          <Organization>
-			    <!--id value="substance-manufacturer"/-->
+			    
+
             <id value="organization-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Organization-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
             </meta>
             <identifier>
 					<!-- FDA establishment identifier -->
@@ -3267,17 +3384,16 @@
 			    <!--<id value="actual-batch-substance"/>-->
             <id value="substance-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Substance-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
             </meta>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
-			        <valueString value="substance/{id}.xml"/>
-			    </extension-->
+            
+
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3292,7 +3408,7 @@
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
@@ -3301,9 +3417,6 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                        </extension>
                         <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>
@@ -3335,11 +3448,11 @@
          <Substance>
             <id value="actual-batch-substance-2"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3354,7 +3467,7 @@
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
@@ -3363,9 +3476,6 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                        </extension>
                         <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>
@@ -3396,11 +3506,11 @@
          <Substance>
             <id value="actual-batch-substance-3"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -3415,7 +3525,7 @@
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/dx-pq/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
@@ -3424,9 +3534,6 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                           <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                        </extension>
                         <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
                         <code value="C133991"/>
                         <display value="Development"/>

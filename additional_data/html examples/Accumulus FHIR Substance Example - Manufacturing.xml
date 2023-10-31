@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Manufacturing -->
-<Bundle xmlns="http://hl7.org/fhir">
+<!-- Product Manufacturing --><Bundle xmlns="http://hl7.org/fhir">
    <id value="product-manufacturing"/>
    <meta>
       <profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/>
@@ -11,7 +10,7 @@
       <resource>
          <PlanDefinition>
             <id value="manufacturingProcess-unlinked"/>
-            <extension url="http://accumulus.org/fhir/extension/planDocumentReference">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq">
                <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
@@ -19,9 +18,10 @@
                   <reference value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
                </valueReference>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
                <valueMarkdown value="This can be text about the history"/>
             </extension>
+            <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <type>
                <coding>
                   <system value="http://accumulus.org/fhir/code/planType"/>
@@ -126,14 +126,14 @@
                   <text value="overall process"/>
                </code>
                <action>
-                  <extension url="http://accumulus.org/fhir/extension/processStepScale">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
                      <valueCoding>
                         <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                         <code value="ABCD"/>
                         <display value="Production Scale"/>
                      </valueCoding>
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/processParameters">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
                      <extension url="parameter">
                         <valueCodeableConcept>
                            <coding>
@@ -184,7 +184,7 @@
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                            <valueReference>
                               <reference value="SubstanceDefinition/startingMaterial"/>
                            </valueReference>
@@ -200,7 +200,7 @@
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                            <valueReference>
                               <reference value="SubstanceDefinition/processingMaterial"/>
                            </valueReference>
@@ -216,7 +216,7 @@
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                            <valueReference>
                               <reference value="SubstanceDefinition/resultingMaterial"/>
                            </valueReference>

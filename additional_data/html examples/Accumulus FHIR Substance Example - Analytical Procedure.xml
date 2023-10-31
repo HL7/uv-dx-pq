@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Analytical Procedure -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="substance-analytical-procedure"/>
+   <id value="bundle-analytical-procedure-dxpq-ex2-sub"/>
+   <!--   <id value="substance-analytical-procedure"/>-->
    <meta>
-      <profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
+                <!-- unlinked -->
             <id value="analyticalProcedure"/>
+            <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Analytical Procedure"/>
             <type>
                <coding>
@@ -29,7 +32,7 @@
                <reference value="SubstanceDefinition/substance1"/>
             </subjectReference>
             <action>
-               <extension url="http://accumulus.org/fhir/extension/processParameters">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -43,7 +46,7 @@
                      <valueString value="Same as for blue light"/>
                   </extension>
                </extension>
-               <extension url="http://accumulus.org/fhir/extension/processParameters">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -57,7 +60,7 @@
                      <valueString value="MIE"/>
                   </extension>
                </extension>
-               <extension url="http://accumulus.org/fhir/extension/processParameters">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -91,7 +94,7 @@
                     </participant-->
                <participant>
                   <typeReference>
-                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
                            <reference value="SubstanceDefinition/dispersant"/>
                         </valueReference>
@@ -107,7 +110,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://accumulus.org/fhir/extension/manufacturingParticipant">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
                            <reference value="SubstanceDefinition/resultingMaterial"/>
                         </valueReference>
@@ -201,6 +204,7 @@
       <resource>
          <ObservationDefinition>
             <id value="ParticleSize"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
             <title value="Particle Size"/>
             <status value="active"/>
             <description value="Number of Analyses: 1 replicate for each sample preparation"/>
@@ -232,6 +236,7 @@
       <resource>
          <ObservationDefinition>
             <id value="ParticleSizeObscuration"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Obscuration"/>
             <status value="active"/>
             <code>
@@ -244,7 +249,7 @@
             </code>
             <qualifiedValue>
                <range>
-                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueTarget">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq">
                      <valueQuantity>
                         <value value="15"/>
                         <unit value="%"/>
@@ -268,6 +273,7 @@
       <resource>
          <ObservationDefinition>
             <id value="ParticleRI"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Particle refractive index"/>
             <status value="active"/>
             <code>
@@ -298,6 +304,7 @@
       <resource>
          <ObservationDefinition>
             <id value="ParticleSizeRSD"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             <title value="Particle Size RSD"/>
             <status value="active"/>
             <code>
@@ -309,7 +316,7 @@
                <text value="Particle Size RSD"/>
             </code>
             <qualifiedValue>
-               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
                   <valueString value="The %RSD for the D(v, 0.9) must be not more than 15%"/>
                </extension>
             </qualifiedValue>
@@ -321,6 +328,7 @@
       <resource>
          <SpecimenDefinition>
             <id value="specimendefinition"/>
+            <url value="http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <status value="active"/>
             <description value="Number of Preparations: 3"/>
          </SpecimenDefinition>
