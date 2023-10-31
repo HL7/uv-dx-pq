@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic CMC data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures.
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures.
 
 <html>
 <body>

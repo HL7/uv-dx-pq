@@ -14,12 +14,12 @@ Provide details about primary and secondary packaging components for drug substa
 ### Examples
 <html>
 <body>
-<p><b>Synthetic CMC samples</b> (PDF):</p>
+<p><b>CTD section samples </b> (PDF):</p>
 <ul>
 <li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.6_Container_Closure_System.pdf ">3.2.S.6 Container Closure System</a></li>
 <li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.7_Container_Closure_System.pdf ">3.2.P.7 Container Closure System</a></li>
 </ul>
-<p><b>HTML rendering</b> of Synthetic CMC data:</p>
+<p><b>HTML rendering</b> of synthetic CTD data:</p>
 <ul><li><a href="container_rend_s.html">Drug Substance Container Closure System</a> </li>
 <li><a href="container_rend_p.html">Drug Product Container Closure System</a> </li></ul>
 

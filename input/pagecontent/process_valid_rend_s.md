@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic CMC data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.2 Manufacture , subsection 3.2.S.2.5 Process Validation and/or Evaluation.
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.2 Manufacture , subsection 3.2.S.2.5 Process Validation and/or Evaluation.
 
 <html>
 <body>

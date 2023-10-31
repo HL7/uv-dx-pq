@@ -1,5 +1,5 @@
 ### Objective
-Provides details about each facility that is a manufacturer, supplier, or test site.
+Provides details about each facility or legal entity involved in the manufacture of the medicinal product. This includes but is not limited to: name, identifier, and location address, for marketing authorization holders, sponsors, regulatory authorities, manufacturers, supplier, test site, packaging site.
 
 ### Component Diagram
 <table>
@@ -7,19 +7,19 @@ Provides details about each facility that is a manufacturer, supplier, or test s
 </table>
  
 ### Description of Components
-
+**Organization**: The company/site that performed the testing or manufacturing
 
 ### Examples
 <html>
 <body>
-<p><b>Synthetic CMC samples</b> (PDF):</p>
+<p><b>CTD section samples </b> (PDF):</p>
 <ul>
 <li>3.2.S.2 Manufacture</li>
 <ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.1_Manufacturer(s).pdf">3.2.S.2.1 Manufacturer(s)</a></li></ul>
 <li>3.2.P.3 Manufacture</li>
 <ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.1_Manufacturer(s).pdf">3.2.P.3.1 Manufacturer(s)</a></li></ul>
 </ul>
-<p><b>HTML rendering</b> of Synthetic CMC data:</p>
+<p><b>HTML rendering</b> of synthetic CTD data:</p>
 <ul><li><a href="organizations_rend.html">Drug Substance or Product Organizations</a></li></ul>
 <p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
 <ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/Bundle-bundle-organizations-dxpq-ex1.html">Bundle - Organizations dx-PQ - Example 1</a></li></ul>

@@ -11,7 +11,7 @@ Provide details about drug substance and drug product components, materials, and
 ### Examples
 <html>
 <body>
-<p><b>Synthetic CMC samples</b> (PDF):</p>
+<p><b>CTD section samples </b> (PDF):</p>
 <ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.5_Reference_Standards_or_Materials.pdf ">3.2.S.5 Reference Standards or Materials</a></li>
 <li>3.2.P.6 Reference Standards or Materials</li></ul>
 <p><b>HTML rendering</b> of Synthetic CMC data:</p>
