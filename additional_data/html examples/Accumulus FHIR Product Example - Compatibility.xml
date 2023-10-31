@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <!-- Product compatibility -->
+   <id value="product-compatibility"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-compatibility-dxpq"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+      <resource>
+         <PlanDefinition>
+                
+
+            <id value="plandefinition-compatibility"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
+            </meta>
+            
+
+            
+
+            <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+            <title value="Drug Product Compatibility"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+                  <code value="workflow-definition"/>
+                  <display value="Workflow Definition"/>
+               </coding>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <code value="product-compatibility"/>
+                  <display value="Product Compatibility"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subjectReference>
+            <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
+            <action>
+               
+               <title value="Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen "/>
+               <!-- needs some other code -->
+               <!--code>
+                        <coding>
+                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+                            <code value="FilteredFormulatedDrugProductPerformanceIndicatorResultsStep"/>
+                            <display value="Filtered Formulated Drug Product Performance Indicator Results"/>
+                        </coding>
+                    </code-->
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/SE-UHPLCMainPeak"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/SE-UHPLCHMW"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/CEX-HPLCAcidicPeak"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/CEX-HPLCMainPeak"/>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
+   <entry>
+      <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
+      <resource>
+         <DiagnosticReport>
+                <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
+                     however the observations themselves do have subjects -->
+                <!-- no subject -->
+            <id value="processValidationReport"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+               <valueReference>
+                  <reference value="PlanDefinition/plandefinition-compatibility"/>
+               </valueReference>
+            </extension>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/reportType"/>
+                  <code value="1113"/>
+                  <display value="Product Compatibility Report"/>
+               </coding>
+            </code>
+            <effectiveDateTime value="2020-12"/>
+            <result>
+               <reference value="Observation/SE-UHPLCMainPeak1"/>
+            </result>
+            <result>
+               <reference value="Observation/SE-UHPLCMainPeak2"/>
+            </result>
+            <result>
+               <reference value="Observation/SE-UHPLCHMW1"/>
+            </result>
+            <result>
+               <reference value="Observation/SE-UHPLCHMW2"/>
+            </result>
+            <result>
+               <reference value="Observation/CEX-Acidic-1"/>
+            </result>
+            <result>
+               <reference value="Observation/CEX-Acidic-2"/>
+            </result>
+            <result>
+               <reference value="Observation/CEX-HPLC-1"/>
+            </result>
+            <result>
+               <reference value="Observation/CEX-HPLC-2"/>
+            </result>
+            <conclusion value="The samples have been assessed and the conclusion is..."/>
+         </DiagnosticReport>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:64525a3d-5034-448a-9c19-938ce1958424"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="SE-UHPLCMainPeak"/>
+            
+
+            <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
+            <title value="SE-UHPLC % Main Peak"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
+               </coding>
+               <text value="SE-UHPLC Main Peak (%)"/>
+            </code>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCMainPeak-15"/>
+                     <display value="SE-UHPLC Main Peak - 15"/>
+                  </coding>
+               </code>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCMainPeak-25"/>
+                     <display value="SE-UHPLC Main Peak - 25"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:64525a33-5034-448a-9c19-938ce1958424"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="SE-UHPLCHMW"/>
+            
+
+            <url value="http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
+            <title value="SE-UHPLC % HMW"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
+               </coding>
+               <text value="SE-UHPLC HMW (%)"/>
+            </code>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCHMW-15"/>
+                     <display value="SE-UHPLC HMW - 15"/>
+                  </coding>
+               </code>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCHMW-25"/>
+                     <display value="SE-UHPLC HMW - 25"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <ObservationDefinition>
+            <id value="CEX-HPLCAcidicPeak"/>
+            
+
+            <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
+            <title value="CEX-HPLC % Acidic Peak"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="CEX-HPLCAcidicPeak"/>
+                  <display value="CEX-HPLC Acidic Peak"/>
+               </coding>
+               <text value="CEX-HPLC Acidic Peak (%)"/>
+            </code>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCAcidicPeak-15"/>
+                     <display value="CEX-HPLC Acidic Peak - 15"/>
+                  </coding>
+               </code>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCAcidicPeak-25"/>
+                     <display value="CEX-HPLC Acidic Peak - 25"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:74525a3d-5034-448a-9c19-938ce1958424"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="CEX-HPLCMainPeak"/>
+            
+
+            <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
+            <title value="CEX-HPLC % Main Peak"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="CEX-HPLCMainPeak"/>
+                  <display value="CEX-HPLC Main Peak"/>
+               </coding>
+               <text value="CEX-HPLC Main Peak (%)"/>
+            </code>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCMainPeak-15"/>
+                     <display value="CEX-HPLC Main Peak - 15"/>
+                  </coding>
+               </code>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCMainPeak-25"/>
+                     <display value="CEX-HPLC Main Peak - 25"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:44ba47fd-8964-4f96-6495-b2bec7f161e7"/>
+      <resource>
+         <Observation>
+            <id value="SE-UHPLCMainPeak1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/SE-UHPLCMainPeak"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLCMainPeak"/>
+               </coding>
+               <text value="SE-UHPLC Main Peak (%)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCMainPeak-15"/>
+                     <display value="SE-UHPLC Main Peak - 15"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="8.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCMainPeak-25"/>
+                     <display value="SE-UHPLC Main Peak - 25"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="9.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:54ca47fd-8964-4f96-6495-b2bec7f162e7"/>
+      <resource>
+         <Observation>
+            <id value="SE-UHPLCMainPeak2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/SE-UHPLCMainPeak"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="SE-UHPLCMainPeak"/>
+               </coding>
+               <text value="SE-UHPLC Main Peak (%)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCMainPeak-15"/>
+                     <display value="SE-UHPLC Main Peak - 15"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="12.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCMainPeak-25"/>
+                     <display value="SE-UHPLC Main Peak - 25"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="13.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:44ba47fd-8964-4f97-6495-b2bec7f161e7"/>
+      <resource>
+         <Observation>
+            <id value="SE-UHPLCHMW1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/SE-UHPLCHMW"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="SE-UHPLCHMW"/>
+               </coding>
+               <text value="SE-UHPLC HMW (%)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCHMW-15"/>
+                     <display value="SE-UHPLC HMW - 15"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="73.0"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCHMW-25"/>
+                     <display value="SE-UHPLC HMW - 25"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="79.0"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:54ca47fd-8964-4f98-6495-b2bec7f162e7"/>
+      <resource>
+         <Observation>
+            <id value="SE-UHPLCHMW2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/SE-UHPLCHMW"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="SE-UHPLCHMW"/>
+               </coding>
+               <text value="SE-UHPLC HMW (%)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCHMW-15"/>
+                     <display value="SE-UHPLC HMW - 15"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="74.0"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="SE-UHPLCHMW-25"/>
+                     <display value="SE-UHPLC HMW - 25"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="78.0"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e7"/>
+      <resource>
+         <Observation>
+            <id value="CEX-HPLC-1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/CEX-HPLCMainPeak"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="CEX-HPLCMainPeak"/>
+                  <display value="CEX-HPLCMainPeak"/>
+               </coding>
+               <text value="CEX-HPLC Main Peak (%)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCMainPeak-15"/>
+                     <display value="CEX-HPLC Main Peak - 15"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="18.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCMainPeak-25"/>
+                     <display value="CEX-HPLC Main Peak - 25"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="19.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e7"/>
+      <resource>
+         <Observation>
+            <id value="CEX-HPLC-2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/CEX-HPLCMainPeak"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="CEX-HPLCMainPeak"/>
+                  <display value="CEX-HPLCMainPeak"/>
+               </coding>
+               <text value="CEX-HPLC Main Peak (%)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCMainPeak-15"/>
+                     <display value="CEX-HPLC Main Peak - 15"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="15.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCMainPeak-25"/>
+                     <display value="CEX-HPLC Main Peak - 25"/>
+                  </coding>
+               </code>
+               <valueQuantity>
+                  <value value="16.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e7"/>
+      <resource>
+         <Observation>
+            <id value="CEX-Acidic-1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/CEX-HPLCAcidicPeak"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="CEX-HPLCAcidicPeak"/>
+                  <display value="CEX-HPLC Acidic Peak"/>
+               </coding>
+               <text value="CEX-HPLC Acidic Peak (%)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCAcidicPeak-15"/>
+                     <display value="CEX-HPLC Acidic Peak - 15"/>
+                  </coding>
+                  <text value="CEX-HPLC Acidic Peak (%)"/>
+               </code>
+               <valueQuantity>
+                  <value value="28.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCAcidicPeak-25"/>
+                     <display value="CEX-HPLC Acidic Peak - 25"/>
+                  </coding>
+                  <text value="CEX-HPLC Acidic Peak (%)"/>
+               </code>
+               <valueQuantity>
+                  <value value="29.5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:54ba48fd-8964-4f96-6495-b2bec7f161e7"/>
+      <resource>
+         <Observation>
+            <id value="CEX-Acidic-2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/CEX-HPLCAcidicPeak"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="CEX-HPLCAcidicPeak"/>
+                  <display value="CEX-HPLC Acidic Peak"/>
+               </coding>
+               <text value="CEX-HPLC Acidic Peak (%)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCAcidicPeak-15"/>
+                     <display value="CEX-HPLC Acidic Peak"/>
+                  </coding>
+                  <text value="CEX-HPLC Acidic Peak (%)"/>
+               </code>
+               <valueQuantity>
+                  <value value="28.6"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="CEX-HPLCAcidicPeak-25"/>
+                     <display value="CEX-HPLC Acidic Peak"/>
+                  </coding>
+                  <text value="CEX-HPLC Acidic Peak (%)"/>
+               </code>
+               <valueQuantity>
+                  <value value="29.3"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="Textual description of the product"/>
+            <name>
+               <productName value="Stelbatolol"/>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+      <resource>
+         <Medication>
+            <id value="medication-actual-batch-1"/>
+            <!--contained>
+                    <PackagedProductDefinition>
+                        <id value="ppd1-nosubject"/>
+                        <packaging>
+                            <type>
+                                <coding>
+                                    <system value="http://hl7.org/fhir/packaging-type"/>
+                                    <code value="100000073544"/>
+                                    <display value="Pre-filled syringe"/>
+                                </coding>
+                            </type>
+                        </packaging>
+                    </PackagedProductDefinition>
+                </contained-->
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     
+
+                  </valueReference>
+               </extension>
+               <!-- can use an extension here to point to package, but currently just relying on medication-manufacturingBatch to have a text description -->
+               
+
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="container">
+                     <extension url="closureSystemDescription">
+                        <valueString value="Pre-filled syringe"/>
+                     </extension>
+                  </extension>
+               </extension>
+               <lotNumber value="88877"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 8 - Batch or Lot Information (another batch 2 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+      <resource>
+         <Medication>
+            <id value="medication-actual-batch-2"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="container">
+                     <extension url="closureSystemDescription">
+                        <valueString value="Autoinjector Pen"/>
+                     </extension>
+                  </extension>
+               </extension>
+               <lotNumber value="88878"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+      <resource>
+         <Organization>
+            <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            <name value="Testing Lab"/>
+         </Organization>
+      </resource>
+   </entry>
+</Bundle>

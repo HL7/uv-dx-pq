@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-composition-dxpq"/>
+   </meta>
+   <type value="collection"/>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side."/>
+            <name>
+               <productName value="Stalbatolol"/>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <!-- Section 10 - Container Closure System -->
+   <entry>
+      <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
+      <resource>
+         <PackagedProductDefinition>
+            <id value="packagedproductdefinition-dxpq-ex1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
+            </meta>
+            <packageFor>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </packageFor>
+            <!-- #174 -->
+            <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
+         </PackagedProductDefinition>
+      </resource>
+   </entry>
+   <!-- Section 2.1 - DP Composition -->
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <resource>
+         <Ingredient>
+            <id value="ingredient1"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <code value="100000072072"/>
+                  <display value="Active"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/substance1"/>
+                     <display value="Stelbatolol"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="15.2"/>
+                        <unit value="mg"/>
+                        <!-- todo add ucum -->
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+               <strength>
+                  <concentrationQuantity>
+                     <value value="97.9"/>
+                     <unit value="% w/w"/>
+                  </concentrationQuantity>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <resource>
+         <Ingredient>
+            <id value="excipient1"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <function>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
+                  <code value="1000000720XXX"/>
+                  <display value="Diluent"/>
+               </coding>
+            </function>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/sd-excipient1"/>
+                     <display value="Mannitol"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="145.0"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+               <strength>
+                  <concentrationQuantity>
+                     <value value="1"/>
+                     <unit value="% w/w"/>
+                  </concentrationQuantity>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <resource>
+         <Ingredient>
+            <id value="excipient2"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <function>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
+                  <code value="1000000720XXX"/>
+                  <display value="Disintegrant"/>
+               </coding>
+            </function>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/sd-excipient2"/>
+                     <display value="Maize starch"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="13.8"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+               <strength>
+                  <concentrationQuantity>
+                     <value value="0.5"/>
+                     <unit value="% w/w"/>
+                  </concentrationQuantity>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
+      <resource>
+         <Ingredient>
+            <id value="excipient3"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <function>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
+                  <code value="1000000720XXX"/>
+                  <display value="Disintegrant"/>
+               </coding>
+            </function>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/sd-excipient3"/>
+                     <display value="Calcium carboxymethylcellulose"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="4.0"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+               <strength>
+                  <concentrationQuantity>
+                     <value value="0.25"/>
+                     <unit value="% w/w"/>
+                  </concentrationQuantity>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
+      <resource>
+         <Ingredient>
+            <id value="excipient4"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <function>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
+                  <code value="1000000720XXX"/>
+                  <display value="Lubricant"/>
+               </coding>
+            </function>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/sd-excipient4"/>
+                     <display value="Magnesium stearate"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="2.0"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+               <strength>
+                  <concentrationQuantity>
+                     <value value="0.35"/>
+                     <unit value="% w/w"/>
+                  </concentrationQuantity>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substance1"/>
+            <grade>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <code value="in-house"/>
+                  <display value="In-house"/>
+               </coding>
+            </grade>
+            <name>
+               <name value="Stelbatolol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="sd-excipient1"/>
+            <grade>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <code value="NF-PH-Eur"/>
+                  <display value="NF / Ph Eur"/>
+               </coding>
+            </grade>
+            <name>
+               <name value="Mannitol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380476"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="sd-excipient2"/>
+            <grade>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <code value="NF-PH-Eur"/>
+                  <display value="NF / Ph Eur"/>
+               </coding>
+            </grade>
+            <name>
+               <name value="Maize starch"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380477"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="sd-excipient3"/>
+            <grade>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <code value="NF-PH-Eur"/>
+                  <display value="NF / Ph Eur"/>
+               </coding>
+            </grade>
+            <name>
+               <name value="Calcium carboxymethylcellulose"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380478"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="sd-excipient4"/>
+            <grade>
+               <coding>
+                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <code value="NF-PH-Eur"/>
+                  <display value="NF / Ph Eur"/>
+               </coding>
+            </grade>
+            <name>
+               <name value="Magnesium stearate"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+</Bundle>
