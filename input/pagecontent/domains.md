@@ -5,7 +5,7 @@ Rather than recreating the legacy table of contents format in FHIR, pharmaceutic
 Each domain has a page that describes its objective and provides a component diagram (where applicable), description of components, and examples.
 
 ***Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains:*** The 14 PQ domains and their supporting sub-domains, in which each domain is based on a major PQ concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.
-<table><tr><td><img src="all-domains-dx-PQ.png" /></td></tr></table>
+<table><tr><td><img src="all-domains-dx-PQ.png" usemap="#hotspots"/></td></tr></table>
 
 ***Table: Mapping the legacy CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains***
 <style type="text/css">
@@ -99,3 +99,22 @@ Each domain has a page that describes its objective and provides a component dia
 </tbody>
 </table>
 
+<map name="hotspots">
+  <area shape='rect' coords='43,45,451,192' title='Identification' href='identification.html' alt='Identification' />
+			<area shape='rect' coords='-4,201,301,312' title='Composition' href='composition.html' alt='Composition' />
+			<area shape='rect' coords='21,325,368,394' title='Impurities' href='impurities.html' alt='Impurities' />
+			<area shape='rect' coords='144,401,416,517' title='Organization' href='organizations.html' alt='Organization' />
+			<area shape='rect' coords='48,522,404,596' title='Batch / Lot Information' href='batch_info.html' alt='Batch / Lot Information' />
+			<area shape='rect' coords='49,603,403,678' title='Batch Analysis' href='batch_anal.html' alt='Batch Analysis' />
+			<area shape='rect' coords='746,42,1096,193' title='Manufacturing' href='mnf_process.html' alt='Manufacturing' />
+			<area shape='rect' coords='90,684,418,759' title='Batch Formula' href='batch_formula.html' alt='Batch Formula' />
+			<area shape='rect' coords='746,199,1078,276' title='Process Validation' href='process_valid.html' alt='Process Validation' />
+			<area shape='rect' coords='746,289,1100,364' title='Analytical Procedures' href='anal_proc.html' alt='Analytical Procedures' />
+			<area shape='rect' coords='801,367,1233,460' title='Container Closure System' href='container.html' alt='Container Closure System' />
+			<area shape='rect' coords='787,463,1104,571' title='Stability Study' href='stability.htm' alt='Stability Study' />
+			<area shape='rect' coords='809,579,1120,659' title='Specification' href='drug_specification.html' alt='Specification' />
+			<area shape='rect' coords='780,662,1115,754' title='Compatibility' href='compatability.html' alt='Compatibility' />
+			<area shape='rect' coords='453,41,745,754' title='Click on the sections' href='domains.html' />
+  
+  
+</map>
