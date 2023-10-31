@@ -9,9 +9,9 @@ Provides details about a stability study, including protocol (tests and acceptan
 ### Description of Components
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
-**Ingredient**: The API (stelbatalol) or the ingredients that make up the DP
+**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the API (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
 **Medication**: Describes the batches that underwent stability testing
 
@@ -31,7 +31,7 @@ Provides details about a stability study, including protocol (tests and acceptan
 ### Examples
 <html>
 <body>
-<p><b>Synthetic CMC samples</b> (PDF):</p>
+<p><b>CTD section samples </b> (PDF):</p>
 <ul>
 <li>3.2.S.7 Stability </li>
 <ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.7.3_Stability_Data.pdf ">3.2.S.7.3 Stability Data</a></li></ul>
@@ -39,7 +39,7 @@ Provides details about a stability study, including protocol (tests and acceptan
 <li>3.2.P.8 Stability </li>
 <ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.8.3_Stability_Data.pdf ">3.2.P.8.3 Stability Data</a></li></ul>
 </ul>
-<p><b>HTML rendering</b> of Synthetic CMC data:</p>
+<p><b>HTML rendering</b> of synthetic CTD data:</p>
 <ul><li><a href="stability_rend_s.html">Drug Substance Stability</a> </li>
 <li><a href="stability_rend_p.html">Drug Product Stability</a> </li></ul>
 

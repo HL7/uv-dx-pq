@@ -9,9 +9,9 @@ Provide details about manufacturing process validation protocols and results.
 ### Description of Components
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
-**Ingredient**: The API (stelbatalol) or the ingredients that make up the DP
+**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the API (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
 
 **Medication**: Describes the batches that underwent testing
 
@@ -28,7 +28,7 @@ Provide details about manufacturing process validation protocols and results.
 ### Examples
 <html>
 <body>
-<p><b>Synthetic CMC samples</b> (PDF):</p>
+<p><b>CTD section samples </b> (PDF):</p>
 <ul>
 <li>3.2.S.2 Manufacture </li>
 <ul>
@@ -37,7 +37,7 @@ Provide details about manufacturing process validation protocols and results.
 <ul>
 <li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.5_Process_Validation.pdf ">3.2.P.3.5 Process Validation and/or Evaluation</a></li>
 <li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P3.5_Process_Validation_and-or_Evaluation_BIO.pdf ">3.2.P.3.5 Process Validation and/or Evaluation - Biologic Example</a></li></ul></ul>
-<p><b>HTML rendering</b> of Synthetic CMC data:</p>
+<p><b>HTML rendering</b> of synthetic CTD data:</p>
 <ul><li><a href="process_valid_rend_s.html">Drug Substance Process Validation</a> </li>
 <li><a href="process_valid_rend_p.html">Drug Product Process Validation</a> </li>
 <li><a href="process_valid_rend_pb.html">Drug Product Process Validation - Biologic</a></li></ul>

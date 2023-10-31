@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic CMC data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.7 Stability, subsection 3.2.S.7.3 Stability Data.
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.7 Stability, subsection 3.2.S.7.3 Stability Data.
 
 <html>
 <body>

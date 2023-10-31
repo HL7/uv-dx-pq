@@ -1,7 +1,6 @@
-### Best Practices
-**Support Accessability**
-
-The authors of this guide recommend that user interface applications implementing this specification include alternative text descriptions of images and other accessibility standards, such as those  described in:
+### Implementation Considerations
+**User Interface**
+The developers of this guide recommend that user interface applications implementing this specification include alternative text descriptions of images and other accessibility standards, such as those  described in:
 - U.S. General Services Administration (GSA), [https://www.section508.gov/](https://www.section508.gov/)
 - W3C, Web Content Accessibility Guidelines (WCAG), [https://www.w3.org/TR/WCAG21/](https://www.w3.org/TR/WCAG21/) (or latest version)
 
@@ -20,7 +19,6 @@ Typical steps to assembling information for a FHIR Bundle, for example a Stabili
 Assembling FHIR Bundles for other domains follows similar steps.
 
 ### References
-The following external resources may be of interest to readers and implementers of this guide.
 
 - Common Technical Document (CTD) structure:
   - International Conference on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH), *ICH Harmonised Tripartite Guideline: The Common Technical Document for the Registration of Pharmaceuticals for Human Use: Quality –M4Q(R1); Module 3: Quality* (12 September 2002) [https://database.ich.org/sites/default/files/M4Q_R1_Guideline.pdf](https://database.ich.org/sites/default/files/M4Q_R1_Guideline.pdf)

@@ -1,4 +1,4 @@
-The Quality sections of regulatory applications are organized into a table of contents that includes sections and sub-sections under the titles “Drug Substance” and “Drug Product”. This structure is designed for unstructured PDF and Word documents.
+The Quality sections of regulatory applications are organized into a table of contents that includes sections and sub-sections under the titles “Drug Substance” and “Drug Product”. The structure is defined in the *Common Technical Document for the Registration of Pharmaceuticals for Human Use*, or CTD (see [References](best_practices.html)). This structure is designed for unstructured PDF and Word documents.
 
 Rather than recreating the legacy table of contents format in FHIR, pharmaceutical quality data represented by FHIR in this guide are organized into 14 new domains (see Figure below). These 14 domains are designed to maximize the use of structured data and deliver benefits in terms of flexibility, efficiency, and data reuse.
 
