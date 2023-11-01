@@ -1,5 +1,4 @@
 The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.6 Container Closure System.
-
 <html>
 <body>
 <div class="greyable">
@@ -13,11 +12,9 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq 
 
 <Bundle>
-    <!--   <id value=&quot;container-closure-substance&quot;/>-->
     <id value=&quot;bundle-container-closure-system-dxpq-ex2-sub&quot;/>
     <meta>
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq&quot;/>
-        <!--      <profile value=&quot;http://accumulus.org/fhir/dx-cmc/container-closure-substance&quot;/>-->
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
@@ -140,7 +137,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
         <fullUrl value=&quot;urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44&quot;/>
         <resource>
             <ManufacturedItemDefinition>
-                <!--    <id value=&quot;packaged-item&quot;/>-->
                 <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
@@ -417,7 +413,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
     <entry>
         <resource>
             <ManufacturedItemDefinition>
-                <!--    <id value=&quot;packaged-item&quot;/>-->
                 <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
@@ -446,7 +441,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
     <entry>
         <resource>
             <ManufacturedItemDefinition>
-                <!--    <id value=&quot;packaged-item&quot;/>-->
                 <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
@@ -584,7 +578,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                         </type>
                         <valueCodeableConcept>
                             <text value=&quot;Complies with FDA 21 CFR 177.1520 (c) 2.2 (olefin polymers)&quot;/>
-                        </valueCodeableConcept>">Property</span><div class="indent ppdl4"><div><span title="
+                        </valueCodeableConcept>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -616,7 +610,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         ...
                         <valueCodeableConcept>
-                            <text value=&quot;Complies with FDA 21 CFR 177.1520 (c) 2.2 (olefin polymers)&quot;/>">Value: <span style="white-space:normal;">Complies with FDA 21 CFR 177.1520 (c) 2.2 (olefin polymers)</span></span></div></div></div></div><div class="summaryHiddenOff"><div class="indent ppdl3"><span title="
+                            <text value=&quot;Complies with FDA 21 CFR 177.1520 (c) 2.2 (olefin polymers)&quot;/>">Value: <span style="white-space:normal;">Complies with FDA 21 CFR 177.1520 (c) 2.2 (olefin polymers)</span></span></div></div></div><div class="summaryHiddenOff"><div class="indent ppdl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -633,7 +627,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                         </type>
                         <valueCodeableConcept>
                             <text value=&quot;Complies with Commission Regulation (EU) No. 10/2011 including its amendments EU 321/2011, EU  1282/2011, EU 1183/2012, EU 202/2014 and EU 2015/174 Complies with Ph. Eur. 3.2.2&quot;/>
-                        </valueCodeableConcept>">Property</span><div class="indent ppdl4"><div><span title="
+                        </valueCodeableConcept>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -665,7 +659,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         ...
                         <valueCodeableConcept>
-                            <text value=&quot;Complies with Commission Regulation (EU) No. 10/2011 including its amendments EU 321/2011, EU  1282/2011, EU 1183/2012, EU 202/2014 and EU 2015/174 Complies with Ph. Eur. 3.2.2&quot;/>">Value: <span style="white-space:normal;">Complies with Commission Regulation (EU) No. 10/2011 including its amendments EU 321/2011, EU  1282/2011, EU 1183/2012, EU 202/2014 and EU 2015/174 Complies with Ph. Eur. 3.2.2</span></span></div></div></div></div></div></div><div class="indent ppdpackage summaryUnit" ondblclick="summaryHandler(event)"><a title="
+                            <text value=&quot;Complies with Commission Regulation (EU) No. 10/2011 including its amendments EU 321/2011, EU  1282/2011, EU 1183/2012, EU 202/2014 and EU 2015/174 Complies with Ph. Eur. 3.2.2&quot;/>">Value: <span style="white-space:normal;">Complies with Commission Regulation (EU) No. 10/2011 including its amendments EU 321/2011, EU  1282/2011, EU 1183/2012, EU 202/2014 and EU 2015/174 Complies with Ph. Eur. 3.2.2</span></span></div></div></div></div></div><div class="indent ppdpackage summaryUnit" ondblclick="summaryHandler(event)"><a title="
 <Bundle>
     <entry>
         <resource>
