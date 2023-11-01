@@ -938,7 +938,7 @@
             <name value="observationdefinition-test-method-dxpq-ex1"/>
             <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
@@ -1397,7 +1397,7 @@
             <name value="accelerated40X"/>
             <description value="ObservationDefinition - accelerated40X"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1408,7 +1408,7 @@
             <name value="accelerated40Y"/>
             <description value="ObservationDefinition - accelerated40Y"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1419,7 +1419,7 @@
             <name value="accelerated40Z"/>
             <description value="ObservationDefinition - accelerated40Z"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1430,7 +1430,7 @@
             <name value="longTerm25X"/>
             <description value="ObservationDefinition - longTerm25X"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1441,7 +1441,7 @@
             <name value="longTerm25Y"/>
             <description value="ObservationDefinition - longTerm25Y"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1452,7 +1452,7 @@
             <name value="longTerm25Z"/>
             <description value="ObservationDefinition - longTerm25Z"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1463,7 +1463,7 @@
             <name value="longTerm30X"/>
             <description value="ObservationDefinition - longTerm30X"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
@@ -1474,7 +1474,7 @@
             <name value="longTerm30Y"/>
             <description value="ObservationDefinition - longTerm30Y"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
         </resource>
 
