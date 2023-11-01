@@ -325,18 +325,8 @@
                      </coding>
                   </role>
                </participant>
-               <!--action>
-                            <code>
-                                <text value="Control"/>
-                            </code>
-                            <definitionCanonical value="ObservationDefinition/ControlPH"/>
-                        </action>
-                        <action>
-                            <code>
-                                <text value="Control"/>
-                            </code>
-                            <definitionCanonical value="ObservationDefinition/ControlTemperature"/>
-                        </action-->
+               
+
             </action>
             <!-- step 2 drying -->
             <action>
@@ -540,9 +530,6 @@
          </PlanDefinition>
       </resource>
    </entry>
-   <!-- using goal for this now -->
-   
-
    <!-- Section 5.2 - Unit Operation/Equipment Information -->
    <entry>
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>

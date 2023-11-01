@@ -230,18 +230,8 @@
                         </coding>
                      </role>
                   </participant>
-                  <!--action>
-                            <code>
-                                <text value="Control"/>
-                            </code>
-                            <definitionCanonical value="ObservationDefinition/ControlPH"/>
-                        </action>
-                        <action>
-                            <code>
-                                <text value="Control"/>
-                            </code>
-                            <definitionCanonical value="ObservationDefinition/ControlTemperature"/>
-                        </action-->
+                  
+
                </action>
             </action>
          </PlanDefinition>
