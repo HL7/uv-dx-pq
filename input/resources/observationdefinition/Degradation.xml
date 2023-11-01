@@ -3,9 +3,9 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="Degradation"/>
     <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Degradation"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Degradation"/>
     <title value="Degradation Products by HPLC (% w/w)"/>
     <status value="active"/>
     <code>
@@ -24,8 +24,8 @@
             <high>
                 <value value="0.8"/>
                 <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
@@ -37,8 +37,8 @@
             <high>
                 <value value="0.4"/>
                 <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
@@ -50,8 +50,8 @@
             <high>
                 <value value="0.4"/>
                 <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
@@ -63,8 +63,8 @@
             <high>
                 <value value="0.2"/>
                 <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="%"/>
             </high>
         </range>
     </qualifiedValue>
@@ -76,8 +76,8 @@
             <high>
                 <value value="2.3"/>
                 <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="%"/>
             </high>
         </range>
     </qualifiedValue>

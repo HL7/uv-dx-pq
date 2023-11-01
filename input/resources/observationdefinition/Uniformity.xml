@@ -3,7 +3,7 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="Uniformity"/>
     <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Uniformity"/>
     <title value="Uniformity of dosage"/>
@@ -16,13 +16,13 @@
         </coding>
         <text value="uniformity of dosage units (by weight)"/>
     </code>
-                <method>
-                    <text value="Weight variation"/>
-                </method>
+    <method>
+        <text value="Weight variation"/>
+    </method>
     <qualifiedValue>
         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
             <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-                        <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
+            <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
         </extension>
     </qualifiedValue>
 </ObservationDefinition>
