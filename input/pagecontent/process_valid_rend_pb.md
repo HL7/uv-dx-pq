@@ -1,5 +1,4 @@
 The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture , subsection 3.2.P.3.5 Process Validation and/or Evaluation for a biologic product example.
-
 <html>
 <body>
 <div class="greyable">
@@ -13,9 +12,9 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq 
 
 <Bundle>
+    <!-- Product Process Validation - Biologic -->
     <id value=&quot;product-batch-analysis&quot;/>
     <meta>
-        <!--profile value=&quot;http://accumulus.org/fhir/dx-cmc/process-validation&quot;/-->
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
@@ -1379,37 +1378,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             </ObservationDefinition>
         </resource>
     </entry>
-    <!--entry>
-        <fullUrl value=&quot;urn:uuid:74525a33-5034-448a-9c19-938ce1958424&quot;/>
-        <resource>
-            <ObservationDefinition>
-                <id value=&quot;ProteinUNUSED&quot;/>
-                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/74525a33-5034-448a-9c19-938ce1958424&quot;/>
-                <title value=&quot;Protein Concentration (mg/ml)&quot;/>
-                <status value=&quot;active&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Protein Concentration&quot;/>
-                    </coding>
-                    <text value=&quot;Protein Concentration (mg/ml)&quot;/>
-                </code>
-                <qualifiedValue>
-                    <range>
-                        <low>
-                            <value value=&quot;10&quot;/>
-                            <unit value=&quot;mg/ml&quot;/>
-                        </low>
-                        <high>
-                            <value value=&quot;20&quot;/>
-                            <unit value=&quot;%&quot;/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:22515a3c-5034-448a-9c19-938ce1958424&quot;/>
         <resource>
@@ -5355,48 +5323,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             </Ingredient>
         </resource>
     </entry>
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95&quot;/>
-        <resource>
-        	<SubstanceDefinition>
-        		<id value=&quot;substance1&quot;/>
-        		
-        		<manufacturer>
-        			<reference value=&quot;Organization/substance-manufacturer&quot;/>
-        		</manufacturer>
-        		<name>
-        			<name value=&quot;Biocurolol&quot;/>
-        		</name>
-        		
-        	</SubstanceDefinition>
-        </resource>
-    </entry>
-	<entry>
-      <fullUrl value=&quot;urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2&quot;/>
-		<resource>
-			<Organization>
-				<id value=&quot;substance-manufacturer&quot;/>
-				<extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/businessName&quot;>
-					<valueString value=&quot;Section 4.1 - Manufacturer&quot;/>
-				</extension>
-				<identifier>
-					<system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/> 
-					<value value=&quot;3003040516&quot;/>
-				</identifier>
-				<name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
-				<contact>
-				    <address>
-				        <line value=&quot;7233 W 116th Pl&quot;/>
-				        <line value=&quot;Ste C&quot;/>
-				        <city value=&quot;Broomfield&quot;/>
-				        <state value=&quot;Colorado&quot;/>
-				        <postalCode value=&quot;80020&quot;/>
-				        <country value=&quot;USA&quot;/>
-				    </address>
-				</contact>
-			</Organization>        
-		</resource>
-	</entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:57a9af63-315d-1585-a261-0e337b289390&quot;/>
         <resource>
@@ -43446,8 +43372,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <valueQuantity>
                         <value value=&quot;1000&quot;/>
                         <unit value=&quot;litres&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -43490,7 +43415,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <valueQuantity>
                         <value value=&quot;1000&quot;/>
                         <unit value=&quot;litres&quot;/>">1000 litres</span></span></div>
-</div>
 </div>
 </div>
 </div>
@@ -43644,8 +43568,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <valueQuantity>
                         <value value=&quot;1200&quot;/>
                         <unit value=&quot;litres&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -43688,7 +43611,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <valueQuantity>
                         <value value=&quot;1200&quot;/>
                         <unit value=&quot;litres&quot;/>">1200 litres</span></span></div>
-</div>
 </div>
 </div>
 </div>

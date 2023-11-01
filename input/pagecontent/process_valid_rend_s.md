@@ -1,5 +1,4 @@
 The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.2 Manufacture , subsection 3.2.S.2.5 Process Validation and/or Evaluation.
-
 <html>
 <body>
 <div class="greyable">
@@ -13,6 +12,7 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance 
 
 <Bundle>
+    <!-- Substance Process Validation -->
     <id value=&quot;substance-process-validation&quot;/>
     <meta>
         <profile value=&quot;http://accumulus.org/fhir/dx-cmc/process-validation-substance&quot;/>
@@ -1567,28 +1567,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             </Organization>
         </resource>
     </entry>
-    <!--entry>
-		<fullUrl value=&quot;urn:uuid:59d2f0c0-4b28-9271-8aaf-2996a8b9739c&quot;/>
-		<resource>
-			<Organization>
-				<id value=&quot;testerSiteA&quot;/>
-				<identifier>
-					<system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/> 
-					<value value=&quot;2003040516&quot;/>
-				</identifier>
-				<name value=&quot;Site A&quot;/>
-				<contact>
-					<address>
-						<line value=&quot;Site A&quot;/>
-						<city value=&quot;Site City&quot;/>
-						<state value=&quot;Colorado&quot;/>
-						<postalCode value=&quot;90020&quot;/>
-						<country value=&quot;USA&quot;/>
-					</address>
-				</contact>
-			</Organization>        
-		</resource>
-	</entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b&quot;/>
         <resource>

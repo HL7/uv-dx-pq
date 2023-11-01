@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture , subsection 3.2.P.3.5 Process Validation and/or Evaluation.
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture , subsection 3.2.P.3.5 Process Validation and/or Evaluation.        
 <html>
 <body>
 <div class="greyable">
@@ -15,7 +15,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <!--id value=&quot;product-process-validation&quot;/-->
     <id value=&quot;bundle-product-process-validation-dxpq-ex1&quot;/>
     <meta>
-        <!--profile value=&quot;http://accumulus.org/fhir/dx-cmc/process-validation&quot;/-->
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
@@ -443,34 +442,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             </ObservationDefinition>
         </resource>
     </entry>
-    <!-- release step -->
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:fc07b5d5-9fe1-91c2-2d06-47cb5b295e72&quot;/>
-        <resource>
-            <ObservationDefinition>
-                <id value=&quot;Description&quot;/>
-            <url value=&quot;http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-91c2-2d06-47cb5b295e72&quot;/>
-                <title value=&quot;Description&quot;/>
-                <status value=&quot;active&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Description&quot;/>
-                    </coding>
-                    <text value=&quot;Description&quot;/>
-                </code>
-                <method>
-                    <text value=&quot;Visual inspection&quot;/>
-                </method>
-                <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;> 
-                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:fc07b5d5-9fe1-92c2-2d06-47cb5b295e72&quot;/>
         <resource>
@@ -703,63 +674,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             </ObservationDefinition>
         </resource>
     </entry>
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:8f5d8abf-2cf4-8617-1e41-a74d90210dcc&quot;/>
-        <resource>
-            <ObservationDefinition>
-                <id value=&quot;Dissolution&quot;/>
-            <url value=&quot;http://example-server.com/fhir/ObservationDefinition/8f5d8abf-2cf4-8617-1e41-a74d90210dcc&quot;/>
-                <title value=&quot;Dissolution&quot;/>
-                <status value=&quot;active&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/> 
-                        <display value=&quot;Dissolution&quot;/>
-                    </coding>
-                    <text value=&quot;Dissolution&quot;/>
-                </code>
-                <method>
-                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>
-                </method>
-                <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
-                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph&quot;/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:33a9d578-6e6b-7606-72bc-6775d36c1930&quot;/>
-        <resource>
-            <ObservationDefinition>
-                <id value=&quot;DissolutionQ80&quot;/>
-                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/33a9d578-6e6b-7606-72bc-6775d36c1930&quot;/>
-                <title value=&quot;Dissolution (Q)&quot;/>
-                <status value=&quot;active&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZX&quot;/>
-                        <display value=&quot;DissolutionQuantity&quot;/>
-                    </coding>
-                </code>
-                <method>
-                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>
-                </method>
-                <qualifiedValue>
-                    <condition value=&quot;at 30 minutes&quot;/>
-                    <range>
-                        <low>
-                            <value value=&quot;80&quot;/>
-                            <unit value=&quot;%&quot;/>
-                        </low>
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:31e29d22-5fcb-546e-24fd-52a4a4004467&quot;/>
         <resource>
@@ -980,61 +894,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             </ObservationDefinition>
         </resource>
     </entry>
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:d999ee06-6595-762c-1bda-0818ab1c6c0e&quot;/>
-        <resource>
-            <ObservationDefinition>
-                <id value=&quot;Microbiological&quot;/>
-            <url value=&quot;http://example-server.com/fhir/ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e&quot;/>
-                <title value=&quot;Microbiological&quot;/>
-                <status value=&quot;active&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;YYY&quot;/>
-                        <display value=&quot;Microbiological Quality&quot;/>
-                    </coding>
-                    <text value=&quot;Microbiological Quality&quot;/>
-                </code>
-                <method>
-                    <text value=&quot;Ph Eur&quot;/>
-                </method>
-     		   <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
-                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7&quot;/>
-        <resource>
-            <ObservationDefinition>
-                <id value=&quot;Uniformity&quot;/>
-                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7&quot;/>
-                
-                <title value=&quot;Uniformity of dosage&quot;/>
-                <status value=&quot;active&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
-                    </coding>
-                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
-                </code>
-                <method>
-                    <text value=&quot;Weight variation&quot;/>
-                </method>
-     			<qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
-                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:ef17cff1-6586-a5a4-9168-2602140548d7&quot;/>
         <resource>
@@ -1517,7 +1376,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                 <reference value=&quot;Substance/substance-dxpq-ex1&quot;/>
                             </valueReference>
                         </extension>
-                        <!--  Base FHIR Extensions-->
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
@@ -1530,7 +1388,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                 <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                             </valueReference>
                         </extension>
-                        <!--  Base FHIR Extensions-->
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100100&quot;/>
@@ -1891,15 +1748,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <result>
                     <reference value=&quot;Observation/compoundingAssayPost3&quot;/>
                 </result>
-                <!--result>
-                    <reference value=&quot;Observation/observationDescription&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDescription2&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDescription3&quot;/>
-                </result-->
                 <result>
                     <reference value=&quot;Observation/observationIdentification&quot;/>
                 </result>
@@ -1963,42 +1811,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <result>
                     <reference value=&quot;Observation/observationDegradation-imp-total-3&quot;/>
                 </result>
-                <!--result>
-                    <reference value=&quot;Observation/observationDissolution&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDissolution2&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDissolution3&quot;/>
-                </result-->
-                <!--result>
-                    <reference value=&quot;Observation/observationDissolutionQ80&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDissolutionQ802&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDissolutionQ803&quot;/>
-                </result-->
-                <!--result>
-                    <reference value=&quot;Observation/observationUniformity&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationUniformity2&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationUniformity3&quot;/>
-                </result-->
-                <!--result>
-                    <reference value=&quot;Observation/observationMicro&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationMicro2&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationMicro3&quot;/>
-                </result-->
                 <result>
                     <reference value=&quot;Observation/observationWater&quot;/>
                 </result>
@@ -2045,97 +1857,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             </DiagnosticReport>
         </resource>
     </entry>
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDescription&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Description&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Description&quot;/>
-                    </coding>
-                    <text value=&quot;Description&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-batch-information-dxpq-ex2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry
-    
-    <entry>
-      <fullUrl value=&quot;urn:uuid:ba1b4227-8a67-a605-1152-e86e4d614fc3&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDescription2&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Description&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Description&quot;/>
-                    </coding>
-                    <text value=&quot;Description&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Does not comply&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:2d628dc2-0b9e-9494-55b3-2621e50938c5&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDescription3&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Description&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Description&quot;/>
-                    </coding>
-                    <text value=&quot;Description&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629&quot;/>
         <resource>
@@ -3411,372 +3132,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             </Observation>
         </resource>
     </entry>
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:7316e094-2094-5710-4f11-75d3effc995e&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDissolution&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;Dissolution&quot;/>
-                    </coding>
-                    <text value=&quot;Dissolution&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-batch-information-dxpq-ex2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:1cedf9c1-8e89-5dbb-0e1f-0363a9ca4893&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDissolution2&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;Dissolution&quot;/>
-                    </coding>
-                    <text value=&quot;Dissolution&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:c350f0b1-9495-0165-2555-83ebd79da682&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDissolution3&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Dissolution&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;Dissolution&quot;/>
-                    </coding>
-                    <text value=&quot;Dissolution&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry-->
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:4b97e406-3fb0-9f65-0979-910ea1b9254f&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDissolutionQ80&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZX&quot;/>
-                        <display value=&quot;DissolutionQ&quot;/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-batch-information-dxpq-ex2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueQuantity>
-                    <value value=&quot;90&quot;/>
-                    <unit value=&quot;%&quot;/>
-                    <system value=&quot;http://unitsofmeasure.org&quot;/>
-                    <code value=&quot;%&quot;/>
-                </valueQuantity>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:bbfc28df-49bc-986c-1a0e-75e3160268b9&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDissolutionQ802&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZX&quot;/>
-                        <display value=&quot;DissolutionQ&quot;/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueQuantity>
-                    <value value=&quot;92&quot;/>
-                    <unit value=&quot;%&quot;/>
-                    <system value=&quot;http://unitsofmeasure.org&quot;/>
-                    <code value=&quot;%&quot;/>
-                </valueQuantity>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:d6955449-16b4-107f-851d-2f99d0b47b96&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationDissolutionQ803&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/DissolutionQ80&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZX&quot;/>
-                        <display value=&quot;DissolutionQ&quot;/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueQuantity>
-                    <value value=&quot;95&quot;/>
-                    <unit value=&quot;%&quot;/>
-                    <system value=&quot;http://unitsofmeasure.org&quot;/>
-                    <code value=&quot;%&quot;/>
-                </valueQuantity>
-            </Observation>
-        </resource>
-    </entry-->
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:591f5d75-1b2f-299b-6885-f325e4228bda&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationUniformity&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
-                    </coding>
-                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-batch-information-dxpq-ex2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:1dd8e506-08cf-8a15-8cd0-7c7cf1d88731&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationUniformity2&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
-                    </coding>
-                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationUniformity3&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Uniformity&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>
-                    </coding>
-                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry-->
-    <!--entry>
-      <fullUrl value=&quot;urn:uuid:d136c4f5-62da-81eb-4fc8-144f9182589e&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationMicro&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;YYY&quot;/>
-                        <display value=&quot;Microbiological Quality&quot;/>
-                    </coding>
-                    <text value=&quot;Microbiological Quality&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-batch-information-dxpq-ex2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:3ab5e4eb-673b-0e66-3d2c-86d64ced0e86&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationMicro2&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;YYY&quot;/>
-                        <display value=&quot;Microbiological Quality&quot;/>
-                    </coding>
-                    <text value=&quot;Microbiological Quality&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-2&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value=&quot;urn:uuid:cec7ce65-57d7-a654-9ad6-21d162186eb9&quot;/>
-        <resource>
-            <Observation>
-                <id value=&quot;observationMicro3&quot;/>
-                <instantiatesReference>
-                    <reference value=&quot;ObservationDefinition/Microbiological&quot;/>
-                </instantiatesReference>
-                <status value=&quot;final&quot;/>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;YYY&quot;/>
-                        <display value=&quot;Microbiological Quality&quot;/>
-                    </coding>
-                    <text value=&quot;Microbiological Quality&quot;/>
-                </code>
-                <subject>
-                    <reference value=&quot;Medication/medication-actual-batch-3&quot;/>
-                </subject>
-				<effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
-				<performer>
-					<reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value=&quot;Complies&quot;/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46&quot;/>
         <resource>
@@ -3934,7 +3289,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
                 </performer>
                 <valueString value=&quot;Conclusion of filling tests....&quot;/>
@@ -3968,7 +3322,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
                 </performer>
                 <valueString value=&quot;Conclusion of lyophilization tests....&quot;/>
@@ -4503,7 +3856,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <fullUrl value=&quot;urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
         <resource>
             <PlanDefinition>
-                <!--id value=&quot;manufacturingProcess-subset-unlinked&quot;/-->
+                <!-- focal resource -->
                 <id value=&quot;plandefinition-dxpq-ex2-manufacturing-plan&quot;/>
                 <!-- indicate this is as subset of the resource. In practice it would have it all -->
                 <meta>
@@ -5076,15 +4429,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <result>
                     <reference value=&quot;Observation/compoundingAssayPost3&quot;/>
                 </result>
-                <!--result>
-                    <reference value=&quot;Observation/observationDescription&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDescription2&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDescription3&quot;/>
-                </result-->
                 <result>
                     <reference value=&quot;Observation/observationIdentification&quot;/>
                 </result>
@@ -5148,42 +4492,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <result>
                     <reference value=&quot;Observation/observationDegradation-imp-total-3&quot;/>
                 </result>
-                <!--result>
-                    <reference value=&quot;Observation/observationDissolution&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDissolution2&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDissolution3&quot;/>
-                </result-->
-                <!--result>
-                    <reference value=&quot;Observation/observationDissolutionQ80&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDissolutionQ802&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationDissolutionQ803&quot;/>
-                </result-->
-                <!--result>
-                    <reference value=&quot;Observation/observationUniformity&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationUniformity2&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationUniformity3&quot;/>
-                </result-->
-                <!--result>
-                    <reference value=&quot;Observation/observationMicro&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationMicro2&quot;/>
-                </result>
-                <result>
-                    <reference value=&quot;Observation/observationMicro3&quot;/>
-                </result-->
                 <result>
                     <reference value=&quot;Observation/observationWater&quot;/>
                 </result>
@@ -13877,7 +13185,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
                 </performer>
                 <valueString value=&quot;Conclusion of filling tests....&quot;/>" id="Observation-fillingConclusion-nosubject">Observation<span class="summaryShowsOff"> - <span title="
@@ -13985,7 +13292,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
                 </performer>
                 <valueString value=&quot;Conclusion of filling tests....&quot;/>">Instantiates</span>: Conclusion - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-conclusion" title="click to see target - id=conclusion">ObservationDefinition</a>)<span class="debugOff"> id: conclusion</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
@@ -13995,7 +13301,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 ...
                 <performer>
-                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification fullUrl: urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification2 fullUrl: urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification3 fullUrl: urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPre1 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPre2 fullUrl: urn:uuid:9c56948a-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPre3 fullUrl: urn:uuid:9c56948a-4a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPost1 fullUrl: urn:uuid:9c56948a-3a49-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPost2 fullUrl: urn:uuid:9c56958a-4a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPost3 fullUrl: urn:uuid:9c56948a-5a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPre1 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d297ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPre2 fullUrl: urn:uuid:9c56948a-3a39-6619-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPre3 fullUrl: urn:uuid:9c56948a-4a39-6619-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPost1 fullUrl: urn:uuid:9c56948a-3a49-6619-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPost2 fullUrl: urn:uuid:9c56958a-4a39-6619-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPost3 fullUrl: urn:uuid:9c56948a-5a39-6709-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay fullUrl: urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay2 fullUrl: urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay3 fullUrl: urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1 fullUrl: urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1-2 fullUrl: urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1-3 fullUrl: urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2 fullUrl: urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2-2 fullUrl: urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2-3 fullUrl: urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3 fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3-2 fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c6)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3-3 fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified fullUrl: urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified-2 fullUrl: urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified-3 fullUrl: urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total-2 fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total-3 fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater fullUrl: urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater2 fullUrl: urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater3 fullUrl: urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fillingTAMC1 fullUrl: urn:uuid:44aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fillingConclusion-nosubject fullUrl: urn:uuid:45aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizationConclusion-nosubject fullUrl: urn:uuid:45ab47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerNumber1 fullUrl: urn:uuid:37aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerNumber2 fullUrl: urn:uuid:38aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerNumber3 fullUrl: urn:uuid:38aa48fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizationAssay1 fullUrl: urn:uuid:37aa47fd-7964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizationAssay2 fullUrl: urn:uuid:47aa47fd-7964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizationAssay3 fullUrl: urn:uuid:47aa47fd-7964-4f96-6495-b2bec7f160e8)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerWaterHomogeneity1 fullUrl: urn:uuid:47aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerAssayHomogeneity1 fullUrl: urn:uuid:47aa47fd-8964-5f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
@@ -14039,7 +13344,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
                 </performer>
                 <valueString value=&quot;Conclusion of lyophilization tests....&quot;/>" id="Observation-lyophilizationConclusion-nosubject">Observation<span class="summaryShowsOff"> - <span title="
@@ -14148,7 +13452,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
                 </performer>
                 <valueString value=&quot;Conclusion of lyophilization tests....&quot;/>">Instantiates</span>: Conclusion - Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span> (<a href="#ObservationDefinition-LyophilizationConclusion" title="click to see target - id=LyophilizationConclusion">ObservationDefinition</a>)<span class="debugOff"> id: LyophilizationConclusion</span></span><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
@@ -14158,7 +13461,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 ...
                 <performer>
-                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification fullUrl: urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification2 fullUrl: urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification3 fullUrl: urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPre1 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPre2 fullUrl: urn:uuid:9c56948a-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPre3 fullUrl: urn:uuid:9c56948a-4a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPost1 fullUrl: urn:uuid:9c56948a-3a49-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPost2 fullUrl: urn:uuid:9c56958a-4a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingpHPost3 fullUrl: urn:uuid:9c56948a-5a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPre1 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d297ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPre2 fullUrl: urn:uuid:9c56948a-3a39-6619-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPre3 fullUrl: urn:uuid:9c56948a-4a39-6619-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPost1 fullUrl: urn:uuid:9c56948a-3a49-6619-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPost2 fullUrl: urn:uuid:9c56958a-4a39-6619-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: compoundingAssayPost3 fullUrl: urn:uuid:9c56948a-5a39-6709-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay fullUrl: urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay2 fullUrl: urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay3 fullUrl: urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1 fullUrl: urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1-2 fullUrl: urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1-3 fullUrl: urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2 fullUrl: urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2-2 fullUrl: urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2-3 fullUrl: urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3 fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3-2 fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c6)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3-3 fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified fullUrl: urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified-2 fullUrl: urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified-3 fullUrl: urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total-2 fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total-3 fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater fullUrl: urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater2 fullUrl: urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater3 fullUrl: urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fillingTAMC1 fullUrl: urn:uuid:44aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fillingConclusion-nosubject fullUrl: urn:uuid:45aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizationConclusion-nosubject fullUrl: urn:uuid:45ab47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerNumber1 fullUrl: urn:uuid:37aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerNumber2 fullUrl: urn:uuid:38aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerNumber3 fullUrl: urn:uuid:38aa48fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizationAssay1 fullUrl: urn:uuid:37aa47fd-7964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizationAssay2 fullUrl: urn:uuid:47aa47fd-7964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizationAssay3 fullUrl: urn:uuid:47aa47fd-7964-4f96-6495-b2bec7f160e8)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerWaterHomogeneity1 fullUrl: urn:uuid:47aa47fd-8964-4f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: lyophilizerAssayHomogeneity1 fullUrl: urn:uuid:47aa47fd-8964-5f96-6495-b2bec7f160e7)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
@@ -24288,7 +23590,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                                 <reference value=&quot;Substance/substance-dxpq-ex1&quot;/>
                             </valueReference>
                         </extension>
-                        <!--  Base FHIR Extensions-->
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
@@ -24301,7 +23602,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                                 <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                             </valueReference>
                         </extension>
-                        <!--  Base FHIR Extensions-->
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100100&quot;/>
@@ -24410,7 +23710,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                                 <reference value=&quot;Substance/substance-dxpq-ex1&quot;/>
                             </valueReference>
                         </extension>
-                        <!--  Base FHIR Extensions-->
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
@@ -24423,7 +23722,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                                 <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                             </valueReference>
                         </extension>
-                        <!--  Base FHIR Extensions-->
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100100&quot;/>
@@ -24517,7 +23815,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                                 <reference value=&quot;Substance/substance-dxpq-ex1&quot;/>
                             </valueReference>
                         </extension>
-                        <!--  Base FHIR Extensions-->
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
@@ -24530,7 +23827,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                                 <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                             </valueReference>
                         </extension>
-                        <!--  Base FHIR Extensions-->
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100100&quot;/>
@@ -27964,7 +27260,7 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
     <entry>
         <resource>
             <PlanDefinition>
-                <!--id value=&quot;manufacturingProcess-subset-unlinked&quot;/-->
+                <!-- focal resource -->
                 <id value=&quot;plandefinition-dxpq-ex2-manufacturing-plan&quot;/>
                 <!-- indicate this is as subset of the resource. In practice it would have it all -->
                 <meta>
@@ -28246,7 +27542,7 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
     <entry>
         <resource>
             <PlanDefinition>
-                <!--id value=&quot;manufacturingProcess-subset-unlinked&quot;/-->
+                <!-- focal resource -->
                 <id value=&quot;plandefinition-dxpq-ex2-manufacturing-plan&quot;/>
                 <!-- indicate this is as subset of the resource. In practice it would have it all -->
                 <meta>
@@ -28923,8 +28219,7 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                     <valueQuantity>
                         <value value=&quot;1000&quot;/>
                         <unit value=&quot;litres&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -28967,7 +28262,6 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                     <valueQuantity>
                         <value value=&quot;1000&quot;/>
                         <unit value=&quot;litres&quot;/>">1000 litres</span></span></div>
-</div>
 </div>
 </div>
 </div>
@@ -29121,8 +28415,7 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                     <valueQuantity>
                         <value value=&quot;1200&quot;/>
                         <unit value=&quot;litres&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -29165,7 +28458,6 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                     <valueQuantity>
                         <value value=&quot;1200&quot;/>
                         <unit value=&quot;litres&quot;/>">1200 litres</span></span></div>
-</div>
 </div>
 </div>
 </div>
