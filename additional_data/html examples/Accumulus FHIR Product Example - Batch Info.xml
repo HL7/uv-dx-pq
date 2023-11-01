@@ -1,0 +1,2782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+    <!-- Product Batch Info -->
+   <id value="bundle-batch-info-dxpq-ex1-prod"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-info-dxpq"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+      <resource>
+         <PlanDefinition>
+            <id value="specificationProtocol"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+            <title value="P.5.4 BATCH ANALYSIS"/>
+            
+
+            <type>
+               <coding>
+                  <system value="http://example.org/fhir/code/planType"/>
+                  <code value="1244577"/>
+                  <display value="Specification Protocol"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subjectReference>
+            <description value="Narrative description of analysis"/>
+            <action>
+               
+               
+               <title value="Batch Specification for Drug Product"/>
+               <code>
+                  <text value="Overall set of actions"/>
+               </code>
+               <action>
+                  <title value="Release"/>
+                  <code>
+                     <text value="Timing Group"/>
+                  </code>
+                  <timingTiming>
+                     <code>
+                        <text value="Release time"/>
+                     </code>
+                  </timingTiming>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Description"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Identification"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Assay"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Degradation"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Dissolution"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DissolutionQ80"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Uniformity"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Microbiological"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/Water"/>
+                  </action>
+               </action>
+               <action>
+                  <title value="End of shelf life"/>
+                  <code>
+                     <text value="Timing Group"/>
+                  </code>
+                  <timingTiming>
+                     <code>
+                        <text value="At end of shelf life"/>
+                     </code>
+                  </timingTiming>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DescriptionEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/IdentificationEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/AssayEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DegradationEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/DissolutionEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/UniformityEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/MicrobiologicalEnd"/>
+                  </action>
+                  <action>
+                     <code>
+                        <text value="Test"/>
+                     </code>
+                     <definitionCanonical value="ObservationDefinition/WaterEnd"/>
+                  </action>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fc07b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Description"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+            <title value="Description"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <method>
+               <text value="Visual inspection"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="An orange film-coated tablet, debossed with 175 on one side"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:220059d8-5aed-6d9e-563f-aac39b315c05"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DescriptionEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/220059d8-5aed-6d9e-563f-aac39b315c05"/>
+            <title value="Description"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Identification"/>
+            
+
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
+            <title value="Identification"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <method>
+               <text value="ID by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="Consistent with the retention time and UV spectrum of the reference standard"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7c01a2fc-7ced-92b5-3ce7-8279d9df2421"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="IdentificationEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/7c01a2fc-7ced-92b5-3ce7-8279d9df2421"/>
+            <title value="Identification"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+        
+
+      <fullUrl value="urn:uuid:39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Assay"/>
+            
+
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            </meta>
+            
+
+            <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay"/>
+            <title value="Assay"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <method>
+               <text value="Assay by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="95% to 105% of label claim"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9d1fd19a-9265-7b02-865e-75c12e952ad4"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="AssayEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/9d1fd19a-9265-7b02-865e-75c12e952ad4"/>
+            <title value="Assay"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Degradation"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+            <title value="Degradation Products"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Degradation products by UHPLC"/>
+            </method>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Impurity 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.2"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.3"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 3"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.3"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Individual unspecified degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.2"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Total degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="1.4"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d5d084d0-37c9-3e1e-1d3f-97e7798540a9"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DegradationEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/d5d084d0-37c9-3e1e-1d3f-97e7798540a9"/>
+            <title value="Degradation Products"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+            </code>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Impurity 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.8"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.4"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 3"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.4"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Individual unspecified degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.3"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Total degradation products"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.3"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:8f5d8abf-2cf4-8617-1e41-a74d90210dcc"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Dissolution"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/8f5d8abf-2cf4-8617-1e41-a74d90210dcc"/>
+            <title value="Dissolution"/>
+            <status value="active"/>
+            <code> <!-- possibly "G1113" -->
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="Dissolution"/>
+               </coding>
+               <text value="Dissolution"/>
+            </code>
+            <method>
+               <text value="Apparatus 2 (paddles), UV measurement"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:33a9d578-6e6b-7606-72bc-6775d36c1930"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DissolutionQ80"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/33a9d578-6e6b-7606-72bc-6775d36c1930"/>
+            <title value="Dissolution (Q)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZX"/>
+                  <display value="DissolutionQuantity"/>
+               </coding>
+               <!--text value="Dissolution (Q)"/-->
+            </code>
+            <method>
+               <text value="Apparatus 2 (paddles), UV measurement"/>
+            </method>
+            <qualifiedValue>
+               <condition value="at 30 minutes"/>
+               <range>
+                  <low>
+                     <value value="80"/>
+                     <unit value="%"/>
+                  </low>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="DissolutionEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/062bf235-44e2-55c4-9213-bbe5e12d5620"/>
+            <title value="Dissolution"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="Dissolution"/>
+               </coding>
+               <!--text value="Dissolution"/-->
+            </code>
+            <method>
+               <text value="Apparatus 2 (paddles), UV measurement"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:31e29d22-5fcb-546e-24fd-52a4a4004467"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Water"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
+            <title value="Water Content"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="WWW"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <method>
+               <text value="USP &lt;921&gt;"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <high>
+                     <value value="1.0"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7d0b63fc-5194-33d0-3e4a-0aef5edf7ba6"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="WaterEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/7d0b63fc-5194-33d0-3e4a-0aef5edf7ba6"/>
+            <title value="Water Content"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="WWW"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <method>
+               <text value="USP &lt;921&gt;"/>
+            </method>
+            <qualifiedValue>
+               <range>
+                  <high>
+                     <value value="2.0"/>
+                     <unit value="% w/w"/>
+                     <system value="http://unitsofmeasure.org"/>
+                     <code value="%"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Microbiological"/>
+            
+
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
+            <title value="Microbiological"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <method>
+               <text value="Ph Eur"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="Shall comply with the requirements of the Ph Eur"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:60529d20-a55e-2575-4cb7-9f207ef8a2a1"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="MicrobiologicalEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/60529d20-a55e-2575-4cb7-9f207ef8a2a1"/>
+            <title value="Microbiological"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <method>
+               <text value="Ph Eur"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="Uniformity"/>
+            
+
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+            </meta>
+            <url value="http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
+            <title value="Uniformity of dosage"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <method>
+               <text value="Weight variation"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:2b01c026-1687-24c7-4c8c-e5d98ada8683"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="UniformityEnd"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/2b01c026-1687-24c7-4c8c-e5d98ada8683"/>
+            <title value="Uniformity of dosage"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+                  <valueString value="As for release"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <!-- Section 8 - Batch or Lot Information (batch 1 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+      <resource>
+         <Medication>
+            <id value="medication-actual-batch"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference> <!-- todo consider change this be the MID? -->
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     
+
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <valueDateTime value="2019-09-08"/>
+                     <!-- #171 -->
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
+                     <valueReference>
+                        <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
+                     </valueReference>
+                  </extension>
+                  <!-- removed extension for substance batch -->
+                  
+
+                  <extension url="manufacturingDate"> <!-- #157 -->
+                     <valueDateTime value="2020-06"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq"> <!-- #159 -->
+                     <valueDateTime value="2020-08"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                     <valueReference>
+                        <reference value="Organization/packaging"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                                <!-- #26 --><!-- #155 --><!-- need to see if one of these needs changing -->
+                        <value value="100100"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                     <valueQuantity> <!-- #160 -->
+                        <value value="4.8"/>
+                        <unit value="kg"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="batchUtilization"> <!-- #159 -->
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <code value="C185328"/>
+                           <display value="Stability Study"/>
+                        </coding>
+                        <text value="PPQ / Stability"/>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="assignedManufacturer">
+                     <valueReference> <!-- #158 -->
+                        <reference value="Organization/manufacturer"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="container">
+                     <extension url="closureSystemDescription">
+                        <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
+                     </extension>
+                  </extension>
+               </extension>
+               <!-- #153 -->
+               <lotNumber value="33445"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 8 - Batch or Lot Information (another batch 2 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+      <resource>
+         <Medication>
+            <id value="medication-actual-batch-2"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <valueDateTime value="2019-09-08"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
+                     <valueReference>
+                        <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
+                     </valueReference>
+                  </extension>
+                  <!-- removed extension for substance batch -->
+                  
+
+                  <extension url="manufacturingDate">
+                     <valueDateTime value="2020-06"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
+                     <valueDateTime value="2020-08"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                     <valueReference>
+                        <reference value="Organization/packaging"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="100050"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                     <valueQuantity>
+                        <value value="4.8"/>
+                        <unit value="kg"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="batchUtilization">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <code value="C185328"/>
+                           <display value="Stability Study"/>
+                        </coding>
+                        <text value="PPQ / Stability"/>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="assignedManufacturer">
+                     <valueReference>
+                        <reference value="Organization/manufacturer"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="container">
+                     <extension url="closureSystemDescription">
+                        <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
+                     </extension>
+                  </extension>
+               </extension>
+               <lotNumber value="33446"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 8 - Batch or Lot Information (another batch 3 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+      <resource>
+         <Medication>
+            <id value="medication-actual-batch-3"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <valueDateTime value="2019-09-08"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
+                     <valueReference>
+                        <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
+                     </valueReference>
+                  </extension>
+                  <!-- removed extension for substance batch -->
+                  
+
+                  <extension url="manufacturingDate">
+                     <valueDateTime value="2020-06"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
+                     <valueDateTime value="2020-08"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                     <valueReference>
+                        <reference value="Organization/packaging"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="100125"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                     <valueQuantity>
+                        <value value="4.8"/>
+                        <unit value="kg"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="batchUtilization">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <code value="C185328"/>
+                           <display value="Stability Study"/>
+                        </coding>
+                        <text value="PPQ / Stability"/>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="assignedManufacturer">
+                     <valueReference>
+                        <reference value="Organization/manufacturer"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="container">
+                     <extension url="closureSystemDescription">
+                        <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
+                     </extension>
+                  </extension>
+               </extension>
+               <lotNumber value="33447"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 4.1 - Manufacturer -->
+   <entry>
+      <fullUrl value="urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+      <resource>
+         <Organization>
+            <id value="manufacturer"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3010027650"/>
+            </identifier>
+            <name value="AAA Pharmaceutical, Inc."/>
+            <contact>
+               <address>
+                  <line value="681 Main Street"/>
+                  <city value="Lumberton"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08048"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07"/>
+      <resource>
+         <Organization>
+            <id value="packaging"/>
+            <name value="MySite"/>
+         </Organization>
+      </resource>
+   </entry>
+   <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
+   <entry>
+      <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
+      <resource>
+         <DiagnosticReport>
+                <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
+                     however the observations themselves do have subjects -->
+            <id value="batchAnalysisReport"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+               <valueReference>
+                  <reference value="PlanDefinition/specificationProtocol"/>
+               </valueReference>
+            </extension>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://example.org/fhir/code/reportType"/>
+                  <code value="111"/>
+                  <display value="Batch Analysis Report"/>
+               </coding>
+            </code>
+            <effectiveDateTime value="2020-12"/>
+            <!-- start of stability test -->
+            <result>
+               <reference value="Observation/observationDescription"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDescription2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDescription3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationIdentification"/>
+            </result>
+            <result>
+               <reference value="Observation/observationIdentification2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationIdentification3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationAssay"/>
+            </result>
+            <result>
+               <reference value="Observation/observationAssay2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationAssay3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp1"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp1-2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp1-3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp2-2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp2-3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp3-2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp3-3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp-unspecified"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp-unspecified-2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp-unspecified-3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp-total"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp-total-2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDegradation-imp-total-3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDissolution"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDissolution2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDissolution3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDissolutionQ80"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDissolutionQ802"/>
+            </result>
+            <result>
+               <reference value="Observation/observationDissolutionQ803"/>
+            </result>
+            <result>
+               <reference value="Observation/observationUniformity"/>
+            </result>
+            <result>
+               <reference value="Observation/observationUniformity2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationUniformity3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationMicro"/>
+            </result>
+            <result>
+               <reference value="Observation/observationMicro2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationMicro3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationWater"/>
+            </result>
+            <result>
+               <reference value="Observation/observationWater2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationWater3"/>
+            </result>
+            <conclusion value="The samples have been assessed and the conclusion is..."/>
+         </DiagnosticReport>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d"/>
+      <resource>
+         <Observation>
+            <id value="observationDescription"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Description"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ba1b4227-8a67-a605-1152-e86e4d614fc3"/>
+      <resource>
+         <Observation>
+            <id value="observationDescription2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Description"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Does not comply"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:2d628dc2-0b9e-9494-55b3-2621e50938c5"/>
+      <resource>
+         <Observation>
+            <id value="observationDescription3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Description"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629"/>
+      <resource>
+         <Observation>
+            <id value="observationIdentification"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Identification"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5"/>
+      <resource>
+         <Observation>
+            <id value="observationIdentification2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Identification"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Does not comply"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74"/>
+      <resource>
+         <Observation>
+            <id value="observationIdentification3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Identification"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33"/>
+      <resource>
+         <Observation>
+            <id value="observationAssay"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Assay"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="103"/>
+               <unit value="%"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c"/>
+      <resource>
+         <Observation>
+            <id value="observationAssay2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Assay"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="102"/>
+               <unit value="%"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
+      <resource>
+         <Observation>
+            <id value="observationAssay3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Assay"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Assay"/>
+               </coding>
+               <text value="Assay"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="101"/>
+               <unit value="%"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp1-2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp1-3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp2-2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp2-3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 3"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:be016630-8754-7414-9014-21e020ad66c6"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp3-2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 3"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp3-3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Impurity 3"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp-unspecified"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Individual unspecified degradation products"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp-unspecified-2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Individual unspecified degradation products"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp-unspecified-3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Individual unspecified degradation products"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp-total"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.6"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Total degradation products"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp-total-2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.7"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Total degradation products"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78"/>
+      <resource>
+         <Observation>
+            <id value="observationDegradation-imp-total-3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Degradation"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.6"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                  <text value="Total degradation products"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7316e094-2094-5710-4f11-75d3effc995e"/>
+      <resource>
+         <Observation>
+            <id value="observationDissolution"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Dissolution"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="Dissolution"/>
+               </coding>
+               <text value="Dissolution"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:1cedf9c1-8e89-5dbb-0e1f-0363a9ca4893"/>
+      <resource>
+         <Observation>
+            <id value="observationDissolution2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Dissolution"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="Dissolution"/>
+               </coding>
+               <text value="Dissolution"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c350f0b1-9495-0165-2555-83ebd79da682"/>
+      <resource>
+         <Observation>
+            <id value="observationDissolution3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Dissolution"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="Dissolution"/>
+               </coding>
+               <text value="Dissolution"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4b97e406-3fb0-9f65-0979-910ea1b9254f"/>
+      <resource>
+         <Observation>
+            <id value="observationDissolutionQ80"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/DissolutionQ80"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZX"/>
+                  <display value="DissolutionQ"/>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="90"/>
+               <unit value="%"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:bbfc28df-49bc-986c-1a0e-75e3160268b9"/>
+      <resource>
+         <Observation>
+            <id value="observationDissolutionQ802"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/DissolutionQ80"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZX"/>
+                  <display value="DissolutionQ"/>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="92"/>
+               <unit value="%"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d6955449-16b4-107f-851d-2f99d0b47b96"/>
+      <resource>
+         <Observation>
+            <id value="observationDissolutionQ803"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/DissolutionQ80"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZX"/>
+                  <display value="DissolutionQ"/>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="95"/>
+               <unit value="%"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:591f5d75-1b2f-299b-6885-f325e4228bda"/>
+      <resource>
+         <Observation>
+            <id value="observationUniformity"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Uniformity"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:1dd8e506-08cf-8a15-8cd0-7c7cf1d88731"/>
+      <resource>
+         <Observation>
+            <id value="observationUniformity2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Uniformity"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3"/>
+      <resource>
+         <Observation>
+            <id value="observationUniformity3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Uniformity"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="ZZZ"/>
+                  <display value="uniformity of dosage units (by weight)"/>
+               </coding>
+               <text value="uniformity of dosage units (by weight)"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d136c4f5-62da-81eb-4fc8-144f9182589e"/>
+      <resource>
+         <Observation>
+            <id value="observationMicro"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Microbiological"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:3ab5e4eb-673b-0e66-3d2c-86d64ced0e86"/>
+      <resource>
+         <Observation>
+            <id value="observationMicro2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Microbiological"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:cec7ce65-57d7-a654-9ad6-21d162186eb9"/>
+      <resource>
+         <Observation>
+            <id value="observationMicro3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Microbiological"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="YYY"/>
+                  <display value="Microbiological Quality"/>
+               </coding>
+               <text value="Microbiological Quality"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Complies"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46"/>
+      <resource>
+         <Observation>
+            <id value="observationWater"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Water"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.5"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28"/>
+      <resource>
+         <Observation>
+            <id value="observationWater2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Water"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-2"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.5"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa"/>
+      <resource>
+         <Observation>
+            <id value="observationWater3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/Water"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://dummy.loinc.org"/>
+                  <code value="XXX"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <subject>
+               <reference value="Medication/medication-actual-batch-3"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.5"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="Textual description of the product"/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+                  <code value="100000073667"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+                  <code value="100000073619"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <name>
+               <productName value="Stelbat Tablets, 20mg"/>
+               <type>
+                  <coding>
+                     <system value="http://example.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+               <part>
+                  <part value="20mg"/>
+                  <type>
+                     <coding>
+                        <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                        <code value="StrengthPart"/>
+                        <display value="Strength part"/>
+                     </coding>
+                  </type>
+               </part>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
+      <resource>
+         <Ingredient>
+            <id value="productIngredient"/>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072072"/>
+                  <display value="Active"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/substance1"/>
+                  </reference>
+               </code>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substance1"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
+      <resource>
+         <Organization>
+            <id value="substance-manufacturer"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+      <resource>
+         <Organization>
+                <!--testing lab-->
+            <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            <name value="Testing Lab"/>
+         </Organization>
+      </resource>
+   </entry>
+   <!-- Section 5 - Manufacturing Process -->
+   <entry>
+      <fullUrl value="urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1"/>
+      <resource>
+         <PlanDefinition>
+                <!--    <id value="manufacturingProcess"/>-->
+                
+
+            <id value="plandefinition-dxpq-ex4-mnf-process"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
+            </meta>
+            
+
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
+               <valueMarkdown value="Process has no history recorded yet"/>
+            </extension>
+            <url value="http://example-server.com/fhir/PlanDefinition/246e9583-6253-6cc7-9c12-3b624f3308c1"/>
+            <title value="Process 1.0"/>
+            <type>
+               <coding>
+                  <system value="http://example.org/fhir/code/planType"/>
+                  <code value="1244566"/>
+                  <display value="Manufacturing Process"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <!-- #83 -->
+            <subjectReference>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subjectReference>
+         </PlanDefinition>
+      </resource>
+   </entry>
+</Bundle>
