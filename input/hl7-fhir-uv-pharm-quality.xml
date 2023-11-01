@@ -1529,7 +1529,7 @@
                 <reference value="ObservationDefinition/Impurities"/>
             </reference>
             <name value="v"/>
-            <description value="ObservationDefinition - v"/>
+            <description value="ObservationDefinition - Impurities"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
             <groupingId value="examples1"/>
