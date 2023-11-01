@@ -1,23 +1,24 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s). 
-
-The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is similar.
-
-
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s).<br/><br/>The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is similar.<br/>
 <html>
 <body>
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
+<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: d0f67879-9bdf-4f63-80eb-144912b0db60)
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-organizations-dxpq-ex1)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq 
 
 <Bundle>
-    <id value=&quot;d0f67879-9bdf-4f63-80eb-144912b0db60&quot;/>
+    <id value=&quot;bundle-organizations-dxpq-ex1&quot;/>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq&quot;/>
+    </meta>
     <type value=&quot;collection&quot;/>
     <entry>
-        <fullUrl value=&quot;urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a&quot;/>
+        <fullUrl value=&quot;urn:uuid:1f3ab002-429f-7f05-4dda-05467f2804d9&quot;/>
         <resource>
             <Organization>
                 <id value=&quot;manufacturer&quot;/>
@@ -40,7 +41,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:a09539a3-a337-596b-086c-d350e4371b55&quot;/>
+        <fullUrl value=&quot;urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b&quot;/>
         <resource>
             <Organization>
                 <id value=&quot;manufacturer2&quot;/>
@@ -63,7 +64,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:432b0b5a-3a73-6d7f-6dbd-64a3f410a02e&quot;/>
+        <fullUrl value=&quot;urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0&quot;/>
         <resource>
             <Organization>
                 <id value=&quot;capManufacturer&quot;/>
@@ -85,7 +86,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:695d1c6b-7330-1a72-2f47-ffee49460bb5&quot;/>
+        <fullUrl value=&quot;urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28&quot;/>
         <resource>
             <Organization>
                 <id value=&quot;bottleManufacturer&quot;/>
@@ -107,7 +108,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:8ac517ba-25ab-5c1a-8427-83437bf553c8&quot;/>
+        <fullUrl value=&quot;urn:uuid:bc27122e-52b5-569e-1787-5d6d0f533516&quot;/>
         <resource>
             <Organization>
                 <id value=&quot;tester2&quot;/>
@@ -129,7 +130,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:4ef3c750-46cc-1693-1942-0cba16a21ccc&quot;/>
+        <fullUrl value=&quot;urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85&quot;/>
         <resource>
             <Organization>
                 <id value=&quot;tester&quot;/>
@@ -149,14 +150,20 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
                 </contact>
             </Organization>
         </resource>
-    </entry>" id="Bundle-d0f67879-9bdf-4f63-80eb-144912b0db60">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: d0f67879-9bdf-4f63-80eb-144912b0db60</div>
+    </entry>" id="Bundle-bundle-organizations-dxpq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-organizations-dxpq-ex1</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq</span></div>
 <div><span title="
 <Bundle>
     ...
     <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
 </div>
 </div>
-<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: manufacturer)(fullUrl: urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a)
+<div>
+<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: manufacturer)(fullUrl: urn:uuid:1f3ab002-429f-7f05-4dda-05467f2804d9)
 
 <Bundle>
     <entry>
@@ -178,7 +185,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturer</div>
-<div class="debugOff"> fullUrl: urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a</div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:1f3ab002-429f-7f05-4dda-05467f2804d9</div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -263,7 +270,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 </div>
 </div>
 </div>
-<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: manufacturer2)(fullUrl: urn:uuid:a09539a3-a337-596b-086c-d350e4371b55)
+<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: manufacturer2)(fullUrl: urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b)
 
 <Bundle>
     <entry>
@@ -285,7 +292,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-manufacturer2">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturer2</div>
-<div class="debugOff"> fullUrl: urn:uuid:a09539a3-a337-596b-086c-d350e4371b55</div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b</div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -370,7 +377,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 </div>
 </div>
 </div>
-<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: capManufacturer)(fullUrl: urn:uuid:432b0b5a-3a73-6d7f-6dbd-64a3f410a02e)
+<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: capManufacturer)(fullUrl: urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0)
 
 <Bundle>
     <entry>
@@ -391,7 +398,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-capManufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: capManufacturer</div>
-<div class="debugOff"> fullUrl: urn:uuid:432b0b5a-3a73-6d7f-6dbd-64a3f410a02e</div><span class="summaryShowsOff"> - A+ Secure Packaging, LLC</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0</div><span class="summaryShowsOff"> - A+ Secure Packaging, LLC</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -474,7 +481,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 </div>
 </div>
 </div>
-<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: bottleManufacturer)(fullUrl: urn:uuid:695d1c6b-7330-1a72-2f47-ffee49460bb5)
+<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: bottleManufacturer)(fullUrl: urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28)
 
 <Bundle>
     <entry>
@@ -495,7 +502,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-bottleManufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: bottleManufacturer</div>
-<div class="debugOff"> fullUrl: urn:uuid:695d1c6b-7330-1a72-2f47-ffee49460bb5</div><span class="summaryShowsOff"> - Acupac Packaging Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28</div><span class="summaryShowsOff"> - Acupac Packaging Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -578,7 +585,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 </div>
 </div>
 </div>
-<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: tester2)(fullUrl: urn:uuid:8ac517ba-25ab-5c1a-8427-83437bf553c8)
+<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: tester2)(fullUrl: urn:uuid:bc27122e-52b5-569e-1787-5d6d0f533516)
 
 <Bundle>
     <entry>
@@ -599,7 +606,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
                         <country value=&quot;Germany&quot;/>
                     </address>
                 </contact>" id="Organization-tester2">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: tester2</div>
-<div class="debugOff"> fullUrl: urn:uuid:8ac517ba-25ab-5c1a-8427-83437bf553c8</div><span class="summaryShowsOff"> - A &amp; M STABTEST Labor für Analytik und Stabilitätsprüfung</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:bc27122e-52b5-569e-1787-5d6d0f533516</div><span class="summaryShowsOff"> - A &amp; M STABTEST Labor für Analytik und Stabilitätsprüfung</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -682,7 +689,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 </div>
 </div>
 </div>
-<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: tester)(fullUrl: urn:uuid:4ef3c750-46cc-1693-1942-0cba16a21ccc)
+<div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: tester)(fullUrl: urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85)
 
 <Bundle>
     <entry>
@@ -703,7 +710,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-tester">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: tester</div>
-<div class="debugOff"> fullUrl: urn:uuid:4ef3c750-46cc-1693-1942-0cba16a21ccc</div><span class="summaryShowsOff"> - Advanced Analytical Testing Laboratories Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85</div><span class="summaryShowsOff"> - Advanced Analytical Testing Laboratories Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -788,11 +795,13 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="debugOff"></div>
 </div>
 </div>
 </body>
-<style>
+<style onLoad="resolveGlobalLinksThatCanBeLocal();">
 
 @media all {
 
@@ -889,7 +898,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
     .adverseEventl2 { background-Color:#d9cad1; }
     .adverseEventl3 { background-Color:#d9d4d6; }
 
-    .ppd { background-Color:#b6d7a8; width:60%; }
+    .ppd { background-Color:#b6d7a8; width:70%; }
     .ppdl2, .ppdpackage { background-Color:#c2deb6 }
     .ppdl3, .ppdpackageitem { background-Color:#daf0d1 }
     .ppdl4  { background-Color:#e4f2df }
@@ -1133,7 +1142,7 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 			}
 			
 			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit"); // header from tabular mode
+			var nodes = document.querySelectorAll(".summaryUnit");
 			for (var i=0; i < nodes.length; i++) {
 				var node = nodes[i];
 				var span = document.createElement('span');
@@ -1335,6 +1344,26 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 		    else if  ( g < 0 ) g = 0;
 		
 		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+		}
+
+		function resolveGlobalLinksThatCanBeLocal()
+		{
+			var nodes = document.querySelectorAll('.external-link');
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				var href = node.href;
+   				var urlPath = href.split('?url=').pop();
+   				if (urlPath != href) {
+   					var localId = node.getAttribute("localLink");
+	   				var localElement = document.getElementById(localId);
+	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
+	   					node.href= '#' + localId;
+	   					node.removeAttribute("localLink");
+	   					node.removeAttribute("class"); // remove the external-link class
+	   					node.title = node.title.replace(" (via server)"," (in page)");
+	   				}
+			   	 }
+    			}
 		}
 
 		function toggleSummary(item)
@@ -1570,4 +1599,5 @@ The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is simila
 		General Bundle:false
 		Not patient related:true
 		=>Patient Centric Mode:false
-		SubstanceDef Centric Mode:false--></html>
+		SubstanceDef Centric Mode:false
+		Assumed profile:--></html>

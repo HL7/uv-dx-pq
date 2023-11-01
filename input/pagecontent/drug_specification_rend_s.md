@@ -1,20 +1,22 @@
 The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification.
-
 <html>
 <body>
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
+<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: substance-specification)
-Profile: http://accumulus.org/fhir/dx-cmc/specification 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-drug-substance-specification-dxpq-ex1)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq 
 
 <Bundle>
-    <id value=&quot;substance-specification&quot;/>
+    <!--id value=&quot;substance-specification&quot;/-->
+    <id value=&quot;bundle-drug-substance-specification-dxpq-ex1&quot;/>
     <meta>
-        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/specification&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq&quot;/>
+        <!--profile value=&quot;http://accumulus.org/fhir/dx-cmc/specification&quot;/-->
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
@@ -22,6 +24,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <PlanDefinition>
                 <id value=&quot;specificationProtocol&quot;/>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;SPECIFICATION FOR DRUG SUBSTANCE&quot;/>
                 <status value=&quot;active&quot;/>
                 <subjectReference>
@@ -98,12 +101,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Description&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9&quot;/>
                 <title value=&quot;Description&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;description&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
                     <text value=&quot;Description&quot;/>
@@ -112,7 +116,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <text value=&quot;Visual inspection&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;A white to brown powder&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -124,12 +128,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Identification&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3&quot;/>
                 <title value=&quot;Identification&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;identification&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;Identification&quot;/>
@@ -138,7 +143,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <text value=&quot;Identification by IR spectroscopy Identification by HPLC&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms with reference&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -150,12 +155,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Assay&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a&quot;/>
                 <title value=&quot;Assay&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;assay&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
                     <text value=&quot;Assay&quot;/>
@@ -169,14 +175,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <value value=&quot;98&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </low>
                         <high>
                             <value value=&quot;102&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </high>
                     </range>
@@ -189,12 +195,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Impurities&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121&quot;/>
                 <title value=&quot;Drug Substance Related Organic impurities&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;DGP&quot;/>
+                        <code value=&quot;DGP-s&quot;/>
                         <display value=&quot;Drug Substance Related Organic impurities&quot;/>
                     </coding>
                 </code>
@@ -264,6 +271,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Mutagenic&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17&quot;/>
                 <title value=&quot;Mutagenic impurities&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -308,12 +316,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Enantiomeric&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d&quot;/>
                 <title value=&quot;Enantiomeric purity&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
+                        <code value=&quot;enantiomeric-purity&quot;/>
                         <display value=&quot;Enantiomeric purity&quot;/>
                     </coding>
                     <text value=&quot;Enantiomeric purity&quot;/>
@@ -339,6 +348,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Solvents&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce&quot;/>
                 <title value=&quot;Residual solvents&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -392,6 +402,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Water&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d&quot;/>
                 <title value=&quot;Water Content&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -421,12 +432,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Particles&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f&quot;/>
                 <title value=&quot;Particle size distribution&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;PART&quot;/>
+                        <code value=&quot;particle-size-distribution&quot;/>
                         <display value=&quot;Particle size distribution&quot;/>
                     </coding>
                 </code>
@@ -480,7 +492,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <code>
                         <coding>
                             <system value=&quot;http://dummy.loinc.org&quot;/>
-                            <code value=&quot;PARTS&quot;/>
+                            <code value=&quot;particle-size&quot;/>
                             <display value=&quot;Particle size&quot;/>
                         </coding>
                     </code>
@@ -526,14 +538,19 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 </contact>
             </Organization>
         </resource>
-    </entry>" id="Bundle-substance-specification">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-specification</div>
+    </entry>" id="Bundle-bundle-drug-substance-specification-dxpq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-drug-substance-specification-dxpq-ex1</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq</span></div>
 <div><span title="
 <Bundle>
     ...
     <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
 </div>
 </div>
+<div>
 <div class="indent plan summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="PlanDefinition (id: specificationProtocol)(fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)
 
 <Bundle>
@@ -541,6 +558,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <PlanDefinition>
                 <id value=&quot;specificationProtocol&quot;/>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;SPECIFICATION FOR DRUG SUBSTANCE&quot;/>
                 <status value=&quot;active&quot;/>
                 <subjectReference>
@@ -610,6 +628,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     </action>
                 </action>" id="PlanDefinition-specificationProtocol">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: specificationProtocol</div>
 <div class="debugOff"> fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a</div>
 <div><span title="
 <Bundle>
     <entry>
@@ -639,6 +658,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <PlanDefinition>
                 <id value=&quot;specificationProtocol&quot;/>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;SPECIFICATION FOR DRUG SUBSTANCE&quot;/>
                 <status value=&quot;active&quot;/>
                 <subjectReference>
@@ -706,7 +726,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/Particles&quot;/>
                     </action>
-                </action>">Subject</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb)
+                </action>">Subject</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb)
 
 <Bundle>
     <entry>
@@ -848,8 +868,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <action>
                     <title value=&quot;Specification for Drug Substance&quot;>">Action: </span><span>Specification for Drug Substance</span></div><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
-<th rowspan="1">Test Procedure</th>
-<th colspan="0">Acceptance Criteria</th>
+<th rowspan="1">Test Procedure</th><th colspan="0">Acceptance Criteria</th>
 <th rowspan="1">Method Reference</th></tr>
 <tr>
 <td><a href="#ObservationDefinition-Description" title="
@@ -865,7 +884,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;A white to brown powder&quot;>">A white to brown powder</span></td>
 <td class="centred">Visual inspection</td>
 </tr>
@@ -883,7 +902,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms with reference&quot;>">Conforms with reference</span></td>
 <td class="centred">Identification by IR spectroscopy Identification by HPLC</td>
 </tr>
@@ -906,14 +925,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <value value=&quot;98&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </low>
                         <high>
                             <value value=&quot;102&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </high>">98 % w/w - 102 % w/w</span></td>
 <td class="centred">Assay by LC</td>
@@ -1141,7 +1160,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="indent summaryUnit initialSummary" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2 initialSummary" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1206,7 +1225,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <text value=&quot;Test&quot;/>
                         </code>
                         <definitionCanonical value=&quot;ObservationDefinition/Particles&quot;/>
-                    </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </action>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1230,7 +1249,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <code>
                         <text value=&quot;Overall set of actions&quot;/>">Code: </span><span style="white-space:normal;">Overall set of actions</span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1241,7 +1260,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1252,19 +1271,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Description)(fullUrl: urn:uuid:52176085-1f30-0c67-9ad7-523c486c82c9)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Description)(fullUrl: urn:uuid:52176085-1f30-0c67-9ad7-523c486c82c9)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Description&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9&quot;/>
                 <title value=&quot;Description&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;description&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
                     <text value=&quot;Description&quot;/>
@@ -1273,7 +1293,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <text value=&quot;Visual inspection&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;A white to brown powder&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-Description">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1284,9 +1304,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Description</div>
+                        <code value=&quot;description&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [description]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Description</div>
 <div class="debugOff"> fullUrl: urn:uuid:52176085-1f30-0c67-9ad7-523c486c82c9</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1317,7 +1338,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;description&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
                     <text value=&quot;Description&quot;/>">Code: </span><span><span title="
@@ -1328,8 +1349,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div>
+                        <code value=&quot;description&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [description]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -1347,18 +1368,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;A white to brown powder&quot;/>
                     </extension>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;A white to brown powder&quot;/>
                     </extension>">
 <div><span title="
@@ -1367,7 +1388,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;A white to brown powder&quot;/>">Text: </span><span>A white to brown powder</span></div>
 </div>
 </div>
@@ -1375,7 +1396,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1386,7 +1407,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1397,19 +1418,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Identification)(fullUrl: urn:uuid:b50d892c-8980-0774-39d4-d449732873a3)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Identification)(fullUrl: urn:uuid:b50d892c-8980-0774-39d4-d449732873a3)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Identification&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3&quot;/>
                 <title value=&quot;Identification&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;identification&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;Identification&quot;/>
@@ -1418,7 +1440,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <text value=&quot;Identification by IR spectroscopy Identification by HPLC&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms with reference&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-Identification">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1429,9 +1451,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Identification</div>
+                        <code value=&quot;identification&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [identification]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Identification</div>
 <div class="debugOff"> fullUrl: urn:uuid:b50d892c-8980-0774-39d4-d449732873a3</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1462,7 +1485,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;identification&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;Identification&quot;/>">Code: </span><span><span title="
@@ -1473,8 +1496,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div>
+                        <code value=&quot;identification&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [identification]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -1492,18 +1515,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms with reference&quot;/>
                     </extension>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms with reference&quot;/>
                     </extension>">
 <div><span title="
@@ -1512,7 +1535,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;Conforms with reference&quot;/>">Text: </span><span>Conforms with reference</span></div>
 </div>
 </div>
@@ -1520,7 +1543,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1531,7 +1554,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1542,19 +1565,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Assay)(fullUrl: urn:uuid:d460b561-110c-7eb6-5d69-788abcca391a)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Assay)(fullUrl: urn:uuid:d460b561-110c-7eb6-5d69-788abcca391a)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Assay&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a&quot;/>
                 <title value=&quot;Assay&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;assay&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
                     <text value=&quot;Assay&quot;/>
@@ -1568,14 +1592,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <value value=&quot;98&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </low>
                         <high>
                             <value value=&quot;102&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </high>
                     </range>
@@ -1587,9 +1611,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Assay</div>
+                        <code value=&quot;assay&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [assay]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Assay</div>
 <div class="debugOff"> fullUrl: urn:uuid:d460b561-110c-7eb6-5d69-788abcca391a</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1620,7 +1645,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <code value=&quot;assay&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
                     <text value=&quot;Assay&quot;/>">Code: </span><span><span title="
@@ -1631,8 +1656,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div>
+                        <code value=&quot;assay&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [assay]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -1655,19 +1680,19 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <value value=&quot;98&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </low>
                         <high>
                             <value value=&quot;102&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -1679,18 +1704,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <value value=&quot;98&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </low>
                         <high>
                             <value value=&quot;102&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
+                            <code value=&quot;%&quot;/>
                             <!-- not sure this is a correct ucum code -->
                         </high>
                     </range>">
-						Range: from <span title="
+<div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1701,8 +1726,28 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <value value=&quot;98&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
-                            <!-- not sure this is a correct ucum code -->">98% w/w</span><span class="greyOff"> [%{w/w}] (http://unitsofmeasure.org)</span> to <span title="
+                            <code value=&quot;%&quot;/>
+                            <!-- not sure this is a correct ucum code -->
+                        </low>
+                        <high>
+                            <value value=&quot;102&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%&quot;/>
+                            <!-- not sure this is a correct ucum code -->
+                        </high>">Range: </span>from <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <low>
+                            <value value=&quot;98&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%&quot;/>
+                            <!-- not sure this is a correct ucum code -->">98% w/w</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1714,14 +1759,15 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <value value=&quot;102&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;%{w/w}&quot;/>
-                            <!-- not sure this is a correct ucum code -->">102% w/w</span><span class="greyOff"> [%{w/w}] (http://unitsofmeasure.org)</span></div>
+                            <code value=&quot;%&quot;/>
+                            <!-- not sure this is a correct ucum code -->">102% w/w</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div>
+</div>
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1732,7 +1778,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Impurities&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Impurities&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1743,19 +1789,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Impurities)(fullUrl: urn:uuid:006a9f7b-91ca-5601-38ef-a3dd26ad7121)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Impurities)(fullUrl: urn:uuid:006a9f7b-91ca-5601-38ef-a3dd26ad7121)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Impurities&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121&quot;/>
                 <title value=&quot;Drug Substance Related Organic impurities&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;DGP&quot;/>
+                        <code value=&quot;DGP-s&quot;/>
                         <display value=&quot;Drug Substance Related Organic impurities&quot;/>
                     </coding>
                 </code>
@@ -1824,9 +1871,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Drug Substance Related Organic impurities&quot;/>">Drug Substance Related Organic impurities<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Impurities</div>
+                        <code value=&quot;DGP-s&quot;/>
+                        <display value=&quot;Drug Substance Related Organic impurities&quot;/>">Drug Substance Related Organic impurities<span class="greyOff"> [DGP-s]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Impurities</div>
 <div class="debugOff"> fullUrl: urn:uuid:006a9f7b-91ca-5601-38ef-a3dd26ad7121</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1857,7 +1905,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;DGP&quot;/>
+                        <code value=&quot;DGP-s&quot;/>
                         <display value=&quot;Drug Substance Related Organic impurities&quot;/>
                     </coding>">Code: </span><span><span title="
 <Bundle>
@@ -1867,8 +1915,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Drug Substance Related Organic impurities&quot;/>">Drug Substance Related Organic impurities<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                        <code value=&quot;DGP-s&quot;/>
+                        <display value=&quot;Drug Substance Related Organic impurities&quot;/>">Drug Substance Related Organic impurities<span class="greyOff"> [DGP-s]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -1896,8 +1944,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;% w/w&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -1923,7 +1971,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <appliesTo>
                         <!-- could be a code -->
                         <text value=&quot;Impurity 1&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 1</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.5&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1933,6 +1992,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <high>
                             <value value=&quot;0.5&quot;/>
                             <unit value=&quot;% w/w&quot;/>">0.5% w/w</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -1950,8 +2010,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;% w/w&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -1975,7 +2035,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <qualifiedValue>
                     <appliesTo>
                         <text value=&quot;Impurity 2&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 2</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.5&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1985,6 +2056,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <high>
                             <value value=&quot;0.5&quot;/>
                             <unit value=&quot;% w/w&quot;/>">0.5% w/w</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -2002,8 +2074,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;% w/w&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -2027,7 +2099,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <qualifiedValue>
                     <appliesTo>
                         <text value=&quot;Any individual unspecified impurity&quot;/>">Applies To: </span><span><span style="white-space:normal;">Any individual unspecified impurity</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.10&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2037,6 +2120,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <high>
                             <value value=&quot;0.10&quot;/>
                             <unit value=&quot;% w/w&quot;/>">0.10% w/w</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -2054,8 +2138,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;% w/w&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -2079,7 +2163,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <qualifiedValue>
                     <appliesTo>
                         <text value=&quot;Total impurities&quot;/>">Applies To: </span><span><span style="white-space:normal;">Total impurities</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;2.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2089,6 +2184,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <high>
                             <value value=&quot;2.0&quot;/>
                             <unit value=&quot;% w/w&quot;/>">2.0% w/w</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -2143,7 +2239,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2154,7 +2250,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Mutagenic&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Mutagenic&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -2165,13 +2261,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Mutagenic)(fullUrl: urn:uuid:c59deb1b-835c-1be5-4e08-95dea3ae1a17)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Mutagenic)(fullUrl: urn:uuid:c59deb1b-835c-1be5-4e08-95dea3ae1a17)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Mutagenic&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17&quot;/>
                 <title value=&quot;Mutagenic impurities&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -2218,6 +2315,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code value=&quot;MUT&quot;/>
                         <display value=&quot;Mutagenic impurities&quot;/>">Mutagenic impurities<span class="greyOff"> [MUT]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Mutagenic</div>
 <div class="debugOff"> fullUrl: urn:uuid:c59deb1b-835c-1be5-4e08-95dea3ae1a17</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -2289,8 +2387,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <code value=&quot;[ppm]&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -2318,7 +2416,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <appliesTo>
                         <!-- could be a code -->
                         <text value=&quot;Impurity - Mutagenic&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity - Mutagenic</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;50&quot;/>
+                            <unit value=&quot;ppm&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;[ppm]&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2330,6 +2441,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;ppm&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
                             <code value=&quot;[ppm]&quot;/>">50 ppm</span><span class="greyOff"> [[ppm]] (http://unitsofmeasure.org)</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -2384,7 +2496,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2395,7 +2507,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Enantiomeric&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Enantiomeric&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -2406,19 +2518,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Enantiomeric)(fullUrl: urn:uuid:18e20bae-1a24-202d-11d7-5f354c785e4d)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Enantiomeric)(fullUrl: urn:uuid:18e20bae-1a24-202d-11d7-5f354c785e4d)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Enantiomeric&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d&quot;/>
                 <title value=&quot;Enantiomeric purity&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
+                        <code value=&quot;enantiomeric-purity&quot;/>
                         <display value=&quot;Enantiomeric purity&quot;/>
                     </coding>
                     <text value=&quot;Enantiomeric purity&quot;/>
@@ -2443,9 +2556,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;Enantiomeric purity&quot;/>">Enantiomeric purity<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Enantiomeric purity</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Enantiomeric</div>
+                        <code value=&quot;enantiomeric-purity&quot;/>
+                        <display value=&quot;Enantiomeric purity&quot;/>">Enantiomeric purity<span class="greyOff"> [enantiomeric-purity]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Enantiomeric purity</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Enantiomeric</div>
 <div class="debugOff"> fullUrl: urn:uuid:18e20bae-1a24-202d-11d7-5f354c785e4d</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -2476,7 +2590,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
+                        <code value=&quot;enantiomeric-purity&quot;/>
                         <display value=&quot;Enantiomeric purity&quot;/>
                     </coding>
                     <text value=&quot;Enantiomeric purity&quot;/>">Code: </span><span><span title="
@@ -2487,8 +2601,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;ZZZ&quot;/>
-                        <display value=&quot;Enantiomeric purity&quot;/>">Enantiomeric purity<span class="greyOff"> [ZZZ]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Enantiomeric purity</span></span></div>
+                        <code value=&quot;enantiomeric-purity&quot;/>
+                        <display value=&quot;Enantiomeric purity&quot;/>">Enantiomeric purity<span class="greyOff"> [enantiomeric-purity]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Enantiomeric purity</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2514,8 +2628,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <code value=&quot;%&quot;/>
                         </low>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -2530,7 +2644,19 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <code value=&quot;%&quot;/>
                         </low>
                     </range>">
-						Range: from <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <low>
+                            <value value=&quot;99.6&quot;/>
+                            <unit value=&quot;%&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;%&quot;/>
+                        </low>">Range: </span>from <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2543,11 +2669,12 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
                             <code value=&quot;%&quot;/>">99.6%</span><span class="greyOff"> [%] (http://unitsofmeasure.org)</span></div>
 </div>
+</div>
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2558,7 +2685,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Solvents&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Solvents&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -2569,13 +2696,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Solvents)(fullUrl: urn:uuid:22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Solvents)(fullUrl: urn:uuid:22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Solvents&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce&quot;/>
                 <title value=&quot;Residual solvents&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -2631,6 +2759,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code value=&quot;SOL&quot;/>
                         <display value=&quot;Residual solvents&quot;/>">Residual solvents<span class="greyOff"> [SOL]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Solvents</div>
 <div class="debugOff"> fullUrl: urn:uuid:22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -2700,8 +2829,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;% w/w&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -2727,7 +2856,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <appliesTo>
                         <!-- could be a code -->
                         <text value=&quot;Solvent 1&quot;/>">Applies To: </span><span><span style="white-space:normal;">Solvent 1</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;0.1&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2737,6 +2877,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <high>
                             <value value=&quot;0.1&quot;/>
                             <unit value=&quot;% w/w&quot;/>">0.1% w/w</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -2754,8 +2895,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;% w/w&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -2779,7 +2920,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <qualifiedValue>
                     <appliesTo>
                         <text value=&quot;Solvent 2&quot;/>">Applies To: </span><span><span style="white-space:normal;">Solvent 2</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;2.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2789,6 +2941,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <high>
                             <value value=&quot;2.0&quot;/>
                             <unit value=&quot;% w/w&quot;/>">2.0% w/w</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -2843,7 +2996,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2854,7 +3007,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -2865,13 +3018,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Water)(fullUrl: urn:uuid:b4f736ff-1bbf-6923-4d5c-85d262285d7d)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Water)(fullUrl: urn:uuid:b4f736ff-1bbf-6923-4d5c-85d262285d7d)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Water&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d&quot;/>
                 <title value=&quot;Water Content&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -2903,6 +3057,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code value=&quot;WWW&quot;/>
                         <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WWW]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Water</div>
 <div class="debugOff"> fullUrl: urn:uuid:b4f736ff-1bbf-6923-4d5c-85d262285d7d</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -2969,8 +3124,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;% w/w&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -2983,7 +3138,17 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;% w/w&quot;/>
                         </high>
                     </range>">
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <high>
+                            <value value=&quot;1.0&quot;/>
+                            <unit value=&quot;% w/w&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2994,11 +3159,12 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <value value=&quot;1.0&quot;/>
                             <unit value=&quot;% w/w&quot;/>">1.0% w/w</span></div>
 </div>
+</div>
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3009,7 +3175,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>
                         </code>
-                        <definitionCanonical value=&quot;ObservationDefinition/Particles&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                        <definitionCanonical value=&quot;ObservationDefinition/Particles&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -3020,19 +3186,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Particles)(fullUrl: urn:uuid:233865df-2a71-528d-756c-85f36bd6685f)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Particles)(fullUrl: urn:uuid:233865df-2a71-528d-756c-85f36bd6685f)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Particles&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f&quot;/>
                 <title value=&quot;Particle size distribution&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;PART&quot;/>
+                        <code value=&quot;particle-size-distribution&quot;/>
                         <display value=&quot;Particle size distribution&quot;/>
                     </coding>
                 </code>
@@ -3086,7 +3253,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <code>
                         <coding>
                             <system value=&quot;http://dummy.loinc.org&quot;/>
-                            <code value=&quot;PARTS&quot;/>
+                            <code value=&quot;particle-size&quot;/>
                             <display value=&quot;Particle size&quot;/>
                         </coding>
                     </code>
@@ -3098,9 +3265,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;PART&quot;/>
-                        <display value=&quot;Particle size distribution&quot;/>">Particle size distribution<span class="greyOff"> [PART]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Particles</div>
+                        <code value=&quot;particle-size-distribution&quot;/>
+                        <display value=&quot;Particle size distribution&quot;/>">Particle size distribution<span class="greyOff"> [particle-size-distribution]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Particles</div>
 <div class="debugOff"> fullUrl: urn:uuid:233865df-2a71-528d-756c-85f36bd6685f</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -3131,7 +3299,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;PART&quot;/>
+                        <code value=&quot;particle-size-distribution&quot;/>
                         <display value=&quot;Particle size distribution&quot;/>
                     </coding>">Code: </span><span><span title="
 <Bundle>
@@ -3141,8 +3309,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                 <code>
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;PART&quot;/>
-                        <display value=&quot;Particle size distribution&quot;/>">Particle size distribution<span class="greyOff"> [PART]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                        <code value=&quot;particle-size-distribution&quot;/>
+                        <display value=&quot;Particle size distribution&quot;/>">Particle size distribution<span class="greyOff"> [particle-size-distribution]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3172,8 +3340,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <code value=&quot;um&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -3201,7 +3369,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <appliesTo>
                         <!-- could be a code -->
                         <text value=&quot;D(v,0.9)&quot;/>">Applies To: </span><span><span style="white-space:normal;">D(v,0.9)</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;319&quot;/>
+                            <unit value=&quot;µm&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;um&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -3213,6 +3394,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;µm&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
                             <code value=&quot;um&quot;/>">319 µm</span><span class="greyOff"> [um] (http://unitsofmeasure.org)</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -3233,8 +3415,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <code value=&quot;um&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -3262,7 +3444,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <appliesTo>
                         <!-- could be a code -->
                         <text value=&quot;D(v,0.5)&quot;/>">Applies To: </span><span><span style="white-space:normal;">D(v,0.5)</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;145&quot;/>
+                            <unit value=&quot;µm&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;um&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -3274,6 +3469,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <unit value=&quot;µm&quot;/>
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
                             <code value=&quot;um&quot;/>">145 µm</span><span class="greyOff"> [um] (http://unitsofmeasure.org)</span></div>
+</div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -3294,8 +3490,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <code value=&quot;um&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -3323,7 +3519,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <appliesTo>
                         <!-- could be a code -->
                         <text value=&quot;D(v,0.1)&quot;/>">Applies To: </span><span><span style="white-space:normal;">D(v,0.1)</span></span></div>
-						Range:  to <span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <range>
+                        <high>
+                            <value value=&quot;20&quot;/>
+                            <unit value=&quot;µm&quot;/>
+                            <system value=&quot;http://unitsofmeasure.org&quot;/>
+                            <code value=&quot;um&quot;/>
+                        </high>">Range: </span> to <span title="
 <Bundle>
     <entry>
         <resource>
@@ -3336,6 +3545,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
                             <code value=&quot;um&quot;/>">20 µm</span><span class="greyOff"> [um] (http://unitsofmeasure.org)</span></div>
 </div>
+</div>
 <div class="indent obsDefl2" title="
 <Bundle>
     <entry>
@@ -3347,7 +3557,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <code>
                         <coding>
                             <system value=&quot;http://dummy.loinc.org&quot;/>
-                            <code value=&quot;PARTS&quot;/>
+                            <code value=&quot;particle-size&quot;/>
                             <display value=&quot;Particle size&quot;/>
                         </coding>
                     </code>">
@@ -3361,8 +3571,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <code>
                         <coding>
                             <system value=&quot;http://dummy.loinc.org&quot;/>
-                            <code value=&quot;PARTS&quot;/>
-                            <display value=&quot;Particle size&quot;/>">Particle size<span class="greyOff"> [PARTS]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <code value=&quot;particle-size&quot;/>
+                            <display value=&quot;Particle size&quot;/>">Particle size<span class="greyOff"> [particle-size]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3371,7 +3581,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <code>
                         <coding>
                             <system value=&quot;http://dummy.loinc.org&quot;/>
-                            <code value=&quot;PARTS&quot;/>
+                            <code value=&quot;particle-size&quot;/>
                             <display value=&quot;Particle size&quot;/>
                         </coding>">Code: </span><span><span title="
 <Bundle>
@@ -3382,10 +3592,12 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
                     <code>
                         <coding>
                             <system value=&quot;http://dummy.loinc.org&quot;/>
-                            <code value=&quot;PARTS&quot;/>
-                            <display value=&quot;Particle size&quot;/>">Particle size<span class="greyOff"> [PARTS]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <code value=&quot;particle-size&quot;/>
+                            <display value=&quot;Particle size&quot;/>">Particle size<span class="greyOff"> [particle-size]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -3397,7 +3609,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 </div>
 </div>
 </body>
-<style>
+<style onLoad="resolveGlobalLinksThatCanBeLocal();">
 
 @media all {
 
@@ -3494,7 +3706,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
     .adverseEventl2 { background-Color:#d9cad1; }
     .adverseEventl3 { background-Color:#d9d4d6; }
 
-    .ppd { background-Color:#b6d7a8; width:60%; }
+    .ppd { background-Color:#b6d7a8; width:70%; }
     .ppdl2, .ppdpackage { background-Color:#c2deb6 }
     .ppdl3, .ppdpackageitem { background-Color:#daf0d1 }
     .ppdl4  { background-Color:#e4f2df }
@@ -3738,7 +3950,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 			}
 			
 			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit"); // header from tabular mode
+			var nodes = document.querySelectorAll(".summaryUnit");
 			for (var i=0; i < nodes.length; i++) {
 				var node = nodes[i];
 				var span = document.createElement('span');
@@ -3940,6 +4152,26 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 		    else if  ( g < 0 ) g = 0;
 		
 		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+		}
+
+		function resolveGlobalLinksThatCanBeLocal()
+		{
+			var nodes = document.querySelectorAll('.external-link');
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				var href = node.href;
+   				var urlPath = href.split('?url=').pop();
+   				if (urlPath != href) {
+   					var localId = node.getAttribute("localLink");
+	   				var localElement = document.getElementById(localId);
+	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
+	   					node.href= '#' + localId;
+	   					node.removeAttribute("localLink");
+	   					node.removeAttribute("class"); // remove the external-link class
+	   					node.title = node.title.replace(" (via server)"," (in page)");
+	   				}
+			   	 }
+    			}
 		}
 
 		function toggleSummary(item)
@@ -4175,4 +4407,5 @@ Profile: http://accumulus.org/fhir/dx-cmc/specification
 		General Bundle:false
 		Not patient related:true
 		=>Patient Centric Mode:false
-		SubstanceDef Centric Mode:true--></html>
+		SubstanceDef Centric Mode:true
+		Assumed profile:--></html>

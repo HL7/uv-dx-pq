@@ -1,10 +1,10 @@
 The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.2 Manufacture, subsection 3.2.S.2.2 Description of Manufacturing Process and Process Controls.
-
 <html>
 <body>
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
+<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
@@ -22,7 +22,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
         <resource>
             <PlanDefinition>
                 <id value=&quot;manufacturingProcess-unlinked&quot;/>
-                <extension url=&quot;http://accumulus.org/fhir/extension/planDocumentReference&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq&quot;>
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
@@ -30,9 +30,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         <reference value=&quot;DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1&quot;/>
                     </valueReference>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/historyOfProcess&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq&quot;>
                     <valueMarkdown value=&quot;This can be text about the history&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <type>
                     <coding>
                         <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
@@ -137,14 +138,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         <text value=&quot;overall process&quot;/>
                     </code>
                     <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                             <valueCoding>
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                                 <code value=&quot;ABCD&quot;/>
                                 <display value=&quot;Production Scale&quot;/>
                             </valueCoding>
                         </extension>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
@@ -195,7 +196,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         </participant>
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
@@ -211,7 +212,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         </participant>
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
@@ -227,7 +228,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         </participant>
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
@@ -411,14 +412,19 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                 </name>
             </SubstanceDefinition>
         </resource>
-    </entry>" id="Bundle-product-manufacturing">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a>]</span><div class="debugOff">id: product-manufacturing</div>
+    </entry>" id="Bundle-product-manufacturing">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: product-manufacturing</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/manufacturing&quot;>">Profile: </span><span>http://accumulus.org/fhir/dx-cmc/manufacturing</span></div>
 <div><span title="
 <Bundle>
     ...
     <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
 </div>
 </div>
+<div>
 <div class="indent plan summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="PlanDefinition (id: manufacturingProcess-unlinked)(fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)
 
 <Bundle>
@@ -426,7 +432,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
         <resource>
             <PlanDefinition>
                 <id value=&quot;manufacturingProcess-unlinked&quot;/>
-                <extension url=&quot;http://accumulus.org/fhir/extension/planDocumentReference&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq&quot;>
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
@@ -434,9 +440,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         <reference value=&quot;DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1&quot;/>
                     </valueReference>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/historyOfProcess&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq&quot;>
                     <valueMarkdown value=&quot;This can be text about the history&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <type>
                     <coding>
                         <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
@@ -541,14 +548,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         <text value=&quot;overall process&quot;/>
                     </code>
                     <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                             <valueCoding>
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                                 <code value=&quot;ABCD&quot;/>
                                 <display value=&quot;Production Scale&quot;/>
                             </valueCoding>
                         </extension>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
@@ -599,7 +606,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         </participant>
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
@@ -615,7 +622,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         </participant>
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
@@ -631,7 +638,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         </participant>
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
@@ -658,8 +665,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                             <definitionCanonical value=&quot;ObservationDefinition/ControlTemperature&quot;/>
                         </action-->
                     </action>
-                </action>" id="PlanDefinition-manufacturingProcess-unlinked">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a>]</span><div class="debugOff">id: manufacturingProcess-unlinked</div>
+                </action>" id="PlanDefinition-manufacturingProcess-unlinked">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturingProcess-unlinked</div>
 <div class="debugOff"> fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a</div>
 <div><span title="
 <Bundle>
     <entry>
@@ -696,17 +704,389 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
             <PlanDefinition>
                 ...
                 <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
-<div class="summaryHiddenOff"><span title="
+<div><span title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 ...
-                <extension url=&quot;http://accumulus.org/fhir/extension/historyOfProcess&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq&quot;>
                     <valueMarkdown value=&quot;This can be text about the history&quot;/>">History: </span><span>This can be text about the history</span></div>
 </div>
-<div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-process-flow-diagram-dxpq-ex1)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb)
+<div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <id value=&quot;manufacturingProcess-unlinked&quot;/>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq&quot;>
+                    <valueReference>
+                        <!-- Process flow diagram -->
+                        <!-- or could be a Binary -->
+                        <!-- #84 -->
+                        <reference value=&quot;DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1&quot;/>
+                    </valueReference>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq&quot;>
+                    <valueMarkdown value=&quot;This can be text about the history&quot;/>
+                </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <code value=&quot;1244566&quot;/>
+                        <display value=&quot;Manufacturing Process&quot;/>
+                    </coding>
+                </type>
+                <status value=&quot;active&quot;/>
+                <!-- #83 -->
+                <subjectReference>
+                    <reference value=&quot;SubstanceDefinition/substance1&quot;/>
+                </subjectReference>
+                <description value=&quot;Narrative description of substance manufacturing process&quot;/>
+                <!-- #85 -->
+                <goal id=&quot;goal-control-pH&quot;>
+                    <category>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/testCategory&quot;/>
+                            <code value=&quot;C123456&quot;/>
+                            <display value=&quot;Physical Property&quot;/>
+                        </coding>
+                    </category>
+                    <description>
+                        <text value=&quot;Controls - pH&quot;/>
+                        <!-- this is mandatory, even though we don't really want it -->
+                    </description>
+                    <priority>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/goalPriority&quot;/>
+                            <code value=&quot;critical&quot;/>
+                            <display value=&quot;Critical&quot;/>
+                        </coding>
+                    </priority>
+                    <target>
+                        <measure>
+                            <coding>
+                                <system value=&quot;http://dummy.loinc.org&quot;/>
+                                <code value=&quot;PH&quot;/>
+                                <display value=&quot;pH Level&quot;/>
+                            </coding>
+                            <text value=&quot;Long description of the acceptance criteria - pH must be in range 6.9 to 7.1&quot;/>
+                        </measure>
+                        <!--detailString value=&quot;can also be a string&quot;-->
+                        <detailRange>
+                            <low>
+                                <value value=&quot;6.9&quot;/>
+                                <unit value=&quot;pH&quot;/>
+                            </low>
+                            <high>
+                                <value value=&quot;7.1&quot;/>
+                                <unit value=&quot;pH&quot;/>
+                            </high>
+                        </detailRange>
+                    </target>
+                </goal>
+                <goal id=&quot;goal-control-temp&quot;>
+                    <category>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/testCategory&quot;/>
+                            <code value=&quot;C123456&quot;/>
+                            <display value=&quot;Physical Property&quot;/>
+                        </coding>
+                    </category>
+                    <description>
+                        <text value=&quot;Controls - Temperature&quot;/>
+                        <!-- this is mandatory, even though we don't really want it -->
+                    </description>
+                    <priority>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/goalPriority&quot;/>
+                            <code value=&quot;noncritical&quot;/>
+                            <display value=&quot;Non Critical&quot;/>
+                        </coding>
+                    </priority>
+                    <target>
+                        <measure>
+                            <coding>
+                                <system value=&quot;http://dummy.loinc.org&quot;/>
+                                <code value=&quot;TEMP&quot;/>
+                                <display value=&quot;Temperature&quot;/>
+                            </coding>
+                            <text value=&quot;Long description of the control value - Temperature must be below 150°C&quot;/>
+                        </measure>
+                        <!--detailString value=&quot;can also be a string&quot;-->
+                        <detailRange>
+                            <high>
+                                <value value=&quot;150&quot;/>
+                                <unit value=&quot;°C&quot;/>
+                                <system value=&quot;http://unitsofmeasure.org&quot;/>
+                                <code value=&quot;Cel&quot;/>
+                            </high>
+                        </detailRange>
+                    </target>
+                </goal>
+                <!-- outer action is the whole thing, if needed -->
+                <action>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <code value=&quot;overall process&quot;/>
+                        </coding>
+                        <text value=&quot;overall process&quot;/>
+                    </code>
+                    <action>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                                <code value=&quot;ABCD&quot;/>
+                                <display value=&quot;Production Scale&quot;/>
+                            </valueCoding>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                            <extension url=&quot;parameter&quot;>
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                        <code value=&quot;SPEED&quot;/>
+                                        <display value=&quot;Mix speed&quot;/>
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                            <extension url=&quot;value&quot;>
+                                <valueQuantity>
+                                    <value value=&quot;1500&quot;/>
+                                    <unit value=&quot;rpm&quot;/>
+                                </valueQuantity>
+                            </extension>
+                        </extension>
+                        <prefix value=&quot;1&quot;/>
+                        <description value=&quot;Description of this step&quot;/>
+                        <code>
+                            <coding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                                <code value=&quot;2222&quot;/>
+                                <display value=&quot;Particle Size Reduction&quot;/>
+                            </coding>
+                            <!--text value=&quot;Step 2 in the process - free text is possible&quot;/-->
+                        </code>
+                        <documentation>
+                            <type value=&quot;specification-of&quot;/>
+                            <resourceReference>
+                                <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
+                            </resourceReference>
+                        </documentation>
+                        <goalId value=&quot;goal-control-pH&quot;/>
+                        <goalId value=&quot;goal-control-temp&quot;/>
+                        <participant>
+                            <typeReference>
+                                <!-- this is new in R5 and is not in R4B -->
+                                <reference value=&quot;DeviceDefinition/impeller&quot;/>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/equipmentClass&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <!-- #88 Equipment class -->
+                                    <display value=&quot;Compression Milling&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;StartingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;ResultingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <!--action>
+                            <code>
+                                <text value=&quot;Control&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/ControlPH&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Control&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/ControlTemperature&quot;/>
+                        </action-->
+                    </action>
+                </action>">Subject</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
+
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <id value=&quot;substance1&quot;/>
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>
+                </manufacturer>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;/>
+                    <!-- #4 -->
+                </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                ...
+                <manufacturer>
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: startingMaterial fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: processingMaterial fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: substance-manufacturer)(fullUrl: urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <id value=&quot;substance-manufacturer&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></div></div><div class="summaryHiddenOff"></div></div></span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-process-flow-diagram-dxpq-ex1)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb)
 Version: 1
 Updated: 2023-01-12T17:57:08.898+00:00
 
@@ -736,7 +1116,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <attachment>
                         <url value=&quot;https://accumulus.org/docStore/flow-001&quot;/>
                     </attachment>
-                </content>" id="DocumentReference-DocumentReference-process-flow-diagram-dxpq-ex1">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a>]</span><div class="debugOff">id: DocumentReference-process-flow-diagram-dxpq-ex1</div>
+                </content>" id="DocumentReference-DocumentReference-process-flow-diagram-dxpq-ex1">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/documentreference.html#tt-uml">R6</a>]</span><div class="debugOff">id: DocumentReference-process-flow-diagram-dxpq-ex1</div>
 <div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb</div>
 <div class="debugOff">
 <div><span title="
@@ -831,6 +1211,389 @@ Updated: 2023-01-12T17:57:08.898+00:00
 </div>
 </div>
 </div>
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <action>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <code value=&quot;overall process&quot;/>
+                        </coding>
+                        <text value=&quot;overall process&quot;/>
+                    </code>
+                    <action>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                                <code value=&quot;ABCD&quot;/>
+                                <display value=&quot;Production Scale&quot;/>
+                            </valueCoding>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                            <extension url=&quot;parameter&quot;>
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                        <code value=&quot;SPEED&quot;/>
+                                        <display value=&quot;Mix speed&quot;/>
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                            <extension url=&quot;value&quot;>
+                                <valueQuantity>
+                                    <value value=&quot;1500&quot;/>
+                                    <unit value=&quot;rpm&quot;/>
+                                </valueQuantity>
+                            </extension>
+                        </extension>
+                        <prefix value=&quot;1&quot;/>
+                        <description value=&quot;Description of this step&quot;/>
+                        <code>
+                            <coding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                                <code value=&quot;2222&quot;/>
+                                <display value=&quot;Particle Size Reduction&quot;/>
+                            </coding>
+                            <!--text value=&quot;Step 2 in the process - free text is possible&quot;/-->
+                        </code>
+                        <documentation>
+                            <type value=&quot;specification-of&quot;/>
+                            <resourceReference>
+                                <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
+                            </resourceReference>
+                        </documentation>
+                        <goalId value=&quot;goal-control-pH&quot;/>
+                        <goalId value=&quot;goal-control-temp&quot;/>
+                        <participant>
+                            <typeReference>
+                                <!-- this is new in R5 and is not in R4B -->
+                                <reference value=&quot;DeviceDefinition/impeller&quot;/>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/equipmentClass&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <!-- #88 Equipment class -->
+                                    <display value=&quot;Compression Milling&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;StartingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;ResultingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <!--action>
+                            <code>
+                                <text value=&quot;Control&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/ControlPH&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Control&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/ControlTemperature&quot;/>
+                        </action-->
+                    </action>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <code value=&quot;overall process&quot;/>"><span>overall process</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span><span style="white-space:normal;"> - Text: overall process</span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <code value=&quot;overall process&quot;/>
+                        </coding>
+                        <text value=&quot;overall process&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <code value=&quot;overall process&quot;/>"><span>overall process</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span><span style="white-space:normal;"> - Text: overall process</span></div>
+</div>
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <action>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                                <code value=&quot;ABCD&quot;/>
+                                <display value=&quot;Production Scale&quot;/>
+                            </valueCoding>
+                        </extension>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                            <extension url=&quot;parameter&quot;>
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                        <code value=&quot;SPEED&quot;/>
+                                        <display value=&quot;Mix speed&quot;/>
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                            <extension url=&quot;value&quot;>
+                                <valueQuantity>
+                                    <value value=&quot;1500&quot;/>
+                                    <unit value=&quot;rpm&quot;/>
+                                </valueQuantity>
+                            </extension>
+                        </extension>
+                        <prefix value=&quot;1&quot;/>
+                        <description value=&quot;Description of this step&quot;/>
+                        <code>
+                            <coding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                                <code value=&quot;2222&quot;/>
+                                <display value=&quot;Particle Size Reduction&quot;/>
+                            </coding>
+                            <!--text value=&quot;Step 2 in the process - free text is possible&quot;/-->
+                        </code>
+                        <documentation>
+                            <type value=&quot;specification-of&quot;/>
+                            <resourceReference>
+                                <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
+                            </resourceReference>
+                        </documentation>
+                        <goalId value=&quot;goal-control-pH&quot;/>
+                        <goalId value=&quot;goal-control-temp&quot;/>
+                        <participant>
+                            <typeReference>
+                                <!-- this is new in R5 and is not in R4B -->
+                                <reference value=&quot;DeviceDefinition/impeller&quot;/>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/equipmentClass&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <!-- #88 Equipment class -->
+                                    <display value=&quot;Compression Milling&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;StartingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <participant>
+                            <typeReference>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                                    <valueReference>
+                                        <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
+                                    </valueReference>
+                                </extension>
+                            </typeReference>
+                            <role>
+                                <coding>
+                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                    <code value=&quot;example&quot;/>
+                                    <display value=&quot;ResultingMaterial&quot;/>
+                                </coding>
+                            </role>
+                        </participant>
+                        <!--action>
+                            <code>
+                                <text value=&quot;Control&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/ControlPH&quot;/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value=&quot;Control&quot;/>
+                            </code>
+                            <definitionCanonical value=&quot;ObservationDefinition/ControlTemperature&quot;/>
+                        </action-->"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <prefix value=&quot;1&quot;>"> - 1</span> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <code>
+                            <coding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                                <code value=&quot;2222&quot;/>
+                                <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [2222]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span></span></span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <prefix value=&quot;1&quot;>">Step (prefix): </span><span>1</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <code>
+                            <coding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                                <code value=&quot;2222&quot;/>
+                                <display value=&quot;Particle Size Reduction&quot;/>
+                            </coding>
+                            <!--text value=&quot;Step 2 in the process - free text is possible&quot;/-->">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <code>
+                            <coding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                                <code value=&quot;2222&quot;/>
+                                <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [2222]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <description value=&quot;Description of this step&quot;>">Description: </span><span>Description of this step</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                                <code value=&quot;ABCD&quot;/>
+                                <display value=&quot;Production Scale&quot;/>
+                            </valueCoding>">Scale: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                                <code value=&quot;ABCD&quot;/>
+                                <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStepScale)</span></span></div>
+<div class="summaryHiddenOff" title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <goalId value=&quot;goal-control-pH&quot;>">
 <div class="summaryHiddenOff">
 <div class="indent planl2"><a id="goal-goal-control-pH"><span title="id: goal-control-pH
 <Bundle>
@@ -1026,6 +1789,16 @@ Updated: 2023-01-12T17:57:08.898+00:00
 </div>
 </div>
 </div>
+</div>
+<div class="summaryHiddenOff" title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <goalId value=&quot;goal-control-temp&quot;>">
 <div class="summaryHiddenOff">
 <div class="indent planl2"><a id="goal-goal-control-temp"><span title="id: goal-control-temp
 <Bundle>
@@ -1206,556 +1979,16 @@ Updated: 2023-01-12T17:57:08.898+00:00
 </div>
 </div>
 </div>
-<div></div><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <id value=&quot;manufacturingProcess-unlinked&quot;/>
-                <extension url=&quot;http://accumulus.org/fhir/extension/planDocumentReference&quot;>
-                    <valueReference>
-                        <!-- Process flow diagram -->
-                        <!-- or could be a Binary -->
-                        <!-- #84 -->
-                        <reference value=&quot;DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1&quot;/>
-                    </valueReference>
-                </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/historyOfProcess&quot;>
-                    <valueMarkdown value=&quot;This can be text about the history&quot;/>
-                </extension>
-                <type>
-                    <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
-                        <code value=&quot;1244566&quot;/>
-                        <display value=&quot;Manufacturing Process&quot;/>
-                    </coding>
-                </type>
-                <status value=&quot;active&quot;/>
-                <!-- #83 -->
-                <subjectReference>
-                    <reference value=&quot;SubstanceDefinition/substance1&quot;/>
-                </subjectReference>
-                <description value=&quot;Narrative description of substance manufacturing process&quot;/>
-                <!-- #85 -->
-                <goal id=&quot;goal-control-pH&quot;>
-                    <category>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/testCategory&quot;/>
-                            <code value=&quot;C123456&quot;/>
-                            <display value=&quot;Physical Property&quot;/>
-                        </coding>
-                    </category>
-                    <description>
-                        <text value=&quot;Controls - pH&quot;/>
-                        <!-- this is mandatory, even though we don't really want it -->
-                    </description>
-                    <priority>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/goalPriority&quot;/>
-                            <code value=&quot;critical&quot;/>
-                            <display value=&quot;Critical&quot;/>
-                        </coding>
-                    </priority>
-                    <target>
-                        <measure>
-                            <coding>
-                                <system value=&quot;http://dummy.loinc.org&quot;/>
-                                <code value=&quot;PH&quot;/>
-                                <display value=&quot;pH Level&quot;/>
-                            </coding>
-                            <text value=&quot;Long description of the acceptance criteria - pH must be in range 6.9 to 7.1&quot;/>
-                        </measure>
-                        <!--detailString value=&quot;can also be a string&quot;-->
-                        <detailRange>
-                            <low>
-                                <value value=&quot;6.9&quot;/>
-                                <unit value=&quot;pH&quot;/>
-                            </low>
-                            <high>
-                                <value value=&quot;7.1&quot;/>
-                                <unit value=&quot;pH&quot;/>
-                            </high>
-                        </detailRange>
-                    </target>
-                </goal>
-                <goal id=&quot;goal-control-temp&quot;>
-                    <category>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/testCategory&quot;/>
-                            <code value=&quot;C123456&quot;/>
-                            <display value=&quot;Physical Property&quot;/>
-                        </coding>
-                    </category>
-                    <description>
-                        <text value=&quot;Controls - Temperature&quot;/>
-                        <!-- this is mandatory, even though we don't really want it -->
-                    </description>
-                    <priority>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/goalPriority&quot;/>
-                            <code value=&quot;noncritical&quot;/>
-                            <display value=&quot;Non Critical&quot;/>
-                        </coding>
-                    </priority>
-                    <target>
-                        <measure>
-                            <coding>
-                                <system value=&quot;http://dummy.loinc.org&quot;/>
-                                <code value=&quot;TEMP&quot;/>
-                                <display value=&quot;Temperature&quot;/>
-                            </coding>
-                            <text value=&quot;Long description of the control value - Temperature must be below 150°C&quot;/>
-                        </measure>
-                        <!--detailString value=&quot;can also be a string&quot;-->
-                        <detailRange>
-                            <high>
-                                <value value=&quot;150&quot;/>
-                                <unit value=&quot;°C&quot;/>
-                                <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                <code value=&quot;Cel&quot;/>
-                            </high>
-                        </detailRange>
-                    </target>
-                </goal>
-                <!-- outer action is the whole thing, if needed -->
-                <action>
-                    <code>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                            <code value=&quot;overall process&quot;/>
-                        </coding>
-                        <text value=&quot;overall process&quot;/>
-                    </code>
-                    <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
-                            <valueCoding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
-                                <code value=&quot;ABCD&quot;/>
-                                <display value=&quot;Production Scale&quot;/>
-                            </valueCoding>
-                        </extension>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                            <extension url=&quot;parameter&quot;>
-                                <valueCodeableConcept>
-                                    <coding>
-                                        <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
-                                        <code value=&quot;SPEED&quot;/>
-                                        <display value=&quot;Mix speed&quot;/>
-                                    </coding>
-                                </valueCodeableConcept>
-                            </extension>
-                            <extension url=&quot;value&quot;>
-                                <valueQuantity>
-                                    <value value=&quot;1500&quot;/>
-                                    <unit value=&quot;rpm&quot;/>
-                                </valueQuantity>
-                            </extension>
-                        </extension>
-                        <prefix value=&quot;1&quot;/>
-                        <description value=&quot;Description of this step&quot;/>
-                        <code>
-                            <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                                <code value=&quot;2222&quot;/>
-                                <display value=&quot;Particle Size Reduction&quot;/>
-                            </coding>
-                            <!--text value=&quot;Step 2 in the process - free text is possible&quot;/-->
-                        </code>
-                        <documentation>
-                            <type value=&quot;specification-of&quot;/>
-                            <resourceReference>
-                                <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
-                            </resourceReference>
-                        </documentation>
-                        <goalId value=&quot;goal-control-pH&quot;/>
-                        <goalId value=&quot;goal-control-temp&quot;/>
-                        <participant>
-                            <typeReference>
-                                <!-- this is new in R5 and is not in R4B -->
-                                <reference value=&quot;DeviceDefinition/impeller&quot;/>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/equipmentClass&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <!-- #88 Equipment class -->
-                                    <display value=&quot;Compression Milling&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;StartingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;ResultingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <!--action>
-                            <code>
-                                <text value=&quot;Control&quot;/>
-                            </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/ControlPH&quot;/>
-                        </action>
-                        <action>
-                            <code>
-                                <text value=&quot;Control&quot;/>
-                            </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/ControlTemperature&quot;/>
-                        </action-->
-                    </action>
-                </action>">Subject</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
-
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <id value=&quot;substance1&quot;/>
-                <manufacturer>
-                    <reference value=&quot;Organization/substance-manufacturer&quot;/>
-                </manufacturer>
-                <name>
-                    <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
-                </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <name>
-                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                ...
-                <manufacturer>
-                    <reference value=&quot;Organization/substance-manufacturer&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: startingMaterial fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: processingMaterial fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: substance-manufacturer)(fullUrl: urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d)
-
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <id value=&quot;substance-manufacturer&quot;/>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3003040516&quot;/>
-                </identifier>
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
-                <contact>
-                    <address>
-                        <line value=&quot;7233 W 116th Pl&quot;/>
-                        <line value=&quot;Ste C&quot;/>
-                        <city value=&quot;Broomfield&quot;/>
-                        <state value=&quot;Colorado&quot;/>
-                        <postalCode value=&quot;80020&quot;/>
-                        <country value=&quot;USA&quot;/>
-                    </address>
-                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a>]</span><div class="debugOff">id: substance-manufacturer</div><div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
-					Contact
-					<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        <line value=&quot;7233 W 116th Pl&quot;/>
-                        <line value=&quot;Ste C&quot;/>
-                        <city value=&quot;Broomfield&quot;/>
-                        <state value=&quot;Colorado&quot;/>
-                        <postalCode value=&quot;80020&quot;/>
-                        <country value=&quot;USA&quot;/>">Address: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></div></div><div class="summaryHiddenOff"></div></div></span><div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                ...
-                <action>
-                    <code>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                            <code value=&quot;overall process&quot;/>
-                        </coding>
-                        <text value=&quot;overall process&quot;/>
-                    </code>
-                    <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
-                            <valueCoding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
-                                <code value=&quot;ABCD&quot;/>
-                                <display value=&quot;Production Scale&quot;/>
-                            </valueCoding>
-                        </extension>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                            <extension url=&quot;parameter&quot;>
-                                <valueCodeableConcept>
-                                    <coding>
-                                        <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
-                                        <code value=&quot;SPEED&quot;/>
-                                        <display value=&quot;Mix speed&quot;/>
-                                    </coding>
-                                </valueCodeableConcept>
-                            </extension>
-                            <extension url=&quot;value&quot;>
-                                <valueQuantity>
-                                    <value value=&quot;1500&quot;/>
-                                    <unit value=&quot;rpm&quot;/>
-                                </valueQuantity>
-                            </extension>
-                        </extension>
-                        <prefix value=&quot;1&quot;/>
-                        <description value=&quot;Description of this step&quot;/>
-                        <code>
-                            <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                                <code value=&quot;2222&quot;/>
-                                <display value=&quot;Particle Size Reduction&quot;/>
-                            </coding>
-                            <!--text value=&quot;Step 2 in the process - free text is possible&quot;/-->
-                        </code>
-                        <documentation>
-                            <type value=&quot;specification-of&quot;/>
-                            <resourceReference>
-                                <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
-                            </resourceReference>
-                        </documentation>
-                        <goalId value=&quot;goal-control-pH&quot;/>
-                        <goalId value=&quot;goal-control-temp&quot;/>
-                        <participant>
-                            <typeReference>
-                                <!-- this is new in R5 and is not in R4B -->
-                                <reference value=&quot;DeviceDefinition/impeller&quot;/>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/equipmentClass&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <!-- #88 Equipment class -->
-                                    <display value=&quot;Compression Milling&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;StartingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;ResultingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <!--action>
-                            <code>
-                                <text value=&quot;Control&quot;/>
-                            </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/ControlPH&quot;/>
-                        </action>
-                        <action>
-                            <code>
-                                <text value=&quot;Control&quot;/>
-                            </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/ControlTemperature&quot;/>
-                        </action-->
-                    </action>"><span>Action</span><span class="summaryShowsOff"> - <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <code>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                            <code value=&quot;overall process&quot;/>"><span>overall process</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span><span style="white-space:normal;"> - Text: overall process</span></span></span><div class="summaryHiddenOff">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <code>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                            <code value=&quot;overall process&quot;/>
-                        </coding>
-                        <text value=&quot;overall process&quot;/>">Code: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <code>
-                        <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                            <code value=&quot;overall process&quot;/>"><span>overall process</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span><span style="white-space:normal;"> - Text: overall process</span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent planl3 summaryHiddenOff" title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 <action>
-                    ...
                     <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
-                            <valueCoding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
-                                <code value=&quot;ABCD&quot;/>
-                                <display value=&quot;Production Scale&quot;/>
-                            </valueCoding>
-                        </extension>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                        ...
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
@@ -1770,206 +2003,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                     <value value=&quot;1500&quot;/>
                                     <unit value=&quot;rpm&quot;/>
                                 </valueQuantity>
-                            </extension>
-                        </extension>
-                        <prefix value=&quot;1&quot;/>
-                        <description value=&quot;Description of this step&quot;/>
-                        <code>
-                            <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                                <code value=&quot;2222&quot;/>
-                                <display value=&quot;Particle Size Reduction&quot;/>
-                            </coding>
-                            <!--text value=&quot;Step 2 in the process - free text is possible&quot;/-->
-                        </code>
-                        <documentation>
-                            <type value=&quot;specification-of&quot;/>
-                            <resourceReference>
-                                <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
-                            </resourceReference>
-                        </documentation>
-                        <goalId value=&quot;goal-control-pH&quot;/>
-                        <goalId value=&quot;goal-control-temp&quot;/>
-                        <participant>
-                            <typeReference>
-                                <!-- this is new in R5 and is not in R4B -->
-                                <reference value=&quot;DeviceDefinition/impeller&quot;/>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/equipmentClass&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <!-- #88 Equipment class -->
-                                    <display value=&quot;Compression Milling&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;StartingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <participant>
-                            <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
-                                    <valueReference>
-                                        <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
-                                    </valueReference>
-                                </extension>
-                            </typeReference>
-                            <role>
-                                <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                    <code value=&quot;example&quot;/>
-                                    <display value=&quot;ResultingMaterial&quot;/>
-                                </coding>
-                            </role>
-                        </participant>
-                        <!--action>
-                            <code>
-                                <text value=&quot;Control&quot;/>
-                            </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/ControlPH&quot;/>
-                        </action>
-                        <action>
-                            <code>
-                                <text value=&quot;Control&quot;/>
-                            </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/ControlTemperature&quot;/>
-                        </action-->"><span>Action</span><span class="summaryShowsOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        ...
-                        <prefix value=&quot;1&quot;>"> - 1</span> - <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        <code>
-                            <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                                <code value=&quot;2222&quot;/>
-                                <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [2222]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span></span></span><div class="summaryHiddenOff">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        ...
-                        <prefix value=&quot;1&quot;>">Step (prefix): </span><span>1</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        ...
-                        <code>
-                            <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                                <code value=&quot;2222&quot;/>
-                                <display value=&quot;Particle Size Reduction&quot;/>
-                            </coding>
-                            <!--text value=&quot;Step 2 in the process - free text is possible&quot;/-->">Code: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        <code>
-                            <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
-                                <code value=&quot;2222&quot;/>
-                                <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [2222]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        ...
-                        <description value=&quot;Description of this step&quot;>">Description: </span><span>Description of this step</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
-                            <valueCoding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
-                                <code value=&quot;ABCD&quot;/>
-                                <display value=&quot;Production Scale&quot;/>
-                            </valueCoding>">Scale: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
-                            <valueCoding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
-                                <code value=&quot;ABCD&quot;/>
-                                <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStepScale)</span></span></div>
-<div class="summaryHiddenOff" title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        ...
-                        <goalId value=&quot;goal-control-pH&quot;>"><span>Goal: <a href="#goal-goal-control-pH">goal-control-pH</a> - Controls - pH</span></div>
-<div class="summaryHiddenOff" title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <action>
-                        ...
-                        <goalId value=&quot;goal-control-temp&quot;>"><span>Goal: <a href="#goal-goal-control-temp">goal-control-temp</a> - Controls - Temperature</span></div>
-<div class="indent planl3">
+                            </extension>">
 					Parameters
 					<div><span title="
 <Bundle>
@@ -1978,7 +2012,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <PlanDefinition>
                 <action>
                     <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
@@ -1993,7 +2027,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <PlanDefinition>
                 <action>
                     <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
@@ -2007,7 +2041,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <PlanDefinition>
                 <action>
                     <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                             <extension url=&quot;value&quot;>
                                 <valueQuantity>
                                     <value value=&quot;1500&quot;/>
@@ -2018,15 +2052,25 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <PlanDefinition>
                 <action>
                     <action>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                             <extension url=&quot;value&quot;>
                                 <valueQuantity>
                                     <value value=&quot;1500&quot;/>
                                     <unit value=&quot;rpm&quot;/>">1500 rpm</span></div>
 </div>
-<div class="indent planl3">
-					Documentation
-					<div><span title="
+<div class="indent planl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <documentation>
+                            <type value=&quot;specification-of&quot;/>
+                            <resourceReference>
+                                <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
+                            </resourceReference>">Documentation</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2036,7 +2080,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <documentation>
                             <type value=&quot;specification-of&quot;>">Type: </span><span><span>specification-of</span></span></div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev)
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev)
 
 <Bundle>
     <entry>
@@ -2048,7 +2092,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <attachment>
                         <url value=&quot;https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png&quot;/>
                     </attachment>
-                </content>" id="DocumentReference-DocumentReference-image">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a>]</span><div class="debugOff">id: DocumentReference-image</div>
+                </content>" id="DocumentReference-DocumentReference-image">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/documentreference.html#tt-uml">R6</a>]</span><div class="debugOff">id: DocumentReference-image</div>
 <div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev</div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
@@ -2074,7 +2118,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
 </div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2124,7 +2168,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                     <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>">Compression Milling<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/equipmentClass)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: impeller)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c)
+<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: impeller)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c)
 
 <Bundle>
     <entry>
@@ -2149,7 +2193,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <value value=&quot;5000&quot;/>
                         <unit value=&quot;RPM&quot;/>
                     </valueQuantity>
-                </property>" id="DeviceDefinition-impeller">Device</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/devicedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/devicedefinition.html#tt-uml">R5</a>]</span><div class="debugOff">id: impeller</div>
+                </property>" id="DeviceDefinition-impeller">Device</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/devicedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/devicedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/devicedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: impeller</div>
 <div class="debugOff"> fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c</div>
 <div class="summaryHiddenOff"></div>
 <div><span title="
@@ -2182,8 +2226,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <valueQuantity>
                         <value value=&quot;5000&quot;/>
                         <unit value=&quot;RPM&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2231,8 +2274,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
 </div>
 </div>
 </div>
-</div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2242,7 +2284,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         ...
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
@@ -2282,7 +2324,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                     <code value=&quot;example&quot;/>
                                     <display value=&quot;StartingMaterial&quot;/>">StartingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: startingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: startingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153)
 
 <Bundle>
     <entry>
@@ -2294,7 +2336,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatosubstance&quot;/>
-                </name>" id="SubstanceDefinition-startingMaterial">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatosubstance</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a>]</span><div class="debugOff">id: startingMaterial</div>
+                </name>" id="SubstanceDefinition-startingMaterial">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatosubstance</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: startingMaterial</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153</div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
@@ -2342,7 +2384,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <postalCode value=&quot;80020&quot;/>
                         <country value=&quot;USA&quot;/>
                     </address>
-                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a>]</span><div class="debugOff">id: substance-manufacturer</div>
+                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-manufacturer</div>
 <div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -2443,7 +2485,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2453,7 +2495,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         ...
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
@@ -2493,7 +2535,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                     <code value=&quot;example&quot;/>
                                     <display value=&quot;ProcessingMaterial&quot;/>">ProcessingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: processingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: processingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155)
 
 <Bundle>
     <entry>
@@ -2505,7 +2547,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 </manufacturer>
                 <name>
                     <name value=&quot;Processohol&quot;/>
-                </name>" id="SubstanceDefinition-processingMaterial">Substance</span></a><span class="summaryShowsOff"><b> - Processohol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a>]</span><div class="debugOff">id: processingMaterial</div>
+                </name>" id="SubstanceDefinition-processingMaterial">Substance</span></a><span class="summaryShowsOff"><b> - Processohol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: processingMaterial</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155</div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
@@ -2553,7 +2595,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <postalCode value=&quot;80020&quot;/>
                         <country value=&quot;USA&quot;/>
                     </address>
-                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a>]</span><div class="debugOff">id: substance-manufacturer</div>
+                </contact>" id="Organization-substance-manufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-manufacturer</div>
 <div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -2654,7 +2696,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2664,7 +2706,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         ...
                         <participant>
                             <typeReference>
-                                <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                     <valueReference>
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
@@ -2704,7 +2746,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                     <code value=&quot;example&quot;/>
                                     <display value=&quot;ResultingMaterial&quot;/>">ResultingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
 
 <Bundle>
     <entry>
@@ -2713,7 +2755,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <id value=&quot;resultingMaterial&quot;/>
                 <name>
                     <name value=&quot;Resultothane&quot;/>
-                </name>" id="SubstanceDefinition-resultingMaterial">Substance</span></a><span class="summaryShowsOff"><b> - Resultothane</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a>]</span><div class="debugOff">id: resultingMaterial</div>
+                </name>" id="SubstanceDefinition-resultingMaterial">Substance</span></a><span class="summaryShowsOff"><b> - Resultothane</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: resultingMaterial</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154</div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
@@ -2739,11 +2781,13 @@ Updated: 2023-01-12T17:57:08.898+00:00
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="debugOff"></div>
 </div>
 </div>
 </body>
-<style>
+<style onLoad="resolveGlobalLinksThatCanBeLocal();">
 
 @media all {
 
@@ -2789,6 +2833,8 @@ Updated: 2023-01-12T17:57:08.898+00:00
     .visible { visibility:visible }
 
     .modifierExtension { font-weight:bold; color:red; }
+
+    .white { background-Color:white }
 
     .pat { background-Color:#ffe699 }
     .patl2 { background-Color:#fae8b1 }
@@ -2838,7 +2884,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
     .adverseEventl2 { background-Color:#d9cad1; }
     .adverseEventl3 { background-Color:#d9d4d6; }
 
-    .ppd { background-Color:#b6d7a8; width:60%; }
+    .ppd { background-Color:#b6d7a8; width:70%; }
     .ppdl2, .ppdpackage { background-Color:#c2deb6 }
     .ppdl3, .ppdpackageitem { background-Color:#daf0d1 }
     .ppdl4  { background-Color:#e4f2df }
@@ -2938,6 +2984,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
 
  	div:has(div.summaryHidden) > span.openButton { visibility:visible }
 
+	.noUnderline { text-decoration: none; color: inherit; }
+	.noUnderline:hover { text-decoration: underline; color: revert; }
+
     .grey { color:dimgray  }
     .greyOff { color:dimgray; display:none  }
     .debug { color:#990000  }
@@ -2952,6 +3001,8 @@ Updated: 2023-01-12T17:57:08.898+00:00
 
     .remove,.imageRemove,.commentRemove,.provenanceRemove,.taskRemove,.htmlTableRemove { }
     .removeOff,.imageRemoveOff,.commentRemoveOff,.provenanceRemoveOff,.taskRemoveOff,.htmlTableRemoveOff { display:none }
+
+    .resetDebug { visibility:visible; }
 
 	.controls { position: sticky;
 				top:8px;
@@ -3020,8 +3071,14 @@ Updated: 2023-01-12T17:57:08.898+00:00
 
 	.greyScale { -moz-filter:grayscale(100%);webkit-filter:grayscale(100%);filter:gray;filter:grayscale(100%) }
 	
+    .json-key { color:#000096 }
+    .json-string { color:#994328 }
+    .json-number { color:blue }
+    .json-boolean { color:red }
+    .json-null { color:green }
+	
 	th { background-color: #81BEF7; }
-	td { padding: 3px; }
+	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
 	table.rounded-corners {
 	 	/* Change these properties */
@@ -3071,7 +3128,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
 			}
 			
 			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit"); // header from tabular mode
+			var nodes = document.querySelectorAll(".summaryUnit");
 			for (var i=0; i < nodes.length; i++) {
 				var node = nodes[i];
 				var span = document.createElement('span');
@@ -3273,6 +3330,26 @@ Updated: 2023-01-12T17:57:08.898+00:00
 		    else if  ( g < 0 ) g = 0;
 		
 		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+		}
+
+		function resolveGlobalLinksThatCanBeLocal()
+		{
+			var nodes = document.querySelectorAll('.external-link');
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				var href = node.href;
+   				var urlPath = href.split('?url=').pop();
+   				if (urlPath != href) {
+   					var localId = node.getAttribute("localLink");
+	   				var localElement = document.getElementById(localId);
+	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
+	   					node.href= '#' + localId;
+	   					node.removeAttribute("localLink");
+	   					node.removeAttribute("class"); // remove the external-link class
+	   					node.title = node.title.replace(" (via server)"," (in page)");
+	   				}
+			   	 }
+    			}
 		}
 
 		function toggleSummary(item)
@@ -3508,4 +3585,5 @@ Updated: 2023-01-12T17:57:08.898+00:00
 		General Bundle:false
 		Not patient related:true
 		=>Patient Centric Mode:false
-		SubstanceDef Centric Mode:true--></html>
+		SubstanceDef Centric Mode:true
+		Assumed profile:--></html>

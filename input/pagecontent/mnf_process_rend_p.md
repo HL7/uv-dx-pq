@@ -1,20 +1,21 @@
 The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture, subsection 3.2.P.3.3 Description of Manufacturing Process and Process Controls.
-
 <html>
 <body>
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
+<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: product-manufacturing)
-Profile: http://accumulus.org/fhir/dx-cmc/manufacturing 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-product-manufacturing-dxpq-ex1)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq 
 
 <Bundle>
-    <id value=&quot;product-manufacturing&quot;/>
+    <!-- Product Manufacturing -->
+    <id value=&quot;bundle-product-manufacturing-dxpq-ex1&quot;/>
     <meta>
-        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/manufacturing&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
@@ -23,12 +24,12 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
             <PlanDefinition>
                 <id value=&quot;manufacturingProcess-unlinked&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateEquipment&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/planDocumentReference&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq&quot;>
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
@@ -36,9 +37,10 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                         <reference value=&quot;DocumentReference/documentreference-process-flow-diagram-dxpq-ex1&quot;/>
                     </valueReference>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/historyOfProcess&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq&quot;>
                     <valueMarkdown value=&quot;This can be text about the history&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;Process 1.0&quot;/>
                 <type>
                     <coding>
@@ -204,14 +206,15 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                 <!-- outer action is the whole thing, if needed -->
                 <!-- step 1 mixing -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -228,7 +231,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                             </valueQuantity>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -279,11 +282,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -295,11 +300,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;processing material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -311,11 +318,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -340,14 +349,15 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                 </action>
                 <!-- step 2 drying -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -401,11 +411,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -417,11 +429,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -434,14 +448,15 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                 </action>
                 <!-- step 3 particle size -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -491,11 +506,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -507,11 +524,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/Stelbatolol&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -525,103 +544,15 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
             </PlanDefinition>
         </resource>
     </entry>
-    <!-- using goal for this now -->
-    <!--entry>
-        <fullUrl value=&quot;urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06042&quot;/>
-        <resource>
-            <ObservationDefinition>
-                <id value=&quot;ControlPH&quot;/>
-                <title value=&quot;pH&quot;/>
-                <status value=&quot;active&quot;/>
-                <category>
-                    <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/controlCriticality&quot;/>
-                        <code value=&quot;critical&quot;/>
-                        <display value=&quot;Critical&quot;/>
-                    </coding>
-                </category>
-                <category>
-                    <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/testCategory&quot;/>
-                        <code value=&quot;C123456&quot;/>
-                        <display value=&quot;Physical Property&quot;/>
-                    </coding>
-                </category>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;PH&quot;/>
-                        <display value=&quot;pH Level&quot;/>
-                    </coding>
-                    <text value=&quot;Long description of the acceptance criteria - pH must be in range 6.9 to 7.1&quot;/>
-                </code>
-                <qualifiedValue>
-                    <range>
-                        <low>
-                            <value value=&quot;6.9&quot;/>
-                            <unit value=&quot;pH&quot;/> 
-                        </low> 
-                        <high>
-                            <value value=&quot;7.1&quot;/>
-                            <unit value=&quot;pH&quot;/>
-                        </high>
-                        
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    
-    <entry>
-        <fullUrl value=&quot;urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06043&quot;/>
-        <resource>
-            <ObservationDefinition>
-                <id value=&quot;ControlTemperature&quot;/>
-                <title value=&quot;Temperature&quot;/>
-                <status value=&quot;active&quot;/>
-                <category>
-                    <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/controlCriticality&quot;/>
-                        <code value=&quot;noncritical&quot;/>
-                        <display value=&quot;Non Critical&quot;/>
-                    </coding>
-                </category>
-                <category>
-                    <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/testCategory&quot;/>
-                        <code value=&quot;C123456&quot;/>
-                        <display value=&quot;Physical Property&quot;/>
-                    </coding>
-                </category>
-                <code>
-                    <coding> 
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;TEMP&quot;/>
-                        <display value=&quot;Temperature&quot;/>
-                    </coding>
-                    <text value=&quot;Long description of the control value - Temperatuure must be below 150°C&quot;/>
-                </code>
-                <qualifiedValue>
-                    <range>
-                        <high>
-                            <value value=&quot;150&quot;/>
-                            <unit value=&quot;°C&quot;/>
-                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                            <code value=&quot;Cel&quot;/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
     <!-- Section 5.2 - Unit Operation/Equipment Information -->
     <entry>
         <fullUrl value=&quot;urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c&quot;/>
         <resource>
             <DeviceDefinition>
                 <id value=&quot;devicedefinition-dxpq-ex1&quot;/>
+                <!-- REMOVE IN BUNDLE -->
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq&quot;/>
                 </meta>
                 <deviceName>
                     <name value=&quot;Rotating Impeller with 1.5mm screen&quot;/>
@@ -703,8 +634,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
             <!-- #84 -->
             <DocumentReference>
                 <id value=&quot;documentreference-process-flow-diagram-dxpq-ex1&quot;/>
+                <!-- REMOVE IN BUNDLE -->
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq&quot;/>
                 </meta>
                 <identifier>
                     <system value=&quot;http://accumulus.org/fhir/identifier/document&quot;/>
@@ -729,7 +661,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
     </entry>
     <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
     <entry>
-        <fullUrl value=&quot;urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev&quot;/>
+        <fullUrl value=&quot;urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee&quot;/>
         <resource>
             <!-- #84 -->
             <DocumentReference>
@@ -834,6 +766,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;StelbatololGranules&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                </meta>
                 <name>
                     <name value=&quot;Stelbatolol Granules&quot;/>
                     <!-- #4 -->
@@ -907,6 +842,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;StelbatololAqueousSolution&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                </meta>
                 <name>
                     <name value=&quot;Stelbatolol Aqueous Solution&quot;/>
                 </name>
@@ -996,16 +934,21 @@ Profile: http://accumulus.org/fhir/dx-cmc/manufacturing
                 </property>
             </DeviceDefinition>
         </resource>
-    </entry>" id="Bundle-product-manufacturing">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: product-manufacturing</div>
+    </entry>" id="Bundle-bundle-product-manufacturing-dxpq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-product-manufacturing-dxpq-ex1</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq</span></div>
 <div><span title="
 <Bundle>
     ...
     <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
 </div>
 </div>
+<div>
 <div class="indent plan summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="PlanDefinition (id: manufacturingProcess-unlinked)(fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq 
 
 <Bundle>
     <entry>
@@ -1013,12 +956,12 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
             <PlanDefinition>
                 <id value=&quot;manufacturingProcess-unlinked&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateEquipment&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/planDocumentReference&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq&quot;>
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
@@ -1026,9 +969,10 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                         <reference value=&quot;DocumentReference/documentreference-process-flow-diagram-dxpq-ex1&quot;/>
                     </valueReference>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/historyOfProcess&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq&quot;>
                     <valueMarkdown value=&quot;This can be text about the history&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;Process 1.0&quot;/>
                 <type>
                     <coding>
@@ -1194,14 +1138,15 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                 <!-- outer action is the whole thing, if needed -->
                 <!-- step 1 mixing -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -1218,7 +1163,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                             </valueQuantity>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -1269,11 +1214,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -1285,11 +1232,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;processing material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -1301,11 +1250,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -1330,14 +1281,15 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                 </action>
                 <!-- step 2 drying -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -1391,11 +1343,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -1407,11 +1361,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -1424,14 +1380,15 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                 </action>
                 <!-- step 3 particle size -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -1481,11 +1438,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -1497,11 +1456,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/Stelbatolol&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -1513,7 +1474,15 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
                     </participant>
                 </action>" id="PlanDefinition-manufacturingProcess-unlinked">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturingProcess-unlinked</div>
 <div class="debugOff"> fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1578,377 +1547,9 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-pro
         <resource>
             <PlanDefinition>
                 ...
-                <extension url=&quot;http://accumulus.org/fhir/extension/historyOfProcess&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq&quot;>
                     <valueMarkdown value=&quot;This can be text about the history&quot;/>">History: </span><span>This can be text about the history</span></div>
 </div>
-<div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: documentreference-process-flow-diagram-dxpq-ex1)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq 
-
-<Bundle>
-    <entry>
-        <resource>
-            <DocumentReference>
-                <id value=&quot;documentreference-process-flow-diagram-dxpq-ex1&quot;/>
-                <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq&quot;/>
-                </meta>
-                <identifier>
-                    <system value=&quot;http://accumulus.org/fhir/identifier/document&quot;/>
-                    <value value=&quot;FLOW-001&quot;/>
-                </identifier>
-                <status value=&quot;current&quot;/>
-                <type>
-                    <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/diagramType&quot;/>
-                        <code value=&quot;11111111111&quot;/>
-                        <display value=&quot;ProcessFlowDiagram&quot;/>
-                    </coding>
-                </type>
-                <content>
-                    <attachment>
-                        <contentType value=&quot;image/x-png&quot;/>
-                        <data value=&quot;iVBORw0KGgoAAAANSUhEUgAAAgQAAAApCAYAAABKrzFXAAAAAXNSR0IArs4c6QAAEjl0RVh0bXhmaWxlACUzQ214ZmlsZSUyMGhvc3QlM0QlMjJFbGVjdHJvbiUyMiUyMG1vZGlmaWVkJTNEJTIyMjAyMy0wNy0wNlQxMyUzQTA4JTNBMDguNDgzWiUyMiUyMGFnZW50JTNEJTIyTW96aWxsYSUyRjUuMCUyMChXaW5kb3dzJTIwTlQlMjAxMC4wJTNCJTIwV2luNjQlM0IlMjB4NjQpJTIwQXBwbGVXZWJLaXQlMkY1MzcuMzYlMjAoS0hUTUwlMkMlMjBsaWtlJTIwR2Vja28pJTIwZHJhdy5pbyUyRjIxLjYuMSUyMENocm9tZSUyRjExMi4wLjU2MTUuMjA0JTIwRWxlY3Ryb24lMkYyNC42LjElMjBTYWZhcmklMkY1MzcuMzYlMjIlMjBldGFnJTNEJTIyNkMxTlFraVpHaXdVNTVadFBEMUQlMjIlMjB2ZXJzaW9uJTNEJTIyMjEuNi4xJTIyJTIwdHlwZSUzRCUyMmRldmljZSUyMiUzRSUwQSUyMCUyMCUzQ2RpYWdyYW0lMjBpZCUzRCUyMkM1UkJzNDNvRGEtS2R6WmVOdHV5JTIyJTIwbmFtZSUzRCUyMlBhZ2UtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUzQ214R3JhcGhNb2RlbCUyMGR4JTNEJTIyMTAzNiUyMiUyMGR5JTNEJTIyMTc4MyUyMiUyMGdyaWQlM0QlMjIxJTIyJTIwZ3JpZFNpemUlM0QlMjIxMCUyMiUyMGd1aWRlcyUzRCUyMjElMjIlMjB0b29sdGlwcyUzRCUyMjElMjIlMjBjb25uZWN0JTNEJTIyMSUyMiUyMGFycm93cyUzRCUyMjElMjIlMjBmb2xkJTNEJTIyMSUyMiUyMHBhZ2UlM0QlMjIxJTIyJTIwcGFnZVNjYWxlJTNEJTIyMSUyMiUyMHBhZ2VXaWR0aCUzRCUyMjgyNyUyMiUyMHBhZ2VIZWlnaHQlM0QlMjIxMTY5JTIyJTIwYmFja2dyb3VuZCUzRCUyMm5vbmUlMjIlMjBtYXRoJTNEJTIyMCUyMiUyMHNoYWRvdyUzRCUyMjAlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlM0Nyb290JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0wJTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMCUyMiUyMCUyRiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214Q2VsbCUyMGlkJTNEJTIyS2g2VVdDcUxFb3V5cUZPSzdudE0tOSUyMiUyMHZhbHVlJTNEJTIyJTIyJTIwc3R5bGUlM0QlMjJlbmRBcnJvdyUzRGNsYXNzaWMlM0JodG1sJTNEMSUzQnJvdW5kZWQlM0QwJTNCZXhpdFglM0QxJTNCZXhpdFklM0QwLjUlM0JleGl0RHglM0QwJTNCZXhpdER5JTNEMCUzQmVudHJ5WCUzRDAlM0JlbnRyeVklM0QwLjUlM0JlbnRyeUR4JTNEMCUzQmVudHJ5RHklM0QwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHNvdXJjZSUzRCUyMktoNlVXQ3FMRW91eXFGT0s3bnRNLTI1JTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMCUyMiUyMGVkZ2UlM0QlMjIxJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHdpZHRoJTNEJTIyNTAlMjIlMjBoZWlnaHQlM0QlMjI1MCUyMiUyMHJlbGF0aXZlJTNEJTIyMSUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjQ4MS40MzAwMDAwMDAwMDAwNiUyMiUyMHklM0QlMjItNjAlMjIlMjBhcyUzRCUyMnNvdXJjZVBvaW50JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMDYlMjIlMjB5JTNEJTIyLTE2MCUyMiUyMGFzJTNEJTIydGFyZ2V0UG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteEdlb21ldHJ5JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJLaDZVV0NxTEVvdXlxRk9LN250TS0yNSUyMiUyMHZhbHVlJTNEJTIyU3RlcCUyMDElMjZsdCUzQmJyJTI2Z3QlM0IlMjZsdCUzQmklMjZndCUzQk1peGluZyUyNmx0JTNCJTJGaSUyNmd0JTNCJTIyJTIwc3R5bGUlM0QlMjJyb3VuZGVkJTNEMSUzQndoaXRlU3BhY2UlM0R3cmFwJTNCaHRtbCUzRDElM0Jmb250U2l6ZSUzRDEyJTNCZ2xhc3MlM0QwJTNCc3Ryb2tlV2lkdGglM0QxJTNCc2hhZG93JTNEMCUzQmZpbGxDb2xvciUzRCUyM2Y4Y2VjYyUzQnN0cm9rZUNvbG9yJTNEJTIzYjg1NDUwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHZlcnRleCUzRCUyMjElMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteEdlb21ldHJ5JTIweCUzRCUyMjEyMCUyMiUyMHklM0QlMjItMjMwJTIyJTIwd2lkdGglM0QlMjIxMjAlMjIlMjBoZWlnaHQlM0QlMjI0MCUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteENlbGwlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteENlbGwlMjBpZCUzRCUyMkY2Ml9CeG4wcng3Z2czVlJZcjVoLTAlMjIlMjB2YWx1ZSUzRCUyMlN0ZXAlMjAyJTI2bHQlM0JiciUyNmd0JTNCJTI2bHQlM0JpJTI2Z3QlM0JEcnlpbmclMjZsdCUzQiUyRmklMjZndCUzQiUyMiUyMHN0eWxlJTNEJTIycm91bmRlZCUzRDElM0J3aGl0ZVNwYWNlJTNEd3JhcCUzQmh0bWwlM0QxJTNCZm9udFNpemUlM0QxMiUzQmdsYXNzJTNEMCUzQnN0cm9rZVdpZHRoJTNEMSUzQnNoYWRvdyUzRDAlM0JmaWxsQ29sb3IlM0QlMjNmOGNlY2MlM0JzdHJva2VDb2xvciUzRCUyM2I4NTQ1MCUzQiUyMiUyMHZlcnRleCUzRCUyMjElMjIlMjBwYXJlbnQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHglM0QlMjIyODAlMjIlMjB5JTNEJTIyLTIzMCUyMiUyMHdpZHRoJTNEJTIyMTIwJTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0zJTIyJTIwdmFsdWUlM0QlMjJTdGVwJTIwMyUyNmx0JTNCYnIlMjZndCUzQiUyNmx0JTNCaSUyNmd0JTNCUGFydGljbGUlMjBTaXplJTIwUmVkdWN0aW9uJTI2bHQlM0IlMkZpJTI2Z3QlM0IlMjIlMjBzdHlsZSUzRCUyMnJvdW5kZWQlM0QxJTNCd2hpdGVTcGFjZSUzRHdyYXAlM0JodG1sJTNEMSUzQmZvbnRTaXplJTNEMTIlM0JnbGFzcyUzRDAlM0JzdHJva2VXaWR0aCUzRDElM0JzaGFkb3clM0QwJTNCZmlsbENvbG9yJTNEJTIzZjhjZWNjJTNCc3Ryb2tlQ29sb3IlM0QlMjNiODU0NTAlM0IlMjIlMjB2ZXJ0ZXglM0QlMjIxJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB4JTNEJTIyNDQwJTIyJTIweSUzRCUyMi0yMzAlMjIlMjB3aWR0aCUzRCUyMjE5NC41JTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC01JTIyJTIwdmFsdWUlM0QlMjIlMjIlMjBzdHlsZSUzRCUyMmVuZEFycm93JTNEY2xhc3NpYyUzQmh0bWwlM0QxJTNCcm91bmRlZCUzRDAlM0JleGl0WCUzRDElM0JleGl0WSUzRDAuNSUzQmV4aXREeCUzRDAlM0JleGl0RHklM0QwJTNCZW50cnlYJTNEMCUzQmVudHJ5WSUzRDAuNSUzQmVudHJ5RHglM0QwJTNCZW50cnlEeSUzRDAlM0IlMjIlMjBlZGdlJTNEJTIyMSUyMiUyMHBhcmVudCUzRCUyMldJeVdsTGs2R0pRc3FhVUJLVE5WLTElMjIlMjBzb3VyY2UlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0wJTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMyUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB3aWR0aCUzRCUyMjUwJTIyJTIwaGVpZ2h0JTNEJTIyNTAlMjIlMjByZWxhdGl2ZSUzRCUyMjElMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMTYlMjIlMjB5JTNEJTIyLTE5MCUyMiUyMGFzJTNEJTIyc291cmNlUG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjMwNiUyMiUyMHklM0QlMjItODAlMjIlMjBhcyUzRCUyMnRhcmdldFBvaW50JTIy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&quot;/>
-                    </attachment>
-                </content>" id="DocumentReference-documentreference-process-flow-diagram-dxpq-ex1">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/documentreference.html#tt-uml">R6</a>]</span><div class="debugOff">id: documentreference-process-flow-diagram-dxpq-ex1</div>
-<div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb</div>
-<div class="debugOff"></div>
-<div class="summaryHiddenOff">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DocumentReference>
-                ...
-                <identifier>
-                    <system value=&quot;http://accumulus.org/fhir/identifier/document&quot;/>
-                    <value value=&quot;FLOW-001&quot;/>">Identifier: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DocumentReference>
-                ...
-                <identifier>
-                    <system value=&quot;http://accumulus.org/fhir/identifier/document&quot;/>
-                    <value value=&quot;FLOW-001&quot;/>">FLOW-001<span class="greyOff"> (http://accumulus.org/fhir/identifier/document)</span></span></div>
-<div class="debugOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DocumentReference>
-                ...
-                <status value=&quot;current&quot;>">Status: </span><span>current</span></div>
-</div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DocumentReference>
-                ...
-                <type>
-                    <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/diagramType&quot;/>
-                        <code value=&quot;11111111111&quot;/>
-                        <display value=&quot;ProcessFlowDiagram&quot;/>
-                    </coding>">Type: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DocumentReference>
-                <type>
-                    <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/diagramType&quot;/>
-                        <code value=&quot;11111111111&quot;/>
-                        <display value=&quot;ProcessFlowDiagram&quot;/>">ProcessFlowDiagram<span class="greyOff"> [11111111111]</span><span class="greyOff"> (http://accumulus.org/fhir/code/diagramType)</span></span></div>
-<div class="summaryHiddenOff">
-				Content
-				<div class="indent org2">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DocumentReference>
-                <content>
-                    <attachment>
-                        <contentType value=&quot;image/x-png&quot;>">Content Type: </span><span>image/x-png</span></div>
-<div><img src="data:image/x-png;base64, iVBORw0KGgoAAAANSUhEUgAAAgQAAAApCAYAAABKrzFXAAAAAXNSR0IArs4c6QAAEjl0RVh0bXhmaWxlACUzQ214ZmlsZSUyMGhvc3QlM0QlMjJFbGVjdHJvbiUyMiUyMG1vZGlmaWVkJTNEJTIyMjAyMy0wNy0wNlQxMyUzQTA4JTNBMDguNDgzWiUyMiUyMGFnZW50JTNEJTIyTW96aWxsYSUyRjUuMCUyMChXaW5kb3dzJTIwTlQlMjAxMC4wJTNCJTIwV2luNjQlM0IlMjB4NjQpJTIwQXBwbGVXZWJLaXQlMkY1MzcuMzYlMjAoS0hUTUwlMkMlMjBsaWtlJTIwR2Vja28pJTIwZHJhdy5pbyUyRjIxLjYuMSUyMENocm9tZSUyRjExMi4wLjU2MTUuMjA0JTIwRWxlY3Ryb24lMkYyNC42LjElMjBTYWZhcmklMkY1MzcuMzYlMjIlMjBldGFnJTNEJTIyNkMxTlFraVpHaXdVNTVadFBEMUQlMjIlMjB2ZXJzaW9uJTNEJTIyMjEuNi4xJTIyJTIwdHlwZSUzRCUyMmRldmljZSUyMiUzRSUwQSUyMCUyMCUzQ2RpYWdyYW0lMjBpZCUzRCUyMkM1UkJzNDNvRGEtS2R6WmVOdHV5JTIyJTIwbmFtZSUzRCUyMlBhZ2UtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUzQ214R3JhcGhNb2RlbCUyMGR4JTNEJTIyMTAzNiUyMiUyMGR5JTNEJTIyMTc4MyUyMiUyMGdyaWQlM0QlMjIxJTIyJTIwZ3JpZFNpemUlM0QlMjIxMCUyMiUyMGd1aWRlcyUzRCUyMjElMjIlMjB0b29sdGlwcyUzRCUyMjElMjIlMjBjb25uZWN0JTNEJTIyMSUyMiUyMGFycm93cyUzRCUyMjElMjIlMjBmb2xkJTNEJTIyMSUyMiUyMHBhZ2UlM0QlMjIxJTIyJTIwcGFnZVNjYWxlJTNEJTIyMSUyMiUyMHBhZ2VXaWR0aCUzRCUyMjgyNyUyMiUyMHBhZ2VIZWlnaHQlM0QlMjIxMTY5JTIyJTIwYmFja2dyb3VuZCUzRCUyMm5vbmUlMjIlMjBtYXRoJTNEJTIyMCUyMiUyMHNoYWRvdyUzRCUyMjAlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlM0Nyb290JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0wJTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMCUyMiUyMCUyRiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214Q2VsbCUyMGlkJTNEJTIyS2g2VVdDcUxFb3V5cUZPSzdudE0tOSUyMiUyMHZhbHVlJTNEJTIyJTIyJTIwc3R5bGUlM0QlMjJlbmRBcnJvdyUzRGNsYXNzaWMlM0JodG1sJTNEMSUzQnJvdW5kZWQlM0QwJTNCZXhpdFglM0QxJTNCZXhpdFklM0QwLjUlM0JleGl0RHglM0QwJTNCZXhpdER5JTNEMCUzQmVudHJ5WCUzRDAlM0JlbnRyeVklM0QwLjUlM0JlbnRyeUR4JTNEMCUzQmVudHJ5RHklM0QwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHNvdXJjZSUzRCUyMktoNlVXQ3FMRW91eXFGT0s3bnRNLTI1JTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMCUyMiUyMGVkZ2UlM0QlMjIxJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHdpZHRoJTNEJTIyNTAlMjIlMjBoZWlnaHQlM0QlMjI1MCUyMiUyMHJlbGF0aXZlJTNEJTIyMSUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjQ4MS40MzAwMDAwMDAwMDAwNiUyMiUyMHklM0QlMjItNjAlMjIlMjBhcyUzRCUyMnNvdXJjZVBvaW50JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMDYlMjIlMjB5JTNEJTIyLTE2MCUyMiUyMGFzJTNEJTIydGFyZ2V0UG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteEdlb21ldHJ5JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJLaDZVV0NxTEVvdXlxRk9LN250TS0yNSUyMiUyMHZhbHVlJTNEJTIyU3RlcCUyMDElMjZsdCUzQmJyJTI2Z3QlM0IlMjZsdCUzQmklMjZndCUzQk1peGluZyUyNmx0JTNCJTJGaSUyNmd0JTNCJTIyJTIwc3R5bGUlM0QlMjJyb3VuZGVkJTNEMSUzQndoaXRlU3BhY2UlM0R3cmFwJTNCaHRtbCUzRDElM0Jmb250U2l6ZSUzRDEyJTNCZ2xhc3MlM0QwJTNCc3Ryb2tlV2lkdGglM0QxJTNCc2hhZG93JTNEMCUzQmZpbGxDb2xvciUzRCUyM2Y4Y2VjYyUzQnN0cm9rZUNvbG9yJTNEJTIzYjg1NDUwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHZlcnRleCUzRCUyMjElMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteEdlb21ldHJ5JTIweCUzRCUyMjEyMCUyMiUyMHklM0QlMjItMjMwJTIyJTIwd2lkdGglM0QlMjIxMjAlMjIlMjBoZWlnaHQlM0QlMjI0MCUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteENlbGwlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteENlbGwlMjBpZCUzRCUyMkY2Ml9CeG4wcng3Z2czVlJZcjVoLTAlMjIlMjB2YWx1ZSUzRCUyMlN0ZXAlMjAyJTI2bHQlM0JiciUyNmd0JTNCJTI2bHQlM0JpJTI2Z3QlM0JEcnlpbmclMjZsdCUzQiUyRmklMjZndCUzQiUyMiUyMHN0eWxlJTNEJTIycm91bmRlZCUzRDElM0J3aGl0ZVNwYWNlJTNEd3JhcCUzQmh0bWwlM0QxJTNCZm9udFNpemUlM0QxMiUzQmdsYXNzJTNEMCUzQnN0cm9rZVdpZHRoJTNEMSUzQnNoYWRvdyUzRDAlM0JmaWxsQ29sb3IlM0QlMjNmOGNlY2MlM0JzdHJva2VDb2xvciUzRCUyM2I4NTQ1MCUzQiUyMiUyMHZlcnRleCUzRCUyMjElMjIlMjBwYXJlbnQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHglM0QlMjIyODAlMjIlMjB5JTNEJTIyLTIzMCUyMiUyMHdpZHRoJTNEJTIyMTIwJTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0zJTIyJTIwdmFsdWUlM0QlMjJTdGVwJTIwMyUyNmx0JTNCYnIlMjZndCUzQiUyNmx0JTNCaSUyNmd0JTNCUGFydGljbGUlMjBTaXplJTIwUmVkdWN0aW9uJTI2bHQlM0IlMkZpJTI2Z3QlM0IlMjIlMjBzdHlsZSUzRCUyMnJvdW5kZWQlM0QxJTNCd2hpdGVTcGFjZSUzRHdyYXAlM0JodG1sJTNEMSUzQmZvbnRTaXplJTNEMTIlM0JnbGFzcyUzRDAlM0JzdHJva2VXaWR0aCUzRDElM0JzaGFkb3clM0QwJTNCZmlsbENvbG9yJTNEJTIzZjhjZWNjJTNCc3Ryb2tlQ29sb3IlM0QlMjNiODU0NTAlM0IlMjIlMjB2ZXJ0ZXglM0QlMjIxJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB4JTNEJTIyNDQwJTIyJTIweSUzRCUyMi0yMzAlMjIlMjB3aWR0aCUzRCUyMjE5NC41JTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC01JTIyJTIwdmFsdWUlM0QlMjIlMjIlMjBzdHlsZSUzRCUyMmVuZEFycm93JTNEY2xhc3NpYyUzQmh0bWwlM0QxJTNCcm91bmRlZCUzRDAlM0JleGl0WCUzRDElM0JleGl0WSUzRDAuNSUzQmV4aXREeCUzRDAlM0JleGl0RHklM0QwJTNCZW50cnlYJTNEMCUzQmVudHJ5WSUzRDAuNSUzQmVudHJ5RHglM0QwJTNCZW50cnlEeSUzRDAlM0IlMjIlMjBlZGdlJTNEJTIyMSUyMiUyMHBhcmVudCUzRCUyMldJeVdsTGs2R0pRc3FhVUJLVE5WLTElMjIlMjBzb3VyY2UlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0wJTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMyUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB3aWR0aCUzRCUyMjUwJTIyJTIwaGVpZ2h0JTNEJTIyNTAlMjIlMjByZWxhdGl2ZSUzRCUyMjElMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMTYlMjIlMjB5JTNEJTIyLTE5MCUyMiUyMGFzJTNEJTIyc291cmNlUG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjMwNiUyMiUyMHklM0QlMjItODAlMjIlMjBhcyUzRCUyMnRhcmdldFBvaW50JTIy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"></div>
-</div>
-</div>
-</div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span>Table 1. List of Equipment</span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
-<tr>
-<th>Name / Type</th>
-<th>Working Capacity (where appropriate)</th>
-</tr>
-<tr>
-<td class="centred">Mixing Vessel</td>
-<td class="centred">Capacity: <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DeviceDefinition>
-                <property>
-                    ...
-                    <valueQuantity>
-                        <value value=&quot;1000&quot;/>
-                        <unit value=&quot;litres&quot;/>">1000 litres</span></td>
-</tr>
-<tr>
-<td class="centred">Receiving Tank</td>
-<td class="centred">Capacity: <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DeviceDefinition>
-                <property>
-                    ...
-                    <valueQuantity>
-                        <value value=&quot;1200&quot;/>
-                        <unit value=&quot;litres&quot;/>">1200 litres</span></td>
-</tr>
-<tr>
-<td class="centred">Blender</td>
-<td class="centred">Maximum capacity: <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DeviceDefinition>
-                <property>
-                    ...
-                    <valueQuantity>
-                        <value value=&quot;1000&quot;/>
-                        <unit value=&quot;litres&quot;/>">1000 litres</span></td>
-</tr>
-<tr>
-<td class="centred">Heated dryer</td>
-<td class="centred">Power: <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DeviceDefinition>
-                <property>
-                    ...
-                    <valueQuantity>
-                        <value value=&quot;3&quot;/>
-                        <unit value=&quot;kW&quot;/>">3 kW</span></td>
-</tr>
-<tr>
-<td class="centred">Rotating Impeller with 1.5mm screen</td>
-<td class="centred">Maximum Speed: <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <DeviceDefinition>
-                <property>
-                    ...
-                    <valueQuantity>
-                        <value value=&quot;5000&quot;/>
-                        <unit value=&quot;RPM&quot;/>">5000 RPM</span></td>
-</tr>
-</table>
-</div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span>Table 2. In-Process and Quality Controls</span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
-<tr>
-<th>Process Step (name)</th>
-<th>Parameter</th>
-<th>Acceptance Criteria</th>
-</tr>
-<tr>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <prefix value=&quot;1&quot;>">Step: </span><span>1</span></div>
-</td>
-<td class="centred"> Parameter - Capacity</td>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                        <extension url=&quot;value&quot;>
-                            <valueQuantity>
-                                <value value=&quot;750&quot;/>
-                                <unit value=&quot;litres&quot;/>"></span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                        <extension url=&quot;value&quot;>
-                            <valueQuantity>
-                                <value value=&quot;750&quot;/>
-                                <unit value=&quot;litres&quot;/>">750 litres</span></div>
-</td>
-</tr>
-<tr>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <prefix value=&quot;1&quot;>">Step: </span><span>1</span></div>
-</td>
-<td class="centred"> Parameter - Temperature</td>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                        <extension url=&quot;value&quot;>
-                            <valueQuantity>
-                                <value value=&quot;150&quot;/>
-                                <unit value=&quot;°C&quot;/>
-                                <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                <code value=&quot;Cel&quot;/>"></span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                        <extension url=&quot;value&quot;>
-                            <valueQuantity>
-                                <value value=&quot;150&quot;/>
-                                <unit value=&quot;°C&quot;/>
-                                <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                <code value=&quot;Cel&quot;/>">150 °C</span><span class="greyOff"> [Cel] (http://unitsofmeasure.org)</span></div>
-</td>
-</tr>
-<tr>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <prefix value=&quot;1&quot;>">Step: </span><span>1</span></div>
-</td>
-<td class="centred">Controls - pH</td>
-<td class="centred">pH must be in range 6.9 to 7.1</td>
-</tr>
-<tr>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <prefix value=&quot;2&quot;>">Step: </span><span>2</span></div>
-</td>
-<td class="centred"> Parameter - Maximum Temperature</td>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                        <extension url=&quot;value&quot;>
-                            <valueQuantity>
-                                <value value=&quot;40&quot;/>
-                                <unit value=&quot;°C&quot;/>
-                                <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                <code value=&quot;Cel&quot;/>"></span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                        <extension url=&quot;value&quot;>
-                            <valueQuantity>
-                                <value value=&quot;40&quot;/>
-                                <unit value=&quot;°C&quot;/>
-                                <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                <code value=&quot;Cel&quot;/>">40 °C</span><span class="greyOff"> [Cel] (http://unitsofmeasure.org)</span></div>
-</td>
-</tr>
-<tr>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <prefix value=&quot;2&quot;>">Step: </span><span>2</span></div>
-</td>
-<td class="centred">Controls - Water Content</td>
-<td class="centred">Under 2%</td>
-</tr>
-<tr>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <prefix value=&quot;3&quot;>">Step: </span><span>3</span></div>
-</td>
-<td class="centred"> Parameter - Rotational Speed</td>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                        <extension url=&quot;value&quot;>
-                            <valueQuantity>
-                                <value value=&quot;2500&quot;/>
-                                <unit value=&quot;rpm&quot;/>"></span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
-                        <extension url=&quot;value&quot;>
-                            <valueQuantity>
-                                <value value=&quot;2500&quot;/>
-                                <unit value=&quot;rpm&quot;/>">2500 rpm</span></div>
-</td>
-</tr>
-<tr>
-<td class="centred">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <prefix value=&quot;3&quot;>">Step: </span><span>3</span></div>
-</td>
-<td class="centred">Controls - Particle Size</td>
-<td class="centred">Under 200 microns</td>
-</tr>
-</table>
-</div><br style="line-height:6px;"></div>
 <div></div><span><span title="
 <Bundle>
     <entry>
@@ -1956,12 +1557,12 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
             <PlanDefinition>
                 <id value=&quot;manufacturingProcess-unlinked&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/PlanDefinition-mnf-process-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
                 </meta>
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateEquipment&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/planDocumentReference&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq&quot;>
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
@@ -1969,9 +1570,10 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                         <reference value=&quot;DocumentReference/documentreference-process-flow-diagram-dxpq-ex1&quot;/>
                     </valueReference>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/historyOfProcess&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq&quot;>
                     <valueMarkdown value=&quot;This can be text about the history&quot;/>
                 </extension>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;Process 1.0&quot;/>
                 <type>
                     <coding>
@@ -2137,14 +1739,15 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                 <!-- outer action is the whole thing, if needed -->
                 <!-- step 1 mixing -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -2161,7 +1764,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                             </valueQuantity>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -2212,11 +1815,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -2228,11 +1833,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;processing material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -2244,11 +1851,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -2273,14 +1882,15 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                 </action>
                 <!-- step 2 drying -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -2334,11 +1944,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -2350,11 +1962,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -2367,14 +1981,15 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                 </action>
                 <!-- step 3 particle size -->
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -2424,11 +2039,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -2440,11 +2057,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/Stelbatolol&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -2672,7 +2291,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                         <reference>
                             <reference value=&quot;SubstanceDefinition/Stelbatolol&quot;/>
                         </reference>
-                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: Stelbatolol)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
+                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: Stelbatolol)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
 
 <Bundle>
     <entry>
@@ -2805,7 +2424,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                 <contact>
                     <address>
                         ...
-                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div></span><div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div class="summaryHiddenOff"></div></div><div></div></div></span><div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2823,7 +2442,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <display value=&quot;Mixing Vessel&quot;/>
                             </coding>
                         </role>
-                    </option>"><span>Actor</span><span class="summaryHiddenOff"></span></span><div class="indent org"><span title="
+                    </option>"><span>Actor</span><span class="summaryHiddenOff"></span></span><div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2865,7 +2484,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <code value=&quot;mixing-vessel&quot;/>
                                 <display value=&quot;Mixing Vessel&quot;/>">Mixing Vessel<span class="greyOff"> [mixing-vessel]</span><span class="greyOff"> (http://accumulus.org/fhir/code/equipmentClass)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: mixing-vessel)(fullUrl: urn:uuid:82a39a18-91cf-a29d-76c1-a9e8bad9494d)
+<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: mixing-vessel)(fullUrl: urn:uuid:82a39a18-91cf-a29d-76c1-a9e8bad9494d)
 
 <Bundle>
     <entry>
@@ -2952,8 +2571,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     <valueQuantity>
                         <value value=&quot;1000&quot;/>
                         <unit value=&quot;litres&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3002,7 +2620,6 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
-</div>
 <div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
@@ -3021,7 +2638,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <display value=&quot;Receiving Vessel&quot;/>
                             </coding>
                         </role>
-                    </option>"><span>Actor</span><span class="summaryHiddenOff"></span></span><div class="indent org"><span title="
+                    </option>"><span>Actor</span><span class="summaryHiddenOff"></span></span><div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3063,7 +2680,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <code value=&quot;receiving-vessel&quot;/>
                                 <display value=&quot;Receiving Vessel&quot;/>">Receiving Vessel<span class="greyOff"> [receiving-vessel]</span><span class="greyOff"> (http://accumulus.org/fhir/code/equipmentClass)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: receiving-tank)(fullUrl: urn:uuid:82a39a18-91cf-b29d-76c1-a9e8bad9494d)
+<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: receiving-tank)(fullUrl: urn:uuid:82a39a18-91cf-b29d-76c1-a9e8bad9494d)
 
 <Bundle>
     <entry>
@@ -3150,8 +2767,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     <valueQuantity>
                         <value value=&quot;1200&quot;/>
                         <unit value=&quot;litres&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3200,22 +2816,398 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
+<div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: documentreference-process-flow-diagram-dxpq-ex1)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq 
+
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                <id value=&quot;documentreference-process-flow-diagram-dxpq-ex1&quot;/>
+                <!-- REMOVE IN BUNDLE -->
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq&quot;/>
+                </meta>
+                <identifier>
+                    <system value=&quot;http://accumulus.org/fhir/identifier/document&quot;/>
+                    <value value=&quot;FLOW-001&quot;/>
+                </identifier>
+                <status value=&quot;current&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/diagramType&quot;/>
+                        <code value=&quot;11111111111&quot;/>
+                        <display value=&quot;ProcessFlowDiagram&quot;/>
+                    </coding>
+                </type>
+                <content>
+                    <attachment>
+                        <contentType value=&quot;image/x-png&quot;/>
+                        <data value=&quot;iVBORw0KGgoAAAANSUhEUgAAAgQAAAApCAYAAABKrzFXAAAAAXNSR0IArs4c6QAAEjl0RVh0bXhmaWxlACUzQ214ZmlsZSUyMGhvc3QlM0QlMjJFbGVjdHJvbiUyMiUyMG1vZGlmaWVkJTNEJTIyMjAyMy0wNy0wNlQxMyUzQTA4JTNBMDguNDgzWiUyMiUyMGFnZW50JTNEJTIyTW96aWxsYSUyRjUuMCUyMChXaW5kb3dzJTIwTlQlMjAxMC4wJTNCJTIwV2luNjQlM0IlMjB4NjQpJTIwQXBwbGVXZWJLaXQlMkY1MzcuMzYlMjAoS0hUTUwlMkMlMjBsaWtlJTIwR2Vja28pJTIwZHJhdy5pbyUyRjIxLjYuMSUyMENocm9tZSUyRjExMi4wLjU2MTUuMjA0JTIwRWxlY3Ryb24lMkYyNC42LjElMjBTYWZhcmklMkY1MzcuMzYlMjIlMjBldGFnJTNEJTIyNkMxTlFraVpHaXdVNTVadFBEMUQlMjIlMjB2ZXJzaW9uJTNEJTIyMjEuNi4xJTIyJTIwdHlwZSUzRCUyMmRldmljZSUyMiUzRSUwQSUyMCUyMCUzQ2RpYWdyYW0lMjBpZCUzRCUyMkM1UkJzNDNvRGEtS2R6WmVOdHV5JTIyJTIwbmFtZSUzRCUyMlBhZ2UtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUzQ214R3JhcGhNb2RlbCUyMGR4JTNEJTIyMTAzNiUyMiUyMGR5JTNEJTIyMTc4MyUyMiUyMGdyaWQlM0QlMjIxJTIyJTIwZ3JpZFNpemUlM0QlMjIxMCUyMiUyMGd1aWRlcyUzRCUyMjElMjIlMjB0b29sdGlwcyUzRCUyMjElMjIlMjBjb25uZWN0JTNEJTIyMSUyMiUyMGFycm93cyUzRCUyMjElMjIlMjBmb2xkJTNEJTIyMSUyMiUyMHBhZ2UlM0QlMjIxJTIyJTIwcGFnZVNjYWxlJTNEJTIyMSUyMiUyMHBhZ2VXaWR0aCUzRCUyMjgyNyUyMiUyMHBhZ2VIZWlnaHQlM0QlMjIxMTY5JTIyJTIwYmFja2dyb3VuZCUzRCUyMm5vbmUlMjIlMjBtYXRoJTNEJTIyMCUyMiUyMHNoYWRvdyUzRCUyMjAlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlM0Nyb290JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0wJTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMCUyMiUyMCUyRiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214Q2VsbCUyMGlkJTNEJTIyS2g2VVdDcUxFb3V5cUZPSzdudE0tOSUyMiUyMHZhbHVlJTNEJTIyJTIyJTIwc3R5bGUlM0QlMjJlbmRBcnJvdyUzRGNsYXNzaWMlM0JodG1sJTNEMSUzQnJvdW5kZWQlM0QwJTNCZXhpdFglM0QxJTNCZXhpdFklM0QwLjUlM0JleGl0RHglM0QwJTNCZXhpdER5JTNEMCUzQmVudHJ5WCUzRDAlM0JlbnRyeVklM0QwLjUlM0JlbnRyeUR4JTNEMCUzQmVudHJ5RHklM0QwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHNvdXJjZSUzRCUyMktoNlVXQ3FMRW91eXFGT0s3bnRNLTI1JTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMCUyMiUyMGVkZ2UlM0QlMjIxJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHdpZHRoJTNEJTIyNTAlMjIlMjBoZWlnaHQlM0QlMjI1MCUyMiUyMHJlbGF0aXZlJTNEJTIyMSUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjQ4MS40MzAwMDAwMDAwMDAwNiUyMiUyMHklM0QlMjItNjAlMjIlMjBhcyUzRCUyMnNvdXJjZVBvaW50JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMDYlMjIlMjB5JTNEJTIyLTE2MCUyMiUyMGFzJTNEJTIydGFyZ2V0UG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteEdlb21ldHJ5JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJLaDZVV0NxTEVvdXlxRk9LN250TS0yNSUyMiUyMHZhbHVlJTNEJTIyU3RlcCUyMDElMjZsdCUzQmJyJTI2Z3QlM0IlMjZsdCUzQmklMjZndCUzQk1peGluZyUyNmx0JTNCJTJGaSUyNmd0JTNCJTIyJTIwc3R5bGUlM0QlMjJyb3VuZGVkJTNEMSUzQndoaXRlU3BhY2UlM0R3cmFwJTNCaHRtbCUzRDElM0Jmb250U2l6ZSUzRDEyJTNCZ2xhc3MlM0QwJTNCc3Ryb2tlV2lkdGglM0QxJTNCc2hhZG93JTNEMCUzQmZpbGxDb2xvciUzRCUyM2Y4Y2VjYyUzQnN0cm9rZUNvbG9yJTNEJTIzYjg1NDUwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHZlcnRleCUzRCUyMjElMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteEdlb21ldHJ5JTIweCUzRCUyMjEyMCUyMiUyMHklM0QlMjItMjMwJTIyJTIwd2lkdGglM0QlMjIxMjAlMjIlMjBoZWlnaHQlM0QlMjI0MCUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteENlbGwlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteENlbGwlMjBpZCUzRCUyMkY2Ml9CeG4wcng3Z2czVlJZcjVoLTAlMjIlMjB2YWx1ZSUzRCUyMlN0ZXAlMjAyJTI2bHQlM0JiciUyNmd0JTNCJTI2bHQlM0JpJTI2Z3QlM0JEcnlpbmclMjZsdCUzQiUyRmklMjZndCUzQiUyMiUyMHN0eWxlJTNEJTIycm91bmRlZCUzRDElM0J3aGl0ZVNwYWNlJTNEd3JhcCUzQmh0bWwlM0QxJTNCZm9udFNpemUlM0QxMiUzQmdsYXNzJTNEMCUzQnN0cm9rZVdpZHRoJTNEMSUzQnNoYWRvdyUzRDAlM0JmaWxsQ29sb3IlM0QlMjNmOGNlY2MlM0JzdHJva2VDb2xvciUzRCUyM2I4NTQ1MCUzQiUyMiUyMHZlcnRleCUzRCUyMjElMjIlMjBwYXJlbnQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHglM0QlMjIyODAlMjIlMjB5JTNEJTIyLTIzMCUyMiUyMHdpZHRoJTNEJTIyMTIwJTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0zJTIyJTIwdmFsdWUlM0QlMjJTdGVwJTIwMyUyNmx0JTNCYnIlMjZndCUzQiUyNmx0JTNCaSUyNmd0JTNCUGFydGljbGUlMjBTaXplJTIwUmVkdWN0aW9uJTI2bHQlM0IlMkZpJTI2Z3QlM0IlMjIlMjBzdHlsZSUzRCUyMnJvdW5kZWQlM0QxJTNCd2hpdGVTcGFjZSUzRHdyYXAlM0JodG1sJTNEMSUzQmZvbnRTaXplJTNEMTIlM0JnbGFzcyUzRDAlM0JzdHJva2VXaWR0aCUzRDElM0JzaGFkb3clM0QwJTNCZmlsbENvbG9yJTNEJTIzZjhjZWNjJTNCc3Ryb2tlQ29sb3IlM0QlMjNiODU0NTAlM0IlMjIlMjB2ZXJ0ZXglM0QlMjIxJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB4JTNEJTIyNDQwJTIyJTIweSUzRCUyMi0yMzAlMjIlMjB3aWR0aCUzRCUyMjE5NC41JTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC01JTIyJTIwdmFsdWUlM0QlMjIlMjIlMjBzdHlsZSUzRCUyMmVuZEFycm93JTNEY2xhc3NpYyUzQmh0bWwlM0QxJTNCcm91bmRlZCUzRDAlM0JleGl0WCUzRDElM0JleGl0WSUzRDAuNSUzQmV4aXREeCUzRDAlM0JleGl0RHklM0QwJTNCZW50cnlYJTNEMCUzQmVudHJ5WSUzRDAuNSUzQmVudHJ5RHglM0QwJTNCZW50cnlEeSUzRDAlM0IlMjIlMjBlZGdlJTNEJTIyMSUyMiUyMHBhcmVudCUzRCUyMldJeVdsTGs2R0pRc3FhVUJLVE5WLTElMjIlMjBzb3VyY2UlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0wJTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMyUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB3aWR0aCUzRCUyMjUwJTIyJTIwaGVpZ2h0JTNEJTIyNTAlMjIlMjByZWxhdGl2ZSUzRCUyMjElMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMTYlMjIlMjB5JTNEJTIyLTE5MCUyMiUyMGFzJTNEJTIyc291cmNlUG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjMwNiUyMiUyMHklM0QlMjItODAlMjIlMjBhcyUzRCUyMnRhcmdldFBvaW50JTIy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&quot;/>
+                    </attachment>
+                </content>" id="DocumentReference-documentreference-process-flow-diagram-dxpq-ex1">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/documentreference.html#tt-uml">R6</a>]</span><div class="debugOff">id: documentreference-process-flow-diagram-dxpq-ex1</div>
+<div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq</span></div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                ...
+                <identifier>
+                    <system value=&quot;http://accumulus.org/fhir/identifier/document&quot;/>
+                    <value value=&quot;FLOW-001&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                ...
+                <identifier>
+                    <system value=&quot;http://accumulus.org/fhir/identifier/document&quot;/>
+                    <value value=&quot;FLOW-001&quot;/>">FLOW-001<span class="greyOff"> (http://accumulus.org/fhir/identifier/document)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                ...
+                <status value=&quot;current&quot;>">Status: </span><span>current</span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/diagramType&quot;/>
+                        <code value=&quot;11111111111&quot;/>
+                        <display value=&quot;ProcessFlowDiagram&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                <type>
+                    <coding>
+                        <system value=&quot;http://accumulus.org/fhir/code/diagramType&quot;/>
+                        <code value=&quot;11111111111&quot;/>
+                        <display value=&quot;ProcessFlowDiagram&quot;/>">ProcessFlowDiagram<span class="greyOff"> [11111111111]</span><span class="greyOff"> (http://accumulus.org/fhir/code/diagramType)</span></span></div>
+<div class="summaryHiddenOff">
+				Content
+				<div class="indent org2">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                <content>
+                    <attachment>
+                        <contentType value=&quot;image/x-png&quot;>">Content Type: </span><span>image/x-png</span></div>
+<div><img src="data:image/x-png;base64, iVBORw0KGgoAAAANSUhEUgAAAgQAAAApCAYAAABKrzFXAAAAAXNSR0IArs4c6QAAEjl0RVh0bXhmaWxlACUzQ214ZmlsZSUyMGhvc3QlM0QlMjJFbGVjdHJvbiUyMiUyMG1vZGlmaWVkJTNEJTIyMjAyMy0wNy0wNlQxMyUzQTA4JTNBMDguNDgzWiUyMiUyMGFnZW50JTNEJTIyTW96aWxsYSUyRjUuMCUyMChXaW5kb3dzJTIwTlQlMjAxMC4wJTNCJTIwV2luNjQlM0IlMjB4NjQpJTIwQXBwbGVXZWJLaXQlMkY1MzcuMzYlMjAoS0hUTUwlMkMlMjBsaWtlJTIwR2Vja28pJTIwZHJhdy5pbyUyRjIxLjYuMSUyMENocm9tZSUyRjExMi4wLjU2MTUuMjA0JTIwRWxlY3Ryb24lMkYyNC42LjElMjBTYWZhcmklMkY1MzcuMzYlMjIlMjBldGFnJTNEJTIyNkMxTlFraVpHaXdVNTVadFBEMUQlMjIlMjB2ZXJzaW9uJTNEJTIyMjEuNi4xJTIyJTIwdHlwZSUzRCUyMmRldmljZSUyMiUzRSUwQSUyMCUyMCUzQ2RpYWdyYW0lMjBpZCUzRCUyMkM1UkJzNDNvRGEtS2R6WmVOdHV5JTIyJTIwbmFtZSUzRCUyMlBhZ2UtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUzQ214R3JhcGhNb2RlbCUyMGR4JTNEJTIyMTAzNiUyMiUyMGR5JTNEJTIyMTc4MyUyMiUyMGdyaWQlM0QlMjIxJTIyJTIwZ3JpZFNpemUlM0QlMjIxMCUyMiUyMGd1aWRlcyUzRCUyMjElMjIlMjB0b29sdGlwcyUzRCUyMjElMjIlMjBjb25uZWN0JTNEJTIyMSUyMiUyMGFycm93cyUzRCUyMjElMjIlMjBmb2xkJTNEJTIyMSUyMiUyMHBhZ2UlM0QlMjIxJTIyJTIwcGFnZVNjYWxlJTNEJTIyMSUyMiUyMHBhZ2VXaWR0aCUzRCUyMjgyNyUyMiUyMHBhZ2VIZWlnaHQlM0QlMjIxMTY5JTIyJTIwYmFja2dyb3VuZCUzRCUyMm5vbmUlMjIlMjBtYXRoJTNEJTIyMCUyMiUyMHNoYWRvdyUzRCUyMjAlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlM0Nyb290JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0wJTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMCUyMiUyMCUyRiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214Q2VsbCUyMGlkJTNEJTIyS2g2VVdDcUxFb3V5cUZPSzdudE0tOSUyMiUyMHZhbHVlJTNEJTIyJTIyJTIwc3R5bGUlM0QlMjJlbmRBcnJvdyUzRGNsYXNzaWMlM0JodG1sJTNEMSUzQnJvdW5kZWQlM0QwJTNCZXhpdFglM0QxJTNCZXhpdFklM0QwLjUlM0JleGl0RHglM0QwJTNCZXhpdER5JTNEMCUzQmVudHJ5WCUzRDAlM0JlbnRyeVklM0QwLjUlM0JlbnRyeUR4JTNEMCUzQmVudHJ5RHklM0QwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHNvdXJjZSUzRCUyMktoNlVXQ3FMRW91eXFGT0s3bnRNLTI1JTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMCUyMiUyMGVkZ2UlM0QlMjIxJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHdpZHRoJTNEJTIyNTAlMjIlMjBoZWlnaHQlM0QlMjI1MCUyMiUyMHJlbGF0aXZlJTNEJTIyMSUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjQ4MS40MzAwMDAwMDAwMDAwNiUyMiUyMHklM0QlMjItNjAlMjIlMjBhcyUzRCUyMnNvdXJjZVBvaW50JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMDYlMjIlMjB5JTNEJTIyLTE2MCUyMiUyMGFzJTNEJTIydGFyZ2V0UG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteEdlb21ldHJ5JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJLaDZVV0NxTEVvdXlxRk9LN250TS0yNSUyMiUyMHZhbHVlJTNEJTIyU3RlcCUyMDElMjZsdCUzQmJyJTI2Z3QlM0IlMjZsdCUzQmklMjZndCUzQk1peGluZyUyNmx0JTNCJTJGaSUyNmd0JTNCJTIyJTIwc3R5bGUlM0QlMjJyb3VuZGVkJTNEMSUzQndoaXRlU3BhY2UlM0R3cmFwJTNCaHRtbCUzRDElM0Jmb250U2l6ZSUzRDEyJTNCZ2xhc3MlM0QwJTNCc3Ryb2tlV2lkdGglM0QxJTNCc2hhZG93JTNEMCUzQmZpbGxDb2xvciUzRCUyM2Y4Y2VjYyUzQnN0cm9rZUNvbG9yJTNEJTIzYjg1NDUwJTNCJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUyMHZlcnRleCUzRCUyMjElMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteEdlb21ldHJ5JTIweCUzRCUyMjEyMCUyMiUyMHklM0QlMjItMjMwJTIyJTIwd2lkdGglM0QlMjIxMjAlMjIlMjBoZWlnaHQlM0QlMjI0MCUyMiUyMGFzJTNEJTIyZ2VvbWV0cnklMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZteENlbGwlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteENlbGwlMjBpZCUzRCUyMkY2Ml9CeG4wcng3Z2czVlJZcjVoLTAlMjIlMjB2YWx1ZSUzRCUyMlN0ZXAlMjAyJTI2bHQlM0JiciUyNmd0JTNCJTI2bHQlM0JpJTI2Z3QlM0JEcnlpbmclMjZsdCUzQiUyRmklMjZndCUzQiUyMiUyMHN0eWxlJTNEJTIycm91bmRlZCUzRDElM0J3aGl0ZVNwYWNlJTNEd3JhcCUzQmh0bWwlM0QxJTNCZm9udFNpemUlM0QxMiUzQmdsYXNzJTNEMCUzQnN0cm9rZVdpZHRoJTNEMSUzQnNoYWRvdyUzRDAlM0JmaWxsQ29sb3IlM0QlMjNmOGNlY2MlM0JzdHJva2VDb2xvciUzRCUyM2I4NTQ1MCUzQiUyMiUyMHZlcnRleCUzRCUyMjElMjIlMjBwYXJlbnQlM0QlMjJXSXlXbExrNkdKUXNxYVVCS1ROVi0xJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhHZW9tZXRyeSUyMHglM0QlMjIyODAlMjIlMjB5JTNEJTIyLTIzMCUyMiUyMHdpZHRoJTNEJTIyMTIwJTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0zJTIyJTIwdmFsdWUlM0QlMjJTdGVwJTIwMyUyNmx0JTNCYnIlMjZndCUzQiUyNmx0JTNCaSUyNmd0JTNCUGFydGljbGUlMjBTaXplJTIwUmVkdWN0aW9uJTI2bHQlM0IlMkZpJTI2Z3QlM0IlMjIlMjBzdHlsZSUzRCUyMnJvdW5kZWQlM0QxJTNCd2hpdGVTcGFjZSUzRHdyYXAlM0JodG1sJTNEMSUzQmZvbnRTaXplJTNEMTIlM0JnbGFzcyUzRDAlM0JzdHJva2VXaWR0aCUzRDElM0JzaGFkb3clM0QwJTNCZmlsbENvbG9yJTNEJTIzZjhjZWNjJTNCc3Ryb2tlQ29sb3IlM0QlMjNiODU0NTAlM0IlMjIlMjB2ZXJ0ZXglM0QlMjIxJTIyJTIwcGFyZW50JTNEJTIyV0l5V2xMazZHSlFzcWFVQktUTlYtMSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB4JTNEJTIyNDQwJTIyJTIweSUzRCUyMi0yMzAlMjIlMjB3aWR0aCUzRCUyMjE5NC41JTIyJTIwaGVpZ2h0JTNEJTIyNDAlMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTIwJTJGJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGbXhDZWxsJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhDZWxsJTIwaWQlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC01JTIyJTIwdmFsdWUlM0QlMjIlMjIlMjBzdHlsZSUzRCUyMmVuZEFycm93JTNEY2xhc3NpYyUzQmh0bWwlM0QxJTNCcm91bmRlZCUzRDAlM0JleGl0WCUzRDElM0JleGl0WSUzRDAuNSUzQmV4aXREeCUzRDAlM0JleGl0RHklM0QwJTNCZW50cnlYJTNEMCUzQmVudHJ5WSUzRDAuNSUzQmVudHJ5RHglM0QwJTNCZW50cnlEeSUzRDAlM0IlMjIlMjBlZGdlJTNEJTIyMSUyMiUyMHBhcmVudCUzRCUyMldJeVdsTGs2R0pRc3FhVUJLVE5WLTElMjIlMjBzb3VyY2UlM0QlMjJGNjJfQnhuMHJ4N2dnM1ZSWXI1aC0wJTIyJTIwdGFyZ2V0JTNEJTIyRjYyX0J4bjByeDdnZzNWUllyNWgtMyUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ214R2VvbWV0cnklMjB3aWR0aCUzRCUyMjUwJTIyJTIwaGVpZ2h0JTNEJTIyNTAlMjIlMjByZWxhdGl2ZSUzRCUyMjElMjIlMjBhcyUzRCUyMmdlb21ldHJ5JTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbXhQb2ludCUyMHglM0QlMjIzMTYlMjIlMjB5JTNEJTIyLTE5MCUyMiUyMGFzJTNEJTIyc291cmNlUG9pbnQlMjIlMjAlMkYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NteFBvaW50JTIweCUzRCUyMjMwNiUyMiUyMHklM0QlMjItODAlMjIlMjBhcyUzRCUyMnRhcmdldFBvaW50JTIy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"></div>
+</div>
+</div>
+</div>
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span>Table 1. List of Equipment</span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+<tr>
+<th>Name / Type</th>
+<th>Working Capacity (where appropriate)</th>
+</tr>
+<tr>
+<td class="centred">Mixing Vessel</td>
+<td class="centred">Capacity: <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DeviceDefinition>
+                <property>
+                    ...
+                    <valueQuantity>
+                        <value value=&quot;1000&quot;/>
+                        <unit value=&quot;litres&quot;/>">1000 litres</span></td>
+</tr>
+<tr>
+<td class="centred">Receiving Tank</td>
+<td class="centred">Capacity: <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DeviceDefinition>
+                <property>
+                    ...
+                    <valueQuantity>
+                        <value value=&quot;1200&quot;/>
+                        <unit value=&quot;litres&quot;/>">1200 litres</span></td>
+</tr>
+<tr>
+<td class="centred">Blender</td>
+<td class="centred">Maximum capacity: <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DeviceDefinition>
+                <property>
+                    ...
+                    <valueQuantity>
+                        <value value=&quot;1000&quot;/>
+                        <unit value=&quot;litres&quot;/>">1000 litres</span></td>
+</tr>
+<tr>
+<td class="centred">Heated dryer</td>
+<td class="centred">Power: <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DeviceDefinition>
+                <property>
+                    ...
+                    <valueQuantity>
+                        <value value=&quot;3&quot;/>
+                        <unit value=&quot;kW&quot;/>">3 kW</span></td>
+</tr>
+<tr>
+<td class="centred">Rotating Impeller with 1.5mm screen</td>
+<td class="centred">Maximum Speed: <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DeviceDefinition>
+                <property>
+                    ...
+                    <valueQuantity>
+                        <value value=&quot;5000&quot;/>
+                        <unit value=&quot;RPM&quot;/>">5000 RPM</span></td>
+</tr>
+</table>
+</div><br style="line-height:6px;"></div>
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span>Table 2. In-Process and Quality Controls</span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+<tr>
+<th>Process Step (name)</th>
+<th>Parameter</th>
+<th>Acceptance Criteria</th>
+</tr>
+<tr>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <prefix value=&quot;1&quot;>">Step: </span><span>1</span></div>
+</td>
+<td class="centred"> Parameter - Capacity</td>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                        <extension url=&quot;value&quot;>
+                            <valueQuantity>
+                                <value value=&quot;750&quot;/>
+                                <unit value=&quot;litres&quot;/>"></span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                        <extension url=&quot;value&quot;>
+                            <valueQuantity>
+                                <value value=&quot;750&quot;/>
+                                <unit value=&quot;litres&quot;/>">750 litres</span></div>
+</td>
+</tr>
+<tr>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <prefix value=&quot;1&quot;>">Step: </span><span>1</span></div>
+</td>
+<td class="centred"> Parameter - Temperature</td>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                        <extension url=&quot;value&quot;>
+                            <valueQuantity>
+                                <value value=&quot;150&quot;/>
+                                <unit value=&quot;°C&quot;/>
+                                <system value=&quot;http://unitsofmeasure.org&quot;/>
+                                <code value=&quot;Cel&quot;/>"></span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                        <extension url=&quot;value&quot;>
+                            <valueQuantity>
+                                <value value=&quot;150&quot;/>
+                                <unit value=&quot;°C&quot;/>
+                                <system value=&quot;http://unitsofmeasure.org&quot;/>
+                                <code value=&quot;Cel&quot;/>">150 °C</span><span class="greyOff"> [Cel] (http://unitsofmeasure.org)</span></div>
+</td>
+</tr>
+<tr>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <prefix value=&quot;1&quot;>">Step: </span><span>1</span></div>
+</td>
+<td class="centred">Controls - pH</td>
+<td class="centred">pH must be in range 6.9 to 7.1</td>
+</tr>
+<tr>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <prefix value=&quot;2&quot;>">Step: </span><span>2</span></div>
+</td>
+<td class="centred"> Parameter - Maximum Temperature</td>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                        <extension url=&quot;value&quot;>
+                            <valueQuantity>
+                                <value value=&quot;40&quot;/>
+                                <unit value=&quot;°C&quot;/>
+                                <system value=&quot;http://unitsofmeasure.org&quot;/>
+                                <code value=&quot;Cel&quot;/>"></span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                        <extension url=&quot;value&quot;>
+                            <valueQuantity>
+                                <value value=&quot;40&quot;/>
+                                <unit value=&quot;°C&quot;/>
+                                <system value=&quot;http://unitsofmeasure.org&quot;/>
+                                <code value=&quot;Cel&quot;/>">40 °C</span><span class="greyOff"> [Cel] (http://unitsofmeasure.org)</span></div>
+</td>
+</tr>
+<tr>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <prefix value=&quot;2&quot;>">Step: </span><span>2</span></div>
+</td>
+<td class="centred">Controls - Water Content</td>
+<td class="centred">Under 2%</td>
+</tr>
+<tr>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <prefix value=&quot;3&quot;>">Step: </span><span>3</span></div>
+</td>
+<td class="centred"> Parameter - Rotational Speed</td>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                        <extension url=&quot;value&quot;>
+                            <valueQuantity>
+                                <value value=&quot;2500&quot;/>
+                                <unit value=&quot;rpm&quot;/>"></span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                        <extension url=&quot;value&quot;>
+                            <valueQuantity>
+                                <value value=&quot;2500&quot;/>
+                                <unit value=&quot;rpm&quot;/>">2500 rpm</span></div>
+</td>
+</tr>
+<tr>
+<td class="centred">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <prefix value=&quot;3&quot;>">Step: </span><span>3</span></div>
+</td>
+<td class="centred">Controls - Particle Size</td>
+<td class="centred">Under 200 microns</td>
+</tr>
+</table>
+</div><br style="line-height:6px;"></div>
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 ...
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -3232,7 +3224,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                             </valueQuantity>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -3283,11 +3275,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -3299,11 +3293,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;processing material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -3315,11 +3311,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -3340,7 +3338,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <text value=&quot;Control&quot;/>
                             </code>
                             <definitionCanonical value=&quot;ObservationDefinition/ControlTemperature&quot;/>
-                        </action-->"><span>Action</span><span class="summaryShowsOff"><span title="
+                        </action-->"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3403,7 +3401,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -3414,7 +3412,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -3630,7 +3628,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
             <PlanDefinition>
                 <action>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -3653,7 +3651,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -3667,7 +3665,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -3680,7 +3678,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;750&quot;/>
@@ -3690,7 +3688,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;750&quot;/>
@@ -3703,7 +3701,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
             <PlanDefinition>
                 <action>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -3728,7 +3726,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -3742,7 +3740,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -3755,7 +3753,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;150&quot;/>
@@ -3767,7 +3765,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;150&quot;/>
@@ -3775,9 +3773,18 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
                                 <code value=&quot;Cel&quot;/>">150 °C</span><span class="greyOff"> [Cel] (http://unitsofmeasure.org)</span></div>
 </div>
-<div class="indent planl3">
-					Documentation
-					<div><span title="
+<div class="indent planl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <documentation>
+                        <type value=&quot;specification-of&quot;/>
+                        <resourceReference>
+                            <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
+                        </resourceReference>">Documentation</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3786,9 +3793,9 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     <documentation>
                         <type value=&quot;specification-of&quot;>">Type: </span><span><span>specification-of</span></span></div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev)
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee)
 
 <Bundle>
     <entry>
@@ -3801,7 +3808,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                         <url value=&quot;https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png&quot;/>
                     </attachment>
                 </content>" id="DocumentReference-DocumentReference-image">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/documentreference.html#tt-uml">R6</a>]</span><div class="debugOff">id: DocumentReference-image</div>
-<div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev</div>
+<div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee</div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -3826,7 +3833,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3870,7 +3877,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;Blender&quot;/>">Blender<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/equipmentClass)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: mixer)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494d)
+<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: mixer)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494d)
 
 <Bundle>
     <entry>
@@ -3924,8 +3931,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     <valueQuantity>
                         <value value=&quot;1000&quot;/>
                         <unit value=&quot;litres&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3971,8 +3977,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
-</div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3981,11 +3986,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -4018,8 +4025,20 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;StartingMaterial&quot;/>">StartingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;starting material&quot;>">Display: starting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: startingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: startingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153)
 
 <Bundle>
     <entry>
@@ -4179,7 +4198,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4188,11 +4207,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;processing material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -4225,8 +4246,20 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;ProcessingMaterial&quot;/>">ProcessingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;processing material&quot;>">Display: processing material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: processingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: processingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155)
 
 <Bundle>
     <entry>
@@ -4375,7 +4408,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4384,11 +4417,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -4421,19 +4456,43 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;ResultingMaterial&quot;/>">ResultingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;resulting material&quot;>">Display: resulting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: StelbatololAqueousSolution)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: StelbatololAqueousSolution)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq 
 
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;StelbatololAqueousSolution&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                </meta>
                 <name>
                     <name value=&quot;Stelbatolol Aqueous Solution&quot;/>
                 </name>" id="SubstanceDefinition-StelbatololAqueousSolution">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol Aqueous Solution</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: StelbatololAqueousSolution</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq</span></div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
 <div><span title="
@@ -4454,21 +4513,22 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 ...
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -4522,11 +4582,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -4538,11 +4600,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -4551,7 +4615,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <display value=&quot;ResultingMaterial&quot;/>
                             </coding>
                         </role>
-                    </participant>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </participant>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4615,7 +4679,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -4626,7 +4690,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -4819,7 +4883,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
             <PlanDefinition>
                 <action>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -4847,7 +4911,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -4863,7 +4927,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -4877,7 +4941,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;40&quot;/>
@@ -4889,7 +4953,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;40&quot;/>
@@ -4897,9 +4961,18 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
                                 <code value=&quot;Cel&quot;/>">40 °C</span><span class="greyOff"> [Cel] (http://unitsofmeasure.org)</span></div>
 </div>
-<div class="indent planl3">
-					Documentation
-					<div><span title="
+<div class="indent planl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <documentation>
+                        <type value=&quot;specification-of&quot;/>
+                        <resourceReference>
+                            <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
+                        </resourceReference>">Documentation</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4908,9 +4981,9 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     <documentation>
                         <type value=&quot;specification-of&quot;>">Type: </span><span><span>specification-of</span></span></div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev)
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee)
 
 <Bundle>
     <entry>
@@ -4923,7 +4996,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                         <url value=&quot;https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png&quot;/>
                     </attachment>
                 </content>" id="DocumentReference-DocumentReference-image">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/documentreference.html#tt-uml">R6</a>]</span><div class="debugOff">id: DocumentReference-image</div>
-<div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev</div>
+<div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee</div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -4948,7 +5021,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4992,7 +5065,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;Dryer&quot;/>">Dryer<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/equipmentClass)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: dryer)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bbd9494c)
+<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: dryer)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bbd9494c)
 
 <Bundle>
     <entry>
@@ -5048,8 +5121,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     <valueQuantity>
                         <value value=&quot;3&quot;/>
                         <unit value=&quot;kW&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5095,8 +5167,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
-</div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5105,11 +5176,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololAqueousSolution&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -5142,19 +5215,43 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;StartingMaterial&quot;/>">StartingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;starting material&quot;>">Display: starting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: StelbatololAqueousSolution)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: StelbatololAqueousSolution)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq 
 
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;StelbatololAqueousSolution&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                </meta>
                 <name>
                     <name value=&quot;Stelbatolol Aqueous Solution&quot;/>
                 </name>" id="SubstanceDefinition-StelbatololAqueousSolution">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol Aqueous Solution</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: StelbatololAqueousSolution</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq</span></div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
 <div><span title="
@@ -5173,7 +5270,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5182,11 +5279,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -5219,20 +5318,44 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;ResultingMaterial&quot;/>">ResultingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;resulting material&quot;>">Display: resulting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: StelbatololGranules)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: StelbatololGranules)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq 
 
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;StelbatololGranules&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                </meta>
                 <name>
                     <name value=&quot;Stelbatolol Granules&quot;/>
                     <!-- #4 -->
                 </name>" id="SubstanceDefinition-StelbatololGranules">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol Granules</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: StelbatololGranules</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq</span></div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
 <div><span title="
@@ -5253,21 +5376,22 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 ...
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <!--extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;-->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -5317,11 +5441,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -5333,11 +5459,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/Stelbatolol&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -5346,7 +5474,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <display value=&quot;ResultingMaterial&quot;/>
                             </coding>
                         </role>
-                    </participant>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </participant>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5410,7 +5538,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -5421,7 +5549,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processStepScale&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
                         <valueCoding>
                             <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
                             <code value=&quot;ABCD&quot;/>
@@ -5612,7 +5740,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
             <PlanDefinition>
                 <action>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -5635,7 +5763,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -5649,7 +5777,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -5662,7 +5790,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;2500&quot;/>
@@ -5672,15 +5800,24 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;2500&quot;/>
                                 <unit value=&quot;rpm&quot;/>">2500 rpm</span></div>
 </div>
-<div class="indent planl3">
-					Documentation
-					<div><span title="
+<div class="indent planl3"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    ...
+                    <documentation>
+                        <type value=&quot;specification-of&quot;/>
+                        <resourceReference>
+                            <reference value=&quot;DocumentReference/DocumentReference-image&quot;/>
+                        </resourceReference>">Documentation</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5689,9 +5826,9 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                     <documentation>
                         <type value=&quot;specification-of&quot;>">Type: </span><span><span>specification-of</span></span></div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev)
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee)
 
 <Bundle>
     <entry>
@@ -5704,7 +5841,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                         <url value=&quot;https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png&quot;/>
                     </attachment>
                 </content>" id="DocumentReference-DocumentReference-image">Document</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/documentreference.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/documentreference.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/documentreference.html#tt-uml">R6</a>]</span><div class="debugOff">id: DocumentReference-image</div>
-<div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev</div>
+<div class="debugOff"> fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee</div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -5729,7 +5866,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
 </div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5776,16 +5913,17 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DocumentReference-dxpq
                                 <!-- #88 Equipment class -->
                                 <display value=&quot;Compression Milling&quot;/>">Compression Milling<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/equipmentClass)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: devicedefinition-dxpq-ex1)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c)
-Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq 
+<div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: devicedefinition-dxpq-ex1)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq 
 
 <Bundle>
     <entry>
         <resource>
             <DeviceDefinition>
                 <id value=&quot;devicedefinition-dxpq-ex1&quot;/>
+                <!-- REMOVE IN BUNDLE -->
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq&quot;/>
                 </meta>
                 <deviceName>
                     <name value=&quot;Rotating Impeller with 1.5mm screen&quot;/>
@@ -5808,6 +5946,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
                 </property>" id="DeviceDefinition-devicedefinition-dxpq-ex1">Device</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/devicedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/devicedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/devicedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: devicedefinition-dxpq-ex1</div>
 <div class="debugOff"> fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DeviceDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq</span></div>
 <div class="summaryHiddenOff"></div>
 <div><span title="
 <Bundle>
@@ -5839,8 +5984,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
                     <valueQuantity>
                         <value value=&quot;5000&quot;/>
                         <unit value=&quot;RPM&quot;/>
-                    </valueQuantity>">Property</span><div class="indent devdl3">
-<div><span title="
+                    </valueQuantity>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5888,8 +6032,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
 </div>
 </div>
 </div>
-</div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5898,11 +6041,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/StelbatololGranules&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;starting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -5935,20 +6080,44 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;StartingMaterial&quot;/>">StartingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;starting material&quot;>">Display: starting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: StelbatololGranules)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: StelbatololGranules)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq 
 
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;StelbatololGranules&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                </meta>
                 <name>
                     <name value=&quot;Stelbatolol Granules&quot;/>
                     <!-- #4 -->
                 </name>" id="SubstanceDefinition-StelbatololGranules">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol Granules</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: StelbatololGranules</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq</span></div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
 <div><span title="
@@ -5967,7 +6136,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5976,11 +6145,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/Stelbatolol&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;resulting material&quot;/>
+                            <!-- added to suppress IG warning about empty reference -->
                         </typeReference>
                         <role>
                             <coding>
@@ -6013,8 +6184,20 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
                                 <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
                                 <code value=&quot;example&quot;/>
                                 <display value=&quot;ResultingMaterial&quot;/>">ResultingMaterial<span class="greyOff"> [example]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;resulting material&quot;>">Display: resulting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: Stelbatolol)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
 
 <Bundle>
@@ -6181,11 +6364,13 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="debugOff"></div>
 </div>
 </div>
 </body>
-<style>
+<style onLoad="resolveGlobalLinksThatCanBeLocal();">
 
 @media all {
 
@@ -6282,7 +6467,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
     .adverseEventl2 { background-Color:#d9cad1; }
     .adverseEventl3 { background-Color:#d9d4d6; }
 
-    .ppd { background-Color:#b6d7a8; width:60%; }
+    .ppd { background-Color:#b6d7a8; width:70%; }
     .ppdl2, .ppdpackage { background-Color:#c2deb6 }
     .ppdl3, .ppdpackageitem { background-Color:#daf0d1 }
     .ppdl4  { background-Color:#e4f2df }
@@ -6526,7 +6711,7 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
 			}
 			
 			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit"); // header from tabular mode
+			var nodes = document.querySelectorAll(".summaryUnit");
 			for (var i=0; i < nodes.length; i++) {
 				var node = nodes[i];
 				var span = document.createElement('span');
@@ -6728,6 +6913,26 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
 		    else if  ( g < 0 ) g = 0;
 		
 		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+		}
+
+		function resolveGlobalLinksThatCanBeLocal()
+		{
+			var nodes = document.querySelectorAll('.external-link');
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				var href = node.href;
+   				var urlPath = href.split('?url=').pop();
+   				if (urlPath != href) {
+   					var localId = node.getAttribute("localLink");
+	   				var localElement = document.getElementById(localId);
+	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
+	   					node.href= '#' + localId;
+	   					node.removeAttribute("localLink");
+	   					node.removeAttribute("class"); // remove the external-link class
+	   					node.title = node.title.replace(" (via server)"," (in page)");
+	   				}
+			   	 }
+    			}
 		}
 
 		function toggleSummary(item)
@@ -6963,4 +7168,5 @@ Profile: http://hl7.org/fhir/uv/dx-pq/StructureDefinition/DeviceDefinition-dxpq
 		General Bundle:false
 		Not patient related:true
 		=>Patient Centric Mode:false
-		SubstanceDef Centric Mode:false--></html>
+		SubstanceDef Centric Mode:false
+		Assumed profile:--></html>

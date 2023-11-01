@@ -1,27 +1,30 @@
 The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures.
-
 <html>
 <body>
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
+<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: substance-analytical-procedure)
-Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-analytical-procedure-dxpq-ex2-sub)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq 
 
 <Bundle>
-    <id value=&quot;substance-analytical-procedure&quot;/>
+    <id value=&quot;bundle-analytical-procedure-dxpq-ex2-sub&quot;/>
+    <!--   <id value=&quot;substance-analytical-procedure&quot;/>-->
     <meta>
-        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/analytical-procedure&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
         <fullUrl value=&quot;urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
         <resource>
             <PlanDefinition>
+                <!-- focal resource -->
                 <id value=&quot;analyticalProcedure&quot;/>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Analytical Procedure&quot;/>
                 <type>
                     <coding>
@@ -40,7 +43,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -54,7 +57,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <valueString value=&quot;Same as for blue light&quot;/>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -68,7 +71,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <valueString value=&quot;MIE&quot;/>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -102,7 +105,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     </participant-->
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/dispersant&quot;/>
                                 </valueReference>
@@ -118,7 +121,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -212,6 +215,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleSize&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e&quot;/>
                 <title value=&quot;Particle Size&quot;/>
                 <status value=&quot;active&quot;/>
                 <description value=&quot;Number of Analyses: 1 replicate for each sample preparation&quot;/>
@@ -243,6 +247,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleSizeObscuration&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e&quot;/>
                 <title value=&quot;Obscuration&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -255,7 +260,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                 </code>
                 <qualifiedValue>
                     <range>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueTarget&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq&quot;>
                             <valueQuantity>
                                 <value value=&quot;15&quot;/>
                                 <unit value=&quot;%&quot;/>
@@ -279,6 +284,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleRI&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e&quot;/>
                 <title value=&quot;Particle refractive index&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -309,6 +315,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleSizeRSD&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e&quot;/>
                 <title value=&quot;Particle Size RSD&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -320,7 +327,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <text value=&quot;Particle Size RSD&quot;/>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;The %RSD for the D(v, 0.9) must be not more than 15%&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -332,6 +339,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimendefinition&quot;/>
+                <url value=&quot;http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2&quot;/>
                 <status value=&quot;active&quot;/>
                 <description value=&quot;Number of Preparations: 3&quot;/>
             </SpecimenDefinition>
@@ -350,16 +358,21 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                 </classification>
             </DeviceDefinition>
         </resource>
-    </entry>" id="Bundle-substance-analytical-procedure">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-analytical-procedure</div>
+    </entry>" id="Bundle-bundle-analytical-procedure-dxpq-ex2-sub">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-analytical-procedure-dxpq-ex2-sub</div>
 <div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq</span></div>
 <div><span title="
 <Bundle>
     ...
     <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
 </div>
 </div>
+<div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: analyticalProcedure fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
+<div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: analyticalProcedure fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
 
 <Bundle>
     <entry>
@@ -391,7 +404,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
     <entry>
         <resource>
             <PlanDefinition>
+                <!-- focal resource -->
                 <id value=&quot;analyticalProcedure&quot;/>
+                <url value=&quot;http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Analytical Procedure&quot;/>
                 <type>
                     <coding>
@@ -410,7 +425,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -424,7 +439,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <valueString value=&quot;Same as for blue light&quot;/>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -438,7 +453,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <valueString value=&quot;MIE&quot;/>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -472,7 +487,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     </participant-->
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/dispersant&quot;/>
                                 </valueReference>
@@ -488,7 +503,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -534,6 +549,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     </action>
                 </action>" id="PlanDefinition-analyticalProcedure">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: analyticalProcedure</div>
 <div class="debugOff"> fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f</div>
 <div><span title="
 <Bundle>
     <entry>
@@ -586,14 +602,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                 ...
                 <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 ...
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -607,7 +623,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <valueString value=&quot;Same as for blue light&quot;/>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -621,7 +637,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <valueString value=&quot;MIE&quot;/>
                         </extension>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -655,7 +671,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     </participant-->
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/dispersant&quot;/>
                                 </valueReference>
@@ -671,7 +687,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -714,7 +730,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                         <code>
                             <text value=&quot;Reporting&quot;/>
                         </code>
-                    </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                    </action>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -736,7 +752,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -756,7 +772,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -770,7 +786,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -783,7 +799,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         ...
                         <extension url=&quot;valueText&quot;>
                             <valueString value=&quot;Same as for blue light&quot;/>">Value Text: </span><span>Same as for blue light</span></div>
@@ -795,7 +811,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
             <PlanDefinition>
                 <action>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -815,7 +831,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -829,7 +845,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -842,7 +858,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         ...
                         <extension url=&quot;valueText&quot;>
                             <valueString value=&quot;MIE&quot;/>">Value Text: </span><span>MIE</span></div>
@@ -854,7 +870,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
             <PlanDefinition>
                 <action>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -878,7 +894,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -892,7 +908,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
@@ -905,7 +921,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;1&quot;/>
@@ -916,14 +932,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/processParameters&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;1&quot;/>
                                 <unit value=&quot;minute&quot;/>
                                 <!-- todo ucum -->">1 minute</span></div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -932,7 +948,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/dispersant&quot;/>
                                 </valueReference>
@@ -970,7 +986,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                                 <code value=&quot;dispersant&quot;/>
                                 <display value=&quot;Dispersant&quot;/>">Dispersant<span class="greyOff"> [dispersant]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: analyticalProcedure fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: dispersant)(fullUrl: urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8135565f82)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: analyticalProcedure fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: dispersant)(fullUrl: urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8135565f82)
 
 <Bundle>
     <entry>
@@ -1016,8 +1032,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     </type>
                     <valueCodeableConcept>
                         <text value=&quot;Refer to local laboratory expiration date (may be extended with supporting data)&quot;/>
-                    </valueCodeableConcept>">Property</span><div class="indent sbddetails2">
-<div><span title="
+                    </valueCodeableConcept>">Property</span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1037,12 +1052,11 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
 </div>
 </div>
 </div>
-</div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="indent org"><span title="
+<div class="indent planl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1051,7 +1065,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://accumulus.org/fhir/extension/manufacturingParticipant&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
@@ -1089,7 +1103,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: analyticalProcedure fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterial)(fullUrl: urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f82)
+<div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: analyticalProcedure fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterial)(fullUrl: urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f82)
 
 <Bundle>
     <entry>
@@ -1119,7 +1133,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1131,7 +1145,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                         <action>
                             <title value=&quot;Instructions&quot;/>
                             <description value=&quot;Vortex approximately 30 seconds. Mix briefly by vortexing immediately before use.&quot;/>
-                        </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                        </action>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1148,7 +1162,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <action>
                         <title value=&quot;Sample Preparation&quot;>">Title: </span><span>Sample Preparation</span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1158,7 +1172,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                         ...
                         <action>
                             <title value=&quot;Instructions&quot;/>
-                            <description value=&quot;Vortex approximately 30 seconds. Mix briefly by vortexing immediately before use.&quot;/>"><span>Action</span><span class="summaryShowsOff"><span title="
+                            <description value=&quot;Vortex approximately 30 seconds. Mix briefly by vortexing immediately before use.&quot;/>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1189,7 +1203,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1203,7 +1217,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                                 <text value=&quot;Test&quot;/>
                             </code>
                             <definitionCanonical value=&quot;ObservationDefinition/ParticleSize&quot;/>
-                        </action>"><span>Action</span><span class="summaryShowsOff"><span title="
+                        </action>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1220,7 +1234,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <action>
                         <title value=&quot;Sample Analysis&quot;>">Title: </span><span>Sample Analysis</span></div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1232,7 +1246,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/ParticleSize&quot;/>"><span>Action</span><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <definitionCanonical value=&quot;ObservationDefinition/ParticleSize&quot;/>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1244,13 +1258,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: analyticalProcedure fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ParticleSize)(fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: analyticalProcedure fullUrl: urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ParticleSize)(fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleSize&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e&quot;/>
                 <title value=&quot;Particle Size&quot;/>
                 <status value=&quot;active&quot;/>
                 <description value=&quot;Number of Analyses: 1 replicate for each sample preparation&quot;/>
@@ -1282,6 +1297,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
                         <valueCode value=&quot;unsupported&quot;/>">Data Absent Reason: </span><span>unsupported</span>)</div></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ParticleSize</div>
 <div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e</div>
+<div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e</div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1344,8 +1360,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimendefinition&quot;/>
+                <url value=&quot;http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2&quot;/>
                 <status value=&quot;active&quot;/>
-                <description value=&quot;Number of Preparations: 3&quot;/>" id="SpecimenDefinition-specimendefinition">Specimen Definition</span><div></div></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/specimendefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/specimendefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/specimendefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: specimendefinition</div><div class="debugOff"> fullUrl: urn:uuid:3a0cde98-4a73-6d67-1dfc-08e3fc9646a2</div><div class="summaryHiddenOff"><span title="
+                <description value=&quot;Number of Preparations: 3&quot;/>" id="SpecimenDefinition-specimendefinition">Specimen Definition</span><div></div></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/specimendefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/specimendefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/specimendefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: specimendefinition</div><div class="debugOff"> fullUrl: urn:uuid:3a0cde98-4a73-6d67-1dfc-08e3fc9646a2</div><div class="debugOff">url (canonical): http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2</div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1366,6 +1383,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleSize&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e&quot;/>
                 <title value=&quot;Particle Size&quot;/>
                 <status value=&quot;active&quot;/>
                 <description value=&quot;Number of Analyses: 1 replicate for each sample preparation&quot;/>
@@ -1388,7 +1406,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                 </hasMember>
                 <hasMember>
                     <reference value=&quot;ObservationDefinition/ParticleSizeRSD&quot;/>
-                </hasMember>">Device</span><div class="indent devd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (ObservationDefinition/device, id: ParticleSize fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: laser)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9495c)
+                </hasMember>">Device</span><div class="indent devd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (ObservationDefinition/device, id: ParticleSize fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046eurl (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: laser)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9495c)
 
 <Bundle>
     <entry>
@@ -1435,13 +1453,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
             <ObservationDefinition>
                 ...
                 <hasMember>
-                    <reference value=&quot;ObservationDefinition/ParticleSizeRSD&quot;/>">Member</span><div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef"><div class="debugOff"><span>Found a parent (ObservationDefinition/hasMember, id: ParticleSize fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ParticleSizeObscuration)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e)
+                    <reference value=&quot;ObservationDefinition/ParticleSizeRSD&quot;/>">Member</span><div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef"><div class="debugOff"><span>Found a parent (ObservationDefinition/hasMember, id: ParticleSize fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046eurl (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ParticleSizeObscuration)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleSizeObscuration&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e&quot;/>
                 <title value=&quot;Obscuration&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -1454,7 +1473,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                 </code>
                 <qualifiedValue>
                     <range>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueTarget&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq&quot;>
                             <valueQuantity>
                                 <value value=&quot;15&quot;/>
                                 <unit value=&quot;%&quot;/>
@@ -1478,7 +1497,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Obscuration&quot;/>">Obscuration<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Obscuration (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ParticleSizeObscuration</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Obscuration&quot;/>">Obscuration<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Obscuration (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ParticleSizeObscuration</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div><div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1519,7 +1538,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                 ...
                 <qualifiedValue>
                     <range>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueTarget&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq&quot;>
                             <valueQuantity>
                                 <value value=&quot;15&quot;/>
                                 <unit value=&quot;%&quot;/>
@@ -1534,8 +1553,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <unit value=&quot;%&quot;/>
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -1543,7 +1562,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                 ...
                 <qualifiedValue>
                     <range>
-                        <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueTarget&quot;>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq&quot;>
                             <valueQuantity>
                                 <value value=&quot;15&quot;/>
                                 <unit value=&quot;%&quot;/>
@@ -1557,8 +1576,27 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <value value=&quot;30&quot;/>
                             <unit value=&quot;%&quot;/>
                         </high>
-                    </range>">
-						Range: from <span title="
+                    </range>"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;15&quot;/>
+                                <unit value=&quot;%&quot;/>
+                            </valueQuantity>
+                        </extension>
+                        <low>
+                            <value value=&quot;10&quot;/>
+                            <unit value=&quot;%&quot;/>
+                        </low>
+                        <high>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;%&quot;/>
+                        </high>">Range: </span>from <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1578,13 +1616,34 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                         ...
                         <high>
                             <value value=&quot;30&quot;/>
-                            <unit value=&quot;%&quot;/>">30%</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef"><div class="debugOff"><span>Found a parent (ObservationDefinition/hasMember, id: ParticleSize fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ParticleRI)(fullUrl: urn:uuid:12e7e672-41a6-4036-3c1f-b8ba6a7d045e)
+                            <unit value=&quot;%&quot;/>">30%</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;15&quot;/>
+                                <unit value=&quot;%&quot;/>">Target: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq&quot;>
+                            <valueQuantity>
+                                <value value=&quot;15&quot;/>
+                                <unit value=&quot;%&quot;/>">15%</span></div></div></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef"><div class="debugOff"><span>Found a parent (ObservationDefinition/hasMember, id: ParticleSize fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046eurl (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ParticleRI)(fullUrl: urn:uuid:12e7e672-41a6-4036-3c1f-b8ba6a7d045e)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleRI&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e&quot;/>
                 <title value=&quot;Particle refractive index&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -1615,7 +1674,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Refractive index&quot;/>">Refractive index<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Particle refractive index</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ParticleRI</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-41a6-4036-3c1f-b8ba6a7d045e</div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Refractive index&quot;/>">Refractive index<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Particle refractive index</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ParticleRI</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-41a6-4036-3c1f-b8ba6a7d045e</div><div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e</div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1665,8 +1724,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <!-- unitless -->
                         </high>
                     </range>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
@@ -1682,8 +1741,21 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                             <value value=&quot;1.75&quot;/>
                             <!-- unitless -->
                         </high>
-                    </range>">
-						Range: from <span title="
+                    </range>"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <range>
+                        <low>
+                            <value value=&quot;1.75&quot;/>
+                            <!-- unitless -->
+                        </low>
+                        <high>
+                            <value value=&quot;1.75&quot;/>
+                            <!-- unitless -->
+                        </high>">Range: </span>from <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1702,13 +1774,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                         ...
                         <high>
                             <value value=&quot;1.75&quot;/>
-                            <!-- unitless -->">1.75</span></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef"><div class="debugOff"><span>Found a parent (ObservationDefinition/hasMember, id: ParticleSize fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ParticleSizeRSD)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e)
+                            <!-- unitless -->">1.75</span></div></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef"><div class="debugOff"><span>Found a parent (ObservationDefinition/hasMember, id: ParticleSize fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046eurl (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ParticleSizeRSD)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e)
 
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;ParticleSizeRSD&quot;/>
+                <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e&quot;/>
                 <title value=&quot;Particle Size RSD&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
@@ -1720,7 +1793,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <text value=&quot;Particle Size RSD&quot;/>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;The %RSD for the D(v, 0.9) must be not more than 15%&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-ParticleSizeRSD">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1732,7 +1805,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                     <coding>
                         <system value=&quot;http://dummy.loinc.org&quot;/>
                         <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Particle Size RSD&quot;/>">Particle Size RSD<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Particle Size RSD</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ParticleSizeRSD</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e</div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Particle Size RSD&quot;/>">Particle Size RSD<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Particle Size RSD</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ParticleSizeRSD</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e</div><div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e</div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1772,18 +1845,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;The %RSD for the D(v, 0.9) must be not more than 15%&quot;/>
                     </extension>">
-				Acceptable Value
-				<div title="
+		Acceptable Value
+		<div title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;The %RSD for the D(v, 0.9) must be not more than 15%&quot;/>
                     </extension>"><div><span title="
 <Bundle>
@@ -1791,14 +1864,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueText&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
                         <valueString value=&quot;The %RSD for the D(v, 0.9) must be not more than 15%&quot;/>">Text: </span><span>The %RSD for the D(v, 0.9) must be not more than 15%</span></div></div></div><div class="summaryHiddenOff"></div></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1810,7 +1883,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                         <description value=&quot;The particle size result is calculated automatically by the instrument software for each sample.&quot;/>
                         <code>
                             <text value=&quot;Calculation&quot;/>
-                        </code>"><span>Action</span><span class="summaryShowsOff"><span title="
+                        </code>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1847,7 +1920,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                         <description value=&quot;The particle size result is calculated automatically by the instrument software for each sample.&quot;>">Description: </span><span>The particle size result is calculated automatically by the instrument software for each sample.</span></div>
 </div>
 </div>
-<div class="indent summaryUnit" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1859,7 +1932,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
                         <description value=&quot;Report the average value as per specification&quot;/>
                         <code>
                             <text value=&quot;Reporting&quot;/>
-                        </code>"><span>Action</span><span class="summaryShowsOff"><span title="
+                        </code>"><a id="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1904,11 +1977,13 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
+</div>
+</div>
 <div class="debugOff"></div>
 </div>
 </div>
 </body>
-<style>
+<style onLoad="resolveGlobalLinksThatCanBeLocal();">
 
 @media all {
 
@@ -2005,7 +2080,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
     .adverseEventl2 { background-Color:#d9cad1; }
     .adverseEventl3 { background-Color:#d9d4d6; }
 
-    .ppd { background-Color:#b6d7a8; width:60%; }
+    .ppd { background-Color:#b6d7a8; width:70%; }
     .ppdl2, .ppdpackage { background-Color:#c2deb6 }
     .ppdl3, .ppdpackageitem { background-Color:#daf0d1 }
     .ppdl4  { background-Color:#e4f2df }
@@ -2249,7 +2324,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
 			}
 			
 			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit"); // header from tabular mode
+			var nodes = document.querySelectorAll(".summaryUnit");
 			for (var i=0; i < nodes.length; i++) {
 				var node = nodes[i];
 				var span = document.createElement('span');
@@ -2451,6 +2526,26 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
 		    else if  ( g < 0 ) g = 0;
 		
 		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+		}
+
+		function resolveGlobalLinksThatCanBeLocal()
+		{
+			var nodes = document.querySelectorAll('.external-link');
+			for (var i=0; i < nodes.length; i++) {
+				var node = nodes[i];
+				var href = node.href;
+   				var urlPath = href.split('?url=').pop();
+   				if (urlPath != href) {
+   					var localId = node.getAttribute("localLink");
+	   				var localElement = document.getElementById(localId);
+	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
+	   					node.href= '#' + localId;
+	   					node.removeAttribute("localLink");
+	   					node.removeAttribute("class"); // remove the external-link class
+	   					node.title = node.title.replace(" (via server)"," (in page)");
+	   				}
+			   	 }
+    			}
 		}
 
 		function toggleSummary(item)
@@ -2686,4 +2781,5 @@ Profile: http://accumulus.org/fhir/dx-cmc/analytical-procedure
 		General Bundle:false
 		Not patient related:true
 		=>Patient Centric Mode:false
-		SubstanceDef Centric Mode:true--></html>
+		SubstanceDef Centric Mode:true
+		Assumed profile:--></html>
