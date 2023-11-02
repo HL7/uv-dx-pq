@@ -859,7 +859,7 @@
 
         <!--Building Block Examples -->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-batch-prod"/>
             </reference>
@@ -868,9 +868,9 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-batch-sub"/>
             </reference>
@@ -879,9 +879,9 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
         
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-characterization-sub"/>
             </reference>
@@ -890,9 +890,9 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
         
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-impurities-prod"/>
             </reference>
@@ -901,9 +901,9 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
         
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-process-validation-prod"/>
             </reference>
@@ -912,7 +912,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
         
         <resource>
             <reference>
@@ -925,7 +925,7 @@
             <groupingId value="building-blocks-2"/>
         </resource>
         
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-sub"/>
             </reference>
@@ -934,7 +934,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
         
         
         
