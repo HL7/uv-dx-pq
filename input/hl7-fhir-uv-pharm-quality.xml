@@ -116,6 +116,9 @@
             <name value="Building Blocks"/>
             <description value="FHIR artifacts used across many PQ domains."/>
         </grouping>
+        <grouping id="building-blocks-2">
+            <name value="Building Blocks Examples"/>
+        </grouping>
         <grouping id="extensions1">
             <name value="Extensions"/>
         </grouping>
@@ -873,7 +876,7 @@
             <description value="PlanDefinition plandefinition-dxpq-ex1-validation-protocol"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -884,7 +887,7 @@
             <description value="PlanDefinition - dxPQ - Example 2, Manufacturing Plan"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -895,7 +898,7 @@
             <description value="PlanDefinition - dxPQ - Example 3, Drug Specification"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
         
         <resource>
@@ -906,7 +909,7 @@
             <description value="PlanDefinition - dxPQ - Example 4, Manufacturing Process"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
         
         <resource>
@@ -917,7 +920,7 @@
             <description value="PlanDefinition - dxPQ - Example 5, Stability Study Protocol"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
 
@@ -929,7 +932,7 @@
             <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
         
         <resource>
@@ -940,7 +943,7 @@
             <description value="ObservationDefinition - Test Method dx-PQ - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
 <!--        <resource>
@@ -951,7 +954,7 @@
             <description value="Observation-simple-dxpq - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>-->
 
 
@@ -963,7 +966,7 @@
             <description value="Observation-test-result-dxpq - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
         
         
@@ -975,7 +978,7 @@
             <description value="Observation-test-result-dxpq - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -986,7 +989,7 @@
             <description value="Ingredient - dxpq - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1008,7 +1011,7 @@
             <description value="Substance - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <!--New Examples for wave 2-->
@@ -1020,7 +1023,7 @@
             <description value="PackagedProductDefinition dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1031,7 +1034,7 @@
             <description value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1042,7 +1045,7 @@
             <description value="DeviceDefinition dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
 
