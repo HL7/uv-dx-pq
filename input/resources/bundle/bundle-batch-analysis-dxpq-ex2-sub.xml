@@ -1099,7 +1099,7 @@
             <id value="81f552f9-8458-3cf4-8379-eea5417a9de2"/>
             <!-- was observationDescription -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             </meta>
             <instantiatesReference>
                <!--ObservationDefinition/Description-->
