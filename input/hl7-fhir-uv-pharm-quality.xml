@@ -1652,20 +1652,10 @@
         </resource>
 
         <!-- Additional Observation Examples (examples4)-->
-<!--        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-accelerated40c-3-1"/>
-            </reference>
-            <name value="observation-test-result-accelerated40c-3-1"/>
-            <description value="observation-test-result-accelerated40c-3-1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="examples4"/>
-        </resource>-->
 
         <resource>
             <reference>
-                <reference value="observation-test-result-longterm25c-initial-1"/>
+                <reference value="Observation/observation-test-result-longterm25c-initial-1"/>
             </reference>
             <name value="observation-test-result-longterm25c-initial-1"/>
             <description value="observation-test-result-longterm25c-initial-1"/>
@@ -1695,39 +1685,6 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-<!--
-        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-longterm25c-18m-1"/>
-            </reference>
-            <name value="observation-test-result-longterm25c-18m-1"/>
-            <description value="observation-test-result-longterm25c-18m-1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="examples4"/>
-        </resource>-->
-
-<!--        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-longterm25c-18m-2"/>
-            </reference>
-            <name value="observation-test-result-longterm25c-18m-2"/>
-            <description value="observation-test-result-longterm25c-18m-2"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="examples4"/>
-        </resource>-->
-
-<!--        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-longterm25c-18m-3"/>
-            </reference>
-            <name value="observation-test-result-longterm25c-18m-3"/>
-            <description value="observation-test-result-longterm25c-18m-3"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="examples4"/>
-        </resource>-->
 
         <resource>
             <reference>
@@ -1827,6 +1784,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
+        
         <!-- Additional SpecimenDefinition Examples (examples2)-->
         <resource>
             <reference>
