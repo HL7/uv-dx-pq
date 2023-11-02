@@ -1,89 +1,88 @@
-<resource>
-   <DiagnosticReport>
-      <!--studyResultsReport-->
-      <!--      <id value="54c8e8dc-9a19-0dc2-910e-d5a05d6ba003"/> from bundle-drug-substance-stability-dxpq-ex1-->
-      <id value="diagnosticreport-drug-analysis-pq-stability-sub"/>
-      <meta>
-         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-      </meta>
-      <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
-         <valueReference>
-            <!--PlanDefinition/stabilityStudyProtocol-->
-            <reference value="PlanDefinition/c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
-         </valueReference>
-      </extension>
-      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-dxpq">
-         <valueCodeableConcept>
-            <!-- #223 -->
-            <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then 
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+   <!--studyResultsReport-->
+   <!--      <id value="54c8e8dc-9a19-0dc2-910e-d5a05d6ba003"/> from bundle-drug-substance-stability-dxpq-ex1-->
+   <id value="diagnosticreport-drug-analysis-pq-stability-sub"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+      <valueReference>
+         <!--PlanDefinition/stabilityStudyProtocol-->
+         <reference value="PlanDefinition/c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
+      </valueReference>
+   </extension>
+   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-dxpq">
+      <valueCodeableConcept>
+         <!-- #223 -->
+         <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then 
                             have no place to put a context. Ideally this would be a code/code pair. 
                             Code says "statistical model", code (or text) then says what it is -->
-            <text value="information about statistical model utilized to interpret stability study results"/>
-         </valueCodeableConcept>
-      </extension>
-      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-dxpq">
+         <text value="information about statistical model utilized to interpret stability study results"/>
+      </valueCodeableConcept>
+   </extension>
+   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-dxpq">
+      <valueCodeableConcept>
+         <!-- #227 -->
+         <!-- Considered ObservatioDefinition.usageContext -->
+         <text value="Horizontal"/>
+      </valueCodeableConcept>
+   </extension>
+   <identifier>
+      <system value="https://eudract.europa.eu/example/identifier"/>
+      <value value="PLO555"/>
+   </identifier>
+   <status value="final"/>
+   <code>
+      <coding>
+         <system value="http://accumulus.org/fhir/code/reportType"/>
+         <code value="111"/>
+         <display value="Stability Study Report"/>
+      </coding>
+   </code>
+   <effectiveDateTime value="2019-09-08">
+      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-dxpq">
          <valueCodeableConcept>
-            <!-- #227 -->
-            <!-- Considered ObservatioDefinition.usageContext -->
-            <text value="Horizontal"/>
+            <coding>
+               <system value="http://accumulus.org/fhir/code/timePointDescription"/>
+               <code value="222"/>
+               <display value="Delayed Start Code"/>
+            </coding>
+            <text value="Refrigerated delayed testing"/>
          </valueCodeableConcept>
       </extension>
-      <identifier>
-         <system value="https://eudract.europa.eu/example/identifier"/>
-         <value value="PLO555"/>
-      </identifier>
-      <status value="final"/>
-      <code>
-         <coding>
-            <system value="http://accumulus.org/fhir/code/reportType"/>
-            <code value="111"/>
-            <display value="Stability Study Report"/>
-         </coding>
-      </code>
-      <effectiveDateTime value="2019-09-08">
-         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-dxpq">
-            <valueCodeableConcept>
-               <coding>
-                  <system value="http://accumulus.org/fhir/code/timePointDescription"/>
-                  <code value="222"/>
-                  <display value="Delayed Start Code"/>
-               </coding>
-               <text value="Refrigerated delayed testing"/>
-            </valueCodeableConcept>
-         </extension>
-      </effectiveDateTime>
-      <performer>
-         <!--Organization/tester-->
-         <reference value="Organization/6049d921-9935-90b7-4efc-894a66483c00"/>
-      </performer>
-      <result>
-         <!--Observation/LongTerm30C-initial-1-->
-         <reference value="Observation/588a6787-0454-55ef-0b8a-4c8941b6976c"/>
-      </result>
-      <result>
-         <!--Observation/LongTerm30C-Initial-2-->
-         <reference value="Observation/930c7f69-2546-7148-2069-b3be3a755edf"/>
-      </result>
-      <result>
-         <!--Observation/LongTerm30C-Initial-3-->
-         <reference value="Observation/8070745c-30c4-a52e-41fd-600a913578d4"/>
-      </result>
-      <result>
-         <!--Observation/LongTerm30C-18m-->
-         <reference value="Observation/f16113fe-27e7-0aa2-6787-9415f5051900"/>
-      </result>
-      <result>
-         <!--Observation/LongTerm30C-18m-2-->
-         <reference value="Observation/1b25eb25-9149-02f6-9676-c87f90c64904"/>
-      </result>
-      <result>
-         <!--Observation/LongTerm30C-18m-3-->
-         <reference value="Observation/004ed877-7729-834e-3b6b-a2cf4bdb2377"/>
-      </result>
-      <result>
-         <!--Observation/Accelerated40C-3m-->
-         <reference value="Observation/f958e1e9-6023-4e39-2ffe-a9c8f135a2dd"/>
-      </result>
-      <conclusion value="The samples have been assessed and the conclusion is..."/>
-   </DiagnosticReport>
-</resource>
+   </effectiveDateTime>
+   <performer>
+      <!--Organization/tester-->
+      <reference value="Organization/6049d921-9935-90b7-4efc-894a66483c00"/>
+   </performer>
+   <result>
+      <!--Observation/LongTerm30C-initial-1-->
+      <reference value="Observation/588a6787-0454-55ef-0b8a-4c8941b6976c"/>
+   </result>
+   <result>
+      <!--Observation/LongTerm30C-Initial-2-->
+      <reference value="Observation/930c7f69-2546-7148-2069-b3be3a755edf"/>
+   </result>
+   <result>
+      <!--Observation/LongTerm30C-Initial-3-->
+      <reference value="Observation/8070745c-30c4-a52e-41fd-600a913578d4"/>
+   </result>
+   <result>
+      <!--Observation/LongTerm30C-18m-->
+      <reference value="Observation/f16113fe-27e7-0aa2-6787-9415f5051900"/>
+   </result>
+   <result>
+      <!--Observation/LongTerm30C-18m-2-->
+      <reference value="Observation/1b25eb25-9149-02f6-9676-c87f90c64904"/>
+   </result>
+   <result>
+      <!--Observation/LongTerm30C-18m-3-->
+      <reference value="Observation/004ed877-7729-834e-3b6b-a2cf4bdb2377"/>
+   </result>
+   <result>
+      <!--Observation/Accelerated40C-3m-->
+      <reference value="Observation/f958e1e9-6023-4e39-2ffe-a9c8f135a2dd"/>
+   </result>
+   <conclusion value="The samples have been assessed and the conclusion is..."/>
+</DiagnosticReport>

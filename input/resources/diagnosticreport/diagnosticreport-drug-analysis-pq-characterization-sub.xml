@@ -1,102 +1,101 @@
-<resource>
-   <DiagnosticReport>
-      <!-- characterization report-->
-      <!-- <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/> from bundle-drug-substance-characterization-dxpq-ex1-->
-      <id value="diagnosticreport-drug-analysis-pq-characterization-sub"/>
-      <meta>
-         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-      </meta>
-      <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
-         <valueReference>
-            <!--PlanDefinition/characterizationProtocol-->
-            <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
-         </valueReference>
-      </extension>
-      <status value="final"/>
-      <code>
-         <coding>
-            <system value="http://accumulus.org/fhir/code/reportType"/>
-            <code value="11134"/>
-            <display value="Characterization Report"/>
-         </coding>
-      </code>
-      <effectiveDateTime value="2020-12"/>
-      <result>
-         <!--Observation/elementalAnalysisCarbon-->
-         <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a33"/>
-      </result>
-      <result>
-         <!--Observation/elementalAnalysisHydrogen-->
-         <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a34"/>
-      </result>
-      <result>
-         <!--Observation/elementalAnalysisNitrogen-->
-         <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a35"/>
-      </result>
-      <result>
-         <!--Observation/elementalAnalysisFlourine-->
-         <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a35"/>
-      </result>
-      <result>
-         <!--Observation/ionAnalysisCarbon-->
-         <reference value="Observation/9c56948c-3a39-6609-1c01-4d197ea57a33"/>
-      </result>
-      <result>
-         <!--Observation/ionAnalysisHydrogen-->
-         <reference value="Observation/9c56948c-4a39-6609-1c01-4d197ea57a34"/>
-      </result>
-      <result>
-         <!--Observation/ionAnalysisNitrogen-->
-         <reference value="Observation/9c56948c-5a39-6609-1c01-4d197ea57a35"/>
-      </result>
-      <result>
-         <!--Observation/ionAnalysisFlourine-->
-         <reference value="Observation/9c56948c-6a39-6609-1c01-4d197ea57a35"/>
-      </result>
-      <result>
-         <!--Observation/structure-->
-         <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a33"/>
-      </result>
-      <result>
-         <!--Observation/nmr3-->
-         <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
-      </result>
-      <result>
-         <!--Observation/nmr4-->
-         <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e73"/>
-      </result>
-      <result>
-         <!--Observation/nmr5-->
-         <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
-      </result>
-      <result>
-         <!--Observation/nmr6-->
-         <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
-      </result>
-      <result>
-         <!--Observation/nmr8-->
-         <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
-      </result>
-      <result>
-         <!--Observation/nmr9-->
-         <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
-      </result>
-      <result>
-         <!--Observation/nmr10-->
-         <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
-      </result>
-      <result>
-         <!--Observation/fig8absorption-->
-         <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a35"/>
-      </result>
-      <result>
-         <!--Observation/fig10molecularstructure-->
-         <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a34"/>
-      </result>
-      <result>
-         <!--Observation/fig11xray-->
-         <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a34"/>
-      </result>
-      <conclusion value="The samples have been assessed and the conclusion is..."/>
-   </DiagnosticReport>
-</resource>
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+   <!-- characterization report-->
+   <!-- <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/> from bundle-drug-substance-characterization-dxpq-ex1-->
+   <id value="diagnosticreport-drug-analysis-pq-characterization-sub"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+      <valueReference>
+         <!--PlanDefinition/characterizationProtocol-->
+         <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+      </valueReference>
+   </extension>
+   <status value="final"/>
+   <code>
+      <coding>
+         <system value="http://accumulus.org/fhir/code/reportType"/>
+         <code value="11134"/>
+         <display value="Characterization Report"/>
+      </coding>
+   </code>
+   <effectiveDateTime value="2020-12"/>
+   <result>
+      <!--Observation/elementalAnalysisCarbon-->
+      <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a33"/>
+   </result>
+   <result>
+      <!--Observation/elementalAnalysisHydrogen-->
+      <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a34"/>
+   </result>
+   <result>
+      <!--Observation/elementalAnalysisNitrogen-->
+      <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a35"/>
+   </result>
+   <result>
+      <!--Observation/elementalAnalysisFlourine-->
+      <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a35"/>
+   </result>
+   <result>
+      <!--Observation/ionAnalysisCarbon-->
+      <reference value="Observation/9c56948c-3a39-6609-1c01-4d197ea57a33"/>
+   </result>
+   <result>
+      <!--Observation/ionAnalysisHydrogen-->
+      <reference value="Observation/9c56948c-4a39-6609-1c01-4d197ea57a34"/>
+   </result>
+   <result>
+      <!--Observation/ionAnalysisNitrogen-->
+      <reference value="Observation/9c56948c-5a39-6609-1c01-4d197ea57a35"/>
+   </result>
+   <result>
+      <!--Observation/ionAnalysisFlourine-->
+      <reference value="Observation/9c56948c-6a39-6609-1c01-4d197ea57a35"/>
+   </result>
+   <result>
+      <!--Observation/structure-->
+      <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a33"/>
+   </result>
+   <result>
+      <!--Observation/nmr3-->
+      <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
+   </result>
+   <result>
+      <!--Observation/nmr4-->
+      <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e73"/>
+   </result>
+   <result>
+      <!--Observation/nmr5-->
+      <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+   </result>
+   <result>
+      <!--Observation/nmr6-->
+      <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+   </result>
+   <result>
+      <!--Observation/nmr8-->
+      <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+   </result>
+   <result>
+      <!--Observation/nmr9-->
+      <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+   </result>
+   <result>
+      <!--Observation/nmr10-->
+      <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+   </result>
+   <result>
+      <!--Observation/fig8absorption-->
+      <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a35"/>
+   </result>
+   <result>
+      <!--Observation/fig10molecularstructure-->
+      <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a34"/>
+   </result>
+   <result>
+      <!--Observation/fig11xray-->
+      <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a34"/>
+   </result>
+   <conclusion value="The samples have been assessed and the conclusion is..."/>
+</DiagnosticReport>
