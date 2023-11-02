@@ -773,7 +773,7 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-
+<!--
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-simple-dxpq"/>
@@ -783,7 +783,7 @@
             <description value="Observation - Simple dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
