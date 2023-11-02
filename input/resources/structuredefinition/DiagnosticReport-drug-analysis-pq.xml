@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="DiagnosticReport-drug-analysis-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+    <name value="DiagnosticReportDrugAnalysisPQ"/>
+    <title value="DiagnosticReport - Drug Analysis PQ"/>
+    <status value="active"/>
+    <description value="DiagnosticReport for batch analysis, stability study, manufacturing process validation study, etc."/>
+    <fhirVersion value="5.0.0"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="DiagnosticReport"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="DiagnosticReport">
+            <path value="DiagnosticReport"/>
+        </element>
+        <element id="DiagnosticReport.id">
+            <path value="DiagnosticReport.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.contained">
+            <path value="DiagnosticReport.contained"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.identifier">
+            <path value="DiagnosticReport.identifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.status">
+            <path value="DiagnosticReport.status"/>
+        </element>
+        <element id="DiagnosticReport.code">
+            <path value="DiagnosticReport.code"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.effective[x]">
+            <path value="DiagnosticReport.effective[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.performer">
+            <path value="DiagnosticReport.performer"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.result">
+            <path value="DiagnosticReport.result"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.conclusion">
+            <path value="DiagnosticReport.conclusion"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -745,6 +745,16 @@
 
         <resource>
             <reference>
+                <reference value="StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+                <display value="DiagnosticReportDrugAnalysisPQ"/>
+            </reference>
+            <name value="iagnosticReport - Drug Analysis PQ"/>
+            <description value="DiagnosticReport for batch analysis, stability study, manufacturing process validation study, etc."/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/PlanDefinition-dxpq"/>
                 <display value="PlanDefinition-DxPq"/>
             </reference>
