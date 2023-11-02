@@ -1,0 +1,279 @@
+<resource>
+   <DiagnosticReport>
+      <!-- batch analysis report -->
+      <!-- <id value="01a5777c-4b48-a0df-2963-02cd63339006"/> from bundle-batch-analysis-dxpq-ex2-sub-->
+      <id value="diagnosticreport-drug-analysis-pq-batch-sub"/>
+      <meta>
+         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+      </meta>
+      <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+         <valueReference>
+            <!--PlanDefinition/specificationProtocol-->
+            <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+         </valueReference>
+      </extension>
+      <status value="final"/>
+      <code>
+         <coding>
+            <system value="http://accumulus.org/fhir/code/reportType"/>
+            <code value="111"/>
+            <display value="Batch Analysis Report"/>
+         </coding>
+      </code>
+      <effectiveDateTime value="2020-12"/>
+      <!-- start of stability test -->
+      <result>
+         <!--Observation/observation-simple-dxpq-ex1-->
+         <reference value="Observation/81f552f9-8458-3cf4-8379-eea5417a9de2"/>
+      </result>
+      <result>
+         <!--Observation/observationDescription2-->
+         <reference value="Observation/50bf6f69-a3f5-678b-469b-c5df5cca4c86"/>
+      </result>
+      <result>
+         <!--Observation/observationDescription3-->
+         <reference value="Observation/145fd3b7-3678-867f-4298-a6c781b86de3"/>
+      </result>
+      <result>
+         <!--Observation/observationIdentification-->
+         <reference value="Observation/55c89944-60d1-4eea-a2c3-6c53e3622bc5"/>
+      </result>
+      <result>
+         <!--Observation/observationIdentification2-->
+         <reference value="Observation/adb51ab6-00a9-1078-69e5-d32c025a857c"/>
+      </result>
+      <result>
+         <!--Observation/observationIdentification3-->
+         <reference value="Observation/916a0ae2-9c43-72f0-a22a-c5f8ce902125"/>
+      </result>
+      <result>
+         <!--Observation/observationAssay-->
+         <reference value="Observation/6deb4306-1193-24ae-a565-f73225652bdd"/>
+      </result>
+      <result>
+         <!--Observation/observationAssay2-->
+         <reference value="Observation/f6aabd2f-5902-57e7-6126-eccd9158a5b5"/>
+      </result>
+      <result>
+         <!--Observation/observationAssay3-->
+         <reference value="Observation/32f598e4-a0e0-98dc-41dd-0f8397f953ad"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-->
+         <reference value="Observation/02d9e6be-833c-1c6d-a64a-baa3935c959d"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-2-->
+         <reference value="Observation/d3e572b7-14fd-744b-4123-58741d75571e"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-3-->
+         <reference value="Observation/fe6ca484-a755-9a0b-a074-b6ee0a907ff8"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-->
+         <reference value="Observation/da92c71f-a12a-1980-11a3-80e3d1852244"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-2-->
+         <reference value="Observation/8bf75da1-9221-66fe-6725-c64cb45a57e6"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-3-->
+         <reference value="Observation/31bfeff4-4a7d-3be5-878e-fb674d3d5487"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-->
+         <reference value="Observation/732237a9-4b3b-27cc-99ca-6b913e622a29"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-2-->
+         <reference value="Observation/52afbeb4-4958-a275-a0ca-d70b2b5240ec"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-3-->
+         <reference value="Observation/7fc395b1-59e4-78be-0512-cf92133c0fac"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-->
+         <reference value="Observation/9c98bd8a-7dda-2f01-0dbd-8c60b60e8572"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-2-->
+         <reference value="Observation/97b16ff8-8e0f-915a-9d65-7fab108f40c2"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-3-->
+         <reference value="Observation/0244eafe-3126-909b-7d8d-4253f45f525c"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-->
+         <reference value="Observation/10b80cbd-45d3-9be1-63b9-29f04b47376c"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-2-->
+         <reference value="Observation/84f015ac-9572-324f-8013-0b999cc95bbd"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-3-->
+         <reference value="Observation/987daeaa-4c2a-72b7-780f-4a9403163a3e"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-->
+         <reference value="Observation/02d9e6be-833c-1c6d-a64a-baa3935c959d"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-2-->
+         <reference value="Observation/d3e572b7-14fd-744b-4123-58741d75571e"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-3-->
+         <reference value="Observation/fe6ca484-a755-9a0b-a074-b6ee0a907ff8"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-->
+         <reference value="Observation/da92c71f-a12a-1980-11a3-80e3d1852244"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-2-->
+         <reference value="Observation/8bf75da1-9221-66fe-6725-c64cb45a57e6"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-3-->
+         <reference value="Observation/31bfeff4-4a7d-3be5-878e-fb674d3d5487"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-->
+         <reference value="Observation/732237a9-4b3b-27cc-99ca-6b913e622a29"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-2-->
+         <reference value="Observation/52afbeb4-4958-a275-a0ca-d70b2b5240ec"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-3-->
+         <reference value="Observation/7fc395b1-59e4-78be-0512-cf92133c0fac"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-->
+         <reference value="Observation/9c98bd8a-7dda-2f01-0dbd-8c60b60e8572"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-2-->
+         <reference value="Observation/97b16ff8-8e0f-915a-9d65-7fab108f40c2"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-3-->
+         <reference value="Observation/0244eafe-3126-909b-7d8d-4253f45f525c"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-->
+         <reference value="Observation/10b80cbd-45d3-9be1-63b9-29f04b47376c"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-2-->
+         <reference value="Observation/84f015ac-9572-324f-8013-0b999cc95bbd"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-3-->
+         <reference value="Observation/987daeaa-4c2a-72b7-780f-4a9403163a3e"/>
+      </result>
+      <result>
+         <!--Observation/observationMutagenic-->
+         <reference value="Observation/ff26533d-88a8-7f18-a275-42dc1373a388"/>
+      </result>
+      <result>
+         <!--Observation/observationMutagenic2-->
+         <reference value="Observation/c99666d2-7962-9a71-58f6-7b2e5aa662f5"/>
+      </result>
+      <result>
+         <!--Observation/observationMutagenic3-->
+         <reference value="Observation/c18e21d3-7113-4d08-4ff3-0c9718596f64"/>
+      </result>
+      <result>
+         <!--Observation/observationEnantiomericPurity-->
+         <reference value="Observation/66fdac46-2a6b-a66f-891b-8dcf67cc46c7"/>
+      </result>
+      <result>
+         <!--Observation/observationEnantiomericPurity2-->
+         <reference value="Observation/8306cfc5-158f-1a53-a683-048b226060d9"/>
+      </result>
+      <result>
+         <!--Observation/observationEnantiomericPurity3-->
+         <reference value="Observation/fc49ad55-07d1-997d-6695-bbff44746e75"/>
+      </result>
+      <result>
+         <!--Observation/observationSolvents-sol1-->
+         <reference value="Observation/f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
+      </result>
+      <result>
+         <!--Observation/observationSolvents-sol1-2-->
+         <reference value="Observation/a531aee9-4c21-06af-352c-a3615b5d957e"/>
+      </result>
+      <result>
+         <!--Observation/observationSolvents-sol1-3-->
+         <reference value="Observation/033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
+      </result>
+      <result>
+         <!--Observation/observationSolvents-sol2-->
+         <reference value="Observation/ba8a182e-8571-6cbd-047b-612735d599d2"/>
+      </result>
+      <result>
+         <!--Observation/observationSolvents-sol2-2-->
+         <reference value="Observation/0b5b94cc-7a1a-4ada-66c7-954ceb528d67"/>
+      </result>
+      <result>
+         <!--Observation/observationSolvents-sol2-3-->
+         <reference value="Observation/6afaacee-11a6-58b2-47df-5f79722c66ac"/>
+      </result>
+      <result>
+         <!--Observation/observationWater-->
+         <reference value="Observation/c2644a86-1684-286e-00e2-dcaf907a8970"/>
+      </result>
+      <result>
+         <!--Observation/observationWater2-->
+         <reference value="Observation/cb5f6872-6eeb-727a-7c33-f2c438581a1c"/>
+      </result>
+      <result>
+         <!--Observation/observationWater3-->
+         <reference value="Observation/7faaf980-7c10-7b9a-9572-1bacd485824e"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size1-->
+         <reference value="Observation/e4d2118a-8562-9eb1-2c14-4e145d2a95fc"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size1-2-->
+         <reference value="Observation/ec078717-9512-4db4-77c6-2c7e29d213a6"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size1-3-->
+         <reference value="Observation/05cfb495-2580-561a-688d-ce6ea24c8962"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size2-->
+         <reference value="Observation/d2a60ae5-96b4-3d13-38da-729c652347a3"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size2-2-->
+         <reference value="Observation/c3f51325-2f5f-194c-919b-2219ee1f5c45"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size2-3-->
+         <reference value="Observation/e9d89693-11b1-13ed-5cde-606fc1b8372c"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size3-->
+         <reference value="Observation/2659b000-96e2-1b8b-129b-0c00e1074b0f"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size3-2-->
+         <reference value="Observation/10b47328-36fa-343d-5699-5b32b30a6d33"/>
+      </result>
+      <result>
+         <!--Observation/observationParticleSize-size3-3-->
+         <reference value="Observation/e6780766-317a-382f-92d2-79825f506cc5"/>
+      </result>
+      <conclusion value="The samples have been assessed and the conclusion is..."/>
+   </DiagnosticReport>
+</resource>

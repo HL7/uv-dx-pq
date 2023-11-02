@@ -1,0 +1,259 @@
+<resource>
+   <DiagnosticReport>
+      <!--process validationr eport-->
+      <!-- <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/> from bundle-product-process-validation-dxpq-ex1-->
+      <id value="diagnosticreport-drug-analysis-pq-process-validation-prod"/>
+      <meta>
+         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+      </meta>
+      <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+         <valueReference>
+            <!--PlanDefinition/validationProtocol-->
+            <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+         </valueReference>
+      </extension>
+      <status value="final"/>
+      <code>
+         <coding>
+            <system value="http://accumulus.org/fhir/code/reportType"/>
+            <code value="1113"/>
+            <display value="Process Validation Report"/>
+         </coding>
+      </code>
+      <effectiveDateTime value="2020-12"/>
+      <result>
+         <!--Observation/compoundingpHPre1-->
+         <reference value="Observation/9c56948a-2a39-6609-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingpHPre2-->
+         <reference value="Observation/9c56948a-3a39-6609-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingpHPre3-->
+         <reference value="Observation/9c56948a-4a39-6609-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingpHPost1-->
+         <reference value="Observation/9c56948a-3a49-6609-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingpHPost2-->
+         <reference value="Observation/9c56958a-4a39-6609-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingpHPost3-->
+         <reference value="Observation/9c56948a-5a39-6609-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingAssayPre1-->
+         <reference value="Observation/9c56948a-2a39-6609-1c01-4d297ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingAssayPre2-->
+         <reference value="Observation/9c56948a-3a39-6619-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingAssayPre3-->
+         <reference value="Observation/9c56948a-4a39-6619-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingAssayPost1-->
+         <reference value="Observation/9c56948a-3a49-6619-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingAssayPost2-->
+         <reference value="Observation/9c56958a-4a39-6619-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/compoundingAssayPost3-->
+         <reference value="Observation/9c56948a-5a39-6709-1c01-4d197ea57a33"/>
+      </result>
+      <!--result>
+                    <reference value="Observation/observationDescription"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationDescription2"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationDescription3"/>
+                </result-->
+      <result>
+         <!--Observation/observationIdentification-->
+         <reference value="Observation/f0a04328-905c-4ec5-372e-4d6cfef18629"/>
+      </result>
+      <result>
+         <!--Observation/observationIdentification2-->
+         <reference value="Observation/5e5a5e67-7fc6-0064-1be9-5d9d14d887e5"/>
+      </result>
+      <result>
+         <!--Observation/observationIdentification3-->
+         <reference value="Observation/cfde6776-673c-72e2-68c4-07b77cd85b74"/>
+      </result>
+      <result>
+         <!--Observation/observationAssay-->
+         <reference value="Observation/9c56948a-1a39-6609-1c01-4d197ea57a33"/>
+      </result>
+      <result>
+         <!--Observation/observationAssay2-->
+         <reference value="Observation/1e20aed7-7626-1664-8d96-235f860d9a2c"/>
+      </result>
+      <result>
+         <!--Observation/observationAssay3-->
+         <reference value="Observation/ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-->
+         <reference value="Observation/ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-2-->
+         <reference value="Observation/4052f28b-64a2-392d-35e4-ec8e912434d2"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp1-3-->
+         <reference value="Observation/34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-->
+         <reference value="Observation/2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-2-->
+         <reference value="Observation/332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp2-3-->
+         <reference value="Observation/f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-->
+         <reference value="Observation/7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-2-->
+         <reference value="Observation/be016630-8754-7414-9014-21e020ad66c6"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp3-3-->
+         <reference value="Observation/92568f68-78f3-908c-6935-ff5f3d574dd6"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-->
+         <reference value="Observation/a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-2-->
+         <reference value="Observation/d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-unspecified-3-->
+         <reference value="Observation/7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-->
+         <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-2-->
+         <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c1899"/>
+      </result>
+      <result>
+         <!--Observation/observationDegradation-imp-total-3-->
+         <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c78"/>
+      </result>
+      <!--result>
+                    <reference value="Observation/observationDissolution"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationDissolution2"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationDissolution3"/>
+                </result-->
+      <!--result>
+                    <reference value="Observation/observationDissolutionQ80"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationDissolutionQ802"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationDissolutionQ803"/>
+                </result-->
+      <!--result>
+                    <reference value="Observation/observationUniformity"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationUniformity2"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationUniformity3"/>
+                </result-->
+      <!--result>
+                    <reference value="Observation/observationMicro"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationMicro2"/>
+                </result>
+                <result>
+                    <reference value="Observation/observationMicro3"/>
+                </result-->
+      <result>
+         <!--Observation/observationWater-->
+         <reference value="Observation/66c2f585-678e-78b8-2235-1a3b37bd6e46"/>
+      </result>
+      <result>
+         <!--Observation/observationWater2-->
+         <reference value="Observation/f8232d25-023d-679f-9c58-a6dc234b7a28"/>
+      </result>
+      <result>
+         <!--Observation/observationWater3-->
+         <reference value="Observation/368b82be-75dd-1d97-3dbc-a7eed9869daa"/>
+      </result>
+      <result>
+         <!--Observation/fillingTAMC1-->
+         <reference value="Observation/44aa47fd-8964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/fillingConclusion-nosubject-->
+         <reference value="Observation/45aa47fd-8964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizationConclusion-nosubject-->
+         <reference value="Observation/45ab47fd-8964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizerNumber1-->
+         <reference value="Observation/37aa47fd-8964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizerNumber2-->
+         <reference value="Observation/38aa47fd-8964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizerNumber3-->
+         <reference value="Observation/38aa48fd-8964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizationAssay1-->
+         <reference value="Observation/37aa47fd-7964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizationAssay2-->
+         <reference value="Observation/47aa47fd-7964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizationAssay3-->
+         <reference value="Observation/47aa47fd-7964-4f96-6495-b2bec7f160e8"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizerWaterHomogeneity1-->
+         <reference value="Observation/47aa47fd-8964-4f96-6495-b2bec7f160e7"/>
+      </result>
+      <result>
+         <!--Observation/lyophilizerAssayHomogeneity1-->
+         <reference value="Observation/47aa47fd-8964-5f96-6495-b2bec7f160e7"/>
+      </result>
+      <conclusion value="The samples have been assessed and the conclusion is..."/>
+   </DiagnosticReport>
+</resource>

@@ -742,38 +742,49 @@
 
         <!--Building Blocks-->
         <!--Building Block Profiles -->
-
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DeviceDefinition-dxpq"/>
+                <display value="DeviceDefinitionDxPq"/>
+            </reference>
+            <name value="DeviceDefinition - dx-PQ"/>
+            <description value="DeviceDefinition - dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
                 <display value="DiagnosticReportDrugAnalysisPQ"/>
             </reference>
-            <name value="iagnosticReport - Drug Analysis PQ"/>
+            <name value="DiagnosticReport - Drug Analysis PQ"/>
             <description value="DiagnosticReport for batch analysis, stability study, manufacturing process validation study, etc."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
+        
         <resource>
             <reference>
-                <reference value="StructureDefinition/PlanDefinition-dxpq"/>
-                <display value="PlanDefinition-DxPq"/>
+                <reference value="StructureDefinition/DocumentReference-dxpq"/>
+                <display value="DocumentReferenceDxPq"/>
             </reference>
-            <name value="PlanDefinition- dx-PQ"/>
-            <description value="TBD"/>
+            <name value="DocumentReference - dx-PQ"/>
+            <description value="DocumentReference - dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-
-<!--        <resource>
+        
+        <resource>
             <reference>
-                <reference value="StructureDefinition/ObservationDefinition-simple-dxpq"/>
-                <display value="ObservationDefinitionSimpleDxPq"/>
+                <reference value="StructureDefinition/Ingredient-dxpq"/>
+                <display value="IngredientDxPq"/>
             </reference>
-            <name value="ObservationDefinition - Simple dx-PQ"/>
-            <description value="TBD"/>
+            <name value="Ingredient dx-Pq"/>
+            <description value="Section 2.1 - DP Composition"/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
-        </resource>-->
+        </resource>
 
         <resource>
             <reference>
@@ -786,17 +797,6 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-<!--
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-simple-dxpq"/>
-                <display value="ObservationSimpleDxPq"/>
-            </reference>
-            <name value="Observation - Simple dx-PQ"/>
-            <description value="Observation - Simple dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="building-blocks-1"/>
-        </resource>-->
 
         <resource>
             <reference>
@@ -811,11 +811,11 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/Ingredient-dxpq"/>
-                <display value="IngredientDxPq"/>
+                <reference value="StructureDefinition/PlanDefinition-dxpq"/>
+                <display value="PlanDefinition-DxPq"/>
             </reference>
-            <name value="Ingredient dx-Pq"/>
-            <description value="Section 2.1 - DP Composition"/>
+            <name value="PlanDefinition- dx-PQ"/>
+            <description value="TBD"/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -842,7 +842,6 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-        <!--New for wave 2-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/PackagedProductDefinition-dxpq"/>
@@ -854,30 +853,93 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DocumentReference-dxpq"/>
-                <display value="DocumentReferenceDxPq"/>
-            </reference>
-            <name value="DocumentReference - dx-PQ"/>
-            <description value="DocumentReference - dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="building-blocks-1"/>
-        </resource>
 
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DeviceDefinition-dxpq"/>
-                <display value="DeviceDefinitionDxPq"/>
-            </reference>
-            <name value="DeviceDefinition - dx-PQ"/>
-            <description value="DeviceDefinition - dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="building-blocks-1"/>
-        </resource>
+
+
 
         <!--Building Block Examples -->
 
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-batch-prod"/>
+            </reference>
+            <name value="DiagnosticReport - Drug Analysis PQ - Batch Analysis, Product"/>
+            <description value="Batch analysis report, drug product example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-batch-sub"/>
+            </reference>
+            <name value="DiagnosticReport - Drug Analysis PQ - Batch Analysis, Substance"/>
+            <description value="Batch analysis report, drug substance example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="diagnosticreport-drug-analysis-pq-characterization-sub"/>
+            </reference>
+            <name value="DiagnosticReport - Drug Analysis PQ - Characterisation, Substance"/>
+            <description value="Characterization report, drug substance example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-impurities-prod"/>
+            </reference>
+            <name value="DiagnosticReport - Drug Analysis PQ - Impurities, Product"/>
+            <description value="Impurities results report, drug product example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-process-validation-prod"/>
+            </reference>
+            <name value="DiagnosticReport - Drug Analysis PQ - Process Validation, Product"/>
+            <description value="Process validation report, drug product example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-prod"/>
+            </reference>
+            <name value="DiagnosticReport - Drug Analysis PQ - Stability Study, Product"/>
+            <description value="Stability study results report, drug product example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="diagnosticreport-drug-analysis-pq-stability-sub"/>
+            </reference>
+            <name value="DiagnosticReport - Drug Analysis PQ - Stability Study, Substance"/>
+            <description value="Stability study results report, drug substance example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        
+        
+        
+        
         <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-dxpq-ex1-validation-protocol"/>
