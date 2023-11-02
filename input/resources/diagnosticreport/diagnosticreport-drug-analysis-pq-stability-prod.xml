@@ -57,15 +57,15 @@
    <performer>
       <reference value="Organization/organization-dxpq-ex1"/>
    </performer>
-   <!--   Abbreviated Results, showing only longterm25c-initial set of 3-->
+   <!--   Abbreviated Results, showing only longterm25c-initial-1 of set of 3. Addotional groups of results would be added over time (18 mo., etc.).-->
    <result>
       <reference value="Observation/observation-test-result-longterm25c-initial-1"/>
    </result>
-   <result>
+<!--   <result>
       <reference value="Observation/observation-test-result-longterm25c-initial-2"/>
    </result>
    <result>
       <reference value="Observation/observation-test-result-longterm25c-initial-3"/>
-   </result>
+   </result>-->
    <conclusion value="The samples have been assessed for initial period; no shelf life determined."/>
 </DiagnosticReport>

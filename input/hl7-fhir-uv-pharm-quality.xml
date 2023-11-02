@@ -858,60 +858,7 @@
 
         <!--Building Block Examples -->
 
-        <!--        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-batch-prod"/>
-            </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ - Batch Analysis, Product"/>
-            <description value="Batch analysis report, drug product example"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
 
-        <!--        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-batch-sub"/>
-            </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ - Batch Analysis, Substance"/>
-            <description value="Batch analysis report, drug substance example"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-characterization-sub"/>
-            </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ - Characterisation, Substance"/>
-            <description value="Characterization report, drug substance example"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-impurities-prod"/>
-            </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ - Impurities, Product"/>
-            <description value="Impurities results report, drug product example"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-process-validation-prod"/>
-            </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ - Process Validation, Product"/>
-            <description value="Process validation report, drug product example"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
 
         <resource>
             <reference>
@@ -923,21 +870,6 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-
-        <!--        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-sub"/>
-            </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ - Stability Study, Substance"/>
-            <description value="Stability study results report, drug substance example"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
-
-
-
 
         <resource>
             <reference>
@@ -994,7 +926,6 @@
             <groupingId value="building-blocks-2"/>
         </resource>
 
-
         <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -1017,18 +948,6 @@
             <groupingId value="building-blocks-2"/>
         </resource>
 
-        <!--        <resource>
-            <reference>
-                <reference value="Observation/observation-simple-dxpq-ex1"/>
-            </reference>
-            <name value="observation-simple-dxpq-ex1"/>
-            <description value="Observation-simple-dxpq - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
-
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-dxpq-ex1"/>
@@ -1039,7 +958,6 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-
 
         <resource>
             <reference>
@@ -1085,7 +1003,6 @@
             <groupingId value="building-blocks-2"/>
         </resource>
 
-        <!--New Examples for wave 2-->
         <resource>
             <reference>
                 <reference value="PackagedProductDefinition/packagedproductdefinition-dxpq-ex1"/>
@@ -1659,28 +1576,6 @@
             </reference>
             <name value="observation-test-result-longterm25c-initial-1"/>
             <description value="observation-test-result-longterm25c-initial-1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="examples4"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-longterm25c-initial-2"/>
-            </reference>
-            <name value="observation-test-result-longterm25c-initial-2"/>
-            <description value="observation-test-result-longterm25c-initial-2"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="examples4"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-longterm25c-initial-3"/>
-            </reference>
-            <name value="observation-test-result-longterm25c-initial-3"/>
-            <description value="observation-test-result-longterm25c-initial-3"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
