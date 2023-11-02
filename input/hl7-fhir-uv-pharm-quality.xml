@@ -920,16 +920,6 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
-            </reference>
-            <name value="observationdefinition-simple-dxpq-ex1"/>
-            <description value="ObservationDefinition - Simple dxPQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
-            <groupingId value="building-blocks-1"/>
-        </resource>
 
         <resource>
             <reference>
@@ -937,6 +927,17 @@
             </reference>
             <name value="observationdefinition-test-method-dxpq-ex1"/>
             <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
+            </reference>
+            <name value="observationdefinition-test-method-dxpq-ex2"/>
+            <description value="ObservationDefinition - Test Method dx-PQ - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="building-blocks-1"/>
