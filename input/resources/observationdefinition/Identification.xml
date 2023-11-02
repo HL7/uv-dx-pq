@@ -3,7 +3,7 @@
     <!-- Contained in Accumulus FHIR Product Example - Batch Analysis (05-31-2023) -->
     <id value="Identification"/>
     <meta>
-    	<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
     </meta>
                 <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Identification"/>
     <title value="Identification"/>

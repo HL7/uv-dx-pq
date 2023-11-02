@@ -783,7 +783,7 @@
             <id value="1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
             <!--            <id value="Description"/>-->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Description-->
             <url value="http://example-server.com/fhir/ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
@@ -813,7 +813,7 @@
             <!--Degradation-->
             <id value="2c5683d6-6e94-825b-056a-129a04c95e2f"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Degradation-->
             <url value="http://example-server.com/fhir/ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
@@ -911,7 +911,7 @@
             <!--observationdefinition-simple-dxpq-ex1-->
             <id value="186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Water-->
             <url value="http://example-server.com/fhir/ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
@@ -974,7 +974,7 @@
             <!--Microbiological-->
             <id value="73d9d304-a0b8-31b6-1165-346563b9305e"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Microbiological-->
             <url value="http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
@@ -1031,7 +1031,7 @@
             <!--Uniformity-->
             <id value="ef781c18-8e86-7859-209b-469ee9ad42d8"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Uniformity-->
             <url value="http://example-server.com/fhir/ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
