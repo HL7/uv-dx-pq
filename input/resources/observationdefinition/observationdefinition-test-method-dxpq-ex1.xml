@@ -15,6 +15,6 @@
         <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
     </specimen>
     <hasMember>
-        <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+        <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
     </hasMember>
 </ObservationDefinition>
