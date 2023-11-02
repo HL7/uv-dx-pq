@@ -279,7 +279,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
                 <display value="DiagnosticReportStabilityStudyResultsDxPq"/>
@@ -288,7 +288,7 @@
             <description value="DiagnosticReport - Stability Study Results dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
@@ -368,7 +368,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-stability-study-results-dxpq-ex1"/>
             </reference>
@@ -377,7 +377,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
 
         <resource>
             <reference>
@@ -759,7 +759,7 @@
                 <display value="DiagnosticReportDrugAnalysisPQ"/>
             </reference>
             <name value="DiagnosticReport - Drug Analysis PQ"/>
-            <description value="DiagnosticReport for batch analysis, stability study, manufacturing process validation study, etc."/>
+            <description value="This DiagnosticReport profile represents results reports for batch analysis, stability study, characterization, impurities analysis, and manufacturing process validation study, etc."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
