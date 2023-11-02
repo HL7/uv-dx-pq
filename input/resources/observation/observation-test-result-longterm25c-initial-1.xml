@@ -379,27 +379,27 @@
       <reference value="Observation/observation-test-result-lt25c-i1-description"/>
    </hasMember>
    <hasMember>
-      <reference value="#observation-test-result-lt25c-i1-degradation-imp1"/>
+      <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp1"/>
    </hasMember>
    <hasMember>
-      <reference value="#observation-test-result-lt25c-i1-degradation-imp2"/>
+      <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp2"/>
    </hasMember>
    <hasMember>
-      <reference value="#observation-test-result-lt25c-i1-degradation-imp3"/>
+      <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp3"/>
    </hasMember>
    <hasMember>
-      <reference value="#observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
+      <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
    </hasMember>
    <hasMember>
-      <reference value="#observation-test-result-lt25c-i1-degradation-imp-total"/>
+      <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp-total"/>
    </hasMember>
    <hasMember>
-      <reference value="#observation-test-result-lt25c-i1-water"/>
+      <reference value="Observation/observation-test-result-lt25c-i1-water"/>
    </hasMember>
    <hasMember>
-      <reference value="#observation-test-result-lt25c-i1-microbiological"/>
+      <reference value="Observation/observation-test-result-lt25c-i1-microbiological"/>
    </hasMember>
    <hasMember>
-      <reference value="#observation-test-result-lt25c-i1-uniformity"/>
+      <reference value="Observation/observation-test-result-lt25c-i1-uniformity"/>
    </hasMember>
 </Observation>
