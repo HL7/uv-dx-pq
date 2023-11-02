@@ -883,7 +883,7 @@
         
         <resource>
             <reference>
-                <reference value="diagnosticreport-drug-analysis-pq-characterization-sub"/>
+                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-characterization-sub"/>
             </reference>
             <name value="DiagnosticReport - Drug Analysis PQ - Characterisation, Substance"/>
             <description value="Characterization report, drug substance example"/>
@@ -927,7 +927,7 @@
         
         <resource>
             <reference>
-                <reference value="diagnosticreport-drug-analysis-pq-stability-sub"/>
+                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-sub"/>
             </reference>
             <name value="DiagnosticReport - Drug Analysis PQ - Stability Study, Substance"/>
             <description value="Stability study results report, drug substance example"/>
