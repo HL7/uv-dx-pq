@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-test-result-lt25c-i1-description"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+    </meta>
+    <instantiatesReference>
+        <reference value="ObservationDefinition/Description"/>
+    </instantiatesReference>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://dummy.loinc.org"/>
+            <code value="XXX"/>
+            <display value="Description"/>
+        </coding>
+        <text value="Description"/>
+    </code>
+    <subject>
+        <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+    </subject>
+    <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+    <performer>
+        <reference value="Organization/organization-dxpq-ex1"/>
+    </performer>
+    <valueCodeableConcept>
+        <text value="Complies"/>
+    </valueCodeableConcept>
+</Observation>

@@ -135,9 +135,8 @@
             <name value="Additional SubstanceDefinition Examples"/>
         </grouping>
         <grouping id="examples4">
-            <name value="Additional ZZ Examples"/>
+            <name value="Additional Observation Examples"/>
         </grouping>
-
 
         <!--Drug Identification-->
         <!--        ID Profiles-->
@@ -187,7 +186,7 @@
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
-<!--
+        <!--
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-drug-specification-dxpq"/>
@@ -222,7 +221,7 @@
             <groupingId value="b12-specification"/>
         </resource>
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-drug-specification-dxpq-ex1"/>
             </reference>
@@ -257,7 +256,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="StructureDefinition/ResearchStudy-stability-dxpq"/>
                 <display value="ResearchStudyStabilityDxPq"/>
@@ -268,7 +267,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
                 <display value="PlanDefinitionStabilityStudyProtocolDxPq"/>
@@ -279,7 +278,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
                 <display value="DiagnosticReportStabilityStudyResultsDxPq"/>
@@ -346,7 +345,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="ResearchStudy/researchstudy-stability-dxpq-ex1"/>
             </reference>
@@ -357,7 +356,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"/>
             </reference>
@@ -368,7 +367,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-stability-study-results-dxpq-ex1"/>
             </reference>
@@ -438,7 +437,7 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
                 <display value="PlanDefinitionMnfProcessDxPq"/>
@@ -494,7 +493,7 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
             </reference>
@@ -752,7 +751,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
@@ -763,7 +762,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/DocumentReference-dxpq"/>
@@ -774,7 +773,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Ingredient-dxpq"/>
@@ -859,7 +858,7 @@
 
         <!--Building Block Examples -->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-batch-prod"/>
             </reference>
@@ -870,7 +869,7 @@
             <groupingId value="building-blocks-2"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-batch-sub"/>
             </reference>
@@ -880,8 +879,8 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>-->
-        
-<!--        <resource>
+
+        <!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-characterization-sub"/>
             </reference>
@@ -891,8 +890,8 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>-->
-        
-<!--        <resource>
+
+        <!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-impurities-prod"/>
             </reference>
@@ -902,8 +901,8 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>-->
-        
-<!--        <resource>
+
+        <!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-process-validation-prod"/>
             </reference>
@@ -913,7 +912,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>-->
-        
+
         <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-prod"/>
@@ -924,8 +923,8 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
-<!--        <resource>
+
+        <!--        <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-sub"/>
             </reference>
@@ -935,11 +934,11 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>-->
-        
-        
-        
-        
-        
+
+
+
+
+
         <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-dxpq-ex1-validation-protocol"/>
@@ -972,7 +971,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
@@ -983,7 +982,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
@@ -1006,7 +1005,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
@@ -1018,7 +1017,7 @@
             <groupingId value="building-blocks-2"/>
         </resource>
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="Observation/observation-simple-dxpq-ex1"/>
             </reference>
@@ -1040,8 +1039,8 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
-        
+
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-dxpq-ex2"/>
@@ -1233,7 +1232,7 @@
             <groupingId value="extensions1"/>
         </resource>
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-instance-comment-dxpq"/>
                 <display value="ExtensionInstanceCommentDxPq"/>
@@ -1353,7 +1352,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-text-dxpq"/>
@@ -1386,7 +1385,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-<!--
+        <!--
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-table-footnote-dxpq"/>
@@ -1398,7 +1397,7 @@
             <groupingId value="extensions1"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-batches-in-rows-dxpq"/>
                 <display value="ExtensionTabulateBatchesInRowsDxPq"/>
@@ -1409,7 +1408,7 @@
             <groupingId value="extensions1"/>
         </resource>-->
 
- <!--       <resource>
+        <!--       <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-batch-impurities-dxpq"/>
                 <display value="ExtensionTabulateBatchImpuritiesDxPq"/>
@@ -1420,7 +1419,7 @@
             <groupingId value="extensions1"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-tabulate-equipment-dxpq"/>
                 <display value="ExtensionTabulateEquipmentDxPq"/>
@@ -1477,7 +1476,6 @@
 
         <!--Additional Examples -->
         <!-- Additional ObservationDefinition Examples (examples1)-->
-        <!--  examples of ObservationDefinition-test-method-dxpq      -->
         <resource>
             <reference>
                 <reference value="ObservationDefinition/accelerated40X"/>
@@ -1566,8 +1564,6 @@
             <groupingId value="examples1"/>
         </resource>
 
-        <!--examples of ObservationDefinition-simple-dxpq-->
-
         <resource>
             <reference>
                 <reference value="ObservationDefinition/Assay"/>
@@ -1655,6 +1651,182 @@
             <groupingId value="examples1"/>
         </resource>
 
+        <!-- Additional Observation Examples (examples4)-->
+<!--        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-accelerated40c-3-1"/>
+            </reference>
+            <name value="observation-test-result-accelerated40c-3-1"/>
+            <description value="observation-test-result-accelerated40c-3-1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>-->
+
+        <resource>
+            <reference>
+                <reference value="observation-test-result-longterm25c-initial-1"/>
+            </reference>
+            <name value="observation-test-result-longterm25c-initial-1"/>
+            <description value="observation-test-result-longterm25c-initial-1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-longterm25c-initial-2"/>
+            </reference>
+            <name value="observation-test-result-longterm25c-initial-2"/>
+            <description value="observation-test-result-longterm25c-initial-2"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-longterm25c-initial-3"/>
+            </reference>
+            <name value="observation-test-result-longterm25c-initial-3"/>
+            <description value="observation-test-result-longterm25c-initial-3"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+<!--
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-longterm25c-18m-1"/>
+            </reference>
+            <name value="observation-test-result-longterm25c-18m-1"/>
+            <description value="observation-test-result-longterm25c-18m-1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>-->
+
+<!--        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-longterm25c-18m-2"/>
+            </reference>
+            <name value="observation-test-result-longterm25c-18m-2"/>
+            <description value="observation-test-result-longterm25c-18m-2"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>-->
+
+<!--        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-longterm25c-18m-3"/>
+            </reference>
+            <name value="observation-test-result-longterm25c-18m-3"/>
+            <description value="observation-test-result-longterm25c-18m-3"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>-->
+
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp1"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-degradation-imp1"/>
+            <description value="observation-test-result-lt25c-i1-degradation-imp1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp2"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-degradation-imp2"/>
+            <description value="observation-test-result-lt25c-i1-degradation-imp2"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp3"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-degradation-imp3"/>
+            <description value="observation-test-result-lt25c-i1-degradation-imp3"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp-total"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-degradation-imp-total"/>
+            <description value="observation-test-result-lt25c-i1-degradation-imp-total"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
+            <description value="observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-description"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-description"/>
+            <description value="observation-test-result-lt25c-i1-description"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-microbiological"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-microbiological"/>
+            <description value="observation-test-result-lt25c-i1-microbiological"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-uniformity"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-uniformity"/>
+            <description value="observation-test-result-lt25c-i1-uniformity"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-water"/>
+            </reference>
+            <name value="observation-test-result-lt25c-i1-water"/>
+            <description value="observation-test-result-lt25c-i1-water"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="examples4"/>
+        </resource>
         <!-- Additional SpecimenDefinition Examples (examples2)-->
         <resource>
             <reference>
@@ -1700,7 +1872,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             <groupingId value="examples3"/>
         </resource>
-        <!--Additional ZZ Examples (examples4)-->
+
 
 
         <!-- Narrative pages      -->
@@ -1962,16 +2134,14 @@
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="special-url"/>
             </code>
-            <value
-                value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-pharmaceutical-dosage-form-terminology"/>
+            <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-pharmaceutical-dosage-form-terminology"/>
         </parameter>
         <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="special-url"/>
             </code>
-            <value
-                value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-drug-route-of-administration-terminology"/>
+            <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-drug-route-of-administration-terminology"/>
         </parameter>
     </definition>
 </ImplementationGuide>

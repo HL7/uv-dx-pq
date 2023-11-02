@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="observation-test-result-lt25c-i1-microbiological"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+   </meta>
+   <instantiatesReference>
+      <reference value="ObservationDefinition/Microbiological"/>
+   </instantiatesReference>
+   <status value="final"/>
+   <code>
+      <coding>
+         <system value="http://dummy.loinc.org"/>
+         <code value="YYY"/>
+         <display value="Microbiological Quality"/>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+   </subject>
+   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+   <performer>
+      <reference value="Organization/organization-dxpq-ex1"/>
+   </performer>
+   <valueCodeableConcept>
+      <text value="Complies"/>
+   </valueCodeableConcept>
+</Observation>

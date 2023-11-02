@@ -4,37 +4,35 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
     </meta>
-<!--    <instantiatesReference>
+    <!--    <instantiatesReference>
         <reference value="ObservationDefinition/Impurities"/>
     </instantiatesReference>-->
     <status value="final"/>
     <code>
         <coding>
-<!--            <system value="http://loinc.org"/>-->
-                                <system value="http://dummy.loinc.org"/>
+            <system value="http://dummy.loinc.org"/>
             <code value="DGP"/>
-                                <display value="Degradation Products"/>
+            <display value="Degradation Products"/>
         </coding>
-                            <text value="Degradation Products"/>
+        <text value="Degradation Products"/>
     </code>
-                        <subject>
-                            <reference value="Medication/medication-batch-information-dxpq-ex1"/>
-                        </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-				    <reference value="Organization/organization-dxpq-ex1"/>
-				</performer>
+    <subject>
+        <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+    </subject>
+    <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+    <performer>
+        <reference value="Organization/organization-dxpq-ex1"/>
+    </performer>
     <valueQuantity>
-                            <value value="0.101"/>
-                            <unit value="% w/w"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="%"/>
+        <value value="0.101"/>
+        <unit value="% w/w"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="%"/>
     </valueQuantity>
     <component>
         <code>
             <coding>
-<!--                <system value="http://loinc.org"/>-->
-                                    <system value="http://dummy.loinc.org"/>
+                <system value="http://dummy.loinc.org"/>
                 <code value="IMP"/>
                 <display value="Impurity"/>
             </coding>

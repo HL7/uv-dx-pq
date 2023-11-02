@@ -55,59 +55,17 @@
       </extension>
    </effectiveDateTime>
    <performer>
-      <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
-      <!-- Error was: Bundle​.entry[0]​.resource​/*DiagnosticReport​/6f4a3311-92c5-2b4a-533e-76341e414c63*​/​.performer[0]	
-               Relative URLs must be of the format [ResourceName]/[id]. Encountered e3d2bc19-2f10-2b4d-1741-e4135fe612a9-->
-      <!--               <reference value="e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>-->
-      <!--               <reference value="Organization/tester"/>-->
+      <reference value="Organization/organization-dxpq-ex1"/>
    </performer>
+   <!--   Abbreviated Results, showing only longterm25c-initial set of 3-->
    <result>
-      <reference value="Observation/6fabbf78-9678-8030-485f-b149956308d5"/>
-      <!-- Error was Bundle​.entry[0]​.resource​/*DiagnosticReport​/6f4a3311-92c5-2b4a-533e-76341e414c63*​/​.result[0]
-                  Relative URLs must be of the format [ResourceName]/[id]. Encountered 6fabbf78-9678-8030-485f-b149956308d5-->
-      <!--               <reference value="6fabbf78-9678-8030-485f-b149956308d5"/>-->
-      <!--               <reference value="Observation/LongTerm25C-initial-1"/>-->
+      <reference value="Observation/observation-test-result-longterm25c-initial-1"/>
    </result>
    <result>
-      <reference value="Observation/74535cc6-5232-5ab5-81cf-167a480795e5"/>
-      <!--               <reference value="74535cc6-5232-5ab5-81cf-167a480795e5"/>-->
-      <!--               <reference value="Observation/LongTerm25C-initial-2"/>-->
+      <reference value="Observation/observation-test-result-longterm25c-initial-2"/>
    </result>
    <result>
-      <reference value="Observation/8bf75da1-9221-66fe-6725-c64cb45a57e6"/>
-      <!--               <reference value="8bf75da1-9221-66fe-6725-c64cb45a57e6"/>-->
-      <!--               <reference value="Observation/LongTerm25C-initial-3"/>-->
+      <reference value="Observation/observation-test-result-longterm25c-initial-3"/>
    </result>
-   <!-- skipping middle months -->
-   <result>
-      <reference value="Observation/e803ad6d-0cb3-87dd-6af1-4b88c654a47c"/>
-      <!--               <reference value="e803ad6d-0cb3-87dd-6af1-4b88c654a47c"/>-->
-      <!--               <reference value="Observation/LongTerm25C-18m-1"/>-->
-   </result>
-   <result>
-      <!--Observation/LongTerm25C-18m-2-->
-      <reference value="Observation/3519f84a-2889-90a0-a6b7-ff2f1be66a73"/>
-      <!--               <reference value="3519f84a-2889-90a0-a6b7-ff2f1be66a73"/>-->
-      <!--               <reference value="Observation/LongTerm25C-18m-2"/>-->
-   </result>
-   <result>
-      <!--Observation/LongTerm25C-18m-3-->
-      <reference value="Observation/2ef362f1-0b65-3578-7f06-fbd74a24694a"/>
-      <!--               <reference value="2ef362f1-0b65-3578-7f06-fbd74a24694a"/>-->
-      <!--               <reference value="Observation/LongTerm25C-18m-3"/>-->
-   </result>
-   <!-- NEW DATA -->
-   <!--result>
-                    <reference value="Observation/LongTerm25C-24m-1"/>
-                </result-->
-   <!-- Accelerated -->
-   <result>
-      <!--Observation/Accelerated40C-3-1-->
-      <reference value="Observation/72e0640b-094b-909e-5268-3dee92af4bbd"/>
-      <!--               <reference value="Observation/Accelerated40C-3-1"/>-->
-   </result>
-   <!-- skipping rest of Accelerated -->
-   <conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 18 months."/>
-   <!-- NEW DATA -->
-   <!--conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 24 months."/-->
+   <conclusion value="The samples have been assessed for initial period; no shelf life determined."/>
 </DiagnosticReport>

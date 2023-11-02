@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="observation-test-result-lt25c-i1-degradation-imp3"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+   </meta>
+   <instantiatesReference>
+      <reference value="ObservationDefinition/Degradation"/>
+   </instantiatesReference>
+   <status value="final"/>
+   <code>
+      <coding>
+         <system value="http://dummy.loinc.org"/>
+         <code value="DGP"/>
+         <display value="Degradation Products"/>
+      </coding>
+      <text value="Degradation Products"/>
+   </code>
+   <subject>
+      <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+   </subject>
+   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+   <performer>
+      <reference value="Organization/organization-dxpq-ex1"/>
+   </performer>
+   <valueQuantity>
+      <value value="0.201"/>
+      <unit value="% w/w"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+   </valueQuantity>
+   <component>
+      <code>
+         <coding>
+            <system value="http://dummy.loinc.org"/>
+            <code value="IMP"/>
+            <display value="Impurity"/>
+         </coding>
+      </code>
+      <valueCodeableConcept>
+         <text value="Impurity 3"/>
+      </valueCodeableConcept>
+   </component>
+</Observation>
