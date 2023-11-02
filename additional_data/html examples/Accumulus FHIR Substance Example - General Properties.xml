@@ -10,7 +10,7 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-                <!-- unlinked -->
+                <!-- focal resource -->
             <id value="substancedefinition-substance-dxpq-ex1"/>
             <property>
                <type>

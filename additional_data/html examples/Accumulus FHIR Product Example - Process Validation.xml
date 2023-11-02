@@ -3813,7 +3813,7 @@
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
-                <!-- unlinked -->
+                <!-- focal resource -->
             <id value="plandefinition-dxpq-ex2-manufacturing-plan"/>
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
             <meta>
