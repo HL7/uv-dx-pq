@@ -35,16 +35,16 @@
                      <p>Table 1 - Formulation history for Stelbatolol</p>
                      <table>
                         <tr>
-                           <th class="plain">Formulation Identifier</th>
-                           <th class="plain">Composition</th>
-                           <th class="plain">Change</th>
-                           <th class="plain">Development phase</th>
+                           <th bgcolor="#FFFFFF">Formulation Identifier</th>
+                           <th bgcolor="#FFFFFF">Composition</th>
+                           <th bgcolor="#FFFFFF">Change</th>
+                           <th bgcolor="#FFFFFF">Development phase</th>
                         </tr>
                         <tr>
-                           <td class="plain">1233545</td>
-                           <td class="plain">Composition 1a</td>
-                           <td class="plain">Changes made are listed here</td>
-                           <td class="plain">Pre-clinical phase</td>
+                           <td bgcolor="#FFFFFF">1233545</td>
+                           <td bgcolor="#FFFFFF">Composition 1a</td>
+                           <td bgcolor="#FFFFFF">Changes made are listed here</td>
+                           <td bgcolor="#FFFFFF">Pre-clinical phase</td>
                         </tr>
                      </table>
                   </div>
@@ -59,20 +59,20 @@
                      <p>Table 2 - Formulation Development Studies</p>
                      <table>
                         <tr>
-                           <th class="plain">Study</th>
-                           <th class="plain">Formulation identifier </th>
-                           <th class="plain">Objective</th>
-                           <th class="plain">Quality attribute evaluated</th>
-                           <th class="plain">Study design</th>
-                           <th class="plain">Study result</th>
+                           <th bgcolor="#FFFFFF">Study</th>
+                           <th bgcolor="#FFFFFF">Formulation identifier </th>
+                           <th bgcolor="#FFFFFF">Objective</th>
+                           <th bgcolor="#FFFFFF">Quality attribute evaluated</th>
+                           <th bgcolor="#FFFFFF">Study design</th>
+                           <th bgcolor="#FFFFFF">Study result</th>
                         </tr>
                         <tr>
-                           <td class="plain">Study Name</td>
-                           <td class="plain">12234a</td>
-                           <td class="plain">Short description of the study objective</td>
-                           <td class="plain">CQA information</td>
-                           <td class="plain">Short description of the design</td>
-                           <td class="plain">Reference to the table showing study results</td>
+                           <td bgcolor="#FFFFFF">Study Name</td>
+                           <td bgcolor="#FFFFFF">12234a</td>
+                           <td bgcolor="#FFFFFF">Short description of the study objective</td>
+                           <td bgcolor="#FFFFFF">CQA information</td>
+                           <td bgcolor="#FFFFFF">Short description of the design</td>
+                           <td bgcolor="#FFFFFF">Reference to the table showing study results</td>
                         </tr>
                      </table>
                   </div>
@@ -90,7 +90,34 @@
          </Composition>
       </resource>
    </entry>
-   <!-- todo another resource -->
+   <entry>
+      <fullUrl value="urn:uuid:a1694a8a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+         <Composition>
+            <id value="comp-risk"/>
+            <status value="final"/>
+            <type>
+               <text value="Product Note - Summary for Risk of Impurities"/>
+            </type>
+            <subject>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subject>
+            <date value="2023-10-01"/>
+            <author>
+               <reference value="Organization/owner"/>
+            </author>
+            <title value="3.2.P.2.2.4 - Summary for Risk of Impurities"/>
+            <section>
+               <text>
+                  <status value="additional"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <p>Text for the risk assessment of elemental impurities in the product</p>
+                  </div>
+               </text>
+            </section>
+         </Composition>
+      </resource>
+   </entry>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
    <entry>
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
