@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Bundle-drug-product-microbiological-attributes-pq"/>
+  <url
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
+  <name value="BundleDrugProductMicrobiologicalAttributesPq"/>
+  <title value="Bundle – Drug Product Microbiological Attributes PQ"/>
+  <status value="active"/>
+  <description value="Bundle – Drug Product Microbiological Attributes PQ"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <short value="collection"/>
+      <patternCode value="collection"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="Bundle.entry:Microbiological-Attributes-Report">
+      <path value="Bundle.entry"/>
+      <sliceName value="Microbiological-Attributes-Report"/>
+    </element>
+    <element id="Bundle.entry:Microbiological-Attributes-Report.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="DiagnosticReport"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Microbiological-Result">
+      <path value="Bundle.entry"/>
+      <sliceName value="Microbiological-Result"/>
+    </element>
+    <element id="Bundle.entry:Microbiologicalt-Result.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Observation"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:MedicinalProductDefinition">
+      <path value="Bundle.entry"/>
+      <sliceName value="MedicinalProductDefinition"/>
+    </element>
+    <element id="Bundle.entry:MedicinalProductDefinition.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="MedicinalProductDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Medication">
+      <path value="Bundle.entry"/>
+      <sliceName value="Medication"/>
+    </element>
+    <element id="Bundle.entry:Medication.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Medication"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Organization">
+      <path value="Bundle.entry"/>
+      <sliceName value="Organization"/>
+    </element>
+    <element id="Bundle.entry:Organization.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Organization"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
+      </type>
+    </element>
+    
+  </differential>
+</StructureDefinition>

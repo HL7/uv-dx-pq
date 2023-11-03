@@ -143,6 +143,17 @@
         
         <resource>
             <reference>
+                <reference value="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
+                <display value="BundleDrugProductMicrobiologicalAttributesPq"/>
+            </reference>
+            <name value="Bundle – Drug Product Microbiological Attributes PQ"/>
+            <description value="Bundle – Drug Product Microbiological Attributes PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b1-id"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
                 <display value="BundleDrugProductExcipientsPq"/>
             </reference>
