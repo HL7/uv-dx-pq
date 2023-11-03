@@ -84,11 +84,11 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Stability-Test-Result">
+    <element id="Bundle.entry:Test-Result">
       <path value="Bundle.entry"/>
-      <sliceName value="Stability-Test-Result"/>
+      <sliceName value="Test-Result"/>
     </element>
-    <element id="Bundle.entry:Stability-Test-Result.resource">
+    <element id="Bundle.entry:Test-Result.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Observation"/>

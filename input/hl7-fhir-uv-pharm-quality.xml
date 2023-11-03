@@ -164,15 +164,26 @@
         
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
-                <display value="BundleDrugProductExcipientsPq"/>
+                <reference value="StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
+                <display value="BundleDrugSubstanceGeneralPropertiesPq"/>
             </reference>
-            <name value="Bundle – Drug Product Excipients PQ"/>
-            <description value="Bundle – Drug Product Excipients PQ"/>
+            <name value="Bundle – Drug Product General Properties PQ"/>
+            <description value="Bundle – Drug Product General Properties PQ"/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
+                <display value="Bundle – Drug Substance Characterization PQ"/>
+            </reference>
+            <name value="Bundle – Drug Substance Characterization PQ"/>
+            <description value="Bundle – Drug Substance Characterization PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b1-id"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
