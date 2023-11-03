@@ -72,66 +72,44 @@
 
     <element id="Composition.section">
       <path value="Composition.section"/>
-      <slicing>
-        <discriminator>
-          <type value="pattern"/>
-          <path value="code"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
+      <!--            <short value="TBD"/>
+            <definition value="TBD"/>-->
       <mustSupport value="true"/>
-    </element>
-
-    <element id="Composition.section:Formulation-History">
-      <path value="Composition.section"/>
-      <sliceName value="Formulation-History"/>
-    </element>
-    <element id="Composition.section:Formulation-History.title">
+      </element>
+       <element id="Composition.section.title">
       <path value="Composition.section.title"/>
-      <definition value="TBD"/>--> <mustSupport value="true"/>
-    </element>
-    <element id="Composition.section:Formulation-History.text">
-      <path value="Composition.section.text"/>
-      <mustSupport value="true"/>
-    </element>
-
-    <element id="Composition.section:Formulation-Development-Studies">
+         <path value="Composition.section"/>
+         <!--            <short value="TBD"/>
+            <definition value="TBD"/>-->
+         <mustSupport value="true"/>
+       </element>
+    <element id="Composition.section.code">
+      <path value="Composition.section.code"/>
       <path value="Composition.section"/>
-      <sliceName value="Formulation-Development-Studies"/>
-    </element>
-    <element id="Composition.section:Formulation-Development-Studies.title">
-      <path value="Composition.section.title"/>
+      <!--            <short value="TBD"/>
+            <definition value="TBD"/>-->
       <mustSupport value="true"/>
     </element>
-    <element id="Composition.section:Formulation-Development-Studies.text">
-      <path value="Composition.section.text"/>
-      <mustSupport value="true"/>
-    </element>
-
-    <element id="Composition.section:Risk-Elemental-Impurities">
+    <element id="Composition.section.author">
+      <path value="Composition.section.author"/>
       <path value="Composition.section"/>
-      <sliceName value="Risk-Elemental-Impurities"/>
-    </element>
-    <element id="Composition.section:Risk-Elemental-Impurities.title">
-      <path value="Composition.section.title"/>
+      <!--            <short value="TBD"/>
+            <definition value="TBD"/>-->
       <mustSupport value="true"/>
     </element>
-    <element id="Composition.section:Risk-Elemental-Impurities.text">
+   <element id="Composition.section.text">
       <path value="Composition.section.text"/>
-      <mustSupport value="true"/>
+     <path value="Composition.section"/>
+     <!--            <short value="TBD"/>
+            <definition value="TBD"/>-->
+     <mustSupport value="true"/>
     </element>
-    
-    <element id="Composition.section:Risk-Summary">
-      <path value="Composition.section"/>
-      <sliceName value="Risk-Summary"/>
-    </element>
-    <element id="Composition.section:Risk-Summary.title">
-      <path value="Composition.section.title"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Composition.section:Risk-Summary.text">
-      <path value="Composition.section.text"/>
-      <mustSupport value="true"/>
+   <element id="Composition.section.section">
+      <path value="Composition.section.section"/>
+     <path value="Composition.section"/>
+     <!--            <short value="TBD"/>
+            <definition value="TBD"/>-->
+     <mustSupport value="true"/>>
     </element>
   </differential>
 </StructureDefinition>
