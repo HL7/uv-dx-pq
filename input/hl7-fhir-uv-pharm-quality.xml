@@ -140,6 +140,16 @@
 
         <!--Drug Identification-->
         <!--        ID Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-product-pq"/>
+                <display value="Bundle-drug-product-pq"/>
+            </reference>
+            <name value="Bundle – Drug Product PQ"/>
+            <description value="Bundle – Drug Product PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b1-id"/>
+        </resource>
         
         <resource>
             <reference>

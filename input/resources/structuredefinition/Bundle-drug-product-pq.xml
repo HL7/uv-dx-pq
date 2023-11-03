@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Bundle-drug-product-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq"/>
+  <name value="BundleDrugProductPq"/>
+  <title value="Bundle - Drug Product PQ"/>
+  <status value="active"/>
+  <description value="TBD"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <short value="collection"/>
+      <patternCode value="collection"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Bundle.entry:Product-Identification">
+      <path value="Bundle.entry"/>
+      <sliceName value="Product-Identification"/>
+    </element>
+    <element id="Bundle.entry:Product-Identification.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="MedicinalProductDefinition"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Packaged-Item">
+      <path value="Bundle.entry"/>
+      <sliceName value="Packaged-Item"/>
+    </element>
+    <element id="Bundle.entry:Packaged-Item.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="ManufacturedItemDefinition"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Owner-Organization">
+      <path value="Bundle.entry"/>
+      <sliceName value="Owner-Organization"/>
+    </element>
+    <element id="Bundle.entry:Owner-Organization.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Organization"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Text-Section">
+      <path value="Bundle.entry"/>
+      <sliceName value="Text-Section"/>
+    </element>
+    <element id="Bundle.entry:Text-Section.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Composition"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
+      </type>
+    </element>
+
+  </differential>
+</StructureDefinition>
