@@ -756,6 +756,17 @@
         
         <resource>
             <reference>
+                <reference value="StructureDefinition/Composition-drug-pq"/>
+                <display value="CompositionDrugPQ"/>
+            </reference>
+            <name value="Composition - Drug PQ"/>
+            <description value="Test"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/DeviceDefinition-dxpq"/>
                 <display value="DeviceDefinitionDxPq"/>
             </reference>
