@@ -76,7 +76,7 @@
         </text>
     </section>
     
-<!--    <section>
+    <section>
         <title value="3.2.P.2.2.4 - Summary for Risk Assessment of Elemental Impurities in Drug Product"/>
         <text>
             <status value="additional"/>
@@ -84,5 +84,5 @@
                 <p>Summary of the risk assessment for product...</p>
             </div>
         </text>
-    </section>-->
+    </section>
 </Composition>
