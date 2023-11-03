@@ -103,13 +103,6 @@
             <description value="FHIR artifacts that provide details about compatibility studies and results."/>
         </grouping>
 
-        <!--Old groupings. No longer needed?-->
-        <!--        <grouping id="b16-characterization">
-            <name value="Characterization"/>
-        </grouping>
-        <grouping id="b18-refstd">
-            <name value="Reference Standards"/>
-        </grouping>-->
 
         <!--        Additional Groupings -->
         <grouping id="building-blocks-1">
@@ -173,17 +166,6 @@
             <groupingId value="b1-id"/>
         </resource>
 
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
-                <display value="Bundle – Drug Substance Characterization PQ"/>
-            </reference>
-            <name value="Bundle – Drug Substance Characterization PQ"/>
-            <description value="Bundle – Drug Substance Characterization PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b1-id"/>
-        </resource>
-        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
