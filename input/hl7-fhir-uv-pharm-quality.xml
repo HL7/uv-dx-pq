@@ -173,6 +173,16 @@
             <groupingId value="b1-id"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
+                <display value="Bundle – Drug Substance Characterization PQ"/>
+            </reference>
+            <name value="Bundle – Drug Substance Characterization PQ"/>
+            <description value="Bundle – Drug Substance Characterization PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b1-id"/>
+        </resource>
         <!--        ID Examples-->
 
         <!--Specification -->
