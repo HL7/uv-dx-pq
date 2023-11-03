@@ -153,16 +153,6 @@
         </resource>
 
         <!--        ID Examples-->
-        <resource>
-            <reference>
-                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-            </reference>
-            <name value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
-            <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
-            <groupingId value="b1-id"/>
-        </resource>
 
         <!--Specification -->
         <!--        Specification Profiles-->
@@ -898,7 +888,7 @@
             <reference>
                 <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </reference>
-            <name value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <name value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
             <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
