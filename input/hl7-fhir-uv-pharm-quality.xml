@@ -925,22 +925,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
-        <resource>
-            <reference>
-                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-prod"/>
-            </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ - Stability Study, Product"/>
-            <description value="Stability study results report, drug product example"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>
-        
-        
-        
-        
-        
+
         <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-prod"/>
