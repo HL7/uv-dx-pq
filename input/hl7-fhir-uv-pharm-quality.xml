@@ -140,13 +140,14 @@
 
         <!--Drug Identification-->
         <!--        ID Profiles-->
+        
         <resource>
             <reference>
-                <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
-                <display value="MedicinalProductDefinitionDrugProductDxPq"/>
+                <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
+                <display value="BundleDrugProductExcipientsPq"/>
             </reference>
-            <name value="MedicinalProductDefinition - Drug Product dx-PQ"/>
-            <description value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+            <name value="Bundle – Drug Product Excipients PQ"/>
+            <description value="Bundle – Drug Product Excipients PQ"/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
@@ -798,6 +799,17 @@
 
         <resource>
             <reference>
+                <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+                <display value="MedicinalProductDefinitionDrugProductDxPq"/>
+            </reference>
+            <name value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+            <description value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/ObservationDefinition-test-method-dxpq"/>
                 <display value="ObservationDefinitionTestMethodDxPq"/>
             </reference>
@@ -882,6 +894,17 @@
             <groupingId value="building-blocks-2"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </reference>
+            <name value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-dxpq-ex1-validation-protocol"/>
