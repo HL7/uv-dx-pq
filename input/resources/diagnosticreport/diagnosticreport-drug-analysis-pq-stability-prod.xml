@@ -8,7 +8,7 @@
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
       <valueReference>
-         <!--<reference value="PlanDefinition/plandefinition-stability-study-protocol-dxpq-ex1"-->
+         <!--<reference value="PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"-->
          <reference value="PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
       </valueReference>
    </extension>
