@@ -893,8 +893,54 @@
 
         <!--Building Block Examples -->
 
-
-
+<!--        <resource>
+            <reference>
+                <reference value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
+            </reference>
+            <name value="activitydefinition-stability-test-dxpq-ex1"/>
+            <description value="ActivityDefinition - Stability Test dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>-->
+        
+        <resource>
+            <reference>
+                <reference value="Composition/composition-drug-pq-formulation"/>
+            </reference>
+            <name value="composition-drug-pq-formulation"/>
+            <description value="Scomposition-drug-pq-formulation"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Composition/composition-drug-pq-risk"/>
+            </reference>
+            <name value="composition-drug-pq-risk"/>
+            <description value="Scomposition-drug-pq-risk"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-prod"/>
+            </reference>
+            <name value="DiagnosticReport - Drug Analysis PQ - Stability Study, Product"/>
+            <description value="Stability study results report, drug product example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        
+        
+        
+        
         <resource>
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-prod"/>

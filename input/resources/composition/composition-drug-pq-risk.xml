@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+    <id value="composition-drug-pq-risk"/>
+    <!--    Based on Accumulus FHIR Product Example - Drug Product -->
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
+    </meta>
+    <status value="final"/>
+    <type>
+        <text value="Product Note - Summary for Risk of Impurities"/>
+    </type>
+    <subject>
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+    </subject>
+    <date value="2023-10-01"/>
+    <author>
+        <reference value="Organization/owner"/>
+    </author>
+    <title value="3.2.P.2.2.4 - Summary for Risk of Impurities"/>
+    <section>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Text for the risk assessment of elemental impurities in the product</p>
+            </div>
+        </text>
+    </section>
+</Composition>

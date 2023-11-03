@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+    <id value="composition-drug-pq-formulation"/>
+    <!--    Based on Accumulus FHIR Product Example - Drug Product -->
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
+    </meta>
+    <status value="final"/>
+    <type>
+        <text value="Product Note - Formulation Development"/>
+    </type>
+    <subject>
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+    </subject>
+    <date value="2023-10-01"/>
+    <author>
+        <reference value="Organization/owner"/>
+    </author>
+    <title value="3.2.P.2.2.1 - Formulation Development"/>
+    <section>
+        <title value="3.2.P.2.2.1.1 - Formulation History"/>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <ul>
+                    <li>Drug product description including difference or similarity between the drug product and reference product, if applicable</li>
+                    <li>Propose route of administration (include any dilution or reconstitution necessary)</li>
+                    <li>Choice of manufacturing process, explain choice if alternative process could have been applicable (e.g. aseptic processing instead of terminal sterilization, direct compression instead of granulation). If different processes were used for different formulation highlight and explain differences, refer at 3.2.P.2.3. If no change in the process occurred refer to 3.3.P.3.3 and
+                        avoid duplication data.</li>
+                </ul>
+                <p>Table 1 - Formulation history for Stelbatolol</p>
+                <table>
+                    <tr>
+                        <th bgcolor="#FFFFFF">Formulation Identifier</th>
+                        <th bgcolor="#FFFFFF">Composition</th>
+                        <th bgcolor="#FFFFFF">Change</th>
+                        <th bgcolor="#FFFFFF">Development phase</th>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#FFFFFF">1233545</td>
+                        <td bgcolor="#FFFFFF">Composition 1a</td>
+                        <td bgcolor="#FFFFFF">Changes made are listed here</td>
+                        <td bgcolor="#FFFFFF">Pre-clinical phase</td>
+                    </tr>
+                </table>
+            </div>
+        </text>
+    </section>
+    <section>
+        <title value="3.2.P.2.2.1.2 - Formulation Development Studies"/>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Summary of the formulation developmental studies conducted are provided in Table 2</p>
+                <p>Table 2 - Formulation Development Studies</p>
+                <table>
+                    <tr>
+                        <th bgcolor="#FFFFFF">Study</th>
+                        <th bgcolor="#FFFFFF">Formulation identifier </th>
+                        <th bgcolor="#FFFFFF">Objective</th>
+                        <th bgcolor="#FFFFFF">Quality attribute evaluated</th>
+                        <th bgcolor="#FFFFFF">Study design</th>
+                        <th bgcolor="#FFFFFF">Study result</th>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#FFFFFF">Study Name</td>
+                        <td bgcolor="#FFFFFF">12234a</td>
+                        <td bgcolor="#FFFFFF">Short description of the study objective</td>
+                        <td bgcolor="#FFFFFF">CQA information</td>
+                        <td bgcolor="#FFFFFF">Short description of the design</td>
+                        <td bgcolor="#FFFFFF">Reference to the table showing study results</td>
+                    </tr>
+                </table>
+            </div>
+        </text>
+    </section>
+    <section>
+        <title value="3.2.P.2.2.4 - Summary for Risk Assessment of Elemental Impurities in Drug Product"/>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>Summary of the risk assessment for product...</p>
+            </div>
+        </text>
+    </section>
+</Composition>
