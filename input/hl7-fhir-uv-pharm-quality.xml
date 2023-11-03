@@ -893,16 +893,16 @@
 
         <!--Building Block Examples -->
 
-<!--        <resource>
+        <resource>
             <reference>
-                <reference value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
+                <reference value="ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
             </reference>
-            <name value="activitydefinition-stability-test-dxpq-ex1"/>
-            <description value="ActivityDefinition - Stability Test dx-PQ - Example 1"/>
+            <name value="activitydefinition-test-longterm25c-25xyz-initial"/>
+            <description value="activitydefinition-test-longterm25c-25xyz-initial"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>-->
+        </resource>
         
         <resource>
             <reference>
