@@ -12,14 +12,12 @@
   <type value="Composition"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
   <derivation value="constraint"/>
-
   <differential>
     <element id="Composition">
       <path value="Composition"/>
       <!--            <short value="TBD"/>
             <definition value="TBD"/>-->
     </element>
-
     <element id="Composition.id">
       <path value="Composition.id"/>
       <!--            <short value="TBD"/>
@@ -33,20 +31,17 @@
             <definition value="TBD"/>-->
       <mustSupport value="true"/>
     </element>
-
     <element id="Composition.type">
       <path value="Composition.type"/>
       <!--            <short value="TBD"/>
             <definition value="TBD"/>-->
       <mustSupport value="true"/>
     </element>
-
     <element id="Composition.subject">
       <path value="Composition.subject"/>
       <!--            <short value="TBD"/>
             <definition value="TBD"/>-->
       <mustSupport value="true"/>
-
     </element>
 
     <element id="Composition.date">
@@ -76,40 +71,40 @@
             <definition value="TBD"/>-->
       <mustSupport value="true"/>
       </element>
-       <element id="Composition.section.title">
+<!--       <element id="Composition.section.title">
       <path value="Composition.section.title"/>
          <path value="Composition.section"/>
-         <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
+         <!-\-            <short value="TBD"/>
+            <definition value="TBD"/>-\->
          <mustSupport value="true"/>
-       </element>
-    <element id="Composition.section.code">
+       </element>-->
+<!--    <element id="Composition.section.code">
       <path value="Composition.section.code"/>
       <path value="Composition.section"/>
-      <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
+      <!-\-            <short value="TBD"/>
+            <definition value="TBD"/>-\->
       <mustSupport value="true"/>
-    </element>
-    <element id="Composition.section.author">
+    </element>-->
+<!--    <element id="Composition.section.author">
       <path value="Composition.section.author"/>
       <path value="Composition.section"/>
-      <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
+      <!-\-            <short value="TBD"/>
+            <definition value="TBD"/>-\->
       <mustSupport value="true"/>
-    </element>
-   <element id="Composition.section.text">
+    </element>-->
+<!--   <element id="Composition.section.text">
       <path value="Composition.section.text"/>
      <path value="Composition.section"/>
-     <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
+     <!-\-            <short value="TBD"/>
+            <definition value="TBD"/>-\->
      <mustSupport value="true"/>
-    </element>
-   <element id="Composition.section.section">
+    </element>-->
+<!--   <element id="Composition.section.section">
       <path value="Composition.section.section"/>
      <path value="Composition.section"/>
-     <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
+     <!-\-            <short value="TBD"/>
+            <definition value="TBD"/>-\->
      <mustSupport value="true"/>>
-    </element>
+    </element>-->
   </differential>
 </StructureDefinition>
