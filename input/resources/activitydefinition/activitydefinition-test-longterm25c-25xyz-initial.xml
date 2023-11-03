@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+    <id value="activitydefinition-test-longterm25c-25xyz-initial"/>
+    <meta>
+        <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
+    <title value="Long-term - 25°C/60% RH - XYZ"/>
+    <status value="active"/>
+    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X"/>
+<!--    <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>-->
+    <!--            <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>-->
+    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y"/>
+<!--    <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>-->
+    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Z"/>
+<!--    <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/363384c8-0d79-5ff0-5538-4933f99d6409"/>-->
+</ActivityDefinition>

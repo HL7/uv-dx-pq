@@ -743,6 +743,17 @@
         <!--Building Block Profiles -->
         <resource>
             <reference>
+                <reference value="StructureDefinition/ActivityDefinition-test-dxpq"/>
+                <display value="ActivityDefinitionTestDxPq"/>
+            </reference>
+            <name value="ActivityDefinition - Test dx-PQ"/>
+            <description value="Test"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/DeviceDefinition-dxpq"/>
                 <display value="DeviceDefinitionDxPq"/>
             </reference>
