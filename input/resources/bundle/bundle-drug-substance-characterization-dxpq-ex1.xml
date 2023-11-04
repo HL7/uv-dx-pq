@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- Version with references converted to use fullUrls as the basis for ids --><!-- Substance Characterization (Elucidation of Structure) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Substance Characterization (Elucidation of Structure) -->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="substance-characterization"/>
    <meta>
@@ -9,7 +10,7 @@
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <!--characterizationProtocol-->
+            	<!--characterizationProtocol-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-substance">
                     <valueBoolean value="true"/>
@@ -31,7 +32,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                	<!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
                <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
             </subjectReference>
             <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
@@ -116,11 +117,6 @@
                </action>
             </action>
             <action>
-               <extension url="http://nprogram.co.uk/fhir/extension/viewer/showImageActionResults">
-                  <extension url="titlePrefix">
-                     <valueString value="Figure 7"/>
-                  </extension>
-               </extension>
                <prefix value="2.3.fig7"/>
                <title value="Structure of Stelbatolol With Number Assignments"/>
                <description value="Description of this step"/>
@@ -159,14 +155,6 @@
                </action>
             </action>
             <action>
-               <extension url="http://nprogram.co.uk/fhir/extension/viewer/showImageActionResults">
-                  <extension url="titlePrefix">
-                     <valueString value="Figure 10"/>
-                  </extension>
-                  <extension url="scalePercent">
-                     <valueInteger value="40"/>
-                  </extension>
-               </extension>
                <prefix value="2.6.fig10"/>
                <title value="Molecular Structure of Stalbatalol (Lot SUB1Amgen) Determined by Single Crystal X-ray Diffraction Analysis"/>
                <description value="Description of this step"/>
@@ -186,14 +174,6 @@
                </action>
             </action>
             <action>
-               <extension url="http://nprogram.co.uk/fhir/extension/viewer/showImageActionResults">
-                  <extension url="titlePrefix">
-                     <valueString value="Figure 7"/>
-                  </extension>
-                  <extension url="scalePercent">
-                     <valueInteger value="70"/>
-                  </extension>
-               </extension>
                <prefix value="3.2.fig11"/>
                <title value="X-ray Powder Diffractogram of Stalbatolol (Lot SUB1Amgen)"/>
                <description value="Description of this step"/>
@@ -213,14 +193,6 @@
                </action>
             </action>
             <action>
-               <extension url="http://nprogram.co.uk/fhir/extension/viewer/showImageActionResults">
-                  <extension url="titlePrefix">
-                     <valueString value="Figure 8"/>
-                  </extension>
-                  <extension url="scalePercent">
-                     <valueInteger value="60"/>
-                  </extension>
-               </extension>
                <prefix value="2.4.fig9"/>
                <title value="UV/Visible Absorption Spectrum of Stelbataol (Lot SUB1Amgen)"/>
                <description value="Description of this step"/>
@@ -249,11 +221,11 @@
          <DiagnosticReport>
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
-            <!--processValidationReport-->
+                <!--processValidationReport-->
             <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--PlanDefinition/characterizationProtocol-->
+                        <!--PlanDefinition/characterizationProtocol-->
                   <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
                </valueReference>
             </extension>
@@ -266,80 +238,61 @@
                </coding>
             </code>
             <effectiveDateTime value="2020-12"/>
-            <result>
-               <!--Observation/elementalAnalysisCarbon-->
+            <result><!--Observation/elementalAnalysisCarbon-->
                <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
-               <!--Observation/elementalAnalysisHydrogen-->
+            <result><!--Observation/elementalAnalysisHydrogen-->
                <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a34"/>
             </result>
-            <result>
-               <!--Observation/elementalAnalysisNitrogen-->
+            <result><!--Observation/elementalAnalysisNitrogen-->
                <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a35"/>
             </result>
-            <result>
-               <!--Observation/elementalAnalysisFlourine-->
+            <result><!--Observation/elementalAnalysisFlourine-->
                <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a35"/>
             </result>
-            <result>
-               <!--Observation/ionAnalysisCarbon-->
+            <result><!--Observation/ionAnalysisCarbon-->
                <reference value="Observation/9c56948c-3a39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
-               <!--Observation/ionAnalysisHydrogen-->
+            <result><!--Observation/ionAnalysisHydrogen-->
                <reference value="Observation/9c56948c-4a39-6609-1c01-4d197ea57a34"/>
             </result>
-            <result>
-               <!--Observation/ionAnalysisNitrogen-->
+            <result><!--Observation/ionAnalysisNitrogen-->
                <reference value="Observation/9c56948c-5a39-6609-1c01-4d197ea57a35"/>
             </result>
-            <result>
-               <!--Observation/ionAnalysisFlourine-->
+            <result><!--Observation/ionAnalysisFlourine-->
                <reference value="Observation/9c56948c-6a39-6609-1c01-4d197ea57a35"/>
             </result>
-            <result>
-               <!--Observation/structure-->
+            <result><!--Observation/structure-->
                <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
-               <!--Observation/nmr3-->
+            <result><!--Observation/nmr3-->
                <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             </result>
-            <result>
-               <!--Observation/nmr4-->
+            <result><!--Observation/nmr4-->
                <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e73"/>
             </result>
-            <result>
-               <!--Observation/nmr5-->
+            <result><!--Observation/nmr5-->
                <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             </result>
-            <result>
-               <!--Observation/nmr6-->
+            <result><!--Observation/nmr6-->
                <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             </result>
-            <result>
-               <!--Observation/nmr8-->
+            <result><!--Observation/nmr8-->
                <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             </result>
-            <result>
-               <!--Observation/nmr9-->
+            <result><!--Observation/nmr9-->
                <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             </result>
-            <result>
-               <!--Observation/nmr10-->
+            <result><!--Observation/nmr10-->
                <reference value="Observation/fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             </result>
-            <result>
-               <!--Observation/fig8absorption-->
+            <result><!--Observation/fig8absorption-->
                <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a35"/>
             </result>
-            <result>
-               <!--Observation/fig10molecularstructure-->
+            <result><!--Observation/fig10molecularstructure-->
                <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a34"/>
             </result>
-            <result>
-               <!--Observation/fig11xray-->
+            <result><!--Observation/fig11xray-->
                <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a34"/>
             </result>
             <conclusion value="The samples have been assessed and the conclusion is..."/>
@@ -350,7 +303,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--ElementalAnalysisCarbon-->
+            	<!--ElementalAnalysisCarbon-->
             <id value="fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
@@ -390,7 +343,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
       <resource>
          <ObservationDefinition>
-            <!--ElementalAnalysisHydrogen-->
+				<!--ElementalAnalysisHydrogen-->
             <id value="fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
@@ -430,7 +383,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
       <resource>
          <ObservationDefinition>
-            <!--ElementalAnalysisNitrogen-->
+				<!--ElementalAnalysisNitrogen-->
             <id value="fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
@@ -470,7 +423,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
       <resource>
          <ObservationDefinition>
-            <!--ElementalAnalysisFlourine-->
+				<!--ElementalAnalysisFlourine-->
             <id value="fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
@@ -510,7 +463,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--IonAnalysisCarbon-->
+            	<!--IonAnalysisCarbon-->
             <id value="fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"/>
@@ -554,7 +507,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--IonAnalysisHydrogen-->
+				<!--IonAnalysisHydrogen-->
             <id value="fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
@@ -589,7 +542,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--IonAnalysisNitrogen-->
+				<!--IonAnalysisNitrogen-->
             <id value="fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
@@ -624,7 +577,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--IonAnalysisFlourine-->
+				<!--IonAnalysisFlourine-->
             <id value="fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"/>
@@ -659,7 +612,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--NMR-->
+            	<!--NMR-->
             <id value="fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
@@ -708,7 +661,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--Structure-->
+				<!--Structure-->
             <id value="fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>
@@ -729,7 +682,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>
       <resource>
          <ObservationDefinition>
-            <!--Diffractogram-->
+				<!--Diffractogram-->
             <id value="fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>
@@ -750,7 +703,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>
       <resource>
          <ObservationDefinition>
-            <!--MolecularStructure-->
+				<!--MolecularStructure-->
             <id value="fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>
@@ -770,7 +723,7 @@
       <fullUrl value="urn:uuid:fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>
       <resource>
          <ObservationDefinition>
-            <!--Absorption-->
+				<!--Absorption-->
             <id value="fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>
@@ -790,10 +743,10 @@
       <fullUrl value="urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--elementalAnalysisCarbon-->
+            	<!--elementalAnalysisCarbon-->
             <id value="9c56948c-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/ElementalAnalysisCarbon-->
+                	<!--ObservationDefinition/ElementalAnalysisCarbon-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -806,12 +759,12 @@
                <text value="Elemental Analysis Carbon (%)"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+            		<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -825,10 +778,10 @@
       <fullUrl value="urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34"/>
       <resource>
          <Observation>
-            <!--elementalAnalysisHydrogen-->
+				<!--elementalAnalysisHydrogen-->
             <id value="9c56948c-2a39-6609-1c01-4d197ea57a34"/>
             <instantiatesReference>
-               <!--ObservationDefinition/ElementalAnalysisHydrogen-->
+					<!--ObservationDefinition/ElementalAnalysisHydrogen-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
             </instantiatesReference>
             <status value="final"/>
@@ -841,12 +794,12 @@
                <text value="Elemental Analysis Hydrogen (%)"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -860,10 +813,10 @@
       <fullUrl value="urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35"/>
       <resource>
          <Observation>
-            <!--elementalAnalysisNitrogen-->
+				<!--elementalAnalysisNitrogen-->
             <id value="9c56948c-2a39-6609-1c01-4d197ea57a35"/>
             <instantiatesReference>
-               <!--ObservationDefinition/ElementalAnalysisNitrogen-->
+					<!--ObservationDefinition/ElementalAnalysisNitrogen-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
             </instantiatesReference>
             <status value="final"/>
@@ -876,12 +829,12 @@
                <text value="Elemental Analysis Nitrogen (%)"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -895,10 +848,10 @@
       <fullUrl value="urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35"/>
       <resource>
          <Observation>
-            <!--elementalAnalysisFlourine-->
+				<!--elementalAnalysisFlourine-->
             <id value="9c56948c-2a39-6609-1c01-4d197ea57a35"/>
             <instantiatesReference>
-               <!--ObservationDefinition/ElementalAnalysisFlourine-->
+					<!--ObservationDefinition/ElementalAnalysisFlourine-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
             </instantiatesReference>
             <status value="final"/>
@@ -911,12 +864,12 @@
                <text value="Elemental Analysis Flourine (%)"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -930,10 +883,10 @@
       <fullUrl value="urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--ionAnalysisCarbon-->
+				<!--ionAnalysisCarbon-->
             <id value="9c56948c-3a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/IonAnalysisCarbon-->
+					<!--ObservationDefinition/IonAnalysisCarbon-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -946,12 +899,12 @@
                <text value="Ion Analysis Carbon (%)"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -980,10 +933,10 @@
       <fullUrl value="urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34"/>
       <resource>
          <Observation>
-            <!--ionAnalysisHydrogen-->
+				<!--ionAnalysisHydrogen-->
             <id value="9c56948c-4a39-6609-1c01-4d197ea57a34"/>
             <instantiatesReference>
-               <!--ObservationDefinition/IonAnalysisHydrogen-->
+					<!--ObservationDefinition/IonAnalysisHydrogen-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -996,12 +949,12 @@
                <text value="Ion Analysis Hydrogen (%)"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1030,10 +983,10 @@
       <fullUrl value="urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35"/>
       <resource>
          <Observation>
-            <!--ionAnalysisNitrogen-->
+				<!--ionAnalysisNitrogen-->
             <id value="9c56948c-5a39-6609-1c01-4d197ea57a35"/>
             <instantiatesReference>
-               <!--ObservationDefinition/IonAnalysisNitrogen-->
+					<!--ObservationDefinition/IonAnalysisNitrogen-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1046,12 +999,12 @@
                <text value="Ion Analysis Nitrogen (%)"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1080,10 +1033,10 @@
       <fullUrl value="urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35"/>
       <resource>
          <Observation>
-            <!--ionAnalysisFlourine-->
+				<!--ionAnalysisFlourine-->
             <id value="9c56948c-6a39-6609-1c01-4d197ea57a35"/>
             <instantiatesReference>
-               <!--ObservationDefinition/IonAnalysisFlourine-->
+					<!--ObservationDefinition/IonAnalysisFlourine-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1096,12 +1049,12 @@
                <text value="Ion Analysis Flourine (%)"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1130,10 +1083,10 @@
       <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
       <resource>
          <Observation>
-            <!--nmr3-->
+            	<!--nmr3-->
             <id value="fd27b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             <instantiatesReference>
-               <!--ObservationDefinition/NMR-->
+					<!--ObservationDefinition/NMR-->
                <reference value="ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1146,12 +1099,12 @@
                <text value="NMR"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+            		<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <!-- 3 components, position, H, C -->
@@ -1192,10 +1145,10 @@
       <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73"/>
       <resource>
          <Observation>
-            <!--nmr4-->
+				<!--nmr4-->
             <id value="fd27b5d6-9fe2-91c2-2d06-47cb5b295e73"/>
             <instantiatesReference>
-               <!--ObservationDefinition/NMR-->
+					<!--ObservationDefinition/NMR-->
                <reference value="ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1208,12 +1161,12 @@
                <text value="NMR"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -1253,10 +1206,10 @@
       <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
       <resource>
          <Observation>
-            <!--nmr5-->
+				<!--nmr5-->
             <id value="fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             <instantiatesReference>
-               <!--ObservationDefinition/NMR-->
+					<!--ObservationDefinition/NMR-->
                <reference value="ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1269,12 +1222,12 @@
                <text value="NMR"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -1319,10 +1272,10 @@
       <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
       <resource>
          <Observation>
-            <!--nmr6-->
+				<!--nmr6-->
             <id value="fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             <instantiatesReference>
-               <!--ObservationDefinition/NMR-->
+					<!--ObservationDefinition/NMR-->
                <reference value="ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1335,12 +1288,12 @@
                <text value="NMR"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -1385,10 +1338,10 @@
       <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
       <resource>
          <Observation>
-            <!--nmr8-->
+				<!--nmr8-->
             <id value="fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             <instantiatesReference>
-               <!--ObservationDefinition/NMR-->
+					<!--ObservationDefinition/NMR-->
                <reference value="ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1401,12 +1354,12 @@
                <text value="NMR"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -1446,10 +1399,10 @@
       <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
       <resource>
          <Observation>
-            <!--nmr9-->
+				<!--nmr9-->
             <id value="fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             <instantiatesReference>
-               <!--ObservationDefinition/NMR-->
+					<!--ObservationDefinition/NMR-->
                <reference value="ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1462,12 +1415,12 @@
                <text value="NMR"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -1507,10 +1460,10 @@
       <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
       <resource>
          <Observation>
-            <!--nmr10-->
+				<!--nmr10-->
             <id value="fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
             <instantiatesReference>
-               <!--ObservationDefinition/NMR-->
+					<!--ObservationDefinition/NMR-->
                <reference value="ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1523,12 +1476,12 @@
                <text value="NMR"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -1568,13 +1521,13 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-            <!--substancedefinition-component-substance-dxpq-ex1-->
+                <!--substancedefinition-component-substance-dxpq-ex1-->
             <id value="57a9af63-315d-1585-a261-0e337b289390"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             </meta>
             <manufacturer>
-               <!--Organization/organization-dxpq-ex1-->
+                    <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
@@ -1589,7 +1542,7 @@
       <resource>
          <Organization>
                 <!--id value="substance-manufacturer"/-->
-            <!--organization-dxpq-ex1-->
+                <!--organization-dxpq-ex1-->
             <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
@@ -1618,7 +1571,7 @@
       <resource>
          <Organization>
 				<!--testing lab-->
-            <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
+				<!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             <name value="Testing Lab"/>
          </Organization>
@@ -1629,7 +1582,7 @@
       <resource>
          <Substance>
                 <!--<id value="actual-batch-substance"/>-->
-            <!--substance-dxpq-ex1-unlinked-->
+                <!--substance-dxpq-ex1-unlinked-->
             <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
@@ -1671,7 +1624,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <!--Organization/organization-dxpq-ex1-->
+                            <!--Organization/organization-dxpq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
@@ -1688,81 +1641,21 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                        <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
                   <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
       </resource>
    </entry>
-   <!--entry>
-        <fullUrl value="urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595c"/>
-        <resource>
-            <Substance>
-                <id value="substance-dxpq-ex1-unlinked-2"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
-                </meta>
-                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
-                        <valueDateTime value="2019-09-08"/>   
-                    </extension>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
-                        <valueDateTime value="2022-09-08"/>    
-                    </extension>
-                    <extension url="manufacturingDate">
-                        <valueDateTime value="2019-09-07"/>    
-                    </extension>
-                    <extension url="batchQuantity"> 
-                        <valueQuantity>
-                            <value value="5.1"/>
-                            <unit value="kg"/> 
-                        </valueQuantity>
-                    </extension>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
-                        <valueQuantity>
-                            <value value="4.8"/>
-                            <unit value="kg"/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url="batchUtilization">
-                        <valueCodeableConcept>
-                            <coding>
-                                <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                                    <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                                </extension>
-                                <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
-                                <code value="C133991"/>
-                                <display value="Development"/>
-                            </coding>
-                        </valueCodeableConcept>
-                    </extension>
-                    <extension url="assignedManufacturer">
-                        <valueReference>
-                            <reference value="Organization/organization-dxpq-ex1"/>
-                        </valueReference>
-                    </extension>
-                </extension>
-            	<identifier>
-            		<value value="BATCH 2"/>
-            	</identifier>
-            	<instance value="true"/>
-                <code>
-                    <reference>
-                        <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
-                    </reference>
-                </code>
-            </Substance>
-        </resource>
-    </entry-->
    <entry>
       <fullUrl value="urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--structure-->
+				<!--structure-->
             <id value="9c56948c-2b39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Structure-->
+					<!--ObservationDefinition/Structure-->
                <reference value="ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1775,12 +1668,12 @@
                <text value="Chemical Structure"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueAttachment>
@@ -1794,10 +1687,10 @@
       <fullUrl value="urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34"/>
       <resource>
          <Observation>
-            <!--fig11xray-->
+				<!--fig11xray-->
             <id value="9c56948c-2b39-6609-1c01-4d197ea57a34"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Diffractogram-->
+					<!--ObservationDefinition/Diffractogram-->
                <reference value="ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1810,12 +1703,12 @@
                <text value="X-Ray Powder Diffractogram"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueAttachment>
@@ -1829,10 +1722,10 @@
       <fullUrl value="urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34"/>
       <resource>
          <Observation>
-            <!--fig10molecularstructure-->
+				<!--fig10molecularstructure-->
             <id value="9c56948c-2b39-6609-1c01-4d197ea57a34"/>
             <instantiatesReference>
-               <!--ObservationDefinition/MolecularStructure-->
+					<!--ObservationDefinition/MolecularStructure-->
                <reference value="ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1845,12 +1738,12 @@
                <text value="MolecularStructure"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueAttachment>
@@ -1864,10 +1757,10 @@
       <fullUrl value="urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35"/>
       <resource>
          <Observation>
-            <!--fig8absorption-->
+				<!--fig8absorption-->
             <id value="9c56948c-2b39-6609-1c01-4d197ea57a35"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Absorption-->
+					<!--ObservationDefinition/Absorption-->
                <reference value="ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1880,12 +1773,12 @@
                <text value="Absorption"/>
             </code>
             <subject>
-               <!--Substance/substance-dxpq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueAttachment>
