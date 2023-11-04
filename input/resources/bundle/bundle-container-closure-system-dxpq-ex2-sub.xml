@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-container-closure-system-dxpq-ex2-sub"/>
-<!--   <id value="container-closure-substance"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/container-closure-substance"/>-->
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:878c2849-792c-6469-21a2-c2b920930962"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance1-->
+	                <!--substance1-->
             <id value="878c2849-792c-6469-21a2-c2b920930962"/>
             <name>
                <name value="Stelbatolol"/>
@@ -24,7 +22,7 @@
       <fullUrl value="urn:uuid:b107a2ba-32d8-0124-7855-4096057c52a9"/>
       <resource>
          <PackagedProductDefinition>
-            <!--packageDefinition-->
+                <!--packageDefinition-->
             <id value="b107a2ba-32d8-0124-7855-4096057c52a9"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
             <!-- #176 -->
@@ -72,7 +70,7 @@
                <containedItem>
                   <item>
                      <reference>
-                        <!--ManufacturedItemDefinition/packaged-item-->
+                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1-->
                         <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
                      </reference>
                   </item>
@@ -87,7 +85,7 @@
       <fullUrl value="urn:uuid:b107a2ba-32d8-0124-7855-4096057c52b9"/>
       <resource>
          <PackagedProductDefinition>
-            <!--packageDefinition2-->
+                <!--packageDefinition2-->
             <id value="b107a2ba-32d8-0124-7855-4096057c52b9"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
             <!-- #176 -->
@@ -111,7 +109,7 @@
                <containedItem>
                   <item>
                      <reference>
-                        <!--ManufacturedItemDefinition/packaged-item-->
+                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1-->
                         <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
                      </reference>
                   </item>
@@ -126,8 +124,7 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-            <!--packaged-item-->
-            <!--manufactureditemdefinition-dxpq-ex1-->
+                <!--manufactureditemdefinition-dxpq-ex1-->
             <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
@@ -146,11 +143,11 @@
       <resource>
         	<!-- ingredient is only needed to link substance to packaging, via manufactured item -->
          <Ingredient>
-            <!--ingredient1-->
+                <!--ingredient1-->
             <id value="f26b997a-3ab9-7552-a6cc-fd771d1f1863"/>
             <status value="active"/>
             <for>
-               <!--ManufacturedItemDefinition/packaged-item-->
+                    <!--ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1-->
                <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
             </for>
             <role>
@@ -161,7 +158,7 @@
             <substance>
                <code>
                   <reference> <!-- this links this to the substance -->
-                     <!--SubstanceDefinition/substance1-->
+                            <!--SubstanceDefinition/substance1-->
                      <reference value="SubstanceDefinition/878c2849-792c-6469-21a2-c2b920930962"/>
                      <display value="WizzoSubstance"/>
                   </reference>
@@ -174,11 +171,12 @@
       <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <!--packagingSpecification-unlinked-->
+                <!--packagingSpecification-unlinked-->
             <id value="2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic">
                     <valueBoolean value="true"/>
                 </extension-->
+            <!--http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Specification and Analytical Procedures"/>
             <type>
@@ -195,7 +193,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <!--PackagedProductDefinition/packageDefinition-->
+                	<!--PackagedProductDefinition/packageDefinition-->
                <reference value="PackagedProductDefinition/b107a2ba-32d8-0124-7855-4096057c52a9"/>
             </subjectReference>
             <description value="Packaging components are sampled, tested, and examined for conformance with written specifications.                The specification for the primary packaging component are provided in Table 1."/>
@@ -241,8 +239,9 @@
       <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958524"/>
       <resource>
          <ObservationDefinition>
-            <!--VisualInspection-->
+				<!--VisualInspection-->
             <id value="64525b3c-5134-448a-9d19-939ce1958524"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524"/>
             <title value="Visual Inspection"/>
             <status value="active"/>
@@ -265,8 +264,9 @@
       <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958525"/>
       <resource>
          <ObservationDefinition>
-            <!--InfraredSpectroscopy-->
+				<!--InfraredSpectroscopy-->
             <id value="64525b3c-5134-448a-9d19-939ce1958525"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525"/>
             <title value="Infrared Spectroscopy"/>
             <status value="active"/>
@@ -289,8 +289,9 @@
       <fullUrl value="urn:uuid:64525b3c-5134-448a-9d19-939ce1958535"/>
       <resource>
          <ObservationDefinition>
-            <!--SupplierCertificateofAnalysis-->
+				<!--SupplierCertificateofAnalysis-->
             <id value="64525b3c-5134-448a-9d19-939ce1958535"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535"/>
             <title value="Supplier Certificate of Analysis"/>
             <status value="active"/>

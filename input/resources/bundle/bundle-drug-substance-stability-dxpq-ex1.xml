@@ -2,7 +2,6 @@
 <!-- Substance Stability Study -->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-substance-stability-dxpq-ex1"/>
-   <!--   <id value="substance-stability-study"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
    </meta>
@@ -12,18 +11,18 @@
       <fullUrl value="urn:uuid:54c8e8dc-9a19-0dc2-910e-d5a05d6ba003"/>
       <resource>
          <DiagnosticReport>
-            <!--studyResultsReport-->
+                <!--studyResultsReport-->
             <id value="54c8e8dc-9a19-0dc2-910e-d5a05d6ba003"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--PlanDefinition/stabilityStudyProtocol-->
+                        <!--PlanDefinition/stabilityStudyProtocol-->
                   <reference value="PlanDefinition/c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
                </valueReference>
             </extension>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-dxpq">
                <valueCodeableConcept>
-                  <!-- #223 -->
-                  <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then 
+                        <!-- #223 -->
+                        <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then 
                             have no place to put a context. Ideally this would be a code/code pair. 
                             Code says "statistical model", code (or text) then says what it is -->
                   <text value="information about statistical model utilized to interpret stability study results"/>
@@ -61,35 +60,35 @@
                </extension>
             </effectiveDateTime>
             <performer>
-               <!--Organization/tester-->
+                    <!--Organization/tester-->
                <reference value="Organization/6049d921-9935-90b7-4efc-894a66483c00"/>
             </performer>
             <result>
-               <!--Observation/LongTerm30C-initial-1-->
+                    <!--Observation/LongTerm30C-initial-1-->
                <reference value="Observation/588a6787-0454-55ef-0b8a-4c8941b6976c"/>
             </result>
             <result>
-               <!--Observation/LongTerm30C-Initial-2-->
+                    <!--Observation/LongTerm30C-Initial-2-->
                <reference value="Observation/930c7f69-2546-7148-2069-b3be3a755edf"/>
             </result>
             <result>
-               <!--Observation/LongTerm30C-Initial-3-->
+                    <!--Observation/LongTerm30C-Initial-3-->
                <reference value="Observation/8070745c-30c4-a52e-41fd-600a913578d4"/>
             </result>
             <result>
-               <!--Observation/LongTerm30C-18m-->
+                    <!--Observation/LongTerm30C-18m-->
                <reference value="Observation/f16113fe-27e7-0aa2-6787-9415f5051900"/>
             </result>
             <result>
-               <!--Observation/LongTerm30C-18m-2-->
+                    <!--Observation/LongTerm30C-18m-2-->
                <reference value="Observation/1b25eb25-9149-02f6-9676-c87f90c64904"/>
             </result>
             <result>
-               <!--Observation/LongTerm30C-18m-3-->
+                    <!--Observation/LongTerm30C-18m-3-->
                <reference value="Observation/004ed877-7729-834e-3b6b-a2cf4bdb2377"/>
             </result>
             <result>
-               <!--Observation/Accelerated40C-3m-->
+                    <!--Observation/Accelerated40C-3m-->
                <reference value="Observation/f958e1e9-6023-4e39-2ffe-a9c8f135a2dd"/>
             </result>
             <conclusion value="The samples have been assessed and the conclusion is..."/>
@@ -102,8 +101,9 @@
             
             <!-- Section 11 - Stability Study - Protocol -->
          <PlanDefinition>
-            <!--stabilityStudyProtocol-->
+                <!--stabilityStudyProtocol-->
             <id value="c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
+            <!--http://example-server.com/fhir/PlanDefinition/c3973835-10ca-0796-0a26-aa8afafc9c5b-->
             <url value="http://example-server.com/fhir/PlanDefinition/c3973835-10ca-0796-0a26-aa8afafc9c5b"/>
             <title value="Stability Monitoring Program"/>
             <!--            Added type (8/22/2023)-->
@@ -116,14 +116,13 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <!--SubstanceDefinition/substance1-->
+                    <!--SubstanceDefinition/substance1-->
                <reference value="SubstanceDefinition/2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
             </subjectReference>
             <!-- unclear if want subject here, because it may apply to different ones -->
             <!--subjectCanonical value="MedicinalProductDefinition/product"/-->
             <!-- this isn't followed at the moment, if it isnt in the file -->
             <description value="Description of the study study plan which includes tests, time points, storage conditions, method"/>
-            <!-- new "tabular" style -->
             <action>
                <title value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbatolol"/>
                <action> <!-- TODO add codes here for the different levels? -->
@@ -348,35 +347,6 @@
                         <definitionCanonical value="ActivityDefinition/75073965-82eb-407d-34cf-3a7767a38149"/>
                      </action>
                   </action>
-                  <!-- NEW DATA -->
-                  <!-- 48 months -->
-                  <!--action> 
-                            <title value="48"/>
-                            <timingTiming>
-                                <repeat>
-                                    <boundsRange>
-                                        <low>
-                                            <value value="48"/>
-                                            <unit value="months"/>
-                                            <system value="http://unitsofmeasure.org"/>
-                                            <code value="mo"/>
-                                        </low>
-                                        <high>
-                                            <value value="48"/>
-                                            <unit value="months"/>
-                                            <system value="http://unitsofmeasure.org"/>
-                                            <code value="mo"/>
-                                        </high>
-                                    </boundsRange>
-                                    <frequency value="1"/>
-                                </repeat>
-                            </timingTiming>
-                            <action>
-                                <title value="(X)"/>
-                                <requiredBehavior value="could"/>
-                                <definitionCanonical value="ActivityDefinition/activityLongTerm30X-48"/>
-                            </action>
-                        </action-->
                </action>
                <!-- end of long term -->
                <action>
@@ -592,33 +562,6 @@
                         <title value="-"/>
                      </action>
                   </action>
-                  <!-- NEW DATA -->
-                  <!-- 48 months -->
-                  <!--action> 
-	                     <title value="48"/>
-	                     <timingTiming>
-	                        <repeat>
-	                           <boundsRange>
-	                              <low>
-	                                 <value value="48"/>
-	                                 <unit value="months"/>
-	                                 <system value="http://unitsofmeasure.org"/>
-	                                 <code value="mo"/>
-	                              </low>
-	                              <high>
-	                                 <value value="48"/>
-	                                 <unit value="months"/>
-	                                 <system value="http://unitsofmeasure.org"/>
-	                                 <code value="mo"/>
-	                              </high>
-	                           </boundsRange>
-	                           <frequency value="1"/>
-	                        </repeat>
-	                     </timingTiming>
-	                     <action>
-	                        <title value="-"/>
-	                     </action>
-	                  </action-->
                </action>
                <!-- end of accelerated -->
             </action>
@@ -630,8 +573,11 @@
       <fullUrl value="urn:uuid:643d8b44-71f4-2b58-07e8-51c22b294b25"/>
       <resource>
          <SpecimenDefinition>
-            <!--specimenDefStoredAt30-->
+                <!--specimenDefStoredAt30-->
             <id value="643d8b44-71f4-2b58-07e8-51c22b294b25"/>
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+                </meta>-->
             <!--http://example-server.com/fhir/SpecimenDefinition/643d8b44-71f4-2b58-07e8-51c22b294b25-->
             <url value="http://example-server.com/fhir/SpecimenDefinition/643d8b44-71f4-2b58-07e8-51c22b294b25"/>
             <status value="active"/>
@@ -649,15 +595,16 @@
       <fullUrl value="urn:uuid:10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
       <resource>
          <ActivityDefinition>
-            <!--activityLongTerm30XY-Initial-->
+                <!--activityLongTerm30XY-Initial-->
             <id value="10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30XY-Initial-->
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30XY-Initial-->
+            <!--http://example-server.com/fhir/ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42-->
             <url value="http://example-server.com/fhir/ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
             <title value="Long-term - 30°C/65% RH - XY"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
+            <!--ObservationDefinition/longTerm30X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30Y-->
+            <!--ObservationDefinition/longTerm30Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/31abea79-81da-17f8-9d8c-94e9bb75876e"/>
          </ActivityDefinition>
       </resource>
@@ -666,13 +613,14 @@
       <fullUrl value="urn:uuid:480a61f8-14b3-233e-8e5f-7f0db9696a1e"/>
       <resource>
          <ActivityDefinition>
-            <!--activityLongTerm30X-3-->
+                <!--activityLongTerm30X-3-->
             <id value="480a61f8-14b3-233e-8e5f-7f0db9696a1e"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-3-->
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-3-->
+            <!--http://example-server.com/fhir/ActivityDefinition/480a61f8-14b3-233e-8e5f-7f0db9696a1e-->
             <url value="http://example-server.com/fhir/ActivityDefinition/480a61f8-14b3-233e-8e5f-7f0db9696a1e"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
+            <!--ObservationDefinition/longTerm30X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
          </ActivityDefinition>
       </resource>
@@ -681,14 +629,15 @@
       <fullUrl value="urn:uuid:bee486c4-6ab5-6293-4114-d4be24f303d3"/>
       <resource>
          <ActivityDefinition>
-            <!--activityLongTerm30X-6-->
+                <!--activityLongTerm30X-6-->
             <id value="bee486c4-6ab5-6293-4114-d4be24f303d3"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-6-->
-            <url  value="http://example-server.com/fhir/ActivityDefinition/bee486c4-6ab5-6293-4114-d4be24f303d3"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-6-->
+            <!--http://example-server.com/fhir/ActivityDefinition/bee486c4-6ab5-6293-4114-d4be24f303d3-->
+            <url value="http://example-server.com/fhir/ActivityDefinition/bee486c4-6ab5-6293-4114-d4be24f303d3"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+            <!--ObservationDefinition/longTerm30X-->
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -696,13 +645,14 @@
       <fullUrl value="urn:uuid:99893d3c-520c-8d7b-6d73-f46b1a662201"/>
       <resource>
          <ActivityDefinition>
-            <!--activityLongTerm30X-9-->
+                <!--activityLongTerm30X-9-->
             <id value="99893d3c-520c-8d7b-6d73-f46b1a662201"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-9-->
-            <url   value="http://example-server.com/fhir/ActivityDefinition/99893d3c-520c-8d7b-6d73-f46b1a662201"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-9-->
+            <!--http://example-server.com/fhir/ActivityDefinition/99893d3c-520c-8d7b-6d73-f46b1a662201-->
+            <url value="http://example-server.com/fhir/ActivityDefinition/99893d3c-520c-8d7b-6d73-f46b1a662201"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
+            <!--ObservationDefinition/longTerm30X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
          </ActivityDefinition>
       </resource>
@@ -711,13 +661,14 @@
       <fullUrl value="urn:uuid:b3254b8e-6fc3-88d3-7d38-0afcf13c4f67"/>
       <resource>
          <ActivityDefinition>
-            <!--activityLongTerm30X-12-->
+                <!--activityLongTerm30X-12-->
             <id value="b3254b8e-6fc3-88d3-7d38-0afcf13c4f67"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-12-->
-            <url   value="http://example-server.com/fhir/ActivityDefinition/b3254b8e-6fc3-88d3-7d38-0afcf13c4f67"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-12-->
+            <!--http://example-server.com/fhir/ActivityDefinition/b3254b8e-6fc3-88d3-7d38-0afcf13c4f67-->
+            <url value="http://example-server.com/fhir/ActivityDefinition/b3254b8e-6fc3-88d3-7d38-0afcf13c4f67"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
+            <!--ObservationDefinition/longTerm30X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
          </ActivityDefinition>
       </resource>
@@ -726,13 +677,14 @@
       <fullUrl value="urn:uuid:c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
       <resource>
          <ActivityDefinition>
-            <!--activityLongTerm30X-18-->
+                <!--activityLongTerm30X-18-->
             <id value="c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-18-->
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-18-->
+            <!--http://example-server.com/fhir/ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12-->
             <url value="http://example-server.com/fhir/ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
+            <!--ObservationDefinition/longTerm30X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
          </ActivityDefinition>
       </resource>
@@ -741,13 +693,14 @@
       <fullUrl value="urn:uuid:d6f7de9d-57a5-6a2c-1c2f-0d65718860f2"/>
       <resource>
          <ActivityDefinition>
-            <!--activityLongTerm30X-24-->
+                <!--activityLongTerm30X-24-->
             <id value="d6f7de9d-57a5-6a2c-1c2f-0d65718860f2"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-24-->
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-24-->
+            <!--http://example-server.com/fhir/ActivityDefinition/d6f7de9d-57a5-6a2c-1c2f-0d65718860f2-->
             <url value="http://example-server.com/fhir/ActivityDefinition/d6f7de9d-57a5-6a2c-1c2f-0d65718860f2"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
+            <!--ObservationDefinition/longTerm30X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
          </ActivityDefinition>
       </resource>
@@ -756,56 +709,48 @@
       <fullUrl value="urn:uuid:75073965-82eb-407d-34cf-3a7767a38149"/>
       <resource>
          <ActivityDefinition>
-            <!--activityLongTerm30X-36-->
+                <!--activityLongTerm30X-36-->
             <id value="75073965-82eb-407d-34cf-3a7767a38149"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-36-->
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-36-->
+            <!--http://example-server.com/fhir/ActivityDefinition/75073965-82eb-407d-34cf-3a7767a38149-->
             <url value="http://example-server.com/fhir/ActivityDefinition/75073965-82eb-407d-34cf-3a7767a38149"/>
             <title value="Long-term - 30°C/65% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
+            <!--ObservationDefinition/longTerm30X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
          </ActivityDefinition>
       </resource>
    </entry>
-   <!-- NEW DATA -->
-   <!--entry>
-        <fullUrl value="urn:uuid:75073965-82eb-407d-34cf-3a7767a38149"/>
-        <resource>
-            <ActivityDefinition>
-                <id value="activityLongTerm30X-48"/>
-                <title value="Long-term - 30°C/65% RH - X"/>
-                <status value="active"/>
-                <observationRequirement value="ObservationDefinition/longTerm30X"/>
-            </ActivityDefinition>
-        </resource>
-    </entry-->
    <entry>
       <fullUrl value="urn:uuid:18762cff-9e29-6e71-1184-e9202fee8cba"/>
       <resource>
          <ObservationDefinition>
-            <!--longTerm30X-->
+                <!--longTerm30X-->
             <id value="18762cff-9e29-6e71-1184-e9202fee8cba"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X-->
-            <url  value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+                </meta>-->
+            <!--http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
             <title value="X"/>
             <status value="active"/>
             <code>
                <text value="Battery of tests 'X' at 30°C/65% RH"/>
             </code>
             <specimen>
-               <!--SpecimenDefinition/specimenDefStoredAt30-->
+                    <!--SpecimenDefinition/specimenDefStoredAt30-->
                <reference value="SpecimenDefinition/643d8b44-71f4-2b58-07e8-51c22b294b25"/>
             </specimen>
             <hasMember>
-               <!--ObservationDefinition/Description-->
+                    <!--ObservationDefinition/Description-->
                <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
             </hasMember>
             <hasMember>
-               <!--ObservationDefinition/Assay-->
+                    <!--ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
             </hasMember>
             <hasMember>
-               <!--ObservationDefinition/Impurities-->
+                    <!--ObservationDefinition/Impurities-->
                <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
             </hasMember>
             <!-- can have others -->
@@ -816,9 +761,9 @@
       <fullUrl value="urn:uuid:559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
       <resource>
          <ObservationDefinition>
-            <!--Description-->
+                <!--Description-->
             <id value="559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Description-->
+            <!--http://example-server.com/fhir/ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69-->
             <url value="http://example-server.com/fhir/ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
             <title value="Description"/>
             <status value="active"/>
@@ -842,9 +787,9 @@
       <fullUrl value="urn:uuid:7943795a-2abe-666f-545f-133e23b97119"/>
       <resource>
          <ObservationDefinition>
-            <!--Assay-->
+                <!--Assay-->
             <id value="7943795a-2abe-666f-545f-133e23b97119"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
+            <!--http://example-server.com/fhir/ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119-->
             <url value="http://example-server.com/fhir/ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
             <title value="Assay (% w/w) (Mean)"/>
             <status value="active"/>
@@ -879,9 +824,9 @@
       <fullUrl value="urn:uuid:73d9d304-a0b8-31b6-1165-346563b9305e"/>
       <resource>
          <ObservationDefinition>
-            <!--Impurities-->
+                <!--Impurities-->
             <id value="73d9d304-a0b8-31b6-1165-346563b9305e"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Impurities-->
+            <!--http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
             <title value="Drug-related Impurities Content by LC (% w/w)"/>
             <status value="active"/>
@@ -960,9 +905,12 @@
       <fullUrl value="urn:uuid:31abea79-81da-17f8-9d8c-94e9bb75876e"/>
       <resource>
          <ObservationDefinition>
-            <!--longTerm30Y-->
+                <!--longTerm30Y-->
             <id value="31abea79-81da-17f8-9d8c-94e9bb75876e"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30Y-->
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+                </meta>-->
+            <!--http://example-server.com/fhir/ObservationDefinition/31abea79-81da-17f8-9d8c-94e9bb75876e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/31abea79-81da-17f8-9d8c-94e9bb75876e"/>
             <title value="Y"/>
             <status value="active"/>
@@ -970,11 +918,11 @@
                <text value="Battery of tests 'Y' at 30°C/65% RH"/>
             </code>
             <specimen>
-               <!--SpecimenDefinition/specimenDefStoredAt30-->
+                    <!--SpecimenDefinition/specimenDefStoredAt30-->
                <reference value="SpecimenDefinition/643d8b44-71f4-2b58-07e8-51c22b294b25"/>
             </specimen>
             <hasMember>
-               <!--ObservationDefinition/Identification-->
+                    <!--ObservationDefinition/Identification-->
                <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
             </hasMember>
             <!-- can have others -->
@@ -985,9 +933,9 @@
       <fullUrl value="urn:uuid:6b96124b-1a44-0b6b-6783-d6c49360230b"/>
       <resource>
          <ObservationDefinition>
-            <!--Identification-->
+                <!--Identification-->
             <id value="6b96124b-1a44-0b6b-6783-d6c49360230b"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Identification-->
+            <!--http://example-server.com/fhir/ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b-->
             <url value="http://example-server.com/fhir/ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
             <title value="Identification"/>
             <status value="active"/>
@@ -1012,8 +960,11 @@
       <fullUrl value="urn:uuid:306637ec-1041-80e8-8e77-e7ca814253e1"/>
       <resource>
          <SpecimenDefinition>
-            <!--specimenDefStoredAt40-->
+                <!--specimenDefStoredAt40-->
             <id value="306637ec-1041-80e8-8e77-e7ca814253e1"/>
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+                </meta>-->
             <!--http://example-server.com/fhir/SpecimenDefinition/306637ec-1041-80e8-8e77-e7ca814253e1-->
             <url value="http://example-server.com/fhir/SpecimenDefinition/306637ec-1041-80e8-8e77-e7ca814253e1"/>
             <status value="active"/>
@@ -1030,16 +981,17 @@
       <fullUrl value="urn:uuid:1b43a536-3c29-3427-0b93-e35866ef8495"/>
       <resource>
          <ActivityDefinition>
-            <!--activityAccelerated40XY-Initial-->
+                <!--activityAccelerated40XY-Initial-->
             <id value="1b43a536-3c29-3427-0b93-e35866ef8495"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40XY-Initial-->
-            <url  value="http://example-server.com/fhir/ActivityDefinition/1b43a536-3c29-3427-0b93-e35866ef8495"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40XY-Initial-->
+            <!--http://example-server.com/fhir/ActivityDefinition/1b43a536-3c29-3427-0b93-e35866ef8495-->
+            <url value="http://example-server.com/fhir/ActivityDefinition/1b43a536-3c29-3427-0b93-e35866ef8495"/>
             <title value="Accelerated - 40°C/70% RH - XY"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/accelerated40X-->
+            <!--ObservationDefinition/accelerated40X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/accelerated40Y-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/accb8802-4223-61e2-8c79-2282e22a2bb6"/>
+            <!--ObservationDefinition/accelerated40Y-->
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/accb8802-4223-61e2-8c79-2282e22a2bb6"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1047,14 +999,15 @@
       <fullUrl value="urn:uuid:8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
       <resource>
          <ActivityDefinition>
-            <!--activityAccelerated40X-3-->
+                <!--activityAccelerated40X-3-->
             <id value="8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40X-3-->
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40X-3-->
+            <!--http://example-server.com/fhir/ActivityDefinition/8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9-->
             <url value="http://example-server.com/fhir/ActivityDefinition/8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/accelerated40X-->
-            <observationRequirement  value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
+            <!--ObservationDefinition/accelerated40X-->
+            <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
          </ActivityDefinition>
       </resource>
    </entry>
@@ -1062,13 +1015,14 @@
       <fullUrl value="urn:uuid:cf2f00df-971f-0bab-8768-4251b1ad0817"/>
       <resource>
          <ActivityDefinition>
-            <!--activityAccelerated40X-6-->
+                <!--activityAccelerated40X-6-->
             <id value="cf2f00df-971f-0bab-8768-4251b1ad0817"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40X-6-->
-            <url  value="http://example-server.com/fhir/ActivityDefinition/cf2f00df-971f-0bab-8768-4251b1ad0817"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40X-6-->
+            <!--http://example-server.com/fhir/ActivityDefinition/cf2f00df-971f-0bab-8768-4251b1ad0817-->
+            <url value="http://example-server.com/fhir/ActivityDefinition/cf2f00df-971f-0bab-8768-4251b1ad0817"/>
             <title value="Accelerated - 40°C/70% RH - X"/>
             <status value="active"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/accelerated40X-->
+            <!--ObservationDefinition/accelerated40X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
          </ActivityDefinition>
       </resource>
@@ -1077,9 +1031,9 @@
       <fullUrl value="urn:uuid:35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
       <resource>
          <ObservationDefinition>
-            <!--accelerated40X-->
+                <!--accelerated40X-->
             <id value="35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/accelerated40X-->
+            <!--http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc-->
             <url value="http://example-server.com/fhir/ObservationDefinition/35fa7b97-98d3-35d3-5672-4ab1047d57fc"/>
             <title value="X"/>
             <status value="active"/>
@@ -1087,15 +1041,15 @@
                <text value="Battery of tests 'X' at 40°C/75% RH"/>
             </code>
             <specimen>
-               <!--SpecimenDefinition/specimenDefStoredAt40-->
+                    <!--SpecimenDefinition/specimenDefStoredAt40-->
                <reference value="SpecimenDefinition/306637ec-1041-80e8-8e77-e7ca814253e1"/>
             </specimen>
             <hasMember>
-               <!--ObservationDefinition/Description-->
+                    <!--ObservationDefinition/Description-->
                <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
             </hasMember>
             <hasMember>
-               <!--ObservationDefinition/Assay-->
+                    <!--ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
             </hasMember>
             <!-- can have others -->
@@ -1106,9 +1060,9 @@
       <fullUrl value="urn:uuid:accb8802-4223-61e2-8c79-2282e22a2bb6"/>
       <resource>
          <ObservationDefinition>
-            <!--accelerated40Y-->
+                <!--accelerated40Y-->
             <id value="accb8802-4223-61e2-8c79-2282e22a2bb6"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/accelerated40Y-->
+            <!--http://example-server.com/fhir/ObservationDefinition/accb8802-4223-61e2-8c79-2282e22a2bb6-->
             <url value="http://example-server.com/fhir/ObservationDefinition/accb8802-4223-61e2-8c79-2282e22a2bb6"/>
             <title value="Y"/>
             <status value="active"/>
@@ -1116,11 +1070,11 @@
                <text value="Battery of tests 'Y' at 40°C/75% RH"/>
             </code>
             <specimen>
-               <!--SpecimenDefinition/specimenDefStoredAt40-->
+                    <!--SpecimenDefinition/specimenDefStoredAt40-->
                <reference value="SpecimenDefinition/306637ec-1041-80e8-8e77-e7ca814253e1"/>
             </specimen>
             <hasMember>
-               <!--ObservationDefinition/Identification-->
+                    <!--ObservationDefinition/Identification-->
                <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
             </hasMember>
             <!-- can have others -->
@@ -1132,7 +1086,7 @@
       <fullUrl value="urn:uuid:6a5354bf-602c-99f1-324b-0bb5f7e06cd5"/>
       <resource>
          <Specimen>
-            <!--stabilityInitial-1-->
+                <!--stabilityInitial-1-->
             <id value="6a5354bf-602c-99f1-324b-0bb5f7e06cd5"/>
             <collection>
                <collectedDateTime value="2020-06"/>
@@ -1152,13 +1106,13 @@
       <fullUrl value="urn:uuid:588a6787-0454-55ef-0b8a-4c8941b6976c"/>
       <resource>
          <Observation>
-            <!--LongTerm30C-initial-1-->
+                <!--LongTerm30C-initial-1-->
             <id value="588a6787-0454-55ef-0b8a-4c8941b6976c"/>
             <contained>
                <Observation>
                   <id value="LongTerm30C-initial-1-Description"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Description-->
+                            <!--ObservationDefinition/Description-->
                      <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1171,11 +1125,12 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -1187,7 +1142,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Impurity1"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1200,11 +1155,12 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1222,7 +1178,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -1232,7 +1188,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Impurity2"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1245,11 +1201,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1276,7 +1233,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1289,11 +1246,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1321,7 +1279,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-ImpurityTotal"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1334,11 +1292,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1365,7 +1324,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Assay"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Assay-->
+                            <!--ObservationDefinition/Assay-->
                      <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1377,11 +1336,12 @@
                      </coding>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1396,7 +1356,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-1-Identification"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Identification-->
+                            <!--ObservationDefinition/Identification-->
                      <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1409,11 +1369,12 @@
                      <text value="Identification"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -1423,7 +1384,7 @@
             </contained>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30XY-Initial-->
+                         <!--ActivityDefinition/activityLongTerm30XY-Initial-->
                   <reference value="ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
                </valueReference>
             </extension>
@@ -1432,15 +1393,16 @@
                <text value="Test Components - Long-term 25C etc - Initial (XYZ)"/>
             </code>
             <subject>
-               <!--Substance/actual-batch-substance-->
+                    <!--Substance/actual-batch-substance-->
                <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
-               <!--Specimen/stabilityInitial-1-->
+                    <!--Specimen/stabilityInitial-1-->
                <reference value="Specimen/6a5354bf-602c-99f1-324b-0bb5f7e06cd5"/>
             </specimen>
             <hasMember>
@@ -1471,7 +1433,7 @@
       <fullUrl value="urn:uuid:3b550915-4467-83d3-340f-9bd6d2857191"/>
       <resource>
          <Specimen>
-            <!--stabilityInitial-2-->
+                <!--stabilityInitial-2-->
             <id value="3b550915-4467-83d3-340f-9bd6d2857191"/>
             <collection>
                <collectedDateTime value="2020-06"/>
@@ -1491,13 +1453,13 @@
       <fullUrl value="urn:uuid:930c7f69-2546-7148-2069-b3be3a755edf"/>
       <resource>
          <Observation>
-            <!--LongTerm30C-Initial-2-->
+                <!--LongTerm30C-Initial-2-->
             <id value="930c7f69-2546-7148-2069-b3be3a755edf"/>
             <contained>
                <Observation>
                   <id value="LongTerm30C-initial-2-Description"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Description-->
+                            <!--ObservationDefinition/Description-->
                      <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1510,11 +1472,12 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -1526,7 +1489,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Degradation-imp1"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1539,11 +1502,12 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1571,7 +1535,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Degradation-imp2"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1584,11 +1548,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1615,7 +1580,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Degradation-impUnspecified"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1628,11 +1593,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1660,7 +1626,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Degradation-impTotal"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1673,11 +1639,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1704,7 +1671,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Assay"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Assay-->
+                            <!--ObservationDefinition/Assay-->
                      <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1716,11 +1683,12 @@
                      </coding>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1735,7 +1703,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-2-Identification"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Identification-->
+                            <!--ObservationDefinition/Identification-->
                      <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1748,11 +1716,12 @@
                      <text value="Identification"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -1762,7 +1731,7 @@
             </contained>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30XY-Initial-->
+                         <!--ActivityDefinition/activityLongTerm30XY-Initial-->
                   <reference value="ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
                </valueReference>
             </extension>
@@ -1771,16 +1740,16 @@
                <text value="Test Components - Long-term 25C etc - Initial (XYZ)"/>
             </code>
             <subject>
-               <!--Substance/actual-batch-substance-2-->
+                    <!--Substance/actual-batch-substance-2-->
                <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
-               <!--Specimen/stabilityInitial-2-->
+                    <!--Specimen/stabilityInitial-2-->
                <reference value="Specimen/3b550915-4467-83d3-340f-9bd6d2857191"/>
             </specimen>
             <hasMember>
@@ -1811,7 +1780,7 @@
       <fullUrl value="urn:uuid:b1726ce3-8bb5-403e-2e9b-f5d79cc716f9"/>
       <resource>
          <Specimen>
-            <!--stabilityInitial-3-->
+                <!--stabilityInitial-3-->
             <id value="b1726ce3-8bb5-403e-2e9b-f5d79cc716f9"/>
             <collection>
                <collectedDateTime value="2020-06"/>
@@ -1831,13 +1800,13 @@
       <fullUrl value="urn:uuid:8070745c-30c4-a52e-41fd-600a913578d4"/>
       <resource>
          <Observation>
-            <!--LongTerm30C-Initial-3-->
+                <!--LongTerm30C-Initial-3-->
             <id value="8070745c-30c4-a52e-41fd-600a913578d4"/>
             <contained>
                <Observation>
                   <id value="LongTerm30C-initial-3-Description"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Description-->
+                            <!--ObservationDefinition/Description-->
                      <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1850,11 +1819,12 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -1866,7 +1836,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Degradation-imp1"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1879,11 +1849,12 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1911,7 +1882,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Degradation-imp2"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1924,11 +1895,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -1955,7 +1927,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Degradation-impUnspecified"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1968,11 +1940,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2000,7 +1973,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Degradation-impTotal"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2013,11 +1986,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2044,7 +2018,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Assay"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Assay-->
+                            <!--ObservationDefinition/Assay-->
                      <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2056,11 +2030,12 @@
                      </coding>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2075,7 +2050,7 @@
                <Observation>
                   <id value="LongTerm30C-initial-3-Identification"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Identification-->
+                            <!--ObservationDefinition/Identification-->
                      <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2088,11 +2063,12 @@
                      <text value="Identification"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+                            <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -2102,7 +2078,7 @@
             </contained>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30XY-Initial-->
+                         <!--ActivityDefinition/activityLongTerm30XY-Initial-->
                   <reference value="ActivityDefinition/10d7b693-7a0e-2f71-9a10-642e5a0a5d42"/>
                </valueReference>
             </extension>
@@ -2111,15 +2087,16 @@
                <text value="Test Components - Long-term 25C etc - Initial (XYZ)"/>
             </code>
             <subject>
-               <!--Substance/actual-batch-substance-3-->
+                    <!--Substance/actual-batch-substance-3-->
                <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
-               <!--Specimen/stabilityInitial-3-->
+                    <!--Specimen/stabilityInitial-3-->
                <reference value="Specimen/b1726ce3-8bb5-403e-2e9b-f5d79cc716f9"/>
             </specimen>
             <hasMember>
@@ -2150,7 +2127,7 @@
       <fullUrl value="urn:uuid:7aa5fdea-17d7-29f1-1ed4-5c05eb62285a"/>
       <resource>
          <Specimen>
-            <!--stability18months-1-->
+                <!--stability18months-1-->
             <id value="7aa5fdea-17d7-29f1-1ed4-5c05eb62285a"/>
             <collection>
                <collectedDateTime value="2020-06"/>
@@ -2158,7 +2135,7 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension  url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -2178,7 +2155,7 @@
       <fullUrl value="urn:uuid:872a645f-120e-44c0-62c0-9be05acf543b"/>
       <resource>
          <Specimen>
-            <!--stability18months-2-->
+                <!--stability18months-2-->
             <id value="872a645f-120e-44c0-62c0-9be05acf543b"/>
             <collection>
                <collectedDateTime value="2020-06"/>
@@ -2186,7 +2163,7 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension  url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -2206,7 +2183,7 @@
       <fullUrl value="urn:uuid:7c06a03c-9cf7-2e1b-a236-d60038f1439b"/>
       <resource>
          <Specimen>
-            <!--stability18months-3-->
+                <!--stability18months-3-->
             <id value="7c06a03c-9cf7-2e1b-a236-d60038f1439b"/>
             <collection>
                <collectedDateTime value="2020-06"/>
@@ -2214,7 +2191,7 @@
             <processing>
                <description value="Store for 18 months"/>
                <timePeriod>
-                  <extension  url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-dxpq">
                      <valueDuration>
                         <value value="18"/>
                         <unit value="month"/>
@@ -2234,13 +2211,13 @@
       <fullUrl value="urn:uuid:f16113fe-27e7-0aa2-6787-9415f5051900"/>
       <resource>
          <Observation>
-            <!--LongTerm30C-18m-->
+                <!--LongTerm30C-18m-->
             <id value="f16113fe-27e7-0aa2-6787-9415f5051900"/>
             <contained>
                <Observation>
                   <id value="LongTerm30C-18m-1-Description"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Description-->
+                            <!--ObservationDefinition/Description-->
                      <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2253,11 +2230,12 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -2269,7 +2247,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Impurity1"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2282,11 +2260,12 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2314,7 +2293,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Impurity2"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2327,11 +2306,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2358,7 +2338,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2371,11 +2351,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2403,7 +2384,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-ImpurityTotal"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2416,11 +2397,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2447,7 +2429,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Assay"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Assay-->
+                            <!--ObservationDefinition/Assay-->
                      <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2459,11 +2441,12 @@
                      </coding>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2478,7 +2461,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-1-Identification"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Identification-->
+                            <!--ObservationDefinition/Identification-->
                      <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2491,11 +2474,12 @@
                      <text value="Identification"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -2507,7 +2491,7 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-18-->
+                         <!--ActivityDefinition/activityLongTerm30X-18-->
                   <reference value="ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
                </valueReference>
             </extension>
@@ -2516,16 +2500,16 @@
                <text value="Long-term - 30°C/65% RH - 18 months (X)"/>
             </code>
             <subject>
-               <!--Substance/actual-batch-substance-->
+                    <!--Substance/actual-batch-substance-->
                <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
-               <!--Specimen/stability18months-1-->
+                    <!--Specimen/stability18months-1-->
                <reference value="Specimen/7aa5fdea-17d7-29f1-1ed4-5c05eb62285a"/>
             </specimen>
             <hasMember>
@@ -2557,13 +2541,13 @@
       <fullUrl value="urn:uuid:1b25eb25-9149-02f6-9676-c87f90c64904"/>
       <resource>
          <Observation>
-            <!--LongTerm30C-18m-2-->
+                <!--LongTerm30C-18m-2-->
             <id value="1b25eb25-9149-02f6-9676-c87f90c64904"/>
             <contained>
                <Observation>
                   <id value="LongTerm30C-18m-2-Description"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Description-->
+                            <!--ObservationDefinition/Description-->
                      <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2576,11 +2560,12 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -2592,7 +2577,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Impurity1"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2605,11 +2590,12 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2637,7 +2623,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Impurity2"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2650,11 +2636,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2681,7 +2668,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2694,11 +2681,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2726,7 +2714,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-ImpurityTotal"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2739,11 +2727,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2770,7 +2759,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Assay"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Assay-->
+                            <!--ObservationDefinition/Assay-->
                      <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2782,11 +2771,12 @@
                      </coding>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2801,7 +2791,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-2-Identification"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Identification-->
+                            <!--ObservationDefinition/Identification-->
                      <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2814,11 +2804,12 @@
                      <text value="Identification"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -2830,7 +2821,7 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-18-->
+                         <!--ActivityDefinition/activityLongTerm30X-18-->
                   <reference value="ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
                </valueReference>
             </extension>
@@ -2839,15 +2830,16 @@
                <text value="Long-term - 30°C/65% RH - 18 months (X)"/>
             </code>
             <subject>
-               <!--Substance/actual-batch-substance-2-->
+                    <!--Substance/actual-batch-substance-2-->
                <reference value="Substance/cbcecab6-374c-396f-29be-877da7285e8d"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
-               <!--Specimen/stability18months-2-->
+                    <!--Specimen/stability18months-2-->
                <reference value="Specimen/872a645f-120e-44c0-62c0-9be05acf543b"/>
             </specimen>
             <hasMember>
@@ -2879,13 +2871,13 @@
       <fullUrl value="urn:uuid:004ed877-7729-834e-3b6b-a2cf4bdb2377"/>
       <resource>
          <Observation>
-            <!--LongTerm30C-18m-3-->
+                <!--LongTerm30C-18m-3-->
             <id value="004ed877-7729-834e-3b6b-a2cf4bdb2377"/>
             <contained>
                <Observation>
                   <id value="LongTerm30C-18m-3-Description"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Description-->
+                            <!--ObservationDefinition/Description-->
                      <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2898,11 +2890,12 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -2914,7 +2907,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Impurity1"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2927,11 +2920,12 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -2959,7 +2953,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Impurity2"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2972,11 +2966,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3003,7 +2998,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3016,11 +3011,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3048,7 +3044,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-ImpurityTotal"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3061,11 +3057,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3092,7 +3089,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Assay"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Assay-->
+                            <!--ObservationDefinition/Assay-->
                      <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3104,11 +3101,12 @@
                      </coding>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3123,7 +3121,7 @@
                <Observation>
                   <id value="LongTerm30C-18m-3-Identification"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Identification-->
+                            <!--ObservationDefinition/Identification-->
                      <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3136,11 +3134,12 @@
                      <text value="Identification"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -3152,7 +3151,7 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityLongTerm30X-18-->
+                         <!--ActivityDefinition/activityLongTerm30X-18-->
                   <reference value="ActivityDefinition/c9b53a46-2f61-7b3f-5780-5f5c79a47f12"/>
                </valueReference>
             </extension>
@@ -3161,15 +3160,16 @@
                <text value="Long-term - 30°C/65% RH - 18 months (X)"/>
             </code>
             <subject>
-               <!--Substance/actual-batch-substance-3-->
+                    <!--Substance/actual-batch-substance-3-->
                <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
-               <!--Specimen/stability18months-3-->
+                    <!--Specimen/stability18months-3-->
                <reference value="Specimen/7c06a03c-9cf7-2e1b-a236-d60038f1439b"/>
             </specimen>
             <hasMember>
@@ -3200,7 +3200,7 @@
       <fullUrl value="urn:uuid:b04c9321-069c-4da8-8ed0-86337ea22c30"/>
       <resource>
          <Specimen>
-            <!--acceleratedInitial-3m-1-->
+                <!--acceleratedInitial-3m-1-->
             <id value="b04c9321-069c-4da8-8ed0-86337ea22c30"/>
             <collection>
                <collectedDateTime value="2020-06"/>
@@ -3218,13 +3218,13 @@
       <fullUrl value="urn:uuid:f958e1e9-6023-4e39-2ffe-a9c8f135a2dd"/>
       <resource>
          <Observation>
-            <!--Accelerated40C-3m-->
+                <!--Accelerated40C-3m-->
             <id value="f958e1e9-6023-4e39-2ffe-a9c8f135a2dd"/>
             <contained>
                <Observation>
                   <id value="Accelerated40C-3m-1-Description"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Description-->
+                            <!--ObservationDefinition/Description-->
                      <reference value="ObservationDefinition/559ffdc3-349b-a4a3-a651-ce2715f08d69"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3237,11 +3237,12 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -3253,7 +3254,7 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Impurity1"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3266,11 +3267,12 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3288,7 +3290,7 @@
                         </coding>
                      </code>
                      <valueCodeableConcept>
-                        <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
+                                <!-- could have the code of an impurity substance, or could have an extension to point to it as a resource -->
                         <text value="Impurity"/>
                      </valueCodeableConcept>
                   </component>
@@ -3298,7 +3300,7 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Impurity2"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3311,11 +3313,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3342,7 +3345,7 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-ImpurityUnspecified"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3355,11 +3358,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-->
+                            <!--Substance/actual-batch-substance-->
                      <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3387,7 +3391,7 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-ImpurityTotal"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Impurities-->
+                            <!--ObservationDefinition/Impurities-->
                      <reference value="ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3400,11 +3404,12 @@
                      <text value="Impurities"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3431,7 +3436,7 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Assay"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Assay-->
+                            <!--ObservationDefinition/Assay-->
                      <reference value="ObservationDefinition/7943795a-2abe-666f-545f-133e23b97119"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3443,11 +3448,12 @@
                      </coding>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueQuantity>
@@ -3462,7 +3468,7 @@
                <Observation>
                   <id value="Accelerated40C-3m-1-Identification"/>
                   <instantiatesReference>
-                     <!--ObservationDefinition/Identification-->
+                            <!--ObservationDefinition/Identification-->
                      <reference value="ObservationDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3475,11 +3481,12 @@
                      <text value="Identification"/>
                   </code>
                   <subject>
-                     <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
                   </performer>
                   <valueCodeableConcept>
@@ -3491,7 +3498,7 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activityAccelerated40X-3-->
+                         <!--ActivityDefinition/activityAccelerated40X-3-->
                   <reference value="ActivityDefinition/8a453cd8-1ac3-4c86-48c3-3e5ea9ee76a9"/>
                </valueReference>
             </extension>
@@ -3500,16 +3507,16 @@
                <text value="Accelerated - 40°C/67% RH - 3 months (X)"/>
             </code>
             <subject>
-               <!--Substance/actual-batch-substance-->
+                    <!--Substance/actual-batch-substance-->
                <reference value="Substance/a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <specimen>
-               <!--Specimen/acceleratedInitial-3m-1-->
+                    <!--Specimen/acceleratedInitial-3m-1-->
                <reference value="Specimen/b04c9321-069c-4da8-8ed0-86337ea22c30"/>
             </specimen>
             <hasMember>
@@ -3541,7 +3548,7 @@
       <fullUrl value="urn:uuid:62c1b1b4-8d15-26d2-57f9-25a2f60b6181"/>
       <resource>
          <Organization>
-            <!--manufacturer-->
+                <!--manufacturer-->
             <id value="62c1b1b4-8d15-26d2-57f9-25a2f60b6181"/>
             <identifier>
                     <!-- FDA establishment identifier -->
@@ -3567,7 +3574,7 @@
       <fullUrl value="urn:uuid:6049d921-9935-90b7-4efc-894a66483c00"/>
       <resource>
          <Organization>
-            <!--tester-->
+                <!--tester-->
             <id value="6049d921-9935-90b7-4efc-894a66483c00"/>
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -3591,7 +3598,7 @@
       <fullUrl value="urn:uuid:2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance1-->
+				<!--substance1-->
             <id value="2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
             <identifier>
                <system value="http://example.company.org/companySubstanceIdentifier"/>
@@ -3620,7 +3627,7 @@
       <fullUrl value="urn:uuid:e2359a4e-3091-23f8-2242-87e701830d55"/>
       <resource>
          <Organization>
-            <!--substance-manufacturer-->
+                <!--substance-manufacturer-->
             <id value="e2359a4e-3091-23f8-2242-87e701830d55"/>
             <identifier>
                     <!-- FDA establishment identifier -->
@@ -3645,6 +3652,8 @@
       <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
       <resource>
          <Organization>
+                <!--testing lab-->
+                <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             <name value="Testing Lab"/>
          </Organization>
@@ -3654,7 +3663,7 @@
       <fullUrl value="urn:uuid:a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
       <resource>
          <Substance>
-            <!--actual-batch-substance-->
+                <!--actual-batch-substance-->
             <id value="a3fdc23b-6c16-2e65-481e-3fc895b37b87"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
@@ -3695,7 +3704,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <!--Organization/substance-manufacturer-->
+                            <!--Organization/substance-manufacturer-->
                      <reference value="Organization/e2359a4e-3091-23f8-2242-87e701830d55"/>
                   </valueReference>
                </extension>
@@ -3714,7 +3723,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <!--SubstanceDefinition/substance1-->
+                        <!--SubstanceDefinition/substance1-->
                   <reference value="SubstanceDefinition/2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
                </reference>
             </code>
@@ -3725,7 +3734,7 @@
       <fullUrl value="urn:uuid:cbcecab6-374c-396f-29be-877da7285e8d"/>
       <resource>
          <Substance>
-            <!--actual-batch-substance-2-->
+                <!--actual-batch-substance-2-->
             <id value="cbcecab6-374c-396f-29be-877da7285e8d"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
@@ -3766,7 +3775,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <!--Organization/substance-manufacturer-->
+                            <!--Organization/substance-manufacturer-->
                      <reference value="Organization/e2359a4e-3091-23f8-2242-87e701830d55"/>
                   </valueReference>
                </extension>
@@ -3777,7 +3786,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <!--SubstanceDefinition/substance1-->
+                        <!--SubstanceDefinition/substance1-->
                   <reference value="SubstanceDefinition/2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
                </reference>
             </code>
@@ -3788,7 +3797,7 @@
       <fullUrl value="urn:uuid:ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
       <resource>
          <Substance>
-            <!--actual-batch-substance-3-->
+                <!--actual-batch-substance-3-->
             <id value="ae1f3b4c-4f14-1460-6903-7260959ea2cd"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
@@ -3829,7 +3838,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <!--Organization/substance-manufacturer-->
+                            <!--Organization/substance-manufacturer-->
                      <reference value="Organization/e2359a4e-3091-23f8-2242-87e701830d55"/>
                   </valueReference>
                </extension>
@@ -3841,7 +3850,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <!--SubstanceDefinition/substance1-->
+                        <!--SubstanceDefinition/substance1-->
                   <reference value="SubstanceDefinition/2e3a85b5-790a-a108-3627-edf0ec6f1210"/>
                </reference>
             </code>

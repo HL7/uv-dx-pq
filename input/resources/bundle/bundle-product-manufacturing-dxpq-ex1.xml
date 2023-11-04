@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Manufacturing -->
-<!-- Based on file Accumulus FHIR Product Example - Manufacturing, posted 07-11-2023 -->
-<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
+    <!-- Product Manufacturing -->
    <id value="bundle-product-manufacturing-dxpq-ex1"/>
-   <!--   <id value="product-manufacturing"/>-->
    <meta>
-        <!--profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/-->
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
-      <!--      <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>-->
       <resource>
          <PlanDefinition>
-            <!--manufacturingProcess-unlinked-->
+                <!--manufacturingProcess-unlinked-->
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
@@ -25,14 +20,14 @@
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
                         <!-- #84 -->
-                  <!--DocumentReference/documentreference-process-flow-diagram-dxpq-ex1-->
+                    	<!--DocumentReference/documentreference-process-flow-diagram-dxpq-ex1-->
                   <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
             </extension>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
-               <!--            <extension url="http://accumulus.org/fhir/extension/historyOfProcess">-->
                <valueMarkdown value="This can be text about the history"/>
             </extension>
+            <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <title value="Process 1.0"/>
             <type>
@@ -50,7 +45,7 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
-               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
@@ -172,7 +167,7 @@
             <actor>
                <option>
                   <typeReference>
-                     <!--DeviceDefinition/mixing-vessel-->
+                            <!--DeviceDefinition/mixing-vessel-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
@@ -187,7 +182,7 @@
             <actor>
                <option>
                   <typeReference>
-                     <!--DeviceDefinition/receiving-tank-->
+                            <!--DeviceDefinition/receiving-tank-->
                      <reference value="DeviceDefinition/82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
@@ -258,7 +253,7 @@
                <documentation>
                   <type value="specification-of"/>
                   <resourceReference>
-                     <!--DocumentReference/DocumentReference-image-->
+                                <!--DocumentReference/DocumentReference-image-->
                      <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fee"/>
                   </resourceReference>
                </documentation>
@@ -267,7 +262,7 @@
                <participant>
                   <typeReference>
                                 <!-- this is new in R5 and is not in R4B -->
-                     <!--DeviceDefinition/mixer-->
+                                <!--DeviceDefinition/mixer-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
@@ -282,7 +277,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/startingMaterial-->
+                                        <!--SubstanceDefinition/startingMaterial-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                         </valueReference>
                      </extension>
@@ -301,7 +296,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/processingMaterial-->
+                                        <!--SubstanceDefinition/processingMaterial-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                         </valueReference>
                      </extension>
@@ -320,7 +315,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/StelbatololAqueousSolution-->
+                                        <!--SubstanceDefinition/StelbatololAqueousSolution-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
@@ -392,7 +387,7 @@
                <documentation>
                   <type value="specification-of"/>
                   <resourceReference>
-                     <!--DocumentReference/DocumentReference-image-->
+                                <!--DocumentReference/DocumentReference-image-->
                      <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fee"/>
                   </resourceReference>
                </documentation>
@@ -400,7 +395,7 @@
                <participant>
                   <typeReference>
                                 <!-- this is new in R5 and is not in R4B -->
-                     <!--DeviceDefinition/dryer-->
+                                <!--DeviceDefinition/dryer-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
                   </typeReference>
                   <role>
@@ -415,7 +410,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/StelbatololAqueousSolution-->
+                                        <!--SubstanceDefinition/StelbatololAqueousSolution-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
@@ -434,7 +429,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/StelbatololGranules-->
+                                        <!--SubstanceDefinition/StelbatololGranules-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
                         </valueReference>
                      </extension>
@@ -490,7 +485,7 @@
                <documentation>
                   <type value="specification-of"/>
                   <resourceReference>
-                     <!--DocumentReference/DocumentReference-image-->
+                                <!--DocumentReference/DocumentReference-image-->
                      <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fee"/>
                   </resourceReference>
                </documentation>
@@ -498,7 +493,7 @@
                <participant>
                   <typeReference>
                                 <!-- this is new in R5 and is not in R4B -->
-                     <!--DeviceDefinition/devicedefinition-dxpq-ex1-->
+                            	<!--DeviceDefinition/devicedefinition-dxpq-ex1-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
                   </typeReference>
                   <role>
@@ -514,7 +509,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/StelbatololGranules-->
+                                        <!--SubstanceDefinition/StelbatololGranules-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
                         </valueReference>
                      </extension>
@@ -533,7 +528,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/Stelbatolol-->
+                                        <!--SubstanceDefinition/Stelbatolol-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
                         </valueReference>
                      </extension>
@@ -552,102 +547,16 @@
          </PlanDefinition>
       </resource>
    </entry>
-   <!-- using goal for this now -->
-   <!--entry>
-        <fullUrl value="urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06042"/>
-        <resource>
-            <ObservationDefinition>
-                <id value="ControlPH"/>
-                <title value="pH"/>
-                <status value="active"/>
-                <category>
-                    <coding>
-                        <system value="http://accumulus.org/fhir/code/controlCriticality"/>
-                        <code value="critical"/>
-                        <display value="Critical"/>
-                    </coding>
-                </category>
-                <category>
-                    <coding>
-                        <system value="http://accumulus.org/fhir/code/testCategory"/>
-                        <code value="C123456"/>
-                        <display value="Physical Property"/>
-                    </coding>
-                </category>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="PH"/>
-                        <display value="pH Level"/>
-                    </coding>
-                    <text value="Long description of the acceptance criteria - pH must be in range 6.9 to 7.1"/>
-                </code>
-                <qualifiedValue>
-                    <range>
-                        <low>
-                            <value value="6.9"/>
-                            <unit value="pH"/> 
-                        </low> 
-                        <high>
-                            <value value="7.1"/>
-                            <unit value="pH"/>
-                        </high>
-                        
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry>
-    
-    <entry>
-        <fullUrl value="urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06043"/>
-        <resource>
-            <ObservationDefinition>
-                <id value="ControlTemperature"/>
-                <title value="Temperature"/>
-                <status value="active"/>
-                <category>
-                    <coding>
-                        <system value="http://accumulus.org/fhir/code/controlCriticality"/>
-                        <code value="noncritical"/>
-                        <display value="Non Critical"/>
-                    </coding>
-                </category>
-                <category>
-                    <coding>
-                        <system value="http://accumulus.org/fhir/code/testCategory"/>
-                        <code value="C123456"/>
-                        <display value="Physical Property"/>
-                    </coding>
-                </category>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="TEMP"/>
-                        <display value="Temperature"/>
-                    </coding>
-                    <text value="Long description of the control value - Temperatuure must be below 150°C"/>
-                </code>
-                <qualifiedValue>
-                    <range>
-                        <high>
-                            <value value="150"/>
-                            <unit value="°C"/>
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="Cel"/>
-                        </high>
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
    <!-- Section 5.2 - Unit Operation/Equipment Information -->
    <entry>
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
       <resource>
          <DeviceDefinition>
-            <!--devicedefinition-dxpq-ex1-->
+            	<!--devicedefinition-dxpq-ex1-->
             <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
+            <!--<meta>
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq"/>
+            	</meta>-->
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
                <!-- #89 Equiment subclass -->
@@ -674,7 +583,7 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
       <resource>
          <DeviceDefinition>
-            <!--dryer-->
+                <!--dryer-->
             <id value="82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
             <deviceName>
                <name value="Heated dryer"/>
@@ -701,7 +610,7 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
-            <!--mixer-->
+                <!--mixer-->
             <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494d"/>
             <deviceName>
                <name value="Blender"/>
@@ -728,9 +637,12 @@
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
             <!-- #84 -->
-         <DocumentReference>
-            <!--documentreference-process-flow-diagram-dxpq-ex1-->
+         <DocumentReference> 
+            	<!--documentreference-process-flow-diagram-dxpq-ex1-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
+            <!--<meta>
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>       
+            	</meta>-->
             <identifier>
                <system value="http://accumulus.org/fhir/identifier/document"/>
                <value value="FLOW-001"/>
@@ -757,8 +669,8 @@
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee"/>
       <resource>
             <!-- #84 -->
-         <DocumentReference>
-            <!--DocumentReference-image-->
+         <DocumentReference> 
+                <!--DocumentReference-image-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41fee"/>
             <status value="current"/>
             <content>
@@ -775,7 +687,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -819,11 +731,11 @@
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
       <resource>
          <Ingredient>
-            <!--productIngredient-->
+				<!--productIngredient-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <status value="active"/>
             <for>
-               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
@@ -836,7 +748,7 @@
             <substance>
                <code>
                   <reference>
-                     <!--SubstanceDefinition/Stelbatolol-->
+						    <!--SubstanceDefinition/Stelbatolol-->
                      <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
                   </reference>
                </code>
@@ -848,10 +760,10 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
       <resource>
          <SubstanceDefinition>
-            <!--Stelbatolol-->
+        	    <!--Stelbatolol-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821152"/>
             <manufacturer>
-               <!--Organization/substance-manufacturer-->
+        			<!--Organization/substance-manufacturer-->
                <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
@@ -865,7 +777,7 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113"/>
       <resource>
          <SubstanceDefinition>
-            <!--StelbatololGranules-->
+                <!--StelbatololGranules-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821113"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
@@ -881,7 +793,7 @@
       <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
-            <!--substance-manufacturer-->
+				<!--substance-manufacturer-->
             <id value="9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             <identifier>
 					<!-- FDA establishment identifier -->
@@ -906,7 +818,7 @@
       <fullUrl value="urn:uuid:8d61736c-a6e3-8301-659f-17da402e012a"/>
       <resource>
          <Organization>
-            <!--manufacturerProcessingMaterial-->
+                <!--manufacturerProcessingMaterial-->
             <id value="8d61736c-a6e3-8301-659f-17da402e012a"/>
             <identifier>
                     <!-- FDA establishment identifier -->
@@ -930,10 +842,10 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>
       <resource>
          <SubstanceDefinition>
-            <!--startingMaterial-->
+                <!--startingMaterial-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821153"/>
             <manufacturer>
-               <!--Organization/substance-manufacturer-->
+                    <!--Organization/substance-manufacturer-->
                <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
@@ -946,7 +858,7 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>
       <resource>
          <SubstanceDefinition>
-            <!--StelbatololAqueousSolution-->
+                <!--StelbatololAqueousSolution-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821154"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
@@ -961,10 +873,10 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>
       <resource>
          <SubstanceDefinition>
-            <!--processingMaterial-->
+                <!--processingMaterial-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821155"/>
             <manufacturer>
-               <!--Organization/manufacturerProcessingMaterial-->
+                    <!--Organization/manufacturerProcessingMaterial-->
                <reference value="Organization/8d61736c-a6e3-8301-659f-17da402e012a"/>
             </manufacturer>
             <name>
@@ -977,7 +889,7 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
-            <!--mixing-vessel-->
+                <!--mixing-vessel-->
             <id value="82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
             <deviceName>
                <name value="Mixing Vessel"/>
@@ -1013,7 +925,7 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
-            <!--receiving-tank-->
+                <!--receiving-tank-->
             <id value="82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
             <deviceName>
                <name value="Receiving Tank"/>

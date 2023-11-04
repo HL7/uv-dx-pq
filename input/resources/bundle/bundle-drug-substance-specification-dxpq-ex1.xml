@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Specification -->
-<!-- Based on file Accumulus FHIR Substance Example - Specification, emailed by Rik 7/31/2023 -->
-<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="bundle-drug-substance-specification-dxpq-ex1"/>
-    <!--    <id value="8729468c-33fb-4f2d-a738-4306e4410a01"/>-->
+   <id value="bundle-drug-substance-specification-dxpq-ex1"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
-      <!--profile value="http://accumulus.org/fhir/dx-cmc/specification"/-->
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
-            <!--specificationProtocol-->
+                <!--specificationProtocol-->
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
             <status value="active"/>
             <subjectReference>
-               <!--SubstanceDefinition/substance1-->
+                    <!--SubstanceDefinition/substance1-->
                <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
             </subjectReference>
             <description value="Narrative description of specifications"/>
-            <!-- new "tabular" style -->
             <action> <!-- this is then entire thing -->
                <title value="Specification for Drug Substance"/>
                <code>
@@ -102,7 +97,7 @@
       <fullUrl value="urn:uuid:52176085-1f30-0c67-9ad7-523c486c82c9"/>
       <resource>
          <ObservationDefinition>
-            <!--Description-->
+                <!--Description-->
             <id value="52176085-1f30-0c67-9ad7-523c486c82c9"/>
             <!--http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9-->
             <url value="http://example-server.com/fhir/ObservationDefinition/52176085-1f30-0c67-9ad7-523c486c82c9"/>
@@ -131,7 +126,7 @@
       <fullUrl value="urn:uuid:b50d892c-8980-0774-39d4-d449732873a3"/>
       <resource>
          <ObservationDefinition>
-            <!--Identification-->
+                <!--Identification-->
             <id value="b50d892c-8980-0774-39d4-d449732873a3"/>
             <!--http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3-->
             <url value="http://example-server.com/fhir/ObservationDefinition/b50d892c-8980-0774-39d4-d449732873a3"/>
@@ -160,7 +155,7 @@
       <fullUrl value="urn:uuid:d460b561-110c-7eb6-5d69-788abcca391a"/>
       <resource>
          <ObservationDefinition>
-            <!--Assay-->
+                <!--Assay-->
             <id value="d460b561-110c-7eb6-5d69-788abcca391a"/>
             <!--http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a-->
             <url value="http://example-server.com/fhir/ObservationDefinition/d460b561-110c-7eb6-5d69-788abcca391a"/>
@@ -202,7 +197,7 @@
       <fullUrl value="urn:uuid:006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
       <resource>
          <ObservationDefinition>
-            <!--Impurities-->
+                <!--Impurities-->
             <id value="006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
             <!--http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121-->
             <url value="http://example-server.com/fhir/ObservationDefinition/006a9f7b-91ca-5601-38ef-a3dd26ad7121"/>
@@ -278,7 +273,7 @@
       <fullUrl value="urn:uuid:c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
       <resource>
          <ObservationDefinition>
-            <!--Mutagenic-->
+                <!--Mutagenic-->
             <id value="c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
             <!--http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17-->
             <url value="http://example-server.com/fhir/ObservationDefinition/c59deb1b-835c-1be5-4e08-95dea3ae1a17"/>
@@ -323,7 +318,7 @@
       <fullUrl value="urn:uuid:18e20bae-1a24-202d-11d7-5f354c785e4d"/>
       <resource>
          <ObservationDefinition>
-            <!--Enantiomeric-->
+                <!--Enantiomeric-->
             <id value="18e20bae-1a24-202d-11d7-5f354c785e4d"/>
             <!--http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d-->
             <url value="http://example-server.com/fhir/ObservationDefinition/18e20bae-1a24-202d-11d7-5f354c785e4d"/>
@@ -357,7 +352,7 @@
       <fullUrl value="urn:uuid:22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
       <resource>
          <ObservationDefinition>
-            <!--Solvents-->
+                <!--Solvents-->
             <id value="22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
             <!--http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce"/>
@@ -411,7 +406,7 @@
       <fullUrl value="urn:uuid:b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
       <resource>
          <ObservationDefinition>
-            <!--Water-->
+                <!--Water-->
             <id value="b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
             <!--http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d-->
             <url value="http://example-server.com/fhir/ObservationDefinition/b4f736ff-1bbf-6923-4d5c-85d262285d7d"/>
@@ -443,7 +438,7 @@
       <fullUrl value="urn:uuid:233865df-2a71-528d-756c-85f36bd6685f"/>
       <resource>
          <ObservationDefinition>
-            <!--Particles-->
+                <!--Particles-->
             <id value="233865df-2a71-528d-756c-85f36bd6685f"/>
             <!--http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f-->
             <url value="http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f"/>
@@ -514,10 +509,10 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance1-->
+        		<!--substance1-->
             <id value="03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
             <manufacturer>
-               <!--Organization/substance-manufacturer-->
+        			<!--Organization/substance-manufacturer-->
                <reference value="Organization/062bf235-44e2-55c4-9213-bbe5e12d5620"/>
             </manufacturer>
             <name>
@@ -531,7 +526,7 @@
       <fullUrl value="urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620"/>
       <resource>
          <Organization>
-            <!--substance-manufacturer-->
+				<!--substance-manufacturer-->
             <id value="062bf235-44e2-55c4-9213-bbe5e12d5620"/>
             <identifier>
 					<!-- FDA establishment identifier -->

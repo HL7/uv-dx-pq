@@ -2,18 +2,15 @@
 <!-- Product Process Validation -->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-product-process-validation-dxpq-ex1"/>
-   <!--   <id value="product-batch-analysis"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq"/>
-      <!--      <profile value="http://accumulus.org/fhir/dx-cmc/process-validation"/>-->
    </meta>
    <type value="collection"/>
    <entry>
-      <!--   Error "UUIDs must be valid and lowercase" on  <fullUrl value="urn:uuid:validation-protocol"/> & <fullUrl value="urn:uuid:validationProtocol"/>-->
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <!--validationProtocol-->
+                <!--validationProtocol-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="DP PROCESS VALIDATION"/>
             <type>
@@ -30,8 +27,8 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
-			            <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
             <action>
@@ -53,28 +50,28 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/compoundingpHPre-->
+                     <!--ObservationDefinition/compoundingpHPre-->
                      <definitionCanonical value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/compoundingpHPost-->
+                     <!--ObservationDefinition/compoundingpHPost-->
                      <definitionCanonical value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/compoundingAssayPre-->
+                     <!--ObservationDefinition/compoundingAssayPre-->
                      <definitionCanonical value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/compoundingAssayPost-->
+                     <!--ObservationDefinition/compoundingAssayPost-->
                      <definitionCanonical value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
                   </action>
                </action>
@@ -87,7 +84,6 @@
                      <code value="filling"/>
                      <display value="Filling Step"/>
                   </coding>
-                  <!--text value="Overall set of actions"/-->
                </code>
                <action>
                   <title value="???"/>
@@ -98,63 +94,63 @@
                      <code>
                         <text value="Conclusion"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/conclusion-->
+                     <!--ObservationDefinition/conclusion-->
                      <definitionCanonical value="ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/TAMC-->
+                     <!--ObservationDefinition/TAMC-->
                      <definitionCanonical value="ObservationDefinition/64505a3c-5034-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/TYMC-->
+                     <!--ObservationDefinition/TYMC-->
                      <definitionCanonical value="ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FillWeightAverage-->
+                     <!--ObservationDefinition/FillWeightAverage-->
                      <definitionCanonical value="ObservationDefinition/64515a3c-5134-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FillWeightTarget-->
+                     <!--ObservationDefinition/FillWeightTarget-->
                      <definitionCanonical value="ObservationDefinition/64525a3c-5134-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FillWeightAverageFromTarget-->
+                     <!--ObservationDefinition/FillWeightAverageFromTarget-->
                      <definitionCanonical value="ObservationDefinition/64515a3c-5134-448a-9c29-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/HoldTimeFiltrationToFilling-->
+                     <!--ObservationDefinition/HoldTimeFiltrationToFilling-->
                      <definitionCanonical value="ObservationDefinition/64515a3c-5234-448a-9c29-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/HoldTimeFilling-->
+                     <!--ObservationDefinition/HoldTimeFilling-->
                      <definitionCanonical value="ObservationDefinition/64515a3c-5334-448a-9c29-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FilterIntegrity-->
+                     <!--ObservationDefinition/FilterIntegrity-->
                      <definitionCanonical value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce1958424"/>
                   </action>
                </action>
@@ -167,48 +163,47 @@
                      <code value="lyophilization"/>
                      <display value="Lyophilization Step"/>
                   </coding>
-                  <!--text value="Overall set of actions"/-->
                </code>
                <action>
                   <code>
                      <text value="Conclusion"/>
                   </code>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationConclusion-->
+                  <!--ObservationDefinition/LyophilizationConclusion-->
                   <definitionCanonical value="ObservationDefinition/22525a3c-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizerNumber-->
+                  <!--ObservationDefinition/LyophilizerNumber-->
                   <definitionCanonical value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationAssay-->
+                  <!--ObservationDefinition/LyophilizationAssay-->
                   <definitionCanonical value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationWater-->
+                  <!--ObservationDefinition/LyophilizationWater-->
                   <definitionCanonical value="ObservationDefinition/32e29d22-5fcb-546e-24fd-52a4a4004467"/>
                </action>
                <action>
                   <code>
                      <text value="Homogeneity"/>
                   </code>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationWaterHomogeneity-->
+                  <!--ObservationDefinition/LyophilizationWaterHomogeneity-->
                   <definitionCanonical value="ObservationDefinition/32e29d22-6fcb-546e-24fd-52a4a4004467"/>
                </action>
                <action>
                   <code>
                      <text value="Homogeneity"/>
                   </code>
-                  <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationAssayHomogeneity-->
+                  <!--ObservationDefinition/LyophilizationAssayHomogeneity-->
                   <definitionCanonical value="ObservationDefinition/32e29d32-6fcb-546e-24fd-52a4a4004467"/>
                </action>
             </action>
@@ -231,70 +226,70 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/AppearanceProduct-->
+                     <!--ObservationDefinition/AppearanceProduct-->
                      <definitionCanonical value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/AppearanceLyophilized-->
+                     <!--ObservationDefinition/AppearanceLyophilized-->
                      <definitionCanonical value="ObservationDefinition/fc07b5d5-9fe1-92c3-2d16-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/AppearanceReconstituted-->
+                     <!--ObservationDefinition/AppearanceReconstituted-->
                      <definitionCanonical value="ObservationDefinition/fc07b5d5-9fe1-92c3-2d06-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Identification-->
+                     <!--ObservationDefinition/Identification-->
                      <definitionCanonical value="ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
+                     <!--ObservationDefinition/Assay-->
                      <definitionCanonical value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Degradation-->
+                     <!--ObservationDefinition/Degradation-->
                      <definitionCanonical value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Water-->
+                     <!--ObservationDefinition/Water-->
                      <definitionCanonical value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/UniformityUSP-->
+                     <!--ObservationDefinition/UniformityUSP-->
                      <definitionCanonical value="ObservationDefinition/ef17cff1-6586-a5a4-9168-2602140548d7"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/UniformityAcceptance-->
+                     <!--ObservationDefinition/UniformityAcceptance-->
                      <definitionCanonical value="ObservationDefinition/ef17cff1-6586-a5a4-9168-2602140548d8"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
-                     <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/releasepH-->
+                     <!--ObservationDefinition/releasepH-->
                      <definitionCanonical value="ObservationDefinition/fc17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
                   </action>
                </action>
@@ -307,9 +302,9 @@
       <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--compoundingpHPre-->
+                <!--compoundingpHPre-->
             <id value="fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/compoundingpHPre-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="pH (adjustment of pre-clarification bulk solution)"/>
             <status value="active"/>
@@ -344,9 +339,9 @@
       <fullUrl value="urn:uuid:fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
       <resource>
          <ObservationDefinition>
-            <!--compoundingpHPost-->
+                <!--compoundingpHPost-->
             <id value="fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/compoundingpHPost-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             <title value="pH (post-dilution bulk solution)"/>
             <status value="active"/>
@@ -381,9 +376,9 @@
       <fullUrl value="urn:uuid:fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--compoundingAssayPre-->
+                <!--compoundingAssayPre-->
             <id value="fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/compoundingAssayPre-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="Assay (pre-clarification filtration) (mg/mL)"/>
             <status value="active"/>
@@ -413,9 +408,9 @@
       <fullUrl value="urn:uuid:fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
       <resource>
          <ObservationDefinition>
-            <!--compoundingAssayPost-->
+                <!--compoundingAssayPost-->
             <id value="fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/compoundingAssayPost-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             <title value="Assay (Post dilution bulk solution) (mg/mL)"/>
             <status value="active"/>
@@ -448,14 +443,13 @@
          </ObservationDefinition>
       </resource>
    </entry>
-   <!-- release step -->
    <entry>
       <fullUrl value="urn:uuid:fc07b5d5-9fe1-92c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--AppearanceProduct-->
+                <!--AppearanceProduct-->
             <id value="fc07b5d5-9fe1-92c2-2d06-47cb5b295e72"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/AppearanceProduct-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-47cb5b295e72"/>
             <title value="Appearance (Product Container, visual)"/>
             <status value="active"/>
@@ -482,9 +476,9 @@
       <fullUrl value="urn:uuid:fc07b5d5-9fe1-92c3-2d16-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--AppearanceLyophilized-->
+                <!--AppearanceLyophilized-->
             <id value="fc07b5d5-9fe1-92c3-2d16-47cb5b295e72"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/AppearanceLyophilized-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c3-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c3-2d16-47cb5b295e72"/>
             <title value="Appearance (Lyophilized, Visual)"/>
             <status value="active"/>
@@ -511,9 +505,9 @@
       <fullUrl value="urn:uuid:fc07b5d5-9fe1-92c3-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--AppearanceReconstituted-->
+                <!--AppearanceReconstituted-->
             <id value="fc07b5d5-9fe1-92c3-2d06-47cb5b295e72"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/AppearanceReconstituted-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c3-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c3-2d06-47cb5b295e72"/>
             <title value="Appearance (Reconstituted, Visual)"/>
             <status value="active"/>
@@ -540,9 +534,9 @@
       <fullUrl value="urn:uuid:3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
       <resource>
          <ObservationDefinition>
-            <!--Identification-->
+                <!--Identification-->
             <id value="3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Identification-->
+            <!--http://example-server.com/fhir/ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d-->
             <url value="http://example-server.com/fhir/ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
             <title value="Identification"/>
             <status value="active"/>
@@ -569,9 +563,9 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <!--Assay-->
+                <!--Assay-->
             <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
+            <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Assay"/>
             <status value="active"/>
@@ -598,9 +592,9 @@
       <fullUrl value="urn:uuid:8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
       <resource>
          <ObservationDefinition>
-            <!--Degradation-->
+                <!--Degradation-->
             <id value="8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Degradation-->
+            <!--http://example-server.com/fhir/ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf-->
             <url value="http://example-server.com/fhir/ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             <title value="Degradation Products"/>
             <status value="active"/>
@@ -691,70 +685,13 @@
          </ObservationDefinition>
       </resource>
    </entry>
-   <!--entry>
-      <fullUrl value="urn:uuid:8f5d8abf-2cf4-8617-1e41-a74d90210dcc"/>
-        <resource>
-            <ObservationDefinition>
-                <id value="Dissolution"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/8f5d8abf-2cf4-8617-1e41-a74d90210dcc"/>
-                <title value="Dissolution"/>
-                <status value="active"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZ"/> 
-                        <display value="Dissolution"/>
-                    </coding>
-                    <text value="Dissolution"/>
-                </code>
-                <method>
-                    <text value="Apparatus 2 (paddles), UV measurement"/>
-                </method>
-                <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-                        <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph"/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
-   <!--entry>
-      <fullUrl value="urn:uuid:33a9d578-6e6b-7606-72bc-6775d36c1930"/>
-        <resource>
-            <ObservationDefinition>
-                <id value="DissolutionQ80"/>
-                <url value="http://example-server.com/fhir/ObservationDefinition/33a9d578-6e6b-7606-72bc-6775d36c1930"/>
-                <title value="Dissolution (Q)"/>
-                <status value="active"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZX"/>
-                        <display value="DissolutionQuantity"/>
-                    </coding>
-                </code>
-                <method>
-                    <text value="Apparatus 2 (paddles), UV measurement"/>
-                </method>
-                <qualifiedValue>
-                    <condition value="at 30 minutes"/>
-                    <range>
-                        <low>
-                            <value value="80"/>
-                            <unit value="%"/>
-                        </low>
-                    </range>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
    <entry>
       <fullUrl value="urn:uuid:31e29d22-5fcb-546e-24fd-52a4a4004467"/>
       <resource>
          <ObservationDefinition>
-            <!--Water-->
+                <!--Water-->
             <id value="31e29d22-5fcb-546e-24fd-52a4a4004467"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Water-->
+            <!--http://example-server.com/fhir/ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467-->
             <url value="http://example-server.com/fhir/ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
             <title value="Water Content"/>
             <status value="active"/>
@@ -786,9 +723,9 @@
       <fullUrl value="urn:uuid:32e29d22-5fcb-546e-24fd-52a4a4004467"/>
       <resource>
          <ObservationDefinition>
-            <!--LyophilizationWater-->
+                <!--LyophilizationWater-->
             <id value="32e29d22-5fcb-546e-24fd-52a4a4004467"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationWater-->
+            <!--http://example-server.com/fhir/ObservationDefinition/32e29d22-5fcb-546e-24fd-52a4a4004467-->
             <url value="http://example-server.com/fhir/ObservationDefinition/32e29d22-5fcb-546e-24fd-52a4a4004467"/>
             <title value="Water Content"/>
             <status value="active"/>
@@ -820,9 +757,9 @@
       <fullUrl value="urn:uuid:32e29d22-6fcb-546e-24fd-52a4a4004467"/>
       <resource>
          <ObservationDefinition>
-            <!--LyophilizationWaterHomogeneity-->
+                <!--LyophilizationWaterHomogeneity-->
             <id value="32e29d22-6fcb-546e-24fd-52a4a4004467"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationWaterHomogeneity-->
+            <!--http://example-server.com/fhir/ObservationDefinition/32e29d22-6fcb-546e-24fd-52a4a4004467-->
             <url value="http://example-server.com/fhir/ObservationDefinition/32e29d22-6fcb-546e-24fd-52a4a4004467"/>
             <title value="Water Content"/>
             <status value="active"/>
@@ -835,7 +772,7 @@
                <text value="Moisture (%)"/>
             </code>
             <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-dxpq">
                   <valueString value="± 1.4 % (w/w)"/>
                </extension>
                <range>
@@ -900,9 +837,9 @@
       <fullUrl value="urn:uuid:32e29d32-6fcb-546e-24fd-52a4a4004467"/>
       <resource>
          <ObservationDefinition>
-            <!--LyophilizationAssayHomogeneity-->
+                <!--LyophilizationAssayHomogeneity-->
             <id value="32e29d32-6fcb-546e-24fd-52a4a4004467"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationAssayHomogeneity-->
+            <!--http://example-server.com/fhir/ObservationDefinition/32e29d32-6fcb-546e-24fd-52a4a4004467-->
             <url value="http://example-server.com/fhir/ObservationDefinition/32e29d32-6fcb-546e-24fd-52a4a4004467"/>
             <title value="Assay"/>
             <status value="active"/>
@@ -910,12 +847,12 @@
                <coding>
                   <system value="http://dummy.loinc.org"/>
                   <code value="ASSH"/>
-                        <display value="Assay Content Homogeneity"/>
+                  <display value="Assay Content Homogeneity"/>
                </coding>
                <text value="Assay by HPLC (% Main Peak)"/>
             </code>
             <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-dxpq">
                   <valueString value="± 2.3%"/>
                </extension>
                <range>
@@ -976,68 +913,13 @@
          </ObservationDefinition>
       </resource>
    </entry>
-   <!--entry>
-      <fullUrl value="urn:uuid:d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
-        <resource>
-            <ObservationDefinition>
-                <id value="Microbiological"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
-                <title value="Microbiological"/>
-                <status value="active"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="YYY"/>
-                        <display value="Microbiological Quality"/>
-                    </coding>
-                    <text value="Microbiological Quality"/>
-                </code>
-                <method>
-                    <text value="Ph Eur"/>
-                </method>
-     		   <qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-                        <valueString value="Shall comply with the requirements of the Ph Eur"/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
-   <!--entry>
-      <fullUrl value="urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7"/>
-        <resource>
-            <ObservationDefinition>
-                <id value="Uniformity"/>
-                <url value="http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>
-                
-                <title value="Uniformity of dosage"/>
-                <status value="active"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZ"/>
-                        <display value="uniformity of dosage units (by weight)"/>
-                    </coding>
-                    <text value="uniformity of dosage units (by weight)"/>
-                </code>
-                <method>
-                    <text value="Weight variation"/>
-                </method>
-     			<qualifiedValue>
-                    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-                        <valueString value="Shall comply with the requirements of the harmonised USP/JP/Ph Eur"/>
-                    </extension>
-                </qualifiedValue>
-            </ObservationDefinition>
-        </resource>
-    </entry-->
    <entry>
       <fullUrl value="urn:uuid:ef17cff1-6586-a5a4-9168-2602140548d7"/>
       <resource>
          <ObservationDefinition>
-            <!--UniformityUSP-->
+                <!--UniformityUSP-->
             <id value="ef17cff1-6586-a5a4-9168-2602140548d7"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/UniformityUSP-->
+            <!--http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a5a4-9168-2602140548d7-->
             <url value="http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a5a4-9168-2602140548d7"/>
             <title value="Uniformity of Dosage Units, Weight Variation - Meets USP / Ph. Eur. requirements (% label claim)"/>
             <status value="active"/>
@@ -1069,9 +951,9 @@
       <fullUrl value="urn:uuid:ef17cff1-6586-a5a4-9168-2602140548d8"/>
       <resource>
          <ObservationDefinition>
-            <!--UniformityAcceptance-->
+                <!--UniformityAcceptance-->
             <id value="ef17cff1-6586-a5a4-9168-2602140548d8"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/UniformityAcceptance-->
+            <!--http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a5a4-9168-2602140548d8-->
             <url value="http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a5a4-9168-2602140548d8"/>
             <title value="Uniformity of Dosage Units, Weight Variation - Acceptance Value (AV)"/>
             <status value="active"/>
@@ -1101,9 +983,9 @@
       <fullUrl value="urn:uuid:fc17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <!--releasepH-->
+                <!--releasepH-->
             <id value="fc17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/releasepH-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="pH (reconstituted)"/>
             <status value="active"/>
@@ -1139,9 +1021,9 @@
       <fullUrl value="urn:uuid:22515a3c-5034-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--conclusion-->
+                <!--conclusion-->
             <id value="22515a3c-5034-448a-9c19-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/conclusion-->
+            <!--http://example-server.com/fhir/ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Conclusion"/>
             <status value="active"/>
@@ -1160,9 +1042,9 @@
       <fullUrl value="urn:uuid:64505a3c-5034-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--TAMC-->
+                <!--TAMC-->
             <id value="64505a3c-5034-448a-9c19-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/TAMC-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64505a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64505a3c-5034-448a-9c19-938ce1958424"/>
             <title value="TAMC [a]"/>
             <status value="active"/>
@@ -1190,9 +1072,9 @@
       <fullUrl value="urn:uuid:64515a3c-5034-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--TYMC-->
+                <!--TYMC-->
             <id value="64515a3c-5034-448a-9c19-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/TYMC-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424"/>
             <title value="TYMC [a]"/>
             <status value="active"/>
@@ -1220,9 +1102,9 @@
       <fullUrl value="urn:uuid:64515a3c-5134-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--FillWeightAverage-->
+                <!--FillWeightAverage-->
             <id value="64515a3c-5134-448a-9c19-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FillWeightAverage-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c19-938ce1958424"/>
             <title value="Fill Weight Average"/>
             <status value="active"/>
@@ -1246,9 +1128,9 @@
       <fullUrl value="urn:uuid:64525a3c-5134-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--FillWeightTarget-->
+                <!--FillWeightTarget-->
             <id value="64525a3c-5134-448a-9c19-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FillWeightTarget-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a3c-5134-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3c-5134-448a-9c19-938ce1958424"/>
             <title value="Fill Weight Target"/>
             <status value="active"/>
@@ -1271,9 +1153,9 @@
       <fullUrl value="urn:uuid:64515a3c-5134-448a-9c29-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--FillWeightAverageFromTarget-->
+                <!--FillWeightAverageFromTarget-->
             <id value="64515a3c-5134-448a-9c29-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FillWeightAverageFromTarget-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c29-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c29-938ce1958424"/>
             <title value="Actual Avg. Weight from Target"/>
             <status value="active"/>
@@ -1310,9 +1192,9 @@
       <fullUrl value="urn:uuid:64515a3c-5234-448a-9c29-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--HoldTimeFiltrationToFilling-->
+                <!--HoldTimeFiltrationToFilling-->
             <id value="64515a3c-5234-448a-9c29-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/HoldTimeFiltrationToFilling-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5234-448a-9c29-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5234-448a-9c29-938ce1958424"/>
             <title value="Hold Time (filtration To filling)"/>
             <status value="active"/>
@@ -1340,9 +1222,9 @@
       <fullUrl value="urn:uuid:64515a3c-5334-448a-9c29-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--HoldTimeFilling-->
+                <!--HoldTimeFilling-->
             <id value="64515a3c-5334-448a-9c29-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/HoldTimeFilling-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5334-448a-9c29-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5334-448a-9c29-938ce1958424"/>
             <title value="Hold Time (start filling to end filling)"/>
             <status value="active"/>
@@ -1370,9 +1252,9 @@
       <fullUrl value="urn:uuid:64535a3c-5334-448a-9c29-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--FilterIntegrity-->
+                <!--FilterIntegrity-->
             <id value="64535a3c-5334-448a-9c29-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FilterIntegrity-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64535a3c-5334-448a-9c29-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64535a3c-5334-448a-9c29-938ce1958424"/>
             <title value="Filter Integrity Test"/>
             <status value="active"/>
@@ -1402,9 +1284,9 @@
       <fullUrl value="urn:uuid:22525a3c-5034-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <!--LyophilizationConclusion-->
+                <!--LyophilizationConclusion-->
             <id value="22525a3c-5034-448a-9c19-938ce1958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationConclusion-->
+            <!--http://example-server.com/fhir/ObservationDefinition/22525a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22525a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Conclusion"/>
             <status value="active"/>
@@ -1423,9 +1305,9 @@
       <fullUrl value="urn:uuid:64535a3c-5334-448a-9c29-938ce2958424"/>
       <resource>
          <ObservationDefinition>
-            <!--LyophilizerNumber-->
+				<!--LyophilizerNumber-->
             <id value="64535a3c-5334-448a-9c29-938ce2958424"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizerNumber-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
             <title value="Lyophilizer Number"/>
             <status value="active"/>
@@ -1446,9 +1328,9 @@
       <fullUrl value="urn:uuid:22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <!--LyophilizationAssay-->
+                <!--LyophilizationAssay-->
             <id value="22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/LyophilizationAssay-->
+            <!--http://example-server.com/fhir/ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Assay"/>
             <status value="active"/>
@@ -1464,7 +1346,7 @@
                <text value="Assay by UHPLC"/>
             </method>
             <qualifiedValue>
-                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-dxpq">
                   <valueString value="95% to 105% of label claim"/>
                </extension>
                <range>
@@ -1499,16 +1381,16 @@
       <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
       <resource>
          <Medication>
-            <!--medication-batch-information-dxpq-ex1-->
+            	<!--medication-batch-information-dxpq-ex2-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
             </meta>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
-                  <valueReference> <!-- todo consider change this be the MID? -->
-                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
-			                  <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                  <valueReference> <!-- todo consider change this be the MID? --> 
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                      <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
@@ -1539,11 +1421,10 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <valueReference>
-                        <!--Substance/substance-dxpq-ex1-->
-			                     <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
+                    		    <!--Substance/substance-dxpq-ex1-->
+                        <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
                      </valueReference>
                   </extension>
-                  <!--  Base FHIR Extensions-->
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
@@ -1552,11 +1433,10 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <valueReference>
-                        <!--Organization/organization-dxpq-ex1-->
-			                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
+                            	<!--Organization/organization-dxpq-ex1-->
+                        <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                      </valueReference>
                   </extension>
-                  <!--  Base FHIR Extensions-->
                   <extension url="batchQuantity">
                      <valueQuantity>
                         <value value="100100"/>
@@ -1594,8 +1474,8 @@
                   <extension url="assignedManufacturer">
                      <valueReference> <!-- #158 -->
                             	<!--reference value="Organization/manufacturer"/-->
-                        <!--Organization/organization-dxpq-ex1-->
-			                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
+                            	<!--Organization/organization-dxpq-ex1-->
+                        <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -1615,13 +1495,13 @@
       <fullUrl value="urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
       <resource>
          <Medication>
-            <!--medication-actual-batch-2-->
+                <!--medication-actual-batch-2-->
             <id value="a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
-			                  <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
             </code>
@@ -1650,8 +1530,8 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <valueReference>
-                        <!--Substance/actual-batch-substance-2-->
-			                     <reference value="Substance/cb31d747-2338-88d5-342c-8e9c097e4dad"/>
+                    			<!--Substance/actual-batch-substance-2-->
+                        <reference value="Substance/cb31d747-2338-88d5-342c-8e9c097e4dad"/>
                      </valueReference>
                   </extension>
                   <extension url="manufacturingDate">
@@ -1662,8 +1542,8 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <valueReference>
-                        <!--Organization/packaging-->
-			                     <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
+                                <!--Organization/packaging-->
+                        <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
@@ -1702,8 +1582,8 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference>
-                        <!--Organization/manufacturer-->
-			                     <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+                                <!--Organization/manufacturer-->
+                        <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -1722,13 +1602,13 @@
       <fullUrl value="urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
       <resource>
          <Medication>
-            <!--medication-actual-batch-3-->
+                <!--medication-actual-batch-3-->
             <id value="c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
-			                  <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
             </code>
@@ -1757,8 +1637,8 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-dxpq">
                      <valueReference>
-                        <!--Substance/actual-batch-substance-3-->
-			                     <reference value="Substance/1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
+                    			<!--Substance/actual-batch-substance-3-->
+                        <reference value="Substance/1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
                      </valueReference>
                   </extension>
                   <extension url="manufacturingDate">
@@ -1769,8 +1649,8 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
                      <valueReference>
-                        <!--Organization/packaging-->
-			                     <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
+                                <!--Organization/packaging-->
+                        <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
@@ -1809,8 +1689,8 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference>
-                        <!--Organization/manufacturer-->
-			                     <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+                                <!--Organization/manufacturer-->
+                        <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -1829,7 +1709,7 @@
       <fullUrl value="urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a"/>
       <resource>
          <Organization>
-            <!--manufacturer-->
+                <!--manufacturer-->
             <id value="0102bca4-46c1-a6bf-1025-cd403fee710a"/>
             <identifier>
                     <!-- FDA establishment identifier -->
@@ -1853,7 +1733,7 @@
       <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07"/>
       <resource>
          <Organization>
-            <!--packaging-->
+                <!--packaging-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b07"/>
             <name value="MySite"/>
          </Organization>
@@ -1863,7 +1743,8 @@
       <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
       <resource>
          <Organization>
-            <!--testing lab-->
+                <!--testing lab-->
+                <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             <name value="Testing Lab"/>
          </Organization>
@@ -1876,12 +1757,12 @@
          <DiagnosticReport>
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
-            <!--processValidationReport-->
+                <!--processValidationReport-->
             <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <!--PlanDefinition/validationProtocol-->
-			               <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+                        <!--PlanDefinition/validationProtocol-->
+                  <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -1893,343 +1774,184 @@
                </coding>
             </code>
             <effectiveDateTime value="2020-12"/>
-            <result>
-               <!--Observation/compoundingpHPre1-->
-			            <reference value="Observation/9c56948a-2a39-6609-1c01-4d197ea57a33"/>
+            <result><!--Observation/compoundingpHPre1-->
+               <reference value="Observation/9c56948a-2a39-6609-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingpHPre2-->
+               <reference value="Observation/9c56948a-3a39-6609-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingpHPre3-->
+               <reference value="Observation/9c56948a-4a39-6609-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingpHPost1-->
+               <reference value="Observation/9c56948a-3a49-6609-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingpHPost2-->
+               <reference value="Observation/9c56958a-4a39-6609-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingpHPost3-->
+               <reference value="Observation/9c56948a-5a39-6609-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingAssayPre1-->
+               <reference value="Observation/9c56948a-2a39-6609-1c01-4d297ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingAssayPre2-->
+               <reference value="Observation/9c56948a-3a39-6619-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingAssayPre3-->
+               <reference value="Observation/9c56948a-4a39-6619-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingAssayPost1-->
+               <reference value="Observation/9c56948a-3a49-6619-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingAssayPost2-->
+               <reference value="Observation/9c56958a-4a39-6619-1c01-4d197ea57a33"/>
+            </result>
+            <result><!--Observation/compoundingAssayPost3-->
+               <reference value="Observation/9c56948a-5a39-6709-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <!--Observation/compoundingpHPre2-->
-			            <reference value="Observation/9c56948a-3a39-6609-1c01-4d197ea57a33"/>
+                    <!--Observation/observationIdentification-->
+               <reference value="Observation/f0a04328-905c-4ec5-372e-4d6cfef18629"/>
             </result>
             <result>
-               <!--Observation/compoundingpHPre3-->
-			            <reference value="Observation/9c56948a-4a39-6609-1c01-4d197ea57a33"/>
+                    <!--Observation/observationIdentification2-->
+               <reference value="Observation/5e5a5e67-7fc6-0064-1be9-5d9d14d887e5"/>
             </result>
             <result>
-               <!--Observation/compoundingpHPost1-->
-			            <reference value="Observation/9c56948a-3a49-6609-1c01-4d197ea57a33"/>
+                    <!--Observation/observationIdentification3-->
+               <reference value="Observation/cfde6776-673c-72e2-68c4-07b77cd85b74"/>
             </result>
             <result>
-               <!--Observation/compoundingpHPost2-->
-			            <reference value="Observation/9c56958a-4a39-6609-1c01-4d197ea57a33"/>
+                    <!--Observation/observationAssay-->
+               <reference value="Observation/9c56948a-1a39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <!--Observation/compoundingpHPost3-->
-			            <reference value="Observation/9c56948a-5a39-6609-1c01-4d197ea57a33"/>
+                    <!--Observation/observationAssay2-->
+               <reference value="Observation/1e20aed7-7626-1664-8d96-235f860d9a2c"/>
             </result>
             <result>
-               <!--Observation/compoundingAssayPre1-->
-			            <reference value="Observation/9c56948a-2a39-6609-1c01-4d297ea57a33"/>
+                    <!--Observation/observationAssay3-->
+               <reference value="Observation/ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
             </result>
             <result>
-               <!--Observation/compoundingAssayPre2-->
-			            <reference value="Observation/9c56948a-3a39-6619-1c01-4d197ea57a33"/>
+                    <!--Observation/observationDegradation-imp1-->
+               <reference value="Observation/ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
             </result>
             <result>
-               <!--Observation/compoundingAssayPre3-->
-			            <reference value="Observation/9c56948a-4a39-6619-1c01-4d197ea57a33"/>
+                    <!--Observation/observationDegradation-imp1-2-->
+               <reference value="Observation/4052f28b-64a2-392d-35e4-ec8e912434d2"/>
             </result>
             <result>
-               <!--Observation/compoundingAssayPost1-->
-			            <reference value="Observation/9c56948a-3a49-6619-1c01-4d197ea57a33"/>
+                    <!--Observation/observationDegradation-imp1-3-->
+               <reference value="Observation/34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
             </result>
             <result>
-               <!--Observation/compoundingAssayPost2-->
-			            <reference value="Observation/9c56958a-4a39-6619-1c01-4d197ea57a33"/>
+                    <!--Observation/observationDegradation-imp2-->
+               <reference value="Observation/2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
             </result>
             <result>
-               <!--Observation/compoundingAssayPost3-->
-			            <reference value="Observation/9c56948a-5a39-6709-1c01-4d197ea57a33"/>
-            </result>
-            <!--result>
-                    <reference value="Observation/observationDescription"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationDescription2"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationDescription3"/>
-                </result-->
-            <result>
-               <!--Observation/observationIdentification-->
-			            <reference value="Observation/f0a04328-905c-4ec5-372e-4d6cfef18629"/>
+                    <!--Observation/observationDegradation-imp2-2-->
+               <reference value="Observation/332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
             </result>
             <result>
-               <!--Observation/observationIdentification2-->
-			            <reference value="Observation/5e5a5e67-7fc6-0064-1be9-5d9d14d887e5"/>
+                    <!--Observation/observationDegradation-imp2-3-->
+               <reference value="Observation/f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
             </result>
             <result>
-               <!--Observation/observationIdentification3-->
-			            <reference value="Observation/cfde6776-673c-72e2-68c4-07b77cd85b74"/>
+                    <!--Observation/observationDegradation-imp3-->
+               <reference value="Observation/7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
             </result>
             <result>
-               <!--Observation/observationAssay-->
-			            <reference value="Observation/9c56948a-1a39-6609-1c01-4d197ea57a33"/>
+                    <!--Observation/observationDegradation-imp3-2-->
+               <reference value="Observation/be016630-8754-7414-9014-21e020ad66c6"/>
             </result>
             <result>
-               <!--Observation/observationAssay2-->
-			            <reference value="Observation/1e20aed7-7626-1664-8d96-235f860d9a2c"/>
+                    <!--Observation/observationDegradation-imp3-3-->
+               <reference value="Observation/92568f68-78f3-908c-6935-ff5f3d574dd6"/>
             </result>
             <result>
-               <!--Observation/observationAssay3-->
-			            <reference value="Observation/ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
+                    <!--Observation/observationDegradation-imp-unspecified-->
+               <reference value="Observation/a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-imp1-->
-			            <reference value="Observation/ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
+                    <!--Observation/observationDegradation-imp-unspecified-2-->
+               <reference value="Observation/d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-imp1-2-->
-			            <reference value="Observation/4052f28b-64a2-392d-35e4-ec8e912434d2"/>
+                    <!--Observation/observationDegradation-imp-unspecified-3-->
+               <reference value="Observation/7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-imp1-3-->
-			            <reference value="Observation/34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
+                    <!--Observation/observationDegradation-imp-total-->
+               <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-imp2-->
-			            <reference value="Observation/2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
+                    <!--Observation/observationDegradation-imp-total-2-->
+               <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c1899"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-imp2-2-->
-			            <reference value="Observation/332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
+                    <!--Observation/observationDegradation-imp-total-3-->
+               <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c78"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-imp2-3-->
-			            <reference value="Observation/f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
+                    <!--Observation/observationWater-->
+               <reference value="Observation/66c2f585-678e-78b8-2235-1a3b37bd6e46"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-imp3-->
-			            <reference value="Observation/7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
+                    <!--Observation/observationWater2-->
+               <reference value="Observation/f8232d25-023d-679f-9c58-a6dc234b7a28"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-imp3-2-->
-			            <reference value="Observation/be016630-8754-7414-9014-21e020ad66c6"/>
+                    <!--Observation/observationWater3-->
+               <reference value="Observation/368b82be-75dd-1d97-3dbc-a7eed9869daa"/>
             </result>
-            <result>
-               <!--Observation/observationDegradation-imp3-3-->
-			            <reference value="Observation/92568f68-78f3-908c-6935-ff5f3d574dd6"/>
+            <result><!--Observation/fillingTAMC1-->
+               <reference value="Observation/44aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <result>
-               <!--Observation/observationDegradation-imp-unspecified-->
-			            <reference value="Observation/a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
+            <result><!--Observation/fillingConclusion-nosubject-->
+               <reference value="Observation/45aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <result>
-               <!--Observation/observationDegradation-imp-unspecified-2-->
-			            <reference value="Observation/d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
+            <result><!--Observation/lyophilizationConclusion-nosubject-->
+               <reference value="Observation/45ab47fd-8964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <result>
-               <!--Observation/observationDegradation-imp-unspecified-3-->
-			            <reference value="Observation/7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
+            <result><!--Observation/lyophilizerNumber1-->
+               <reference value="Observation/37aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <result>
-               <!--Observation/observationDegradation-imp-total-->
-			            <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
+            <result><!--Observation/lyophilizerNumber2-->
+               <reference value="Observation/38aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <result>
-               <!--Observation/observationDegradation-imp-total-2-->
-			            <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c1899"/>
+            <result><!--Observation/lyophilizerNumber3-->
+               <reference value="Observation/38aa48fd-8964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <result>
-               <!--Observation/observationDegradation-imp-total-3-->
-			            <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c78"/>
+            <result><!--Observation/lyophilizationAssay1-->
+               <reference value="Observation/37aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <!--result>
-                    <reference value="Observation/observationDissolution"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationDissolution2"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationDissolution3"/>
-                </result-->
-            <!--result>
-                    <reference value="Observation/observationDissolutionQ80"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationDissolutionQ802"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationDissolutionQ803"/>
-                </result-->
-            <!--result>
-                    <reference value="Observation/observationUniformity"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationUniformity2"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationUniformity3"/>
-                </result-->
-            <!--result>
-                    <reference value="Observation/observationMicro"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationMicro2"/>
-                </result>
-                <result>
-                    <reference value="Observation/observationMicro3"/>
-                </result-->
-            <result>
-               <!--Observation/observationWater-->
-			            <reference value="Observation/66c2f585-678e-78b8-2235-1a3b37bd6e46"/>
+            <result><!--Observation/lyophilizationAssay2-->
+               <reference value="Observation/47aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <result>
-               <!--Observation/observationWater2-->
-			            <reference value="Observation/f8232d25-023d-679f-9c58-a6dc234b7a28"/>
+            <result><!--Observation/lyophilizationAssay3-->
+               <reference value="Observation/47aa47fd-7964-4f96-6495-b2bec7f160e8"/>
             </result>
-            <result>
-               <!--Observation/observationWater3-->
-			            <reference value="Observation/368b82be-75dd-1d97-3dbc-a7eed9869daa"/>
+            <result><!--Observation/lyophilizerWaterHomogeneity1-->
+               <reference value="Observation/47aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             </result>
-            <result>
-               <!--Observation/fillingTAMC1-->
-			            <reference value="Observation/44aa47fd-8964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/fillingConclusion-nosubject-->
-			            <reference value="Observation/45aa47fd-8964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizationConclusion-nosubject-->
-			            <reference value="Observation/45ab47fd-8964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizerNumber1-->
-			            <reference value="Observation/37aa47fd-8964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizerNumber2-->
-			            <reference value="Observation/38aa47fd-8964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizerNumber3-->
-			            <reference value="Observation/38aa48fd-8964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizationAssay1-->
-			            <reference value="Observation/37aa47fd-7964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizationAssay2-->
-			            <reference value="Observation/47aa47fd-7964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizationAssay3-->
-			            <reference value="Observation/47aa47fd-7964-4f96-6495-b2bec7f160e8"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizerWaterHomogeneity1-->
-			            <reference value="Observation/47aa47fd-8964-4f96-6495-b2bec7f160e7"/>
-            </result>
-            <result>
-               <!--Observation/lyophilizerAssayHomogeneity1-->
-			            <reference value="Observation/47aa47fd-8964-5f96-6495-b2bec7f160e7"/>
+            <result><!--Observation/lyophilizerAssayHomogeneity1-->
+               <reference value="Observation/47aa47fd-8964-5f96-6495-b2bec7f160e7"/>
             </result>
             <conclusion value="The samples have been assessed and the conclusion is..."/>
          </DiagnosticReport>
       </resource>
    </entry>
-   <!--entry>
-      <fullUrl value="urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d"/>
-        <resource>
-            <Observation>
-                <id value="observationDescription"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Description"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="XXX"/>
-                        <display value="Description"/>
-                    </coding>
-                    <text value="Description"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-batch-information-dxpq-ex2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry
-    
-    <entry>
-      <fullUrl value="urn:uuid:ba1b4227-8a67-a605-1152-e86e4d614fc3"/>
-        <resource>
-            <Observation>
-                <id value="observationDescription2"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Description"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="XXX"/>
-                        <display value="Description"/>
-                    </coding>
-                    <text value="Description"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Does not comply"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:2d628dc2-0b9e-9494-55b3-2621e50938c5"/>
-        <resource>
-            <Observation>
-                <id value="observationDescription3"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Description"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="XXX"/>
-                        <display value="Description"/>
-                    </coding>
-                    <text value="Description"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-3"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry-->
    <entry>
       <fullUrl value="urn:uuid:f0a04328-905c-4ec5-372e-4d6cfef18629"/>
       <resource>
          <Observation>
-            <!--observationIdentification-->
+                <!--observationIdentification-->
             <id value="f0a04328-905c-4ec5-372e-4d6cfef18629"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Identification-->
-			            <reference value="ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
+                    <!--ObservationDefinition/Identification-->
+               <reference value="ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2241,13 +1963,14 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -2258,11 +1981,11 @@
       <fullUrl value="urn:uuid:5e5a5e67-7fc6-0064-1be9-5d9d14d887e5"/>
       <resource>
          <Observation>
-            <!--observationIdentification2-->
+                <!--observationIdentification2-->
             <id value="5e5a5e67-7fc6-0064-1be9-5d9d14d887e5"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Identification-->
-			            <reference value="ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
+                    <!--ObservationDefinition/Identification-->
+               <reference value="ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2274,13 +1997,14 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Does not comply"/>
             </valueCodeableConcept>
@@ -2291,11 +2015,11 @@
       <fullUrl value="urn:uuid:cfde6776-673c-72e2-68c4-07b77cd85b74"/>
       <resource>
          <Observation>
-            <!--observationIdentification3-->
+                <!--observationIdentification3-->
             <id value="cfde6776-673c-72e2-68c4-07b77cd85b74"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Identification-->
-			            <reference value="ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
+                    <!--ObservationDefinition/Identification-->
+               <reference value="ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2307,13 +2031,14 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueCodeableConcept>
                <text value="Complies"/>
             </valueCodeableConcept>
@@ -2324,11 +2049,11 @@
       <fullUrl value="urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingpHPre1-->
+                <!--compoundingpHPre1-->
             <id value="9c56948a-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingpHPre-->
-			            <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+                    <!--ObservationDefinition/compoundingpHPre-->
+               <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2340,13 +2065,14 @@
                <text value="pH (adjustment of pre-clarification bulk solution)"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="6.91"/>
                <unit value="pH"/>
@@ -2360,11 +2086,11 @@
       <fullUrl value="urn:uuid:9c56948a-3a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingpHPre2-->
+                <!--compoundingpHPre2-->
             <id value="9c56948a-3a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingpHPre-->
-			            <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+                    <!--ObservationDefinition/compoundingpHPre-->
+               <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2376,13 +2102,14 @@
                <text value="pH (adjustment of pre-clarification bulk solution)"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="6.92"/>
                <unit value="pH"/>
@@ -2396,11 +2123,11 @@
       <fullUrl value="urn:uuid:9c56948a-4a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingpHPre3-->
+                <!--compoundingpHPre3-->
             <id value="9c56948a-4a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingpHPre-->
-			            <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+                    <!--ObservationDefinition/compoundingpHPre-->
+               <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2412,13 +2139,14 @@
                <text value="pH (adjustment of pre-clarification bulk solution)"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="6.93"/>
                <unit value="pH"/>
@@ -2432,11 +2160,11 @@
       <fullUrl value="urn:uuid:9c56948a-3a49-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingpHPost1-->
+                <!--compoundingpHPost1-->
             <id value="9c56948a-3a49-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingpHPost-->
-			            <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
+                    <!--ObservationDefinition/compoundingpHPost-->
+               <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2448,13 +2176,14 @@
                <text value="pH (adjustment of pre-clarification bulk solution)"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="7.01"/>
                <unit value="pH"/>
@@ -2468,11 +2197,11 @@
       <fullUrl value="urn:uuid:9c56958a-4a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingpHPost2-->
+                <!--compoundingpHPost2-->
             <id value="9c56958a-4a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingpHPost-->
-			            <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
+                    <!--ObservationDefinition/compoundingpHPost-->
+               <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2484,13 +2213,14 @@
                <text value="pH (adjustment of pre-clarification bulk solution)"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="7.02"/>
                <unit value="pH"/>
@@ -2504,11 +2234,11 @@
       <fullUrl value="urn:uuid:9c56948a-5a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingpHPost3-->
+                <!--compoundingpHPost3-->
             <id value="9c56948a-5a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingpHPost-->
-			            <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
+                    <!--ObservationDefinition/compoundingpHPost-->
+               <reference value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2520,13 +2250,14 @@
                <text value="pH (adjustment of pre-clarification bulk solution)"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="6.93"/>
                <unit value="pH"/>
@@ -2540,11 +2271,11 @@
       <fullUrl value="urn:uuid:9c56948a-2a39-6609-1c01-4d297ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingAssayPre1-->
+                <!--compoundingAssayPre1-->
             <id value="9c56948a-2a39-6609-1c01-4d297ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingAssayPre-->
-			            <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+                    <!--ObservationDefinition/compoundingAssayPre-->
+               <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2556,13 +2287,14 @@
                <text value="Assay (pre-clarification filtration) (mg/mL)"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="21.1"/>
                <unit value="mg/mL"/>
@@ -2576,11 +2308,11 @@
       <fullUrl value="urn:uuid:9c56948a-3a39-6619-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingAssayPre2-->
+                <!--compoundingAssayPre2-->
             <id value="9c56948a-3a39-6619-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingAssayPre-->
-			            <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+                    <!--ObservationDefinition/compoundingAssayPre-->
+               <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2592,13 +2324,14 @@
                <text value="Assay (pre-clarification filtration) (mg/mL)"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="21.2"/>
                <unit value="mg/mL"/>
@@ -2612,11 +2345,11 @@
       <fullUrl value="urn:uuid:9c56948a-4a39-6619-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingAssayPre3-->
+                <!--compoundingAssayPre3-->
             <id value="9c56948a-4a39-6619-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingAssayPre-->
-			            <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+                    <!--ObservationDefinition/compoundingAssayPre-->
+               <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2628,13 +2361,14 @@
                <text value="Assay (pre-clarification filtration) (mg/mL)"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="21.3"/>
                <unit value="mg/mL"/>
@@ -2648,11 +2382,11 @@
       <fullUrl value="urn:uuid:9c56948a-3a49-6619-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingAssayPost1-->
+                <!--compoundingAssayPost1-->
             <id value="9c56948a-3a49-6619-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingAssayPost-->
-			            <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
+                    <!--ObservationDefinition/compoundingAssayPost-->
+               <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2664,13 +2398,14 @@
                <text value="Assay (Post dilution bulk solution) (mg/mL)"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="20.1"/>
                <unit value="mg/mL"/>
@@ -2684,11 +2419,11 @@
       <fullUrl value="urn:uuid:9c56958a-4a39-6619-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingAssayPost2-->
+                <!--compoundingAssayPost2-->
             <id value="9c56958a-4a39-6619-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingAssayPost-->
-			            <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
+                    <!--ObservationDefinition/compoundingAssayPost-->
+               <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2700,13 +2435,14 @@
                <text value="Assay (Post dilution bulk solution) (mg/mL)"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="20.2"/>
                <unit value="mg/mL"/>
@@ -2720,11 +2456,11 @@
       <fullUrl value="urn:uuid:9c56948a-5a39-6709-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--compoundingAssayPost3-->
+                <!--compoundingAssayPost3-->
             <id value="9c56948a-5a39-6709-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/compoundingAssayPost-->
-			            <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
+                    <!--ObservationDefinition/compoundingAssayPost-->
+               <reference value="ObservationDefinition/fd17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2736,13 +2472,14 @@
                <text value="Assay (Post dilution bulk solution) (mg/mL)"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="20.3"/>
                <unit value="mg/mL"/>
@@ -2756,11 +2493,11 @@
       <fullUrl value="urn:uuid:9c56948a-1a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <!--observationAssay-->
+                <!--observationAssay-->
             <id value="9c56948a-1a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Assay-->
-			            <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+                    <!--ObservationDefinition/Assay-->
+               <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2772,13 +2509,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="103"/>
                <unit value="%"/>
@@ -2792,11 +2530,11 @@
       <fullUrl value="urn:uuid:1e20aed7-7626-1664-8d96-235f860d9a2c"/>
       <resource>
          <Observation>
-            <!--observationAssay2-->
+                <!--observationAssay2-->
             <id value="1e20aed7-7626-1664-8d96-235f860d9a2c"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Assay-->
-			            <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+                    <!--ObservationDefinition/Assay-->
+               <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2808,13 +2546,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="102"/>
                <unit value="%"/>
@@ -2828,10 +2567,10 @@
       <fullUrl value="urn:uuid:ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
       <resource>
          <Observation>
-            <!--observationAssay3-->
+                <!--observationAssay3-->
             <id value="ec6d7e30-4d70-491b-0669-a613eedd3c60"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Assay-->
+                    <!--ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
@@ -2844,13 +2583,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="101"/>
                <unit value="%"/>
@@ -2864,11 +2604,11 @@
       <fullUrl value="urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp1-->
+                <!--observationDegradation-imp1-->
             <id value="ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
-			            <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
+                    <!--ObservationDefinition/Degradation-->
+               <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -2880,13 +2620,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
@@ -2913,10 +2654,10 @@
       <fullUrl value="urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp1-2-->
+                <!--observationDegradation-imp1-2-->
             <id value="4052f28b-64a2-392d-35e4-ec8e912434d2"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -2929,13 +2670,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
@@ -2962,10 +2704,10 @@
       <fullUrl value="urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp1-3-->
+                <!--observationDegradation-imp1-3-->
             <id value="34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -2978,13 +2720,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
@@ -3011,10 +2754,10 @@
       <fullUrl value="urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp2-->
+                <!--observationDegradation-imp2-->
             <id value="2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3027,13 +2770,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
@@ -3060,10 +2804,10 @@
       <fullUrl value="urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp2-2-->
+                <!--observationDegradation-imp2-2-->
             <id value="332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3076,13 +2820,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
@@ -3109,10 +2854,10 @@
       <fullUrl value="urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp2-3-->
+                <!--observationDegradation-imp2-3-->
             <id value="f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3125,13 +2870,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
@@ -3158,10 +2904,10 @@
       <fullUrl value="urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp3-->
+                <!--observationDegradation-imp3-->
             <id value="7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3174,13 +2920,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
@@ -3207,10 +2954,10 @@
       <fullUrl value="urn:uuid:be016630-8754-7414-9014-21e020ad66c6"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp3-2-->
+                <!--observationDegradation-imp3-2-->
             <id value="be016630-8754-7414-9014-21e020ad66c6"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3223,13 +2970,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
@@ -3256,10 +3004,10 @@
       <fullUrl value="urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp3-3-->
+                <!--observationDegradation-imp3-3-->
             <id value="92568f68-78f3-908c-6935-ff5f3d574dd6"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3272,13 +3020,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.2"/>
                <unit value="% w/w"/>
@@ -3305,10 +3054,10 @@
       <fullUrl value="urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp-unspecified-->
+                <!--observationDegradation-imp-unspecified-->
             <id value="a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3321,13 +3070,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
@@ -3354,10 +3104,10 @@
       <fullUrl value="urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp-unspecified-2-->
+                <!--observationDegradation-imp-unspecified-2-->
             <id value="d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3370,13 +3120,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
@@ -3403,10 +3154,10 @@
       <fullUrl value="urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp-unspecified-3-->
+                <!--observationDegradation-imp-unspecified-3-->
             <id value="7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3419,13 +3170,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.1"/>
                <unit value="% w/w"/>
@@ -3452,10 +3204,10 @@
       <fullUrl value="urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp-total-->
+                <!--observationDegradation-imp-total-->
             <id value="27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3468,13 +3220,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.6"/>
                <unit value="% w/w"/>
@@ -3501,10 +3254,10 @@
       <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp-total-2-->
+                <!--observationDegradation-imp-total-2-->
             <id value="6a78bcde-4781-226c-946e-a4b6915c1899"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3517,13 +3270,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.7"/>
                <unit value="% w/w"/>
@@ -3550,10 +3304,10 @@
       <fullUrl value="urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78"/>
       <resource>
          <Observation>
-            <!--observationDegradation-imp-total-3-->
+                <!--observationDegradation-imp-total-3-->
             <id value="f9f11088-7527-947c-3d3f-e71b32e13c78"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Degradation-->
+                    <!--ObservationDefinition/Degradation-->
                <reference value="ObservationDefinition/8bdea820-4197-7c7d-0990-7be06bf78aaf"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3566,13 +3320,14 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.6"/>
                <unit value="% w/w"/>
@@ -3595,380 +3350,14 @@
          </Observation>
       </resource>
    </entry>
-   <!--entry>
-      <fullUrl value="urn:uuid:7316e094-2094-5710-4f11-75d3effc995e"/>
-        <resource>
-            <Observation>
-                <id value="observationDissolution"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Dissolution"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZ"/>
-                        <display value="Dissolution"/>
-                    </coding>
-                    <text value="Dissolution"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-batch-information-dxpq-ex2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:1cedf9c1-8e89-5dbb-0e1f-0363a9ca4893"/>
-        <resource>
-            <Observation>
-                <id value="observationDissolution2"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Dissolution"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZ"/>
-                        <display value="Dissolution"/>
-                    </coding>
-                    <text value="Dissolution"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:c350f0b1-9495-0165-2555-83ebd79da682"/>
-        <resource>
-            <Observation>
-                <id value="observationDissolution3"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Dissolution"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZ"/>
-                        <display value="Dissolution"/>
-                    </coding>
-                    <text value="Dissolution"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-3"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry-->
-   <!--entry>
-      <fullUrl value="urn:uuid:4b97e406-3fb0-9f65-0979-910ea1b9254f"/>
-        <resource>
-            <Observation>
-                <id value="observationDissolutionQ80"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/DissolutionQ80"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZX"/>
-                        <display value="DissolutionQ"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-batch-information-dxpq-ex2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueQuantity>
-                    <value value="90"/>
-                    <unit value="%"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="%"/>
-                </valueQuantity>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:bbfc28df-49bc-986c-1a0e-75e3160268b9"/>
-        <resource>
-            <Observation>
-                <id value="observationDissolutionQ802"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/DissolutionQ80"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZX"/>
-                        <display value="DissolutionQ"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueQuantity>
-                    <value value="92"/>
-                    <unit value="%"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="%"/>
-                </valueQuantity>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:d6955449-16b4-107f-851d-2f99d0b47b96"/>
-        <resource>
-            <Observation>
-                <id value="observationDissolutionQ803"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/DissolutionQ80"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZX"/>
-                        <display value="DissolutionQ"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-3"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueQuantity>
-                    <value value="95"/>
-                    <unit value="%"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="%"/>
-                </valueQuantity>
-            </Observation>
-        </resource>
-    </entry-->
-   <!--entry>
-      <fullUrl value="urn:uuid:591f5d75-1b2f-299b-6885-f325e4228bda"/>
-        <resource>
-            <Observation>
-                <id value="observationUniformity"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Uniformity"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZ"/>
-                        <display value="uniformity of dosage units (by weight)"/>
-                    </coding>
-                    <text value="uniformity of dosage units (by weight)"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-batch-information-dxpq-ex2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:1dd8e506-08cf-8a15-8cd0-7c7cf1d88731"/>
-        <resource>
-            <Observation>
-                <id value="observationUniformity2"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Uniformity"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZ"/>
-                        <display value="uniformity of dosage units (by weight)"/>
-                    </coding>
-                    <text value="uniformity of dosage units (by weight)"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:ae0676b9-8ce4-7c72-135e-1fa9ea7f42c3"/>
-        <resource>
-            <Observation>
-                <id value="observationUniformity3"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Uniformity"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="ZZZ"/>
-                        <display value="uniformity of dosage units (by weight)"/>
-                    </coding>
-                    <text value="uniformity of dosage units (by weight)"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-3"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry-->
-   <!--entry>
-      <fullUrl value="urn:uuid:d136c4f5-62da-81eb-4fc8-144f9182589e"/>
-        <resource>
-            <Observation>
-                <id value="observationMicro"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Microbiological"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="YYY"/>
-                        <display value="Microbiological Quality"/>
-                    </coding>
-                    <text value="Microbiological Quality"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-batch-information-dxpq-ex2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:3ab5e4eb-673b-0e66-3d2c-86d64ced0e86"/>
-        <resource>
-            <Observation>
-                <id value="observationMicro2"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Microbiological"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="YYY"/>
-                        <display value="Microbiological Quality"/>
-                    </coding>
-                    <text value="Microbiological Quality"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-2"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-      <fullUrl value="urn:uuid:cec7ce65-57d7-a654-9ad6-21d162186eb9"/>
-        <resource>
-            <Observation>
-                <id value="observationMicro3"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/Microbiological"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="YYY"/>
-                        <display value="Microbiological Quality"/>
-                    </coding>
-                    <text value="Microbiological Quality"/>
-                </code>
-                <subject>
-                    <reference value="Medication/medication-actual-batch-3"/>
-                </subject>
-				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-				<performer>
-					<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-				</performer>
-                <valueCodeableConcept>
-                    <text value="Complies"/>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry-->
    <entry>
       <fullUrl value="urn:uuid:66c2f585-678e-78b8-2235-1a3b37bd6e46"/>
       <resource>
          <Observation>
-            <!--observationWater-->
+                <!--observationWater-->
             <id value="66c2f585-678e-78b8-2235-1a3b37bd6e46"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Water-->
+                    <!--ObservationDefinition/Water-->
                <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
@@ -3981,13 +3370,14 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
@@ -4001,10 +3391,10 @@
       <fullUrl value="urn:uuid:f8232d25-023d-679f-9c58-a6dc234b7a28"/>
       <resource>
          <Observation>
-            <!--observationWater2-->
+                <!--observationWater2-->
             <id value="f8232d25-023d-679f-9c58-a6dc234b7a28"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Water-->
+                    <!--ObservationDefinition/Water-->
                <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4017,13 +3407,14 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
@@ -4037,10 +3428,10 @@
       <fullUrl value="urn:uuid:368b82be-75dd-1d97-3dbc-a7eed9869daa"/>
       <resource>
          <Observation>
-            <!--observationWater3-->
+                <!--observationWater3-->
             <id value="368b82be-75dd-1d97-3dbc-a7eed9869daa"/>
             <instantiatesReference>
-               <!--ObservationDefinition/Water-->
+                    <!--ObservationDefinition/Water-->
                <reference value="ObservationDefinition/31e29d22-5fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4053,13 +3444,14 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="0.5"/>
                <unit value="% w/w"/>
@@ -4073,10 +3465,10 @@
       <fullUrl value="urn:uuid:44aa47fd-8964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--fillingTAMC1-->
+                <!--fillingTAMC1-->
             <id value="44aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/TAMC-->
+                    <!--ObservationDefinition/TAMC-->
                <reference value="ObservationDefinition/64505a3c-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4089,13 +3481,14 @@
                <text value="TAMC"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="9.1"/>
                <unit value="CFU/100ml"/>
@@ -4108,10 +3501,10 @@
       <fullUrl value="urn:uuid:45aa47fd-8964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--fillingConclusion-nosubject-->
+                <!--fillingConclusion-nosubject-->
             <id value="45aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/conclusion-->
+                    <!--ObservationDefinition/conclusion-->
                <reference value="ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4128,10 +3521,11 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                   <valueCode value="unsupported"/>
                </extension>
-               <display value="all batches"/> 
+               <display value="all batches"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Conclusion of filling tests...."/>
@@ -4142,10 +3536,11 @@
       <fullUrl value="urn:uuid:45ab47fd-8964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--lyophilizationConclusion-nosubject-->
+                <!-- no subject -->                
+                <!--lyophilizationConclusion-nosubject-->
             <id value="45ab47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizationConclusion-->
+                    <!--ObservationDefinition/LyophilizationConclusion-->
                <reference value="ObservationDefinition/22525a3c-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4162,10 +3557,11 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                   <valueCode value="unsupported"/>
                </extension>
-               <display value="all batches"/> 
+               <display value="all batches"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Conclusion of lyophilization tests...."/>
@@ -4176,10 +3572,10 @@
       <fullUrl value="urn:uuid:37aa47fd-8964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--lyophilizerNumber1-->
+                <!--lyophilizerNumber1-->
             <id value="37aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizerNumber-->
+                    <!--ObservationDefinition/LyophilizerNumber-->
                <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4192,13 +3588,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
-			            <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="1234"/>
             </valueQuantity>
@@ -4209,10 +3606,10 @@
       <fullUrl value="urn:uuid:38aa47fd-8964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--lyophilizerNumber2-->
+                <!--lyophilizerNumber2-->
             <id value="38aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizerNumber-->
+                    <!--ObservationDefinition/LyophilizerNumber-->
                <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4225,13 +3622,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
-			            <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="1235"/>
             </valueQuantity>
@@ -4242,10 +3640,10 @@
       <fullUrl value="urn:uuid:38aa48fd-8964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--lyophilizerNumber3-->
+                <!--lyophilizerNumber3-->
             <id value="38aa48fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizerNumber-->
+                    <!--ObservationDefinition/LyophilizerNumber-->
                <reference value="ObservationDefinition/64535a3c-5334-448a-9c29-938ce2958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4258,13 +3656,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
-			            <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="1236"/>
             </valueQuantity>
@@ -4275,10 +3674,10 @@
       <fullUrl value="urn:uuid:37aa47fd-7964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--lyophilizationAssay1-->
+                <!--lyophilizationAssay1-->
             <id value="37aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizationAssay-->
+                    <!--ObservationDefinition/LyophilizationAssay-->
                <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4291,13 +3690,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="97"/>
                <unit value="%"/>
@@ -4321,10 +3721,10 @@
       <fullUrl value="urn:uuid:47aa47fd-7964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--lyophilizationAssay2-->
+                <!--lyophilizationAssay2-->
             <id value="47aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizationAssay-->
+                    <!--ObservationDefinition/LyophilizationAssay-->
                <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4337,13 +3737,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="98"/>
                <unit value="%"/>
@@ -4367,10 +3768,10 @@
       <fullUrl value="urn:uuid:47aa47fd-7964-4f96-6495-b2bec7f160e8"/>
       <resource>
          <Observation>
-            <!--lyophilizationAssay3-->
+                <!--lyophilizationAssay3-->
             <id value="47aa47fd-7964-4f96-6495-b2bec7f160e8"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizationAssay-->
+                    <!--ObservationDefinition/LyophilizationAssay-->
                <reference value="ObservationDefinition/22e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4383,13 +3784,14 @@
                <text value="Assay"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <valueQuantity>
                <value value="96"/>
                <unit value="%"/>
@@ -4413,10 +3815,10 @@
       <fullUrl value="urn:uuid:47aa47fd-8964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--lyophilizerWaterHomogeneity1-->
+                <!--lyophilizerWaterHomogeneity1-->
             <id value="47aa47fd-8964-4f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizationWaterHomogeneity-->
+                    <!--ObservationDefinition/LyophilizationWaterHomogeneity-->
                <reference value="ObservationDefinition/32e29d22-6fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4429,13 +3831,14 @@
                <text value="Lyophilization Water Homogeneity"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <component>
                <code>
                   <coding>
@@ -4493,10 +3896,10 @@
       <fullUrl value="urn:uuid:47aa47fd-8964-5f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--lyophilizerAssayHomogeneity1-->
+                <!--lyophilizerAssayHomogeneity1-->
             <id value="47aa47fd-8964-5f96-6495-b2bec7f160e7"/>
             <instantiatesReference>
-               <!--ObservationDefinition/LyophilizationAssayHomogeneity-->
+                    <!--ObservationDefinition/LyophilizationAssayHomogeneity-->
                <reference value="ObservationDefinition/32e29d32-6fcb-546e-24fd-52a4a4004467"/>
             </instantiatesReference>
             <status value="final"/>
@@ -4509,13 +3912,14 @@
                <text value="Lyophilization Assay Homogeneity"/>
             </code>
             <subject>
-               <!--Medication/medication-batch-information-dxpq-ex1-->
+                    <!--Medication/medication-batch-information-dxpq-ex2-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
-			<effectiveDateTime value="2023-01-01T12:00:00Z"/>
-			<performer>
-				<reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-			</performer>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
             <component>
                <code>
                   <coding>
@@ -4569,7 +3973,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -4613,11 +4017,11 @@
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
       <resource>
          <Ingredient>
-            <!--productIngredient-->
+				<!--productIngredient-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <status value="active"/>
             <for>
-               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
@@ -4630,7 +4034,7 @@
             <substance>
                <code>
                   <reference>
-                     <!--SubstanceDefinition/substance1-->
+							<!--SubstanceDefinition/substance1-->
                      <reference value="SubstanceDefinition/6eb94d34-48b4-5bb0-4c05-e183d2ea3e95"/>
                   </reference>
                </code>
@@ -4642,10 +4046,10 @@
       <fullUrl value="urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance1-->
+        		<!--substance1-->
             <id value="6eb94d34-48b4-5bb0-4c05-e183d2ea3e95"/>
             <manufacturer>
-               <!--Organization/substance-manufacturer-->
+        			<!--Organization/substance-manufacturer-->
                <reference value="Organization/23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
             </manufacturer>
             <name>
@@ -4659,7 +4063,7 @@
       <fullUrl value="urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
       <resource>
          <Organization>
-            <!--substance-manufacturer-->
+				<!--substance-manufacturer-->
             <id value="23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
             <identifier>
 					<!-- FDA establishment identifier -->
@@ -4684,13 +4088,13 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-            <!--substancedefinition-component-substance-dxpq-ex1-->
+                <!--substancedefinition-component-substance-dxpq-ex1-->
             <id value="57a9af63-315d-1585-a261-0e337b289390"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
             </meta>
             <manufacturer>
-               <!--Organization/organization-dxpq-ex1-->
+                    <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
@@ -4705,7 +4109,7 @@
       <resource>
          <Organization>
                 <!--id value="substance-manufacturer"/-->
-            <!--organization-dxpq-ex1-->
+                <!--organization-dxpq-ex1-->
             <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
@@ -4734,8 +4138,8 @@
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
-            <!--manufacturingProcess-subset-unlinked-->
-            <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
+                <!-- focal resource -->
+            <id value="plandefinition-dxpq-ex2-manufacturing-plan"/>
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
@@ -4747,6 +4151,7 @@
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
                <valueMarkdown value="This can be text about the history"/>
             </extension>
+            <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <title value="Process 1.0"/>
             <type>
@@ -4764,7 +4169,7 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
-               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
@@ -4886,7 +4291,7 @@
             <actor>
                <option>
                   <typeReference>
-                     <!--DeviceDefinition/mixing-vessel-->
+                            <!--DeviceDefinition/mixing-vessel-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
@@ -4901,7 +4306,7 @@
             <actor>
                <option>
                   <typeReference>
-                     <!--DeviceDefinition/receiving-tank-->
+                            <!--DeviceDefinition/receiving-tank-->
                      <reference value="DeviceDefinition/82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
                   </typeReference>
                   <role>
@@ -4922,7 +4327,7 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
-            <!--mixing-vessel-->
+                <!--mixing-vessel-->
             <id value="82a39a18-91cf-a29d-76c1-a9e8bad9494d"/>
             <deviceName>
                <name value="Mixing Vessel"/>
@@ -4958,7 +4363,7 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
       <resource>
          <DeviceDefinition>
-            <!--receiving-tank-->
+                <!--receiving-tank-->
             <id value="82a39a18-91cf-b29d-76c1-a9e8bad9494d"/>
             <deviceName>
                <name value="Receiving Tank"/>
@@ -4995,7 +4400,7 @@
       <resource>
          <Substance>
                 <!--<id value="actual-batch-substance"/>-->
-            <!--substance-dxpq-ex1-->
+                <!--substance-dxpq-ex1-->
             <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
@@ -5037,7 +4442,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <!--Organization/organization-dxpq-ex1-->
+                            <!--Organization/organization-dxpq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
@@ -5049,7 +4454,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                        <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
                   <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
@@ -5060,7 +4465,7 @@
       <fullUrl value="urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad"/>
       <resource>
          <Substance>
-            <!--actual-batch-substance-2-->
+                <!--actual-batch-substance-2-->
             <id value="cb31d747-2338-88d5-342c-8e9c097e4dad"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
@@ -5099,7 +4504,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <!--Organization/organization-dxpq-ex1-->
+                            <!--Organization/organization-dxpq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
@@ -5110,7 +4515,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                        <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
                   <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
@@ -5121,7 +4526,7 @@
       <fullUrl value="urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
       <resource>
          <Substance>
-            <!--actual-batch-substance-3-->
+                <!--actual-batch-substance-3-->
             <id value="1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
@@ -5160,7 +4565,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <!--Organization/organization-dxpq-ex1-->
+                            <!--Organization/organization-dxpq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
@@ -5172,7 +4577,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                        <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
                   <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>

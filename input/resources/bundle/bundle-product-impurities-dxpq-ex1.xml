@@ -5,10 +5,8 @@
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-product-impurities-dxpq-ex1"/>
-<!--   <id value="product-impurities"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/impurities"/>-->
    </meta>
    <type value="collection"/>
    <entry>
@@ -16,7 +14,7 @@
       <resource>
          <DiagnosticReport>
                 <!-- <id value="studyResultsReport"/>-->
-            <!--diagnosticreport-product-impurities-->
+                <!--diagnosticreport-product-impurities-->
             <id value="6f4a3311-92c5-2b4a-533e-76341e414c63"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
@@ -36,103 +34,103 @@
             <effectiveDateTime value="2020-12"/>
             <!-- start of impurity test -->
             <performer>
-               <!--Organization/tester-->
+                    <!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <result>
-               <!--Observation/observationDegradation-impCd-->
+                    <!--Observation/observationDegradation-impCd-->
                <reference value="Observation/ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impCd-2-->
+                    <!--Observation/observationDegradation-impCd-2-->
                <reference value="Observation/4052f28b-64a2-392d-35e4-ec8e912434d2"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impCd-3-->
+                    <!--Observation/observationDegradation-impCd-3-->
                <reference value="Observation/34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impPb-->
+                    <!--Observation/observationDegradation-impPb-->
                <reference value="Observation/2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impPb-2-->
+                    <!--Observation/observationDegradation-impPb-2-->
                <reference value="Observation/332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impPb-3-->
+                    <!--Observation/observationDegradation-impPb-3-->
                <reference value="Observation/f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impAs-->
+                    <!--Observation/observationDegradation-impAs-->
                <reference value="Observation/7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impAs-2-->
+                    <!--Observation/observationDegradation-impAs-2-->
                <reference value="Observation/be016630-8754-7414-9014-21e020ad66c6"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impAs-3-->
+                    <!--Observation/observationDegradation-impAs-3-->
                <reference value="Observation/92568f68-78f3-908c-6935-ff5f3d574dd6"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impHg-->
+                    <!--Observation/observationDegradation-impHg-->
                <reference value="Observation/7fe7ccd7-6449-0186-2282-3eeb4cf6a796"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impHg-2-->
+                    <!--Observation/observationDegradation-impHg-2-->
                <reference value="Observation/be016630-8754-7414-9014-21e020ad66c7"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impHg-3-->
+                    <!--Observation/observationDegradation-impHg-3-->
                <reference value="Observation/92568f68-78f3-908c-6935-ff5f3d574dd7"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impCo-->
+                    <!--Observation/observationDegradation-impCo-->
                <reference value="Observation/a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impCo-2-->
+                    <!--Observation/observationDegradation-impCo-2-->
                <reference value="Observation/d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impCo-3-->
+                    <!--Observation/observationDegradation-impCo-3-->
                <reference value="Observation/7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impV-->
+                    <!--Observation/observationDegradation-impV-->
                <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impV-2-->
+                    <!--Observation/observationDegradation-impV-2-->
                <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c1899"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impV-3-->
+                    <!--Observation/observationDegradation-impV-3-->
                <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c78"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impNi-->
+                    <!--Observation/observationDegradation-impNi-->
                <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e8"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impNi-2-->
+                    <!--Observation/observationDegradation-impNi-2-->
                <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c1890"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impNi-3-->
+                    <!--Observation/observationDegradation-impNi-3-->
                <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c79"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impCu-->
+                    <!--Observation/observationDegradation-impCu-->
                <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e9"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impCu-2-->
+                    <!--Observation/observationDegradation-impCu-2-->
                <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c189b"/>
             </result>
             <result>
-               <!--Observation/observationDegradation-impCu-3-->
+                    <!--Observation/observationDegradation-impCu-3-->
                <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c70"/>
             </result>
             <conclusion value="1. Elemental Impurities - No elemental impurities are intentionally added during the manufacturing of drug product..."/>
@@ -144,12 +142,12 @@
       <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
       <resource>
          <Medication>
-            <!--medication-actual-batch-->
+                <!--medication-actual-batch-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
-                  <valueReference> <!-- todo consider change this be the MID? -->
-                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                  <valueReference> <!-- todo consider change this be the MID? --> 
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                      <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
@@ -159,7 +157,7 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="assignedManufacturer">
                      <valueReference> <!-- #158 -->
-                        <!--Organization/manufacturer-->
+                                <!--Organization/manufacturer-->
                         <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
@@ -175,12 +173,12 @@
       <fullUrl value="urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
       <resource>
          <Medication>
-            <!--medication-actual-batch-2-->
+                <!--medication-actual-batch-2-->
             <id value="a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -189,7 +187,7 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="assignedManufacturer">
                      <valueReference>
-                        <!--Organization/manufacturer-->
+                                <!--Organization/manufacturer-->
                         <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
@@ -204,12 +202,12 @@
       <fullUrl value="urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
       <resource>
          <Medication>
-            <!--medication-actual-batch-3-->
+                <!--medication-actual-batch-3-->
             <id value="c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -218,7 +216,7 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="assignedManufacturer">
                      <valueReference>
-                        <!--Organization/manufacturer-->
+                                <!--Organization/manufacturer-->
                         <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
@@ -233,7 +231,7 @@
       <fullUrl value="urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a"/>
       <resource>
          <Organization>
-            <!--manufacturer-->
+                <!--manufacturer-->
             <id value="0102bca4-46c1-a6bf-1025-cd403fee710a"/>
             <identifier>
                     <!-- FDA establishment identifier -->
@@ -257,7 +255,7 @@
       <fullUrl value="urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCd-->
+                <!--observationDegradation-impCd-->
             <id value="ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
             <status value="final"/>
             <code>
@@ -269,12 +267,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-->
+                    <!--Medication/medication-actual-batch-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -308,7 +306,7 @@
       <fullUrl value="urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCd-2-->
+                <!--observationDegradation-impCd-2-->
             <id value="4052f28b-64a2-392d-35e4-ec8e912434d2"/>
             <status value="final"/>
             <code>
@@ -320,12 +318,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -353,7 +351,7 @@
       <fullUrl value="urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCd-3-->
+                <!--observationDegradation-impCd-3-->
             <id value="34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
             <status value="final"/>
             <code>
@@ -365,12 +363,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -398,7 +396,7 @@
       <fullUrl value="urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impPb-->
+                <!--observationDegradation-impPb-->
             <id value="2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
             <status value="final"/>
             <code>
@@ -410,12 +408,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-->
+                    <!--Medication/medication-actual-batch-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -443,7 +441,7 @@
       <fullUrl value="urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impPb-2-->
+                <!--observationDegradation-impPb-2-->
             <id value="332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
             <status value="final"/>
             <code>
@@ -455,12 +453,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -488,7 +486,7 @@
       <fullUrl value="urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impPb-3-->
+                <!--observationDegradation-impPb-3-->
             <id value="f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
             <status value="final"/>
             <code>
@@ -500,12 +498,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -533,7 +531,7 @@
       <fullUrl value="urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impAs-->
+                <!--observationDegradation-impAs-->
             <id value="7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
             <status value="final"/>
             <code>
@@ -545,12 +543,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-->
+                    <!--Medication/medication-actual-batch-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -584,7 +582,7 @@
       <fullUrl value="urn:uuid:be016630-8754-7414-9014-21e020ad66c6"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impAs-2-->
+                <!--observationDegradation-impAs-2-->
             <id value="be016630-8754-7414-9014-21e020ad66c6"/>
             <status value="final"/>
             <code>
@@ -596,12 +594,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -635,7 +633,7 @@
       <fullUrl value="urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impAs-3-->
+                <!--observationDegradation-impAs-3-->
             <id value="92568f68-78f3-908c-6935-ff5f3d574dd6"/>
             <status value="final"/>
             <code>
@@ -647,12 +645,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -686,7 +684,7 @@
       <fullUrl value="urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a796"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impHg-->
+                <!--observationDegradation-impHg-->
             <id value="7fe7ccd7-6449-0186-2282-3eeb4cf6a796"/>
             <status value="final"/>
             <code>
@@ -698,12 +696,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-->
+                    <!--Medication/medication-actual-batch-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -731,7 +729,7 @@
       <fullUrl value="urn:uuid:be016630-8754-7414-9014-21e020ad66c7"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impHg-2-->
+                <!--observationDegradation-impHg-2-->
             <id value="be016630-8754-7414-9014-21e020ad66c7"/>
             <status value="final"/>
             <code>
@@ -743,12 +741,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -782,7 +780,7 @@
       <fullUrl value="urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd7"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impHg-3-->
+                <!--observationDegradation-impHg-3-->
             <id value="92568f68-78f3-908c-6935-ff5f3d574dd7"/>
             <status value="final"/>
             <code>
@@ -794,12 +792,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -827,7 +825,7 @@
       <fullUrl value="urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCo-->
+                <!--observationDegradation-impCo-->
             <id value="a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
             <status value="final"/>
             <code>
@@ -839,12 +837,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-->
+                    <!--Medication/medication-actual-batch-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -878,7 +876,7 @@
       <fullUrl value="urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCo-2-->
+                <!--observationDegradation-impCo-2-->
             <id value="d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
             <status value="final"/>
             <code>
@@ -890,12 +888,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -929,7 +927,7 @@
       <fullUrl value="urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCo-3-->
+                <!--observationDegradation-impCo-3-->
             <id value="7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
             <status value="final"/>
             <code>
@@ -941,12 +939,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -980,7 +978,7 @@
       <fullUrl value="urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impV-->
+                <!--observationDegradation-impV-->
             <id value="27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
             <status value="final"/>
             <code>
@@ -992,12 +990,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-->
+                    <!--Medication/medication-actual-batch-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -1031,7 +1029,7 @@
       <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impV-2-->
+                <!--observationDegradation-impV-2-->
             <id value="6a78bcde-4781-226c-946e-a4b6915c1899"/>
             <status value="final"/>
             <code>
@@ -1043,12 +1041,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -1082,7 +1080,7 @@
       <fullUrl value="urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impV-3-->
+                <!--observationDegradation-impV-3-->
             <id value="f9f11088-7527-947c-3d3f-e71b32e13c78"/>
             <status value="final"/>
             <code>
@@ -1094,12 +1092,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -1133,7 +1131,7 @@
       <fullUrl value="urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e8"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impNi-->
+                <!--observationDegradation-impNi-->
             <id value="27aa47fd-7964-4f96-6495-b2bec7f160e8"/>
             <status value="final"/>
             <code>
@@ -1145,12 +1143,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-->
+                    <!--Medication/medication-actual-batch-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -1178,7 +1176,7 @@
       <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1890"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impNi-2-->
+                <!--observationDegradation-impNi-2-->
             <id value="6a78bcde-4781-226c-946e-a4b6915c1890"/>
             <status value="final"/>
             <code>
@@ -1190,12 +1188,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -1223,7 +1221,7 @@
       <fullUrl value="urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c79"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impNi-3-->
+                <!--observationDegradation-impNi-3-->
             <id value="f9f11088-7527-947c-3d3f-e71b32e13c79"/>
             <status value="final"/>
             <code>
@@ -1235,12 +1233,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueString value="ND"/>
@@ -1268,7 +1266,7 @@
       <fullUrl value="urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e9"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCu-->
+                <!--observationDegradation-impCu-->
             <id value="27aa47fd-7964-4f96-6495-b2bec7f160e9"/>
             <status value="final"/>
             <code>
@@ -1280,12 +1278,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-->
+                    <!--Medication/medication-actual-batch-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -1318,7 +1316,7 @@
       <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189b"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCu-2-->
+                <!--observationDegradation-impCu-2-->
             <id value="6a78bcde-4781-226c-946e-a4b6915c189b"/>
             <status value="final"/>
             <code>
@@ -1330,12 +1328,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-2-->
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -1368,7 +1366,7 @@
       <fullUrl value="urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c70"/>
       <resource>
          <Observation>
-            <!--observationDegradation-impCu-3-->
+                <!--observationDegradation-impCu-3-->
             <id value="f9f11088-7527-947c-3d3f-e71b32e13c70"/>
             <status value="final"/>
             <code>
@@ -1380,12 +1378,12 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-               <!--Medication/medication-actual-batch-3-->
+                    <!--Medication/medication-actual-batch-3-->
                <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-               <!--Organization/tester-->
+					<!--Organization/tester-->
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <valueQuantity>
@@ -1418,7 +1416,7 @@
       <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a3"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance-cadmium-->
+                <!--substance-cadmium-->
             <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a3"/>
             <property>
                <type>
@@ -1448,7 +1446,7 @@
       <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a4"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance-lead-->
+                <!--substance-lead-->
             <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a4"/>
             <property>
                <type>
@@ -1478,7 +1476,7 @@
       <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a5"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance-arsenic-->
+                <!--substance-arsenic-->
             <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a5"/>
             <property>
                <type>
@@ -1508,7 +1506,7 @@
       <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a6"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance-mercury-->
+                <!--substance-mercury-->
             <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a6"/>
             <property>
                <type>
@@ -1538,7 +1536,7 @@
       <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a7"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance-cobalt-->
+                <!--substance-cobalt-->
             <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a7"/>
             <property>
                <type>
@@ -1568,7 +1566,7 @@
       <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a8"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance-vanadium-->
+                <!--substance-vanadium-->
             <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a8"/>
             <property>
                <type>
@@ -1598,7 +1596,7 @@
       <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a9"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance-nickel-->
+                <!--substance-nickel-->
             <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a9"/>
             <property>
                <type>
@@ -1628,7 +1626,7 @@
       <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a0"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance-copper-->
+                <!--substance-copper-->
             <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a0"/>
             <property>
                <type>
@@ -1660,7 +1658,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -1679,49 +1677,49 @@
             </route>
             <impurity>
                <reference>
-                  <!--SubstanceDefinition/substance-cadmium-->
+                        <!--SubstanceDefinition/substance-cadmium-->
                   <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a3"/>
                </reference>
             </impurity>
             <impurity>
                <reference>
-                  <!--SubstanceDefinition/substance-lead-->
+                        <!--SubstanceDefinition/substance-lead-->
                   <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a4"/>
                </reference>
             </impurity>
             <impurity>
                <reference>
-                  <!--SubstanceDefinition/substance-arsenic-->
+                        <!--SubstanceDefinition/substance-arsenic-->
                   <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a5"/>
                </reference>
             </impurity>
             <impurity>
                <reference>
-                  <!--SubstanceDefinition/substance-mercury-->
+                        <!--SubstanceDefinition/substance-mercury-->
                   <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a6"/>
                </reference>
             </impurity>
             <impurity>
                <reference>
-                  <!--SubstanceDefinition/substance-cobalt-->
+                        <!--SubstanceDefinition/substance-cobalt-->
                   <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a7"/>
                </reference>
             </impurity>
             <impurity>
                <reference>
-                  <!--SubstanceDefinition/substance-copper-->
+                        <!--SubstanceDefinition/substance-copper-->
                   <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a0"/>
                </reference>
             </impurity>
             <impurity>
                <reference>
-                  <!--SubstanceDefinition/substance-vanadium-->
+                        <!--SubstanceDefinition/substance-vanadium-->
                   <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a8"/>
                </reference>
             </impurity>
             <impurity>
                <reference>
-                  <!--SubstanceDefinition/substance-nickel-->
+                        <!--SubstanceDefinition/substance-nickel-->
                   <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a9"/>
                </reference>
             </impurity>
@@ -1752,7 +1750,7 @@
       <fullUrl value="urn:uuid:e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
       <resource>
          <Organization>
-            <!--tester-->
+                <!--tester-->
             <id value="e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
