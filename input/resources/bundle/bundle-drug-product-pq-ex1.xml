@@ -1,26 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-drug-product-pq-ex1"/>   
-<!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
+   <id value="bundle-drug-product-pq-ex1"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
+      <fullUrl value="urn:uuid:a1694a7b-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+         <Composition>
+                <!--comp-drug-components-->
+            <id value="a1694a7b-aafa-4cbe-8135-c788a9a4d3d5"/>
+            <status value="final"/>
+            <type>
+               <text value="Product Note - Drug Components"/>
+            </type>
+            <subject>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            </subject>
+            <date value="2023-10-01"/>
+            <author>
+                    <!--Organization/owner-->
+               <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
+            </author>
+            <title value="3.2.P.2.1.1 - Components of the Drug Product"/>
+            <section>
+               <title value="3.2.P.2.1.1.1 - Drug Substance"/>
+               <text>
+                  <status value="additional"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <p>The compatibility of the drug substance with the excipients listed in 3.2.P.1 should be discussed.
+                                Additionally, key physicochemical characteristics (eg, water content, solubility, particle size
+                                distribution, polymorphic or solid state form) of the drug substance that can influence the
+                                performance of the drug product should be discussed.</p>
+                     <p>For combination products, the compatibility of drug substances with each other should be
+                                discussed.</p>
+                  </div>
+               </text>
+            </section>
+            <section>
+               <title value="3.2.P.1.1.2 - Excipients"/>
+               <text>
+                  <status value="additional"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <p>The choice of excipients listed in 3.2.P.1, their concentration, and the characteristics that can
+                                influence the drug product manufacturability and performance should be discussed relative to
+                                their respective functions.</p>
+                  </div>
+               </text>
+            </section>
+         </Composition>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="urn:uuid:a1694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
          <Composition>
-            <id value="comp-formulation"/>
+                <!--composition-drug-pq-formulation-->
+            <id value="a1694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
+            </meta>
             <status value="final"/>
             <type>
                <text value="Product Note - Formulation Development"/>
             </type>
             <subject>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subject>
             <date value="2023-10-01"/>
             <author>
-               <reference value="Organization/owner"/>
+                    <!--Organization/owner-->
+               <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             </author>
             <title value="3.2.P.2.2.1 - Formulation Development"/>
             <section>
@@ -36,16 +89,16 @@
                      <p>Table 1 - Formulation history for Stelbatolol</p>
                      <table>
                         <tr>
-                           <th bgcolor="#FFFFFF">Formulation Identifier</th>
-                           <th bgcolor="#FFFFFF">Composition</th>
-                           <th bgcolor="#FFFFFF">Change</th>
-                           <th bgcolor="#FFFFFF">Development phase</th>
+                           <th>Formulation Identifier</th>
+                           <th>Composition</th>
+                           <th>Change</th>
+                           <th>Development phase</th>
                         </tr>
                         <tr>
-                           <td bgcolor="#FFFFFF">1233545</td>
-                           <td bgcolor="#FFFFFF">Composition 1a</td>
-                           <td bgcolor="#FFFFFF">Changes made are listed here</td>
-                           <td bgcolor="#FFFFFF">Pre-clinical phase</td>
+                           <td>1233545</td>
+                           <td>Composition 1a</td>
+                           <td>Changes made are listed here</td>
+                           <td>Pre-clinical phase</td>
                         </tr>
                      </table>
                   </div>
@@ -60,20 +113,20 @@
                      <p>Table 2 - Formulation Development Studies</p>
                      <table>
                         <tr>
-                           <th bgcolor="#FFFFFF">Study</th>
-                           <th bgcolor="#FFFFFF">Formulation identifier </th>
-                           <th bgcolor="#FFFFFF">Objective</th>
-                           <th bgcolor="#FFFFFF">Quality attribute evaluated</th>
-                           <th bgcolor="#FFFFFF">Study design</th>
-                           <th bgcolor="#FFFFFF">Study result</th>
+                           <th>Study</th>
+                           <th>Formulation identifier </th>
+                           <th>Objective</th>
+                           <th>Quality attribute evaluated</th>
+                           <th>Study design</th>
+                           <th>Study result</th>
                         </tr>
                         <tr>
-                           <td bgcolor="#FFFFFF">Study Name</td>
-                           <td bgcolor="#FFFFFF">12234a</td>
-                           <td bgcolor="#FFFFFF">Short description of the study objective</td>
-                           <td bgcolor="#FFFFFF">CQA information</td>
-                           <td bgcolor="#FFFFFF">Short description of the design</td>
-                           <td bgcolor="#FFFFFF">Reference to the table showing study results</td>
+                           <td>Study Name</td>
+                           <td>12234a</td>
+                           <td>Short description of the study objective</td>
+                           <td>CQA information</td>
+                           <td>Short description of the design</td>
+                           <td>Reference to the table showing study results</td>
                         </tr>
                      </table>
                   </div>
@@ -95,17 +148,23 @@
       <fullUrl value="urn:uuid:a1694a8a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
          <Composition>
-            <id value="comp-risk"/>
+                <!--composition-drug-pq-risk-->
+            <id value="a1694a8a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
+            </meta>
             <status value="final"/>
             <type>
                <text value="Product Note - Summary for Risk of Impurities"/>
             </type>
             <subject>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subject>
             <date value="2023-10-01"/>
             <author>
-               <reference value="Organization/owner"/>
+                    <!--Organization/owner-->
+               <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             </author>
             <title value="3.2.P.2.2.4 - Summary for Risk of Impurities"/>
             <section>
@@ -125,9 +184,11 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            	<!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <comprisedOf>
-               <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+                    <!--ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1-->
+               <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
             </comprisedOf>
             <name>
                <productName value="Stalbatolol"/>
@@ -176,7 +237,8 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-            <id value="manufactureditemdefinition-dxpq-ex1"/>
+                <!--manufactureditemdefinition-dxpq-ex1-->
+            <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <status value="active"/>
             <name value="Stelbatolol 5mg tablet"/>
             <manufacturedDoseForm>
@@ -217,7 +279,8 @@
       <fullUrl value="urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
-            <id value="owner"/>
+                <!--owner-->
+            <id value="9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             <name value="AAA Molybdenum Products, Inc."/>
          </Organization>
       </resource>
