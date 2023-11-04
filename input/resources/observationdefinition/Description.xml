@@ -18,8 +18,9 @@
     </code>
     <qualifiedValue>
         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
-            <!--               <extension url="http://accumulus.org/fhir/extension/qualifiedValueText">-->
-            <valueString value="An orange film-coated tablet, debossed with 175 on one side"> </valueString>
+                        <valueString value="An orange film-coated tablet, debossed with 175 on one side">
+	                        
+                		</valueString>
         </extension>
     </qualifiedValue>
 </ObservationDefinition>
