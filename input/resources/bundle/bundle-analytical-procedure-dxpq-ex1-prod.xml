@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Analytical Procedure -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <!--Based on Accumulus FHIR Product Example - Analytical Procedure (2023-08-22)-->
-   <!-- Product Analytical Procedure -->
-    <!--   <id value="product-analytical-procedure"/>-->
    <id value="bundle-analytical-procedure-dxpq-ex1-prod"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
@@ -13,8 +11,9 @@
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <!--analyticalProcedure-->
-            <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+                <!-- focal resource -->
+            <id value="analyticalProcedure"/>
+            <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Analytical Procedure"/>
             <type>
@@ -31,7 +30,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <action>
@@ -40,7 +39,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/diluent-->
+                                    <!--SubstanceDefinition/diluent-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f81"/>
                         </valueReference>
                      </extension>
@@ -57,7 +56,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/resultingMaterial-->
+                                    <!--SubstanceDefinition/resultingMaterial-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
                         </valueReference>
                      </extension>
@@ -95,7 +94,7 @@
       <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f81"/>
       <resource>
          <SubstanceDefinition>
-            <!--diluent-->
+                <!--diluent-->
             <id value="9f69ec9c-5fd1-30d2-0790-9e8035565f81"/>
             <name>
                <name value="0.05 % trifluoroacetic acid (TFA) in 50:50 acetonitrile: water (v/v)"/>
@@ -107,7 +106,7 @@
       <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
       <resource>
          <SubstanceDefinition>
-            <!--resultingMaterial-->
+                <!--resultingMaterial-->
             <id value="9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
             <name>
                <name value="Stelbat in Diluent (approximately 0.36 mg/mL)"/>
@@ -119,8 +118,9 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
       <resource>
          <ObservationDefinition>
-            <!--SampleAnalysis-->
+                <!--SampleAnalysis-->
             <id value="12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
             <title value="Sample Analysis"/>
             <status value="active"/>
@@ -131,15 +131,15 @@
                </extension>
             </code>
             <specimen>
-               <!--SpecimenDefinition/specimendefinition-->
+                    <!--SpecimenDefinition/specimendefinition-->
                <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
-               <!--ObservationDefinition/Assay-->
+                    <!--ObservationDefinition/Assay-->
                <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </hasMember>
             <hasMember>
-               <!--ObservationDefinition/Identity-->
+                    <!--ObservationDefinition/Identity-->
                <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             </hasMember>
          </ObservationDefinition>
@@ -149,7 +149,7 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <!--Assay-->
+                <!--Assay-->
             <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <text>
                <status value="additional"/>
@@ -157,9 +157,9 @@
                   <div style="font-family: 'Times New Roman', Times, serif;">
                      <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                      <p>
-					 
-                        <!--img alt="formula" width="203" height="34" style="display: block; margin-left: auto; margin-right: auto;" src="#imageResource"/-->
-                     </p>
+                            
+                            <!--<img alt="formula" width="203" height="34" style="display: block; margin-left: auto; margin-right: auto;" src="#imageResource"/>-->
+                        </p>
                      <p>
                         <span>Where:</span>
                      </p>
@@ -181,8 +181,9 @@
                         <span>Determine the % label claim of the sample as follows:</span>
                      </p>
                      <p>
-                        <!--img alt="formula" width="220" height="34" style="display: block; margin-left: auto; margin-right: auto;" src="#imageResource2"/-->
-                     </p>
+                            
+                            <!--<img alt="formula" width="220" height="34" style="display: block; margin-left: auto; margin-right: auto;" src="#imageResource2"/>-->
+                        </p>
                      <p>
                         <span>Where:</span>
                      </p>
@@ -234,7 +235,7 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
       <resource>
          <ObservationDefinition>
-            <!--Identity-->
+                <!--Identity-->
             <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
@@ -263,8 +264,9 @@
       <fullUrl value="urn:uuid:3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
       <resource>
          <SpecimenDefinition>
-            <!--specimendefinition-->
+                <!--specimendefinition-->
             <id value="3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
+            <!--http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2-->
             <url value="http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <status value="active"/>
             <description value="Number of Preparations: 2 (only 1 is required for identity)"/>
@@ -286,7 +288,7 @@
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
          <MedicinalProductDefinition>
-            <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <combinedPharmaceuticalDoseForm>
                <coding>

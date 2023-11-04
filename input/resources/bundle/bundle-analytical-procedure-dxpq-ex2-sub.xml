@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Substance Analytical Procedure -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <!--Based on Accumulus FHIR Substance Example - Analytical Procedure (2023-08-22)-->
-   <!-- Substance Analytical Procedure -->
    <id value="bundle-analytical-procedure-dxpq-ex2-sub"/>
    <!--   <id value="substance-analytical-procedure"/>-->
    <meta>
@@ -12,8 +11,9 @@
       <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <!--analyticalProcedure-->
-            <id value="2138e4c7-22b8-4c56-2d28-6c077648763f"/>
+                <!-- focal resource -->
+            <id value="analyticalProcedure"/>
+            <!--http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Analytical Procedure"/>
             <type>
@@ -30,7 +30,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <!--SubstanceDefinition/substance1-->
+                    <!--SubstanceDefinition/substance1-->
                <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
             </subjectReference>
             <action>
@@ -98,7 +98,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/dispersant-->
+                                    <!--SubstanceDefinition/dispersant-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
                         </valueReference>
                      </extension>
@@ -115,7 +115,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
                         <valueReference>
-                           <!--SubstanceDefinition/resultingMaterial-->
+                                    <!--SubstanceDefinition/resultingMaterial-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
                         </valueReference>
                      </extension>
@@ -167,7 +167,7 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
       <resource>
          <SubstanceDefinition>
-            <!--substance1-->
+                <!--substance1-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821152"/>
             <name>
                <name value="Stelbatolol"/>
@@ -179,7 +179,7 @@
       <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
       <resource>
          <SubstanceDefinition>
-            <!--dispersant-->
+                <!--dispersant-->
             <id value="9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
             <property>
                <type>
@@ -199,7 +199,7 @@
       <fullUrl value="urn:uuid:9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
       <resource>
          <SubstanceDefinition>
-            <!--resultingMaterial-->
+                <!--resultingMaterial-->
             <id value="9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
             <name>
                <name value="Stelbat in dispersant (approximately 10 mg/mL)"/>
@@ -211,7 +211,7 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
       <resource>
          <ObservationDefinition>
-            <!--ParticleSize-->
+                <!--ParticleSize-->
             <id value="12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
             <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
@@ -224,23 +224,23 @@
                </extension>
             </code>
             <specimen>
-               <!--SpecimenDefinition/specimendefinition-->
+                    <!--SpecimenDefinition/specimendefinition-->
                <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <device>
-               <!--DeviceDefinition/laser-->
+                    <!--DeviceDefinition/laser-->
                <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9495c"/>
             </device>
             <hasMember>
-               <!--ObservationDefinition/ParticleSizeObscuration-->
+                    <!--ObservationDefinition/ParticleSizeObscuration-->
                <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             </hasMember>
             <hasMember>
-               <!--ObservationDefinition/ParticleRI-->
+                    <!--ObservationDefinition/ParticleRI-->
                <reference value="ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
             </hasMember>
             <hasMember>
-               <!--ObservationDefinition/ParticleSizeRSD-->
+                    <!--ObservationDefinition/ParticleSizeRSD-->
                <reference value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             </hasMember>
          </ObservationDefinition>
@@ -250,7 +250,7 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <!--ParticleSizeObscuration-->
+                <!--ParticleSizeObscuration-->
             <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
@@ -289,8 +289,9 @@
       <fullUrl value="urn:uuid:12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <!--ParticleRI-->
+                <!--ParticleRI-->
             <id value="12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-41a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Particle refractive index"/>
             <status value="active"/>
@@ -321,8 +322,9 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
       <resource>
          <ObservationDefinition>
-            <!--ParticleSizeRSD-->
+                <!--ParticleSizeRSD-->
             <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e"/>
             <title value="Particle Size RSD"/>
             <status value="active"/>
@@ -346,8 +348,9 @@
       <fullUrl value="urn:uuid:3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
       <resource>
          <SpecimenDefinition>
-            <!--specimendefinition-->
+                <!--specimendefinition-->
             <id value="3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
+            <!--http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2-->
             <url value="http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <status value="active"/>
             <description value="Number of Preparations: 3"/>
@@ -358,7 +361,7 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9495c"/>
       <resource>
          <DeviceDefinition>
-            <!--laser-->
+                <!--laser-->
             <id value="82a39a18-91cf-a19d-76c1-a9e8bad9495c"/>
             <description value="Analyzer with disperser and temperature control accessory, or equivalent"/>
             <classification>
