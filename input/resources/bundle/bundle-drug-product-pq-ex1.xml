@@ -21,7 +21,7 @@
             </subject>
             <date value="2023-10-01"/>
             <author>
-                    <!--Organization/owner-->
+                    <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             </author>
             <title value="3.2.P.2.1.1 - Components of the Drug Product"/>
@@ -72,7 +72,7 @@
             </subject>
             <date value="2023-10-01"/>
             <author>
-                    <!--Organization/owner-->
+                    <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             </author>
             <title value="3.2.P.2.2.1 - Formulation Development"/>
@@ -163,7 +163,7 @@
             </subject>
             <date value="2023-10-01"/>
             <author>
-                    <!--Organization/owner-->
+                    <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             </author>
             <title value="3.2.P.2.2.4 - Summary for Risk of Impurities"/>
@@ -279,7 +279,7 @@
       <fullUrl value="urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
-                <!--owner-->
+                <!--organization-dxpq-ex1-->
             <id value="9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             <name value="AAA Molybdenum Products, Inc."/>
          </Organization>
