@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="bundle-drug-product-excipients-pq-ex1"/>   
+<!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/bundle-drug-product-excipients-pq"/>
+   </meta>
+   <type value="collection"/>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side."/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+                  <code value="100000073667"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+                  <code value="100000073619"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <name>
+               <productName value="Stalbatolol"/>
+               <type>
+                  <coding>
+                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+            </name>
+            <characteristic>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+                  <valueRange>
+                     <low>
+                        <value value="23"/>
+                        <unit value="mg/mL"/>
+                     </low>
+                     <high>
+                        <value value="27"/>
+                        <unit value="mg/mL"/>
+                     </high>
+                  </valueRange>
+               </extension>
+               <type>
+                  <coding>
+                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <code value="solubility-water"/>
+                     <display value="Solubility purified water"/>
+                  </coding>
+               </type>
+            </characteristic>
+            <characteristic>
+               <type>
+                  <coding>
+                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <code value="water-cotent"/>
+                     <display value="Water content"/>
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="23"/>
+                  <unit value="mg/mL"/>
+               </valueQuantity>
+            </characteristic>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b"/>
+      <resource>
+         <Organization>
+            <id value="manufacturerPG"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3010027651"/>
+            </identifier>
+            <name value="Modified Sugar, Inc."/>
+            <contact>
+               <address>
+                  <line value="381 Main Street"/>
+                  <city value="Lumberton"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08048"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b"/>
+      <resource>
+         <Organization>
+            <id value="manufacturerDGA"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3012027651"/>
+            </identifier>
+            <name value="Plasma Source, Inc."/>
+            <contact>
+               <address>
+                  <line value="351 Main Street"/>
+                  <city value="Lumberton"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08048"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <resource>
+         <Ingredient>
+            <id value="ingredient1"/>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq">
+               <valueBoolean value="true"/>
+            </extension>
+            <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">
+               <valueString value="Excipient has been certified for use in human medicinal products"/>
+            </extension>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <manufacturer>
+               <manufacturer>
+                  <reference value="Organization/manufacturerPG"/>
+               </manufacturer>
+            </manufacturer>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/pg"/>
+                  </reference>
+               </code>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <!-- Section 2.1 - DP Composition - Product Component -->
+   <entry>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="pg"/>
+            <name>
+               <name value="Pegylated glucose"/>
+            </name>
+            <sourceMaterial>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/substance-source-material-type"/>
+                     <code value="NonBiological"/>
+                     <display value="Non-biological"/>
+                  </coding>
+               </type>
+               <countryOfOrigin>
+                  <coding>
+                     <system value="urn:iso:std:iso:3166"/>
+                     <code value="GBR"/>
+                     <display value="United Kingdom"/>
+                  </coding>
+               </countryOfOrigin>
+            </sourceMaterial>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <resource>
+         <Ingredient>
+            <id value="ingredient2"/>
+            <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">
+               <valueString value="Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials."/>
+            </extension>
+            <status value="active"/>
+            <for>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <manufacturer>
+               <manufacturer>
+                  <reference value="Organization/manufacturerDGA"/>
+               </manufacturer>
+            </manufacturer>
+            <substance>
+               <code>
+                  <reference>
+                     <reference value="SubstanceDefinition/dga"/>
+                  </reference>
+               </code>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="dga"/>
+            <name>
+               <name value="Deactivated goat albumin"/>
+            </name>
+            <sourceMaterial>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/substance-source-material-type"/>
+                     <code value="Animal"/>
+                     <display value="animal"/>
+                  </coding>
+               </type>
+               <species>
+                  <coding>
+                     <system value="https://spor.ema.europa.eu/v1/lists/200000000019"/>
+                     <code value="200000000249"/>
+                     <display value="Goat"/>
+                  </coding>
+               </species>
+               <part>
+                  <coding>
+                     <system value="https://spor.ema.europa.eu/v1/lists/100000072054"/>
+                     <code value="100000111138"/>
+                     <display value="Plasma"/>
+                  </coding>
+               </part>
+               <countryOfOrigin>
+                  <coding>
+                     <system value="urn:iso:std:iso:3166"/>
+                     <code value="USA"/>
+                     <display value="United States of America"/>
+                  </coding>
+               </countryOfOrigin>
+            </sourceMaterial>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+</Bundle>

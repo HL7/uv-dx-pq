@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="bundle-drug-product-pq-ex1"/>   
+<!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/bundle-drug-product-pq"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:a1694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+         <Composition>
+            <id value="comp-formulation"/>
+            <status value="final"/>
+            <type>
+               <text value="Product Note - Formulation Development"/>
+            </type>
+            <subject>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subject>
+            <date value="2023-10-01"/>
+            <author>
+               <reference value="Organization/owner"/>
+            </author>
+            <title value="3.2.P.2.2.1 - Formulation Development"/>
+            <section>
+               <title value="3.2.P.2.2.1.1 - Formulation History"/>
+               <text>
+                  <status value="additional"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <ul>
+                        <li>Drug product description including difference or similarity between the drug product and reference product, if applicable</li>
+                        <li>Propose route of administration (include any dilution or reconstitution necessary)</li>
+                        <li>Choice of manufacturing process, explain choice if alternative process could have been applicable (e.g. aseptic processing instead of terminal sterilization, direct compression instead of granulation). If different processes were used for different formulation highlight and explain differences, refer at 3.2.P.2.3. If no change in the process occurred refer to 3.3.P.3.3 and avoid duplication data.</li>
+                     </ul>
+                     <p>Table 1 - Formulation history for Stelbatolol</p>
+                     <table>
+                        <tr>
+                           <th bgcolor="#FFFFFF">Formulation Identifier</th>
+                           <th bgcolor="#FFFFFF">Composition</th>
+                           <th bgcolor="#FFFFFF">Change</th>
+                           <th bgcolor="#FFFFFF">Development phase</th>
+                        </tr>
+                        <tr>
+                           <td bgcolor="#FFFFFF">1233545</td>
+                           <td bgcolor="#FFFFFF">Composition 1a</td>
+                           <td bgcolor="#FFFFFF">Changes made are listed here</td>
+                           <td bgcolor="#FFFFFF">Pre-clinical phase</td>
+                        </tr>
+                     </table>
+                  </div>
+               </text>
+            </section>
+            <section>
+               <title value="3.2.P.2.2.1.2 - Formulation Development Studies"/>
+               <text>
+                  <status value="additional"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <p>Summary of the formulation developmental studies conducted are provided in Table 2</p>
+                     <p>Table 2 - Formulation Development Studies</p>
+                     <table>
+                        <tr>
+                           <th bgcolor="#FFFFFF">Study</th>
+                           <th bgcolor="#FFFFFF">Formulation identifier </th>
+                           <th bgcolor="#FFFFFF">Objective</th>
+                           <th bgcolor="#FFFFFF">Quality attribute evaluated</th>
+                           <th bgcolor="#FFFFFF">Study design</th>
+                           <th bgcolor="#FFFFFF">Study result</th>
+                        </tr>
+                        <tr>
+                           <td bgcolor="#FFFFFF">Study Name</td>
+                           <td bgcolor="#FFFFFF">12234a</td>
+                           <td bgcolor="#FFFFFF">Short description of the study objective</td>
+                           <td bgcolor="#FFFFFF">CQA information</td>
+                           <td bgcolor="#FFFFFF">Short description of the design</td>
+                           <td bgcolor="#FFFFFF">Reference to the table showing study results</td>
+                        </tr>
+                     </table>
+                  </div>
+               </text>
+            </section>
+            <section>
+               <title value="3.2.P.2.2.4 - Summary for Risk Assessment of Elemental Impurities in Drug Product"/>
+               <text>
+                  <status value="additional"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <p>Summary of the risk assessment for product...</p>
+                  </div>
+               </text>
+            </section>
+         </Composition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a1694a8a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+         <Composition>
+            <id value="comp-risk"/>
+            <status value="final"/>
+            <type>
+               <text value="Product Note - Summary for Risk of Impurities"/>
+            </type>
+            <subject>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            </subject>
+            <date value="2023-10-01"/>
+            <author>
+               <reference value="Organization/owner"/>
+            </author>
+            <title value="3.2.P.2.2.4 - Summary for Risk of Impurities"/>
+            <section>
+               <text>
+                  <status value="additional"/>
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <p>Text for the risk assessment of elemental impurities in the product</p>
+                  </div>
+               </text>
+            </section>
+         </Composition>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <comprisedOf>
+               <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+            </comprisedOf>
+            <name>
+               <productName value="Stalbatolol"/>
+            </name>
+            <characteristic>
+               <type>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="physicochemical"/>
+                     <display value="Physicochemical properties"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Product properties with cross reference to other dossier sections as 3.2.P.5.1 Consider parameters relevant to the performance of the drug product, such as pH, ionic strength, dissolution, redispersion, reconstitution, particle size distribution, aggregation, polymorphism, rheological properties, biological activity or potency, and/or immunological activity. Any properties which are not included in the product specification, with explanation of parameter control and relevant studies. If applicable refer to relevant compendia monograph"/>
+               </valueCodeableConcept>
+            </characteristic>
+            <characteristic>
+               <type>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="PH"/>
+                     <display value="pH Level"/>
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="7.0"/>
+               </valueQuantity>
+            </characteristic>
+            <characteristic>
+               <type>
+                  <coding>
+                     <system value="http://dummy.loinc.org"/>
+                     <code value="ionic-strength"/>
+                     <display value="Ionic Strength"/>
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="23"/>
+                  <unit value="mg/mL"/>
+               </valueQuantity>
+            </characteristic>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
+      <resource>
+         <ManufacturedItemDefinition>
+            <id value="manufactureditemdefinition-dxpq-ex1"/>
+            <status value="active"/>
+            <name value="Stelbatolol 5mg tablet"/>
+            <manufacturedDoseForm>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unsupported"/>
+               </extension>
+            </manufacturedDoseForm>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://example.org/fhir/code/manufactured-item-property"/>
+                     <code value="overage-by-mass"/>
+                     <display value="Overage by mass (%)"/>
+                  </coding>
+               </type>
+               <valueQuantity>
+                  <value value="5"/>
+                  <unit value="%"/>
+               </valueQuantity>
+            </property>
+            <!-- this and the above could also be extensions -->
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://example.org/fhir/code/manufactured-item-property"/>
+                     <code value="overage-reason"/>
+                     <display value="Overage reason"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Overage is necessary because..."/>
+               </valueCodeableConcept>
+            </property>
+         </ManufacturedItemDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
+      <resource>
+         <Organization>
+            <id value="owner"/>
+            <name value="AAA Molybdenum Products, Inc."/>
+         </Organization>
+      </resource>
+   </entry>
+</Bundle>
