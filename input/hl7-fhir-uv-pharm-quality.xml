@@ -201,9 +201,9 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-drug-product-microbiological-attributes-ex1"/>
+                <reference value="Bundle/bundle-drug-product-microbiological-attributes-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-product-microbiological-attributes-ex1"/>
+            <name value="bundle-drug-product-microbiological-attributes-pq-ex1"/>
             <description value="Bundle – Drug Product Microbiological Attributes PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
