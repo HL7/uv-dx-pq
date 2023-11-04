@@ -12,6 +12,7 @@
          <PlanDefinition>
                 <!--validationProtocol-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+            <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="DP PROCESS VALIDATION"/>
             <type>
                <coding>
