@@ -25,22 +25,21 @@
                 <ul>
                     <li>Drug product description including difference or similarity between the drug product and reference product, if applicable</li>
                     <li>Propose route of administration (include any dilution or reconstitution necessary)</li>
-                    <li>Choice of manufacturing process, explain choice if alternative process could have been applicable (e.g. aseptic processing instead of terminal sterilization, direct compression instead of granulation). If different processes were used for different formulation highlight and explain differences, refer at 3.2.P.2.3. If no change in the process occurred refer to 3.3.P.3.3 and
-                        avoid duplication data.</li>
+                                <li>Choice of manufacturing process, explain choice if alternative process could have been applicable (e.g. aseptic processing instead of terminal sterilization, direct compression instead of granulation). If different processes were used for different formulation highlight and explain differences, refer at 3.2.P.2.3. If no change in the process occurred refer to 3.3.P.3.3 and avoid duplication data.</li>
                 </ul>
                 <p>Table 1 - Formulation history for Stelbatolol</p>
                 <table>
                     <tr>
-                        <th bgcolor="#FFFFFF">Formulation Identifier</th>
-                        <th bgcolor="#FFFFFF">Composition</th>
-                        <th bgcolor="#FFFFFF">Change</th>
-                        <th bgcolor="#FFFFFF">Development phase</th>
+                                    <th>Formulation Identifier</th>
+                                    <th>Composition</th>
+                                    <th>Change</th>
+                                    <th>Development phase</th>
                     </tr>
                     <tr>
-                        <td bgcolor="#FFFFFF">1233545</td>
-                        <td bgcolor="#FFFFFF">Composition 1a</td>
-                        <td bgcolor="#FFFFFF">Changes made are listed here</td>
-                        <td bgcolor="#FFFFFF">Pre-clinical phase</td>
+                                    <td>1233545</td>
+                                    <td>Composition 1a</td>
+                                    <td>Changes made are listed here</td>
+                                    <td>Pre-clinical phase</td>
                     </tr>
                 </table>
             </div>
@@ -56,20 +55,20 @@
                 <p>Table 2 - Formulation Development Studies</p>
                 <table>
                     <tr>
-                        <th bgcolor="#FFFFFF">Study</th>
-                        <th bgcolor="#FFFFFF">Formulation identifier </th>
-                        <th bgcolor="#FFFFFF">Objective</th>
-                        <th bgcolor="#FFFFFF">Quality attribute evaluated</th>
-                        <th bgcolor="#FFFFFF">Study design</th>
-                        <th bgcolor="#FFFFFF">Study result</th>
-                    </tr>
-                    <tr>
-                        <td bgcolor="#FFFFFF">Study Name</td>
-                        <td bgcolor="#FFFFFF">12234a</td>
-                        <td bgcolor="#FFFFFF">Short description of the study objective</td>
-                        <td bgcolor="#FFFFFF">CQA information</td>
-                        <td bgcolor="#FFFFFF">Short description of the design</td>
-                        <td bgcolor="#FFFFFF">Reference to the table showing study results</td>
+                                    <th>Study</th>
+                                    <th>Formulation identifier </th>
+                                    <th>Objective</th>
+                                    <th>Quality attribute evaluated</th>
+                                    <th>Study design</th>
+                                    <th>Study result</th>
+                                </tr>
+                                <tr>
+                                    <td>Study Name</td>
+                                    <td>12234a</td>
+                                    <td>Short description of the study objective</td>
+                                    <td>CQA information</td>
+                                    <td>Short description of the design</td>
+                                    <td>Reference to the table showing study results</td>
                     </tr>
                 </table>
             </div>
