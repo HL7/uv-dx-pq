@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Bundle xmlns="http://hl7.org/fhir">
-   <!-- Product  Microbiological Attributes -->
+    <!-- Product  Microbiological Attributes -->
    <id value="bundle-drug-product-microbiological-attributes-pq-ex1"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
@@ -12,7 +11,7 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
       <resource>
          <DiagnosticReport>
-            <!-- focal resource -->
+                <!-- focal resource -->
             <id value="microbiologicalReport"/>
             <status value="final"/>
             <code>
@@ -23,12 +22,14 @@
                </coding>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch"> </reference>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2020-12"/>
             <!-- start of stability test -->
             <result>
-               <reference value="Observation/observationDescription"/>
+                    <!--Observation/observationDescription-->
+               <reference value="Observation/18c2d9e0-08c7-84e2-5e59-8f56321f895d"/>
             </result>
          </DiagnosticReport>
       </resource>
@@ -37,52 +38,87 @@
       <fullUrl value="urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d"/>
       <resource>
          <Observation>
-            <id value="observationDescription"/>
+                <!--observationDescription-->
+            <id value="18c2d9e0-08c7-84e2-5e59-8f56321f895d"/>
             <text>
-
                <status value="additional"/>
                <div xmlns="http://www.w3.org/1999/xhtml">
                   <div style="font-family: 'Times New Roman', Times, serif;">
                      <p>
-                        <span>The microbiological attributes of the excipients were characterized during the development program. All excipients meet USP &lt;1111&gt; </span>
+                        <span>The microbiological attributes of the excipients were
+                                    characterized during the development program. All excipients
+                                    meet USP &lt;1111&gt; </span>
                         <i>
-                           <span>Microbial Examination of Nonsterile Products:</span>
+                           <span>Microbial Examination of
+                                        Nonsterile Products:</span>
                         </i>
                         <span> </span>
                         <i>
-                           <span>Acceptance Criteria for Pharmaceutical Preparations and Substances for Pharmaceutical Use</span>
+                           <span>Acceptance Criteria for Pharmaceutical
+                                        Preparations and Substances for Pharmaceutical
+                                    Use</span>
                         </i>
                         <span> </span>
-                        <span>and Ph. Eur. 5.1.4 </span>
+                        <span>and Ph. Eur. 5.1.4
+                                        </span>
                         <i>
-                           <span>Microbiological quality of non-sterile pharmaceutical preparations and substances for pharmaceutical use</span>
+                           <span>Microbiological quality of non-sterile
+                                        pharmaceutical preparations and substances for
+                                        pharmaceutical use</span>
                         </i>
                         <i>
                            <span>,</span>
                         </i>
-                        <span> when tested in accordance with USP &lt;61&gt; and &lt;62&gt;,</span>
+                        <span>
+                                    when tested in accordance with USP &lt;61&gt; and
+                                    &lt;62&gt;,</span>
                         <span> </span>
-                        <span>and Ph. Eur. 2.6.12 and 2.6.13, where applicable.</span>
+                        <span>and Ph. Eur. 2.6.12 and
+                                    2.6.13, where applicable.</span>
                      </p>
                      <p>
-                        <span>Current Good Manufacturing Practices are used which minimize the possibility for microbial contamination for the finished product. This was confirmed via testing of three lots manufactured at the commercial scale for the purpose of PPQ and stability studies according to USP &lt;61&gt; and &lt;62&gt;. All lots met the USP &lt;1111&gt; criteria for nonaqueous
-                           preparations for oral use (Total Aerobic Microbial Count NMT 10<sup>3</sup> CFU/gram, Total Combined Yeast and Mold Count NMT 10<sup>2</sup> CFU/gram and absence of </span>
+                        <span>Current Good Manufacturing Practices are used which minimize
+                                    the possibility for microbial contamination for the finished
+                                    product. This was confirmed via testing of three lots
+                                    manufactured at the commercial scale for the purpose of PPQ and
+                                    stability studies according to USP &lt;61&gt; and &lt;62&gt;.
+                                    All lots met the USP &lt;1111&gt; criteria for nonaqueous
+                                    preparations for oral use (Total Aerobic Microbial Count NMT
+                                        10<sup>3</sup> CFU/gram, Total Combined Yeast and Mold Count
+                                    NMT 10<sup>2</sup> CFU/gram and absence of
+                                        </span>
                         <i>
                            <span>Escherichia coli </span>
                         </i>
-                        <span>in 1 gram), as stated in Sections 3.2.P.5.4 and 3.2.P.8.3.</span>
+                        <span>in 1
+                                    gram), as stated in Sections 3.2.P.5.4 and 3.2.P.8.3.</span>
                      </p>
                      <p>
                         <span>Per USP &lt;921&gt; </span>
                         <i>
-                           <span>Water Determination</span>
+                           <span>Water
+                                    Determination</span>
                         </i>
-                        <span>, the drug product specification is set to NMT 1.0% at release and NMT 2.0% for shelf life as described in Section 3.2.P.5.1. The water activity for the drug product was confirmed to comply with the specifications as stated in Sections 3.2.P.5.4 and 3.2.P.8.3. </span>
+                        <span>, the drug product specification
+                                    is set to NMT 1.0% at release and NMT 2.0% for shelf life as
+                                    described in Section 3.2.P.5.1. The water activity for the drug
+                                    product was confirmed to comply with the specifications as
+                                    stated in Sections 3.2.P.5.4 and 3.2.P.8.3. </span>
                      </p>
                      <p>
-                        <span>A product microbial risk evaluation conducted for the drug product manufacturing site supports annual microbiological quality testing at release and on stability following the specification listed in Section 3.2.P.5.1. Input material, manufacturing, process controls as well as environmental controls are all in place to ensure consistent microbiological quality. The
-                           excipients used in the manufacture of the product are tested for microbiological quality as required by their respective compendial requirements. This product demonstrates satisfactory microbiological quality based on the results of all batches evaluated. Microbiological quality testing will continue to be monitored annually on the drug product for release and throughout
-                           the stability study.</span>
+                        <span>A product microbial risk evaluation conducted for the drug
+                                    product manufacturing site supports annual microbiological
+                                    quality testing at release and on stability following the
+                                    specification listed in Section 3.2.P.5.1. Input material,
+                                    manufacturing, process controls as well as environmental
+                                    controls are all in place to ensure consistent microbiological
+                                    quality. The excipients used in the manufacture of the product
+                                    are tested for microbiological quality as required by their
+                                    respective compendial requirements. This product demonstrates
+                                    satisfactory microbiological quality based on the results of all
+                                    batches evaluated. Microbiological quality testing will continue
+                                    to be monitored annually on the drug product for release and
+                                    throughout the stability study.</span>
                      </p>
                   </div>
                </div>
@@ -97,10 +133,12 @@
                <text value="Description"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch"/>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueCodeableConcept>
@@ -113,10 +151,11 @@
    <entry>
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
-         <!-- Section 1.1 - DP Identification -->
+            <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <!-- unlinked -->
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
@@ -160,14 +199,15 @@
       <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
       <resource>
          <Medication>
-            <id value="medication-actual-batch"/>
+                <!--medication-actual-batch-->
+            <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
                   <valueReference>
-                     <!-- todo consider change this be the MID? -->
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-
-
+                            <!-- todo consider change this be the MID? -->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
             </code>
@@ -178,7 +218,8 @@
       <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
       <resource>
          <Organization>
-            <!--testing lab-->
+                <!--testing lab-->
+                <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             <name value="Testing Lab"/>
          </Organization>
