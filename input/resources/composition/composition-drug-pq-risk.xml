@@ -14,7 +14,7 @@
     </subject>
     <date value="2023-10-01"/>
     <author>
-        <reference value="Organization/owner"/>
+                    <reference value="Organization/organization-dxpq-ex1"/>
     </author>
     <title value="3.2.P.2.2.4 - Summary for Risk of Impurities"/>
     <section>

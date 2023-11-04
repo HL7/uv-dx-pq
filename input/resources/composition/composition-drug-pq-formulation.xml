@@ -5,6 +5,8 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
     </meta>
+                
+                
     <status value="final"/>
     <type>
         <text value="Product Note - Formulation Development"/>
@@ -14,9 +16,10 @@
     </subject>
     <date value="2023-10-01"/>
     <author>
-        <reference value="Organization/owner"/>
+                    <reference value="Organization/organization-dxpq-ex1"/>
     </author>
     <title value="3.2.P.2.2.1 - Formulation Development"/>
+                
     <section>
         <title value="3.2.P.2.2.1.1 - Formulation History"/>
         <text>
@@ -42,10 +45,10 @@
                                     <td>Pre-clinical phase</td>
                     </tr>
                 </table>
+                            
             </div>
         </text>
     </section>
-    
     <section>
         <title value="3.2.P.2.2.1.2 - Formulation Development Studies"/>
         <text>
@@ -71,6 +74,7 @@
                                     <td>Reference to the table showing study results</td>
                     </tr>
                 </table>
+                            
             </div>
         </text>
     </section>
