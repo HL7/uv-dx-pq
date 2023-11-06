@@ -8,13 +8,13 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: 7a2809f8-d46b-4383-9cb7-93e4dca35314)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identication-excipient-control-dxpq 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-drug-product-excipients-pq-ex1)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq 
 
 <Bundle>
-    <id value=&quot;7a2809f8-d46b-4383-9cb7-93e4dca35314&quot;/>
+    <id value=&quot;bundle-drug-product-excipients-pq-ex1&quot;/>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identication-excipient-control-dxpq&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <!-- MedicinalProductDefinition - the main resource in any product scenario -->
@@ -110,7 +110,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b&quot;/>
+        <fullUrl value=&quot;urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c&quot;/>
         <resource>
             <Organization>
                 <id value=&quot;manufacturerDGA&quot;/>
@@ -133,7 +133,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65&quot;/>
+        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6&quot;/>
         <resource>
             <Ingredient>
                 <id value=&quot;ingredient1&quot;/>
@@ -232,7 +232,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474&quot;/>
+        <fullUrl value=&quot;urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475&quot;/>
         <resource>
             <SubstanceDefinition>
                 <id value=&quot;dga&quot;/>
@@ -271,12 +271,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
                 </sourceMaterial>
             </SubstanceDefinition>
         </resource>
-    </entry>" id="Bundle-7a2809f8-d46b-4383-9cb7-93e4dca35314">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: 7a2809f8-d46b-4383-9cb7-93e4dca35314</div>
+    </entry>" id="Bundle-bundle-drug-product-excipients-pq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-drug-product-excipients-pq-ex1</div>
 <div class="debugOff"></div>
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identication-excipient-control-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identication-excipient-control-dxpq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq</span></div>
 <div><span title="
 <Bundle>
     ...
@@ -590,7 +590,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient1)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)
+<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient1)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)
 
 <Bundle>
     <entry>
@@ -635,7 +635,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient1</div>
-<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65</div>
+<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6</div>
 <div class="debugOff"><span title="
 <Bundle>
     <entry>
@@ -693,7 +693,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
                             <reference value=&quot;SubstanceDefinition/pg&quot;/>
                         </reference>
                     </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: pg)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
+<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: pg)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
 
 <Bundle>
     <entry>
@@ -799,7 +799,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
                 <manufacturer>
                     <manufacturer>
                         <reference value=&quot;Organization/manufacturerPG&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerPG)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b)
+<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerPG)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b)
 
 <Bundle>
     <entry>
@@ -1001,7 +1001,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
                             <reference value=&quot;SubstanceDefinition/dga&quot;/>
                         </reference>
                     </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: dga)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
+<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: dga)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475)
 
 <Bundle>
     <entry>
@@ -1041,7 +1041,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
                         </coding>
                     </countryOfOrigin>
                 </sourceMaterial>" id="SubstanceDefinition-dga">Substance</span></a><span class="summaryShowsOff"><b> - Deactivated goat albumin</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: dga</div>
-<div class="debugOff"> fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474</div>
+<div class="debugOff"> fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475</div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
 <div><span title="
@@ -1167,7 +1167,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
                 <manufacturer>
                     <manufacturer>
                         <reference value=&quot;Organization/manufacturerDGA&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerDGA)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b)
+<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerDGA)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c)
 
 <Bundle>
     <entry>
@@ -1189,7 +1189,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-manufacturerDGA">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturerDGA</div>
-<div class="debugOff"> fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b</div><span class="summaryShowsOff"> - Plasma Source, Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c</div><span class="summaryShowsOff"> - Plasma Source, Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1581,6 +1581,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identic
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

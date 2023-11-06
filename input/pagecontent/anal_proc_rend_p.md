@@ -158,7 +158,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
                             <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                             <p>
-                                <!-- REMOVE IN BUNDLE -->
                                 <img alt=&quot;formula&quot; width=&quot;203&quot; height=&quot;34&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;#imageResource&quot;/>
                             </p>
                             <p>
@@ -184,7 +183,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                                 <span>Determine the % label claim of the sample as follows:</span>
                             </p>
                             <p>
-                                <!-- REMOVE IN BUNDLE -->
                                 <img alt=&quot;formula&quot; width=&quot;220&quot; height=&quot;34&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;#imageResource2&quot;/>
                             </p>
                             <p>
@@ -1155,7 +1153,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
                             <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                             <p>
-                                <!-- REMOVE IN BUNDLE -->
                                 <img alt=&quot;formula&quot; width=&quot;203&quot; height=&quot;34&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;#imageResource&quot;/>
                             </p>
                             <p>
@@ -1181,7 +1178,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                                 <span>Determine the % label claim of the sample as follows:</span>
                             </p>
                             <p>
-                                <!-- REMOVE IN BUNDLE -->
                                 <img alt=&quot;formula&quot; width=&quot;220&quot; height=&quot;34&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;#imageResource2&quot;/>
                             </p>
                             <p>
@@ -1250,7 +1246,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
                             <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                             <p>
-                                <!-- REMOVE IN BUNDLE -->
                                 <img alt=&quot;formula&quot; width=&quot;203&quot; height=&quot;34&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;#imageResource&quot;/>
                             </p>
                             <p>
@@ -1276,7 +1271,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                                 <span>Determine the % label claim of the sample as follows:</span>
                             </p>
                             <p>
-                                <!-- REMOVE IN BUNDLE -->
                                 <img alt=&quot;formula&quot; width=&quot;220&quot; height=&quot;34&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;#imageResource2&quot;/>
                             </p>
                             <p>
@@ -1297,7 +1291,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
                             <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                             <p>
-                                <!-- REMOVE IN BUNDLE -->
                                 <img alt=&quot;formula&quot; width=&quot;203&quot; height=&quot;34&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;#imageResource&quot;/>
                             </p>
                             <p>
@@ -1323,7 +1316,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                                 <span>Determine the % label claim of the sample as follows:</span>
                             </p>
                             <p>
-                                <!-- REMOVE IN BUNDLE -->
                                 <img alt=&quot;formula&quot; width=&quot;220&quot; height=&quot;34&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;#imageResource2&quot;/>
                             </p>
                             <p>
@@ -1814,6 +1806,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

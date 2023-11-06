@@ -120,7 +120,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <!--subjectCanonical value=&quot;MedicinalProductDefinition/product&quot;/-->
                 <!-- this isn't followed at the moment, if it isnt in the file -->
                 <description value=&quot;Description of the study study plan which includes tests, time points, storage conditions, method&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <title value=&quot;Stability Test Protocol for Long-term and Accelerated Storage of Stelbatolol&quot;/>
                     <action>
@@ -346,34 +345,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-36&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-                            <title value=&quot;48&quot;/>
-                            <timingTiming>
-                                <repeat>
-                                    <boundsRange>
-                                        <low>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </low>
-                                        <high>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </high>
-                                    </boundsRange>
-                                    <frequency value=&quot;1&quot;/>
-                                </repeat>
-                            </timingTiming>
-                            <action>
-                                <title value=&quot;(X)&quot;/>
-                                <requiredBehavior value=&quot;could&quot;/>
-                                <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-48&quot;/>
-                            </action>
-                        </action-->
                     </action>
                     <!-- end of long term -->
                     <action>
@@ -595,32 +566,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <title value=&quot;-&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-	                     <title value=&quot;48&quot;/>
-	                     <timingTiming>
-	                        <repeat>
-	                           <boundsRange>
-	                              <low>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </low>
-	                              <high>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </high>
-	                           </boundsRange>
-	                           <frequency value=&quot;1&quot;/>
-	                        </repeat>
-	                     </timingTiming>
-	                     <action>
-	                        <title value=&quot;-&quot;/>
-	                     </action>
-	                  </action-->
                     </action>
                     <!-- end of accelerated -->
                 </action>
@@ -633,7 +578,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -754,24 +698,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             </ActivityDefinition>
         </resource>
     </entry>
-    <!-- NEW DATA -->
-    <!--entry>
-        <fullUrl value=&quot;urn:uuid:75073965-82eb-407d-34cf-3a7767a38149&quot;/>
-        <resource>
-            <ActivityDefinition>
-                <id value=&quot;activityLongTerm30X-48&quot;/>
-                <title value=&quot;Long-term - 30°C/65% RH - X&quot;/>
-                <status value=&quot;active&quot;/>
-                <observationRequirement value=&quot;ObservationDefinition/longTerm30X&quot;/>
-            </ActivityDefinition>
-        </resource>
-    </entry-->
     <entry>
         <fullUrl value=&quot;urn:uuid:18762cff-9e29-6e71-1184-e9202fee8cba&quot;/>
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -942,7 +873,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30Y&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -992,7 +922,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt40&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -20111,7 +20040,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <!--subjectCanonical value=&quot;MedicinalProductDefinition/product&quot;/-->
                 <!-- this isn't followed at the moment, if it isnt in the file -->
                 <description value=&quot;Description of the study study plan which includes tests, time points, storage conditions, method&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <title value=&quot;Stability Test Protocol for Long-term and Accelerated Storage of Stelbatolol&quot;/>
                     <action>
@@ -20337,34 +20265,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-36&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-                            <title value=&quot;48&quot;/>
-                            <timingTiming>
-                                <repeat>
-                                    <boundsRange>
-                                        <low>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </low>
-                                        <high>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </high>
-                                    </boundsRange>
-                                    <frequency value=&quot;1&quot;/>
-                                </repeat>
-                            </timingTiming>
-                            <action>
-                                <title value=&quot;(X)&quot;/>
-                                <requiredBehavior value=&quot;could&quot;/>
-                                <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-48&quot;/>
-                            </action>
-                        </action-->
                     </action>
                     <!-- end of long term -->
                     <action>
@@ -20586,32 +20486,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <title value=&quot;-&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-	                     <title value=&quot;48&quot;/>
-	                     <timingTiming>
-	                        <repeat>
-	                           <boundsRange>
-	                              <low>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </low>
-	                              <high>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </high>
-	                           </boundsRange>
-	                           <frequency value=&quot;1&quot;/>
-	                        </repeat>
-	                     </timingTiming>
-	                     <action>
-	                        <title value=&quot;-&quot;/>
-	                     </action>
-	                  </action-->
                     </action>
                     <!-- end of accelerated -->
                 </action>" id="PlanDefinition-stabilityStudyProtocol">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: stabilityStudyProtocol</div>
@@ -20685,7 +20559,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <!--subjectCanonical value=&quot;MedicinalProductDefinition/product&quot;/-->
                 <!-- this isn't followed at the moment, if it isnt in the file -->
                 <description value=&quot;Description of the study study plan which includes tests, time points, storage conditions, method&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <title value=&quot;Stability Test Protocol for Long-term and Accelerated Storage of Stelbatolol&quot;/>
                     <action>
@@ -20911,34 +20784,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-36&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-                            <title value=&quot;48&quot;/>
-                            <timingTiming>
-                                <repeat>
-                                    <boundsRange>
-                                        <low>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </low>
-                                        <high>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </high>
-                                    </boundsRange>
-                                    <frequency value=&quot;1&quot;/>
-                                </repeat>
-                            </timingTiming>
-                            <action>
-                                <title value=&quot;(X)&quot;/>
-                                <requiredBehavior value=&quot;could&quot;/>
-                                <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-48&quot;/>
-                            </action>
-                        </action-->
                     </action>
                     <!-- end of long term -->
                     <action>
@@ -21160,32 +21005,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <title value=&quot;-&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-	                     <title value=&quot;48&quot;/>
-	                     <timingTiming>
-	                        <repeat>
-	                           <boundsRange>
-	                              <low>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </low>
-	                              <high>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </high>
-	                           </boundsRange>
-	                           <frequency value=&quot;1&quot;/>
-	                        </repeat>
-	                     </timingTiming>
-	                     <action>
-	                        <title value=&quot;-&quot;/>
-	                     </action>
-	                  </action-->
                     </action>
                     <!-- end of accelerated -->
                 </action>">Subject</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: stabilityStudyProtocol fullUrl: urn:uuid:c3973835-10ca-0796-0a26-aa8afafc9c5burl (canonical): http://example-server.com/fhir/PlanDefinition/c3973835-10ca-0796-0a26-aa8afafc9c5b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance fullUrl: urn:uuid:a3fdc23b-6c16-2e65-481e-3fc895b37b87)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-2 fullUrl: urn:uuid:cbcecab6-374c-396f-29be-877da7285e8d)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-3 fullUrl: urn:uuid:ae1f3b4c-4f14-1460-6903-7260959ea2cd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:2e3a85b5-790a-a108-3627-edf0ec6f1210)
@@ -22803,34 +22622,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-36&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-                            <title value=&quot;48&quot;/>
-                            <timingTiming>
-                                <repeat>
-                                    <boundsRange>
-                                        <low>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </low>
-                                        <high>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </high>
-                                    </boundsRange>
-                                    <frequency value=&quot;1&quot;/>
-                                </repeat>
-                            </timingTiming>
-                            <action>
-                                <title value=&quot;(X)&quot;/>
-                                <requiredBehavior value=&quot;could&quot;/>
-                                <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-48&quot;/>
-                            </action>
-                        </action-->
                     </action>
                     <!-- end of long term -->
                     <action>
@@ -23052,32 +22843,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <title value=&quot;-&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-	                     <title value=&quot;48&quot;/>
-	                     <timingTiming>
-	                        <repeat>
-	                           <boundsRange>
-	                              <low>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </low>
-	                              <high>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </high>
-	                           </boundsRange>
-	                           <frequency value=&quot;1&quot;/>
-	                        </repeat>
-	                     </timingTiming>
-	                     <action>
-	                        <title value=&quot;-&quot;/>
-	                     </action>
-	                  </action-->
                     </action>
                     <!-- end of accelerated -->"><a id="urn:uuid:c3973835-10ca-0796-0a26-aa8afafc9c5b"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
@@ -23323,35 +23088,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                                 <requiredBehavior value=&quot;could&quot;/>
                                 <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-36&quot;/>
                             </action>
-                        </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-                            <title value=&quot;48&quot;/>
-                            <timingTiming>
-                                <repeat>
-                                    <boundsRange>
-                                        <low>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </low>
-                                        <high>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </high>
-                                    </boundsRange>
-                                    <frequency value=&quot;1&quot;/>
-                                </repeat>
-                            </timingTiming>
-                            <action>
-                                <title value=&quot;(X)&quot;/>
-                                <requiredBehavior value=&quot;could&quot;/>
-                                <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-48&quot;/>
-                            </action>
-                        </action-->"><a id="urn:uuid:c3973835-10ca-0796-0a26-aa8afafc9c5b"><span>Action</span></a><span class="summaryShowsOff"><span title="
+                        </action>"><a id="urn:uuid:c3973835-10ca-0796-0a26-aa8afafc9c5b"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -23603,7 +23340,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -23682,7 +23418,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -24445,7 +24180,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30Y&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -24518,7 +24252,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -24885,7 +24618,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -24964,7 +24696,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -25941,7 +25672,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -26020,7 +25750,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -26997,7 +26726,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -27076,7 +26804,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -28053,7 +27780,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -28132,7 +27858,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -29112,7 +28837,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -29191,7 +28915,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -30168,7 +29891,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -30247,7 +29969,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -31246,7 +30967,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;longTerm30X&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -31325,7 +31045,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt30&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -32310,33 +32029,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                             <action>
                                 <title value=&quot;-&quot;/>
                             </action>
-                        </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-	                     <title value=&quot;48&quot;/>
-	                     <timingTiming>
-	                        <repeat>
-	                           <boundsRange>
-	                              <low>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </low>
-	                              <high>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </high>
-	                           </boundsRange>
-	                           <frequency value=&quot;1&quot;/>
-	                        </repeat>
-	                     </timingTiming>
-	                     <action>
-	                        <title value=&quot;-&quot;/>
-	                     </action>
-	                  </action-->"><a id="urn:uuid:c3973835-10ca-0796-0a26-aa8afafc9c5b"><span>Action</span></a><span class="summaryShowsOff"><span title="
+                        </action>"><a id="urn:uuid:c3973835-10ca-0796-0a26-aa8afafc9c5b"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -32646,7 +32339,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt40&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -33023,7 +32715,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt40&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -33453,7 +33144,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt40&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -34047,7 +33737,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
         <resource>
             <SpecimenDefinition>
                 <id value=&quot;specimenDefStoredAt40&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq&quot;/>
                 </meta>
@@ -35294,7 +34983,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                 <!--subjectCanonical value=&quot;MedicinalProductDefinition/product&quot;/-->
                 <!-- this isn't followed at the moment, if it isnt in the file -->
                 <description value=&quot;Description of the study study plan which includes tests, time points, storage conditions, method&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <title value=&quot;Stability Test Protocol for Long-term and Accelerated Storage of Stelbatolol&quot;/>
                     <action>
@@ -35520,34 +35208,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                                 <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-36&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-                            <title value=&quot;48&quot;/>
-                            <timingTiming>
-                                <repeat>
-                                    <boundsRange>
-                                        <low>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </low>
-                                        <high>
-                                            <value value=&quot;48&quot;/>
-                                            <unit value=&quot;months&quot;/>
-                                            <system value=&quot;http://unitsofmeasure.org&quot;/>
-                                            <code value=&quot;mo&quot;/>
-                                        </high>
-                                    </boundsRange>
-                                    <frequency value=&quot;1&quot;/>
-                                </repeat>
-                            </timingTiming>
-                            <action>
-                                <title value=&quot;(X)&quot;/>
-                                <requiredBehavior value=&quot;could&quot;/>
-                                <definitionCanonical value=&quot;ActivityDefinition/activityLongTerm30X-48&quot;/>
-                            </action>
-                        </action-->
                     </action>
                     <!-- end of long term -->
                     <action>
@@ -35769,32 +35429,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                                 <title value=&quot;-&quot;/>
                             </action>
                         </action>
-                        <!-- NEW DATA 48 months -->
-                        <!--action> 
-	                     <title value=&quot;48&quot;/>
-	                     <timingTiming>
-	                        <repeat>
-	                           <boundsRange>
-	                              <low>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </low>
-	                              <high>
-	                                 <value value=&quot;48&quot;/>
-	                                 <unit value=&quot;months&quot;/>
-	                                 <system value=&quot;http://unitsofmeasure.org&quot;/>
-	                                 <code value=&quot;mo&quot;/>
-	                              </high>
-	                           </boundsRange>
-	                           <frequency value=&quot;1&quot;/>
-	                        </repeat>
-	                     </timingTiming>
-	                     <action>
-	                        <title value=&quot;-&quot;/>
-	                     </action>
-	                  </action-->
                     </action>
                     <!-- end of accelerated -->
                 </action>">Triggered</span>: Stability Study Report (<a href="#DiagnosticReport-studyResultsReport" title="click to see target - id=studyResultsReport">DiagnosticReport</a>)<span class="debugOff"> id: studyResultsReport</span></div>
@@ -37366,6 +37000,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

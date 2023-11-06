@@ -3758,6 +3758,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

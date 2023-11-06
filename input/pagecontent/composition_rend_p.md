@@ -103,7 +103,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65&quot;/>
+        <fullUrl value=&quot;urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a65&quot;/>
         <resource>
             <Ingredient>
                 <id value=&quot;excipient1&quot;/>
@@ -155,7 +155,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65&quot;/>
+        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-71a1-5a6572e73a65&quot;/>
         <resource>
             <Ingredient>
                 <id value=&quot;excipient2&quot;/>
@@ -259,7 +259,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66&quot;/>
+        <fullUrl value=&quot;urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a66&quot;/>
         <resource>
             <Ingredient>
                 <id value=&quot;excipient4&quot;/>
@@ -999,7 +999,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
-<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: excipient1)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)
+<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: excipient1)(fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a65)
 
 <Bundle>
     <entry>
@@ -1059,7 +1059,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient1</div>
-<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65</div>
+<div class="debugOff"> fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a65</div>
 <div class="debugOff"><span title="
 <Bundle>
     <entry>
@@ -1141,7 +1141,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <unit value=&quot;% w/w&quot;/>
                         </concentrationQuantity>
                     </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient1)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475)
+<div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient1 fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient1)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475)
 
 <Bundle>
     <entry>
@@ -1294,7 +1294,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
-<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: excipient2)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)
+<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: excipient2)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-71a1-5a6572e73a65)
 
 <Bundle>
     <entry>
@@ -1354,7 +1354,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient2</div>
-<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65</div>
+<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-71a1-5a6572e73a65</div>
 <div class="debugOff"><span title="
 <Bundle>
     <entry>
@@ -1436,7 +1436,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <unit value=&quot;% w/w&quot;/>
                         </concentrationQuantity>
                     </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient2)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380476)
+<div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-71a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient2)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380476)
 
 <Bundle>
     <entry>
@@ -1884,7 +1884,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
-<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: excipient4)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66)
+<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: excipient4)(fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a66)
 
 <Bundle>
     <entry>
@@ -1944,7 +1944,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient4</div>
-<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66</div>
+<div class="debugOff"> fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a66</div>
 <div class="debugOff"><span title="
 <Bundle>
     <entry>
@@ -2026,7 +2026,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <unit value=&quot;% w/w&quot;/>
                         </concentrationQuantity>
                     </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient4 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient4)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380478)
+<div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient4 fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a66)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient4)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380478)
 
 <Bundle>
     <entry>
@@ -2483,6 +2483,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

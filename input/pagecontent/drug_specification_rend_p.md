@@ -12,10 +12,8 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-dxpq 
 
 <Bundle>
-    <!--id value=&quot;product-specification&quot;/-->
     <id value=&quot;bundle-drug-product-specification-dxpq-ex1&quot;/>
     <meta>
-        <!--profile value=&quot;http://accumulus.org/fhir/dx-cmc/specification&quot;/-->
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-dxpq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
@@ -27,7 +25,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <!-- <id value=&quot;specificationProtocol&quot;/> -->
                 <!--id value=&quot;plandefinition-drug-specification-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-dxpq-ex3-drug-specification&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
                 </meta>
@@ -38,7 +35,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of specifications&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <!-- this is then entire thing -->
                     <title value=&quot;Specification(s) for Drug Product&quot;/>
@@ -843,7 +839,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <!-- <id value=&quot;specificationProtocol&quot;/> -->
                 <!--id value=&quot;plandefinition-drug-specification-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-dxpq-ex3-drug-specification&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
                 </meta>
@@ -854,7 +849,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of specifications&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <!-- this is then entire thing -->
                     <title value=&quot;Specification(s) for Drug Product&quot;/>
@@ -1032,7 +1026,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of specifications&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <!-- this is then entire thing -->
                     <title value=&quot;Specification(s) for Drug Product&quot;/>
@@ -1515,7 +1508,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <PlanDefinition>
                 <action>
-                    <title value=&quot;Specification(s) for Drug Product&quot;>">Action: </span><span>Specification(s) for Drug Product</span></div><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+                    <title value=&quot;Specification(s) for Drug Product&quot;>">Action: </span><span>Specification(s) for Drug Product</span></div><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th rowspan="2">Test Procedure</th><th colspan="2">Acceptance Criteria</th>
 <th rowspan="2">Method Reference</th></tr>
@@ -5659,6 +5652,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

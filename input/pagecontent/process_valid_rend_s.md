@@ -2081,14 +2081,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 <td class="centred">9.3</td>
 </tr>
 </table>
-</div><br style="line-height:6px;"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Step 1 Yield&quot;>">Table 3: </span><span>Step 1 Yield</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+</div><br style="line-height:6px;"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 3: Step 1 Yield</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="1"></th>
 <th colspan="3">Intermediate Batch Number</th>
@@ -2154,13 +2147,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <title value=&quot;Step 1 In-Process Control Data&quot;>">Table 4: </span><span>Step 1 In-Process Control Data</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 4: Step 1 In-Process Control Data</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="3"></th>
 <th colspan="3">Intermediate Batch Number</th>
@@ -2269,13 +2256,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    <title value=&quot;Step 1 DS Release Testing Results&quot;>">Table 5: </span><span>Step 1 DS Release Testing Results</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 5: Step 1 DS Release Testing Results</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">DS Batch Number</th>
@@ -2464,14 +2445,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 <td class="centred">10.3</td>
 </tr>
 </table>
-</div><br style="line-height:6px;"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Step 2 Yield&quot;>">Table 7: </span><span>Step 2 Yield</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+</div><br style="line-height:6px;"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 7: Step 2 Yield</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="1"></th>
 <th colspan="3">Intermediate 2 Batch Number</th>
@@ -11524,6 +11498,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

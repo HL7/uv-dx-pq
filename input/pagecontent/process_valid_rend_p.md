@@ -12,7 +12,6 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq 
 
 <Bundle>
-    <!--id value=&quot;product-process-validation&quot;/-->
     <id value=&quot;bundle-product-process-validation-dxpq-ex1&quot;/>
     <meta>
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq&quot;/>
@@ -4004,7 +4003,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         </detailRange>
                     </target>
                 </goal>
-                <!-- REMOVE IN INSTANCE -->
                 <actor>
                     <option>
                         <typeReference>
@@ -4019,7 +4017,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         </role>
                     </option>
                 </actor>
-                <!-- REMOVE IN INSTANCE -->
                 <actor>
                     <option>
                         <typeReference>
@@ -4605,14 +4602,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;>">Conclusion: </span><span>The samples have been assessed and the conclusion is...</span></div>
 <div class="summaryHiddenOff"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Compounding Step&quot;>">Results: </span><span>Compounding Step</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Results: Compounding Step</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Lot Number</th>
@@ -4887,14 +4877,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Filling Steps&quot;>">Results: </span><span>Filling Steps</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Results: Filling Steps</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Lot Number</th>
@@ -5124,14 +5107,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 <div class="htmlTableRemove">
 <div class="indent-no-border">CFU = colony forming units; psi = pounds per square inch; TAMC = total aerobic microbial count; TYMC = total yeasts and molds counts</div>
 <div class="indent-no-border">[a] Bioburden samples collected from bulk solution prior to sterile filtration.</div><br></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Lyophilization Step&quot;>">Results: </span><span>Lyophilization Step</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Results: Lyophilization Step</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="6">Lot Number</th>
@@ -5363,14 +5339,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Release Step&quot;>">Results: </span><span>Release Step</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Results: Release Step</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Lot Number</th>
@@ -27408,7 +27377,6 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                         </detailRange>
                     </target>
                 </goal>
-                <!-- REMOVE IN INSTANCE -->
                 <actor>
                     <option>
                         <typeReference>
@@ -27423,7 +27391,6 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                         </role>
                     </option>
                 </actor>
-                <!-- REMOVE IN INSTANCE -->
                 <actor>
                     <option>
                         <typeReference>
@@ -27690,7 +27657,6 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                         </detailRange>
                     </target>
                 </goal>
-                <!-- REMOVE IN INSTANCE -->
                 <actor>
                     <option>
                         <typeReference>
@@ -27705,7 +27671,6 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                         </role>
                     </option>
                 </actor>
-                <!-- REMOVE IN INSTANCE -->
                 <actor>
                     <option>
                         <typeReference>
@@ -29304,6 +29269,19 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

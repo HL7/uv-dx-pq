@@ -6368,14 +6368,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;>">Conclusion: </span><span>The samples have been assessed and the conclusion is...</span></div>
 <div class="summaryHiddenOff"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;>">Table 2: </span><span>Formulation Buffer Preparation Process Parameter Step</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 2: Formulation Buffer Preparation Process Parameter Step</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -6518,14 +6511,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;>">Table 3: </span><span>Formulation Buffer Preparation Performance Indicator Results</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 3: Formulation Buffer Preparation Performance Indicator Results</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -6757,14 +6743,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Thawing and Formulation Process Parameter Results&quot;>">Table 4: </span><span>Thawing and Formulation Process Parameter Results</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 4: Thawing and Formulation Process Parameter Results</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -6913,14 +6892,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Thawing and Formulation Performance Indicator Results&quot;>">Table 5: </span><span>Thawing and Formulation Performance Indicator Results</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 5: Thawing and Formulation Performance Indicator Results</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -7104,14 +7076,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;>">Table 6: </span><span>Bioburden Reduction Filtration Process Parameter Results</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 6: Bioburden Reduction Filtration Process Parameter Results</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -7177,14 +7142,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;>">Table 7: </span><span>Bioburden Reduction Filtration Performance Indicator Results</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 7: Bioburden Reduction Filtration Performance Indicator Results</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -7299,14 +7257,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Media Challenge Hold Times&quot;>">Table 8: </span><span>Media Challenge Hold Times</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 8: Media Challenge Hold Times</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="1"></th>
 <th colspan="3">Media Challenge Run</th>
@@ -7372,14 +7323,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Media Challenge Results&quot;>">Table 9: </span><span>Media Challenge Results</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 9: Media Challenge Results</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="3"></th>
 <th colspan="3">Media Challenge Run</th>
@@ -7516,14 +7460,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;>">Table 11: </span><span>Filtered Formulated Drug Product Performance Indicator Results</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 11: Filtered Formulated Drug Product Performance Indicator Results</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="3"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -7732,14 +7669,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Fill Weight Summary&quot;>">Table 16: </span><span>Fill Weight Summary</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 16: Fill Weight Summary</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -7836,22 +7766,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Filling Homogeneity Quality Attributes&quot;>">Table 17: </span><span>Filling Homogeneity Quality Attributes</span></div></b><br style="line-height:6px;"><div xmlns="http://www.w3.org/1999/xhtml"><table><tr><th>Quality Attribute</th><th>Justification</th><th>Analytical Method</th></tr><tr><td>Quantity</td><td>Demonstrates that the drug product content is maintained throughout the filling process</td><td>Protein concentration</td></tr><tr><td>Purity</td><td>Demonstrates the product quality is not adversely impacted over the duration of the fill through aggregation and / or oxidation</td><td>SE-UHPLC</td></tr><tr><td>Subvisible Particles</td><td>Quantitatively determines that subvisible particle content is maintained within specification throughout the filling process</td><td>Light obscuration</td></tr></table></div><br><br style="line-height:6px;"></div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Filling Results Summary&quot;>">Table 18: </span><span>Filling Results Summary</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 17: Filling Homogeneity Quality Attributes</b><br style="line-height:6px;"><br style="line-height:6px;"><div xmlns="http://www.w3.org/1999/xhtml"><table><tr><th>Quality Attribute</th><th>Justification</th><th>Analytical Method</th></tr><tr><td>Quantity</td><td>Demonstrates that the drug product content is maintained throughout the filling process</td><td>Protein concentration</td></tr><tr><td>Purity</td><td>Demonstrates the product quality is not adversely impacted over the duration of the fill through aggregation and / or oxidation</td><td>SE-UHPLC</td></tr><tr><td>Subvisible Particles</td><td>Quantitatively determines that subvisible particle content is maintained within specification throughout the filling process</td><td>Light obscuration</td></tr></table></div><br><br style="line-height:6px;"></div><br style="line-height:6px;"></div>
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 18: Filling Results Summary</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="3"></th>
 <th colspan="3">Formulation Lot Number</th>
@@ -8068,14 +7984,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Statistical Evaluation of Homogeneity Data&quot;>">Table 19: </span><span>Statistical Evaluation of Homogeneity Data</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 19: Statistical Evaluation of Homogeneity Data</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th></th>
@@ -8241,14 +8150,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Consistency of the Lyophilization Process&quot;>">Table 20: </span><span>Consistency of the Lyophilization Process</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 20: Consistency of the Lyophilization Process</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="2"></th>
 <th colspan="6">Formulation Lot Number</th>
@@ -8595,20 +8497,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </table>
 </div><br style="line-height:6px;"></div>
 </div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Lyophilization Homogeneity&quot;>">Table 23: </span><span>Lyophilization Homogeneity</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 23: Lyophilization Homogeneity</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="3"></th>
 <th colspan="3">Formulation Lot Number</th>
 <th></th></tr>
 <tr>
-<th rowspan="1">Performance Indicator</th><th rowspan="1">Number Of Samples</th><th colspan="0">Equivalence Acceptance Criteria (90% CI Difference Criteria)</th>
+<th rowspan="1">Performance Indicator</th><th rowspan="1">Number Of Samples</th>
+<th colspan="0">Equivalence Acceptance Criteria (90% CI Difference Criteria)</th>
 <th><a href="#Medication-medication-actual-batch-1" title="
 <Bundle>
     <entry>
@@ -44457,6 +44353,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

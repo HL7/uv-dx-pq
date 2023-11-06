@@ -759,7 +759,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <PlanDefinition>
                 <action>
-                    <title value=&quot;Container Specification&quot;>">Table 1: </span><span>Container Specification</span></div><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+                    <title value=&quot;Container Specification&quot;>">Table 1: </span><span>Container Specification</span></div><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th rowspan="1">Attribute</th><th rowspan="1">Analytical Procedure</th><th colspan="0">Acceptance Criteria</th>
 </tr>
@@ -1841,6 +1841,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

@@ -550,7 +550,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <resource>
             <DeviceDefinition>
                 <id value=&quot;devicedefinition-dxpq-ex1&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq&quot;/>
                 </meta>
@@ -634,7 +633,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <!-- #84 -->
             <DocumentReference>
                 <id value=&quot;documentreference-process-flow-diagram-dxpq-ex1&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq&quot;/>
                 </meta>
@@ -2825,7 +2823,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentRefere
         <resource>
             <DocumentReference>
                 <id value=&quot;documentreference-process-flow-diagram-dxpq-ex1&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq&quot;/>
                 </meta>
@@ -5921,7 +5918,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefiniti
         <resource>
             <DeviceDefinition>
                 <id value=&quot;devicedefinition-dxpq-ex1&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq&quot;/>
                 </meta>
@@ -6663,6 +6659,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;

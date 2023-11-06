@@ -12,15 +12,12 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq 
 
 <Bundle>
-    <!--id value=&quot;substance-batch-analysis&quot;/-->
     <id value=&quot;bundle-batch-analysis-dxpq-ex2-sub&quot;/>
     <meta>
-        <!--profile value=&quot;http://accumulus.org/fhir/dx-cmc/batch-analysis-substance&quot;/-->
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
-        <!-- consider using http://hl7.org/fhir/build/StructureDefinition/title -->
         <fullUrl value=&quot;urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
         <resource>
             <PlanDefinition>
@@ -42,7 +39,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of analysis&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <!-- this is then entire thing -->
                     <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateActionResults&quot;>
@@ -214,7 +210,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Impurities&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -1048,7 +1043,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq&quot;/>
                 </meta>
-                <!-- REMOVE IN INSTANCE -->
                 <instantiatesReference>
                     <reference value=&quot;ObservationDefinition/Description&quot;/>
                 </instantiatesReference>
@@ -1067,10 +1061,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!-- REMOVE IN INSTANCE -->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-                    <!-- ADD IN INSTANCE-->
-                    <!--reference value=&quot;Organization/organization-dxpq-ex1&quot;/-->
                 </performer>
                 <valueCodeableConcept>
                     <text value=&quot;Pass&quot;/>
@@ -3310,14 +3301,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                 ...
                 <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;>">Conclusion: </span><span>The samples have been assessed and the conclusion is...</span></div>
 <div class="summaryHiddenOff"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <PlanDefinition>
-                <action>
-                    ...
-                    <title value=&quot;Batch Specification for Drug Substance&quot;>">Results: </span><span>Batch Specification for Drug Substance</span></div></b><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Results: Batch Specification for Drug Substance</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="3"></th>
 <th colspan="3">Lot Number</th>
@@ -4569,7 +4553,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-te
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq&quot;/>
                 </meta>
-                <!-- REMOVE IN INSTANCE -->
                 <instantiatesReference>
                     <reference value=&quot;ObservationDefinition/Description&quot;/>
                 </instantiatesReference>
@@ -4588,10 +4571,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-te
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!-- REMOVE IN INSTANCE -->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-                    <!-- ADD IN INSTANCE-->
-                    <!--reference value=&quot;Organization/organization-dxpq-ex1&quot;/-->
                 </performer>
                 <valueCodeableConcept>
                     <text value=&quot;Pass&quot;/>
@@ -4670,7 +4650,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-te
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq&quot;/>
                 </meta>
-                <!-- REMOVE IN INSTANCE -->
                 <instantiatesReference>
                     <reference value=&quot;ObservationDefinition/Description&quot;/>
                 </instantiatesReference>
@@ -4689,10 +4668,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-te
                 </subject>
                 <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
                 <performer>
-                    <!-- REMOVE IN INSTANCE -->
                     <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-                    <!-- ADD IN INSTANCE-->
-                    <!--reference value=&quot;Organization/organization-dxpq-ex1&quot;/-->
                 </performer>
                 <valueCodeableConcept>
                     <text value=&quot;Pass&quot;/>
@@ -4703,10 +4679,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-te
             <Observation>
                 ...
                 <performer>
-                    <!-- REMOVE IN INSTANCE -->
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
-                    <!-- ADD IN INSTANCE-->
-                    <!--reference value=&quot;Organization/organization-dxpq-ex1&quot;/-->">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: observation-test-result-dxpq-ex2 fullUrl: urn:uuid:81f552f9-8458-3cf4-8379-eea5417a9de2)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDescription2 fullUrl: urn:uuid:50bf6f69-a3f5-678b-469b-c5df5cca4c86)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDescription3 fullUrl: urn:uuid:145fd3b7-3678-867f-4298-a6c781b86de3)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification fullUrl: urn:uuid:55c89944-60d1-4eea-a2c3-6c53e3622bc5)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification2 fullUrl: urn:uuid:adb51ab6-00a9-1078-69e5-d32c025a857c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification3 fullUrl: urn:uuid:916a0ae2-9c43-72f0-a22a-c5f8ce902125)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay fullUrl: urn:uuid:6deb4306-1193-24ae-a565-f73225652bdd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay2 fullUrl: urn:uuid:f6aabd2f-5902-57e7-6126-eccd9158a5b5)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay3 fullUrl: urn:uuid:32f598e4-a0e0-98dc-41dd-0f8397f953ad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1 fullUrl: urn:uuid:02d9e6be-833c-1c6d-a64a-baa3935c959d)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1-2 fullUrl: urn:uuid:d3e572b7-14fd-744b-4123-58741d75571e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1-3 fullUrl: urn:uuid:fe6ca484-a755-9a0b-a074-b6ee0a907ff8)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2 fullUrl: urn:uuid:da92c71f-a12a-1980-11a3-80e3d1852244)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2-2 fullUrl: urn:uuid:8bf75da1-9221-66fe-6725-c64cb45a57e6)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2-3 fullUrl: urn:uuid:31bfeff4-4a7d-3be5-878e-fb674d3d5487)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3 fullUrl: urn:uuid:732237a9-4b3b-27cc-99ca-6b913e622a29)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3-2 fullUrl: urn:uuid:52afbeb4-4958-a275-a0ca-d70b2b5240ec)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3-3 fullUrl: urn:uuid:7fc395b1-59e4-78be-0512-cf92133c0fac)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified fullUrl: urn:uuid:9c98bd8a-7dda-2f01-0dbd-8c60b60e8572)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified-2 fullUrl: urn:uuid:97b16ff8-8e0f-915a-9d65-7fab108f40c2)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified-3 fullUrl: urn:uuid:0244eafe-3126-909b-7d8d-4253f45f525c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total fullUrl: urn:uuid:10b80cbd-45d3-9be1-63b9-29f04b47376c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total-2 fullUrl: urn:uuid:84f015ac-9572-324f-8013-0b999cc95bbd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total-3 fullUrl: urn:uuid:987daeaa-4c2a-72b7-780f-4a9403163a3e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationMutagenic fullUrl: urn:uuid:ff26533d-88a8-7f18-a275-42dc1373a388)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationMutagenic2 fullUrl: urn:uuid:c99666d2-7962-9a71-58f6-7b2e5aa662f5)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationMutagenic3 fullUrl: urn:uuid:c18e21d3-7113-4d08-4ff3-0c9718596f64)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationEnantiomericPurity fullUrl: urn:uuid:66fdac46-2a6b-a66f-891b-8dcf67cc46c7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationEnantiomericPurity2 fullUrl: urn:uuid:8306cfc5-158f-1a53-a683-048b226060d9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationEnantiomericPurity3 fullUrl: urn:uuid:fc49ad55-07d1-997d-6695-bbff44746e75)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol1 fullUrl: urn:uuid:f8160692-a7a8-3fa6-9f35-e7df35f51ac0)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol1-2 fullUrl: urn:uuid:a531aee9-4c21-06af-352c-a3615b5d957e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol1-3 fullUrl: urn:uuid:033ce81d-5f0d-7a3e-93d3-fc64e122a1fd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol2 fullUrl: urn:uuid:ba8a182e-8571-6cbd-047b-612735d599d2)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol2-2 fullUrl: urn:uuid:0b5b94cc-7a1a-4ada-66c7-954ceb528d67)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol2-3 fullUrl: urn:uuid:6afaacee-11a6-58b2-47df-5f79722c66ac)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater fullUrl: urn:uuid:c2644a86-1684-286e-00e2-dcaf907a8970)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater2 fullUrl: urn:uuid:cb5f6872-6eeb-727a-7c33-f2c438581a1c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater3 fullUrl: urn:uuid:7faaf980-7c10-7b9a-9572-1bacd485824e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size1 fullUrl: urn:uuid:e4d2118a-8562-9eb1-2c14-4e145d2a95fc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size1-2 fullUrl: urn:uuid:ec078717-9512-4db4-77c6-2c7e29d213a6)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size1-3 fullUrl: urn:uuid:05cfb495-2580-561a-688d-ce6ea24c8962)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size2 fullUrl: urn:uuid:d2a60ae5-96b4-3d13-38da-729c652347a3)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size2-2 fullUrl: urn:uuid:c3f51325-2f5f-194c-919b-2219ee1f5c45)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size2-3 fullUrl: urn:uuid:e9d89693-11b1-13ed-5cde-606fc1b8372c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size3 fullUrl: urn:uuid:2659b000-96e2-1b8b-129b-0c00e1074b0f)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size3-2 fullUrl: urn:uuid:10b47328-36fa-343d-5699-5b32b30a6d33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size3-3 fullUrl: urn:uuid:e6780766-317a-382f-92d2-79825f506cc5)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: observation-test-result-dxpq-ex2 fullUrl: urn:uuid:81f552f9-8458-3cf4-8379-eea5417a9de2)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDescription2 fullUrl: urn:uuid:50bf6f69-a3f5-678b-469b-c5df5cca4c86)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDescription3 fullUrl: urn:uuid:145fd3b7-3678-867f-4298-a6c781b86de3)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification fullUrl: urn:uuid:55c89944-60d1-4eea-a2c3-6c53e3622bc5)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification2 fullUrl: urn:uuid:adb51ab6-00a9-1078-69e5-d32c025a857c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationIdentification3 fullUrl: urn:uuid:916a0ae2-9c43-72f0-a22a-c5f8ce902125)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay fullUrl: urn:uuid:6deb4306-1193-24ae-a565-f73225652bdd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay2 fullUrl: urn:uuid:f6aabd2f-5902-57e7-6126-eccd9158a5b5)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationAssay3 fullUrl: urn:uuid:32f598e4-a0e0-98dc-41dd-0f8397f953ad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1 fullUrl: urn:uuid:02d9e6be-833c-1c6d-a64a-baa3935c959d)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1-2 fullUrl: urn:uuid:d3e572b7-14fd-744b-4123-58741d75571e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp1-3 fullUrl: urn:uuid:fe6ca484-a755-9a0b-a074-b6ee0a907ff8)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2 fullUrl: urn:uuid:da92c71f-a12a-1980-11a3-80e3d1852244)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2-2 fullUrl: urn:uuid:8bf75da1-9221-66fe-6725-c64cb45a57e6)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp2-3 fullUrl: urn:uuid:31bfeff4-4a7d-3be5-878e-fb674d3d5487)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3 fullUrl: urn:uuid:732237a9-4b3b-27cc-99ca-6b913e622a29)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3-2 fullUrl: urn:uuid:52afbeb4-4958-a275-a0ca-d70b2b5240ec)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp3-3 fullUrl: urn:uuid:7fc395b1-59e4-78be-0512-cf92133c0fac)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified fullUrl: urn:uuid:9c98bd8a-7dda-2f01-0dbd-8c60b60e8572)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified-2 fullUrl: urn:uuid:97b16ff8-8e0f-915a-9d65-7fab108f40c2)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-unspecified-3 fullUrl: urn:uuid:0244eafe-3126-909b-7d8d-4253f45f525c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total fullUrl: urn:uuid:10b80cbd-45d3-9be1-63b9-29f04b47376c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total-2 fullUrl: urn:uuid:84f015ac-9572-324f-8013-0b999cc95bbd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDegradation-imp-total-3 fullUrl: urn:uuid:987daeaa-4c2a-72b7-780f-4a9403163a3e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationMutagenic fullUrl: urn:uuid:ff26533d-88a8-7f18-a275-42dc1373a388)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationMutagenic2 fullUrl: urn:uuid:c99666d2-7962-9a71-58f6-7b2e5aa662f5)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationMutagenic3 fullUrl: urn:uuid:c18e21d3-7113-4d08-4ff3-0c9718596f64)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationEnantiomericPurity fullUrl: urn:uuid:66fdac46-2a6b-a66f-891b-8dcf67cc46c7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationEnantiomericPurity2 fullUrl: urn:uuid:8306cfc5-158f-1a53-a683-048b226060d9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationEnantiomericPurity3 fullUrl: urn:uuid:fc49ad55-07d1-997d-6695-bbff44746e75)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol1 fullUrl: urn:uuid:f8160692-a7a8-3fa6-9f35-e7df35f51ac0)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol1-2 fullUrl: urn:uuid:a531aee9-4c21-06af-352c-a3615b5d957e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol1-3 fullUrl: urn:uuid:033ce81d-5f0d-7a3e-93d3-fc64e122a1fd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol2 fullUrl: urn:uuid:ba8a182e-8571-6cbd-047b-612735d599d2)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol2-2 fullUrl: urn:uuid:0b5b94cc-7a1a-4ada-66c7-954ceb528d67)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationSolvents-sol2-3 fullUrl: urn:uuid:6afaacee-11a6-58b2-47df-5f79722c66ac)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater fullUrl: urn:uuid:c2644a86-1684-286e-00e2-dcaf907a8970)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater2 fullUrl: urn:uuid:cb5f6872-6eeb-727a-7c33-f2c438581a1c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationWater3 fullUrl: urn:uuid:7faaf980-7c10-7b9a-9572-1bacd485824e)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size1 fullUrl: urn:uuid:e4d2118a-8562-9eb1-2c14-4e145d2a95fc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size1-2 fullUrl: urn:uuid:ec078717-9512-4db4-77c6-2c7e29d213a6)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size1-3 fullUrl: urn:uuid:05cfb495-2580-561a-688d-ce6ea24c8962)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size2 fullUrl: urn:uuid:d2a60ae5-96b4-3d13-38da-729c652347a3)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size2-2 fullUrl: urn:uuid:c3f51325-2f5f-194c-919b-2219ee1f5c45)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size2-3 fullUrl: urn:uuid:e9d89693-11b1-13ed-5cde-606fc1b8372c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size3 fullUrl: urn:uuid:2659b000-96e2-1b8b-129b-0c00e1074b0f)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size3-2 fullUrl: urn:uuid:10b47328-36fa-343d-5699-5b32b30a6d33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: observationParticleSize-size3-3 fullUrl: urn:uuid:e6780766-317a-382f-92d2-79825f506cc5)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -14595,7 +14568,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of analysis&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <!-- this is then entire thing -->
                     <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateActionResults&quot;>
@@ -14744,7 +14716,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of analysis&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <!-- this is then entire thing -->
                     <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateActionResults&quot;>
@@ -14956,7 +14927,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <PlanDefinition>
                 <action>
                     ...
-                    <title value=&quot;Batch Specification for Drug Substance&quot;>">Action: </span><span>Batch Specification for Drug Substance</span></div><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+                    <title value=&quot;Batch Specification for Drug Substance&quot;>">Action: </span><span>Batch Specification for Drug Substance</span></div><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th rowspan="1">Test Procedure</th><th colspan="0">Acceptance Criteria</th>
 <th rowspan="1">Method Reference</th></tr>
@@ -15925,7 +15896,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
         <resource>
             <ObservationDefinition>
                 <id value=&quot;Impurities&quot;/>
-                <!-- REMOVE IN BUNDLE -->
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq&quot;/>
                 </meta>
@@ -17924,7 +17894,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of analysis&quot;/>
-                <!-- new &quot;tabular&quot; style -->
                 <action>
                     <!-- this is then entire thing -->
                     <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateActionResults&quot;>
@@ -19751,6 +19720,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
 	th { background-color: #81BEF7; }
 	td { padding: 3px; font:10pt 'Verdana'; }
 	th { padding: 3px; font:10pt 'Verdana'; } /* seems to need setting explicitly, on site */
+
+	.raised-border-td {
+	  position: relative;
+	}
+	.raised-border-td::before {
+	  content: "";
+	  position: absolute;
+	  top: -1px; /* Raise the border by 1px */
+	  left: 0;
+	  width: 100%;
+	  border-top: 1px solid #000; /* 1px solid black border on the top */
+	}
+	
 	table.rounded-corners {
 	 	/* Change these properties */
 	 	--border: 1px solid black;
