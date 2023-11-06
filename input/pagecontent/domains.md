@@ -113,7 +113,7 @@ Each domain has a page that describes its objective and provides a component dia
 			<area shape='rect' coords='801,367,1233,460' title='Container Closure System' href='container.html' alt='Container Closure System' />
 			<area shape='rect' coords='787,463,1104,571' title='Stability Study' href='stability.htm' alt='Stability Study' />
 			<area shape='rect' coords='809,579,1120,659' title='Specification' href='drug_specification.html' alt='Specification' />
-			<area shape='rect' coords='780,662,1115,754' title='Compatibility' href='compatability.html' alt='Compatibility' />
+			<area shape='rect' coords='780,662,1115,754' title='Compatibility' href='compatibility.html' alt='Compatibility' />
 			<area shape='rect' coords='453,41,745,754' title='Click on the sections' href='domains.html' />
   
   
