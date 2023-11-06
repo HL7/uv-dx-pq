@@ -91,7 +91,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <fullUrl value="urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a65"/>
       <resource>
          <Ingredient>
             <id value="excipient1"/>
@@ -143,7 +143,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-71a1-5a6572e73a65"/>
       <resource>
          <Ingredient>
             <id value="excipient2"/>
@@ -247,7 +247,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
+      <fullUrl value="urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a66"/>
       <resource>
          <Ingredient>
             <id value="excipient4"/>

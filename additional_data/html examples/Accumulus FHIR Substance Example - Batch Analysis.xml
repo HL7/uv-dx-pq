@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Batch Analysis -->
 <Bundle xmlns="http://hl7.org/fhir">
-
-    
-
    <id value="bundle-batch-analysis-dxpq-ex2-sub"/>
    <meta>
-        
-
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq"/>
    </meta>
    <type value="collection"/>
    <entry>
-    	<!-- consider using http://hl7.org/fhir/build/StructureDefinition/title -->
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
@@ -34,7 +28,6 @@
                <reference value="SubstanceDefinition/substance1"/>
             </subjectReference>
             <description value="Narrative description of analysis"/>
-            <!-- new "tabular" style -->
             <action> <!-- this is then entire thing -->
                
                
@@ -197,10 +190,8 @@
       <resource>
          <ObservationDefinition>
             <id value="Impurities"/>
-            
-
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <url value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             <title value="Drug Substance Related Organic impurities"/>
@@ -808,7 +799,7 @@
             <effectiveDateTime value="2020-12"/>
             <!-- start of stability test -->
             <result>
-               <reference value="Observation/observation-simple-dxpq-ex1"/>
+               <reference value="Observation/observation-test-result-dxpq-ex2"/>
             </result>
             <result>
                <reference value="Observation/observationDescription2"/>
@@ -1004,13 +995,11 @@
       <fullUrl value="urn:uuid:81f552f9-8458-3cf4-8379-eea5417a9de2"/>
       <resource>
          <Observation>
-            <id value="observation-simple-dxpq-ex1"/>
+            <id value="observation-test-result-dxpq-ex2"/>
             <!-- was observationDescription -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             </meta>
-            
-
             <instantiatesReference>
                <reference value="ObservationDefinition/Description"/>
             </instantiatesReference>
@@ -1030,13 +1019,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
-				    
-
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-               
-
-               
-
             </performer>
             <valueCodeableConcept>
                <text value="Pass"/>

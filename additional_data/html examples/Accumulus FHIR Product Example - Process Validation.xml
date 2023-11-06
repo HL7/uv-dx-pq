@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Product Process Validation -->
 <Bundle xmlns="http://hl7.org/fhir">
-    
-
    <id value="bundle-product-process-validation-dxpq-ex1"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq"/>
@@ -3961,8 +3959,6 @@
                   </detailRange>
                </target>
             </goal>
-            
-
             <actor>
                <option>
                   <typeReference>
@@ -3977,8 +3973,6 @@
                   </role>
                </option>
             </actor>
-            
-
             <actor>
                <option>
                   <typeReference>

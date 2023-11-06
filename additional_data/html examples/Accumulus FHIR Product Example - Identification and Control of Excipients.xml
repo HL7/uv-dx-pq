@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>
+   <id value="bundle-drug-product-excipients-pq-ex1"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-identication-excipient-control-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq"/>
    </meta>
    <type value="collection"/>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
@@ -98,7 +99,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b"/>
+      <fullUrl value="urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c"/>
       <resource>
          <Organization>
             <id value="manufacturerDGA"/>
@@ -121,7 +122,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6"/>
       <resource>
          <Ingredient>
             <id value="ingredient1"/>
@@ -220,7 +221,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475"/>
       <resource>
          <SubstanceDefinition>
             <id value="dga"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Characterization (Elucidation of Structure) -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="substance-characterization"/>
+   <id value="bundle-drug-substance-characterization-pq-ex1"/>
    <meta>
-      <profile value="http://accumulus.org/fhir/dx-cmc/substance-characterization"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -11,8 +11,6 @@
       <resource>
          <PlanDefinition>
             <id value="characterizationProtocol"/>
-            
-
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Elucidation of Structure"/>
             <type>
@@ -515,7 +513,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
+      <fullUrl value="urn:uuid:fd18b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
             <id value="IonAnalysisNitrogen"/>
@@ -795,7 +793,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35"/>
+      <fullUrl value="urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35"/>
       <resource>
          <Observation>
             <id value="elementalAnalysisFlourine"/>
@@ -1187,7 +1185,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+      <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74"/>
       <resource>
          <Observation>
             <id value="nmr6"/>
@@ -1249,7 +1247,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+      <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74"/>
       <resource>
          <Observation>
             <id value="nmr8"/>
@@ -1306,7 +1304,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+      <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74"/>
       <resource>
          <Observation>
             <id value="nmr9"/>
@@ -1363,7 +1361,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74"/>
+      <fullUrl value="urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74"/>
       <resource>
          <Observation>
             <id value="nmr10"/>
@@ -1603,7 +1601,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34"/>
+      <fullUrl value="urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34"/>
       <resource>
          <Observation>
             <id value="fig10molecularstructure"/>

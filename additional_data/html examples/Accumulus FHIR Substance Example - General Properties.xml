@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance General Properties -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="substance-properties"/>
+   <id value="bundle-drug-substance-general-properties-pq-ex1"/>
    <meta>
-      <profile value="http://accumulus.org/fhir/dx-cmc/substance-properties"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
    </meta>
    <type value="collection"/>
    <entry>

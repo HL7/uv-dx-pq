@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Specification -->
 <Bundle xmlns="http://hl7.org/fhir">
- 
-    
-
    <id value="bundle-drug-substance-specification-dxpq-ex1"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
-      
-
    </meta>
    <type value="collection"/>
    <entry>
@@ -23,7 +18,6 @@
                <reference value="SubstanceDefinition/substance1"/>
             </subjectReference>
             <description value="Narrative description of specifications"/>
-            <!-- new "tabular" style -->
             <action> <!-- this is then entire thing -->
                <title value="Specification for Drug Substance"/>
                <code>

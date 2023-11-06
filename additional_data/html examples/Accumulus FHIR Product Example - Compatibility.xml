@@ -208,6 +208,7 @@
       </resource>
    </entry>
    <entry>
+      <fullUrl value="urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
       <resource>
          <ObservationDefinition>
             <id value="CEX-HPLCAcidicPeak"/>
@@ -603,7 +604,7 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e7"/>
+      <fullUrl value="urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e8"/>
       <resource>
          <Observation>
             <id value="CEX-Acidic-1"/>

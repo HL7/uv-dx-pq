@@ -2,10 +2,10 @@
 
 <Bundle xmlns="http://hl7.org/fhir">
     <!-- Product  Microbiological Attributes -->
-   <id value="bundle-batch-microbiological-dxpq-ex1-prod"/>
-   <!--meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq"/>
-    </meta-->
+   <id value="bundle-drug-product-microbiological-attributes-pq-ex1"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
+   </meta>
    <type value="collection"/>
    <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
    <entry>

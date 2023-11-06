@@ -111,7 +111,6 @@
             <!--subjectCanonical value="MedicinalProductDefinition/product"/-->
             <!-- this isn't followed at the moment, if it isnt in the file -->
             <description value="Description of the study study plan which includes tests, time points, storage conditions, method"/>
-            <!-- new "tabular" style -->
             <action>
                <title value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbatolol"/>
                <action> <!-- TODO add codes here for the different levels? -->
@@ -328,10 +327,6 @@
                         <definitionCanonical value="ActivityDefinition/activityLongTerm30X-36"/>
                      </action>
                   </action>
-                  
-
-                  
-
                </action>
                <!-- end of long term -->
                <action>
@@ -544,10 +539,6 @@
                         <title value="-"/>
                      </action>
                   </action>
-                  
-
-                  
-
                </action>
                <!-- end of accelerated -->
             </action>
@@ -560,8 +551,6 @@
       <resource>
          <SpecimenDefinition>
             <id value="specimenDefStoredAt30"/>
-            
-
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             </meta>
@@ -690,17 +679,11 @@
          </ActivityDefinition>
       </resource>
    </entry>
-   
-
-   
-
    <entry>
       <fullUrl value="urn:uuid:18762cff-9e29-6e71-1184-e9202fee8cba"/>
       <resource>
          <ObservationDefinition>
             <id value="longTerm30X"/>
-            
-
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
@@ -869,8 +852,6 @@
       <resource>
          <ObservationDefinition>
             <id value="longTerm30Y"/>
-            
-
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
@@ -920,8 +901,6 @@
       <resource>
          <SpecimenDefinition>
             <id value="specimenDefStoredAt40"/>
-            
-
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             </meta>

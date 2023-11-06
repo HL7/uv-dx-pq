@@ -15,9 +15,9 @@
       <resource>
          <DiagnosticReport>
                 <!-- <id value="studyResultsReport"/>-->
-            <id value="diagnosticreport-stability-study-results-dxpq-ex1"/>
+            <id value="diagnosticreport-drug-analysis-pq-stability-prod"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
@@ -50,8 +50,6 @@
                   <system value="http://accumulus.org/fhir/code/reportType"/>
                   <code value="111"/>
                   <display value="Stability Study Report - 18 months"/>
-                  
-
                </coding>
             </code>
             <effectiveDateTime value="2020-12"> <!-- start of stability test -->
@@ -66,66 +64,34 @@
                   </valueCodeableConcept>
                </extension>
             </effectiveDateTime>
-            
-
             <performer>
                <reference value="Organization/tester"/>
             </performer>
-            
-
-            
-
             <result>
-                    
-
-               <reference value="Observation/LongTerm25C-initial-1"/>
-               
-
-               
-
+               <reference value="Observation/observation-test-result-longterm25c-initial-1"/>
             </result>
-            
-
             <result>
                <reference value="Observation/LongTerm25C-initial-2"/>
             </result>
-            
-
             <result>
                <reference value="Observation/LongTerm25C-initial-3"/>
             </result>
             <!-- skipping middle months -->
-            
-
             <result>
                <reference value="Observation/LongTerm25C-18m-1"/>
             </result>
-            
-
             <result>
                <reference value="Observation/LongTerm25C-18m-2"/>
             </result>
-            
-
             <result>
                <reference value="Observation/LongTerm25C-18m-3"/>
             </result>
-            
-
-            <!--result>
-                    <reference value="Observation/LongTerm25C-24m-1"/>
-                </result-->
             <!-- Accelerated -->
-            
-
             <result>
                <reference value="Observation/Accelerated40C-3-1"/>
             </result>
             <!-- skipping rest of Accelerated -->
             <conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 18 months."/>
-            
-
-            <!--conclusion value="The samples have been assessed and the conclusion is that the shelf life can be 24 months."/-->
          </DiagnosticReport>
       </resource>
    </entry>
@@ -158,7 +124,6 @@
                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </subjectReference>
             <description value="Narrative description of Stability Study"/>
-            <!-- new "tabular" style -->
             <action> <!-- this is then entire thing -->
                <title value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbat Tablets, 20 mg"/>
                <action> <!-- TODO add codes here for the different levels? -->
@@ -188,12 +153,10 @@
                      <action> <!-- the categories to do at this step -->
                         <title value="XYZ"/>
                         <!-- Long term -->
-                        <definitionCanonical value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                        <definitionCanonical value="ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
                      </action>
                   </action>
                   <!-- 3 months -->
-                  
-
                   <!-- todo put comments back in? -->
                   <action>
                      <title value="3"/>
@@ -222,8 +185,6 @@
                      </action>
                   </action>
                   <!-- 6 months -->
-                  
-
                   <action>
                      <title value="6"/>
                      <timingTiming>
@@ -251,8 +212,6 @@
                      </action>
                   </action>
                   <!-- 9 months -->
-                  
-
                   <action>
                      <title value="9"/>
                      <timingTiming>
@@ -280,8 +239,6 @@
                      </action>
                   </action>
                   <!-- 12 months -->
-                  
-
                   <action>
                      <title value="12"/>
                      <timingTiming>
@@ -309,8 +266,6 @@
                      </action>
                   </action>
                   <!-- 18 months -->
-                  
-
                   <action>
                      <title value="18"/>
                      <timingTiming>
@@ -338,8 +293,6 @@
                      </action>
                   </action>
                   <!-- 24 months -->
-                  
-
                   <action>
                      <title value="24"/>
                      <timingTiming>
@@ -369,8 +322,6 @@
                </action>
                <!-- end of long term -->
                <!-- 0 months is first one - but results for this are not needed, because and zero months is the same for both long term and accelerated -->
-               
-
                <action>
                   <title value="Accelerated"/>
                   <description value="40°C/75% RH"/>
@@ -631,9 +582,11 @@
       <fullUrl value="urn:uuid:4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
       <resource>
          <ActivityDefinition>
-            <id value="activityLongTerm25XYZ-Initial"/>
+                
+
+            <id value="activitydefinition-test-longterm25c-25xyz-initial"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <url value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <title value="Long-term - 25°C/60% RH - XYZ"/>
@@ -714,25 +667,15 @@
                <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
             </specimen>
             <hasMember>
-                    
-
                <reference value="ObservationDefinition/Description"/>
                
 
-               
-
-               
-
             </hasMember>
-            
-
             <hasMember>
                <reference value="ObservationDefinition/Degradation"/>
             </hasMember>
-            
-
             <hasMember>
-               <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+               <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -744,7 +687,7 @@
          <ObservationDefinition>
             <id value="Description"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <url value="http://example-server.com/fhir/ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
             <title value="Description"/>
@@ -773,7 +716,7 @@
          <ObservationDefinition>
             <id value="Degradation"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <url value="http://example-server.com/fhir/ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
             <title value="Degradation Products by HPLC (% w/w)"/>
@@ -867,9 +810,9 @@
       <resource>
          <ObservationDefinition>
                 <!-- <id value="Water"/> -->
-            <id value="observationdefinition-simple-dxpq-ex1"/>
+            <id value="observationdefinition-test-method-dxpq-ex2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <url value="http://example-server.com/fhir/ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             <title value="Water Content (% w/w) (Mean)"/>
@@ -925,7 +868,7 @@
          <ObservationDefinition>
             <id value="Microbiological"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <url value="http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
             <title value="Microbiological"/>
@@ -976,7 +919,7 @@
          <ObservationDefinition>
             <id value="Uniformity"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-simple-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             </meta>
             <url value="http://example-server.com/fhir/ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
             <title value="Uniformity of dosage"/>
@@ -1082,7 +1025,7 @@
                <reference value="ObservationDefinition/Description"/>
             </hasMember>
             <hasMember>
-               <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+               <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
             </hasMember>
             <!-- can have others -->
          </ObservationDefinition>
@@ -1206,10 +1149,18 @@
       <fullUrl value="urn:uuid:6fabbf78-9678-8030-485f-b149956308d5"/>
       <resource>
          <Observation>
-            <id value="LongTerm25C-initial-1"/>
+                
+
+            <id value="observation-test-result-longterm25c-initial-1"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            </meta>
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Description"/>
+                  <meta>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+                  </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Description"/>
                   </instantiatesReference>
@@ -1236,14 +1187,10 @@
             </contained>
             <contained>
                <Observation>
-                        
-
                   <id value="observation-test-result-dxpq-ex1"/>
                   <meta>
                      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
                   </meta>
-                  
-
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
                   </instantiatesReference>
@@ -1261,13 +1208,7 @@
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
-                            
-
                      <reference value="Organization/tester"/>
-                     
-
-                     
-
                   </performer>
                   <valueQuantity>
                      <value value="0.101"/>
@@ -1293,6 +1234,9 @@
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-imp2"/>
+                  <meta>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+                  </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
                   </instantiatesReference>
@@ -1335,6 +1279,9 @@
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-imp3"/>
+                  <meta>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+                  </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
                   </instantiatesReference>
@@ -1377,6 +1324,9 @@
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-impUnspecified"/>
+                  <meta>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+                  </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
                   </instantiatesReference>
@@ -1420,6 +1370,9 @@
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-impTotal"/>
+                  <meta>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+                  </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Degradation"/>
                   </instantiatesReference>
@@ -1462,8 +1415,11 @@
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Water"/>
+                  <meta>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+                  </meta>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+                     <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -1491,6 +1447,9 @@
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Microbiological"/>
+                  <meta>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+                  </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Microbiological"/>
                   </instantiatesReference>
@@ -1517,6 +1476,9 @@
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Uniformity"/>
+                  <meta>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+                  </meta>
                   <instantiatesReference>
                      <reference value="ObservationDefinition/Uniformity"/>
                   </instantiatesReference>
@@ -1542,7 +1504,7 @@
             </contained>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                  <reference value="ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -1706,7 +1668,7 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                  <reference value="ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -1858,7 +1820,7 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                  <reference value="ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2230,7 +2192,7 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Water"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+                     <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
@@ -2560,14 +2522,6 @@
          </Specimen>
       </resource>
    </entry>
-   
-
-   
-
-   
-
-   
-
    <!-- Section 11 - Stability Study - Results - Test Result - Accelerated XYZ - Initial - on batch 1 -->
    <entry>
       <fullUrl value="urn:uuid:72e0640b-094b-909e-5268-3dee92af4bbd"/>
@@ -2818,7 +2772,7 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Water"/>
                   <instantiatesReference>
-                     <reference value="ObservationDefinition/observationdefinition-simple-dxpq-ex1"/>
+                     <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
                   </instantiatesReference>
                   <status value="final"/>
                   <code>
