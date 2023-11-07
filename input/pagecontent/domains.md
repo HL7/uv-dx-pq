@@ -33,8 +33,8 @@ Each domain has a page that describes its objective and provides a component dia
   </tr>
   <tr>
     <td class="tg-0lax">2. Composition</td>
-    <td class="tg-0lax"><i>Not Applicable</i></td>
-    <td class="tg-0lax">3.2.P.1 Description and Composition of the Drug Product</td>
+    <td class="tg-0lax">3.2.S.5 Reference Standards or Materials</td>
+    <td class="tg-0lax">3.2.P.1 Description and Composition of the Drug Product<br>3.2.P.6 Reference Standards or Materials</td>
   </tr>
   <tr>
     <td class="tg-0lax">3. Impurities</td>
