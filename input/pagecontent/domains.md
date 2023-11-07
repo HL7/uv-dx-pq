@@ -20,82 +20,106 @@ Each domain has a page that describes its objective and provides a component dia
 <thead>
   <tr>
     <th class="tg-0lax"><b>FHIR IG Domain</b></th>
-    <th class="tg-0lax"><b>Drug Substance</b></th>
     <th class="tg-0lax"><b>Drug Product</b></th>
+        <th class="tg-0lax"><b>Drug Substance</b></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-0lax">1. Identification</td>
-    <td class="tg-0lax">3.2.S.1.3 – General Properties (in 3.2.S.1 General Information)<br> 3.2.S.3.1 – Elucidation of Structure and Other Characteristics (in 3.2.S.3 Characterisation ) </td>
-    <td class="tg-0lax">3.2.P.2.2 Drug Product & 3.2.P.2.5 Microbiological Attributes (in 3.2.P.2 Pharmaceutical Development)<br>3.2.P.4.5 Excipients of Human or Animal Origin & 3.2.P.4.6 Novel Excipients (in 3.2.S.4 Control of Drug Substance)
-</td>
+    <td class="tg-0lax">3.2.P.2 Pharmaceutical Development
+        <br>&nbsp;&nbsp;&nbsp;3.2.P.2.2 Drug Product 
+        <br>&nbsp;&nbsp;&nbsp;3.2.P.2.5 Microbiological Attributes
+    <br>3.2.P.4 Control of Excipients  
+        <br>&nbsp;&nbsp;&nbsp;3.2.P.4.5 Excipients of Human or Animal Origin 
+        <br>&nbsp;&nbsp;&nbsp;3.2.P.4.6 Novel Excipients</td>
+    <td class="tg-0lax">3.2.S.1 General Information
+        <br>&nbsp;&nbsp;&nbsp;3.2.S.1.3 – General Properties
+    <br>3.2.S.3 Characterisation
+        <br>&nbsp;&nbsp;&nbsp;3.2.S.3.1 – Elucidation of Structure and Other Characteristics</td>
   </tr>
   <tr>
     <td class="tg-0lax">2. Composition</td>
-    <td class="tg-0lax">3.2.S.5 Reference Standards or Materials</td>
     <td class="tg-0lax">3.2.P.1 Description and Composition of the Drug Product<br>3.2.P.6 Reference Standards or Materials</td>
+    <td class="tg-0lax">3.2.S.5 Reference Standards or Materials</td>
   </tr>
   <tr>
     <td class="tg-0lax">3. Impurities</td>
-    <td class="tg-0lax">3.2.S.3.2 Impurities (in 3.2.S.3 Characterisation)</td>
-    <td class="tg-0lax">3.2.P.5.5 Characterisation of Impurities (in 3.2.P.5 Control of Drug Product)</td>
+    <td class="tg-0lax">3.2.P.5 Control of Drug Product
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.5 Characterisation of Impurities</td>
+    <td class="tg-0lax">3.2.S.3 Characterisation
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.3.2 Impurities</td>
   </tr>
   <tr>
     <td class="tg-0lax">4. Organizations</td>
-    <td class="tg-0lax">3.2.S.2.1 Manufacturer(s) (in 3.2.S.2 Manufacture)</td>
-    <td class="tg-0lax">3.2.P.3.1 Manufacturer(s) (in 3.2.P.3 Manufacture)</td>
+    <td class="tg-0lax">3.2.P.3 Manufacture
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.1 Manufacturer(s)</td>
+    <td class="tg-0lax">3.2.S.2 Manufacture
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.2.1 Manufacturer(s)</td>
   </tr>
   <tr>
     <td class="tg-0lax">5. Batch or Lot Information</td>
-    <td class="tg-0lax">3.2.S.4.4 Batch Analyses</td>
     <td class="tg-0lax">3.2.P.5.4 Batch Analyses</td>
+    <td class="tg-0lax">3.2.S.4.4 Batch Analyses</td>
   </tr>
   <tr>
     <td class="tg-0lax">6. Batch Analysis</td>
-    <td class="tg-0lax">3.2.S.4.4 Batch Analyses (in 3.2.S.4 Control of Drug Substance)</td>
-    <td class="tg-0lax">3.2.P.5.4 Batch Analyses (in 3.2.P.5 Control of Drug Product)</td>
+        <td class="tg-0lax">3.2.P.5 Control of Drug Product
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.4 Batch Analyses</td>
+    <td class="tg-0lax">3.2.S.4 Control of Drug Substance
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.4.4 Batch Analyses</td>
   </tr>
   <tr>
     <td class="tg-0lax">7. Batch Formula</td>
+    <td class="tg-0lax">3.2.P.3 Manufacture
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.2 Batch Formula</td>
     <td class="tg-0lax"><i>Not Applicable</i></td>
-    <td class="tg-0lax">3.2.P.3.2 Batch Formula (in 3.2.P.3 Manufacture)</td>
   </tr>
   <tr>
     <td class="tg-0lax">8. Manufacturing Process</td>
-    <td class="tg-0lax">3.2.S.2.2 Description of Manufacturing Process and Process Controls (in 3.2.S.2 Manufacture)</td>
-    <td class="tg-0lax">3.2.P.3.3 Description of Manufacturing Process and Process Controls (in 3.2.P.3 Manufacture)</td>
+    <td class="tg-0lax">3.2.P.3 Manufacture
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.3 Description of Manufacturing Process and Process Controls</td>
+    <td class="tg-0lax">3.2.S.2 Manufacture
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.2.2 Description of Manufacturing Process and Process Controls</td>
   </tr>
   <tr>
     <td class="tg-0lax">9. Process Validation</td>
-    <td class="tg-0lax">3.2.S.2.5 Process Validation and/or Evaluation (in 3.2.S.2 Manufacture)</td>
-    <td class="tg-0lax">3.2.P.3.5 Process Validation and/or Evaluation (in 3.2.P.3 Manufacture)</td>
+    <td class="tg-0lax">3.2.P.3 Manufacture
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.5 Process Validation and/or Evaluation</td>
+    <td class="tg-0lax">3.2.S.2 Manufacture
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.2.5 Process Validation and/or Evaluation</td>
   </tr>
   <tr>
     <td class="tg-0lax">10. Analytical Procedures</td>
-    <td class="tg-0lax">3.2.S.4.2 Analytical Procedures (in 3.2.S.4 Control of Drug Substance)</td>
-    <td class="tg-0lax">3.2.P.5.2 Analytical Procedures (in 3.2.P.5 Control of Drug Product)</td>
+    <td class="tg-0lax">3.2.P.5 Control of Drug Product
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.2 Analytical Procedures</td>
+    <td class="tg-0lax">3.2.S.4 Control of Drug Substance
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.4.2 Analytical Procedures</td>
   </tr>
   <tr>
     <td class="tg-0lax">11. Container Closure System</td>
-    <td class="tg-0lax">3.2.S.6 Container Closure System</td>
     <td class="tg-0lax">3.2.P.7 Container Closure System</td>
+    <td class="tg-0lax">3.2.S.6 Container Closure System</td>
   </tr>
   <tr>
     <td class="tg-0lax">12. Stability Study</td>
-    <td class="tg-0lax">3.2.S.7.3 Stability Data (in 3.2.S.7 Stability)</td>
-    <td class="tg-0lax">3.2.P.8.3 Stability Data (in 3.2.P.8 Stability)</td>
+    <td class="tg-0lax">3.2.P.8 Stability
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.8.3 Stability Data</td>
+    <td class="tg-0lax">3.2.S.7 Stability
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.7.3 Stability Data</td>
   </tr>
   <tr>
     <td class="tg-0lax">13. Drug Specifications</td>
-    <td class="tg-0lax">3.2.S.4.1 Specification (in 3.2.S.4 Control of Drug Substance)</td>
-    <td class="tg-0lax">3.2.P.5.1 Specification(s) (in 3.2.P.5 Control of Drug Product)</td>
+    <td class="tg-0lax">3.2.P.5 Control of Drug Product
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.1 Specification(s)</td>
+    <td class="tg-0lax">3.2.S.4 Control of Drug Substance
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.4.1 Specification</td>
   </tr>
   <tr>
     <td class="tg-0lax">14. Compatibility</td>
+    <td class="tg-0lax">3.2.P.2 Pharmaceutical Development
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.2.6 Compatibility</td>
     <td class="tg-0lax"><i>Not Applicable</i></td>
-    <td class="tg-0lax">3.2.P.2.6 Compatibility (in 3.2.P.2 Pharmaceutical Development)
-</td>
   </tr>
 </tbody>
 </table>
