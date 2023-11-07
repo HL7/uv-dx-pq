@@ -1,6 +1,6 @@
 The Quality sections of regulatory applications are organized into a table of contents that includes sections and sub-sections under the titles “Drug Substance” and “Drug Product”. The structure is defined in the *Common Technical Document for the Registration of Pharmaceuticals for Human Use*, or CTD (see [References](best_practices.html)). This structure is designed for unstructured PDF and Word documents.
 
-Rather than recreating the legacy table of contents format in FHIR, pharmaceutical quality data represented by FHIR in this guide are organized into 14 new domains (see Figure below). These 14 domains are designed to maximize the use of structured data and deliver benefits in terms of flexibility, efficiency, and data reuse.
+Rather than recreating the legacy table of contents format in FHIR, pharmaceutical quality data represented by FHIR in this guide are organized into 14 new domains (see figure below). These 14 domains are designed to maximize the use of structured data and deliver benefits in terms of flexibility, efficiency, and data reuse.
 
 Each domain has a page that describes its objective and provides a component diagram (where applicable), description of components, and examples.
 
@@ -27,13 +27,14 @@ Each domain has a page that describes its objective and provides a component dia
 <tbody>
   <tr>
     <td class="tg-0lax">1. Identification</td>
-    <td class="tg-0lax">3.2.S.1 General Information</td>
-    <td class="tg-0lax">3.2.P.1 Description and Composition of the Drug Product</td>
+    <td class="tg-0lax">3.2.S.1.3 – General Properties (in 3.2.S.1 General Information)<br> 3.2.S.3.1 – Elucidation of Structure and Other Characteristics (in 3.2.S.3 Characterisation ) </td>
+    <td class="tg-0lax">3.2.P.2.2 Drug Product & 3.2.P.2.5 Microbiological Attributes (in 3.2.P.2 Pharmaceutical Development)<br>3.2.P.4.5 Excipients of Human or Animal Origin & 3.2.P.4.6 Novel Excipients (in 3.2.S.4 Control of Drug Substance)
+</td>
   </tr>
   <tr>
     <td class="tg-0lax">2. Composition</td>
-    <td class="tg-0lax">3.2.S.5 Reference Standards or Materials</td>
-    <td class="tg-0lax">3.2.P.6 Reference Standards or Materials</td>
+    <td class="tg-0lax"><i>Not Applicable</i></td>
+    <td class="tg-0lax">3.2.P.1 Description and Composition of the Drug Product</td>
   </tr>
   <tr>
     <td class="tg-0lax">3. Impurities</td>
