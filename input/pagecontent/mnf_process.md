@@ -1,5 +1,5 @@
 ### Objective
-Provide a manufacturing process overview and details about unit operations, process parameters, and in-process controls.
+Provide a manufacturing process description and details about unit operations, process parameters, and in-process controls.
 
 ### Component Diagram
 <table>

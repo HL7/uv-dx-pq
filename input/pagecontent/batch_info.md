@@ -1,5 +1,5 @@
 ### Objective
-Provide details about each drug substance and drug product batch with identifiers.
+Provide details about batch(es) of the  drug substance and drug product with identifiers.
 
 ### Component Diagram
 <table>

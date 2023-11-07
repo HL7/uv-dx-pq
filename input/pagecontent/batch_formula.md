@@ -1,5 +1,5 @@
 ### Objective
-Provide details about drug substance and drug product master batch properties and formula components.
+Provide details about drug product master batch properties and formula.
 
 ### Component Diagram
 <table>

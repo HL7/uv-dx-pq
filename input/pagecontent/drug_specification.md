@@ -1,5 +1,5 @@
 ### Objective
-Provide details about drug substance or drug product specification.
+Provide details about drug substance or drug product release and stability specification (tests, acceptance criteria).
 
 ### Component Diagram
 <table>

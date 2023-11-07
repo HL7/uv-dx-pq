@@ -1,5 +1,5 @@
 ### Objective
-Provides details about a stability study, including protocol (tests and acceptance criteria), test results, and drug substance or drug product batches involved in the testing.
+Provide details about a stability study including stability study design (tests and acceptance criteria), drug substance or drug product batches involved, test results, and conclusion.
 
 ### Component Diagram
 <table>
