@@ -67,7 +67,7 @@ The scope of this implementation guide only covers data exchange activities for 
 ### Project Team
 *Biopharmaceutical industry:*
 - Rita Algorri, Amgen Inc.
-- Sheetal Gaiki, Janssen Inc.
+- Sheetal Gaiki, Johnson & Johnson
 - Mike Abernathy, Amgen Inc.
 - Craig Anderson, Pfizer Inc.
 - Colin Wood, AstraZeneca 
