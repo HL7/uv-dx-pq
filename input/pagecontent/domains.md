@@ -59,12 +59,14 @@ Each domain has a page that describes its objective and provides a component dia
   </tr>
   <tr>
     <td class="tg-0lax">5. Batch or Lot Information</td>
-    <td class="tg-0lax">3.2.P.5.4 Batch Analyses</td>
-    <td class="tg-0lax">3.2.S.4.4 Batch Analyses</td>
+    <td class="tg-0lax">3.2.P.5 Control of Drug Product
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.4 Batch Analyses</td>
+    <td class="tg-0lax">3.2.S.4 Control of Drug Substance
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.4.4 Batch Analyses</td>
   </tr>
   <tr>
     <td class="tg-0lax">6. Batch Analysis</td>
-        <td class="tg-0lax">3.2.P.5 Control of Drug Product
+    <td class="tg-0lax">3.2.P.5 Control of Drug Product
     <br>&nbsp;&nbsp;&nbsp;3.2.P.5.4 Batch Analyses</td>
     <td class="tg-0lax">3.2.S.4 Control of Drug Substance
     <br>&nbsp;&nbsp;&nbsp;3.2.S.4.4 Batch Analyses</td>
