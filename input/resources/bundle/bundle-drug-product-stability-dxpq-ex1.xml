@@ -196,7 +196,7 @@
                      </timingTiming>
                      <action>
                         <title value="X"/>
-                        <!--ActivityDefinition/activitydefinition-stability-test-dxpq-ex1-->
+                        <!--ActivityDefinition/activitydefinition-test-dxpq-ex1-->
                         <definitionCanonical value="ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
                      </action>
                   </action>
@@ -561,10 +561,10 @@
       <resource>
          <ActivityDefinition>
                 <!-- <id value="activityLongTerm25X-3"/>-->
-                <!--activitydefinition-stability-test-dxpq-ex1-->
+                <!--activitydefinition-test-dxpq-ex1-->
             <id value="610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2-->
             <url value="http://example-server.com/fhir/ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
@@ -584,7 +584,7 @@
 				<!--activityLongTerm25X-6-->
             <id value="d99c1b63-2d32-4887-8157-525cc8ae4732"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732-->
             <url value="http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
@@ -602,7 +602,7 @@
 				<!--activityLongTerm25X-9-->
             <id value="38704856-0acf-95f0-000f-a933b6862fa0"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0-->
             <url value="http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
@@ -643,7 +643,7 @@
 				<!--activityLongTerm25XY-12-->
             <id value="f19a68b0-4ba1-7288-635e-12783035935b"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b-->
             <url value="http://example-server.com/fhir/ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b"/>
@@ -663,7 +663,7 @@
 				<!--activityLongTerm25XY-18-->
             <id value="ce2df6ab-5087-435c-35cb-a84572e756a2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2-->
             <url value="http://example-server.com/fhir/ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
@@ -683,7 +683,7 @@
                 <!--activityLongTerm25XY-24-->
             <id value="cf2df6ab-5087-435c-35cb-a84572e756a2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2-->
             <url value="http://example-server.com/fhir/ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2"/>
@@ -1038,7 +1038,7 @@
 				<!--activityAccelerated40X-3-->
             <id value="096e3f32-798e-6792-76ad-4ea783521c50"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/096e3f32-798e-6792-76ad-4ea783521c50-->
             <url value="http://example-server.com/fhir/ActivityDefinition/096e3f32-798e-6792-76ad-4ea783521c50"/>
@@ -1056,7 +1056,7 @@
 			    <!--activityAccelerated40X-6-->
             <id value="77f86b13-8193-3df7-8362-ab5e79ba541d"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/77f86b13-8193-3df7-8362-ab5e79ba541d-->
             <url value="http://example-server.com/fhir/ActivityDefinition/77f86b13-8193-3df7-8362-ab5e79ba541d"/>
@@ -1074,7 +1074,7 @@
             	<!--activityAccelerated40XYZ-Initial-->
             <id value="6b96124b-1a44-0b6b-6783-d6c49360230b"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             </meta>
             <!--http://example-server.com/fhir/ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b-->
             <url value="http://example-server.com/fhir/ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>

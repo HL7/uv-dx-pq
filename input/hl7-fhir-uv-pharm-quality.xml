@@ -171,8 +171,8 @@
                 <reference value="StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
                 <display value="BundleDrugSubstanceGeneralPropertiesPq"/>
             </reference>
-            <name value="Bundle – Drug Product General Properties PQ"/>
-            <description value="Bundle – Drug Product General Properties PQ"/>
+            <name value="Bundle – Drug Substance General Properties PQ"/>
+            <description value="Bundle – Drug Substance General Properties PQ"/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
@@ -247,6 +247,17 @@
         <!--        Specification Profiles-->
         <resource>
             <reference>
+                <reference value="StructureDefinition/Bundle-drug-product-specification-dxpq"/>
+                <display value="BundleDrugProductSpecificationDxPq"/>
+            </reference>
+            <name value="Bundle – Drug Product Specification dx-PQ"/>
+            <description value="Bundle – Drug Product Specification dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b12-specification"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
                 <display value="BundleDrugSubstanceSpecificationDxPq"/>
             </reference>
@@ -256,18 +267,19 @@
             <groupingId value="b12-specification"/>
         </resource>
 
+        <!--        Specification Examples-->
+        
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-specification-dxpq"/>
-                <display value="BundleDrugProductSpecificationDxPq"/>
+                <reference value="Bundle/bundle-drug-product-specification-dxpq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Product Specification dx-PQ"/>
-            <description value="Bundle – Drug Product Specification dx-PQ"/>
-            <isExample value="false"/>
+            <name value="bundle-drug-product-specification-dxpq-ex1"/>
+            <description value="Bundle – Drug Product Specification dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
             <groupingId value="b12-specification"/>
         </resource>
-
-        <!--        Specification Examples-->
+        
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-specification-dxpq-ex1"/>
@@ -279,30 +291,8 @@
             <groupingId value="b12-specification"/>
         </resource>
 
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-product-specification-dxpq-ex1"/>
-            </reference>
-            <name value="bundle-drug-product-specification-dxpq-ex1"/>
-            <description value="Bundle – Drug Product Specification dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
-            <groupingId value="b12-specification"/>
-        </resource>
-
         <!--Stability-->
         <!--        Stability Profiles-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
-                <display value="BundleDrugSubstanceStabilityDxPq"/>
-            </reference>
-            <name value="Bundle – Drug Substance Stability dx-PQ"/>
-            <description value="Bundle – Drug Substance Stability dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-stability-dxpq"/>
@@ -313,85 +303,20 @@
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-
-        <!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/ResearchStudy-stability-dxpq"/>
-                <display value="ResearchStudyStabilityDxPq"/>
-            </reference>
-            <name value="ResearchStudy - Stability dx-PQ"/>
-            <description value="ResearchStudy - Stability dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlanDefinition-stability-study-protocol-dxpq"/>
-                <display value="PlanDefinitionStabilityStudyProtocolDxPq"/>
-            </reference>
-            <name value="PlanDefinition - Stability Study Protocol dx-PQ"/>
-            <description value="PlanDefinition - Stability Study Protocol dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
-                <display value="DiagnosticReportStabilityStudyResultsDxPq"/>
-            </reference>
-            <name value="DiagnosticReport - Stability Study Results dx-PQ"/>
-            <description value="DiagnosticReport - Stability Study Results dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
-
+        
         <resource>
             <reference>
-                <reference value="StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
-                <display value="ActivityDefinitionStabilityTestDxPq"/>
+                <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
+                <display value="BundleDrugSubstanceStabilityDxPq"/>
             </reference>
-            <name value="ActivityDefinition - Stability Test dx-PQ"/>
-            <description value="Section 5.2 - Unit Operation/Equipment Information"/>
+            <name value="Bundle – Drug Substance Stability dx-PQ"/>
+            <description value="Bundle – Drug Substance Stability dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
+        
 
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
-                <display value="SpecimenDefinitionStabilityDxPq"/>
-            </reference>
-            <name value="SpecimenDefinition - Stability dx-PQ"/>
-            <description value="TBD"/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Specimen-stability-dxpq"/>
-                <display value="SpecimenStabilityDxPq"/>
-            </reference>
-            <name value="Specimen - Stability dx-PQ"/>
-            <description value="TBD"/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
         <!--        Stability Examples-->
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-substance-stability-dxpq-ex1"/>
-            </reference>
-            <name value="bundle-drug-substance-stability-dxpq-ex1"/>
-            <description value="Bundle – Drug Substance Stability dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-product-stability-dxpq-ex1"/>
@@ -402,41 +327,17 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-
+        
         <resource>
             <reference>
-                <reference value="ActivityDefinition/activitydefinition-stability-test-dxpq-ex1"/>
+                <reference value="Bundle/bundle-drug-substance-stability-dxpq-ex1"/>
             </reference>
-            <name value="activitydefinition-stability-test-dxpq-ex1"/>
-            <description value="ActivityDefinition - Stability Test dx-PQ - Example 1"/>
+            <name value="bundle-drug-substance-stability-dxpq-ex1"/>
+            <description value="Bundle – Drug Substance Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-stability-test-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-
-        <resource>
-            <reference>
-                <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
-            </reference>
-            <name value="specimendefinition-stability-dxpq-ex1"/>
-            <description value="SpecimenDefinition - Stability dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-
-
-        <resource>
-            <reference>
-                <reference value="Specimen/specimen-stability-dxpq-ex1"/>
-            </reference>
-            <name value="specimen-stability-dxpq-ex1"/>
-            <description value="Specimen - Stability dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-
 
         <!--Batch Analysis -->
         <!--Batch Analysis Profiles -->
@@ -461,17 +362,6 @@
             <isExample value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-
-        <!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlanDefinition-mnf-process-dxpq"/>
-                <display value="PlanDefinitionMnfProcessDxPq"/>
-            </reference>
-            <name value="PlanDefinition - Manufacturing Process dx-PQ"/>
-            <description value="PlanDefinition - Manufacturing Process dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>-->
 
         <!--Batch Analysis Examples -->
 
@@ -743,6 +633,7 @@
 
         <!--Building Blocks-->
         <!--Building Block Profiles -->
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-test-dxpq"/>
@@ -842,6 +733,17 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/PackagedProductDefinition-dxpq"/>
+                <display value="PackagedProductDefinitionDxPq"/>
+            </reference>
+            <name value="PackagedProductDefinition - dx-PQ"/>
+            <description value="PackagedProductDefinition - dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
         <resource>
             <reference>
@@ -854,6 +756,29 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+                <display value="SpecimenDefinitionStabilityDxPq"/>
+            </reference>
+            <name value="SpecimenDefinition - Stability dx-PQ"/>
+            <description value="TBD"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-stability-dxpq"/>
+                <display value="SpecimenStabilityDxPq"/>
+            </reference>
+            <name value="Specimen - Stability dx-PQ"/>
+            <description value="TBD"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
@@ -876,23 +801,7 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PackagedProductDefinition-dxpq"/>
-                <display value="PackagedProductDefinitionDxPq"/>
-            </reference>
-            <name value="PackagedProductDefinition - dx-PQ"/>
-            <description value="PackagedProductDefinition - dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="building-blocks-1"/>
-        </resource>
-
-
-
-
-
         <!--Building Block Examples -->
-
         <resource>
             <reference>
                 <reference value="ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
@@ -925,6 +834,17 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="DeviceDefinition/devicedefinition-dxpq-ex1"/>
+            </reference>
+            <name value="devicedefinition-dxpq-ex1"/>
+            <description value="DeviceDefinition dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
 
         <resource>
             <reference>
@@ -936,6 +856,29 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"/>
+            </reference>
+            <name value="documentreference-process-flow-diagram-dxpq-ex1"/>
+            <description value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Ingredient/ingredient-dxpq-ex1"/>
+            </reference>
+            <name value="ingredient-dxpq-ex1"/>
+            <description value="Ingredient - dxpq - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
 
         <resource>
             <reference>
@@ -945,6 +888,61 @@
             <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+            </reference>
+            <name value="observationdefinition-test-method-dxpq-ex1"/>
+            <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
+            </reference>
+            <name value="observationdefinition-test-method-dxpq-ex2"/>
+            <description value="ObservationDefinition - Test Method dx-PQ - Example 2"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-dxpq-ex1"/>
+            </reference>
+            <name value="observation-test-result-dxpq-ex1"/>
+            <description value="Observation-test-result-dxpq - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-dxpq-ex2"/>
+            </reference>
+            <name value="observation-test-result-dxpq-ex1"/>
+            <description value="Observation-test-result-dxpq - Example 2"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="PackagedProductDefinition/packagedproductdefinition-dxpq-ex1"/>
+            </reference>
+            <name value="packagedproductdefinition-dxpq-ex1"/>
+            <description value="PackagedProductDefinition dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
         
@@ -1005,59 +1003,26 @@
 
         <resource>
             <reference>
-                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+                <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
             </reference>
-            <name value="observationdefinition-test-method-dxpq-ex1"/>
-            <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
+            <name value="specimendefinition-stability-dxpq-ex1"/>
+            <description value="SpecimenDefinition - Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-
+        
         <resource>
             <reference>
-                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
+                <reference value="Specimen/specimen-stability-dxpq-ex1"/>
             </reference>
-            <name value="observationdefinition-test-method-dxpq-ex2"/>
-            <description value="ObservationDefinition - Test Method dx-PQ - Example 2"/>
+            <name value="specimen-stability-dxpq-ex1"/>
+            <description value="Specimen - Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-
-        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-dxpq-ex1"/>
-            </reference>
-            <name value="observation-test-result-dxpq-ex1"/>
-            <description value="Observation-test-result-dxpq - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-dxpq-ex2"/>
-            </reference>
-            <name value="observation-test-result-dxpq-ex1"/>
-            <description value="Observation-test-result-dxpq - Example 2"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Ingredient/ingredient-dxpq-ex1"/>
-            </reference>
-            <name value="ingredient-dxpq-ex1"/>
-            <description value="Ingredient - dxpq - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>
-
+        
         <resource>
             <reference>
                 <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
@@ -1079,40 +1044,6 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-
-        <resource>
-            <reference>
-                <reference value="PackagedProductDefinition/packagedproductdefinition-dxpq-ex1"/>
-            </reference>
-            <name value="packagedproductdefinition-dxpq-ex1"/>
-            <description value="PackagedProductDefinition dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"/>
-            </reference>
-            <name value="documentreference-process-flow-diagram-dxpq-ex1"/>
-            <description value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="DeviceDefinition/devicedefinition-dxpq-ex1"/>
-            </reference>
-            <name value="devicedefinition-dxpq-ex1"/>
-            <description value="DeviceDefinition dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>
-
 
         <!--Extensions in alpha order -->
         <resource>
@@ -1827,24 +1758,34 @@
                     <generation value="markdown"/>
                 </page>
                 <page>
-                    <name value="identification_rend_s.html"/>
+                    <name value="identification_rend_p1.html"/>
+                    <title value="Identification: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="identification_rend_p2.html"/>
+                    <title value="Identification: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="identification_rend_p3.html"/>
+                    <title value="Identification: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="identification_rend_s1.html"/>
                     <title value="Identification: CMC synthetic data rendering - drug substance"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
-                    <name value="identification_rend_p.html"/>
-                    <title value="Identification: CMC synthetic data rendering - drug product"/>
+                    <name value="identification_rend_s2.html"/>
+                    <title value="Identification: CMC synthetic data rendering - drug substance"/>
                     <generation value="markdown"/>
                 </page>
 
                 <page>
                     <name value="composition.html"/>
                     <title value="Composition"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="composition_rend_s.html"/>
-                    <title value="Composition: CMC synthetic data rendering - drug substance"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
