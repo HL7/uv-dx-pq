@@ -9,7 +9,7 @@ Provide details about drug substance and drug product batch release testing and 
 ### Description of Components
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
-**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
 **Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
 

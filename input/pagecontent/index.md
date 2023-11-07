@@ -1,5 +1,5 @@
 ### Purpose
-This implementation guide defines a universal realm FHIR specification for the creation and excnge of structured pharmaceutical quality data internationally within or between biopharmaceutical companies and their stakeholders.
+This implementation guide defines a universal realm FHIR specification for the creation and exchange of structured pharmaceutical quality data internationally within or between biopharmaceutical companies and their stakeholders.
 
 ### Scope
 **In-scope**
@@ -12,7 +12,7 @@ This implementation guide defines a universal realm FHIR specification for the c
 - Veterinary drugs
 - Requirements for regulator: regulator or industry: regulator transactions
 
-Note tt devices and veterinary drugs are only out of scope for version 1.0.0 of the implementation guide. New product lines will be brought in scope in future iterations.
+Note that devices and veterinary drugs are only out of scope for version 1.0.0 of the implementation guide. New product lines will be brought in scope in future iterations.
 
 ### Technical Overview
 This implementation guide is based upon FHIR version 5.0.0 and is a Universal Realm Specification.
@@ -28,11 +28,11 @@ This guide is primarily meant for but not necessarily limited to organizations i
 
 ### Background
 #### Introduction to Pharmaceutical Quality
-Pharmaceutical quality, also known as Chemistry, Manufacturing, and Controls (CMC) or just “Quality”, describes how a medicinal product is developed and manufactured; wt suppliers and sites are involved; and the controls established to maintain the quality of the medicinal product over its lifecycle.
+Pharmaceutical quality, also known as Chemistry, Manufacturing, and Controls (CMC) or just “Quality”, describes how a medicinal product is developed and manufactured; what suppliers and sites are involved; and the controls established to maintain the quality of the medicinal product over its lifecycle.
 
-The scope, best practices, definitions, and content for pharmaceutical quality data are defined by the International Council for rmonisation’s (ICH) M4Q: Quality Guidance Module 2.3 and Module 3. (See [references](best_practices).)
+The scope, best practices, definitions, and content for pharmaceutical quality data are defined by the International Council for Harmonisation’s (ICH) M4Q: Quality Guidance Module 2.3 and Module 3. (See [references](best_practices).)
 
-The excnge and maintenance of pharmaceutical quality data account for the majority of all internal and external data interactions, internationally, within companies and between a company and stakeholders. Despite much of the content being sourced from internal systems tt support structured data (e.g., pharmaceutical development systems, manufacturing site systems), and much of it being available for reuse across many medicinal products, pharmaceutical quality content s typically been authored, managed, and transmitted in unstructured Word files or PDFs. This is not sustainable, given the increasing volume, complexity, and frequency of quality work. 
+The exchange and maintenance of pharmaceutical quality data account for the majority of all internal and external data interactions, internationally, within companies and between a company and stakeholders. Despite much of the content being sourced from internal systems that support structured data (e.g., pharmaceutical development systems, manufacturing site systems), and much of it being available for reuse across many medicinal products, pharmaceutical quality content has typically been authored, managed, and transmitted in unstructured Word files or PDFs. This is not sustainable, given the increasing volume, complexity, and frequency of quality work.
 
 #### Strategic Goals
 In an effort to adopt a more efficient operating model, the biopharmaceutical industry is about to transition into its third era or paradigm and, in addition to other benefits, this implementation guide will help accelerate this transition (see Figure below). These eras are summarized as follows::
@@ -43,11 +43,11 @@ In an effort to adopt a more efficient operating model, the biopharmaceutical in
 ***Figure: Advancement of the Submission and Decision-Making Ecosystems:*** The biopharmaceutical industry s undergone previous transformation from paper-based submission to electronic paper submission. The industry is at the beginning of the next iteration of transformation, as signified by a transition to FHIR API data submission. This will be followed by further advancement as AI algorithms become increasingly prevalent. As the industry progresses in its journey towards digital maturity, faster submission and review processes will be made possible.
 <table><tr><td><img src="pharm_industry_timeline.png" /></td></tr></table>
 
-Currently, the end-to-end timescale for the pharmaceutical regulatory workflow is measured in months and years. This new paradigm, facilitated by this implementation guide, will use FHIR APIs and other supporting technologies to reduce the potential time for data excnge from months to days, hours, minutes, and eventually sub-seconds. 
+Currently, the end-to-end timescale for the pharmaceutical regulatory workflow is measured in months and years. This new paradigm, facilitated by this implementation guide, will use FHIR APIs and other supporting technologies to reduce the potential time for data exchange from months to days, hours, minutes, and eventually sub-seconds.
 
-Establishing a viable, real-time method to excnge product quality information across biopharmaceutical manufacturing organizations can help to facilitate technology transfer, allow ennced monitoring of external or disseminated facilities, and can potentially support developing advanced manufacturing methodologies, such as point-of-care manufacturing. 
+Establishing a viable, real-time method to exchange product quality information across biopharmaceutical manufacturing organizations can help to facilitate technology transfer, allow enhanced monitoring of external or disseminated facilities, and can potentially support developing advanced manufacturing methodologies, such as point-of-care manufacturing.
 
-Importantly, spurring innovation in the biopharmaceutical sector is only one benefit of this real-time data excnge approach. Ultimately, the approaches highlighted within this implementation guide will help bring high quality medicinal products to market faster, and in a more cost-effective manner. This will also help create more robust manufacturing processes and more manageable global supply cins. This in turn will help reduce manufacturing down time, reduce the cnce of shortages, and increase product quality and data compliance. Taken together, each of these benefits will enable speedier patient access to new treatments and minimize the post-approval life-cycle management burden for sponsors, while contributing favorably to overall global patient experience.
+Importantly, spurring innovation in the biopharmaceutical sector is only one benefit of this real-time data exchange approach. Ultimately, the approaches highlighted within this implementation guide will help bring high quality medicinal products to market faster, and in a more cost-effective manner. This will also help create more robust manufacturing processes and more manageable global supply chains. This in turn will help reduce manufacturing down time, reduce the chance of shortages, and increase product quality and data compliance. Taken together, each of these benefits will enable speedier patient access to new treatments and minimize the post-approval life-cycle management burden for sponsors, while contributing favorably to overall global patient experience.
 
 ### Considerations for Implementation
 The following figure depicts (1) a potential future data pipeline for implementers; and (2) the intended scope of this IG’s use relative to the regulatory submission preparation workflow. The figure, and the following description, are provided to facilitate discussion and understanding of how to use this implementation guide.
@@ -74,7 +74,7 @@ The scope of this implementation guide only covers data exchange activities for 
 
 *Lantana Consulting Group:*
 - Rik Smithies
-- Rob usam
+- Rob Hausam
 - Diana Wright
 
 ### Acknowledgements
