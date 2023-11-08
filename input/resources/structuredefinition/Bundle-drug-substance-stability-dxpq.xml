@@ -12,6 +12,7 @@
   <type value="Bundle"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
   <derivation value="constraint"/>
+  
   <differential>
     <element id="Bundle">
       <path value="Bundle"/>
@@ -30,6 +31,7 @@
       <path value="Bundle.timestamp"/>
       <mustSupport value="true"/>
     </element>
+    
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
       <slicing>
@@ -42,88 +44,12 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Bundle.entry:Stability-Study">
+    
+    <element id="Bundle.entry:Component-Substance">
       <path value="Bundle.entry"/>
-      <sliceName value="Stability-Study"/>
+      <sliceName value="Component-Substance"/>
     </element>
-    <element id="Bundle.entry:Stability-Monitoring-Prog">
-      <path value="Bundle.entry"/>
-      <sliceName value="Stability-Monitoring-Prog"/>
-    </element>
-    <element id="Bundle.entry:Stability-Monitoring-Prog.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="PlanDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"
-        />
-      </type>
-    </element>
-    <element id="Bundle.entry:SpecimenStorage">
-      <path value="Bundle.entry"/>
-      <sliceName value="SpecimenStorage"/>
-    </element>
-    <element id="Bundle.entry:SpecimenStorage.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="SpecimenDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"
-        />
-      </type>
-    </element>
-    <element id="Bundle.entry:Specimen">
-      <path value="Bundle.entry"/>
-      <sliceName value="Specimen"/>
-    </element>
-    <element id="Bundle.entry:Specimen.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Specimen"/>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:ActivityDefinition">
-      <path value="Bundle.entry"/>
-      <sliceName value="ActivityDefinition"/>
-    </element>
-    <element id="Bundle.entry:ActivityDefinition.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="ActivityDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"
-        />
-      </type>
-    </element>
-    <element id="Bundle.entry:Test-Definitions">
-      <path value="Bundle.entry"/>
-      <sliceName value="Test-Definitions"/>
-    </element>
-    <element id="Bundle.entry:Test-Definitions.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="ObservationDefinition"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:Stability-Test-Result">
-      <path value="Bundle.entry"/>
-      <sliceName value="Stability-Test-Result"/>
-    </element>
-    <element id="Bundle.entry:Stability-Test-Result.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Observation"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"
-        />
-      </type>
-    </element>
-    <element id="Bundle.entry:Component-substance">
-      <path value="Bundle.entry"/>
-      <sliceName value="Component-substance"/>
-    </element>
-    <element id="Bundle.entry:Component-substance.resource">
+    <element id="Bundle.entry:Component-Substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="SubstanceDefinition"/>
@@ -132,30 +58,118 @@
         />
       </type>
     </element>
-    <element id="Bundle.entry:actual-batch-substance">
+    
+    <element id="Bundle.entry:Specimen-Definition">
       <path value="Bundle.entry"/>
-      <sliceName value="actual-batch-substance"/>
+      <sliceName value="Specimen-Definition"/>
     </element>
-    <element id="Bundle.entry:actual-batch-substance.resource">
+    <element id="Bundle.entry:Specimen-Definition.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="SpecimenDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Actual-Batch-Substance">
+      <path value="Bundle.entry"/>
+      <sliceName value="Actual-Batch-Substance"/>
+    </element>
+    <element id="Bundle.entry:Actual-Batch-Substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Substance"/>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
       </type>
     </element>
-    <element id="Bundle.entry:StudyResultsReport">
+    
+    
+    <element id="Bundle.entry:Actual-Batch-Specimen">
       <path value="Bundle.entry"/>
-      <sliceName value="StudyResultsReport"/>
+      <sliceName value="Actual-Batch-Specimen"/>
     </element>
-    <element id="Bundle.entry:StudyResultsReport.resource">
+    <element id="Bundle.entry:Actual-Batch-Specimen.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Specimen"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Protocol">
+      <path value="Bundle.entry"/>
+      <sliceName value="Protocol"/>
+    </element>
+    <element id="Bundle.entry:Protocol.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="PlanDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Test-Set">
+      <path value="Bundle.entry"/>
+      <sliceName value="Test-Set"/>
+    </element>
+    <element id="Bundle.entry:Test-Set.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="ActivityDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"
+        />
+      </type>
+    </element>
+    
+    
+    <element id="Bundle.entry:Test-Method">
+      <path value="Bundle.entry"/>
+      <sliceName value="Test-Method"/>
+    </element>
+    <element id="Bundle.entry:Test-Method.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="ObservationDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpqV"
+        />
+      </type>
+    </element>
+    
+    
+    <element id="Bundle.entry:Report">
+      <path value="Bundle.entry"/>
+      <sliceName value="Report"/>
+    </element>
+    <element id="Bundle.entry:Report.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="DiagnosticReport"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"
         />
       </type>
     </element>
+    
+    <element id="Bundle.entry:Result-Observations">
+      <path value="Bundle.entry"/>
+      <sliceName value="Result-Observations"/>
+    </element>
+    <element id="Bundle.entry:Result-Observations.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Observation"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"
+        />
+      </type>
+    </element>
+    
     <element id="Bundle.entry:Organization">
       <path value="Bundle.entry"/>
       <sliceName value="Organization"/>
@@ -167,5 +181,6 @@
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
       </type>
     </element>
+    
   </differential>
 </StructureDefinition>
