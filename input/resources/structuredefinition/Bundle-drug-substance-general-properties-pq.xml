@@ -46,7 +46,7 @@
       <mustSupport value="true"/>
     </element>
 
-    <element id="Bundle.entry:Component-substance">
+    <element id="Bundle.entry:Component-Substance">
       <path value="Bundle.entry"/>
       <sliceName value="Component-substance"/>
     </element>
