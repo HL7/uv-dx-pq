@@ -315,6 +315,16 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
         
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-stability-pq"/>
+                <display value="BundleDrugStabilityPq"/>
+            </reference>
+            <name value="Bundle – Drug Stability PQ"/>
+            <description value="Bundle – Drug Stability PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
 
         <!--        Stability Examples-->
         <resource>
