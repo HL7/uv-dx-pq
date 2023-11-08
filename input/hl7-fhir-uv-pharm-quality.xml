@@ -196,7 +196,7 @@
             <description value="Bundle – Drug Product PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq"/>
-            <groupingId value="b12-specification"/>
+            <groupingId value="b1-id"/>
         </resource>
 
         <resource>
@@ -207,7 +207,7 @@
             <description value="Bundle – Drug Product Microbiological Attributes PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
-            <groupingId value="b12-specification"/>
+            <groupingId value="b1-id"/>
         </resource>
         
         <resource>
@@ -218,7 +218,7 @@
             <description value="Bundle – Drug Product Excipients PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq"/>
-            <groupingId value="b12-specification"/>
+            <groupingId value="b1-id"/>
         </resource>
         
         <resource>
@@ -229,7 +229,7 @@
             <description value="Bundle – Drug Substance General Properties PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
-            <groupingId value="b12-specification"/>
+            <groupingId value="b1-id"/>
         </resource>
         
         <resource>
@@ -240,7 +240,7 @@
             <description value="Bundle – Drug Substance Characterization PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
-            <groupingId value="b12-specification"/>
+            <groupingId value="b1-id"/>
         </resource>
         
         <!--Specification -->
