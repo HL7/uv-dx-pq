@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-drug-substance-stability-dxpq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
@@ -13,7 +12,6 @@
   <type value="Bundle"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
   <derivation value="constraint"/>
-
   <differential>
     <element id="Bundle">
       <path value="Bundle"/>
@@ -32,7 +30,6 @@
       <path value="Bundle.timestamp"/>
       <mustSupport value="true"/>
     </element>
-
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
       <slicing>
@@ -40,39 +37,19 @@
           <type value="type"/>
           <path value="resource"/>
         </discriminator>
-<!--        <discriminator>
-          <type value="profile"/>
-          <path value="resource"/>
-        </discriminator>-->
         <rules value="open"/>
       </slicing>
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
-
     <element id="Bundle.entry:Stability-Study">
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Study"/>
     </element>
-    <!-- <element id="Bundle.entry:Stability-Study.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
-<!--    <element id="Bundle.entry:Stability-Study.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="ResearchStudy"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ResearchStudy-stability-dxpq"/>
-      </type>
-    </element>-->
-
     <element id="Bundle.entry:Stability-Monitoring-Prog">
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Monitoring-Prog"/>
     </element>
-    <!-- <element id="Bundle.entry:Stability-Monitoring-Prog.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:Stability-Monitoring-Prog.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -82,14 +59,10 @@
         />
       </type>
     </element>
-
     <element id="Bundle.entry:SpecimenStorage">
       <path value="Bundle.entry"/>
       <sliceName value="SpecimenStorage"/>
     </element>
-    <!-- <element id="Bundle.entry:SpecimenStorage.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:SpecimenStorage.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -99,14 +72,10 @@
         />
       </type>
     </element>
-
     <element id="Bundle.entry:Specimen">
       <path value="Bundle.entry"/>
       <sliceName value="Specimen"/>
     </element>
-    <!-- <element id="Bundle.entry:Specimen.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:Specimen.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -114,14 +83,10 @@
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
       </type>
     </element>
-
     <element id="Bundle.entry:ActivityDefinition">
       <path value="Bundle.entry"/>
       <sliceName value="ActivityDefinition"/>
     </element>
-    <!-- <element id="Bundle.entry:ActivityDefinition.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:ActivityDefinition.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -131,8 +96,6 @@
         />
       </type>
     </element>
-    
-    
     <element id="Bundle.entry:Test-Definitions">
       <path value="Bundle.entry"/>
       <sliceName value="Test-Definitions"/>
@@ -143,67 +106,10 @@
         <code value="ObservationDefinition"/>
       </type>
     </element>
-    
-<!--
-    <element id="Bundle.entry:Stability-Test-Def">
-      <path value="Bundle.entry"/>
-      <sliceName value="Stability-Test-Def"/>
-    </element>
-    <!-\- <element id="Bundle.entry:Stability-Test-Def.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -\->
-    <element id="Bundle.entry:Stability-Test-Def.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="ObservationDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"
-        />
-      </type>
-    </element>-->
-
-
-<!--    <element id="Bundle.entry:Stability-Test-Component">
-      <path value="Bundle.entry"/>
-      <sliceName value="Stability-Test-Component"/>
-    </element>
-    <!-\- <element id="Bundle.entry:Stability-Test-Component.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -\->
-    <element id="Bundle.entry:Stability-Test-Component.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="ObservationDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"
-        />
-      </type>
-    </element>-->
-    
-<!--    <element id="Bundle.entry:Acceptance-criteria">
-      <path value="Bundle.entry"/>
-      <sliceName value="Acceptance-criteria"/>
-    </element>
-    <element id="Bundle.entry:Acceptance-criteria.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element>
-    <element id="Bundle.entry:Acceptance-criteria.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="ObservationDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-dxpq"
-        />
-      </type>
-    </element>-->
-
     <element id="Bundle.entry:Stability-Test-Result">
       <path value="Bundle.entry"/>
       <sliceName value="Stability-Test-Result"/>
     </element>
-    <!-- <element id="Bundle.entry:Stability-Test-Result.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:Stability-Test-Result.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -213,14 +119,10 @@
         />
       </type>
     </element>
-
     <element id="Bundle.entry:Component-substance">
       <path value="Bundle.entry"/>
       <sliceName value="Component-substance"/>
     </element>
-    <!-- <element id="Bundle.entry:Component-substance.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:Component-substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -230,14 +132,10 @@
         />
       </type>
     </element>
-
     <element id="Bundle.entry:actual-batch-substance">
       <path value="Bundle.entry"/>
       <sliceName value="actual-batch-substance"/>
     </element>
-    <!-- <element id="Bundle.entry:actual-batch-substance.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:actual-batch-substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -245,14 +143,10 @@
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
       </type>
     </element>
-    
     <element id="Bundle.entry:StudyResultsReport">
       <path value="Bundle.entry"/>
       <sliceName value="StudyResultsReport"/>
     </element>
-    <!-- <element id="Bundle.entry:StudyResultsReport.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:StudyResultsReport.resource">
       <path value="Bundle.entry.resource"/>
       <type>
@@ -262,14 +156,10 @@
         />
       </type>
     </element>
-
     <element id="Bundle.entry:Organization">
       <path value="Bundle.entry"/>
       <sliceName value="Organization"/>
     </element>
-    <!-- <element id="Bundle.entry:Organization.fullUrl">
-      <path value="Bundle.entry.fullUrl"/>
-    </element> -->
     <element id="Bundle.entry:Organization.resource">
       <path value="Bundle.entry.resource"/>
       <type>
