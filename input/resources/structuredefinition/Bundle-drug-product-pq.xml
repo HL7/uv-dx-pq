@@ -53,6 +53,8 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="MedicinalProductDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
       </type>
     </element>
 
@@ -64,18 +66,8 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="ManufacturedItemDefinition"/>
-      </type>
-    </element>
-
-    <element id="Bundle.entry:Owner-Organization">
-      <path value="Bundle.entry"/>
-      <sliceName value="Owner-Organization"/>
-    </element>
-    <element id="Bundle.entry:Owner-Organization.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Organization"/>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
+<!--        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/________________"/>-->
       </type>
     </element>
 
@@ -88,6 +80,18 @@
       <type>
         <code value="Composition"/>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Organization">
+      <path value="Bundle.entry"/>
+      <sliceName value="Organization"/>
+    </element>
+    <element id="Bundle.entry:Organization.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Organization"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
       </type>
     </element>
 
