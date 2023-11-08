@@ -47,37 +47,11 @@
       <mustSupport value="true"/>
     </element>
     
-    <element id="Bundle.entry:Microbiological-Attributes-Report">
+    <element id="Bundle.entry:Product-Identification">
       <path value="Bundle.entry"/>
-      <sliceName value="Microbiological-Attributes-Report"/>
+      <sliceName value="Product-Identification"/>
     </element>
-    <element id="Bundle.entry:Microbiological-Attributes-Report.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="DiagnosticReport"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-      </type>
-    </element>
-    
-    <element id="Bundle.entry:Microbiological-Result">
-      <path value="Bundle.entry"/>
-      <sliceName value="Microbiological-Result"/>
-    </element>
-    <element id="Bundle.entry:Microbiologicalt-Result.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Observation"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
-      </type>
-    </element>
-    
-    <element id="Bundle.entry:MedicinalProductDefinition">
-      <path value="Bundle.entry"/>
-      <sliceName value="MedicinalProductDefinition"/>
-    </element>
-    <element id="Bundle.entry:MedicinalProductDefinition.resource">
+    <element id="Bundle.entry:Product-Identification.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="MedicinalProductDefinition"/>
@@ -86,16 +60,42 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Medication">
+    <element id="Bundle.entry:Batch-Lot-Information">
       <path value="Bundle.entry"/>
-      <sliceName value="Medication"/>
+      <sliceName value="Batch-Lot-Information"/>
     </element>
-    <element id="Bundle.entry:Medication.resource">
+    <element id="Bundle.entry:Batch-Lot-Information.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Medication"/>
         <profile
           value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Report">
+      <path value="Bundle.entry"/>
+      <sliceName value="Report"/>
+    </element>
+    <element id="Bundle.entry:Report.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="DiagnosticReport"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Result-Observations">
+      <path value="Bundle.entry"/>
+      <sliceName value="Result-Observations"/>
+    </element>
+    <element id="Bundle.entry:Result-Observations.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Observation"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
       </type>
     </element>
     
