@@ -344,6 +344,17 @@
         
         <!--Batch or Lot Information (b8-batchinfo)-->
         <!--Batch or Lot Information Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BundleProductBatchInfoPq"/>
+                <display value="BundleProductBatchInfoPq"/>
+            </reference>
+            <name value="Bundle – Product Batch Information PQ"/>
+            <description value="Bundle – Product Batch Information PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b8-batchinfo"/>
+        </resource>
+        
         <!--Batch or Lot Information Examples-->
         
         <!--Batch Analysis (b9-batchanalyses)-->
