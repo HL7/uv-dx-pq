@@ -672,6 +672,27 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
         
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-stability-pq-ex1-prod"/>
+            </reference>
+            <name value="bundle-drug-stability-pq-ex1-prod"/>
+            <description value="Bundle – Drug Stability PQ - Example 1, product"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-stability-pq-ex2-sub"/>
+            </reference>
+            <name value="bundle-drug-stability-pq-ex2-sub"/>
+            <description value="Bundle – Drug Stability PQ - Example 2, substance"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
+            <groupingId value="b11-stabilitystudy"/>
+        </resource>
         
         <!--Specification (b12-specification)-->
         <!--        Specification Profiles-->
