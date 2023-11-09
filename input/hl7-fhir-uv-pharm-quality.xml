@@ -304,7 +304,18 @@
                 <reference value="Bundle/bundle-product-impurities-dxpq-ex1"/>
             </reference>
             <name value="bundle-product-impurities-dxpq-ex1"/>
-            <description value="Bundle - Product Impurities dx-PQ - Example 1"/>
+            <description value="Bundle - Product Impurities dx-PQ - Example, product"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
+            <groupingId value="b15-impurities"/>
+        </resource> 
+        
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-impurities-dxpq-ex2-sub"/>
+            </reference>
+            <name value="bundle-product-impurities-dxpq-ex2-sub"/>
+            <description value="Bundle - Product Impurities dx-PQ - Example, substance"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
             <groupingId value="b15-impurities"/>
