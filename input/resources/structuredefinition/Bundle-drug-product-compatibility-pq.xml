@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Bundle-compatibility-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-compatibility-pq"/>
-  <name value="BundleCompatibilityPq"/>
-  <title value="Bundle – Drug Compatibility PQ"/>
+  <id value="Bundle-drug-product-compatibility-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/BBundle-drug-product-compatibility-pq"/>
+  <name value="BundleDrugProductCompatibilityPq"/>
+  <title value="Bundle - Drug Product Compatibility PQ"/>
   <status value="active"/>
-  <description value="Bundle – Drug Compatibility PQ"/>
+  <description value="Bundle - Drug Product Compatibility PQ"/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

@@ -773,23 +773,30 @@
             <groupingId value="b12-specification"/>
         </resource>
 
-
         <!--Compatibility (b14-compatibility)-->
         <!--Compatibility Profiles-->
-        
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-compatibility-pq"/>
-                <display value="Bundle-compatibility-pq"/>
+                <reference value="StructureDefinition/Bundle-drug-product-compatibility-pq"/>
+                <display value="Bundle-drug-product-compatibility-pq"/>
             </reference>
-            <name value="Bundle - Drug Compatibility PQ"/>
+            <name value="Bundle - Drug Product Compatibility PQ"/>
             <description value="Test"/>
             <isExample value="false"/>
             <groupingId value="b14-compatibility"/>
         </resource>
         
         <!--Compatibility Examples-->
-        
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-compatibility-pq-ex1"/>
+            </reference>
+            <name value="bundle-drug-product-compatibility-pq-ex1"/>
+            <description value="Bundle – Drug Product Compatibility PQ - Example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-compatibility-pq"/>
+            <groupingId value="b14-compatibility"/>
+        </resource>
         
         <!--Building Blocks-->
         <!--Building Block Profiles (building-blocks-1) -->
