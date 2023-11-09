@@ -45,7 +45,7 @@
     <definition>
         <!-- Reordered to match domains graphic-->
         <grouping id="b1-id">
-            <name value="Drug Identification"/>
+            <name value="Identification"/>
             <description value="FHIR artifacts that provide details about drug substances and drug products with names and identifiers; structure and structure characterization; physico-chemical properties; and dosage form and characterization (for drug products)."/>
         </grouping>
         <grouping id="b17-composition">
@@ -72,7 +72,6 @@
             <name value="Batch Formula"/>
             <description value="FHIR artifacts that provide details about drug substance and drug product master batch properties and formula components."/>
         </grouping>
-
         <grouping id="b5-mnf">
             <name value="Manufacturing Process"/>
             <description value="FHIR artifacts that provide a manufacturing process overview and details about unit operations, process parameters, and in-process controls."/>
@@ -85,7 +84,6 @@
             <name value="Analytical Procedures"/>
             <description value="FHIR artifacts that provide details about test methods used to analyze drug substances and drug products including compendial and non-compendial testing."/>
         </grouping>
-
         <grouping id="b10-container">
             <name value="Container Closure System"/>
             <description value="FHIR artifacts that provide details about primary and secondary packaging components for drug substance and drug product."/>
@@ -102,8 +100,6 @@
             <name value="Compatibility"/>
             <description value="FHIR artifacts that provide details about compatibility studies and results."/>
         </grouping>
-
-
         <!--        Additional Groupings -->
         <grouping id="building-blocks-1">
             <name value="Building Blocks"/>
@@ -131,7 +127,7 @@
             <name value="Additional Observation Examples"/>
         </grouping>
 
-        <!--Drug Identification (b1-id)-->
+        <!-- Identification (b1-id)-->
         <!--        ID Profiles-->
         <resource>
             <reference>

@@ -137,7 +137,7 @@
       <type>
         <code value="DiagnosticReport"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-stability-study-results-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
       </type>
     </element>
     <element id="Bundle.entry:MedicinalProductDefinition">
