@@ -3,7 +3,7 @@
    <id value="bundle-drug-product-composition-pq-ex1"/>
 <!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
    </meta>
    <type value="collection"/>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
