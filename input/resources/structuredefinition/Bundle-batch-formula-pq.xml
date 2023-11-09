@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Bundle-batch-formula-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq"/>
+  <name value="BundleBatchFormulaPq"/>
+  <title value="Bundle – Batch Formula PQ"/>
+  <status value="active"/>
+  <description value="Bundle – Batch Formula PQ"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <short value="collection"/>
+      <patternCode value="collection"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Bundle.entry:Product-Identification">
+      <path value="Bundle.entry"/>
+      <sliceName value="Product-Identification"/>
+    </element>
+    <element id="Bundle.entry:Product-Identification.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="MedicinalProductDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Product-Ingredient">
+      <path value="Bundle.entry"/>
+      <sliceName value="Product-Ingredient"/>
+    </element>
+    <element id="Bundle.entry:Product-Ingredient.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Ingredient"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Component-Substance">
+      <path value="Bundle.entry"/>
+      <sliceName value="Component-Substance"/>
+    </element>
+    <element id="Bundle.entry:Component-Substance.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="SubstanceDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Batch-Lot-Information">
+      <path value="Bundle.entry"/>
+      <sliceName value="Batch-Lot-Information"/>
+    </element>
+    <element id="Bundle.entry:Batch-Lot-Information.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Medication"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"
+        />
+      </type>
+    </element>
+  
+  </differential>
+</StructureDefinition>
