@@ -346,14 +346,26 @@
         <!--Batch or Lot Information Profiles-->
         <resource>
             <reference>
-                <reference value="StructureDefinition/BundleProductBatchInfoPq"/>
-                <display value="BundleProductBatchInfoPq"/>
+                <reference value="StructureDefinition/Bundle-drug-product-batch-info-pq"/>
+                <display value="BundleDrugProductBatchInfoPq"/>
             </reference>
-            <name value="Bundle – Product Batch Information PQ"/>
-            <description value="Bundle – Product Batch Information PQ"/>
+            <name value="Bundle – Drug Product Batch Information PQ"/>
+            <description value="Bundle – Drug Product Batch Information PQ"/>
             <isExample value="false"/>
             <groupingId value="b8-batchinfo"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
+                <display value="BundleDrugSubstanceBatchInfoPq"/>
+            </reference>
+            <name value="Bundle – Drug Substance Batch Information PQ"/>
+            <description value="Bundle – Drug Substance Batch Information PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b8-batchinfo"/>
+        </resource>
+
         
         <!--Batch or Lot Information Examples-->
         

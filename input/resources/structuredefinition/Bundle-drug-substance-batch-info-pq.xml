@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Bundle-product-batch-Info-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-batch-Info-pq"/>
-  <name value="BundleProductBatchInfoPq"/>
-  <title value="Bundle – Product Batch Information PQ"/>
+  <id value="Bundle-drug-substance-batch-info-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
+  <name value="BundleDrugSubstanceBatchInfoPq"/>
+  <title value="Bundle – Drug Substance Batch Information PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>
@@ -46,31 +46,30 @@
       <mustSupport value="true"/>
     </element>
 
-    <element id="Bundle.entry:Product-Identification">
+    <element id="Bundle.entry:Component-Substance">
       <path value="Bundle.entry"/>
-      <sliceName value="Product-Identification"/>
+      <sliceName value="Component-Substance"/>
     </element>
-    <element id="Bundle.entry:Product-Identification.resource">
+    <element id="Bundle.entry:Component-Substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
-        <code value="MedicinalProductDefinition"/>
+        <code value="SubstanceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"
-        />
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
+        />  
       </type>
     </element>
-      
-    <element id="Bundle.entry:Batch-Lot-Information">
+    
+    <element id="Bundle.entry:Actual-Batch-Substance">
       <path value="Bundle.entry"/>
-      <sliceName value="Batch-Lot-Information"/>
+      <sliceName value="Actual-Batch-Substance"/>
     </element>
-    <element id="Bundle.entry:Batch-Lot-Information.resource">
+    <element id="Bundle.entry:Actual-Batch-Substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
-        <code value="Medication"/>
+        <code value="Substance"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"
-        />
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
       </type>
     </element>
 
@@ -85,6 +84,6 @@
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
       </type>
     </element>
-
+    
   </differential>
 </StructureDefinition>
