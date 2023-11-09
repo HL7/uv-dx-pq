@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-drug-product-compatibility-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/BBundle-drug-product-compatibility-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"/>
   <name value="BundleDrugProductCompatibilityPq"/>
   <title value="Bundle - Drug Product Compatibility PQ"/>
   <status value="active"/>
