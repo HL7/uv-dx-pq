@@ -388,7 +388,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-batch-info-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-product-batch-info-pq-ex1"/>
+            <name value="bundle-drug-product-batch-info-pq-ex"/>
             <description value="Bundle – Drug Product Batch Information PQ - Example"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
@@ -397,7 +397,7 @@
         
         <resource>
             <reference>
-                <reference value="Bundle/bundle-drug-substance-batch-info-pq"/>
+                <reference value="Bundle/bundle-drug-substance-batch-info-pq-ex1"/>
             </reference>
             <name value="bundle-drug-substance-batch-info-pq"/>
             <description value="Bundle – Drug Substance Batch Information PQ - Example"/>
@@ -489,6 +489,16 @@
         </resource>
         
         <!--Batch Formula Example-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-batch-formula-pq-ex1"/>
+            </reference>
+            <name value="bundle-batch-formula-pq-ex1"/>
+            <description value="Bundle - Batch Formula PQ - Example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq"/>
+            <groupingId value="b7-batchformula"/>
+        </resource>
         
         <!--Manufacturing Process (b5-mnf)-->
         <!--Manufacturing Process Profiles-->
