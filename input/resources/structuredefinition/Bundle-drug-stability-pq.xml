@@ -59,11 +59,11 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Drug-Ingredient ">
+    <element id="Bundle.entry:Drug-Ingredient">
       <path value="Bundle.entry"/>
-      <sliceName value="Drug-Ingredient "/>
+      <sliceName value="Drug-Ingredient"/>
     </element>
-    <element id="Bundle.entry:Drug-Ingredient .resource">
+    <element id="Bundle.entry:Drug-Ingredient.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Ingredient"/>
@@ -85,11 +85,11 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Specimen-Definition ">
+    <element id="Bundle.entry:Specimen-Definition">
       <path value="Bundle.entry"/>
-      <sliceName value="Specimen-Definition "/>
+      <sliceName value="Specimen-Definition"/>
     </element>
-    <element id="Bundle.entry:Specimen-Definition .resource">
+    <element id="Bundle.entry:Specimen-Definition.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="SpecimenDefinition"/>
@@ -98,11 +98,11 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Batch-Lot-Information ">
+    <element id="Bundle.entry:Batch-Lot-Information">
       <path value="Bundle.entry"/>
-      <sliceName value="Batch-Lot-Information "/>
+      <sliceName value="Batch-Lot-Information"/>
     </element>
-    <element id="Bundle.entry:Batch-Lot-Information .resource">
+    <element id="Bundle.entry:Batch-Lot-Information.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Medication"/>
@@ -124,9 +124,9 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Actual-Batch-Specimen ">
+    <element id="Bundle.entry:Actual-Batch-Specimen">
       <path value="Bundle.entry"/>
-      <sliceName value="Actual-Batch-Specimen "/>
+      <sliceName value="Actual-Batch-Specimen"/>
     </element>
     <element id="Bundle.entry:Actual-Batch-Specimen.resource">
       <path value="Bundle.entry.resource"/>
