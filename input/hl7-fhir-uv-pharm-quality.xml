@@ -264,7 +264,27 @@
         </resource>
         
         <!--Composition Examples-->    
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-composition-pq-ex1"/>
+            </reference>
+            <name value="Bundle – Drug Reference Standards PQ - Example 1"/>
+            <description value="TBD"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
+            <groupingId value="b17-composition"/>
+        </resource> 
         
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-reference-standards-pq-ex2-sub"/>
+            </reference>
+            <name value="bundle-product-impurities-dxpq-ex1"/>
+            <description value="Bundle – Drug Product Composition PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-reference-standards-pq"/>
+            <groupingId value="b17-composition"/>
+        </resource>
         
         <!--Impurities (b15-impurities)-->
         <!--Impurities Profiles-->
