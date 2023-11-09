@@ -59,20 +59,6 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Specimen-Definition">
-      <path value="Bundle.entry"/>
-      <sliceName value="Specimen-Definition"/>
-    </element>
-    <element id="Bundle.entry:Specimen-Definition.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="SpecimenDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"
-        />
-      </type>
-    </element>
-    
     <element id="Bundle.entry:Actual-Batch-Substance">
       <path value="Bundle.entry"/>
       <sliceName value="Actual-Batch-Substance"/>
@@ -82,19 +68,6 @@
       <type>
         <code value="Substance"/>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
-      </type>
-    </element>
-    
-    
-    <element id="Bundle.entry:Actual-Batch-Specimen">
-      <path value="Bundle.entry"/>
-      <sliceName value="Actual-Batch-Specimen"/>
-    </element>
-    <element id="Bundle.entry:Actual-Batch-Specimen.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Specimen"/>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
       </type>
     </element>
     
@@ -112,21 +85,6 @@
       </type>
     </element>
     
-    <element id="Bundle.entry:Test-Set">
-      <path value="Bundle.entry"/>
-      <sliceName value="Test-Set"/>
-    </element>
-    <element id="Bundle.entry:Test-Set.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="ActivityDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"
-        />
-      </type>
-    </element>
-    
-    
     <element id="Bundle.entry:Test-Method">
       <path value="Bundle.entry"/>
       <sliceName value="Test-Method"/>
@@ -140,7 +98,6 @@
         />
       </type>
     </element>
-    
     
     <element id="Bundle.entry:Report">
       <path value="Bundle.entry"/>
