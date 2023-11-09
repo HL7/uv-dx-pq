@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Bundle-product-composition-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-composition-pq"/>
-  <name value="BundleProductCompositionPq"/>
-  <title value="Bundle – Product Composition PQ"/>
+  <id value="Bundle-drug-product-composition-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
+  <name value="BundleDrugProductCompositionPq"/>
+  <title value="Bundle – Drug Product Composition PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>
