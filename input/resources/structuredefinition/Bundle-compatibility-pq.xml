@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Bundle-compatibility-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-compatibility-pq"/>
+  <name value="BundleCompatibilityPq"/>
+  <title value="Bundle – Drug Compatibility PQ"/>
+  <status value="active"/>
+  <description value="Bundle – Drug Compatibility PQ"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+  
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type"/>
+      <short value="collection"/>
+      <patternCode value="collection"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="Bundle.entry:Product-Identification">
+      <path value="Bundle.entry"/>
+      <sliceName value="Product-Identification"/>
+    </element>
+    <element id="Bundle.entry:Product-Identification.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="MedicinalProductDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Product-Ingredient">
+      <path value="Bundle.entry"/>
+      <sliceName value="Product-Ingredient"/>
+    </element>
+    <element id="Bundle.entry:Product-Ingredient.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Ingredient"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Component-Substance">
+      <path value="Bundle.entry"/>
+      <sliceName value="Component-Substance"/>
+    </element>
+    <element id="Bundle.entry:Component-Substance.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="SubstanceDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Batch-Lot-Information">
+      <path value="Bundle.entry"/>
+      <sliceName value="Batch-Lot-Information"/>
+    </element>
+    <element id="Bundle.entry:Batch-Lot-Information.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Medication"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Protocol">
+      <path value="Bundle.entry"/>
+      <sliceName value="Protocol"/>
+    </element>
+    <element id="Bundle.entry:Protocol.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="PlanDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"
+        />
+      </type>
+    </element>
+   
+    <element id="Bundle.entry:Test-Method">
+      <path value="Bundle.entry"/>
+      <sliceName value="Test-Method"/>
+    </element>
+    <element id="Bundle.entry:Test-Method.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="ObservationDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpqV"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Package-Definition">
+      <path value="Bundle.entry"/>
+      <sliceName value="Package-Definition"/>
+    </element>
+    <element id="Bundle.entry:Package-Definition.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="PackagedProductDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Report">
+      <path value="Bundle.entry"/>
+      <sliceName value="Report"/>
+    </element>
+    <element id="Bundle.entry:Report.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="DiagnosticReport"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Result-Observations">
+      <path value="Bundle.entry"/>
+      <sliceName value="Result-Observations"/>
+    </element>
+    <element id="Bundle.entry:Result-Observations.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Observation"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"
+        />
+      </type>
+    </element>
+    
+    <element id="Bundle.entry:Organization">
+      <path value="Bundle.entry"/>
+      <sliceName value="Organization"/>
+    </element>
+    <element id="Bundle.entry:Organization.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Organization"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
+      </type>
+    </element>
+    
+  </differential>
+</StructureDefinition>

@@ -661,7 +661,18 @@
 
         <!--Compatibility (b14-compatibility)-->
         <!--Compatibility Profiles-->
-
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-compatibility-pq"/>
+                <display value="Bundle-compatibility-pq"/>
+            </reference>
+            <name value="Bundle - Drug Compatibility PQ"/>
+            <description value="Test"/>
+            <isExample value="false"/>
+            <groupingId value="b14-compatibility"/>
+        </resource>
+        
         <!--Compatibility Examples-->
         
         
