@@ -244,7 +244,18 @@
         </resource>
         
         <!--Composition (b17-composition)-->
-        <!--Composition Profiles-->    
+        <!--Composition Profiles-->         
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-product-composition-pq"/>
+                <display value="BundleProductCompositionPq"/>
+            </reference>
+            <name value="Bundle – Product Composition PQ"/>
+            <description value="Bundle – Product Composition PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b17-composition"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-reference-standards-pq"/>
