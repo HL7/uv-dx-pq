@@ -244,6 +244,19 @@
         </resource>
         
         <!--Composition (b17-composition)-->
+        <!--Composition Profiles-->    
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-reference-standards-pq"/>
+                <display value="BundleDrugReferenceStandardsPq"/>
+            </reference>
+            <name value="Bundle – Drug Reference Standards PQ"/>
+            <description value="Bundle – Drug Reference Standards PQ"/>
+            <isExample value="false"/>
+            <groupingId value="b17-composition"/>
+        </resource>
+        
+        <!--Composition Examples-->    
         
         
         <!--Impurities (b15-impurities)-->
