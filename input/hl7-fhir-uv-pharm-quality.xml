@@ -805,7 +805,7 @@
             <name value="bundle-drug-product-compatibility-pq-ex1"/>
             <description value="Bundle – Drug Product Compatibility PQ - Example"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-compatibility-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"/>
             <groupingId value="b14-compatibility"/>
         </resource>
         
