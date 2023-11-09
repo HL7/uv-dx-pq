@@ -381,9 +381,30 @@
             <isExample value="false"/>
             <groupingId value="b8-batchinfo"/>
         </resource>
-
         
         <!--Batch or Lot Information Examples-->
+        
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-batch-info-pq-ex1"/>
+            </reference>
+            <name value="bundle-drug-product-batch-info-pq-ex1"/>
+            <description value="Bundle – Drug Product Batch Information PQ - Example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
+            <groupingId value="b8-batchinfo"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-substance-batch-info-pq"/>
+            </reference>
+            <name value="bundle-drug-substance-batch-info-pq"/>
+            <description value="Bundle – Drug Substance Batch Information PQ - Example"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
+            <groupingId value="b8-batchinfo"/>
+        </resource>
         
         <!--Batch Analysis (b9-batchanalyses)-->
         <!--Batch Analysis Profiles -->

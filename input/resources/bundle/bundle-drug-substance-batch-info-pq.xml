@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Substance Batch Info -->
+<!-- invented --><Bundle xmlns="http://hl7.org/fhir">
+
+    
+
+   <id value="bundle-drug-substance-batch-info-pq"/>
+   <meta>
+        
+
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:8dae93e0-048d-35a4-71ea-7c603184a130"/>
+      <resource>
+         <SubstanceDefinition>
+            <id value="substance1"/>
+            <manufacturer>
+               <reference value="Organization/substance-manufacturer"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+               <!-- #4 -->
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+      <resource>
+         <Organization>
+            <id value="substance-manufacturer"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+      <resource>
+         <Substance>
+            <id value="substance-dxpq-ex1"/>
+            <!-- was actual-batch-substance -->
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <valueDateTime value="2019-09-08"/>
+                  <!-- #173 -->
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
+                  <valueDateTime value="2022-09-08"/>
+                  <!-- #221 -->
+               </extension>
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2020-01"/>
+                  <!-- #157 -->
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
+                  <valueReference>
+                     <display value="Process 1.1"/>
+                  </valueReference>
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="120"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization"><!-- #161 -->
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <code value="C133990"/>
+                        <display value="Commercial"/>
+                        <!-- could also be C185328 Stability Study? -->
+                     </coding>
+                     <text value="Production"/>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer"> <!-- #160 -->
+                  <valueReference>
+                     <reference value="Organization/substance-manufacturer"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="CAT1"/>
+               <!-- #155 -->
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/substance1"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-2"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <valueDateTime value="2019-09-08"/>
+                  <!-- #173 -->
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
+                  <valueDateTime value="2022-09-08"/>
+                  <!-- #221 -->
+               </extension>
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2020-02"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="120"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization"><!-- #161 -->
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <code value="C133990"/>
+                        <display value="Commercial"/>
+                        <!-- could also be C185328 Stability Study? -->
+                     </coding>
+                     <text value="Production"/>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer"> <!-- #160 -->
+                  <valueReference>
+                     <reference value="Organization/substance-manufacturer"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="CAT2"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/substance1"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7"/>
+      <resource>
+         <Substance>
+            <id value="actual-batch-substance-3"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <valueDateTime value="2019-09-08"/>
+                  <!-- #173 -->
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
+                  <valueDateTime value="2022-09-08"/>
+                  <!-- #221 -->
+               </extension>
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2020-03"/>
+                  <!-- #159 -->
+               </extension>
+               <extension url="batchQuantity"> <!-- #157 -->
+                  <valueQuantity>
+                     <value value="120"/>
+                     <unit value="kg"/>
+                     <!-- #158 -->
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization"><!-- #161 -->
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <code value="C133990"/>
+                        <display value="Commercial"/>
+                        <!-- could also be C185328 Stability Study? -->
+                     </coding>
+                     <text value="Production"/>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer"> <!-- #160 -->
+                  <valueReference>
+                     <reference value="Organization/substance-manufacturer"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <identifier>
+               <value value="CAT3"/>
+               <!-- #155 -->
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                  <reference value="SubstanceDefinition/substance1"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+</Bundle>

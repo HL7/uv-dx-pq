@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+    <!-- Product Batch Info -->
+   <id value="bundle-drug-product-batch-info-pq-ex1"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
+   </meta>
+   <type value="collection"/>
+   <!-- Section 8 - Batch or Lot Information (batch 1 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+      <resource>
+         <Medication>
+            <id value="medication-actual-batch"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference> <!-- todo consider change this be the MID? -->
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     
+
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <valueDateTime value="2019-09-08"/>
+                     <!-- #171 -->
+                  </extension>
+                  <!-- removed extension for substance batch -->
+                  
+
+                  <extension url="manufacturingDate"> <!-- #157 -->
+                     <valueDateTime value="2020-06"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq"> <!-- #159 -->
+                     <valueDateTime value="2020-08"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                     <valueReference>
+                        <reference value="Organization/packaging"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                                <!-- #26 --><!-- #155 --><!-- need to see if one of these needs changing -->
+                        <value value="100100"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                     <valueQuantity> <!-- #160 -->
+                        <value value="4.8"/>
+                        <unit value="kg"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="batchUtilization"> <!-- #159 -->
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <code value="C185328"/>
+                           <display value="Stability Study"/>
+                        </coding>
+                        <text value="PPQ / Stability"/>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="assignedManufacturer">
+                     <valueReference> <!-- #158 -->
+                        <reference value="Organization/manufacturer"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="container">
+                     <extension url="closureSystemDescription">
+                        <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
+                     </extension>
+                  </extension>
+               </extension>
+               <!-- #153 -->
+               <lotNumber value="33445"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 8 - Batch or Lot Information (another batch 2 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+      <resource>
+         <Medication>
+            <id value="medication-actual-batch-2"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <valueDateTime value="2019-09-08"/>
+                  </extension>
+                  <!-- removed extension for substance batch -->
+                  
+
+                  <extension url="manufacturingDate">
+                     <valueDateTime value="2020-06"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
+                     <valueDateTime value="2020-08"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                     <valueReference>
+                        <reference value="Organization/packaging"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="100050"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                     <valueQuantity>
+                        <value value="4.8"/>
+                        <unit value="kg"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="batchUtilization">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <code value="C185328"/>
+                           <display value="Stability Study"/>
+                        </coding>
+                        <text value="PPQ / Stability"/>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="assignedManufacturer">
+                     <valueReference>
+                        <reference value="Organization/manufacturer"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="container">
+                     <extension url="closureSystemDescription">
+                        <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
+                     </extension>
+                  </extension>
+               </extension>
+               <lotNumber value="33446"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 8 - Batch or Lot Information (another batch 3 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+      <resource>
+         <Medication>
+            <id value="medication-actual-batch-3"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+                  <valueReference>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                     <valueDateTime value="2019-09-08"/>
+                  </extension>
+                  <!-- removed extension for substance batch -->
+                  
+
+                  <extension url="manufacturingDate">
+                     <valueDateTime value="2020-06"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
+                     <valueDateTime value="2020-08"/>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                     <valueReference>
+                        <reference value="Organization/packaging"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="100125"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                     <valueQuantity>
+                        <value value="4.8"/>
+                        <unit value="kg"/>
+                     </valueQuantity>
+                  </extension>
+                  <extension url="batchUtilization">
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                           <code value="C185328"/>
+                           <display value="Stability Study"/>
+                        </coding>
+                        <text value="PPQ / Stability"/>
+                     </valueCodeableConcept>
+                  </extension>
+                  <extension url="assignedManufacturer">
+                     <valueReference>
+                        <reference value="Organization/manufacturer"/>
+                     </valueReference>
+                  </extension>
+                  <extension url="container">
+                     <extension url="closureSystemDescription">
+                        <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
+                     </extension>
+                  </extension>
+               </extension>
+               <lotNumber value="33447"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 4.1 - Manufacturer -->
+   <entry>
+      <fullUrl value="urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+      <resource>
+         <Organization>
+            <id value="manufacturer"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3010027650"/>
+            </identifier>
+            <name value="AAA Pharmaceutical, Inc."/>
+            <contact>
+               <address>
+                  <line value="681 Main Street"/>
+                  <city value="Lumberton"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08048"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07"/>
+      <resource>
+         <Organization>
+            <id value="packaging"/>
+            <name value="MySite"/>
+         </Organization>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <description value="Textual description of the product"/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
+                  <code value="100000073667"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
+                  <code value="100000073619"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <name>
+               <productName value="Stelbat Tablets, 20mg"/>
+               <type>
+                  <coding>
+                     <system value="http://example.org/fhir/code/productNameType"/>
+                     <code value="1234"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+               <part>
+                  <part value="20mg"/>
+                  <type>
+                     <coding>
+                        <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                        <code value="StrengthPart"/>
+                        <display value="Strength part"/>
+                     </coding>
+                  </type>
+               </part>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+</Bundle>
