@@ -168,9 +168,9 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="ManufacturedItemDefinition"/>
-<!--        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/_____"
-        />-->
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq"
+        />
       </type>
     </element>
 
