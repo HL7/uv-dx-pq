@@ -647,7 +647,7 @@
         
         <!--Stability (b11-stabilitystudy)-->
         <!--        Stability Profiles-->
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-stability-dxpq"/>
                 <display value="BundleDrugProductStabilityDxPq"/>
@@ -656,9 +656,9 @@
             <description value="Bundle – Drug Product Stability dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
         
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
                 <display value="BundleDrugSubstanceStabilityDxPq"/>
@@ -667,7 +667,7 @@
             <description value="Bundle – Drug Substance Stability dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
         
         <resource>
             <reference>
@@ -681,7 +681,7 @@
         </resource>
         
         <!--        Stability Examples-->
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-product-stability-dxpq-ex1"/>
             </reference>
@@ -690,9 +690,9 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
         
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-stability-dxpq-ex1"/>
             </reference>
@@ -701,7 +701,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
             <groupingId value="b11-stabilitystudy"/>
-        </resource>
+        </resource>-->
         
         <resource>
             <reference>
