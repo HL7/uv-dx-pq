@@ -30,7 +30,7 @@ This guide is primarily meant for but not necessarily limited to organizations i
 #### Introduction to Pharmaceutical Quality
 Pharmaceutical quality, also known as Chemistry, Manufacturing, and Controls (CMC) or just “Quality”, describes how a medicinal product is developed and manufactured; what suppliers and sites are involved; and the controls established to maintain the quality of the medicinal product over its lifecycle.
 
-The scope, best practices, definitions, and content for pharmaceutical quality data are defined by the International Council for Harmonisation’s (ICH) M4Q: Quality Guidance Module 2.3 and Module 3. (See [references](best_practices).)
+The scope, best practices, definitions, and content for pharmaceutical quality data are defined by the International Council for Harmonisation’s (ICH) M4Q: Quality Guidance Module 2.3 and Module 3. (See [references](best_practices.html).)
 
 The exchange and maintenance of pharmaceutical quality data account for the majority of all internal and external data interactions, internationally, within companies and between a company and stakeholders. Despite much of the content being sourced from internal systems that support structured data (e.g., pharmaceutical development systems, manufacturing site systems), and much of it being available for reuse across many medicinal products, pharmaceutical quality content has typically been authored, managed, and transmitted in unstructured Word files or PDFs. This is not sustainable, given the increasing volume, complexity, and frequency of quality work.
 
