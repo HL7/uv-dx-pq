@@ -85,6 +85,25 @@
             </type>
         </element>
 
+        <element id="Extension.extension:valueText">
+            <path value="Extension.extension"/>
+            <sliceName value="valueText"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:valueText.url">
+            <path value="Extension.extension.url"/>
+            <fixedUri value="valueText"/>
+        </element>
+        <element id="Extension.extension:valueText.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+      
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri
