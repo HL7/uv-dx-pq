@@ -530,13 +530,22 @@
                 <reference value="Bundle/bundle-product-manufacturing-dxpq-ex1"/>
             </reference>
             <name value="bundle-product-manufacturing-dxpq-ex1"/>
-            <description value="Bundle - Product Manufacturing dx-PQ - Example 1"/>
+            <description value="Bundle - Product Manufacturing dx-PQ - Example, product"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
         </resource>
         
-        
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-manufacturing-dxpq-ex2-sub"/>
+            </reference>
+            <name value="bundle-product-manufacturing-dxpq-ex2-sub"/>
+            <description value="Bundle - Product Manufacturing dx-PQ - Example, substance"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
+            <groupingId value="b5-mnf"/>
+        </resource>
         <!--Process Validation (b13-processvalidation)-->
         <!--Process Validation Profiles-->
         <resource>
