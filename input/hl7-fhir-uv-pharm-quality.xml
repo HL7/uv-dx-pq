@@ -46,23 +46,23 @@
         <!-- Reordered to match domains graphic-->
         <grouping id="b1-id">
             <name value="Identification"/>
-            <description value="FHIR artifacts that provide details about drug substances and drug products with names and identifiers; structure and structure characterization; physico-chemical properties; and dosage form and characterization (for drug products)."/>
+            <description value="FHIR artifacts that provide details about the drug substance and drug product nomenclature; structure; physicochemical properties; and manufacture."/>
         </grouping>
         <grouping id="b17-composition">
             <name value="Composition"/>
-            <description value="FHIR artifacts that  provide details about drug substance and drug product components, materials, and Quality reference standards."/>
+            <description value="FHIR artifacts that provide details about drug substance and drug product components, materials, and Quality reference standards."/>
         </grouping>
         <grouping id="b15-impurities">
             <name value="Impurities"/>
-            <description value="FHIR artifacts that  provide details about impurity identification and characterization."/>
+            <description value="FHIR artifacts that provide details about impurity identification and characterization."/>
         </grouping>
         <grouping id="b4-organizations">
             <name value="Organizations"/>
-            <description value="FHIR artifacts that provide details about each facility that is a manufacturer, supplier, or test site."/>
+            <description value="FHIR artifacts that provide details about each facility or legal entity involved in the manufacture of the medicinal product. This includes but is not limited to: name, identifier, and location address, for marketing authorization holders, sponsors, regulatory authorities, manufacturers, supplier, test site, packaging site."/>
         </grouping>
         <grouping id="b8-batchinfo">
             <name value="Batch or Lot Information"/>
-            <description value="FHIR artifacts that provide details about each drug substance and drug product batch with identifiers."/>
+            <description value="FHIR artifacts that provide details about batch(es) of the  drug substance and drug product with identifiers."/>
         </grouping>
         <grouping id="b9-batchanalyses">
             <name value="Batch Analysis"/>
@@ -70,11 +70,11 @@
         </grouping>
         <grouping id="b7-batchformula">
             <name value="Batch Formula"/>
-            <description value="FHIR artifacts that provide details about drug substance and drug product master batch properties and formula components."/>
+            <description value="FHIR artifacts that provide details about drug substance and drug product master batch properties and formula."/>
         </grouping>
         <grouping id="b5-mnf">
             <name value="Manufacturing Process"/>
-            <description value="FHIR artifacts that provide a manufacturing process overview and details about unit operations, process parameters, and in-process controls."/>
+            <description value="FHIR artifacts that provide a manufacturing process description and details about unit operations, process parameters, and in-process controls."/>
         </grouping>
         <grouping id="b13-processvalidation">
             <name value="Process Validation"/>
@@ -90,11 +90,11 @@
         </grouping>
         <grouping id="b11-stabilitystudy">
             <name value="Stability Study"/>
-            <description value="FHIR artifacts that provide details about a stability study, including protocol (tests and acceptance criteria), test results, and drug substance or drug product batches involved in the testing."/>
+            <description value="FHIR artifacts that provide details about a stability study including stability study design (tests and acceptance criteria), drug substance or drug product batches involved, test results, and conclusion."/>
         </grouping>
         <grouping id="b12-specification">
             <name value="Drug Specification"/>
-            <description value="FHIR artifacts that provide details about drug substance or drug product specification."/>
+            <description value="FHIR artifacts that provide details about drug substance or drug product release and stability specification (tests, acceptance criteria)."/>
         </grouping>
         <grouping id="b14-compatibility">
             <name value="Compatibility"/>
@@ -102,11 +102,11 @@
         </grouping>
         <!--        Additional Groupings -->
         <grouping id="building-blocks-1">
-            <name value="Building Blocks"/>
+            <name value="Component Building Blocks"/>
             <description value="FHIR artifacts used across many PQ domains."/>
         </grouping>
         <grouping id="building-blocks-2">
-            <name value="Building Blocks Examples"/>
+            <name value="Component Building Block Examples"/>
         </grouping>
         <grouping id="extensions1">
             <name value="Extensions"/>
@@ -139,36 +139,36 @@
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
                 <display value="Bundle – Drug Product Microbiological Attributes PQ"/>
             </reference>
             <name value="Bundle – Drug Product Microbiological Attributes PQ"/>
-            <description value="Bundle – Drug Product Microbiological Attributes PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.5 Microbiological Attributes."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
                 <display value="Bundle – Drug Product Excipients PQ"/>
             </reference>
             <name value="Bundle – Drug Product Excipients PQ"/>
-            <description value="Bundle – Drug Product Excipients PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin and 3.2.P.4.6 Novel Excipients."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
                 <display value="Bundle – Drug Substance General Properties PQ"/>
             </reference>
             <name value="Bundle – Drug Substance General Properties PQ"/>
-            <description value="Bundle – Drug Substance General Properties PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.1 General Information, subsection 3.2.S.1.3 General Properties."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
@@ -179,7 +179,7 @@
                 <display value="Bundle – Drug Substance Characterization PQ"/>
             </reference>
             <name value="Bundle – Drug Substance Characterization PQ"/>
-            <description value="Bundle – Drug Substance Characterization PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.1 – Elucidation of Structure and Other Characteristics."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
@@ -205,7 +205,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
             <groupingId value="b1-id"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-product-excipients-pq-ex1"/>
@@ -216,7 +216,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq"/>
             <groupingId value="b1-id"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-general-properties-pq-ex1"/>
@@ -227,7 +227,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
             <groupingId value="b1-id"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-characterization-pq-ex1"/>
@@ -238,32 +238,32 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
             <groupingId value="b1-id"/>
         </resource>
-        
+
         <!--Composition (b17-composition)-->
-        <!--Composition Profiles-->         
+        <!--Composition Profiles-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-composition-pq"/>
                 <display value="Bundle – Drug Product Composition PQ"/>
             </reference>
             <name value="Bundle – Drug Product Composition PQ"/>
-            <description value="Bundle – Drug Product Composition PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.1 Description and Composition of the Drug Product."/>
             <isExample value="false"/>
             <groupingId value="b17-composition"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-reference-standards-pq"/>
                 <display value="Bundle – Drug Reference Standards PQ"/>
             </reference>
             <name value="Bundle – Drug Reference Standards PQ"/>
-            <description value="Bundle – Drug Reference Standards PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.6 Reference Standards or Materials and 3.2.S.5 Reference Standards or Materials."/>
             <isExample value="false"/>
             <groupingId value="b17-composition"/>
         </resource>
-        
-        <!--Composition Examples-->    
+
+        <!--Composition Examples-->
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-product-composition-pq-ex1"/>
@@ -273,8 +273,8 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
             <groupingId value="b17-composition"/>
-        </resource> 
-        
+        </resource>
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-reference-standards-pq-ex2-sub"/>
@@ -285,7 +285,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-reference-standards-pq"/>
             <groupingId value="b17-composition"/>
         </resource>
-        
+
         <!--Impurities (b15-impurities)-->
         <!--Impurities Profiles-->
         <resource>
@@ -294,10 +294,11 @@
                 <display value="Bundle - Product Impurities dx-PQ"/>
             </reference>
             <name value="Bundle - Product Impurities dx-PQ"/>
-            <description value="Bundle - Product Impurities dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities and CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities."/>
             <isExample value="false"/>
             <groupingId value="b15-impurities"/>
         </resource>
+        
         <!--Impurities Examples-->
         <resource>
             <reference>
@@ -308,8 +309,8 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
             <groupingId value="b15-impurities"/>
-        </resource> 
-        
+        </resource>
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-product-impurities-dxpq-ex2-sub"/>
@@ -319,8 +320,8 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
             <groupingId value="b15-impurities"/>
-        </resource> 
-        
+        </resource>
+
         <!--Organizations (b4-organizations)-->
         <!--Organization Profiles-->
         <resource>
@@ -329,11 +330,11 @@
                 <display value="Bundle - Organizations dx-PQ"/>
             </reference>
             <name value="Bundle - Organizations dx-PQ"/>
-            <description value="Bundle - Organizations dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s) and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s)."/>
             <isExample value="false"/>
             <groupingId value="b4-organizations"/>
         </resource>
-        
+
         <!--Organization Examples -->
         <resource>
             <reference>
@@ -345,7 +346,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq"/>
             <groupingId value="b4-organizations"/>
         </resource>
-               
+
         <!--Batch or Lot Information (b8-batchinfo)-->
         <!--Batch or Lot Information Profiles-->
         <resource>
@@ -354,24 +355,24 @@
                 <display value="Bundle – Drug Product Batch Information PQ"/>
             </reference>
             <name value="Bundle – Drug Product Batch Information PQ"/>
-            <description value="Bundle – Drug Product Batch Information PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses."/>
             <isExample value="false"/>
             <groupingId value="b8-batchinfo"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
                 <display value="Bundle – Drug Substance Batch Information PQ"/>
             </reference>
             <name value="Bundle – Drug Substance Batch Information PQ"/>
-            <description value="Bundle – Drug Substance Batch Information PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses."/>
             <isExample value="false"/>
             <groupingId value="b8-batchinfo"/>
         </resource>
-        
+
         <!--Batch or Lot Information Examples-->
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-product-batch-info-pq-ex1"/>
@@ -382,7 +383,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
             <groupingId value="b8-batchinfo"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-batch-info-pq-ex1"/>
@@ -393,7 +394,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
             <groupingId value="b8-batchinfo"/>
         </resource>
-        
+
         <!--Batch Analysis (b9-batchanalyses)-->
         <!--Batch Analysis Profiles -->
         <resource>
@@ -402,13 +403,14 @@
                 <display value="Bundle – Batch Analysis dx-PQ"/>
             </reference>
             <name value="Bundle – Batch Analysis dx-PQ"/>
-            <description value="Bundle – Batch Analysis dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses
+                and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses."/>
             <isExample value="false"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-        
+
         <!--Batch Analysis Examples -->
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-prod"/>
@@ -419,7 +421,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-sub"/>
@@ -430,7 +432,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
-        
+
         <!--Batch Formula (b7-batchformula)-->
         <!--Batch Formula Profiles -->
         <resource>
@@ -439,11 +441,11 @@
                 <display value="Bundle – Batch Formula PQ"/>
             </reference>
             <name value="Bundle – Batch Formula PQ"/>
-            <description value="Test"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.2 Batch Formula."/>
             <isExample value="false"/>
             <groupingId value="b7-batchformula"/>
         </resource>
-        
+
         <!--Batch Formula Example-->
         <resource>
             <reference>
@@ -455,7 +457,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq"/>
             <groupingId value="b7-batchformula"/>
         </resource>
-        
+
         <!--Manufacturing Process (b5-mnf)-->
         <!--Manufacturing Process Profiles-->
         <resource>
@@ -464,11 +466,11 @@
                 <display value="Bundle - Product Manufacturing dx-PQ"/>
             </reference>
             <name value="Bundle - Product Manufacturing dx-PQ"/>
-            <description value="Bundle - Product Manufacturing dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.3 Description of Manufacturing Process and Process Controls and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.2 Description of Manufacturing Process and Process Controls."/>
             <isExample value="false"/>
             <groupingId value="b5-mnf"/>
         </resource>
-        
+
         <!--Manufacturing Process Examples-->
         <resource>
             <reference>
@@ -480,7 +482,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-product-manufacturing-dxpq-ex2-sub"/>
@@ -499,7 +501,7 @@
                 <display value="Bundle - Product Process Validation dx-PQ"/>
             </reference>
             <name value="Bundle - Product Process Validation dx-PQ"/>
-            <description value="Bundle - Product Process Validation dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.5 Process Validation and/or Evaluation and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.5 Process Validation and/or Evaluation."/>
             <isExample value="false"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
@@ -514,7 +516,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-dxpq-ex2-sub"/>
@@ -525,7 +527,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
-        
+
         <!--Analytical Procedures (b6-analytical)-->
         <!--Analytical Procedures Profiles-->
         <resource>
@@ -534,11 +536,11 @@
                 <display value="Bundle – Analytical Procedure dx-PQ"/>
             </reference>
             <name value="Bundle – Analytical Procedure dx-PQ"/>
-            <description value="Bundle – Analytical Procedure dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.2 Analytical Procedures and section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures."/>
             <isExample value="false"/>
             <groupingId value="b6-analytical"/>
         </resource>
-        
+
         <!--Analytical Procedures Examples-->
         <resource>
             <reference>
@@ -550,7 +552,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
             <groupingId value="b6-analytical"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-analytical-procedure-dxpq-ex2-sub"/>
@@ -561,7 +563,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
             <groupingId value="b6-analytical"/>
         </resource>
-        
+
         <!--Container Closure System (b10-container)-->
         <!--Container Closure System Profiles-->
         <resource>
@@ -570,11 +572,11 @@
                 <display value="v"/>
             </reference>
             <name value="Bundle - Container Closure System dx-PQ"/>
-            <description value="Bundle - Container Closure System dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.7 Container Closure System and 3.2.S.6 Container Closure System."/>
             <isExample value="false"/>
             <groupingId value="b10-container"/>
         </resource>
-        
+
         <!--Container Closure System Examples-->
         <resource>
             <reference>
@@ -586,7 +588,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
             <groupingId value="b10-container"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-container-closure-system-dxpq-ex2-sub"/>
@@ -597,7 +599,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
             <groupingId value="b10-container"/>
         </resource>
-        
+
         <!--Stability (b11-stabilitystudy)-->
         <!--        Stability Profiles-->
         <resource>
@@ -606,12 +608,12 @@
                 <display value="BundleDrugStabilityPq"/>
             </reference>
             <name value="Bundle – Drug Stability PQ"/>
-            <description value="Bundle – Drug Stability PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.8 Stability, subsection 3.2.P.8.3 Stability Data, and CTD section 3.2.S.7 Stability, subsection 3.2.S.7.3 Stability Data."/>
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
-        <!--        Stability Examples-->    
+
+        <!--        Stability Examples-->
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-stability-pq-ex1-prod"/>
@@ -622,7 +624,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-stability-pq-ex2-sub"/>
@@ -633,7 +635,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
             <groupingId value="b11-stabilitystudy"/>
         </resource>
-        
+
         <!--Specification (b12-specification)-->
         <!--        Specification Profiles-->
         <resource>
@@ -642,24 +644,24 @@
                 <display value="Bundle – Drug Product Specification dx-PQ"/>
             </reference>
             <name value="Bundle – Drug Product Specification dx-PQ"/>
-            <description value="Bundle – Drug Product Specification dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.1 Specification(s)."/>
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
                 <display value="Bundle – Drug Substance Specification dx-PQ"/>
             </reference>
             <name value="Bundle – Drug Substance Specification dx-PQ"/>
-            <description value="Bundle – Drug Substance Specification dx-PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification."/>
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
         </resource>
 
         <!--        Specification Examples-->
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-product-specification-dxpq-ex1"/>
@@ -670,7 +672,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
             <groupingId value="b12-specification"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-substance-specification-dxpq-ex1"/>
@@ -690,11 +692,11 @@
                 <display value="Bundle - Drug Product Compatibility PQ"/>
             </reference>
             <name value="Bundle - Drug Product Compatibility PQ"/>
-            <description value="Test"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.6 Compatibility."/>
             <isExample value="false"/>
             <groupingId value="b14-compatibility"/>
         </resource>
-        
+
         <!--Compatibility Examples-->
         <resource>
             <reference>
@@ -706,39 +708,39 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"/>
             <groupingId value="b14-compatibility"/>
         </resource>
-        
+
         <!--Building Blocks-->
         <!--Building Block Profiles (building-blocks-1) -->
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-test-dxpq"/>
                 <display value="ActivityDefinition - Test dx-PQ"/>
             </reference>
             <name value="ActivityDefinition - Test dx-PQ"/>
-            <description value="Test"/>
+            <description value="This ActivityDefinition profile represents a set of tests and their acceptance criteria through the contained ObservationDefinition resources."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-drug-pq"/>
                 <display value="Composition - Drug PQ"/>
             </reference>
             <name value="Composition - Drug PQ"/>
-            <description value="Test"/>
+            <description value="This Composition profile represents narrative text necessary for pharmaceutical quality (PQ) data exchange."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/DeviceDefinition-dxpq"/>
                 <display value="DeviceDefinition - dx-PQ"/>
             </reference>
             <name value="DeviceDefinition - dx-PQ"/>
-            <description value="DeviceDefinition - dx-PQ"/>
+            <description value="This DeviceDefinition profile represents information about devices and equipment used in pharmaceutical quality (PQ) data gathering."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -749,7 +751,7 @@
                 <display value="DiagnosticReport - Drug Analysis PQ"/>
             </reference>
             <name value="DiagnosticReport - Drug Analysis PQ"/>
-            <description value="This DiagnosticReport profile represents results reports for batch analysis, stability study, characterization, impurities analysis, and manufacturing process validation study, etc."/>
+            <description value="This DiagnosticReport profile represents results from a batch analysis, stability study, characterization study, impurities analysis, manufacturing process validation study, etc."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -760,7 +762,7 @@
                 <display value="DocumentReference - dx-PQ"/>
             </reference>
             <name value="DocumentReference - dx-PQ"/>
-            <description value="DocumentReference - dx-PQ"/>
+            <description value="This DocumentReference profile references a document of any kind, including a diagram or image, that is necessary for pharmaceutical quality (PQ) data exchange."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -771,7 +773,7 @@
                 <display value="Ingredient dx-Pq"/>
             </reference>
             <name value="Ingredient dx-Pq"/>
-            <description value="Section 2.1 - DP Composition"/>
+            <description value="This Ingredient profile represents the active ingredient(s) of a drug substance or product. It references one SubstanceDefinition resource and can include the strength or concentration of that substance."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -782,44 +784,43 @@
                 <display value="ManufacturedItemDefinition dx-PQ"/>
             </reference>
             <name value="ManufacturedItemDefinition dx-PQ"/>
-            <description value="ManufacturedItemDefinition dx-PQ"/>
+            <description value="This ManufacturedItemDefinition profile represents information about the physical packaged medication item, such as a tablet or capsule."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
                 <display value="Medication - Batch Information dx-PQ"/>
             </reference>
             <name value="Medication - Batch Information dx-PQ"/>
-            <description value="Medication - Batch Information dx-PQ"/>
+            <description value="This Medication profile represents information about the batches that underwent testing or analysis."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
                 <display value="MedicinalProductDefinition - Drug Product dx-PQ"/>
             </reference>
             <name value="MedicinalProductDefinition - Drug Product dx-PQ"/>
-            <description value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+            <description value="This MedicinalProductDefinition profile represents information that identifies the drug product."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-test-method-dxpq"/>
                 <display value="ObservationDefinition - Test Method dx-PQ"/>
             </reference>
             <name value="ObservationDefinition - Test Method dx-PQ"/>
-            <description value="TBD"/>
+            <description value="This ObservationDefinition profile represents information about pharmaceutical quality (PQ) tests and acceptance criteria."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-
 
         <resource>
             <reference>
@@ -827,29 +828,29 @@
                 <display value="Observation - Test Result dx-PQ"/>
             </reference>
             <name value="Observation - Test Result dx-PQ"/>
-            <description value="Observation - Test Result dx-PQ"/>
+            <description value="This Observation profile represents the result of a specific test defined by an ObservationDefinition resource."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Organization-dxpq"/>
                 <display value="Organization - dx-PQ"/>
             </reference>
             <name value="Organization - dx-PQ"/>
-            <description value="Organization - dx-PQ"/>
+            <description value="This Organization profile represents information about a pharmaceutical company or site that performed drug testing or manufacturing."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/PackagedProductDefinition-dxpq"/>
                 <display value="PackagedProductDefinition - dx-PQ"/>
             </reference>
             <name value="PackagedProductDefinition - dx-PQ"/>
-            <description value="PackagedProductDefinition - dx-PQ"/>
+            <description value="This PackagedProductDefinition profile represents information about the packaging for a drug product or drug substance."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -860,7 +861,7 @@
                 <display value="PlanDefinition - dx-PQ"/>
             </reference>
             <name value="PlanDefinition - dx-PQ"/>
-            <description value="TBD"/>
+            <description value="This PlanDefinition profile represents a protocol, analytical procedure, manufacturing process, or other workflow definition used in pharmaceutical quality (PQ) data gathering."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -871,30 +872,29 @@
                 <display value="SpecimenDefinition - Stability dx-PQ"/>
             </reference>
             <name value="SpecimenDefinition - Stability dx-PQ"/>
-            <description value="TBD"/>
+            <description value="This SpecimenDefinition profile represents information about the treatment of a specimen, such as storage conditions and test duration."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Specimen-stability-dxpq"/>
                 <display value="Specimen - Stability dx-PQ"/>
             </reference>
             <name value="Specimen - Stability dx-PQ"/>
-            <description value="TBD"/>
+            <description value="This Specimen profile represents identifying information about an individual specimen (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
                 <display value="SubstanceDefinition - Component Substance dx-PQ"/>
             </reference>
             <name value="SubstanceDefinition - Component Substance dx-PQ"/>
-            <description value="Section 2.1 - DP Composition - Product Component"/>
+            <description value="This SubstanceDefinition profile represents the chemical or biological details about a substance associated with an active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -905,7 +905,7 @@
                 <display value="Substance - dx-PQ"/>
             </reference>
             <name value="Substance - dx-PQ"/>
-            <description value="Substance - dx-PQ"/>
+            <description value="This Substance profile represents identifying information about an actual batch of aubstance (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -921,7 +921,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Composition/composition-drug-pq-formulation"/>
@@ -932,7 +932,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Composition/composition-drug-pq-risk"/>
@@ -943,7 +943,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="DeviceDefinition/devicedefinition-dxpq-ex1"/>
@@ -965,7 +965,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"/>
@@ -976,7 +976,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Ingredient/ingredient-dxpq-ex1"/>
@@ -987,7 +987,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
@@ -998,7 +998,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Medication/medication-batch-information-dxpq-ex1"/>
@@ -1009,7 +1009,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Medication/medication-batch-information-dxpq-ex2"/>
@@ -1020,7 +1020,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
@@ -1031,7 +1031,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
@@ -1042,7 +1042,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
@@ -1053,7 +1053,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-dxpq-ex1"/>
@@ -1064,7 +1064,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-dxpq-ex2"/>
@@ -1075,7 +1075,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Organization/organization-dxpq-ex1"/>
@@ -1086,7 +1086,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="PackagedProductDefinition/packagedproductdefinition-dxpq-ex1"/>
@@ -1097,7 +1097,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="PlanDefinition/plandefinition-dxpq-ex1-validation-protocol"/>
@@ -1163,7 +1163,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Specimen/specimen-stability-dxpq-ex1"/>
@@ -1174,7 +1174,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
@@ -1484,7 +1484,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <!--Terminology-->
         <resource>
             <reference>
@@ -1697,7 +1697,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp2"/>
@@ -1708,7 +1708,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp3"/>
@@ -1719,7 +1719,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp-total"/>
@@ -1730,7 +1730,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
@@ -1741,7 +1741,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-description"/>
@@ -1752,7 +1752,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-microbiological"/>
@@ -1763,7 +1763,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-uniformity"/>
@@ -1785,7 +1785,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
             <groupingId value="examples4"/>
         </resource>
-        
+
         <!-- Additional SpecimenDefinition Examples (examples2)-->
         <resource>
             <reference>
@@ -1896,7 +1896,7 @@
                     <title value="Composition: CMC synthetic data rendering - drug substance"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="impurities.html"/>
                     <title value="Impurities"/>
@@ -2003,7 +2003,7 @@
                     <title value="Process Validation: CMC synthetic data rendering - drug substance"/>
                     <generation value="markdown"/>
                 </page>
-                
+
                 <page>
                     <name value="anal_proc.html"/>
                     <title value="Analytical Procedures"/>
