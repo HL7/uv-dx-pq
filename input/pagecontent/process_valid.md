@@ -26,23 +26,16 @@ Provide details about manufacturing process validation protocols and results.
 **Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
 ### Examples
-<html>
-<body>
-<p><b>CTD section samples </b> (PDF):</p>
-<ul>
-<li>3.2.S.2 Manufacture </li>
-<ul>
-<li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.5_Process_Validation_and-or_Evaluation.pdf ">3.2.S.2.5 Process Validation and/or Evaluation</a></li></ul>
-<li>3.2.P.3 Manufacture</li>
-<ul>
-<li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.5_Process_Validation.pdf ">3.2.P.3.5 Process Validation and/or Evaluation</a></li>
-<li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P3.5_Process_Validation_and-or_Evaluation_BIO.pdf ">3.2.P.3.5 Process Validation and/or Evaluation - Biologic Example</a></li></ul></ul>
-<p><b>HTML rendering</b> of synthetic CTD data:</p>
-<ul><li><a href="process_valid_rend_s.html">Drug Substance Process Validation</a> </li>
-<li><a href="process_valid_rend_p.html">Drug Product Process Validation</a> </li>
-<li><a href="process_valid_rend_pb.html">Drug Product Process Validation - Biologic</a></li></ul>
+**CTD section samples** (PDF):
+- 3.2.P.3 Manufacture
+    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.5_Process_Validation.pdf ">3.2.P.3.5 Process Validation and/or Evaluation</a>
+    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P3.5_Process_Validation_and-or_Evaluation_BIO.pdf ">3.2.P.3.5 Process Validation and/or Evaluation - Biologic Example</a>
+- 3.2.S.2 Manufacture
+    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.5_Process_Validation_and-or_Evaluation.pdf ">3.2.S.2.5 Process Validation and/or Evaluation</a>
 
-<p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
-<ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-product-process-validation-dxpq-ex1.html">Bundle - Product Process Validation dx-PQ - Example 1</a></li></ul>
-</body>
-</html>
+**HTML rendering** of synthetic CTD data:
+- <a href="process_valid_rend_p.html">Drug Product Process Validation</a>
+- <a href="process_valid_rend_pb.html">Drug Product Process Validation - Biologic</a>
+- <a href="process_valid_rend_s.html">Drug Substance Process Validation</a>
+
+**FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Process Validation](artifacts.html#process-validation)

@@ -29,23 +29,14 @@ Provide details about a stability study including stability study design (tests 
 
 
 ### Examples
-<html>
-<body>
-<p><b>CTD section samples </b> (PDF):</p>
-<ul>
-<li>3.2.S.7 Stability </li>
-<ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.7.3_Stability_Data.pdf ">3.2.S.7.3 Stability Data</a></li></ul>
+**CTD section samples** (PDF):
+- 3.2.P.8 Stability
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.8.3_Stability_Data.pdf ">3.2.P.8.3 Stability Data</a>
+- 3.2.S.7 Stability
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.7.3_Stability_Data.pdf ">3.2.S.7.3 Stability Data</a>
 
-<li>3.2.P.8 Stability </li>
-<ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.8.3_Stability_Data.pdf ">3.2.P.8.3 Stability Data</a></li></ul>
-</ul>
-<p><b>HTML rendering</b> of synthetic CTD data:</p>
-<ul><li><a href="stability_rend_s.html">Drug Substance Stability</a> </li>
-<li><a href="stability_rend_p.html">Drug Product Stability</a> </li></ul>
+**HTML rendering** of synthetic CTD data:
+- <a href="stability_rend_p.html">Drug Product Stability</a>
+- <a href="stability_rend_s.html">Drug Substance Stability</a>
 
-<p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
-<ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-substance-stability-dxpq-ex1.html">Bundle – Drug Substance Stability dx-PQ - Example 1</a></li>
-<li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-product-stability-dxpq-ex1.html">Bundle – Drug Product Stability dx-PQ - Example 1</a></li>
-</ul>
-</body>
-</html>
+**FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Stability Study](artifacts.html#stability-study)
