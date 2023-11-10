@@ -334,17 +334,6 @@
             <groupingId value="b4-organizations"/>
         </resource>
         
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Organization-dxpq"/>
-                <display value="Organization - dx-PQ"/>
-            </reference>
-            <name value="Organization - dx-PQ"/>
-            <description value="Organization - dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        
         <!--Organization Examples -->
         <resource>
             <reference>
@@ -356,19 +345,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq"/>
             <groupingId value="b4-organizations"/>
         </resource>
-        
-        <resource>
-            <reference>
-                <reference value="Organization/organization-dxpq-ex1"/>
-            </reference>
-            <name value="organization-dxpq-ex1"/>
-            <description value="Organization - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
-            <groupingId value="b4-organizations"/>
-        </resource>
-        
-        
+               
         <!--Batch or Lot Information (b8-batchinfo)-->
         <!--Batch or Lot Information Profiles-->
         <resource>
@@ -430,17 +407,6 @@
             <groupingId value="b9-batchanalyses"/>
         </resource>
         
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
-                <display value="Medication - Batch Information dx-PQ"/>
-            </reference>
-            <name value="Medication - Batch Information dx-PQ"/>
-            <description value="Medication - Batch Information dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
-        
         <!--Batch Analysis Examples -->
         
         <resource>
@@ -462,27 +428,6 @@
             <description value="Bundle – Batch Analysis dx-PQ - Example 2, substance"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
-        
-        <resource>
-            <reference>
-                <reference value="Medication/medication-batch-information-dxpq-ex1"/>
-            </reference>
-            <name value="medication-batch-information-dxpq-ex1"/>
-            <description value="Medication - Batch Information dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/medication-batch-information-dxpq-ex2"/>
-            </reference>
-            <name value="medication-batch-information-dxpq-ex2"/>
-            <description value="Medication - Batch Information dx-PQ - Example 2"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
         </resource>
         
@@ -630,17 +575,6 @@
             <groupingId value="b10-container"/>
         </resource>
         
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ManufacturedItemDefinition-dxpq"/>
-                <display value="ManufacturedItemDefinition dx-PQ"/>
-            </reference>
-            <name value="ManufacturedItemDefinition dx-PQ"/>
-            <description value="ManufacturedItemDefinition dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b10-container"/>
-        </resource>
-        
         <!--Container Closure System Examples-->
         <resource>
             <reference>
@@ -661,17 +595,6 @@
             <description value="Bundle - Container Closure System dx-PQ - Example 2, drug substance"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
-            <groupingId value="b10-container"/>
-        </resource>
-        
-        <resource>
-            <reference>
-                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
-            </reference>
-            <name value="manufactureditemdefinition-dxpq-ex1"/>
-            <description value="ManufacturedItemDefinition dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
             <groupingId value="b10-container"/>
         </resource>
         
@@ -855,6 +778,28 @@
 
         <resource>
             <reference>
+                <reference value="StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+                <display value="ManufacturedItemDefinition dx-PQ"/>
+            </reference>
+            <name value="ManufacturedItemDefinition dx-PQ"/>
+            <description value="ManufacturedItemDefinition dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
+                <display value="Medication - Batch Information dx-PQ"/>
+            </reference>
+            <name value="Medication - Batch Information dx-PQ"/>
+            <description value="Medication - Batch Information dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
                 <display value="MedicinalProductDefinition - Drug Product dx-PQ"/>
             </reference>
@@ -883,6 +828,17 @@
             </reference>
             <name value="Observation - Test Result dx-PQ"/>
             <description value="Observation - Test Result dx-PQ"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Organization-dxpq"/>
+                <display value="Organization - dx-PQ"/>
+            </reference>
+            <name value="Organization - dx-PQ"/>
+            <description value="Organization - dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -1032,7 +988,39 @@
             <groupingId value="building-blocks-2"/>
         </resource>
         
-
+        <resource>
+            <reference>
+                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+            </reference>
+            <name value="manufactureditemdefinition-dxpq-ex1"/>
+            <description value="ManufacturedItemDefinition dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+            </reference>
+            <name value="medication-batch-information-dxpq-ex1"/>
+            <description value="Medication - Batch Information dx-PQ - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Medication/medication-batch-information-dxpq-ex2"/>
+            </reference>
+            <name value="medication-batch-information-dxpq-ex2"/>
+            <description value="Medication - Batch Information dx-PQ - Example 2"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
@@ -1085,6 +1073,17 @@
             <description value="Observation-test-result-dxpq - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Organization/organization-dxpq-ex1"/>
+            </reference>
+            <name value="organization-dxpq-ex1"/>
+            <description value="Organization - Example 1"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
         
