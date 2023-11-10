@@ -124,11 +124,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e7"/>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6"/>
       <resource>
          <Ingredient>
                 <!--ingredient1-->
-            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e7"/>
+            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a6"/>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq">
                <valueBoolean value="true"/>
             </extension>
@@ -194,11 +194,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e7"/>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6"/>
       <resource>
          <Ingredient>
                 <!--ingredient2-->
-            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e7"/>
+            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a6"/>
             <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">
                <valueString value="Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials."/>
             </extension>
