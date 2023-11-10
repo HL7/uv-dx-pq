@@ -564,12 +564,22 @@
                 <reference value="Bundle/bundle-product-process-validation-dxpq-ex1"/>
             </reference>
             <name value="bundle-product-process-validation-dxpq-ex1"/>
-            <description value="Bundle - Product Process Validation dx-PQ - Example 1"/>
+            <description value="Bundle - Product Process Validation dx-PQ - Example, product"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
         
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-process-validation-dxpq-ex2-sub"/>
+            </reference>
+            <name value="bundle-product-process-validation-dxpq-ex2-sub"/>
+            <description value="Bundle - Product Process Validation dx-PQ - Example, substance"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq"/>
+            <groupingId value="b13-processvalidation"/>
+        </resource>
         
         <!--Analytical Procedures (b6-analytical)-->
         <!--Analytical Procedures Profiles-->
