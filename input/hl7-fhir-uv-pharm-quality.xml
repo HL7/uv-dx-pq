@@ -43,7 +43,7 @@
         <version value="5.0.0"/>
     </dependsOn>
     <definition>
-        <!-- Reordered to match domains graphic-->
+        <!-- Ordered to match domains graphic-->
         <grouping id="b1-id">
             <name value="Identification"/>
             <description value="FHIR artifacts that provide details about the drug substance and drug product nomenclature; structure; physicochemical properties; and manufacture."/>
@@ -188,8 +188,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-product-pq-ex1"/>
-            <description value="Bundle – Drug Product PQ - Example 1"/>
+            <name value="Bundle – Drug Product PQ - Example"/>
+            <description value="Example of Bundle – Drug Product PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq"/>
             <groupingId value="b1-id"/>
@@ -199,8 +199,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-microbiological-attributes-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-product-microbiological-attributes-pq-ex1"/>
-            <description value="Bundle – Drug Product Microbiological Attributes PQ - Example 1"/>
+            <name value="Bundle – Drug Product Microbiological Attributes PQ - Example"/>
+            <description value="Example of Bundle – Drug Product Microbiological Attributes PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
             <groupingId value="b1-id"/>
@@ -210,8 +210,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-excipients-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-product-excipients-pq-ex1"/>
-            <description value="Bundle – Drug Product Excipients PQ - Example 1"/>
+            <name value="Bundle – Drug Product Excipients PQ - Example"/>
+            <description value="Example of Bundle – Drug Product Excipients PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq"/>
             <groupingId value="b1-id"/>
@@ -221,8 +221,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-general-properties-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-substance-general-properties-pq-ex1"/>
-            <description value="Bundle – Drug Substance General Properties PQ - Example 1"/>
+            <name value="Bundle – Drug Substance General Properties PQ - Example"/>
+            <description value="Example of Bundle – Drug Substance General Properties PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
             <groupingId value="b1-id"/>
@@ -232,8 +232,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-characterization-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-substance-characterization-pq-ex1"/>
-            <description value="Bundle – Drug Substance Characterization PQ - Example 1"/>
+            <name value="Bundle – Drug Substance Characterization PQ - Example"/>
+            <description value="Example of Bundle – Drug Substance Characterization PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
             <groupingId value="b1-id"/>
@@ -268,8 +268,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-composition-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Product Composition PQ - Example 1"/>
-            <description value="TBD"/>
+            <name value="Bundle – Drug Product Composition PQ - Example, product"/>
+            <description value="Example of Bundle – Drug Product Composition PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
             <groupingId value="b17-composition"/>
@@ -280,7 +280,7 @@
                 <reference value="Bundle/bundle-drug-reference-standards-pq-ex2-sub"/>
             </reference>
             <name value="Bundle – Drug Reference Standards PQ - Example, substance"/>
-            <description value="TBD"/>
+            <description value="Example of Bundle – Drug Reference Standards PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-reference-standards-pq"/>
             <groupingId value="b17-composition"/>
@@ -304,8 +304,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-impurities-dxpq-ex1"/>
             </reference>
-            <name value="bundle-product-impurities-dxpq-ex1"/>
-            <description value="Bundle - Product Impurities dx-PQ - Example, product"/>
+            <name value="Bundle - Product Impurities dx-PQ - Example, product"/>
+            <description value="Example of Bundle - Product Impurities dx-PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
             <groupingId value="b15-impurities"/>
@@ -315,8 +315,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-impurities-dxpq-ex2-sub"/>
             </reference>
-            <name value="bundle-product-impurities-dxpq-ex2-sub"/>
-            <description value="Bundle - Product Impurities dx-PQ - Example, substance"/>
+            <name value="Bundle - Product Impurities dx-PQ - Example, substance"/>
+            <description value="Example of Bundle - Product Impurities dx-PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
             <groupingId value="b15-impurities"/>
@@ -340,8 +340,8 @@
             <reference>
                 <reference value="Bundle/bundle-organizations-dxpq-ex1"/>
             </reference>
-            <name value="bundle-organizations-dxpq-ex1"/>
-            <description value="Bundle - Organizations dx-PQ - Example 1"/>
+            <name value="Bundle - Organizations dx-PQ - Example"/>
+            <description value="Example of Bundle - Organizations dx-PQ for either drug product or drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq"/>
             <groupingId value="b4-organizations"/>
@@ -377,8 +377,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-batch-info-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-product-batch-info-pq-ex"/>
-            <description value="Bundle – Drug Product Batch Information PQ - Example"/>
+            <name value="Bundle – Drug Product Batch Information PQ - Example"/>
+            <description value="Example of Bundle – Drug Product Batch Information PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
             <groupingId value="b8-batchinfo"/>
@@ -388,8 +388,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-batch-info-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-substance-batch-info-pq"/>
-            <description value="Bundle – Drug Substance Batch Information PQ - Example"/>
+            <name value="Bundle – Drug Substance Batch Information PQ - Example"/>
+            <description value="Example of Bundle – Drug Substance Batch Information PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
             <groupingId value="b8-batchinfo"/>
@@ -415,8 +415,8 @@
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-prod"/>
             </reference>
-            <name value="bundle-batch-analysis-dxpq-ex1-prod"/>
-            <description value="Bundle – Batch Analysis dx-PQ - Example 1, product"/>
+            <name value="Bundle – Batch Analysis dx-PQ - Example, product"/>
+            <description value="Example of Bundle – Batch Analysis dx-PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
@@ -426,8 +426,8 @@
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-sub"/>
             </reference>
-            <name value="bundle-batch-analysis-dxpq-ex2-sub"/>
-            <description value="Bundle – Batch Analysis dx-PQ - Example 2, substance"/>
+            <name value="Bundle – Batch Analysis dx-PQ - Example, substance"/>
+            <description value="Example of Bundle – Batch Analysis dx-PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-dxpq"/>
             <groupingId value="b9-batchanalyses"/>
@@ -451,8 +451,8 @@
             <reference>
                 <reference value="Bundle/bundle-batch-formula-pq-ex1"/>
             </reference>
-            <name value="bundle-batch-formula-pq-ex1"/>
-            <description value="Bundle - Batch Formula PQ - Example"/>
+            <name value="Bundle - Batch Formula PQ - Example"/>
+            <description value="Example of Bundle - Batch Formula PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq"/>
             <groupingId value="b7-batchformula"/>
@@ -476,8 +476,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-manufacturing-dxpq-ex1"/>
             </reference>
-            <name value="bundle-product-manufacturing-dxpq-ex1"/>
-            <description value="Bundle - Product Manufacturing dx-PQ - Example, product"/>
+            <name value="Bundle - Product Manufacturing dx-PQ - Example, product"/>
+            <description value="Example of Bundle - Product Manufacturing dx-PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
@@ -487,8 +487,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-manufacturing-dxpq-ex2-sub"/>
             </reference>
-            <name value="bundle-product-manufacturing-dxpq-ex2-sub"/>
-            <description value="Bundle - Product Manufacturing dx-PQ - Example, substance"/>
+            <name value="Bundle - Product Manufacturing dx-PQ - Example, substance"/>
+            <description value="Example of Bundle - Product Manufacturing dx-PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
             <groupingId value="b5-mnf"/>
@@ -510,8 +510,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-dxpq-ex1"/>
             </reference>
-            <name value="bundle-product-process-validation-dxpq-ex1"/>
-            <description value="Bundle - Product Process Validation dx-PQ - Example, product"/>
+            <name value="Bundle - Product Process Validation dx-PQ - Example, product"/>
+            <description value="Example of Bundle - Product Process Validation dx-PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>
@@ -521,8 +521,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-dxpq-ex2-sub"/>
             </reference>
-            <name value="bundle-product-process-validation-dxpq-ex2-sub"/>
-            <description value="Bundle - Product Process Validation dx-PQ - Example, substance"/>
+            <name value="Bundle - Product Process Validation dx-PQ - Example, substance"/>
+            <description value="Example of Bundle - Product Process Validation dx-PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-dxpq"/>
             <groupingId value="b13-processvalidation"/>
@@ -546,8 +546,8 @@
             <reference>
                 <reference value="Bundle/bundle-analytical-procedure-dxpq-ex1-prod"/>
             </reference>
-            <name value="bundle-analytical-procedure-dxpq-ex1-prod"/>
-            <description value="Bundle – Analytical Procedure dx-PQ - Example 1, drug product"/>
+            <name value="Bundle – Analytical Procedure dx-PQ - Example, product"/>
+            <description value="Example of Bundle – Analytical Procedure dx-PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
             <groupingId value="b6-analytical"/>
@@ -557,8 +557,8 @@
             <reference>
                 <reference value="Bundle/bundle-analytical-procedure-dxpq-ex2-sub"/>
             </reference>
-            <name value="bundle-analytical-procedure-dxpq-ex2-sub"/>
-            <description value="Bundle – Analytical Procedure dx-PQ - Example 2, drug substance"/>
+            <name value="Bundle – Analytical Procedure dx-PQ - Example, substance"/>
+            <description value="Example of Bundle – Analytical Procedure dx-PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
             <groupingId value="b6-analytical"/>
@@ -582,8 +582,8 @@
             <reference>
                 <reference value="Bundle/bundle-container-closure-system-dxpq-ex1-prod"/>
             </reference>
-            <name value="bundle-container-closure-system-dxpq-ex1-prod"/>
-            <description value="Bundle - Container Closure System dx-PQ - Example 1, drug product"/>
+            <name value="Bundle - Container Closure System dx-PQ - Example, product"/>
+            <description value="Example of Bundle - Container Closure System dx-PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
             <groupingId value="b10-container"/>
@@ -593,8 +593,8 @@
             <reference>
                 <reference value="Bundle/bundle-container-closure-system-dxpq-ex2-sub"/>
             </reference>
-            <name value="bundle-container-closure-system-dxpq-ex2-sub"/>
-            <description value="Bundle - Container Closure System dx-PQ - Example 2, drug substance"/>
+            <name value="Bundle - Container Closure System dx-PQ - Example, substance"/>
+            <description value="Example of Bundle - Container Closure System dx-PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
             <groupingId value="b10-container"/>
@@ -618,8 +618,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-stability-pq-ex1-prod"/>
             </reference>
-            <name value="bundle-drug-stability-pq-ex1-prod"/>
-            <description value="Bundle – Drug Stability PQ - Example 1, product"/>
+            <name value="Bundle – Drug Stability PQ - Example, product"/>
+            <description value="Example of Bundle – Drug Stability PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
             <groupingId value="b11-stabilitystudy"/>
@@ -629,8 +629,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-stability-pq-ex2-sub"/>
             </reference>
-            <name value="bundle-drug-stability-pq-ex2-sub"/>
-            <description value="Bundle – Drug Stability PQ - Example 2, substance"/>
+            <name value="Bundle – Drug Stability PQ - Example, substance"/>
+            <description value="Example of Bundle – Drug Stability PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
             <groupingId value="b11-stabilitystudy"/>
@@ -666,8 +666,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-specification-dxpq-ex1"/>
             </reference>
-            <name value="bundle-drug-product-specification-dxpq-ex1"/>
-            <description value="Bundle – Drug Product Specification dx-PQ - Example 1"/>
+            <name value="Bundle – Drug Product Specification dx-PQ - Example"/>
+            <description value="Example of Bundle – Drug Product Specification dx-PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-dxpq"/>
             <groupingId value="b12-specification"/>
@@ -677,8 +677,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-specification-dxpq-ex1"/>
             </reference>
-            <name value="bundle-drug-substance-specification-dxpq-ex1"/>
-            <description value="Bundle – Drug Substance Specification dx-PQ - Example 1"/>
+            <name value="Bundle – Drug Substance Specification dx-PQ - Example"/>
+            <description value="Example of Bundle – Drug Substance Specification dx-PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
             <groupingId value="b12-specification"/>
@@ -702,8 +702,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-compatibility-pq-ex1"/>
             </reference>
-            <name value="bundle-drug-product-compatibility-pq-ex1"/>
-            <description value="Bundle – Drug Product Compatibility PQ - Example"/>
+            <name value="Bundle – Drug Product Compatibility PQ - Example"/>
+            <description value="Example of Bundle – Drug Product Compatibility PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"/>
             <groupingId value="b14-compatibility"/>
