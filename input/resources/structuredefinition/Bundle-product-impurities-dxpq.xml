@@ -126,8 +126,7 @@
       <type>
         <code value="DocumentReference"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"
-        />
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>
       </type>
     </element>
     
