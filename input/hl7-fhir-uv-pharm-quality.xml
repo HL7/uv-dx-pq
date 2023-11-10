@@ -132,10 +132,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-pq"/>
-                <display value="Bundle-drug-product-pq"/>
+                <display value="Bundle – Drug Product PQ"/>
             </reference>
             <name value="Bundle – Drug Product PQ"/>
-            <description value="Bundle – Drug Product PQ"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
         </resource>
@@ -143,7 +143,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
-                <display value="BundleDrugProductMicrobiologicalAttributesPq"/>
+                <display value="Bundle – Drug Product Microbiological Attributes PQ"/>
             </reference>
             <name value="Bundle – Drug Product Microbiological Attributes PQ"/>
             <description value="Bundle – Drug Product Microbiological Attributes PQ"/>
@@ -154,7 +154,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
-                <display value="BundleDrugProductExcipientsPq"/>
+                <display value="Bundle – Drug Product Excipients PQ"/>
             </reference>
             <name value="Bundle – Drug Product Excipients PQ"/>
             <description value="Bundle – Drug Product Excipients PQ"/>
@@ -165,7 +165,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
-                <display value="BundleDrugSubstanceGeneralPropertiesPq"/>
+                <display value="Bundle – Drug Substance General Properties PQ"/>
             </reference>
             <name value="Bundle – Drug Substance General Properties PQ"/>
             <description value="Bundle – Drug Substance General Properties PQ"/>
@@ -244,7 +244,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-composition-pq"/>
-                <display value="BundleDrugProductCompositionPq"/>
+                <display value="Bundle – Drug Product Composition PQ"/>
             </reference>
             <name value="Bundle – Drug Product Composition PQ"/>
             <description value="Bundle – Drug Product Composition PQ"/>
@@ -255,7 +255,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-reference-standards-pq"/>
-                <display value="BundleDrugReferenceStandardsPq"/>
+                <display value="Bundle – Drug Reference Standards PQ"/>
             </reference>
             <name value="Bundle – Drug Reference Standards PQ"/>
             <description value="Bundle – Drug Reference Standards PQ"/>
@@ -291,7 +291,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-impurities-dxpq"/>
-                <display value="BundleProductImpuritiesDxPq"/>
+                <display value="Bundle - Product Impurities dx-PQ"/>
             </reference>
             <name value="Bundle - Product Impurities dx-PQ"/>
             <description value="Bundle - Product Impurities dx-PQ"/>
@@ -326,7 +326,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-organizations-dxpq"/>
-                <display value="BundleOrganizationsDxPq"/>
+                <display value="Bundle - Organizations dx-PQ"/>
             </reference>
             <name value="Bundle - Organizations dx-PQ"/>
             <description value="Bundle - Organizations dx-PQ"/>
@@ -337,7 +337,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Organization-dxpq"/>
-                <display value="OrganizationDxPq"/>
+                <display value="Organization - dx-PQ"/>
             </reference>
             <name value="Organization - dx-PQ"/>
             <description value="Organization - dx-PQ"/>
@@ -374,7 +374,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-batch-info-pq"/>
-                <display value="BundleDrugProductBatchInfoPq"/>
+                <display value="Bundle – Drug Product Batch Information PQ"/>
             </reference>
             <name value="Bundle – Drug Product Batch Information PQ"/>
             <description value="Bundle – Drug Product Batch Information PQ"/>
@@ -385,7 +385,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
-                <display value="BundleDrugSubstanceBatchInfoPq"/>
+                <display value="Bundle – Drug Substance Batch Information PQ"/>
             </reference>
             <name value="Bundle – Drug Substance Batch Information PQ"/>
             <description value="Bundle – Drug Substance Batch Information PQ"/>
@@ -422,7 +422,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-batch-analysis-dxpq"/>
-                <display value="BundleBatchAnalysisDxPq"/>
+                <display value="Bundle – Batch Analysis dx-PQ"/>
             </reference>
             <name value="Bundle – Batch Analysis dx-PQ"/>
             <description value="Bundle – Batch Analysis dx-PQ"/>
@@ -433,7 +433,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Medication-batch-information-dxpq"/>
-                <display value="MedicationBatchInformationDxPq"/>
+                <display value="Medication - Batch Information dx-PQ"/>
             </reference>
             <name value="Medication - Batch Information dx-PQ"/>
             <description value="Medication - Batch Information dx-PQ"/>
@@ -491,7 +491,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-batch-formula-pq"/>
-                <display value="BundleBatchFormulaPq"/>
+                <display value="Bundle – Batch Formula PQ"/>
             </reference>
             <name value="Bundle – Batch Formula PQ"/>
             <description value="Test"/>
@@ -516,7 +516,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-manufacturing-dxpq"/>
-                <display value="BundleProductManufacturingDxPq"/>
+                <display value="Bundle - Product Manufacturing dx-PQ"/>
             </reference>
             <name value="Bundle - Product Manufacturing dx-PQ"/>
             <description value="Bundle - Product Manufacturing dx-PQ"/>
@@ -551,7 +551,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-process-validation-dxpq"/>
-                <display value="BundleProductProcessValidationDxPq"/>
+                <display value="Bundle - Product Process Validation dx-PQ"/>
             </reference>
             <name value="Bundle - Product Process Validation dx-PQ"/>
             <description value="Bundle - Product Process Validation dx-PQ"/>
@@ -586,7 +586,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-analytical-procedure-dxpq"/>
-                <display value="BundleAnalyticalProcedureDxPq"/>
+                <display value="Bundle – Analytical Procedure dx-PQ"/>
             </reference>
             <name value="Bundle – Analytical Procedure dx-PQ"/>
             <description value="Bundle – Analytical Procedure dx-PQ"/>
@@ -622,7 +622,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-container-closure-system-dxpq"/>
-                <display value="BundleContainerClosureSystemDxPq"/>
+                <display value="v"/>
             </reference>
             <name value="Bundle - Container Closure System dx-PQ"/>
             <description value="Bundle - Container Closure System dx-PQ"/>
@@ -633,7 +633,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/ManufacturedItemDefinition-dxpq"/>
-                <display value="ManufacturedItemDefinitionDxPq"/>
+                <display value="ManufacturedItemDefinition dx-PQ"/>
             </reference>
             <name value="ManufacturedItemDefinition dx-PQ"/>
             <description value="ManufacturedItemDefinition dx-PQ"/>
@@ -677,28 +677,6 @@
         
         <!--Stability (b11-stabilitystudy)-->
         <!--        Stability Profiles-->
-<!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-stability-dxpq"/>
-                <display value="BundleDrugProductStabilityDxPq"/>
-            </reference>
-            <name value="Bundle – Drug Product Stability dx-PQ"/>
-            <description value="Bundle – Drug Product Stability dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
-        
-<!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
-                <display value="BundleDrugSubstanceStabilityDxPq"/>
-            </reference>
-            <name value="Bundle – Drug Substance Stability dx-PQ"/>
-            <description value="Bundle – Drug Substance Stability dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
-        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-stability-pq"/>
@@ -710,29 +688,7 @@
             <groupingId value="b11-stabilitystudy"/>
         </resource>
         
-        <!--        Stability Examples-->
-<!--        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-product-stability-dxpq-ex1"/>
-            </reference>
-            <name value="bundle-drug-product-stability-dxpq-ex1"/>
-            <description value="Bundle – Drug Product Stability dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-stability-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
-        
-<!--        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-substance-stability-dxpq-ex1"/>
-            </reference>
-            <name value="bundle-drug-substance-stability-dxpq-ex1"/>
-            <description value="Bundle – Drug Substance Stability dx-PQ - Example 1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-stability-dxpq"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>-->
-        
+        <!--        Stability Examples-->    
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-stability-pq-ex1-prod"/>
@@ -760,7 +716,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-specification-dxpq"/>
-                <display value="BundleDrugProductSpecificationDxPq"/>
+                <display value="Bundle – Drug Product Specification dx-PQ"/>
             </reference>
             <name value="Bundle – Drug Product Specification dx-PQ"/>
             <description value="Bundle – Drug Product Specification dx-PQ"/>
@@ -771,7 +727,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
-                <display value="BundleDrugSubstanceSpecificationDxPq"/>
+                <display value="Bundle – Drug Substance Specification dx-PQ"/>
             </reference>
             <name value="Bundle – Drug Substance Specification dx-PQ"/>
             <description value="Bundle – Drug Substance Specification dx-PQ"/>
@@ -808,7 +764,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-compatibility-pq"/>
-                <display value="Bundle-drug-product-compatibility-pq"/>
+                <display value="Bundle - Drug Product Compatibility PQ"/>
             </reference>
             <name value="Bundle - Drug Product Compatibility PQ"/>
             <description value="Test"/>
@@ -834,7 +790,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-test-dxpq"/>
-                <display value="ActivityDefinitionTestDxPq"/>
+                <display value="ActivityDefinition - Test dx-PQ"/>
             </reference>
             <name value="ActivityDefinition - Test dx-PQ"/>
             <description value="Test"/>
@@ -845,7 +801,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-drug-pq"/>
-                <display value="CompositionDrugPQ"/>
+                <display value="Composition - Drug PQ"/>
             </reference>
             <name value="Composition - Drug PQ"/>
             <description value="Test"/>
@@ -856,7 +812,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/DeviceDefinition-dxpq"/>
-                <display value="DeviceDefinitionDxPq"/>
+                <display value="DeviceDefinition - dx-PQ"/>
             </reference>
             <name value="DeviceDefinition - dx-PQ"/>
             <description value="DeviceDefinition - dx-PQ"/>
@@ -867,7 +823,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-                <display value="DiagnosticReportDrugAnalysisPQ"/>
+                <display value="DiagnosticReport - Drug Analysis PQ"/>
             </reference>
             <name value="DiagnosticReport - Drug Analysis PQ"/>
             <description value="This DiagnosticReport profile represents results reports for batch analysis, stability study, characterization, impurities analysis, and manufacturing process validation study, etc."/>
@@ -878,7 +834,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/DocumentReference-dxpq"/>
-                <display value="DocumentReferenceDxPq"/>
+                <display value="DocumentReference - dx-PQ"/>
             </reference>
             <name value="DocumentReference - dx-PQ"/>
             <description value="DocumentReference - dx-PQ"/>
@@ -889,7 +845,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Ingredient-dxpq"/>
-                <display value="IngredientDxPq"/>
+                <display value="Ingredient dx-Pq"/>
             </reference>
             <name value="Ingredient dx-Pq"/>
             <description value="Section 2.1 - DP Composition"/>
@@ -900,7 +856,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
-                <display value="MedicinalProductDefinitionDrugProductDxPq"/>
+                <display value="MedicinalProductDefinition - Drug Product dx-PQ"/>
             </reference>
             <name value="MedicinalProductDefinition - Drug Product dx-PQ"/>
             <description value="MedicinalProductDefinition - Drug Product dx-PQ"/>
@@ -911,7 +867,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-test-method-dxpq"/>
-                <display value="ObservationDefinitionTestMethodDxPq"/>
+                <display value="ObservationDefinition - Test Method dx-PQ"/>
             </reference>
             <name value="ObservationDefinition - Test Method dx-PQ"/>
             <description value="TBD"/>
@@ -923,7 +879,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-test-result-dxpq"/>
-                <display value="ObservationTestResultDxPq"/>
+                <display value="Observation - Test Result dx-PQ"/>
             </reference>
             <name value="Observation - Test Result dx-PQ"/>
             <description value="Observation - Test Result dx-PQ"/>
@@ -934,7 +890,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/PackagedProductDefinition-dxpq"/>
-                <display value="PackagedProductDefinitionDxPq"/>
+                <display value="PackagedProductDefinition - dx-PQ"/>
             </reference>
             <name value="PackagedProductDefinition - dx-PQ"/>
             <description value="PackagedProductDefinition - dx-PQ"/>
@@ -945,9 +901,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-dxpq"/>
-                <display value="PlanDefinition-DxPq"/>
+                <display value="PlanDefinition - dx-PQ"/>
             </reference>
-            <name value="PlanDefinition- dx-PQ"/>
+            <name value="PlanDefinition - dx-PQ"/>
             <description value="TBD"/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -956,7 +912,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/SpecimenDefinition-stability-dxpq"/>
-                <display value="SpecimenDefinitionStabilityDxPq"/>
+                <display value="SpecimenDefinition - Stability dx-PQ"/>
             </reference>
             <name value="SpecimenDefinition - Stability dx-PQ"/>
             <description value="TBD"/>
@@ -967,7 +923,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Specimen-stability-dxpq"/>
-                <display value="SpecimenStabilityDxPq"/>
+                <display value="Specimen - Stability dx-PQ"/>
             </reference>
             <name value="Specimen - Stability dx-PQ"/>
             <description value="TBD"/>
@@ -979,7 +935,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
-                <display value="SubstanceDefinitionComponentSubstanceDxPq"/>
+                <display value="SubstanceDefinition - Component Substance dx-PQ"/>
             </reference>
             <name value="SubstanceDefinition - Component Substance dx-PQ"/>
             <description value="Section 2.1 - DP Composition - Product Component"/>
@@ -990,7 +946,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Substance-dxpq"/>
-                <display value="SubstanceDxPq"/>
+                <display value="Substance - dx-PQ"/>
             </reference>
             <name value="Substance - dx-PQ"/>
             <description value="Substance - dx-PQ"/>
@@ -1246,7 +1202,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-dxpq"/>
-                <display value="ExtensionActualYieldDxPq"/>
+                <display value="Extension - Actual Yield dx-PQ"/>
             </reference>
             <name value="Extension - Actual Yield dx-PQ"/>
             <description value="Extension - Actual Yield dx-PQ"/>
@@ -1257,7 +1213,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-unfiltered-dxpq"/>
-                <display value="ExtensionActualYieldUnfilteredDxPq"/>
+                <display value="Extension - Actual Yield Unfiltered dx-PQ"/>
             </reference>
             <name value="Extension - Actual Yield Unfiltered dx-PQ"/>
             <description value="Extension - Actual Yield Unfiltered dx-PQ"/>
@@ -1268,7 +1224,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-designation-dxpq"/>
-                <display value="ExtensionBatchDesignationDxPq"/>
+                <display value="Extension - Batch Designation dx-PQ"/>
             </reference>
             <name value="Extension - Batch Designation dx-PQ"/>
             <description value="Extension - Batch Designation dx-PQ"/>
@@ -1279,7 +1235,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-number-of-vials-dxpq"/>
-                <display value="ExtensionBatchNumberOf-VialsDxPq"/>
+                <display value="Extension - Batch Number of Vials dx-PQ"/>
             </reference>
             <name value="Extension - Batch Number of Vials dx-PQ"/>
             <description value="Extension - Batch Number of Vials dx-PQ"/>
@@ -1290,7 +1246,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-dxpq"/>
-                <display value="ExtensionBatchReleaseDateDxPq"/>
+                <display value="Extension - Batch Release Date dx-PQ"/>
             </reference>
             <name value="Extension - Batch Release Date dx-PQ"/>
             <description value="Extension - Batch Release Date dx-PQ"/>
@@ -1301,7 +1257,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-retest-date-dxpq"/>
-                <display value="ExtensionBatchRetestDateDxPq"/>
+                <display value="Extension - Batch Retest Date dx-PQ"/>
             </reference>
             <name value="Extension - Batch Retest Date dx-PQ"/>
             <description value="Extension - Batch Retest Date dx-PQ"/>
@@ -1312,7 +1268,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-storage-duration-dxpq"/>
-                <display value="ExtensionBatchStorageDurationDxPq"/>
+                <display value="Extension - Batch Storage Duration dx-PQ"/>
             </reference>
             <name value="Extension - Batch Storage Duration dx-PQ"/>
             <description value="Extension - Batch Storage Duration dx-PQ"/>
@@ -1323,7 +1279,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-substance-batch-dxpq"/>
-                <display value="ExtensionBatchSubstanceBatchDxPq"/>
+                <display value="Extension - Batch Substance Batch dx-PQ"/>
             </reference>
             <name value="Extension - Batch Substance Batch dx-PQ"/>
             <description value="Extension - Batch Substance Batch dx-PQ"/>
@@ -1334,7 +1290,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-dxpq"/>
-                <display value="ExtensionContainerOrientationDxPq"/>
+                <display value="Extension - Container Orientation dx-PQ"/>
             </reference>
             <name value="Extension - Container Orientation dx-PQ"/>
             <description value="Extension - Container Orientation dx-PQ"/>
@@ -1346,7 +1302,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-history-of-process-dxpq"/>
-                <display value="ExtensionHistoryOfProcessDxPq"/>
+                <display value="Extension - History of Process dx-PQ"/>
             </reference>
             <name value="Extension - History of Process dx-PQ"/>
             <description value="Extension - History of Process dx-PQ"/>
@@ -1354,21 +1310,10 @@
             <groupingId value="extensions1"/>
         </resource>
 
-        <!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-instance-comment-dxpq"/>
-                <display value="ExtensionInstanceCommentDxPq"/>
-            </reference>
-            <name value="Extension - Instance Comment dx-PQ"/>
-            <description value="Extension - Instance Comment dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>-->
-
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-participant-dxpq"/>
-                <display value="ExtensionManufacturingParticipantDxPq"/>
+                <display value="Extension - Manufacturing Participant dx-PQ"/>
             </reference>
             <name value="Extension - Manufacturing Participant dx-PQ"/>
             <description value="Extension - Manufacturing Participant dx-PQ"/>
@@ -1379,7 +1324,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-process-dxpq"/>
-                <display value="ExtensionManufacturingProcessDxPq"/>
+                <display value="Extension - Manufacturing Process dx-PQ"/>
             </reference>
             <name value="Extension - Manufacturing Process dx-PQ"/>
             <description value="Extension - Manufacturing Process dx-PQ"/>
@@ -1390,7 +1335,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-medication-definition-dxpq"/>
-                <display value="ExtensionMedicationDefinitionDxPq"/>
+                <display value="Extension - Medication Definition dx-PQ"/>
             </reference>
             <name value="Extension - Medication Definition dx-PQ"/>
             <description value="Extension - Medication Definition dx-PQ"/>
@@ -1401,7 +1346,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-date-dxpq"/>
-                <display value="ExtensionPackagingDateDxPq"/>
+                <display value="Extension - Packaging Date dx-PQ"/>
             </reference>
             <name value="Extension - Packaging Date dx-PQ"/>
             <description value="Extension - Packaging Date dx-PQ"/>
@@ -1412,7 +1357,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-site-dxpq"/>
-                <display value="ExtensionPackagingSiteDxPq"/>
+                <display value="Extension - Packaging Site dx-PQ"/>
             </reference>
             <name value="Extension - Packaging Site dx-PQ"/>
             <description value="Extension - Packaging Site dx-PQ"/>
@@ -1423,7 +1368,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-plan-document-reference-dxpq"/>
-                <display value="ExtensionPlanDocumentReferenceDxPq"/>
+                <display value="Extension - Plan Document Reference dx-PQ"/>
             </reference>
             <name value="Extension - Plan Document Reference dx-PQ"/>
             <description value="Extension - Plan Document Reference dx-PQ"/>
@@ -1434,7 +1379,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-parameters-dxpq"/>
-                <display value="ExtensionProcessParametersDxPq"/>
+                <display value="Extension  - Process Parameters dx-PQ"/>
             </reference>
             <name value="Extension  - Process Parameters dx-PQ"/>
             <description value="Extension  - Process Parameters dx-PQ"/>
@@ -1445,7 +1390,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-step-scale-dxpq"/>
-                <display value="ExtensionProcessStepScaleDxPq"/>
+                <display value="Extension - Process Step Scale dx-PQ"/>
             </reference>
             <name value="Extension - Process Step Scale dx-PQ"/>
             <description value="Extension - Process Step Scale dx-PQ"/>
@@ -1456,7 +1401,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-display-dxpq"/>
-                <display value="ExtensionQualifiedValueDisplayDxPq"/>
+                <display value="Extension - Qualified Value Display dx-PQ"/>
             </reference>
             <name value="Extension - Qualified Value Display dx-PQ"/>
             <description value="Extension - Qualified Value Display dx-PQ"/>
@@ -1467,7 +1412,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-target-dxpq"/>
-                <display value="ExtensionQualifiedValueTargetDxPq"/>
+                <display value="Extension - Qualified Value Target dx-PQ"/>
             </reference>
             <name value="Extension - Qualified Value Text dx-PQ"/>
             <description value="Extension - Qualified Value Target dx-PQ"/>
@@ -1478,7 +1423,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-text-dxpq"/>
-                <display value="ExtensionQualifiedValueTextDxPq"/>
+                <display value="Extension - Qualified Value Text dx-PQ"/>
             </reference>
             <name value="Extension - Qualified Value Text dx-PQ"/>
             <description value="Extension - Qualified Value Text dx-PQ"/>
@@ -1489,7 +1434,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-site-utilization-dxpq"/>
-                <display value="ExtensionSiteUtilizationDxPq"/>
+                <display value="Extension - Site Utilization dx-PQ"/>
             </reference>
             <name value="Extension - Site Utilization dx-PQ"/>
             <description value="Extension - Site Utilization dx-PQ"/>
@@ -1500,62 +1445,18 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-statistical-model-dxpq"/>
-                <display value="ExtensionStatisticalModelDxPq"/>
+                <display value="Extension - Statistical Model dx-PQ"/>
             </reference>
             <name value="Extension - Statistical Model dx-PQ"/>
             <description value="Extension - Statistical Model dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        <!--
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-table-footnote-dxpq"/>
-                <display value="ExtensionTableFootnoteDxPq"/>
-            </reference>
-            <name value="Extension - Table Footnote dx-PQ"/>
-            <description value="Extension - Table Footnote dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-tabulate-batches-in-rows-dxpq"/>
-                <display value="ExtensionTabulateBatchesInRowsDxPq"/>
-            </reference>
-            <name value="Extension - Tabulate Batches in Rows dx-PQ"/>
-            <description value="Extension - Tabulate Batches in Rows dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>-->
-
-        <!--       <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-tabulate-batch-impurities-dxpq"/>
-                <display value="ExtensionTabulateBatchImpuritiesDxPq"/>
-            </reference>
-            <name value="Extension - Tabulate Batch Impurities dx-PQ"/>
-            <description value="Extension - Tabulate Batch Impurities dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-tabulate-equipment-dxpq"/>
-                <display value="ExtensionTabulateEquipmentDxPq"/>
-            </reference>
-            <name value="Extension - Tabulate Equipment dx-PQ"/>
-            <description value="Extension - Tabulate Equipment dx-PQ"/>
-            <isExample value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>-->
 
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-test-comment-dxpq"/>
-                <display value="ExtensionTestCommentDxPq"/>
+                <display value="Extension - Test Comment dx-PQ"/>
             </reference>
             <name value="Extension - Test Comment dx-PQ"/>
             <description value="Extension - Test Comment dx-PQ"/>
@@ -1566,7 +1467,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-target-fill-weight-dxpq"/>
-                <display value="ExtensionTargetFillWeightDxPq"/>
+                <display value="Extension - Target Fill Weight dx-PQ"/>
             </reference>
             <name value="Extension - Target Fill Weight dx-PQ"/>
             <description value="Extension - Target Fill Weight dx-PQ"/>
@@ -1577,18 +1478,19 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-time-point-description-dxpq"/>
-                <display value="ExtensionTimePointDescriptionDxPq"/>
+                <display value="Extension - Time Point Description dx-PQ"/>
             </reference>
             <name value="Extension - Time Point Description dx-PQ"/>
             <description value="Extension - Time Point Description dx-PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        
         <!--Terminology-->
         <resource>
             <reference>
                 <reference value="CodeSystem/CodeSystem-local-codes-dxpq"/>
-                <display value="CodeSystemLocalCodesDxPQ"/>
+                <display value="CodeSystem - Local Codes - dx-PQ"/>
             </reference>
             <name value="CodeSystem - Local Codes - dx-PQ"/>
             <description value="CodeSystem - Local Codes - dx-PQ"/>
