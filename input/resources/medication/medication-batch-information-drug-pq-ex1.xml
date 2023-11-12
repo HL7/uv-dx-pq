@@ -3,9 +3,9 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) and updated based on Accumulus FHIR Product Example - Process Validation.xml (07-11-2023)  -->
     <!-- Section 8 - Batch or Lot Information (batch 1 of 3) -->
     <!-- <id value="medication-actual-batch"/>-->
-    <id value="medication-batch-information-pq-ex2"/>
+    <id value="medication-batch-information-drug-pq-ex1"/>
     <meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
     </meta>
     <code>
         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
@@ -16,11 +16,10 @@
         </extension>
     </code>
 
-    <!-- Original order from Accumulus FHIR Product Example - Process Validation.xml (07-11-2023), extension on Medication (id value="medication-actual-batch), with edits-->
-
+    <!--    New order, with all Extensions custom to this IG at the top -->
     <batch>
         <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-            <!-- Extensions custom for this IG -->
+            <!-- All Extensions custom for this IG -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                 <valueDateTime value="2019-09-08"/>
                 <!-- #171 -->
@@ -52,34 +51,15 @@
                     <!--                    <reference value="Substance/actual-batch-substance"/>-->
                 </valueReference>
             </extension>
-            <!--  Base FHIR Extensions-->
-            <extension url="manufacturingDate">
-                <!-- #157 -->
-                <valueDateTime value="2020-06"/>
-            </extension>
-            <!-- Extensions custom for this IG -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
-<!--                <extension url="http://accumulus.org/fhir/extension/packagingDate">-->
-                <!-- #159 -->
-                <valueDateTime value="2020-08"/>
+                            <valueDateTime value="2020-08"/>
             </extension>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
-<!--                <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
+                <!--                <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
                 <valueReference>
                     <reference value="Organization/organization-pq-ex1"/>
                 </valueReference>
             </extension>
-            <!--  Base FHIR Extension-->
-            <extension url="batchQuantity">
-                <valueQuantity>
-                    <!-- #26 -->
-                    <!-- #155 -->
-                    <!-- need to see if one of these needs changing -->
-                    <value value="100100"/>
-                    <unit value="tablets"/>
-                </valueQuantity>
-            </extension>
-            <!-- Extensions custom for this IG -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                 <valueQuantity>
                     <!-- #160 -->
@@ -99,25 +79,40 @@
                     <unit value="g"/>
                 </valueQuantity>
             </extension>
-            <!--  Base FHIR Extension-->
+
+            <!--  Base FHIR Extensions-->
+            <extension url="manufacturingDate">
+                <!-- #157 -->
+                <valueDateTime value="2020-06"/>
+            </extension>
+            <extension url="batchQuantity">
+                <valueQuantity>
+                    <!-- #26 -->
+                    <!-- #155 -->
+                    <!-- need to see if one of these needs changing -->
+                    <value value="100100"/>
+                    <unit value="tablets"/>
+                </valueQuantity>
+            </extension>
             <extension url="batchUtilization">
                 <!-- #159 -->
                 <valueCodeableConcept>
                     <coding>
-<!--                        <!-\- Extensions custom for this IG -\->
-                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-instance-comment-pq">
-<!-\-                            <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-\->
-                            <valueCodeableConcept value="Comment: This has a value set defined in PQ/CMC but no code system"/>                            
+<!--                        <!-\- Extension custom for this IG -\->
+                        <extension
+                            url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-instance-comment-pq">
+                            <!-\-                            <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">-\->
+                            <valueCodeableConcept value="Comment: This has a value set defined in PQ/CMC but no code system"
+                            />                            
 <!-\-                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>-\->
                         </extension>-->
                         <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
-                                	<code value="C133990"/>
-                                	<display value="Commercial"/> 
-                    </coding>
+                                    <code value="C133990"/>
+                                    <display value="Commercial"/> 
+                                </coding>
                             	<text value="Production"/>
                 </valueCodeableConcept>
             </extension>
-            <!--  Base FHIR Extension-->
             <extension url="assignedManufacturer">
                 <valueReference>
                     <!-- #158 -->
@@ -125,12 +120,13 @@
                 </valueReference>
             </extension>
             <extension url="container">
-                <extension url="closureSystemDescription">
-                    <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
-                </extension>
+                    		<extension url="closureSystemDescription">
+                    			<valueString value="100 cc HDPE Bottle 2 g desiccant"/>		
+                    		</extension>
             </extension>
         </extension>
         <!-- #153 -->
         <lotNumber value="33445"/>
     </batch>
+
 </Medication>

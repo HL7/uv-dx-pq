@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Medication-batch-information-pq"/>
+    <id value="Medication-batch-information-drug-pq"/>
     <meta>
         <versionId value="7"/>
         <lastUpdated value="2022-12-21T12:40:35.255+00:00"/>
         <source value="#sich1CqFymSjQpNT"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
-    <name value="MedicationBatchInformationPq"/>
-    <title value="Medication - Batch Information PQ"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
+    <name value="MedicationBatchInformationDrugPq"/>
+    <title value="Medication - Batch Information Drug PQ"/>
     <status value="active"/>
-    <description value="Section 8 - Batch or Lot Information"/>
+    <description value="This Medication profile represents information about the batches that underwent testing or analysis."/>
     <fhirVersion value="5.0.0"/>
     <kind value="resource"/>
     <abstract value="false"/>

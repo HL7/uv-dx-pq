@@ -83,7 +83,7 @@
       <type>
         <code value="Medication"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"
         />
       </type>
     </element>

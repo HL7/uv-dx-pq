@@ -1272,7 +1272,7 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1306,7 +1306,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1356,7 +1356,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-            		        <!--Medication/medication-batch-information-pq-ex1-->
+            		        <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1405,7 +1405,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-            		        <!--Medication/medication-batch-information-pq-ex1-->
+            		        <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1454,7 +1454,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-            		        <!--Medication/medication-batch-information-pq-ex1-->
+            		        <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1504,7 +1504,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-            		        <!--Medication/medication-batch-information-pq-ex1-->
+            		        <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1553,7 +1553,7 @@
                      </coding>
                   </code>
                   <subject>
-            		        <!--Medication/medication-batch-information-pq-ex1-->
+            		        <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1589,7 +1589,7 @@
                      </coding>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1622,7 +1622,7 @@
                      </coding>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1648,7 +1648,7 @@
                <text value="Test Components - Long-term 25C etc - Initial (XYZ)"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2141,7 +2141,7 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2174,7 +2174,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2220,7 +2220,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2265,7 +2265,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2310,7 +2310,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2356,7 +2356,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2400,7 +2400,7 @@
                      </coding>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2432,7 +2432,7 @@
                      </coding>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2459,7 +2459,7 @@
                      </coding>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2485,7 +2485,7 @@
                <text value="Test Components - Long-term 25C etc - 18 months (XY)"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2778,7 +2778,7 @@
                      <text value="Description"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2808,7 +2808,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2854,7 +2854,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-            		        <!--Medication/medication-batch-information-pq-ex1-->
+            		        <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2900,7 +2900,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2945,7 +2945,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2991,7 +2991,7 @@
                      <text value="Degradation Products"/>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3035,7 +3035,7 @@
                      </coding>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3067,7 +3067,7 @@
                      </coding>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3096,7 +3096,7 @@
                      </coding>
                   </code>
                   <subject>
-                            <!--Medication/medication-batch-information-pq-ex1-->
+                            <!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3122,7 +3122,7 @@
                <text value="Test Components - Accelerated 40C etc - 3 Months (X)"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3173,7 +3173,7 @@
                 <!--medication-batch-information-pq-ex1-->
             <id value="7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
             </meta>
             <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
                     <valueString value="medication/{id}.xml"/>

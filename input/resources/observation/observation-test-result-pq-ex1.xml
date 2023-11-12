@@ -17,7 +17,7 @@
         <text value="Degradation Products"/>
     </code>
     <subject>
-        <reference value="Medication/medication-batch-information-pq-ex1"/>
+        <reference value="Medication/medication-batch-information-drug-pq-ex1"/>
     </subject>
     <effectiveDateTime value="2023-01-01T12:00:00Z"/>
     <performer>

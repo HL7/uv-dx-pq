@@ -791,10 +791,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/Medication-batch-information-pq"/>
-                <display value="Medication - Batch Information PQ"/>
+                <reference value="StructureDefinition/Medication-batch-information-drug-pq"/>
+                <display value="Medication - Batch Information Drug PQ"/>
             </reference>
-            <name value="Medication - Batch Information PQ"/>
+            <name value="Medication - Batch Information Drug PQ"/>
             <description value="This Medication profile represents information about the batches that underwent testing or analysis."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -1001,23 +1001,23 @@
 
         <resource>
             <reference>
-                <reference value="Medication/medication-batch-information-pq-ex1"/>
+                <reference value="Medication/medication-batch-information-drug-pq-ex1"/>
             </reference>
-            <name value="medication-batch-information-pq-ex1"/>
-            <description value="Medication - Batch Information PQ - Example 1"/>
+            <name value="medication-batch-information-drug-pq-ex1"/>
+            <description value="Medication - Batch Information Drug PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
             <reference>
-                <reference value="Medication/medication-batch-information-pq-ex2"/>
+                <reference value="Medication/medication-batch-information-drug pq-ex2"/>
             </reference>
-            <name value="medication-batch-information-pq-ex2"/>
-            <description value="Medication - Batch Information PQ - Example 2"/>
+            <name value="medication-batch-information-drug-pq-ex2"/>
+            <description value="Medication - Batch Information Drug PQ - Example 2"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

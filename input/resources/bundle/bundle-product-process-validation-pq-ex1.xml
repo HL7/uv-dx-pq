@@ -1385,7 +1385,7 @@
             	<!--medication-batch-information-pq-ex2-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
             </meta>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
