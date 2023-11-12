@@ -11,8 +11,8 @@
     </extension>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ImplementationGuide/hl7-fhir-uv-pharm-quality"/>
     <version value="0.1.0"/>
-    <name value="DataExchangeIndustryPharmaceuticalQuality"/>
-    <title value="Data Exchange Industry – Pharmaceutical Quality (PQ)"/>
+    <name value="PharmaceuticalQualityIndustry"/>
+    <title value="Pharmaceutical Quality (Industry)"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 International / Biomedical Research and Regulation"/>
