@@ -714,10 +714,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/ActivityDefinition-test-pq"/>
-                <display value="ActivityDefinition - Test PQ"/>
+                <reference value="StructureDefinition/ActivityDefinition-test-drug-pq"/>
+                <display value="ActivityDefinition - Test Drug PQ"/>
             </reference>
-            <name value="ActivityDefinition - Test PQ"/>
+            <name value="ActivityDefinition - Test Drug PQ"/>
             <description value="This ActivityDefinition profile represents a set of tests and their acceptance criteria through the contained ObservationDefinition resources."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -918,7 +918,7 @@
             <name value="activitydefinition-test-longterm25c-25xyz-initial"/>
             <description value="activitydefinition-test-longterm25c-25xyz-initial"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

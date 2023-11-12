@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ActivityDefinition-test-pq"/>
+  <id value="ActivityDefinition-test-drug-pq"/>
   <url
-    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-pq"/>
-  <name value="ActivityDefinitionTestPq"/>
-  <title value="ActivityDefinition - Test PQ"/>
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
+  <name value="ActivityDefinitionDrugTestPq"/>
+  <title value="ActivityDefinition - Test Drug PQ"/>
   <status value="active"/>
-  <description value="Test"/>
+  <description value="This ActivityDefinition profile represents a set of tests and their acceptance criteria through the contained ObservationDefinition resources."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

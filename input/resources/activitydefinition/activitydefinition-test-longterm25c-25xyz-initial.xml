@@ -2,7 +2,7 @@
 <ActivityDefinition xmlns="http://hl7.org/fhir">
     <id value="activitydefinition-test-longterm25c-25xyz-initial"/>
     <meta>
-        <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-pq"/>
+        <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
     <title value="Long-term - 25°C/60% RH - XYZ"/>
