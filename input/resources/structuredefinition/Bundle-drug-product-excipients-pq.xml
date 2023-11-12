@@ -69,7 +69,7 @@
       <type>
         <code value="Ingredient"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-pq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-drug-pq"/>
       </type>
     </element>
     

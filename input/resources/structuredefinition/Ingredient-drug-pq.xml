@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Ingredient-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-pq"/>
-  <name value="IngredientPq"/>
-  <title value="Ingredient Pq"/>
+  <id value="Ingredient-drug-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-drug-pq"/>
+  <name value="IngredientDrugPq"/>
+  <title value="Ingredient - Drug Pq"/>
   <status value="active"/>
-  <description value="Section 2.1 - DP Composition"/>
+  <description value="This Ingredient profile represents the active ingredient(s) of a drug substance or product. It references one SubstanceDefinition resource and can include the strength or concentration of that substance."/>
  <fhirVersion value="5.0.0"/>
  <kind value="resource"/>
   <abstract value="false"/>

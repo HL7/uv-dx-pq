@@ -769,10 +769,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/Ingredient-pq"/>
-                <display value="Ingredient Pq"/>
+                <reference value="StructureDefinition/Ingredient-drug-pq"/>
+                <display value="Ingredient - Drug PQ"/>
             </reference>
-            <name value="Ingredient Pq"/>
+            <name value="Ingredient - Drug PQ"/>
             <description value="This Ingredient profile represents the active ingredient(s) of a drug substance or product. It references one SubstanceDefinition resource and can include the strength or concentration of that substance."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -979,12 +979,12 @@
 
         <resource>
             <reference>
-                <reference value="Ingredient/ingredient-pq-ex1"/>
+                <reference value="Ingredient/ingredient-drug-pq-ex1"/>
             </reference>
-            <name value="ingredient-pq-ex1"/>
-            <description value="Ingredient PQ - Example 1"/>
+            <name value="ingredient-drug-pq-ex1"/>
+            <description value="Ingredient - Drug PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

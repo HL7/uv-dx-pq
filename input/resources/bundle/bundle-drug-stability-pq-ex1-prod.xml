@@ -3537,10 +3537,10 @@
       <resource>
          <Ingredient>
 				<!--id value="productIngredient"/-->
-			    <!--ingredient-pq-ex1-->
+			    <!--Ingredient-drug-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-drug-pq"/>
             </meta>
             <status value="active"/>
             <for>
