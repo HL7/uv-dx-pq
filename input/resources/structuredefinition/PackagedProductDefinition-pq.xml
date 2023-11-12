@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PackagedProductDefinition-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
+  <name value="PackagedProductDefinitionDxPq"/>
+  <title value="active - dx-PQ"/>
+  <status value="draft"/>
+  <description value="TBD"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="PackagedProductDefinition"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="PackagedProductDefinition">
+      <path value="PackagedProductDefinition"/>
+    </element>
+
+
+    <element id="PackagedProductDefinition.packageFor">
+      <path value="PackagedProductDefinition.packageFor"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.description">
+      <path value="PackagedProductDefinition.description"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging">
+      <path value="PackagedProductDefinition.packaging"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.type">
+      <path value="PackagedProductDefinition.packaging.type"/>
+      <mustSupport value="ture"/>
+      <mapping>
+        <identity value="idmp"/>
+        <map value="Package Item (Container).Package Item (Container) Type"/>
+      </mapping>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.material">
+      <path value="PackagedProductDefinition.packaging.material"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.shelfLifeStorage">
+      <path value="PackagedProductDefinition.packaging.shelfLifeStorage"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.manufacturer">
+      <path value="PackagedProductDefinition.packaging.manufacturer"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.property">
+      <path value="PackagedProductDefinition.packaging.property"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.containedItem">
+      <path value="PackagedProductDefinition.packaging.containedItem"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.containedItem.amount">
+      <path value="PackagedProductDefinition.packaging.containedItem.amount"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.packaging">
+      <path value="PackagedProductDefinition.packaging.packaging"/>
+      <mustSupport value="true"/>
+    </element>
+
+
+  </differential>
+</StructureDefinition>

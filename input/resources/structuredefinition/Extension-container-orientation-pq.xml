@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-container-orientation-pq"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2023-01-11T01:05:33.310+00:00"/>
+        <source value="#Foor8aj0PDmWtY76"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq"/>
+    <name value="ExtensionContainerOrientationDxPq"/>
+    <title value="Extension - Container Orientation dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="5.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="DiagnosticReport"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="ResearchStudy"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+<!--        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <max value="0"/>
+        </element>-->
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -56,7 +56,7 @@
       <type>
         <code value="MedicinalProductDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
       </type>
     </element>
     
@@ -69,7 +69,7 @@
       <type>
         <code value="Medication"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
       </type>
     </element>
     
@@ -95,7 +95,7 @@
       <type>
         <code value="Observation"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
       </type>
     </element>
     
@@ -108,7 +108,7 @@
       <type>
         <code value="Organization"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
       </type>
     </element>
     

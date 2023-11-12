@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-plan-document-reference-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq"/>
+    <name value="ExtensionPlanDocumentReferenceDxPq"/>
+    <title value="Extension - Plan Document Reference dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="5.0.0-snapshot3"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="PlanDefinition"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/> 
+            <type> 
+                <code value="Reference"/> 
+                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/> 
+            </type> 
+        </element>
+    </differential>
+</StructureDefinition>

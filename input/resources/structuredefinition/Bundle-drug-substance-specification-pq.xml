@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Bundle-drug-product-batch-info-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
-  <name value="BundleDrugProductBatchInfoPq"/>
-  <title value="Bundle – drug Product Batch Information PQ"/>
+  <id value="Bundle-drug-substance-specification-pq"/>
+  <url
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-pq"/>
+  <name value="BundleDrugSubstanceSpecificationDxPq"/>
+  <title value="Bundle – Drug Substance Specification dx-PQ"/>
   <status value="active"/>
-  <description value="TBD"/>
+  <description value="Bundle – Drug Substance Specification dx-PQ"/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -32,7 +33,7 @@
       <path value="Bundle.timestamp"/>
       <mustSupport value="true"/>
     </element>
-
+    
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
       <slicing>
@@ -45,46 +46,56 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
-
-    <element id="Bundle.entry:Product-Identification">
+    
+    <element id="Bundle.entry:Component-Substance">
       <path value="Bundle.entry"/>
-      <sliceName value="Product-Identification"/>
+      <sliceName value="Component-Substance"/>
     </element>
-    <element id="Bundle.entry:Product-Identification.resource">
+    <element id="Bundle.entry:Component-Substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
-        <code value="MedicinalProductDefinition"/>
+        <code value="SubstanceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"
-        />
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
       </type>
     </element>
-      
-    <element id="Bundle.entry:Batch-Lot-Information">
+    
+    <element id="Bundle.entry:Protocol">
       <path value="Bundle.entry"/>
-      <sliceName value="Batch-Lot-Information"/>
+      <sliceName value="Protocol"/>
     </element>
-    <element id="Bundle.entry:Batch-Lot-Information.resource">
+    <element id="Bundle.entry:Protocol.resource">
       <path value="Bundle.entry.resource"/>
       <type>
-        <code value="Medication"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"
-        />
+        <code value="PlanDefinition"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
       </type>
     </element>
-
-    <element id="Bundle.entry:Organizations">
+    
+    <element id="Bundle.entry:Test-Method">
       <path value="Bundle.entry"/>
-      <sliceName value="Organizations"/>
+      <sliceName value="Test-Method"/>
     </element>
-    <element id="Bundle.entry:Organizations.resource">
+    <element id="Bundle.entry:Test-Method.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="ObservationDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+      </type>
+    </element>
+ 
+    <element id="Bundle.entry:Organization">
+      <path value="Bundle.entry"/>
+      <sliceName value="Organization"/>
+    </element>
+    <element id="Bundle.entry:Organization.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Organization"/>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
       </type>
     </element>
-
   </differential>
 </StructureDefinition>

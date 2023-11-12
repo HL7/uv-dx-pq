@@ -54,7 +54,7 @@
       <type>
         <code value="MedicinalProductDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"
         />
       </type>
     </element>
@@ -68,7 +68,7 @@
       <type>
         <code value="Ingredient"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-pq"
         />
       </type>
     </element>
@@ -82,7 +82,7 @@
       <type>
         <code value="SubstanceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"
         />
       </type>
     </element>
@@ -96,7 +96,7 @@
       <type>
         <code value="Medication"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"
         />
       </type>
     </element>
@@ -110,7 +110,7 @@
       <type>
         <code value="PlanDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"
         />
       </type>
     </element>
@@ -124,7 +124,7 @@
       <type>
         <code value="ObservationDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"
         />
       </type>
     </element>
@@ -138,7 +138,7 @@
       <type>
         <code value="PackagedProductDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"
         />
       </type>
     </element>
@@ -166,7 +166,7 @@
       <type>
         <code value="Observation"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"
         />
       </type>
     </element>
@@ -179,7 +179,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Organization"/>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
       </type>
     </element>
     

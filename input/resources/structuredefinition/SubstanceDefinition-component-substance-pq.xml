@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SubstanceDefinition-component-substance-pq"/>
+  <url
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+  <name value="SubstanceDefinitionComponentSubstanceDxPq"/>
+  <title value="SubstanceDefinition - Component Substance dx-PQ"/>
+  <status value="active"/>
+  <description value="Section 2.1 - DP Composition - Product Component"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="SubstanceDefinition"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SubstanceDefinition"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="SubstanceDefinition">
+      <path value="SubstanceDefinition"/>
+    </element>
+
+    <element id="SubstanceDefinition.grade">
+      <path value="SubstanceDefinition.grade"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="SubstanceDefinition.informationSource">
+      <path value="SubstanceDefinition.informationSource"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="SubstanceDefinition.manufacturer">
+      <path value="SubstanceDefinition.manufacturer"/>
+<!--      <min value="1"/>
+      <max value="1"/>-->
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="SubstanceDefinition.name">
+      <path value="SubstanceDefinition.name"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="SubstanceDefinition.sourceMaterial">
+      <path value="SubstanceDefinition.sourceMaterial"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-site-utilization-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-site-utilization-pq"/>
+    <name value="ExtensionSiteUtilizationDxPq"/>
+    <title value="Extension - Site Utilization dx-PQ"/>
+    <status value="active"/>
+    <fhirVersion value="5.0.0-snapshot3"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="MedicinalProduct"/>
+    </context>
+    
+    <context>
+        <type value="element"/>
+        <expression value="SubstanceDefinition.manufacturer"/>
+    </context>
+    
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-site-utilization-pq"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ManufacturedItemDefinition-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
+  <name value="ManufacturedItemDefinitionDxPq"/>
+  <title value="ManufacturedItemDefinition - dx-PQ"/>
+  <status value="active"/>
+  <description value="TBD"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="ManufacturedItemDefinition"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition"/>
+  <derivation value="constraint"/> 
+  <differential>
+    <element id="ManufacturedItemDefinition">
+      <path value="ManufacturedItemDefinition"/>
+    </element>
+    
+    <element id="ManufacturedItemDefinition.status">
+      <path value="ManufacturedItemDefinition.status"/>
+      <mustSupport value="true"/>
+    </element>
+  
+    <element id="ManufacturedItemDefinition.manufacturedDoseForm">
+      <path value="ManufacturedItemDefinition.manufacturedDoseForm"/>
+      <mustSupport value="true"/>
+    </element>
+    
+  </differential>
+</StructureDefinition>

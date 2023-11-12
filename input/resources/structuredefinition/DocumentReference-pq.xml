@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DocumentReference-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>
+  <version value="5.0.0"/>
+  <name value="DocumentReferenceDxPq"/>
+  <title value="DocumentReference - dx-PQ"/>
+  <status value="active"/>
+  <description value="TBD"/>
+  <fhirVersion value="5.0.0"/>
+
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="DocumentReference"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+  <derivation value="constraint"/>
+  
+  <differential>
+    <element id="DocumentReference">
+      <path value="DocumentReference"/>
+    </element>
+    
+    <element id="DocumentReference.identifier">
+      <path value="DocumentReference.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="DocumentReference.status">
+      <path value="DocumentReference.status"/>
+      <mustSupport value="true"/>
+    </element>
+   
+    <element id="DocumentReference.type">
+      <path value="DocumentReference.type"/>
+      <mustSupport value="true"/>
+    </element>
+ 
+
+    <element id="DocumentReference.content">
+      <path value="DocumentReference.content"/>
+      <mustSupport value="true"/>
+    </element>
+   
+    <element id="DocumentReference.content.attachment">
+      <path value="DocumentReference.content.attachment"/>
+      <mustSupport value="true"/>
+    </element>
+
+  </differential>
+</StructureDefinition>

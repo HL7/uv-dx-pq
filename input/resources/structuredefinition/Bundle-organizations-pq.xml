@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Bundle-drug-substance-general-properties-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
-  <name value="BundleDrugSubstanceGeneralPropertiesPq"/>
-  <title value="Bundle – Drug Substance General Properties PQ"/>
+  <id value="Bundle-organizations-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq"/>
+  <name value="BundleOrganizationsDxPq"/>
+  <title value="Bundle - Organizations dx-PQ"/>
   <status value="active"/>
-  <description value="Bundle – Drug Substance General Properties PQ"/>
+  <description value="Bundle - Organizations dx-PQ"/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -46,16 +46,16 @@
       <mustSupport value="true"/>
     </element>
 
-    <element id="Bundle.entry:Component-Substance">
+    <element id="Bundle.entry:Organization">
       <path value="Bundle.entry"/>
-      <sliceName value="Component-substance"/>
+      <sliceName value="Organization"/>
     </element>
-    <element id="Bundle.entry:Component-substance.resource">
+    <element id="Bundle.entry:Organization.resource">
       <path value="Bundle.entry.resource"/>
       <type>
-        <code value="SubstanceDefinition"/>
+        <code value="Organization"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
       </type>
     </element>
 

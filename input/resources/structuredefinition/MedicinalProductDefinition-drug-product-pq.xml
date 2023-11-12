@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MedicinalProductDefinition-drug-product-pq"/>
+    <meta>
+        <versionId value="13"/>
+        <lastUpdated value="2023-01-02T14:45:07.672+00:00"/>
+        <source value="#9DaoKzOUalt0bLJS"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
+    <name value="MedicinalProductDefinitionDrugProductDxPq"/>
+    <title value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+    <status value="active"/>
+    <description value="Section 1.1 - Drug Product Identification"/>
+    <fhirVersion value="5.0.0"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="MedicinalProductDefinition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="MedicinalProductDefinition">
+            <path value="MedicinalProductDefinition"/>
+        </element>
+        <element id="MedicinalProductDefinition.identifier">
+            <path value="MedicinalProductDefinition.identifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicinalProductDefinition.combinedPharmaceuticalDoseForm">
+            <path value="MedicinalProductDefinition.combinedPharmaceuticalDoseForm"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+                    <extension url="purpose">
+                      <valueCode value="candidate"/>
+                    </extension>
+                    <extension url="valueSet">
+                      <valueCanonical value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-pharmaceutical-dosage-form-terminology"/>
+                    </extension>
+                    <extension url="documentation">
+                      <valueMarkdown value="Terminology used for representation of the information on pharmaceutical product dosage form in the framework of the SPL documents."/>
+                    </extension>
+                  </extension>
+                  <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+                  <extension url="purpose">
+                    <valueCode value="candidate"/>
+                  </extension>
+                  <extension url="valueSet">
+                    <valueCanonical value="http://hl7.org/fhir/ValueSet/combined-dose-form"/>
+                  </extension>
+                  <extension url="documentation">
+                    <valueMarkdown value="Dose forms for a product as a whole, considering all individual parts, but before any mixing."/>
+                  </extension>
+                </extension>
+                <strength value="preferred"/>
+                <description value="EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes."/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicine-doseform"/>
+              </binding>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicinalProductDefinition.route">
+            <path value="MedicinalProductDefinition.route"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+                    <extension url="purpose">
+                      <valueCode value="candidate"/>
+                    </extension>
+                    <extension url="valueSet">
+                      <valueCanonical value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-drug-route-of-administration-terminology"/>
+                    </extension>
+                    <extension url="documentation">
+                      <valueMarkdown value="Terminology used for representation of the information on pharmaceutical product route of administration in the framework of the Structured Product Labeling documents."/>
+                    </extension>
+                  </extension>
+                <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+                  <extension url="purpose">
+                    <valueCode value="candidate"/>
+                  </extension>
+                  <extension url="valueSet">
+                    <valueCanonical value="http://hl7.org/fhir/ValueSet/route-codes"/>
+                  </extension>
+                  <extension url="documentation">
+                    <valueMarkdown value="This value set includes all Route codes from SNOMED CT."/>
+                  </extension>
+                </extension>
+                <strength value="preferred"/>
+                <description value="EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes."/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicine-route-of-administration"/>
+              </binding>
+        </element>
+        <element id="MedicinalProductDefinition.name">
+            <path value="MedicinalProductDefinition.name"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>
