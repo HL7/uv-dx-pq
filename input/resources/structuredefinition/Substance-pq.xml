@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Substance-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
-    <name value="SubstanceDxPq"/>
-    <title value="Substance - dx-PQ"/>
+    <name value="SubstancePq"/>
+    <title value="Substance - PQ"/>
     <status value="active"/>
     <description value="Section 2.2 - Reference Standard Substance"/>
     <fhirVersion value="5.0.0"/>

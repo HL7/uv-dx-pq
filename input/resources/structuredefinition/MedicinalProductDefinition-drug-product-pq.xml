@@ -8,8 +8,8 @@
         <source value="#9DaoKzOUalt0bLJS"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
-    <name value="MedicinalProductDefinitionDrugProductDxPq"/>
-    <title value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+    <name value="MedicinalProductDefinitionDrugProductPq"/>
+    <title value="MedicinalProductDefinition - Drug Product PQ"/>
     <status value="active"/>
     <description value="Section 1.1 - Drug Product Identification"/>
     <fhirVersion value="5.0.0"/>

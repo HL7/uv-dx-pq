@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-process-step-scale-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq"/>
-    <name value="ExtensionProcessStepScaleDxPq"/>
-    <title value="Extension - Process Step Scale dx-PQ"/>
+    <name value="ExtensionProcessStepScalePq"/>
+    <title value="Extension - Process Step Scale PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

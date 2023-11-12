@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-release-date-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq"/>
-    <name value="ExtensionBatchReleaseDateDxPq"/>
-    <title value="Extension - Batch Release Date dx-PQ"/>
+    <name value="ExtensionBatchReleaseDatePq"/>
+    <title value="Extension - Batch Release Date PQ"/>
     <status value="active"/>
 <!--    <fhirVersion value="5.0.0"/>-->
     <kind value="complex-type"/>

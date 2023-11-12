@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-storage-duration-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-pq"/>
-    <name value="ExtensionBatchStorageDurationDxPq"/>
-    <title value="Extension - Batch Storage Duration dx-PQ"/>
+    <name value="ExtensionBatchStorageDurationPq"/>
+    <title value="Extension - Batch Storage Duration PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>

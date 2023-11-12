@@ -12,7 +12,7 @@
     <url value="http://hl7.org/fhir/uv/pharm-quality/ImplementationGuide/hl7-fhir-uv-pharm-quality"/>
     <version value="0.1.0"/>
     <name value="DataExchangeIndustryPharmaceuticalQuality"/>
-    <title value="Data Exchange Industry – Pharmaceutical Quality (dx-PQ)"/>
+    <title value="Data Exchange Industry – Pharmaceutical Quality (PQ)"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 International / Biomedical Research and Regulation"/>
@@ -23,7 +23,7 @@
             <value value="http://www.hl7.org/Special/committees/rcrim"/>
         </telecom>
     </contact>
-    <description value="***Content TBD***&#xA;&#xA;This IG is developed for the Data exchange industry – Pharmaceutical Quality (dx-PQ) project &#xA;* [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)&#xA;* [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)"/>
+    <description value="***Content TBD***&#xA;&#xA;This IG is developed for the Data exchange industry – Pharmaceutical Quality (PQ) project &#xA;* [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)&#xA;* [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)"/>
     <jurisdiction>
         <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -291,9 +291,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-impurities-pq"/>
-                <display value="Bundle - Product Impurities dx-PQ"/>
+                <display value="Bundle - Product Impurities PQ"/>
             </reference>
-            <name value="Bundle - Product Impurities dx-PQ"/>
+            <name value="Bundle - Product Impurities PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities and CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities."/>
             <isExample value="false"/>
             <groupingId value="b15-impurities"/>
@@ -304,8 +304,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-impurities-pq-ex1"/>
             </reference>
-            <name value="Bundle - Product Impurities dx-PQ - Example, product"/>
-            <description value="Example of Bundle - Product Impurities dx-PQ for drug product."/>
+            <name value="Bundle - Product Impurities PQ - Example, product"/>
+            <description value="Example of Bundle - Product Impurities PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
             <groupingId value="b15-impurities"/>
@@ -315,8 +315,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-impurities-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Product Impurities dx-PQ - Example, substance"/>
-            <description value="Example of Bundle - Product Impurities dx-PQ for drug substance."/>
+            <name value="Bundle - Product Impurities PQ - Example, substance"/>
+            <description value="Example of Bundle - Product Impurities PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
             <groupingId value="b15-impurities"/>
@@ -327,9 +327,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-organizations-pq"/>
-                <display value="Bundle - Organizations dx-PQ"/>
+                <display value="Bundle - Organizations PQ"/>
             </reference>
-            <name value="Bundle - Organizations dx-PQ"/>
+            <name value="Bundle - Organizations PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s) and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s)."/>
             <isExample value="false"/>
             <groupingId value="b4-organizations"/>
@@ -340,8 +340,8 @@
             <reference>
                 <reference value="Bundle/bundle-organizations-pq-ex1"/>
             </reference>
-            <name value="Bundle - Organizations dx-PQ - Example"/>
-            <description value="Example of Bundle - Organizations dx-PQ for either drug product or drug substance."/>
+            <name value="Bundle - Organizations PQ - Example"/>
+            <description value="Example of Bundle - Organizations PQ for either drug product or drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq"/>
             <groupingId value="b4-organizations"/>
@@ -400,9 +400,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-batch-analysis-pq"/>
-                <display value="Bundle – Batch Analysis dx-PQ"/>
+                <display value="Bundle – Batch Analysis PQ"/>
             </reference>
-            <name value="Bundle – Batch Analysis dx-PQ"/>
+            <name value="Bundle – Batch Analysis PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses
                 and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses."/>
             <isExample value="false"/>
@@ -415,8 +415,8 @@
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-pq-ex1-prod"/>
             </reference>
-            <name value="Bundle – Batch Analysis dx-PQ - Example, product"/>
-            <description value="Example of Bundle – Batch Analysis dx-PQ for drug product."/>
+            <name value="Bundle – Batch Analysis PQ - Example, product"/>
+            <description value="Example of Bundle – Batch Analysis PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"/>
             <groupingId value="b9-batchanalyses"/>
@@ -426,8 +426,8 @@
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle – Batch Analysis dx-PQ - Example, substance"/>
-            <description value="Example of Bundle – Batch Analysis dx-PQ for drug substance."/>
+            <name value="Bundle – Batch Analysis PQ - Example, substance"/>
+            <description value="Example of Bundle – Batch Analysis PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"/>
             <groupingId value="b9-batchanalyses"/>
@@ -463,9 +463,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-manufacturing-pq"/>
-                <display value="Bundle - Product Manufacturing dx-PQ"/>
+                <display value="Bundle - Product Manufacturing PQ"/>
             </reference>
-            <name value="Bundle - Product Manufacturing dx-PQ"/>
+            <name value="Bundle - Product Manufacturing PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.3 Description of Manufacturing Process and Process Controls and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.2 Description of Manufacturing Process and Process Controls."/>
             <isExample value="false"/>
             <groupingId value="b5-mnf"/>
@@ -476,8 +476,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-manufacturing-pq-ex1"/>
             </reference>
-            <name value="Bundle - Product Manufacturing dx-PQ - Example, product"/>
-            <description value="Example of Bundle - Product Manufacturing dx-PQ for drug product."/>
+            <name value="Bundle - Product Manufacturing PQ - Example, product"/>
+            <description value="Example of Bundle - Product Manufacturing PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
             <groupingId value="b5-mnf"/>
@@ -487,8 +487,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-manufacturing-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Product Manufacturing dx-PQ - Example, substance"/>
-            <description value="Example of Bundle - Product Manufacturing dx-PQ for drug substance."/>
+            <name value="Bundle - Product Manufacturing PQ - Example, substance"/>
+            <description value="Example of Bundle - Product Manufacturing PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
             <groupingId value="b5-mnf"/>
@@ -498,9 +498,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-process-validation-pq"/>
-                <display value="Bundle - Product Process Validation dx-PQ"/>
+                <display value="Bundle - Product Process Validation PQ"/>
             </reference>
-            <name value="Bundle - Product Process Validation dx-PQ"/>
+            <name value="Bundle - Product Process Validation PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.5 Process Validation and/or Evaluation and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.5 Process Validation and/or Evaluation."/>
             <isExample value="false"/>
             <groupingId value="b13-processvalidation"/>
@@ -510,8 +510,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex1"/>
             </reference>
-            <name value="Bundle - Product Process Validation dx-PQ - Example, product"/>
-            <description value="Example of Bundle - Product Process Validation dx-PQ for drug product."/>
+            <name value="Bundle - Product Process Validation PQ - Example, product"/>
+            <description value="Example of Bundle - Product Process Validation PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
             <groupingId value="b13-processvalidation"/>
@@ -521,8 +521,8 @@
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Product Process Validation dx-PQ - Example, substance"/>
-            <description value="Example of Bundle - Product Process Validation dx-PQ for drug substance."/>
+            <name value="Bundle - Product Process Validation PQ - Example, substance"/>
+            <description value="Example of Bundle - Product Process Validation PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
             <groupingId value="b13-processvalidation"/>
@@ -533,9 +533,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-analytical-procedure-pq"/>
-                <display value="Bundle – Analytical Procedure dx-PQ"/>
+                <display value="Bundle – Analytical Procedure PQ"/>
             </reference>
-            <name value="Bundle – Analytical Procedure dx-PQ"/>
+            <name value="Bundle – Analytical Procedure PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.2 Analytical Procedures and section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures."/>
             <isExample value="false"/>
             <groupingId value="b6-analytical"/>
@@ -546,8 +546,8 @@
             <reference>
                 <reference value="Bundle/bundle-analytical-procedure-pq-ex1-prod"/>
             </reference>
-            <name value="Bundle – Analytical Procedure dx-PQ - Example, product"/>
-            <description value="Example of Bundle – Analytical Procedure dx-PQ for drug product."/>
+            <name value="Bundle – Analytical Procedure PQ - Example, product"/>
+            <description value="Example of Bundle – Analytical Procedure PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
             <groupingId value="b6-analytical"/>
@@ -557,8 +557,8 @@
             <reference>
                 <reference value="Bundle/bundle-analytical-procedure-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle – Analytical Procedure dx-PQ - Example, substance"/>
-            <description value="Example of Bundle – Analytical Procedure dx-PQ for drug substance."/>
+            <name value="Bundle – Analytical Procedure PQ - Example, substance"/>
+            <description value="Example of Bundle – Analytical Procedure PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
             <groupingId value="b6-analytical"/>
@@ -571,7 +571,7 @@
                 <reference value="StructureDefinition/Bundle-container-closure-system-pq"/>
                 <display value="v"/>
             </reference>
-            <name value="Bundle - Container Closure System dx-PQ"/>
+            <name value="Bundle - Container Closure System PQ"/>
             <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.7 Container Closure System and 3.2.S.6 Container Closure System."/>
             <isExample value="false"/>
             <groupingId value="b10-container"/>
@@ -582,8 +582,8 @@
             <reference>
                 <reference value="Bundle/bundle-container-closure-system-pq-ex1-prod"/>
             </reference>
-            <name value="Bundle - Container Closure System dx-PQ - Example, product"/>
-            <description value="Example of Bundle - Container Closure System dx-PQ for drug product."/>
+            <name value="Bundle - Container Closure System PQ - Example, product"/>
+            <description value="Example of Bundle - Container Closure System PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
             <groupingId value="b10-container"/>
@@ -593,8 +593,8 @@
             <reference>
                 <reference value="Bundle/bundle-container-closure-system-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Container Closure System dx-PQ - Example, substance"/>
-            <description value="Example of Bundle - Container Closure System dx-PQ for drug substance."/>
+            <name value="Bundle - Container Closure System PQ - Example, substance"/>
+            <description value="Example of Bundle - Container Closure System PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
             <groupingId value="b10-container"/>
@@ -641,9 +641,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-specification-pq"/>
-                <display value="Bundle – Drug Product Specification dx-PQ"/>
+                <display value="Bundle – Drug Product Specification PQ"/>
             </reference>
-            <name value="Bundle – Drug Product Specification dx-PQ"/>
+            <name value="Bundle – Drug Product Specification PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.1 Specification(s)."/>
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
@@ -652,9 +652,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-pq"/>
-                <display value="Bundle – Drug Substance Specification dx-PQ"/>
+                <display value="Bundle – Drug Substance Specification PQ"/>
             </reference>
-            <name value="Bundle – Drug Substance Specification dx-PQ"/>
+            <name value="Bundle – Drug Substance Specification PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification."/>
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
@@ -666,8 +666,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-specification-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Product Specification dx-PQ - Example"/>
-            <description value="Example of Bundle – Drug Product Specification dx-PQ for drug product."/>
+            <name value="Bundle – Drug Product Specification PQ - Example"/>
+            <description value="Example of Bundle – Drug Product Specification PQ for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq"/>
             <groupingId value="b12-specification"/>
@@ -677,8 +677,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-specification-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Substance Specification dx-PQ - Example"/>
-            <description value="Example of Bundle – Drug Substance Specification dx-PQ for drug substance."/>
+            <name value="Bundle – Drug Substance Specification PQ - Example"/>
+            <description value="Example of Bundle – Drug Substance Specification PQ for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-pq"/>
             <groupingId value="b12-specification"/>
@@ -715,9 +715,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-test-pq"/>
-                <display value="ActivityDefinition - Test dx-PQ"/>
+                <display value="ActivityDefinition - Test PQ"/>
             </reference>
-            <name value="ActivityDefinition - Test dx-PQ"/>
+            <name value="ActivityDefinition - Test PQ"/>
             <description value="This ActivityDefinition profile represents a set of tests and their acceptance criteria through the contained ObservationDefinition resources."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -737,9 +737,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/DeviceDefinition-pq"/>
-                <display value="DeviceDefinition - dx-PQ"/>
+                <display value="DeviceDefinition - PQ"/>
             </reference>
-            <name value="DeviceDefinition - dx-PQ"/>
+            <name value="DeviceDefinition - PQ"/>
             <description value="This DeviceDefinition profile represents information about devices and equipment used in pharmaceutical quality (PQ) data gathering."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -759,9 +759,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/DocumentReference-pq"/>
-                <display value="DocumentReference - dx-PQ"/>
+                <display value="DocumentReference - PQ"/>
             </reference>
-            <name value="DocumentReference - dx-PQ"/>
+            <name value="DocumentReference - PQ"/>
             <description value="This DocumentReference profile references a document of any kind, including a diagram or image, that is necessary for pharmaceutical quality (PQ) data exchange."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -770,9 +770,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Ingredient-pq"/>
-                <display value="Ingredient dx-Pq"/>
+                <display value="Ingredient Pq"/>
             </reference>
-            <name value="Ingredient dx-Pq"/>
+            <name value="Ingredient Pq"/>
             <description value="This Ingredient profile represents the active ingredient(s) of a drug substance or product. It references one SubstanceDefinition resource and can include the strength or concentration of that substance."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -781,9 +781,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/ManufacturedItemDefinition-pq"/>
-                <display value="ManufacturedItemDefinition dx-PQ"/>
+                <display value="ManufacturedItemDefinition PQ"/>
             </reference>
-            <name value="ManufacturedItemDefinition dx-PQ"/>
+            <name value="ManufacturedItemDefinition PQ"/>
             <description value="This ManufacturedItemDefinition profile represents information about the physical packaged medication item, such as a tablet or capsule."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -792,9 +792,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Medication-batch-information-pq"/>
-                <display value="Medication - Batch Information dx-PQ"/>
+                <display value="Medication - Batch Information PQ"/>
             </reference>
-            <name value="Medication - Batch Information dx-PQ"/>
+            <name value="Medication - Batch Information PQ"/>
             <description value="This Medication profile represents information about the batches that underwent testing or analysis."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -803,9 +803,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
-                <display value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+                <display value="MedicinalProductDefinition - Drug Product PQ"/>
             </reference>
-            <name value="MedicinalProductDefinition - Drug Product dx-PQ"/>
+            <name value="MedicinalProductDefinition - Drug Product PQ"/>
             <description value="This MedicinalProductDefinition profile represents information that identifies the drug product."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -814,9 +814,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-test-method-pq"/>
-                <display value="ObservationDefinition - Test Method dx-PQ"/>
+                <display value="ObservationDefinition - Test Method PQ"/>
             </reference>
-            <name value="ObservationDefinition - Test Method dx-PQ"/>
+            <name value="ObservationDefinition - Test Method PQ"/>
             <description value="This ObservationDefinition profile represents information about pharmaceutical quality (PQ) tests and acceptance criteria."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -825,9 +825,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-test-result-pq"/>
-                <display value="Observation - Test Result dx-PQ"/>
+                <display value="Observation - Test Result PQ"/>
             </reference>
-            <name value="Observation - Test Result dx-PQ"/>
+            <name value="Observation - Test Result PQ"/>
             <description value="This Observation profile represents the result of a specific test defined by an ObservationDefinition resource."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -836,9 +836,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Organization-pq"/>
-                <display value="Organization - dx-PQ"/>
+                <display value="Organization - PQ"/>
             </reference>
-            <name value="Organization - dx-PQ"/>
+            <name value="Organization - PQ"/>
             <description value="This Organization profile represents information about a pharmaceutical company or site that performed drug testing or manufacturing."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -847,9 +847,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/PackagedProductDefinition-pq"/>
-                <display value="PackagedProductDefinition - dx-PQ"/>
+                <display value="PackagedProductDefinition - PQ"/>
             </reference>
-            <name value="PackagedProductDefinition - dx-PQ"/>
+            <name value="PackagedProductDefinition - PQ"/>
             <description value="This PackagedProductDefinition profile represents information about the packaging for a drug product or drug substance."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -858,9 +858,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/PlanDefinition-pq"/>
-                <display value="PlanDefinition - dx-PQ"/>
+                <display value="PlanDefinition - PQ"/>
             </reference>
-            <name value="PlanDefinition - dx-PQ"/>
+            <name value="PlanDefinition - PQ"/>
             <description value="This PlanDefinition profile represents a protocol, analytical procedure, manufacturing process, or other workflow definition used in pharmaceutical quality (PQ) data gathering."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -869,9 +869,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/SpecimenDefinition-stability-pq"/>
-                <display value="SpecimenDefinition - Stability dx-PQ"/>
+                <display value="SpecimenDefinition - Stability PQ"/>
             </reference>
-            <name value="SpecimenDefinition - Stability dx-PQ"/>
+            <name value="SpecimenDefinition - Stability PQ"/>
             <description value="This SpecimenDefinition profile represents information about the treatment of a specimen, such as storage conditions and test duration."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -880,9 +880,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Specimen-stability-pq"/>
-                <display value="Specimen - Stability dx-PQ"/>
+                <display value="Specimen - Stability PQ"/>
             </reference>
-            <name value="Specimen - Stability dx-PQ"/>
+            <name value="Specimen - Stability PQ"/>
             <description value="This Specimen profile represents identifying information about an individual specimen (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -891,9 +891,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/SubstanceDefinition-component-substance-pq"/>
-                <display value="SubstanceDefinition - Component Substance dx-PQ"/>
+                <display value="SubstanceDefinition - Component Substance PQ"/>
             </reference>
-            <name value="SubstanceDefinition - Component Substance dx-PQ"/>
+            <name value="SubstanceDefinition - Component Substance PQ"/>
             <description value="This SubstanceDefinition profile represents the chemical or biological details about a substance associated with an active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -902,9 +902,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Substance-pq"/>
-                <display value="Substance - dx-PQ"/>
+                <display value="Substance - PQ"/>
             </reference>
-            <name value="Substance - dx-PQ"/>
+            <name value="Substance - PQ"/>
             <description value="This Substance profile represents identifying information about an actual batch of aubstance (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -949,7 +949,7 @@
                 <reference value="DeviceDefinition/devicedefinition-pq-ex1"/>
             </reference>
             <name value="devicedefinition-pq-ex1"/>
-            <description value="DeviceDefinition dx-PQ - Example 1"/>
+            <description value="DeviceDefinition PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -971,7 +971,7 @@
                 <reference value="DocumentReference/documentreference-process-flow-diagram-pq-ex1"/>
             </reference>
             <name value="documentreference-process-flow-diagram-pq-ex1"/>
-            <description value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
+            <description value="DocumentReference - Process Flow Diagram PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -982,7 +982,7 @@
                 <reference value="Ingredient/ingredient-pq-ex1"/>
             </reference>
             <name value="ingredient-pq-ex1"/>
-            <description value="Ingredient - dxpq - Example 1"/>
+            <description value="Ingredient PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -993,7 +993,7 @@
                 <reference value="ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1"/>
             </reference>
             <name value="manufactureditemdefinition-pq-ex1"/>
-            <description value="ManufacturedItemDefinition dx-PQ - Example 1"/>
+            <description value="ManufacturedItemDefinition PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1004,7 +1004,7 @@
                 <reference value="Medication/medication-batch-information-pq-ex1"/>
             </reference>
             <name value="medication-batch-information-pq-ex1"/>
-            <description value="Medication - Batch Information dx-PQ - Example 1"/>
+            <description value="Medication - Batch Information PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1015,7 +1015,7 @@
                 <reference value="Medication/medication-batch-information-pq-ex2"/>
             </reference>
             <name value="medication-batch-information-pq-ex2"/>
-            <description value="Medication - Batch Information dx-PQ - Example 2"/>
+            <description value="Medication - Batch Information PQ - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1025,8 +1025,8 @@
             <reference>
                 <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </reference>
-            <name value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
-            <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
+            <name value="MedicinalProductDefinition - Drug Product PQ - Example 1"/>
+            <description value="MedicinalProductDefinition - Drug Product PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1037,7 +1037,7 @@
                 <reference value="ObservationDefinition/observationdefinition-test-method-pq-ex1"/>
             </reference>
             <name value="observationdefinition-test-method-pq-ex1"/>
-            <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
+            <description value="ObservationDefinition - Test Method PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1048,7 +1048,7 @@
                 <reference value="ObservationDefinition/observationdefinition-test-method-pq-ex2"/>
             </reference>
             <name value="observationdefinition-test-method-pq-ex2"/>
-            <description value="ObservationDefinition - Test Method dx-PQ - Example 2"/>
+            <description value="ObservationDefinition - Test Method PQ - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1092,7 +1092,7 @@
                 <reference value="PackagedProductDefinition/packagedproductdefinition-pq-ex1"/>
             </reference>
             <name value="packagedproductdefinition-pq-ex1"/>
-            <description value="PackagedProductDefinition dx-PQ - Example 1"/>
+            <description value="PackagedProductDefinition PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1102,7 +1102,7 @@
             <reference>
                 <reference value="PlanDefinition/plandefinition-pq-ex1-validation-protocol"/>
             </reference>
-            <name value="PlanDefinition - dxPQ - Example 1, Validation Protocol"/>
+            <name value="PlanDefinition - PQ - Example 1, Validation Protocol"/>
             <description value="PlanDefinition plandefinition-pq-ex1-validation-protocol"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
@@ -1114,7 +1114,7 @@
                 <reference value="PlanDefinition/plandefinition-pq-ex2-manufacturing-plan"/>
             </reference>
             <name value="plandefinition-pq-ex2-manufacturing-plan"/>
-            <description value="PlanDefinition - dxPQ - Example 2, Manufacturing Plan"/>
+            <description value="PlanDefinition - PQ - Example 2, Manufacturing Plan"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1125,7 +1125,7 @@
                 <reference value="PlanDefinition/plandefinition-pq-ex3-drug-specification"/>
             </reference>
             <name value="plandefinition-pq-ex3-drug-specification"/>
-            <description value="PlanDefinition - dxPQ - Example 3, Drug Specification"/>
+            <description value="PlanDefinition - PQ - Example 3, Drug Specification"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1136,7 +1136,7 @@
                 <reference value="PlanDefinition/plandefinition-pq-ex4-mnf-process"/>
             </reference>
             <name value="plandefinition-pq-ex4-mnf-process"/>
-            <description value="PlanDefinition - dxPQ - Example 4, Manufacturing Process"/>
+            <description value="PlanDefinition - PQ - Example 4, Manufacturing Process"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1147,7 +1147,7 @@
                 <reference value="PlanDefinition/plandefinition-pq-ex5-stability-study-protocol"/>
             </reference>
             <name value="plandefinition-pq-ex5-stability-study-protocol"/>
-            <description value="PlanDefinition - dxPQ - Example 5, Stability Study Protocol"/>
+            <description value="PlanDefinition - PQ - Example 5, Stability Study Protocol"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1158,7 +1158,7 @@
                 <reference value="SpecimenDefinition/specimendefinition-stability-pq-ex1"/>
             </reference>
             <name value="specimendefinition-stability-pq-ex1"/>
-            <description value="SpecimenDefinition - Stability dx-PQ - Example 1"/>
+            <description value="SpecimenDefinition - Stability PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1169,7 +1169,7 @@
                 <reference value="Specimen/specimen-stability-pq-ex1"/>
             </reference>
             <name value="specimen-stability-pq-ex1"/>
-            <description value="Specimen - Stability dx-PQ - Example 1"/>
+            <description value="Specimen - Stability PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1201,10 +1201,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-pq"/>
-                <display value="Extension - Actual Yield dx-PQ"/>
+                <display value="Extension - Actual Yield PQ"/>
             </reference>
-            <name value="Extension - Actual Yield dx-PQ"/>
-            <description value="Extension - Actual Yield dx-PQ"/>
+            <name value="Extension - Actual Yield PQ"/>
+            <description value="Extension - Actual Yield PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1212,10 +1212,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-unfiltered-pq"/>
-                <display value="Extension - Actual Yield Unfiltered dx-PQ"/>
+                <display value="Extension - Actual Yield Unfiltered PQ"/>
             </reference>
-            <name value="Extension - Actual Yield Unfiltered dx-PQ"/>
-            <description value="Extension - Actual Yield Unfiltered dx-PQ"/>
+            <name value="Extension - Actual Yield Unfiltered PQ"/>
+            <description value="Extension - Actual Yield Unfiltered PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1223,10 +1223,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-designation-pq"/>
-                <display value="Extension - Batch Designation dx-PQ"/>
+                <display value="Extension - Batch Designation PQ"/>
             </reference>
-            <name value="Extension - Batch Designation dx-PQ"/>
-            <description value="Extension - Batch Designation dx-PQ"/>
+            <name value="Extension - Batch Designation PQ"/>
+            <description value="Extension - Batch Designation PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1234,10 +1234,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-number-of-vials-pq"/>
-                <display value="Extension - Batch Number of Vials dx-PQ"/>
+                <display value="Extension - Batch Number of Vials PQ"/>
             </reference>
-            <name value="Extension - Batch Number of Vials dx-PQ"/>
-            <description value="Extension - Batch Number of Vials dx-PQ"/>
+            <name value="Extension - Batch Number of Vials PQ"/>
+            <description value="Extension - Batch Number of Vials PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1245,10 +1245,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-pq"/>
-                <display value="Extension - Batch Release Date dx-PQ"/>
+                <display value="Extension - Batch Release Date PQ"/>
             </reference>
-            <name value="Extension - Batch Release Date dx-PQ"/>
-            <description value="Extension - Batch Release Date dx-PQ"/>
+            <name value="Extension - Batch Release Date PQ"/>
+            <description value="Extension - Batch Release Date PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1256,10 +1256,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-retest-date-pq"/>
-                <display value="Extension - Batch Retest Date dx-PQ"/>
+                <display value="Extension - Batch Retest Date PQ"/>
             </reference>
-            <name value="Extension - Batch Retest Date dx-PQ"/>
-            <description value="Extension - Batch Retest Date dx-PQ"/>
+            <name value="Extension - Batch Retest Date PQ"/>
+            <description value="Extension - Batch Retest Date PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1267,10 +1267,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-storage-duration-pq"/>
-                <display value="Extension - Batch Storage Duration dx-PQ"/>
+                <display value="Extension - Batch Storage Duration PQ"/>
             </reference>
-            <name value="Extension - Batch Storage Duration dx-PQ"/>
-            <description value="Extension - Batch Storage Duration dx-PQ"/>
+            <name value="Extension - Batch Storage Duration PQ"/>
+            <description value="Extension - Batch Storage Duration PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1278,10 +1278,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-substance-batch-pq"/>
-                <display value="Extension - Batch Substance Batch dx-PQ"/>
+                <display value="Extension - Batch Substance Batch PQ"/>
             </reference>
-            <name value="Extension - Batch Substance Batch dx-PQ"/>
-            <description value="Extension - Batch Substance Batch dx-PQ"/>
+            <name value="Extension - Batch Substance Batch PQ"/>
+            <description value="Extension - Batch Substance Batch PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1289,10 +1289,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-pq"/>
-                <display value="Extension - Container Orientation dx-PQ"/>
+                <display value="Extension - Container Orientation PQ"/>
             </reference>
-            <name value="Extension - Container Orientation dx-PQ"/>
-            <description value="Extension - Container Orientation dx-PQ"/>
+            <name value="Extension - Container Orientation PQ"/>
+            <description value="Extension - Container Orientation PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1301,10 +1301,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-history-of-process-pq"/>
-                <display value="Extension - History of Process dx-PQ"/>
+                <display value="Extension - History of Process PQ"/>
             </reference>
-            <name value="Extension - History of Process dx-PQ"/>
-            <description value="Extension - History of Process dx-PQ"/>
+            <name value="Extension - History of Process PQ"/>
+            <description value="Extension - History of Process PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1312,10 +1312,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-participant-pq"/>
-                <display value="Extension - Manufacturing Participant dx-PQ"/>
+                <display value="Extension - Manufacturing Participant PQ"/>
             </reference>
-            <name value="Extension - Manufacturing Participant dx-PQ"/>
-            <description value="Extension - Manufacturing Participant dx-PQ"/>
+            <name value="Extension - Manufacturing Participant PQ"/>
+            <description value="Extension - Manufacturing Participant PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1323,10 +1323,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-process-pq"/>
-                <display value="Extension - Manufacturing Process dx-PQ"/>
+                <display value="Extension - Manufacturing Process PQ"/>
             </reference>
-            <name value="Extension - Manufacturing Process dx-PQ"/>
-            <description value="Extension - Manufacturing Process dx-PQ"/>
+            <name value="Extension - Manufacturing Process PQ"/>
+            <description value="Extension - Manufacturing Process PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1334,10 +1334,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-medication-definition-pq"/>
-                <display value="Extension - Medication Definition dx-PQ"/>
+                <display value="Extension - Medication Definition PQ"/>
             </reference>
-            <name value="Extension - Medication Definition dx-PQ"/>
-            <description value="Extension - Medication Definition dx-PQ"/>
+            <name value="Extension - Medication Definition PQ"/>
+            <description value="Extension - Medication Definition PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1345,10 +1345,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-date-pq"/>
-                <display value="Extension - Packaging Date dx-PQ"/>
+                <display value="Extension - Packaging Date PQ"/>
             </reference>
-            <name value="Extension - Packaging Date dx-PQ"/>
-            <description value="Extension - Packaging Date dx-PQ"/>
+            <name value="Extension - Packaging Date PQ"/>
+            <description value="Extension - Packaging Date PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1356,10 +1356,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-site-pq"/>
-                <display value="Extension - Packaging Site dx-PQ"/>
+                <display value="Extension - Packaging Site PQ"/>
             </reference>
-            <name value="Extension - Packaging Site dx-PQ"/>
-            <description value="Extension - Packaging Site dx-PQ"/>
+            <name value="Extension - Packaging Site PQ"/>
+            <description value="Extension - Packaging Site PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1367,10 +1367,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-plan-document-reference-pq"/>
-                <display value="Extension - Plan Document Reference dx-PQ"/>
+                <display value="Extension - Plan Document Reference PQ"/>
             </reference>
-            <name value="Extension - Plan Document Reference dx-PQ"/>
-            <description value="Extension - Plan Document Reference dx-PQ"/>
+            <name value="Extension - Plan Document Reference PQ"/>
+            <description value="Extension - Plan Document Reference PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1378,10 +1378,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-parameters-pq"/>
-                <display value="Extension  - Process Parameters dx-PQ"/>
+                <display value="Extension  - Process Parameters PQ"/>
             </reference>
-            <name value="Extension  - Process Parameters dx-PQ"/>
-            <description value="Extension  - Process Parameters dx-PQ"/>
+            <name value="Extension  - Process Parameters PQ"/>
+            <description value="Extension  - Process Parameters PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1389,10 +1389,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-step-scale-pq"/>
-                <display value="Extension - Process Step Scale dx-PQ"/>
+                <display value="Extension - Process Step Scale PQ"/>
             </reference>
-            <name value="Extension - Process Step Scale dx-PQ"/>
-            <description value="Extension - Process Step Scale dx-PQ"/>
+            <name value="Extension - Process Step Scale PQ"/>
+            <description value="Extension - Process Step Scale PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1400,10 +1400,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-display-pq"/>
-                <display value="Extension - Qualified Value Display dx-PQ"/>
+                <display value="Extension - Qualified Value Display PQ"/>
             </reference>
-            <name value="Extension - Qualified Value Display dx-PQ"/>
-            <description value="Extension - Qualified Value Display dx-PQ"/>
+            <name value="Extension - Qualified Value Display PQ"/>
+            <description value="Extension - Qualified Value Display PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1411,10 +1411,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-target-pq"/>
-                <display value="Extension - Qualified Value Target dx-PQ"/>
+                <display value="Extension - Qualified Value Target PQ"/>
             </reference>
-            <name value="Extension - Qualified Value Text dx-PQ"/>
-            <description value="Extension - Qualified Value Target dx-PQ"/>
+            <name value="Extension - Qualified Value Text PQ"/>
+            <description value="Extension - Qualified Value Target PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1422,10 +1422,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-text-pq"/>
-                <display value="Extension - Qualified Value Text dx-PQ"/>
+                <display value="Extension - Qualified Value Text PQ"/>
             </reference>
-            <name value="Extension - Qualified Value Text dx-PQ"/>
-            <description value="Extension - Qualified Value Text dx-PQ"/>
+            <name value="Extension - Qualified Value Text PQ"/>
+            <description value="Extension - Qualified Value Text PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1433,10 +1433,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-site-utilization-pq"/>
-                <display value="Extension - Site Utilization dx-PQ"/>
+                <display value="Extension - Site Utilization PQ"/>
             </reference>
-            <name value="Extension - Site Utilization dx-PQ"/>
-            <description value="Extension - Site Utilization dx-PQ"/>
+            <name value="Extension - Site Utilization PQ"/>
+            <description value="Extension - Site Utilization PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1444,10 +1444,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-statistical-model-pq"/>
-                <display value="Extension - Statistical Model dx-PQ"/>
+                <display value="Extension - Statistical Model PQ"/>
             </reference>
-            <name value="Extension - Statistical Model dx-PQ"/>
-            <description value="Extension - Statistical Model dx-PQ"/>
+            <name value="Extension - Statistical Model PQ"/>
+            <description value="Extension - Statistical Model PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1455,10 +1455,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-test-comment-pq"/>
-                <display value="Extension - Test Comment dx-PQ"/>
+                <display value="Extension - Test Comment PQ"/>
             </reference>
-            <name value="Extension - Test Comment dx-PQ"/>
-            <description value="Extension - Test Comment dx-PQ"/>
+            <name value="Extension - Test Comment PQ"/>
+            <description value="Extension - Test Comment PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1466,10 +1466,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-target-fill-weight-pq"/>
-                <display value="Extension - Target Fill Weight dx-PQ"/>
+                <display value="Extension - Target Fill Weight PQ"/>
             </reference>
-            <name value="Extension - Target Fill Weight dx-PQ"/>
-            <description value="Extension - Target Fill Weight dx-PQ"/>
+            <name value="Extension - Target Fill Weight PQ"/>
+            <description value="Extension - Target Fill Weight PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1477,10 +1477,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-time-point-description-pq"/>
-                <display value="Extension - Time Point Description dx-PQ"/>
+                <display value="Extension - Time Point Description PQ"/>
             </reference>
-            <name value="Extension - Time Point Description dx-PQ"/>
-            <description value="Extension - Time Point Description dx-PQ"/>
+            <name value="Extension - Time Point Description PQ"/>
+            <description value="Extension - Time Point Description PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1489,10 +1489,10 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/CodeSystem-local-codes-pq"/>
-                <display value="CodeSystem - Local Codes - dx-PQ"/>
+                <display value="CodeSystem - Local Codes - PQ"/>
             </reference>
-            <name value="CodeSystem - Local Codes - dx-PQ"/>
-            <description value="CodeSystem - Local Codes - dx-PQ"/>
+            <name value="CodeSystem - Local Codes - PQ"/>
+            <description value="CodeSystem - Local Codes - PQ"/>
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>

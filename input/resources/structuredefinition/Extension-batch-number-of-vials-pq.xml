@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-number-of-vials-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq"/>
-    <name value="ExtensionBatchNumberOfVialsDxPq"/>
-    <title value="Extension - Batch Number of Vials dx-PQ"/>
+    <name value="ExtensionBatchNumberOfVialsPq"/>
+    <title value="Extension - Batch Number of Vials PQ"/>
     <status value="active"/>
 <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

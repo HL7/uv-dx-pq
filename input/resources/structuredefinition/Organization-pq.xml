@@ -8,10 +8,10 @@
         <source value="#QicMqLtZtYG0gwZK"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
-    <name value="OrganizationDxPq"/>
-    <title value="Organization - dx-PQ"/>
+    <name value="OrganizationPq"/>
+    <title value="Organization - PQ"/>
     <status value="active"/>
-    <description value="Organization profile for any dx-PQ organization"/>
+    <description value="Organization profile for any PQ organization"/>
     <fhirVersion value="5.0.0"/>
     <kind value="resource"/>
     <abstract value="false"/>

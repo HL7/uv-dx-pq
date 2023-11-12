@@ -8,8 +8,8 @@
         <source value="#sich1CqFymSjQpNT"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
-    <name value="MedicationBatchInformationDxPq"/>
-    <title value="Medication - Batch Information dx-PQ"/>
+    <name value="MedicationBatchInformationPq"/>
+    <title value="Medication - Batch Information PQ"/>
     <status value="active"/>
     <description value="Section 8 - Batch or Lot Information"/>
     <fhirVersion value="5.0.0"/>

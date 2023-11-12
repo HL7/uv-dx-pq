@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-substance-batch-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq"/>
-    <name value="ExtensionBatchSubstanceBatchDxPq"/>
-    <title value="Extension - Batch Substance Batch dx-PQ"/>
+    <name value="ExtensionBatchSubstanceBatchPq"/>
+    <title value="Extension - Batch Substance Batch PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

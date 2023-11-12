@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-batch-analysis-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"/>
-  <name value="BundleBatchAnalysisDxPq"/>
-  <title value="Bundle – Batch Analysis dx-PQ"/>
+  <name value="BundleBatchAnalysisPq"/>
+  <title value="Bundle – Batch Analysis PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>

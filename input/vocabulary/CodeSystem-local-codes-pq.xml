@@ -2,11 +2,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="CodeSystem-local-codes-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
-  <name value="CodeSystemLocalCodesDxPQ"/>
-  <title value="CodeSystem - Local Codes - dx-PQ"/>
+  <name value="CodeSystemLocalCodesPQ"/>
+  <title value="CodeSystem - Local Codes - PQ"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="This code system contains temporary local codes for use in dx-PQ."/>
+  <description value="This code system contains temporary local codes for use in PQ."/>
   <caseSensitive value="true"/>
   <content value="example"/>
   <concept>

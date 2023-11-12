@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-qualified-value-text-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq"/>
-    <name value="ExtensionQualifiedValueTextDxPq"/>
-    <title value="Extension - Qualified Value Text dx-PQ"/>
+    <name value="ExtensionQualifiedValueTextPq"/>
+    <title value="Extension - Qualified Value Text PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

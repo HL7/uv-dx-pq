@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-product-process-validation-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
-  <name value="BundleProductProcessValidationDxPq"/>
-  <title value="Bundle - Product Process Validation dx-PQ"/>
+  <name value="BundleProductProcessValidationPq"/>
+  <title value="Bundle - Product Process Validation PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>

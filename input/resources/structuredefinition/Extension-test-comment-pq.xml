@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-test-comment-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-test-comment-pq"/>
-    <name value="ExtensionTestCommentDxPq"/>
-    <title value="Extension - Test Comment dx-PQ"/>
+    <name value="ExtensionTestCommentPq"/>
+    <title value="Extension - Test Comment PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

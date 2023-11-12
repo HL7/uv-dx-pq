@@ -4,8 +4,8 @@
   <id value="SubstanceDefinition-component-substance-pq"/>
   <url
     value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
-  <name value="SubstanceDefinitionComponentSubstanceDxPq"/>
-  <title value="SubstanceDefinition - Component Substance dx-PQ"/>
+  <name value="SubstanceDefinitionComponentSubstancePq"/>
+  <title value="SubstanceDefinition - Component Substance PQ"/>
   <status value="active"/>
   <description value="Section 2.1 - DP Composition - Product Component"/>
   <fhirVersion value="5.0.0"/>

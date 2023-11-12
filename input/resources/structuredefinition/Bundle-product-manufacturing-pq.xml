@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-product-manufacturing-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
-  <name value="BundleProductManufacturingDxPq"/>
-  <title value="Bundle - Product Manufacturing dx-PQ"/>
+  <name value="BundleProductManufacturingPq"/>
+  <title value="Bundle - Product Manufacturing PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>

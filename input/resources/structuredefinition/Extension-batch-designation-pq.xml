@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-designation-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq"/>
-    <name value="ExtensionBatchDesignationDxPq"/>
-    <title value="Extension - Batch Designation dx-PQ"/>
+    <name value="ExtensionBatchDesignationPq"/>
+    <title value="Extension - Batch Designation PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

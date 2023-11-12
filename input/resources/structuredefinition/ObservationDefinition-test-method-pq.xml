@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="ObservationDefinition-test-method-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
-    <name value="ObservationDefinitionTestMethodDxPq"/>
-    <title value="ObservationDefinition - Test Method dx-PQ"/>
+    <name value="ObservationDefinitionTestMethodPq"/>
+    <title value="ObservationDefinition - Test Method PQ"/>
     <status value="active"/>
     <description value="TBD"/>
     <fhirVersion value="5.0.0"/>

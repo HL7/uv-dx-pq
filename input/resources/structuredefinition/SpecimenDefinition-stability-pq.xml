@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="SpecimenDefinition-stability-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
-  <name value="SpecimenDefinitionStabilityDxPq"/>
-  <title value="SpecimenDefinition - Stability dx-PQ"/>
+  <name value="SpecimenDefinitionStabilityPq"/>
+  <title value="SpecimenDefinition - Stability PQ"/>
   <status value="active"/>
   <description value="Kind of specimen with requirements."/>
   <fhirVersion value="5.0.0"/>

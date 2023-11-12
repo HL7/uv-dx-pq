@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DeviceDefinition-pq"/>
 <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"/>
-  <name value="DeviceDefinitionDxPq"/>
-  <title value="DeviceDefinition - dx-PQ"/>
+  <name value="DeviceDefinitionPq"/>
+  <title value="DeviceDefinition - PQ"/>
   <status value="active"/>
   <description value="TBD"/>
 

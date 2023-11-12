@@ -4,10 +4,10 @@
   <id value="Bundle-drug-product-specification-pq"/>
   <url
     value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq"/>
-  <name value="BundleDrugProductSpecificationDxPq"/>
-  <title value="Bundle – Drug Product Specification dx-PQ"/>
+  <name value="BundleDrugProductSpecificationPq"/>
+  <title value="Bundle – Drug Product Specification PQ"/>
   <status value="active"/>
-  <description value="Bundle – Drug Product Specification dx-PQ"/>
+  <description value="Bundle – Drug Product Specification PQ"/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

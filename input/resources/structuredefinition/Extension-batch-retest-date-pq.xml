@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-batch-retest-date-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq"/>
-    <name value="ExtensionBatchRetestDateDxPq"/>
-    <title value="Extension - Batch Retest Date dx-PQ"/>
+    <name value="ExtensionBatchRetestDatePq"/>
+    <title value="Extension - Batch Retest Date PQ"/>
     <status value="active"/>
 <!--    <fhirVersion value="5.0.0"/>-->
     <kind value="complex-type"/>

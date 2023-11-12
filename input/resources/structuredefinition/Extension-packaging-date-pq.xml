@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-packaging-date-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq"/>
-    <name value="ExtensionPackagingDateDxPq"/>
-    <title value="Extension - Packaging Date dx-PQ"/>
+    <name value="ExtensionPackagingDatePq"/>
+    <title value="Extension - Packaging Date PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

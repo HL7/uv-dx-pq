@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-target-fill-weight-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq"/>
-    <name value="ExtensionTargetFillWeightDxPq"/>
-    <title value="Extension Target Fill Weight dx-PQ"/>
+    <name value="ExtensionTargetFillWeightPq"/>
+    <title value="Extension Target Fill Weight PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

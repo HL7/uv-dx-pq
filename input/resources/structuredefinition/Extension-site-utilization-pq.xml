@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-site-utilization-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-site-utilization-pq"/>
-    <name value="ExtensionSiteUtilizationDxPq"/>
-    <title value="Extension - Site Utilization dx-PQ"/>
+    <name value="ExtensionSiteUtilizationPq"/>
+    <title value="Extension - Site Utilization PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>

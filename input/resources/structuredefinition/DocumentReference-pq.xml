@@ -4,8 +4,8 @@
   <id value="DocumentReference-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>
   <version value="5.0.0"/>
-  <name value="DocumentReferenceDxPq"/>
-  <title value="DocumentReference - dx-PQ"/>
+  <name value="DocumentReferencePq"/>
+  <title value="DocumentReference - PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>

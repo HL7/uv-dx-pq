@@ -8,8 +8,8 @@
         <source value="#85sGshju1xdy9VCv"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
-    <name value="ObservationTestResultDxPq"/>
-    <title value="Observation - Test Result dx-PQ"/>
+    <name value="ObservationTestResultPq"/>
+    <title value="Observation - Test Result PQ"/>
     <status value="active"/>
     <description value="Test Result"/>
     <fhirVersion value="5.0.0"/>

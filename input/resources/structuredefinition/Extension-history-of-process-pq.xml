@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-history-of-process-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq"/>
-    <name value="ExtensionHistoryOfProcessDxPq"/>
-    <title value="Extension - History of Process dx-PQ"/>
+    <name value="ExtensionHistoryOfProcessPq"/>
+    <title value="Extension - History of Process PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

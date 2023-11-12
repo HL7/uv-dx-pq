@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-container-closure-system-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
-  <name value="BundleContainerClosureSystemDxPq"/>
-  <title value="Bundle – Container Closure System dx-PQ"/>
+  <name value="BundleContainerClosureSystemPq"/>
+  <title value="Bundle – Container Closure System PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>

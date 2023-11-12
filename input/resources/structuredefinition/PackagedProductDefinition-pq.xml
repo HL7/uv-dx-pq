@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="PackagedProductDefinition-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
-  <name value="PackagedProductDefinitionDxPq"/>
-  <title value="active - dx-PQ"/>
+  <name value="PackagedProductDefinitionPq"/>
+  <title value="active - PQ"/>
   <status value="draft"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>

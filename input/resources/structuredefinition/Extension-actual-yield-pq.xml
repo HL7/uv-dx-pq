@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-actual-yield-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq"/>
-    <name value="ExtensionActualYieldDxPq"/>
-    <title value="Extension - Actual Yield dx-PQ"/>
+    <name value="ExtensionActualYieldPq"/>
+    <title value="Extension - Actual Yield PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Ingredient-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-pq"/>
-  <name value="IngredientDxPq"/>
-  <title value="Ingredient dx-Pq"/>
+  <name value="IngredientPq"/>
+  <title value="Ingredient Pq"/>
   <status value="active"/>
   <description value="Section 2.1 - DP Composition"/>
  <fhirVersion value="5.0.0"/>

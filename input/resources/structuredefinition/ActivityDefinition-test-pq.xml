@@ -4,8 +4,8 @@
   <id value="ActivityDefinition-test-pq"/>
   <url
     value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-pq"/>
-  <name value="ActivityDefinitionTestDxPq"/>
-  <title value="ActivityDefinition - Test dx-PQ"/>
+  <name value="ActivityDefinitionTestPq"/>
+  <title value="ActivityDefinition - Test PQ"/>
   <status value="active"/>
   <description value="Test"/>
   <fhirVersion value="5.0.0"/>

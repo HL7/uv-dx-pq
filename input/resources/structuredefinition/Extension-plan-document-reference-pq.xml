@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-plan-document-reference-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq"/>
-    <name value="ExtensionPlanDocumentReferenceDxPq"/>
-    <title value="Extension - Plan Document Reference dx-PQ"/>
+    <name value="ExtensionPlanDocumentReferencePq"/>
+    <title value="Extension - Plan Document Reference PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>

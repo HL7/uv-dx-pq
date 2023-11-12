@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-manufacturing-participant-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq"/>
-    <name value="ExtensionManufacturingParticipantDxPq"/>
-    <title value="Extension - Manufacturing Participant dx-PQ"/>
+    <name value="ExtensionManufacturingParticipantPq"/>
+    <title value="Extension - Manufacturing Participant PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

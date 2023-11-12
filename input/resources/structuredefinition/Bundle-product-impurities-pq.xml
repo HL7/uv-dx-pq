@@ -3,8 +3,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Bundle-product-impurities-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
-  <name value="BundleProductImpuritiesDxPq"/>
-  <title value="Bundle - Product Impurities dx-PQ"/>
+  <name value="BundleProductImpuritiesPq"/>
+  <title value="Bundle - Product Impurities PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>

@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-process-parameters-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq"/>
-    <name value="ExtensionProcessParametersDxPq"/>
-    <title value="Extension - Process Parameters dx-PQ"/>
+    <name value="ExtensionProcessParametersPq"/>
+    <title value="Extension - Process Parameters PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

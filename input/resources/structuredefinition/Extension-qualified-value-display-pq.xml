@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Extension-qualified-value-display-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-pq"/>
-    <name value="ExtensionQualifiedValueDisplayDxPq"/>
-    <title value="Extension - Qualified Value Display dx-PQ"/>
+    <name value="ExtensionQualifiedValueDisplayPq"/>
+    <title value="Extension - Qualified Value Display PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

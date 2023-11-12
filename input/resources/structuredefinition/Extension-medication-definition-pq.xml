@@ -4,8 +4,8 @@
     <id value="Extension-medication-definition-pq"/>
     <url
         value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq"/>
-    <name value="ExtensionMedicationDefinitionDxPq"/>
-    <title value="Extension - Medication Definition dx-PQ"/>
+    <name value="ExtensionMedicationDefinitionPq"/>
+    <title value="Extension - Medication Definition PQ"/>
     <status value="active"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

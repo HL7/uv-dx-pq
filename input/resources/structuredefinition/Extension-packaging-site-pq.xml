@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-packaging-site-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq"/>
-    <name value="ExtensionPackagingSiteDxPq"/>
-    <title value="Extension - Packaging Site dx-PQ"/>
+    <name value="ExtensionPackagingSitePq"/>
+    <title value="Extension - Packaging Site PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>

@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-time-point-description-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-pq"/>
-    <name value="ExtensionTimePointDescriptionDxPq"/>
-    <title value="Extension - Time Point Description dx-PQ"/>
+    <name value="ExtensionTimePointDescriptionPq"/>
+    <title value="Extension - Time Point Description PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>

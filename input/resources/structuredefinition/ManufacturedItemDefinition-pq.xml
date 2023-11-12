@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ManufacturedItemDefinition-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
-  <name value="ManufacturedItemDefinitionDxPq"/>
-  <title value="ManufacturedItemDefinition - dx-PQ"/>
+  <name value="ManufacturedItemDefinitionPq"/>
+  <title value="ManufacturedItemDefinition - PQ"/>
   <status value="active"/>
   <description value="TBD"/>
   <fhirVersion value="5.0.0"/>

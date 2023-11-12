@@ -8,8 +8,8 @@
         <source value="#U0MqteWpkVIsAL5q"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-pq"/>
-    <name value="ExtensionStatisticalModelDxPq"/>
-    <title value="Extension - Statistical Model dx-PQ"/>
+    <name value="ExtensionStatisticalModelPq"/>
+    <title value="Extension - Statistical Model PQ"/>
     <status value="active"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
