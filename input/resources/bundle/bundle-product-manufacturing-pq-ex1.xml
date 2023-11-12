@@ -641,7 +641,7 @@
             	<!--documentreference-process-flow-diagram-pq-ex1-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
             <!--<meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>       
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>       
             	</meta>-->
             <identifier>
                <system value="http://accumulus.org/fhir/identifier/document"/>

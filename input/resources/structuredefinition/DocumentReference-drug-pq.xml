@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DocumentReference-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>
+  <id value="DocumentReference-drug-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>
   <version value="5.0.0"/>
-  <name value="DocumentReferencePq"/>
-  <title value="DocumentReference - PQ"/>
+  <name value="DocumentReferenceDrug Pq"/>
+  <title value="DocumentReference - Drug PQ"/>
   <status value="active"/>
-  <description value="TBD"/>
+  <description value="This DocumentReference profile references a document of any kind, including a diagram or image, that is necessary for pharmaceutical quality (PQ) data exchange."/>
   <fhirVersion value="5.0.0"/>
 
   <kind value="resource"/>

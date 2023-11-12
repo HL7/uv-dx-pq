@@ -3,7 +3,7 @@
     <id value="documentreference-process-flow-diagram-pq-ex1"/>
 
     <meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>       
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>       
     </meta>
     <identifier>
         <system value="http://accumulus.org/fhir/identifier/document"/>
