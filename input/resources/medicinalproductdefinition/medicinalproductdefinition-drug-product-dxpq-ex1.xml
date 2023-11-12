@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicinalProductDefinition  xmlns="http://hl7.org/fhir">
 <!--    <id value="product"/>-->
-    <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+    <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
     </meta>
     
     <description value="Textual description of the product"/>

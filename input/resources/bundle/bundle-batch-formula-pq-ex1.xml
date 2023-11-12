@@ -12,7 +12,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
             <name>
                <productName value="Stalbatolol"/>
                <type>
@@ -33,7 +33,7 @@
             <id value="ingredient1"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -72,7 +72,7 @@
             <id value="excipient1"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -110,7 +110,7 @@
             <id value="excipient2"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -148,7 +148,7 @@
             <id value="excipient3"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -186,7 +186,7 @@
             <id value="excipient4"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -290,9 +290,9 @@
                </Substance>
             </contained>
             <code> <!-- some other cases link via plandef and activity.product -->
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
                   </valueReference>
                </extension>
                <text value="Large Batch of Stelbatolol"/>
@@ -444,9 +444,9 @@
                </Substance>
             </contained>
             <code> <!-- some other cases link via plandef and activity.product -->
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
                   </valueReference>
                </extension>
                <text value="Small Batch of Stelbatolol"/>

@@ -11,7 +11,7 @@
       <resource>
          <SubstanceDefinition>
                 <!-- focal resource -->
-            <id value="substancedefinition-substance-dxpq-ex1"/>
+            <id value="substancedefinition-substance-pq-ex1"/>
             <property>
                <type>
                   <coding>
@@ -42,7 +42,7 @@
                </valueCodeableConcept>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="23"/>
@@ -81,7 +81,7 @@
                </valueCodeableConcept>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="2"/>
@@ -120,7 +120,7 @@
                </valueCodeableConcept>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="15"/>
@@ -169,7 +169,7 @@
                </valueQuantity>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
                         <system value="http://example.accumulus.org/fhir/code/substance-property"/>
@@ -196,7 +196,7 @@
                </valueQuantity>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
                         <system value="http://example.accumulus.org/fhir/code/substance-property"/>
@@ -224,7 +224,7 @@
             </property>
             <!-- pH -->
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="6.7"/>
@@ -234,7 +234,7 @@
                      </high>
                   </valueRange>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
                         <system value="http://example.accumulus.org/fhir/code/substance-property"/>
@@ -249,7 +249,7 @@
                      </valueQuantity>
                   </extension>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
                         <system value="http://example.accumulus.org/fhir/code/substance-property"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Specification -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-drug-substance-specification-dxpq-ex1"/>
+   <id value="bundle-drug-substance-specification-pq-ex1"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -115,7 +115,7 @@
                <text value="Visual inspection"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="A white to brown powder"/>
                </extension>
             </qualifiedValue>
@@ -144,7 +144,7 @@
                <text value="Identification by IR spectroscopy Identification by HPLC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Conforms with reference"/>
                </extension>
             </qualifiedValue>

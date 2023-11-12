@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Product Analytical Procedure -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-analytical-procedure-dxpq-ex1-prod"/>
+   <id value="bundle-analytical-procedure-pq-ex1-prod"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
       <!--profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/-->
    </meta>
    <type value="collection"/>
@@ -30,14 +30,14 @@
             </type>
             <status value="active"/>
             <subjectReference>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <action>
                <title value="Preparation and Analysis of Drug Product Samples"/>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                     <!--SubstanceDefinition/diluent-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f81"/>
@@ -54,7 +54,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                     <!--SubstanceDefinition/resultingMaterial-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
@@ -224,7 +224,7 @@
                <text value="Assay (w/w%)"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="The %RSD between the two assay results must be ≤ 1.5%"/>
                </extension>
             </qualifiedValue>
@@ -250,10 +250,10 @@
                <text value="Identity"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05."/>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm."/>
                </extension>
             </qualifiedValue>
@@ -288,7 +288,7 @@
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
          <MedicinalProductDefinition>
-                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+                <!--medicinalproductdefinition-drug-product-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <combinedPharmaceuticalDoseForm>
                <coding>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="observation-test-result-dxpq-ex2"/>
+    <id value="observation-test-result-pq-ex2"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
     </meta>
 <!--    <instantiatesReference>
         <reference value="ObservationDefinition/Description"/>
@@ -11,7 +11,7 @@
     <code>
         <coding>
 <!--            <system value="http://loinc.org"/>-->
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
 <!--            <code value="XXX"/>-->
             <code value="XXX-2"/>
             <display value="Description"/>
@@ -21,11 +21,11 @@
     <subject>
 <!--        Adjusted Rik Example-->
 <!--        <reference value="Substance/actual-batch-substance"/>-->
-        <reference value="Substance/substance-dxpq-ex1"/>
+        <reference value="Substance/substance-pq-ex1"/>
     </subject>
 				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 				<performer>
-				    <reference value="Organization/organization-dxpq-ex1"/>
+				    <reference value="Organization/organization-pq-ex1"/>
 				</performer>
     <valueCodeableConcept>
         <text value="Pass"/>

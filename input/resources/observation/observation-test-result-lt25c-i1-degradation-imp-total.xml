@@ -2,7 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
    <id value="observation-test-result-lt25c-i1-degradation-imp-total"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
    </meta>
    <instantiatesReference>
       <reference value="ObservationDefinition/Degradation"/>
@@ -17,11 +17,11 @@
       <text value="Degradation Products"/>
    </code>
    <subject>
-      <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+      <reference value="Medication/medication-batch-information-pq-ex1"/>
    </subject>
    <effectiveDateTime value="2023-01-01T12:00:00Z"/>
    <performer>
-      <reference value="Organization/organization-dxpq-ex1"/>
+      <reference value="Organization/organization-pq-ex1"/>
    </performer>
    <valueQuantity>
       <value value="0.801"/>

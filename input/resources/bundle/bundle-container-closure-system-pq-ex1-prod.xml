@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-container-closure-system-dxpq-ex1-prod"/>
+   <id value="bundle-container-closure-system-pq-ex1-prod"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
    </meta>
    <type value="collection"/>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
@@ -11,7 +11,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            	<!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            	<!--medicinalproductdefinition-drug-product-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -56,16 +56,16 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
       <resource>
          <PackagedProductDefinition>
-				<!--packagedproductdefinition-dxpq-ex1-->
+				<!--packagedproductdefinition-pq-ex1-->
             <id value="88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
             </meta>
             <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
             		<valueString value="packagedproductdefinition/{id}.xml"/>
             	</extension-->
             <packageFor>
-					<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+					<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </packageFor>
             <containedItemQuantity>
@@ -232,13 +232,13 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f24bc3923"/>
       <resource>
          <PackagedProductDefinition>
-            	<!--packagedproductdefinition-dxpq-ex2-->
+            	<!--packagedproductdefinition-pq-ex2-->
             <id value="88a068e2-1d97-337b-3b9c-4b3f24bc3923"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
             </meta>
             <packageFor>
-                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </packageFor>
             <containedItemQuantity>

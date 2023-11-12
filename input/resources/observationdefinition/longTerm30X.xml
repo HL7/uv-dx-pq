@@ -3,7 +3,7 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="longTerm30X"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
     </meta>
                 <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X"/>
         <title value="X"/>

@@ -16,12 +16,12 @@
                <text value="Product Note - Drug Components"/>
             </type>
             <subject>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subject>
             <date value="2023-10-01"/>
             <author>
-                    <!--Organization/organization-dxpq-ex1-->
+                    <!--Organization/organization-pq-ex1-->
                <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             </author>
             <title value="3.2.P.2.1.1 - Components of the Drug Product"/>
@@ -67,12 +67,12 @@
                <text value="Product Note - Formulation Development"/>
             </type>
             <subject>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subject>
             <date value="2023-10-01"/>
             <author>
-                    <!--Organization/organization-dxpq-ex1-->
+                    <!--Organization/organization-pq-ex1-->
                <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             </author>
             <title value="3.2.P.2.2.1 - Formulation Development"/>
@@ -158,12 +158,12 @@
                <text value="Product Note - Summary for Risk of Impurities"/>
             </type>
             <subject>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subject>
             <date value="2023-10-01"/>
             <author>
-                    <!--Organization/organization-dxpq-ex1-->
+                    <!--Organization/organization-pq-ex1-->
                <reference value="Organization/9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             </author>
             <title value="3.2.P.2.2.4 - Summary for Risk of Impurities"/>
@@ -184,10 +184,10 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            	<!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            	<!--medicinalproductdefinition-drug-product-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <comprisedOf>
-                    <!--ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1-->
+                    <!--ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1-->
                <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
             </comprisedOf>
             <name>
@@ -237,7 +237,7 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-                <!--manufactureditemdefinition-dxpq-ex1-->
+                <!--manufactureditemdefinition-pq-ex1-->
             <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <status value="active"/>
             <name value="Stelbatolol 5mg tablet"/>
@@ -279,7 +279,7 @@
       <fullUrl value="urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
-                <!--organization-dxpq-ex1-->
+                <!--organization-pq-ex1-->
             <id value="9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
             <name value="AAA Molybdenum Products, Inc."/>
          </Organization>

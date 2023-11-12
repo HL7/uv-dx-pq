@@ -14,9 +14,9 @@
          <Medication>
             <id value="medication-actual-batch"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference> <!-- todo consider change this be the MID? -->
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
                      
 
                   </valueReference>
@@ -24,7 +24,7 @@
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
@@ -34,10 +34,10 @@
                   <extension url="manufacturingDate"> <!-- #157 -->
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq"> <!-- #159 -->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq"> <!-- #159 -->
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -49,7 +49,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                      <valueQuantity> <!-- #160 -->
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -89,15 +89,15 @@
          <Medication>
             <id value="medication-actual-batch-2"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
                   </valueReference>
                </extension>
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
                   <!-- removed extension for substance batch -->
@@ -106,10 +106,10 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -120,7 +120,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -159,15 +159,15 @@
          <Medication>
             <id value="medication-actual-batch-3"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
                   </valueReference>
                </extension>
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
                   <!-- removed extension for substance batch -->
@@ -176,10 +176,10 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
                      <valueDateTime value="2020-08"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                      <valueReference>
                         <reference value="Organization/packaging"/>
                      </valueReference>
@@ -190,7 +190,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                      <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
@@ -261,7 +261,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>

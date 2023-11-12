@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport xmlns="http://hl7.org/fhir">
    <!-- stability results report -->
-   <!-- <id value="6f4a3311-92c5-2b4a-533e-76341e414c63"/> from bundle-drug-product-stability-dxpq-ex1-->
+   <!-- <id value="6f4a3311-92c5-2b4a-533e-76341e414c63"/> from bundle-drug-product-stability-pq-ex1-->
    <id value="diagnosticreport-drug-analysis-pq-stability-prod"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
       <valueReference>
-         <reference value="PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
+         <reference value="PlanDefinition/plandefinition-pq-ex5-stability-study-protocol"/>
 		 <!-- this was new and was a broken link, reverted to last one -->
          <!--reference value="PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54"/-->
       </valueReference>
    </extension>
-   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-dxpq">
+   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-pq">
       <valueCodeableConcept>
          <!-- #223 -->
          <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then
@@ -22,7 +22,7 @@
          <text value="information about statistical model utilized to interpret stability study results"/>
       </valueCodeableConcept>
    </extension>
-   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-dxpq">
+   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq">
       <valueCodeableConcept>
          <!-- #227 -->
          <!-- Considered ObservatioDefinition.usageContext -->
@@ -43,7 +43,7 @@
    </code>
    <effectiveDateTime value="2020-12">
       <!-- start of stability test -->
-      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-dxpq">
+      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-pq">
          <!--               <extension url="http://accumulus.org/fhir/extension/timePointDescription">-->
          <valueCodeableConcept>
             <coding>
@@ -56,7 +56,7 @@
       </extension>
    </effectiveDateTime>
    <performer>
-      <reference value="Organization/organization-dxpq-ex1"/>
+      <reference value="Organization/organization-pq-ex1"/>
    </performer>
    <!--   Abbreviated Results, showing only longterm25c-initial-1 of set of 3. Addotional groups of results would be added over time (18 mo., etc.).-->
    <result>

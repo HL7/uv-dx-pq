@@ -2,9 +2,9 @@
 <ManufacturedItemDefinition xmlns="http://hl7.org/fhir">
     <!-- Contained in Accumulus FHIR Substance Example - Container Closure System (2023-08-07) -->
 <!--    <id value="packaged-item"/>-->
-    <id value="manufactureditemdefinition-dxpq-ex1"/>
+    <id value="manufactureditemdefinition-pq-ex1"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
     </meta>
                 
     <status value="active"/>

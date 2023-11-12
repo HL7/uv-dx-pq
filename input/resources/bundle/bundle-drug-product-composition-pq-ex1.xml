@@ -12,7 +12,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
             <description value="Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side."/>
             <name>
                <productName value="Stalbatolol"/>
@@ -32,12 +32,12 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
       <resource>
          <PackagedProductDefinition>
-            <id value="packagedproductdefinition-dxpq-ex1"/>
+            <id value="packagedproductdefinition-pq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
             </meta>
             <packageFor>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </packageFor>
             <!-- #174 -->
             <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
@@ -52,7 +52,7 @@
             <id value="ingredient1"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -98,7 +98,7 @@
             <id value="excipient1"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -150,7 +150,7 @@
             <id value="excipient2"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -202,7 +202,7 @@
             <id value="excipient3"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>
@@ -254,7 +254,7 @@
             <id value="excipient4"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </for>
             <role>
                <coding>

@@ -2,11 +2,11 @@
 <SpecimenDefinition xmlns="http://hl7.org/fhir">
     <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
     <!--    <id value="specimenDefStoredAt25"/>-->
-    <id value="specimendefinition-stability-dxpq-ex1"/>
+    <id value="specimendefinition-stability-pq-ex1"/>
     <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-dxpq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
+                <url value="http://hl7.org/fhir/uv/pharm-quality/SpecimenDefinition/specimendefinition-stability-pq-ex1"/>
     <status value="active"/>
     <typeTested>
         <preference value="preferred"/>

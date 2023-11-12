@@ -12,7 +12,7 @@
          <PlanDefinition>
             <id value="referenceProtocol"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="S.2.S.5 Reference Standard Analysis"/>
@@ -126,7 +126,7 @@
                <text value="Visual evaluation"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="White powder"/>
                </extension>
             </qualifiedValue>
@@ -153,7 +153,7 @@
                <text value="FT-IR"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Consistent with structure at release; Conforms to standard at requalification"/>
                </extension>
             </qualifiedValue>
@@ -180,7 +180,7 @@
                <text value="NMR spectrometry"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Consistent with structure"/>
                </extension>
             </qualifiedValue>
@@ -193,7 +193,7 @@
          <ObservationDefinition>
             <id value="Impurities"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
             </meta>
             <url value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             <title value="Organic Impurities (w/w%)"/>
@@ -283,7 +283,7 @@
                <text value="GC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
                <appliesTo> <!-- could be a code -->
@@ -291,7 +291,7 @@
                </appliesTo>
             </qualifiedValue>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
                <appliesTo>
@@ -330,7 +330,7 @@
                <text value="USP Karl Fischer titration"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
             </qualifiedValue>
@@ -356,7 +356,7 @@
                <text value="ICP-MS"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
                <appliesTo> <!-- could be a code -->
@@ -379,15 +379,15 @@
       <fullUrl value="urn:uuid:87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
       <resource>
          <Substance>
-            <id value="substance-dxpq-ex1"/>
+            <id value="substance-pq-ex1"/>
             <!-- was actual-batch-substance -->
             <!-- IGCOMMENT this is needed to make this recognised by tables -->
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
                   <!-- #173 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
                   <!-- #221 -->
                </extension>
@@ -395,9 +395,9 @@
                   <valueDateTime value="2020-01"/>
                   <!-- #157 -->
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                   <valueReference>
-                     <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
+                     <reference value="PlanDefinition/plandefinition-pq-ex4-mnf-process"/>
                   </valueReference>
                </extension>
                <extension url="batchQuantity"> <!-- #157 -->
@@ -407,7 +407,7 @@
                      <!-- #158 -->
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
@@ -449,10 +449,10 @@
          <Substance>
             <id value="actual-batch-substance-2"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
                </extension>
                <extension url="manufacturingDate">
@@ -464,7 +464,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
@@ -505,7 +505,7 @@
          <PlanDefinition>
                 
 
-            <id value="plandefinition-dxpq-ex4-mnf-process"/>
+            <id value="plandefinition-pq-ex4-mnf-process"/>
             <url value="http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
             <title value="Process 1.1"/>
             <type>
@@ -607,7 +607,7 @@
                <reference value="Observation/testDateSecond1"/>
             </result>
             <result>
-               <reference value="Observation/observation-test-result-dxpq-ex2"/>
+               <reference value="Observation/observation-test-result-pq-ex2"/>
             </result>
             <result>
                <reference value="Observation/observationDescription2"/>
@@ -748,7 +748,7 @@
          <Observation>
             <id value="testDate1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -756,14 +756,14 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
                   <code value="XXX-2"/>
                   <display value="Test Date"/>
                </coding>
                <text value="est Date"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -780,7 +780,7 @@
             <id value="testDate2"/>
             <!-- was observationDescription -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -788,14 +788,14 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
                   <code value="XXX-2"/>
                   <display value="Test Date"/>
                </coding>
                <text value="Test Date"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -812,7 +812,7 @@
             <id value="testDate3"/>
             <!-- was observationDescription -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -820,14 +820,14 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
                   <code value="XXX-2"/>
                   <display value="Test Date"/>
                </coding>
                <text value="Test Date"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -843,7 +843,7 @@
          <Observation>
             <id value="testDateSecond1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -851,7 +851,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
                   <code value="XXX-2"/>
                   <display value="Test Date"/>
                </coding>
@@ -874,9 +874,9 @@
       <fullUrl value="urn:uuid:82f552f9-8458-3cf4-8379-eea5417a9de2"/>
       <resource>
          <Observation>
-            <id value="observation-test-result-dxpq-ex2"/>
+            <id value="observation-test-result-pq-ex2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/Appearance"/>
@@ -884,7 +884,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
                   <code value="XXX-2"/>
                   <display value="Appearance"/>
                </coding>
@@ -893,7 +893,7 @@
             <subject>
 					
 
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -921,7 +921,7 @@
                <text value="Description"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -949,7 +949,7 @@
                <text value="Description"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -965,7 +965,7 @@
          <Observation>
             <id value="observationDescriptionSecond1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/Appearance"/>
@@ -973,7 +973,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
                   <code value="XXX-2"/>
                   <display value="Appearance"/>
                </coding>
@@ -1010,7 +1010,7 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1038,7 +1038,7 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1066,7 +1066,7 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1124,7 +1124,7 @@
                <text value="Identification (NMR)"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1152,7 +1152,7 @@
                <text value="Identification (NMR)"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1187,7 +1187,7 @@
                <text value="Identification (NMR)"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1250,7 +1250,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1296,7 +1296,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1342,7 +1342,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1434,7 +1434,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1480,7 +1480,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1526,7 +1526,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1618,7 +1618,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1710,7 +1710,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1756,7 +1756,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1802,7 +1802,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1848,7 +1848,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1894,7 +1894,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1986,7 +1986,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2026,7 +2026,7 @@
                <text value="Elemental"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2061,7 +2061,7 @@
                <text value="Elemental"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2134,7 +2134,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2178,7 +2178,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2222,7 +2222,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2310,7 +2310,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2354,7 +2354,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2398,7 +2398,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2487,7 +2487,7 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2520,7 +2520,7 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2553,7 +2553,7 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <reference value="Substance/substance-dxpq-ex1"/>
+               <reference value="Substance/substance-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>

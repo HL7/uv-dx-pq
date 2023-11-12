@@ -3,7 +3,7 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="longTerm25Y"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
     </meta>
                 <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y"/>
     <title value="Y"/>
@@ -12,7 +12,7 @@
         <text value="Battery of tests 'Y' at 25°C/60% RH"/>
     </code>
     <specimen>
-        <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
+        <reference value="SpecimenDefinition/specimendefinition-stability-pq-ex1"/>
     </specimen>
     <hasMember>
         <reference value="ObservationDefinition/Microbiological"/>

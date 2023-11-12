@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-container-closure-system-dxpq-ex2-sub"/>
+   <id value="bundle-container-closure-system-pq-ex2-sub"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -70,7 +70,7 @@
                <containedItem>
                   <item>
                      <reference>
-                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1-->
+                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1-->
                         <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
                      </reference>
                   </item>
@@ -109,7 +109,7 @@
                <containedItem>
                   <item>
                      <reference>
-                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1-->
+                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1-->
                         <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
                      </reference>
                   </item>
@@ -124,10 +124,10 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-                <!--manufactureditemdefinition-dxpq-ex1-->
+                <!--manufactureditemdefinition-pq-ex1-->
             <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
             </meta>
             <status value="active"/>
             <manufacturedDoseForm>
@@ -147,7 +147,7 @@
             <id value="f26b997a-3ab9-7552-a6cc-fd771d1f1863"/>
             <status value="active"/>
             <for>
-                    <!--ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1-->
+                    <!--ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1-->
                <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
             </for>
             <role>
@@ -253,7 +253,7 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>
@@ -278,7 +278,7 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Corresponds with reference"/>
                </extension>
             </qualifiedValue>
@@ -303,7 +303,7 @@
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>

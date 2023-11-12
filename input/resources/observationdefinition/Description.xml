@@ -3,7 +3,7 @@
     <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
     <id value="Description"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Description"/>
     <title value="Description"/>
@@ -17,7 +17,7 @@
         <text value="Description"/>
     </code>
     <qualifiedValue>
-        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                         <valueString value="An orange film-coated tablet, debossed with 175 on one side">
 	                        
                 		</valueString>

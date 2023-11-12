@@ -12,11 +12,11 @@
         <text value="Product Note - Formulation Development"/>
     </type>
     <subject>
-        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
     </subject>
     <date value="2023-10-01"/>
     <author>
-                    <reference value="Organization/organization-dxpq-ex1"/>
+                    <reference value="Organization/organization-pq-ex1"/>
     </author>
     <title value="3.2.P.2.2.1 - Formulation Development"/>
                 

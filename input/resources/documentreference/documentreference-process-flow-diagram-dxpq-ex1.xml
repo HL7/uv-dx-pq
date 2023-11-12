@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentReference xmlns="http://hl7.org/fhir">
-    <id value="documentreference-process-flow-diagram-dxpq-ex1"/>
+    <id value="documentreference-process-flow-diagram-pq-ex1"/>
 
     <meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>       
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>       
     </meta>
     <identifier>
         <system value="http://accumulus.org/fhir/identifier/document"/>

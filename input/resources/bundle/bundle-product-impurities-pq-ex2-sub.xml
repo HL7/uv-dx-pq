@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
     <!-- Substance Impurities -->
-   <id value="bundle-product-impurities-dxpq-ex2-sub"/>
+   <id value="bundle-product-impurities-pq-ex2-sub"/>
 <!--   <id value="substance-impurities"/>-->
    <meta>
 <!--      <profile value="http://accumulus.org/fhir/dx-cmc/impurities-substance"/>-->
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
    </meta>
    <type value="collection"/>
    <entry>

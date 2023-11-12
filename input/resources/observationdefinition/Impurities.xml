@@ -3,7 +3,7 @@
     <!-- Contained in Accumulus FHIR Substance Example - Batch Analysis (05-31-2023) -->
     <id value="Impurities"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Impurities"/>
                 <title value="Drug Substance Related Organic impurities"/>
@@ -43,7 +43,7 @@
     <qualifiedValue>
         <appliesTo>
             <text value="Impurity 3">
-                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-test-comment-dxpq">
+                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-test-comment-pq">
                     <!--                     <extension url="http://accumulus.org/fhir/extension/testComment">-->
                     <valueString value="Impurity 3 was included in the release specification throughout clinical development, and no longer forms a part of a commercial release specification; see Section S.4.5 Justification of Specification and Section S.2.5 Validation (PPQ) for additional data">
             						

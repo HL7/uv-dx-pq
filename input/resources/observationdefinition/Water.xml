@@ -4,7 +4,7 @@
     <id value="Water"/>
     <meta>
         <profile
-            value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"
+            value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"
         />
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Water"/>

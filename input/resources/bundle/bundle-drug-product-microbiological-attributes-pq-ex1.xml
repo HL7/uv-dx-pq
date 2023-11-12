@@ -154,7 +154,7 @@
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
                 
-                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+                <!--medicinalproductdefinition-drug-product-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -202,10 +202,10 @@
                 <!--medication-actual-batch-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
                             <!-- todo consider change this be the MID? -->
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                      <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>

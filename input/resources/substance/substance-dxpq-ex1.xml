@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Substance xmlns="http://hl7.org/fhir">
-    <id value="substance-dxpq-ex1"/>
+    <id value="substance-pq-ex1"/>
     <!--    <id value="actual-batch-substance"/>-->
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
             <valueDateTime value="2019-09-08"/>
             <!-- #173 -->
         </extension>
-        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
             <valueDateTime value="2022-09-08"/>
             <!-- #221 -->
         </extension>
@@ -26,7 +26,7 @@
                 <!-- #158 -->
             </valueQuantity>
         </extension>
-        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
             <valueQuantity>
                 <value value="4.8"/>
                 <unit value="kg"/>
@@ -46,7 +46,7 @@
             <!-- #160 -->
             <valueReference>
                 <!--                <reference value="Organization/substance-manufacturer"/>-->
-                <reference value="Organization/organization-dxpq-ex1"/>
+                <reference value="Organization/organization-pq-ex1"/>
             </valueReference>
         </extension>
     </extension>
@@ -58,7 +58,7 @@
     <code>
         <reference>
 <!--            <reference value="SubstanceDefinition/substance1"/>-->
-            <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+            <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
         </reference>
     </code>
 </Substance>

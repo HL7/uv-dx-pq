@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Substance Analytical Procedure -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-analytical-procedure-dxpq-ex2-sub"/>
+   <id value="bundle-analytical-procedure-pq-ex2-sub"/>
    <!--   <id value="substance-analytical-procedure"/>-->
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -34,7 +34,7 @@
                <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
             </subjectReference>
             <action>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -48,7 +48,7 @@
                      <valueString value="Same as for blue light"/>
                   </extension>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -62,7 +62,7 @@
                      <valueString value="MIE"/>
                   </extension>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -96,7 +96,7 @@
                     </participant-->
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                     <!--SubstanceDefinition/dispersant-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
@@ -113,7 +113,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                     <!--SubstanceDefinition/resultingMaterial-->
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
@@ -266,7 +266,7 @@
             </code>
             <qualifiedValue>
                <range>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-pq">
                      <valueQuantity>
                         <value value="15"/>
                         <unit value="%"/>
@@ -337,7 +337,7 @@
                <text value="Particle Size RSD"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="The %RSD for the D(v, 0.9) must be not more than 15%"/>
                </extension>
             </qualifiedValue>

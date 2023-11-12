@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
     <!-- Product Manufacturing -->
-   <id value="bundle-product-manufacturing-dxpq-ex1"/>
+   <id value="bundle-product-manufacturing-pq-ex1"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -13,18 +13,18 @@
                 <!--manufacturingProcess-unlinked-->
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
             </meta>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq">
                <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
                         <!-- #84 -->
-                    	<!--DocumentReference/documentreference-process-flow-diagram-dxpq-ex1-->
+                    	<!--DocumentReference/documentreference-process-flow-diagram-pq-ex1-->
                   <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
             </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
                <valueMarkdown value="This can be text about the history"/>
             </extension>
             <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
@@ -45,7 +45,7 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
@@ -198,14 +198,14 @@
             <!-- step 1 mixing -->
             <action>
                         <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -222,7 +222,7 @@
                      </valueQuantity>
                   </extension>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -275,7 +275,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                         <!--SubstanceDefinition/startingMaterial-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
@@ -294,7 +294,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                         <!--SubstanceDefinition/processingMaterial-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
@@ -313,7 +313,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                         <!--SubstanceDefinition/StelbatololAqueousSolution-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
@@ -346,14 +346,14 @@
             <!-- step 2 drying -->
             <action>
                         <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -408,7 +408,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                         <!--SubstanceDefinition/StelbatololAqueousSolution-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
@@ -427,7 +427,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                         <!--SubstanceDefinition/StelbatololGranules-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
@@ -448,14 +448,14 @@
             <!-- step 3 particle size -->
             <action>
                         <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
@@ -493,7 +493,7 @@
                <participant>
                   <typeReference>
                                 <!-- this is new in R5 and is not in R4B -->
-                            	<!--DeviceDefinition/devicedefinition-dxpq-ex1-->
+                            	<!--DeviceDefinition/devicedefinition-pq-ex1-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
                   </typeReference>
                   <role>
@@ -507,7 +507,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                         <!--SubstanceDefinition/StelbatololGranules-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821113"/>
@@ -526,7 +526,7 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                                         <!--SubstanceDefinition/Stelbatolol-->
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
@@ -552,10 +552,10 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
       <resource>
          <DeviceDefinition>
-            	<!--devicedefinition-dxpq-ex1-->
+            	<!--devicedefinition-pq-ex1-->
             <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
             <!--<meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-dxpq"/>
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"/>
             	</meta>-->
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
@@ -638,10 +638,10 @@
       <resource>
             <!-- #84 -->
          <DocumentReference> 
-            	<!--documentreference-process-flow-diagram-dxpq-ex1-->
+            	<!--documentreference-process-flow-diagram-pq-ex1-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
             <!--<meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-dxpq"/>       
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>       
             	</meta>-->
             <identifier>
                <system value="http://accumulus.org/fhir/identifier/document"/>
@@ -687,7 +687,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+                <!--medicinalproductdefinition-drug-product-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -735,7 +735,7 @@
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <status value="active"/>
             <for>
-				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
@@ -780,7 +780,7 @@
                 <!--StelbatololGranules-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821113"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
             </meta>
             <name>
                <name value="Stelbatolol Granules"/>
@@ -861,7 +861,7 @@
                 <!--StelbatololAqueousSolution-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821154"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
             </meta>
             <name>
                <name value="Stelbatolol Aqueous Solution"/>

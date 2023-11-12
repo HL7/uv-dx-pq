@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Product Manufacturing -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-product-manufacturing-dxpq-ex2-sub"/>
+   <id value="bundle-product-manufacturing-pq-ex2-sub"/>
 <!--   <id value="product-manufacturing"/>-->
    <meta>
 <!--      <profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/>-->
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -13,15 +13,15 @@
       <resource>
          <PlanDefinition>
             <id value="manufacturingProcess-unlinked"/>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq">
                <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
                         <!-- #84 -->
-                  <reference value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
+                  <reference value="DocumentReference/DocumentReference-process-flow-diagram-pq-ex1"/>
                </valueReference>
             </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
                <valueMarkdown value="This can be text about the history"/>
             </extension>
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
@@ -129,14 +129,14 @@
                   <text value="overall process"/>
                </code>
                <action>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                      <valueCoding>
                         <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
                         <code value="ABCD"/>
                         <display value="Production Scale"/>
                      </valueCoding>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                      <extension url="parameter">
                         <valueCodeableConcept>
                            <coding>
@@ -187,7 +187,7 @@
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
                               <reference value="SubstanceDefinition/startingMaterial"/>
                            </valueReference>
@@ -203,7 +203,7 @@
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
                               <reference value="SubstanceDefinition/processingMaterial"/>
                            </valueReference>
@@ -219,7 +219,7 @@
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
                               <reference value="SubstanceDefinition/resultingMaterial"/>
                            </valueReference>
@@ -274,7 +274,7 @@
       <resource>
             <!-- #84 -->
          <DocumentReference>
-            <id value="DocumentReference-process-flow-diagram-dxpq-ex1"/>
+            <id value="DocumentReference-process-flow-diagram-pq-ex1"/>
             <meta>
                <versionId value="1"/>
                <lastUpdated value="2023-01-12T17:57:08.898+00:00"/>

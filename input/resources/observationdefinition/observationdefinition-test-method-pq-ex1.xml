@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ObservationDefinition xmlns="http://hl7.org/fhir">
-    <!-- Contained in Accumulus FHIR Product Example - Stability (05-31-2023) -->
-    <id value="longTerm25Z"/>
+    <id value="observationdefinition-test-method-pq-ex1"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Z"/>
-    <title value="Z"/>
+    <!-- SG: Added url -->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-pq-ex1"/>
+    <title value="X"/>
     <status value="active"/>
     <code>
-        <text value="Battery of tests 'Z' at 25°C/60% RH"/>
+        <text value="Battery of tests 'X' at 25°C/60% RH"/>
     </code>
     <specimen>
         <reference value="SpecimenDefinition/specimendefinition-stability-pq-ex1"/>
     </specimen>
     <hasMember>
-        <reference value="ObservationDefinition/Uniformity"/>
+        <reference value="ObservationDefinition/observationdefinition-test-method-pq-ex2"/>
     </hasMember>
 </ObservationDefinition>
