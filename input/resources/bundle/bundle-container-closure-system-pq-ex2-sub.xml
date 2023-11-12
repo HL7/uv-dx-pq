@@ -127,7 +127,7 @@
                 <!--manufactureditemdefinition-pq-ex1-->
             <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
             </meta>
             <status value="active"/>
             <manufacturedDoseForm>

@@ -67,7 +67,7 @@
       <type>
         <code value="ManufacturedItemDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
       </type>
     </element>
 

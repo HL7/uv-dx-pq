@@ -780,10 +780,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/ManufacturedItemDefinition-pq"/>
-                <display value="ManufacturedItemDefinition PQ"/>
+                <reference value="StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
+                <display value="ManufacturedItemDefinition - Drug PQ"/>
             </reference>
-            <name value="ManufacturedItemDefinition PQ"/>
+            <name value="ManufacturedItemDefinition - Drug PQ"/>
             <description value="This ManufacturedItemDefinition profile represents information about the physical packaged medication item, such as a tablet or capsule."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -990,12 +990,12 @@
 
         <resource>
             <reference>
-                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1"/>
+                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1"/>
             </reference>
-            <name value="manufactureditemdefinition-pq-ex1"/>
-            <description value="ManufacturedItemDefinition PQ - Example 1"/>
+            <name value="manufactureditemdefinition-drug-pq-ex1"/>
+            <description value="ManufacturedItemDefinition - Drug PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
