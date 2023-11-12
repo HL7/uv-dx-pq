@@ -4,7 +4,7 @@
     <id value="devicedefinition-pq-ex1"/>
 
     <meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"/>
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
     </meta>
 
     <deviceName>

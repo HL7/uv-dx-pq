@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DeviceDefinition-pq"/>
-<url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"/>
-  <name value="DeviceDefinitionPq"/>
-  <title value="DeviceDefinition - PQ"/>
+  <id value="DeviceDefinition-drug-pq"/>
+<url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
+  <name value="DeviceDefinitionDrugPq"/>
+  <title value="DeviceDefinition - Drug PQ"/>
   <status value="active"/>
-  <description value="TBD"/>
+  <description value="This DeviceDefinition profile represents information about devices and equipment used in pharmaceutical quality (PQ) data gathering."/>
 
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>

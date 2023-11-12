@@ -555,7 +555,7 @@
             	<!--devicedefinition-pq-ex1-->
             <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
             <!--<meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"/>
+            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
             	</meta>-->
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>

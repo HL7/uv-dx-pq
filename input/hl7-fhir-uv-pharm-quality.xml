@@ -736,10 +736,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/DeviceDefinition-pq"/>
-                <display value="DeviceDefinition - PQ"/>
+                <reference value="StructureDefinition/DeviceDefinition-drug-pq"/>
+                <display value="DeviceDefinition - Drug PQ"/>
             </reference>
-            <name value="DeviceDefinition - PQ"/>
+            <name value="DeviceDefinition - Drug PQ"/>
             <description value="This DeviceDefinition profile represents information about devices and equipment used in pharmaceutical quality (PQ) data gathering."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -951,7 +951,7 @@
             <name value="devicedefinition-pq-ex1"/>
             <description value="DeviceDefinition PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

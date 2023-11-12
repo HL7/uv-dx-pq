@@ -126,7 +126,7 @@
       <type>
         <code value="DeviceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"
         />
       </type>
     </element>
