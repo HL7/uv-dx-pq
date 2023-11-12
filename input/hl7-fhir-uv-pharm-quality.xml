@@ -302,7 +302,7 @@
         <!--Impurities Examples-->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-product-impurities-dxpq-ex1"/>
+                <reference value="Bundle/bundle-product-impurities-pq-ex1"/>
             </reference>
             <name value="Bundle - Product Impurities dx-PQ - Example, product"/>
             <description value="Example of Bundle - Product Impurities dx-PQ for drug product."/>
@@ -313,7 +313,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-product-impurities-dxpq-ex2-sub"/>
+                <reference value="Bundle/bundle-product-impurities-pq-ex2-sub"/>
             </reference>
             <name value="Bundle - Product Impurities dx-PQ - Example, substance"/>
             <description value="Example of Bundle - Product Impurities dx-PQ for drug substance."/>
@@ -338,7 +338,7 @@
         <!--Organization Examples -->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-organizations-dxpq-ex1"/>
+                <reference value="Bundle/bundle-organizations-pq-ex1"/>
             </reference>
             <name value="Bundle - Organizations dx-PQ - Example"/>
             <description value="Example of Bundle - Organizations dx-PQ for either drug product or drug substance."/>
@@ -413,7 +413,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-batch-analysis-dxpq-ex1-prod"/>
+                <reference value="Bundle/bundle-batch-analysis-pq-ex1-prod"/>
             </reference>
             <name value="Bundle – Batch Analysis dx-PQ - Example, product"/>
             <description value="Example of Bundle – Batch Analysis dx-PQ for drug product."/>
@@ -424,7 +424,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-batch-analysis-dxpq-ex2-sub"/>
+                <reference value="Bundle/bundle-batch-analysis-pq-ex2-sub"/>
             </reference>
             <name value="Bundle – Batch Analysis dx-PQ - Example, substance"/>
             <description value="Example of Bundle – Batch Analysis dx-PQ for drug substance."/>
@@ -474,7 +474,7 @@
         <!--Manufacturing Process Examples-->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-product-manufacturing-dxpq-ex1"/>
+                <reference value="Bundle/bundle-product-manufacturing-pq-ex1"/>
             </reference>
             <name value="Bundle - Product Manufacturing dx-PQ - Example, product"/>
             <description value="Example of Bundle - Product Manufacturing dx-PQ for drug product."/>
@@ -485,7 +485,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-product-manufacturing-dxpq-ex2-sub"/>
+                <reference value="Bundle/bundle-product-manufacturing-pq-ex2-sub"/>
             </reference>
             <name value="Bundle - Product Manufacturing dx-PQ - Example, substance"/>
             <description value="Example of Bundle - Product Manufacturing dx-PQ for drug substance."/>
@@ -508,7 +508,7 @@
         <!--Process Validation Examples-->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-product-process-validation-dxpq-ex1"/>
+                <reference value="Bundle/bundle-product-process-validation-pq-ex1"/>
             </reference>
             <name value="Bundle - Product Process Validation dx-PQ - Example, product"/>
             <description value="Example of Bundle - Product Process Validation dx-PQ for drug product."/>
@@ -519,7 +519,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-product-process-validation-dxpq-ex2-sub"/>
+                <reference value="Bundle/bundle-product-process-validation-pq-ex2-sub"/>
             </reference>
             <name value="Bundle - Product Process Validation dx-PQ - Example, substance"/>
             <description value="Example of Bundle - Product Process Validation dx-PQ for drug substance."/>
@@ -544,7 +544,7 @@
         <!--Analytical Procedures Examples-->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-analytical-procedure-dxpq-ex1-prod"/>
+                <reference value="Bundle/bundle-analytical-procedure-pq-ex1-prod"/>
             </reference>
             <name value="Bundle – Analytical Procedure dx-PQ - Example, product"/>
             <description value="Example of Bundle – Analytical Procedure dx-PQ for drug product."/>
@@ -555,7 +555,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-analytical-procedure-dxpq-ex2-sub"/>
+                <reference value="Bundle/bundle-analytical-procedure-pq-ex2-sub"/>
             </reference>
             <name value="Bundle – Analytical Procedure dx-PQ - Example, substance"/>
             <description value="Example of Bundle – Analytical Procedure dx-PQ for drug substance."/>
@@ -580,7 +580,7 @@
         <!--Container Closure System Examples-->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-container-closure-system-dxpq-ex1-prod"/>
+                <reference value="Bundle/bundle-container-closure-system-pq-ex1-prod"/>
             </reference>
             <name value="Bundle - Container Closure System dx-PQ - Example, product"/>
             <description value="Example of Bundle - Container Closure System dx-PQ for drug product."/>
@@ -591,7 +591,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-container-closure-system-dxpq-ex2-sub"/>
+                <reference value="Bundle/bundle-container-closure-system-pq-ex2-sub"/>
             </reference>
             <name value="Bundle - Container Closure System dx-PQ - Example, substance"/>
             <description value="Example of Bundle - Container Closure System dx-PQ for drug substance."/>
@@ -664,7 +664,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-drug-product-specification-dxpq-ex1"/>
+                <reference value="Bundle/bundle-drug-product-specification-pq-ex1"/>
             </reference>
             <name value="Bundle – Drug Product Specification dx-PQ - Example"/>
             <description value="Example of Bundle – Drug Product Specification dx-PQ for drug product."/>
@@ -675,7 +675,7 @@
 
         <resource>
             <reference>
-                <reference value="Bundle/bundle-drug-substance-specification-dxpq-ex1"/>
+                <reference value="Bundle/bundle-drug-substance-specification-pq-ex1"/>
             </reference>
             <name value="Bundle – Drug Substance Specification dx-PQ - Example"/>
             <description value="Example of Bundle – Drug Substance Specification dx-PQ for drug substance."/>
@@ -946,9 +946,9 @@
 
         <resource>
             <reference>
-                <reference value="DeviceDefinition/devicedefinition-dxpq-ex1"/>
+                <reference value="DeviceDefinition/devicedefinition-pq-ex1"/>
             </reference>
-            <name value="devicedefinition-dxpq-ex1"/>
+            <name value="devicedefinition-pq-ex1"/>
             <description value="DeviceDefinition dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-pq"/>
@@ -968,9 +968,9 @@
 
         <resource>
             <reference>
-                <reference value="DocumentReference/documentreference-process-flow-diagram-dxpq-ex1"/>
+                <reference value="DocumentReference/documentreference-process-flow-diagram-pq-ex1"/>
             </reference>
-            <name value="documentreference-process-flow-diagram-dxpq-ex1"/>
+            <name value="documentreference-process-flow-diagram-pq-ex1"/>
             <description value="DocumentReference - Process Flow Diagram dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-pq"/>
@@ -979,9 +979,9 @@
 
         <resource>
             <reference>
-                <reference value="Ingredient/ingredient-dxpq-ex1"/>
+                <reference value="Ingredient/ingredient-pq-ex1"/>
             </reference>
-            <name value="ingredient-dxpq-ex1"/>
+            <name value="ingredient-pq-ex1"/>
             <description value="Ingredient - dxpq - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-pq"/>
@@ -990,9 +990,9 @@
 
         <resource>
             <reference>
-                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1"/>
             </reference>
-            <name value="manufactureditemdefinition-dxpq-ex1"/>
+            <name value="manufactureditemdefinition-pq-ex1"/>
             <description value="ManufacturedItemDefinition dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-pq"/>
@@ -1001,9 +1001,9 @@
 
         <resource>
             <reference>
-                <reference value="Medication/medication-batch-information-dxpq-ex1"/>
+                <reference value="Medication/medication-batch-information-pq-ex1"/>
             </reference>
-            <name value="medication-batch-information-dxpq-ex1"/>
+            <name value="medication-batch-information-pq-ex1"/>
             <description value="Medication - Batch Information dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
@@ -1012,9 +1012,9 @@
 
         <resource>
             <reference>
-                <reference value="Medication/medication-batch-information-dxpq-ex2"/>
+                <reference value="Medication/medication-batch-information-pq-ex2"/>
             </reference>
-            <name value="medication-batch-information-dxpq-ex2"/>
+            <name value="medication-batch-information-pq-ex2"/>
             <description value="Medication - Batch Information dx-PQ - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-pq"/>
@@ -1023,7 +1023,7 @@
 
         <resource>
             <reference>
-                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </reference>
             <name value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
             <description value="MedicinalProductDefinition - Drug Product dx-PQ - Example 1"/>
@@ -1034,9 +1034,9 @@
 
         <resource>
             <reference>
-                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex1"/>
+                <reference value="ObservationDefinition/observationdefinition-test-method-pq-ex1"/>
             </reference>
-            <name value="observationdefinition-test-method-dxpq-ex1"/>
+            <name value="observationdefinition-test-method-pq-ex1"/>
             <description value="ObservationDefinition - Test Method dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
@@ -1045,9 +1045,9 @@
 
         <resource>
             <reference>
-                <reference value="ObservationDefinition/observationdefinition-test-method-dxpq-ex2"/>
+                <reference value="ObservationDefinition/observationdefinition-test-method-pq-ex2"/>
             </reference>
-            <name value="observationdefinition-test-method-dxpq-ex2"/>
+            <name value="observationdefinition-test-method-pq-ex2"/>
             <description value="ObservationDefinition - Test Method dx-PQ - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
@@ -1056,10 +1056,10 @@
 
         <resource>
             <reference>
-                <reference value="Observation/observation-test-result-dxpq-ex1"/>
+                <reference value="Observation/observation-test-result-pq-ex1"/>
             </reference>
-            <name value="observation-test-result-dxpq-ex1"/>
-            <description value="Observation-test-result-dxpq - Example 1"/>
+            <name value="observation-test-result-pq-ex1"/>
+            <description value="Observation-test-result-pq - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1067,10 +1067,10 @@
 
         <resource>
             <reference>
-                <reference value="Observation/observation-test-result-dxpq-ex2"/>
+                <reference value="Observation/observation-test-result-pq-ex2"/>
             </reference>
-            <name value="observation-test-result-dxpq-ex1"/>
-            <description value="Observation-test-result-dxpq - Example 2"/>
+            <name value="observation-test-result-pq-ex1"/>
+            <description value="Observation-test-result-pq - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1078,9 +1078,9 @@
 
         <resource>
             <reference>
-                <reference value="Organization/organization-dxpq-ex1"/>
+                <reference value="Organization/organization-pq-ex1"/>
             </reference>
-            <name value="organization-dxpq-ex1"/>
+            <name value="organization-pq-ex1"/>
             <description value="Organization - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
@@ -1089,9 +1089,9 @@
 
         <resource>
             <reference>
-                <reference value="PackagedProductDefinition/packagedproductdefinition-dxpq-ex1"/>
+                <reference value="PackagedProductDefinition/packagedproductdefinition-pq-ex1"/>
             </reference>
-            <name value="packagedproductdefinition-dxpq-ex1"/>
+            <name value="packagedproductdefinition-pq-ex1"/>
             <description value="PackagedProductDefinition dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
@@ -1100,10 +1100,10 @@
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-dxpq-ex1-validation-protocol"/>
+                <reference value="PlanDefinition/plandefinition-pq-ex1-validation-protocol"/>
             </reference>
             <name value="PlanDefinition - dxPQ - Example 1, Validation Protocol"/>
-            <description value="PlanDefinition plandefinition-dxpq-ex1-validation-protocol"/>
+            <description value="PlanDefinition plandefinition-pq-ex1-validation-protocol"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1111,9 +1111,9 @@
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-dxpq-ex2-manufacturing-plan"/>
+                <reference value="PlanDefinition/plandefinition-pq-ex2-manufacturing-plan"/>
             </reference>
-            <name value="plandefinition-dxpq-ex2-manufacturing-plan"/>
+            <name value="plandefinition-pq-ex2-manufacturing-plan"/>
             <description value="PlanDefinition - dxPQ - Example 2, Manufacturing Plan"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
@@ -1122,9 +1122,9 @@
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-dxpq-ex3-drug-specification"/>
+                <reference value="PlanDefinition/plandefinition-pq-ex3-drug-specification"/>
             </reference>
-            <name value="plandefinition-dxpq-ex3-drug-specification"/>
+            <name value="plandefinition-pq-ex3-drug-specification"/>
             <description value="PlanDefinition - dxPQ - Example 3, Drug Specification"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
@@ -1133,9 +1133,9 @@
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
+                <reference value="PlanDefinition/plandefinition-pq-ex4-mnf-process"/>
             </reference>
-            <name value="plandefinition-dxpq-ex4-mnf-process"/>
+            <name value="plandefinition-pq-ex4-mnf-process"/>
             <description value="PlanDefinition - dxPQ - Example 4, Manufacturing Process"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
@@ -1144,9 +1144,9 @@
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-dxpq-ex5-stability-study-protocol"/>
+                <reference value="PlanDefinition/plandefinition-pq-ex5-stability-study-protocol"/>
             </reference>
-            <name value="plandefinition-dxpq-ex5-stability-study-protocol"/>
+            <name value="plandefinition-pq-ex5-stability-study-protocol"/>
             <description value="PlanDefinition - dxPQ - Example 5, Stability Study Protocol"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
@@ -1155,9 +1155,9 @@
 
         <resource>
             <reference>
-                <reference value="SpecimenDefinition/specimendefinition-stability-dxpq-ex1"/>
+                <reference value="SpecimenDefinition/specimendefinition-stability-pq-ex1"/>
             </reference>
-            <name value="specimendefinition-stability-dxpq-ex1"/>
+            <name value="specimendefinition-stability-pq-ex1"/>
             <description value="SpecimenDefinition - Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
@@ -1166,9 +1166,9 @@
 
         <resource>
             <reference>
-                <reference value="Specimen/specimen-stability-dxpq-ex1"/>
+                <reference value="Specimen/specimen-stability-pq-ex1"/>
             </reference>
-            <name value="specimen-stability-dxpq-ex1"/>
+            <name value="specimen-stability-pq-ex1"/>
             <description value="Specimen - Stability dx-PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
@@ -1177,9 +1177,9 @@
 
         <resource>
             <reference>
-                <reference value="SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1"/>
+                <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
             </reference>
-            <name value="substancedefinition-component-substance-dxpq-ex1"/>
+            <name value="substancedefinition-component-substance-pq-ex1"/>
             <description value="SubstanceDefinition - Component Substance - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
@@ -1188,9 +1188,9 @@
 
         <resource>
             <reference>
-                <reference value="Substance/substance-dxpq-ex1"/>
+                <reference value="Substance/substance-pq-ex1"/>
             </reference>
-            <name value="substance-dxpq-ex1"/>
+            <name value="substance-pq-ex1"/>
             <description value="Substance - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
