@@ -959,7 +959,7 @@
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-analysis-drug-pq-stability-prod"/>
             </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ - Stability Study, Product"/>
+            <name value="DiagnosticReport - Analysis Drug PQ - Stability Study, Product"/>
             <description value="Stability study results report, drug product example"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
