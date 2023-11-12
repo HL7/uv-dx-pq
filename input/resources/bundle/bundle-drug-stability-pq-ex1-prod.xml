@@ -14,10 +14,10 @@
       <resource>
          <DiagnosticReport>
                 <!-- <id value="studyResultsReport"/>-->
-                <!--diagnosticreport-drug-analysis-pq-stability-prod-->
+                <!--DiagnosticReport-analysis-drug-pq-stability-prod-->
             <id value="6f4a3311-92c5-2b4a-533e-76341e414c63"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>

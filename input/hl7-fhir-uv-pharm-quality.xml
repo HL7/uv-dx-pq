@@ -747,10 +747,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
-                <display value="DiagnosticReport - Drug Analysis PQ"/>
+                <reference value="StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
+                <display value="DiagnosticReport - Analysis Drug PQ"/>
             </reference>
-            <name value="DiagnosticReport - Drug Analysis PQ"/>
+            <name value="DiagnosticReport - Analysis Drug PQ"/>
             <description value="This DiagnosticReport profile represents results from a batch analysis, stability study, characterization study, impurities analysis, manufacturing process validation study, etc."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -957,12 +957,12 @@
 
         <resource>
             <reference>
-                <reference value="DiagnosticReport/diagnosticreport-drug-analysis-pq-stability-prod"/>
+                <reference value="DiagnosticReport/DiagnosticReport-analysis-drug-pq-stability-prod"/>
             </reference>
             <name value="DiagnosticReport - Drug Analysis PQ - Stability Study, Product"/>
             <description value="Stability study results report, drug product example"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-drug-analysis-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
