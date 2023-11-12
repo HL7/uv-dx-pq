@@ -12,20 +12,12 @@ Provide details about primary and secondary packaging components for drug substa
 **Packaged Product Definition**: The packaging for the drug product
 
 ### Examples
-<html>
-<body>
-<p><b>CTD section samples </b> (PDF):</p>
-<ul>
-<li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.6_Container_Closure_System.pdf ">3.2.S.6 Container Closure System</a></li>
-<li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.7_Container_Closure_System.pdf ">3.2.P.7 Container Closure System</a></li>
-</ul>
-<p><b>HTML rendering</b> of synthetic CTD data:</p>
-<ul><li><a href="container_rend_s.html">Drug Substance Container Closure System</a> </li>
-<li><a href="container_rend_p.html">Drug Product Container Closure System</a> </li></ul>
+**CTD section samples** (PDF):
+- <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.7_Container_Closure_System.pdf ">3.2.P.7 Container Closure System</a>
+- <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.6_Container_Closure_System.pdf ">3.2.S.6 Container Closure System</a>
 
-<p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
-<ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-container-closure-system-dxpq-ex2-sub.html">Bundle - Container Closure System dx-PQ - Example 2, drug substance</a></li>
-<li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-container-closure-system-dxpq-ex1-prod.html">Bundle - Container Closure System dx-PQ - Example 1, drug product</a></li>
-</ul>
-</body>
-</html>
+**HTML rendering** of synthetic CTD data:
+- <a href="container_rend_p.html">Drug Product Container Closure System</a>
+- <a href="container_rend_s.html">Drug Substance Container Closure System</a>
+
+**FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Container Closure System](artifacts.html#container-closure-system)

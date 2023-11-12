@@ -26,23 +26,14 @@ Provide details about drug substance and drug product batch release testing and 
 **Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
 ### Examples
-<html>
-<body>
-<p><b>CTD section samples </b> (PDF):</p>
-<ul>
-<li>3.2.S.4 Control of Drug Substance</li>
-<ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.4.4_Batch_Analyses.pdf ">3.2.S.4.4 Batch Analyses</a></li></ul>
+**CTD section samples** (PDF):
+- 3.2.P.5 Control of Drug Product
+    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.5.4_Batch_Analyses.pdf ">3.2.P.5.4 Batch Analyses</a>
+- 3.2.S.4 Control of Drug Substance
+    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.4.4_Batch_Analyses.pdf ">3.2.S.4.4 Batch Analyses</a>
 
-<li>3.2.P.5 Control of Drug Product</li>
-<ul><li><a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.5.4_Batch_Analyses.pdf ">3.2.P.5.4 Batch Analyses</a></li></ul>
-</ul>
-<p><b>HTML rendering</b> of synthetic CTD data:</p>
-<ul><li><a href="batch_anal_rend_s.html">Drug Substance Batch Analyses</a> </li>
-<li><a href="batch_anal_rend_p.html">Drug Product Batch Analyses</a> </li></ul>
+**HTML rendering** of synthetic CTD data:
+- <a href="batch_anal_rend_p.html">Drug Product Batch Analyses</a>
+- <a href="batch_anal_rend_s.html">Drug Substance Batch Analyses</a>
 
-<p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
-<ul><li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-substance-stability-dxpq-ex1.html">Bundle – Batch Analysis dx-PQ - Example 2, substance</a></li>
-<li><a href="https://build.fhir.org/ig/HL7/uv-dx-pq/branches/master/Bundle-bundle-drug-product-stability-dxpq-ex1.html">Bundle – Batch Analysis dx-PQ - Example 1, product</a></li>
-</ul>
-</body>
-</html>
+**FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Batch Analysis](artifacts.html#batch-analysis)

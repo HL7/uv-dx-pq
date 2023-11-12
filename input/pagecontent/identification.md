@@ -17,14 +17,24 @@ Provide details about the drug substance and drug product nomenclature; structur
 
 
 ### Examples
-<html>
-<body>
-<p><b>CTD section samples </b> (PDF):</p>
-<ul>
-<li>3.2.S.1 General Information</li>
-<li>3.2.P.1 Description and Composition of the Drug Product</li></ul>
+**CTD section samples** (PDF):
 
-<p><b>FHIR XML/JSON</b> validated Bundle example in this guide:</p>
-<ul><li><a href="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1.html">MedicinalProductDefinition - Drug Product dx-PQ - Example 1</a></li></ul>
-</body>
-</html>
+- 3.2.P.2 Pharmaceutical Development
+  - 3.2.P.2.2 Drug Product
+  - 3.2.P.2.5 Microbiological Attributes
+- 2.P.4 Control of Excipients
+  - 3.2.P.4.5 Excipients of Human or Animal Origin
+  - 3.2.P.4.6 Novel Excipients
+- 3.2.S.1 General Information
+  - 3.2.S.1.3 General Properties
+- 3.2.S.3 Characterisation
+  - 3.2.S.3.1 Elucidation of Structure and Other Characteristics
+
+**HTML rendering** of synthetic CTD data:
+- <a href="identification_rend_p1.html">Drug Product Identification</a>
+- <a href="identification_rend_p2.html">Drug Product Microbiological Attributes</a>
+- <a href="identification_rend_p3.html">Drug Product Excipients</a>
+- <a href="identification_rend_s1.html">Drug Substance General Properties</a>
+- <a href="identification_rend_s2.html">Drug Substance Elucidation of Structure</a>
+
+**FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Identification](artifacts.html#identification)

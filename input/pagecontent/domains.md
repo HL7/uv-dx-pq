@@ -34,9 +34,9 @@ Each domain has a page that describes its objective and provides a component dia
         <br>&nbsp;&nbsp;&nbsp;3.2.P.4.5 Excipients of Human or Animal Origin 
         <br>&nbsp;&nbsp;&nbsp;3.2.P.4.6 Novel Excipients</td>
     <td class="tg-0lax">3.2.S.1 General Information
-        <br>&nbsp;&nbsp;&nbsp;3.2.S.1.3 – General Properties
+        <br>&nbsp;&nbsp;&nbsp;3.2.S.1.3 General Properties
     <br>3.2.S.3 Characterisation
-        <br>&nbsp;&nbsp;&nbsp;3.2.S.3.1 – Elucidation of Structure and Other Characteristics</td>
+        <br>&nbsp;&nbsp;&nbsp;3.2.S.3.1 Elucidation of Structure and Other Characteristics</td>
   </tr>
   <tr>
     <td class="tg-0lax">2. Composition</td>
