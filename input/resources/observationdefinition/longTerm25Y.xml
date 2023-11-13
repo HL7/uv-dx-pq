@@ -12,7 +12,7 @@
         <text value="Battery of tests 'Y' at 25°C/60% RH"/>
     </code>
     <specimen>
-        <reference value="SpecimenDefinition/specimendefinition-stability-pq-ex1"/>
+        <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
     </specimen>
     <hasMember>
         <reference value="ObservationDefinition/Microbiological"/>
