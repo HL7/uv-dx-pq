@@ -1081,7 +1081,7 @@
                 <reference value="Organization/organization-drug-pq-ex1"/>
             </reference>
             <name value="organization-drug-pq-ex1"/>
-            <description value="Organization - Example 1"/>
+            <description value="Organization - Drug PQ Example"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
             <groupingId value="building-blocks-2"/>
