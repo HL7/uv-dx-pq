@@ -3,7 +3,7 @@
     <!-- Contained in file Accumulus FHIR Substance Example - Stability, posted 05-31-2023 -->
     <id value="specimenDefStoredAt40"/>
     <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
     </meta>
                 <url value="http://hl7.org/fhir/uv/pharm-quality/SpecimenDefinition/specimenDefStoredAt40"/>
     <status value="active"/>

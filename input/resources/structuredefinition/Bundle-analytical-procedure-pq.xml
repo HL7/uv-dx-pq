@@ -84,7 +84,7 @@
       <type>
         <code value="SpecimenDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"
         />
       </type>
     </element>

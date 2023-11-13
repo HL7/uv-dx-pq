@@ -576,7 +576,7 @@
                 <!--specimenDefStoredAt30-->
             <id value="643d8b44-71f4-2b58-07e8-51c22b294b25"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/SpecimenDefinition/643d8b44-71f4-2b58-07e8-51c22b294b25-->
             <url value="http://example-server.com/fhir/SpecimenDefinition/643d8b44-71f4-2b58-07e8-51c22b294b25"/>
@@ -963,7 +963,7 @@
                 <!--specimenDefStoredAt40-->
             <id value="306637ec-1041-80e8-8e77-e7ca814253e1"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/SpecimenDefinition/306637ec-1041-80e8-8e77-e7ca814253e1-->
             <url value="http://example-server.com/fhir/SpecimenDefinition/306637ec-1041-80e8-8e77-e7ca814253e1"/>

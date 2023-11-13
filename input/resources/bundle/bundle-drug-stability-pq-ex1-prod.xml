@@ -539,7 +539,7 @@
                 <!--specimendefinition-stability-pq-ex1-->
             <id value="3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2-->
             <url value="http://example-server.com/fhir/SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
