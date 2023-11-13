@@ -1624,7 +1624,7 @@
             <reference>
                 <reference value="ObservationDefinition/Impurities"/>
             </reference>
-            <name value="v"/>
+            <name value="Impurities"/>
             <description value="ObservationDefinition - Impurities"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
