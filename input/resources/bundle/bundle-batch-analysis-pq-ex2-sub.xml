@@ -850,7 +850,7 @@
             <effectiveDateTime value="2020-12"/>
             <!-- start of stability test -->
             <result>
-				    <!--Observation/observation-test-result-pq-ex2-->
+				    <!--Observation/observation-test-result-drug-pq-ex2-->
                <reference value="Observation/81f552f9-8458-3cf4-8379-eea5417a9de2"/>
             </result>
             <result>
@@ -1109,11 +1109,11 @@
       <fullUrl value="urn:uuid:81f552f9-8458-3cf4-8379-eea5417a9de2"/>
       <resource>
          <Observation>
-			    <!--observation-test-result-pq-ex2-->
+			    <!--observation-test-result-drug-pq-ex2-->
             <id value="81f552f9-8458-3cf4-8379-eea5417a9de2"/>
             <!-- was observationDescription -->
 <!--            <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>-->
             <instantiatesReference>
 					<!--ObservationDefinition/Description-->

@@ -2,7 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
    <id value="observation-test-result-lt25c-i1-microbiological"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
    </meta>
    <instantiatesReference>
       <reference value="ObservationDefinition/Microbiological"/>

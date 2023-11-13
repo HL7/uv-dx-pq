@@ -607,7 +607,7 @@
                <reference value="Observation/testDateSecond1"/>
             </result>
             <result>
-               <reference value="Observation/observation-test-result-pq-ex2"/>
+               <reference value="Observation/observation-test-result-drug-pq-ex2"/>
             </result>
             <result>
                <reference value="Observation/observationDescription2"/>
@@ -748,7 +748,7 @@
          <Observation>
             <id value="testDate1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -780,7 +780,7 @@
             <id value="testDate2"/>
             <!-- was observationDescription -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -812,7 +812,7 @@
             <id value="testDate3"/>
             <!-- was observationDescription -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -843,7 +843,7 @@
          <Observation>
             <id value="testDateSecond1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -874,9 +874,9 @@
       <fullUrl value="urn:uuid:82f552f9-8458-3cf4-8379-eea5417a9de2"/>
       <resource>
          <Observation>
-            <id value="observation-test-result-pq-ex2"/>
+            <id value="observation-test-result-drug-pq-ex2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/Appearance"/>
@@ -965,7 +965,7 @@
          <Observation>
             <id value="observationDescriptionSecond1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/Appearance"/>

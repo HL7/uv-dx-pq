@@ -1250,13 +1250,13 @@
                 <!--observation-test-result-longterm25c-initial-1-->
             <id value="6fabbf78-9678-8030-485f-b149956308d5"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <contained>
                <Observation>
                   <id value="LongTerm25C-initial-1-Description"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
                             <!--ObservationDefinition/Description-->
@@ -1288,9 +1288,9 @@
             </contained>
             <contained>
                <Observation>
-                  <id value="observation-test-result-pq-ex1"/>
+                  <id value="observation-test-result-drug-pq-ex1"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
                             <!--ObservationDefinition/Degradation-->
@@ -1340,7 +1340,7 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-imp2"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
             				<!--ObservationDefinition/Degradation-->
@@ -1389,7 +1389,7 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-imp3"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
             				<!--ObservationDefinition/Degradation-->
@@ -1438,7 +1438,7 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-impUnspecified"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
             				<!--ObservationDefinition/Degradation-->
@@ -1488,7 +1488,7 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Degradation-impTotal"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
             				<!--ObservationDefinition/Degradation-->
@@ -1537,7 +1537,7 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Water"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
             		        
@@ -1574,7 +1574,7 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Microbiological"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
                             <!--ObservationDefinition/Microbiological-->
@@ -1607,7 +1607,7 @@
                <Observation>
                   <id value="LongTerm25C-initial-1-Uniformity"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
                             <!--ObservationDefinition/Uniformity-->
@@ -1665,7 +1665,7 @@
                <reference value="#LongTerm25C-initial-1-Description"/>
             </hasMember>
             <hasMember>
-               <reference value="#observation-test-result-pq-ex1"/>
+               <reference value="#observation-test-result-drug-pq-ex1"/>
             </hasMember>
             <hasMember>
                <reference value="#LongTerm25C-initial-1-Degradation-imp2"/>
@@ -2158,7 +2158,7 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Degradation-imp1"/>
                   <meta>
-                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
                             <!--ObservationDefinition/Degradation-->

@@ -2,7 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
    <id value="observation-test-result-longterm25c-initial-1"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
    </meta>
 <!--   <contained>
       <Observation>
@@ -37,9 +37,9 @@
 <!--   <contained>
       <Observation>
          <!-\-id value="LongTerm25C-initial-1-Degradation-imp1"/-\->
-         <id value="observation-test-result-pq-ex1"/>
+         <id value="observation-test-result-drug-pq-ex1"/>
          <meta>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
          </meta>
          <instantiatesReference>
             <!-\-ObservationDefinition/Degradation-\->

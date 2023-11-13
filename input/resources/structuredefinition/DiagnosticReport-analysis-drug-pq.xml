@@ -65,7 +65,7 @@
             <definition value="TBD"/>-->
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </type>
             <mustSupport value="true"/>
         </element>
