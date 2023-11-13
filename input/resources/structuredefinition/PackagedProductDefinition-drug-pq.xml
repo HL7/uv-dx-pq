@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="PackagedProductDefinition-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
-  <name value="PackagedProductDefinitionPq"/>
-  <title value="active - PQ"/>
-  <status value="draft"/>
-  <description value="TBD"/>
+  <id value="PackagedProductDefinition-drug-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
+  <name value="PackagedProductDefinitionDrugPq"/>
+  <title value="PackagedProductDefinition - Drug PQ"/>
+  <status value="active"/>
+  <description value="This PackagedProductDefinition profile represents information about the packaging for a drug product or drug substance."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

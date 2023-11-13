@@ -111,7 +111,7 @@
       <type>
         <code value="PackagedProductDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"
         />
       </type>
     </element>

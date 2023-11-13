@@ -846,10 +846,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/PackagedProductDefinition-pq"/>
-                <display value="PackagedProductDefinition - PQ"/>
+                <reference value="StructureDefinition/PackagedProductDefinition-drug-pq"/>
+                <display value="PackagedProductDefinition - Drug PQ"/>
             </reference>
-            <name value="PackagedProductDefinition - PQ"/>
+            <name value="PackagedProductDefinition - Drug PQ"/>
             <description value="This PackagedProductDefinition profile represents information about the packaging for a drug product or drug substance."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -1089,12 +1089,12 @@
 
         <resource>
             <reference>
-                <reference value="PackagedProductDefinition/packagedproductdefinition-pq-ex1"/>
+                <reference value="PackagedProductDefinition/packagedproductdefinition-drug-pq-ex1"/>
             </reference>
-            <name value="packagedproductdefinition-pq-ex1"/>
+            <name value="packagedproductdefinition-drug-pq-ex1"/>
             <description value="PackagedProductDefinition PQ - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

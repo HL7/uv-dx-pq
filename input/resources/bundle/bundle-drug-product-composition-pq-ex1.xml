@@ -32,9 +32,9 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
       <resource>
          <PackagedProductDefinition>
-            <id value="packagedproductdefinition-pq-ex1"/>
+            <id value="packagedproductdefinition-drug-pq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
             </meta>
             <packageFor>
                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
