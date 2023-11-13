@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ManufacturedItemDefinition-drug-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pqq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
   <name value="ManufacturedItemDefinitionDrugPq"/>
   <title value="ManufacturedItemDefinition - Drug PQ"/>
   <status value="active"/>
