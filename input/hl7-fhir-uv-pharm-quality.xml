@@ -1155,9 +1155,9 @@
 
         <resource>
             <reference>
-                <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1  - Example"/>
+                <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
             </reference>
-            <name value="specimendefinition-drug-pq-ex1"/>
+            <name value="SpecimenDefinition - Drug PQ - Example"/>
             <description value="SpecimenDefinition - Drug PQ - Example"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
