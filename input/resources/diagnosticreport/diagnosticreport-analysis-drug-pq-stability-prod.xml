@@ -56,7 +56,7 @@
       </extension>
    </effectiveDateTime>
    <performer>
-      <reference value="Organization/organization-pq-ex1"/>
+      <reference value="Organization/organization-drug-pq-ex1"/>
    </performer>
    <!--   Abbreviated Results, showing only longterm25c-initial-1 of set of 3. Addotional groups of results would be added over time (18 mo., etc.).-->
    <result>

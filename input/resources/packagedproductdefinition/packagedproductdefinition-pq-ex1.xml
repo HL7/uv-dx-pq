@@ -47,7 +47,7 @@
                     
                     <manufacturer>
                     	
-                    	<reference value="Organization/organization-pq-ex1"/>
+                    	<reference value="Organization/organization-drug-pq-ex1"/>
                     </manufacturer>
                     
                     <property> 
@@ -102,7 +102,7 @@
                         
                         <manufacturer> 
                         	
-                        	<reference value="Organization/organization-pq-ex1"/>
+                        	<reference value="Organization/organization-drug-pq-ex1"/>
                         </manufacturer>
                         
                         
@@ -192,7 +192,7 @@
                         
                         <manufacturer> 
                         	
-                        	<reference value="Organization/organization-pq-ex1"/>
+                        	<reference value="Organization/organization-drug-pq-ex1"/>
                         </manufacturer>
                         
                         
@@ -295,7 +295,7 @@
                             
                             
                             <manufacturer> 
-                            	<reference value="Organization/organization-pq-ex1"/>
+                            	<reference value="Organization/organization-drug-pq-ex1"/>
                             </manufacturer>
 
                             

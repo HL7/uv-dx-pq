@@ -1020,7 +1020,7 @@
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
             </meta>
             <manufacturer>
-               <reference value="Organization/organization-pq-ex1"/>
+               <reference value="Organization/organization-drug-pq-ex1"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -1515,9 +1515,9 @@
          <Organization>
                 
 
-            <id value="organization-pq-ex1"/>
+            <id value="organization-drug-pq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
             </meta>
             <identifier>
                     <!-- FDA establishment identifier -->
@@ -1584,7 +1584,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-pq-ex1"/>
+                     <reference value="Organization/organization-drug-pq-ex1"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1594,7 +1594,7 @@
             <identifier>
                <value value="SUB1SiteA"/>
                <assigner>
-                  <reference value="Organization/organization-pq-ex1"/>
+                  <reference value="Organization/organization-drug-pq-ex1"/>
                </assigner>
             </identifier>
             <instance value="true"/>
@@ -1648,7 +1648,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-pq-ex1"/>
+                     <reference value="Organization/organization-drug-pq-ex1"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1658,7 +1658,7 @@
             <identifier>
                <value value="SUB2SiteA"/>
                <assigner>
-                  <reference value="Organization/organization-pq-ex1"/>
+                  <reference value="Organization/organization-drug-pq-ex1"/>
                </assigner>
             </identifier>
             <instance value="true"/>
@@ -1712,7 +1712,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-pq-ex1"/>
+                     <reference value="Organization/organization-drug-pq-ex1"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1723,7 +1723,7 @@
             <identifier>
                <value value="SUB3SiteA"/>
                <assigner>
-                  <reference value="Organization/organization-pq-ex1"/>
+                  <reference value="Organization/organization-drug-pq-ex1"/>
                </assigner>
             </identifier>
             <instance value="true"/>

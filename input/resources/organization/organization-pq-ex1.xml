@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="organization-pq-ex1"/>
+    <id value="organization-drug-pq-ex1"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
     </meta>
     <identifier>
         <!-- FDA establishment identifier -->

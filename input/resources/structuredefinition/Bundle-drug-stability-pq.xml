@@ -210,7 +210,7 @@
       <type>
         <code value="Organization"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
       </type>
     </element>
     

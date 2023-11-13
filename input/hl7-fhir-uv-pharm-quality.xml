@@ -835,10 +835,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/Organization-pq"/>
-                <display value="Organization - PQ"/>
+                <reference value="StructureDefinition/Organization-drug-pq"/>
+                <display value="Organization - Drug PQ"/>
             </reference>
-            <name value="Organization - PQ"/>
+            <name value="Organization - Drug PQ"/>
             <description value="This Organization profile represents information about a pharmaceutical company or site that performed drug testing or manufacturing."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -1078,12 +1078,12 @@
 
         <resource>
             <reference>
-                <reference value="Organization/organization-pq-ex1"/>
+                <reference value="Organization/organization-drug-pq-ex1"/>
             </reference>
-            <name value="organization-pq-ex1"/>
+            <name value="organization-drug-pq-ex1"/>
             <description value="Organization - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

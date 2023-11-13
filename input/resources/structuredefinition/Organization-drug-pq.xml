@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Organization-pq"/>
+    <id value="Organization-drug-pq"/>
     <meta>
         <versionId value="4"/>
         <lastUpdated value="2022-12-21T15:57:57.213+00:00"/>
         <source value="#QicMqLtZtYG0gwZK"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
-    <name value="OrganizationPq"/>
-    <title value="Organization - PQ"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
+    <name value="OrganizationDrugPq"/>
+    <title value="Organization - Drug PQ"/>
     <status value="active"/>
-    <description value="Organization profile for any PQ organization"/>
+    <description value="This Organization profile represents information about a pharmaceutical company or site that performed drug testing or manufacturing."/>
     <fhirVersion value="5.0.0"/>
     <kind value="resource"/>
     <abstract value="false"/>

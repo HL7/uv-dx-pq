@@ -20,7 +20,7 @@
    </subject>
    <effectiveDateTime value="2023-01-01T12:00:00Z"/>
    <performer>
-      <reference value="Organization/organization-pq-ex1"/>
+      <reference value="Organization/organization-drug-pq-ex1"/>
    </performer>
    <valueQuantity>
       <value value="0.1501"/>

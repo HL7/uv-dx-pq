@@ -1524,7 +1524,7 @@
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
             </meta>
             <manufacturer>
-                    <!--Organization/organization-pq-ex1-->
+                    <!--Organization/organization-drug-pq-ex1-->
                <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
@@ -1539,10 +1539,10 @@
       <resource>
          <Organization>
                 <!--id value="substance-manufacturer"/-->
-                <!--organization-pq-ex1-->
+                <!--organization-drug-pq-ex1-->
             <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
             </meta>
             <identifier>
                     <!-- FDA establishment identifier -->
@@ -1621,7 +1621,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                            <!--Organization/organization-pq-ex1-->
+                            <!--Organization/organization-drug-pq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
