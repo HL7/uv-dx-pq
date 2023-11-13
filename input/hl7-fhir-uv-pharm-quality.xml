@@ -913,10 +913,10 @@
         <!--Building Block Examples -->
         <resource>
             <reference>
-                <reference value="ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
+                <reference value="ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
             </reference>
-            <name value="activitydefinition-test-longterm25c-25xyz-initial"/>
-            <description value="activitydefinition-test-longterm25c-25xyz-initial"/>
+            <name value="ActivityDefinition - Test Drug PQ - Example"/>
+            <description value="Example of ActivityDefinition - Test Drug PQ for Long-term - 25°C/60% RH - XYZ."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1183,7 +1183,7 @@
             <description value="SubstanceDefinition - Component Substance - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
-            <groupingId value="building-blocks-1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>

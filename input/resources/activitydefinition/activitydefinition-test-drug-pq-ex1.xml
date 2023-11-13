@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ActivityDefinition xmlns="http://hl7.org/fhir">
-    <id value="activitydefinition-test-longterm25c-25xyz-initial"/>
+<!--    <id value="activitydefinition-test-longterm25c-25xyz-initial"/>-->
+    <id value="activitydefinition-test-drug-pq-ex1"/>
     <meta>
         <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial"/>
-    <title value="Long-term - 25°C/60% RH - XYZ"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
+    <title value="Example of ActivityDefinition - Test Drug PQ for Long-term - 25°C/60% RH - XYZ."/>
     <status value="active"/>
     <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X"/>
 <!--    <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>-->
