@@ -379,7 +379,7 @@
       <fullUrl value="urn:uuid:87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
       <resource>
          <Substance>
-            <id value="substance-pq-ex1"/>
+            <id value="substance-drug-pq-ex1"/>
             <!-- was actual-batch-substance -->
             <!-- IGCOMMENT this is needed to make this recognised by tables -->
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
@@ -763,7 +763,7 @@
                <text value="est Date"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -795,7 +795,7 @@
                <text value="Test Date"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -827,7 +827,7 @@
                <text value="Test Date"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -893,7 +893,7 @@
             <subject>
 					
 
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -921,7 +921,7 @@
                <text value="Description"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -949,7 +949,7 @@
                <text value="Description"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1010,7 +1010,7 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1038,7 +1038,7 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1066,7 +1066,7 @@
                <text value="Identification"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1124,7 +1124,7 @@
                <text value="Identification (NMR)"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1152,7 +1152,7 @@
                <text value="Identification (NMR)"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1187,7 +1187,7 @@
                <text value="Identification (NMR)"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1250,7 +1250,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1296,7 +1296,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1342,7 +1342,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1434,7 +1434,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1480,7 +1480,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1526,7 +1526,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1618,7 +1618,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1710,7 +1710,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1756,7 +1756,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1802,7 +1802,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1848,7 +1848,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1894,7 +1894,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -1986,7 +1986,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2026,7 +2026,7 @@
                <text value="Elemental"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2061,7 +2061,7 @@
                <text value="Elemental"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2134,7 +2134,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2178,7 +2178,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2222,7 +2222,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2310,7 +2310,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2354,7 +2354,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2398,7 +2398,7 @@
                </coding>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2487,7 +2487,7 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2520,7 +2520,7 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -2553,7 +2553,7 @@
                <text value="Water Content"/>
             </code>
             <subject>
-               <reference value="Substance/substance-pq-ex1"/>
+               <reference value="Substance/substance-drug-pq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>

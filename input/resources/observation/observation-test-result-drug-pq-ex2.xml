@@ -21,7 +21,7 @@
     <subject>
 <!--        Adjusted Rik Example-->
 <!--        <reference value="Substance/actual-batch-substance"/>-->
-        <reference value="Substance/substance-pq-ex1"/>
+        <reference value="Substance/substance-drug-pq-ex1"/>
     </subject>
 				<effectiveDateTime value="2023-01-01T12:00:00Z"/>
 				<performer>

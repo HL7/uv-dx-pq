@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="SubstanceDefinition-component-substance-pq"/>
+  <id value="SubstanceDefinition-component-substance-drug-pq"/>
   <url
-    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
-  <name value="SubstanceDefinitionComponentSubstancePq"/>
-  <title value="SubstanceDefinition - Component Substance PQ"/>
+    value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
+  <name value="SubstanceDefinitionComponentSubstanceDrugPq"/>
+  <title value="SubstanceDefinition - Component Substance Drug PQ"/>
   <status value="active"/>
-  <description value="Section 2.1 - DP Composition - Product Component"/>
+  <description value="This SubstanceDefinition profile represents the chemical or biological details about a substance associated with an active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

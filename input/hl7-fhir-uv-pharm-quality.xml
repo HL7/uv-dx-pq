@@ -890,10 +890,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/SubstanceDefinition-component-substance-pq"/>
-                <display value="SubstanceDefinition - Component Substance PQ"/>
+                <reference value="StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
+                <display value="SubstanceDefinition - Component Substance Drug PQ"/>
             </reference>
-            <name value="SubstanceDefinition - Component Substance PQ"/>
+            <name value="SubstanceDefinition - Component Substance Drug PQ"/>
             <description value="This SubstanceDefinition profile represents the chemical or biological details about a substance associated with an active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -901,10 +901,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/Substance-pq"/>
-                <display value="Substance - PQ"/>
+                <reference value="StructureDefinition/Substance-drug-pq"/>
+                <display value="Substance - Drug PQ"/>
             </reference>
-            <name value="Substance - PQ"/>
+            <name value="Substance - Drug PQ"/>
             <description value="This Substance profile represents identifying information about an actual batch of aubstance (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -1177,23 +1177,23 @@
 
         <resource>
             <reference>
-                <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
             </reference>
-            <name value="substancedefinition-component-substance-pq-ex1"/>
+            <name value="substancedefinition-component-substance-drug-pq-ex1"/>
             <description value="SubstanceDefinition - Component Substance - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             <groupingId value="building-blocks-1"/>
         </resource>
 
         <resource>
             <reference>
-                <reference value="Substance/substance-pq-ex1"/>
+                <reference value="Substance/substance-drug-pq-ex1"/>
             </reference>
-            <name value="substance-pq-ex1"/>
+            <name value="substance-drug-pq-ex1"/>
             <description value="Substance - Example 1"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
@@ -1817,7 +1817,7 @@
             <name value="StelbatololAqueousSolution"/>
             <description value="Stelbatolol Aqueous Solution"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             <groupingId value="examples3"/>
         </resource>
 
@@ -1828,7 +1828,7 @@
             <name value="StelbatololGranules"/>
             <description value="Stelbatolol Granules"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             <groupingId value="examples3"/>
         </resource>
 

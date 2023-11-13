@@ -48,7 +48,7 @@
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
                 <!--                <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
                 <valueReference>
-                    <reference value="Substance/substance-pq-ex1"/>
+                    <reference value="Substance/substance-drug-pq-ex1"/>
                     <!--                    <reference value="Substance/actual-batch-substance"/>-->
                 </valueReference>
             </extension>

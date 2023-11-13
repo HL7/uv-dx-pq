@@ -11,7 +11,7 @@
       <resource>
          <SubstanceDefinition>
                 <!-- focal resource -->
-            <id value="substancedefinition-substance-pq-ex1"/>
+            <id value="substancedefinition-substance-drug-pq-ex1"/>
             <property>
                <type>
                   <coding>

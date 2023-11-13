@@ -54,7 +54,7 @@
       <fullUrl value="urn:uuid:87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
       <resource>
          <Substance>
-            <id value="substance-pq-ex1"/>
+            <id value="substance-drug-pq-ex1"/>
             <!-- was actual-batch-substance -->
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">

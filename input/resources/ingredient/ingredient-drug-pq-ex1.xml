@@ -20,7 +20,7 @@
         <code>
             <reference>
 <!--                <reference value="SubstanceDefinition/substance1"/>-->
-                <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
             </reference>
         </code>
     </substance>

@@ -83,7 +83,7 @@
       <type>
         <code value="SubstanceDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"
         />
       </type>
     </element>
@@ -110,7 +110,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Substance"/>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
       </type>
     </element>
     

@@ -547,7 +547,7 @@
       <fullUrl value="urn:uuid:87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
       <resource>
          <Substance>
-			    <!--substance-pq-ex1-->
+			    <!--substance-drug-pq-ex1-->
             <id value="87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             <!-- was actual-batch-substance -->
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
@@ -1130,7 +1130,7 @@
             </code>
             <subject>
 					<!--reference value="Substance/actual-batch-substance"/-->
-				    <!--Substance/substance-pq-ex1-->
+				    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1233,7 +1233,7 @@
                <text value="Identification"/>
             </code>
             <subject>
-                    <!--Substance/substance-pq-ex1-->
+                    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1335,7 +1335,7 @@
                <text value="Assay"/>
             </code>
             <subject>
-                    <!--Substance/substance-pq-ex1-->
+                    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1461,7 +1461,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-                    <!--Substance/substance-pq-ex1-->
+                    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1608,7 +1608,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-                    <!--Substance/substance-pq-ex1-->
+                    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1755,7 +1755,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-                    <!--Substance/substance-pq-ex1-->
+                    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1902,7 +1902,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-                    <!--Substance/substance-pq-ex1-->
+                    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2050,7 +2050,7 @@
                <text value="Impurities"/>
             </code>
             <subject>
-                    <!--Substance/substance-pq-ex1-->
+                    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2197,7 +2197,7 @@
                </coding>
             </code>
             <subject>
-				    <!--Substance/substance-pq-ex1-->
+				    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2320,7 +2320,7 @@
                <text value="Enantiomeric purity"/>
             </code>
             <subject>
-				    <!--Substance/substance-pq-ex1-->
+				    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2445,7 +2445,7 @@
                </coding>
             </code>
             <subject>
-				    <!--Substance/substance-pq-ex1-->
+				    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2589,7 +2589,7 @@
                </coding>
             </code>
             <subject>
-				    <!--Substance/substance-pq-ex1-->
+				    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2734,7 +2734,7 @@
                <text value="Water Content"/>
             </code>
             <subject>
-				    <!--Substance/substance-pq-ex1-->
+				    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2844,7 +2844,7 @@
                </coding>
             </code>
             <subject>
-            	    <!--Substance/substance-pq-ex1-->
+            	    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2988,7 +2988,7 @@
                </coding>
             </code>
             <subject>
-            	    <!--Substance/substance-pq-ex1-->
+            	    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3132,7 +3132,7 @@
                </coding>
             </code>
             <subject>
-                    <!--Substance/substance-pq-ex1-->
+                    <!--Substance/substance-drug-pq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>

@@ -30,7 +30,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+               <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
             </subjectReference>
             <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
             <action>
@@ -1015,9 +1015,9 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substancedefinition-component-substance-pq-ex1"/>
+            <id value="substancedefinition-component-substance-drug-pq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             </meta>
             <manufacturer>
                <reference value="Organization/organization-drug-pq-ex1"/>
@@ -1049,7 +1049,7 @@
          <Substance>
             <id value="actual-batch-substance-starting-1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="manufacturingDate">
@@ -1082,7 +1082,7 @@
          <Substance>
             <id value="actual-batch-substance-starting-2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="manufacturingDate">
@@ -1115,7 +1115,7 @@
          <Substance>
             <id value="actual-batch-substance-starting-3"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="manufacturingDate">
@@ -1173,7 +1173,7 @@
          <Substance>
             <id value="actual-batch-substance-itermediate-1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="batchQuantity"> <!-- #157 -->
@@ -1207,7 +1207,7 @@
          <Substance>
             <id value="actual-batch-substance-itermediate-2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="batchQuantity"> <!-- #157 -->
@@ -1241,7 +1241,7 @@
          <Substance>
             <id value="actual-batch-substance-itermediate-3"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="batchQuantity"> <!-- #157 -->
@@ -1289,7 +1289,7 @@
          <Substance>
             <id value="actual-batch-substance-starting-step2-1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="manufacturingDate">
@@ -1322,7 +1322,7 @@
          <Substance>
             <id value="actual-batch-substance-starting-step2-2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="manufacturingDate">
@@ -1355,7 +1355,7 @@
          <Substance>
             <id value="actual-batch-substance-starting-step2-3"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="manufacturingDate">
@@ -1402,7 +1402,7 @@
          <Substance>
             <id value="actual-batch-substance-itermediate-step2-1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="batchQuantity"> <!-- #157 -->
@@ -1436,7 +1436,7 @@
          <Substance>
             <id value="actual-batch-substance-itermediate-step2-2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="batchQuantity"> <!-- #157 -->
@@ -1470,7 +1470,7 @@
          <Substance>
             <id value="actual-batch-substance-itermediate-step2-3"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="batchQuantity"> <!-- #157 -->
@@ -1543,9 +1543,9 @@
       <resource>
          <Substance>
                 <!--<id value="actual-batch-substance"/>-->
-            <id value="substance-pq-ex1-unlinked"/>
+            <id value="substance-drug-pq-ex1-unlinked"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
@@ -1600,7 +1600,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -1664,7 +1664,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -1729,7 +1729,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
                </reference>
             </code>
          </Substance>

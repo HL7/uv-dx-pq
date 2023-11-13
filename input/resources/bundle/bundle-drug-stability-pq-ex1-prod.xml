@@ -3195,7 +3195,7 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
                      <valueReference>
-                    		    <!--Substance/substance-pq-ex1-->
+                    		    <!--Substance/substance-drug-pq-ex1-->
                         <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
                      </valueReference>
                   </extension>
@@ -3558,7 +3558,7 @@
             <substance>
                <code>
                   <reference>
-						    <!--SubstanceDefinition/substancedefinition-component-substance-pq-ex1-->
+						    <!--SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1-->
                      <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                   </reference>
                </code>
@@ -3570,10 +3570,10 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-        	    <!--substancedefinition-component-substance-pq-ex1-->
+        	    <!--substancedefinition-component-substance-drug-pq-ex1-->
             <id value="57a9af63-315d-1585-a261-0e337b289390"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             </meta>
             <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
         	        <valueString value="substancedefinition/{id}.xml"/>
@@ -3623,10 +3623,10 @@
       <resource>
          <Substance>
 			    <!--<id value="actual-batch-substance"/>-->
-			    <!--substance-pq-ex1-->
+			    <!--substance-drug-pq-ex1-->
             <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
 			        <valueString value="substance/{id}.xml"/>
@@ -3680,7 +3680,7 @@
             <instance value="true"/>
             <code>
                <reference>
-			            <!--SubstanceDefinition/substancedefinition-component-substance-pq-ex1-->
+			            <!--SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1-->
                   <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
@@ -3741,7 +3741,7 @@
             <instance value="true"/>
             <code>
                <reference>
-			            <!--SubstanceDefinition/substancedefinition-component-substance-pq-ex1-->
+			            <!--SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1-->
                   <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
@@ -3803,7 +3803,7 @@
             <instance value="true"/>
             <code>
                <reference>
-			            <!--SubstanceDefinition/substancedefinition-component-substance-pq-ex1-->
+			            <!--SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1-->
                   <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
