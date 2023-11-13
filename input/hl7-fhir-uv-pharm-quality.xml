@@ -1012,7 +1012,7 @@
 
         <resource>
             <reference>
-                <reference value="Medication/medication-batch-information-drug pq-ex2"/>
+                <reference value="Medication/medication-batch-information-drug-pq-ex2"/>
             </reference>
             <name value="medication-batch-information-drug-pq-ex2"/>
             <description value="Medication - Batch Information Drug PQ - Example 2"/>
