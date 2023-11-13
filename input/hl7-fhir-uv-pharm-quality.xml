@@ -968,9 +968,9 @@
 
         <resource>
             <reference>
-                <reference value="DocumentReference/documentreference-process-flow-diagram-pq-ex1"/>
+                <reference value="DocumentReference/documentreference-drug-pq-process-flow-diagram"/>
             </reference>
-            <name value="documentreference-process-flow-diagram-pq-ex1"/>
+            <name value="documentreference-drug-pq-process-flow-diagram"/>
             <description value="DocumentReference - Process Flow Diagram PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>

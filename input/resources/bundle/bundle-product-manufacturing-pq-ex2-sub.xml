@@ -18,7 +18,7 @@
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
                         <!-- #84 -->
-                  <reference value="DocumentReference/DocumentReference-process-flow-diagram-pq-ex1"/>
+                  <reference value="DocumentReference/documentreference-drug-pq-process-flow-diagram"/>
                </valueReference>
             </extension>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
@@ -274,7 +274,7 @@
       <resource>
             <!-- #84 -->
          <DocumentReference>
-            <id value="DocumentReference-process-flow-diagram-pq-ex1"/>
+            <id value="documentreference-drug-pq-process-flow-diagram"/>
             <meta>
                <versionId value="1"/>
                <lastUpdated value="2023-01-12T17:57:08.898+00:00"/>
