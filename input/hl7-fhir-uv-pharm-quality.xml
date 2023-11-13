@@ -879,10 +879,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/Specimen-stability-pq"/>
-                <display value="Specimen - Stability PQ"/>
+                <reference value="StructureDefinition/Specimen-drug-pq"/>
+                <display value="Specimen - Drug PQ"/>
             </reference>
-            <name value="Specimen - Stability PQ"/>
+            <name value="Specimen - Drug PQ"/>
             <description value="This Specimen profile represents identifying information about an individual specimen (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -1166,12 +1166,12 @@
 
         <resource>
             <reference>
-                <reference value="Specimen/specimen-stability-pq-ex1"/>
+                <reference value="Specimen/specimen-drug-pq-ex1"/>
             </reference>
-            <name value="specimen-stability-pq-ex1"/>
-            <description value="Specimen - Stability PQ - Example 1"/>
+            <name value="specimen-drug-pq-ex1"/>
+            <description value="Specimen - Drug PQ - Example"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

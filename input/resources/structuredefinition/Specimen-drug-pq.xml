@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Specimen-stability-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
-  <name value="SpecimenStabilityPq"/>
-  <title value="Specimen - Stability PQ"/>
+  <id value="Specimen-drug-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
+  <name value="SpecimenDrugPq"/>
+  <title value="Specimen - Drug PQ"/>
   <status value="active"/>
-  <description value="A sample used for analysis."/>
+  <description value="This Specimen profile represents identifying information about an individual specimen (an instance)."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

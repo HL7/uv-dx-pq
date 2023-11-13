@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir">
-    <id value="specimen-stability-pq-ex1"/>
+    <id value="specimen-drug-pq-ex1"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
     </meta>
     <collection>
     	<collectedDateTime value="2020-12-01"/> 
