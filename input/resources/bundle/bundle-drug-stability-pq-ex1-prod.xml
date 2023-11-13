@@ -1182,7 +1182,7 @@
                 <!--specimen-stability-pq-ex1-->
             <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-01"/>
@@ -1204,7 +1204,7 @@
                 <!--stabilityInitial-2-->
             <id value="b664977d-799d-a1ce-928a-5def2a9955be"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-02"/>
@@ -1226,7 +1226,7 @@
                 <!--stabilityInitial-3-->
             <id value="b664977d-799d-a1ce-928b-5def2a9955be"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
             </meta>
             <collection>
                <collectedDateTime value="2020-12-03"/>

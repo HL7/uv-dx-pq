@@ -373,7 +373,7 @@
       <reference value="Organization/organization-drug-pq-ex1"/>
    </performer>
    <specimen>
-      <reference value="Specimen/specimen-stability-pq-ex1"/>
+      <reference value="Specimen/specimen-drug-pq-ex1"/>
    </specimen>
    <hasMember>
       <reference value="Observation/observation-test-result-lt25c-i1-description"/>

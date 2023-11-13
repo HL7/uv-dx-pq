@@ -133,7 +133,7 @@
       <type>
         <code value="Specimen"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-stability-pq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
       </type>
     </element>
     
