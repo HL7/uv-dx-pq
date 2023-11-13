@@ -37,7 +37,7 @@
             <path value="Extension.value[x]"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+                <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </type>
         </element>
     </differential>

@@ -3,9 +3,9 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
 <!--            <id value="manufacturingProcess-subset-unlinked"/>-->
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
-    <id value="plandefinition-pq-ex2-manufacturing-plan"/>
+    <id value="plandefinition-drug-pq-ex2-manufacturing-plan"/>
             <meta>
-                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
                 <tag>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
                     <code value="SUBSETTED"/>
@@ -14,7 +14,7 @@
                 <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
                 <valueMarkdown value="This can be text about the history"/>
             </extension>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-pq-ex2-manufacturing-plan"/>
+                <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"/>
             <title value="Process 1.0"/>
             <type>
                 <coding>

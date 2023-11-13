@@ -2,11 +2,11 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
     <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->   
     <!--        <id value="stabilityStudyProtocol"/>-->
-    <id value="plandefinition-pq-ex5-stability-study-protocol"/>
+    <id value="plandefinition-drug-pq-ex5-stability-study-protocol"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
                 </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-pq-ex5-stability-study-protocol"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex5-stability-study-protocol"/>
     <title value="Stability Monitoring Program"/>
                 <type>
                     <coding>

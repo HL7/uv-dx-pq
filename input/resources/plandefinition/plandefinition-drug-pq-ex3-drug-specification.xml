@@ -2,11 +2,11 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
     <!--            <id value="specificationProtocol"/>-->
     
-    <id value="plandefinition-pq-ex3-drug-specification"/>
+    <id value="plandefinition-drug-pq-ex3-drug-specification"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
                 </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-pq-ex3-drug-specification"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex3-drug-specification"/>
     <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
     <status value="active"/>
     <subjectReference>

@@ -13,7 +13,7 @@
                 <!--manufacturingProcess-unlinked-->
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq">
                <valueReference>

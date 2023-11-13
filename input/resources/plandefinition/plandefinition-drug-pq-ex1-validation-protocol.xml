@@ -2,9 +2,9 @@
 <!-- validation protocol from Accumulus FHIR Product Example - Process Validation - biologic-->
 <PlanDefinition xmlns="http://hl7.org/fhir">
 <!--            <id value="validationProtocol"/>-->
-   <id value="plandefinition-pq-ex1-validation-protocol"/>
+   <id value="plandefinition-drug-pq-ex1-validation-protocol"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
    </meta>
             <title value="DP PROCESS VALIDATION"/>
             <type>

@@ -857,10 +857,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/PlanDefinition-pq"/>
-                <display value="PlanDefinition - PQ"/>
+                <reference value="StructureDefinition/PlanDefinition-drug-pq"/>
+                <display value="PlanDefinition - Drug PQ"/>
             </reference>
-            <name value="PlanDefinition - PQ"/>
+            <name value="PlanDefinition - Drug PQ"/>
             <description value="This PlanDefinition profile represents a protocol, analytical procedure, manufacturing process, or other workflow definition used in pharmaceutical quality (PQ) data gathering."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -1100,56 +1100,56 @@
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-pq-ex1-validation-protocol"/>
+                <reference value="PlanDefinition/plandefinition-drug-pq-ex1-validation-protocol"/>
             </reference>
             <name value="PlanDefinition - PQ - Example 1, Validation Protocol"/>
-            <description value="PlanDefinition plandefinition-pq-ex1-validation-protocol"/>
+            <description value="PlanDefinition plandefinition-drug-pq-ex1-validation-protocol"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-pq-ex2-manufacturing-plan"/>
+                <reference value="PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"/>
             </reference>
-            <name value="plandefinition-pq-ex2-manufacturing-plan"/>
+            <name value="plandefinition-drug-pq-ex2-manufacturing-plan"/>
             <description value="PlanDefinition - PQ - Example 2, Manufacturing Plan"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-pq-ex3-drug-specification"/>
+                <reference value="PlanDefinition/plandefinition-drug-pq-ex3-drug-specification"/>
             </reference>
-            <name value="plandefinition-pq-ex3-drug-specification"/>
+            <name value="plandefinition-drug-pq-ex3-drug-specification"/>
             <description value="PlanDefinition - PQ - Example 3, Drug Specification"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-pq-ex4-mnf-process"/>
+                <reference value="PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"/>
             </reference>
-            <name value="plandefinition-pq-ex4-mnf-process"/>
+            <name value="plandefinition-drug-pq-ex4-mnf-process"/>
             <description value="PlanDefinition - PQ - Example 4, Manufacturing Process"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
             <reference>
-                <reference value="PlanDefinition/plandefinition-pq-ex5-stability-study-protocol"/>
+                <reference value="PlanDefinition/plandefinition-drug-pq-ex5-stability-study-protocol"/>
             </reference>
-            <name value="plandefinition-pq-ex5-stability-study-protocol"/>
+            <name value="plandefinition-drug-pq-ex5-stability-study-protocol"/>
             <description value="PlanDefinition - PQ - Example 5, Stability Study Protocol"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

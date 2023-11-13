@@ -12,7 +12,7 @@
          <PlanDefinition>
             <id value="referenceProtocol"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="S.2.S.5 Reference Standard Analysis"/>
@@ -397,7 +397,7 @@
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                   <valueReference>
-                     <reference value="PlanDefinition/plandefinition-pq-ex4-mnf-process"/>
+                     <reference value="PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"/>
                   </valueReference>
                </extension>
                <extension url="batchQuantity"> <!-- #157 -->
@@ -505,7 +505,7 @@
          <PlanDefinition>
                 
 
-            <id value="plandefinition-pq-ex4-mnf-process"/>
+            <id value="plandefinition-drug-pq-ex4-mnf-process"/>
             <url value="http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
             <title value="Process 1.1"/>
             <type>

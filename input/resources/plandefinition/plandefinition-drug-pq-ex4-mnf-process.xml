@@ -2,15 +2,15 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
     <!-- Contained in Accumulus FHIR Product Example - Batch Analysis (3-13-2023) -->
 <!--    <id value="manufacturingProcess"/>-->
-    <id value="plandefinition-pq-ex4-mnf-process"/>
+    <id value="plandefinition-drug-pq-ex4-mnf-process"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
     </meta>
     <!-- abridged version only -->
     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
         <valueMarkdown value="Process has no history recorded yet"/>
     </extension>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-pq-ex4-mnf-process"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"/>
     <title value="Process 1.0"/>
     <type>
         <coding>

@@ -17,7 +17,7 @@
                 <!--specificationProtocol-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
@@ -565,7 +565,7 @@
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                   <valueReference>
-                            <!--PlanDefinition/plandefinition-pq-ex4-mnf-process-->
+                            <!--PlanDefinition/plandefinition-drug-pq-ex4-mnf-process-->
                      <reference value="PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
                   </valueReference>
                </extension>
@@ -747,7 +747,7 @@
       <resource>
          <PlanDefinition>
                 <!--id value="manufacturingProcess"/--> 
-                <!--plandefinition-pq-ex4-mnf-process-->
+                <!--plandefinition-drug-pq-ex4-mnf-process-->
             <id value="b30a1024-37db-a1bc-05e5-cc4596d92975"/>
             <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
                     <valueString value="plandefinition/{id}.xml"/>

@@ -15,7 +15,7 @@
 
             <id value="plandefinition-compatibility"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
             
 

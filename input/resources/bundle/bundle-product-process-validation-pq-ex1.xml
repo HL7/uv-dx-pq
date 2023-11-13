@@ -4140,10 +4140,10 @@
       <resource>
          <PlanDefinition>
                 <!-- focal resource -->
-            <id value="plandefinition-pq-ex2-manufacturing-plan"/>
+            <id value="plandefinition-drug-pq-ex2-manufacturing-plan"/>
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
                <tag>
                   <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
                   <code value="SUBSETTED"/>

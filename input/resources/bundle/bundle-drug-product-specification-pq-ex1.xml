@@ -16,9 +16,9 @@
                 <!-- focal resource -->
                 <!-- <id value="specificationProtocol"/> -->
                 <!--id value="plandefinition-drug-specification-pq-ex1"/-->
-            <id value="plandefinition-pq-ex3-drug-specification"/>
+            <id value="plandefinition-drug-pq-ex3-drug-specification"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>

@@ -21,7 +21,7 @@
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                        <!--PlanDefinition/plandefinition-pq-ex5-stability-study-protocol-->
+                        <!--PlanDefinition/plandefinition-drug-pq-ex5-stability-study-protocol-->
                   <reference value="PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
                </valueReference>
             </extension>
@@ -113,10 +113,10 @@
          <PlanDefinition>
                 <!--<id value="stabilityStudyProtocol"/>-->
                 <!--id value="plandefinition-stability-study-protocol-pq-ex1"/-->
-                <!--plandefinition-pq-ex5-stability-study-protocol-->
+                <!--plandefinition-drug-pq-ex5-stability-study-protocol-->
             <id value="c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54-->
             <url value="http://example-server.com/fhir/PlanDefinition/c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>

@@ -96,7 +96,7 @@
       <type>
         <code value="PlanDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
       </type>
     </element>
 

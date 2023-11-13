@@ -68,7 +68,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="PlanDefinition"/>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
       </type>
     </element>
     

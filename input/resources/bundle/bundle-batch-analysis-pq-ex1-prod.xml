@@ -17,7 +17,7 @@
                 <!--specificationProtocol-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
@@ -852,7 +852,7 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                      <valueReference>
-                                <!--PlanDefinition/plandefinition-pq-ex4-mnf-process-->
+                                <!--PlanDefinition/plandefinition-drug-pq-ex4-mnf-process-->
                         <reference value="PlanDefinition/246e9583-6253-6cc7-9c12-3b624f3308c1"/>
                      </valueReference>
                   </extension>
@@ -937,7 +937,7 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                      <valueReference>
-                                <!--PlanDefinition/plandefinition-pq-ex4-mnf-process-->
+                                <!--PlanDefinition/plandefinition-drug-pq-ex4-mnf-process-->
                         <reference value="PlanDefinition/246e9583-6253-6cc7-9c12-3b624f3308c1"/>
                      </valueReference>
                   </extension>
@@ -1020,7 +1020,7 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                      <valueReference>
-                                <!--PlanDefinition/plandefinition-pq-ex4-mnf-process-->
+                                <!--PlanDefinition/plandefinition-drug-pq-ex4-mnf-process-->
                         <reference value="PlanDefinition/246e9583-6253-6cc7-9c12-3b624f3308c1"/>
                      </valueReference>
                   </extension>
@@ -3026,10 +3026,10 @@
          <PlanDefinition>
                 <!--    <id value="manufacturingProcess"/>-->
                 <!--id value="plandefinition-mnf-process-pq-ex1"/-->
-                <!--plandefinition-pq-ex4-mnf-process-->
+                <!--plandefinition-drug-pq-ex4-mnf-process-->
             <id value="246e9583-6253-6cc7-9c12-3b624f3308c1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
             <!-- added for IG, to differentiate from PlanDefinition-drug-specification-pq -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
