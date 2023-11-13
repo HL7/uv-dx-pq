@@ -868,10 +868,10 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/SpecimenDefinition-stability-pq"/>
-                <display value="SpecimenDefinition - Stability PQ"/>
+                <reference value="StructureDefinition/SpecimenDefinition-drug-pq"/>
+                <display value="SpecimenDefinition - Drug PQ"/>
             </reference>
-            <name value="SpecimenDefinition - Stability PQ"/>
+            <name value="SpecimenDefinition - Drug PQ"/>
             <description value="This SpecimenDefinition profile represents information about the treatment of a specimen, such as storage conditions and test duration."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
@@ -1155,12 +1155,12 @@
 
         <resource>
             <reference>
-                <reference value="SpecimenDefinition/specimendefinition-stability-pq-ex1"/>
+                <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
             </reference>
-            <name value="specimendefinition-stability-pq-ex1"/>
-            <description value="SpecimenDefinition - Stability PQ - Example 1"/>
+            <name value="specimendefinition-drug-pq-ex1"/>
+            <description value="SpecimenDefinition - Drug PQ - Example"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
@@ -1794,7 +1794,7 @@
             <name value="specimenDefStoredAt30"/>
             <description value="specimenDefStoredAt30"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
             <groupingId value="examples2"/>
         </resource>
         <resource>
@@ -1804,7 +1804,7 @@
             <name value="specimenDefStoredAt40"/>
             <description value="specimenDefStoredAt40"/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-stability-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
             <groupingId value="examples2"/>
         </resource>
 
