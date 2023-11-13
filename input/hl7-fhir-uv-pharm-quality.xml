@@ -938,7 +938,7 @@
                 <reference value="Composition/composition-drug-pq-risk"/>
             </reference>
             <name value="composition-drug-pq-risk"/>
-            <description value="Scomposition-drug-pq-risk"/>
+            <description value="Composition - Drug PQ Example, risk"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -946,10 +946,10 @@
 
         <resource>
             <reference>
-                <reference value="DeviceDefinition/devicedefinition-pq-ex1"/>
+                <reference value="DeviceDefinition/devicedefinition-drug-pq-ex1"/>
             </reference>
-            <name value="devicedefinition-pq-ex1"/>
-            <description value="DeviceDefinition PQ - Example 1"/>
+            <name value="devicedefinition-drug-pq-ex1"/>
+            <description value="DeviceDefinition Drug PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -960,7 +960,7 @@
                 <reference value="DiagnosticReport/diagnosticreport-analysis-drug-pq-stability-prod"/>
             </reference>
             <name value="DiagnosticReport - Analysis Drug PQ - Stability Study, Product"/>
-            <description value="Stability study results report, drug product example"/>
+            <description value="Stability study results report, drug product example."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
             <groupingId value="building-blocks-2"/>
