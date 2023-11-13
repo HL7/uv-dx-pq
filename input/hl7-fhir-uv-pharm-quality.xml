@@ -926,7 +926,7 @@
             <reference>
                 <reference value="Composition/composition-drug-pq-formulation"/>
             </reference>
-            <name value="composition-drug-pq-formulation"/>
+            <name value="Composition - Drug PQ - Example, formulation"/>
             <description value="Scomposition-drug-pq-formulation"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
@@ -937,7 +937,7 @@
             <reference>
                 <reference value="Composition/composition-drug-pq-risk"/>
             </reference>
-            <name value="composition-drug-pq-risk"/>
+            <name value="Composition - Drug PQ - Example, risk"/>
             <description value="Composition - Drug PQ Example, risk"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"/>
@@ -948,7 +948,7 @@
             <reference>
                 <reference value="DeviceDefinition/devicedefinition-drug-pq-ex1"/>
             </reference>
-            <name value="devicedefinition-drug-pq-ex1"/>
+            <name value="DeviceDefinition - Drug PQ - Example"/>
             <description value="DeviceDefinition Drug PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
@@ -959,7 +959,7 @@
             <reference>
                 <reference value="DiagnosticReport/diagnosticreport-analysis-drug-pq-stability-prod"/>
             </reference>
-            <name value="DiagnosticReport - Analysis Drug PQ - Stability Study, Product"/>
+            <name value="DiagnosticReport - Analysis Drug PQ - Example, stability"/>
             <description value="Stability study results report, drug product example."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
@@ -970,7 +970,7 @@
             <reference>
                 <reference value="DocumentReference/documentreference-drug-pq-process-flow-diagram"/>
             </reference>
-            <name value="documentreference-drug-pq-process-flow-diagram"/>
+            <name value="DocumentReference - Drug PQ - Example"/>
             <description value="DocumentReference - Process Flow Diagram PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>
@@ -981,7 +981,7 @@
             <reference>
                 <reference value="Ingredient/ingredient-drug-pq-ex1"/>
             </reference>
-            <name value="ingredient-drug-pq-ex1"/>
+            <name value="Ingredient - Drug PQ - Example"/>
             <description value="Ingredient - Drug PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-drug-pq"/>
@@ -992,7 +992,7 @@
             <reference>
                 <reference value="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1"/>
             </reference>
-            <name value="manufactureditemdefinition-drug-pq-ex1"/>
+            <name value="ManufacturedItemDefinition - Drug PQ - Example"/>
             <description value="ManufacturedItemDefinition - Drug PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
@@ -1003,7 +1003,7 @@
             <reference>
                 <reference value="Medication/medication-batch-information-drug-pq-ex1"/>
             </reference>
-            <name value="medication-batch-information-drug-pq-ex1"/>
+            <name value="Medication - Batch Information Drug PQ - Example 1"/>
             <description value="Medication - Batch Information Drug PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
@@ -1014,7 +1014,7 @@
             <reference>
                 <reference value="Medication/medication-batch-information-drug-pq-ex2"/>
             </reference>
-            <name value="medication-batch-information-drug-pq-ex2"/>
+            <name value="Medication - Batch Information Drug PQ - Example 2"/>
             <description value="Medication - Batch Information Drug PQ - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
@@ -1025,7 +1025,7 @@
             <reference>
                 <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </reference>
-            <name value="MedicinalProductDefinition - Drug Product PQ - Example 1"/>
+            <name value="MedicinalProductDefinition - Drug Product PQ - Example"/>
             <description value="MedicinalProductDefinition - Drug Product PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
@@ -1036,7 +1036,7 @@
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex1"/>
             </reference>
-            <name value="observationdefinition-test-method-drug-pq-ex1"/>
+            <name value="ObservationDefinition - Test Method Drug PQ - Example 1"/>
             <description value="ObservationDefinition - Test Method Drug PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
@@ -1047,7 +1047,7 @@
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex2"/>
             </reference>
-            <name value="observationdefinition-test-method-drug-pq-ex2"/>
+            <name value="ObservationDefinition - Test Method Drug PQ - Example "/>
             <description value="ObservationDefinition - Test Method Drug PQ - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
@@ -1058,7 +1058,7 @@
             <reference>
                 <reference value="Observation/observation-test-result-drug-pq-ex1"/>
             </reference>
-            <name value="observation-test-result-drug-pq-ex1"/>
+            <name value="Observation - Test Result Drug PQ - Example 1"/>
             <description value="Observation-test-result-drug-pq - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
@@ -1069,7 +1069,7 @@
             <reference>
                 <reference value="Observation/observation-test-result-drug-pq-ex2"/>
             </reference>
-            <name value="observation-test-result-drug-pq-ex1"/>
+            <name value="Observation - Test Result Drug PQ - Example 2"/>
             <description value="Observation-test-result-drug-pq - Example 2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
@@ -1080,7 +1080,7 @@
             <reference>
                 <reference value="Organization/organization-drug-pq-ex1"/>
             </reference>
-            <name value="organization-drug-pq-ex1"/>
+            <name value="Organization - Drug PQ - Example"/>
             <description value="Organization - Drug PQ Example"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
@@ -1091,7 +1091,7 @@
             <reference>
                 <reference value="PackagedProductDefinition/packagedproductdefinition-drug-pq-ex1"/>
             </reference>
-            <name value="packagedproductdefinition-drug-pq-ex1"/>
+            <name value="PackagedProductDefinition - Drug PQ - Example"/>
             <description value="PackagedProductDefinition PQ - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
@@ -1102,7 +1102,7 @@
             <reference>
                 <reference value="PlanDefinition/plandefinition-drug-pq-ex1-validation-protocol"/>
             </reference>
-            <name value="PlanDefinition - PQ - Example 1, Validation Protocol"/>
+            <name value="PlanDefinition - Drug PQ - Example, validation protocol"/>
             <description value="PlanDefinition plandefinition-drug-pq-ex1-validation-protocol"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
@@ -1113,7 +1113,7 @@
             <reference>
                 <reference value="PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"/>
             </reference>
-            <name value="plandefinition-drug-pq-ex2-manufacturing-plan"/>
+            <name value="PlanDefinition - Drug PQ - Example, manufacturing plan"/>
             <description value="PlanDefinition - PQ - Example 2, Manufacturing Plan"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
@@ -1124,7 +1124,7 @@
             <reference>
                 <reference value="PlanDefinition/plandefinition-drug-pq-ex3-drug-specification"/>
             </reference>
-            <name value="plandefinition-drug-pq-ex3-drug-specification"/>
+            <name value="PlanDefinition - Drug PQ - Example, drug specification"/>
             <description value="PlanDefinition - PQ - Example 3, Drug Specification"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
@@ -1135,7 +1135,7 @@
             <reference>
                 <reference value="PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"/>
             </reference>
-            <name value="plandefinition-drug-pq-ex4-mnf-process"/>
+            <name value="PlanDefinition - Drug PQ - Example, manufacturing process"/>
             <description value="PlanDefinition - PQ - Example 4, Manufacturing Process"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
@@ -1146,7 +1146,7 @@
             <reference>
                 <reference value="PlanDefinition/plandefinition-drug-pq-ex5-stability-study-protocol"/>
             </reference>
-            <name value="plandefinition-drug-pq-ex5-stability-study-protocol"/>
+            <name value="PlanDefinition - Drug PQ - Example, stability study protocol"/>
             <description value="PlanDefinition - PQ - Example 5, Stability Study Protocol"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
@@ -1155,7 +1155,7 @@
 
         <resource>
             <reference>
-                <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
+                <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1  - Example"/>
             </reference>
             <name value="specimendefinition-drug-pq-ex1"/>
             <description value="SpecimenDefinition - Drug PQ - Example"/>
@@ -1179,7 +1179,7 @@
             <reference>
                 <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
             </reference>
-            <name value="substancedefinition-component-substance-drug-pq-ex1"/>
+            <name value="SubstanceDefinition - Component Substance Drug PQ - Example"/>
             <description value="SubstanceDefinition - Component Substance - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
@@ -1190,7 +1190,7 @@
             <reference>
                 <reference value="Substance/substance-drug-pq-ex1"/>
             </reference>
-            <name value="substance-drug-pq-ex1"/>
+            <name value="Substance - Drug PQ - Example"/>
             <description value="Substance - Example 1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
