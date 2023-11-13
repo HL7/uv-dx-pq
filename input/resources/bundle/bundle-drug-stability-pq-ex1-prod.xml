@@ -568,7 +568,7 @@
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <!-- changed here to not have url in front -->
-            <!--ObservationDefinition/observationdefinition-test-method-pq-ex1-->
+            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!-- longTerm25X -->
          </ActivityDefinition>
@@ -587,7 +587,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-pq-ex1-->
+            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
          </ActivityDefinition>
       </resource>
@@ -605,7 +605,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-pq-ex1-->
+            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
          </ActivityDefinition>
       </resource>
@@ -624,7 +624,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <title value="Long-term - 25°C/60% RH - XYZ"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-pq-ex1-->
+            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -646,7 +646,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-pq-ex1-->
+            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -666,7 +666,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-pq-ex1-->
+            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -686,7 +686,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-pq-ex1-->
+            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -698,13 +698,13 @@
       <resource>
          <ObservationDefinition>
                 <!--id value="longTerm25X"/-->
-                <!--observationdefinition-test-method-pq-ex1-->
+                <!--observationdefinition-test-method-drug-pq-ex1-->
             <id value="d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--url value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/-->
-            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-pq-ex1-->
+            <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <url value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <title value="X"/>
             <status value="active"/>
@@ -725,7 +725,7 @@
                <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
             </hasMember>
             <hasMember>
-                    <!--ObservationDefinition/observationdefinition-test-method-pq-ex2-->
+                    <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
                <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             </hasMember>
             <!-- can have others -->
@@ -739,7 +739,7 @@
                 <!--Description-->
             <id value="1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774-->
             <url value="http://example-server.com/fhir/ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
@@ -770,7 +770,7 @@
                 <!--Degradation-->
             <id value="2c5683d6-6e94-825b-056a-129a04c95e2f"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f-->
             <url value="http://example-server.com/fhir/ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
@@ -865,10 +865,10 @@
       <resource>
          <ObservationDefinition>
                 <!-- <id value="Water"/> -->
-                <!--observationdefinition-test-method-pq-ex2-->
+                <!--observationdefinition-test-method-drug-pq-ex2-->
             <id value="186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c-->
             <url value="http://example-server.com/fhir/ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
@@ -902,7 +902,7 @@
                 <!--longTerm25Y-->
             <id value="b62b9524-53af-84ae-1071-2867a2169851"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851-->
             <url value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -930,7 +930,7 @@
                 <!--Microbiological-->
             <id value="73d9d304-a0b8-31b6-1165-346563b9305e"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/73d9d304-a0b8-31b6-1165-346563b9305e"/>
@@ -959,7 +959,7 @@
                 <!--longTerm25Z-->
             <id value="363384c8-0d79-5ff0-5538-4933f99d6409"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/363384c8-0d79-5ff0-5538-4933f99d6409-->
             <url value="http://example-server.com/fhir/ObservationDefinition/363384c8-0d79-5ff0-5538-4933f99d6409"/>
@@ -987,7 +987,7 @@
                 <!--Uniformity-->
             <id value="ef781c18-8e86-7859-209b-469ee9ad42d8"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8-->
             <url value="http://example-server.com/fhir/ObservationDefinition/ef781c18-8e86-7859-209b-469ee9ad42d8"/>
@@ -1093,7 +1093,7 @@
                 <!--accelerated40X-->
             <id value="792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b-->
             <url value="http://example-server.com/fhir/ObservationDefinition/792ae02e-5ba3-13d1-8cc2-fd24a22f7f0b"/>
@@ -1111,7 +1111,7 @@
                <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
             </hasMember>
             <hasMember>
-                    <!--ObservationDefinition/observationdefinition-test-method-pq-ex2-->
+                    <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
                <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             </hasMember>
             <!-- can have others -->
@@ -1125,7 +1125,7 @@
                 <!--accelerated40Y-->
             <id value="58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/58cb0710-0ee6-1b7a-2a64-61a01df95ac2-->
             <url value="http://example-server.com/fhir/ObservationDefinition/58cb0710-0ee6-1b7a-2a64-61a01df95ac2"/>
@@ -1153,7 +1153,7 @@
                 <!--accelerated40Z-->
             <id value="9bc183ee-6017-789b-8a6f-6a5c339f9ae0"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <!--http://example-server.com/fhir/ObservationDefinition/9bc183ee-6017-789b-8a6f-6a5c339f9ae0-->
             <url value="http://example-server.com/fhir/ObservationDefinition/9bc183ee-6017-789b-8a6f-6a5c339f9ae0"/>
@@ -1541,7 +1541,7 @@
                   </meta>
                   <instantiatesReference>
             		        
-            		        <!--ObservationDefinition/observationdefinition-test-method-pq-ex2-->
+            		        <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
                      <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -2388,7 +2388,7 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Water"/>
                   <instantiatesReference>
-                            <!--ObservationDefinition/observationdefinition-test-method-pq-ex2-->
+                            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
                      <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3023,7 +3023,7 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Water"/>
                   <instantiatesReference>
-                            <!--ObservationDefinition/observationdefinition-test-method-pq-ex2-->
+                            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
                      <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>

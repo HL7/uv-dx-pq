@@ -212,7 +212,7 @@
                 <!--Impurities-->
             <id value="d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8-->
             <url value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>

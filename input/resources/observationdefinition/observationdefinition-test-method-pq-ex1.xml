@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ObservationDefinition xmlns="http://hl7.org/fhir">
-    <id value="observationdefinition-test-method-pq-ex1"/>
+    <id value="observationdefinition-test-method-drug-pq-ex1"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     </meta>
     <!-- SG: Added url -->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-pq-ex1"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-drug-pq-ex1"/>
     <title value="X"/>
     <status value="active"/>
     <code>
@@ -15,6 +15,6 @@
         <reference value="SpecimenDefinition/specimendefinition-stability-pq-ex1"/>
     </specimen>
     <hasMember>
-        <reference value="ObservationDefinition/observationdefinition-test-method-pq-ex2"/>
+        <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex2"/>
     </hasMember>
 </ObservationDefinition>

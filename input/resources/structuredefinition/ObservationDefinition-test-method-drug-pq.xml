@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="ObservationDefinition-test-method-pq"/>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+    <id value="ObservationDefinition-test-method-drug-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     <name value="ObservationDefinitionTestMethodPq"/>
     <title value="ObservationDefinition - Test Method PQ"/>
     <status value="active"/>

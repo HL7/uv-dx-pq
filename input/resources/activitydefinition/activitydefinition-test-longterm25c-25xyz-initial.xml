@@ -9,7 +9,7 @@
     <status value="active"/>
     <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X"/>
 <!--    <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>-->
-    <!--            <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-pq-ex1"/>-->
+    <!--            <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-drug-pq-ex1"/>-->
     <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y"/>
 <!--    <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>-->
     <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Z"/>

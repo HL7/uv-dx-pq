@@ -171,7 +171,7 @@
       <type>
         <code value="ObservationDefinition"/>
         <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
       </type>
     </element>
     

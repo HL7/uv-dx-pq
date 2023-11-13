@@ -3,7 +3,7 @@
     <!-- Contained in Accumulus FHIR Substance Example - Batch Analysis (05-31-2023) -->
     <id value="Impurities"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Impurities"/>
                 <title value="Drug Substance Related Organic impurities"/>

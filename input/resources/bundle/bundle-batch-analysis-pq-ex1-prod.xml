@@ -248,7 +248,7 @@
                 <!--Identification-->
             <id value="3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d-->
             <url value="http://example-server.com/fhir/ObservationDefinition/3b0e878e-4bc9-8864-862f-e28b21233e8d"/>
@@ -307,7 +307,7 @@
                 <!--Assay-->
             <id value="39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
                 </meta>-->
             <!--url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/-->
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
@@ -716,7 +716,7 @@
                 <!--Microbiological-->
             <id value="d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/d999ee06-6595-762c-1bda-0818ab1c6c0e"/>
@@ -777,7 +777,7 @@
                 <!--Uniformity-->
             <id value="ef17cff1-6586-a4a4-9168-2602140548d7"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7-->
             <url value="http://example-server.com/fhir/ObservationDefinition/ef17cff1-6586-a4a4-9168-2602140548d7"/>

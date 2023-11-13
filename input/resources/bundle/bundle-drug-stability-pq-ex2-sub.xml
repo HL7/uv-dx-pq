@@ -728,7 +728,7 @@
                 <!--longTerm30X-->
             <id value="18762cff-9e29-6e71-1184-e9202fee8cba"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba-->
             <url value="http://example-server.com/fhir/ObservationDefinition/18762cff-9e29-6e71-1184-e9202fee8cba"/>
@@ -908,7 +908,7 @@
                 <!--longTerm30Y-->
             <id value="31abea79-81da-17f8-9d8c-94e9bb75876e"/>
             <!--<meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
                 </meta>-->
             <!--http://example-server.com/fhir/ObservationDefinition/31abea79-81da-17f8-9d8c-94e9bb75876e-->
             <url value="http://example-server.com/fhir/ObservationDefinition/31abea79-81da-17f8-9d8c-94e9bb75876e"/>

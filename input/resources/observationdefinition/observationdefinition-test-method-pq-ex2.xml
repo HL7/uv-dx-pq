@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ObservationDefinition xmlns="http://hl7.org/fhir">
     <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
-    <id value="observationdefinition-test-method-pq-ex2"/>
+    <id value="observationdefinition-test-method-drug-pq-ex2"/>
     <meta>
-        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-pq-ex2"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-drug-pq-ex2"/>
     <title value="Water Content (% w/w) (Mean)"/>
     <status value="active"/>
     <code>
