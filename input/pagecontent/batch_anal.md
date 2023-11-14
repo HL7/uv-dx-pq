@@ -25,6 +25,8 @@ Provide details about drug substance and drug product batch release testing and 
 
 **Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
+**Substance**: Identifying information about an actual batch of aubstance (an instance)
+
 ### Examples
 **CTD section samples** (PDF):
 - 3.2.P.5 Control of Drug Product

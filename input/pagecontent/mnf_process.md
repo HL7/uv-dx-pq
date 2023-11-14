@@ -11,9 +11,9 @@ Provide a manufacturing process description and details about unit operations, p
 
 **Document Reference**: Document(s) of any kind, including a diagram or image
 
-**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
-
 **Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
+
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
 **Organization** (not illustrated above): The company/site that performed the testing or manufacturing
 

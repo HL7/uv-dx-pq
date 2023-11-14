@@ -39,7 +39,7 @@ Provide details about the drug substance and drug product nomenclature; structur
 #### Drug Substance General Properties
 **Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
-#### Drug Substance Elucidation of Structure
+#### Drug Substance: Elucidation of Structure
 **Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
 **Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
@@ -73,6 +73,6 @@ Provide details about the drug substance and drug product nomenclature; structur
 - <a href="identification_rend_p2.html">Drug Product Microbiological Attributes</a>
 - <a href="identification_rend_p3.html">Drug Product Excipients</a>
 - <a href="identification_rend_s1.html">Drug Substance General Properties</a>
-- <a href="identification_rend_s2.html">Drug Substance Elucidation of Structure</a>
+- <a href="identification_rend_s2.html">Drug Substance Characterisation: Elucidation of Structure</a>
 
 **FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Identification](artifacts.html#identification)
