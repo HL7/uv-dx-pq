@@ -78,6 +78,7 @@
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                         </valueReference>
                      </extension>
+                     <display value="Starting material"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -95,6 +96,7 @@
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                         </valueReference>
                      </extension>
+                     <display value="Intermediate material"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -112,6 +114,7 @@
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
+                     <display value="Resulting material"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -204,6 +207,7 @@
                            <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821153"/>
                         </valueReference>
                      </extension>
+                     <display value="Starting material"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -221,6 +225,7 @@
                            <reference value="SubstanceDefinition/c458791f-7cb8-428e-84f7-8a205f821155"/>
                         </valueReference>
                      </extension>
+                     <display value="Intermediate material"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -237,6 +242,7 @@
                            <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
+                     <display value="Resulting material"/>
                   </typeReference>
                   <role>
                      <coding>

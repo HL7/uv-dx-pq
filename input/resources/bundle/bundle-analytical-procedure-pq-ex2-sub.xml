@@ -102,6 +102,7 @@
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8135565f82"/>
                         </valueReference>
                      </extension>
+                     <display value="Dispersant"/>
                   </typeReference>
                   <role>
                      <coding>
@@ -119,6 +120,7 @@
                            <reference value="SubstanceDefinition/9f69ec9c-5fd1-30d2-0790-9e8035565f82"/>
                         </valueReference>
                      </extension>
+                     <display value="Resulting material"/>
                   </typeReference>
                   <role>
                      <coding>
