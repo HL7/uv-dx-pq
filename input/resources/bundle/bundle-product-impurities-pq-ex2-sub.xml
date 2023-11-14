@@ -12,10 +12,11 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance1"/>
-            
+        		<!--substance1-->
+            <id value="03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+        			<!--Organization/substance-manufacturer-->
+               <reference value="Organization/062bf235-44e2-55c4-9213-bbe5e12d5620"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -32,7 +33,8 @@
                   </valueCodeableConcept>
                </extension>
                <substanceDefinitionReference>
-                  <reference value="SubstanceDefinition/impurityEnantiomer"/>
+        	            <!--SubstanceDefinition/impurityEnantiomer-->
+                  <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-80f9-647b0ea97ad1"/>
                </substanceDefinitionReference>
                <type>
                   <coding>
@@ -60,7 +62,7 @@
                   </valueCodeableConcept>
                </extension>
                <substanceDefinitionReference>
-                  <reference value="SubstanceDefinition/impurity1"/>
+                  <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-80f9-647b0ea97ad2"/>
                </substanceDefinitionReference>
                <type>
                   <coding>
@@ -88,7 +90,7 @@
                   </valueCodeableConcept>
                </extension>
                <substanceDefinitionReference>
-                  <reference value="SubstanceDefinition/impurity2"/>
+                  <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-80f9-647b0ea97ad9"/>
                </substanceDefinitionReference>
                <type>
                   <coding>
@@ -116,7 +118,8 @@
                   </valueCodeableConcept>
                </extension>
                <substanceDefinitionReference>
-                  <reference value="SubstanceDefinition/impurityNapthol"/>
+        	            <!--SubstanceDefinition/impurityNapthol-->
+                  <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-80f9-647b0ea97ad3"/>
                </substanceDefinitionReference>
                <type>
                   <coding>
@@ -144,7 +147,8 @@
                   </valueCodeableConcept>
                </extension>
                <substanceDefinitionReference>
-                  <reference value="SubstanceDefinition/impurityPropanol"/>
+        	            <!--SubstanceDefinition/impurityPropanol-->
+                  <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-80f9-647b0ea97ad4"/>
                </substanceDefinitionReference>
                <type>
                   <coding>
@@ -167,7 +171,8 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-80f9-647b0ea97ad1"/>
       <resource>
          <SubstanceDefinition>
-            <id value="impurityEnantiomer"/>
+                <!--impurityEnantiomer-->
+            <id value="03d68d1c-162c-8b6e-80f9-647b0ea97ad1"/>
             <characterization>
                <technique>
                   <text value="Enantiomeric purity by LC"/>
@@ -249,7 +254,7 @@
             <structure>
                <representation>
                   <document>
-                     <reference value="DocumentReference/impurityEnantiomerdoc"/>
+                     <reference value="DocumentReference/13d68d1c-162c-8b6e-80f9-647b0ea97ad1"/>
                   </document>
                </representation>
             </structure>
@@ -263,7 +268,8 @@
       <fullUrl value="urn:uuid:13d68d1c-162c-8b6e-80f9-647b0ea97ad1"/>
       <resource>
          <DocumentReference>
-            <id value="impurityEnantiomerdoc"/>
+                <!--impurityEnantiomerdoc-->
+            <id value="13d68d1c-162c-8b6e-80f9-647b0ea97ad1"/>
             <status value="current"/>
             <content>
                <attachment>
@@ -278,7 +284,8 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-80f9-647b0ea97ad2"/>
       <resource>
          <SubstanceDefinition>
-            <id value="impurity1"/>
+                <!--impurity1-->
+            <id value="03d68d1c-162c-8b6e-80f9-647b0ea97ad2"/>
             <characterization>
                <technique>
                   <text value="Organic impurities by HPLC"/>
@@ -355,7 +362,7 @@
             <structure>
                <representation>
                   <document>
-                     <reference value="DocumentReference/impurity1doc"/>
+                     <reference value="DocumentReference/13d68d1c-162c-8b6e-80f9-647b0ea97ad2"/>
                   </document>
                </representation>
             </structure>
@@ -369,7 +376,8 @@
       <fullUrl value="urn:uuid:13d68d1c-162c-8b6e-80f9-647b0ea97ad2"/>
       <resource>
          <DocumentReference>
-            <id value="impurity1doc"/>
+                <!--impurity1doc-->
+            <id value="13d68d1c-162c-8b6e-80f9-647b0ea97ad2"/>
             <status value="current"/>
             <content>
                <attachment>
@@ -384,7 +392,8 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-80f9-647b0ea97ad9"/>
       <resource>
          <SubstanceDefinition>
-            <id value="impurity2"/>
+                <!--impurity2-->
+            <id value="03d68d1c-162c-8b6e-80f9-647b0ea97ad9"/>
             <characterization>
                <technique>
                   <text value="Organic impurities by LC"/>
@@ -461,7 +470,7 @@
             <structure>
                <representation>
                   <document>
-                     <reference value="DocumentReference/impurity2doc"/>
+                     <reference value="DocumentReference/13d68d1c-162c-8b6e-80f9-647b0ea97ad9"/>
                   </document>
                </representation>
             </structure>
@@ -475,7 +484,8 @@
       <fullUrl value="urn:uuid:13d68d1c-162c-8b6e-80f9-647b0ea97ad9"/>
       <resource>
          <DocumentReference>
-            <id value="impurity2doc"/>
+                <!--impurity2doc-->
+            <id value="13d68d1c-162c-8b6e-80f9-647b0ea97ad9"/>
             <status value="current"/>
             <content>
                <attachment>
@@ -490,7 +500,8 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-80f9-647b0ea97ad3"/>
       <resource>
          <SubstanceDefinition>
-            <id value="impurityNapthol"/>
+                <!--impurityNapthol-->
+            <id value="03d68d1c-162c-8b6e-80f9-647b0ea97ad3"/>
             <characterization>
                <technique>
                   <text value="Organic impurities by HPLC"/>
@@ -572,7 +583,8 @@
             <structure>
                <representation>
                   <document>
-                     <reference value="DocumentReference/impurityNaptholDoc"/>
+                            <!--DocumentReference/impurityNaptholDoc-->
+                     <reference value="DocumentReference/13d68d1c-162c-8b6e-80f9-647b0ea97ad3"/>
                   </document>
                </representation>
                <representation>
@@ -615,7 +627,8 @@
       <fullUrl value="urn:uuid:13d68d1c-162c-8b6e-80f9-647b0ea97ad3"/>
       <resource>
          <DocumentReference>
-            <id value="impurityNaptholDoc"/>
+                <!--impurityNaptholDoc-->
+            <id value="13d68d1c-162c-8b6e-80f9-647b0ea97ad3"/>
             <status value="current"/>
             <content>
                <attachment>
@@ -630,7 +643,8 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-80f9-647b0ea97ad4"/>
       <resource>
          <SubstanceDefinition>
-            <id value="impurityPropanol"/>
+                <!--impurityPropanol-->
+            <id value="03d68d1c-162c-8b6e-80f9-647b0ea97ad4"/>
             <characterization>
                <technique>
                   <text value="Impurity content by LC-MS"/>
@@ -717,7 +731,8 @@
             <structure>
                <representation>
                   <document>
-                     <reference value="DocumentReference/impurityPropanolDoc"/>
+                            <!--DocumentReference/impurityPropanolDoc-->
+                     <reference value="DocumentReference/13d68d1c-162c-8b6e-80f9-647b0ea97ad4"/>
                   </document>
                </representation>
             </structure>
@@ -732,7 +747,8 @@
       <fullUrl value="urn:uuid:13d68d1c-162c-8b6e-80f9-647b0ea97ad4"/>
       <resource>
          <DocumentReference>
-            <id value="impurityPropanolDoc"/>
+                <!--impurityPropanolDoc-->
+            <id value="13d68d1c-162c-8b6e-80f9-647b0ea97ad4"/>
             <status value="current"/>
             <content>
                <attachment>
@@ -747,7 +763,8 @@
       <fullUrl value="urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620"/>
       <resource>
          <Organization>
-            <id value="substance-manufacturer"/>
+				<!--substance-manufacturer-->
+            <id value="062bf235-44e2-55c4-9213-bbe5e12d5620"/>
             <identifier>
 					<!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>

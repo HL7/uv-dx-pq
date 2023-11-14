@@ -18,7 +18,8 @@
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
                         <!-- #84 -->
-                  <reference value="DocumentReference/documentreference-drug-pq-process-flow-diagram"/>
+                        <!--DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1-->
+                  <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
             </extension>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
@@ -35,7 +36,7 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
-               <reference value="SubstanceDefinition/substance1"/>
+               <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
             </subjectReference>
             <description value="Narrative description of substance manufacturing process"/>
             <!-- #85 -->
@@ -166,7 +167,7 @@
                   <documentation>
                      <type value="specification-of"/>
                      <resourceReference>
-                        <reference value="DocumentReference/DocumentReference-image"/>
+                        <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fev"/>
                      </resourceReference>
                   </documentation>
                   <goalId value="goal-control-pH"/>
@@ -174,7 +175,7 @@
                   <participant>
                      <typeReference>
                                 <!-- this is new in R5 and is not in R4B -->
-                        <reference value="DeviceDefinition/impeller"/>
+                        <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
                      </typeReference>
                      <role>
                         <coding>
@@ -189,7 +190,7 @@
                      <typeReference>
                         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
-                              <reference value="SubstanceDefinition/startingMaterial"/>
+                              <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                            </valueReference>
                         </extension>
                      </typeReference>
@@ -205,7 +206,7 @@
                      <typeReference>
                         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
-                              <reference value="SubstanceDefinition/processingMaterial"/>
+                              <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                            </valueReference>
                         </extension>
                      </typeReference>
@@ -221,7 +222,7 @@
                      <typeReference>
                         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
-                              <reference value="SubstanceDefinition/resultingMaterial"/>
+                              <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                            </valueReference>
                         </extension>
                      </typeReference>
@@ -245,7 +246,8 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
       <resource>
          <DeviceDefinition>
-            <id value="impeller"/>
+                <!--impeller-->
+            <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
                <!-- #89 Equiment subclass -->
@@ -274,7 +276,8 @@
       <resource>
             <!-- #84 -->
          <DocumentReference>
-            <id value="documentreference-drug-pq-process-flow-diagram"/>
+                <!--DocumentReference-process-flow-diagram-dxpq-ex1-->
+            <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
             <meta>
                <versionId value="1"/>
                <lastUpdated value="2023-01-12T17:57:08.898+00:00"/>
@@ -306,7 +309,8 @@
       <resource>
             <!-- #84 -->
          <DocumentReference>
-            <id value="DocumentReference-image"/>
+                <!--DocumentReference-image-->
+            <id value="74d4c070-6596-8252-8ad9-afa515a41fev"/>
             <status value="current"/>
             <content>
                <attachment>
@@ -320,9 +324,11 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance1"/>
+        		<!--substance1-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821152"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+        			<!--Organization/substance-manufacturer-->
+               <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -335,7 +341,8 @@
       <fullUrl value="urn:uuid:9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
-            <id value="substance-manufacturer"/>
+				<!--substance-manufacturer-->
+            <id value="9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             <identifier>
 					<!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -359,9 +366,10 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>
       <resource>
          <SubstanceDefinition>
-            <id value="startingMaterial"/>
+                <!--startingMaterial-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821153"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+               <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
                <name value="Stelbatosubstance"/>
@@ -373,7 +381,8 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>
       <resource>
          <SubstanceDefinition>
-            <id value="resultingMaterial"/>
+                <!--resultingMaterial-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821154"/>
             <name>
                <name value="Resultothane"/>
             </name>
@@ -384,9 +393,10 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>
       <resource>
          <SubstanceDefinition>
-            <id value="processingMaterial"/>
+                <!--processingMaterial-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821155"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+               <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
                <name value="Processohol"/>

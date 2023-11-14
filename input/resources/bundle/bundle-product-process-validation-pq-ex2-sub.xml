@@ -12,8 +12,8 @@
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-            <id value="validationProtocol"/>
-            
+                <!--validationProtocol-->
+            <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="DP PROCESS VALIDATION"/>
             <type>
@@ -30,7 +30,8 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
+                	<!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+               <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
             </subjectReference>
             <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
             <action>
@@ -73,7 +74,8 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
-                           <reference value="SubstanceDefinition/startingMaterial"/>
+            						<!--SubstanceDefinition/startingMaterial-->
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                         </valueReference>
                      </extension>
                   </typeReference>
@@ -89,7 +91,8 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
-                           <reference value="SubstanceDefinition/intermediateMaterial"/>
+            						<!--SubstanceDefinition/intermediateMaterial-->
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                         </valueReference>
                      </extension>
                   </typeReference>
@@ -105,7 +108,8 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
-                           <reference value="SubstanceDefinition/resultingMaterial"/>
+            						<!--SubstanceDefinition/resultingMaterial-->
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
                   </typeReference>
@@ -197,7 +201,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
-                           <reference value="SubstanceDefinition/startingMaterialStep2"/>
+                           <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821153"/>
                         </valueReference>
                      </extension>
                   </typeReference>
@@ -213,7 +217,8 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
-                           <reference value="SubstanceDefinition/intermediateMaterialStep2"/>
+                                    <!--SubstanceDefinition/intermediateMaterialStep2-->
+                           <reference value="SubstanceDefinition/c458791f-7cb8-428e-84f7-8a205f821155"/>
                         </valueReference>
                      </extension>
                   </typeReference>
@@ -229,7 +234,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
-                           <reference value="SubstanceDefinition/resultingMaterialStep2"/>
+                           <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
                   </typeReference>
@@ -258,10 +263,12 @@
          <DiagnosticReport>
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
-            <id value="processValidationReport"/>
+                <!--processValidationReport-->
+            <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/validationProtocol"/>
+                        <!--PlanDefinition/validationProtocol-->
+                  <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -274,49 +281,49 @@
             </code>
             <effectiveDateTime value="2020-12"/>
             <result>
-               <reference value="Observation/step1Yield1"/>
+               <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/step1Yield2"/>
+               <reference value="Observation/9c56948a-2b39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/step1Yield3"/>
+               <reference value="Observation/9c56948a-2a39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/residualWaterContent1"/>
+               <reference value="Observation/9c56958c-2a39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/residualWaterContent2"/>
+               <reference value="Observation/9c56968a-2b39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/residualWaterContent3"/>
+               <reference value="Observation/9c56978a-2a39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/appearanceSubstance1"/>
+               <reference value="Observation/9c56948c-2a39-6609-2c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/appearanceSubstance2"/>
+               <reference value="Observation/9c56948c-2a49-6609-2c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/appearanceSubstance3"/>
+               <reference value="Observation/9c56948c-2a39-6609-2c01-4d197eb57a33"/>
             </result>
             <result>
-               <reference value="Observation/identificationSubstance1"/>
+               <reference value="Observation/9c56958c-2a39-6609-2c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/identificationSubstance2"/>
+               <reference value="Observation/9c56968c-2a49-6609-2c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/identificationSubstance3"/>
+               <reference value="Observation/9c56978c-2a39-6609-2c01-4d197eb57a33"/>
             </result>
             <result>
-               <reference value="Observation/step2Yield1"/>
+               <reference value="Observation/9c56948d-2a39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/step2Yield2"/>
+               <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a33"/>
             </result>
             <result>
-               <reference value="Observation/step2Yield3"/>
+               <reference value="Observation/9c56948b-2a39-6609-1c01-4d197ea57a33"/>
             </result>
             <conclusion value="The samples have been assessed and the conclusion is..."/>
          </DiagnosticReport>
@@ -326,7 +333,8 @@
       <fullUrl value="urn:uuid:fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <id value="AppearanceSubstance"/>
+                <!--AppearanceSubstance-->
+            <id value="fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
             <title value="Appearance"/>
             <status value="active"/>
@@ -353,7 +361,8 @@
       <fullUrl value="urn:uuid:3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
       <resource>
          <ObservationDefinition>
-            <id value="IdentificationSubstance"/>
+                <!--IdentificationSubstance-->
+            <id value="3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
             <title value="ID by HPLC"/>
             <status value="active"/>
@@ -380,7 +389,8 @@
       <fullUrl value="urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
       <resource>
          <ObservationDefinition>
-            <id value="AssaySubstance"/>
+                <!--AssaySubstance-->
+            <id value="12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
             <title value="Assay by HPLC (as is) (w/w%)"/>
             <status value="active"/>
@@ -418,7 +428,8 @@
       <fullUrl value="urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <id value="Step1Yield"/>
+                <!--Step1Yield-->
+            <id value="fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="Yield (%)"/>
             <status value="active"/>
@@ -437,7 +448,8 @@
       <fullUrl value="urn:uuid:fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <id value="Step2Yield"/>
+                <!--Step2Yield-->
+            <id value="fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="Yield (%)"/>
             <status value="active"/>
@@ -456,7 +468,8 @@
       <fullUrl value="urn:uuid:fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <id value="ResidualWaterContent"/>
+                <!--ResidualWaterContent-->
+            <id value="fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
             <title value="Residual Water Content (w/w%)"/>
             <status value="active"/>
@@ -495,7 +508,8 @@
       <fullUrl value="urn:uuid:fc27b5d6-9ff1-91c2-2d16-57cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            <id value="ResidualStartingMaterial1byHPLC"/>
+                <!--ResidualStartingMaterial1byHPLC-->
+            <id value="fc27b5d6-9ff1-91c2-2d16-57cb5b295e72"/>
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72"/>
             <title value="Reaction conversion: residual starting material 1 by HPLC (Step Aa) (LC area %)"/>
             <status value="active"/>
@@ -534,9 +548,10 @@
       <fullUrl value="urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="appearanceSubstance1"/>
+                <!--appearanceSubstance1-->
+            <id value="9c56948c-2a39-6609-2c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/AppearanceSubstance"/>
+               <reference value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -548,7 +563,8 @@
                <text value="Appearance"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-1"/>
+                    <!--Substance/actual-batch-substance-itermediate-1-->
+               <reference value="Substance/fc178763-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -562,9 +578,10 @@
       <fullUrl value="urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="appearanceSubstance2"/>
+                <!--appearanceSubstance2-->
+            <id value="9c56948c-2a49-6609-2c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/AppearanceSubstance"/>
+               <reference value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -576,7 +593,8 @@
                <text value="Appearance"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-2"/>
+                    <!--Substance/actual-batch-substance-itermediate-2-->
+               <reference value="Substance/fc178764-81d5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -590,9 +608,10 @@
       <fullUrl value="urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33"/>
       <resource>
          <Observation>
-            <id value="appearanceSubstance3"/>
+                <!--appearanceSubstance3-->
+            <id value="9c56948c-2a39-6609-2c01-4d197eb57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/AppearanceSubstance"/>
+               <reference value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -604,7 +623,8 @@
                <text value="Appearance"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-3"/>
+                    <!--Substance/actual-batch-substance-itermediate-3-->
+               <reference value="Substance/fc178764-81d6-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -618,9 +638,11 @@
       <fullUrl value="urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="identificationSubstance1"/>
+                <!--identificationSubstance1-->
+            <id value="9c56958c-2a39-6609-2c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/IdentificationSubstance"/>
+                    <!--ObservationDefinition/IdentificationSubstance-->
+               <reference value="ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -632,7 +654,8 @@
                <text value="ID by HPLC"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-1"/>
+                    <!--Substance/actual-batch-substance-itermediate-1-->
+               <reference value="Substance/fc178763-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -646,9 +669,11 @@
       <fullUrl value="urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="identificationSubstance2"/>
+                <!--identificationSubstance2-->
+            <id value="9c56968c-2a49-6609-2c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/IdentificationSubstance"/>
+                    <!--ObservationDefinition/IdentificationSubstance-->
+               <reference value="ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -660,7 +685,8 @@
                <text value="ID by HPLC"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-2"/>
+                    <!--Substance/actual-batch-substance-itermediate-2-->
+               <reference value="Substance/fc178764-81d5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -674,9 +700,11 @@
       <fullUrl value="urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33"/>
       <resource>
          <Observation>
-            <id value="identificationSubstance3"/>
+                <!--identificationSubstance3-->
+            <id value="9c56978c-2a39-6609-2c01-4d197eb57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/IdentificationSubstance"/>
+                    <!--ObservationDefinition/IdentificationSubstance-->
+               <reference value="ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -688,7 +716,8 @@
                <text value="ID by HPLC"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-3"/>
+                    <!--Substance/actual-batch-substance-itermediate-3-->
+               <reference value="Substance/fc178764-81d6-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -702,9 +731,10 @@
       <fullUrl value="urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="step1Yield1"/>
+                <!--step1Yield1-->
+            <id value="9c56948c-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/Step1Yield"/>
+               <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -716,7 +746,8 @@
                <text value="Yield (%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-1"/>
+                    <!--Substance/actual-batch-substance-itermediate-1-->
+               <reference value="Substance/fc178763-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -733,9 +764,10 @@
       <fullUrl value="urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="step1Yield2"/>
+                <!--step1Yield2-->
+            <id value="9c56948a-2b39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/Step1Yield"/>
+               <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -747,7 +779,8 @@
                <text value="Yield (%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-2"/>
+                    <!--Substance/actual-batch-substance-itermediate-2-->
+               <reference value="Substance/fc178764-81d5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -764,9 +797,10 @@
       <fullUrl value="urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="step1Yield3"/>
+                <!--step1Yield3-->
+            <id value="9c56948a-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/Step1Yield"/>
+               <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -778,7 +812,8 @@
                <text value="Yield (%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-3"/>
+                    <!--Substance/actual-batch-substance-itermediate-3-->
+               <reference value="Substance/fc178764-81d6-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -795,9 +830,10 @@
       <fullUrl value="urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="step2Yield1"/>
+                <!--step2Yield1-->
+            <id value="9c56948d-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/Step2Yield"/>
+               <reference value="ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -809,7 +845,8 @@
                <text value="Yield (%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-step2-1"/>
+                    <!--Substance/actual-batch-substance-itermediate-step2-1-->
+               <reference value="Substance/fc178763-81c5-5656-9754-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -826,9 +863,10 @@
       <fullUrl value="urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="step2Yield2"/>
+                <!--step2Yield2-->
+            <id value="9c56948c-2b39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/Step2Yield"/>
+               <reference value="ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -840,7 +878,8 @@
                <text value="Yield (%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-step2-2"/>
+                    <!--Substance/actual-batch-substance-itermediate-step2-2-->
+               <reference value="Substance/fc178764-81d5-5656-9764-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -857,9 +896,10 @@
       <fullUrl value="urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="step2Yield3"/>
+                <!--step2Yield3-->
+            <id value="9c56948b-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/Step2Yield"/>
+               <reference value="ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -871,7 +911,8 @@
                <text value="Yield (%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-step2-3"/>
+                    <!--Substance/actual-batch-substance-itermediate-step2-3-->
+               <reference value="Substance/fc178764-81d6-6656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -888,9 +929,11 @@
       <fullUrl value="urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="residualWaterContent1"/>
+                <!--residualWaterContent1-->
+            <id value="9c56958c-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/ResidualWaterContent"/>
+                    <!--ObservationDefinition/ResidualWaterContent-->
+               <reference value="ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -902,7 +945,8 @@
                <text value="ResidualWaterContent (w/w%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-1"/>
+                    <!--Substance/actual-batch-substance-itermediate-1-->
+               <reference value="Substance/fc178763-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -919,9 +963,11 @@
       <fullUrl value="urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="residualWaterContent2"/>
+                <!--residualWaterContent2-->
+            <id value="9c56968a-2b39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/ResidualWaterContent"/>
+                    <!--ObservationDefinition/ResidualWaterContent-->
+               <reference value="ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -933,7 +979,8 @@
                <text value="ResidualWaterContent (w/w%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-2"/>
+                    <!--Substance/actual-batch-substance-itermediate-2-->
+               <reference value="Substance/fc178764-81d5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -950,9 +997,11 @@
       <fullUrl value="urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33"/>
       <resource>
          <Observation>
-            <id value="residualWaterContent3"/>
+                <!--residualWaterContent3-->
+            <id value="9c56978a-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/ResidualWaterContent"/>
+                    <!--ObservationDefinition/ResidualWaterContent-->
+               <reference value="ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -964,7 +1013,8 @@
                <text value="ResidualWaterContent (w/w%)"/>
             </code>
             <subject>
-               <reference value="Substance/actual-batch-substance-itermediate-3"/>
+                    <!--Substance/actual-batch-substance-itermediate-3-->
+               <reference value="Substance/fc178764-81d6-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -981,7 +1031,8 @@
       <fullUrl value="urn:uuid:23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
       <resource>
          <Organization>
-            <id value="substance-manufacturer"/>
+				<!--substance-manufacturer-->
+            <id value="23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
             <identifier>
 					<!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -1015,12 +1066,13 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substancedefinition-component-substance-drug-pq-ex1"/>
+                <!--substancedefinition-component-substance-dxpq-ex1-->
+            <id value="57a9af63-315d-1585-a261-0e337b289390"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             </meta>
             <manufacturer>
-               <reference value="Organization/organization-drug-pq-ex1"/>
+               <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
@@ -1033,9 +1085,11 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153"/>
       <resource>
          <SubstanceDefinition>
-            <id value="startingMaterial"/>
+				<!--startingMaterial-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821153"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+					<!--Organization/substance-manufacturer-->
+               <reference value="Organization/23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
             </manufacturer>
             <name>
                <name value="Stelbatosubstance"/>
@@ -1047,7 +1101,8 @@
       <fullUrl value="urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-starting-1"/>
+				<!--actual-batch-substance-starting-1-->
+            <id value="fc178762-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1070,7 +1125,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/startingMaterial"/>
+						<!--SubstanceDefinition/startingMaterial-->
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                </reference>
             </code>
          </Substance>
@@ -1080,7 +1136,8 @@
       <fullUrl value="urn:uuid:fc178762-81d5-5656-9744-13c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-starting-2"/>
+				<!--actual-batch-substance-starting-2-->
+            <id value="fc178762-81d5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1103,7 +1160,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/startingMaterial"/>
+						<!--SubstanceDefinition/startingMaterial-->
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                </reference>
             </code>
          </Substance>
@@ -1113,7 +1171,8 @@
       <fullUrl value="urn:uuid:fc178762-81d5-5656-9744-23c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-starting-3"/>
+                <!--actual-batch-substance-starting-3-->
+            <id value="fc178762-81d5-5656-9744-23c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1136,7 +1195,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/startingMaterial"/>
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                </reference>
             </code>
          </Substance>
@@ -1146,7 +1205,8 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154"/>
       <resource>
          <SubstanceDefinition>
-            <id value="resultingMaterial"/>
+				<!--resultingMaterial-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821154"/>
             <name>
                <name value="Resultothane"/>
             </name>
@@ -1157,9 +1217,11 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155"/>
       <resource>
          <SubstanceDefinition>
-            <id value="intermediateMaterial"/>
+			    <!--intermediateMaterial-->
+            <id value="c458791f-7cb8-428e-83f7-8a205f821155"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+					<!--Organization/substance-manufacturer-->
+               <reference value="Organization/23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
             </manufacturer>
             <name>
                <name value="Processohol"/>
@@ -1171,7 +1233,8 @@
       <fullUrl value="urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-itermediate-1"/>
+				<!--actual-batch-substance-itermediate-1-->
+            <id value="fc178763-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1185,7 +1248,8 @@
                </extension>
                <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                   <valueReference>
-                     <reference value="Substance/actual-batch-substance-starting-1"/>
+							<!--Substance/actual-batch-substance-starting-1-->
+                     <reference value="Substance/fc178762-81c5-5656-9744-13c7ad1e595b"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1195,7 +1259,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/intermediateMaterial"/>
+					    <!--SubstanceDefinition/intermediateMaterial-->
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                </reference>
             </code>
          </Substance>
@@ -1205,7 +1270,8 @@
       <fullUrl value="urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-itermediate-2"/>
+				<!--actual-batch-substance-itermediate-2-->
+            <id value="fc178764-81d5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1219,7 +1285,8 @@
                </extension>
                <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                   <valueReference>
-                     <reference value="Substance/actual-batch-substance-starting-2"/>
+							<!--Substance/actual-batch-substance-starting-2-->
+                     <reference value="Substance/fc178762-81d5-5656-9744-13c7ad1e595b"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1229,7 +1296,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/intermediateMaterial"/>
+					    <!--SubstanceDefinition/intermediateMaterial-->
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                </reference>
             </code>
          </Substance>
@@ -1239,7 +1307,8 @@
       <fullUrl value="urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-itermediate-3"/>
+                <!--actual-batch-substance-itermediate-3-->
+            <id value="fc178764-81d6-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1253,7 +1322,8 @@
                </extension>
                <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                   <valueReference>
-                     <reference value="Substance/actual-batch-substance-starting-3"/>
+                            <!--Substance/actual-batch-substance-starting-3-->
+                     <reference value="Substance/fc178762-81d5-5656-9744-23c7ad1e595b"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1263,7 +1333,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/intermediateMaterial"/>
+                        <!--SubstanceDefinition/intermediateMaterial-->
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                </reference>
             </code>
          </Substance>
@@ -1273,9 +1344,11 @@
       <fullUrl value="urn:uuid:c458791f-8cb8-428e-83f7-8a205f821153"/>
       <resource>
          <SubstanceDefinition>
-            <id value="startingMaterialStep2"/>
+                <!--startingMaterialStep2-->
+            <id value="c458791f-8cb8-428e-83f7-8a205f821153"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+                    <!--Organization/substance-manufacturer-->
+               <reference value="Organization/23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
             </manufacturer>
             <name>
                <name value="Stelbatosubstance2"/>
@@ -1287,7 +1360,8 @@
       <fullUrl value="urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-starting-step2-1"/>
+                <!--actual-batch-substance-starting-step2-1-->
+            <id value="fc178762-81c5-5656-9744-13c7ad2e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1310,7 +1384,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/startingMaterialStep2"/>
+                        <!--SubstanceDefinition/startingMaterialStep2-->
+                  <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821153"/>
                </reference>
             </code>
          </Substance>
@@ -1320,7 +1395,8 @@
       <fullUrl value="urn:uuid:fc178762-81d5-5656-9744-13c7ad1e596b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-starting-step2-2"/>
+                <!--actual-batch-substance-starting-step2-2-->
+            <id value="fc178762-81d5-5656-9744-13c7ad1e596b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1343,7 +1419,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/startingMaterialStep2"/>
+                        <!--SubstanceDefinition/startingMaterialStep2-->
+                  <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821153"/>
                </reference>
             </code>
          </Substance>
@@ -1353,7 +1430,8 @@
       <fullUrl value="urn:uuid:fc178762-81d5-5656-9744-23c7ad1e597b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-starting-step2-3"/>
+                <!--actual-batch-substance-starting-step2-3-->
+            <id value="fc178762-81d5-5656-9744-23c7ad1e597b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1376,7 +1454,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/startingMaterialStep2"/>
+                        <!--SubstanceDefinition/startingMaterialStep2-->
+                  <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821153"/>
                </reference>
             </code>
          </Substance>
@@ -1386,9 +1465,11 @@
       <fullUrl value="urn:uuid:c458791f-7cb8-428e-84f7-8a205f821155"/>
       <resource>
          <SubstanceDefinition>
-            <id value="intermediateMaterialStep2"/>
+                <!--intermediateMaterialStep2-->
+            <id value="c458791f-7cb8-428e-84f7-8a205f821155"/>
             <manufacturer>
-               <reference value="Organization/substance-manufacturer"/>
+                    <!--Organization/substance-manufacturer-->
+               <reference value="Organization/23dbbd32-2962-9fc3-40b1-67e864f21cd2"/>
             </manufacturer>
             <name>
                <name value="ProcessoholStep2"/>
@@ -1400,7 +1481,8 @@
       <fullUrl value="urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-itermediate-step2-1"/>
+                <!--actual-batch-substance-itermediate-step2-1-->
+            <id value="fc178763-81c5-5656-9754-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1414,7 +1496,8 @@
                </extension>
                <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                   <valueReference>
-                     <reference value="Substance/actual-batch-substance-starting-step2-1"/>
+                            <!--Substance/actual-batch-substance-starting-step2-1-->
+                     <reference value="Substance/fc178762-81c5-5656-9744-13c7ad2e595b"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1424,7 +1507,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/intermediateMaterialStep2"/>
+                        <!--SubstanceDefinition/intermediateMaterialStep2-->
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-84f7-8a205f821155"/>
                </reference>
             </code>
          </Substance>
@@ -1434,7 +1518,8 @@
       <fullUrl value="urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-itermediate-step2-2"/>
+                <!--actual-batch-substance-itermediate-step2-2-->
+            <id value="fc178764-81d5-5656-9764-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1448,7 +1533,8 @@
                </extension>
                <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                   <valueReference>
-                     <reference value="Substance/actual-batch-substance-starting-step2-2"/>
+                            <!--Substance/actual-batch-substance-starting-step2-2-->
+                     <reference value="Substance/fc178762-81d5-5656-9744-13c7ad1e596b"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1458,7 +1544,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/intermediateMaterialStep2"/>
+                        <!--SubstanceDefinition/intermediateMaterialStep2-->
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-84f7-8a205f821155"/>
                </reference>
             </code>
          </Substance>
@@ -1468,7 +1555,8 @@
       <fullUrl value="urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-itermediate-step2-3"/>
+                <!--actual-batch-substance-itermediate-step2-3-->
+            <id value="fc178764-81d6-6656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1482,7 +1570,8 @@
                </extension>
                <extension url="http://accumulus.org/fhir/extension/batchDerivedFrom"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                   <valueReference>
-                     <reference value="Substance/actual-batch-substance-starting-step2-3"/>
+                            <!--Substance/actual-batch-substance-starting-step2-3-->
+                     <reference value="Substance/fc178762-81d5-5656-9744-23c7ad1e597b"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1492,7 +1581,8 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/intermediateMaterialStep2"/>
+                        <!--SubstanceDefinition/intermediateMaterialStep2-->
+                  <reference value="SubstanceDefinition/c458791f-7cb8-428e-84f7-8a205f821155"/>
                </reference>
             </code>
          </Substance>
@@ -1502,7 +1592,8 @@
       <fullUrl value="urn:uuid:c458791f-8cb8-428e-83f7-8a205f821154"/>
       <resource>
          <SubstanceDefinition>
-            <id value="resultingMaterialStep2"/>
+                <!--resultingMaterialStep2-->
+            <id value="c458791f-8cb8-428e-83f7-8a205f821154"/>
             <name>
                <name value="ResultothaneStep2"/>
             </name>
@@ -1515,7 +1606,7 @@
          <Organization>
                 
 
-            <id value="organization-drug-pq-ex1"/>
+            <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
             </meta>
@@ -1543,7 +1634,8 @@
       <resource>
          <Substance>
                 <!--<id value="actual-batch-substance"/>-->
-            <id value="substance-drug-pq-ex1-unlinked"/>
+                <!--substance-dxpq-ex1-unlinked-->
+            <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
@@ -1584,7 +1676,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-drug-pq-ex1"/>
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1594,13 +1686,14 @@
             <identifier>
                <value value="SUB1SiteA"/>
                <assigner>
-                  <reference value="Organization/organization-drug-pq-ex1"/>
+                  <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                </assigner>
             </identifier>
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
+                        <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
@@ -1610,7 +1703,8 @@
       <fullUrl value="urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-2-unlinked"/>
+                <!--actual-batch-substance-2-unlinked-->
+            <id value="cb31d747-2338-88d5-342c-8e9c097e4dad"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
@@ -1648,7 +1742,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-drug-pq-ex1"/>
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1658,13 +1752,14 @@
             <identifier>
                <value value="SUB2SiteA"/>
                <assigner>
-                  <reference value="Organization/organization-drug-pq-ex1"/>
+                  <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                </assigner>
             </identifier>
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
+                        <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
@@ -1674,7 +1769,8 @@
       <fullUrl value="urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
       <resource>
          <Substance>
-            <id value="actual-batch-substance-3-unlinked"/>
+                <!--actual-batch-substance-3-unlinked-->
+            <id value="1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
@@ -1712,7 +1808,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-drug-pq-ex1"/>
+                     <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
             </extension>
@@ -1723,13 +1819,14 @@
             <identifier>
                <value value="SUB3SiteA"/>
                <assigner>
-                  <reference value="Organization/organization-drug-pq-ex1"/>
+                  <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                </assigner>
             </identifier>
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
+                        <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
+                  <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
          </Substance>
