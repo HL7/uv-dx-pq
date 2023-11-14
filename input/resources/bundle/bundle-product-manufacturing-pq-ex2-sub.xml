@@ -167,7 +167,7 @@
                   <documentation>
                      <type value="specification-of"/>
                      <resourceReference>
-                        <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fev"/>
+                        <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fef"/>
                      </resourceReference>
                   </documentation>
                   <goalId value="goal-control-pH"/>
@@ -305,12 +305,12 @@
    </entry>
    <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
    <entry>
-      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev"/>
+      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fef"/>
       <resource>
             <!-- #84 -->
          <DocumentReference>
                 <!--DocumentReference-image-->
-            <id value="74d4c070-6596-8252-8ad9-afa515a41fev"/>
+            <id value="74d4c070-6596-8252-8ad9-afa515a41fef"/>
             <status value="current"/>
             <content>
                <attachment>
