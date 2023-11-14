@@ -101,6 +101,19 @@
         />
       </type>
     </element>
+    
+    <element id="Bundle.entry:Actual-Batch-Substance">
+      <path value="Bundle.entry"/>
+      <sliceName value="Actual-Batch-Substance"/>
+    </element>
+    <element id="Bundle.entry:Actual-Batch-Substance.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Substance"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
+      </type>
+    </element>
   
     <element id="Bundle.entry:Protocol">
       <path value="Bundle.entry"/>
