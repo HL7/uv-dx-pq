@@ -3,18 +3,56 @@ Provide details about the drug substance and drug product nomenclature; structur
 
 ### Component Diagram
 <table>
-<tr><td><img src="identification_FHIR_resources.png" width="850"/></td></tr>
+<tr><td> </td></tr>
 </table>
  
 ### Description of Components
+#### Drug Product
+**Composition**: Narrative text section(s)
+
+**Manufactured Item Definition**: Information about the physical packaged medication item, such as a tablet or capsule
+
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
+
+#### Drug Product Microbiological Attributes
+**Diagnostic Report**: Contains all rest results as a group and captures conclusions
+
+**Manufactured Item Definition**: Information about the physical packaged medication item, such as a tablet or capsule
+
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+
+**Observation**: The results of a specific test mentioned in the Observation Definition
+
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
+
+#### Drug Product Excipients
 **Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
-**Packaged Product Definition**: The packaging for the drug substance or product
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
 
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
+
+#### Drug Substance General Properties
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
+
+#### Drug Substance Elucidation of Structure
+**Diagnostic Report**: Contains all rest results as a group and captures conclusions
+
+**Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
+
+**Observation**: The results of a specific test mentioned in the Observation Definition
+
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
+
+**Plan Definition**: Describes the stability study protocol
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
+
+**Substance**: Identifying information about an actual batch of aubstance (an instance)
 
 ### Examples
 **CTD section samples** (PDF):

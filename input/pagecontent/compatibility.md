@@ -7,7 +7,25 @@ Provide details about compatibility studies and results.
 </table>
  
 ### Description of Components
+**Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
+**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
+
+**Medication**: Describes the batches that underwent stability testing
+
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+
+**Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
+
+**Observation**: The results of a specific test mentioned in the Observation Definition
+
+**Organization**: The company/site that performed the testing or manufacturing
+
+**Packaged Product Definition**: Information about the packaging for a drug product or drug substance
+
+**Plan Definition**: Describes the stability study protocol
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
 ### Examples
 **CTD section samples** (PDF):

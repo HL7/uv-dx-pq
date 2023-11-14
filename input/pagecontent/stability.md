@@ -7,26 +7,31 @@ Provide details about a stability study including stability study design (tests 
 </table>
 
 ### Description of Components
-**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+**Activity Definition**: Contains the Observation Definition resources that establish the list of tests and their acceptance criteria
+
+**Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
 **Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
-
 **Medication**: Describes the batches that underwent stability testing
 
-**Plan Definition**: Describes the stability study protocol
-
-**Activity Definition**: Contains the Observation Definition resources that establish the list of tests and their acceptance criteria
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
 **Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
 
 **Observation**: The results of a specific test mentioned in the Observation Definition
 
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
+
+**Plan Definition**: Describes the stability study protocol
+
 **Specimen Definition**: Describes the storage conditions and duration for each test
 
-**Diagnostic Report**: Contains all rest results as a group and captures conclusions
+**Specimen**: Identifying information about an individual specimen (an instance)
 
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
+
+**Substance**: Identifying information about an actual batch of aubstance (an instance)
 
 ### Examples
 **CTD section samples** (PDF):

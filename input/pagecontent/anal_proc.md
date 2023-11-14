@@ -7,15 +7,17 @@ Provide details about test methods used to analyze drug substances and drug prod
 </table>
  
 ### Description of Components
+**DeviceDefinition**: Information about devices/equipment used testing or manufacture
+
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+**Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
 
-**Plan Definition**: Describes the test protocol
-
-**Observation Definition**: Each individual test and acceptance criteria; also test grouping
+**Plan Definition**: Describes the stability study protocol
 
 **Specimen Definition**: Describes the storage conditions and duration for each test
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
 ### Examples
 **CTD section samples** (PDF):

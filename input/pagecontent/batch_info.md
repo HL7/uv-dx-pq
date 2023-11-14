@@ -7,6 +7,15 @@ Provide details about batch(es) of the  drug substance and drug product with ide
 </table>
  
 ### Description of Components
+**Medication**: Describes the batches that underwent stability testing
+
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
+
+**Substance**: Identifying information about an actual batch of aubstance (an instance)
 
 
 ### Examples

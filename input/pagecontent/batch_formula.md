@@ -7,7 +7,13 @@ Provide details about drug product master batch properties and formula.
 </table>
  
 ### Description of Components
+**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
+**Medication**: Describes the batches that underwent stability testing
+
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
 ### Examples
 **CTD section samples** (PDF):

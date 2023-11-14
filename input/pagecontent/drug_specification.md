@@ -6,16 +6,18 @@ Provide details about drug substance or drug product release and stability speci
 <tr><td><img src="specification_FHIR_resources [2023-07-29 Rik].png" width="850"/></td></tr>
 </table>
  
-### Description of Components
-**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
-
+### Description of ComponentsComponent Building Blocks
 **Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
-**Observation Definition**: Each individual test and acceptance criteria; also test grouping
+**Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
 
-**Plan Definition**: Describes the drug substance or drug product specification
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
+
+**Plan Definition**: Describes the stability study protocol
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
 ### Examples
 **CTD section samples** (PDF):

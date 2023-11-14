@@ -7,13 +7,19 @@ Provide a manufacturing process description and details about unit operations, p
 </table>
  
 ### Description of Components
+**DeviceDefinition**: Information about devices/equipment used testing or manufacture
+
+**Document Reference**: Document(s) of any kind, including a diagram or image
+
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
 **Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
-**Substance Definition**: Chemical or biological details about the substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
 
 **Plan Definition**: Describes the manufacturing process protocol
+
+**Substance Definition**: Chemical or biological details about the substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
 
 ### Examples
 **CTD section samples** (PDF):
