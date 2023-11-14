@@ -14,8 +14,7 @@
       <resource>
          <DiagnosticReport>
                 <!-- <id value="studyResultsReport"/>-->
-                <!--diagnosticreport-product-impurities-->
-            <id value="6f4a3311-92c5-2b4a-533e-76341e414c63"/>
+            <id value="diagnosticreport-product-impurities"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
             </meta>

@@ -2,9 +2,8 @@
 <!-- Product Manufacturing -->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-product-manufacturing-pq-ex2-sub"/>
-<!--   <id value="product-manufacturing"/>-->
    <meta>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/>-->
+        <!--profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/-->
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
    </meta>
    <type value="collection"/>
