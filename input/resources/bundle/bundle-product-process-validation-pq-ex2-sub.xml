@@ -2,10 +2,8 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <!-- Substance Process Validation -->
    <id value="bundle-product-process-validation-pq-ex2-sub"/>
-<!--   <id value="substance-process-validation"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
-<!--      <profile value="http://accumulus.org/fhir/dx-cmc/process-validation-substance"/>-->
    </meta>
    <type value="collection"/>
    <entry>
@@ -128,7 +126,8 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/Step1Yield"/>
+                  <!--ObservationDefinition/Step1Yield-->
+                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -144,13 +143,15 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/ResidualWaterContent"/>
+                  <!--ObservationDefinition/ResidualWaterContent-->
+                  <definitionCanonical value="ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/ResidualStartingMaterial1byHPLC"/>
+                  <!--ObservationDefinition/ResidualStartingMaterial1byHPLC-->
+                  <definitionCanonical value="ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -166,19 +167,22 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/AppearanceSubstance"/>
+                  <!--ObservationDefinition/AppearanceSubstance-->
+                  <definitionCanonical value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/IdentificationSubstance"/>
+                  <!--ObservationDefinition/IdentificationSubstance-->
+                  <definitionCanonical value="ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/AssaySubstance"/>
+                  <!--ObservationDefinition/AssaySubstance-->
+                  <definitionCanonical value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
                </action>
             </action>
             <action>
@@ -204,6 +208,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
+                                    <!--SubstanceDefinition/startingMaterialStep2-->
                            <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821153"/>
                         </valueReference>
                      </extension>
@@ -239,6 +244,7 @@
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
+                                    <!--SubstanceDefinition/resultingMaterialStep2-->
                            <reference value="SubstanceDefinition/c458791f-8cb8-428e-83f7-8a205f821154"/>
                         </valueReference>
                      </extension>
@@ -256,7 +262,8 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/Step2Yield"/>
+                  <!--ObservationDefinition/Step2Yield-->
+                  <definitionCanonical value="ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
                </action>
             </action>
          </PlanDefinition>
@@ -286,49 +293,49 @@
                </coding>
             </code>
             <effectiveDateTime value="2020-12"/>
-            <result>
+            <result><!--Observation/step1Yield1-->
                <reference value="Observation/9c56948c-2a39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/step1Yield2-->
                <reference value="Observation/9c56948a-2b39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/step1Yield3-->
                <reference value="Observation/9c56948a-2a39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/residualWaterContent1-->
                <reference value="Observation/9c56958c-2a39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/residualWaterContent2-->
                <reference value="Observation/9c56968a-2b39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/residualWaterContent3-->
                <reference value="Observation/9c56978a-2a39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/appearanceSubstance1-->
                <reference value="Observation/9c56948c-2a39-6609-2c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/appearanceSubstance2-->
                <reference value="Observation/9c56948c-2a49-6609-2c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/appearanceSubstance3-->
                <reference value="Observation/9c56948c-2a39-6609-2c01-4d197eb57a33"/>
             </result>
-            <result>
+            <result><!--Observation/identificationSubstance1-->
                <reference value="Observation/9c56958c-2a39-6609-2c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/identificationSubstance2-->
                <reference value="Observation/9c56968c-2a49-6609-2c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/identificationSubstance3-->
                <reference value="Observation/9c56978c-2a39-6609-2c01-4d197eb57a33"/>
             </result>
-            <result>
+            <result><!--Observation/step2Yield1-->
                <reference value="Observation/9c56948d-2a39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/step2Yield2-->
                <reference value="Observation/9c56948c-2b39-6609-1c01-4d197ea57a33"/>
             </result>
-            <result>
+            <result><!--Observation/step2Yield3-->
                <reference value="Observation/9c56948b-2a39-6609-1c01-4d197ea57a33"/>
             </result>
             <conclusion value="The samples have been assessed and the conclusion is..."/>
@@ -557,6 +564,7 @@
                 <!--appearanceSubstance1-->
             <id value="9c56948c-2a39-6609-2c01-4d197ea57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/AppearanceSubstance-->
                <reference value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -574,6 +582,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Off-white solid"/>
@@ -587,6 +596,7 @@
                 <!--appearanceSubstance2-->
             <id value="9c56948c-2a49-6609-2c01-4d197ea57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/AppearanceSubstance-->
                <reference value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -604,6 +614,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Off-white solid"/>
@@ -617,6 +628,7 @@
                 <!--appearanceSubstance3-->
             <id value="9c56948c-2a39-6609-2c01-4d197eb57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/AppearanceSubstance-->
                <reference value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -634,6 +646,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Off-white solid"/>
@@ -740,6 +753,7 @@
                 <!--step1Yield1-->
             <id value="9c56948c-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/Step1Yield-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -773,6 +787,7 @@
                 <!--step1Yield2-->
             <id value="9c56948a-2b39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/Step1Yield-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -806,6 +821,7 @@
                 <!--step1Yield3-->
             <id value="9c56948a-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/Step1Yield-->
                <reference value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -839,6 +855,7 @@
                 <!--step2Yield1-->
             <id value="9c56948d-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/Step2Yield-->
                <reference value="ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -872,6 +889,7 @@
                 <!--step2Yield2-->
             <id value="9c56948c-2b39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/Step2Yield-->
                <reference value="ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -905,6 +923,7 @@
                 <!--step2Yield3-->
             <id value="9c56948b-2a39-6609-1c01-4d197ea57a33"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/Step2Yield-->
                <reference value="ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1078,6 +1097,7 @@
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             </meta>
             <manufacturer>
+                    <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
@@ -1201,6 +1221,7 @@
             <instance value="true"/>
             <code>
                <reference>
+                        <!--SubstanceDefinition/startingMaterial-->
                   <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                </reference>
             </code>
@@ -1610,8 +1631,8 @@
       <fullUrl value="urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
       <resource>
          <Organization>
-                
-
+                <!--id value="substance-manufacturer"/-->
+                <!--organization-dxpq-ex1-->
             <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
@@ -1682,6 +1703,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
+                            <!--Organization/organization-dxpq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
@@ -1692,6 +1714,7 @@
             <identifier>
                <value value="SUB1SiteA"/>
                <assigner>
+            		    <!--Organization/organization-dxpq-ex1-->
                   <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                </assigner>
             </identifier>
@@ -1748,6 +1771,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
+                            <!--Organization/organization-dxpq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
@@ -1758,6 +1782,7 @@
             <identifier>
                <value value="SUB2SiteA"/>
                <assigner>
+            		    <!--Organization/organization-dxpq-ex1-->
                   <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                </assigner>
             </identifier>
@@ -1814,6 +1839,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
+                            <!--Organization/organization-dxpq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
@@ -1825,6 +1851,7 @@
             <identifier>
                <value value="SUB3SiteA"/>
                <assigner>
+            		    <!--Organization/organization-dxpq-ex1-->
                   <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                </assigner>
             </identifier>

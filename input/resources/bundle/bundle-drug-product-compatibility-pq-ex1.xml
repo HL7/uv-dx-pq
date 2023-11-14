@@ -2,7 +2,6 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <!-- Product compatibility -->
    <id value="bundle-drug-product-compatibility-pq-ex1"/>
-<!--   <id value="product-compatibility"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"/>
    </meta>
@@ -11,8 +10,7 @@
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                
-
+                <!--id value="validationProtocol"/-->
                 <!--plandefinition-compatibility-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
@@ -43,7 +41,6 @@
             </subjectReference>
             <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
             <action>
-               
                <title value="Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen"/>
                <!-- needs some other code -->
                <!--code>
@@ -57,25 +54,29 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/SE-UHPLCMainPeak"/>
+                  <!--ObservationDefinition/SE-UHPLCMainPeak-->
+                  <definitionCanonical value="ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/SE-UHPLCHMW"/>
+                  <!--ObservationDefinition/SE-UHPLCHMW-->
+                  <definitionCanonical value="ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/CEX-HPLCAcidicPeak"/>
+                  <!--ObservationDefinition/CEX-HPLCAcidicPeak-->
+                  <definitionCanonical value="ObservationDefinition/54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/CEX-HPLCMainPeak"/>
+                  <!--ObservationDefinition/CEX-HPLCMainPeak-->
+                  <definitionCanonical value="ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
                </action>
             </action>
          </PlanDefinition>
@@ -106,28 +107,28 @@
                </coding>
             </code>
             <effectiveDateTime value="2020-12"/>
-            <result>
+            <result><!--Observation/SE-UHPLCMainPeak1-->
                <reference value="Observation/44ba47fd-8964-4f96-6495-b2bec7f161e7"/>
             </result>
-            <result>
+            <result><!--Observation/SE-UHPLCMainPeak2-->
                <reference value="Observation/54ca47fd-8964-4f96-6495-b2bec7f162e7"/>
             </result>
-            <result>
+            <result><!--Observation/SE-UHPLCHMW1-->
                <reference value="Observation/44ba47fd-8964-4f97-6495-b2bec7f161e7"/>
             </result>
-            <result>
+            <result><!--Observation/SE-UHPLCHMW2-->
                <reference value="Observation/54ca47fd-8964-4f98-6495-b2bec7f162e7"/>
             </result>
-            <result>
+            <result><!--Observation/CEX-Acidic-1-->
                <reference value="Observation/54ba47fd-8964-4f96-6495-b2bec7f161e8"/>
             </result>
-            <result>
+            <result><!--Observation/CEX-Acidic-2-->
                <reference value="Observation/54ba48fd-8964-4f96-6495-b2bec7f161e7"/>
             </result>
-            <result>
+            <result><!--Observation/CEX-HPLC-1-->
                <reference value="Observation/54ba47fd-8964-4f96-6495-b2bec7f161e7"/>
             </result>
-            <result>
+            <result><!--Observation/CEX-HPLC-2-->
                <reference value="Observation/54bb47fd-8964-4f96-6495-b2bec7f161e7"/>
             </result>
             <conclusion value="The samples have been assessed and the conclusion is..."/>
@@ -353,6 +354,7 @@
                 <!--SE-UHPLCMainPeak2-->
             <id value="54ca47fd-8964-4f96-6495-b2bec7f162e7"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/SE-UHPLCMainPeak-->
                <reference value="ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -365,6 +367,7 @@
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
             <subject>
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -407,6 +410,7 @@
                 <!--SE-UHPLCHMW1-->
             <id value="44ba47fd-8964-4f97-6495-b2bec7f161e7"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/SE-UHPLCHMW-->
                <reference value="ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -419,6 +423,7 @@
                <text value="SE-UHPLC HMW (%)"/>
             </code>
             <subject>
+                    <!--Medication/medication-actual-batch-1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -461,6 +466,7 @@
                 <!--SE-UHPLCHMW2-->
             <id value="54ca47fd-8964-4f98-6495-b2bec7f162e7"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/SE-UHPLCHMW-->
                <reference value="ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -473,6 +479,7 @@
                <text value="SE-UHPLC HMW (%)"/>
             </code>
             <subject>
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -515,6 +522,7 @@
                 <!--CEX-HPLC-1-->
             <id value="54ba47fd-8964-4f96-6495-b2bec7f161e7"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/CEX-HPLCMainPeak-->
                <reference value="ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -527,10 +535,12 @@
                <text value="CEX-HPLC Main Peak (%)"/>
             </code>
             <subject>
+                    <!--Medication/medication-actual-batch-1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -569,6 +579,7 @@
                 <!--CEX-HPLC-2-->
             <id value="54bb47fd-8964-4f96-6495-b2bec7f161e7"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/CEX-HPLCMainPeak-->
                <reference value="ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
@@ -581,10 +592,12 @@
                <text value="CEX-HPLC Main Peak (%)"/>
             </code>
             <subject>
+                    <!--Medication/medication-actual-batch-2-->
                <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -623,6 +636,7 @@
                 <!--CEX-Acidic-1-->
             <id value="54ba47fd-8964-4f96-6495-b2bec7f161e8"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/CEX-HPLCAcidicPeak-->
                <reference value="ObservationDefinition/54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
             </instantiatesReference>
             <status value="final"/>
@@ -635,10 +649,12 @@
                <text value="CEX-HPLC Acidic Peak (%)"/>
             </code>
             <subject>
+                    <!--Medication/medication-actual-batch-1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -679,6 +695,7 @@
                 <!--CEX-Acidic-2-->
             <id value="54ba48fd-8964-4f96-6495-b2bec7f161e7"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/CEX-HPLCAcidicPeak-->
                <reference value="ObservationDefinition/54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
             </instantiatesReference>
             <status value="final"/>
@@ -691,10 +708,12 @@
                <text value="CEX-HPLC Acidic Peak (%)"/>
             </code>
             <subject>
+                    <!--Medication/medication-actual-batch-1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
