@@ -14,8 +14,6 @@ Provide details about drug substance and drug product components, materials, and
 
 **Packaged Product Definition**: Information about the packaging for a drug product or drug substance
 
-**Specimen Definition**: Describes the storage conditions and duration for each test
-
 **Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
 #### Drug Reference Standards

@@ -7,8 +7,6 @@ Provide details about primary and secondary packaging components for drug substa
 </table>
  
 ### Description of Components
-**DeviceDefinition**: Information about devices/equipment used testing or manufacture
-
 **Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
 **Manufactured Item Definition**: Information about the physical packaged medication item, such as a tablet or capsule
@@ -20,8 +18,6 @@ Provide details about primary and secondary packaging components for drug substa
 **Packaged Product Definition**: Information about the packaging for a drug product or drug substance
 
 **Plan Definition**: Describes the stability study protocol
-
-**Specimen Definition**: Describes the storage conditions and duration for each test
 
 **Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 

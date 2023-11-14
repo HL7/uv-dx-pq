@@ -7,23 +7,29 @@ Provide details about manufacturing process validation protocols and results.
 </table>
 
 ### Description of Components
-**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
+**Activity Definition**: Contains the Observation Definition resources that establish the list of tests and their acceptance criteria
+
+**DeviceDefinition**: Information about devices/equipment used testing or manufacture
+
+**Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
 **Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
-
 **Medication**: Describes the batches that underwent testing
 
-**Plan Definition**: Describes the process validation test protocol
-
-**Activity Definition**: Contains the Observation Definition resources that establish the list of tests and their acceptance criteria
+**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
 **Observation Definition**: Each individual test and acceptance criteria; also test grouping
 
 **Observation**: The results of a specific test mentioned in the Observation Definition
 
-**Diagnostic Report**: Contains all rest results as a group and captures conclusions
+**Organization** (not illustrated above): The company/site that performed the testing or manufacturing
+
+**Plan Definition**: Describes the process validation test protocol
+
+**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
+
+**Substance**: Identifying information about an actual batch of substance (an instance)
 
 ### Examples
 **CTD section samples** (PDF):
