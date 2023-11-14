@@ -126,6 +126,19 @@
       </type>
     </element>
     
+    <element id="Bundle.entry:Test-Set">
+      <path value="Bundle.entry"/>
+      <sliceName value="Test-Set"/>
+    </element>
+    <element id="Bundle.entry:Test-Set.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="ActivityDefinition"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
+      </type>
+    </element>
+    
     <element id="Bundle.entry:Test-Method">
       <path value="Bundle.entry"/>
       <sliceName value="Test-Method"/>
