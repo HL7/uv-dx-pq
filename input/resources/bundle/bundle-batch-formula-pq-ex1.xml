@@ -12,7 +12,8 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
+            	<!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <name>
                <productName value="Stalbatolol"/>
                <type>
@@ -30,10 +31,12 @@
       <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
       <resource>
          <Ingredient>
-            <id value="ingredient1"/>
+                <!--ingredient1-->
+            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -45,7 +48,8 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/substance1"/>
+                            <!--SubstanceDefinition/substance1-->
+                     <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
                      <display value="Stelbatolol"/>
                   </reference>
                </code>
@@ -69,10 +73,12 @@
       <fullUrl value="urn:uuid:b89fd9d2-80f9-0cfb-70a1-5a6572e73a65"/>
       <resource>
          <Ingredient>
-            <id value="excipient1"/>
+                <!--excipient1-->
+            <id value="b89fd9d2-80f9-0cfb-70a1-5a6572e73a65"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -107,10 +113,12 @@
       <fullUrl value="urn:uuid:b89ed9d2-81f9-0cfb-70a1-5a6572e73a65"/>
       <resource>
          <Ingredient>
-            <id value="excipient2"/>
+                <!--excipient2-->
+            <id value="b89ed9d2-81f9-0cfb-70a1-5a6572e73a65"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -145,10 +153,12 @@
       <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
       <resource>
          <Ingredient>
-            <id value="excipient3"/>
+                <!--excipient3-->
+            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -183,10 +193,12 @@
       <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70b1-5a6572e73a66"/>
       <resource>
          <Ingredient>
-            <id value="excipient4"/>
+                <!--excipient4-->
+            <id value="b89ed9d2-80f9-0cfb-70b1-5a6572e73a66"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -221,7 +233,8 @@
       <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance1"/>
+                <!--substance1-->
+            <id value="4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
             <name>
                <name value="Stelbatolol"/>
             </name>
@@ -233,14 +246,16 @@
       <fullUrl value="urn:uuid:bf17176f-9779-180b-5c59-e58cddc11070"/>
       <resource>
          <Medication>
-            <id value="medication-batch-formula-unlinked"/>
+                <!--medication-batch-formula-unlinked-->
+            <id value="bf17176f-9779-180b-5c59-e58cddc11070"/>
             <contained>
                <Substance>
                   <id value="substanceIngredient-1"/>
                   <instance value="false"/>
                   <code>
                      <reference>
-                        <reference value="SubstanceDefinition/substance1"/>
+                                <!--SubstanceDefinition/substance1-->
+                        <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
                      </reference>
                   </code>
                </Substance>
@@ -292,7 +307,8 @@
             <code> <!-- some other cases link via plandef and activity.product -->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
                <text value="Large Batch of Stelbatolol"/>
@@ -387,14 +403,16 @@
       <fullUrl value="urn:uuid:bf17176f-9779-180b-5c59-e58cddc11071"/>
       <resource>
          <Medication>
-            <id value="medication-batch-formula-2-unlinked"/>
+                <!--medication-batch-formula-2-unlinked-->
+            <id value="bf17176f-9779-180b-5c59-e58cddc11071"/>
             <contained>
                <Substance>
                   <id value="substanceIngredient-1"/>
                   <instance value="false"/>
                   <code>
                      <reference>
-                        <reference value="SubstanceDefinition/substance1"/>
+                                <!--SubstanceDefinition/substance1-->
+                        <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
                      </reference>
                   </code>
                </Substance>
@@ -446,7 +464,8 @@
             <code> <!-- some other cases link via plandef and activity.product -->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
                <text value="Small Batch of Stelbatolol"/>

@@ -12,7 +12,8 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
+            	<!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side."/>
             <name>
                <productName value="Stalbatolol"/>
@@ -32,12 +33,14 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
       <resource>
          <PackagedProductDefinition>
-            <id value="packagedproductdefinition-drug-pq-ex1"/>
+            	<!--packagedproductdefinition-dxpq-ex1-->
+            <id value="88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
             </meta>
             <packageFor>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </packageFor>
             <!-- #174 -->
             <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
@@ -49,10 +52,12 @@
       <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
       <resource>
          <Ingredient>
-            <id value="ingredient1"/>
+                <!--ingredient1-->
+            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -64,7 +69,7 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/substance1"/>
+                     <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
                      <display value="Stelbatolol"/>
                   </reference>
                </code>
@@ -95,10 +100,12 @@
       <fullUrl value="urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a65"/>
       <resource>
          <Ingredient>
-            <id value="excipient1"/>
+                <!--excipient1-->
+            <id value="b89ed9d3-80f9-0cfb-70a1-5a6572e73a65"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -117,7 +124,7 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/sd-excipient1"/>
+                     <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380475"/>
                      <display value="Mannitol"/>
                   </reference>
                </code>
@@ -147,10 +154,12 @@
       <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-71a1-5a6572e73a65"/>
       <resource>
          <Ingredient>
-            <id value="excipient2"/>
+                <!--excipient2-->
+            <id value="b89ed9d2-80f9-0cfb-71a1-5a6572e73a65"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -169,7 +178,7 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/sd-excipient2"/>
+                     <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380476"/>
                      <display value="Maize starch"/>
                   </reference>
                </code>
@@ -199,10 +208,12 @@
       <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
       <resource>
          <Ingredient>
-            <id value="excipient3"/>
+                <!--excipient3-->
+            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -221,7 +232,7 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/sd-excipient3"/>
+                     <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380477"/>
                      <display value="Calcium carboxymethylcellulose"/>
                   </reference>
                </code>
@@ -251,10 +262,12 @@
       <fullUrl value="urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a66"/>
       <resource>
          <Ingredient>
-            <id value="excipient4"/>
+                <!--excipient4-->
+            <id value="b89ed9d3-80f9-0cfb-70a1-5a6572e73a66"/>
             <status value="active"/>
             <for>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
@@ -273,7 +286,7 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/sd-excipient4"/>
+                     <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380478"/>
                      <display value="Magnesium stearate"/>
                   </reference>
                </code>
@@ -303,7 +316,8 @@
       <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substance1"/>
+                <!--substance1-->
+            <id value="4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
             <grade>
                <coding>
                   <system value="http://accumulus.org/fhir/code/grade"/>
@@ -321,7 +335,8 @@
       <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475"/>
       <resource>
          <SubstanceDefinition>
-            <id value="sd-excipient1"/>
+                <!--sd-excipient1-->
+            <id value="4cf2cbba-33e6-1124-9bf2-1c6756380475"/>
             <grade>
                <coding>
                   <system value="http://accumulus.org/fhir/code/grade"/>
@@ -339,7 +354,8 @@
       <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380476"/>
       <resource>
          <SubstanceDefinition>
-            <id value="sd-excipient2"/>
+                <!--sd-excipient2-->
+            <id value="4cf2cbba-33e6-1124-9bf2-1c6756380476"/>
             <grade>
                <coding>
                   <system value="http://accumulus.org/fhir/code/grade"/>
@@ -357,7 +373,8 @@
       <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380477"/>
       <resource>
          <SubstanceDefinition>
-            <id value="sd-excipient3"/>
+                <!--sd-excipient3-->
+            <id value="4cf2cbba-33e6-1124-9bf2-1c6756380477"/>
             <grade>
                <coding>
                   <system value="http://accumulus.org/fhir/code/grade"/>
@@ -375,7 +392,8 @@
       <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380478"/>
       <resource>
          <SubstanceDefinition>
-            <id value="sd-excipient4"/>
+                <!--sd-excipient4-->
+            <id value="4cf2cbba-33e6-1124-9bf2-1c6756380478"/>
             <grade>
                <coding>
                   <system value="http://accumulus.org/fhir/code/grade"/>

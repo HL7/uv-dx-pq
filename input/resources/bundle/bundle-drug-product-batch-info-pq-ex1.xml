@@ -4,7 +4,7 @@
     <!-- Product Batch Info -->
    <id value="bundle-drug-product-batch-info-pq-ex1"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
+	      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
    </meta>
    <type value="collection"/>
    <!-- Section 8 - Batch or Lot Information (batch 1 of 3) -->
@@ -12,12 +12,13 @@
       <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
       <resource>
          <Medication>
-            <id value="medication-actual-batch"/>
+                <!--medication-actual-batch-->
+            <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference> <!-- todo consider change this be the MID? -->
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
-                     
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
 
                   </valueReference>
                </extension>
@@ -39,7 +40,7 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                      <valueReference>
-                        <reference value="Organization/packaging"/>
+                        <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
@@ -67,7 +68,7 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference> <!-- #158 -->
-                        <reference value="Organization/manufacturer"/>
+                        <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -87,11 +88,13 @@
       <fullUrl value="urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
       <resource>
          <Medication>
-            <id value="medication-actual-batch-2"/>
+                <!--medication-actual-batch-2-->
+            <id value="a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
             </code>
@@ -111,7 +114,8 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                      <valueReference>
-                        <reference value="Organization/packaging"/>
+                                <!--Organization/packaging-->
+                        <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
@@ -138,7 +142,8 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference>
-                        <reference value="Organization/manufacturer"/>
+                                <!--Organization/manufacturer-->
+                        <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -157,11 +162,13 @@
       <fullUrl value="urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
       <resource>
          <Medication>
-            <id value="medication-actual-batch-3"/>
+                <!--medication-actual-batch-3-->
+            <id value="c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
             </code>
@@ -181,7 +188,7 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                      <valueReference>
-                        <reference value="Organization/packaging"/>
+                        <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
                      </valueReference>
                   </extension>
                   <extension url="batchQuantity">
@@ -208,7 +215,7 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference>
-                        <reference value="Organization/manufacturer"/>
+                        <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
                   <extension url="container">
@@ -227,7 +234,8 @@
       <fullUrl value="urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a"/>
       <resource>
          <Organization>
-            <id value="manufacturer"/>
+                <!--manufacturer-->
+            <id value="0102bca4-46c1-a6bf-1025-cd403fee710a"/>
             <identifier>
                     <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -250,7 +258,8 @@
       <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07"/>
       <resource>
          <Organization>
-            <id value="packaging"/>
+                <!--packaging-->
+            <id value="378fbe5f-5926-3a5c-4c64-5428df877b07"/>
             <name value="MySite"/>
          </Organization>
       </resource>
@@ -261,7 +270,8 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>

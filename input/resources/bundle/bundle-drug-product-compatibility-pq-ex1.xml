@@ -13,7 +13,8 @@
          <PlanDefinition>
                 
 
-            <id value="plandefinition-compatibility"/>
+                <!--plandefinition-compatibility-->
+            <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
@@ -37,12 +38,13 @@
             </type>
             <status value="active"/>
             <subjectReference>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
             <action>
                
-               <title value="Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen "/>
+               <title value="Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen"/>
                <!-- needs some other code -->
                <!--code>
                         <coding>
@@ -87,10 +89,12 @@
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
                 <!-- no subject -->
-            <id value="processValidationReport"/>
+                <!--processValidationReport-->
+            <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/plandefinition-compatibility"/>
+                        <!--PlanDefinition/plandefinition-compatibility-->
+                  <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -103,28 +107,28 @@
             </code>
             <effectiveDateTime value="2020-12"/>
             <result>
-               <reference value="Observation/SE-UHPLCMainPeak1"/>
+               <reference value="Observation/44ba47fd-8964-4f96-6495-b2bec7f161e7"/>
             </result>
             <result>
-               <reference value="Observation/SE-UHPLCMainPeak2"/>
+               <reference value="Observation/54ca47fd-8964-4f96-6495-b2bec7f162e7"/>
             </result>
             <result>
-               <reference value="Observation/SE-UHPLCHMW1"/>
+               <reference value="Observation/44ba47fd-8964-4f97-6495-b2bec7f161e7"/>
             </result>
             <result>
-               <reference value="Observation/SE-UHPLCHMW2"/>
+               <reference value="Observation/54ca47fd-8964-4f98-6495-b2bec7f162e7"/>
             </result>
             <result>
-               <reference value="Observation/CEX-Acidic-1"/>
+               <reference value="Observation/54ba47fd-8964-4f96-6495-b2bec7f161e8"/>
             </result>
             <result>
-               <reference value="Observation/CEX-Acidic-2"/>
+               <reference value="Observation/54ba48fd-8964-4f96-6495-b2bec7f161e7"/>
             </result>
             <result>
-               <reference value="Observation/CEX-HPLC-1"/>
+               <reference value="Observation/54ba47fd-8964-4f96-6495-b2bec7f161e7"/>
             </result>
             <result>
-               <reference value="Observation/CEX-HPLC-2"/>
+               <reference value="Observation/54bb47fd-8964-4f96-6495-b2bec7f161e7"/>
             </result>
             <conclusion value="The samples have been assessed and the conclusion is..."/>
          </DiagnosticReport>
@@ -134,8 +138,8 @@
       <fullUrl value="urn:uuid:64525a3d-5034-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <id value="SE-UHPLCMainPeak"/>
-            
+				<!--SE-UHPLCMainPeak-->
+            <id value="64525a3d-5034-448a-9c19-938ce1958424"/>
 
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC % Main Peak"/>
@@ -173,8 +177,8 @@
       <fullUrl value="urn:uuid:64525a33-5034-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <id value="SE-UHPLCHMW"/>
-            
+                <!--SE-UHPLCHMW-->
+            <id value="64525a33-5034-448a-9c19-938ce1958424"/>
 
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC % HMW"/>
@@ -212,8 +216,8 @@
       <fullUrl value="urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
       <resource>
          <ObservationDefinition>
-            <id value="CEX-HPLCAcidicPeak"/>
-            
+                <!--CEX-HPLCAcidicPeak-->
+            <id value="54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
 
             <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="CEX-HPLC % Acidic Peak"/>
@@ -251,8 +255,8 @@
       <fullUrl value="urn:uuid:74525a3d-5034-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            <id value="CEX-HPLCMainPeak"/>
-            
+                <!--CEX-HPLCMainPeak-->
+            <id value="74525a3d-5034-448a-9c19-938ce1958424"/>
 
             <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="CEX-HPLC % Main Peak"/>
@@ -290,9 +294,11 @@
       <fullUrl value="urn:uuid:44ba47fd-8964-4f96-6495-b2bec7f161e7"/>
       <resource>
          <Observation>
-            <id value="SE-UHPLCMainPeak1"/>
+				<!--SE-UHPLCMainPeak1-->
+            <id value="44ba47fd-8964-4f96-6495-b2bec7f161e7"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/SE-UHPLCMainPeak"/>
+					<!--ObservationDefinition/SE-UHPLCMainPeak-->
+               <reference value="ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -304,7 +310,8 @@
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-1"/>
+					<!--Medication/medication-actual-batch-1-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -343,9 +350,10 @@
       <fullUrl value="urn:uuid:54ca47fd-8964-4f96-6495-b2bec7f162e7"/>
       <resource>
          <Observation>
-            <id value="SE-UHPLCMainPeak2"/>
+                <!--SE-UHPLCMainPeak2-->
+            <id value="54ca47fd-8964-4f96-6495-b2bec7f162e7"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/SE-UHPLCMainPeak"/>
+               <reference value="ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -357,7 +365,7 @@
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-2"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -396,9 +404,10 @@
       <fullUrl value="urn:uuid:44ba47fd-8964-4f97-6495-b2bec7f161e7"/>
       <resource>
          <Observation>
-            <id value="SE-UHPLCHMW1"/>
+                <!--SE-UHPLCHMW1-->
+            <id value="44ba47fd-8964-4f97-6495-b2bec7f161e7"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/SE-UHPLCHMW"/>
+               <reference value="ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -410,7 +419,7 @@
                <text value="SE-UHPLC HMW (%)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-1"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -449,9 +458,10 @@
       <fullUrl value="urn:uuid:54ca47fd-8964-4f98-6495-b2bec7f162e7"/>
       <resource>
          <Observation>
-            <id value="SE-UHPLCHMW2"/>
+                <!--SE-UHPLCHMW2-->
+            <id value="54ca47fd-8964-4f98-6495-b2bec7f162e7"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/SE-UHPLCHMW"/>
+               <reference value="ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -463,7 +473,7 @@
                <text value="SE-UHPLC HMW (%)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-2"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -502,9 +512,10 @@
       <fullUrl value="urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e7"/>
       <resource>
          <Observation>
-            <id value="CEX-HPLC-1"/>
+                <!--CEX-HPLC-1-->
+            <id value="54ba47fd-8964-4f96-6495-b2bec7f161e7"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/CEX-HPLCMainPeak"/>
+               <reference value="ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -516,7 +527,7 @@
                <text value="CEX-HPLC Main Peak (%)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-1"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -555,9 +566,10 @@
       <fullUrl value="urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e7"/>
       <resource>
          <Observation>
-            <id value="CEX-HPLC-2"/>
+                <!--CEX-HPLC-2-->
+            <id value="54bb47fd-8964-4f96-6495-b2bec7f161e7"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/CEX-HPLCMainPeak"/>
+               <reference value="ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -569,7 +581,7 @@
                <text value="CEX-HPLC Main Peak (%)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-2"/>
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -608,9 +620,10 @@
       <fullUrl value="urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e8"/>
       <resource>
          <Observation>
-            <id value="CEX-Acidic-1"/>
+                <!--CEX-Acidic-1-->
+            <id value="54ba47fd-8964-4f96-6495-b2bec7f161e8"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/CEX-HPLCAcidicPeak"/>
+               <reference value="ObservationDefinition/54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -622,7 +635,7 @@
                <text value="CEX-HPLC Acidic Peak (%)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-1"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -663,9 +676,10 @@
       <fullUrl value="urn:uuid:54ba48fd-8964-4f96-6495-b2bec7f161e7"/>
       <resource>
          <Observation>
-            <id value="CEX-Acidic-2"/>
+                <!--CEX-Acidic-2-->
+            <id value="54ba48fd-8964-4f96-6495-b2bec7f161e7"/>
             <instantiatesReference>
-               <reference value="ObservationDefinition/CEX-HPLCAcidicPeak"/>
+               <reference value="ObservationDefinition/54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
@@ -677,7 +691,7 @@
                <text value="CEX-HPLC Acidic Peak (%)"/>
             </code>
             <subject>
-               <reference value="Medication/medication-actual-batch-1"/>
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -720,7 +734,8 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <name>
                <productName value="Stelbatolol"/>
@@ -732,7 +747,8 @@
       <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
       <resource>
          <Medication>
-            <id value="medication-actual-batch-1"/>
+                <!--medication-actual-batch-1-->
+            <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <!--contained>
                     <PackagedProductDefinition>
                         <id value="ppd1-nosubject"/>
@@ -750,8 +766,8 @@
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
-                     
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
 
                   </valueReference>
                </extension>
@@ -777,11 +793,13 @@
       <fullUrl value="urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
       <resource>
          <Medication>
-            <id value="medication-actual-batch-2"/>
+                <!--medication-actual-batch-2-->
+            <id value="a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                     <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
             </code>
