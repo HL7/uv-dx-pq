@@ -170,7 +170,7 @@
          <ObservationDefinition>
                 <!--IdentificationNMR-->
             <id value="8395ae1d-5064-0ab7-a297-6b20285b2231"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
             <title value="Identification (NMR)"/>
             <status value="active"/>
             <code>
