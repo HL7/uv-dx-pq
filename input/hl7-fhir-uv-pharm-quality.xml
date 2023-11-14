@@ -516,6 +516,17 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-process-validation-pq-ex3-prod-bio"/>
+            </reference>
+            <name value="Bundle - Product Process Validation PQ - Example, biologic product"/>
+            <description value="Example of Bundle - Product Process Validation PQ for biologic drug product."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
+            <groupingId value="b13-processvalidation"/>
+        </resource>
 
         <resource>
             <reference>
@@ -865,6 +876,9 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
+
+
+<!--PROCEDURE Profile-->
 
         <resource>
             <reference>
