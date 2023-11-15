@@ -489,7 +489,7 @@
             <id value="processValidationReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                  <reference value="PlanDefinition/plandefinition-pq-ex1-validation-protocol"/>
+                  <reference value="PlanDefinition/plandefinition-drug-pq-ex1-validation-protocol"/>
                </valueReference>
             </extension>
             <status value="final"/>
@@ -2130,7 +2130,7 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
                      <valueReference>
-                        <reference value="Substance/substance-pq-ex1"/>
+                        <reference value="Substance/substance-drug-pq-ex1"/>
                      </valueReference>
                   </extension>
                   <extension url="manufacturingDate"> <!-- #157 -->
@@ -2250,7 +2250,7 @@
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
                      <valueReference>
-                        <reference value="Substance/substance-pq-ex1"/>
+                        <reference value="Substance/substance-drug-pq-ex1"/>
                      </valueReference>
                   </extension>
                   <extension url="manufacturingDate"> <!-- #157 -->
@@ -5111,7 +5111,7 @@
             <substance>
                <code>
                   <reference>
-                     <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                     <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
                   </reference>
                </code>
             </substance>
@@ -5122,12 +5122,12 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-            <id value="substancedefinition-component-substance-pq-ex1"/>
+            <id value="substancedefinition-component-substance-drug-pq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             </meta>
             <manufacturer>
-               <reference value="Organization/organization-pq-ex1"/>
+               <reference value="Organization/organization-drug-pq-ex1"/>
             </manufacturer>
             <name>
                <name value="Biocurolol"/>
@@ -5142,9 +5142,9 @@
          <Organization>
                 
 
-            <id value="organization-pq-ex1"/>
+            <id value="organization-drug-pq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
             </meta>
             <identifier>
                     <!-- FDA establishment identifier -->
@@ -5425,9 +5425,9 @@
       <resource>
          <Substance>
                 <!--<id value="actual-batch-substance"/>-->
-            <id value="substance-pq-ex1"/>
+            <id value="substance-drug-pq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
@@ -5466,7 +5466,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-pq-ex1"/>
+                     <reference value="Organization/organization-drug-pq-ex1"/>
                   </valueReference>
                </extension>
             </extension>
@@ -5476,7 +5476,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -5524,7 +5524,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-pq-ex1"/>
+                     <reference value="Organization/organization-drug-pq-ex1"/>
                   </valueReference>
                </extension>
             </extension>
@@ -5534,7 +5534,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
                </reference>
             </code>
          </Substance>
@@ -5582,7 +5582,7 @@
                </extension>
                <extension url="assignedManufacturer"> <!-- #160 -->
                   <valueReference>
-                     <reference value="Organization/organization-pq-ex1"/>
+                     <reference value="Organization/organization-drug-pq-ex1"/>
                   </valueReference>
                </extension>
             </extension>
@@ -5593,7 +5593,7 @@
             <instance value="true"/>
             <code>
                <reference>
-                  <reference value="SubstanceDefinition/substancedefinition-component-substance-pq-ex1"/>
+                  <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
                </reference>
             </code>
          </Substance>
