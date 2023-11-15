@@ -877,8 +877,6 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-
-<!-- Add PROCEDURE Profile (and example)-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Procedure-drug-pq"/>
@@ -1168,12 +1166,32 @@
 
         <resource>
             <reference>
+                <reference value="Procedure/procedure-drug-pq-ex1"/>
+            </reference>
+            <name value="Procedure - Drug PQ - Example 1"/>
+            <description value="Example of Procedure - Drug PQ for Media Challenge, Run 1."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-drug-pq-ex2"/>
+            </reference>
+            <name value="Procedure - Drug PQ - Example 2"/>
+            <description value="Example of Procedure - Drug PQ for Lyophilization Homogeneneity."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
             </reference>
             <name value="SpecimenDefinition - Drug PQ - Example"/>
             <description value="Example of SpecimenDefinition - Drug PQ."/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure>
+    <!--            <id value="procedure-lyoph-homo-unlinked"/>-->
+    <id value="procedure-drug-pq-ex2"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/procedure-drug-pq-ex2"/>
+    <title value="Example of Procedure - Drug PQ for Lyophilization Homogeneneity."/>
+    <contained>
+        <Device>
+            <id value="device-nosubject"/>
+            <definition>
+                <reference>
+                    <reference value="#DDLyo1"/>
+                </reference>
+            </definition>
+        </Device>
+    </contained>
+    <contained>
+        <DeviceDefinition>
+            <id value="DDLyo1"/>
+            <identifier>
+                <value value="Lyo 1"/>
+            </identifier>
+        </DeviceDefinition>
+    </contained>
+    <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+        <valueReference>
+            <reference value="ActivityDefinition/LyophilizationAct"/>
+        </valueReference>
+    </extension>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://dummy.loinc.org"/>
+            <code value="LyophilizationHomogeneneity"/>
+            <display value="Lyophilization Homogeneneity"/>
+        </coding>
+    </code>
+    <subject>
+        <extension url="http://hl7.org/fhir/StructureDefinition/alternate-reference">
+            <valueReference>
+                <reference value="Medication/medication-batch-information-drug-pq-ex1"/>
+            </valueReference>
+        </extension>
+    </subject>
+    <performer>
+        <actor>
+            <reference value="#device-nosubject"/>
+            <display value="Lyo 1"/>
+        </actor>
+    </performer>
+</Procedure>

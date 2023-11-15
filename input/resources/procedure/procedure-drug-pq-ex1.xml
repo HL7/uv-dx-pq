@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure>
+<!--    <id value="procedure-run-1"/>-->
+    <id value="procedure-drug-pq-ex1"/>
+    <meta>
+        <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/procedure-drug-pq-ex1"/>
+    <title value="Example of Procedure - Drug PQ for Media Challenge, Run 1."/>
+    <status value="active"/>
+    
+    <identifier>
+        <value value="Run 1"/>
+    </identifier>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://dummy.loinc.org"/>
+            <code value="MediaChallengeRun"/>
+            <display value="Media Challenge Run"/>
+        </coding>
+    </code>
+    <subject>
+        <extension url="http://hl7.org/fhir/StructureDefinition/alternate-reference">
+            <valueReference>
+                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+            </valueReference>
+        </extension>
+        <!--display value="This a procedure for performing the test, about the product"/-->
+    </subject>
+</Procedure>
