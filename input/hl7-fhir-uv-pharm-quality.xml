@@ -2116,11 +2116,11 @@
                 <title value="Best Practices, Resources"/>
                 <generation value="markdown"/>
             </page>
-            <page>
+<!--            <page>
                 <name value="specification.html"/>
                 <title value="Specification"/>
                 <generation value="markdown"/>
-            </page>
+            </page>-->
             <page>
                 <name value="downloads.html"/>
                 <title value="Downloads"/>
