@@ -5,10 +5,6 @@
     <meta>
         <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/procedure-drug-pq-ex1"/>
-    <title value="Example of Procedure - Drug PQ for Media Challenge, Run 1."/>
-    <status value="active"/>
-    
     <identifier>
         <value value="Run 1"/>
     </identifier>
