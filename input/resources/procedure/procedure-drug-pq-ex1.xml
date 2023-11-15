@@ -22,6 +22,6 @@
                 <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </valueReference>
         </extension>
-        <!--display value="This a procedure for performing the test, about the product"/-->
+					<display value="Drug product"/>
     </subject>
 </Procedure>

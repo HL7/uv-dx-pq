@@ -42,6 +42,7 @@
                 <reference value="Medication/medication-batch-information-drug-pq-ex1"/>
             </valueReference>
         </extension>
+				    <display value="Drug batch"/>
     </subject>
     <performer>
         <actor>
