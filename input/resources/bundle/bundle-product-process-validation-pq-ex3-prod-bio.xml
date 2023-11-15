@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
+   <id value="bundle-product-process-validation-pq-ex3-prod-bio"/>
     <!-- Product Process Validation - Biologic -->
-    <id value="bundle-product-process-validation-pq-ex3-prod-bio"/>
    <meta>
        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
    </meta>
@@ -13,9 +13,9 @@
                 
 
             <id value="plandefinition-drug-pq-ex1-validation-protocol"/>
-            <meta>
+<!--            <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
-            </meta>
+            </meta-->>
             
             
 
@@ -5324,9 +5324,9 @@
          <SubstanceDefinition>
                 <!--substancedefinition-component-substance-dxpq-ex1-->
             <id value="57a9af63-315d-1585-a261-0e337b289390"/>
-            <meta>
+<!--            <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
-            </meta>
+            </meta>-->
             <manufacturer>
                     <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -5345,9 +5345,9 @@
                 <!--id value="substance-manufacturer"/-->
                 <!--organization-dxpq-ex1-->
             <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
-            <meta>
+<!--            <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
-            </meta>
+            </meta>-->
             <identifier>
                     <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -5376,7 +5376,7 @@
             <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-mnf-process-pq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
                <tag>
                   <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
                   <code value="SUBSETTED"/>
@@ -5635,9 +5635,9 @@
                 <!--<id value="actual-batch-substance"/>-->
                 <!--substance-dxpq-ex1-->
             <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
-            <meta>
+<!--            <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
-            </meta>
+            </meta>-->
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
