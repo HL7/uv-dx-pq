@@ -879,6 +879,16 @@
 
 
 <!-- Add PROCEDURE Profile (and example)-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-drug-pq"/>
+                <display value="Procedure - Drug PQ"/>
+            </reference>
+            <name value="Procedure - Drug PQ"/>
+            <description value="TBD"/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
 
         <resource>
             <reference>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Procedure-drug-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
+  <name value="ProcedureDrugPq"/>
+  <title value="Procedure - Drug PQ"/>
+  <status value="active"/>
+  <description value="TBD"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Procedure"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Procedure">
+      <path value="Procedure"/>
+    </element>
+
+    <element id="Procedure.identifier">
+      <path value="Procedure.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Procedure.status">
+      <path value="Procedure.status"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Procedure.code">
+      <path value="Procedure.code"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Procedure.subject">
+      <path value="Procedure.subject"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="Procedure.performer">
+      <path value="Procedure.performer"/>
+      <mustSupport value="true"/>
+    </element>
+    
+  </differential>
+</StructureDefinition>
