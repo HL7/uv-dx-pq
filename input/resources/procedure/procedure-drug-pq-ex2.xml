@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Procedure>
+<Procedure xmlns="http://hl7.org/fhir">
     <!--            <id value="procedure-lyoph-homo-unlinked"/>-->
     <id value="procedure-drug-pq-ex2"/>
     <meta>
