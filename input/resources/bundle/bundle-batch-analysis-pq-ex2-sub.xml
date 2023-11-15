@@ -831,8 +831,7 @@
          <DiagnosticReport>
 				<!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
-				<!--batchAnalysisReport-->
-            <id value="01a5777c-4b48-a0df-2963-02cd63339006"/>
+            <id value="batchAnalysisReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
 						<!--PlanDefinition/specificationProtocol-->
