@@ -7,6 +7,10 @@
     <meta>
             		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
     </meta>
+            	
+                
+            	
+            	
     <code>
         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
             <valueReference>
