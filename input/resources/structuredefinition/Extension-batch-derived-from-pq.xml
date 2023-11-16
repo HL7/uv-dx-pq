@@ -12,7 +12,7 @@
 
     <context>
         <type value="element"/>
-        <expression value="element"/>
+        <expression value="Bundle"/>
     </context>
 
     <type value="Extension"/>
