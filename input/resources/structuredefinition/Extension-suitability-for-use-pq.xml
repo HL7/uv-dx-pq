@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-suitability-for-use-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq"/>
+    <name value="ExtensionSuitabilityForUsePq"/>
+    <title value="Extension - Suitability for Use PQ"/>
+    <status value="active"/>
+    <fhirVersion value="5.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+
+    <context>
+        <type value="element"/>
+        <expression value="Ingredient"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle.entry.resource"/>
+    </context>
+    
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

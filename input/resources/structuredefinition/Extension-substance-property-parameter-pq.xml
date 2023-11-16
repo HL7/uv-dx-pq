@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="Extension-substance-property-parameter-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq"/>
+    <name value="ExtensionSubstancePropertyParameterPq"/>
+    <title value="Extension - Substance Property Parameter PQ"/>
+    <status value="active"/>
+    <fhirVersion value="5.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+
+    <context>
+        <type value="element"/>
+        <expression value="SubstanceDefinition"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="SubstanceDefinition.property"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle.entry.resource"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+
+        <element id="Extension.extension:parameter">
+            <path value="Extension.extension"/>
+            <sliceName value="parameter"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:parameter.url">
+            <path value="Extension.extension.url"/>
+            <fixedUri value="parameter"/>
+        </element>
+        <element id="Extension.extension:parameter.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+        </element>
+
+        <element id="Extension.extension:value">
+            <path value="Extension.extension"/>
+            <sliceName value="value"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:value.url">
+            <path value="Extension.extension.url"/>
+            <fixedUri value="value"/>
+        </element>
+        <element id="Extension.extension:value.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
+    </differential>
+</StructureDefinition>

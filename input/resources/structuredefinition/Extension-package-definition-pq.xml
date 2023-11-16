@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-package-definition-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-pq"/>
+    <name value="ExtensionPackageDefinitionPq"/>
+    <title value="Extension - Package Definition PQ"/>
+    <status value="active"/>
+    <fhirVersion value="5.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+
+    <context>
+        <type value="element"/>
+        <expression value="Medication.code"/>
+    </context>
+    
+    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
+    
+    <context>
+        <type value="element"/>
+        <expression value="Bundle.entry.resource"/>
+    </context>
+    
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-pq"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

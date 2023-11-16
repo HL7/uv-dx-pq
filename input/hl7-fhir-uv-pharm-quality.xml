@@ -1250,6 +1250,17 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-batch-derived-from-pq"/>
+                <display value="Extension - Derived From PQ"/>
+            </reference>
+            <name value="Extension - Derived From PQ"/>
+            <description value="Extension - Derived From PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
 
         <resource>
             <reference>
@@ -1258,6 +1269,28 @@
             </reference>
             <name value="Extension - Batch Designation PQ"/>
             <description value="Extension - Batch Designation PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-batch-number-of-full-shelves-pq"/>
+                <display value="Extension - Batch Number of Full Shelves PQ"/>
+            </reference>
+            <name value="Extension - Batch Number of Full Shelves PQ"/>
+            <description value="Extension - Batch Number of Full Shelves PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-batch-number-of-partial-shelves-pq"/>
+                <display value="Extension - Batch Number of Partial Shelves PQ"/>
+            </reference>
+            <name value="Extension - Batch Number of Partial Shelves PQ"/>
+            <description value="Extension - Batch Number of Partial Shelves PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1328,6 +1361,16 @@
             <groupingId value="extensions1"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-formulation-number-pq"/>
+                <display value="Extension - Formulation Number PQ"/>
+            </reference>
+            <name value="Extension - Formulation Number PQ"/>
+            <description value="Extension - Formulation Number PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
 
         <resource>
             <reference>
@@ -1340,6 +1383,17 @@
             <groupingId value="extensions1"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-impurity-origin-pq"/>
+                <display value="Extension - Impurity Origin PQ"/>
+            </reference>
+            <name value="Extension - Impurity Origin PQ"/>
+            <description value="Extension - Impurity Origin PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-participant-pq"/>
@@ -1373,6 +1427,28 @@
             <groupingId value="extensions1"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-novel-excipient-pq"/>
+                <display value="Extension - Novel Excipient PQ"/>
+            </reference>
+            <name value="Extension - Novel Excipient PQ"/>
+            <description value="Extension - Novel Excipient PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-package-definition-pq"/>
+                <display value="Extension - Package Definition PQ"/>
+            </reference>
+            <name value="Extension - Package Definition PQ"/>
+            <description value="Extension - Package Definition PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>  
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-date-pq"/>
@@ -1424,6 +1500,17 @@
             </reference>
             <name value="Extension - Process Step Scale PQ"/>
             <description value="Extension - Process Step Scale PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-qualified-value-criticality-pq "/>
+                <display value="Extension - Qualified Value Criticality PQ"/>
+            </reference>
+            <name value="Extension - Qualified Value Criticality PQ"/>
+            <description value="Extension - Qualified Value Criticality PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1485,15 +1572,37 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-test-comment-pq"/>
-                <display value="Extension - Test Comment PQ"/>
+                <reference value="StructureDefinition/Extension-substance-property-parameter-pq"/>
+                <display value="Extension - Substance Property Parameter PQ"/>
             </reference>
-            <name value="Extension - Test Comment PQ"/>
-            <description value="Extension - Test Comment PQ"/>
+            <name value="Extension - Substance Property Parameter PQ"/>
+            <description value="Extension - Substance Property Parameter PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-substance-property-range-pq"/>
+                <display value="Extension - Substance Property Range PQ"/>
+            </reference>
+            <name value="Extension - Substance Property Range PQ"/>
+            <description value="Extension - Substance Property Range PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-suitability-for-use-pq"/>
+                <display value="Extension - Suitability For Use PQ"/>
+            </reference>
+            <name value="Extension - Suitability For Use PQ"/>
+            <description value="Extension - Suitability For Use PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-target-fill-weight-pq"/>
@@ -1501,6 +1610,17 @@
             </reference>
             <name value="Extension - Target Fill Weight PQ"/>
             <description value="Extension - Target Fill Weight PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-test-comment-pq"/>
+                <display value="Extension - Test Comment PQ"/>
+            </reference>
+            <name value="Extension - Test Comment PQ"/>
+            <description value="Extension - Test Comment PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>

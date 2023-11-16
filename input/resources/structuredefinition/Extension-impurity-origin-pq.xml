@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-impurity-origin-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq"/>
+    <name value="ExtensionImpurityOriginPq"/>
+    <title value="Extension - Impurity Origin PQ"/>
+    <status value="active"/>
+    <fhirVersion value="5.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+
+    <context>
+        <type value="element"/>
+        <expression value="SubstanceDefinition"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="SubstanceDefinition.relationship"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle.entry.resource"/>
+    </context>
+    
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>
