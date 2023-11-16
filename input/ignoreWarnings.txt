@@ -8,6 +8,8 @@ Reference to draft item http://hl7.org/fhir/hl7-work-group|1.0.0
 
 # Examples have optional slices that are not defined in the profile - not matching is expected behavior
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch|1.0.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq|0.1.0
 
 # The following code systems are external or are examples and not supported by terminology server
 Code System URI 'http://accumulus.org/fhir/code/deviceProperty' is unknown so the code cannot be validated

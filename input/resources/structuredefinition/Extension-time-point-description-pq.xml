@@ -9,17 +9,26 @@
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
+    
     <context>
         <type value="element"/>
-        <expression value="DiagnosticReport.effective.ofType(dateTime), dateTime"/>
+        <expression value="Bundle.entry.resource"/>
     </context>
     <context>
         <type value="element"/>
-        <expression value="Bundle.entry.resource/*DiagnosticReport/6f4a3311-92c5-2b4a-533e-76341e414c63*/.effective.ofType(dateTime), DiagnosticReport.effective, DiagnosticReport.effective.ofType(dateTime), DiagnosticReport.effectivedateTime, dateTime"/>
+        <expression value="DiagnosticReport"/>
     </context>
     <context>
         <type value="element"/>
-        <expression value="Bundle.entry.resource/*DiagnosticReport/54c8e8dc-9a19-0dc2-910e-d5a05d6ba003*/.effective.ofType(dateTime), DiagnosticReport.effective, DiagnosticReport.effective.ofType(dateTime), DiagnosticReport.effectivedateTime, dateTime]"/>
+        <expression value="DiagnosticReport.effective"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="DiagnosticReport.effectivedateTime"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="dateTime"/>
     </context>
     
     <type value="Extension"/>
