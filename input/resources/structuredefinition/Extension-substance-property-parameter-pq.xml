@@ -32,6 +32,9 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
             <slicing>
                 <discriminator>
                     <type value="value"/>
@@ -39,6 +42,7 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
         </element>
 
         <element id="Extension.extension:parameter">
