@@ -2126,7 +2126,8 @@
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">
+<!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333224444"/>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
@@ -2254,7 +2255,8 @@
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
-                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">
+                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333224444"/>
                   </extension>
                   
@@ -2379,7 +2381,8 @@
                   </extension>
                   
 
-                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">
+                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333225555"/>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
@@ -2500,7 +2503,8 @@
                   </extension>
                   
 
-                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">
+                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333225555"/>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
@@ -2621,7 +2625,8 @@
                   </extension>
                   
 
-                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">
+                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333226666"/>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
@@ -2741,7 +2746,8 @@
                   </extension>
                   
 
-                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">
+                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333226666"/>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">

@@ -132,7 +132,8 @@
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-pq">
                <valueBoolean value="true"/>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq">
+<!--            <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">-->
                <valueString value="Excipient has been certified for use in human medicinal products"/>
             </extension>
             <status value="active"/>
@@ -199,7 +200,8 @@
          <Ingredient>
                 <!--ingredient2-->
             <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b"/>
-            <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">
+<!--            <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">-->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq">
                <valueString value="Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials."/>
             </extension>
             <status value="active"/>

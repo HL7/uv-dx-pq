@@ -22,7 +22,8 @@
                <name value="Stelbatolol"/>
             </name>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+<!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://accumulus.org/fhir/code/impurity-origin"/>
@@ -51,7 +52,8 @@
                <amountString value="ND"/>
             </relationship>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://accumulus.org/fhir/code/impurity-origin"/>
@@ -79,7 +81,8 @@
                <amountString value="Range: ND-0.2%"/>
             </relationship>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://accumulus.org/fhir/code/impurity-origin"/>
@@ -107,7 +110,8 @@
                <amountString value="Range: ND–0.3%"/>
             </relationship>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://accumulus.org/fhir/code/impurity-origin"/>
@@ -136,7 +140,8 @@
                <amountString value="Observed only during stress studies"/>
             </relationship>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://accumulus.org/fhir/code/impurity-origin"/>

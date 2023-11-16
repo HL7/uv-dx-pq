@@ -1254,10 +1254,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-derived-from-pq"/>
-                <display value="Extension - Derived From PQ"/>
+                <display value="Extension - Batch Derived From PQ"/>
             </reference>
-            <name value="Extension - Derived From PQ"/>
-            <description value="Extension - Derived From PQ"/>
+            <name value="Extension - Batch Derived From PQ"/>
+            <description value="Extension - Batch Derived From PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1531,7 +1531,7 @@
                 <reference value="StructureDefinition/Extension-qualified-value-target-pq"/>
                 <display value="Extension - Qualified Value Target PQ"/>
             </reference>
-            <name value="Extension - Qualified Value Text PQ"/>
+            <name value="Extension - Qualified Value Target PQ"/>
             <description value="Extension - Qualified Value Target PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
