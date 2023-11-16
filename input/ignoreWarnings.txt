@@ -1,37 +1,6 @@
 == Suppressed Messages ==
 # Information messages about reference to deprecated items
-Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
 
 # Information messages about reference to draft status items
-Reference to draft item http://hl7.org/fhir/standards-status|1.0.0
-Reference to draft item http://hl7.org/fhir/hl7-work-group|1.0.0
 
-# Examples have optional slices that are not defined in the profile - not matching is expected behavior
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch|1.0.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq|0.1.0
-
-# The following code systems are external or are examples and not supported by terminology server
-Code System URI 'http://accumulus.org/fhir/code/deviceProperty' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/deviceType' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/diagramType' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/equipmentClass' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/goalPriority' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/manufacturingParticipantRole' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/manufacturingStep' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/manufacturingStepScale' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/planType' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/processParameter' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/productNameType' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/productSiteUtilizationType' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/reportType' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/substancePropertyType' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/testCategory' is unknown so the code cannot be validated
-Code System URI 'http://accumulus.org/fhir/code/timePointDescription' is unknown so the code cannot be validated
-Code System URI 'http://dummy.loinc.org' is unknown so the code cannot be validated
-Code System URI 'http://dummy.unitsofmeasure.org' is unknown so the code cannot be validated
-Code System URI 'http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology' is unknown so the code cannot be validated
-Code System URI 'http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation' is unknown so the code cannot be validated
-Code System URI 'http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step' is unknown so the code cannot be validated
-Code System URI 'https://spor.ema.europa.eu/v1/lists/100000073345' is unknown so the code cannot be validated
-Code System URI 'https://spor.ema.europa.eu/v1/lists/200000000004' is unknown so the code cannot be validated
