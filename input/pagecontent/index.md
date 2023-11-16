@@ -52,7 +52,7 @@ Importantly, spurring innovation in the biopharmaceutical sector is only one ben
 ### Considerations for Implementation
 The following figure depicts (1) a potential future data pipeline for implementers; and (2) the intended scope of this IG’s use relative to the regulatory submission preparation workflow. The figure, and the following description, are provided to facilitate discussion and understanding of how to use this implementation guide.
 
-***Figure: Data Pipeline for Pharmaceutical Quality***
+***Figure: FHIR Data Pipeline for Pharmaceutical Quality (Industry)***
 <table><tr><td><img src="FHIR_Data_Pipeline_PQ_Industry_840.png" /></td></tr></table>
 
 In summary, this potential future data pipeline could work as follows, 
