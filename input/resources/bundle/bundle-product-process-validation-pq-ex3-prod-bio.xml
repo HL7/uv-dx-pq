@@ -2126,7 +2126,6 @@
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
-<!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333224444"/>
                   </extension>
@@ -4762,9 +4761,13 @@
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
             <!-- note no value here, because the code us the %. But this obs is really about the conclusion -->
-            <subject> <!-- not one specific batch -->
-					<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
-               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            <!-- note no subject here because there is not one specific batch -->
+            <subject>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unsupported"/>
+               </extension>
+               <display value="Product"/>
+               <!-- added only to keep IG happy -->
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -4919,9 +4922,13 @@
                <text value="SE-UHPLC HMW (%)"/>
             </code>
             <!-- note no value here, because the code us the %. But this obs is really about the conclusion -->
-            <subject> <!-- not one specific batch -->
-					<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
-               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            <!-- no subject because it applies to all the samples -->
+            <subject>
+               <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unsupported"/>
+               </extension>
+               <display value="Product"/>
+               <!-- added only to keep IG happy -->
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
@@ -5241,6 +5248,7 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                   <valueCode value="unsupported"/>
                </extension>
+               <display value="Product"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
