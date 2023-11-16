@@ -35,7 +35,7 @@ Provide details about manufacturing process validation protocols and results.
 **CTD section samples** (PDF):
 - 3.2.P.3 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.5_Process_Validation.pdf ">3.2.P.3.5 Process Validation and/or Evaluation</a>
-    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P3.5_Process_Validation_and-or_Evaluation_BIO.pdf ">3.2.P.3.5 Process Validation and/or Evaluation - Biologic Example</a>
+    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.5_Process_Validation_and-or_Evaluation_BIO.pdf ">3.2.P.3.5 Process Validation and/or Evaluation - Biologic Example</a>
 - 3.2.S.2 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.5_Process_Validation_and-or_Evaluation.pdf ">3.2.S.2.5 Process Validation and/or Evaluation</a>
 

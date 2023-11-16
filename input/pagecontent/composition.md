@@ -33,9 +33,8 @@ Provide details about drug substance and drug product components, materials, and
 
 ### Examples
 **CTD section samples** (PDF):
-- 3.2.P.1 Description and Composition of the Drug Product
-- 3.2.P.6 Reference Standards or Materials
-- <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.5_Reference_Standards_or_Materials.pdf ">3.2.S.5 Reference Standards or Materials</a></li>
+- <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.1_Description_Composition.pdf ">3.2.P.1 Description and Composition of the Drug Product</a>
+- <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.5_Reference_Standards_or_Materials.pdf ">3.2.S.5 Reference Standards or Materials</a> (3.2.P.6 Reference Standards or Materials is similar.)
 
 **HTML rendering** of synthetic CTD data:
 - <a href="composition_rend_p.html">Drug Product Composition</a>

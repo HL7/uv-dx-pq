@@ -53,7 +53,7 @@ Importantly, spurring innovation in the biopharmaceutical sector is only one ben
 The following figure depicts (1) a potential future data pipeline for implementers; and (2) the intended scope of this IG’s use relative to the regulatory submission preparation workflow. The figure, and the following description, are provided to facilitate discussion and understanding of how to use this implementation guide.
 
 ***Figure: Data Pipeline for Pharmaceutical Quality***
-<table><tr><td><img src="FHIR_Data_Pipeline_PQ_Industry_800.png" /></td></tr></table>
+<table><tr><td><img src="FHIR_Data_Pipeline_PQ_Industry_840.png" /></td></tr></table>
 
 In summary, this potential future data pipeline could work as follows, 
 - Step I: Data from source systems (e.g., LIMS) is produced and delivered in a FHIR compliant format to downstream systems designed to manage regulatory information.

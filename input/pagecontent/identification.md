@@ -58,15 +58,15 @@ Provide details about the drug substance and drug product nomenclature; structur
 **CTD section samples** (PDF):
 
 - 3.2.P.2 Pharmaceutical Development
-  - 3.2.P.2.2 Drug Product
-  - 3.2.P.2.5 Microbiological Attributes
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.2.2_Drug_Product.pdf ">3.2.P.2.2 Drug Product</a>
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.2.5_Microbiological_Attributes.pdf ">3.2.P.2.5 Microbiological Attributes</a>
 - 2.P.4 Control of Excipients
-  - 3.2.P.4.5 Excipients of Human or Animal Origin
-  - 3.2.P.4.6 Novel Excipients
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.4.5_Excipients_of_Human_or_Animal_Origin.pdf ">3.2.P.4.5 Excipients of Human or Animal Origin</a>
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.4.6_Novel_Excipients.pdf ">3.2.P.4.6 Novel Excipients</a>
 - 3.2.S.1 General Information
-  - 3.2.S.1.3 General Properties
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.1.3_General_Properties.pdf ">3.2.S.1.3 General Properties</a>
 - 3.2.S.3 Characterisation
-  - 3.2.S.3.1 Elucidation of Structure and Other Characteristics
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.3.1_Elucidation_of_Structure_and_Other_Characteristics.pdf ">3.2.S.3.1 Elucidation of Structure and Other Characteristics</a>
 
 **HTML rendering** of synthetic CTD data:
 - <a href="identification_rend_p1.html">Drug Product Identification</a>
