@@ -14,6 +14,22 @@
         <type value="element"/>
         <expression value="Bundle"/>
     </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle.entry.Substance.extension"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Bundle.entry.resource"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Substance.extension"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Extension"/>
+    </context>
 
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
