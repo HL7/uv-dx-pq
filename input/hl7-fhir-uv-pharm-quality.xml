@@ -1506,7 +1506,7 @@
         
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-qualified-value-criticality-pq "/>
+                <reference value="StructureDefinition/Extension-qualified-value-criticality-pq"/>
                 <display value="Extension - Qualified Value Criticality PQ"/>
             </reference>
             <name value="Extension - Qualified Value Criticality PQ"/>
