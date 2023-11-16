@@ -12,20 +12,7 @@
 
     <context>
         <type value="element"/>
-        <expression value="Substance"/>
-    </context>
-    <context>
-        <type value="element"/>
         <expression value="Bundle"/>
-    </context>
-    <context>
-        <type value="element"/>
-        <expression value="Bundle.entry.resource"/>
-    </context>
-    
-    <context>
-        <type value="element"/>
-        <expression value="Bundle.entry.Substance.extension, Bundle.entry.resource/*Substance/fc178763-81c5-5656-9744-13c7ad1e595b*/.extension, Extension, Substance.extension"/>
     </context>
 
     <type value="Extension"/>
