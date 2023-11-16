@@ -1,6 +1,7 @@
 == Suppressed Messages ==
 # Information messages about reference to deprecated items
-
+Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
 # Information messages about reference to draft status items
+Reference to draft item http://hl7.org/fhir/hl7-work-group|1.0.0
 
