@@ -358,7 +358,8 @@
    <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
       <valueReference>
          <!--ActivityDefinition/activityLongTerm25XYZ-Initial-->
-         <reference value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
+<!--         <reference value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>-->
+         <reference value="ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
       </valueReference>
    </extension>
    <status value="final"/>
