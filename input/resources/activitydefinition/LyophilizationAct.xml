@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActivityDefinition>
+    <id value="LyophilizationAct"/>
+    <meta>
+        <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
+    </meta>
+    
+<!--    <url value="http://example-server.com/fhir/ActivityDefinition/b664977d-799d-a1ce-928a-6def2a9955bd"/>-->
+    <title value="Lyophilization"/>
+    <status value="active"/>
+</ActivityDefinition>
