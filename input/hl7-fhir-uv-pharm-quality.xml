@@ -937,13 +937,24 @@
             <reference>
                 <reference value="ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
             </reference>
-            <name value="ActivityDefinition - Test Drug PQ - Example"/>
+            <name value="ActivityDefinition - Test Drug PQ - Example 1"/>
             <description value="Example of ActivityDefinition - Test Drug PQ for test set: Long-term - 25°C/60% RH - XYZ."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="ActivityDefinition/LyophilizationAct"/>
+            </reference>
+            <name value="ActivityDefinition - Test Drug PQ - Example 2"/>
+            <description value="Example of ActivityDefinition - Test Drug PQ for Lyophilization"/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="Composition/composition-drug-pq-formulation"/>
