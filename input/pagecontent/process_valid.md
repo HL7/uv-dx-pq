@@ -27,6 +27,8 @@ Provide details about manufacturing process validation protocols and results.
 
 **Plan Definition**: Describes the process validation test protocol
 
+**Procedure**:  TBD
+
 **Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
 
 **Substance**: Identifying information about an actual batch of substance (an instance)
