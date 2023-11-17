@@ -9,9 +9,24 @@
   <description value="This code system contains temporary local codes for use in PQ."/>
   <caseSensitive value="true"/>
   <content value="example"/>
+  <!-- The following concepts were originally assigned to code system http://dummy.loinc.org -->
   <concept>
     <code value="catfish"/>
     <display value="Catfish"/>
   </concept>
 
+
+  <!--  concepts for Observation-test-result-drug-pq examples -->
+  
+  
+  <!--  concepts for ObservationDefinition-test-method-drug-pq examples-->
+  
+  
+  <!--  concepts for PlanDefinition-drug-pq examples-->
+  
+  
+  <!--  concepts for Procedure-drug-pq examples-->
+  
+  
+  
 </CodeSystem>
