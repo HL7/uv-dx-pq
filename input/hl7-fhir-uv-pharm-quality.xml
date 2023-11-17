@@ -1661,7 +1661,7 @@
         
         <resource>
             <reference>
-                <reference value="CodeSystem/local-codes-drug-pq"/>
+                <reference value="CodeSystem/cs-local-codes-drug-pq"/>
                 <display value="CodeSystem - Local Codes - Drug PQ"/>
             </reference>
             <name value="CodeSystem - Local Codes - Drug PQ"/>
