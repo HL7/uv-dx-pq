@@ -1658,6 +1658,17 @@
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="CodeSystem/local-codes-drug-pq"/>
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
 
         <!--Additional Examples -->
         <!-- Additional ObservationDefinition Examples (examples1)-->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CodeSystem-local-codes-pq"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/local-codes-drug-pq"/>
+  <name value="LocalCodesDrugPQ"/>
+  <title value="CodeSystem - Local Codes - Drug PQ"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="This code system contains temporary local codes for use in PQ."/>
+  <caseSensitive value="true"/>
+  <content value="example"/>
+  <concept>
+    <code value="catfish"/>
+    <display value="Catfish"/>
+  </concept>
+
+</CodeSystem>
