@@ -29,9 +29,8 @@
   </concept>
   <concept>
     <code value="YYY"/>
-    display value="Microbiological Quality"/>
+    <display value="Microbiological Quality"/>
   </concept>
-
   <concept>
     <code value="ZZZ"/>
     <display value="Uniformity of dosage units (by weight)"/>
