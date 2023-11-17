@@ -25,7 +25,7 @@
     </contained>
     <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
         <valueReference>
-            <reference value="ActivityDefinition/LyophilizationAct"/>
+            <reference value="ActivityDefinition/lyophilizationAct"/>
         </valueReference>
     </extension>
     <status value="completed"/>

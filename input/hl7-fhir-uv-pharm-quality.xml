@@ -946,7 +946,7 @@
 
         <resource>
             <reference>
-                <reference value="ActivityDefinition/LyophilizationAct"/>
+                <reference value="ActivityDefinition/lyophilizationAct"/>
             </reference>
             <name value="ActivityDefinition - Test Drug PQ - Example 2"/>
             <description value="Example of ActivityDefinition - Test Drug PQ for Lyophilization"/>

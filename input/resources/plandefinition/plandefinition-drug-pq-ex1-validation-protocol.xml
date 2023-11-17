@@ -341,7 +341,7 @@
             		</action>
             		<action>
             			<code><text value="Definition"/></code>
-            			<definitionCanonical value="ActivityDefinition/LyophilizationAct"/>
+            			<definitionCanonical value="ActivityDefinition/lyophilizationAct"/>
             		</action>
             	</action>
 
