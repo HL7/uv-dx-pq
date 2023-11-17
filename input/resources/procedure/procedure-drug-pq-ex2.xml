@@ -23,11 +23,7 @@
             </identifier>
         </DeviceDefinition>
     </contained>
-    <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
-        <valueReference>
-            <reference value="ActivityDefinition/LyophilizationAct"/>
-        </valueReference>
-    </extension>
+			    
     <status value="completed"/>
     <code>
         <coding>

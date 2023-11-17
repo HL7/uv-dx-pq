@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-product-process-validation-pq-ex3-prod-bio"/>
     <!-- Product Process Validation - Biologic -->
+   <id value="bundle-product-process-validation-pq-ex3-prod-bio"/>
    <meta>
        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
    </meta>
@@ -4096,12 +4096,6 @@
                   </identifier>
                </DeviceDefinition>
             </contained>
-            <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
-               <valueReference>
-						<!--ActivityDefinition/LyophilizationAct-->
-                  <reference value="ActivityDefinition/b664977d-799d-a1ce-928a-6def2a9955bd"/>
-               </valueReference>
-            </extension>
             <status value="completed"/>
             <code>
                <coding>
