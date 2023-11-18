@@ -26,7 +26,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="enantiomer"/>
                         <display value="Enantiomer"/>
                      </coding>
@@ -56,7 +56,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="process"/>
                         <display value="Process Impurity"/>
                      </coding>
@@ -85,7 +85,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="process"/>
                         <display value="Process Impurity"/>
                      </coding>
@@ -114,7 +114,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="starting-material"/>
                         <display value="Starting Material"/>
                      </coding>
@@ -144,7 +144,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="intermediate-material"/>
                         <display value="Intermediate Material"/>
                      </coding>
