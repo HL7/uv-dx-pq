@@ -1816,6 +1816,28 @@
 
         <resource>
             <reference>
+                <reference value="CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                <display value="CodeSystem - Mutagenicity Classification Type Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Mutagenicity Classification Type Local PQ"/>
+            <description value="This code system contains local codes for mutagenicity classification type in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-mutagenicity-local-pq"/>
+                <display value="CodeSystem - Mutagenicity Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Mutagenicity Local PQ"/>
+            <description value="This code system contains local codes for mutagenicity in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
                 <reference value="CodeSystem/cs-packageProperty-local-pq"/>
                 <display value="CodeSystem - Package Property Local PQ"/>
             </reference>
@@ -1824,7 +1846,6 @@
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
-
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-planType-local-pq"/>

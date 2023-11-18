@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-mutagenicityClassificationType-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/mutagenicityClassificationType-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+    <name value="CsMutagenicityClassificationTypeLocalPQ"/>
+    <title value="CodeSystem - Mutagenicity Classification Type Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for mutagenicity classification type in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="123555"/>
+        <display value="Statistical (Q)Sar"/>
+    </concept>
+</CodeSystem>
