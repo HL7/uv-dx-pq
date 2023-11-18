@@ -19,7 +19,7 @@
                <productName value="Stalbatolol"/>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
                      <code value="1234"/>
                      <display value="Proprietary"/>
                   </coding>
@@ -320,7 +320,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="in-house"/>
                   <display value="In-house"/>
                </coding>
@@ -339,7 +339,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380475"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -358,7 +358,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380476"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -377,7 +377,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380477"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -396,7 +396,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380478"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>

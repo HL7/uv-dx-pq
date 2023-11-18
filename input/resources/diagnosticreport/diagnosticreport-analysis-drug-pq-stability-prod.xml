@@ -36,7 +36,7 @@
    <status value="final"/>
    <code>
       <coding>
-         <system value="http://accumulus.org/fhir/code/reportType"/>
+         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
          <code value="111"/>
          <display value="Stability Study Report - 18 months"/>
       </coding>
@@ -47,7 +47,7 @@
          <!--               <extension url="http://accumulus.org/fhir/extension/timePointDescription">-->
          <valueCodeableConcept>
             <coding>
-               <system value="http://accumulus.org/fhir/code/timePointDescription"/>
+               <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-timePointDescription-local-pq"/>
                <code value="222"/>
                <display value="Delayed Start Code"/>
             </coding>

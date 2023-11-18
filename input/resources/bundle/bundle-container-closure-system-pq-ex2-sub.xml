@@ -46,7 +46,7 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
                         <code value="xxxx"/>
                         <display value="Quality Specification"/>
                      </coding>
@@ -58,7 +58,7 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
                         <code value="xxxx"/>
                         <display value="Quality Specification"/>
                      </coding>
@@ -186,7 +186,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
                   <code value="container-specification"/>
                   <display value="Container Specification"/>
                </coding>
@@ -201,7 +201,7 @@
                <title value="Container Specification"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/CodeSystem/specification-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq"/>
                      <code value="ContainerSpecification"/>
                      <display value="Container Specification"/>
                   </coding>

@@ -32,7 +32,7 @@
                <productName value="Stalbatolol"/>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
                      <code value="1234"/>
                      <display value="Proprietary"/>
                   </coding>

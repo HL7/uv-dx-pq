@@ -21,7 +21,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
                   <code value="process-validation"/>
                   <display value="Process Validation"/>
                </coding>
@@ -35,7 +35,7 @@
             <action>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pqScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
@@ -44,7 +44,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <code value="SPEED"/>
                            <display value="Mix speed"/>
                         </coding>
@@ -62,7 +62,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="particleSizeReduction"/>
                      <display value="Particle Size Reduction"/>
                   </coding>
@@ -80,7 +80,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="StartingMaterial"/>
                         <display value="Starting Material"/>
                      </coding>
@@ -98,7 +98,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="IntermediateMaterial"/>
                         <display value="Intermediate Material"/>
                      </coding>
@@ -116,7 +116,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="ResultingMaterial"/>
                         <display value="Resulting Material"/>
                      </coding>
@@ -188,7 +188,7 @@
             <action>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pqScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
@@ -198,7 +198,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="drying"/>
                      <display value="Drying"/>
                   </coding>
@@ -216,7 +216,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="StartingMaterial"/>
                         <display value="Starting Material"/>
                      </coding>
@@ -234,7 +234,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="IntermediateMaterial"/>
                         <display value="Intermediate Material"/>
                      </coding>
@@ -252,7 +252,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="ResultingMaterial"/>
                         <display value="Resulting Material"/>
                      </coding>
@@ -287,7 +287,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/reportType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
                   <code value="1113"/>
                   <display value="Process Validation Report"/>
                </coding>
@@ -499,7 +499,7 @@
 <!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueCriticality">-->
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/qualifiedValueCriticality"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
                         <code value="non-critical"/>
                         <display value="Non-critical"/>
                      </coding>
@@ -540,7 +540,7 @@
                   <!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueCriticality">-->
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/qualifiedValueCriticality"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
                         <code value="critical"/>
                         <display value="Critical"/>
                      </coding>

@@ -37,7 +37,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
                   <code value="manufacturing-process"/>
                   <display value="Manufacturing Process"/>
                </coding>
@@ -53,7 +53,7 @@
             <goal id="goal-control-pH">
                <category>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -94,7 +94,7 @@
             <goal id="goal-control-water-content">
                <category>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -131,7 +131,7 @@
             <goal id="goal-control-particle-size">
                <category>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -172,7 +172,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                         <code value="mixing-vessel"/>
                         <display value="Mixing Vessel"/>
                      </coding>
@@ -187,7 +187,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                         <code value="receiving-vessel"/>
                         <display value="Receiving Vessel"/>
                      </coding>
@@ -200,7 +200,7 @@
                         <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pqScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
@@ -209,7 +209,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <code value="CAPACITY"/>
                            <display value="Capacity"/>
                         </coding>
@@ -226,7 +226,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <code value="TEMP-MAX"/>
                            <display value="Temperature"/>
                         </coding>
@@ -245,7 +245,7 @@
                <description value="Mixing of ingredients"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="1111"/>
                      <display value="Mixing of ingredients"/>
                   </coding>
@@ -267,7 +267,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                         <code value="example"/>
                         <display value="Blender"/>
                      </coding>
@@ -286,7 +286,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="example"/>
                         <display value="StartingMaterial"/>
                      </coding>
@@ -305,7 +305,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="example"/>
                         <display value="ProcessingMaterial"/>
                      </coding>
@@ -324,7 +324,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="example"/>
                         <display value="ResultingMaterial"/>
                      </coding>
@@ -348,7 +348,7 @@
                         <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pqScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
@@ -357,7 +357,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <!-- TODO LOINC? -->
                            <code value="TEMPMAX"/>
                            <display value="Maximum Temperature"/>
@@ -378,7 +378,7 @@
                <description value="Drying using a heater"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="12121"/>
                      <display value="Drying"/>
                   </coding>
@@ -400,7 +400,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                         <code value="example"/>
                         <display value="Dryer"/>
                      </coding>
@@ -419,7 +419,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="example"/>
                         <display value="StartingMaterial"/>
                      </coding>
@@ -438,7 +438,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="example"/>
                         <display value="ResultingMaterial"/>
                      </coding>
@@ -450,7 +450,7 @@
                         <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pqScale"/>
                      <code value="ABCD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
@@ -459,7 +459,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <code value="ROTATIONSPEED"/>
                            <display value="Rotational Speed"/>
                         </coding>
@@ -476,7 +476,7 @@
                <description value="Particle Size Reduction by using a rotating impeller"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="2222"/>
                      <display value="Particle Size Reduction"/>
                   </coding>
@@ -498,7 +498,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/equipmentClass"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                         <code value="example"/>
                         <!-- #88 Equipment class -->
                         <display value="Compression Milling"/>
@@ -518,7 +518,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="example"/>
                         <display value="StartingMaterial"/>
                      </coding>
@@ -537,7 +537,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="example"/>
                         <display value="ResultingMaterial"/>
                      </coding>
@@ -565,7 +565,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="121212"/>
                      <!-- #90 Working capacity -->
                      <display value="Maximum Speed"/>
@@ -593,7 +593,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="121212"/>
                      <display value="Power"/>
                   </coding>
@@ -619,7 +619,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="121212"/>
                      <display value="Maximum capacity"/>
                   </coding>
@@ -650,7 +650,7 @@
             <status value="current"/>
             <type>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/diagramType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
                   <code value="11111111111"/>
                   <display value="ProcessFlowDiagram"/>
                </coding>
@@ -708,7 +708,7 @@
                <productName value="Stelbat Tablets, 20mg"/>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/productNameType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
                      <code value="1234"/>
                      <display value="Proprietary"/>
                   </coding>
@@ -898,7 +898,7 @@
             <classification>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/deviceType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-local-pq"/>
                      <code value="mixing-vessel"/>
                      <display value="Mixing Vessel"/>
                   </coding>
@@ -907,7 +907,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="capacity"/>
                      <display value="Capacity"/>
                      <!-- seems a little different to "maximum capacity -->
@@ -934,7 +934,7 @@
             <classification>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/deviceType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-local-pq"/>
                      <code value="receiving-tank"/>
                      <display value="Receiving Tank"/>
                   </coding>
@@ -943,7 +943,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="capacity"/>
                      <display value="Capacity"/>
                      <!-- seems a little different to "maximum capacity -->

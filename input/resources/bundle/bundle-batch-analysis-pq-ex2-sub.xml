@@ -841,7 +841,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/reportType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
                   <code value="111"/>
                   <display value="Batch Analysis Report"/>
                </coding>
