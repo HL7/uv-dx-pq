@@ -883,7 +883,7 @@
                 <display value="Procedure - Drug PQ"/>
             </reference>
             <name value="Procedure - Drug PQ"/>
-            <description value="TBD"/>
+            <description value="This Procedure profile represents the actual performance of a manufacturing step, so that measurements can be recorded (via Observations), such as the actual “hold time” used, or the “bioburden” at the beginning or end of the step. The Procedure may record which device was used in the performance of a manufacturing step."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
