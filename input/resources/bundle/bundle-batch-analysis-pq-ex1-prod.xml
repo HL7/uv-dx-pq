@@ -2,7 +2,6 @@
 <!-- Product Batch Analysys -->
 <Bundle xmlns="http://hl7.org/fhir">
    <!-- Based on file: Accumulus FHIR Product Example - Batch Analysis, posted on 05-31-2023 -->
-   <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
    <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>-->
    <!-- For this example, changed "http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology" to "http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
    <id value="bundle-batch-analysis-pq-ex1-prod"/>

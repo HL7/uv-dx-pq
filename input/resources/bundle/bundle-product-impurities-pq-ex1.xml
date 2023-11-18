@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 32P55 Characterization of Impurities -->
 <!-- Based on file: Accumulus FHIR Product Example - 32P55 Characterization of Impurities, posted on 06-22-2023 -->
-<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-product-impurities-pq-ex1"/>

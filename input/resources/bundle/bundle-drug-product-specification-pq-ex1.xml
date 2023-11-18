@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Product Specification -->
 <!-- Based on file Accumulus FHIR Product Example - Specification, posted 05-31-2023 -->
-<!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
 <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-specification-pq-ex1"/>

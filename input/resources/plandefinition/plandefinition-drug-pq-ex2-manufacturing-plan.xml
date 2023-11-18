@@ -49,7 +49,7 @@
                 </description>
                 <priority>
                     <coding>
-                        <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
                         <code value="critical"/>
                         <display value="Critical"/>
                     </coding>
@@ -90,7 +90,7 @@
                 </description>
                 <priority>
                     <coding>
-                        <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
                         <code value="critical"/>
                         <display value="Critical"/>
                     </coding>
@@ -126,7 +126,7 @@
                 </description>
                 <priority>
                     <coding>
-                        <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
                         <code value="critical"/>
                         <display value="Critical"/>
                     </coding>
