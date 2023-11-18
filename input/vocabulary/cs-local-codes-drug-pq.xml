@@ -8,7 +8,8 @@
   <experimental value="false"/>
   <description value="This code system contains temporary local codes for use in PQ."/>
   <caseSensitive value="true"/>
-  <content value="example"/>
+  <content value="complete"/>
+  
   <!-- The following concepts were originally assigned to code system http://dummy.loinc.org -->
   <!--  concepts for Observation-test-result-drug-pq examples -->
   <concept>
