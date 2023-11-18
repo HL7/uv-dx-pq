@@ -257,20 +257,12 @@
   <!--  Concepts for PlanDefinition-drug-pq examples-->
   <!--  Used in PlanDefinition.goal.target.measure-->
   <concept>
-    <code value="WaterContent"/>
-    <display value="Water content"/>
-  </concept>
-  <concept>
     <code value="ParticleSize"/>
     <display value="Particle Size"/>
   </concept>
   <concept>
     <code value="PH"/>
     <display value="pH Level"/>
-  </concept>
-  <concept>
-    <code value="ParticleSize"/>
-    <display value="Particle Size"/>
   </concept>
   <concept>
     <code value="particle-size-distribution"/>
