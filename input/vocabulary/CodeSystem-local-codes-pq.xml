@@ -8,7 +8,7 @@
   <experimental value="false"/>
   <description value="This code system contains temporary local codes for use in PQ."/>
   <caseSensitive value="true"/>
-  <content value="example"/>
+  <content value="complete"/>
   <concept>
     <code value="111"/>
     <display value="Stability Study Report"/>
