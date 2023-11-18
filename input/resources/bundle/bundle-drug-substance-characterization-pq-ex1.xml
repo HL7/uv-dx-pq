@@ -39,7 +39,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/characterizationStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
                      <code value="elemental-analyis"/>
                      <display value="Elemental Analyis"/>
                   </coding>
@@ -79,7 +79,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/characterizationStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
                      <code value="ion-analyis"/>
                      <display value="Ion Analyis"/>
                   </coding>
@@ -119,7 +119,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/characterizationStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
                      <code value="structure"/>
                      <display value="Structure"/>
                   </coding>
@@ -138,7 +138,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/characterizationStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
                      <code value="nmr"/>
                      <display value="NMR"/>
                   </coding>
@@ -157,7 +157,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/characterizationStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
                      <code value="MolecularStructure"/>
                      <display value="Molecular Structure"/>
                   </coding>
@@ -176,7 +176,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/characterizationStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
                      <code value="diffractogram"/>
                      <display value="Diffractogram"/>
                   </coding>
@@ -195,7 +195,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/characterizationStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
                      <code value="absorption"/>
                      <display value="Absorption"/>
                   </coding>
