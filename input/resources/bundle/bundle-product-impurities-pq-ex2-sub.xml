@@ -44,7 +44,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="CH-IMP"/>
                      <display value="Chiral Impurity"/>
                   </coding>
@@ -73,7 +73,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="PR-IMP"/>
                      <display value="Process impurity"/>
                   </coding>
@@ -102,7 +102,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="PR-IMP"/>
                      <display value="Process impurity"/>
                   </coding>
@@ -132,7 +132,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="ST-IMP"/>
                      <display value="Starting material, forced degradation product"/>
                   </coding>
@@ -162,7 +162,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="INT-IMP"/>
                      <display value="Process intermediate, forced degradation product"/>
                   </coding>
@@ -230,7 +230,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -338,7 +338,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -446,7 +446,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -559,7 +559,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -707,7 +707,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-2"/>
                      <display value="Class 2"/>
                   </coding>

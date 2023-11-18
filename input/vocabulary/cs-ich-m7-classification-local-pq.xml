@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="cs-ich-m7-classification-local-pq"/>
-    <!--    Replaces http://accumulus.org/fhir/code/ich-m7-classification -->
+    <!--    Replaces http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq -->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
     <name value="CsIchM7ClassificationLocalPQ"/>
     <title value="CodeSystem - ICH M7 Classification Local PQ"/>
