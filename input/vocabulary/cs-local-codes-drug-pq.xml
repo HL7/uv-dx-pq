@@ -272,6 +272,10 @@
     <code value="ParticleSize"/>
     <display value="Particle Size"/>
   </concept>
+  <concept>
+    <code value="particle-size-distribution"/>
+    <display value="Particle size distribution"/>
+  </concept>
   <!--  Concepts for Procedure-drug-pq examples-->
   <!--  Used in Procedure.code-->
   <concept>
