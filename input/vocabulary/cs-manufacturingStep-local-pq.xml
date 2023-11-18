@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-manufacturingStep-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/manufacturingStep-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+    <name value="CsManufacturingStepLocalPQ"/>
+    <title value="CodeSystem - Manufacturing Step Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for manufacturing step in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    
+    <concept>
+        <code value="Mixing of ingredients"/>
+        <display value="Mixing of ingredients"/>
+    </concept>
+    <concept>
+        <code value="Drying"/>
+        <display value="Drying"/>
+    </concept>
+    <concept>
+        <code value="Particle Size Reduction"/>
+        <display value="Particle Size Reduction"/>
+    </concept>
+</CodeSystem>

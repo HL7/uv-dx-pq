@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-grade-local-pq"/>
+    <!--    Replaces http://example.accumulus.org/fhir/code/grade & http://accumulus.org/fhir/code/grade-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+    <name value="CsGradeLocalPQ"/>
+    <title value="CodeSystem - Grade Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for grade in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+   
+    <concept>
+        <code value="in-house"/>
+        <display value="in-house"/>
+    </concept>
+    <concept>
+        <code value="NF-PH-Eur"/>
+        <display value="NF-PH-Eur"/>
+    </concept>
+    <concept>
+        <code value="NF / Ph Eur"/>
+        <display value="NF / Ph Eur"/>
+    </concept>
+    <concept>
+        <code value="BP"/>
+        <display value="BP"/>
+    </concept>
+    <concept>
+        <code value="USP"/>
+        <display value="USP"/>
+    </concept>
+    <concept>
+        <code value="PhEur"/>
+        <display value="PhEur"/>
+    </concept>
+    <concept>
+        <code value="16 CFR 1700"/>
+        <display value="16 CFR 1700"/>
+    </concept>
+    <concept>
+        <code value="21CFR175.300"/>
+        <display value="21CFR175.300"/>
+    </concept>
+    <concept>
+        <code value="EU-94-62-EC"/>
+        <display value="EU-94-62-EC"/>
+    </concept>
+    <concept>
+        <code value="EU1935-2004"/>
+        <display value="EU1935-2004"/>
+    </concept>
+    <concept>
+        <code value="EU78-142"/>
+        <display value="EU78-142"/>
+    </concept>
+    <concept>
+        <code value="PhEur3111"/>
+        <display value="PhEur3111"/>
+    </concept>
+    <concept>
+        <code value="PhEur322"/>
+        <display value="PhEur322"/>
+    </concept>
+    <concept>
+        <code value="EU10-2011"/>
+        <display value="EU10-2011"/>
+    </concept>
+</CodeSystem>

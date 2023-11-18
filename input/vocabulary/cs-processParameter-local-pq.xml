@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-processParameter-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/processParameter-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
+    <name value="CsProcessParameterLocalPQ"/>
+    <title value="CodeSystem - Process Parameter Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for process parameter in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    
+    <concept>
+        <code value="Capacity"/>
+        <display value="Capacity"/>
+    </concept>
+    <concept>
+        <code value="Temperature"/>
+        <display value="Temperature"/>
+    </concept>
+    <concept>
+        <code value="Maximum Temperature"/>
+        <display value="Maximum Temperature"/>
+    </concept>
+    <concept>
+        <code value="Rotational Speed"/>
+        <display value="Rotational Speed"/>
+    </concept>
+</CodeSystem>

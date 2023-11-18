@@ -298,7 +298,7 @@
             <isExample value="false"/>
             <groupingId value="b15-impurities"/>
         </resource>
-        
+
         <!--Impurities Examples-->
         <resource>
             <reference>
@@ -516,7 +516,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
             <groupingId value="b13-processvalidation"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex3-prod-bio"/>
@@ -954,7 +954,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Composition/composition-drug-pq-formulation"/>
@@ -1261,7 +1261,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-derived-from-pq"/>
@@ -1283,7 +1283,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-number-of-full-shelves-pq"/>
@@ -1294,7 +1294,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-number-of-partial-shelves-pq"/>
@@ -1404,7 +1404,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-participant-pq"/>
@@ -1448,7 +1448,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-package-definition-pq"/>
@@ -1458,8 +1458,8 @@
             <description value="Extension - Package Definition PQ"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
-        </resource>  
-        
+        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-date-pq"/>
@@ -1514,7 +1514,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-criticality-pq"/>
@@ -1613,7 +1613,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-target-fill-weight-pq"/>
@@ -1624,7 +1624,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-test-comment-pq"/>
@@ -1658,157 +1658,268 @@
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-local-codes-drug-pq"/>
                 <display value="CodeSystem - Local Codes - Drug PQ"/>
             </reference>
             <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="This code system contains temporary local codes for use in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
-        
-<!--        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-batch-designation-local-pq"/>
-                
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
-            </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>-->
-        
-        <!--        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-batch-utilization-terminology-local-pq"/>
-                
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
-            </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>-->
-        
-        <!--        <resource>
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-characterizationStep-local-pq"/>
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
+                <display value="CodeSystem - Characterization Step Local PQ"/>
             </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <name value="CodeSystem - Characterization Step Local PQ"/>
+            <description value="This code system contains local codes for characterization step in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
-        </resource>-->
-        
-        <!--        <resource>
+        </resource>
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-closureTypes-local-pq"/>
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
+                <display value="CodeSystem - Closure Types Local PQ"/>
             </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <name value="CodeSystem - Closure Types Local PQ"/>
+            <description value="This code system contains local codes for closure types in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
-        </resource>-->
-        
-        <!--        <resource>
+        </resource>
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-color-local-pq"/>
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
+                <display value="CodeSystem - Color Local PQ"/>
             </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <name value="CodeSystem - Color Local PQ"/>
+            <description value="This code system contains local codes for color in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
-        </resource>-->
-        
-                <resource>
+        </resource>
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-controlCriticality-local-pq"/>
                 <display value="CodeSystem - Control Criticality Local PQ"/>
             </reference>
-                    <name value="CodeSystem - Control Criticality Local PQ"/>
-                    <description value="This code system contains local codes for control criticality in PQ."/>
+            <name value="CodeSystem - Control Criticality Local PQ"/>
+            <description value="This code system contains local codes for control criticality in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
-        
-        <!--        <resource>
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-deviceProperty-local-pq"/>
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
+                <display value="CodeSystem - Device Property Local PQ"/>
             </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <name value="CodeSystem - Device Property Local PQ"/>
+            <description value="This code system contains local codes for device property in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
-        </resource>-->
-        
-        <!--        <resource>
+        </resource>
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-deviceType-local-pq"/>
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
+                <display value="CodeSystem - Device Type Local PQ"/>
             </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <name value="CodeSystem - Device Type Local PQ"/>
+            <description value="This code system contains local codes for device type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
-        </resource>-->
-        
-        <!--        <resource>
+        </resource>
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-diagramType-local-pq"/>
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
+                <display value="CodeSystem - Diagram Type Local PQ"/>
             </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <name value="CodeSystem - Diagram Type Local PQ"/>
+            <description value="This code system contains local codes for diagram type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
-        </resource>-->
-        
-        <!--        LIST
-        cs-grade-local-pq
-        cs-grade-local-pq
-        cs-manufacturingParticipantRole-local-pq
-        cs-manufacturingStep-local-pq
-        cs-manufacturing-step-local-pq
-        cs-manufacturingStepScale-local-pq
-        cs-packageProperty-local-pq
-        cs-packageProperty-local-pq
-        cs-planType-local-pq
-        cs-processParameter-local-pq
-        cs-productNameType-local-pq
-        cs-productSiteUtilizationType-local-pq
-        cs-qualifiedValueCriticality-local-pq
-        cs-reportType-local-pq
-        cs-specification-type-local-pq
-        cs-testCategory-local-pq
-        cs-timePointDescription-local-pq-->
-        
-        
-        <!--        <resource>
+        </resource>
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-equipmentClass-local-pq"/>
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
+                <display value="CodeSystem - Equipment Class Local PQ"/>
             </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <name value="CodeSystem - Equipment Class Local PQ"/>
+            <description value="This code system contains local codes for equipment class in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
-        </resource>-->
-        
-                <resource>
+        </resource>
+
+
+        <resource>
             <reference>
                 <reference value="CodeSystem/cs-goalPriority-local-pq"/>
                 <display value="CodeSystem - Goal Priority Local PQ"/>
             </reference>
             <name value="CodeSystem - Goal Priority Local PQ"/>
             <description value="This code system contains local codes for goal priority in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-grade-local-pq"/>
+                <display value="CodeSystem - Grade Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Grade Local PQ"/>
+            <description value="This code system contains local codes for grade in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                <display value="CodeSystem - Manufacturing Participant Role Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Manufacturing Participant Role Local PQ"/>
+            <description value="This code system contains local codes for manufacturing participant role in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-manufacturingStep-local-pq"/>
+                <display value="CodeSystem - Manufacturing Step Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Manufacturing Step Local PQ"/>
+            <description value="This code system contains local codes for manufacturing step in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-manufacturingStepScale-local-pq"/>
+                <display value="CodeSystem - Manufacturing Step Scale Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Manufacturing Step Scale Local PQ"/>
+            <description value="This code system contains local codes for manufacturing step scale in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-packageProperty-local-pq"/>
+                <display value="CodeSystem - Package Property Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Package Property Local PQ"/>
+            <description value="This code system contains local codes for package property in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-planType-local-pq"/>
+                <display value="CodeSystem - Plan Type Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Plan Type Local PQ"/>
+            <description value="This code system contains local codes for plan type in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-processParameter-local-pq"/>
+                <display value="CodeSystem - Process Parameter Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Process Parameter Local PQ"/>
+            <description value="This code system contains local codes for process parameter in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-productNameType-local-pq"/>
+                <display value="CodeSystem - Product Name Type Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Product Name Type Local PQ"/>
+            <description value="This code system contains local codes for product name type in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-productSiteUtilizationType-local-pq"/>
+                <display value="CodeSystem - Product Site Utilization Type Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Product Site Utilization Type Local PQ"/>
+            <description value="This code system contains local codes for product site utilization type in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
+                <display value="CodeSystem - Qualified Value Criticality Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Qualified Value Criticality Local PQ"/>
+            <description value="This code system contains local codes for qualified value criticality in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-reportType-local-pq"/>
+                <display value="CodeSystem - Report Type Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Report Type Local PQ"/>
+            <description value="This code system contains local codes for report type in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-specification-type-local-pq"/>
+                <display value="CodeSystem - Specification Type Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Specification Type Local PQ"/>
+            <description value="This code system contains local codes for specification type in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-testCategory-local-pq"/>
+                <display value="CodeSystem - Test Category Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Test Category Local PQ"/>
+            <description value="This code system contains local codes for test category in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-timePointDescription-local-pq"/>
+                <display value="CodeSystem - Time Point Description Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Time Point Description Local PQ"/>
+            <description value="This code system contains local codes for time point description in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
@@ -2401,7 +2512,7 @@
                 <title value="Best Practices, Resources"/>
                 <generation value="markdown"/>
             </page>
-<!--            <page>
+            <!--            <page>
                 <name value="specification.html"/>
                 <title value="Specification"/>
                 <generation value="markdown"/>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-characterizationStep-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/characterizationStep-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
+    <name value="CsCharacterizationStepLocalPQ"/>
+    <title value="CodeSystem - Characterization Step Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for characterization step in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    
+    <concept>
+        <code value="absorption"/>
+        <display value="absorption"/>
+    </concept>
+    <concept>
+        <code value="diffractogram"/>
+        <display value="diffractogram"/>
+    </concept>
+    <concept>
+        <code value="elemental-analyis"/>
+        <display value="elemental-analyis"/>
+    </concept>
+    <concept>
+        <code value="ion-analyis"/>
+        <display value="ion-analyis"/>
+    </concept>
+    <concept>
+        <code value="MolecularStructure"/>
+        <display value="MolecularStructure"/>
+    </concept>
+    <concept>
+        <code value="nmr"/>
+        <display value="nmr"/>
+    </concept>
+    <concept>
+        <code value="structure"/>
+        <display value="structure"/>
+    </concept>
+</CodeSystem>

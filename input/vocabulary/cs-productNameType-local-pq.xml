@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-productNameType-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/productNameType-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+    <name value="CsProductNameTypeLocalPQ"/>
+    <title value="CodeSystem - Product Name Type Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for product name type in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Proprietary"/>
+        <display value="Proprietary"/>
+    </concept>
+</CodeSystem>

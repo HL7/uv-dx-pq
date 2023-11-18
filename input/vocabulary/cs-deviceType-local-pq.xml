@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-deviceType-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/deviceType-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-local-pq"/>
+    <name value="CsDeviceTypeLocalPQ"/>
+    <title value="CodeSystem - Device Type Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for device type in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Mixing Vessel"/>
+        <display value="Mixing Vessel"/>
+    </concept>
+    <concept>
+        <code value="Receiving Tank"/>
+        <display value="Receiving Tank"/>
+    </concept>
+</CodeSystem>

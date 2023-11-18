@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-planType-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/planType-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+    <name value="CsPlanTypeLocalPQ"/>
+    <title value="CodeSystem - Plan Type Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for plan type in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    
+    <concept>
+        <code value="Analytical Procedure"/>
+        <display value="Analytical Procedure"/>
+    </concept>
+    <concept>
+        <code value="Manufacturing Process"/>
+        <display value="Manufacturing Process"/>
+    </concept>
+    <concept>
+        <code value="Process Validation"/>
+        <display value="Process Validation"/>
+    </concept>
+    <concept>
+        <code value="Container Specification"/>
+        <display value="Container Specification"/>
+    </concept>
+
+</CodeSystem>

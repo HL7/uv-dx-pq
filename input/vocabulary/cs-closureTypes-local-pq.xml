@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-closureTypes-local-pq"/>
+    <!--    Replaces http://example.accumulus.org/fhir/code/closureTypes-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+    <name value="CsClosureTypesLocalPQ"/>
+    <title value="CodeSystem - Closure Types Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for closure types in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Child Proof Cap"/>
+        <display value="Child Proof Cap"/>
+    </concept>
+    <concept>
+        <code value="Multi-layer Foil Seal Liner"/>
+        <display value="Multi-layer Foil Seal Liner"/>
+    </concept>
+    <concept>
+        <code value="Blister"/>
+        <display value="Blister"/>
+    </concept>
+    <concept>
+        <code value="Blister Foil Lidding"/>
+        <display value="Blister Foil Lidding"/>
+    </concept>
+</CodeSystem>

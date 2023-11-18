@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-packageProperty-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/packageProperty & http://example.accumulus.org/fhir/code/packageProperty -->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+    <name value="CsPackagePropertyLocalPQ"/>
+    <title value="CodeSystem - Package Property Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for package property in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Color"/>
+        <display value="Color"/>
+    </concept>
+    <concept>
+        <code value="Quality Standard"/>
+        <display value="Quality Standard"/>
+    </concept>
+    <concept>
+        <code value="Thickness"/>
+        <display value="Thickness"/>
+    </concept>
+    <concept>
+        <code value="Quality Specification"/>
+        <display value="Quality Specification"/>
+    </concept>
+</CodeSystem>

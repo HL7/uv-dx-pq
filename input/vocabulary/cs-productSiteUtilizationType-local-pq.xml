@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-productSiteUtilizationType-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/productSiteUtilizationType-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq"/>
+    <name value="CsProductSiteUtilizationTypeLocalPQ"/>
+    <title value="CodeSystem - Product Site Utilization Type Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for product site utilization type in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Release stability"/>
+        <display value="Release stability"/>
+    </concept>
+</CodeSystem>

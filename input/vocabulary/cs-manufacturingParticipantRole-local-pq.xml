@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-manufacturingParticipantRole-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/manufacturingParticipantRole-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+    <name value="CsManufacturingParticipantRoleLocalPQ"/>
+    <title value="CodeSystem - Manufacturing Participant Role Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for manufacturing participant role in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Diluent"/>
+        <display value="Diluent"/>
+    </concept>
+    <concept>
+        <code value="Resulting Material"/>
+        <display value="Resulting Material"/>
+    </concept>
+    <concept>
+        <code value="StartingMaterial"/>
+        <display value="StartingMaterial"/>
+    </concept>
+    <concept>
+        <code value="ProcessingMaterial"/>
+        <display value="ProcessingMaterial"/>
+    </concept>
+    <concept>
+        <code value="ResultingMaterial"/>
+        <display value="ResultingMaterial"/>
+    </concept>
+</CodeSystem>

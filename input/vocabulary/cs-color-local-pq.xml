@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-color-local-pq"/>
+    <!--    Replaces http://example.accumulus.org/fhir/code/color-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-color-local-pq"/>
+    <name value="CsColorLocalPQ"/>
+    <title value="CodeSystem - Color Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for color in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="White"/>
+        <display value="White"/>
+    </concept>
+</CodeSystem>
