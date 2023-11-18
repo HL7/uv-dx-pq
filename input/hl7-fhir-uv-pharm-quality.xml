@@ -1904,6 +1904,30 @@
 
         <resource>
             <reference>
+                <reference value="CodeSystem/cs-substance-property-local-pq"/>
+                <display value="CodeSystem - Substance Property Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Substance Property Local PQ"/>
+            <description value="This code system contains local codes for substance property in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-substance-property-solubility-local-pq"/>
+                <display value="CodeSystem - Substance Property Solubility Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Specification Type Local PQ"/>
+            <description value="This code system contains local codes for substance property solubility in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+
+
+
+        <resource>
+            <reference>
                 <reference value="CodeSystem/cs-testCategory-local-pq"/>
                 <display value="CodeSystem - Test Category Local PQ"/>
             </reference>

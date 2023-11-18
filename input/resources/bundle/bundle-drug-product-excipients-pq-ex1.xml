@@ -53,7 +53,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-water"/>
                      <display value="Solubility purified water"/>
                   </coding>
@@ -62,7 +62,7 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="water-cotent"/>
                      <display value="Water content"/>
                   </coding>

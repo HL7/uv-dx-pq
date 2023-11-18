@@ -102,7 +102,7 @@
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/color"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-color-local-pq"/>
                         <code value="white"/>
                         <display value="White"/>
                      </coding>
