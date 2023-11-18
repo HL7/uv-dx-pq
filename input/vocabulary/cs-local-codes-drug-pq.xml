@@ -9,11 +9,28 @@
   <description value="This code system contains temporary local codes for use in PQ."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  
   <!-- The following concepts were originally assigned to code system http://dummy.loinc.org -->
-  <!--  concepts for Observation-test-result-drug-pq examples -->
+
+  <!-- Concepts used in MedicinalProductDefinition.characteristic.type-->
+  <concept>
+    <code value="ionic-strength"/>
+    <display value="Ionic Strength"/>
+  </concept>
+  <concept>
+    <code value="physicochemical"/>
+    <display value="Physicochemical properties"/>
+  </concept>
+
+  <!--  Concepts for ObservationDefinition-test-method-drug-pq examples -->
+  <!--  Used in ObservationDefinition.component.code-->
+  <!--  Concepts for Observation-test-result-drug-pq examples -->
+  <!--  Used in Observation.code -->
   <concept>
     <code value="DGP"/>
+    <display value="Degradation Products"/>
+  </concept>
+  <concept>
+    <code value="DGP-p"/>
     <display value="Degradation Products"/>
   </concept>
   <concept>
@@ -21,12 +38,16 @@
     <display value="Impurity"/>
   </concept>
   <concept>
+    <code value="Impurities"/>
+    <display value="Impurities"/>
+  </concept>
+  <concept>
     <code value="WWW"/>
     <display value="Water Content"/>
   </concept>
   <concept>
     <code value="XXX"/>
-<!--    <code value="XXX"/> is used for many different display values-->
+    <!--    <code value="XXX"/> is used for many different display values-->
     <display value="Assay"/>
   </concept>
   <concept>
@@ -37,14 +58,120 @@
     <code value="ZZZ"/>
     <display value="Uniformity of dosage units (by weight)"/>
   </concept>
-  <!--  concepts for ObservationDefinition-test-method-drug-pq examples-->
+  <concept>
+    <code value="AAA"/>
+    <display value="Assay"/>
+  </concept>
+  <concept>
+    <code value="assay"/>
+    <display value="Assay"/>
+  </concept>
+  <concept>
+    <code value="CEX-HPLCAcidicPeak"/>
+    <display value="CEX-HPLC Acidic Peak"/>
+  </concept>
+  <concept>
+    <code value="CEX-HPLCMainPeak"/>
+    <display value="CEX-HPLC Main Peak"/>
+  </concept>
+
+  <!--  Used ONLY for ObservationDefinition-test-method-drug-pq examples-->
+  <concept>
+    <code value="ASSH"/>
+    <display value="Assay Content Homogeneity"/>
+  </concept>
+  <concept>
+    <code value="description"/>
+    <display value="Description"/>
+  </concept>
+  <concept>
+    <code value="DGP-s"/>
+    <display value="Drug Substance Related Organic impurities"/>
+  </concept>
+  <concept>
+    <code value="dissolution"/>
+    <display value="Dissolution"/>
+  </concept>
+  <concept>
+    <code value="ELE"/>
+    <display value="Elemental impurities"/>
+  </concept>
+  <concept>
+    <code value="enantiomeric-purity"/>
+    <display value="Enantiomeric purity"/>
+  </concept>
+  <concept>
+    <code value="identification"/>
+    <display value="Identification"/>
+  </concept>
+  <concept>
+    <code value="IDT"/>
+    <display value="Identification"/>
+  </concept>
+
+  <!--  Concepts ONLY for Observation-test-result-drug-pq examples -->
+  <!--  Used in Observation.code -->
+  <concept>
+    <code value="CONC"/>
+    <display value="Conclusion"/>
+  </concept>
+
+  <!--  Used for ObservationDefinition.component.code-->
 
 
-  <!--  concepts for PlanDefinition-drug-pq examples-->
+  <concept>
+    <code value="CEX-HPLCAcidicPeak-15"/>
+    <display value="CEX-HPLC Acidic Peak - 15"/>
+  </concept>
 
+  <concept>
+    <code value="CEX-HPLCAcidicPeak-25"/>
+    <display value="CEX-HPLC Acidic Peak - 25"/>
+  </concept>
 
-  <!--  concepts for Procedure-drug-pq examples-->
+  <concept>
+    <code value="CEX-HPLCMainPeak-15"/>
+    <display value="CEX-HPLC Main Peak - 15"/>
+  </concept>
 
-
-
+  <concept>
+    <code value="CEX-HPLCMainPeak-25"/>
+    <display value="CEX-HPLC Main Peak - 25"/>
+  </concept>
+  <concept>
+    <code value="Homogeneity"/>
+    <display value="Homogeneity demonstrated"/>
+  </concept>
+  <concept>
+    <code value="LCL"/>
+    <display value="Lower one-sided 95% confidence limit of Max Difference"/>
+  </concept>
+  <concept>
+    <code value="LOC"/>
+    <display value="Number of Locations"/>
+  </concept>
+  <!--  Concepts for PlanDefinition-drug-pq examples-->
+  <!--  Used in PlanDefinition.goal.target.measure-->
+  <concept>
+    <code value="WaterContent"/>
+    <display value="Water content"/>
+  </concept>
+  <concept>
+    <code value="ParticleSize"/>
+    <display value="Particle Size"/>
+  </concept>
+  <concept>
+    <code value="PH"/>
+    <display value="pH Level"/>
+  </concept>
+  <!--  Concepts for Procedure-drug-pq examples-->
+  <!--  Used in Procedure.code-->
+  <concept>
+    <code value="MediaChallengeRun"/>
+    <display value="Media Challenge Run"/>
+  </concept>
+  <concept>
+    <code value="LyophilizationHomogeneneity"/>
+    <display value="Lyophilization Homogeneneity"/>
+  </concept>
 </CodeSystem>
