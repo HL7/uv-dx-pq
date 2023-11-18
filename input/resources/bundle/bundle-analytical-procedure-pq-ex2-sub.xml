@@ -260,7 +260,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Obscuration"/>
                </coding>
@@ -299,7 +299,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Refractive index"/>
                </coding>
@@ -332,7 +332,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Particle Size RSD"/>
                </coding>

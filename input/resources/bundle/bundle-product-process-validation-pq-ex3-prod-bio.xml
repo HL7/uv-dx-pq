@@ -677,7 +677,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Buffer vessel mixing speed (rpm)"/>
                </coding>
@@ -710,7 +710,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Formulation vessel mixing speed (rpm)"/>
                </coding>
@@ -743,7 +743,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Buffer vessel mixing time (min)"/>
                </coding>
@@ -780,7 +780,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Formulation vessel mixing time (min)"/>
                </coding>
@@ -817,7 +817,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Residual Moisture"/>
                </coding>
@@ -836,7 +836,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Residual Moisture - Min"/>
                   </coding>
@@ -845,7 +845,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Residual Moisture - Max"/>
                   </coding>
@@ -854,7 +854,7 @@
             <component> <!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
                      <display value="Number of Samples"/>
                   </coding>
@@ -875,7 +875,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="pH"/>
                </coding>
@@ -912,7 +912,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Thaw Time"/>
                </coding>
@@ -942,7 +942,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="pH"/>
                </coding>
@@ -978,7 +978,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Osmolality"/>
                </coding>
@@ -1013,7 +1013,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
@@ -1039,7 +1039,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLC Main Peak - Conclusion"/>
                   </coding>
@@ -1053,7 +1053,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="OVERALLSAMP"/>
                      <display value="Number of Samples"/>
                   </coding>
@@ -1074,7 +1074,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLC HMW"/>
                </coding>
@@ -1100,7 +1100,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLC HMW - Conclusion"/>
                   </coding>
@@ -1114,7 +1114,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="OVERALLSAMP"/>
                      <display value="Number of Samples"/>
                   </coding>
@@ -1135,7 +1135,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
@@ -1165,7 +1165,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
@@ -1186,7 +1186,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLC HMW"/>
                </coding>
@@ -1215,7 +1215,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Conclusion"/>
                </coding>
@@ -1236,7 +1236,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Conclusion"/>
                </coding>
@@ -1257,7 +1257,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Osmolality"/>
                </coding>
@@ -1292,7 +1292,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Thawing Temp"/>
                </coding>
@@ -1327,7 +1327,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Conductivity (μS/cm)"/>
                </coding>
@@ -1361,7 +1361,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Conductivity (μS/cm)"/>
                </coding>
@@ -1394,7 +1394,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
@@ -1428,7 +1428,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
@@ -1445,7 +1445,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
@@ -1454,7 +1454,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - End"/>
                   </coding>
@@ -1475,7 +1475,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Polysorbate 80 concentration - Middle - Max"/>
                </coding>
@@ -1497,7 +1497,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - Beginning - Min"/>
                   </coding>
@@ -1506,7 +1506,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - Beginning - Max"/>
                   </coding>
@@ -1515,7 +1515,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - Middle - Min"/>
                   </coding>
@@ -1524,7 +1524,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - Middle - Max"/>
                   </coding>
@@ -1533,7 +1533,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - End - Min"/>
                   </coding>
@@ -1542,7 +1542,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - End - Max"/>
                   </coding>
@@ -1563,7 +1563,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Protein Concentration (mg/mL)"/>
                </coding>
@@ -1585,7 +1585,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Min"/>
                   </coding>
@@ -1594,7 +1594,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Max"/>
                   </coding>
@@ -1603,7 +1603,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - Min"/>
                   </coding>
@@ -1612,7 +1612,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - Max"/>
                   </coding>
@@ -1621,7 +1621,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - End - Min"/>
                   </coding>
@@ -1630,7 +1630,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - End - Max"/>
                   </coding>
@@ -1651,7 +1651,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Protein Concentration Statistics"/>
                </coding>
@@ -1673,7 +1673,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Middle - Mean"/>
                   </coding>
@@ -1682,7 +1682,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - End - Mean"/>
                   </coding>
@@ -1691,7 +1691,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - End - Mean"/>
                   </coding>
@@ -1700,7 +1700,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Middle - Lower"/>
                   </coding>
@@ -1709,7 +1709,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - End - Lower"/>
                   </coding>
@@ -1718,7 +1718,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - End - Lower"/>
                   </coding>
@@ -1727,7 +1727,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Middle - Higher"/>
                   </coding>
@@ -1736,7 +1736,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - End - Higher"/>
                   </coding>
@@ -1745,7 +1745,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - End - Higher"/>
                   </coding>
@@ -1754,7 +1754,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Conclusion"/>
                   </coding>
@@ -1775,7 +1775,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Fill Weight"/>
                </coding>
@@ -1804,7 +1804,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
@@ -1813,7 +1813,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - End"/>
                   </coding>
@@ -1834,7 +1834,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="GrowthPromotion"/>
                </coding>
@@ -1847,7 +1847,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Growth Promotion - Beginning"/>
                   </coding>
@@ -1856,7 +1856,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Growth Promotion - End"/>
                   </coding>
@@ -1877,7 +1877,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Pre-filtration Bioburden (CFU/ 100 mL)"/>
                </coding>
@@ -1906,7 +1906,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Bacterial Endotoxins (EU/mL)"/>
                </coding>
@@ -1940,7 +1940,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Bacterial Endotoxins (EU/mL)"/>
                </coding>
@@ -1974,7 +1974,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="FiltrationPressure (psig)"/>
                </coding>
@@ -2008,7 +2008,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Post-filtration Filter Integrity (psig)"/>
                </coding>
@@ -2025,7 +2025,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="test-success"/>
                      <display value="Test Success"/>
                   </coding>
@@ -2046,7 +2046,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Media Challenge Hold Times"/>
                </coding>
@@ -2066,7 +2066,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Polysorbate 80 (% w/v)"/>
                </coding>
@@ -2879,7 +2879,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Buffer vessel mixing speed (rpm)"/>
                </coding>
@@ -2913,7 +2913,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Buffer vessel mixing speed (rpm)"/>
                </coding>
@@ -2947,7 +2947,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Buffer vessel mixing speed (rpm)"/>
                </coding>
@@ -2981,7 +2981,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Buffer vessel mixing time (min)"/>
                </coding>
@@ -3015,7 +3015,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Buffer vessel mixing time (min)"/>
                </coding>
@@ -3049,7 +3049,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Buffer vessel mixing time (min)"/>
                </coding>
@@ -3083,7 +3083,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="pH"/>
                </coding>
@@ -3117,7 +3117,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="pH"/>
                </coding>
@@ -3151,7 +3151,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="pH"/>
                </coding>
@@ -3185,7 +3185,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Hold Time"/>
                </coding>
@@ -3219,7 +3219,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Hold Time"/>
                </coding>
@@ -3253,7 +3253,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Hold Time"/>
                </coding>
@@ -3286,7 +3286,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
@@ -3302,7 +3302,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
@@ -3316,7 +3316,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - End"/>
                   </coding>
@@ -3343,7 +3343,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
@@ -3359,7 +3359,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
@@ -3373,7 +3373,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - End"/>
                   </coding>
@@ -3400,7 +3400,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
@@ -3416,7 +3416,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
@@ -3430,7 +3430,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Bioburden - End"/>
                   </coding>
@@ -3457,7 +3457,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="ProteinConcentration (mg/mL)"/>
                </coding>
@@ -3473,7 +3473,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Middle - Mean"/>
                   </coding>
@@ -3487,7 +3487,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - End - Mean"/>
                   </coding>
@@ -3501,7 +3501,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - End - Mean"/>
                   </coding>
@@ -3515,7 +3515,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Middle - Lower"/>
                   </coding>
@@ -3529,7 +3529,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - End - Lower"/>
                   </coding>
@@ -3543,7 +3543,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - End - Lower"/>
                   </coding>
@@ -3557,7 +3557,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Middle - Higher"/>
                   </coding>
@@ -3571,7 +3571,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - End - Higher"/>
                   </coding>
@@ -3585,7 +3585,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - End - Higher"/>
                   </coding>
@@ -3599,7 +3599,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Conclusion"/>
                   </coding>
@@ -3622,7 +3622,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="ProteinConcentration (mg/mL)"/>
                </coding>
@@ -3638,7 +3638,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Min"/>
                   </coding>
@@ -3652,7 +3652,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Beginning - Max"/>
                   </coding>
@@ -3666,7 +3666,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - Min"/>
                   </coding>
@@ -3680,7 +3680,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - Middle - Max"/>
                   </coding>
@@ -3694,7 +3694,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - End - Min"/>
                   </coding>
@@ -3708,7 +3708,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Protein Concentration - End - Max"/>
                   </coding>
@@ -3735,7 +3735,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Polysorbate 80 concentration (% w/v)"/>
                </coding>
@@ -3751,7 +3751,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - Beginning - Min"/>
                   </coding>
@@ -3765,7 +3765,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - Beginning - Max"/>
                   </coding>
@@ -3779,7 +3779,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - Middle - Min"/>
                   </coding>
@@ -3793,7 +3793,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - Middle - Max"/>
                   </coding>
@@ -3807,7 +3807,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - End - Min"/>
                   </coding>
@@ -3821,7 +3821,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Polysorbate 80 concentration - End - Max"/>
                   </coding>
@@ -3848,7 +3848,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Growth Promotion"/>
                </coding>
@@ -3864,7 +3864,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Growth Promotion - Beginning"/>
                   </coding>
@@ -3874,7 +3874,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Growth Promotion - End"/>
                   </coding>
@@ -3897,7 +3897,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Growth Promotion"/>
                </coding>
@@ -3913,7 +3913,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Growth Promotion - Beginning"/>
                   </coding>
@@ -3923,7 +3923,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Growth Promotion - End"/>
                   </coding>
@@ -3946,7 +3946,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Growth Promotion"/>
                </coding>
@@ -3962,7 +3962,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Growth Promotion - Beginning"/>
                   </coding>
@@ -3972,7 +3972,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Growth Promotion - End"/>
                   </coding>
@@ -3994,7 +3994,7 @@
             <status value="completed"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="MediaChallengeRun"/>
                   <display value="Media Challenge Run"/>
                </coding>
@@ -4024,7 +4024,7 @@
             <status value="completed"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="MediaChallengeRun"/>
                   <display value="Media Challenge Run"/>
                </coding>
@@ -4054,7 +4054,7 @@
             <status value="completed"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="MediaChallengeRun"/>
                   <display value="Media Challenge Run"/>
                </coding>
@@ -4099,7 +4099,7 @@
             <status value="completed"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="LyophilizationHomogeneneity"/>
                   <display value="Lyophilization Homogeneneity"/>
                </coding>
@@ -4136,7 +4136,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Post-filtration Filter Integrity (psig)"/>
                </coding>
@@ -4157,7 +4157,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="test-success"/>
                      <display value="Test Success"/>
                   </coding>
@@ -4183,7 +4183,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="osmolality"/>
                </coding>
@@ -4217,7 +4217,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="osmolality"/>
                </coding>
@@ -4251,7 +4251,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="osmolality"/>
                </coding>
@@ -4285,7 +4285,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Residual Moisture"/>
                </coding>
@@ -4302,7 +4302,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Residual Moisture - Min"/>
                   </coding>
@@ -4315,7 +4315,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Residual Moisture - Max"/>
                   </coding>
@@ -4328,7 +4328,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
                      <display value="No. of Samples"/>
                   </coding>
@@ -4351,7 +4351,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Residual Moisture"/>
                </coding>
@@ -4372,7 +4372,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
                      <display value="No. of Samples"/>
                   </coding>
@@ -4395,7 +4395,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Residual Moisture"/>
                </coding>
@@ -4416,7 +4416,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
                      <display value="No. of Samples"/>
                   </coding>
@@ -4439,7 +4439,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCMainPeak"/>
                </coding>
@@ -4456,7 +4456,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLC Main Peak - Beginning"/>
                   </coding>
@@ -4469,7 +4469,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLC Main Peak - End"/>
                   </coding>
@@ -4495,7 +4495,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCMainPeak"/>
                </coding>
@@ -4512,7 +4512,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLC Main Peak - Beginning"/>
                   </coding>
@@ -4525,7 +4525,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLC Main Peak - End"/>
                   </coding>
@@ -4551,7 +4551,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCMainPeak"/>
                </coding>
@@ -4568,7 +4568,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLC Main Peak - Beginning"/>
                   </coding>
@@ -4581,7 +4581,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLC Main Peak - End"/>
                   </coding>
@@ -4607,7 +4607,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCMainPeak"/>
                </coding>
@@ -4641,7 +4641,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCMainPeak"/>
                </coding>
@@ -4676,7 +4676,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCMainPeak"/>
                </coding>
@@ -4711,7 +4711,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCMainPeak"/>
                </coding>
@@ -4748,7 +4748,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCMainPeak"/>
                </coding>
@@ -4770,7 +4770,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
                      <display value="Number of Samples"/>
                   </coding>
@@ -4780,7 +4780,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLCMainPeak - Conclusion"/>
                   </coding>
@@ -4804,7 +4804,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCHMW"/>
                </coding>
@@ -4839,7 +4839,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCHMW"/>
                </coding>
@@ -4874,7 +4874,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCHMW"/>
                </coding>
@@ -4909,7 +4909,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCHMW"/>
                </coding>
@@ -4931,7 +4931,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
                      <display value="Number of Samples"/>
                   </coding>
@@ -4941,7 +4941,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLCHMWPeak - Conclusion"/>
                   </coding>
@@ -4965,7 +4965,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCHMW"/>
                </coding>
@@ -4982,7 +4982,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLCHMW - Beginning"/>
                   </coding>
@@ -4995,7 +4995,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLCHMW - End"/>
                   </coding>
@@ -5021,7 +5021,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCHMW"/>
                </coding>
@@ -5038,7 +5038,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLCHMW - Beginning"/>
                   </coding>
@@ -5051,7 +5051,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLCHMW - End"/>
                   </coding>
@@ -5077,7 +5077,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="SE-UHPLCHMW"/>
                </coding>
@@ -5094,7 +5094,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLCHMW - Beginning"/>
                   </coding>
@@ -5107,7 +5107,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="SE-UHPLCHMW - End"/>
                   </coding>
@@ -5133,7 +5133,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Fill Weight"/>
                </coding>
@@ -5149,7 +5149,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Fill Weight - Minimum"/>
                   </coding>
@@ -5163,7 +5163,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Fill Weight - Maximum"/>
                   </coding>
@@ -5177,7 +5177,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Fill Weight - Mean"/>
                   </coding>
@@ -5231,7 +5231,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="CONC"/>
                   <display value="Conclusion"/>
                </coding>
@@ -5437,7 +5437,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://dummy.loinc.org"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="PH"/>
                         <display value="pH Level"/>
                      </coding>
@@ -5478,7 +5478,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://dummy.loinc.org"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="WaterContent"/>
                         <display value="Water content"/>
                      </coding>
@@ -5514,7 +5514,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://dummy.loinc.org"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="ParticleSize"/>
                         <display value="Particle Size"/>
                      </coding>

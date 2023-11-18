@@ -11,7 +11,7 @@
     <status value="completed"/>
     <code>
         <coding>
-            <system value="http://dummy.loinc.org"/>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
             <code value="MediaChallengeRun"/>
             <display value="Media Challenge Run"/>
         </coding>

@@ -2,7 +2,7 @@
 <!-- Product Specification -->
 <!-- Based on file Accumulus FHIR Product Example - Specification, posted 05-31-2023 -->
 <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
-<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
+<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-specification-pq-ex1"/>
    <meta>
@@ -184,7 +184,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="description"/>
                   <display value="Description"/>
                </coding>
@@ -213,7 +213,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="description"/>
                   <display value="Description"/>
                </coding>
@@ -239,7 +239,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="identification"/>
                   <display value="Identification"/>
                </coding>
@@ -268,7 +268,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="identification"/>
                   <display value="Identification"/>
                </coding>
@@ -294,7 +294,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="assay"/>
                   <display value="Assay"/>
                </coding>
@@ -323,7 +323,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="assay"/>
                   <display value="Assay"/>
                </coding>
@@ -349,7 +349,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP-p"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -415,7 +415,7 @@
             <component> <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -436,7 +436,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP-p"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -499,7 +499,7 @@
             <component> <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -520,7 +520,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="dissolution"/>
                   <display value="Dissolution"/>
                </coding>
@@ -549,7 +549,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="dissolution"/>
                   <display value="Dissolution"/>
                </coding>
@@ -578,7 +578,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="WWW"/>
                   <display value="Water Content"/>
                </coding>
@@ -610,7 +610,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="WWW"/>
                   <display value="Water Content"/>
                </coding>
@@ -642,7 +642,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="YYY"/>
                   <display value="Microbiological Quality"/>
                </coding>
@@ -671,7 +671,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="YYY"/>
                   <display value="Microbiological Quality"/>
                </coding>
@@ -700,7 +700,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="uniformity-dosage"/>
                   <display value="uniformity of dosage units (by weight)"/>
                </coding>
@@ -729,7 +729,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="uniformity-dosage"/>
                   <display value="uniformity of dosage units (by weight)"/>
                </coding>

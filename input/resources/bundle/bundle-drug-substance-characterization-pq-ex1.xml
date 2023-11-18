@@ -307,7 +307,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Elemental Analysis Carbon (%)"/>
                </coding>
@@ -347,7 +347,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Elemental Analysis Hydrogen (%)"/>
                </coding>
@@ -387,7 +387,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Elemental Analysis Nitrogen (%)"/>
                </coding>
@@ -427,7 +427,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Elemental Analysis Flourine (%)"/>
                </coding>
@@ -467,7 +467,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Ion Analysis Carbon (%)"/>
                </coding>
@@ -490,7 +490,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Ion Analysis Carbon - Mass Accuracy"/>
                   </coding>
@@ -511,7 +511,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Ion Analysis Hydrogen (%)"/>
                </coding>
@@ -546,7 +546,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Ion Analysis Nitrogen (%)"/>
                </coding>
@@ -581,7 +581,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Ion Analysis Flourine (%)"/>
                </coding>
@@ -616,7 +616,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="nmr"/>
                </coding>
@@ -626,7 +626,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -635,7 +635,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -644,7 +644,7 @@
             <component> <!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -665,7 +665,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Chemical Structure"/>
                </coding>
@@ -686,7 +686,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Diffractogram"/>
                </coding>
@@ -706,7 +706,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="MolecularStructure"/>
                </coding>
@@ -726,7 +726,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Absorption"/>
                </coding>
@@ -748,7 +748,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Elemental Analysis Carbon (%)"/>
                </coding>
@@ -783,7 +783,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Elemental Analysis Hydrogen (%)"/>
                </coding>
@@ -818,7 +818,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Elemental Analysis Nitrogen (%)"/>
                </coding>
@@ -853,7 +853,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Elemental Analysis Flourine (%)"/>
                </coding>
@@ -888,7 +888,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Ion Analysis Carbon (%)"/>
                </coding>
@@ -909,7 +909,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Ion Analysis Carbon - Mass Accuracy"/>
                   </coding>
@@ -938,7 +938,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Ion Analysis Hydrogen (%)"/>
                </coding>
@@ -959,7 +959,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Ion Analysis Hydrogen - Mass Accuracy"/>
                   </coding>
@@ -988,7 +988,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Ion Analysis Nitrogen (%)"/>
                </coding>
@@ -1009,7 +1009,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Ion Analysis Nitrogen - Mass Accuracy"/>
                   </coding>
@@ -1038,7 +1038,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Ion Analysis Flourine (%)"/>
                </coding>
@@ -1059,7 +1059,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="XXX"/>
                      <display value="Ion Analysis Flourine - Mass Accuracy"/>
                   </coding>
@@ -1088,7 +1088,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1107,7 +1107,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1117,7 +1117,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1127,7 +1127,7 @@
             <component> <!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1150,7 +1150,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1168,7 +1168,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1178,7 +1178,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1188,7 +1188,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1211,7 +1211,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1229,7 +1229,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1239,7 +1239,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1254,7 +1254,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1277,7 +1277,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1295,7 +1295,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1310,7 +1310,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1320,7 +1320,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1343,7 +1343,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1361,7 +1361,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1371,7 +1371,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1381,7 +1381,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1404,7 +1404,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1422,7 +1422,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1432,7 +1432,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1442,7 +1442,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1465,7 +1465,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1483,7 +1483,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1493,7 +1493,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1503,7 +1503,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1657,7 +1657,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Chemical Structure"/>
                </coding>
@@ -1692,7 +1692,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="X-Ray Powder Diffractogram"/>
                </coding>
@@ -1727,7 +1727,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Molecular Structure"/>
                </coding>
@@ -1762,7 +1762,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="XXX"/>
                   <display value="Absorption"/>
                </coding>

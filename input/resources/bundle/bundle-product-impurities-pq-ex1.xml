@@ -2,7 +2,7 @@
 <!-- 32P55 Characterization of Impurities -->
 <!-- Based on file: Accumulus FHIR Product Example - 32P55 Characterization of Impurities, posted on 06-22-2023 -->
 <!-- For this example, changed <system value="http://unitsofmeasure.org"/> to <system value="http://dummy.unitsofmeasure.org"/>-->
-<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://dummy.loinc.org"/>-->
+<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-product-impurities-pq-ex1"/>
    <meta>
@@ -259,7 +259,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -284,7 +284,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -310,7 +310,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -329,7 +329,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -355,7 +355,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -374,7 +374,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -400,7 +400,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -419,7 +419,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -445,7 +445,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -464,7 +464,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -490,7 +490,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -509,7 +509,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -535,7 +535,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -560,7 +560,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -586,7 +586,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -611,7 +611,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -637,7 +637,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -662,7 +662,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -688,7 +688,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -707,7 +707,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -733,7 +733,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -758,7 +758,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -784,7 +784,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -803,7 +803,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -829,7 +829,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -854,7 +854,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -880,7 +880,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -905,7 +905,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -931,7 +931,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -956,7 +956,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -982,7 +982,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1007,7 +1007,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1033,7 +1033,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1058,7 +1058,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1084,7 +1084,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1109,7 +1109,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1135,7 +1135,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1154,7 +1154,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1180,7 +1180,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1199,7 +1199,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1225,7 +1225,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1244,7 +1244,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1270,7 +1270,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1294,7 +1294,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1320,7 +1320,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1344,7 +1344,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1370,7 +1370,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
@@ -1394,7 +1394,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>

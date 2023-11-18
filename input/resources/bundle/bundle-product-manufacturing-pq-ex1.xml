@@ -72,7 +72,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://dummy.loinc.org"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="PH"/>
                         <display value="pH Level"/>
                      </coding>
@@ -113,7 +113,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://dummy.loinc.org"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="WaterContent"/>
                         <display value="Water content"/>
                      </coding>
@@ -149,7 +149,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://dummy.loinc.org"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="ParticleSize"/>
                         <display value="Particle Size"/>
                      </coding>
