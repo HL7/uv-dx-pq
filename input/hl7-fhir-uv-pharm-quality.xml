@@ -1783,6 +1783,40 @@
 
         <resource>
             <reference>
+                <reference value="CodeSystem/cs-ich-m7-classification-local-pq"/>
+                <display value="CodeSystem - ICH M7 Classification Local PQ"/>
+            </reference>
+            <name value="CodeSystem - ICH M7 Classification Local PQ"/>
+            <description value="This code system contains local codes for ICH M7 classification in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-impurity-origin-local-pq"/>
+                <display value="CodeSystem - Impurity Origin Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Impurity Origin Local PQ"/>
+            <description value="This code system contains local codes for impurity origin in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-impurity-type-local-pq"/>
+                <display value="CodeSystem - Impurity Type Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Impurity Type Local PQ"/>
+            <description value="This code system contains local codes for impurity type in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+
+
+        <resource>
+            <reference>
                 <reference value="CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                 <display value="CodeSystem - Manufacturing Participant Role Local PQ"/>
             </reference>
@@ -1944,8 +1978,16 @@
             <groupingId value="term"/>
         </resource>
 
-
-
+        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-substancePropertyType-local-pq"/>
+                <display value="CodeSystem - Substance Property Type Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Substance Property Type Local PQ"/>
+            <description value="This code system contains local codes for substance property type in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
 
         <resource>
             <reference>

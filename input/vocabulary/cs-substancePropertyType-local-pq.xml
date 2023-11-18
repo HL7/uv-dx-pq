@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-substancePropertyType-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/substancePropertyType -->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq"/>
+    <name value="CsSubstancePropertyTypeLocalPQ"/>
+    <title value="CodeSystem - Substance Property Type Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for substance property type in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="impurityClassificationMCP"/>
+        <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+    </concept>
+</CodeSystem>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-impurity-origin-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/impurity-origin -->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+    <name value="CsImpurityOriginLocalPQ"/>
+    <title value="CodeSystem - Impurity Origin Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for impurity origin in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="enantiomer"/>
+        <display value="Enantiomer"/>
+    </concept>
+</CodeSystem>
