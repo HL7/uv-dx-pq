@@ -26,6 +26,82 @@
   <!--  Concepts for Observation-test-result-drug-pq examples -->
   <!--  Used in Observation.code -->
   <concept>
+    <code value="SE-UHPLCHMW"/>
+    <display value="SE-UHPLC HMW"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCHMW-15"/>
+    <display value="SE-UHPLC HMW - 15"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCHMW-25"/>
+    <display value="SE-UHPLC HMW - 25"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCMainPeak"/>
+    <display value="SE-UHPLC Main Peak"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCMainPeak-15"/>
+    <display value="SE-UHPLC Main Peak - 15"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCMainPeak-25"/>
+    <display value="SE-UHPLC Main Peak - 25"/>
+  </concept>
+  <concept>
+    <code value="SIZE"/>
+    <display value="Particle Size"/>
+  </concept>
+  <concept>
+    <code value="SOL"/>
+    <display value="Residual solvents"/>
+  </concept>
+  <concept>
+    <code value="SOLV"/>
+    <display value="Solvent"/>
+  </concept>
+  <concept>
+    <code value="SSE"/>
+    <display value="Statistically significant effects"/>
+  </concept>
+  <concept>
+    <code value="TEMP"/>
+    <display value="Temperature"/>
+  </concept>
+  <concept>
+    <code value="test-success"/>
+    <display value="Test Success"/>
+  </concept>
+  <concept>
+    <code value="UCL"/>
+    <display value="Upper one-sided 95% confidence limit of Max Difference"/>
+  </concept>
+  <concept>
+    <code value="uniformity-dosage"/>
+    <display value="uniformity of dosage units (by weight)"/>
+  </concept>
+  <concept>
+    <code value="WaterContent"/>
+    <display value="Water content"/>
+  </concept>
+  <concept>
+    <code value="WWWH"/>
+    <display value="Water Content Homogeneity"/>
+  </concept>
+  <concept>
+    <code value="xxx"/>
+    <display value="Assay"/>
+  </concept>
+  <concept>
+    <code value="ZZZX"/>
+    <display value="DissolutionQ"/>
+  </concept>
+  <concept>
+    <code value="SAMP"/>
+    <display value="Number of Samples"/>
+  </concept>
+  <concept>
     <code value="DGP"/>
     <display value="Degradation Products"/>
   </concept>
@@ -74,7 +150,10 @@
     <code value="CEX-HPLCMainPeak"/>
     <display value="CEX-HPLC Main Peak"/>
   </concept>
-
+  <concept>
+    <code value="PART"/>
+    <display value="Particle size distribution"/>
+  </concept>
   <!--  Used ONLY for ObservationDefinition-test-method-drug-pq examples-->
   <concept>
     <code value="ASSH"/>
@@ -115,10 +194,27 @@
     <code value="CONC"/>
     <display value="Conclusion"/>
   </concept>
-
+  <concept>
+    <code value="MUT"/>
+    <display value="Mutagenic impurities"/>
+  </concept>
+  <concept>
+    <code value="NMR"/>
+    <display value="nmr"/>
+  </concept>
   <!--  Used for ObservationDefinition.component.code-->
-
-
+  <concept>
+    <code value="NMR-C"/>
+    <display value="NMR-C"/>
+  </concept>
+  <concept>
+    <code value="NMR-H"/>
+    <display value="NMR-H"/>
+  </concept>
+  <concept>
+    <code value="OVERALLSAMP"/>
+    <display value="Number of Samples"/>
+  </concept>
   <concept>
     <code value="CEX-HPLCAcidicPeak-15"/>
     <display value="CEX-HPLC Acidic Peak - 15"/>
@@ -150,6 +246,14 @@
     <code value="LOC"/>
     <display value="Number of Locations"/>
   </concept>
+  <concept>
+    <code value="PARTS"/>
+    <display value="Particle size"/>
+  </concept>
+  <concept>
+    <code value="POS"/>
+    <display value="Structure Position"/>
+  </concept>
   <!--  Concepts for PlanDefinition-drug-pq examples-->
   <!--  Used in PlanDefinition.goal.target.measure-->
   <concept>
@@ -163,6 +267,10 @@
   <concept>
     <code value="PH"/>
     <display value="pH Level"/>
+  </concept>
+  <concept>
+    <code value="ParticleSize"/>
+    <display value="Particle Size"/>
   </concept>
   <!--  Concepts for Procedure-drug-pq examples-->
   <!--  Used in Procedure.code-->
