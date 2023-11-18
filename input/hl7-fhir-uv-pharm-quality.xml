@@ -1669,6 +1669,149 @@
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
+        
+<!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-batch-designation-local-pq"/>
+                
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+        <!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-batch-utilization-terminology-local-pq"/>
+                
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+        <!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-characterizationStep-local-pq"/>
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+        <!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-closureTypes-local-pq"/>
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+        <!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-color-local-pq"/>
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+                <resource>
+            <reference>
+                <reference value="CodeSystem/cs-controlCriticality-local-pq"/>
+                <display value="CodeSystem - Control Criticality Local PQ"/>
+            </reference>
+                    <name value="CodeSystem - Control Criticality Local PQ"/>
+                    <description value="This code system contains local codes for control criticality in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
+        
+        <!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-deviceProperty-local-pq"/>
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+        <!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-deviceType-local-pq"/>
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+        <!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-diagramType-local-pq"/>
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+        <!--        LIST
+        cs-grade-local-pq
+        cs-grade-local-pq
+        cs-manufacturingParticipantRole-local-pq
+        cs-manufacturingStep-local-pq
+        cs-manufacturing-step-local-pq
+        cs-manufacturingStepScale-local-pq
+        cs-packageProperty-local-pq
+        cs-packageProperty-local-pq
+        cs-planType-local-pq
+        cs-processParameter-local-pq
+        cs-productNameType-local-pq
+        cs-productSiteUtilizationType-local-pq
+        cs-qualifiedValueCriticality-local-pq
+        cs-reportType-local-pq
+        cs-specification-type-local-pq
+        cs-testCategory-local-pq
+        cs-timePointDescription-local-pq-->
+        
+        
+        <!--        <resource>
+            <reference>
+                <reference value="CodeSystem/cs-equipmentClass-local-pq"/>
+                <display value="CodeSystem - Local Codes - Drug PQ"/>
+            </reference>
+            <name value="CodeSystem - Local Codes - Drug PQ"/>
+            <description value="CodeSystem - Local Codes - Drug PQ"/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>-->
+        
+                <resource>
+            <reference>
+                <reference value="CodeSystem/cs-goalPriority-local-pq"/>
+                <display value="CodeSystem - Goal Priority Local PQ"/>
+            </reference>
+            <name value="CodeSystem - Goal Priority Local PQ"/>
+            <description value="This code system contains local codes for goal priority in PQ."/>
+            <isExample value="false"/>
+            <groupingId value="term"/>
+        </resource>
 
         <!--Additional Examples -->
         <!-- Additional ObservationDefinition Examples (examples1)-->

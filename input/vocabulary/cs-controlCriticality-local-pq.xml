@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-controlCriticality-local-pq"/>
+<!--    Replaces http://accumulus.org/fhir/code/controlCriticality-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-controlCriticality-local-pq"/>
+    <name value="CsControlCriticalityLocalPQ"/>
+    <title value="CodeSystem - Control Criticality Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for control criticality in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Critical"/>
+        <display value="Critical"/>
+    </concept>
+    <concept>
+        <code value="Non Critical"/>
+        <display value="Non Critical"/>
+    </concept>
+</CodeSystem>
