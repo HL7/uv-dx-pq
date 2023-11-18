@@ -25,6 +25,7 @@
   </concept>
   <concept>
     <code value="XXX"/>
+<!--    <code value="XXX"/> is used for many different display values-->
     <display value="Assay"/>
   </concept>
   <concept>
