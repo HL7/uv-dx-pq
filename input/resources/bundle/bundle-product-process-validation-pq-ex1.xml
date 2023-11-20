@@ -4347,7 +4347,7 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
-                     <code value="capacity"/>
+                     <code value="Capacity"/>
                      <display value="Capacity"/>
                      <!-- seems a little different to "maximum capacity -->
                   </coding>

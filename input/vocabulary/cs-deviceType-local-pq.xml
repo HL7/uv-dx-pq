@@ -12,11 +12,11 @@
     <content value="complete"/>
 
     <concept>
-        <code value="Mixing Vessel"/>
+        <code value="mixing-vessel"/>
         <display value="Mixing Vessel"/>
     </concept>
     <concept>
-        <code value="Receiving Tank"/>
+        <code value="receiving-tank"/>
         <display value="Receiving Tank"/>
     </concept>
 </CodeSystem>
