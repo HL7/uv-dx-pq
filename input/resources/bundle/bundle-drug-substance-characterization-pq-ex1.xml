@@ -229,7 +229,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
-                  <code value="11134"/>
+                  <code value="Characterization Report"/>
                   <display value="Characterization Report"/>
                </coding>
             </code>

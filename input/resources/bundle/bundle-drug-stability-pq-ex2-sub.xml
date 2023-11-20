@@ -43,7 +43,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
-                  <code value="111"/>
+                  <code value="Stability Study Report"/>
                   <display value="Stability Study Report"/>
                </coding>
             </code>

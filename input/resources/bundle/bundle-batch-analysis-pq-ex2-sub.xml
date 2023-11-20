@@ -842,7 +842,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
-                  <code value="111"/>
+                  <code value="Batch Analysis Report"/>
                   <display value="Batch Analysis Report"/>
                </coding>
             </code>

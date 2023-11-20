@@ -12,8 +12,7 @@
     <content value="complete"/>
 
     <concept>
-        <code value="111"/>
-<!--        <code value="Batch Analysis Report"/>-->
+        <code value="Batch Analysis Report"/>
         <display value="Batch Analysis Report"/>
     </concept>
     <concept>
@@ -27,5 +26,21 @@
     <concept>
         <code value="Stability Study Report"/>
         <display value="Stability Study Report"/>
+    </concept>
+    <concept>
+        <code value="Product Compatibility Report"/>
+        <display value="Product Compatibility Report"/>
+    </concept>
+    <concept>
+        <code value="Reference Standard Report"/>
+        <display value="Reference Standard Report"/>
+    </concept>
+    <concept>
+        <code value="Characterization Report"/>
+        <display value="Characterization Report"/>
+    </concept>
+    <concept>
+        <code value="Impurities Report"/>
+        <display value="Impurities Report"/>
     </concept>
 </CodeSystem>

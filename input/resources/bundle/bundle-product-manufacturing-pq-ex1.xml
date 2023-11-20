@@ -228,7 +228,7 @@
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <code value="TEMP-MAX"/>
-                           <display value="Temperature"/>
+                           <display value="Maximum Temperature"/>
                         </coding>
                      </valueCodeableConcept>
                   </extension>
@@ -359,7 +359,7 @@
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <!-- TODO LOINC? -->
-                           <code value="TEMPMAX"/>
+                           <code value="TEMP-MAX"/>
                            <display value="Maximum Temperature"/>
                         </coding>
                         <text value="Process temperature must be below 40°C"/>

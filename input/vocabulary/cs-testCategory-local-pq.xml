@@ -12,7 +12,8 @@
     <content value="complete"/>
 
     <concept>
-        <code value="Physical Property"/>
+        <code value="C123456"/>
         <display value="Physical Property"/>
     </concept>
+
 </CodeSystem>

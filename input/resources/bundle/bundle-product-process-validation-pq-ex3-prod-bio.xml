@@ -519,7 +519,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
-                  <code value="1113"/>
+                  <code value="Process Validation Report"/>
                   <display value="Process Validation Report"/>
                </coding>
             </code>

@@ -16,15 +16,27 @@
         <display value="Capacity"/>
     </concept>
     <concept>
-        <code value="Temperature"/>
-        <display value="Temperature"/>
-    </concept>
-    <concept>
-        <code value="Maximum Temperature"/>
+        <code value="TEMP-MAX"/>
         <display value="Maximum Temperature"/>
     </concept>
     <concept>
-        <code value="Rotational Speed"/>
+        <code value="ROTATIONSPEED"/>
         <display value="Rotational Speed"/>
+    </concept>
+    <concept>
+        <code value="OPTICAL"/>
+        <display value="Optical properties"/>
+    </concept>
+    <concept>
+        <code value="THEORY"/>
+        <display value="Theory"/>
+    </concept>
+    <concept>
+        <code value="STIR"/>
+        <display value="Stir Time"/>
+    </concept>
+    <concept>
+        <code value="SPEED"/>
+        <display value="Mix speed"/>
     </concept>
 </CodeSystem>

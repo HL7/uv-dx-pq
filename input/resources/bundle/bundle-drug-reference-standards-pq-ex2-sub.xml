@@ -615,7 +615,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
-                  <code value="1113"/>
+                  <code value="Reference Standard Report"/>
                   <display value="Reference Standard Report"/>
                </coding>
             </code>

@@ -202,7 +202,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq"/>
-                     <code value="ContainerSpecification"/>
+                     <code value="Container Specification"/>
                      <display value="Container Specification"/>
                   </coding>
                   <text value="Container Specification"/>

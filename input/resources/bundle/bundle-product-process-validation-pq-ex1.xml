@@ -1770,7 +1770,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
-                  <code value="1113"/>
+                  <code value="Process Validation Report"/>
                   <display value="Process Validation Report"/>
                </coding>
             </code>
@@ -4383,7 +4383,7 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
-                     <code value="capacity"/>
+                     <code value="Capacity"/>
                      <display value="Capacity"/>
                      <!-- seems a little different to "maximum capacity -->
                   </coding>

@@ -15,4 +15,12 @@
         <code value="sol-free"/>
         <display value="Freely soluble"/>
     </concept>
+    <concept>
+        <code value="sol-slight"/>
+        <display value="Slightly soluble"/>
+    </concept>
+    <concept>
+        <code value="sol-soluble"/>
+        <display value="Soluble"/>
+    </concept>
 </CodeSystem>

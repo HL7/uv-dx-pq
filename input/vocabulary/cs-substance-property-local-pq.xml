@@ -15,4 +15,68 @@
         <code value="solubility-water"/>
         <display value="Solubility purified water"/>
     </concept>
+    <concept>
+        <code value="temperature"/>
+        <display value="Temperature"/>
+    </concept>
+    <concept>
+        <code value="water-cotent"/>
+        <display value="Water content"/>
+    </concept>
+    <concept>
+        <code value="appearance"/>
+        <display value="Appearance"/>
+    </concept>
+    <concept>
+        <code value="solubility-water-pheur"/>
+        <display value="Solubility purified water (PhEur)"/>
+    </concept>
+    <concept>
+        <code value="solubility-acetone-pheur"/>
+        <display value="Solubility Acetone (PhEur)"/>
+    </concept>
+    <concept>
+        <code value="solubility-ethanol-pheur"/>
+        <display value="Solubility Ethanol (PhEur)"/>
+    </concept>
+    <concept>
+        <code value="solubility-aq-water-2h-approx"/>
+        <display value="Solubility at saturation in Purifed Water after 2 hours (approx)"/>
+    </concept>
+    <concept>
+        <code value="solubility-aq-glucose-2h-approx"/>
+        <display value="Solubility at saturation in Glucose (5%) after 2 hours (approx)"/>
+    </concept>
+    <concept>
+        <code value="pH"/>
+        <display value="pH"/>
+    </concept>
+    <concept>
+        <code value="solubility-usp-ph"/>
+        <display value="Solubility as a function of pH in USP buffers"/>
+    </concept>
+    <concept>
+        <code value="solubility-usp-ph"/>
+        <display value="Solubility as a function of pH in USP buffers"/>
+    </concept>
+    <concept>
+        <code value="concentration"/>
+        <display value="Concentration"/>
+    </concept>
+    <concept>
+        <code value="temperature"/>
+        <display value="Temperature"/>
+    </concept>
+    <concept>
+        <code value="ph-aq"/>
+        <display value="pH in aqueous solution"/>
+    </concept>
+    <concept>
+        <code value="hygroscopy"/>
+        <display value="Hygroscopy"/>
+    </concept>
+    <concept>
+        <code value="hygroscopy-hygroscopic"/>
+        <display value="Hygroscopic"/>
+    </concept>
 </CodeSystem>

@@ -12,7 +12,7 @@
     <content value="complete"/>
 
     <concept>
-        <code value="Delayed Start Code"/>
+        <code value="222"/>
         <display value="Delayed Start Code"/>
     </concept>
 </CodeSystem>
