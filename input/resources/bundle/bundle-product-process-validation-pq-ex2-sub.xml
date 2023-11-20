@@ -500,8 +500,8 @@
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
-                        <code value="non-critical"/>
-                        <display value="Non-critical"/>
+                        <code value="Non Critical"/>
+                        <display value="Non Critical"/>
                      </coding>
                      <text value="Non-critical"/>
                   </valueCodeableConcept>

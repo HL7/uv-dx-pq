@@ -95,7 +95,7 @@
                <priority>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
-                     <code value="noncritical"/>
+                     <code value="Non Critical"/>
                      <display value="Non Critical"/>
                   </coding>
                </priority>

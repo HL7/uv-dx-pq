@@ -12,7 +12,7 @@
     <content value="complete"/>
 
     <concept>
-        <code value="Critical"/>
+        <code value="critical"/>
         <display value="Critical"/>
     </concept>
     <concept>

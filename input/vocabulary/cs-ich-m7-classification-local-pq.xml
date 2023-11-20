@@ -12,6 +12,11 @@
     <content value="complete"/>
 
     <concept>
+        <code value="class-2"/>
+        <display value="Class 2"/>
+    </concept>
+    
+    <concept>
         <code value="class-5"/>
         <display value="Class 5"/>
     </concept>
