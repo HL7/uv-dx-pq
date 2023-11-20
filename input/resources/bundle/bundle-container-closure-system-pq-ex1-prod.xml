@@ -96,7 +96,7 @@
                   <type>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                        <code value="xxxx"/>
+                        <code value="Color"/>
                         <display value="Color"/>
                      </coding>
                   </type>
@@ -112,7 +112,7 @@
                   <type>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                        <code value="xxxx"/>
+                        <code value="Quality Standard"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
@@ -128,7 +128,7 @@
                   <type>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                        <code value="xxxx"/>
+                        <code value="Quality Standard"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
@@ -161,7 +161,7 @@
                      <type>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                           <code value="xxxx"/>
+                           <code value="Quality Standard"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
@@ -193,7 +193,7 @@
                         <type>
                            <coding>
                               <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                              <code value="xxxx"/>
+                              <code value="Quality Standard"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
@@ -209,7 +209,7 @@
                         <type>
                            <coding>
                               <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                              <code value="xxxx"/>
+                              <code value="Quality Standard"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
@@ -257,7 +257,7 @@
                   <type>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                        <code value="xxxx"/>
+                        <code value="Quality Standard"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
@@ -274,7 +274,7 @@
                   <type>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                        <code value="xxxx"/>
+                        <code value="Quality Standard"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
@@ -324,7 +324,7 @@
                      <type>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                           <code value="xxxx"/>
+                           <code value="Quality Standard"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
@@ -340,7 +340,7 @@
                      <type>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                           <code value="xxxx"/>
+                           <code value="Quality Standard"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
@@ -356,7 +356,7 @@
                      <type>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                           <code value="xxxx"/>
+                           <code value="Quality Standard"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
@@ -403,7 +403,7 @@
                         <type>
                            <coding>
                               <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                              <code value="xxxx"/>
+                              <code value="Quality Standard"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
@@ -419,7 +419,7 @@
                         <type>
                            <coding>
                               <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                              <code value="xxxx"/>
+                              <code value="Quality Standard"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>

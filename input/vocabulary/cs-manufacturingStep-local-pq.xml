@@ -16,11 +16,15 @@
         <display value="Mixing of ingredients"/>
     </concept>
     <concept>
-        <code value="Drying"/>
+        <code value="drying"/>
         <display value="Drying"/>
     </concept>
     <concept>
         <code value="particleSizeReduction"/>
         <display value="Particle Size Reduction"/>
+    </concept>
+    <concept>
+        <code value="overall process"/>
+        <display value="Overall Process"/>
     </concept>
 </CodeSystem>

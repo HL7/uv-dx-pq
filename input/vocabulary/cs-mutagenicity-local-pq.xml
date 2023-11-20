@@ -15,4 +15,8 @@
         <code value="negative"/>
         <display value="Negative"/>
     </concept>
+    <concept>
+        <code value="positive"/>
+        <display value="Positive"/>
+    </concept>
 </CodeSystem>

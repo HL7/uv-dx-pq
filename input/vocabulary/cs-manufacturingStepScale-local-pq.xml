@@ -12,7 +12,7 @@
     <content value="complete"/>
 
     <concept>
-        <code value="Production Scale"/>
+        <code value="ABCD"/>
         <display value="Production Scale"/>
     </concept>
 </CodeSystem>

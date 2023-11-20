@@ -12,7 +12,20 @@
     <content value="complete"/>
 
     <concept>
+        <code value="1233444"/>
+        <display value="Rule-based (Q)Sar"/>
+    </concept>
+    <concept>
         <code value="123555"/>
         <display value="Statistical (Q)Sar"/>
     </concept>
+    <concept>
+        <code value="123556"/>
+        <display value="ICH M7 Classification"/>
+    </concept>
+    <concept>
+        <code value="123557"/>
+        <display value="Mutagenicity Comment"/>
+    </concept>
+
 </CodeSystem>

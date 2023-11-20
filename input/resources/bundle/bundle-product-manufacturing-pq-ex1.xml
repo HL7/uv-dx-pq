@@ -246,7 +246,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
-                     <code value="1111"/>
+                     <code value="Mixing of ingredients"/>
                      <display value="Mixing of ingredients"/>
                   </coding>
                </code>
@@ -379,7 +379,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
-                     <code value="12121"/>
+                     <code value="drying"/>
                      <display value="Drying"/>
                   </coding>
                   <!--text value="Step 2 in the process - free text is possible"/-->
@@ -477,7 +477,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
-                     <code value="2222"/>
+                     <code value="particleSizeReduction"/>
                      <display value="Particle Size Reduction"/>
                   </coding>
                   <!--text value="Step 2 in the process - free text is possible"/-->

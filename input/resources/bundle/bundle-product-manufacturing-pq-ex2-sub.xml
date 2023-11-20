@@ -28,7 +28,7 @@
             <type>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
-                  <code value="1244566"/>
+                  <code value="manufacturing-process"/>
                   <display value="Manufacturing Process"/>
                </coding>
             </type>
@@ -125,6 +125,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="overall process"/>
+                     <display value="Overall Process"/>
                   </coding>
                   <text value="overall process"/>
                </code>
@@ -158,7 +159,7 @@
                   <code>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
-                        <code value="2222"/>
+                        <code value="particleSizeReduction"/>
                         <display value="Particle Size Reduction"/>
                      </coding>
                      <!--text value="Step 2 in the process - free text is possible"/-->
