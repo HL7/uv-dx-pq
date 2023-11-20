@@ -20,7 +20,7 @@
         <display value="Drying"/>
     </concept>
     <concept>
-        <code value="Particle Size Reduction"/>
+        <code value="particleSizeReduction"/>
         <display value="Particle Size Reduction"/>
     </concept>
 </CodeSystem>

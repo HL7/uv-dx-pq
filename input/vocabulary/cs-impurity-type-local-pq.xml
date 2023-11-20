@@ -15,4 +15,18 @@
         <code value="CH-IMP"/>
         <display value="Chiral Impurity"/>
     </concept>
+    
+    <concept>
+        <code value="INT-IMP"/>
+        <display value="Process intermediate, forced degradation product"/>
+    </concept>
+    <concept>
+        <code value="PR-IMP"/>
+        <display value="Process impurity"/>
+    </concept>
+    <concept>
+        <code value="ST-IMP"/>
+        <display value="Starting material, forced degradation product"/>
+    </concept>
+    
 </CodeSystem>

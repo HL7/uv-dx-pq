@@ -257,8 +257,8 @@
   <!--  Concepts for PlanDefinition-drug-pq examples-->
   <!--  Used in PlanDefinition.goal.target.measure-->
   <concept>
-    <code value="ParticleSize"/>
-    <display value="Particle Size"/>
+    <code value="particle-size"/>
+    <display value="Particle size"/>
   </concept>
   <concept>
     <code value="PH"/>

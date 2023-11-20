@@ -150,8 +150,8 @@
                   <measure>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                        <code value="ParticleSize"/>
-                        <display value="Particle Size"/>
+                        <code value="particle-size"/>
+                        <display value="Particle size"/>
                      </coding>
                      <text value="Under 200 microns"/>
                   </measure>
@@ -288,7 +288,7 @@
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="starting-material"/>
-                        <display value="StartingMaterial"/>
+                        <display value="Starting Material"/>
                      </coding>
                   </role>
                </participant>

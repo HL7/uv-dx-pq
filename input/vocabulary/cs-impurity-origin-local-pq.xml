@@ -19,4 +19,8 @@
         <code value="starting-material"/>
         <display value="Starting Material"/>
     </concept>
+    <concept>
+        <code value="intermediate-material"/>
+        <display value="Intermediate Material"/>
+    </concept>
 </CodeSystem>

@@ -12,16 +12,24 @@
     <content value="complete"/>
 
     <concept>
-        <code value="Diluent"/>
+        <code value="diluent"/>
         <display value="Diluent"/>
     </concept>
     <concept>
+        <code value="dispersant"/>
+        <display value="Dispersant"/>
+    </concept>
+    <concept>
         <code value="starting-material"/>
-        <display value="StartingMaterial"/>
+        <display value="Starting Material"/>
     </concept>
     <concept>
         <code value="ProcessingMaterial"/>
         <display value="ProcessingMaterial"/>
+    </concept>
+    <concept>
+        <code value="IntermediateMaterial"/>
+        <display value="Intermediate Material"/>
     </concept>
     <concept>
         <code value="ResultingMaterial"/>
