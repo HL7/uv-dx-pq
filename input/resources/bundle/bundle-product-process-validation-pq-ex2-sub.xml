@@ -81,7 +81,7 @@
                   <role>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                        <code value="StartingMaterial"/>
+                        <code value="starting-material"/>
                         <display value="Starting Material"/>
                      </coding>
                   </role>
@@ -217,7 +217,7 @@
                   <role>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                        <code value="StartingMaterial"/>
+                        <code value="starting-material"/>
                         <display value="Starting Material"/>
                      </coding>
                   </role>

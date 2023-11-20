@@ -179,7 +179,7 @@
                      <role>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
-                           <code value="example"/>
+                           <code value="Compression Milling"/>
                            <!-- #88 Equipment class -->
                            <display value="Compression Milling"/>
                         </coding>
@@ -196,8 +196,8 @@
                      <role>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                           <code value="example"/>
-                           <display value="StartingMaterial"/>
+                           <code value="starting-material"/>
+                           <display value="Starting Material"/>
                         </coding>
                      </role>
                   </participant>
@@ -212,7 +212,7 @@
                      <role>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                           <code value="example"/>
+                           <code value="ProcessingMaterial"/>
                            <display value="ProcessingMaterial"/>
                         </coding>
                      </role>
@@ -228,8 +228,8 @@
                      <role>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                           <code value="example"/>
-                           <display value="ResultingMaterial"/>
+                           <code value="ResultingMaterial"/>
+                           <display value="Resulting Material"/>
                         </coding>
                      </role>
                   </participant>

@@ -15,4 +15,8 @@
         <code value="enantiomer"/>
         <display value="Enantiomer"/>
     </concept>
+    <concept>
+        <code value="starting-material"/>
+        <display value="Starting Material"/>
+    </concept>
 </CodeSystem>
