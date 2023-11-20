@@ -27,4 +27,16 @@
         <code value="Quality Specification"/>
         <display value="Quality Specification"/>
     </concept>
+    <concept>
+        <code value="Narrative"/>
+        <display value="Narrative"/>
+    </concept>
+    <concept>
+        <code value="Container Size"/>
+        <display value="Container Size"/>
+    </concept>
+    <concept>
+        <code value="Functional"/>
+        <display value="Functional"/>
+    </concept>
 </CodeSystem>

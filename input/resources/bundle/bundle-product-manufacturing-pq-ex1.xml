@@ -439,8 +439,8 @@
                   <role>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                        <code value="Resulting Material"/>
-                        <display value="ResultingMaterial"/>
+                        <code value="ResultingMaterial"/>
+                        <display value="Resulting Material"/>
                      </coding>
                   </role>
                </participant>
@@ -538,8 +538,8 @@
                   <role>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                        <code value="Resulting Material"/>
-                        <display value="ResultingMaterial"/>
+                        <code value="ResultingMaterial"/>
+                        <display value="Resulting Material"/>
                      </coding>
                   </role>
                </participant>

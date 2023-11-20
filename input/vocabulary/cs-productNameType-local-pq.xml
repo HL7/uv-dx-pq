@@ -12,7 +12,7 @@
     <content value="complete"/>
 
     <concept>
-        <code value="Proprietary"/>
+        <code value="1234"/>
         <display value="Proprietary"/>
     </concept>
 </CodeSystem>

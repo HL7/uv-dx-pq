@@ -310,7 +310,7 @@
                      <type>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                           <code value="xxxx"/>
+                           <code value="Thickness"/>
                            <display value="Thickness"/>
                         </coding>
                      </type>
@@ -435,7 +435,7 @@
                         <type>
                            <coding>
                               <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-                              <code value="xxxx"/>
+                              <code value="Thickness"/>
                               <display value="Thickness"/>
                            </coding>
                         </type>

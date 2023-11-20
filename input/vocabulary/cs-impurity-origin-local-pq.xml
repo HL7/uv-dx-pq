@@ -16,6 +16,10 @@
         <display value="Enantiomer"/>
     </concept>
     <concept>
+        <code value="process"/>
+        <display value="Process Impurity"/>
+    </concept>
+    <concept>
         <code value="starting-material"/>
         <display value="Starting Material"/>
     </concept>
