@@ -12,7 +12,7 @@
     <content value="complete"/>
 
     <concept>
-        <code value="White"/>
+        <code value="white"/>
         <display value="White"/>
     </concept>
 </CodeSystem>
