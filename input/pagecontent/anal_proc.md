@@ -7,7 +7,7 @@ Provide details about test methods used to analyze drug substances and drug prod
 </table>
  
 ### Description of Components
-**DeviceDefinition**: Information about devices/equipment used testing or manufacture
+**Device Definition**: Information about devices/equipment used testing or manufacture
 
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 

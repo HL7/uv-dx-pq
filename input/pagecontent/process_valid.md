@@ -9,7 +9,7 @@ Provide details about manufacturing process validation protocols and results.
 ### Description of Components
 **Activity Definition**: Contains the Observation Definition resources that establish the list of tests and their acceptance criteria
 
-**DeviceDefinition**: Information about devices/equipment used testing or manufacture
+**Device Definition**: Information about devices/equipment used testing or manufacture
 
 **Diagnostic Report**: Contains all rest results as a group and captures conclusions
 
@@ -27,7 +27,7 @@ Provide details about manufacturing process validation protocols and results.
 
 **Plan Definition**: Describes the process validation test protocol
 
-**Procedure**: Records the actual performance of a manufacturing step, so that measurements can be recorded via Observations (e.g., “hold time”, “bioburden”)
+**Procedure** (not illustrated above): Records the actual performance of a manufacturing step, so that measurements can be recorded via Observations (e.g., “hold time”, “bioburden”)
 
 **Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
 

@@ -60,7 +60,7 @@ Provide details about the drug substance and drug product nomenclature; structur
 - 3.2.P.2 Pharmaceutical Development
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.2.2_Drug_Product.pdf ">3.2.P.2.2 Drug Product</a>
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.2.5_Microbiological_Attributes.pdf ">3.2.P.2.5 Microbiological Attributes</a>
-- 2.P.4 Control of Excipients
+- 3.2.P.4 Control of Excipients
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.4.5_Excipients_of_Human_or_Animal_Origin.pdf ">3.2.P.4.5 Excipients of Human or Animal Origin</a>
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.4.6_Novel_Excipients.pdf ">3.2.P.4.6 Novel Excipients</a>
 - 3.2.S.1 General Information

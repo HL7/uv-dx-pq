@@ -15,7 +15,7 @@ Provide details about batch(es) of the  drug substance and drug product with ide
 
 **Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
 
-**Substance**: Identifying information about an actual batch of aubstance (an instance)
+**Substance**: Identifying information about an actual batch of substance (an instance)
 
 
 ### Examples

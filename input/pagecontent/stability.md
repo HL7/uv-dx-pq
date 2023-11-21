@@ -36,8 +36,10 @@ Provide details about a stability study including stability study design (tests 
 ### Examples
 **CTD section samples** (PDF):
 - 3.2.P.8 Stability
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.8.1_Stability_Summary_and_Conclusions.pdf ">3.2.P.8.1 Stability Summary and Conclusions</a>
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.8.3_Stability_Data.pdf ">3.2.P.8.3 Stability Data</a>
 - 3.2.S.7 Stability
+  - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.7.1_Stability_Summary_and_Conclusions.pdf ">3.2.S.7.1 Stability Summary and Conclusions</a>
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.7.3_Stability_Data.pdf ">3.2.S.7.3 Stability Data</a>
 
 **HTML rendering** of synthetic CTD data:
