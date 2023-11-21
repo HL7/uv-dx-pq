@@ -181,6 +181,20 @@
       </type>
     </element>
     
+    <element id="Bundle.entry:Step-Performance-Procedure">
+      <path value="Bundle.entry"/>
+      <sliceName value="Step-Performance-Procedure"/>
+    </element>
+    <element id="Bundle.entry:Step-Performance-Procedure.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Procedure"/>
+        <profile
+          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"
+        />
+      </type>
+    </element>
+    
     <element id="Bundle.entry:Result-Observations">
       <path value="Bundle.entry"/>
       <sliceName value="Result-Observations"/>
