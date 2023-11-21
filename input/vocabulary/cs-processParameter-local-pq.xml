@@ -20,6 +20,10 @@
         <display value="Maximum Temperature"/>
     </concept>
     <concept>
+        <code value="TEMP"/>
+        <display value="Temperature"/>
+    </concept>
+    <concept>
         <code value="ROTATIONSPEED"/>
         <display value="Rotational Speed"/>
     </concept>

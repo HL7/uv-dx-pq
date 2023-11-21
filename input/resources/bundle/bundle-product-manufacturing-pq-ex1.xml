@@ -227,8 +227,8 @@
                      <valueCodeableConcept>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
-                           <code value="TEMP-MAX"/>
-                           <display value="Maximum Temperature"/>
+                           <code value="TEMP"/>
+                           <display value="Temperature"/>
                         </coding>
                      </valueCodeableConcept>
                   </extension>
