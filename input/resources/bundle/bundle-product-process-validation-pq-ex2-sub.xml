@@ -354,7 +354,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
                <text value="Appearance"/>
@@ -382,7 +382,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="ID by HPLC"/>
@@ -410,7 +410,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ASSAY"/>
                   <display value="Assay"/>
                </coding>
                <text value="Assay by HPLC (as is) (w/w%)"/>
@@ -449,7 +449,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
                <text value="Yield (%)"/>
@@ -469,7 +469,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
                <text value="Yield (%)"/>
@@ -489,19 +489,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ResidualWaterContent"/>
                   <display value="Residual Water Content (w/w%)"/>
                </coding>
                <text value="Residual Water Content (w/w%)"/>
             </code>
             <qualifiedValue>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq">
-<!--                  <extension url="http://accumulus.org/fhir/extension/qualifiedValueCriticality">-->
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
-                        <code value="Non Critical"/>
-                        <display value="Non Critical"/>
+                        <code value="Non-critical"/>
+                        <display value="Non-critical"/>
                      </coding>
                      <text value="Non-critical"/>
                   </valueCodeableConcept>
@@ -530,7 +529,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
                   <display value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
                </coding>
                <text value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
@@ -573,7 +572,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
                <text value="Appearance"/>
@@ -605,7 +604,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
                <text value="Appearance"/>
@@ -637,7 +636,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
                <text value="Appearance"/>
@@ -669,7 +668,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="ID by HPLC"/>
@@ -700,7 +699,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="ID by HPLC"/>
@@ -731,7 +730,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="ID by HPLC"/>
@@ -762,7 +761,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
                <text value="Yield (%)"/>
@@ -796,7 +795,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
                <text value="Yield (%)"/>
@@ -830,7 +829,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
                <text value="Yield (%)"/>
@@ -864,7 +863,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
                <text value="Yield (%)"/>
@@ -898,7 +897,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
                <text value="Yield (%)"/>
@@ -932,7 +931,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
                <text value="Yield (%)"/>
@@ -966,8 +965,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="ResidualWaterContent (w/w%)"/>
+                  <code value="ResidualWaterContent"/>
+                  <display value="Residual Water Content (w/w%)"/>
                </coding>
                <text value="ResidualWaterContent (w/w%)"/>
             </code>
@@ -1000,8 +999,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="ResidualWaterContent (w/w%)"/>
+                  <code value="ResidualWaterContent"/>
+                  <display value="Residual Water Content (w/w%)"/>
                </coding>
                <text value="ResidualWaterContent (w/w%)"/>
             </code>
@@ -1034,8 +1033,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="ResidualWaterContent (w/w%)"/>
+                  <code value="ResidualWaterContent"/>
+                  <display value="Residual Water Content (w/w%)"/>
                </coding>
                <text value="ResidualWaterContent (w/w%)"/>
             </code>

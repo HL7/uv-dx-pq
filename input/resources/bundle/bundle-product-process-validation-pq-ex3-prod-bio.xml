@@ -3,22 +3,20 @@
     <!-- Product Process Validation - Biologic -->
    <id value="bundle-product-process-validation-pq-ex3-prod-bio"/>
    <meta>
-       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                
-
+                <!-- focal resource -->
+                <!--id value="validationProtocol"/-->
             <id value="plandefinition-drug-pq-ex1-validation-protocol"/>
-<!--            <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
-            </meta-->
-            
-            
-
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
+                </meta>-->
+            <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="DP PROCESS VALIDATION"/>
             <type>
@@ -35,7 +33,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
@@ -484,7 +482,10 @@
          <ActivityDefinition>
 				<!--LyophilizationAct-->
             <id value="b664977d-799d-a1ce-928a-6def2a9955bd"/>
-
+            <!--<meta>
+			        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
+			    </meta>-->
+            <!--http://example-server.com/fhir/ActivityDefinition/b664977d-799d-a1ce-928a-6def2a9955bd-->
             <url value="http://example-server.com/fhir/ActivityDefinition/b664977d-799d-a1ce-928a-6def2a9955bd"/>
             <title value="Lyophilization"/>
             <status value="active"/>
@@ -495,6 +496,7 @@
       <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
       <resource>
          <Organization>
+                <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             <name value="Testing Lab"/>
          </Organization>
@@ -671,14 +673,15 @@
          <ObservationDefinition>
                 <!--bufferVesselMixingSpeed-->
             <id value="fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/bufferVesselMixingSpeed-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="Buffer vessel mixing speed (rpm)"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Buffer vessel mixing speed (rpm)"/>
                   <display value="Buffer vessel mixing speed (rpm)"/>
                </coding>
                <text value="Buffer vessel mixing speed (rpm)"/>
@@ -704,14 +707,15 @@
          <ObservationDefinition>
                 <!--formulationVesselMixingSpeed-->
             <id value="fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/formulationVesselMixingSpeed-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="Formulation vessel mixing speed (rpm)"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Formulation vessel mixing speed (rpm)"/>
                   <display value="Formulation vessel mixing speed (rpm)"/>
                </coding>
                <text value="Formulation vessel mixing speed (rpm)"/>
@@ -737,14 +741,15 @@
          <ObservationDefinition>
                 <!--bufferVesselMixingTime-->
             <id value="fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/bufferVesselMixingTime-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             <title value="Buffer vessel mixing time (min)"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Buffer vessel mixing time (min)"/>
                   <display value="Buffer vessel mixing time (min)"/>
                </coding>
                <text value="Buffer vessel mixing time (min)"/>
@@ -774,14 +779,15 @@
          <ObservationDefinition>
                 <!--formulationVesselMixingTime-->
             <id value="fc27b5d5-9fe1-92c2-2d06-47cb5b295e73"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/formulationVesselMixingTime-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc27b5d5-9fe1-92c2-2d06-47cb5b295e73-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b5d5-9fe1-92c2-2d06-47cb5b295e73"/>
             <title value="Formulation vessel mixing time (min)"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Formulation vessel mixing time (min)"/>
                   <display value="Formulation vessel mixing time (min)"/>
                </coding>
                <text value="Formulation vessel mixing time (min)"/>
@@ -811,14 +817,15 @@
          <ObservationDefinition>
 				<!--ResidualMoisture-->
             <id value="fc27b6d6-9fe2-91c2-2d16-47cb5b295e72"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ResidualMoisture-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc27b6d6-9fe2-91c2-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b6d6-9fe2-91c2-2d16-47cb5b295e72"/>
             <title value="Residual Moisture (%)"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Residual Moisture"/>
                   <display value="Residual Moisture"/>
                </coding>
                <text value="ResidualMoisture"/>
@@ -837,7 +844,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Residual Moisture - Min"/>
                      <display value="Residual Moisture - Min"/>
                   </coding>
                </code>
@@ -846,7 +853,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Residual Moisture - Max"/>
                      <display value="Residual Moisture - Max"/>
                   </coding>
                </code>
@@ -869,14 +876,15 @@
          <ObservationDefinition>
                 <!--ThawingFBPPIpH-->
             <id value="fc27b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingFBPPIpH-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
             <title value="pH"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="pH"/>
                   <display value="pH"/>
                </coding>
                <text value="pH"/>
@@ -906,14 +914,15 @@
          <ObservationDefinition>
                 <!--ThawingTime-->
             <id value="fc27b5d6-9fe2-91c2-2d16-47cb5b295e72"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingTime-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe2-91c2-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe2-91c2-2d16-47cb5b295e72"/>
             <title value="Thaw Time"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Thaw Time"/>
                   <display value="Thaw Time"/>
                </coding>
                <text value="Thaw Time (hr)"/>
@@ -935,15 +944,17 @@
       <fullUrl value="urn:uuid:fc17b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
       <resource>
          <ObservationDefinition>
-            
+                <!--FBPPIpH-->
             <id value="fc17b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FBPPIpH-->
+            <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d6-9fe1-91c2-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
             <title value="pH"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="pH"/>
                   <display value="pH"/>
                </coding>
                <text value="pH"/>
@@ -973,13 +984,15 @@
          <ObservationDefinition>
                 <!--Osmolality-->
             <id value="64525a3c-5034-448a-9c19-938ce1958424"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Osmolality-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Osmolality"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Osmolality"/>
                   <display value="Osmolality"/>
                </coding>
                <text value="Osmolality (mOsm/kg)"/>
@@ -1007,14 +1020,15 @@
          <ObservationDefinition>
             	<!--SE-UHPLCMainPeakLyoph-->
             <id value="64525a3d-5134-448a-9c19-938ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeakLyoph-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a3d-5134-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5134-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC Main Peak"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="SE-UHPLCMainPeak"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
@@ -1040,7 +1054,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLC Main Peak - Conclusion"/>
                      <display value="SE-UHPLC Main Peak - Conclusion"/>
                   </coding>
                </code>
@@ -1068,14 +1082,15 @@
          <ObservationDefinition>
 				<!--SE-UHPLCHMWLyoph-->
             <id value="64525a3d-5144-448a-9c19-938ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCHMWLyoph-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a3d-5144-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5144-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC HMW"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="SE-UHPLCHMW"/>
                   <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
@@ -1101,7 +1116,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLC HMW - Conclusion"/>
                      <display value="SE-UHPLC HMW - Conclusion"/>
                   </coding>
                </code>
@@ -1129,14 +1144,15 @@
          <ObservationDefinition>
 				<!--SE-UHPLCMainPeak-->
             <id value="64525a3d-5034-448a-9c19-938ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeak-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC Main Peak"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="SE-UHPLCMainPeak"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
@@ -1159,14 +1175,15 @@
          <ObservationDefinition>
                 <!--SE-UHPLCMainPeakGraph-->
             <id value="64525a4d-5034-448a-9c19-938ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeakGraph-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a4d-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a4d-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC Main Peak Graph"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="SE-UHPLCMainPeak"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (graph)"/>
@@ -1180,14 +1197,15 @@
          <ObservationDefinition>
                 <!--SE-UHPLCHMW-->
             <id value="64525a33-5034-448a-9c19-938ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCHMW-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC HMW"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="SE-UHPLCHMW"/>
                   <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
@@ -1208,15 +1226,17 @@
       <fullUrl value="urn:uuid:22515a3c-5034-448a-9c19-938ce1958424"/>
       <resource>
          <ObservationDefinition>
-            
+                <!--conclusion-->
             <id value="22515a3c-5034-448a-9c19-938ce1958424"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/conclusion-->
+            <!--http://example-server.com/fhir/ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Conclusion"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="CONC"/>
                   <display value="Conclusion"/>
                </coding>
                <text value="Conclusion"/>
@@ -1230,14 +1250,15 @@
          <ObservationDefinition>
 				<!--conclusionHomogeneity-->
             <id value="22525a3c-5035-448a-9c19-938ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/conclusionHomogeneity-->
+            <!--http://example-server.com/fhir/ObservationDefinition/22525a3c-5035-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22525a3c-5035-448a-9c19-938ce1958424"/>
             <title value="Conclusion"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="CONC"/>
                   <display value="Conclusion"/>
                </coding>
                <text value="Conclusion"/>
@@ -1251,14 +1272,15 @@
          <ObservationDefinition>
                 <!--ThawingOsmolality-->
             <id value="64515a3c-5034-448a-9c19-938ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingOsmolality-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Osmolality"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Osmolality"/>
                   <display value="Osmolality"/>
                </coding>
                <text value="Osmolality (mOsm/kg)"/>
@@ -1286,14 +1308,15 @@
          <ObservationDefinition>
                 <!--ThawingTemp-->
             <id value="74515a3c-5034-448a-9c19-938ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingTemp-->
+            <!--http://example-server.com/fhir/ObservationDefinition/74515a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Thawing Temp"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Thawing Temp"/>
                   <display value="Thawing Temp"/>
                </coding>
                <text value="Thawing Temp (°C)"/>
@@ -1321,14 +1344,15 @@
          <ObservationDefinition>
                 <!--Conductivity-->
             <id value="64515a3c-5134-448a-9c19-939ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Conductivity-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c19-939ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c19-939ce1958424"/>
             <title value="Conductivity"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Conductivity (μS/cm)"/>
                   <display value="Conductivity (μS/cm)"/>
                </coding>
             </code>
@@ -1355,14 +1379,15 @@
          <ObservationDefinition>
                 <!--ThawingConductivity-->
             <id value="74515a3c-5134-448a-9c19-939ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingConductivity-->
+            <!--http://example-server.com/fhir/ObservationDefinition/74515a3c-5134-448a-9c19-939ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515a3c-5134-448a-9c19-939ce1958424"/>
             <title value="Conductivity"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Conductivity (μS/cm)"/>
                   <display value="Conductivity (μS/cm)"/>
                </coding>
             </code>
@@ -1389,13 +1414,15 @@
          <ObservationDefinition>
                 <!--Bioburden-->
             <id value="64515b3c-5134-448a-9c19-939ce1958424"/>
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Bioburden-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958424"/>
             <title value="Bioburden"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Bioburden (CFU/ 100 mL)"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
             </code>
@@ -1422,14 +1449,15 @@
          <ObservationDefinition>
                 <!--MediaBioburden-->
             <id value="64515b3c-5134-448a-9c19-939ce1958524"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/MediaBioburden-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958524"/>
             <title value="Bioburden"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Bioburden (CFU/ 100 mL)"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
             </code>
@@ -1446,7 +1474,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - Beginning"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
                </code>
@@ -1455,7 +1483,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - End"/>
                      <display value="Bioburden - End"/>
                   </coding>
                </code>
@@ -1469,14 +1497,15 @@
          <ObservationDefinition>
 				<!--Polysorbate80Concentration-->
             <id value="74515b3c-5234-448a-9c19-939ce1958524"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Polysorbate80Concentration-->
+            <!--http://example-server.com/fhir/ObservationDefinition/74515b3c-5234-448a-9c19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5234-448a-9c19-939ce1958524"/>
             <title value="Polysorbate 80 Concentration"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Polysorbate 80 concentration - Middle - Max"/>
                   <display value="Polysorbate 80 concentration - Middle - Max"/>
                </coding>
             </code>
@@ -1498,7 +1527,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - Beginning - Min"/>
                      <display value="Polysorbate 80 concentration - Beginning - Min"/>
                   </coding>
                </code>
@@ -1507,7 +1536,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - Beginning - Max"/>
                      <display value="Polysorbate 80 concentration - Beginning - Max"/>
                   </coding>
                </code>
@@ -1516,7 +1545,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - Middle - Min"/>
                      <display value="Polysorbate 80 concentration - Middle - Min"/>
                   </coding>
                </code>
@@ -1525,7 +1554,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - Middle - Max"/>
                      <display value="Polysorbate 80 concentration - Middle - Max"/>
                   </coding>
                </code>
@@ -1534,7 +1563,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - End - Min"/>
                      <display value="Polysorbate 80 concentration - End - Min"/>
                   </coding>
                </code>
@@ -1543,7 +1572,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - End - Max"/>
                      <display value="Polysorbate 80 concentration - End - Max"/>
                   </coding>
                </code>
@@ -1557,14 +1586,15 @@
          <ObservationDefinition>
 				<!--ProteinConcentration-->
             <id value="74515b3c-5134-448a-9c19-939ce1958524"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ProteinConcentration-->
+            <!--http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958524"/>
             <title value="Protein Concentration"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Protein Concentration (mg/mL)"/>
                   <display value="Protein Concentration (mg/mL)"/>
                </coding>
             </code>
@@ -1586,7 +1616,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Min"/>
                      <display value="Protein Concentration - Beginning - Min"/>
                   </coding>
                </code>
@@ -1595,7 +1625,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Max"/>
                      <display value="Protein Concentration - Beginning - Max"/>
                   </coding>
                </code>
@@ -1604,7 +1634,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - Min"/>
                      <display value="Protein Concentration - Middle - Min"/>
                   </coding>
                </code>
@@ -1613,7 +1643,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - Max"/>
                      <display value="Protein Concentration - Middle - Max"/>
                   </coding>
                </code>
@@ -1622,7 +1652,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - End - Min"/>
                      <display value="Protein Concentration - End - Min"/>
                   </coding>
                </code>
@@ -1631,7 +1661,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - End - Max"/>
                      <display value="Protein Concentration - End - Max"/>
                   </coding>
                </code>
@@ -1645,14 +1675,15 @@
          <ObservationDefinition>
 				<!--ProteinConcentrationStats-->
             <id value="74515b3c-5134-448a-9c19-939ce1958534"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ProteinConcentrationStats-->
+            <!--http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958534-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958534"/>
             <title value="Protein Concentration Stats"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Protein Concentration Statistics"/>
                   <display value="Protein Concentration Statistics"/>
                </coding>
             </code>
@@ -1674,7 +1705,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Middle - Mean"/>
                      <display value="Protein Concentration - Beginning - Middle - Mean"/>
                   </coding>
                </code>
@@ -1683,7 +1714,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - End - Mean"/>
                      <display value="Protein Concentration - Beginning - End - Mean"/>
                   </coding>
                </code>
@@ -1692,7 +1723,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - End - Mean"/>
                      <display value="Protein Concentration - Middle - End - Mean"/>
                   </coding>
                </code>
@@ -1701,7 +1732,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Middle - Lower"/>
                      <display value="Protein Concentration - Beginning - Middle - Lower"/>
                   </coding>
                </code>
@@ -1710,7 +1741,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - End - Lower"/>
                      <display value="Protein Concentration - Beginning - End - Lower"/>
                   </coding>
                </code>
@@ -1719,7 +1750,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - End - Lower"/>
                      <display value="Protein Concentration - Middle - End - Lower"/>
                   </coding>
                </code>
@@ -1728,7 +1759,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Middle - Higher"/>
                      <display value="Protein Concentration - Beginning - Middle - Higher"/>
                   </coding>
                </code>
@@ -1737,7 +1768,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - End - Higher"/>
                      <display value="Protein Concentration - Beginning - End - Higher"/>
                   </coding>
                </code>
@@ -1746,7 +1777,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - End - Higher"/>
                      <display value="Protein Concentration - Middle - End - Higher"/>
                   </coding>
                </code>
@@ -1755,7 +1786,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Conclusion"/>
                      <display value="Protein Concentration - Conclusion"/>
                   </coding>
                </code>
@@ -1769,14 +1800,15 @@
          <ObservationDefinition>
 				<!--FillWeight-->
             <id value="64515b3c-5134-448a-9c19-939ce2958524"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FillWeight-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce2958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce2958524"/>
             <title value="Fill Weight"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Fill Weight"/>
                   <display value="Fill Weight"/>
                </coding>
             </code>
@@ -1805,7 +1837,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - Beginning"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
                </code>
@@ -1814,7 +1846,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - End"/>
                      <display value="Bioburden - End"/>
                   </coding>
                </code>
@@ -1828,15 +1860,16 @@
          <ObservationDefinition>
                 <!--GrowthPromotion-->
             <id value="64515b3c-5134-448a-9d19-939ce1958524"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/GrowthPromotion-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9d19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9d19-939ce1958524"/>
             <title value="Growth Promotion"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="GrowthPromotion"/>
+                  <code value="GrowthPromotion"/>
+                  <display value="Growth Promotion"/>
                </coding>
             </code>
             <qualifiedValue>
@@ -1848,7 +1881,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Growth Promotion - Beginning"/>
                      <display value="Growth Promotion - Beginning"/>
                   </coding>
                </code>
@@ -1857,7 +1890,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Growth Promotion - End"/>
                      <display value="Growth Promotion - End"/>
                   </coding>
                </code>
@@ -1871,14 +1904,15 @@
          <ObservationDefinition>
                 <!--PreFiltrationBioburden-->
             <id value="64515b3c-5134-448a-9c19-939ce1958434"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/PreFiltrationBioburden-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958434"/>
             <title value="Pre-filtration Bioburden"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Pre-filtration Bioburden (CFU/ 100 mL)"/>
                   <display value="Pre-filtration Bioburden (CFU/ 100 mL)"/>
                </coding>
             </code>
@@ -1900,14 +1934,15 @@
          <ObservationDefinition>
                 <!--BacterialEndotoxins-->
             <id value="64515b3c-5134-448a-9c19-949ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/BacterialEndotoxins-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958424"/>
             <title value="Bacterial Endotoxins"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Bacterial Endotoxins (EU/mL)"/>
                   <display value="Bacterial Endotoxins (EU/mL)"/>
                </coding>
             </code>
@@ -1934,14 +1969,15 @@
          <ObservationDefinition>
                 <!--ThawingBacterialEndotoxins-->
             <id value="64515b4c-5134-448a-9c19-949ce1958424"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingBacterialEndotoxins-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515b4c-5134-448a-9c19-949ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b4c-5134-448a-9c19-949ce1958424"/>
             <title value="Bacterial Endotoxins"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Bacterial Endotoxins (EU/mL)"/>
                   <display value="Bacterial Endotoxins (EU/mL)"/>
                </coding>
             </code>
@@ -1968,14 +2004,15 @@
          <ObservationDefinition>
                 <!--FiltrationPressure-->
             <id value="74515b3c-5134-448a-9c19-949ce1958434"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FiltrationPressure-->
+            <!--http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-949ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-949ce1958434"/>
             <title value="Filtration Pressure"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="FiltrationPressure (psig)"/>
                   <display value="FiltrationPressure (psig)"/>
                </coding>
             </code>
@@ -2002,14 +2039,15 @@
          <ObservationDefinition>
                 <!--PostFiltrationFilterIntegrity-->
             <id value="75515b3c-5134-448a-9c19-949ce1958434"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/PostFiltrationFilterIntegrity-->
+            <!--http://example-server.com/fhir/ObservationDefinition/75515b3c-5134-448a-9c19-949ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/75515b3c-5134-448a-9c19-949ce1958434"/>
             <title value="Post-filtration Filter Integrity (psig)"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Post-filtration Filter Integrity (psig)"/>
                   <display value="Post-filtration Filter Integrity (psig)"/>
                </coding>
             </code>
@@ -2040,14 +2078,15 @@
          <ObservationDefinition>
                 <!--MediaHoldTime-->
             <id value="75515c3c-5134-448a-9c19-949ce1958434"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/MediaHoldTime-->
+            <!--http://example-server.com/fhir/ObservationDefinition/75515c3c-5134-448a-9c19-949ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/75515c3c-5134-448a-9c19-949ce1958434"/>
             <title value="Media Challenge Hold Times (hours)"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Media Challenge Hold Times"/>
                   <display value="Media Challenge Hold Times"/>
                </coding>
             </code>
@@ -2060,14 +2099,15 @@
          <ObservationDefinition>
                 <!--Polysorbate-->
             <id value="64515b3c-5134-448a-9c19-949ce1958434"/>
-
+            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Polysorbate-->
+            <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958434"/>
             <title value="Polysorbate 80"/>
             <status value="active"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Polysorbate 80 (% w/v)"/>
                   <display value="Polysorbate 80 (% w/v)"/>
                </coding>
             </code>
@@ -2093,7 +2133,7 @@
       <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
       <resource>
          <Medication>
-                <!--medication-actual-batch-1-->
+                <!--medication-batch-information-drug-pq-ex1-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <contained>
                <PackagedProductDefinition>
@@ -2106,10 +2146,10 @@
             </contained>
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
-                  <valueReference> <!-- todo consider change this be the MID? -->
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                  <valueReference> <!-- todo consider change this be the MID? --> 
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-
+                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-pq">
@@ -2223,7 +2263,7 @@
       <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1973ba2f6b51"/>
       <resource>
          <Medication>
-                <!--medication-actual-batch-1b-unlinked-->
+                <!--medication-batch-information-drug-pq-ex1b-unlinked-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1973ba2f6b51"/>
             <contained>
                <PackagedProductDefinition>
@@ -2237,9 +2277,9 @@
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference> <!-- todo consider change this be the MID? --> 
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-
+                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-pq">
@@ -2254,12 +2294,14 @@
                      <valueDateTime value="2019-09-08"/>
                      <!-- #171 -->
                   </extension>
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333224444"/>
                   </extension>
-                  
-
+                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
+                            <valueReference>
+                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+                            </valueReference>
+                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
@@ -2363,7 +2405,7 @@
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -2378,9 +2420,11 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  
-
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
+                            <valueReference>
+                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+                            </valueReference>
+                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333225555"/>
                   </extension>
@@ -2485,7 +2529,7 @@
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -2500,9 +2544,11 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  
-
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
+                            <valueReference>
+                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+                            </valueReference>
+                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333225555"/>
                   </extension>
@@ -2607,7 +2653,7 @@
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -2622,9 +2668,11 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  
-
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
+                            <valueReference>
+                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+                            </valueReference>
+                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333226666"/>
                   </extension>
@@ -2728,7 +2776,7 @@
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -2743,9 +2791,11 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  
-
-                  <!--                  <extension url="http://accumulus.org/fhir/extension/formulationNumber">-->
+                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
+                            <valueReference>
+                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
+                            </valueReference>
+                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333226666"/>
                   </extension>
@@ -2880,17 +2930,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Buffer vessel mixing speed (rpm)"/>
                   <display value="Buffer vessel mixing speed (rpm)"/>
                </coding>
                <text value="Buffer vessel mixing speed (rpm)"/>
             </code>
             <subject>
-                    <!--Medication/medication-actual-batch-1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2914,7 +2965,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Buffer vessel mixing speed (rpm)"/>
                   <display value="Buffer vessel mixing speed (rpm)"/>
                </coding>
                <text value="Buffer vessel mixing speed (rpm)"/>
@@ -2925,6 +2976,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2948,7 +3000,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Buffer vessel mixing speed (rpm)"/>
                   <display value="Buffer vessel mixing speed (rpm)"/>
                </coding>
                <text value="Buffer vessel mixing speed (rpm)"/>
@@ -2959,6 +3011,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2982,17 +3035,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Buffer vessel mixing time (min)"/>
                   <display value="Buffer vessel mixing time (min)"/>
                </coding>
                <text value="Buffer vessel mixing time (min)"/>
             </code>
             <subject>
-                    <!--Medication/medication-actual-batch-1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3016,7 +3070,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Buffer vessel mixing time (min)"/>
                   <display value="Buffer vessel mixing time (min)"/>
                </coding>
                <text value="Buffer vessel mixing time (min)"/>
@@ -3027,6 +3081,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3050,7 +3105,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Buffer vessel mixing time (min)"/>
                   <display value="Buffer vessel mixing time (min)"/>
                </coding>
                <text value="Buffer vessel mixing time (min)"/>
@@ -3061,6 +3116,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3084,17 +3140,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="pH"/>
                   <display value="pH"/>
                </coding>
                <text value="pH"/>
             </code>
             <subject>
-                    <!--Medication/medication-actual-batch-1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3118,7 +3175,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="pH"/>
                   <display value="pH"/>
                </coding>
                <text value="pH"/>
@@ -3129,6 +3186,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3152,7 +3210,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="pH"/>
                   <display value="pH"/>
                </coding>
                <text value="pH"/>
@@ -3163,6 +3221,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3186,17 +3245,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Hold Time"/>
                   <display value="Hold Time"/>
                </coding>
                <text value="Hold Time (hr)"/>
             </code>
             <subject>
-                    <!--Procedure/procedure-run-1-->
+                    <!--Procedure/procedure-drug-pq-ex1-->
                <reference value="Procedure/44aa47fd-8964-5f96-8495-b2bec7f161a8"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3220,7 +3280,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Hold Time"/>
                   <display value="Hold Time"/>
                </coding>
                <text value="Hold Time (hr)"/>
@@ -3231,6 +3291,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3254,7 +3315,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Hold Time"/>
                   <display value="Hold Time"/>
                </coding>
                <text value="Hold Time (hr)"/>
@@ -3265,6 +3326,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -3281,29 +3343,31 @@
                 <!--mediaChallengeBioburden1-->
             <id value="44aa47fd-9964-5f97-6495-b2bec7f161e8"/>
             <instantiatesReference>
+                    <!--ObservationDefinition/MediaBioburden-->
                <reference value="ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958524"/>
             </instantiatesReference>
             <status value="final"/>
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Bioburden (CFU/ 100 mL)"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
             </code>
             <subject>
-                    <!--Procedure/procedure-run-1-->
+                    <!--Procedure/procedure-drug-pq-ex1-->
                <reference value="Procedure/44aa47fd-8964-5f96-8495-b2bec7f161a8"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - Beginning"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
                </code>
@@ -3317,7 +3381,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - End"/>
                      <display value="Bioburden - End"/>
                   </coding>
                </code>
@@ -3344,7 +3408,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Bioburden (CFU/ 100 mL)"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
             </code>
@@ -3354,13 +3418,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - Beginning"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
                </code>
@@ -3374,7 +3439,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - End"/>
                      <display value="Bioburden - End"/>
                   </coding>
                </code>
@@ -3401,7 +3466,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Bioburden (CFU/ 100 mL)"/>
                   <display value="Bioburden (CFU/ 100 mL)"/>
                </coding>
             </code>
@@ -3411,13 +3476,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - Beginning"/>
                      <display value="Bioburden - Beginning"/>
                   </coding>
                </code>
@@ -3431,7 +3497,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Bioburden - End"/>
                      <display value="Bioburden - End"/>
                   </coding>
                </code>
@@ -3458,23 +3524,24 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ProteinConcentration (mg/mL)"/>
                   <display value="ProteinConcentration (mg/mL)"/>
                </coding>
             </code>
             <subject>
-					<!--Medication/medication-actual-batch-1-->
+					<!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Middle - Mean"/>
                      <display value="Protein Concentration - Beginning - Middle - Mean"/>
                   </coding>
                </code>
@@ -3488,7 +3555,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - End - Mean"/>
                      <display value="Protein Concentration - Beginning - End - Mean"/>
                   </coding>
                </code>
@@ -3502,7 +3569,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - End - Mean"/>
                      <display value="Protein Concentration - Middle - End - Mean"/>
                   </coding>
                </code>
@@ -3516,7 +3583,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Middle - Lower"/>
                      <display value="Protein Concentration - Beginning - Middle - Lower"/>
                   </coding>
                </code>
@@ -3530,7 +3597,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - End - Lower"/>
                      <display value="Protein Concentration - Beginning - End - Lower"/>
                   </coding>
                </code>
@@ -3544,7 +3611,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - End - Lower"/>
                      <display value="Protein Concentration - Middle - End - Lower"/>
                   </coding>
                </code>
@@ -3558,7 +3625,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Middle - Higher"/>
                      <display value="Protein Concentration - Beginning - Middle - Higher"/>
                   </coding>
                </code>
@@ -3572,7 +3639,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - End - Higher"/>
                      <display value="Protein Concentration - Beginning - End - Higher"/>
                   </coding>
                </code>
@@ -3586,7 +3653,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - End - Higher"/>
                      <display value="Protein Concentration - Middle - End - Higher"/>
                   </coding>
                </code>
@@ -3600,7 +3667,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Conclusion"/>
                      <display value="Protein Concentration - Conclusion"/>
                   </coding>
                </code>
@@ -3623,23 +3690,24 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ProteinConcentration (mg/mL)"/>
                   <display value="ProteinConcentration (mg/mL)"/>
                </coding>
             </code>
             <subject>
-					<!--Medication/medication-actual-batch-1-->
+					<!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Min"/>
                      <display value="Protein Concentration - Beginning - Min"/>
                   </coding>
                </code>
@@ -3653,7 +3721,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Beginning - Max"/>
                      <display value="Protein Concentration - Beginning - Max"/>
                   </coding>
                </code>
@@ -3667,7 +3735,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - Min"/>
                      <display value="Protein Concentration - Middle - Min"/>
                   </coding>
                </code>
@@ -3681,7 +3749,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - Middle - Max"/>
                      <display value="Protein Concentration - Middle - Max"/>
                   </coding>
                </code>
@@ -3695,7 +3763,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - End - Min"/>
                      <display value="Protein Concentration - End - Min"/>
                   </coding>
                </code>
@@ -3709,7 +3777,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Protein Concentration - End - Max"/>
                      <display value="Protein Concentration - End - Max"/>
                   </coding>
                </code>
@@ -3736,7 +3804,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Polysorbate 80 concentration (% w/v)"/>
                   <display value="Polysorbate 80 concentration (% w/v)"/>
                </coding>
             </code>
@@ -3746,13 +3814,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - Beginning - Min"/>
                      <display value="Polysorbate 80 concentration - Beginning - Min"/>
                   </coding>
                </code>
@@ -3766,7 +3835,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - Beginning - Max"/>
                      <display value="Polysorbate 80 concentration - Beginning - Max"/>
                   </coding>
                </code>
@@ -3780,7 +3849,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - Middle - Min"/>
                      <display value="Polysorbate 80 concentration - Middle - Min"/>
                   </coding>
                </code>
@@ -3794,7 +3863,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - Middle - Max"/>
                      <display value="Polysorbate 80 concentration - Middle - Max"/>
                   </coding>
                </code>
@@ -3808,7 +3877,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - End - Min"/>
                      <display value="Polysorbate 80 concentration - End - Min"/>
                   </coding>
                </code>
@@ -3822,7 +3891,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Polysorbate 80 concentration - End - Max"/>
                      <display value="Polysorbate 80 concentration - End - Max"/>
                   </coding>
                </code>
@@ -3849,23 +3918,24 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Growth Promotion"/>
                   <display value="Growth Promotion"/>
                </coding>
             </code>
             <subject>
-                    <!--Procedure/procedure-run-1-->
+                    <!--Procedure/procedure-drug-pq-ex1-->
                <reference value="Procedure/44aa47fd-8964-5f96-8495-b2bec7f161a8"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Growth Promotion - Beginning"/>
                      <display value="Growth Promotion - Beginning"/>
                   </coding>
                </code>
@@ -3875,7 +3945,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Growth Promotion - End"/>
                      <display value="Growth Promotion - End"/>
                   </coding>
                </code>
@@ -3898,7 +3968,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Growth Promotion"/>
                   <display value="Growth Promotion"/>
                </coding>
             </code>
@@ -3908,13 +3978,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Growth Promotion - Beginning"/>
                      <display value="Growth Promotion - Beginning"/>
                   </coding>
                </code>
@@ -3924,7 +3995,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Growth Promotion - End"/>
                      <display value="Growth Promotion - End"/>
                   </coding>
                </code>
@@ -3947,7 +4018,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Growth Promotion"/>
                   <display value="Growth Promotion"/>
                </coding>
             </code>
@@ -3957,13 +4028,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Growth Promotion - Beginning"/>
                      <display value="Growth Promotion - Beginning"/>
                   </coding>
                </code>
@@ -3973,7 +4045,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Growth Promotion - End"/>
                      <display value="Growth Promotion - End"/>
                   </coding>
                </code>
@@ -3986,8 +4058,11 @@
       <fullUrl value="urn:uuid:44aa47fd-8964-5f96-8495-b2bec7f161a8"/>
       <resource>
          <Procedure>
-                <!--procedure-run-1-->
+                <!--procedure-drug-pq-ex1-->
             <id value="44aa47fd-8964-5f96-8495-b2bec7f161a8"/>
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
+                </meta>-->
             <identifier>
                <value value="Run 1"/>
             </identifier>
@@ -4002,7 +4077,7 @@
             <subject>
                <extension url="http://hl7.org/fhir/StructureDefinition/alternate-reference">
                   <valueReference>
-                			<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                			<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -4032,7 +4107,7 @@
             <subject>
                <extension url="http://hl7.org/fhir/StructureDefinition/alternate-reference">
                   <valueReference>
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -4062,7 +4137,7 @@
             <subject>
                <extension url="http://hl7.org/fhir/StructureDefinition/alternate-reference">
                   <valueReference>
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
                   </valueReference>
                </extension>
@@ -4076,8 +4151,12 @@
       <fullUrl value="urn:uuid:44aa47fd-8964-5f96-6495-c2bec7f163a8"/>
       <resource>
          <Procedure>
-				<!--procedure-lyoph-homo-unlinked-->
+			    
+				<!--procedure-drug-pq-ex2-->
             <id value="44aa47fd-8964-5f96-6495-c2bec7f163a8"/>
+            <!--<meta>
+			        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
+			    </meta>-->
             <contained>
                <Device>
                   <id value="device-nosubject"/>
@@ -4107,7 +4186,7 @@
             <subject>
                <extension url="http://hl7.org/fhir/StructureDefinition/alternate-reference">
                   <valueReference>
-							<!--Medication/medication-actual-batch-1-->
+							<!--Medication/medication-batch-information-drug-pq-ex1-->
                      <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
                   </valueReference>
                </extension>
@@ -4137,17 +4216,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Post-filtration Filter Integrity (psig)"/>
                   <display value="Post-filtration Filter Integrity (psig)"/>
                </coding>
                <text value="Post-filtration Filter Integrity (psig)"/>
             </code>
             <subject>
-                    <!--Medication/medication-actual-batch-1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4184,17 +4264,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="osmolality"/>
                   <display value="osmolality"/>
                </coding>
                <text value="osmolality"/>
             </code>
             <subject>
-                    <!--Medication/medication-actual-batch-1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4218,7 +4299,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="osmolality"/>
                   <display value="osmolality"/>
                </coding>
                <text value="osmolality"/>
@@ -4229,6 +4310,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4252,7 +4334,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="osmolality"/>
                   <display value="osmolality"/>
                </coding>
                <text value="osmolality"/>
@@ -4263,6 +4345,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4286,24 +4369,25 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Residual Moisture"/>
                   <display value="Residual Moisture"/>
                </coding>
                <text value="Residual Moisture (%)"/>
             </code>
             <subject>
-                    <!--Medication/medication-actual-batch-1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Residual Moisture - Min"/>
                      <display value="Residual Moisture - Min"/>
                   </coding>
                </code>
@@ -4316,7 +4400,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Residual Moisture - Max"/>
                      <display value="Residual Moisture - Max"/>
                   </coding>
                </code>
@@ -4330,7 +4414,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
-                     <display value="No. of Samples"/>
+                     <display value="Number of Samples"/>
                   </coding>
                </code>
                <valueInteger value="2"/>
@@ -4352,7 +4436,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Residual Moisture"/>
                   <display value="Residual Moisture"/>
                </coding>
                <text value="Residual Moisture (%)"/>
@@ -4363,6 +4447,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4374,7 +4459,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
-                     <display value="No. of Samples"/>
+                     <display value="Number of Samples"/>
                   </coding>
                </code>
                <valueInteger value="3"/>
@@ -4396,7 +4481,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Residual Moisture"/>
                   <display value="Residual Moisture"/>
                </coding>
                <text value="Residual Moisture (%)"/>
@@ -4407,6 +4492,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4418,7 +4504,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SAMP"/>
-                     <display value="No. of Samples"/>
+                     <display value="Number of Samples"/>
                   </coding>
                </code>
                <valueInteger value="3"/>
@@ -4440,24 +4526,25 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
             <subject>
-					<!--Medication/medication-actual-batch-1-->
+					<!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLC Main Peak - Beginning"/>
                      <display value="SE-UHPLC Main Peak - Beginning"/>
                   </coding>
                </code>
@@ -4470,7 +4557,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLC Main Peak - End"/>
                      <display value="SE-UHPLC Main Peak - End"/>
                   </coding>
                </code>
@@ -4496,8 +4583,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
@@ -4507,13 +4594,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLC Main Peak - Beginning"/>
                      <display value="SE-UHPLC Main Peak - Beginning"/>
                   </coding>
                </code>
@@ -4526,7 +4614,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLC Main Peak - End"/>
                      <display value="SE-UHPLC Main Peak - End"/>
                   </coding>
                </code>
@@ -4552,8 +4640,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
@@ -4563,13 +4651,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLC Main Peak - Beginning"/>
                      <display value="SE-UHPLC Main Peak - Beginning"/>
                   </coding>
                </code>
@@ -4582,7 +4671,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLC Main Peak - End"/>
                      <display value="SE-UHPLC Main Peak - End"/>
                   </coding>
                </code>
@@ -4608,17 +4697,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (Graph)"/>
             </code>
             <subject>
-                    <!--Medication/medication-actual-batch-1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueAttachment>
@@ -4642,17 +4732,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
             <subject>
-					<!--Medication/medication-actual-batch-1-->
+					<!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4677,8 +4768,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
@@ -4688,6 +4779,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4712,8 +4804,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
@@ -4723,6 +4815,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4749,8 +4842,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
@@ -4765,6 +4858,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -4781,7 +4875,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLCMainPeak - Conclusion"/>
                      <display value="SE-UHPLCMainPeak - Conclusion"/>
                   </coding>
                   <text value="SE-UHPLC Main Peak Conclusion"/>
@@ -4805,17 +4899,18 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
             </code>
             <subject>
-					<!--Medication/medication-actual-batch-1-->
+					<!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4840,8 +4935,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
             </code>
@@ -4851,6 +4946,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4875,8 +4971,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
             </code>
@@ -4886,6 +4982,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -4910,12 +5007,13 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
             </code>
             <!-- note no value here, because the code us the %. But this obs is really about the conclusion -->
+            <!-- not one specific batch -->
             <!-- no subject because it applies to all the samples -->
             <subject>
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
@@ -4926,6 +5024,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -4942,7 +5041,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLCHMWPeak - Conclusion"/>
                      <display value="SE-UHPLCHMWPeak - Conclusion"/>
                   </coding>
                   <text value="SE-UHPLC HMW Conclusion"/>
@@ -4966,24 +5065,25 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
             </code>
             <subject>
-                    <!--Medication/medication-actual-batch-1-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLCHMW - Beginning"/>
                      <display value="SE-UHPLCHMW - Beginning"/>
                   </coding>
                </code>
@@ -4996,7 +5096,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLCHMW - End"/>
                      <display value="SE-UHPLCHMW - End"/>
                   </coding>
                </code>
@@ -5022,8 +5122,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
             </code>
@@ -5033,13 +5133,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLCHMW - Beginning"/>
                      <display value="SE-UHPLCHMW - Beginning"/>
                   </coding>
                </code>
@@ -5052,7 +5153,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLCHMW - End"/>
                      <display value="SE-UHPLCHMW - End"/>
                   </coding>
                </code>
@@ -5078,8 +5179,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
@@ -5089,13 +5190,14 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLCHMW - Beginning"/>
                      <display value="SE-UHPLCHMW - Beginning"/>
                   </coding>
                </code>
@@ -5108,7 +5210,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="SE-UHPLCHMW - End"/>
                      <display value="SE-UHPLCHMW - End"/>
                   </coding>
                </code>
@@ -5134,23 +5236,24 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Fill Weight"/>
                   <display value="Fill Weight"/>
                </coding>
             </code>
             <subject>
-					<!--Medication/medication-actual-batch-1-->
+					<!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Fill Weight - Minimum"/>
                      <display value="Fill Weight - Minimum"/>
                   </coding>
                </code>
@@ -5164,7 +5267,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Fill Weight - Maximum"/>
                      <display value="Fill Weight - Maximum"/>
                   </coding>
                </code>
@@ -5178,7 +5281,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="Fill Weight - Mean"/>
                      <display value="Fill Weight - Mean"/>
                   </coding>
                </code>
@@ -5243,9 +5346,11 @@
                   <valueCode value="unsupported"/>
                </extension>
                <display value="Product"/>
+               <!-- added only to keep IG happy -->
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+			        <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
          </Observation>
@@ -5257,7 +5362,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+                <!--medicinalproductdefinition-drug-product-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -5305,7 +5410,7 @@
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <status value="active"/>
             <for>
-				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
@@ -5332,9 +5437,9 @@
          <SubstanceDefinition>
                 <!--substancedefinition-component-substance-dxpq-ex1-->
             <id value="57a9af63-315d-1585-a261-0e337b289390"/>
-<!--            <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
-            </meta>-->
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-pq"/>
+                </meta>-->
             <manufacturer>
                     <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -5353,9 +5458,9 @@
                 <!--id value="substance-manufacturer"/-->
                 <!--organization-dxpq-ex1-->
             <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
-<!--            <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
-            </meta>-->
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-pq"/>
+                </meta>-->
             <identifier>
                     <!-- FDA establishment identifier -->
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
@@ -5393,6 +5498,7 @@
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
                <valueMarkdown value="This can be text about the history"/>
             </extension>
+            <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <title value="Process 1.0"/>
             <type>
@@ -5410,7 +5516,7 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
@@ -5516,7 +5622,7 @@
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="particle-size"/>
-                        <display value="Particle size"/>
+                        <display value="Particle Size"/>
                      </coding>
                      <text value="Under 200 microns"/>
                   </measure>
@@ -5643,9 +5749,12 @@
                 <!--<id value="actual-batch-substance"/>-->
                 <!--substance-dxpq-ex1-->
             <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
-<!--            <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
-            </meta>-->
+            <!--<meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq"/>
+                </meta>-->
+            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
+                    <valueString value="substance/{id}.xml"/>
+                </extension-->
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>

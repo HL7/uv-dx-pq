@@ -120,7 +120,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="DESC"/>
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -149,7 +149,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -178,7 +178,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ASSAY"/>
                   <display value="Assay"/>
                </coding>
                <text value="Assay"/>
@@ -221,7 +221,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="DGP-s"/>
                   <display value="Drug Substance Related Organic impurities"/>
                </coding>
             </code>
@@ -359,7 +359,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="ZZZ"/>
+                  <code value="enantiomeric-purity"/>
                   <display value="Enantiomeric purity"/>
                </coding>
                <text value="Enantiomeric purity"/>
@@ -447,7 +447,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="WWW"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>
@@ -1121,8 +1121,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-pq"/>
-                  <code value="XXX-2"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="DESC"/>
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -1158,7 +1158,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="DESC"/>
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -1192,7 +1192,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="DESC"/>
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -1226,7 +1226,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -1260,7 +1260,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -1294,7 +1294,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -1328,7 +1328,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ASSAY"/>
                   <display value="Assay"/>
                </coding>
                <text value="Assay"/>
@@ -1370,7 +1370,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ASSAY"/>
                   <display value="Assay"/>
                </coding>
                <text value="Assay"/>
@@ -1412,7 +1412,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ASSAY"/>
                   <display value="Assay"/>
                </coding>
                <text value="Assay"/>
@@ -1454,7 +1454,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1552,7 +1552,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1601,7 +1601,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1650,7 +1650,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1699,7 +1699,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1748,7 +1748,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1797,7 +1797,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1846,7 +1846,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1895,7 +1895,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1944,7 +1944,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1993,7 +1993,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -2043,7 +2043,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -2068,7 +2068,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
-                     <display value="Ima"/>
+                     <display value="Impurity"/>
                   </coding>
                </code>
                <valueCodeableConcept>
@@ -2092,7 +2092,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -2141,7 +2141,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -2191,8 +2191,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="Mutagenic"/>
+                  <code value="MUT"/>
+                  <display value="Mutagenic impurities"/>
                </coding>
             </code>
             <subject>
@@ -2239,8 +2239,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="Mutagenic"/>
+                  <code value="MUT"/>
+                  <display value="Mutagenic impurities"/>
                </coding>
                <text value="Mutagenic"/>
             </code>
@@ -2276,8 +2276,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="Mutagenic"/>
+                  <code value="MUT"/>
+                  <display value="Mutagenic impurities"/>
                </coding>
                <text value="Mutagenic"/>
             </code>
@@ -2313,7 +2313,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="ZZZ"/>
+                  <code value="enantiomeric-purity"/>
                   <display value="Enantiomeric purity"/>
                </coding>
                <text value="Enantiomeric purity"/>
@@ -2355,7 +2355,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="ZZZ"/>
+                  <code value="enantiomeric-purity"/>
                   <display value="Enantiomeric purity"/>
                </coding>
                <text value="Enantiomeric purity"/>
@@ -2397,7 +2397,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="ZZZ"/>
+                  <code value="enantiomeric-purity"/>
                   <display value="Enantiomeric purity"/>
                </coding>
                <text value="Enantiomeric purity"/>
@@ -2462,7 +2462,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="SOL"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2510,7 +2510,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="SOL"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2558,7 +2558,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="SOL"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2606,7 +2606,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="SOL"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2654,7 +2654,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="SOL"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2702,7 +2702,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="SOL"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2727,7 +2727,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="WWW"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>
@@ -2764,7 +2764,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="WWW"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>
@@ -2801,7 +2801,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>

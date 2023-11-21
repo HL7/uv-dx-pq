@@ -306,7 +306,7 @@
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SE-UHPLCMainPeak"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
@@ -361,8 +361,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCMainPeak"/>
+                  <code value="SE-UHPLCMainPeak"/>
+                  <display value="SE-UHPLC Main Peak"/>
                </coding>
                <text value="SE-UHPLC Main Peak (%)"/>
             </code>
@@ -417,8 +417,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
             </code>
@@ -473,8 +473,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="SE-UHPLCHMW"/>
+                  <code value="SE-UHPLCHMW"/>
+                  <display value="SE-UHPLC HMW"/>
                </coding>
                <text value="SE-UHPLC HMW (%)"/>
             </code>
@@ -530,7 +530,7 @@
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="CEX-HPLCMainPeak"/>
-                  <display value="CEX-HPLCMainPeak"/>
+                  <display value="CEX-HPLC Main Peak"/>
                </coding>
                <text value="CEX-HPLC Main Peak (%)"/>
             </code>
@@ -587,7 +587,7 @@
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="CEX-HPLCMainPeak"/>
-                  <display value="CEX-HPLCMainPeak"/>
+                  <display value="CEX-HPLC Main Peak"/>
                </coding>
                <text value="CEX-HPLC Main Peak (%)"/>
             </code>
@@ -721,7 +721,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="CEX-HPLCAcidicPeak-15"/>
-                     <display value="CEX-HPLC Acidic Peak"/>
+                     <display value="CEX-HPLC Acidic Peak - 15"/>
                   </coding>
                   <text value="CEX-HPLC Acidic Peak (%)"/>
                </code>
@@ -735,7 +735,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="CEX-HPLCAcidicPeak-25"/>
-                     <display value="CEX-HPLC Acidic Peak"/>
+                     <display value="CEX-HPLC Acidic Peak - 25"/>
                   </coding>
                   <text value="CEX-HPLC Acidic Peak (%)"/>
                </code>

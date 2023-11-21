@@ -248,7 +248,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="VisualInspection"/>
                   <display value="VisualInspection"/>
                </coding>
             </code>
@@ -273,7 +273,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="InfraredSpectroscopy"/>
                   <display value="InfraredSpectroscopy"/>
                </coding>
             </code>
@@ -298,7 +298,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="SupplierCertificateofAnalysis"/>
                   <display value="SupplierCertificateofAnalysis"/>
                </coding>
             </code>

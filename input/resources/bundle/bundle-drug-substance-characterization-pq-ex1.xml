@@ -308,7 +308,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ElementalAnalysisCarbon"/>
                   <display value="Elemental Analysis Carbon (%)"/>
                </coding>
                <text value="Elemental Analysis Carbon (%)"/>
@@ -348,7 +348,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ElementalAnalysisHydrogen"/>
                   <display value="Elemental Analysis Hydrogen (%)"/>
                </coding>
                <text value="Elemental Analysis Hydrogen (%)"/>
@@ -388,7 +388,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ElementalAnalysisNitrogen"/>
                   <display value="Elemental Analysis Nitrogen (%)"/>
                </coding>
                <text value="Elemental Analysis Nitrogen (%)"/>
@@ -428,7 +428,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ElementalAnalysisFlourine"/>
                   <display value="Elemental Analysis Flourine (%)"/>
                </coding>
                <text value="Elemental Analysis Flourine (%)"/>
@@ -468,7 +468,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IonAnalysisCarbon"/>
                   <display value="Ion Analysis Carbon (%)"/>
                </coding>
                <text value="Ion Analysis Carbon (%)"/>
@@ -491,7 +491,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="IonAnalysisCarbonMassAccuracy"/>
                      <display value="Ion Analysis Carbon - Mass Accuracy"/>
                   </coding>
                </code>
@@ -512,7 +512,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IonAnalysisHydrogen"/>
                   <display value="Ion Analysis Hydrogen (%)"/>
                </coding>
                <text value="Ion Analysis Hydrogen (%)"/>
@@ -547,7 +547,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IonAnalysisNitrogen"/>
                   <display value="Ion Analysis Nitrogen (%)"/>
                </coding>
                <text value="Ion Analysis Nitrogen (%)"/>
@@ -582,7 +582,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IonAnalysisFlourine"/>
                   <display value="Ion Analysis Flourine (%)"/>
                </coding>
                <text value="Ion Analysis Flourine (%)"/>
@@ -617,8 +617,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="nmr"/>
+                  <code value="NMR"/>
+                  <display value="NMR"/>
                </coding>
                <text value="NMR"/>
             </code>
@@ -666,7 +666,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Chemical Structure"/>
                   <display value="Chemical Structure"/>
                </coding>
                <text value="Chemical Structure"/>
@@ -687,7 +687,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Diffractogram"/>
                   <display value="Diffractogram"/>
                </coding>
                <text value="Diffractogram"/>
@@ -707,8 +707,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="MolecularStructure"/>
+                  <code value="MolecularStructure"/>
+                  <display value="Molecular Structure"/>
                </coding>
                <text value="MolecularStructure"/>
             </code>
@@ -727,7 +727,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Absorption"/>
                   <display value="Absorption"/>
                </coding>
                <text value="Absorption"/>
@@ -749,7 +749,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ElementalAnalysisCarbon"/>
                   <display value="Elemental Analysis Carbon (%)"/>
                </coding>
                <text value="Elemental Analysis Carbon (%)"/>
@@ -784,7 +784,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ElementalAnalysisHydrogen"/>
                   <display value="Elemental Analysis Hydrogen (%)"/>
                </coding>
                <text value="Elemental Analysis Hydrogen (%)"/>
@@ -819,7 +819,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ElementalAnalysisNitrogen"/>
                   <display value="Elemental Analysis Nitrogen (%)"/>
                </coding>
                <text value="Elemental Analysis Nitrogen (%)"/>
@@ -854,7 +854,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ElementalAnalysisFlourine"/>
                   <display value="Elemental Analysis Flourine (%)"/>
                </coding>
                <text value="Elemental Analysis Flourine (%)"/>
@@ -889,7 +889,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IonAnalysisCarbon"/>
                   <display value="Ion Analysis Carbon (%)"/>
                </coding>
                <text value="Ion Analysis Carbon (%)"/>
@@ -910,7 +910,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="IonAnalysisCarbonMassAccuracy"/>
                      <display value="Ion Analysis Carbon - Mass Accuracy"/>
                   </coding>
                </code>
@@ -939,7 +939,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IonAnalysisHydrogen"/>
                   <display value="Ion Analysis Hydrogen (%)"/>
                </coding>
                <text value="Ion Analysis Hydrogen (%)"/>
@@ -960,7 +960,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="IonAnalysisHydrogenMassAccuracy"/>
                      <display value="Ion Analysis Hydrogen - Mass Accuracy"/>
                   </coding>
                </code>
@@ -989,7 +989,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IonAnalysisNitrogen"/>
                   <display value="Ion Analysis Nitrogen (%)"/>
                </coding>
                <text value="Ion Analysis Nitrogen (%)"/>
@@ -1010,7 +1010,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="IonAnalysisNitrogenMassAccuracy"/>
                      <display value="Ion Analysis Nitrogen - Mass Accuracy"/>
                   </coding>
                </code>
@@ -1039,7 +1039,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="IonAnalysisFlourine"/>
                   <display value="Ion Analysis Flourine (%)"/>
                </coding>
                <text value="Ion Analysis Flourine (%)"/>
@@ -1060,7 +1060,7 @@
                <code>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                     <code value="XXX"/>
+                     <code value="IonAnalysisFlourineMassAccuracy"/>
                      <display value="Ion Analysis Flourine - Mass Accuracy"/>
                   </coding>
                </code>
@@ -1658,7 +1658,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Chemical Structure"/>
                   <display value="Chemical Structure"/>
                </coding>
                <text value="Chemical Structure"/>
@@ -1693,7 +1693,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="X-Ray Powder Diffractogram"/>
                   <display value="X-Ray Powder Diffractogram"/>
                </coding>
                <text value="X-Ray Powder Diffractogram"/>
@@ -1728,7 +1728,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="MolecularStructure"/>
                   <display value="Molecular Structure"/>
                </coding>
                <text value="MolecularStructure"/>
@@ -1763,7 +1763,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Absorption"/>
                   <display value="Absorption"/>
                </coding>
                <text value="Absorption"/>

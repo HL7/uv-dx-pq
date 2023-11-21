@@ -12,7 +12,6 @@
                 </packageFor>
                 
                 <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
-
                 
                 
                 <packaging> 
@@ -47,7 +46,7 @@
                     
                     <manufacturer>
                     	
-                    	<reference value="Organization/organization-drug-pq-ex1"/>
+                        <reference value="Organization/organization-drug-pq-ex1"/>
                     </manufacturer>
                     
                     <property> 
@@ -72,7 +71,7 @@
                             <coding>
                             	<system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                                 <code value="USP"/>
-                                <display value="USP"/>
+                                <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
                             </coding>
                         </valueCodeableConcept>
                     </property>
@@ -102,7 +101,7 @@
                         
                         <manufacturer> 
                         	
-                        	<reference value="Organization/organization-drug-pq-ex1"/>
+                            <reference value="Organization/organization-drug-pq-ex1"/>
                         </manufacturer>
                         
                         
@@ -192,7 +191,7 @@
                         
                         <manufacturer> 
                         	
-                        	<reference value="Organization/organization-drug-pq-ex1"/>
+                            <reference value="Organization/organization-drug-pq-ex1"/>
                         </manufacturer>
                         
                         
@@ -221,7 +220,7 @@
                                 <coding>
                                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                                     <code value="USP"/>
-                                    <display value="USP"/>
+                                    <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
                                 </coding>
                             </valueCodeableConcept>
                         </property>
@@ -295,7 +294,7 @@
                             
                             
                             <manufacturer> 
-                            	<reference value="Organization/organization-drug-pq-ex1"/>
+                                <reference value="Organization/organization-drug-pq-ex1"/>
                             </manufacturer>
 
                             

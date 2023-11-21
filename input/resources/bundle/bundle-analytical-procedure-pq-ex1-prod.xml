@@ -30,7 +30,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <action>
@@ -220,7 +220,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="ASSAY"/>
                   <display value="Assay"/>
                </coding>
                <text value="Assay (w/w%)"/>
@@ -246,8 +246,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
-                  <display value="Identity"/>
+                  <code value="IDT"/>
+                  <display value="Identification"/>
                </coding>
                <text value="Identity"/>
             </code>
@@ -290,7 +290,7 @@
       <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
       <resource>
          <MedicinalProductDefinition>
-                <!--medicinalproductdefinition-drug-product-pq-ex1-->
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <combinedPharmaceuticalDoseForm>
                <coding>

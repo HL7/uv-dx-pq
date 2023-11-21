@@ -11,7 +11,7 @@
     <code>
         <coding>
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-            <code value="XXX"/>
+                        <code value="IDT"/>
             <display value="Identification"/>
         </coding>
         <text value="Identification"/>

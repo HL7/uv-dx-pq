@@ -261,7 +261,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Obscuration"/>
                   <display value="Obscuration"/>
                </coding>
                <text value="Obscuration (%)"/>
@@ -300,7 +300,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Refractive index"/>
                   <display value="Refractive index"/>
                </coding>
                <text value="Particle refractive index"/>
@@ -333,7 +333,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="XXX"/>
+                  <code value="Particle Size RSD"/>
                   <display value="Particle Size RSD"/>
                </coding>
                <text value="Particle Size RSD"/>

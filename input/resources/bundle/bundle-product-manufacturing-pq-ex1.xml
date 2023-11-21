@@ -151,7 +151,7 @@
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="particle-size"/>
-                        <display value="Particle size"/>
+                        <display value="Particle Size"/>
                      </coding>
                      <text value="Under 200 microns"/>
                   </measure>
@@ -307,7 +307,7 @@
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="ProcessingMaterial"/>
-                        <display value="ProcessingMaterial"/>
+                        <display value="Processing Material"/>
                      </coding>
                   </role>
                </participant>
@@ -566,7 +566,7 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
-                     <code value="121212"/>
+                     <code value="Maximum Speed"/>
                      <!-- #90 Working capacity -->
                      <display value="Maximum Speed"/>
                   </coding>
@@ -594,7 +594,7 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
-                     <code value="121213"/>
+                     <code value="Power"/>
                      <display value="Power"/>
                   </coding>
                </type>
@@ -620,7 +620,7 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
-                     <code value="121212"/>
+                     <code value="Maximum capacity"/>
                      <display value="Maximum capacity"/>
                   </coding>
                </type>
@@ -651,8 +651,8 @@
             <type>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
-                  <code value="11111111111"/>
-                  <display value="ProcessFlowDiagram"/>
+                  <code value="ProcessFlowDiagram"/>
+                  <display value="Process Flow Diagram"/>
                </coding>
             </type>
             <content>

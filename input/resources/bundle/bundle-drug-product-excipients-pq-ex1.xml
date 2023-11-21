@@ -179,8 +179,9 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/substance-source-material-type"/>
-                     <code value="NonBiological"/>
-                     <display value="Non-biological"/>
+                     <code value="Mineral"/>
+                     <display value="Mineral"/>
+                     <!-- to mean "non-biological" -->
                   </coding>
                </type>
                <countryOfOrigin>

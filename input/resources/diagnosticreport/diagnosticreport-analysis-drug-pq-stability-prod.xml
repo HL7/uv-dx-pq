@@ -48,7 +48,7 @@
          <valueCodeableConcept>
             <coding>
                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-timePointDescription-local-pq"/>
-               <code value="222"/>
+                                <code value="Delayed Start Code"/>
                <display value="Delayed Start Code"/>
             </coding>
             <text value="Refrigerated delayed testing"/>

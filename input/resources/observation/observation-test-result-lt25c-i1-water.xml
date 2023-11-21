@@ -11,7 +11,7 @@
    <code>
       <coding>
          <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-         <code value="WWW"/>
+            					<code value="WaterContent"/>
          <display value="Water Content"/>
       </coding>
    </code>

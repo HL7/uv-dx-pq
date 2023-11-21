@@ -11,7 +11,7 @@
    <code>
       <coding>
          <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-         <code value="ZZZ"/>
+                                <code value="uniformity-dosage"/>
          <display value="Uniformity of dosage units (by weight)"/>
       </coding>
    </code>

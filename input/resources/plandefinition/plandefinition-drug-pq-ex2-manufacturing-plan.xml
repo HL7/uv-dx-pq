@@ -136,7 +136,7 @@
                         <coding>
                             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                             <code value="particle-size"/>
-                            <display value="Particle size"/>
+                                <display value="Particle Size"/>
                         </coding>
                         <text value="Under 200 microns"/>
                     </measure>
