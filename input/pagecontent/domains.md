@@ -106,8 +106,10 @@ Each domain has a page that describes its objective and provides a component dia
   <tr>
     <td class="tg-0lax">12. Stability Study</td>
     <td class="tg-0lax">3.2.P.8 Stability
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.8.1 Stability Summary and Conclusions</td>
     <br>&nbsp;&nbsp;&nbsp;3.2.P.8.3 Stability Data</td>
     <td class="tg-0lax">3.2.S.7 Stability
+    <br>&nbsp;&nbsp;&nbsp;3.2.S.7.1 Stability Summary and Conclusions</td>
     <br>&nbsp;&nbsp;&nbsp;3.2.S.7.3 Stability Data</td>
   </tr>
   <tr>

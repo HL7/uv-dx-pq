@@ -17,6 +17,6 @@ Provides details about each facility or legal entity involved in the manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.1_Manufacturer(s).pdf">3.2.S.2.1 Manufacturer(s)</a>
 
 **HTML rendering** of synthetic CTD data:
-- <a href="organizations_rend.html">Drug Substance or Product Organizations</a></li></ul>
+- <a href="organizations_rend.html">Drug Substance or Product Organizations</a>
 
 **FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Organizations](artifacts.html#organizations)
