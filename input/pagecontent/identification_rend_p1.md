@@ -1,4 +1,5 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities.<br/><br/>The section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities, is similar.
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product.
+
 <html>
 <body>
 <div class="greyable">
