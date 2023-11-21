@@ -3524,8 +3524,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="ProteinConcentration (mg/mL)"/>
-                  <display value="ProteinConcentration (mg/mL)"/>
+                  <code value="Protein Concentration (mg/mL)"/>
+                  <display value="Protein Concentration (mg/mL)"/>
                </coding>
             </code>
             <subject>
@@ -3690,8 +3690,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="ProteinConcentration (mg/mL)"/>
-                  <display value="ProteinConcentration (mg/mL)"/>
+                  <code value="Protein Concentration (mg/mL)"/>
+                  <display value="Protein Concentration (mg/mL)"/>
                </coding>
             </code>
             <subject>
@@ -3918,7 +3918,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="Growth Promotion"/>
+                  <code value="GrowthPromotion"/>
                   <display value="Growth Promotion"/>
                </coding>
             </code>
@@ -3968,7 +3968,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="Growth Promotion"/>
+                  <code value="GrowthPromotion"/>
                   <display value="Growth Promotion"/>
                </coding>
             </code>
@@ -4018,7 +4018,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="Growth Promotion"/>
+                  <code value="GrowthPromotion"/>
                   <display value="Growth Promotion"/>
                </coding>
             </code>
@@ -4264,8 +4264,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="osmolality"/>
-                  <display value="osmolality"/>
+                  <code value="Osmolality"/>
+                  <display value="Osmolality"/>
                </coding>
                <text value="osmolality"/>
             </code>
@@ -4299,8 +4299,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="osmolality"/>
-                  <display value="osmolality"/>
+                  <code value="Osmolality"/>
+                  <display value="Osmolality"/>
                </coding>
                <text value="osmolality"/>
             </code>
@@ -4334,8 +4334,8 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="osmolality"/>
-                  <display value="osmolality"/>
+                  <code value="Osmolality"/>
+                  <display value="Osmolality"/>
                </coding>
                <text value="osmolality"/>
             </code>
@@ -4876,7 +4876,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SE-UHPLCMainPeak - Conclusion"/>
-                     <display value="SE-UHPLCMainPeak - Conclusion"/>
+                     <display value="SE-UHPLC Main Peak - Conclusion"/>
                   </coding>
                   <text value="SE-UHPLC Main Peak Conclusion"/>
                </code>
@@ -5042,7 +5042,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SE-UHPLCHMWPeak - Conclusion"/>
-                     <display value="SE-UHPLCHMWPeak - Conclusion"/>
+                     <display value="SE-UHPLC HMW Peak - Conclusion"/>
                   </coding>
                   <text value="SE-UHPLC HMW Conclusion"/>
                </code>
@@ -5084,7 +5084,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SE-UHPLCHMW - Beginning"/>
-                     <display value="SE-UHPLCHMW - Beginning"/>
+                     <display value="SE-UHPLC HMW - Beginning"/>
                   </coding>
                </code>
                <valueQuantity>
@@ -5097,7 +5097,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SE-UHPLCHMW - End"/>
-                     <display value="SE-UHPLCHMW - End"/>
+                     <display value="SE-UHPLC HMW - End"/>
                   </coding>
                </code>
                <valueQuantity>
@@ -5141,7 +5141,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SE-UHPLCHMW - Beginning"/>
-                     <display value="SE-UHPLCHMW - Beginning"/>
+                     <display value="SE-UHPLC HMW - Beginning"/>
                   </coding>
                </code>
                <valueQuantity>
@@ -5154,7 +5154,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SE-UHPLCHMW - End"/>
-                     <display value="SE-UHPLCHMW - End"/>
+                     <display value="SE-UHPLC HMW - End"/>
                   </coding>
                </code>
                <valueQuantity>
@@ -5198,7 +5198,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SE-UHPLCHMW - Beginning"/>
-                     <display value="SE-UHPLCHMW - Beginning"/>
+                     <display value="SE-UHPLC HMW - Beginning"/>
                   </coding>
                </code>
                <valueQuantity>
@@ -5211,7 +5211,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SE-UHPLCHMW - End"/>
-                     <display value="SE-UHPLCHMW - End"/>
+                     <display value="SE-UHPLC HMW - End"/>
                   </coding>
                </code>
                <valueQuantity>
@@ -5544,8 +5544,8 @@
                   <measure>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                        <code value="PH"/>
-                        <display value="pH Level"/>
+                        <code value="pH"/>
+                        <display value="pH"/>
                      </coding>
                      <text value="pH must be in range 6.9 to 7.1"/>
                   </measure>

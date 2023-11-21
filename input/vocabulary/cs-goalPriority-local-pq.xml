@@ -16,7 +16,7 @@
         <display value="Critical"/>
     </concept>
     <concept>
-        <code value="Non Critical"/>
-        <display value="Non Critical"/>
+        <code value="non-critical"/>
+        <display value="Non-critical"/>
     </concept>
 </CodeSystem>

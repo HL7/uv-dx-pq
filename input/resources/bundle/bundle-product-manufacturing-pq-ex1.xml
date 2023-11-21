@@ -73,8 +73,8 @@
                   <measure>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                        <code value="PH"/>
-                        <display value="pH Level"/>
+                        <code value="pH"/>
+                        <display value="pH"/>
                      </coding>
                      <text value="pH must be in range 6.9 to 7.1"/>
                   </measure>

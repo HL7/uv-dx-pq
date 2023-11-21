@@ -335,61 +335,47 @@
     <code value="Diffractogram"/>
     <display value="Diffractogram"/>
   </concept>
-
   <concept>
-
     <code value="MolecularStructure"/>
     <display value="Molecular Structure"/>
   </concept>
-
   <concept>
-
     <code value="Absorption"/>
     <display value="Absorption"/>
   </concept>
   <concept>
-
     <code value="X-Ray Powder Diffractogram"/>
     <display value="X-Ray Powder Diffractogram"/>
   </concept>
   <concept>
-
     <code value="pH (post-dilution bulk solution)"/>
     <display value="pH (post-dilution bulk solution)"/>
   </concept>
   <concept>
-
     <code value="Appearance (Product Container, visual)"/>
     <display value="Appearance (Product Container, visual)"/>
   </concept>
   <concept>
-
     <code value="Appearance (Lyophilized, Visual)"/>
     <display value="Appearance (Lyophilized, Visual)"/>
   </concept>
   <concept>
-
     <code value="Appearance (Reconstituted, Visual)"/>
     <display value="Appearance (Reconstituted, Visual)"/>
-
   </concept>
   <concept>
     <code value="Appearance"/>
     <display value="Appearance"/>
   </concept>
   <concept>
-
     <code value="pH (reconstituted)"/>
     <display value="pH (reconstituted)"/>
   </concept>
   <concept>
-
     <code value="TAMC"/>
     <display value="TAMC"/>
-
   </concept>
   <concept>
-
     <code value="Fill Weight Average"/>
     <display value="Fill Weight Average"/>
   </concept>
@@ -397,7 +383,6 @@
     <code value="Fill Weight Target (g)"/>
     <display value="Fill Weight Target (g)"/>
   </concept>
-
   <concept>
     <code value="Actual Avg. Weight from Target"/>
     <display value="Actual Avg. Weight from Target"/>
@@ -426,7 +411,6 @@
     <code value="Assay (pre-clarification filtration) (mg/mL)"/>
     <display value="Assay (pre-clarification filtration) (mg/mL)"/>
   </concept>
-
   <concept>
     <code value="Assay (Post dilution bulk solution) (mg/mL)"/>
     <display value="Assay (Post dilution bulk solution) (mg/mL)"/>
@@ -443,7 +427,6 @@
     <code value="Identification (FT-IR)"/>
     <display value="Identification (FT-IR)"/>
   </concept>
-
   <concept>
     <code value="VisualInspection"/>
     <display value="VisualInspection"/>
@@ -476,13 +459,10 @@
     <code value="ResidualWaterContent"/>
     <display value="Residual Water Content (w/w%)"/>
   </concept>
-  
   <concept>
     <code value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
     <display value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
   </concept>
-
-
   <concept>
     <code value="Bacterial Endotoxins (EU/mL)"/>
     <display value="Bacterial Endotoxins (EU/mL)"/>
@@ -516,6 +496,10 @@
     <display value="Conductivity (μS/cm)"/>
   </concept>
   <concept>
+    <code value="Fill Weight"/>
+    <display value="Fill Weight"/>
+  </concept>
+  <concept>
     <code value="Fill Weight - Maximum"/>
     <display value="Fill Weight - Maximum"/>
   </concept>
@@ -526,10 +510,6 @@
   <concept>
     <code value="Fill Weight - Minimum"/>
     <display value="Fill Weight - Minimum"/>
-  </concept>
-  <concept>
-    <code value="Fill Weight"/>
-    <display value="Fill Weight"/>
   </concept>
   <concept>
     <code value="FiltrationPressure (psig)"/>
@@ -551,10 +531,10 @@
     <code value="Growth Promotion - End"/>
     <display value="Growth Promotion - End"/>
   </concept>
-  <concept>
+  <!--concept>
     <code value="Growth Promotion"/>
     <display value="Growth Promotion"/>
-  </concept>
+  </concept-->
   <concept>
     <code value="GrowthPromotion"/>
     <display value="Growth Promotion"/>
@@ -575,10 +555,10 @@
     <code value="MediaChallengeRun"/>
     <display value="Media Challenge Run"/>
   </concept>
-  <concept>
+  <!--concept>
     <code value="osmolality"/>
     <display value="osmolality"/>
-  </concept>
+  </concept-->
   <concept>
     <code value="Osmolality"/>
     <display value="Osmolality"/>
@@ -595,10 +575,11 @@
     <code value="pH"/>
     <display value="pH"/>
   </concept>
-  <concept>
-    <code value="PH"/> <!-- todo dupe -->
+  <!-- todo dupe -->
+  <!--concept>
+    <code value="PH"/>
     <display value="pH Level"/>
-  </concept>
+  </concept-->
   <concept>
     <code value="Polysorbate 80 (% w/v)"/>
     <display value="Polysorbate 80 (% w/v)"/>
@@ -638,6 +619,10 @@
   <concept>
     <code value="Pre-filtration Bioburden (CFU/ 100 mL)"/>
     <display value="Pre-filtration Bioburden (CFU/ 100 mL)"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration (mg/mL)"/>
+    <display value="Protein Concentration (mg/mL)"/>
   </concept>
   <concept>
     <code value="Protein Concentration - Beginning - End - Higher"/>
@@ -703,17 +688,13 @@
     <code value="Protein Concentration - Middle - Min"/>
     <display value="Protein Concentration - Middle - Min"/>
   </concept>
-  <concept>
+  <!--concept>
     <code value="Protein Concentration (mg/mL)"/>
     <display value="Protein Concentration (mg/mL)"/>
-  </concept>
+  </concept-->
   <concept>
     <code value="Protein Concentration Statistics"/>
     <display value="Protein Concentration Statistics"/>
-  </concept>
-  <concept>
-    <code value="ProteinConcentration (mg/mL)"/>
-    <display value="ProteinConcentration (mg/mL)"/>
   </concept>
   <concept>
     <code value="Residual Moisture - Max"/>
@@ -745,15 +726,15 @@
   </concept>
   <concept>
     <code value="SE-UHPLCHMW - Beginning"/>
-    <display value="SE-UHPLCHMW - Beginning"/>
+    <display value="SE-UHPLC HMW - Beginning"/>
   </concept>
   <concept>
     <code value="SE-UHPLCHMW - End"/>
-    <display value="SE-UHPLCHMW - End"/>
+    <display value="SE-UHPLC HMW - End"/>
   </concept>
   <concept>
     <code value="SE-UHPLCHMWPeak - Conclusion"/>
-    <display value="SE-UHPLCHMWPeak - Conclusion"/>
+    <display value="SE-UHPLC HMW Peak - Conclusion"/>
   </concept>
   <concept>
     <code value="SE-UHPLCHMW"/>
@@ -761,7 +742,7 @@
   </concept>
   <concept>
     <code value="SE-UHPLCMainPeak - Conclusion"/>
-    <display value="SE-UHPLCMainPeak - Conclusion"/>
+    <display value="SE-UHPLC Main Peak - Conclusion"/>
   </concept>
   <concept>
     <code value="SE-UHPLCMainPeak"/>
@@ -783,7 +764,5 @@
     <code value="WaterContent"/>
     <display value="Water content"/>
   </concept>
-
-
 
 </CodeSystem>

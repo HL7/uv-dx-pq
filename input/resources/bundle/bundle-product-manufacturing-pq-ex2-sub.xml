@@ -62,8 +62,8 @@
                   <measure>
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                        <code value="PH"/>
-                        <display value="pH Level"/>
+                        <code value="pH"/>
+                        <display value="pH"/>
                      </coding>
                      <text value="Long description of the acceptance criteria - pH must be in range 6.9 to 7.1"/>
                   </measure>
@@ -95,8 +95,8 @@
                <priority>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
-                     <code value="Non Critical"/>
-                     <display value="Non Critical"/>
+                     <code value="non-critical"/>
+                     <display value="Non-critical"/>
                   </coding>
                </priority>
                <target>
