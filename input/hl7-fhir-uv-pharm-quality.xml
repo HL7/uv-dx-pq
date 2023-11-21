@@ -1438,6 +1438,17 @@
             <groupingId value="extensions1"/>
         </resource>
 
+<!--        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-medication-manufacturing-batch-pq"/>
+                <display value="Extension - Medication Manufacturing Batch PQ"/>
+            </reference>
+            <name value="Extension - Medication Manufacturing Batch PQ"/>
+            <description value="Extension - Medication Manufacturing Batch PQ"/>
+            <isExample value="false"/>
+            <groupingId value="extensions1"/>
+        </resource>-->
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-novel-excipient-pq"/>
@@ -2631,6 +2642,13 @@
                 <code value="special-url"/>
             </code>
             <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-drug-route-of-administration-terminology"/>
+        </parameter>
+        <parameter>
+            <code>
+                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+                <code value="special-url"/>
+            </code>
+            <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-batch-utilization-terminology"/>
         </parameter>
     </definition>
 </ImplementationGuide>
