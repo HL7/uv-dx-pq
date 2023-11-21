@@ -10,33 +10,33 @@
     <description value="This code system contains local codes for characterization step in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
-    
+
     <concept>
         <code value="absorption"/>
-        <display value="absorption"/>
+        <display value="Absorption"/>
     </concept>
     <concept>
         <code value="diffractogram"/>
-        <display value="diffractogram"/>
+        <display value="Diffractogram"/>
     </concept>
     <concept>
         <code value="elemental-analyis"/>
-        <display value="elemental-analyis"/>
+        <display value="Elemental Analyis"/>
     </concept>
     <concept>
         <code value="ion-analyis"/>
-        <display value="ion-analyis"/>
+        <display value="Ion Analyis"/>
     </concept>
     <concept>
         <code value="MolecularStructure"/>
-        <display value="MolecularStructure"/>
+        <display value="Molecular Structure"/>
     </concept>
     <concept>
         <code value="nmr"/>
-        <display value="nmr"/>
+        <display value="NMR"/>
     </concept>
     <concept>
         <code value="structure"/>
-        <display value="structure"/>
+        <display value="Structure"/>
     </concept>
 </CodeSystem>

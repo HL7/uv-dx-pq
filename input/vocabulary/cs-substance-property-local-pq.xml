@@ -16,10 +16,6 @@
         <display value="Solubility purified water"/>
     </concept>
     <concept>
-        <code value="temperature"/>
-        <display value="Temperature"/>
-    </concept>
-    <concept>
         <code value="water-cotent"/>
         <display value="Water content"/>
     </concept>
@@ -50,10 +46,6 @@
     <concept>
         <code value="pH"/>
         <display value="pH"/>
-    </concept>
-    <concept>
-        <code value="solubility-usp-ph"/>
-        <display value="Solubility as a function of pH in USP buffers"/>
     </concept>
     <concept>
         <code value="solubility-usp-ph"/>

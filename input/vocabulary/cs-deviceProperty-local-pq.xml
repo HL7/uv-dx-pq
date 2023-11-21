@@ -12,11 +12,11 @@
     <content value="complete"/>
 
     <concept>
-        <code value="121212"/>
+        <code value="Maximum Speed"/>
         <display value="Maximum Speed"/>
     </concept>
     <concept>
-        <code value="121213"/>
+        <code value="Power"/>
         <display value="Power"/>
     </concept>
     <concept>

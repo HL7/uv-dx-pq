@@ -26,20 +26,12 @@
   <!--  Concepts for Observation-test-result-drug-pq examples -->
   <!--  Used in Observation.code -->
   <concept>
-    <code value="SE-UHPLCHMW"/>
-    <display value="SE-UHPLC HMW"/>
-  </concept>
-  <concept>
     <code value="SE-UHPLCHMW-15"/>
     <display value="SE-UHPLC HMW - 15"/>
   </concept>
   <concept>
     <code value="SE-UHPLCHMW-25"/>
     <display value="SE-UHPLC HMW - 25"/>
-  </concept>
-  <concept>
-    <code value="SE-UHPLCMainPeak"/>
-    <display value="SE-UHPLC Main Peak"/>
   </concept>
   <concept>
     <code value="SE-UHPLCMainPeak-15"/>
@@ -70,10 +62,6 @@
     <display value="Temperature"/>
   </concept>
   <concept>
-    <code value="test-success"/>
-    <display value="Test Success"/>
-  </concept>
-  <concept>
     <code value="UCL"/>
     <display value="Upper one-sided 95% confidence limit of Max Difference"/>
   </concept>
@@ -82,21 +70,13 @@
     <display value="uniformity of dosage units (by weight)"/>
   </concept>
   <concept>
-    <code value="WaterContent"/>
-    <display value="Water content"/>
-  </concept>
-  <concept>
     <code value="WWWH"/>
     <display value="Water Content Homogeneity"/>
   </concept>
-  <concept>
+  <!--concept>
     <code value="xxx"/>
     <display value="Assay"/>
-  </concept>
-  <concept>
-    <code value="ZZZX"/>
-    <display value="DissolutionQ"/>
-  </concept>
+  </concept-->
   <concept>
     <code value="SAMP"/>
     <display value="Number of Samples"/>
@@ -104,6 +84,10 @@
   <concept>
     <code value="DGP"/>
     <display value="Degradation Products"/>
+  </concept>
+  <concept>
+    <code value="Drug Substance Related Organic impurities"/>
+    <display value="Drug Substance Related Organic impurities"/>
   </concept>
   <concept>
     <code value="DGP-p"/>
@@ -117,29 +101,29 @@
     <code value="Impurities"/>
     <display value="Impurities"/>
   </concept>
+
   <concept>
     <code value="WWW"/>
     <display value="Water Content"/>
   </concept>
-  <concept>
+  <!--concept>
     <code value="XXX"/>
-    <!--    <code value="XXX"/> is used for many different display values-->
     <display value="Assay"/>
-  </concept>
+  </concept-->
   <concept>
-    <code value="YYY"/>
+    <code value="Microbiological Quality"/>
     <display value="Microbiological Quality"/>
   </concept>
-  <concept>
+  <!--concept>
     <code value="ZZZ"/>
     <display value="Uniformity of dosage units (by weight)"/>
-  </concept>
-  <concept>
+  </concept-->
+  <!--concept>
     <code value="AAA"/>
     <display value="Assay"/>
-  </concept>
+  </concept-->
   <concept>
-    <code value="assay"/>
+    <code value="ASSAY"/>
     <display value="Assay"/>
   </concept>
   <concept>
@@ -160,7 +144,7 @@
     <display value="Assay Content Homogeneity"/>
   </concept>
   <concept>
-    <code value="description"/>
+    <code value="DESC"/>
     <display value="Description"/>
   </concept>
   <concept>
@@ -168,9 +152,14 @@
     <display value="Drug Substance Related Organic impurities"/>
   </concept>
   <concept>
-    <code value="dissolution"/>
+    <code value="Dissolution"/>
     <display value="Dissolution"/>
   </concept>
+  <concept>
+    <code value="Dissolution Quantity"/>
+    <display value="Dissolution Quantity"/>
+  </concept>
+
   <concept>
     <code value="ELE"/>
     <display value="Elemental impurities"/>
@@ -179,10 +168,10 @@
     <code value="enantiomeric-purity"/>
     <display value="Enantiomeric purity"/>
   </concept>
-  <concept>
+  <!--concept>
     <code value="identification"/>
     <display value="Identification"/>
-  </concept>
+  </concept-->
   <concept>
     <code value="IDT"/>
     <display value="Identification"/>
@@ -191,16 +180,12 @@
   <!--  Concepts ONLY for Observation-test-result-drug-pq examples -->
   <!--  Used in Observation.code -->
   <concept>
-    <code value="CONC"/>
-    <display value="Conclusion"/>
-  </concept>
-  <concept>
     <code value="MUT"/>
     <display value="Mutagenic impurities"/>
   </concept>
   <concept>
     <code value="NMR"/>
-    <display value="nmr"/>
+    <display value="NMR"/>
   </concept>
   <!--  Used for ObservationDefinition.component.code-->
   <concept>
@@ -210,10 +195,6 @@
   <concept>
     <code value="NMR-H"/>
     <display value="NMR-H"/>
-  </concept>
-  <concept>
-    <code value="OVERALLSAMP"/>
-    <display value="Number of Samples"/>
   </concept>
   <concept>
     <code value="CEX-HPLCAcidicPeak-15"/>
@@ -257,25 +238,552 @@
   <!--  Concepts for PlanDefinition-drug-pq examples-->
   <!--  Used in PlanDefinition.goal.target.measure-->
   <concept>
-    <code value="particle-size"/>
-    <display value="Particle size"/>
-  </concept>
-  <concept>
-    <code value="PH"/>
-    <display value="pH Level"/>
-  </concept>
-  <concept>
     <code value="particle-size-distribution"/>
     <display value="Particle size distribution"/>
   </concept>
   <!--  Concepts for Procedure-drug-pq examples-->
   <!--  Used in Procedure.code-->
   <concept>
-    <code value="MediaChallengeRun"/>
-    <display value="Media Challenge Run"/>
+    <code value="Lyophilization Water Homogeneity"/>
+    <display value="Lyophilization Water Homogeneity"/>
+  </concept>
+  <concept>
+    <code value="Lyophilization Assay Homogeneity"/>
+    <display value="Lyophilization Assay Homogeneity"/>
+  </concept>
+  <concept>
+    <code value="Particle Size RSD"/>
+    <display value="Particle Size RSD"/>
+  </concept>
+  <concept>
+    <code value="Obscuration"/>
+    <display value="Obscuration"/>
+  </concept>
+  <concept>
+    <code value="Refractive index"/>
+    <display value="Refractive index"/>
+  </concept>
+  <concept>
+    <code value="ElementalAnalysisCarbon"/>
+    <display value="Elemental Analysis Carbon (%)"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisCarbonMass"/>
+    <display value="Ion Analysis Carbon - Mass"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisCarbonMassAccuracy"/>
+  <display value="Ion Analysis Carbon - Mass Accuracy"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisCarbon"/>
+    <display value="Ion Analysis Carbon (%)"/>
+  </concept>
+  <concept>
+    <code value="ElementalAnalysisHydrogen"/>
+    <display value="Elemental Analysis Hydrogen (%)"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisHydrogenMass"/>
+    <display value="Ion Analysis Hydrogen - Mass"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisHydrogenMassAccuracy"/>
+    <display value="Ion Analysis Hydrogen - Mass Accuracy"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisHydrogen"/>
+    <display value="Ion Analysis Hydrogen (%)"/>
+  </concept>
+  <concept>
+    <code value="ElementalAnalysisNitrogen"/>
+    <display value="Elemental Analysis Nitrogen (%)"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisNitrogen"/>
+    <display value="Ion Analysis Nitrogen (%)"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisNitrogenMass"/>
+    <display value="Ion Analysis Nitrogen - Mass"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisNitrogenMassAccuracy"/>
+    <display value="Ion Analysis Nitrogen - Mass Accuracy"/>
+  </concept>
+  <concept>
+    <code value="ElementalAnalysisFlourine"/>
+    <display value="Elemental Analysis Flourine (%)"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisFlourine"/>
+    <display value="Ion Analysis Flourine (%)"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisFlourineMass"/>
+    <display value="Ion Analysis Flourine - Mass"/>
+  </concept>
+  <concept>
+    <code value="IonAnalysisFlourineMassAccuracy"/>
+    <display value="Ion Analysis Flourine - Mass Accuracy"/>
+  </concept>
+  <concept>
+    <code value="Chemical Structure"/>
+    <display value="Chemical Structure"/>
+  </concept>
+  <concept>
+    <code value="Diffractogram"/>
+    <display value="Diffractogram"/>
+  </concept>
+
+  <concept>
+
+    <code value="MolecularStructure"/>
+    <display value="Molecular Structure"/>
+  </concept>
+
+  <concept>
+
+    <code value="Absorption"/>
+    <display value="Absorption"/>
+  </concept>
+  <concept>
+
+    <code value="X-Ray Powder Diffractogram"/>
+    <display value="X-Ray Powder Diffractogram"/>
+  </concept>
+  <concept>
+
+    <code value="pH (post-dilution bulk solution)"/>
+    <display value="pH (post-dilution bulk solution)"/>
+  </concept>
+  <concept>
+
+    <code value="Appearance (Product Container, visual)"/>
+    <display value="Appearance (Product Container, visual)"/>
+  </concept>
+  <concept>
+
+    <code value="Appearance (Lyophilized, Visual)"/>
+    <display value="Appearance (Lyophilized, Visual)"/>
+  </concept>
+  <concept>
+
+    <code value="Appearance (Reconstituted, Visual)"/>
+    <display value="Appearance (Reconstituted, Visual)"/>
+
+  </concept>
+  <concept>
+    <code value="Appearance"/>
+    <display value="Appearance"/>
+  </concept>
+  <concept>
+
+    <code value="pH (reconstituted)"/>
+    <display value="pH (reconstituted)"/>
+  </concept>
+  <concept>
+
+    <code value="TAMC"/>
+    <display value="TAMC"/>
+
+  </concept>
+  <concept>
+
+    <code value="Fill Weight Average"/>
+    <display value="Fill Weight Average"/>
+  </concept>
+  <concept>
+    <code value="Fill Weight Target (g)"/>
+    <display value="Fill Weight Target (g)"/>
+  </concept>
+
+  <concept>
+    <code value="Actual Avg. Weight from Target"/>
+    <display value="Actual Avg. Weight from Target"/>
+  </concept>
+  <concept>
+    <code value="Hold Time (filtration To filling)"/>
+    <display value="Hold Time (filtration To filling)"/>
+  </concept>
+  <concept>
+    <code value="Hold Time (start filling to end filling)"/>
+    <display value="Hold Time (start filling to end filling)"/>
+  </concept>
+  <concept>
+    <code value="Filter Integrity Test"/>
+    <display value="Filter Integrity Test"/>
+  </concept>
+  <concept>
+    <code value="Lyophilizer Number"/>
+    <display value="Lyophilizer Number"/>
+  </concept>
+  <concept>
+    <code value="pH (adjustment of pre-clarification bulk solution)"/>
+    <display value="pH (adjustment of pre-clarification bulk solution)"/>
+  </concept>
+  <concept>
+    <code value="Assay (pre-clarification filtration) (mg/mL)"/>
+    <display value="Assay (pre-clarification filtration) (mg/mL)"/>
+  </concept>
+
+  <concept>
+    <code value="Assay (Post dilution bulk solution) (mg/mL)"/>
+    <display value="Assay (Post dilution bulk solution) (mg/mL)"/>
+  </concept>
+  <concept>
+    <code value="Test Date"/>
+    <display value="Test Date"/>
+  </concept>
+  <concept>
+    <code value="Identification (NMR)"/>
+    <display value="Identification (NMR)"/>
+  </concept>
+  <concept>
+    <code value="Identification (FT-IR)"/>
+    <display value="Identification (FT-IR)"/>
+  </concept>
+
+  <concept>
+    <code value="VisualInspection"/>
+    <display value="VisualInspection"/>
+  </concept>
+  <concept>
+    <code value="InfraredSpectroscopy"/>
+    <display value="InfraredSpectroscopy"/>
+  </concept>
+  <concept>
+    <code value="SupplierCertificateofAnalysis"/>
+    <display value="SupplierCertificateofAnalysis"/>
+  </concept>
+  <concept>
+    <code value="Elemental"/>
+    <display value="Elemental"/>
+  </concept>
+  <concept>
+    <code value="Uniformity of Dosage Units, Weight Variation"/>
+    <display value="Uniformity of Dosage Units, Weight Variation"/>
+  </concept>
+  <concept>
+    <code value="Uniformity of Dosage Units, Weight Variation - Acceptance Value (AV)"/>
+    <display value="Uniformity of Dosage Units, Weight Variation - Acceptance Value (AV)"/>
+  </concept>
+  <concept>
+    <code value="Yield (%)"/>
+    <display value="Yield (%)"/>
+  </concept>
+  <concept>
+    <code value="ResidualWaterContent"/>
+    <display value="Residual Water Content (w/w%)"/>
+  </concept>
+  
+  <concept>
+    <code value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
+    <display value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
+  </concept>
+
+
+  <concept>
+    <code value="Bacterial Endotoxins (EU/mL)"/>
+    <display value="Bacterial Endotoxins (EU/mL)"/>
+  </concept>
+  <concept>
+    <code value="Bioburden - Beginning"/>
+    <display value="Bioburden - Beginning"/>
+  </concept>
+  <concept>
+    <code value="Bioburden - End"/>
+    <display value="Bioburden - End"/>
+  </concept>
+  <concept>
+    <code value="Bioburden (CFU/ 100 mL)"/>
+    <display value="Bioburden (CFU/ 100 mL)"/>
+  </concept>
+  <concept>
+    <code value="Buffer vessel mixing speed (rpm)"/>
+    <display value="Buffer vessel mixing speed (rpm)"/>
+  </concept>
+  <concept>
+    <code value="Buffer vessel mixing time (min)"/>
+    <display value="Buffer vessel mixing time (min)"/>
+  </concept>
+  <concept>
+    <code value="CONC"/>
+    <display value="Conclusion"/>
+  </concept>
+  <concept>
+    <code value="Conductivity (μS/cm)"/>
+    <display value="Conductivity (μS/cm)"/>
+  </concept>
+  <concept>
+    <code value="Fill Weight - Maximum"/>
+    <display value="Fill Weight - Maximum"/>
+  </concept>
+  <concept>
+    <code value="Fill Weight - Mean"/>
+    <display value="Fill Weight - Mean"/>
+  </concept>
+  <concept>
+    <code value="Fill Weight - Minimum"/>
+    <display value="Fill Weight - Minimum"/>
+  </concept>
+  <concept>
+    <code value="Fill Weight"/>
+    <display value="Fill Weight"/>
+  </concept>
+  <concept>
+    <code value="FiltrationPressure (psig)"/>
+    <display value="FiltrationPressure (psig)"/>
+  </concept>
+  <concept>
+    <code value="Formulation vessel mixing speed (rpm)"/>
+    <display value="Formulation vessel mixing speed (rpm)"/>
+  </concept>
+  <concept>
+    <code value="Formulation vessel mixing time (min)"/>
+    <display value="Formulation vessel mixing time (min)"/>
+  </concept>
+  <concept>
+    <code value="Growth Promotion - Beginning"/>
+    <display value="Growth Promotion - Beginning"/>
+  </concept>
+  <concept>
+    <code value="Growth Promotion - End"/>
+    <display value="Growth Promotion - End"/>
+  </concept>
+  <concept>
+    <code value="Growth Promotion"/>
+    <display value="Growth Promotion"/>
+  </concept>
+  <concept>
+    <code value="GrowthPromotion"/>
+    <display value="Growth Promotion"/>
+  </concept>
+  <concept>
+    <code value="Hold Time"/>
+    <display value="Hold Time"/>
   </concept>
   <concept>
     <code value="LyophilizationHomogeneneity"/>
     <display value="Lyophilization Homogeneneity"/>
   </concept>
+  <concept>
+    <code value="Media Challenge Hold Times"/>
+    <display value="Media Challenge Hold Times"/>
+  </concept>
+  <concept>
+    <code value="MediaChallengeRun"/>
+    <display value="Media Challenge Run"/>
+  </concept>
+  <concept>
+    <code value="osmolality"/>
+    <display value="osmolality"/>
+  </concept>
+  <concept>
+    <code value="Osmolality"/>
+    <display value="Osmolality"/>
+  </concept>
+  <concept>
+    <code value="OVERALLSAMP"/>
+    <display value="Number of Samples"/>
+  </concept>
+  <concept>
+    <code value="particle-size"/>
+    <display value="Particle Size"/>
+  </concept>
+  <concept>
+    <code value="pH"/>
+    <display value="pH"/>
+  </concept>
+  <concept>
+    <code value="PH"/> <!-- todo dupe -->
+    <display value="pH Level"/>
+  </concept>
+  <concept>
+    <code value="Polysorbate 80 (% w/v)"/>
+    <display value="Polysorbate 80 (% w/v)"/>
+  </concept>
+  <concept>
+    <code value="Polysorbate 80 concentration - Beginning - Max"/>
+    <display value="Polysorbate 80 concentration - Beginning - Max"/>
+  </concept>
+  <concept>
+    <code value="Polysorbate 80 concentration - Beginning - Min"/>
+    <display value="Polysorbate 80 concentration - Beginning - Min"/>
+  </concept>
+  <concept>
+    <code value="Polysorbate 80 concentration - End - Max"/>
+    <display value="Polysorbate 80 concentration - End - Max"/>
+  </concept>
+  <concept>
+    <code value="Polysorbate 80 concentration - End - Min"/>
+    <display value="Polysorbate 80 concentration - End - Min"/>
+  </concept>
+  <concept>
+    <code value="Polysorbate 80 concentration - Middle - Max"/>
+    <display value="Polysorbate 80 concentration - Middle - Max"/>
+  </concept>
+  <concept>
+    <code value="Polysorbate 80 concentration - Middle - Min"/>
+    <display value="Polysorbate 80 concentration - Middle - Min"/>
+  </concept>
+  <concept>
+    <code value="Polysorbate 80 concentration (% w/v)"/>
+    <display value="Polysorbate 80 concentration (% w/v)"/>
+  </concept>
+  <concept>
+    <code value="Post-filtration Filter Integrity (psig)"/>
+    <display value="Post-filtration Filter Integrity (psig)"/>
+  </concept>
+  <concept>
+    <code value="Pre-filtration Bioburden (CFU/ 100 mL)"/>
+    <display value="Pre-filtration Bioburden (CFU/ 100 mL)"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Beginning - End - Higher"/>
+    <display value="Protein Concentration - Beginning - End - Higher"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Beginning - End - Lower"/>
+    <display value="Protein Concentration - Beginning - End - Lower"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Beginning - End - Mean"/>
+    <display value="Protein Concentration - Beginning - End - Mean"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Beginning - Max"/>
+    <display value="Protein Concentration - Beginning - Max"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Beginning - Middle - Higher"/>
+    <display value="Protein Concentration - Beginning - Middle - Higher"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Beginning - Middle - Lower"/>
+    <display value="Protein Concentration - Beginning - Middle - Lower"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Beginning - Middle - Mean"/>
+    <display value="Protein Concentration - Beginning - Middle - Mean"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Beginning - Min"/>
+    <display value="Protein Concentration - Beginning - Min"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Conclusion"/>
+    <display value="Protein Concentration - Conclusion"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - End - Max"/>
+    <display value="Protein Concentration - End - Max"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - End - Min"/>
+    <display value="Protein Concentration - End - Min"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Middle - End - Higher"/>
+    <display value="Protein Concentration - Middle - End - Higher"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Middle - End - Lower"/>
+    <display value="Protein Concentration - Middle - End - Lower"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Middle - End - Mean"/>
+    <display value="Protein Concentration - Middle - End - Mean"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Middle - Max"/>
+    <display value="Protein Concentration - Middle - Max"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration - Middle - Min"/>
+    <display value="Protein Concentration - Middle - Min"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration (mg/mL)"/>
+    <display value="Protein Concentration (mg/mL)"/>
+  </concept>
+  <concept>
+    <code value="Protein Concentration Statistics"/>
+    <display value="Protein Concentration Statistics"/>
+  </concept>
+  <concept>
+    <code value="ProteinConcentration (mg/mL)"/>
+    <display value="ProteinConcentration (mg/mL)"/>
+  </concept>
+  <concept>
+    <code value="Residual Moisture - Max"/>
+    <display value="Residual Moisture - Max"/>
+  </concept>
+  <concept>
+    <code value="Residual Moisture - Min"/>
+    <display value="Residual Moisture - Min"/>
+  </concept>
+  <concept>
+    <code value="Residual Moisture"/>
+    <display value="Residual Moisture"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLC Main Peak - Beginning"/>
+    <display value="SE-UHPLC Main Peak - Beginning"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLC HMW - Conclusion"/>
+    <display value="SE-UHPLC HMW - Conclusion"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLC Main Peak - Conclusion"/>
+    <display value="SE-UHPLC Main Peak - Conclusion"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLC Main Peak - End"/>
+    <display value="SE-UHPLC Main Peak - End"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCHMW - Beginning"/>
+    <display value="SE-UHPLCHMW - Beginning"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCHMW - End"/>
+    <display value="SE-UHPLCHMW - End"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCHMWPeak - Conclusion"/>
+    <display value="SE-UHPLCHMWPeak - Conclusion"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCHMW"/>
+    <display value="SE-UHPLC HMW"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCMainPeak - Conclusion"/>
+    <display value="SE-UHPLCMainPeak - Conclusion"/>
+  </concept>
+  <concept>
+    <code value="SE-UHPLCMainPeak"/>
+    <display value="SE-UHPLC Main Peak"/>
+  </concept>
+  <concept>
+    <code value="test-success"/>
+    <display value="Test Success"/>
+  </concept>
+  <concept>
+    <code value="Thaw Time"/>
+    <display value="Thaw Time"/>
+  </concept>
+  <concept>
+    <code value="Thawing Temp"/>
+    <display value="Thawing Temp"/>
+  </concept>
+  <concept>
+    <code value="WaterContent"/>
+    <display value="Water content"/>
+  </concept>
+
+
+
 </CodeSystem>
