@@ -20,7 +20,7 @@
         <display value="Dispersant"/>
     </concept>
     <concept>
-        <code value="starting-material"/>
+        <code value="StartingMaterial"/>
         <display value="Starting Material"/>
     </concept>
     <concept>
