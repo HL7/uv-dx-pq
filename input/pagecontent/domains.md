@@ -4,10 +4,11 @@ Rather than recreating the legacy table of contents format in FHIR, pharmaceutic
 
 Each domain has a page that describes its objective and provides a component diagram (where applicable), description of components, and examples.
 
-***Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains:*** The 14 PQ domains and their supporting sub-domains, in which each domain is based on a major PQ concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.
+### Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains
+The 14 PQ domains and their supporting sub-domains, in which each domain is based on a major PQ concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.
 <table><tr><td><img src="all-domains-dx-PQ.png" usemap="#hotspots"/></td></tr></table>
 
-***Table: Mapping the legacy CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains***
+### Table: Mapping the legacy CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -128,7 +129,7 @@ Each domain has a page that describes its objective and provides a component dia
 </tbody>
 </table>
 
-***Reuse of FHIR Component Building Blocks Across PQ Domains***
+### Matrix: Reuse of FHIR Component Building Blocks Across PQ Domains
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -140,23 +141,6 @@ Each domain has a page that describes its objective and provides a component dia
 </style>
 <table class="tg">
 <thead>
-  <tr>
-    <th class="tg-0lax" colspan="3">PQ  Component&nbsp;&nbsp;&nbsp;Reuse Across Domains</th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-    <th class="tg-0lax"> </th>
-  </tr>
-</thead>
-<tbody>
   <tr>
     <td class="tg-0lax">Pharmaceutical&nbsp;&nbsp;&nbsp;Quality (Industry) FHIR IG component profiles</td>
     <td class="tg-0lax">1. Drug Identification </td>
@@ -174,6 +158,8 @@ Each domain has a page that describes its objective and provides a component dia
     <td class="tg-0lax">13. Drug Specification</td>
     <td class="tg-0lax">14. Compatibility</td>
   </tr>
+  </thead>
+  <tbody>
   <tr>
     <td class="tg-0lax">ActivityDefinition&nbsp;&nbsp;&nbsp;- Test Drug PQ</td>
     <td class="tg-0lax"></td>
@@ -184,16 +170,16 @@ Each domain has a page that describes its objective and provides a component dia
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
     <td class="tg-0lax">Composition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -217,9 +203,9 @@ Each domain has a page that describes its objective and provides a component dia
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -227,31 +213,31 @@ Each domain has a page that describes its objective and provides a component dia
   </tr>
   <tr>
     <td class="tg-0lax">DiagnosticReport&nbsp;&nbsp;&nbsp;- Analysis Drug PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
     <td class="tg-0lax">DocumentReference&nbsp;&nbsp;&nbsp;- Drug PQ</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -261,24 +247,24 @@ Each domain has a page that describes its objective and provides a component dia
   </tr>
   <tr>
     <td class="tg-0lax">Ingredient&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
     <td class="tg-0lax">ManufacturedItemDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -288,100 +274,100 @@ Each domain has a page that describes its objective and provides a component dia
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
     <td class="tg-0lax">Medication&nbsp;&nbsp;&nbsp;- Batch Information Drug PQ</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
     <td class="tg-0lax">MedicinalProductDefinition&nbsp;&nbsp;&nbsp;- Drug Product PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
     <td class="tg-0lax">Observation&nbsp;&nbsp;&nbsp;- Test Result Drug PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
     <td class="tg-0lax">ObservationDefinition&nbsp;&nbsp;&nbsp;- Test Method Drug PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
     <td class="tg-0lax">Organization&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
     <td class="tg-0lax">PackagedProductDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -390,27 +376,27 @@ Each domain has a page that describes its objective and provides a component dia
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
     <td class="tg-0lax">PlanDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
     <td class="tg-0lax">Procedure&nbsp;&nbsp;&nbsp;- Drug PQ</td>
@@ -422,7 +408,7 @@ Each domain has a page that describes its objective and provides a component dia
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -440,9 +426,9 @@ Each domain has a page that describes its objective and provides a component dia
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
   </tr>
@@ -452,48 +438,48 @@ Each domain has a page that describes its objective and provides a component dia
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
     <td class="tg-0lax">SubstanceDefinition&nbsp;&nbsp;&nbsp;- Component Substance Drug PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
     <td class="tg-0lax">Substance&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">X</td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
   </tr>
