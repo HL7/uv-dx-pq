@@ -214,7 +214,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="Drug Substance Related Organic impurities"/>
+                  <code value="DGP-s"/>
                   <display value="Drug Substance Related Organic impurities"/>
                </coding>
             </code>

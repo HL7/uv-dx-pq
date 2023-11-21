@@ -349,7 +349,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP-p"/>
+                  <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
             </code>
@@ -436,7 +436,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="DGP-p"/>
+                  <code value="DGP"/>
                   <display value="Degradation Products"/>
                </coding>
             </code>
