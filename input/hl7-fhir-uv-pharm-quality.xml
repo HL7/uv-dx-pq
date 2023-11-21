@@ -1972,7 +1972,7 @@
                 <reference value="CodeSystem/cs-substance-property-solubility-local-pq"/>
                 <display value="CodeSystem - Substance Property Solubility Local PQ"/>
             </reference>
-            <name value="CodeSystem - Specification Type Local PQ"/>
+            <name value="CodeSystem - Substance Property Solubility Local PQ"/>
             <description value="This code system contains local codes for substance property solubility in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
