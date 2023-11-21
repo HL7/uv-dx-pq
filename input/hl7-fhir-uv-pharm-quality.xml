@@ -1648,7 +1648,7 @@
         </resource>
 
         <!--Terminology-->
-        <resource>
+        <!--resource>
             <reference>
                 <reference value="CodeSystem/CodeSystem-local-codes-pq"/>
                 <display value="CodeSystem - Local Codes - PQ"/>
@@ -1657,7 +1657,7 @@
             <description value="CodeSystem - Local Codes - PQ"/>
             <isExample value="false"/>
             <groupingId value="term"/>
-        </resource>
+        </resource-->
 
         <resource>
             <reference>
