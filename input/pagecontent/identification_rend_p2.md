@@ -1,5 +1,4 @@
-o	The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.2 Pharmaceutical Development, 3.2.P.2.5 Microbiological Attributes.
-
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.2 Pharmaceutical Development, 3.2.P.2.5 Microbiological Attributes.
 <html>
 <body>
 <div class="greyable">
