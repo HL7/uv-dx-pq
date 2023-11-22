@@ -1,0 +1,42 @@
+<mxfile host="Electron" modified="2023-10-14T16:57:38.601Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="hZo-ERVCNKzTd1ATxseW" version="21.6.8" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1290" dy="2967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="PtvGfc8u3fFPzmpzfyYF-7" value="MedicinalProductDefinition&amp;nbsp;&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Stelbat Tablets, 20mg&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe699;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="120" y="-2320" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Kh6UWCqLEouyqFOK7ntM-11" value="package for" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yESEt7nfq7H6VeH_3OPs-0" target="PtvGfc8u3fFPzmpzfyYF-7" edge="1">
+          <mxGeometry x="-0.122" y="3" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="355" y="-2150" as="sourcePoint" />
+            <mxPoint x="380" y="-2160" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yESEt7nfq7H6VeH_3OPs-0" value="PackagedProductDefinition &lt;i&gt;Package Type 1 (24 tabs)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#CAF5B4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="-2240" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yESEt7nfq7H6VeH_3OPs-1" value="PackagedProductDefinition &lt;i&gt;Package Type 2 (8 tabs)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#CAF5B4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="-2240" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="yESEt7nfq7H6VeH_3OPs-3" value="package for" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yESEt7nfq7H6VeH_3OPs-1" target="PtvGfc8u3fFPzmpzfyYF-7">
+          <mxGeometry x="0.122" y="3" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="-2230" as="sourcePoint" />
+            <mxPoint x="170" y="-2270" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yESEt7nfq7H6VeH_3OPs-4" value="packaging - &lt;i&gt;bottle&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#CAF5B4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="-2192.5" width="140" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="yESEt7nfq7H6VeH_3OPs-5" value="packaging - &lt;i&gt;box&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#CAF5B4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="-2190" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yESEt7nfq7H6VeH_3OPs-6" value="packaging - &lt;i&gt;foil strip&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#CAF5B4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="-2160" width="120" height="42.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
