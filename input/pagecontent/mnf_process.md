@@ -3,7 +3,7 @@ Provide a manufacturing process description and details about unit operations, p
 
 ### Component Diagram
 <table>
-<tr><td><img src="manufacturing_process_FHIR_resources [2023-07-28 Rik].png" width="850"/></td></tr>
+<tr><td><img src="manufacturing_process_FHIR_resources.png" width="850"/></td></tr>
 </table>
  
 ### Description of Components
