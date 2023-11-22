@@ -197,7 +197,6 @@
             <!-- outer action is the whole thing, if needed -->
             <!-- step 1 mixing -->
             <action>
-                        <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
@@ -345,7 +344,6 @@
             </action>
             <!-- step 2 drying -->
             <action>
-                        <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
@@ -447,7 +445,6 @@
             </action>
             <!-- step 3 particle size -->
             <action>
-                        <!--extension url="http://accumulus.org/fhir/extension/processStepScale"-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
@@ -644,7 +641,7 @@
             		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>       
             	</meta>-->
             <identifier>
-               <system value="http://accumulus.org/fhir/identifier/document"/>
+               <system value="http://example.org/fhir/identifier/document"/>
                <value value="FLOW-001"/>
             </identifier>
             <status value="current"/>

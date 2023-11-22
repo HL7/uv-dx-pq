@@ -3,7 +3,6 @@
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-product-manufacturing-pq-ex2-sub"/>
    <meta>
-        <!--profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/-->
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
    </meta>
    <type value="collection"/>
@@ -35,6 +34,7 @@
             <status value="active"/>
             <!-- #83 -->
             <subjectReference>
+                    <!--SubstanceDefinition/substance1-->
                <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
             </subjectReference>
             <description value="Narrative description of substance manufacturing process"/>
@@ -167,6 +167,7 @@
                   <documentation>
                      <type value="specification-of"/>
                      <resourceReference>
+                                <!--DocumentReference/DocumentReference-image-->
                         <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41fef"/>
                      </resourceReference>
                   </documentation>
@@ -175,6 +176,7 @@
                   <participant>
                      <typeReference>
                                 <!-- this is new in R5 and is not in R4B -->
+                                <!--DeviceDefinition/impeller-->
                         <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
                      </typeReference>
                      <role>
@@ -190,6 +192,7 @@
                      <typeReference>
                         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
+                                        <!--SubstanceDefinition/startingMaterial-->
                               <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821153"/>
                            </valueReference>
                         </extension>
@@ -206,6 +209,7 @@
                      <typeReference>
                         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
+                                        <!--SubstanceDefinition/processingMaterial-->
                               <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821155"/>
                            </valueReference>
                         </extension>
@@ -222,6 +226,7 @@
                      <typeReference>
                         <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
+                                        <!--SubstanceDefinition/resultingMaterial-->
                               <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821154"/>
                            </valueReference>
                         </extension>
@@ -275,7 +280,7 @@
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
             <!-- #84 -->
-         <DocumentReference>
+         <DocumentReference> 
                 <!--DocumentReference-process-flow-diagram-dxpq-ex1-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
             <meta>
@@ -284,7 +289,7 @@
                <source value="#n4xHiP0iat7deVDt"/>
             </meta>
             <identifier>
-               <system value="http://accumulus.org/fhir/identifier/document"/>
+               <system value="http://example.org/fhir/identifier/document"/>
                <value value="FLOW-001"/>
             </identifier>
             <status value="current"/>
@@ -297,7 +302,7 @@
             </type>
             <content>
                <attachment>
-                  <url value="https://accumulus.org/docStore/flow-001"/>
+                  <url value="https://example.org/docStore/flow-001"/>
                </attachment>
             </content>
          </DocumentReference>
@@ -308,7 +313,7 @@
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fef"/>
       <resource>
             <!-- #84 -->
-         <DocumentReference>
+         <DocumentReference> 
                 <!--DocumentReference-image-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41fef"/>
             <status value="current"/>
@@ -369,6 +374,7 @@
                 <!--startingMaterial-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821153"/>
             <manufacturer>
+                    <!--Organization/substance-manufacturer-->
                <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
@@ -396,6 +402,7 @@
                 <!--processingMaterial-->
             <id value="c458791f-7cb8-428e-83f7-8a205f821155"/>
             <manufacturer>
+                    <!--Organization/substance-manufacturer-->
                <reference value="Organization/9fe98cfa-9245-8313-0fc5-d15e613b5d6d"/>
             </manufacturer>
             <name>
