@@ -3,7 +3,7 @@ Provide details about a stability study including stability study design (tests 
 
 ### Component Diagram
 <table>
-<tr><td><img src="stability_FHIR_resources [2023-07-28 Rik].png" width="850"/></td></tr>
+<tr><td><img src="stability_FHIR_resources.png" width="850"/></td></tr>
 </table>
 
 ### Description of Components
