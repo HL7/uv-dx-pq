@@ -1,16 +1,16 @@
-<mxfile host="Electron" modified="2023-07-29T14:59:03.379Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="cmm_1aKlmXvvqWz7FnYT" version="21.6.5" type="device">
+<mxfile host="Electron" modified="2023-08-09T21:14:11.152Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="joeLSAWI-I3Mf0mtlAU8" version="21.6.1" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="941" dy="1881" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1036" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="IEeFdyCGopTc3gh3-DFE-0" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dfdfdf;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="199.25" y="-30" width="370.75" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-9" value="ObservationDefinition&lt;br&gt;&lt;i&gt;Degradation products by UHPLC&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#A6C499;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-9" value="ObservationDefinition&lt;br&gt;&lt;i&gt;Degradation products by UHPLC&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#A6C499;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="389.13" y="-20" width="170.25" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="PtvGfc8u3fFPzmpzfyYF-7" value="MedicinalProductDefintion&amp;nbsp;&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Stelbat Tablets, 20mg&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe699;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="PtvGfc8u3fFPzmpzfyYF-7" value="MedicinalProductDefinition&amp;nbsp;&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Stelbat Tablets, 20mg&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe699;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="35" y="-100" width="156" height="40" as="geometry" />
         </mxCell>
         <mxCell id="PtvGfc8u3fFPzmpzfyYF-18" value="PlanDefinition&lt;br&gt;&lt;i&gt;Drug Specification&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#cfcfcf;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -58,23 +58,23 @@
         <mxCell id="IEeFdyCGopTc3gh3-DFE-2" value="SubstanceDefinition&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Stelbatolol&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#c1f0da;strokeColor=#9ebda2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="398.51" y="-100" width="150" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="IEeFdyCGopTc3gh3-DFE-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kh6UWCqLEouyqFOK7ntM-25" edge="1" target="IEeFdyCGopTc3gh3-DFE-2">
+        <mxCell id="IEeFdyCGopTc3gh3-DFE-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kh6UWCqLEouyqFOK7ntM-25" target="IEeFdyCGopTc3gh3-DFE-2" edge="1">
           <mxGeometry x="-0.3333" y="-2" width="50" height="50" relative="1" as="geometry">
             <mxPoint x="560" y="-80" as="sourcePoint" />
             <mxPoint x="640" y="-120" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-6" value="ObservationDefinition&lt;br&gt;&lt;i&gt;Assay by UHPLC&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#A6C499;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-6" value="ObservationDefinition&lt;br&gt;&lt;i&gt;Assay by UHPLC&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#A6C499;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="209.13" y="-20" width="170.25" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-7" value="qualifiedValue&lt;br&gt;&lt;i&gt;95%-105% of label claim&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#b3d5a4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-7" value="qualifiedValue&lt;br&gt;&lt;i&gt;95%-105% of label claim&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#b3d5a4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="220" y="20" width="148.5" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-10" value="&lt;div&gt;qualifiedValue&lt;/div&gt;&lt;div&gt;&lt;i&gt;impurity 1 &amp;lt; 0.2% w/w&lt;/i&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#b3d5a4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-10" value="&lt;div&gt;qualifiedValue&lt;/div&gt;&lt;div&gt;&lt;i&gt;impurity 1 &amp;lt; 0.2% w/w&lt;/i&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#b3d5a4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="400.01" y="30" width="148.5" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-11" value="&lt;div&gt;qualifiedValue&lt;/div&gt;&lt;div&gt;&lt;i&gt;impurity 2 &amp;lt; 0.1% w/w&lt;/i&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#b3d5a4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="uPRwFi-8ZqYW5aY9Hn0C-11" value="&lt;div&gt;qualifiedValue&lt;/div&gt;&lt;div&gt;&lt;i&gt;impurity 2 &amp;lt; 0.1% w/w&lt;/i&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#b3d5a4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="400.01" y="70" width="148.5" height="40" as="geometry" />
         </mxCell>
       </root>
