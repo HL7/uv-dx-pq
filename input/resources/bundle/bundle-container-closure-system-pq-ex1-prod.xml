@@ -143,8 +143,8 @@
                <packaging>
                   <type>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/closureTypes"/>
-                        <code value="112344"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+                        <code value="Child Proof Cap"/>
                         <display value="Child Proof Cap"/>
                      </coding>
                   </type>
@@ -176,8 +176,8 @@
                   <packaging>
                      <type>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/closureTypes"/>
-                           <code value="112344dd"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+                           <code value="Multi-layer Foil Seal Liner"/>
                            <display value="Multi-layer Foil Seal Liner"/>
                         </coding>
                      </type>
@@ -289,8 +289,8 @@
                <packaging>
                   <type>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/closureTypes"/>
-                        <code value="100000073495"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+                        <code value="Blister"/>
                         <display value="Blister"/>
                         <!-- the actual blister -->
                      </coding>
@@ -382,8 +382,8 @@
                   <packaging>
                      <type>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/closureTypes"/>
-                           <code value="112344bb"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+                           <code value="Blister Foil Lidding"/>
                            <display value="Blister Foil Lidding"/>
                         </coding>
                      </type>
