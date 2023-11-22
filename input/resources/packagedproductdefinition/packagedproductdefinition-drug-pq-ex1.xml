@@ -83,7 +83,7 @@
                         
                         <type> 
                             <coding>
-                            	<system value="http://accumulus.org/fhir/code/closureTypes"/>
+                                <system value="http://example.org/fhir/code/closureTypes"/>
                                 <code value="1d2344"/>
                                 <display value="Tape"/>
                             </coding>
@@ -92,7 +92,7 @@
                         
                         <material> 
                             <coding>
-                                <system value="http://accumulus.org/fhir/code/material"/>
+                                <system value="http://example.org/fhir/code/material"/>
                                 <code value="200000003208"/>
                                 <display value="Plastic"/>
                             </coding>
@@ -153,7 +153,7 @@
                         <property> 
                             <type>
                                 <coding>
-                                	<system value="http://accumulus.org/fhir/code/closureProperties"/>
+                                    <system value="http://example.org/fhir/code/closureProperties"/>
                                     <code value="1123ss"/>
                                     <display value="Integrity Test"/>
                                 </coding>
@@ -275,7 +275,7 @@
                             
                             <type> 
                                 <coding>
-                                    <system value="http://accumulus.org/fhir/code/closureTypes"/>
+                                    <system value="http://example.org/fhir/code/closureTypes"/>
                                     <code value="112344"/>
                                     <display value="Child Proof Cap"/>
                                 </coding>
@@ -286,7 +286,7 @@
                             <material> 
                                 <coding>
                                     
-                                	<system value="http://accumulus.org/fhir/code/material"/>
+                                    <system value="http://example.org/fhir/code/material"/>
                                     <code value="112344ss"/>
                                     <display value="PVC"/>
                                 </coding>
@@ -344,7 +344,7 @@
                             <property> 
                                 <type>
                                     <coding>
-                                    	<system value="http://accumulus.org/fhir/code/closureProperties"/>
+                                        <system value="http://example.org/fhir/code/closureProperties"/>
                                         <code value="1123ss"/>
                                         <display value="Integrity Test"/>
                                     </coding>
