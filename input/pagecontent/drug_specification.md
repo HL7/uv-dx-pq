@@ -3,7 +3,7 @@ Provide details about drug substance or drug product release and stability speci
 
 ### Component Diagram
 <table>
-<tr><td><img src="specification_FHIR_resources [2023-07-29 Rik].png" width="850"/></td></tr>
+<tr><td><img src="specification_FHIR_resources.png" width="850"/></td></tr>
 </table>
  
 ### Description of ComponentsComponent Building Blocks
