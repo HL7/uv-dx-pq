@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2023-11-22T17:26:30.299Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="vNmkG6cRMHljUh1PWS7V" version="21.6.8" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1063" dy="2850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="PtvGfc8u3fFPzmpzfyYF-7" value="MedicinalProductDefinition&amp;nbsp;&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;Stelbat Tablets, 20mg&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe699;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="-2253.5" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GuFP8HreXcvNh-s_X78j-0" value="Medication -&amp;nbsp;&lt;br&gt;&lt;i&gt;Batch 33445&lt;br&gt;Size, Scale, Site, Date, Process&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="269" y="-2320" width="231" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GuFP8HreXcvNh-s_X78j-2" value="batch of" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GuFP8HreXcvNh-s_X78j-0" target="PtvGfc8u3fFPzmpzfyYF-7" edge="1">
+          <mxGeometry x="-0.075" y="-7" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359" y="-2181" as="sourcePoint" />
+            <mxPoint x="295" y="-2141" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GuFP8HreXcvNh-s_X78j-36" value="batch of" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="c_75NU1I0pz16pNmRdn--0" edge="1">
+          <mxGeometry x="-0.0455" y="-10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="269" y="-2195.75" as="sourcePoint" />
+            <mxPoint x="200" y="-2233" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_75NU1I0pz16pNmRdn--0" value="Medication -&amp;nbsp;&lt;br&gt;&lt;i&gt;Batch 33446&lt;br&gt;Size, Scale, Site, Date, Process&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="269" y="-2258.5" width="231" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c_75NU1I0pz16pNmRdn--1" value="Medication -&amp;nbsp;&lt;br&gt;&lt;i&gt;Batch 33447&lt;br&gt;Size, Scale, Site, Date, Process&lt;br&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="269" y="-2196" width="231" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c_75NU1I0pz16pNmRdn--2" value="batch of" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="c_75NU1I0pz16pNmRdn--1" target="PtvGfc8u3fFPzmpzfyYF-7">
+          <mxGeometry x="0.2012" y="-11" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="279" y="-2272" as="sourcePoint" />
+            <mxPoint x="210" y="-2233" as="targetPoint" />
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
