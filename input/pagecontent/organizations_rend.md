@@ -1,4 +1,5 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s) or for section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s).<html>
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s).<br/><br/>The section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s), is similar.<br/>
+<html>
 <body>
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
@@ -7,19 +8,20 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-organizations-dxpq-ex1)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-organizations-pq-ex1)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq 
 
 <Bundle>
-    <id value=&quot;bundle-organizations-dxpq-ex1&quot;/>
+    <id value=&quot;bundle-organizations-pq-ex1&quot;/>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
         <fullUrl value=&quot;urn:uuid:1f3ab002-429f-7f05-4dda-05467f2804d9&quot;/>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;manufacturer&quot;/>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -43,6 +45,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b&quot;/>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;manufacturer2&quot;/>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -66,6 +69,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0&quot;/>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;capManufacturer&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -88,6 +92,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28&quot;/>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;bottleManufacturer&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -110,6 +115,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:bc27122e-52b5-569e-1787-5d6d0f533516&quot;/>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;tester2&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -149,12 +155,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                 </contact>
             </Organization>
         </resource>
-    </entry>" id="Bundle-bundle-organizations-dxpq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-organizations-dxpq-ex1</div>
+    </entry>" id="Bundle-bundle-organizations-pq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-organizations-pq-ex1</div>
 <div class="debugOff"></div>
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-dxpq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq</span></div>
 <div><span title="
 <Bundle>
     ...
@@ -168,6 +174,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;manufacturer&quot;/>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -275,6 +282,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;manufacturer2&quot;/>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -382,6 +390,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;capManufacturer&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -486,6 +495,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;bottleManufacturer&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -590,6 +600,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
+                <!-- focal resource -->
                 <id value=&quot;tester2&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>

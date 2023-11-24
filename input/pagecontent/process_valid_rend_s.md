@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.2 Manufacture, subsection 3.2.S.2.5 Process Validation and/or Evaluation.
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.2 Manufacture , subsection 3.2.S.2.5 Process Validation and/or Evaluation.
 <html>
 <body>
 <div class="greyable">
@@ -8,14 +8,14 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: substance-process-validation)
-Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-product-process-validation-pq-ex2-sub)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq 
 
 <Bundle>
     <!-- Substance Process Validation -->
-    <id value=&quot;substance-process-validation&quot;/>
+    <id value=&quot;bundle-product-process-validation-pq-ex2-sub&quot;/>
     <meta>
-        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/process-validation-substance&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
@@ -35,7 +35,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;process-validation&quot;/>
                         <display value=&quot;Process Validation&quot;/>
                     </coding>
@@ -46,18 +46,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 </subjectReference>
                 <description value=&quot;Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...&quot;/>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
                                     <code value=&quot;SPEED&quot;/>
                                     <display value=&quot;Mix speed&quot;/>
                                 </coding>
@@ -75,7 +75,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;particleSizeReduction&quot;/>
                             <display value=&quot;Particle Size Reduction&quot;/>
                         </coding>
@@ -83,31 +83,33 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -115,15 +117,16 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -187,9 +190,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </action>
                 </action>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
@@ -199,7 +202,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;drying&quot;/>
                             <display value=&quot;Drying&quot;/>
                         </coding>
@@ -207,31 +210,33 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -239,15 +244,16 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -279,8 +285,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Process Validation Report&quot;/>
                         <display value=&quot;Process Validation Report&quot;/>
                     </coding>
                 </code>
@@ -344,8 +350,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -354,7 +360,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <text value=&quot;Visual inspection&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -371,8 +377,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -381,7 +387,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                     <text value=&quot;ID by UHPLC&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -398,8 +404,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
                     <text value=&quot;Assay by HPLC (as is) (w/w%)&quot;/>
@@ -436,8 +442,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -455,8 +461,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -474,18 +480,18 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
                         <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;Residual Water Content (w/w%)&quot;/>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
-                                <code value=&quot;non-critical&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
+                                <code value=&quot;Non-critical&quot;/>
                                 <display value=&quot;Non-critical&quot;/>
                             </coding>
                             <text value=&quot;Non-critical&quot;/>
@@ -513,17 +519,17 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
                         <display value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
                     </coding>
                     <text value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
                                 <code value=&quot;critical&quot;/>
                                 <display value=&quot;Critical&quot;/>
                             </coding>
@@ -553,8 +559,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -581,8 +587,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -609,8 +615,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -637,8 +643,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -665,8 +671,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -693,8 +699,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -721,8 +727,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -752,8 +758,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -783,8 +789,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -814,8 +820,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -845,8 +851,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -876,8 +882,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -907,9 +913,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -938,9 +944,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -969,9 +975,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -1029,7 +1035,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <SubstanceDefinition>
                 <id value=&quot;substancedefinition-component-substance-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq&quot;/>
                 </meta>
                 <manufacturer>
                     <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
@@ -1061,7 +1067,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1095,7 +1101,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1129,7 +1135,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1188,7 +1194,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1199,7 +1205,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-1&quot;/>
@@ -1224,7 +1230,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1235,7 +1241,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-2&quot;/>
@@ -1260,7 +1266,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1271,7 +1277,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-3&quot;/>
@@ -1310,7 +1316,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1344,7 +1350,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1378,7 +1384,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -1426,7 +1432,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1437,7 +1443,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-1&quot;/>
@@ -1462,7 +1468,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1473,7 +1479,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-2&quot;/>
@@ -1498,7 +1504,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -1509,7 +1515,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-3&quot;/>
@@ -1546,7 +1552,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -1574,14 +1580,14 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <!--<id value=&quot;actual-batch-substance&quot;/>-->
                 <id value=&quot;substance-dxpq-ex1-unlinked&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -1597,7 +1603,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -1644,11 +1650,11 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-2-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -1664,7 +1670,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -1711,11 +1717,11 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Substance>
                 <id value=&quot;actual-batch-substance-3-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -1731,7 +1737,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -1772,12 +1778,12 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 </code>
             </Substance>
         </resource>
-    </entry>" id="Bundle-substance-process-validation">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-process-validation</div>
+    </entry>" id="Bundle-bundle-product-process-validation-pq-ex2-sub">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-product-process-validation-pq-ex2-sub</div>
 <div class="debugOff"></div>
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://accumulus.org/fhir/dx-cmc/process-validation-substance&quot;>">Profile: </span><span>http://accumulus.org/fhir/dx-cmc/process-validation-substance</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq</span></div>
 <div><span title="
 <Bundle>
     ...
@@ -1872,8 +1878,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Process Validation Report&quot;/>
                         <display value=&quot;Process Validation Report&quot;/>
                     </coding>
                 </code>
@@ -1930,9 +1936,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <DiagnosticReport>
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
-                        <display value=&quot;Process Validation Report&quot;/>">Process Validation Report<span class="greyOff"> [1113]</span><span class="greyOff"> (http://accumulus.org/fhir/code/reportType)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/diagnosticreport.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/diagnosticreport.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/diagnosticreport.html#tt-uml">R6</a>]</span><div class="debugOff">id: processValidationReport</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Process Validation Report&quot;/>
+                        <display value=&quot;Process Validation Report&quot;/>">Process Validation Report<span class="greyOff"> [Process Validation Report]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/diagnosticreport.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/diagnosticreport.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/diagnosticreport.html#tt-uml">R6</a>]</span><div class="debugOff">id: processValidationReport</div>
 <div class="debugOff"> fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd</div>
 <div class="summaryHiddenOff"></div>
 <div><span title="
@@ -1962,8 +1968,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Process Validation Report&quot;/>
                         <display value=&quot;Process Validation Report&quot;/>
                     </coding>">Code: </span><span><span title="
 <Bundle>
@@ -1972,9 +1978,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <DiagnosticReport>
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
-                        <display value=&quot;Process Validation Report&quot;/>">Process Validation Report<span class="greyOff"> [1113]</span><span class="greyOff"> (http://accumulus.org/fhir/code/reportType)</span></span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Process Validation Report&quot;/>
+                        <display value=&quot;Process Validation Report&quot;/>">Process Validation Report<span class="greyOff"> [Process Validation Report]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq)</span></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div></div><span class="summaryHiddenOff"><span title="
 <Bundle>
@@ -1993,95 +1999,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <DiagnosticReport>
                 ...
                 <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;>">Conclusion: </span><span>The samples have been assessed and the conclusion is...</span></div>
-<div class="summaryHiddenOff"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span><b>Table 2: Step 1 Process Validation Batches</b></span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
-<tr>
-<th>Date of Manufacture</th>
-<th>Starting Material Batch Number</th>
-<th>Step 1 Manufacturing Scale (kg of starting material 1)</th>
-<th>Intermediate Batch Number</th>
-<th>Intermediate Batch Size (kg)</th>
-</tr>
-<tr>
-<td class="centred"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-01&quot;>">2019-09-01</span></td>
-<td class="centred"><a href="#Substance-actual-batch-substance-starting-1" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Start1Amgen&quot;>" class="noUnderline">Start1Amgen</a></td>
-<td class="centred">8.1</td>
-<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-1" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Intermed1Amgen&quot;>" class="noUnderline">Intermed1Amgen</a></td>
-<td class="centred">9.1</td>
-</tr>
-<tr>
-<td class="centred"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-01&quot;>">2019-09-01</span></td>
-<td class="centred"><a href="#Substance-actual-batch-substance-starting-2" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Start2Amgen&quot;>" class="noUnderline">Start2Amgen</a></td>
-<td class="centred">8.2</td>
-<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-2" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Intermed2Amgen&quot;>" class="noUnderline">Intermed2Amgen</a></td>
-<td class="centred">9.2</td>
-</tr>
-<tr>
-<td class="centred"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-01&quot;>">2019-09-01</span></td>
-<td class="centred"><a href="#Substance-actual-batch-substance-starting-3" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Start3Amgen&quot;>" class="noUnderline">Start3Amgen</a></td>
-<td class="centred">8.3</td>
-<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-3" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Intermed3Amgen&quot;>" class="noUnderline">Intermed3Amgen</a></td>
-<td class="centred">9.3</td>
-</tr>
-</table>
-</div><br style="line-height:6px;"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 3: Step 1 Yield</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="summaryHiddenOff"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 3: Step 1 Yield</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="1"></th>
 <th colspan="3">Intermediate Batch Number</th>
@@ -2198,7 +2116,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
                             <code value=&quot;%&quot;/>
                         </high>">NMT 7.15 %</span></td>
-<td class="centred">Non-critical</td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
+                                <code value=&quot;Non-critical&quot;/>
+                                <display value=&quot;Non-critical&quot;/>
+                            </coding>
+                            <text value=&quot;Non-critical&quot;/>">Non-critical</span></td>
 <td class="centred"><a href="#Observation-residualWaterContent1" class="noUnderline"><span title="
 <Bundle>
     <entry>
@@ -2249,7 +2180,20 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                             <system value=&quot;http://unitsofmeasure.org&quot;/>
                             <code value=&quot;%&quot;/>
                         </high>">NMT 23 %</span></td>
-<td class="centred">Critical</td>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
+                                <code value=&quot;critical&quot;/>
+                                <display value=&quot;Critical&quot;/>
+                            </coding>
+                            <text value=&quot;Critical&quot;/>">Critical</span></td>
 <td class="centred"></td>
 <td class="centred"></td>
 <td class="centred"></td>
@@ -2299,7 +2243,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;>">White to off-white, to red, to orange, to brown solid</span></td>
 <td class="centred"><a href="#Observation-appearanceSubstance1" class="noUnderline">Off-white solid</a></td>
 <td class="centred"><a href="#Observation-appearanceSubstance2" class="noUnderline">Off-white solid</a></td>
@@ -2319,7 +2263,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;>">Conforms to standard</span></td>
 <td class="centred"><a href="#Observation-identificationSubstance1" class="noUnderline">Conforms</a></td>
 <td class="centred"><a href="#Observation-identificationSubstance2" class="noUnderline">Conforms</a></td>
@@ -2355,94 +2299,6 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 <td class="centred"></td>
 <td class="centred"></td>
 <td class="centred"></td>
-</tr>
-</table>
-</div><br style="line-height:6px;"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span><b>Table 6: Step 2 Process Validation Batches</b></span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
-<tr>
-<th>Date of Manufacture</th>
-<th>Starting Material Batch Number</th>
-<th>Step 2 Manufacturing Scale (kg of starting material 2)</th>
-<th>Intermediate Batch Number</th>
-<th>Intermediate Batch Size (kg)</th>
-</tr>
-<tr>
-<td class="centred"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-02&quot;>">2019-09-02</span></td>
-<td class="centred"><a href="#Substance-actual-batch-substance-starting-step2-1" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Start1Step2Amgen&quot;>" class="noUnderline">Start1Step2Amgen</a></td>
-<td class="centred">7.1</td>
-<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-step2-1" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Intermed1Step2Amgen&quot;>" class="noUnderline">Intermed1Step2Amgen</a></td>
-<td class="centred">10.1</td>
-</tr>
-<tr>
-<td class="centred"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-02&quot;>">2019-09-02</span></td>
-<td class="centred"><a href="#Substance-actual-batch-substance-starting-step2-2" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Start2Step2Amgen&quot;>" class="noUnderline">Start2Step2Amgen</a></td>
-<td class="centred">7.2</td>
-<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-step2-2" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Intermed2Step2Amgen&quot;>" class="noUnderline">Intermed2Step2Amgen</a></td>
-<td class="centred">10.2</td>
-</tr>
-<tr>
-<td class="centred"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-02&quot;>">2019-09-02</span></td>
-<td class="centred"><a href="#Substance-actual-batch-substance-starting-step2-3" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Start3Step2Amgen&quot;>" class="noUnderline">Start3Step2Amgen</a></td>
-<td class="centred">7.3</td>
-<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-step2-3" title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <identifier>
-                    <value value=&quot;Intermed3Step2Amgen&quot;>" class="noUnderline">Intermed3Step2Amgen</a></td>
-<td class="centred">10.3</td>
 </tr>
 </table>
 </div><br style="line-height:6px;"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 7: Step 2 Yield</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
@@ -2629,8 +2485,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -2649,9 +2505,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [Appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2671,8 +2527,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>">Code: </span><span><span title="
@@ -2682,9 +2538,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [Appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2715,8 +2571,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -2762,8 +2618,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -2782,9 +2638,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [Appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2804,8 +2660,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>">Code: </span><span><span title="
@@ -2815,9 +2671,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [Appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2848,8 +2704,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -2895,8 +2751,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -2915,9 +2771,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [Appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: appearanceSubstance3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2937,8 +2793,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>">Code: </span><span><span title="
@@ -2948,9 +2804,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [Appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2981,8 +2837,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -3028,8 +2884,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -3048,9 +2904,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance1</div><div class="debugOff"> fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance1</div><div class="debugOff"> fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3070,8 +2926,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>">Code: </span><span><span title="
@@ -3081,9 +2937,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3114,8 +2970,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -3161,8 +3017,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -3181,9 +3037,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance2</div><div class="debugOff"> fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance2</div><div class="debugOff"> fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3203,8 +3059,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>">Code: </span><span><span title="
@@ -3214,9 +3070,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3247,8 +3103,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -3294,8 +3150,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -3314,9 +3170,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance3</div><div class="debugOff"> fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: identificationSubstance3</div><div class="debugOff"> fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3336,8 +3192,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>">Code: </span><span><span title="
@@ -3347,9 +3203,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3380,8 +3236,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -3427,8 +3283,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -3450,9 +3306,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3472,8 +3328,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>">Code: </span><span><span title="
@@ -3483,9 +3339,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3522,8 +3378,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -3572,8 +3428,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -3595,9 +3451,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3617,8 +3473,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>">Code: </span><span><span title="
@@ -3628,9 +3484,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3667,8 +3523,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -3717,8 +3573,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -3740,9 +3596,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step1Yield3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3762,8 +3618,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>">Code: </span><span><span title="
@@ -3773,9 +3629,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3812,8 +3668,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -3862,8 +3718,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -3885,9 +3741,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield1</div><div class="debugOff"> fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3907,8 +3763,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>">Code: </span><span><span title="
@@ -3918,9 +3774,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3957,8 +3813,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -4007,8 +3863,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -4030,9 +3886,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield2</div><div class="debugOff"> fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4052,8 +3908,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>">Code: </span><span><span title="
@@ -4063,9 +3919,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4102,8 +3958,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -4152,8 +4008,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -4175,9 +4031,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: step2Yield3</div><div class="debugOff"> fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4197,8 +4053,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>">Code: </span><span><span title="
@@ -4208,9 +4064,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4247,8 +4103,8 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -4297,9 +4153,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -4320,9 +4176,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent1</div><div class="debugOff"> fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [ResidualWaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent1</div><div class="debugOff"> fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4342,9 +4198,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -4353,9 +4209,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [ResidualWaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4392,9 +4248,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -4442,9 +4298,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -4465,9 +4321,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent2</div><div class="debugOff"> fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [ResidualWaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent2</div><div class="debugOff"> fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4487,9 +4343,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -4498,9 +4354,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [ResidualWaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4537,9 +4393,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -4587,9 +4443,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -4610,9 +4466,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent3</div><div class="debugOff"> fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [ResidualWaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: residualWaterContent3</div><div class="debugOff"> fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4632,9 +4488,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -4643,9 +4499,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>">ResidualWaterContent (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [ResidualWaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ResidualWaterContent (w/w%)</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4682,9 +4538,9 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;ResidualWaterContent (w/w%)&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;ResidualWaterContent (w/w%)&quot;/>
                 </code>
@@ -4727,7 +4583,7 @@ Profile: http://accumulus.org/fhir/dx-cmc/process-validation-substance
 <div class="debugOff"><span>Found a parent (Substance/code, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substancedefinition-component-substance-dxpq-ex1)(fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -4735,7 +4591,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
             <SubstanceDefinition>
                 <id value=&quot;substancedefinition-component-substance-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq&quot;/>
                 </meta>
                 <manufacturer>
                     <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
@@ -4752,7 +4608,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
         <resource>
             <SubstanceDefinition>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-dxpq</span></div>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq</span></div>
 <div class="summaryHiddenOff">
 <div class="indent sbddetails">
 <div><span title="
@@ -4782,7 +4638,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
 <div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
     <entry>
@@ -4791,7 +4647,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -4817,7 +4673,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Organization>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff">
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -4915,8 +4771,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 <div class="summaryHiddenOff">
 <div></div>Subject of Plan: DP PROCESS VALIDATION (<a href="#PlanDefinition-validationProtocol" title="click to see target - id=validationProtocol">PlanDefinition</a>)<span class="debugOff"> id: validationProtocol</span></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Substance (id: substance-dxpq-ex1-unlinked)(fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Substance (id: substance-dxpq-ex1-unlinked)(fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -4925,14 +4781,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <!--<id value=&quot;actual-batch-substance&quot;/>-->
                 <id value=&quot;substance-dxpq-ex1-unlinked&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -4948,7 +4804,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -4991,7 +4847,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5066,11 +4922,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -5086,7 +4942,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -5127,28 +4983,28 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
@@ -5175,7 +5031,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
@@ -5184,7 +5040,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
@@ -5225,7 +5081,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                         <valueReference>
                             <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                         </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
     <entry>
@@ -5234,7 +5090,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -5257,7 +5113,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Organization>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5350,11 +5206,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Substance>
                 <id value=&quot;actual-batch-substance-2-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -5370,7 +5226,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -5482,11 +5338,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -5502,7 +5358,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -5543,28 +5399,28 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
@@ -5591,7 +5447,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
@@ -5600,7 +5456,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
@@ -5641,7 +5497,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <valueReference>
                             <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                         </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
     <entry>
@@ -5650,7 +5506,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -5673,7 +5529,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Organization>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5766,11 +5622,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Substance>
                 <id value=&quot;actual-batch-substance-3-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -5786,7 +5642,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -5901,11 +5757,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
                         <!-- #173 -->
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;/>
                         <!-- #221 -->
                     </extension>
@@ -5921,7 +5777,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
@@ -5962,28 +5818,28 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
                         <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
@@ -6010,7 +5866,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
@@ -6019,7 +5875,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
                         <valueQuantity>
                             <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
@@ -6060,7 +5916,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <valueReference>
                             <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
                         </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-2-unlinked fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/assigner, id: actual-batch-substance-3-unlinked fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
     <entry>
@@ -6069,7 +5925,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <!--id value=&quot;substance-manufacturer&quot;/-->
                 <id value=&quot;organization-dxpq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
                 </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -6092,7 +5948,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Organization>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-dxpq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6202,7 +6058,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;process-validation&quot;/>
                         <display value=&quot;Process Validation&quot;/>
                     </coding>
@@ -6213,18 +6069,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 </subjectReference>
                 <description value=&quot;Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...&quot;/>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
                                     <code value=&quot;SPEED&quot;/>
                                     <display value=&quot;Mix speed&quot;/>
                                 </coding>
@@ -6242,7 +6098,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;particleSizeReduction&quot;/>
                             <display value=&quot;Particle Size Reduction&quot;/>
                         </coding>
@@ -6250,31 +6106,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -6282,15 +6140,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -6354,9 +6213,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </action>
                 </action>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
@@ -6366,7 +6225,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;drying&quot;/>
                             <display value=&quot;Drying&quot;/>
                         </coding>
@@ -6374,31 +6233,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -6406,15 +6267,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -6456,7 +6318,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;process-validation&quot;/>
                         <display value=&quot;Process Validation&quot;/>
                     </coding>">Type: </span><span title="
@@ -6476,9 +6338,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <type>
                     ...
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;process-validation&quot;/>
-                        <display value=&quot;Process Validation&quot;/>">Process Validation<span class="greyOff"> [process-validation]</span><span class="greyOff"> (http://accumulus.org/fhir/code/planType)</span></span></div>
+                        <display value=&quot;Process Validation&quot;/>">Process Validation<span class="greyOff"> [process-validation]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq)</span></span></div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -6506,7 +6368,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;process-validation&quot;/>
                         <display value=&quot;Process Validation&quot;/>
                     </coding>
@@ -6517,18 +6379,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 </subjectReference>
                 <description value=&quot;Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...&quot;/>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
                                     <code value=&quot;SPEED&quot;/>
                                     <display value=&quot;Mix speed&quot;/>
                                 </coding>
@@ -6546,7 +6408,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;particleSizeReduction&quot;/>
                             <display value=&quot;Particle Size Reduction&quot;/>
                         </coding>
@@ -6554,31 +6416,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -6586,15 +6450,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -6658,9 +6523,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </action>
                 </action>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
@@ -6670,7 +6535,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;drying&quot;/>
                             <display value=&quot;Drying&quot;/>
                         </coding>
@@ -6678,31 +6543,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -6710,15 +6577,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -6737,18 +6605,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <PlanDefinition>
                 ...
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
                                     <code value=&quot;SPEED&quot;/>
                                     <display value=&quot;Mix speed&quot;/>
                                 </coding>
@@ -6766,7 +6634,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;particleSizeReduction&quot;/>
                             <display value=&quot;Particle Size Reduction&quot;/>
                         </coding>
@@ -6774,31 +6642,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -6806,15 +6676,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -6847,9 +6718,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;particleSizeReduction&quot;/>
-                            <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [particleSizeReduction]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [particleSizeReduction]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -6875,7 +6746,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;particleSizeReduction&quot;/>
                             <display value=&quot;Particle Size Reduction&quot;/>
                         </coding>
@@ -6887,9 +6758,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;particleSizeReduction&quot;/>
-                            <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [particleSizeReduction]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span></div>
+                            <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [particleSizeReduction]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -6904,9 +6775,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>">Scale: </span><span title="
@@ -6915,11 +6786,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
-                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStepScale)</span></span></div>
+                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
 <div class="indent planl3 summaryHiddenOff" title="
 <Bundle>
     <entry>
@@ -6927,11 +6798,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <PlanDefinition>
                 <action>
                     ...
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
                                     <code value=&quot;SPEED&quot;/>
                                     <display value=&quot;Mix speed&quot;/>
                                 </coding>
@@ -6950,11 +6821,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
                                     <code value=&quot;SPEED&quot;/>
                                     <display value=&quot;Mix speed&quot;/>
                                 </coding>
@@ -6964,20 +6835,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
                                     <code value=&quot;SPEED&quot;/>
-                                    <display value=&quot;Mix speed&quot;/>">Mix speed<span class="greyOff"> [SPEED]</span><span class="greyOff"> (http://accumulus.org/fhir/code/processParameter)</span></span></div>
+                                    <display value=&quot;Mix speed&quot;/>">Mix speed<span class="greyOff"> [SPEED]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;1500&quot;/>
@@ -6987,7 +6858,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;value&quot;>
                             <valueQuantity>
                                 <value value=&quot;1500&quot;/>
@@ -7002,16 +6873,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>">Participant</span><div><span title="
@@ -7024,8 +6896,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         ...
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>">Role: </span><span><span title="
 <Bundle>
@@ -7036,9 +6908,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <participant>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
-                                <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [StartingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
+                                <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [starting-material]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;Starting material&quot;>">Display: Starting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-starting-1 fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
@@ -7202,8 +7086,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-1 fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-1)(fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-1 fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-1)(fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -7211,7 +7095,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -7241,7 +7125,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7323,7 +7207,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <value value=&quot;8.1&quot;/>
                             <unit value=&quot;kg&quot;/>
                             <!-- #158 -->">8.1 kg</span></div></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-2 fullUrl: urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-2)(fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -7331,7 +7215,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -7361,7 +7245,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7443,7 +7327,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <value value=&quot;8.2&quot;/>
                             <unit value=&quot;kg&quot;/>
                             <!-- #158 -->">8.2 kg</span></div></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-3 fullUrl: urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-3)(fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -7451,7 +7335,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -7481,7 +7365,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7576,15 +7460,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -7598,7 +7483,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                         ...
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>">Role: </span><span><span title="
@@ -7610,9 +7495,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <participant>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
-                                <display value=&quot;Intermediate Material&quot;/>">Intermediate Material<span class="greyOff"> [IntermediateMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+                                <display value=&quot;Intermediate Material&quot;/>">Intermediate Material<span class="greyOff"> [IntermediateMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;Intermediate material&quot;>">Display: Intermediate material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-itermediate-1 fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
@@ -7776,8 +7673,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-1)(fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: appearanceSubstance1 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: identificationSubstance1 fullUrl: urn:uuid:9c56958c-2a39-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: step1Yield1 fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: residualWaterContent1 fullUrl: urn:uuid:9c56958c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-1)(fullUrl: urn:uuid:fc178763-81c5-5656-9744-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -7785,7 +7682,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -7796,7 +7693,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-1&quot;/>
@@ -7817,7 +7714,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7861,7 +7758,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-1&quot;/>
@@ -7893,12 +7790,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-1&quot;/>
                         </valueReference>">Derived From</span>: Start1Amgen (<a href="#Substance-actual-batch-substance-starting-1" title="click to see target - id=actual-batch-substance-starting-1">Substance</a>)<span class="debugOff"> id: actual-batch-substance-starting-1</span></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: appearanceSubstance2 fullUrl: urn:uuid:9c56948c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: identificationSubstance2 fullUrl: urn:uuid:9c56968c-2a49-6609-2c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: step1Yield2 fullUrl: urn:uuid:9c56948a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: residualWaterContent2 fullUrl: urn:uuid:9c56968a-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-2)(fullUrl: urn:uuid:fc178764-81d5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -7906,7 +7803,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -7917,7 +7814,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-2&quot;/>
@@ -7938,7 +7835,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7982,7 +7879,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-2&quot;/>
@@ -8014,12 +7911,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-2&quot;/>
                         </valueReference>">Derived From</span>: Start2Amgen (<a href="#Substance-actual-batch-substance-starting-2" title="click to see target - id=actual-batch-substance-starting-2">Substance</a>)<span class="debugOff"> id: actual-batch-substance-starting-2</span></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: appearanceSubstance3 fullUrl: urn:uuid:9c56948c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: identificationSubstance3 fullUrl: urn:uuid:9c56978c-2a39-6609-2c01-4d197eb57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: step1Yield3 fullUrl: urn:uuid:9c56948a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: residualWaterContent3 fullUrl: urn:uuid:9c56978a-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-3)(fullUrl: urn:uuid:fc178764-81d6-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -8027,7 +7924,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -8038,7 +7935,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-3&quot;/>
@@ -8059,7 +7956,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8103,7 +8000,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-3&quot;/>
@@ -8135,7 +8032,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-3&quot;/>
@@ -8153,15 +8050,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -8175,7 +8073,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                         ...
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>">Role: </span><span><span title="
@@ -8187,9 +8085,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <participant>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
-                                <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+                                <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;Resulting material&quot;>">Display: Resulting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
 
@@ -8258,8 +8168,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -8270,9 +8180,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Step1Yield</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Step1Yield</div>
 <div class="debugOff"> fullUrl: urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e72</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72</div>
 <div class="summaryHiddenOff">
@@ -8304,8 +8214,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>">Code: </span><span><span title="
@@ -8315,9 +8225,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -8436,18 +8346,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
                         <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;Residual Water Content (w/w%)&quot;/>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
-                                <code value=&quot;non-critical&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
+                                <code value=&quot;Non-critical&quot;/>
                                 <display value=&quot;Non-critical&quot;/>
                             </coding>
                             <text value=&quot;Non-critical&quot;/>
@@ -8468,9 +8378,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Residual Water Content (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ResidualWaterContent</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [ResidualWaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Residual Water Content (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ResidualWaterContent</div>
 <div class="debugOff"> fullUrl: urn:uuid:fc27b5d6-9fe1-91c2-2d16-57cb5b295e72</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72</div>
 <div class="summaryHiddenOff">
@@ -8502,8 +8412,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
                         <display value=&quot;Residual Water Content (w/w%)&quot;/>
                     </coding>
                     <text value=&quot;Residual Water Content (w/w%)&quot;/>">Code: </span><span><span title="
@@ -8513,9 +8423,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Residual Water Content (w/w%)</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ResidualWaterContent&quot;/>
+                        <display value=&quot;Residual Water Content (w/w%)&quot;/>">Residual Water Content (w/w%)<span class="greyOff"> [ResidualWaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Residual Water Content (w/w%)</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -8525,11 +8435,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
-                                <code value=&quot;non-critical&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
+                                <code value=&quot;Non-critical&quot;/>
                                 <display value=&quot;Non-critical&quot;/>
                             </coding>
                             <text value=&quot;Non-critical&quot;/>
@@ -8551,11 +8461,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
-                                <code value=&quot;non-critical&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
+                                <code value=&quot;Non-critical&quot;/>
                                 <display value=&quot;Non-critical&quot;/>
                             </coding>
                             <text value=&quot;Non-critical&quot;/>
@@ -8600,11 +8510,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
-                                <code value=&quot;non-critical&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
+                                <code value=&quot;Non-critical&quot;/>
                                 <display value=&quot;Non-critical&quot;/>
                             </coding>
                             <text value=&quot;Non-critical&quot;/>
@@ -8614,12 +8524,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
-                                <code value=&quot;non-critical&quot;/>
-                                <display value=&quot;Non-critical&quot;/>">Non-critical<span class="greyOff"> [non-critical]</span><span class="greyOff"> (http://accumulus.org/fhir/code/qualifiedValueCriticality)</span></span><span style="white-space:normal;"> - Text: Non-critical</span></div>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
+                                <code value=&quot;Non-critical&quot;/>
+                                <display value=&quot;Non-critical&quot;/>">Non-critical<span class="greyOff"> [Non-critical]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq)</span></span><span style="white-space:normal;"> - Text: Non-critical</span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -8660,17 +8570,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
                         <display value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
                     </coding>
                     <text value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
                                 <code value=&quot;critical&quot;/>
                                 <display value=&quot;Critical&quot;/>
                             </coding>
@@ -8692,9 +8602,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>">Reaction conversion: Residual Starting Material 1 by HPLC<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Reaction conversion: Residual Starting Material 1 by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ResidualStartingMaterial1byHPLC</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
+                        <display value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>">Reaction conversion: Residual Starting Material 1 by HPLC<span class="greyOff"> [Reaction conversion: Residual Starting Material 1 by HPLC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Reaction conversion: Residual Starting Material 1 by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: ResidualStartingMaterial1byHPLC</div>
 <div class="debugOff"> fullUrl: urn:uuid:fc27b5d6-9ff1-91c2-2d16-57cb5b295e72</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72</div>
 <div class="summaryHiddenOff">
@@ -8726,8 +8636,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
                         <display value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
                     </coding>
                     <text value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>">Code: </span><span><span title="
@@ -8737,9 +8647,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>">Reaction conversion: Residual Starting Material 1 by HPLC<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Reaction conversion: Residual Starting Material 1 by HPLC</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>
+                        <display value=&quot;Reaction conversion: Residual Starting Material 1 by HPLC&quot;/>">Reaction conversion: Residual Starting Material 1 by HPLC<span class="greyOff"> [Reaction conversion: Residual Starting Material 1 by HPLC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Reaction conversion: Residual Starting Material 1 by HPLC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -8749,10 +8659,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
                                 <code value=&quot;critical&quot;/>
                                 <display value=&quot;Critical&quot;/>
                             </coding>
@@ -8775,10 +8685,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
                                 <code value=&quot;critical&quot;/>
                                 <display value=&quot;Critical&quot;/>
                             </coding>
@@ -8824,10 +8734,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
                                 <code value=&quot;critical&quot;/>
                                 <display value=&quot;Critical&quot;/>
                             </coding>
@@ -8838,12 +8748,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/qualifiedValueCriticality&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/qualifiedValueCriticality&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq&quot;/>
                                 <code value=&quot;critical&quot;/>
-                                <display value=&quot;Critical&quot;/>">Critical<span class="greyOff"> [critical]</span><span class="greyOff"> (http://accumulus.org/fhir/code/qualifiedValueCriticality)</span></span><span style="white-space:normal;"> - Text: Critical</span></div>
+                                <display value=&quot;Critical&quot;/>">Critical<span class="greyOff"> [critical]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq)</span></span><span style="white-space:normal;"> - Text: Critical</span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -8968,8 +8878,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>
@@ -8978,7 +8888,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <text value=&quot;Visual inspection&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-AppearanceSubstance">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -8988,9 +8898,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AppearanceSubstance</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [Appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AppearanceSubstance</div>
 <div class="debugOff"> fullUrl: urn:uuid:fc07b5d5-9fe1-92c2-2d06-57cb5b295e72</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72</div>
 <div class="summaryHiddenOff">
@@ -9022,8 +8932,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
                         <display value=&quot;Appearance&quot;/>
                     </coding>
                     <text value=&quot;Appearance&quot;/>">Code: </span><span><span title="
@@ -9033,9 +8943,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Appearance&quot;/>
+                        <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [Appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Appearance</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -9053,7 +8963,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>
                     </extension>">
 		Acceptable Value
@@ -9064,7 +8974,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>
                     </extension>">
 <div><span title="
@@ -9073,7 +8983,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;White to off-white, to red, to orange, to brown solid&quot;/>">Text: </span><span>White to off-white, to red, to orange, to brown solid</span></div>
 </div>
 </div>
@@ -9118,8 +9028,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>
@@ -9128,7 +9038,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <text value=&quot;ID by UHPLC&quot;/>
                 </method>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-IdentificationSubstance">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -9138,9 +9048,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: IdentificationSubstance</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: IdentificationSubstance</div>
 <div class="debugOff"> fullUrl: urn:uuid:3b1e878e-4bc9-8864-862f-e28b21233e8d</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d</div>
 <div class="summaryHiddenOff">
@@ -9172,8 +9082,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
                     <text value=&quot;ID by HPLC&quot;/>">Code: </span><span><span title="
@@ -9183,9 +9093,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: ID by HPLC</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -9203,7 +9113,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>
                     </extension>">
 		Acceptable Value
@@ -9214,7 +9124,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>
                     </extension>">
 <div><span title="
@@ -9223,7 +9133,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Conforms to standard&quot;/>">Text: </span><span>Conforms to standard</span></div>
 </div>
 </div>
@@ -9265,8 +9175,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
                     <text value=&quot;Assay by HPLC (as is) (w/w%)&quot;/>
@@ -9296,9 +9206,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay by HPLC (as is) (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AssaySubstance</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ASSAY&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Assay by HPLC (as is) (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AssaySubstance</div>
 <div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div>
 <div class="summaryHiddenOff">
@@ -9330,8 +9240,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
                     <text value=&quot;Assay by HPLC (as is) (w/w%)&quot;/>">Code: </span><span><span title="
@@ -9341,9 +9251,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Assay by HPLC (as is) (w/w%)</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;ASSAY&quot;/>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Assay by HPLC (as is) (w/w%)</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -9453,9 +9363,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <PlanDefinition>
                 ...
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
@@ -9465,7 +9375,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;drying&quot;/>
                             <display value=&quot;Drying&quot;/>
                         </coding>
@@ -9473,31 +9383,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -9505,15 +9417,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -9546,9 +9459,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;drying&quot;/>
-                            <display value=&quot;Drying&quot;/>">Drying<span class="greyOff"> [drying]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Drying&quot;/>">Drying<span class="greyOff"> [drying]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -9574,7 +9487,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;drying&quot;/>
                             <display value=&quot;Drying&quot;/>
                         </coding>
@@ -9586,9 +9499,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;drying&quot;/>
-                            <display value=&quot;Drying&quot;/>">Drying<span class="greyOff"> [drying]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStep)</span></span></div>
+                            <display value=&quot;Drying&quot;/>">Drying<span class="greyOff"> [drying]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -9603,9 +9516,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>">Scale: </span><span title="
@@ -9614,11 +9527,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <PlanDefinition>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
-                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingStepScale)</span></span></div>
+                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
 <div class="indent planl3"><span title="
 <Bundle>
     <entry>
@@ -9628,16 +9541,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>">Participant</span><div><span title="
@@ -9650,8 +9564,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                         ...
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>">Role: </span><span><span title="
 <Bundle>
@@ -9662,9 +9576,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <participant>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
-                                <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [StartingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
+                                <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [starting-material]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;Starting material&quot;>">Display: Starting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-starting-step2-1 fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b)<br>which is linked to this by resource.id</span></div>
@@ -9828,8 +9754,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-step2-1 fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-step2-1)(fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-step2-1 fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-step2-1)(fullUrl: urn:uuid:fc178762-81c5-5656-9744-13c7ad2e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -9837,7 +9763,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -9867,7 +9793,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9949,7 +9875,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <value value=&quot;7.1&quot;/>
                             <unit value=&quot;kg&quot;/>
                             <!-- #158 -->">7.1 kg</span></div></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-step2-2 fullUrl: urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-step2-2)(fullUrl: urn:uuid:fc178762-81d5-5656-9744-13c7ad1e596b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -9957,7 +9883,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -9987,7 +9913,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10069,7 +9995,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <value value=&quot;7.2&quot;/>
                             <unit value=&quot;kg&quot;/>
                             <!-- #158 -->">7.2 kg</span></div></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-itermediate-step2-3 fullUrl: urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-starting-step2-3)(fullUrl: urn:uuid:fc178762-81d5-5656-9744-23c7ad1e597b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -10077,7 +10003,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-starting-step2-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
@@ -10107,7 +10033,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10202,15 +10128,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -10224,7 +10151,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                         ...
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>">Role: </span><span><span title="
@@ -10236,9 +10163,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <participant>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
-                                <display value=&quot;Intermediate Material&quot;/>">Intermediate Material<span class="greyOff"> [IntermediateMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+                                <display value=&quot;Intermediate Material&quot;/>">Intermediate Material<span class="greyOff"> [IntermediateMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;Intermediate material&quot;>">Display: Intermediate material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: actual-batch-substance-itermediate-step2-1 fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)<br>which is linked to this by resource.id</span></div>
@@ -10402,8 +10341,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-step2-1)(fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: step2Yield1 fullUrl: urn:uuid:9c56948d-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-step2-1)(fullUrl: urn:uuid:fc178763-81c5-5656-9754-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -10411,7 +10350,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -10422,7 +10361,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-1&quot;/>
@@ -10443,7 +10382,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10487,7 +10426,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-1&quot;/>
@@ -10519,12 +10458,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-1&quot;/>
                         </valueReference>">Derived From</span>: Start1Step2Amgen (<a href="#Substance-actual-batch-substance-starting-step2-1" title="click to see target - id=actual-batch-substance-starting-step2-1">Substance</a>)<span class="debugOff"> id: actual-batch-substance-starting-step2-1</span></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: step2Yield2 fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-step2-2)(fullUrl: urn:uuid:fc178764-81d5-5656-9764-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -10532,7 +10471,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-2&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -10543,7 +10482,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-2&quot;/>
@@ -10564,7 +10503,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10608,7 +10547,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-2&quot;/>
@@ -10640,12 +10579,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-2&quot;/>
                         </valueReference>">Derived From</span>: Start2Step2Amgen (<a href="#Substance-actual-batch-substance-starting-step2-2" title="click to see target - id=actual-batch-substance-starting-step2-2">Substance</a>)<span class="debugOff"> id: actual-batch-substance-starting-step2-2</span></span></div></div></div><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: step2Yield3 fullUrl: urn:uuid:9c56948b-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: actual-batch-substance-itermediate-step2-3)(fullUrl: urn:uuid:fc178764-81d6-6656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
     <entry>
@@ -10653,7 +10592,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <id value=&quot;actual-batch-substance-itermediate-step2-3&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;batchQuantity&quot;>
@@ -10664,7 +10603,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-3&quot;/>
@@ -10685,7 +10624,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
         <resource>
             <Substance>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq</span></div><div class="summaryHiddenOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10729,7 +10668,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                             <!-- #158 -->
                         </valueQuantity>
                     </extension>
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-3&quot;/>
@@ -10761,7 +10700,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <Substance>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     ...
-                    <extension url=&quot;http://accumulus.org/fhir/extension/batchDerivedFrom&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq&quot;>
                         <!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                         <valueReference>
                             <reference value=&quot;Substance/actual-batch-substance-starting-step2-3&quot;/>
@@ -10779,15 +10718,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     ...
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -10801,7 +10741,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                         ...
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>">Role: </span><span><span title="
@@ -10813,9 +10753,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <participant>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
-                                <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://accumulus.org/fhir/code/manufacturingParticipantRole)</span></span></span></div>
+                                <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <participant>
+                        <typeReference>
+                            ...
+                            <display value=&quot;Resulting material&quot;>">Display: Resulting material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: validationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterialStep2)(fullUrl: urn:uuid:c458791f-8cb8-428e-83f7-8a205f821154)
 
@@ -10884,8 +10836,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>
@@ -10896,9 +10848,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Step2Yield</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Step2Yield</div>
 <div class="debugOff"> fullUrl: urn:uuid:fd17b5d7-9fe1-91c2-2d06-47cb5b295e72</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72</div>
 <div class="summaryHiddenOff">
@@ -10930,8 +10882,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
                         <display value=&quot;Yield (%)&quot;/>
                     </coding>
                     <text value=&quot;Yield (%)&quot;/>">Code: </span><span><span title="
@@ -10941,9 +10893,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;Yield (%)&quot;/>
+                        <display value=&quot;Yield (%)&quot;/>">Yield (%)<span class="greyOff"> [Yield (%)]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Yield (%)</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -10970,7 +10922,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;process-validation&quot;/>
                         <display value=&quot;Process Validation&quot;/>
                     </coding>
@@ -10981,18 +10933,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                 </subjectReference>
                 <description value=&quot;Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...&quot;/>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://accumulus.org/fhir/code/processParameter&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
                                     <code value=&quot;SPEED&quot;/>
                                     <display value=&quot;Mix speed&quot;/>
                                 </coding>
@@ -11010,7 +10962,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;particleSizeReduction&quot;/>
                             <display value=&quot;Particle Size Reduction&quot;/>
                         </coding>
@@ -11018,31 +10970,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -11050,15 +11004,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -11122,9 +11077,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     </action>
                 </action>
                 <action>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStepScale&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
                             <code value=&quot;ABCD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
@@ -11134,7 +11089,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     <description value=&quot;Description of this step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/manufacturingStep&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;drying&quot;/>
                             <display value=&quot;Drying&quot;/>
                         </coding>
@@ -11142,31 +11097,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     </code>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/startingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Starting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
-                                <code value=&quot;StartingMaterial&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <code value=&quot;starting-material&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/intermediateMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Intermediate material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;IntermediateMaterial&quot;/>
                                 <display value=&quot;Intermediate Material&quot;/>
                             </coding>
@@ -11174,15 +11131,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-dxpq
                     </participant>
                     <participant>
                         <typeReference>
-                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq&quot;>
+                            <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
                                 <valueReference>
                                     <reference value=&quot;SubstanceDefinition/resultingMaterialStep2&quot;/>
                                 </valueReference>
                             </extension>
+                            <display value=&quot;Resulting material&quot;/>
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/manufacturingParticipantRole&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
