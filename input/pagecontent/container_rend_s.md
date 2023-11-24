@@ -8,13 +8,13 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-container-closure-system-dxpq-ex2-sub)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-container-closure-system-pq-ex2-sub)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq 
 
 <Bundle>
-    <id value=&quot;bundle-container-closure-system-dxpq-ex2-sub&quot;/>
+    <id value=&quot;bundle-container-closure-system-pq-ex2-sub&quot;/>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
@@ -59,8 +59,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
                                 <display value=&quot;Quality Specification&quot;/>
                             </coding>
                         </type>
@@ -71,8 +71,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
                                 <display value=&quot;Quality Specification&quot;/>
                             </coding>
                         </type>
@@ -83,7 +83,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                     <containedItem>
                         <item>
                             <reference>
-                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
+                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1&quot;/>
                             </reference>
                         </item>
                     </containedItem>
@@ -123,7 +123,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                     <containedItem>
                         <item>
                             <reference>
-                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
+                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1&quot;/>
                             </reference>
                         </item>
                     </containedItem>
@@ -137,9 +137,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
         <fullUrl value=&quot;urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44&quot;/>
         <resource>
             <ManufacturedItemDefinition>
-                <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
+                <id value=&quot;manufactureditemdefinition-drug-pq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;/>
                 </meta>
                 <status value=&quot;active&quot;/>
                 <manufacturedDoseForm>
@@ -158,7 +158,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <id value=&quot;ingredient1&quot;/>
                 <status value=&quot;active&quot;/>
                 <for>
-                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1&quot;/>
                 </for>
                 <role>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
@@ -194,7 +194,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;container-specification&quot;/>
                         <display value=&quot;Container Specification&quot;/>
                     </coding>
@@ -208,8 +208,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                     <title value=&quot;Container Specification&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <code value=&quot;ContainerSpecification&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq&quot;/>
+                            <code value=&quot;Container Specification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
                         <text value=&quot;Container Specification&quot;/>
@@ -249,13 +249,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;VisualInspection&quot;/>
                         <display value=&quot;VisualInspection&quot;/>
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -272,13 +272,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;InfraredSpectroscopy&quot;/>
                         <display value=&quot;InfraredSpectroscopy&quot;/>
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>
                     </extension>
                 </qualifiedValue>
@@ -295,24 +295,24 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SupplierCertificateofAnalysis&quot;/>
                         <display value=&quot;SupplierCertificateofAnalysis&quot;/>
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>
                 </qualifiedValue>
             </ObservationDefinition>
         </resource>
-    </entry>" id="Bundle-bundle-container-closure-system-dxpq-ex2-sub">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-container-closure-system-dxpq-ex2-sub</div>
+    </entry>" id="Bundle-bundle-container-closure-system-pq-ex2-sub">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-container-closure-system-pq-ex2-sub</div>
 <div class="debugOff"></div>
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq</span></div>
 <div><span title="
 <Bundle>
     ...
@@ -365,7 +365,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <id value=&quot;ingredient1&quot;/>
                 <status value=&quot;active&quot;/>
                 <for>
-                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1&quot;/>
                 </for>
                 <role>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
@@ -406,44 +406,44 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
             <Ingredient>
                 ...
                 <for>
-                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>">For</span><div class="indent man summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PackagedProductDefinition/item, id: packageDefinition fullUrl: urn:uuid:b107a2ba-32d8-0124-7855-4096057c52a9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (PackagedProductDefinition/item, id: packageDefinition2 fullUrl: urn:uuid:b107a2ba-32d8-0124-7855-4096057c52b9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Ingredient/for, id: ingredient1 fullUrl: urn:uuid:f26b997a-3ab9-7552-a6cc-fd771d1f1863)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ManufacturedItemDefinition (id: manufactureditemdefinition-dxpq-ex1)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq 
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1&quot;/>">For</span><div class="indent man summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PackagedProductDefinition/item, id: packageDefinition fullUrl: urn:uuid:b107a2ba-32d8-0124-7855-4096057c52a9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (PackagedProductDefinition/item, id: packageDefinition2 fullUrl: urn:uuid:b107a2ba-32d8-0124-7855-4096057c52b9)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Ingredient/for, id: ingredient1 fullUrl: urn:uuid:f26b997a-3ab9-7552-a6cc-fd771d1f1863)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ManufacturedItemDefinition (id: manufactureditemdefinition-drug-pq-ex1)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq 
 
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
-                <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
+                <id value=&quot;manufactureditemdefinition-drug-pq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;/>
                 </meta>
                 <status value=&quot;active&quot;/>
                 <manufacturedDoseForm>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
                         <valueCode value=&quot;unsupported&quot;/>
                     </extension>
-                </manufacturedDoseForm>" id="ManufacturedItemDefinition-manufactureditemdefinition-dxpq-ex1">Manufactured Item</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/manufactureditemdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/manufactureditemdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/manufactureditemdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufactureditemdefinition-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44</div><div class="debugOff"></div><div class="debugOff"><span title="
+                </manufacturedDoseForm>" id="ManufacturedItemDefinition-manufactureditemdefinition-drug-pq-ex1">Manufactured Item</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/manufactureditemdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/manufactureditemdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/manufactureditemdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufactureditemdefinition-drug-pq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44</div><div class="debugOff"></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq</span></div><span class="summaryShowsOff"></span><div class="summaryHiddenOff"><div class="debugOff"><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq</span></div><span class="summaryShowsOff"></span><div class="summaryHiddenOff"><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div class="indent manl2"><span title="ManufacturedItemDefinition (id: manufactureditemdefinition-dxpq-ex1)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq 
+                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div class="indent manl2"><span title="ManufacturedItemDefinition (id: manufactureditemdefinition-drug-pq-ex1)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq 
 
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
-                <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
+                <id value=&quot;manufactureditemdefinition-drug-pq-ex1&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;/>
                 </meta>
                 <status value=&quot;active&quot;/>
                 <manufacturedDoseForm>
@@ -477,8 +477,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
                                 <display value=&quot;Quality Specification&quot;/>
                             </coding>
                         </type>
@@ -489,8 +489,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
                                 <display value=&quot;Quality Specification&quot;/>
                             </coding>
                         </type>
@@ -501,7 +501,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <containedItem>
                         <item>
                             <reference>
-                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
+                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1&quot;/>
                             </reference>
                         </item>
                     </containedItem>
@@ -571,8 +571,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
                                 <display value=&quot;Quality Specification&quot;/>
                             </coding>
                         </type>
@@ -587,8 +587,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
                                 <display value=&quot;Quality Specification&quot;/>
                             </coding>">Type: <span title="
 <Bundle>
@@ -599,9 +599,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
-                                <display value=&quot;Quality Specification&quot;/>">Quality Specification<span class="greyOff"> [xxxx]</span><span class="greyOff"> (http://accumulus.org/fhir/code/packageProperty)</span></span></span></div><div><span title="
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
+                                <display value=&quot;Quality Specification&quot;/>">Quality Specification<span class="greyOff"> [Quality Specification]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq)</span></span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -620,8 +620,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
                                 <display value=&quot;Quality Specification&quot;/>
                             </coding>
                         </type>
@@ -636,8 +636,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
                                 <display value=&quot;Quality Specification&quot;/>
                             </coding>">Type: <span title="
 <Bundle>
@@ -648,9 +648,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <property>
                         <type>
                             <coding>
-                                <system value=&quot;http://accumulus.org/fhir/code/packageProperty&quot;/>
-                                <code value=&quot;xxxx&quot;/>
-                                <display value=&quot;Quality Specification&quot;/>">Quality Specification<span class="greyOff"> [xxxx]</span><span class="greyOff"> (http://accumulus.org/fhir/code/packageProperty)</span></span></span></div><div><span title="
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq&quot;/>
+                                <code value=&quot;Quality Specification&quot;/>
+                                <display value=&quot;Quality Specification&quot;/>">Quality Specification<span class="greyOff"> [Quality Specification]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq)</span></span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -686,7 +686,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <containedItem>
                         <item>
                             <reference>
-                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
+                                <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1&quot;/>
                             </reference>
                         </item>
                     </containedItem>
@@ -785,7 +785,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;>">Corresponds</span></td>
 </tr>
 <tr>
@@ -810,7 +810,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;>">Corresponds with reference</span></td>
 </tr>
 <tr>
@@ -835,7 +835,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;>">Corresponds</span></td>
 </tr>
 </table>
@@ -859,7 +859,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;container-specification&quot;/>
                         <display value=&quot;Container Specification&quot;/>
                     </coding>
@@ -873,8 +873,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <title value=&quot;Container Specification&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <code value=&quot;ContainerSpecification&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq&quot;/>
+                            <code value=&quot;Container Specification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
                         <text value=&quot;Container Specification&quot;/>
@@ -930,7 +930,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;container-specification&quot;/>
                         <display value=&quot;Container Specification&quot;/>
                     </coding>">Type: </span><span title="
@@ -950,9 +950,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <type>
                     ...
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;container-specification&quot;/>
-                        <display value=&quot;Container Specification&quot;/>">Container Specification<span class="greyOff"> [container-specification]</span><span class="greyOff"> (http://accumulus.org/fhir/code/planType)</span></span></div>
+                        <display value=&quot;Container Specification&quot;/>">Container Specification<span class="greyOff"> [container-specification]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq)</span></span></div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -980,7 +980,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;container-specification&quot;/>
                         <display value=&quot;Container Specification&quot;/>
                     </coding>
@@ -994,8 +994,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <title value=&quot;Container Specification&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <code value=&quot;ContainerSpecification&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq&quot;/>
+                            <code value=&quot;Container Specification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
                         <text value=&quot;Container Specification&quot;/>
@@ -1031,8 +1031,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <title value=&quot;Container Specification&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <code value=&quot;ContainerSpecification&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq&quot;/>
+                            <code value=&quot;Container Specification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
                         <text value=&quot;Container Specification&quot;/>
@@ -1071,9 +1071,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <code value=&quot;ContainerSpecification&quot;/>
-                            <display value=&quot;Container Specification&quot;/>">Container Specification<span class="greyOff"> [ContainerSpecification]</span><span class="greyOff"> (http://temp.hl7.org/fhir/CodeSystem/specification-type)</span></span><span style="white-space:normal;"> - Text: Container Specification</span></span></span><div class="summaryHiddenOff">
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq&quot;/>
+                            <code value=&quot;Container Specification&quot;/>
+                            <display value=&quot;Container Specification&quot;/>">Container Specification<span class="greyOff"> [Container Specification]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq)</span></span><span style="white-space:normal;"> - Text: Container Specification</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1090,8 +1090,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <code value=&quot;ContainerSpecification&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq&quot;/>
+                            <code value=&quot;Container Specification&quot;/>
                             <display value=&quot;Container Specification&quot;/>
                         </coding>
                         <text value=&quot;Container Specification&quot;/>">Code: </span><span title="
@@ -1102,9 +1102,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/CodeSystem/specification-type&quot;/>
-                            <code value=&quot;ContainerSpecification&quot;/>
-                            <display value=&quot;Container Specification&quot;/>">Container Specification<span class="greyOff"> [ContainerSpecification]</span><span class="greyOff"> (http://temp.hl7.org/fhir/CodeSystem/specification-type)</span></span><span style="white-space:normal;"> - Text: Container Specification</span></div>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq&quot;/>
+                            <code value=&quot;Container Specification&quot;/>
+                            <display value=&quot;Container Specification&quot;/>">Container Specification<span class="greyOff"> [Container Specification]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq)</span></span><span style="white-space:normal;"> - Text: Container Specification</span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -1150,13 +1150,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;VisualInspection&quot;/>
                         <display value=&quot;VisualInspection&quot;/>
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-VisualInspection">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1166,9 +1166,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;VisualInspection&quot;/>">VisualInspection<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: VisualInspection</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;VisualInspection&quot;/>
+                        <display value=&quot;VisualInspection&quot;/>">VisualInspection<span class="greyOff"> [VisualInspection]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: VisualInspection</div>
 <div class="debugOff"> fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958524</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524</div>
 <div class="summaryHiddenOff">
@@ -1200,8 +1200,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;VisualInspection&quot;/>
                         <display value=&quot;VisualInspection&quot;/>
                     </coding>">Code: </span><span><span title="
 <Bundle>
@@ -1210,9 +1210,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;VisualInspection&quot;/>">VisualInspection<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;VisualInspection&quot;/>
+                        <display value=&quot;VisualInspection&quot;/>">VisualInspection<span class="greyOff"> [VisualInspection]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -1222,7 +1222,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>">
 		Acceptable Value
@@ -1233,7 +1233,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>">
 <div><span title="
@@ -1242,7 +1242,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>">Text: </span><span>Corresponds</span></div>
 </div>
 </div>
@@ -1294,13 +1294,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;InfraredSpectroscopy&quot;/>
                         <display value=&quot;InfraredSpectroscopy&quot;/>
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-InfraredSpectroscopy">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1310,9 +1310,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;InfraredSpectroscopy&quot;/>">InfraredSpectroscopy<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: InfraredSpectroscopy</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;InfraredSpectroscopy&quot;/>
+                        <display value=&quot;InfraredSpectroscopy&quot;/>">InfraredSpectroscopy<span class="greyOff"> [InfraredSpectroscopy]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: InfraredSpectroscopy</div>
 <div class="debugOff"> fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958525</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525</div>
 <div class="summaryHiddenOff">
@@ -1344,8 +1344,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;InfraredSpectroscopy&quot;/>
                         <display value=&quot;InfraredSpectroscopy&quot;/>
                     </coding>">Code: </span><span><span title="
 <Bundle>
@@ -1354,9 +1354,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;InfraredSpectroscopy&quot;/>">InfraredSpectroscopy<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;InfraredSpectroscopy&quot;/>
+                        <display value=&quot;InfraredSpectroscopy&quot;/>">InfraredSpectroscopy<span class="greyOff"> [InfraredSpectroscopy]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -1366,7 +1366,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>
                     </extension>">
 		Acceptable Value
@@ -1377,7 +1377,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>
                     </extension>">
 <div><span title="
@@ -1386,7 +1386,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds with reference&quot;/>">Text: </span><span>Corresponds with reference</span></div>
 </div>
 </div>
@@ -1438,13 +1438,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SupplierCertificateofAnalysis&quot;/>
                         <display value=&quot;SupplierCertificateofAnalysis&quot;/>
                     </coding>
                 </code>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>
                 </qualifiedValue>" id="ObservationDefinition-SupplierCertificateofAnalysis">Observation Definition<span class="summaryShowsOff"> - <span title="
@@ -1454,9 +1454,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SupplierCertificateofAnalysis&quot;/>">SupplierCertificateofAnalysis<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SupplierCertificateofAnalysis</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SupplierCertificateofAnalysis&quot;/>
+                        <display value=&quot;SupplierCertificateofAnalysis&quot;/>">SupplierCertificateofAnalysis<span class="greyOff"> [SupplierCertificateofAnalysis]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SupplierCertificateofAnalysis</div>
 <div class="debugOff"> fullUrl: urn:uuid:64525b3c-5134-448a-9d19-939ce1958535</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535</div>
 <div class="summaryHiddenOff">
@@ -1488,8 +1488,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SupplierCertificateofAnalysis&quot;/>
                         <display value=&quot;SupplierCertificateofAnalysis&quot;/>
                     </coding>">Code: </span><span><span title="
 <Bundle>
@@ -1498,9 +1498,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SupplierCertificateofAnalysis&quot;/>">SupplierCertificateofAnalysis<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SupplierCertificateofAnalysis&quot;/>
+                        <display value=&quot;SupplierCertificateofAnalysis&quot;/>">SupplierCertificateofAnalysis<span class="greyOff"> [SupplierCertificateofAnalysis]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -1510,7 +1510,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>">
 		Acceptable Value
@@ -1521,7 +1521,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <ObservationDefinition>
                 ...
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>
                     </extension>">
 <div><span title="
@@ -1530,7 +1530,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <ObservationDefinition>
                 <qualifiedValue>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
                         <valueString value=&quot;Corresponds&quot;/>">Text: </span><span>Corresponds</span></div>
 </div>
 </div>
