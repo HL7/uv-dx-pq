@@ -15,6 +15,7 @@
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
+            <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="S.2.S.5 Reference Standard Analysis"/>
             <type>
@@ -91,6 +92,13 @@
                   <!--ObservationDefinition/Elemental-->
                   <definitionCanonical value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
                </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/AssignedPurity-->
+                  <definitionCanonical value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+               </action>
             </action>
          </PlanDefinition>
       </resource>
@@ -101,6 +109,7 @@
          <ObservationDefinition>
                 <!--TestDate-->
             <id value="13033a89-927a-10e0-503e-5f901bdca31f"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdcb30f-->
             <url value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
             <title value="Test Date"/>
             <status value="active"/>
@@ -121,6 +130,7 @@
          <ObservationDefinition>
                 <!--Appearance-->
             <id value="13033a89-927a-10e0-503e-5f901bdca30f"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f-->
             <url value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
             <title value="Appearance"/>
             <status value="active"/>
@@ -149,6 +159,7 @@
          <ObservationDefinition>
                 <!--Identification-->
             <id value="8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230-->
             <url value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
             <title value="Identification"/>
             <status value="active"/>
@@ -177,6 +188,7 @@
          <ObservationDefinition>
                 <!--IdentificationNMR-->
             <id value="8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230-->
             <url value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
             <title value="Identification (NMR)"/>
             <status value="active"/>
@@ -208,6 +220,7 @@
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
+            <!--http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8-->
             <url value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             <title value="Organic Impurities (w/w%)"/>
             <status value="active"/>
@@ -283,6 +296,7 @@
          <ObservationDefinition>
                 <!--Solvents-->
             <id value="2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8-->
             <url value="http://example-server.com/fhir/ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
             <title value="Residual solvents"/>
             <status value="active"/>
@@ -330,6 +344,7 @@
          <ObservationDefinition>
                 <!--Water-->
             <id value="17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4-->
             <url value="http://example-server.com/fhir/ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
             <title value="Water Content"/>
             <status value="active"/>
@@ -358,6 +373,7 @@
          <ObservationDefinition>
                 <!--Elemental-->
             <id value="0634020c-8729-99fc-7637-89799d7c445b"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b-->
             <url value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
             <title value="Elemental impurities"/>
             <status value="active"/>
@@ -375,8 +391,36 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
-               <appliesTo> <!-- could be a code -->
-                  <text value="Impurity - Elemental"/>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:0634020c-8729-99fc-7637-897a9d7c445b"/>
+      <resource>
+         <ObservationDefinition>
+                <!--AssignedPurity-->
+            <id value="0634020c-8729-99fc-7637-897a9d7c445b"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            <title value="Assigned Purity (w/w%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="APR"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Calculation"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Report"/>
+               </extension>
+               <appliesTo>
+                  <text value="Assigned Purity"/>
                </appliesTo>
             </qualifiedValue>
             <component> <!-- are expected to have a component that says what impurity this one is -->
@@ -528,6 +572,7 @@
                 <!--id value="manufacturingProcess"/--> 
                 <!--plandefinition-dxpq-ex4-mnf-process-->
             <id value="b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+            <!--http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975-->
             <url value="http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
             <title value="Process 1.1"/>
             <type>
@@ -593,6 +638,7 @@
       <resource>
          <Organization>
                 <!--testing lab-->
+                <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             <name value="Testing Lab"/>
          </Organization>
@@ -813,6 +859,28 @@
 			        <!--Observation/observationWaterSecond-->
                <reference value="Observation/c2644a86-1685-286e-00e2-dcaf907a8970"/>
             </result>
+            <result>
+			        <!--Observation/observationAssignedPurity1-->
+               <reference value="Observation/ff26533d-88b8-7f18-a275-42dc1373a388"/>
+            </result>
+            <result>
+			        <!--Observation/observationAssignedPurity2-->
+               <reference value="Observation/ff26534d-88b8-7f18-a275-42dc1373a388"/>
+            </result>
+            <result>
+			        <!--Observation/observationAssignedPurity3-->
+               <reference value="Observation/ff26544d-88b8-7f18-a275-42dc1373a388"/>
+            </result>
+            <result>
+			        <!--Observation/observationAssignedPurity1second-->
+               <reference value="Observation/ff36533d-88b8-7f18-a275-42dc1373a388"/>
+            </result>
+            <!---result>
+			        <reference value="Observation/observationAssignedPurity2second"/>
+			    </result>
+			    <result>
+			        <reference value="Observation/observationAssignedPurity3second"/>
+			    </result-->
             <conclusion value="The samples have been assessed and the conclusion is..."/>
          </DiagnosticReport>
       </resource>
@@ -845,6 +913,8 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+				    
+				    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueDateTime value="2021-07"/>
@@ -880,6 +950,8 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueDateTime value="2022-07"/>
@@ -915,6 +987,8 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueDateTime value="2023-07"/>
@@ -949,14 +1023,45 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueDateTime value="2024-07"/>
          </Observation>
       </resource>
    </entry>
-   
-
+   <!--entry>
+        <fullUrl value="urn:uuid:83f552f7-8558-3cff-8379-eea5417a9de2"/>
+        <resource>
+            <Observation>
+                <id value="testDateSecond2"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
+                </meta>
+                <instantiatesReference>
+                    <reference value="ObservationDefinition/TestDate"/>
+                </instantiatesReference>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
+                        <code value="Test Date"/>
+                        <display value="Test Date"/>
+                    </coding>
+                    <text value="Test Date"/>
+                </code>
+                <subject>
+                    <reference value="Substance/actual-batch-substance-2"/>
+                </subject>
+                <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                <performer>
+                    <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+                </performer>
+                <valueDateTime value="2024-08"/>
+            </Observation>
+        </resource>
+    </entry-->
    <entry>
       <fullUrl value="urn:uuid:82f552f9-8458-3cf4-8379-eea5417a9de2"/>
       <resource>
@@ -980,14 +1085,14 @@
                <text value="Appearance"/>
             </code>
             <subject>
-					
-
 					<!--reference value="Substance/actual-batch-substance"/-->
 				    <!--Substance/substance-dxpq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+				    
+				    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="White Powder"/>
@@ -1001,6 +1106,7 @@
 				<!--observationDescription2-->
             <id value="50bf6f69-a3f5-678b-469b-c5df5cca4c86"/>
             <instantiatesReference>
+				    <!--ObservationDefinition/Appearance-->
                <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
             </instantiatesReference>
             <status value="final"/>
@@ -1018,6 +1124,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="White Powder"/>
@@ -1049,6 +1156,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="White Powder"/>
@@ -1084,6 +1192,8 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Off-white Powder"/>
@@ -1115,6 +1225,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Consistent with structure"/>
@@ -1146,6 +1257,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Conforms to standard"/>
@@ -1177,6 +1289,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueCodeableConcept>
@@ -1210,6 +1323,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Conforms to standard"/>
@@ -1241,6 +1355,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Consistent with structure"/>
@@ -1272,6 +1387,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <dataAbsentReason>
@@ -1310,6 +1426,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <dataAbsentReason>
@@ -1348,6 +1465,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="Consistent with structure"/>
@@ -1379,6 +1497,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1428,6 +1547,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1477,6 +1597,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1526,6 +1647,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1575,6 +1697,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1624,6 +1747,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1673,6 +1797,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1722,6 +1847,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1771,6 +1897,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1820,6 +1947,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1869,6 +1997,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1918,6 +2047,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -1967,6 +2097,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2016,6 +2147,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2065,6 +2197,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2115,6 +2248,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2163,6 +2297,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="As, Cd, Hg, Pb: Not detected. Pd: &lt; 29 ppm"/>
@@ -2206,6 +2341,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <dataAbsentReason>
@@ -2244,6 +2380,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <dataAbsentReason>
@@ -2281,6 +2418,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueString value="As, Cd, Hg, Pb: Not detected. Pd: &lt; 31 ppm"/>
@@ -2299,6 +2437,274 @@
          </Observation>
       </resource>
    </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26533d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationAssignedPurity1-->
+            <id value="ff26533d-88b8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/AssignedPurity-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2021-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.22"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26534d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationAssignedPurity2-->
+            <id value="ff26534d-88b8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/AssignedPurity-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2022-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.33"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26544d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationAssignedPurity3-->
+            <id value="ff26544d-88b8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/AssignedPurity-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.44"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff36533d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationAssignedPurity1second-->
+            <id value="ff36533d-88b8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/AssignedPurity-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2021-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="75.22"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <!--entry>
+        <fullUrl value="urn:uuid:ff46534d-88b8-7f18-a275-42dc1373a388"/>
+        <resource>
+            <Observation>
+                <id value="observationAssignedPurity2second"/>
+                <instantiatesReference>
+                    <reference value="ObservationDefinition/AssignedPurity"/>
+                </instantiatesReference>
+                <status value="final"/>
+                <code>
+                    <coding> 
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                        <code value="AssignedPurity"/>
+                        <display value="Assigned Purity"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Substance/actual-batch-substance-2"/>
+                </subject>
+                <effectiveDateTime value="2022-01-01T12:00:00Z"/>
+                <performer>
+                    <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+                </performer>
+                <valueQuantity>
+                    <value value="75.33"/>
+                    <unit value="%"/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding> 
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                            <code value="IMP"/>
+                            <display value="Impurity"/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <text value="Impurity - Elemental"/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:ff56544d-88b8-7f18-a275-42dc1373a388"/>
+        <resource>
+            <Observation>
+                <id value="observationAssignedPurity3second"/>
+                <instantiatesReference>
+                    <reference value="ObservationDefinition/AssignedPurity"/>
+                </instantiatesReference>
+                <status value="final"/>
+                <code>
+                    <coding> 
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                        <code value="AssignedPurity"/>
+                        <display value="Assigned Purity"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Substance/actual-batch-substance-2"/>
+                </subject>
+                <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+                <performer>
+                    <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+                </performer>
+                <valueQuantity>
+                    <value value="75.44"/>
+                    <unit value="%"/>
+                </valueQuantity>
+                <component>
+                    <code>
+                        <coding> 
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                            <code value="IMP"/>
+                            <display value="Impurity"/>
+                        </coding>
+                    </code>
+                    <valueCodeableConcept>
+                        <text value="Impurity - Elemental"/>
+                    </valueCodeableConcept>
+                </component>
+            </Observation>
+        </resource>
+    </entry-->
    <entry>
       <fullUrl value="urn:uuid:f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
       <resource>
@@ -2323,6 +2729,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2370,6 +2777,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2417,6 +2825,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2464,6 +2873,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2511,6 +2921,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2558,6 +2969,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2605,6 +3017,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2652,6 +3065,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2700,6 +3114,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2736,6 +3151,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2772,6 +3188,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
@@ -2808,6 +3225,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <valueQuantity>
