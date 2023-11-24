@@ -764,5 +764,9 @@
     <code value="WaterContent"/>
     <display value="Water content"/>
   </concept>
-
+  <concept>
+    <code value="AssignedPurity"/>
+    <display value="Assigned Purity"/>
+  </concept>
+  
 </CodeSystem>
