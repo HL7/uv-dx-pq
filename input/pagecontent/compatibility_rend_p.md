@@ -1,4 +1,5 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.6 Compatibility.<html>
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, sections ...
+<html>
 <body>
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
@@ -7,14 +8,14 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: product-compatibility)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-compatibility-dxpq 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-drug-product-compatibility-pq-ex1)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq 
 
 <Bundle>
     <!-- Product compatibility -->
-    <id value=&quot;product-compatibility&quot;/>
+    <id value=&quot;bundle-drug-product-compatibility-pq-ex1&quot;/>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-compatibility-dxpq&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
@@ -24,12 +25,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <!--id value=&quot;validationProtocol&quot;/-->
                 <id value=&quot;plandefinition-compatibility&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic&quot;>
-                    <valueBoolean value=&quot;true&quot;/>
-                </extension-->
-                <!-- COMMENT OUT -->
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Drug Product Compatibility&quot;/>
                 <type>
@@ -39,7 +36,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;product-compatibility&quot;/>
                         <display value=&quot;Product Compatibility&quot;/>
                     </coding>
@@ -74,7 +71,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <valueString value=&quot;25°C&quot;/>
                         </extension>
                     </extension>
-                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen &quot;/>
+                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen&quot;/>
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
@@ -128,8 +125,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Product Compatibility Report&quot;/>
                         <display value=&quot;Product Compatibility Report&quot;/>
                     </coding>
                 </code>
@@ -173,7 +170,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
                         <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
@@ -182,7 +179,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -191,7 +188,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -211,7 +208,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCHMW&quot;/>
                         <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
@@ -220,7 +217,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -229,7 +226,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -249,7 +246,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -258,7 +255,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
@@ -267,7 +264,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
@@ -287,7 +284,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
                         <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
@@ -296,7 +293,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -305,7 +302,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -325,9 +322,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC Main Peak (%)&quot;/>
                 </code>
@@ -341,7 +338,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -354,7 +351,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -378,9 +375,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC Main Peak (%)&quot;/>
                 </code>
@@ -394,7 +391,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -407,7 +404,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -431,9 +428,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC HMW (%)&quot;/>
                 </code>
@@ -447,7 +444,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -460,7 +457,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -484,9 +481,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC HMW (%)&quot;/>
                 </code>
@@ -500,7 +497,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -513,7 +510,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -537,9 +534,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;CEX-HPLC Main Peak (%)&quot;/>
                 </code>
@@ -553,7 +550,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -566,7 +563,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -590,9 +587,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;CEX-HPLC Main Peak (%)&quot;/>
                 </code>
@@ -606,7 +603,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -619,7 +616,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -643,7 +640,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -659,7 +656,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
@@ -673,7 +670,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
@@ -698,7 +695,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -714,9 +711,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>
                     </code>
@@ -728,9 +725,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>
                     </code>
@@ -776,7 +773,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </PackagedProductDefinition>
                 </contained-->
                 <code>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                             <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
@@ -809,7 +806,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Medication>
                 <id value=&quot;medication-actual-batch-2&quot;/>
                 <code>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                         </valueReference>
@@ -836,12 +833,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <name value=&quot;Testing Lab&quot;/>
             </Organization>
         </resource>
-    </entry>" id="Bundle-product-compatibility">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: product-compatibility</div>
+    </entry>" id="Bundle-bundle-drug-product-compatibility-pq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-drug-product-compatibility-pq-ex1</div>
 <div class="debugOff"></div>
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-compatibility-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-compatibility-dxpq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq</span></div>
 <div><span title="
 <Bundle>
     ...
@@ -867,8 +864,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Product Compatibility Report&quot;/>
                         <display value=&quot;Product Compatibility Report&quot;/>
                     </coding>
                 </code>
@@ -904,9 +901,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <DiagnosticReport>
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
-                        <display value=&quot;Product Compatibility Report&quot;/>">Product Compatibility Report<span class="greyOff"> [1113]</span><span class="greyOff"> (http://accumulus.org/fhir/code/reportType)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/diagnosticreport.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/diagnosticreport.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/diagnosticreport.html#tt-uml">R6</a>]</span><div class="debugOff">id: processValidationReport</div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Product Compatibility Report&quot;/>
+                        <display value=&quot;Product Compatibility Report&quot;/>">Product Compatibility Report<span class="greyOff"> [Product Compatibility Report]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/diagnosticreport.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/diagnosticreport.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/diagnosticreport.html#tt-uml">R6</a>]</span><div class="debugOff">id: processValidationReport</div>
 <div class="debugOff"> fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd</div>
 <div class="summaryHiddenOff"></div>
 <div><span title="
@@ -936,8 +933,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Product Compatibility Report&quot;/>
                         <display value=&quot;Product Compatibility Report&quot;/>
                     </coding>">Code: </span><span><span title="
 <Bundle>
@@ -946,9 +943,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <DiagnosticReport>
                 <code>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/reportType&quot;/>
-                        <code value=&quot;1113&quot;/>
-                        <display value=&quot;Product Compatibility Report&quot;/>">Product Compatibility Report<span class="greyOff"> [1113]</span><span class="greyOff"> (http://accumulus.org/fhir/code/reportType)</span></span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Product Compatibility Report&quot;/>
+                        <display value=&quot;Product Compatibility Report&quot;/>">Product Compatibility Report<span class="greyOff"> [Product Compatibility Report]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq)</span></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div></div><span class="summaryHiddenOff"><span title="
 <Bundle>
@@ -968,7 +965,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;>">Conclusion: </span><span>The samples have been assessed and the conclusion is...</span></div>
 <div class="summaryHiddenOff"></div>
-<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 2: Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen </b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 2: Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="1"></th>
 <th colspan="4">PFS Extruded Samples and AI/Pen Extruded Samples</th>
@@ -1260,9 +1257,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC Main Peak (%)&quot;/>
                 </code>
@@ -1276,7 +1273,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -1289,7 +1286,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -1305,9 +1302,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>">SE-UHPLCMainPeak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCMainPeak1</div><div class="debugOff"> fullUrl: urn:uuid:44ba47fd-8964-4f96-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>">SE-UHPLC Main Peak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCMainPeak1</div><div class="debugOff"> fullUrl: urn:uuid:44ba47fd-8964-4f96-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1327,9 +1324,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC Main Peak (%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -1338,9 +1335,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>">SE-UHPLCMainPeak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>">SE-UHPLC Main Peak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1359,9 +1356,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC Main Peak (%)&quot;/>
                 </code>
@@ -1375,7 +1372,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -1388,7 +1385,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -1406,7 +1403,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -1424,9 +1421,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1434,7 +1431,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -1445,9 +1442,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -1476,7 +1473,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -1494,9 +1491,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1504,7 +1501,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -1515,9 +1512,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -1570,9 +1567,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC Main Peak (%)&quot;/>
                 </code>
@@ -1586,7 +1583,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -1599,7 +1596,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -1615,9 +1612,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>">SE-UHPLCMainPeak<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCMainPeak2</div><div class="debugOff"> fullUrl: urn:uuid:54ca47fd-8964-4f96-6495-b2bec7f162e7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>">SE-UHPLC Main Peak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCMainPeak2</div><div class="debugOff"> fullUrl: urn:uuid:54ca47fd-8964-4f96-6495-b2bec7f162e7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1637,9 +1634,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC Main Peak (%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -1648,9 +1645,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>">SE-UHPLCMainPeak<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>">SE-UHPLC Main Peak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1669,9 +1666,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCMainPeak&quot;/>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC Main Peak (%)&quot;/>
                 </code>
@@ -1685,7 +1682,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -1698,7 +1695,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -1716,7 +1713,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -1734,9 +1731,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1744,7 +1741,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -1755,9 +1752,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -1786,7 +1783,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -1804,9 +1801,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1814,7 +1811,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -1825,9 +1822,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -1880,9 +1877,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC HMW (%)&quot;/>
                 </code>
@@ -1896,7 +1893,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -1909,7 +1906,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -1925,9 +1922,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>">SE-UHPLCHMW<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCHMW1</div><div class="debugOff"> fullUrl: urn:uuid:44ba47fd-8964-4f97-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>">SE-UHPLC HMW<span class="greyOff"> [SE-UHPLCHMW]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCHMW1</div><div class="debugOff"> fullUrl: urn:uuid:44ba47fd-8964-4f97-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1947,9 +1944,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC HMW (%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -1958,9 +1955,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>">SE-UHPLCHMW<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>">SE-UHPLC HMW<span class="greyOff"> [SE-UHPLCHMW]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1979,9 +1976,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC HMW (%)&quot;/>
                 </code>
@@ -1995,7 +1992,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -2008,7 +2005,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -2026,7 +2023,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -2044,9 +2041,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2054,7 +2051,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -2065,9 +2062,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2096,7 +2093,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -2114,9 +2111,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2124,7 +2121,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -2135,9 +2132,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2190,9 +2187,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC HMW (%)&quot;/>
                 </code>
@@ -2206,7 +2203,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -2219,7 +2216,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -2235,9 +2232,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>">SE-UHPLCHMW<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCHMW2</div><div class="debugOff"> fullUrl: urn:uuid:54ca47fd-8964-4f98-6495-b2bec7f162e7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>">SE-UHPLC HMW<span class="greyOff"> [SE-UHPLCHMW]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCHMW2</div><div class="debugOff"> fullUrl: urn:uuid:54ca47fd-8964-4f98-6495-b2bec7f162e7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2257,9 +2254,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC HMW (%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -2268,9 +2265,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>">SE-UHPLCHMW<span class="greyOff"> [XXX]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>">SE-UHPLC HMW<span class="greyOff"> [SE-UHPLCHMW]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2289,9 +2286,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
-                        <code value=&quot;XXX&quot;/>
-                        <display value=&quot;SE-UHPLCHMW&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;SE-UHPLCHMW&quot;/>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
                     <text value=&quot;SE-UHPLC HMW (%)&quot;/>
                 </code>
@@ -2305,7 +2302,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -2318,7 +2315,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -2336,7 +2333,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -2354,9 +2351,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2364,7 +2361,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -2375,9 +2372,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2406,7 +2403,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -2424,9 +2421,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2434,7 +2431,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -2445,9 +2442,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2500,9 +2497,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;CEX-HPLC Main Peak (%)&quot;/>
                 </code>
@@ -2516,7 +2513,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -2529,7 +2526,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -2545,9 +2542,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>">CEX-HPLCMainPeak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-HPLC-1</div><div class="debugOff"> fullUrl: urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>">CEX-HPLC Main Peak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-HPLC-1</div><div class="debugOff"> fullUrl: urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2567,9 +2564,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;CEX-HPLC Main Peak (%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -2578,9 +2575,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>">CEX-HPLCMainPeak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>">CEX-HPLC Main Peak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2599,9 +2596,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;CEX-HPLC Main Peak (%)&quot;/>
                 </code>
@@ -2615,7 +2612,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -2628,7 +2625,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -2646,7 +2643,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -2664,9 +2661,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2674,7 +2671,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -2685,9 +2682,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2716,7 +2713,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -2734,9 +2731,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2744,7 +2741,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -2755,9 +2752,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2810,9 +2807,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;CEX-HPLC Main Peak (%)&quot;/>
                 </code>
@@ -2826,7 +2823,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -2839,7 +2836,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -2855,9 +2852,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>">CEX-HPLCMainPeak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-HPLC-2</div><div class="debugOff"> fullUrl: urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>">CEX-HPLC Main Peak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-HPLC-2</div><div class="debugOff"> fullUrl: urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2877,9 +2874,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;CEX-HPLC Main Peak (%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -2888,9 +2885,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>">CEX-HPLCMainPeak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>">CEX-HPLC Main Peak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2909,9 +2906,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLCMainPeak&quot;/>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
                     <text value=&quot;CEX-HPLC Main Peak (%)&quot;/>
                 </code>
@@ -2925,7 +2922,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -2938,7 +2935,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -2956,7 +2953,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -2974,9 +2971,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2984,7 +2981,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -2995,9 +2992,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3026,7 +3023,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -3044,9 +3041,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3054,7 +3051,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -3065,9 +3062,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div><div title="
+                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3120,7 +3117,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -3136,7 +3133,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
@@ -3150,7 +3147,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
@@ -3167,9 +3164,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
-                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-Acidic-1</div><div class="debugOff"> fullUrl: urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e8</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-Acidic-1</div><div class="debugOff"> fullUrl: urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e8</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3189,7 +3186,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -3200,9 +3197,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
-                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3221,7 +3218,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -3237,7 +3234,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
@@ -3251,7 +3248,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
@@ -3270,7 +3267,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
@@ -3289,9 +3286,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3299,7 +3296,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
@@ -3311,9 +3308,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3342,7 +3339,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
@@ -3361,9 +3358,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3371,7 +3368,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
@@ -3383,9 +3380,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3438,7 +3435,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -3454,9 +3451,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>
                     </code>
@@ -3468,9 +3465,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>
                     </code>
@@ -3485,9 +3482,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
-                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-Acidic-2</div><div class="debugOff"> fullUrl: urn:uuid:54ba48fd-8964-4f96-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-Acidic-2</div><div class="debugOff"> fullUrl: urn:uuid:54ba48fd-8964-4f96-6495-b2bec7f161e7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3507,7 +3504,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -3518,9 +3515,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
-                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3539,7 +3536,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -3555,9 +3552,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>
                     </code>
@@ -3569,9 +3566,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>
                     </code>
@@ -3588,9 +3585,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>
                     </code>
@@ -3607,9 +3604,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3617,9 +3614,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -3629,9 +3626,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3660,9 +3657,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>
                     </code>
@@ -3679,9 +3676,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3689,9 +3686,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
                         <text value=&quot;CEX-HPLC Acidic Peak (%)&quot;/>">Code: </span><span><span title="
 <Bundle>
@@ -3701,9 +3698,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3749,7 +3746,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </div>
 <div class="org indent"><span class="bold">Report Specification</span><div class="indent plan summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (DiagnosticReport/valueReference, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="PlanDefinition (id: plandefinition-compatibility)(fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq 
 
 <Bundle>
     <entry>
@@ -3758,12 +3755,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <!--id value=&quot;validationProtocol&quot;/-->
                 <id value=&quot;plandefinition-compatibility&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic&quot;>
-                    <valueBoolean value=&quot;true&quot;/>
-                </extension-->
-                <!-- COMMENT OUT -->
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Drug Product Compatibility&quot;/>
                 <type>
@@ -3773,7 +3766,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;product-compatibility&quot;/>
                         <display value=&quot;Product Compatibility&quot;/>
                     </coding>
@@ -3808,7 +3801,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <valueString value=&quot;25°C&quot;/>
                         </extension>
                     </extension>
-                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen &quot;/>
+                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen&quot;/>
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
@@ -3851,7 +3844,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <PlanDefinition>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq</span></div>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -3879,7 +3872,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;product-compatibility&quot;/>
                         <display value=&quot;Product Compatibility&quot;/>
                     </coding>">Type: </span><span title="
@@ -3899,9 +3892,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <type>
                     ...
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;product-compatibility&quot;/>
-                        <display value=&quot;Product Compatibility&quot;/>">Product Compatibility<span class="greyOff"> [product-compatibility]</span><span class="greyOff"> (http://accumulus.org/fhir/code/planType)</span></span></div>
+                        <display value=&quot;Product Compatibility&quot;/>">Product Compatibility<span class="greyOff"> [product-compatibility]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq)</span></span></div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -3919,12 +3912,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <!--id value=&quot;validationProtocol&quot;/-->
                 <id value=&quot;plandefinition-compatibility&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic&quot;>
-                    <valueBoolean value=&quot;true&quot;/>
-                </extension-->
-                <!-- COMMENT OUT -->
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Drug Product Compatibility&quot;/>
                 <type>
@@ -3934,7 +3923,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;product-compatibility&quot;/>
                         <display value=&quot;Product Compatibility&quot;/>
                     </coding>
@@ -3969,7 +3958,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <valueString value=&quot;25°C&quot;/>
                         </extension>
                     </extension>
-                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen &quot;/>
+                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen&quot;/>
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
@@ -4033,7 +4022,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <valueString value=&quot;25°C&quot;/>
                         </extension>
                     </extension>
-                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen &quot;/>
+                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen&quot;/>
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
@@ -4072,7 +4061,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <PlanDefinition>
                 <action>
                     ...
-                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen &quot;>"> - Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen </span></span></span><div class="summaryHiddenOff">
+                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen&quot;>"> - Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -4080,7 +4069,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <PlanDefinition>
                 <action>
                     ...
-                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen &quot;>">Title: </span><span>Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen </span></div>
+                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen&quot;>">Title: </span><span>Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen</span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -4119,7 +4108,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
                         <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
@@ -4128,7 +4117,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -4137,7 +4126,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -4149,9 +4138,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
-                        <display value=&quot;SE-UHPLC Main Peak&quot;/>">SE-UHPLC Main Peak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCMainPeak</div>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>">SE-UHPLC Main Peak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCMainPeak</div>
 <div class="debugOff"> fullUrl: urn:uuid:64525a3d-5034-448a-9c19-938ce1958424</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424</div>
 <div class="summaryHiddenOff">
@@ -4183,7 +4172,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
                         <display value=&quot;SE-UHPLC Main Peak&quot;/>
                     </coding>
@@ -4194,9 +4183,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCMainPeak&quot;/>
-                        <display value=&quot;SE-UHPLC Main Peak&quot;/>">SE-UHPLC Main Peak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></div>
+                        <display value=&quot;SE-UHPLC Main Peak&quot;/>">SE-UHPLC Main Peak<span class="greyOff"> [SE-UHPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC Main Peak (%)</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -4208,7 +4197,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>
@@ -4222,9 +4211,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4232,7 +4221,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -4243,9 +4232,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-15&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <display value=&quot;SE-UHPLC Main Peak - 15&quot;/>">SE-UHPLC Main Peak - 15<span class="greyOff"> [SE-UHPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -4256,7 +4245,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>
@@ -4270,9 +4259,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4280,7 +4269,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
                             <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -4291,9 +4280,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCMainPeak-25&quot;/>
-                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <display value=&quot;SE-UHPLC Main Peak - 25&quot;/>">SE-UHPLC Main Peak - 25<span class="greyOff"> [SE-UHPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
@@ -4336,7 +4325,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCHMW&quot;/>
                         <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
@@ -4345,7 +4334,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -4354,7 +4343,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -4366,9 +4355,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCHMW&quot;/>
-                        <display value=&quot;SE-UHPLC HMW&quot;/>">SE-UHPLC HMW<span class="greyOff"> [SE-UHPLCHMW]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCHMW</div>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>">SE-UHPLC HMW<span class="greyOff"> [SE-UHPLCHMW]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SE-UHPLCHMW</div>
 <div class="debugOff"> fullUrl: urn:uuid:64525a33-5034-448a-9c19-938ce1958424</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424</div>
 <div class="summaryHiddenOff">
@@ -4400,7 +4389,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCHMW&quot;/>
                         <display value=&quot;SE-UHPLC HMW&quot;/>
                     </coding>
@@ -4411,9 +4400,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;SE-UHPLCHMW&quot;/>
-                        <display value=&quot;SE-UHPLC HMW&quot;/>">SE-UHPLC HMW<span class="greyOff"> [SE-UHPLCHMW]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></div>
+                        <display value=&quot;SE-UHPLC HMW&quot;/>">SE-UHPLC HMW<span class="greyOff"> [SE-UHPLCHMW]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: SE-UHPLC HMW (%)</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -4425,7 +4414,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>
@@ -4439,9 +4428,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4449,7 +4438,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -4460,9 +4449,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-15&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <display value=&quot;SE-UHPLC HMW - 15&quot;/>">SE-UHPLC HMW - 15<span class="greyOff"> [SE-UHPLCHMW-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -4473,7 +4462,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>
@@ -4487,9 +4476,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4497,7 +4486,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
                             <display value=&quot;SE-UHPLC HMW - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -4508,9 +4497,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;SE-UHPLCHMW-25&quot;/>
-                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <display value=&quot;SE-UHPLC HMW - 25&quot;/>">SE-UHPLC HMW - 25<span class="greyOff"> [SE-UHPLCHMW-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
@@ -4553,7 +4542,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -4562,7 +4551,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
@@ -4571,7 +4560,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
@@ -4583,9 +4572,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
-                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-HPLCAcidicPeak</div>
+                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-HPLCAcidicPeak</div>
 <div class="debugOff"> fullUrl: urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e8</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424</div>
 <div class="summaryHiddenOff">
@@ -4617,7 +4606,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
                         <display value=&quot;CEX-HPLC Acidic Peak&quot;/>
                     </coding>
@@ -4628,9 +4617,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCAcidicPeak&quot;/>
-                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div>
+                        <display value=&quot;CEX-HPLC Acidic Peak&quot;/>">CEX-HPLC Acidic Peak<span class="greyOff"> [CEX-HPLCAcidicPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Acidic Peak (%)</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -4642,7 +4631,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>
@@ -4656,9 +4645,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4666,7 +4655,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -4677,9 +4666,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 15&quot;/>">CEX-HPLC Acidic Peak - 15<span class="greyOff"> [CEX-HPLCAcidicPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -4690,7 +4679,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>
@@ -4704,9 +4693,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4714,7 +4703,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -4725,9 +4714,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCAcidicPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <display value=&quot;CEX-HPLC Acidic Peak - 25&quot;/>">CEX-HPLC Acidic Peak - 25<span class="greyOff"> [CEX-HPLCAcidicPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
@@ -4770,7 +4759,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
                         <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
@@ -4779,7 +4768,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -4788,7 +4777,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -4800,9 +4789,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLC Main Peak&quot;/>">CEX-HPLC Main Peak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-HPLCMainPeak</div>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>">CEX-HPLC Main Peak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: CEX-HPLCMainPeak</div>
 <div class="debugOff"> fullUrl: urn:uuid:74525a3d-5034-448a-9c19-938ce1958424</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424</div>
 <div class="summaryHiddenOff">
@@ -4834,7 +4823,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
                         <display value=&quot;CEX-HPLC Main Peak&quot;/>
                     </coding>
@@ -4845,9 +4834,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://dummy.loinc.org&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                         <code value=&quot;CEX-HPLCMainPeak&quot;/>
-                        <display value=&quot;CEX-HPLC Main Peak&quot;/>">CEX-HPLC Main Peak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></div>
+                        <display value=&quot;CEX-HPLC Main Peak&quot;/>">CEX-HPLC Main Peak<span class="greyOff"> [CEX-HPLCMainPeak]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: CEX-HPLC Main Peak (%)</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -4859,7 +4848,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>
@@ -4873,9 +4862,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4883,7 +4872,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -4894,9 +4883,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-15&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <display value=&quot;CEX-HPLC Main Peak - 15&quot;/>">CEX-HPLC Main Peak - 15<span class="greyOff"> [CEX-HPLCMainPeak-15]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 </div>
 <div class="indent obsDefl2" title="
 <Bundle>
@@ -4907,7 +4896,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>
@@ -4921,9 +4910,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4931,7 +4920,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
                             <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>
                         </coding>">Code: </span><span><span title="
@@ -4942,9 +4931,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://dummy.loinc.org&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
                             <code value=&quot;CEX-HPLCMainPeak-25&quot;/>
-                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://dummy.loinc.org)</span></span></span></div>
+                            <display value=&quot;CEX-HPLC Main Peak - 25&quot;/>">CEX-HPLC Main Peak - 25<span class="greyOff"> [CEX-HPLCMainPeak-25]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
@@ -4952,7 +4941,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
 </div>
 </div>
 <div class="indent planl2 summaryHiddenOff"><span title="PlanDefinition (id: plandefinition-compatibility)(fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq 
 
 <Bundle>
     <entry>
@@ -4961,12 +4950,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <!--id value=&quot;validationProtocol&quot;/-->
                 <id value=&quot;plandefinition-compatibility&quot;/>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq&quot;/>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic&quot;>
-                    <valueBoolean value=&quot;true&quot;/>
-                </extension-->
-                <!-- COMMENT OUT -->
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Drug Product Compatibility&quot;/>
                 <type>
@@ -4976,7 +4961,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://accumulus.org/fhir/code/planType&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
                         <code value=&quot;product-compatibility&quot;/>
                         <display value=&quot;Product Compatibility&quot;/>
                     </coding>
@@ -5011,7 +4996,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <valueString value=&quot;25°C&quot;/>
                         </extension>
                     </extension>
-                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen &quot;/>
+                    <title value=&quot;Results From Evaluation of Drug Product Compatibility With the Glass Syringe Using the Autoinjector/Pen&quot;/>
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
@@ -5078,7 +5063,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff">
 <div></div>Subject of Plan: Drug Product Compatibility (<a href="#PlanDefinition-plandefinition-compatibility" title="click to see target - id=plandefinition-compatibility">PlanDefinition</a>)<span class="debugOff"> id: plandefinition-compatibility</span></div>
-<div class="indent mpdl2 summaryUnit"><span title="Medication resource extension linking back to MedicinalProductDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">Batch Instance</span><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq<br></span><div class="debugOff"><span>Found a parent (Observation/subject, id: SE-UHPLCMainPeak1 fullUrl: urn:uuid:44ba47fd-8964-4f96-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: SE-UHPLCHMW1 fullUrl: urn:uuid:44ba47fd-8964-4f97-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: CEX-HPLC-1 fullUrl: urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: CEX-Acidic-1 fullUrl: urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e8)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: CEX-Acidic-2 fullUrl: urn:uuid:54ba48fd-8964-4f96-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch-1)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
+<div class="indent mpdl2 summaryUnit"><span title="Medication resource extension linking back to MedicinalProductDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq<br></span><div class="debugOff"><span>Found a parent (Observation/subject, id: SE-UHPLCMainPeak1 fullUrl: urn:uuid:44ba47fd-8964-4f96-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: SE-UHPLCHMW1 fullUrl: urn:uuid:44ba47fd-8964-4f97-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: CEX-HPLC-1 fullUrl: urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: CEX-Acidic-1 fullUrl: urn:uuid:54ba47fd-8964-4f96-6495-b2bec7f161e8)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: CEX-Acidic-2 fullUrl: urn:uuid:54ba48fd-8964-4f96-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch-1)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
 
 <Bundle>
     <entry>
@@ -5100,7 +5085,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </PackagedProductDefinition>
                 </contained-->
                 <code>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                             <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
@@ -5128,7 +5113,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <Medication>
                 <code>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                             <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
@@ -5183,7 +5168,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;container&quot;>
                             <extension url=&quot;closureSystemDescription&quot;>
-                                <valueString value=&quot;Pre-filled syringe&quot;/>">Closure System: </span><span>Pre-filled syringe</span></div></div></div></div></div></div></div><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq<br></span><div class="debugOff"><span>Found a parent (Observation/subject, id: SE-UHPLCMainPeak2 fullUrl: urn:uuid:54ca47fd-8964-4f96-6495-b2bec7f162e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: SE-UHPLCHMW2 fullUrl: urn:uuid:54ca47fd-8964-4f98-6495-b2bec7f162e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: CEX-HPLC-2 fullUrl: urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch-2)(fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)
+                                <valueString value=&quot;Pre-filled syringe&quot;/>">Closure System: </span><span>Pre-filled syringe</span></div></div></div></div></div></div></div><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq<br></span><div class="debugOff"><span>Found a parent (Observation/subject, id: SE-UHPLCMainPeak2 fullUrl: urn:uuid:54ca47fd-8964-4f96-6495-b2bec7f162e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: SE-UHPLCHMW2 fullUrl: urn:uuid:54ca47fd-8964-4f98-6495-b2bec7f162e7)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: CEX-HPLC-2 fullUrl: urn:uuid:54bb47fd-8964-4f96-6495-b2bec7f161e7)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch-2)(fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)
 
 <Bundle>
     <entry>
@@ -5191,7 +5176,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <Medication>
                 <id value=&quot;medication-actual-batch-2&quot;/>
                 <code>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                         </valueReference>
@@ -5212,7 +5197,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <Medication>
                 <code>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                         </valueReference>">Definition</span>: Stelbatolol (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div><div class="summaryHiddenOff"><div class="indent medl2 summaryUnit"><span title="
