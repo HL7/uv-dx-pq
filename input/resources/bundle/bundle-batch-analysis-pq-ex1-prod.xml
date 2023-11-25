@@ -1111,8 +1111,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://example.org/fhir/code/reportType"/>
-                  <code value="111"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <code value="Batch Analysis Report"/>
                   <display value="Batch Analysis Report"/>
                </coding>
             </code>
@@ -2895,8 +2895,8 @@
                <productName value="Stelbat Tablets, 20mg"/>
                <type>
                   <coding>
-                     <system value="http://example.org/fhir/code/productNameType"/>
-                     <code value="1234"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
                </type>
