@@ -5,8 +5,10 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
     </meta>
-    
-    <description value="Textual description of the product"/>
+                
+                
+                
+                <description value="Textual description of the product"/>
     <combinedPharmaceuticalDoseForm>
         <coding>
             <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
@@ -21,12 +23,13 @@
             <display value="Oral use"/>
         </coding>
     </route>
+                
     <name>
         <productName value="Stelbat Tablets, 20mg"/>
         <type>
             <coding>
                             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
-                <code value="1234"/>
+                            <code value="Proprietary"/>
                 <display value="Proprietary"/>
             </coding>
         </type>

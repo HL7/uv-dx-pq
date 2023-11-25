@@ -769,8 +769,8 @@
                <productName value="Stelbat Tablets, 20mg"/>
                <type>
                   <coding>
-                     <system value="http://example.org/fhir/code/productNameType"/>
-                     <code value="1234"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
                </type>
