@@ -408,7 +408,7 @@
             <code>
                <coding>
                   <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                  <code value="APR"/>
+                  <code value="AssignedPurity"/>
                   <display value="Assigned Purity"/>
                </coding>
             </code>
