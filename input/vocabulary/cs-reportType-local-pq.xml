@@ -43,4 +43,8 @@
         <code value="Impurities Report"/>
         <display value="Impurities Report"/>
     </concept>
+    <concept>
+        <code value="Microbiological Attributes Report"/>
+        <display value="Microbiological Attributes Report"/>
+    </concept>
 </CodeSystem>
