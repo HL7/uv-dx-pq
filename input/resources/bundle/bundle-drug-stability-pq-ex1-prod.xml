@@ -14,8 +14,7 @@
       <resource>
          <DiagnosticReport>
                 <!-- <id value="studyResultsReport"/>-->
-                <!--DiagnosticReport-analysis-drug-pq-stability-prod-->
-            <id value="6f4a3311-92c5-2b4a-533e-76341e414c63"/>
+            <id value="diagnosticreport-analysis-drug-pq-stability-prod"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
             </meta>
@@ -3513,7 +3512,7 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
-                     <code value="1234"/>
+                     <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
                </type>
