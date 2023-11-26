@@ -79,8 +79,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <coding>
                                 <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
                                 <code value=&quot;C133990&quot;/>
-                                <display value=&quot;Commercial&quot;/> >
-                            
+                                <display value=&quot;Commercial&quot;/>
                             </coding>
                             <text value=&quot;Production&quot;/>
                         </valueCodeableConcept>
@@ -437,8 +436,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <coding>
                                 <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
                                 <code value=&quot;C133990&quot;/>
-                                <display value=&quot;Commercial&quot;/> >
-                            
+                                <display value=&quot;Commercial&quot;/>
                             </coding>
                             <text value=&quot;Production&quot;/>
                         </valueCodeableConcept>
@@ -529,8 +527,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <coding>
                                 <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
                                 <code value=&quot;C133990&quot;/>
-                                <display value=&quot;Commercial&quot;/> >
-                            
+                                <display value=&quot;Commercial&quot;/>
                             </coding>
                             <text value=&quot;Production&quot;/>
                         </valueCodeableConcept>
@@ -647,8 +644,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <coding>
                                 <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
                                 <code value=&quot;C133990&quot;/>
-                                <display value=&quot;Commercial&quot;/> >
-                            
+                                <display value=&quot;Commercial&quot;/>
                             </coding>
                             <text value=&quot;Production&quot;/>
                         </valueCodeableConcept>">Utilization: </span><span title="
@@ -662,8 +658,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <coding>
                                 <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
                                 <code value=&quot;C133990&quot;/>
-                                <display value=&quot;Commercial&quot;/> >
-                            ">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: Production</span></div><div></div><span><span title="
+                                <display value=&quot;Commercial&quot;/>">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: Production</span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1638,8 +1633,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -1682,6 +1677,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }
