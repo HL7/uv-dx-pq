@@ -732,8 +732,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
@@ -1176,8 +1176,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
@@ -1201,8 +1201,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
@@ -1224,8 +1224,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
 <Bundle>
@@ -1235,9 +1235,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://example.org/fhir/code/productNameType)</span></span></div><div title="
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -5485,8 +5485,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -5529,6 +5529,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }

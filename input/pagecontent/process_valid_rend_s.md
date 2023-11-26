@@ -93,7 +93,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -220,7 +220,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -274,6 +274,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <fullUrl value=&quot;urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd&quot;/>
         <resource>
             <DiagnosticReport>
+                <!-- focal resource -->
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
                 <id value=&quot;processValidationReport&quot;/>
@@ -1867,6 +1868,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <resource>
             <DiagnosticReport>
+                <!-- focal resource -->
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
                 <id value=&quot;processValidationReport&quot;/>
@@ -1999,7 +2001,95 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <DiagnosticReport>
                 ...
                 <conclusion value=&quot;The samples have been assessed and the conclusion is...&quot;>">Conclusion: </span><span>The samples have been assessed and the conclusion is...</span></div>
-<div class="summaryHiddenOff"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 3: Step 1 Yield</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+<div class="summaryHiddenOff"></div>
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span><b>Table 2: Step 1 Process Validation Batches</b></span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+<tr>
+<th>Date of Manufacture</th>
+<th>Starting Material Batch Number</th>
+<th>Step 1 Manufacturing Scale (kg of starting material 1)</th>
+<th>Intermediate Batch Number</th>
+<th>Intermediate Batch Size (kg)</th>
+</tr>
+<tr>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-01&quot;>">2019-09-01</span></td>
+<td class="centred"><a href="#Substance-actual-batch-substance-starting-1" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Start1Amgen&quot;>" class="noUnderline">Start1Amgen</a></td>
+<td class="centred">8.1</td>
+<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-1" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Intermed1Amgen&quot;>" class="noUnderline">Intermed1Amgen</a></td>
+<td class="centred">9.1</td>
+</tr>
+<tr>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-01&quot;>">2019-09-01</span></td>
+<td class="centred"><a href="#Substance-actual-batch-substance-starting-2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Start2Amgen&quot;>" class="noUnderline">Start2Amgen</a></td>
+<td class="centred">8.2</td>
+<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Intermed2Amgen&quot;>" class="noUnderline">Intermed2Amgen</a></td>
+<td class="centred">9.2</td>
+</tr>
+<tr>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-01&quot;>">2019-09-01</span></td>
+<td class="centred"><a href="#Substance-actual-batch-substance-starting-3" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Start3Amgen&quot;>" class="noUnderline">Start3Amgen</a></td>
+<td class="centred">8.3</td>
+<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-3" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Intermed3Amgen&quot;>" class="noUnderline">Intermed3Amgen</a></td>
+<td class="centred">9.3</td>
+</tr>
+</table>
+</div><br style="line-height:6px;"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 3: Step 1 Yield</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th colspan="1"></th>
 <th colspan="3">Intermediate Batch Number</th>
@@ -2299,6 +2389,94 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 <td class="centred"></td>
 <td class="centred"></td>
 <td class="centred"></td>
+</tr>
+</table>
+</div><br style="line-height:6px;"></div>
+<div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><span><b>Table 6: Step 2 Process Validation Batches</b></span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+<tr>
+<th>Date of Manufacture</th>
+<th>Starting Material Batch Number</th>
+<th>Step 2 Manufacturing Scale (kg of starting material 2)</th>
+<th>Intermediate Batch Number</th>
+<th>Intermediate Batch Size (kg)</th>
+</tr>
+<tr>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-02&quot;>">2019-09-02</span></td>
+<td class="centred"><a href="#Substance-actual-batch-substance-starting-step2-1" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Start1Step2Amgen&quot;>" class="noUnderline">Start1Step2Amgen</a></td>
+<td class="centred">7.1</td>
+<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-step2-1" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Intermed1Step2Amgen&quot;>" class="noUnderline">Intermed1Step2Amgen</a></td>
+<td class="centred">10.1</td>
+</tr>
+<tr>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-02&quot;>">2019-09-02</span></td>
+<td class="centred"><a href="#Substance-actual-batch-substance-starting-step2-2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Start2Step2Amgen&quot;>" class="noUnderline">Start2Step2Amgen</a></td>
+<td class="centred">7.2</td>
+<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-step2-2" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Intermed2Step2Amgen&quot;>" class="noUnderline">Intermed2Step2Amgen</a></td>
+<td class="centred">10.2</td>
+</tr>
+<tr>
+<td class="centred"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-02&quot;>">2019-09-02</span></td>
+<td class="centred"><a href="#Substance-actual-batch-substance-starting-step2-3" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Start3Step2Amgen&quot;>" class="noUnderline">Start3Step2Amgen</a></td>
+<td class="centred">7.3</td>
+<td class="centred"><a href="#Substance-actual-batch-substance-itermediate-step2-3" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <identifier>
+                    <value value=&quot;Intermed3Step2Amgen&quot;>" class="noUnderline">Intermed3Step2Amgen</a></td>
+<td class="centred">10.3</td>
 </tr>
 </table>
 </div><br style="line-height:6px;"></div><br style="line-height:6px;"><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent-no-border"><b>Table 7: Step 2 Yield</b><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
@@ -6116,7 +6294,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -6243,7 +6421,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -6426,7 +6604,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -6553,7 +6731,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -6652,7 +6830,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -6883,7 +7061,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>">Participant</span><div><span title="
@@ -6897,7 +7075,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>">Role: </span><span><span title="
 <Bundle>
@@ -6909,8 +7087,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
-                                <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [starting-material]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+                                <code value=&quot;StartingMaterial&quot;/>
+                                <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [StartingMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
 <div>
 <div class="indent org"><span title="
 <Bundle>
@@ -9393,7 +9571,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -9551,7 +9729,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>">Participant</span><div><span title="
@@ -9565,7 +9743,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>">Role: </span><span><span title="
 <Bundle>
@@ -9577,8 +9755,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
-                                <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [starting-material]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+                                <code value=&quot;StartingMaterial&quot;/>
+                                <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [StartingMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
 <div>
 <div class="indent org"><span title="
 <Bundle>
@@ -10980,7 +11158,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -11107,7 +11285,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <role>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
-                                <code value=&quot;starting-material&quot;/>
+                                <code value=&quot;StartingMaterial&quot;/>
                                 <display value=&quot;Starting Material&quot;/>
                             </coding>
                         </role>
@@ -11289,8 +11467,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -11333,6 +11511,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }
