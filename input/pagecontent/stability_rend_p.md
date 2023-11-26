@@ -15,7 +15,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
     <id value=&quot;bundle-drug-stability-pq-ex1-prod&quot;/>
     <!--   <id value=&quot;product-stability-study&quot;/>-->
     <meta>
-        <!--profile value=&quot;http://accumulus.org/fhir/dx-cmc/stability&quot;/-->
+        <!--profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-stability-dxpq&quot;/-->
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
@@ -24,6 +24,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
         <fullUrl value=&quot;urn:uuid:6f4a3311-92c5-2b4a-533e-76341e414c63&quot;/>
         <resource>
             <DiagnosticReport>
+                <!-- focal resource -->
                 <!-- <id value=&quot;studyResultsReport&quot;/>-->
                 <id value=&quot;diagnosticreport-analysis-drug-pq-stability-prod&quot;/>
                 <meta>
@@ -4344,6 +4345,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
     <entry>
         <resource>
             <DiagnosticReport>
+                <!-- focal resource -->
                 <!-- <id value=&quot;studyResultsReport&quot;/>-->
                 <id value=&quot;diagnosticreport-analysis-drug-pq-stability-prod&quot;/>
                 <meta>
@@ -38023,8 +38025,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -38067,6 +38069,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }
