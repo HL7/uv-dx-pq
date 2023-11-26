@@ -8,23 +8,167 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
-<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-drug-product-excipients-pq-ex1)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq 
+<div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-drug-product-microbiological-attributes-pq-ex1)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq 
 
 <Bundle>
-    <id value=&quot;bundle-drug-product-excipients-pq-ex1&quot;/>
+    <!-- Product  Microbiological Attributes -->
+    <id value=&quot;bundle-drug-product-microbiological-attributes-pq-ex1&quot;/>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
+    <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
+    <entry>
+        <fullUrl value=&quot;urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd&quot;/>
+        <resource>
+            <DiagnosticReport>
+                <!-- focal resource -->
+                <id value=&quot;microbiologicalReport&quot;/>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Microbiological Attributes Report&quot;/>
+                        <display value=&quot;Microbiological Attributes Report&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <effectiveDateTime value=&quot;2020-12&quot;/>
+                <!-- start of stability test -->
+                <result>
+                    <reference value=&quot;Observation/observationDescription&quot;/>
+                </result>
+            </DiagnosticReport>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d&quot;/>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription&quot;/>
+                <text>
+                    <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/showText&quot;>
+                        <valueBoolean value=&quot;true&quot;/>
+                    </extension>
+                    <status value=&quot;additional&quot;/>
+                    <div>
+                        <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
+                            <p>
+                                <span>The microbiological attributes of the excipients were
+                                    characterized during the development program. All excipients
+                                    meet USP <1111> </span>
+                                <i>
+                                    <span>Microbial Examination of
+                                        Nonsterile Products:</span>
+                                </i>
+                                <span/>
+                                <i>
+                                    <span>Acceptance Criteria for Pharmaceutical
+                                        Preparations and Substances for Pharmaceutical
+                                    Use</span>
+                                </i>
+                                <span/>
+                                <span>and Ph. Eur. 5.1.4
+                                        </span>
+                                <i>
+                                    <span>Microbiological quality of non-sterile
+                                        pharmaceutical preparations and substances for
+                                        pharmaceutical use</span>
+                                </i>
+                                <i>
+                                    <span>,</span>
+                                </i>
+                                <span>
+                                    when tested in accordance with USP <61> and
+                                    <62>,</span>
+                                <span/>
+                                <span>and Ph. Eur. 2.6.12 and
+                                    2.6.13, where applicable.</span>
+                            </p>
+                            <p>
+                                <span> Current Good Manufacturing Practices are used which minimize
+                                    the possibility for microbial contamination for the finished
+                                    product. This was confirmed via testing of three lots
+                                    manufactured at the commercial scale for the purpose of PPQ and
+                                    stability studies according to USP <61> and <62>.
+                                    All lots met the USP <1111> criteria for nonaqueous
+                                    preparations for oral use (Total Aerobic Microbial Count NMT
+                                        10
+                                    <sup>3</sup>  CFU/gram, Total Combined Yeast and Mold Count
+                                    NMT 10
+                                    <sup>2</sup>  CFU/gram and absence of
+                                        
+                                </span>
+                                <i>
+                                    <span>Escherichia coli </span>
+                                </i>
+                                <span>in 1
+                                    gram), as stated in Sections 3.2.P.5.4 and 3.2.P.8.3.</span>
+                            </p>
+                            <p>
+                                <span>Per USP <921> </span>
+                                <i>
+                                    <span>Water
+                                    Determination</span>
+                                </i>
+                                <span>, the drug product specification
+                                    is set to NMT 1.0% at release and NMT 2.0% for shelf life as
+                                    described in Section 3.2.P.5.1. The water activity for the drug
+                                    product was confirmed to comply with the specifications as
+                                    stated in Sections 3.2.P.5.4 and 3.2.P.8.3. </span>
+                            </p>
+                            <p>
+                                <span>A product microbial risk evaluation conducted for the drug
+                                    product manufacturing site supports annual microbiological
+                                    quality testing at release and on stability following the
+                                    specification listed in Section 3.2.P.5.1. Input material,
+                                    manufacturing, process controls as well as environmental
+                                    controls are all in place to ensure consistent microbiological
+                                    quality. The excipients used in the manufacture of the product
+                                    are tested for microbiological quality as required by their
+                                    respective compendial requirements. This product demonstrates
+                                    satisfactory microbiological quality based on the results of all
+                                    batches evaluated. Microbiological quality testing will continue
+                                    to be monitored annually on the drug product for release and
+                                    throughout the stability study.</span>
+                            </p>
+                        </div>
+                    </div>
+                </text>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;DESC&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
     <!-- MedicinalProductDefinition - the main resource in any product scenario -->
     <entry>
         <fullUrl value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/>
         <resource>
             <!-- Section 1.1 - DP Identification -->
             <MedicinalProductDefinition>
+                <!-- unlinked -->
                 <id value=&quot;medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;/>
+                <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
@@ -40,243 +184,61 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </coding>
                 </route>
                 <name>
-                    <productName value=&quot;Stalbatolol&quot;/>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>
                 </name>
-                <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
-                        <valueRange>
-                            <low>
-                                <value value=&quot;23&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>
-                            </low>
-                            <high>
-                                <value value=&quot;27&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>
-                            </high>
-                        </valueRange>
-                    </extension>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;solubility-water&quot;/>
-                            <display value=&quot;Solubility purified water&quot;/>
-                        </coding>
-                    </type>
-                </characteristic>
-                <characteristic>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
-                            <display value=&quot;Water content&quot;/>
-                        </coding>
-                    </type>
-                    <valueQuantity>
-                        <value value=&quot;23&quot;/>
-                        <unit value=&quot;mg/mL&quot;/>
-                    </valueQuantity>
-                </characteristic>
             </MedicinalProductDefinition>
         </resource>
     </entry>
+    <!-- Section 8 - Batch or Lot Information (batch 1 of 3) -->
     <entry>
-        <fullUrl value=&quot;urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b&quot;/>
+        <fullUrl value=&quot;urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51&quot;/>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>
+                    </extension>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
         <resource>
             <Organization>
-                <id value=&quot;manufacturerPG&quot;/>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027651&quot;/>
-                </identifier>
-                <name value=&quot;Modified Sugar, Inc.&quot;/>
-                <contact>
-                    <address>
-                        <line value=&quot;381 Main Street&quot;/>
-                        <city value=&quot;Lumberton&quot;/>
-                        <state value=&quot;New Jersey&quot;/>
-                        <postalCode value=&quot;08048&quot;/>
-                        <country value=&quot;USA&quot;/>
-                    </address>
-                </contact>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>
             </Organization>
         </resource>
-    </entry>
-    <entry>
-        <fullUrl value=&quot;urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c&quot;/>
-        <resource>
-            <Organization>
-                <id value=&quot;manufacturerDGA&quot;/>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3012027651&quot;/>
-                </identifier>
-                <name value=&quot;Plasma Source, Inc.&quot;/>
-                <contact>
-                    <address>
-                        <line value=&quot;351 Main Street&quot;/>
-                        <city value=&quot;Lumberton&quot;/>
-                        <state value=&quot;New Jersey&quot;/>
-                        <postalCode value=&quot;08048&quot;/>
-                        <country value=&quot;USA&quot;/>
-                    </address>
-                </contact>
-            </Organization>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6&quot;/>
-        <resource>
-            <Ingredient>
-                <id value=&quot;ingredient1&quot;/>
-                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq&quot;>
-                    <valueBoolean value=&quot;true&quot;/>
-                </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
-                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>
-                </extension>
-                <status value=&quot;active&quot;/>
-                <for>
-                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                </for>
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>
-                    </coding>
-                </role>
-                <manufacturer>
-                    <manufacturer>
-                        <reference value=&quot;Organization/manufacturerPG&quot;/>
-                    </manufacturer>
-                </manufacturer>
-                <substance>
-                    <code>
-                        <reference>
-                            <reference value=&quot;SubstanceDefinition/pg&quot;/>
-                        </reference>
-                    </code>
-                </substance>
-            </Ingredient>
-        </resource>
-    </entry>
-    <!-- Section 2.1 - DP Composition - Product Component -->
-    <entry>
-        <fullUrl value=&quot;urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474&quot;/>
-        <resource>
-            <SubstanceDefinition>
-                <id value=&quot;pg&quot;/>
-                <name>
-                    <name value=&quot;Pegylated glucose&quot;/>
-                </name>
-                <sourceMaterial>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;NonBiological&quot;/>
-                            <display value=&quot;Non-biological&quot;/>
-                        </coding>
-                    </type>
-                    <countryOfOrigin>
-                        <coding>
-                            <system value=&quot;urn:iso:std:iso:3166&quot;/>
-                            <code value=&quot;GBR&quot;/>
-                            <display value=&quot;United Kingdom&quot;/>
-                        </coding>
-                    </countryOfOrigin>
-                </sourceMaterial>
-            </SubstanceDefinition>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65&quot;/>
-        <resource>
-            <Ingredient>
-                <id value=&quot;ingredient2&quot;/>
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
-                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>
-                </extension>
-                <status value=&quot;active&quot;/>
-                <for>
-                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                </for>
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>
-                    </coding>
-                </role>
-                <manufacturer>
-                    <manufacturer>
-                        <reference value=&quot;Organization/manufacturerDGA&quot;/>
-                    </manufacturer>
-                </manufacturer>
-                <substance>
-                    <code>
-                        <reference>
-                            <reference value=&quot;SubstanceDefinition/dga&quot;/>
-                        </reference>
-                    </code>
-                </substance>
-            </Ingredient>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value=&quot;urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475&quot;/>
-        <resource>
-            <SubstanceDefinition>
-                <id value=&quot;dga&quot;/>
-                <name>
-                    <name value=&quot;Deactivated goat albumin&quot;/>
-                </name>
-                <sourceMaterial>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;Animal&quot;/>
-                            <display value=&quot;animal&quot;/>
-                        </coding>
-                    </type>
-                    <species>
-                        <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000019&quot;/>
-                            <code value=&quot;200000000249&quot;/>
-                            <display value=&quot;Goat&quot;/>
-                        </coding>
-                    </species>
-                    <part>
-                        <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072054&quot;/>
-                            <code value=&quot;100000111138&quot;/>
-                            <display value=&quot;Plasma&quot;/>
-                        </coding>
-                    </part>
-                    <countryOfOrigin>
-                        <coding>
-                            <system value=&quot;urn:iso:std:iso:3166&quot;/>
-                            <code value=&quot;USA&quot;/>
-                            <display value=&quot;United States of America&quot;/>
-                        </coding>
-                    </countryOfOrigin>
-                </sourceMaterial>
-            </SubstanceDefinition>
-        </resource>
-    </entry>" id="Bundle-bundle-drug-product-excipients-pq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-drug-product-excipients-pq-ex1</div>
+    </entry>" id="Bundle-bundle-drug-product-microbiological-attributes-pq-ex1">Bundle</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/bundle.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/bundle.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/bundle.html#tt-uml">R6</a>]</span><div class="debugOff">id: bundle-drug-product-microbiological-attributes-pq-ex1</div>
 <div class="debugOff"></div>
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq</span></div>
 <div><span title="
 <Bundle>
     ...
@@ -284,14 +246,576 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 </div>
 </div>
 <div>
+<div ondblclick="summaryHandler(event)" class="indent summaryUnit comp"><a class="plainLink"><span class="bold" title="DiagnosticReport (id: microbiologicalReport)(fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)
+
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <!-- focal resource -->
+                <id value=&quot;microbiologicalReport&quot;/>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Microbiological Attributes Report&quot;/>
+                        <display value=&quot;Microbiological Attributes Report&quot;/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <effectiveDateTime value=&quot;2020-12&quot;/>
+                <!-- start of stability test -->
+                <result>
+                    <reference value=&quot;Observation/observationDescription&quot;/>
+                </result>" id="DiagnosticReport-microbiologicalReport">Diagnostic Report<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Microbiological Attributes Report&quot;/>
+                        <display value=&quot;Microbiological Attributes Report&quot;/>">Microbiological Attributes Report<span class="greyOff"> [Microbiological Attributes Report]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/diagnosticreport.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/diagnosticreport.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/diagnosticreport.html#tt-uml">R6</a>]</span><div class="debugOff">id: microbiologicalReport</div>
+<div class="debugOff"> fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd</div>
+<div class="summaryHiddenOff"></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <effectiveDateTime value=&quot;2020-12&quot;>">Date: 2020-12</span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Microbiological Attributes Report&quot;/>
+                        <display value=&quot;Microbiological Attributes Report&quot;/>
+                    </coding>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <code value=&quot;Microbiological Attributes Report&quot;/>
+                        <display value=&quot;Microbiological Attributes Report&quot;/>">Microbiological Attributes Report<span class="greyOff"> [Microbiological Attributes Report]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq)</span></span></span></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent compl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>
+                    </extension>
+                </code>" id="Medication-medication-actual-batch">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch</div><div class="debugOff"> fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51</div><span class="summaryShowsOff"><b></b></span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>">Definition</span>: Stelbat Tablets, 20mg (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div></div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="indent compText summaryUnit"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <result>
+                    <reference value=&quot;Observation/observationDescription&quot;/>">Result</span><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDescription)(fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <id value=&quot;observationDescription&quot;/>
+                <text>
+                    <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/showText&quot;>
+                        <valueBoolean value=&quot;true&quot;/>
+                    </extension>
+                    <status value=&quot;additional&quot;/>
+                    <div>
+                        <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
+                            <p>
+                                <span>The microbiological attributes of the excipients were
+                                    characterized during the development program. All excipients
+                                    meet USP <1111> </span>
+                                <i>
+                                    <span>Microbial Examination of
+                                        Nonsterile Products:</span>
+                                </i>
+                                <span/>
+                                <i>
+                                    <span>Acceptance Criteria for Pharmaceutical
+                                        Preparations and Substances for Pharmaceutical
+                                    Use</span>
+                                </i>
+                                <span/>
+                                <span>and Ph. Eur. 5.1.4
+                                        </span>
+                                <i>
+                                    <span>Microbiological quality of non-sterile
+                                        pharmaceutical preparations and substances for
+                                        pharmaceutical use</span>
+                                </i>
+                                <i>
+                                    <span>,</span>
+                                </i>
+                                <span>
+                                    when tested in accordance with USP <61> and
+                                    <62>,</span>
+                                <span/>
+                                <span>and Ph. Eur. 2.6.12 and
+                                    2.6.13, where applicable.</span>
+                            </p>
+                            <p>
+                                <span> Current Good Manufacturing Practices are used which minimize
+                                    the possibility for microbial contamination for the finished
+                                    product. This was confirmed via testing of three lots
+                                    manufactured at the commercial scale for the purpose of PPQ and
+                                    stability studies according to USP <61> and <62>.
+                                    All lots met the USP <1111> criteria for nonaqueous
+                                    preparations for oral use (Total Aerobic Microbial Count NMT
+                                        10
+                                    <sup>3</sup>  CFU/gram, Total Combined Yeast and Mold Count
+                                    NMT 10
+                                    <sup>2</sup>  CFU/gram and absence of
+                                        
+                                </span>
+                                <i>
+                                    <span>Escherichia coli </span>
+                                </i>
+                                <span>in 1
+                                    gram), as stated in Sections 3.2.P.5.4 and 3.2.P.8.3.</span>
+                            </p>
+                            <p>
+                                <span>Per USP <921> </span>
+                                <i>
+                                    <span>Water
+                                    Determination</span>
+                                </i>
+                                <span>, the drug product specification
+                                    is set to NMT 1.0% at release and NMT 2.0% for shelf life as
+                                    described in Section 3.2.P.5.1. The water activity for the drug
+                                    product was confirmed to comply with the specifications as
+                                    stated in Sections 3.2.P.5.4 and 3.2.P.8.3. </span>
+                            </p>
+                            <p>
+                                <span>A product microbial risk evaluation conducted for the drug
+                                    product manufacturing site supports annual microbiological
+                                    quality testing at release and on stability following the
+                                    specification listed in Section 3.2.P.5.1. Input material,
+                                    manufacturing, process controls as well as environmental
+                                    controls are all in place to ensure consistent microbiological
+                                    quality. The excipients used in the manufacture of the product
+                                    are tested for microbiological quality as required by their
+                                    respective compendial requirements. This product demonstrates
+                                    satisfactory microbiological quality based on the results of all
+                                    batches evaluated. Microbiological quality testing will continue
+                                    to be monitored annually on the drug product for release and
+                                    throughout the stability study.</span>
+                            </p>
+                        </div>
+                    </div>
+                </text>
+                <status value=&quot;final&quot;/>
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;DESC&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>
+                </code>
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>
+                </subject>
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;/>
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                </performer>
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>
+                </valueCodeableConcept>" id="Observation-observationDescription">Observation<span class="summaryShowsOff"> - <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;DESC&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDescription</div><div class="debugOff"> fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d</div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <text>
+                    <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/showText&quot;>
+                        <valueBoolean value=&quot;true&quot;/>
+                    </extension>
+                    <status value=&quot;additional&quot;/>
+                    <div>
+                        <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
+                            <p>
+                                <span>The microbiological attributes of the excipients were
+                                    characterized during the development program. All excipients
+                                    meet USP <1111> </span>
+                                <i>
+                                    <span>Microbial Examination of
+                                        Nonsterile Products:</span>
+                                </i>
+                                <span/>
+                                <i>
+                                    <span>Acceptance Criteria for Pharmaceutical
+                                        Preparations and Substances for Pharmaceutical
+                                    Use</span>
+                                </i>
+                                <span/>
+                                <span>and Ph. Eur. 5.1.4
+                                        </span>
+                                <i>
+                                    <span>Microbiological quality of non-sterile
+                                        pharmaceutical preparations and substances for
+                                        pharmaceutical use</span>
+                                </i>
+                                <i>
+                                    <span>,</span>
+                                </i>
+                                <span>
+                                    when tested in accordance with USP <61> and
+                                    <62>,</span>
+                                <span/>
+                                <span>and Ph. Eur. 2.6.12 and
+                                    2.6.13, where applicable.</span>
+                            </p>
+                            <p>
+                                <span> Current Good Manufacturing Practices are used which minimize
+                                    the possibility for microbial contamination for the finished
+                                    product. This was confirmed via testing of three lots
+                                    manufactured at the commercial scale for the purpose of PPQ and
+                                    stability studies according to USP <61> and <62>.
+                                    All lots met the USP <1111> criteria for nonaqueous
+                                    preparations for oral use (Total Aerobic Microbial Count NMT
+                                        10
+                                    <sup>3</sup>  CFU/gram, Total Combined Yeast and Mold Count
+                                    NMT 10
+                                    <sup>2</sup>  CFU/gram and absence of
+                                        
+                                </span>
+                                <i>
+                                    <span>Escherichia coli </span>
+                                </i>
+                                <span>in 1
+                                    gram), as stated in Sections 3.2.P.5.4 and 3.2.P.8.3.</span>
+                            </p>
+                            <p>
+                                <span>Per USP <921> </span>
+                                <i>
+                                    <span>Water
+                                    Determination</span>
+                                </i>
+                                <span>, the drug product specification
+                                    is set to NMT 1.0% at release and NMT 2.0% for shelf life as
+                                    described in Section 3.2.P.5.1. The water activity for the drug
+                                    product was confirmed to comply with the specifications as
+                                    stated in Sections 3.2.P.5.4 and 3.2.P.8.3. </span>
+                            </p>
+                            <p>
+                                <span>A product microbial risk evaluation conducted for the drug
+                                    product manufacturing site supports annual microbiological
+                                    quality testing at release and on stability following the
+                                    specification listed in Section 3.2.P.5.1. Input material,
+                                    manufacturing, process controls as well as environmental
+                                    controls are all in place to ensure consistent microbiological
+                                    quality. The excipients used in the manufacture of the product
+                                    are tested for microbiological quality as required by their
+                                    respective compendial requirements. This product demonstrates
+                                    satisfactory microbiological quality based on the results of all
+                                    batches evaluated. Microbiological quality testing will continue
+                                    to be monitored annually on the drug product for release and
+                                    throughout the stability study.</span>
+                            </p>
+                        </div>
+                    </div>" id="urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d">Text</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <text>
+                    ...
+                    <status value=&quot;additional&quot;>">Status: </span><span>additional</span></div><div class="indent white" title="
+                        <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
+                            <p>
+                                <span>The microbiological attributes of the excipients were
+                                    characterized during the development program. All excipients
+                                    meet USP <1111> </span>
+                                <i>
+                                    <span>Microbial Examination of
+                                        Nonsterile Products:</span>
+                                </i>
+                                <span/>
+                                <i>
+                                    <span>Acceptance Criteria for Pharmaceutical
+                                        Preparations and Substances for Pharmaceutical
+                                    Use</span>
+                                </i>
+                                <span/>
+                                <span>and Ph. Eur. 5.1.4
+                                        </span>
+                                <i>
+                                    <span>Microbiological quality of non-sterile
+                                        pharmaceutical preparations and substances for
+                                        pharmaceutical use</span>
+                                </i>
+                                <i>
+                                    <span>,</span>
+                                </i>
+                                <span>
+                                    when tested in accordance with USP <61> and
+                                    <62>,</span>
+                                <span/>
+                                <span>and Ph. Eur. 2.6.12 and
+                                    2.6.13, where applicable.</span>
+                            </p>
+                            <p>
+                                <span> Current Good Manufacturing Practices are used which minimize
+                                    the possibility for microbial contamination for the finished
+                                    product. This was confirmed via testing of three lots
+                                    manufactured at the commercial scale for the purpose of PPQ and
+                                    stability studies according to USP <61> and <62>.
+                                    All lots met the USP <1111> criteria for nonaqueous
+                                    preparations for oral use (Total Aerobic Microbial Count NMT
+                                        10
+                                    <sup>3</sup>  CFU/gram, Total Combined Yeast and Mold Count
+                                    NMT 10
+                                    <sup>2</sup>  CFU/gram and absence of
+                                        
+                                </span>
+                                <i>
+                                    <span>Escherichia coli </span>
+                                </i>
+                                <span>in 1
+                                    gram), as stated in Sections 3.2.P.5.4 and 3.2.P.8.3.</span>
+                            </p>
+                            <p>
+                                <span>Per USP <921> </span>
+                                <i>
+                                    <span>Water
+                                    Determination</span>
+                                </i>
+                                <span>, the drug product specification
+                                    is set to NMT 1.0% at release and NMT 2.0% for shelf life as
+                                    described in Section 3.2.P.5.1. The water activity for the drug
+                                    product was confirmed to comply with the specifications as
+                                    stated in Sections 3.2.P.5.4 and 3.2.P.8.3. </span>
+                            </p>
+                            <p>
+                                <span>A product microbial risk evaluation conducted for the drug
+                                    product manufacturing site supports annual microbiological
+                                    quality testing at release and on stability following the
+                                    specification listed in Section 3.2.P.5.1. Input material,
+                                    manufacturing, process controls as well as environmental
+                                    controls are all in place to ensure consistent microbiological
+                                    quality. The excipients used in the manufacture of the product
+                                    are tested for microbiological quality as required by their
+                                    respective compendial requirements. This product demonstrates
+                                    satisfactory microbiological quality based on the results of all
+                                    batches evaluated. Microbiological quality testing will continue
+                                    to be monitored annually on the drug product for release and
+                                    throughout the stability study.</span>
+                            </p>
+                        </div>"><div xmlns="http://www.w3.org/1999/xhtml"><div style="font-family: 'Times New Roman', Times, serif;"><p><span>The microbiological attributes of the excipients were
+                                    characterized during the development program. All excipients
+                                    meet USP &lt;1111&gt; </span><i><span>Microbial Examination of
+                                        Nonsterile Products:</span></i><span/><i><span>Acceptance Criteria for Pharmaceutical
+                                        Preparations and Substances for Pharmaceutical
+                                    Use</span></i><span/><span>and Ph. Eur. 5.1.4
+                                        </span><i><span>Microbiological quality of non-sterile
+                                        pharmaceutical preparations and substances for
+                                        pharmaceutical use</span></i><i><span>,</span></i><span>
+                                    when tested in accordance with USP &lt;61&gt; and
+                                    &lt;62&gt;,</span><span/><span>and Ph. Eur. 2.6.12 and
+                                    2.6.13, where applicable.</span></p><p><span>Current Good Manufacturing Practices are used which minimize
+                                    the possibility for microbial contamination for the finished
+                                    product. This was confirmed via testing of three lots
+                                    manufactured at the commercial scale for the purpose of PPQ and
+                                    stability studies according to USP &lt;61&gt; and &lt;62&gt;.
+                                    All lots met the USP &lt;1111&gt; criteria for nonaqueous
+                                    preparations for oral use (Total Aerobic Microbial Count NMT
+                                        10<sup>3</sup> CFU/gram, Total Combined Yeast and Mold Count
+                                    NMT 10<sup>2</sup> CFU/gram and absence of
+                                        </span><i><span>Escherichia coli </span></i><span>in 1
+                                    gram), as stated in Sections 3.2.P.5.4 and 3.2.P.8.3.</span></p><p><span>Per USP &lt;921&gt; </span><i><span>Water
+                                    Determination</span></i><span>, the drug product specification
+                                    is set to NMT 1.0% at release and NMT 2.0% for shelf life as
+                                    described in Section 3.2.P.5.1. The water activity for the drug
+                                    product was confirmed to comply with the specifications as
+                                    stated in Sections 3.2.P.5.4 and 3.2.P.8.3. </span></p><p><span>A product microbial risk evaluation conducted for the drug
+                                    product manufacturing site supports annual microbiological
+                                    quality testing at release and on stability following the
+                                    specification listed in Section 3.2.P.5.1. Input material,
+                                    manufacturing, process controls as well as environmental
+                                    controls are all in place to ensure consistent microbiological
+                                    quality. The excipients used in the manufacture of the product
+                                    are tested for microbiological quality as required by their
+                                    respective compendial requirements. This product demonstrates
+                                    satisfactory microbiological quality based on the results of all
+                                    batches evaluated. Microbiological quality testing will continue
+                                    to be monitored annually on the drug product for release and
+                                    throughout the stability study.</span></p></div></div></div></div><div class="summaryHiddenOff"></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <effectiveDateTime value=&quot;2023-01-01T12:00:00Z&quot;>">Date: 2023-01-01T12:00:00Z</span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;DESC&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>">Code: </span><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <code value=&quot;DESC&quot;/>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div><div class="summaryHiddenOff"></div><div title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueCodeableConcept>
+                    <text value=&quot;Complies&quot;/>">
+				Value:
+				<span style="white-space:normal;">Complies</span></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <subject>
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <id value=&quot;medication-actual-batch&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>
+                    </extension>
+                </code>" id="Medication-medication-actual-batch">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch</div><div class="debugOff"> fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51</div><span class="summaryShowsOff"><b></b></span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>">Definition</span>: Stelbat Tablets, 20mg (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div></div></div><div class="summaryHiddenOff"><div class="indent obsl2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <performer>
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--testing lab-->
+                <id value=&quot;378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>
+                <name value=&quot;Testing Lab&quot;/>" id="Organization-378fbe5f-5926-3a5c-4c64-5428df877b08">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: 378fbe5f-5926-3a5c-4c64-5428df877b08</div><div class="debugOff"> fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08</div><span class="summaryShowsOff"> - Testing Lab</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div>
+</div>
+</div>
 <div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-dxpq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
 
 <Bundle>
     <entry>
         <resource>
             <MedicinalProductDefinition>
+                <!-- unlinked -->
                 <id value=&quot;medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;/>
+                <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
@@ -307,49 +831,25 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </coding>
                 </route>
                 <name>
-                    <productName value=&quot;Stalbatolol&quot;/>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
-                </name>
-                <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
-                        <valueRange>
-                            <low>
-                                <value value=&quot;23&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>
-                            </low>
-                            <high>
-                                <value value=&quot;27&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>
-                            </high>
-                        </valueRange>
-                    </extension>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;solubility-water&quot;/>
-                            <display value=&quot;Solubility purified water&quot;/>
-                        </coding>
-                    </type>
-                </characteristic>
-                <characteristic>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
-                            <display value=&quot;Water content&quot;/>
-                        </coding>
-                    </type>
-                    <valueQuantity>
-                        <value value=&quot;23&quot;/>
-                        <unit value=&quot;mg/mL&quot;/>
-                    </valueQuantity>
-                </characteristic>" id="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1">Product</span></a><span class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medicinalproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medicinalproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medicinalproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: medicinalproductdefinition-drug-product-dxpq-ex1</div>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>
+                </name>" id="MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1">Product</span></a><span class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medicinalproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medicinalproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medicinalproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: medicinalproductdefinition-drug-product-dxpq-ex1</div>
 <div class="debugOff"> fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5</div></span><div class="summaryHiddenOff"></div><span class="summaryShowsOff"><b> - </b></span><span title="
 <Bundle>
     <entry>
@@ -357,14 +857,24 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 ...
                 <name>
-                    <productName value=&quot;Stalbatolol&quot;/>
+                    <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
-                    </type>" class="bold"><span class="summaryHiddenOff">Name: </span><span>Stalbatolol</span></span><div class="summaryHiddenOff">
+                    </type>
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>
+                    </part>" class="bold"><span class="summaryHiddenOff">Name: </span><span>Stelbat Tablets, 20mg</span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -374,8 +884,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
 <Bundle>
@@ -385,9 +895,25 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
-                            <code value=&quot;1234&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://accumulus.org/fhir/code/productNameType)</span></span></div>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div>
+<div title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                <name>
+                    ...
+                    <part>
+                        <part value=&quot;20mg&quot;/>
+                        <type>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/medicinal-product-name-part-type&quot;/>
+                                <code value=&quot;StrengthPart&quot;/>
+                                <display value=&quot;Strength part&quot;/>
+                            </coding>
+                        </type>"><span>Strength name part: </span><span>20mg</span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -396,7 +922,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <MedicinalProductDefinition>
                 ...
-                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;>">Description: </span><span>Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.</span></div>
+                <description value=&quot;Textual description of the product&quot;>">Description: </span><span>Textual description of the product</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -439,845 +965,37 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
                         <code value=&quot;100000073667&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div>
-<div class="summaryHiddenOff">
-<div class="indent mpdl2"><span title="
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="indent mpdl2 summaryUnit"><span title="Medication resource extension linking back to MedicinalProductDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq<br></span><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
+
 <Bundle>
     <entry>
         <resource>
-            <MedicinalProductDefinition>
-                ...
-                <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
-                        <valueRange>
-                            <low>
-                                <value value=&quot;23&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>
-                            </low>
-                            <high>
-                                <value value=&quot;27&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>
-                            </high>
-                        </valueRange>
+            <Medication>
+                <id value=&quot;medication-actual-batch&quot;/>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>
                     </extension>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;solubility-water&quot;/>
-                            <display value=&quot;Solubility purified water&quot;/>
-                        </coding>
-                    </type>">Characteristic</span><div><span title="
+                </code>" id="Medication-medication-actual-batch">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch</div><div class="debugOff"> fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51</div><span class="summaryShowsOff"><b></b></span><div><span title="
 <Bundle>
     <entry>
         <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    ...
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;solubility-water&quot;/>
-                            <display value=&quot;Solubility purified water&quot;/>
-                        </coding>">Type: <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;solubility-water&quot;/>
-                            <display value=&quot;Solubility purified water&quot;/>">Solubility purified water<span class="greyOff"> [solubility-water]</span><span class="greyOff"> (http://example.accumulus.org/fhir/code/substance-property)</span></span></span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
-                        <valueRange>
-                            <low>
-                                <value value=&quot;23&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>
-                            </low>
-                            <high>
-                                <value value=&quot;27&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>
-                            </high>">Value: from <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
-                        <valueRange>
-                            <low>
-                                <value value=&quot;23&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>">23 mg/mL</span> to <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
-                        <valueRange>
-                            ...
-                            <high>
-                                <value value=&quot;27&quot;/>
-                                <unit value=&quot;mg/mL&quot;/>">27 mg/mL</span></span></div>
+            <Medication>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
+                        <valueReference>
+                            <!-- todo consider change this be the MID? -->
+                            <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
+                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
+                        </valueReference>">Definition</span>: Stelbat Tablets, 20mg (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div></div>
 </div>
-</div>
-<div class="summaryHiddenOff">
-<div class="indent mpdl2"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                ...
-                <characteristic>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
-                            <display value=&quot;Water content&quot;/>
-                        </coding>
-                    </type>
-                    <valueQuantity>
-                        <value value=&quot;23&quot;/>
-                        <unit value=&quot;mg/mL&quot;/>
-                    </valueQuantity>">Characteristic</span><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
-                            <display value=&quot;Water content&quot;/>
-                        </coding>">Type: <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
-                            <display value=&quot;Water content&quot;/>">Water content<span class="greyOff"> [water-cotent]</span><span class="greyOff"> (http://example.accumulus.org/fhir/code/substance-property)</span></span></span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    ...
-                    <valueQuantity>
-                        <value value=&quot;23&quot;/>
-                        <unit value=&quot;mg/mL&quot;/>">Value: <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <MedicinalProductDefinition>
-                <characteristic>
-                    ...
-                    <valueQuantity>
-                        <value value=&quot;23&quot;/>
-                        <unit value=&quot;mg/mL&quot;/>">23 mg/mL</span></span></div>
-</div>
-</div>
-</div>
-<div class="summaryHiddenOff"></div>
-<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient1)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)
-
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                <id value=&quot;ingredient1&quot;/>
-                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq&quot;>
-                    <valueBoolean value=&quot;true&quot;/>
-                </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
-                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>
-                </extension>
-                <status value=&quot;active&quot;/>
-                <for>
-                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                </for>
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>
-                    </coding>
-                </role>
-                <manufacturer>
-                    <manufacturer>
-                        <reference value=&quot;Organization/manufacturerPG&quot;/>
-                    </manufacturer>
-                </manufacturer>
-                <substance>
-                    <code>
-                        <reference>
-                            <reference value=&quot;SubstanceDefinition/pg&quot;/>
-                        </reference>
-                    </code>
-                </substance>" id="Ingredient-ingredient1">Ingredient</span></a><span class="summaryShowsOff"> - <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient1</div>
-<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6</div>
-<div class="debugOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>
-                    </coding>">Role: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
-</div>
-<div class="summaryHiddenOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq&quot;>
-                    <valueBoolean value=&quot;true&quot;/>">Novel Excipient?: </span><span>true</span></div>
-<div class="summaryHiddenOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
-                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>">Suitability For Use: </span><span>Excipient has been certified for use in human medicinal products</span></div>
-<div class="indent ingsub"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <substance>
-                    <code>
-                        <reference>
-                            <reference value=&quot;SubstanceDefinition/pg&quot;/>
-                        </reference>
-                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: pg)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
-
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <id value=&quot;pg&quot;/>
-                <name>
-                    <name value=&quot;Pegylated glucose&quot;/>
-                </name>
-                <sourceMaterial>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;NonBiological&quot;/>
-                            <display value=&quot;Non-biological&quot;/>
-                        </coding>
-                    </type>
-                    <countryOfOrigin>
-                        <coding>
-                            <system value=&quot;urn:iso:std:iso:3166&quot;/>
-                            <code value=&quot;GBR&quot;/>
-                            <display value=&quot;United Kingdom&quot;/>
-                        </coding>
-                    </countryOfOrigin>
-                </sourceMaterial>" id="SubstanceDefinition-pg">Substance</span></a><span class="summaryShowsOff"><b> - Pegylated glucose</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: pg</div>
-<div class="debugOff"> fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474</div>
-<div class="summaryHiddenOff">
-<div class="indent sbddetails">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <name>
-                    <name value=&quot;Pegylated glucose&quot;>">Name: </span><span><span>Pegylated glucose</span></span></div>
-</div>
-</div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff">
-<div class="summaryHiddenOff">
-<div class="indent sbddetails2">
-						Source Material
-						<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;NonBiological&quot;/>
-                            <display value=&quot;Non-biological&quot;/>
-                        </coding>">Type: </span><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;NonBiological&quot;/>
-                            <display value=&quot;Non-biological&quot;/>">Non-biological<span class="greyOff"> [NonBiological]</span><span class="greyOff"> (http://hl7.org/fhir/substance-source-material-type)</span></span></span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    ...
-                    <countryOfOrigin>
-                        <coding>
-                            <system value=&quot;urn:iso:std:iso:3166&quot;/>
-                            <code value=&quot;GBR&quot;/>
-                            <display value=&quot;United Kingdom&quot;/>
-                        </coding>">Country Of Origin: </span><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    <countryOfOrigin>
-                        <coding>
-                            <system value=&quot;urn:iso:std:iso:3166&quot;/>
-                            <code value=&quot;GBR&quot;/>
-                            <display value=&quot;United Kingdom&quot;/>">United Kingdom<span class="greyOff"> [GBR]</span><span class="greyOff"> (urn:iso:std:iso:3166)</span></span></span></div>
-</div>
-</div>
-</div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff"></div>
-</div>
-<div class="summaryHiddenOff"></div>
-</div>
-<div class="summaryHiddenOff">
-<div class="indent prr"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                <manufacturer>
-                    <manufacturer>
-                        <reference value=&quot;Organization/manufacturerPG&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerPG)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b)
-
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <id value=&quot;manufacturerPG&quot;/>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027651&quot;/>
-                </identifier>
-                <name value=&quot;Modified Sugar, Inc.&quot;/>
-                <contact>
-                    <address>
-                        <line value=&quot;381 Main Street&quot;/>
-                        <city value=&quot;Lumberton&quot;/>
-                        <state value=&quot;New Jersey&quot;/>
-                        <postalCode value=&quot;08048&quot;/>
-                        <country value=&quot;USA&quot;/>
-                    </address>
-                </contact>" id="Organization-manufacturerPG">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturerPG</div>
-<div class="debugOff"> fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b</div><span class="summaryShowsOff"> - Modified Sugar, Inc.</span><div class="summaryHiddenOff">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027651&quot;/>">Identifier: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027651&quot;/>">3010027651<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
-</div>
-<div class="summaryHiddenOff">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <name value=&quot;Modified Sugar, Inc.&quot;>">Name: </span><span>Modified Sugar, Inc.</span></div>
-<div class="indent org2">
-					Contact
-					<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        <line value=&quot;381 Main Street&quot;/>
-                        <city value=&quot;Lumberton&quot;/>
-                        <state value=&quot;New Jersey&quot;/>
-                        <postalCode value=&quot;08048&quot;/>
-                        <country value=&quot;USA&quot;/>">Address: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        <line value=&quot;381 Main Street&quot;>">381 Main Street</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <city value=&quot;Lumberton&quot;>">Lumberton</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <state value=&quot;New Jersey&quot;>">New Jersey</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <postalCode value=&quot;08048&quot;>">08048</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <country value=&quot;USA&quot;>">USA</span></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient2)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)
-
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                <id value=&quot;ingredient2&quot;/>
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
-                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>
-                </extension>
-                <status value=&quot;active&quot;/>
-                <for>
-                    <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                </for>
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>
-                    </coding>
-                </role>
-                <manufacturer>
-                    <manufacturer>
-                        <reference value=&quot;Organization/manufacturerDGA&quot;/>
-                    </manufacturer>
-                </manufacturer>
-                <substance>
-                    <code>
-                        <reference>
-                            <reference value=&quot;SubstanceDefinition/dga&quot;/>
-                        </reference>
-                    </code>
-                </substance>" id="Ingredient-ingredient2">Ingredient</span></a><span class="summaryShowsOff"> - <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient2</div>
-<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65</div>
-<div class="debugOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>
-                    </coding>">Role: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                <role>
-                    <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
-                        <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
-</div>
-<div class="summaryHiddenOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
-                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>">Suitability For Use: </span><span>Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.</span></div>
-<div class="indent ingsub"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                ...
-                <substance>
-                    <code>
-                        <reference>
-                            <reference value=&quot;SubstanceDefinition/dga&quot;/>
-                        </reference>
-                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: dga)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475)
-
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <id value=&quot;dga&quot;/>
-                <name>
-                    <name value=&quot;Deactivated goat albumin&quot;/>
-                </name>
-                <sourceMaterial>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;Animal&quot;/>
-                            <display value=&quot;animal&quot;/>
-                        </coding>
-                    </type>
-                    <species>
-                        <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000019&quot;/>
-                            <code value=&quot;200000000249&quot;/>
-                            <display value=&quot;Goat&quot;/>
-                        </coding>
-                    </species>
-                    <part>
-                        <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072054&quot;/>
-                            <code value=&quot;100000111138&quot;/>
-                            <display value=&quot;Plasma&quot;/>
-                        </coding>
-                    </part>
-                    <countryOfOrigin>
-                        <coding>
-                            <system value=&quot;urn:iso:std:iso:3166&quot;/>
-                            <code value=&quot;USA&quot;/>
-                            <display value=&quot;United States of America&quot;/>
-                        </coding>
-                    </countryOfOrigin>
-                </sourceMaterial>" id="SubstanceDefinition-dga">Substance</span></a><span class="summaryShowsOff"><b> - Deactivated goat albumin</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: dga</div>
-<div class="debugOff"> fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475</div>
-<div class="summaryHiddenOff">
-<div class="indent sbddetails">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <name>
-                    <name value=&quot;Deactivated goat albumin&quot;>">Name: </span><span><span>Deactivated goat albumin</span></span></div>
-</div>
-</div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff">
-<div class="summaryHiddenOff">
-<div class="indent sbddetails2">
-						Source Material
-						<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;Animal&quot;/>
-                            <display value=&quot;animal&quot;/>
-                        </coding>">Type: </span><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    <type>
-                        <coding>
-                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;Animal&quot;/>
-                            <display value=&quot;animal&quot;/>">animal<span class="greyOff"> [Animal]</span><span class="greyOff"> (http://hl7.org/fhir/substance-source-material-type)</span></span></span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    ...
-                    <species>
-                        <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000019&quot;/>
-                            <code value=&quot;200000000249&quot;/>
-                            <display value=&quot;Goat&quot;/>
-                        </coding>">Species: </span><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    <species>
-                        <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000019&quot;/>
-                            <code value=&quot;200000000249&quot;/>
-                            <display value=&quot;Goat&quot;/>">Goat<span class="greyOff"> [200000000249]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000019)</span></span></span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    ...
-                    <part>
-                        <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072054&quot;/>
-                            <code value=&quot;100000111138&quot;/>
-                            <display value=&quot;Plasma&quot;/>
-                        </coding>">Part: </span><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    <part>
-                        <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072054&quot;/>
-                            <code value=&quot;100000111138&quot;/>
-                            <display value=&quot;Plasma&quot;/>">Plasma<span class="greyOff"> [100000111138]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072054)</span></span></span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    ...
-                    <countryOfOrigin>
-                        <coding>
-                            <system value=&quot;urn:iso:std:iso:3166&quot;/>
-                            <code value=&quot;USA&quot;/>
-                            <display value=&quot;United States of America&quot;/>
-                        </coding>">Country Of Origin: </span><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <SubstanceDefinition>
-                <sourceMaterial>
-                    <countryOfOrigin>
-                        <coding>
-                            <system value=&quot;urn:iso:std:iso:3166&quot;/>
-                            <code value=&quot;USA&quot;/>
-                            <display value=&quot;United States of America&quot;/>">United States of America<span class="greyOff"> [USA]</span><span class="greyOff"> (urn:iso:std:iso:3166)</span></span></span></div>
-</div>
-</div>
-</div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff"></div>
-</div>
-<div class="summaryHiddenOff"></div>
-</div>
-<div class="summaryHiddenOff">
-<div class="indent prr"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Ingredient>
-                <manufacturer>
-                    <manufacturer>
-                        <reference value=&quot;Organization/manufacturerDGA&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerDGA)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c)
-
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <id value=&quot;manufacturerDGA&quot;/>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3012027651&quot;/>
-                </identifier>
-                <name value=&quot;Plasma Source, Inc.&quot;/>
-                <contact>
-                    <address>
-                        <line value=&quot;351 Main Street&quot;/>
-                        <city value=&quot;Lumberton&quot;/>
-                        <state value=&quot;New Jersey&quot;/>
-                        <postalCode value=&quot;08048&quot;/>
-                        <country value=&quot;USA&quot;/>
-                    </address>
-                </contact>" id="Organization-manufacturerDGA">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturerDGA</div>
-<div class="debugOff"> fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c</div><span class="summaryShowsOff"> - Plasma Source, Inc.</span><div class="summaryHiddenOff">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3012027651&quot;/>">Identifier: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3012027651&quot;/>">3012027651<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
-</div>
-<div class="summaryHiddenOff">
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <name value=&quot;Plasma Source, Inc.&quot;>">Name: </span><span>Plasma Source, Inc.</span></div>
-<div class="indent org2">
-					Contact
-					<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        <line value=&quot;351 Main Street&quot;/>
-                        <city value=&quot;Lumberton&quot;/>
-                        <state value=&quot;New Jersey&quot;/>
-                        <postalCode value=&quot;08048&quot;/>
-                        <country value=&quot;USA&quot;/>">Address: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        <line value=&quot;351 Main Street&quot;>">351 Main Street</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <city value=&quot;Lumberton&quot;>">Lumberton</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <state value=&quot;New Jersey&quot;>">New Jersey</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <postalCode value=&quot;08048&quot;>">08048</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <country value=&quot;USA&quot;>">USA</span></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="summaryHiddenOff"></div>
 <div></div>
 </div>
 </div>
@@ -1414,8 +1132,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -1458,6 +1176,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }
@@ -2091,7 +1812,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
       --></SCRIPT><!--
 		(Thanks for reading this far - Rik :-)
 		Status information:
-		First resource in bundle:MedicinalProductDefinition
+		First resource in bundle:DiagnosticReport
 		Single resource bundle:false
 		Single resource bundle Not Patient Or Bundle:false
 		Single resource Not Patient:false
