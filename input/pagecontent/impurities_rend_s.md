@@ -22,6 +22,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <fullUrl value=&quot;urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb&quot;/>
         <resource>
             <SubstanceDefinition>
+                <!-- focal resource -->
                 <id value=&quot;substance1&quot;/>
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateSubstanceImpurities&quot;>
                     <valueBoolean value=&quot;true&quot;/>
@@ -797,6 +798,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <resource>
             <SubstanceDefinition>
+                <!-- focal resource -->
                 <id value=&quot;substance1&quot;/>
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateSubstanceImpurities&quot;>
                     <valueBoolean value=&quot;true&quot;/>
@@ -4549,8 +4551,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -4593,6 +4595,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }

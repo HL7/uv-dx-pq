@@ -21,6 +21,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
         <fullUrl value=&quot;urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
         <resource>
             <PlanDefinition>
+                <!-- focal resource -->
                 <id value=&quot;specificationProtocol&quot;/>
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;SPECIFICATION FOR DRUG SUBSTANCE&quot;/>
@@ -554,6 +555,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
     <entry>
         <resource>
             <PlanDefinition>
+                <!-- focal resource -->
                 <id value=&quot;specificationProtocol&quot;/>
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;SPECIFICATION FOR DRUG SUBSTANCE&quot;/>
@@ -653,6 +655,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
     <entry>
         <resource>
             <PlanDefinition>
+                <!-- focal resource -->
                 <id value=&quot;specificationProtocol&quot;/>
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <title value=&quot;SPECIFICATION FOR DRUG SUBSTANCE&quot;/>
@@ -3730,8 +3733,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -3774,6 +3777,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }

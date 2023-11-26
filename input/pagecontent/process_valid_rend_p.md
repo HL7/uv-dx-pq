@@ -1693,6 +1693,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <fullUrl value=&quot;urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd&quot;/>
         <resource>
             <DiagnosticReport>
+                <!-- focal resource -->
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
                 <id value=&quot;processValidationReport&quot;/>
@@ -4372,6 +4373,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <resource>
             <DiagnosticReport>
+                <!-- focal resource -->
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
                 <id value=&quot;processValidationReport&quot;/>
@@ -29119,8 +29121,8 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -29163,6 +29165,9 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }
