@@ -1,4 +1,5 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin & 3.2.P.4.6 Novel Excipients.<html>
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin & 3.2.P.4.6 Novel Excipients.
+<html>
 <body>
 <div class="greyable">
 <div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
@@ -42,14 +43,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
                             <code value=&quot;1234&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
                 </name>
                 <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq&quot;>
                         <valueRange>
                             <low>
                                 <value value=&quot;23&quot;/>
@@ -63,7 +64,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;solubility-water&quot;/>
                             <display value=&quot;Solubility purified water&quot;/>
                         </coding>
@@ -72,7 +73,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;water-cotent&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
@@ -132,14 +133,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6&quot;/>
+        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b&quot;/>
         <resource>
             <Ingredient>
                 <id value=&quot;ingredient1&quot;/>
-                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-pq&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
                     <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>
                 </extension>
                 <status value=&quot;active&quot;/>
@@ -181,8 +182,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;NonBiological&quot;/>
-                            <display value=&quot;Non-biological&quot;/>
+                            <code value=&quot;Mineral&quot;/>
+                            <display value=&quot;Mineral&quot;/>
+                            <!-- to mean &quot;non-biological&quot; -->
                         </coding>
                     </type>
                     <countryOfOrigin>
@@ -197,11 +199,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         </resource>
     </entry>
     <entry>
-        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65&quot;/>
+        <fullUrl value=&quot;urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b&quot;/>
         <resource>
             <Ingredient>
                 <id value=&quot;ingredient2&quot;/>
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
                     <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>
                 </extension>
                 <status value=&quot;active&quot;/>
@@ -309,14 +311,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
                             <code value=&quot;1234&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
                 </name>
                 <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq&quot;>
                         <valueRange>
                             <low>
                                 <value value=&quot;23&quot;/>
@@ -330,7 +332,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;solubility-water&quot;/>
                             <display value=&quot;Solubility purified water&quot;/>
                         </coding>
@@ -339,7 +341,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;water-cotent&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
@@ -359,7 +361,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
                             <code value=&quot;1234&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -373,7 +375,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
                             <code value=&quot;1234&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
@@ -384,9 +386,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://accumulus.org/fhir/code/productNameType&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
                             <code value=&quot;1234&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://accumulus.org/fhir/code/productNameType)</span></span></div>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -446,7 +448,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 ...
                 <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq&quot;>
                         <valueRange>
                             <low>
                                 <value value=&quot;23&quot;/>
@@ -460,7 +462,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;solubility-water&quot;/>
                             <display value=&quot;Solubility purified water&quot;/>
                         </coding>
@@ -473,7 +475,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;solubility-water&quot;/>
                             <display value=&quot;Solubility purified water&quot;/>
                         </coding>">Type: <span title="
@@ -484,16 +486,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;solubility-water&quot;/>
-                            <display value=&quot;Solubility purified water&quot;/>">Solubility purified water<span class="greyOff"> [solubility-water]</span><span class="greyOff"> (http://example.accumulus.org/fhir/code/substance-property)</span></span></span></div>
+                            <display value=&quot;Solubility purified water&quot;/>">Solubility purified water<span class="greyOff"> [solubility-water]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <MedicinalProductDefinition>
                 <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq&quot;>
                         <valueRange>
                             <low>
                                 <value value=&quot;23&quot;/>
@@ -508,7 +510,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <MedicinalProductDefinition>
                 <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq&quot;>
                         <valueRange>
                             <low>
                                 <value value=&quot;23&quot;/>
@@ -518,7 +520,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <MedicinalProductDefinition>
                 <characteristic>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq&quot;>
                         <valueRange>
                             ...
                             <high>
@@ -536,7 +538,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;water-cotent&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
@@ -552,7 +554,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;water-cotent&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>">Type: <span title="
@@ -563,9 +565,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.accumulus.org/fhir/code/substance-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
                             <code value=&quot;water-cotent&quot;/>
-                            <display value=&quot;Water content&quot;/>">Water content<span class="greyOff"> [water-cotent]</span><span class="greyOff"> (http://example.accumulus.org/fhir/code/substance-property)</span></span></span></div>
+                            <display value=&quot;Water content&quot;/>">Water content<span class="greyOff"> [water-cotent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -589,17 +591,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
-<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient1)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)
+<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient1)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b)
 
 <Bundle>
     <entry>
         <resource>
             <Ingredient>
                 <id value=&quot;ingredient1&quot;/>
-                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-pq&quot;>
                     <valueBoolean value=&quot;true&quot;/>
                 </extension>
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
                     <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>
                 </extension>
                 <status value=&quot;active&quot;/>
@@ -634,7 +636,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient1</div>
-<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6</div>
+<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b</div>
 <div class="debugOff"><span title="
 <Bundle>
     <entry>
@@ -670,7 +672,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <Ingredient>
                 ...
-                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-pq&quot;>
                     <valueBoolean value=&quot;true&quot;/>">Novel Excipient?: </span><span>true</span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
@@ -678,8 +680,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <Ingredient>
                 ...
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
-                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>">Suitability For Use: </span><span>Excipient has been certified for use in human medicinal products</span></div>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
+                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>">Extension: </span><span>Excipient has been certified for use in human medicinal products</span></div>
 <div class="indent ingsub"><span title="
 <Bundle>
     <entry>
@@ -692,7 +694,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <reference value=&quot;SubstanceDefinition/pg&quot;/>
                         </reference>
                     </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: pg)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
+<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: pg)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
 
 <Bundle>
     <entry>
@@ -706,8 +708,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;NonBiological&quot;/>
-                            <display value=&quot;Non-biological&quot;/>
+                            <code value=&quot;Mineral&quot;/>
+                            <display value=&quot;Mineral&quot;/>
+                            <!-- to mean &quot;non-biological&quot; -->
                         </coding>
                     </type>
                     <countryOfOrigin>
@@ -745,8 +748,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;NonBiological&quot;/>
-                            <display value=&quot;Non-biological&quot;/>
+                            <code value=&quot;Mineral&quot;/>
+                            <display value=&quot;Mineral&quot;/>
+                            <!-- to mean &quot;non-biological&quot; -->
                         </coding>">Type: </span><span><span title="
 <Bundle>
     <entry>
@@ -756,8 +760,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
-                            <code value=&quot;NonBiological&quot;/>
-                            <display value=&quot;Non-biological&quot;/>">Non-biological<span class="greyOff"> [NonBiological]</span><span class="greyOff"> (http://hl7.org/fhir/substance-source-material-type)</span></span></span></div>
+                            <code value=&quot;Mineral&quot;/>
+                            <display value=&quot;Mineral&quot;/>
+                            <!-- to mean &quot;non-biological&quot; -->">Mineral<span class="greyOff"> [Mineral]</span><span class="greyOff"> (http://hl7.org/fhir/substance-source-material-type)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -798,7 +803,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <manufacturer>
                     <manufacturer>
                         <reference value=&quot;Organization/manufacturerPG&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerPG)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b)
+<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerPG)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616b)
 
 <Bundle>
     <entry>
@@ -908,14 +913,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 </div>
 </div>
 </div>
-<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient2)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)
+<div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient2)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b)
 
 <Bundle>
     <entry>
         <resource>
             <Ingredient>
                 <id value=&quot;ingredient2&quot;/>
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
                     <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>
                 </extension>
                 <status value=&quot;active&quot;/>
@@ -950,7 +955,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient2</div>
-<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65</div>
+<div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b</div>
 <div class="debugOff"><span title="
 <Bundle>
     <entry>
@@ -986,8 +991,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <Ingredient>
                 ...
-                <extension url=&quot;http://accumulus.org/fhir/extension/suitabilityForUse&quot;>
-                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>">Suitability For Use: </span><span>Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.</span></div>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
+                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>">Extension: </span><span>Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.</span></div>
 <div class="indent ingsub"><span title="
 <Bundle>
     <entry>
@@ -1000,7 +1005,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <reference value=&quot;SubstanceDefinition/dga&quot;/>
                         </reference>
                     </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: dga)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475)
+<div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: dga)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475)
 
 <Bundle>
     <entry>
@@ -1166,7 +1171,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <manufacturer>
                     <manufacturer>
                         <reference value=&quot;Organization/manufacturerDGA&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerDGA)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c)
+<div class="debugOff"><span>Found a parent (Ingredient/manufacturer, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturerDGA)(fullUrl: urn:uuid:1e82ce23-7c09-2248-7a29-d7c65a06616c)
 
 <Bundle>
     <entry>
@@ -1413,8 +1418,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
     .plan { background-Color:#cfcfcf }
 
     .imm { background-Color:#83bdd6 }
-    .imml2 { background-Color: #98c5d9 }
-    .imml3 { background-Color: #afcedb }
+    .imml2 { background-Color: #afcedb }
+    .imml3 { background-Color: #bde1f0 }
 
     .org2,.act2,.pral2,.planl2 { background-Color:#dfdfdf }
     .loc { background-Color:#dfdfdf }
@@ -1457,6 +1462,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
     .serviceReql2 { background-Color:#d4fffd }
     .serviceReql3 { background-Color:#e8fcfc }
     .serviceReql4 { background-Color:#f2fcfc }
+
+    .supplyDel { background-Color:#5dded8 }
+    .supplyDell2 { background-Color:#93ede9 }
 
 	.cond { background-Color:#f4cccc }
     .condl2 { background-Color:#f5dcdc }
