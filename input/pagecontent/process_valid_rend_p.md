@@ -3721,7 +3721,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
@@ -16217,7 +16217,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
@@ -16242,7 +16242,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
@@ -16265,7 +16265,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
 <Bundle>
@@ -16276,8 +16276,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div><div title="
+                            <code value=&quot;Proprietary&quot;/>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -27732,7 +27732,7 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
@@ -27757,7 +27757,7 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
                     </type>
@@ -27780,7 +27780,7 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
+                            <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
 <Bundle>
@@ -27791,8 +27791,8 @@ Tag: SUBSETTED (http://terminology.hl7.org/CodeSystem/v3-ObservationValue)
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
-                            <code value=&quot;1234&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [1234]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div><div title="
+                            <code value=&quot;Proprietary&quot;/>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div><div title="
 <Bundle>
     <entry>
         <resource>

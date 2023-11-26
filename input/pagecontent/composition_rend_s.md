@@ -464,7 +464,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-re
                 <code>
                     <coding>
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
-                        <code value=&quot;APR&quot;/>
+                        <code value=&quot;AssignedPurity&quot;/>
                         <display value=&quot;Assigned Purity&quot;/>
                     </coding>
                 </code>
@@ -39560,7 +39560,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
                 <code>
                     <coding>
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
-                        <code value=&quot;APR&quot;/>
+                        <code value=&quot;AssignedPurity&quot;/>
                         <display value=&quot;Assigned Purity&quot;/>
                     </coding>
                 </code>
@@ -39592,8 +39592,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
                 <code>
                     <coding>
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
-                        <code value=&quot;APR&quot;/>
-                        <display value=&quot;Assigned Purity&quot;/>">Assigned Purity<span class="greyOff"> [APR]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AssignedPurity</div>
+                        <code value=&quot;AssignedPurity&quot;/>
+                        <display value=&quot;Assigned Purity&quot;/>">Assigned Purity<span class="greyOff"> [AssignedPurity]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AssignedPurity</div>
 <div class="debugOff"> fullUrl: urn:uuid:0634020c-8729-99fc-7637-897a9d7c445b</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b</div>
 <div class="summaryHiddenOff">
@@ -39626,7 +39626,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
                 <code>
                     <coding>
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
-                        <code value=&quot;APR&quot;/>
+                        <code value=&quot;AssignedPurity&quot;/>
                         <display value=&quot;Assigned Purity&quot;/>
                     </coding>">Code: </span><span><span title="
 <Bundle>
@@ -39636,8 +39636,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDef
                 <code>
                     <coding>
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
-                        <code value=&quot;APR&quot;/>
-                        <display value=&quot;Assigned Purity&quot;/>">Assigned Purity<span class="greyOff"> [APR]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
+                        <code value=&quot;AssignedPurity&quot;/>
+                        <display value=&quot;Assigned Purity&quot;/>">Assigned Purity<span class="greyOff"> [AssignedPurity]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
