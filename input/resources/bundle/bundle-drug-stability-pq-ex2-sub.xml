@@ -12,7 +12,7 @@
       <resource>
          <DiagnosticReport>
                 <!--studyResultsReport-->
-            <id value="54c8e8dc-9a19-0dc2-910e-d5a05d6ba003"/>
+            <id value="studyResultsReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
                         <!--PlanDefinition/stabilityStudyProtocol-->

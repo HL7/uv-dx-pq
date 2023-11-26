@@ -13,7 +13,7 @@
       <resource>
          <SubstanceDefinition>
         		<!--substance1-->
-            <id value="03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
+            <id value="substance1"/>
             <manufacturer>
         			<!--Organization/substance-manufacturer-->
                <reference value="Organization/062bf235-44e2-55c4-9213-bbe5e12d5620"/>

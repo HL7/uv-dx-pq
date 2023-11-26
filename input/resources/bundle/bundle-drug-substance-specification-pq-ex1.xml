@@ -11,7 +11,7 @@
       <resource>
          <PlanDefinition>
                 <!--specificationProtocol-->
-            <id value="bf6b038b-1334-3dd4-a552-65c169e2265a"/>
+            <id value="specificationProtocol"/>
             <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
