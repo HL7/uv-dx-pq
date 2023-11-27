@@ -47,5 +47,18 @@
             <path value="MedicinalProductDefinition.name"/>
             <mustSupport value="true"/>
         </element>
-    </differential>
+        <element id="MedicinalProductDefinition.characteristic">
+          <path value="MedicinalProductDefinition.characteristic"/>
+        </element>    
+        <element id="MedicinalProductDefinition.characteristic.type">
+          <path value="MedicinalProductDefinition.characteristic.type"/>
+          <binding>
+            <strength value="example"/>
+            <description
+              value="Example codes for MedicinalProduct.characteristic.type"/>
+            <valueSet
+              value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicinalproduct-characteristic-type"/>
+          </binding>
+        </element>    
+      </differential>
 </StructureDefinition>
