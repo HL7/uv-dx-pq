@@ -49,16 +49,26 @@
         </element>
         <element id="MedicinalProductDefinition.characteristic">
           <path value="MedicinalProductDefinition.characteristic"/>
-        </element>    
+        </element>
         <element id="MedicinalProductDefinition.characteristic.type">
           <path value="MedicinalProductDefinition.characteristic.type"/>
           <binding>
             <strength value="example"/>
-            <description
-              value="Example codes for MedicinalProduct.characteristic.type"/>
-            <valueSet
-              value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicinalproduct-characteristic-type"/>
+            <description value="Example codes for MedicinalProduct.characteristic.type"/>
+            <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicinalproduct-characteristic-type"/>
           </binding>
         </element>    
+        <element id="MedicinalProductDefinition.characteristic.valueQuantity.system">
+          <path value="MedicinalProductDefinition.characteristic.valueQuantity.system"/>
+          <patternUri value="http://unitsofmeasure.org"/>
+        </element>
+        <element id="MedicinalProductDefinition.characteristic.valueQuantity.code">
+          <path value="MedicinalProductDefinition.characteristic.valueQuantity.code"/> 
+          <binding>
+            <strength value="required"/>
+            <description value="UCUM codes for unit"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive"/>
+          </binding>
+        </element>
       </differential>
 </StructureDefinition>
