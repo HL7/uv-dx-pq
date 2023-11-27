@@ -1828,7 +1828,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 <div>
-<div class="org indent"><span class="bold">Elucidation of Structure - Substance, on Stelbatolol</span><br><br style="line-height:6px;"><div ondblclick="summaryHandler(event)" class="indent summaryUnit comp"><a class="plainLink"><span class="bold" title="DiagnosticReport (id: processValidationReport)(fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)
+<div class="org indent"><span class="bold">Substance Characterization - Substance, on Stelbatolol</span><br><br style="line-height:6px;"><div ondblclick="summaryHandler(event)" class="indent summaryUnit comp"><a class="plainLink"><span class="bold" title="DiagnosticReport (id: processValidationReport)(fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)
 
 <Bundle>
     <entry>
@@ -7210,6 +7210,584 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <name value=&quot;Testing Lab&quot;>">Name: </span><span>Testing Lab</span></div></div></div></div></div></div>
 </div>
 </div>
+<div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+<div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/code, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substancedefinition-component-substance-dxpq-ex1)(fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq 
+
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <id value=&quot;substancedefinition-component-substance-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq&quot;/>
+                </meta>
+                <manufacturer>
+                    <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
+                </manufacturer>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;/>
+                    <!-- #4 -->
+                </name>" id="SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substancedefinition-component-substance-dxpq-ex1</div>
+<div class="debugOff"> fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq</span></div>
+<div class="summaryHiddenOff">
+<div class="indent sbddetails">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div>
+</div>
+</div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff"></div>
+<div class="summaryHiddenOff">
+<div class="indent sbddetails2"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                ...
+                <manufacturer>
+                    <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
+<div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div>
+<div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--id value=&quot;substance-manufacturer&quot;/-->
+                <id value=&quot;organization-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div>
+<div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+</div>
+<div class="summaryHiddenOff">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div>
+<div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="summaryHiddenOff">
+<div></div>Subject of Plan: Elucidation of Structure (<a href="#PlanDefinition-characterizationProtocol" title="click to see target - id=characterizationProtocol">PlanDefinition</a>)<span class="debugOff"> id: characterizationProtocol</span></div>
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: substance-dxpq-ex1-unlinked)(fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
+
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <!--<id value=&quot;actual-batch-substance&quot;/>-->
+                <id value=&quot;substance-dxpq-ex1-unlinked&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
+                </meta>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                        <!-- #173 -->
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                        <valueDateTime value=&quot;2022-09-08&quot;/>
+                        <!-- #221 -->
+                    </extension>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-07&quot;/>
+                        <!-- #159 -->
+                    </extension>
+                    <extension url=&quot;batchQuantity&quot;>
+                        <!-- #157 -->
+                        <valueQuantity>
+                            <value value=&quot;5.1&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                            <!-- #158 -->
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.8&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;batchUtilization&quot;>
+                        <!-- #161 -->
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <code value=&quot;C133991&quot;/>
+                                <display value=&quot;Development&quot;/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;assignedManufacturer&quot;>
+                        <!-- #160 -->
+                        <valueReference>
+                            <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                </extension>
+                <identifier>
+                    <value value=&quot;SUB1Amgen&quot;/>
+                </identifier>
+                <!--identifier>
+            		<value value=&quot;SUB1SiteA&quot;/>
+            		<assigner>
+            			<reference value=&quot;Organization/testerSiteA&quot;/>
+            		</assigner>
+            	</identifier-->
+                <instance value=&quot;true&quot;/>
+                <code>
+                    <reference>
+                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
+                    </reference>
+                </code>" id="Substance-substance-dxpq-ex1-unlinked">Substance</span></a><span class="summaryShowsOff"><b> - SUB1Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-dxpq-ex1-unlinked</div><div class="debugOff"> fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                ...
+                <instance value=&quot;true&quot;>">Instance: </span><span><span>true</span></span></div><div class="summaryHiddenOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                ...
+                <identifier>
+                    <value value=&quot;SUB1Amgen&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                ...
+                <identifier>
+                    <value value=&quot;SUB1Amgen&quot;/>">SUB1Amgen</span></div><div><div class="indent sbddetails"><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                ...
+                <code>
+                    <reference>
+                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
+                    </reference>">Definition: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                ...
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                        <!-- #173 -->
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                        <valueDateTime value=&quot;2022-09-08&quot;/>
+                        <!-- #221 -->
+                    </extension>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-07&quot;/>
+                        <!-- #159 -->
+                    </extension>
+                    <extension url=&quot;batchQuantity&quot;>
+                        <!-- #157 -->
+                        <valueQuantity>
+                            <value value=&quot;5.1&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                            <!-- #158 -->
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.8&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;batchUtilization&quot;>
+                        <!-- #161 -->
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <code value=&quot;C133991&quot;/>
+                                <display value=&quot;Development&quot;/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;assignedManufacturer&quot;>
+                        <!-- #160 -->
+                        <valueReference>
+                            <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
+                        </valueReference>
+                    </extension>">Manufacturing</span><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-07&quot;>">Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;manufacturingDate&quot;>
+                        <valueDateTime value=&quot;2019-09-07&quot;>">2019-09-07</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                        <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                        <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;batchQuantity&quot;>
+                        <valueQuantity>
+                            <value value=&quot;5.1&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                            <!-- #158 -->">Quantity: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;batchQuantity&quot;>
+                        <valueQuantity>
+                            <value value=&quot;5.1&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                            <!-- #158 -->">5.1 kg</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.8&quot;/>
+                            <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.8&quot;/>
+                            <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    ...
+                    <extension url=&quot;batchUtilization&quot;>
+                        <!-- #161 -->
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <code value=&quot;C133991&quot;/>
+                                <display value=&quot;Development&quot;/>
+                            </coding>
+                        </valueCodeableConcept>">Utilization: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    <extension url=&quot;batchUtilization&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <code value=&quot;C133991&quot;/>
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
+                    ...
+                    <extension url=&quot;assignedManufacturer&quot;>
+                        <!-- #160 -->
+                        <valueReference>
+                            <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
+                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
+
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <!--id value=&quot;substance-manufacturer&quot;/-->
+                <id value=&quot;organization-dxpq-ex1&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>
+                    </address>
+                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
+					Contact
+					<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;/>
+                        <line value=&quot;Ste C&quot;/>
+                        <city value=&quot;Broomfield&quot;/>
+                        <state value=&quot;Colorado&quot;/>
+                        <postalCode value=&quot;80020&quot;/>
+                        <country value=&quot;USA&quot;/>">Address: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <contact>
+                    <address>
+                        ...
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div></div></div>
+</div>
+<div class="summaryHiddenOff"></div>
+</div>
 </div>
 <div class="org indent"><span class="bold">Report Specification</span><div class="indent plan summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (DiagnosticReport/valueReference, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="PlanDefinition (id: characterizationProtocol)(fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)
@@ -11459,437 +12037,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <definitionCanonical value=&quot;ObservationDefinition/Absorption&quot;/>
                     </action>
                 </action>">Triggered</span>: Characterization Report (<a href="#DiagnosticReport-processValidationReport" title="click to see target - id=processValidationReport">DiagnosticReport</a>)<span class="debugOff"> id: processValidationReport</span></div>
-</div>
-</div>
-<div class="org indent"><span class="bold">Subjects of Elucidation of Structure</span><br><br style="line-height:6px;"><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
-<div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div>
-<div class="debugOff"><span>Found a parent (Observation/subject, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: substance-dxpq-ex1-unlinked)(fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
-
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <!--<id value=&quot;actual-batch-substance&quot;/>-->
-                <id value=&quot;substance-dxpq-ex1-unlinked&quot;/>
-                <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
-                </meta>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                        <!-- #173 -->
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                        <!-- #221 -->
-                    </extension>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-07&quot;/>
-                        <!-- #159 -->
-                    </extension>
-                    <extension url=&quot;batchQuantity&quot;>
-                        <!-- #157 -->
-                        <valueQuantity>
-                            <value value=&quot;5.1&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                            <!-- #158 -->
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;batchUtilization&quot;>
-                        <!-- #161 -->
-                        <valueCodeableConcept>
-                            <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
-                                <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>
-                            </coding>
-                        </valueCodeableConcept>
-                    </extension>
-                    <extension url=&quot;assignedManufacturer&quot;>
-                        <!-- #160 -->
-                        <valueReference>
-                            <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
-                        </valueReference>
-                    </extension>
-                </extension>
-                <identifier>
-                    <value value=&quot;SUB1Amgen&quot;/>
-                </identifier>
-                <!--identifier>
-            		<value value=&quot;SUB1SiteA&quot;/>
-            		<assigner>
-            			<reference value=&quot;Organization/testerSiteA&quot;/>
-            		</assigner>
-            	</identifier-->
-                <instance value=&quot;true&quot;/>
-                <code>
-                    <reference>
-                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
-                    </reference>
-                </code>" id="Substance-substance-dxpq-ex1-unlinked">Substance</span></a><span class="summaryShowsOff"><b> - SUB1Amgen</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substance.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substance.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substance.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance-dxpq-ex1-unlinked</div>
-<div class="debugOff"> fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b</div>
-<div class="debugOff"></div>
-<div class="debugOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq</span></div>
-<div class="summaryHiddenOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                ...
-                <instance value=&quot;true&quot;>">Instance: </span><span><span>true</span></span></div>
-<div class="summaryHiddenOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                ...
-                <identifier>
-                    <value value=&quot;SUB1Amgen&quot;/>">Identifier: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                ...
-                <identifier>
-                    <value value=&quot;SUB1Amgen&quot;/>">SUB1Amgen</span></div>
-<div>
-<div class="indent sbddetails">
-<div></div><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                ...
-                <code>
-                    <reference>
-                        <reference value=&quot;SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1&quot;/>
-                    </reference>">Definition: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span></div>
-</div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff"></div>
-<div class="summaryHiddenOff">
-<div class="indent sbddetails"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                ...
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                        <!-- #173 -->
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                        <!-- #221 -->
-                    </extension>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-07&quot;/>
-                        <!-- #159 -->
-                    </extension>
-                    <extension url=&quot;batchQuantity&quot;>
-                        <!-- #157 -->
-                        <valueQuantity>
-                            <value value=&quot;5.1&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                            <!-- #158 -->
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;batchUtilization&quot;>
-                        <!-- #161 -->
-                        <valueCodeableConcept>
-                            <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
-                                <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>
-                            </coding>
-                        </valueCodeableConcept>
-                    </extension>
-                    <extension url=&quot;assignedManufacturer&quot;>
-                        <!-- #160 -->
-                        <valueReference>
-                            <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
-                        </valueReference>
-                    </extension>">Manufacturing</span><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-07&quot;>">Date: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;manufacturingDate&quot;>
-                        <valueDateTime value=&quot;2019-09-07&quot;>">2019-09-07</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;batchQuantity&quot;>
-                        <valueQuantity>
-                            <value value=&quot;5.1&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                            <!-- #158 -->">Quantity: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;batchQuantity&quot;>
-                        <valueQuantity>
-                            <value value=&quot;5.1&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                            <!-- #158 -->">5.1 kg</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>">4.8 kg</span></div>
-<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    ...
-                    <extension url=&quot;batchUtilization&quot;>
-                        <!-- #161 -->
-                        <valueCodeableConcept>
-                            <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
-                                <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>
-                            </coding>
-                        </valueCodeableConcept>">Utilization: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;batchUtilization&quot;>
-                        <valueCodeableConcept>
-                            <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
-                                <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div>
-<div></div><span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    ...
-                    <extension url=&quot;assignedManufacturer&quot;>
-                        <!-- #160 -->
-                        <valueReference>
-                            <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
-                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
-
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <!--id value=&quot;substance-manufacturer&quot;/-->
-                <id value=&quot;organization-dxpq-ex1&quot;/>
-                <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
-                </meta>
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3003040516&quot;/>
-                </identifier>
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
-                <contact>
-                    <address>
-                        <line value=&quot;7233 W 116th Pl&quot;/>
-                        <line value=&quot;Ste C&quot;/>
-                        <city value=&quot;Broomfield&quot;/>
-                        <state value=&quot;Colorado&quot;/>
-                        <postalCode value=&quot;80020&quot;/>
-                        <country value=&quot;USA&quot;/>
-                    </address>
-                </contact>" id="Organization-organization-dxpq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c</div><div class="debugOff"></div><div class="debugOff"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <identifier>
-                    <!-- FDA establishment identifier -->
-                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                ...
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
-					Contact
-					<div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        <line value=&quot;7233 W 116th Pl&quot;/>
-                        <line value=&quot;Ste C&quot;/>
-                        <city value=&quot;Broomfield&quot;/>
-                        <state value=&quot;Colorado&quot;/>
-                        <postalCode value=&quot;80020&quot;/>
-                        <country value=&quot;USA&quot;/>">Address: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        <line value=&quot;7233 W 116th Pl&quot;>">7233 W 116th Pl</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <line value=&quot;Ste C&quot;>">Ste C</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <city value=&quot;Broomfield&quot;>">Broomfield</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <state value=&quot;Colorado&quot;>">Colorado</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <postalCode value=&quot;80020&quot;>">80020</span>, <span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Organization>
-                <contact>
-                    <address>
-                        ...
-                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div>
-</div>
 </div>
 </div>
 </div>
