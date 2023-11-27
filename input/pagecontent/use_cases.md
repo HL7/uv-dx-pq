@@ -90,7 +90,7 @@ The regulator provides notice that the specification change and shelf-life exten
 ### Test Specification Change
 A sponsor plans to execute a change in the drug substance identity method and acceptance criteria, which will necessitate a change in the drug substance specification. The sponsor will send the details of the desired change to a contract manufacturing partner (CMO) to conduct the change assessment. To build the change request in FHIR, as described above in the previous examples, the sponsor will need to download and update the Specification Bundle before submitting it to the CMO.
 
-**Step 1: Acquire previously used data from the library
+**Step 1: Acquire previously used data from the library**
 To assist with the process of updating the Bundle, the sponsor can access the ObservationDefinition resources that serve as a comprehensive list of analytical procedures and test methods that will be maintained in a public repository, which can be pulled into the PQ Profile Library. Sponsors can access the test library via RESTful API, select the desired tests needed for their specification, and download them into their local repository.
 
 **Step 2: Build test specification**
