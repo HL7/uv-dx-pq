@@ -102,7 +102,7 @@
         </grouping>
         <!--        Additional Groupings -->
         <grouping id="building-blocks-1">
-            <name value="Component Building Blocks"/>
+            <name value="Component Building Block Profiles"/>
             <description value="FHIR artifacts used across many PQ domains."/>
         </grouping>
         <grouping id="building-blocks-2">
@@ -532,7 +532,7 @@
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Process Validation PQ - example, substance"/>
+            <name value="Bundle - Process Validation - example, substance"/>
             <description value="Example of Bundle - Process Validation for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
@@ -688,7 +688,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-specification-pq-ex1"/>
             </reference>
-            <name value="Bundle – Substance Specification PQ - example"/>
+            <name value="Bundle – Substance Specification - example"/>
             <description value="Example of Bundle – Substance Specification."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-pq"/>
@@ -949,7 +949,7 @@
                 <reference value="ActivityDefinition/LyophilizationAct"/>
             </reference>
             <name value="ActivityDefinition - Test - example 2"/>
-            <description value="Example of ActivityDefinition - Test Drug PQ for Lyophilization."/>
+            <description value="Example of ActivityDefinition - Test for Lyophilization."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1243,10 +1243,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-pq"/>
-                <display value="Extension - Actual Yield PQ"/>
+                <display value="Extension - Actual Yield"/>
             </reference>
-            <name value="Extension - Actual Yield PQ"/>
-            <description value="Extension - Actual Yield PQ"/>
+            <name value="Extension - Actual Yield"/>
+            <description value="Extension - Actual Yield"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1254,10 +1254,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-actual-yield-unfiltered-pq"/>
-                <display value="Extension - Actual Yield Unfiltered PQ"/>
+                <display value="Extension - Actual Yield Unfiltered"/>
             </reference>
-            <name value="Extension - Actual Yield Unfiltered PQ"/>
-            <description value="Extension - Actual Yield Unfiltered PQ"/>
+            <name value="Extension - Actual Yield Unfiltered"/>
+            <description value="Extension - Actual Yield Unfiltered"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1265,10 +1265,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-derived-from-pq"/>
-                <display value="Extension - Batch Derived From PQ"/>
+                <display value="Extension - Batch Derived From"/>
             </reference>
-            <name value="Extension - Batch Derived From PQ"/>
-            <description value="Extension - Batch Derived From PQ"/>
+            <name value="Extension - Batch Derived From"/>
+            <description value="Extension - Batch Derived From"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1276,10 +1276,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-designation-pq"/>
-                <display value="Extension - Batch Designation PQ"/>
+                <display value="Extension - Batch Designation"/>
             </reference>
-            <name value="Extension - Batch Designation PQ"/>
-            <description value="Extension - Batch Designation PQ"/>
+            <name value="Extension - Batch Designation"/>
+            <description value="Extension - Batch Designation"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1287,10 +1287,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-number-of-full-shelves-pq"/>
-                <display value="Extension - Batch Number of Full Shelves PQ"/>
+                <display value="Extension - Batch Number of Full Shelves"/>
             </reference>
-            <name value="Extension - Batch Number of Full Shelves PQ"/>
-            <description value="Extension - Batch Number of Full Shelves PQ"/>
+            <name value="Extension - Batch Number of Full Shelves"/>
+            <description value="Extension - Batch Number of Full Shelves"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1298,10 +1298,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-number-of-partial-shelves-pq"/>
-                <display value="Extension - Batch Number of Partial Shelves PQ"/>
+                <display value="Extension - Batch Number of Partial Shelves"/>
             </reference>
-            <name value="Extension - Batch Number of Partial Shelves PQ"/>
-            <description value="Extension - Batch Number of Partial Shelves PQ"/>
+            <name value="Extension - Batch Number of Partial Shelves"/>
+            <description value="Extension - Batch Number of Partial Shelves"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1309,10 +1309,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-number-of-vials-pq"/>
-                <display value="Extension - Batch Number of Vials PQ"/>
+                <display value="Extension - Batch Number of Vials"/>
             </reference>
-            <name value="Extension - Batch Number of Vials PQ"/>
-            <description value="Extension - Batch Number of Vials PQ"/>
+            <name value="Extension - Batch Number of Vials"/>
+            <description value="Extension - Batch Number of Vials"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1320,10 +1320,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-release-date-pq"/>
-                <display value="Extension - Batch Release Date PQ"/>
+                <display value="Extension - Batch Release Date"/>
             </reference>
-            <name value="Extension - Batch Release Date PQ"/>
-            <description value="Extension - Batch Release Date PQ"/>
+            <name value="Extension - Batch Release Date"/>
+            <description value="Extension - Batch Release Date"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1331,10 +1331,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-retest-date-pq"/>
-                <display value="Extension - Batch Retest Date PQ"/>
+                <display value="Extension - Batch Retest Date"/>
             </reference>
-            <name value="Extension - Batch Retest Date PQ"/>
-            <description value="Extension - Batch Retest Date PQ"/>
+            <name value="Extension - Batch Retest Date"/>
+            <description value="Extension - Batch Retest Date"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1342,10 +1342,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-storage-duration-pq"/>
-                <display value="Extension - Batch Storage Duration PQ"/>
+                <display value="Extension - Batch Storage Duration"/>
             </reference>
-            <name value="Extension - Batch Storage Duration PQ"/>
-            <description value="Extension - Batch Storage Duration PQ"/>
+            <name value="Extension - Batch Storage Duration"/>
+            <description value="Extension - Batch Storage Duration"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1353,10 +1353,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-batch-substance-batch-pq"/>
-                <display value="Extension - Batch Substance Batch PQ"/>
+                <display value="Extension - Batch Substance Batch"/>
             </reference>
-            <name value="Extension - Batch Substance Batch PQ"/>
-            <description value="Extension - Batch Substance Batch PQ"/>
+            <name value="Extension - Batch Substance Batch"/>
+            <description value="Extension - Batch Substance Batch"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1364,10 +1364,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-container-orientation-pq"/>
-                <display value="Extension - Container Orientation PQ"/>
+                <display value="Extension - Container Orientation"/>
             </reference>
-            <name value="Extension - Container Orientation PQ"/>
-            <description value="Extension - Container Orientation PQ"/>
+            <name value="Extension - Container Orientation"/>
+            <description value="Extension - Container Orientation"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1375,10 +1375,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-formulation-number-pq"/>
-                <display value="Extension - Formulation Number PQ"/>
+                <display value="Extension - Formulation Number"/>
             </reference>
-            <name value="Extension - Formulation Number PQ"/>
-            <description value="Extension - Formulation Number PQ"/>
+            <name value="Extension - Formulation Number"/>
+            <description value="Extension - Formulation Number"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1386,10 +1386,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-history-of-process-pq"/>
-                <display value="Extension - History of Process PQ"/>
+                <display value="Extension - History of Process"/>
             </reference>
-            <name value="Extension - History of Process PQ"/>
-            <description value="Extension - History of Process PQ"/>
+            <name value="Extension - History of Process"/>
+            <description value="Extension - History of Process"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1397,10 +1397,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-impurity-origin-pq"/>
-                <display value="Extension - Impurity Origin PQ"/>
+                <display value="Extension - Impurity Origin"/>
             </reference>
-            <name value="Extension - Impurity Origin PQ"/>
-            <description value="Extension - Impurity Origin PQ"/>
+            <name value="Extension - Impurity Origin"/>
+            <description value="Extension - Impurity Origin"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1408,10 +1408,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-participant-pq"/>
-                <display value="Extension - Manufacturing Participant PQ"/>
+                <display value="Extension - Manufacturing Participant"/>
             </reference>
-            <name value="Extension - Manufacturing Participant PQ"/>
-            <description value="Extension - Manufacturing Participant PQ"/>
+            <name value="Extension - Manufacturing Participant"/>
+            <description value="Extension - Manufacturing Participant"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1419,10 +1419,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-manufacturing-process-pq"/>
-                <display value="Extension - Manufacturing Process PQ"/>
+                <display value="Extension - Manufacturing Process"/>
             </reference>
-            <name value="Extension - Manufacturing Process PQ"/>
-            <description value="Extension - Manufacturing Process PQ"/>
+            <name value="Extension - Manufacturing Process"/>
+            <description value="Extension - Manufacturing Process"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1430,32 +1430,21 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-medication-definition-pq"/>
-                <display value="Extension - Medication Definition PQ"/>
+                <display value="Extension - Medication Definition"/>
             </reference>
-            <name value="Extension - Medication Definition PQ"/>
-            <description value="Extension - Medication Definition PQ"/>
+            <name value="Extension - Medication Definition"/>
+            <description value="Extension - Medication Definition"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-
-<!--        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-medication-manufacturing-batch-pq"/>
-                <display value="Extension - Medication Manufacturing Batch PQ"/>
-            </reference>
-            <name value="Extension - Medication Manufacturing Batch PQ"/>
-            <description value="Extension - Medication Manufacturing Batch PQ"/>
-            <isExample value="false"/>
-            <groupingId value="extensions1"/>
-        </resource>-->
         
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-novel-excipient-pq"/>
-                <display value="Extension - Novel Excipient PQ"/>
+                <display value="Extension - Novel Excipient"/>
             </reference>
-            <name value="Extension - Novel Excipient PQ"/>
-            <description value="Extension - Novel Excipient PQ"/>
+            <name value="Extension - Novel Excipient"/>
+            <description value="Extension - Novel Excipient"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1463,10 +1452,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-package-definition-pq"/>
-                <display value="Extension - Package Definition PQ"/>
+                <display value="Extension - Package Definition"/>
             </reference>
-            <name value="Extension - Package Definition PQ"/>
-            <description value="Extension - Package Definition PQ"/>
+            <name value="Extension - Package Definition"/>
+            <description value="Extension - Package Definition"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1474,10 +1463,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-date-pq"/>
-                <display value="Extension - Packaging Date PQ"/>
+                <display value="Extension - Packaging Date"/>
             </reference>
-            <name value="Extension - Packaging Date PQ"/>
-            <description value="Extension - Packaging Date PQ"/>
+            <name value="Extension - Packaging Date"/>
+            <description value="Extension - Packaging Date"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1485,10 +1474,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-packaging-site-pq"/>
-                <display value="Extension - Packaging Site PQ"/>
+                <display value="Extension - Packaging Site"/>
             </reference>
-            <name value="Extension - Packaging Site PQ"/>
-            <description value="Extension - Packaging Site PQ"/>
+            <name value="Extension - Packaging Site"/>
+            <description value="Extension - Packaging Site"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1496,10 +1485,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-plan-document-reference-pq"/>
-                <display value="Extension - Plan Document Reference PQ"/>
+                <display value="Extension - Plan Document Reference"/>
             </reference>
-            <name value="Extension - Plan Document Reference PQ"/>
-            <description value="Extension - Plan Document Reference PQ"/>
+            <name value="Extension - Plan Document Reference"/>
+            <description value="Extension - Plan Document Reference"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1507,10 +1496,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-parameters-pq"/>
-                <display value="Extension  - Process Parameters PQ"/>
+                <display value="Extension - Process Parameters"/>
             </reference>
-            <name value="Extension  - Process Parameters PQ"/>
-            <description value="Extension  - Process Parameters PQ"/>
+            <name value="Extension - Process Parameters"/>
+            <description value="Extension - Process Parameters"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1518,10 +1507,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-process-step-scale-pq"/>
-                <display value="Extension - Process Step Scale PQ"/>
+                <display value="Extension - Process Step Scale"/>
             </reference>
-            <name value="Extension - Process Step Scale PQ"/>
-            <description value="Extension - Process Step Scale PQ"/>
+            <name value="Extension - Process Step Scale"/>
+            <description value="Extension - Process Step Scale"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1529,10 +1518,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-criticality-pq"/>
-                <display value="Extension - Qualified Value Criticality PQ"/>
+                <display value="Extension - Qualified Value Criticality"/>
             </reference>
-            <name value="Extension - Qualified Value Criticality PQ"/>
-            <description value="Extension - Qualified Value Criticality PQ"/>
+            <name value="Extension - Qualified Value Criticality"/>
+            <description value="Extension - Qualified Value Criticality"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1540,10 +1529,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-display-pq"/>
-                <display value="Extension - Qualified Value Display PQ"/>
+                <display value="Extension - Qualified Value Display"/>
             </reference>
-            <name value="Extension - Qualified Value Display PQ"/>
-            <description value="Extension - Qualified Value Display PQ"/>
+            <name value="Extension - Qualified Value Display"/>
+            <description value="Extension - Qualified Value Display"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1551,10 +1540,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-target-pq"/>
-                <display value="Extension - Qualified Value Target PQ"/>
+                <display value="Extension - Qualified Value Target"/>
             </reference>
-            <name value="Extension - Qualified Value Target PQ"/>
-            <description value="Extension - Qualified Value Target PQ"/>
+            <name value="Extension - Qualified Value Target"/>
+            <description value="Extension - Qualified Value Target"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1562,10 +1551,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-qualified-value-text-pq"/>
-                <display value="Extension - Qualified Value Text PQ"/>
+                <display value="Extension - Qualified Value Text"/>
             </reference>
-            <name value="Extension - Qualified Value Text PQ"/>
-            <description value="Extension - Qualified Value Text PQ"/>
+            <name value="Extension - Qualified Value Text"/>
+            <description value="Extension - Qualified Value Text"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1573,10 +1562,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-site-utilization-pq"/>
-                <display value="Extension - Site Utilization PQ"/>
+                <display value="Extension - Site Utilization"/>
             </reference>
-            <name value="Extension - Site Utilization PQ"/>
-            <description value="Extension - Site Utilization PQ"/>
+            <name value="Extension - Site Utilization"/>
+            <description value="Extension - Site Utilization"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1584,10 +1573,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-statistical-model-pq"/>
-                <display value="Extension - Statistical Model PQ"/>
+                <display value="Extension - Statistical Model"/>
             </reference>
-            <name value="Extension - Statistical Model PQ"/>
-            <description value="Extension - Statistical Model PQ"/>
+            <name value="Extension - Statistical Model"/>
+            <description value="Extension - Statistical Model"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1595,10 +1584,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-substance-property-parameter-pq"/>
-                <display value="Extension - Substance Property Parameter PQ"/>
+                <display value="Extension - Substance Property Parameter"/>
             </reference>
-            <name value="Extension - Substance Property Parameter PQ"/>
-            <description value="Extension - Substance Property Parameter PQ"/>
+            <name value="Extension - Substance Property Parameter"/>
+            <description value="Extension - Substance Property Parameter"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1606,10 +1595,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-substance-property-range-pq"/>
-                <display value="Extension - Substance Property Range PQ"/>
+                <display value="Extension - Substance Property Range"/>
             </reference>
-            <name value="Extension - Substance Property Range PQ"/>
-            <description value="Extension - Substance Property Range PQ"/>
+            <name value="Extension - Substance Property Range"/>
+            <description value="Extension - Substance Property Range"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1617,10 +1606,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-suitability-for-use-pq"/>
-                <display value="Extension - Suitability For Use PQ"/>
+                <display value="Extension - Suitability For Use"/>
             </reference>
-            <name value="Extension - Suitability For Use PQ"/>
-            <description value="Extension - Suitability For Use PQ"/>
+            <name value="Extension - Suitability For Use"/>
+            <description value="Extension - Suitability For Use"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1628,10 +1617,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-target-fill-weight-pq"/>
-                <display value="Extension - Target Fill Weight PQ"/>
+                <display value="Extension - Target Fill Weight"/>
             </reference>
-            <name value="Extension - Target Fill Weight PQ"/>
-            <description value="Extension - Target Fill Weight PQ"/>
+            <name value="Extension - Target Fill Weight"/>
+            <description value="Extension - Target Fill Weight"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1639,10 +1628,10 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-test-comment-pq"/>
-                <display value="Extension - Test Comment PQ"/>
+                <display value="Extension - Test Comment"/>
             </reference>
-            <name value="Extension - Test Comment PQ"/>
-            <description value="Extension - Test Comment PQ"/>
+            <name value="Extension - Test Comment"/>
+            <description value="Extension - Test Comment"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1650,33 +1639,23 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-time-point-description-pq"/>
-                <display value="Extension - Time Point Description PQ"/>
+                <display value="Extension - Time Point Description"/>
             </reference>
-            <name value="Extension - Time Point Description PQ"/>
-            <description value="Extension - Time Point Description PQ"/>
+            <name value="Extension - Time Point Description"/>
+            <description value="Extension - Time Point Description"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
 
         <!--Terminology-->
-        <!--resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-local-codes-pq"/>
-                <display value="CodeSystem - Local Codes - PQ"/>
-            </reference>
-            <name value="CodeSystem - Local Codes - PQ"/>
-            <description value="CodeSystem - Local Codes - PQ"/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource-->
 
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-local-codes-drug-pq"/>
-                <display value="CodeSystem - Local Codes - Drug PQ"/>
+                <display value="CodeSystem - Example Codes - Drug"/>
             </reference>
-            <name value="CodeSystem - Local Codes - Drug PQ"/>
-            <description value="This code system contains temporary local codes for use in PQ."/>
+            <name value="CodeSystem - Example Codes - Drug"/>
+            <description value="This code system contains temporary example codes for use in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
@@ -1684,9 +1663,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-characterizationStep-local-pq"/>
-                <display value="CodeSystem - Characterization Step Local PQ"/>
+                <display value="CodeSystem - Characterization Step example codes"/>
             </reference>
-            <name value="CodeSystem - Characterization Step Local PQ"/>
+            <name value="CodeSystem - Characterization Step example codes"/>
             <description value="This code system contains local codes for characterization step in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1695,9 +1674,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-closureTypes-local-pq"/>
-                <display value="CodeSystem - Closure Types Local PQ"/>
+                <display value="CodeSystem - Closure Types example codes"/>
             </reference>
-            <name value="CodeSystem - Closure Types Local PQ"/>
+            <name value="CodeSystem - Closure Types example codes"/>
             <description value="This code system contains local codes for closure types in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1706,9 +1685,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-color-local-pq"/>
-                <display value="CodeSystem - Color Local PQ"/>
+                <display value="CodeSystem - Color example codes"/>
             </reference>
-            <name value="CodeSystem - Color Local PQ"/>
+            <name value="CodeSystem - Color example codes"/>
             <description value="This code system contains local codes for color in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1717,9 +1696,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-controlCriticality-local-pq"/>
-                <display value="CodeSystem - Control Criticality Local PQ"/>
+                <display value="CodeSystem - Control Criticality example codes"/>
             </reference>
-            <name value="CodeSystem - Control Criticality Local PQ"/>
+            <name value="CodeSystem - Control Criticality example codes"/>
             <description value="This code system contains local codes for control criticality in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1728,9 +1707,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-deviceProperty-local-pq"/>
-                <display value="CodeSystem - Device Property Local PQ"/>
+                <display value="CodeSystem - Device Property example codes"/>
             </reference>
-            <name value="CodeSystem - Device Property Local PQ"/>
+            <name value="CodeSystem - Device Property example codes"/>
             <description value="This code system contains local codes for device property in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1739,9 +1718,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-deviceType-local-pq"/>
-                <display value="CodeSystem - Device Type Local PQ"/>
+                <display value="CodeSystem - Device Type example codes"/>
             </reference>
-            <name value="CodeSystem - Device Type Local PQ"/>
+            <name value="CodeSystem - Device Type example codes"/>
             <description value="This code system contains local codes for device type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1750,9 +1729,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-diagramType-local-pq"/>
-                <display value="CodeSystem - Diagram Type Local PQ"/>
+                <display value="CodeSystem - Diagram Type example codes"/>
             </reference>
-            <name value="CodeSystem - Diagram Type Local PQ"/>
+            <name value="CodeSystem - Diagram Type example codes"/>
             <description value="This code system contains local codes for diagram type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1761,9 +1740,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-equipmentClass-local-pq"/>
-                <display value="CodeSystem - Equipment Class Local PQ"/>
+                <display value="CodeSystem - Equipment Class example codes"/>
             </reference>
-            <name value="CodeSystem - Equipment Class Local PQ"/>
+            <name value="CodeSystem - Equipment Class example codes"/>
             <description value="This code system contains local codes for equipment class in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1773,9 +1752,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-goalPriority-local-pq"/>
-                <display value="CodeSystem - Goal Priority Local PQ"/>
+                <display value="CodeSystem - Goal Priority example codes"/>
             </reference>
-            <name value="CodeSystem - Goal Priority Local PQ"/>
+            <name value="CodeSystem - Goal Priority example codes"/>
             <description value="This code system contains local codes for goal priority in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1784,9 +1763,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-grade-local-pq"/>
-                <display value="CodeSystem - Grade Local PQ"/>
+                <display value="CodeSystem - Grade example codes"/>
             </reference>
-            <name value="CodeSystem - Grade Local PQ"/>
+            <name value="CodeSystem - Grade example codes"/>
             <description value="This code system contains local codes for grade in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1795,9 +1774,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-ich-m7-classification-local-pq"/>
-                <display value="CodeSystem - ICH M7 Classification Local PQ"/>
+                <display value="CodeSystem - ICH M7 Classification example codes"/>
             </reference>
-            <name value="CodeSystem - ICH M7 Classification Local PQ"/>
+            <name value="CodeSystem - ICH M7 Classification example codes"/>
             <description value="This code system contains local codes for ICH M7 classification in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1806,9 +1785,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-impurity-origin-local-pq"/>
-                <display value="CodeSystem - Impurity Origin Local PQ"/>
+                <display value="CodeSystem - Impurity Origin example codes"/>
             </reference>
-            <name value="CodeSystem - Impurity Origin Local PQ"/>
+            <name value="CodeSystem - Impurity Origin example codes"/>
             <description value="This code system contains local codes for impurity origin in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1817,9 +1796,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-impurity-type-local-pq"/>
-                <display value="CodeSystem - Impurity Type Local PQ"/>
+                <display value="CodeSystem - Impurity Type example codes"/>
             </reference>
-            <name value="CodeSystem - Impurity Type Local PQ"/>
+            <name value="CodeSystem - Impurity Type example codes"/>
             <description value="This code system contains local codes for impurity type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1829,9 +1808,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                <display value="CodeSystem - Manufacturing Participant Role Local PQ"/>
+                <display value="CodeSystem - Manufacturing Participant Role example codes"/>
             </reference>
-            <name value="CodeSystem - Manufacturing Participant Role Local PQ"/>
+            <name value="CodeSystem - Manufacturing Participant Role example codes"/>
             <description value="This code system contains local codes for manufacturing participant role in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1840,9 +1819,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-manufacturingStep-local-pq"/>
-                <display value="CodeSystem - Manufacturing Step Local PQ"/>
+                <display value="CodeSystem - Manufacturing Step example codes"/>
             </reference>
-            <name value="CodeSystem - Manufacturing Step Local PQ"/>
+            <name value="CodeSystem - Manufacturing Step example codes"/>
             <description value="This code system contains local codes for manufacturing step in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1851,9 +1830,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-manufacturingStepScale-local-pq"/>
-                <display value="CodeSystem - Manufacturing Step Scale Local PQ"/>
+                <display value="CodeSystem - Manufacturing Step Scale example codes"/>
             </reference>
-            <name value="CodeSystem - Manufacturing Step Scale Local PQ"/>
+            <name value="CodeSystem - Manufacturing Step Scale example codes"/>
             <description value="This code system contains local codes for manufacturing step scale in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1862,9 +1841,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
-                <display value="CodeSystem - Mutagenicity Classification Type Local PQ"/>
+                <display value="CodeSystem - Mutagenicity Classification Type example codes"/>
             </reference>
-            <name value="CodeSystem - Mutagenicity Classification Type Local PQ"/>
+            <name value="CodeSystem - Mutagenicity Classification Type example codes"/>
             <description value="This code system contains local codes for mutagenicity classification type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1873,9 +1852,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-mutagenicity-local-pq"/>
-                <display value="CodeSystem - Mutagenicity Local PQ"/>
+                <display value="CodeSystem - Mutagenicity example codes"/>
             </reference>
-            <name value="CodeSystem - Mutagenicity Local PQ"/>
+            <name value="CodeSystem - Mutagenicity example codes"/>
             <description value="This code system contains local codes for mutagenicity in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1884,9 +1863,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-packageProperty-local-pq"/>
-                <display value="CodeSystem - Package Property Local PQ"/>
+                <display value="CodeSystem - Package Property example codes"/>
             </reference>
-            <name value="CodeSystem - Package Property Local PQ"/>
+            <name value="CodeSystem - Package Property example codes"/>
             <description value="This code system contains local codes for package property in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1894,9 +1873,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-planType-local-pq"/>
-                <display value="CodeSystem - Plan Type Local PQ"/>
+                <display value="CodeSystem - Plan Type example codes"/>
             </reference>
-            <name value="CodeSystem - Plan Type Local PQ"/>
+            <name value="CodeSystem - Plan Type example codes"/>
             <description value="This code system contains local codes for plan type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1905,9 +1884,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-processParameter-local-pq"/>
-                <display value="CodeSystem - Process Parameter Local PQ"/>
+                <display value="CodeSystem - Process Parameter example codes"/>
             </reference>
-            <name value="CodeSystem - Process Parameter Local PQ"/>
+            <name value="CodeSystem - Process Parameter example codes"/>
             <description value="This code system contains local codes for process parameter in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1916,9 +1895,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-productNameType-local-pq"/>
-                <display value="CodeSystem - Product Name Type Local PQ"/>
+                <display value="CodeSystem - Product Name Type example codes"/>
             </reference>
-            <name value="CodeSystem - Product Name Type Local PQ"/>
+            <name value="CodeSystem - Product Name Type example codes"/>
             <description value="This code system contains local codes for product name type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1927,9 +1906,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-productSiteUtilizationType-local-pq"/>
-                <display value="CodeSystem - Product Site Utilization Type Local PQ"/>
+                <display value="CodeSystem - Product Site Utilization Type example codes"/>
             </reference>
-            <name value="CodeSystem - Product Site Utilization Type Local PQ"/>
+            <name value="CodeSystem - Product Site Utilization Type example codes"/>
             <description value="This code system contains local codes for product site utilization type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1938,9 +1917,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
-                <display value="CodeSystem - Qualified Value Criticality Local PQ"/>
+                <display value="CodeSystem - Qualified Value Criticality example codes"/>
             </reference>
-            <name value="CodeSystem - Qualified Value Criticality Local PQ"/>
+            <name value="CodeSystem - Qualified Value Criticality example codes"/>
             <description value="This code system contains local codes for qualified value criticality in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1949,9 +1928,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-reportType-local-pq"/>
-                <display value="CodeSystem - Report Type Local PQ"/>
+                <display value="CodeSystem - Report Type example codes"/>
             </reference>
-            <name value="CodeSystem - Report Type Local PQ"/>
+            <name value="CodeSystem - Report Type example codes"/>
             <description value="This code system contains local codes for report type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1960,9 +1939,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-specification-type-local-pq"/>
-                <display value="CodeSystem - Specification Type Local PQ"/>
+                <display value="CodeSystem - Specification Type example codes"/>
             </reference>
-            <name value="CodeSystem - Specification Type Local PQ"/>
+            <name value="CodeSystem - Specification Type example codes"/>
             <description value="This code system contains local codes for specification type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1971,9 +1950,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-substance-property-local-pq"/>
-                <display value="CodeSystem - Substance Property Local PQ"/>
+                <display value="CodeSystem - Substance Property example codes"/>
             </reference>
-            <name value="CodeSystem - Substance Property Local PQ"/>
+            <name value="CodeSystem - Substance Property example codes"/>
             <description value="This code system contains local codes for substance property in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1981,9 +1960,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-substance-property-solubility-local-pq"/>
-                <display value="CodeSystem - Substance Property Solubility Local PQ"/>
+                <display value="CodeSystem - Substance Property Solubility example codes"/>
             </reference>
-            <name value="CodeSystem - Substance Property Solubility Local PQ"/>
+            <name value="CodeSystem - Substance Property Solubility example codes"/>
             <description value="This code system contains local codes for substance property solubility in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -1992,9 +1971,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-substancePropertyType-local-pq"/>
-                <display value="CodeSystem - Substance Property Type Local PQ"/>
+                <display value="CodeSystem - Substance Property Type example codes"/>
             </reference>
-            <name value="CodeSystem - Substance Property Type Local PQ"/>
+            <name value="CodeSystem - Substance Property Type example codes"/>
             <description value="This code system contains local codes for substance property type in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -2003,9 +1982,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-testCategory-local-pq"/>
-                <display value="CodeSystem - Test Category Local PQ"/>
+                <display value="CodeSystem - Test Category example codes"/>
             </reference>
-            <name value="CodeSystem - Test Category Local PQ"/>
+            <name value="CodeSystem - Test Category example codes"/>
             <description value="This code system contains local codes for test category in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
@@ -2014,9 +1993,9 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-timePointDescription-local-pq"/>
-                <display value="CodeSystem - Time Point Description Local PQ"/>
+                <display value="CodeSystem - Time Point Description example codes"/>
             </reference>
-            <name value="CodeSystem - Time Point Description Local PQ"/>
+            <name value="CodeSystem - Time Point Description example codes"/>
             <description value="This code system contains local codes for time point description in PQ."/>
             <isExample value="false"/>
             <groupingId value="term"/>
