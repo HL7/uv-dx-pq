@@ -111,10 +111,7 @@
         <grouping id="extensions1">
             <name value="Extensions"/>
         </grouping>
-        <grouping id="term">
-            <name value="Terminology: Example Code Systems"/>
-            <description value="Examples of code systems that may be defined and used within a local implementation, such as within one organization."/>
-        </grouping>
+
         <grouping id="examples1">
             <name value="Additional ObservationDefinition Examples"/>
         </grouping>
@@ -126,6 +123,10 @@
         </grouping>
         <grouping id="examples4">
             <name value="Additional Observation Examples"/>
+        </grouping>
+        <grouping id="term">
+            <name value="Terminology: Example Code Systems"/>
+            <description value="Examples of code systems that may be defined and used within a local implementation, such as within one organization."/>
         </grouping>
 
         <!-- Identification (b1-id)-->
