@@ -2,39 +2,51 @@
 Provide details about drug substance and drug product components, materials, and Quality reference standards.
 
 ### Component Diagram
+Product Composition:
 <table>
-<tr><td>  </td></tr>
+<tr><td><img src="product_description_and_composition.png" width="500"/></td></tr>
+</table>
+<table>
+Reference Standards:
+<tr><td><img src="reference_standards_substance_resources.png" width="700"/></td></tr>
 </table>
  
 ### Description of Components
 #### Drug Product Composition
-**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
-
 **Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
 
-**Packaged Product Definition**: Information about the packaging for a drug product or drug substance
+**Ingredient**: The active ingredient (stelbatalol) and other ingredients that make up the product
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
+**SubstanceDefinition**: Substances that make up the ingredients of this product 
+
+**PackagedProductDefinition**: Information about the packaging for the product
+
 
 #### Drug Reference Standards
-**Diagnostic Report**: Contains all rest results as a group and captures conclusions
+**SubstanceDefinition**: The substance for which reference standards are being established 
 
-**Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
+**Substance**: Identifying information about an actual batch of substance (an instance)
 
-**Observation**: The results of a specific test mentioned in the Observation Definition
+**PlanDefinition**: Describes the reference standards set of tests
 
-**Organization**: The company/site that performed the testing or manufacturing
+**ObservationDefinition**: Each individual reference test and acceptance criteria
 
-**Plan Definition**: Describes the stability study protocol
+**Observation**: The results of a specific test, as mentioned in the ObservationDefinition
 
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
+**DiagnosticReport**: Contains all results as a group and captures conclusions
 
-**Substance**: Identifying information about an actual batch of aubstance (an instance)
+**Organization**: The company/site that performed the testing or manufacturing (not illustrated)
+
+
 
 ### Examples
 **CTD section samples** (PDF):
 - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.1_Description_Composition.pdf ">3.2.P.1 Description and Composition of the Drug Product</a>
 - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.5_Reference_Standards_or_Materials.pdf ">3.2.S.5 Reference Standards or Materials</a> (3.2.P.6 Reference Standards or Materials is similar.)
+
+**XML/JOSN rendering** of synthetic CTD data:
+- <a href="Bundle-bundle-drug-product-composition-pq-ex1.html">Drug Product Composition</a>
+- <a href="Bundle-bundle-drug-reference-standards-pq-ex2-sub.html">Drug Substance Reference Standards or Materials</a>
 
 **HTML rendering** of synthetic CTD data:
 - <a href="composition_rend_p.html">Drug Product Composition</a>

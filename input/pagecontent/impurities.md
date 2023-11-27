@@ -1,35 +1,57 @@
-### Objective
-Provide details about impurity identification and characterization.
 
-### Component Diagram
+Details about impurity identification and characterization.
+
+### Product 
+
 <table>
-<tr><td><img src="impurities_FHIR_resources.png" width="850"/></td></tr>
+<tr><td><img src="impurities_FHIR_resources.png" width="600"/></td></tr>
 </table>
  
-### Description of Components
-**Diagnostic Report**: Contains all rest results as a group and captures conclusions
+#### Resources
+<table>
+<tr><td>MedicinalProductDefinition</td><td>The drug product (Stelbat tablets, 20mg)</td></tr>  
+<tr><td>SubstanceDefinition</td><td>The documented impurites</td></tr>
+<tr><td>Medication</td><td>Describes the batches of the product that underwent testing for impurities</td></tr>
+<tr><td>Observation</td><td>The results of testing for impurities in the batches</td></tr>
+<tr><td>Organization</td><td>The company/site that performed the testing, or manufactured the batch</td></tr>
+<tr><td>DiagnosticReport</td><td>Contains all results as a group, with conclusions</td></tr>
+</table>
 
-**Document Reference**: Document(s) of any kind, including a diagram or image
-
-**Medication**: Describes the batches that underwent testing
-
-**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
-
-**Observation**: The results of a specific test
-
-**Organization**: The company/site that performed the testing or manufacturing
-
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)
-
-### Examples
-**CTD section samples** (PDF):
+#### Examples
+**eCTD section synthetic source data samples** (PDF):
 - 3.2.P.5 Control of Drug Product
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.5.5_Characterisation_of_Impurities.pdf ">3.2.P.5.5 Characterisation of Impurities</a>
+
+**XML and JSON examples** of synthetic CTD data:
+- <a href="Bundle-bundle-product-impurities-pq-ex1.xml.html">Product Impurities example XML</a>
+- <a href="Bundle-bundle-product-impurities-pq-ex1.json.html">Product Impurities example JSON</a>
+
+**HTML presentation example** of synthetic CTD data:
+- <a href="impurities_rend_p.html">Product Impurities example HTML</a>
+
+### Substance
+<table>
+<tr><td><img src="impurities_substance_resources.png" width="700"/></td></tr>
+</table>
+
+#### Resources
+<table>
+<tr><td>SubstanceDefinition</td><td>The substance itself and its impurities as substances</td></tr>
+<tr><td>DocumentReference</td><td>Image files e.g. for molecular structure</td></tr>
+</table>
+
+#### Examples
+
+**eCTD section synthetic source data samples** (PDF):
 - 3.2.S.3 Characterisation
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.3.2_Impurities.pdf ">3.2.S.3.2 Impurities</a>
 
-**HTML rendering** of synthetic CTD data:
-- <a href="impurities_rend_p.html">Drug Product Impurities</a>
-- <a href="impurities_rend_s.html">Drug Substance Impurities</a>
-- 
-**FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Impurities](artifacts.html#impurities)
+**XML and JSON examples** of synthetic CTD data:
+- <a href="Bundle-bundle-product-impurities-pq-ex2-sub.xml.html">Substance Impurities example XML</a>
+- <a href="Bundle-bundle-product-impurities-pq-ex2-sub.json.html">Substance Impurities example JSON</a>
+
+**HTML presentation example** of synthetic CTD data:
+- <a href="impurities_rend_s.html">Substance Impurities example HTML</a>
+
+### Profiles 
+See [Artifacts Index: Impurities](artifacts.html#impurities)
