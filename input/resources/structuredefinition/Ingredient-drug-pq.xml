@@ -21,6 +21,15 @@
       <path value="Ingredient.identifier"/>
       <mustSupport value="true"/>
     </element>
+    <element id="Ingredient.role">
+      <path value="Ingredient.role"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A classification of the ingredient identifying its purpose within the product,
+         e.g. active, inactive."/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/ingredient-role"/> 
+      </binding>
+    </element>
     <element id="Ingredient.substance.code">
       <path value="Ingredient.substance.code"/>
       <short value="Ingredient Substance"/>

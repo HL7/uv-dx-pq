@@ -132,7 +132,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-pq"/>
-                <display value="Bundle – Drug Product PQ"/>
+                <display value="Bundle – Drug Product - profile"/>
             </reference>
             <name value="Bundle – Drug Product PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product."/>
@@ -143,7 +143,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
-                <display value="Bundle – Drug Product Microbiological Attributes PQ"/>
+                <display value="Bundle – Drug Product Microbiological Attributes - profile"/>
             </reference>
             <name value="Bundle – Drug Product Microbiological Attributes PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.5 Microbiological Attributes."/>
@@ -154,7 +154,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
-                <display value="Bundle – Drug Product Excipients PQ"/>
+                <display value="Bundle – Drug Product Excipients - profile"/>
             </reference>
             <name value="Bundle – Drug Product Excipients PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin and 3.2.P.4.6 Novel Excipients."/>
@@ -165,7 +165,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
-                <display value="Bundle – Drug Substance General Properties PQ"/>
+                <display value="Bundle – Drug Substance General Properties - profile"/>
             </reference>
             <name value="Bundle – Drug Substance General Properties PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.S.1 General Information, subsection 3.2.S.1.3 General Properties."/>
@@ -176,7 +176,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
-                <display value="Bundle – Drug Substance Characterization PQ"/>
+                <display value="Bundle – Drug Substance Characterization - profile"/>
             </reference>
             <name value="Bundle – Drug Substance Characterization PQ"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.1 – Elucidation of Structure and Other Characteristics."/>
@@ -188,8 +188,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Product PQ - Example"/>
-            <description value="Example of Bundle – Drug Product PQ for drug product."/>
+            <name value="Bundle – Drug Product - example"/>
+            <description value="Example of Bundle – Drug Product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq"/>
             <groupingId value="b1-id"/>
@@ -199,8 +199,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-microbiological-attributes-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Product Microbiological Attributes PQ - Example"/>
-            <description value="Example of Bundle – Drug Product Microbiological Attributes PQ for drug product."/>
+            <name value="Bundle – Drug Product Microbiological Attributes - example"/>
+            <description value="Example of Bundle – Drug Product Microbiological Attributes."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
             <groupingId value="b1-id"/>
@@ -210,8 +210,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-excipients-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Product Excipients PQ - Example"/>
-            <description value="Example of Bundle – Drug Product Excipients PQ for drug product."/>
+            <name value="Bundle – Drug Product Excipients - example"/>
+            <description value="Example of Bundle – Drug Product Excipients."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq"/>
             <groupingId value="b1-id"/>
@@ -221,8 +221,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-general-properties-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Substance General Properties PQ - Example"/>
-            <description value="Example of Bundle – Drug Substance General Properties PQ for drug substance."/>
+            <name value="Bundle – Drug Substance General Properties - example"/>
+            <description value="Example of Bundle – Drug Substance General Properties."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
             <groupingId value="b1-id"/>
@@ -232,8 +232,8 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-characterization-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Substance Characterization PQ - Example"/>
-            <description value="Example of Bundle – Drug Substance Characterization PQ for drug substance."/>
+            <name value="Bundle – Drug Substance Characterization - example"/>
+            <description value="Example of Bundle – Drug Substance Characterization."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
             <groupingId value="b1-id"/>
