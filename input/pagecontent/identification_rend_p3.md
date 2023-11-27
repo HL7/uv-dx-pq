@@ -80,7 +80,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
+                            <code value=&quot;water-content&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
                     </type>
@@ -348,7 +348,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
+                            <code value=&quot;water-content&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
                     </type>
@@ -545,7 +545,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
+                            <code value=&quot;water-content&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
                     </type>
@@ -561,7 +561,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
+                            <code value=&quot;water-content&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>">Type: <span title="
 <Bundle>
@@ -572,8 +572,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <type>
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
-                            <code value=&quot;water-cotent&quot;/>
-                            <display value=&quot;Water content&quot;/>">Water content<span class="greyOff"> [water-cotent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <code value=&quot;water-content&quot;/>
+                            <display value=&quot;Water content&quot;/>">Water content<span class="greyOff"> [water-content]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>

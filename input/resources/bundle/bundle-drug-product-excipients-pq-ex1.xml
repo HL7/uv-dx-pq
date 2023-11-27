@@ -63,7 +63,7 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
-                     <code value="water-cotent"/>
+                     <code value="water-content"/>
                      <display value="Water content"/>
                   </coding>
                </type>

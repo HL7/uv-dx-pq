@@ -16,7 +16,7 @@
         <display value="Solubility purified water"/>
     </concept>
     <concept>
-        <code value="water-cotent"/>
+        <code value="water-content"/>
         <display value="Water content"/>
     </concept>
     <concept>
