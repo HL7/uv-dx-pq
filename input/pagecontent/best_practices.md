@@ -12,3 +12,6 @@ The developers of this guide recommend that user interface applications implemen
 - Content for requirements specified in this implementation guide:
   - ICH, *Quality Guidelines*, [https://www.ich.org/page/quality-guidelines](https://www.ich.org/page/quality-guidelines)
   - ISO standards listed on [https://www.iso.org/news/ref2234.html](https://www.iso.org/news/ref2234.html)
+
+- [Global Substance Registration System (G-SRS)](https://gsrs.ncats.nih.gov/ginas/app/beta/)
+
