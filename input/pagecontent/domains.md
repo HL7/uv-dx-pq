@@ -81,7 +81,8 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
   <tr>
     <td class="tg-0lax">8. Manufacturing Process</td>
     <td class="tg-0lax">3.2.P.3 Manufacture
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.3 Description of Manufacturing Process and Process Controls</td>
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.3 Description of Manufacturing Process and Process Controls
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.4 Controls of Critical Steps and Intermediates</td>
     <td class="tg-0lax">3.2.S.2 Manufacture
     <br>&nbsp;&nbsp;&nbsp;3.2.S.2.2 Description of Manufacturing Process and Process Controls</td>
   </tr>
@@ -101,7 +102,9 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
   </tr>
   <tr>
     <td class="tg-0lax">11. Container Closure System</td>
-    <td class="tg-0lax">3.2.P.7 Container Closure System</td>
+    <td class="tg-0lax">3.2.P.2 Pharmaceutical Development
+   <br>&nbsp;&nbsp;&nbsp;3.2.P.2.4 Container Closure System
+   <br>3.2.P.7 Container Closure System</td>
     <td class="tg-0lax">3.2.S.6 Container Closure System</td>
   </tr>
   <tr>
