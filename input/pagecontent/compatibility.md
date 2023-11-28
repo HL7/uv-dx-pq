@@ -3,7 +3,7 @@ Provide details about compatibility studies and results.
 
 ### Component Diagram
 <table>
-<tr><td><img src="compatibility_FHIR_resources.png" width="850"/></td></tr>
+<tr><td><img src="compatibility_FHIR_resources.png" width="750"/></td></tr>
 </table>
  
 ### Description of Components
