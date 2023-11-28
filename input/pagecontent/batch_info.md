@@ -2,8 +2,13 @@
 Provide details about batch(es) of the  drug substance and drug product with identifiers.
 
 ### Component Diagram
+Product:
 <table>
-<tr><td>  </td></tr>
+<tr><td><img src="product_batch_info.png" width="500"/></td></tr>
+</table>
+Substance:
+<table>
+<tr><td><img src="substance_batch_info_resources.png" width="500"/></td></tr>
 </table>
  
 ### Description of Components
