@@ -4,11 +4,11 @@ Provide details about a stability study including stability study design (tests 
 ### Component Diagram
 Product:
 <table>
-<tr><td><img src="stability_FHIR_resources.png" width="850"/></td></tr>
+<tr><td><img src="stability_FHIR_resources.png" width="800"/></td></tr>
 </table>
 Substance:
 <table>
-<tr><td><img src="stability_substance_FHIR_resources.png" width="850"/></td></tr>
+<tr><td><img src="stability_substance_FHIR_resources.png" width="800"/></td></tr>
 </table>
 
 
