@@ -3,7 +3,7 @@ Provide details about the drug substance and drug product nomenclature; structur
 
 ### Component Diagram
 <table>
-<tr><td> </td></tr>
+<tr><td><img src="identification_FHIR_resources.png" width="500"/></td></tr>
 </table>
  
 ### Description of Components
