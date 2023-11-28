@@ -134,9 +134,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-pq"/>
-                <display value="Bundle – Drug Product - profile"/>
+                <display value="Bundle – Drug Product"/>
             </reference>
-            <name value="Bundle – Drug Product - profile"/>
+            <name value="Profile: Bundle - Drug Product"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
@@ -145,9 +145,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
-                <display value="Bundle – Product Microbiological Attributes - profile"/>
+                <display value="Bundle – Product Microbiological Attributes"/>
             </reference>
-            <name value="Bundle – Product Microbiological Attributes - profile"/>
+            <name value="Profile: Bundle - Product Microbiological Attributes"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.5 Microbiological Attributes."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
@@ -156,9 +156,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
-                <display value="Bundle – Product Excipients - profile"/>
+                <display value="Bundle – Product Excipients"/>
             </reference>
-            <name value="Bundle – Product Excipients - profile"/>
+            <name value="Profile: Bundle - Product Excipients"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin and 3.2.P.4.6 Novel Excipients."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
@@ -167,9 +167,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
-                <display value="Bundle – Substance General Properties - profile"/>
+                <display value="Bundle – Substance General Properties"/>
             </reference>
-            <name value="Bundle – Substance General Properties - profile"/>
+            <name value="Profile: Bundle - Substance General Properties"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.S.1 General Information, subsection 3.2.S.1.3 General Properties."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
@@ -178,9 +178,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
-                <display value="Bundle – Substance Characterization - profile"/>
+                <display value="Bundle – Substance Characterization"/>
             </reference>
-            <name value="Bundle – Substance Characterization - profile"/>
+            <name value="Profile: Bundle - Substance Characterization"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.1 – Elucidation of Structure and Other Characteristics."/>
             <isExample value="false"/>
             <groupingId value="b1-id"/>
@@ -246,9 +246,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-composition-pq"/>
-                <display value="Bundle – Product Composition - profile"/>
+                <display value="Bundle – Product Composition"/>
             </reference>
-            <name value="Bundle – Product Composition - profile"/>
+            <name value="Profile: Bundle - Product Composition"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.1 Description and Composition of the Drug Product."/>
             <isExample value="false"/>
             <groupingId value="b17-composition"/>
@@ -257,9 +257,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-reference-standards-pq"/>
-                <display value="Bundle – Reference Standards - profile"/>
+                <display value="Bundle – Reference Standards"/>
             </reference>
-            <name value="Bundle – Reference Standards - profile"/>
+            <name value="Profile: Bundle - Reference Standards"/>
             <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.6 Reference Standards or Materials and 3.2.S.5 Reference Standards or Materials."/>
             <isExample value="false"/>
             <groupingId value="b17-composition"/>
@@ -293,9 +293,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-impurities-pq"/>
-                <display value="Bundle - Impurities - profile"/>
+                <display value="Bundle - Impurities"/>
             </reference>
-            <name value="Bundle - Impurities - profile"/>
+            <name value="Profile: Bundle - Impurities"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities and CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities."/>
             <isExample value="false"/>
             <groupingId value="b15-impurities"/>
@@ -329,9 +329,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-organizations-pq"/>
-                <display value="Bundle - Organizations - profile"/>
+                <display value="Bundle - Organizations"/>
             </reference>
-            <name value="Bundle - Organizations - profile"/>
+            <name value="Profile: Bundle - Organizations"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s) and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s)."/>
             <isExample value="false"/>
             <groupingId value="b4-organizations"/>
@@ -354,9 +354,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-batch-info-pq"/>
-                <display value="Bundle – Product Batch Information - profile"/>
+                <display value="Bundle – Product Batch Information"/>
             </reference>
-            <name value="Bundle – Product Batch Information - profile"/>
+            <name value="Profile: Bundle - Product Batch Information"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses."/>
             <isExample value="false"/>
             <groupingId value="b8-batchinfo"/>
@@ -365,9 +365,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
-                <display value="Bundle – Substance Batch Information - profile"/>
+                <display value="Bundle – Substance Batch Information"/>
             </reference>
-            <name value="Bundle – Substance Batch Information - profile"/>
+            <name value="Profile: Bundle - Substance Batch Information"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses."/>
             <isExample value="false"/>
             <groupingId value="b8-batchinfo"/>
@@ -402,9 +402,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-batch-analysis-pq"/>
-                <display value="Bundle – Batch Analysis - profile"/>
+                <display value="Bundle – Batch Analysis"/>
             </reference>
-            <name value="Bundle – Batch Analysis - profile"/>
+            <name value="Profile: Bundle - Batch Analysis"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses
                 and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses."/>
             <isExample value="false"/>
@@ -440,9 +440,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-batch-formula-pq"/>
-                <display value="Bundle – Batch Formula - profile"/>
+                <display value="Bundle – Batch Formula"/>
             </reference>
-            <name value="Bundle – Batch Formula - profile"/>
+            <name value="Profile: Bundle - Batch Formula"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.2 Batch Formula."/>
             <isExample value="false"/>
             <groupingId value="b7-batchformula"/>
@@ -465,9 +465,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-manufacturing-pq"/>
-                <display value="Bundle - Manufacturing - profile"/>
+                <display value="Bundle - Manufacturing"/>
             </reference>
-            <name value="Bundle - Manufacturing - profile"/>
+            <name value="Profile: Bundle - Manufacturing"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.3 Description of Manufacturing Process and Process Controls and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.2 Description of Manufacturing Process and Process Controls."/>
             <isExample value="false"/>
             <groupingId value="b5-mnf"/>
@@ -500,9 +500,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-process-validation-pq"/>
-                <display value="Bundle - Process Validation - profile"/>
+                <display value="Bundle - Process Validation"/>
             </reference>
-            <name value="Bundle - Process Validation - profile"/>
+            <name value="Profile: Bundle - Process Validation"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.5 Process Validation and/or Evaluation and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.5 Process Validation and/or Evaluation."/>
             <isExample value="false"/>
             <groupingId value="b13-processvalidation"/>
@@ -546,9 +546,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-analytical-procedure-pq"/>
-                <display value="Bundle – Analytical Procedure - profile"/>
+                <display value="Bundle – Analytical Procedure"/>
             </reference>
-            <name value="Bundle – Analytical Procedure - profile"/>
+            <name value="Profile: Bundle - Analytical Procedure"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.2 Analytical Procedures and section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures."/>
             <isExample value="false"/>
             <groupingId value="b6-analytical"/>
@@ -582,9 +582,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-container-closure-system-pq"/>
-                <display value="Bundle - Container Closure System - profile"/>
+                <display value="Bundle - Container Closure System"/>
             </reference>
-            <name value="Bundle - Container Closure System - profile"/>
+            <name value="Profile: Bundle - Container Closure System"/>
             <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.7 Container Closure System and 3.2.S.6 Container Closure System."/>
             <isExample value="false"/>
             <groupingId value="b10-container"/>
@@ -618,9 +618,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-stability-pq"/>
-                <display value="Bundle – Stability - profile"/>
+                <display value="Bundle – Stability"/>
             </reference>
-            <name value="Bundle – Stability - profile"/>
+            <name value="Profile: Bundle - Stability"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.8 Stability, subsection 3.2.P.8.3 Stability Data, and CTD section 3.2.S.7 Stability, subsection 3.2.S.7.3 Stability Data."/>
             <isExample value="false"/>
             <groupingId value="b11-stabilitystudy"/>
@@ -654,9 +654,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-specification-pq"/>
-                <display value="Bundle – Product Specification - profile"/>
+                <display value="Bundle – Product Specification"/>
             </reference>
-            <name value="Bundle – Product Specification - profile"/>
+            <name value="Profile: Bundle - Product Specification"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.1 Specification(s)."/>
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
@@ -665,9 +665,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-substance-specification-pq"/>
-                <display value="Bundle – Substance Specification - profile"/>
+                <display value="Bundle – Substance Specification"/>
             </reference>
-            <name value="Bundle – Substance Specification - profile"/>
+            <name value="Profile: Bundle - Substance Specification"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification."/>
             <isExample value="false"/>
             <groupingId value="b12-specification"/>
@@ -702,9 +702,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-compatibility-pq"/>
-                <display value="Bundle - Product Compatibility - profile"/>
+                <display value="Bundle - Product Compatibility"/>
             </reference>
-            <name value="Bundle - Product Compatibility - profile"/>
+            <name value="Profile: Bundle - Product Compatibility"/>
             <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.6 Compatibility."/>
             <isExample value="false"/>
             <groupingId value="b14-compatibility"/>
