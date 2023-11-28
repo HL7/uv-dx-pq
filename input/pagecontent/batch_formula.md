@@ -3,7 +3,7 @@ Provide details about drug product master batch properties and formula.
 
 ### Component Diagram
 <table>
-<tr><td>  </td></tr>
+<tr><td><img src="product_batch_formula.png" width="700"/></td></tr>
 </table>
  
 ### Description of Components
