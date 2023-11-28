@@ -191,7 +191,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-pq-ex1"/>
             </reference>
-            <name value="Bundle – Drug Product - example"/>
+            <name value="Example: Bundle – Drug Product"/>
             <description value="Example of Bundle – Drug Product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq"/>
@@ -202,7 +202,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-microbiological-attributes-pq-ex1"/>
             </reference>
-            <name value="Bundle – Product Microbiological Attributes - example"/>
+            <name value="Example: Bundle – Product Microbiological Attributes"/>
             <description value="Example of Bundle – Product Microbiological Attributes."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
@@ -213,7 +213,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-excipients-pq-ex1"/>
             </reference>
-            <name value="Bundle – Product Excipients - example"/>
+            <name value="Example: Bundle – Product Excipients"/>
             <description value="Example of Bundle – Product Excipients."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq"/>
@@ -224,7 +224,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-general-properties-pq-ex1"/>
             </reference>
-            <name value="Bundle – Substance General Properties - example"/>
+            <name value="Example: Bundle – Substance General Properties"/>
             <description value="Example of Bundle – Substance General Properties."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
@@ -235,7 +235,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-characterization-pq-ex1"/>
             </reference>
-            <name value="Bundle – Substance Characterization - example"/>
+            <name value="Example: Bundle – Substance Characterization"/>
             <description value="Example of Bundle – Substance Characterization."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
@@ -271,7 +271,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-composition-pq-ex1"/>
             </reference>
-            <name value="Bundle – Product Composition - example"/>
+            <name value="Example: Bundle – Product Composition"/>
             <description value="Example of Bundle – Product Composition."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
@@ -282,7 +282,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-reference-standards-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle – Reference Standards - example, substance"/>
+            <name value="Example: Bundle – Reference Standards, substance"/>
             <description value="Example of Bundle – Reference Standards for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-reference-standards-pq"/>
@@ -307,7 +307,7 @@
             <reference>
                 <reference value="Bundle/bundle-product-impurities-pq-ex1"/>
             </reference>
-            <name value="Bundle - Impurities - example, product"/>
+            <name value="Example: Bundle - Impurities, product"/>
             <description value="Example of Bundle - Impurities for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
@@ -318,7 +318,7 @@
             <reference>
                 <reference value="Bundle/bundle-product-impurities-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Impurities - example, substance"/>
+            <name value="Example: Bundle - Impurities, substance"/>
             <description value="Example of Bundle - Impurities for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
@@ -343,7 +343,7 @@
             <reference>
                 <reference value="Bundle/bundle-organizations-pq-ex1"/>
             </reference>
-            <name value="Bundle - Organizations - example"/>
+            <name value="Example: Bundle - Organizations"/>
             <description value="Example of Bundle - Organizations for either drug product or drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq"/>
@@ -380,7 +380,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-batch-info-pq-ex1"/>
             </reference>
-            <name value="Bundle – Product Batch Information - example"/>
+            <name value="Example: Bundle – Product Batch Information"/>
             <description value="Example of Bundle – Product Batch Information."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
@@ -391,7 +391,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-batch-info-pq-ex1"/>
             </reference>
-            <name value="Bundle – Substance Batch Information - example"/>
+            <name value="Example: Bundle – Substance Batch Information"/>
             <description value="Example of Bundle – Substance Batch Information."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
@@ -418,7 +418,7 @@
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-pq-ex1-prod"/>
             </reference>
-            <name value="Bundle – Batch Analysis - example, product"/>
+            <name value="Example: Bundle – Batch Analysis, product"/>
             <description value="Example of Bundle – Batch Analysis for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"/>
@@ -429,7 +429,7 @@
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle – Batch Analysis - example, substance"/>
+            <name value="Example: Bundle – Batch Analysis, substance"/>
             <description value="Example of Bundle – Batch Analysis for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"/>
@@ -454,7 +454,7 @@
             <reference>
                 <reference value="Bundle/bundle-batch-formula-pq-ex1"/>
             </reference>
-            <name value="Bundle - Batch Formula - example"/>
+            <name value="Example: Bundle - Batch Formula"/>
             <description value="Example of Bundle - Batch Formula for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq"/>
@@ -479,7 +479,7 @@
             <reference>
                 <reference value="Bundle/bundle-product-manufacturing-pq-ex1"/>
             </reference>
-            <name value="Bundle - Manufacturing - example, product"/>
+            <name value="Example: Bundle - Manufacturing, product"/>
             <description value="Example of Bundle - Manufacturing for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
@@ -490,7 +490,7 @@
             <reference>
                 <reference value="Bundle/bundle-product-manufacturing-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Manufacturing - example, substance"/>
+            <name value="Example: Bundle - Manufacturing, substance"/>
             <description value="Example of Bundle - Manufacturing for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
@@ -513,7 +513,7 @@
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex1"/>
             </reference>
-            <name value="Bundle - Process Validation - example, product"/>
+            <name value="Example: Bundle - Process Validation, product"/>
             <description value="Example of Bundle - Process Validation for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
@@ -524,7 +524,7 @@
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex3-prod-bio"/>
             </reference>
-            <name value="Bundle - Process Validation - example, biologic product"/>
+            <name value="Example: Bundle - Process Validation, biologic product"/>
             <description value="Example of Bundle - Process Validation for biologic drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
@@ -535,7 +535,7 @@
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Process Validation - example, substance"/>
+            <name value="Example: Bundle - Process Validation, substance"/>
             <description value="Example of Bundle - Process Validation for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
@@ -560,7 +560,7 @@
             <reference>
                 <reference value="Bundle/bundle-analytical-procedure-pq-ex1-prod"/>
             </reference>
-            <name value="Bundle – Analytical Procedure - example, product"/>
+            <name value="Example: Bundle – Analytical Procedure, product"/>
             <description value="Example of Bundle – Analytical Procedure for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
@@ -571,7 +571,7 @@
             <reference>
                 <reference value="Bundle/bundle-analytical-procedure-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle – Analytical Procedure - example, substance"/>
+            <name value="Example: Bundle – Analytical Procedure, substance"/>
             <description value="Example of Bundle – Analytical Procedure for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
@@ -596,7 +596,7 @@
             <reference>
                 <reference value="Bundle/bundle-container-closure-system-pq-ex1-prod"/>
             </reference>
-            <name value="Bundle - Container Closure System - example, product"/>
+            <name value="Example: Bundle - Container Closure System, product"/>
             <description value="Example of Bundle - Container Closure System for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
@@ -607,7 +607,7 @@
             <reference>
                 <reference value="Bundle/bundle-container-closure-system-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle - Container Closure System - example, substance"/>
+            <name value="Example: Bundle - Container Closure System, substance"/>
             <description value="Example of Bundle - Container Closure System for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
@@ -632,7 +632,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-stability-pq-ex1-prod"/>
             </reference>
-            <name value="Bundle – Stability - example, product"/>
+            <name value="Example: Bundle – Stability, product"/>
             <description value="Example of Bundle – Stability for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
@@ -643,7 +643,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-stability-pq-ex2-sub"/>
             </reference>
-            <name value="Bundle – Stability - example, substance"/>
+            <name value="Example: Bundle – Stability, substance"/>
             <description value="Example of Bundle – Stability for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
@@ -680,7 +680,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-specification-pq-ex1"/>
             </reference>
-            <name value="Bundle – Product Specification - example"/>
+            <name value="Example: Bundle – Product Specification"/>
             <description value="Example of Bundle – Product Specification."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq"/>
@@ -691,7 +691,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-substance-specification-pq-ex1"/>
             </reference>
-            <name value="Bundle – Substance Specification - example"/>
+            <name value="Example: Bundle – Substance Specification"/>
             <description value="Example of Bundle – Substance Specification."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-pq"/>
@@ -716,7 +716,7 @@
             <reference>
                 <reference value="Bundle/bundle-drug-product-compatibility-pq-ex1"/>
             </reference>
-            <name value="Bundle – Product Compatibility - example"/>
+            <name value="Example: Bundle – Product Compatibility"/>
             <description value="Example of Bundle – Product Compatibility."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"/>
@@ -940,7 +940,7 @@
             <reference>
                 <reference value="ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
             </reference>
-            <name value="ActivityDefinition - Test - example 1"/>
+            <name value="Example: ActivityDefinition - Test - example 1"/>
             <description value="Example of ActivityDefinition - Test for test set: Long-term - 25°C/60% RH - XYZ."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
