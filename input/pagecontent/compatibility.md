@@ -1,32 +1,34 @@
-### Objective
-Provide details about compatibility studies and results.
+Details about compatibility studies and results.
 
-### Component Diagram
+### Product 
+
 <table>
 <tr><td><img src="compatibility_FHIR_resources.png" width="750"/></td></tr>
 </table>
  
-### Description of Components
-**Diagnostic Report**: Contains all rest results as a group and captures conclusions
-
-**Medication**: Describes the batches that underwent stability testing
-
-**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
-
-**Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
-
-**Observation**: The results of a specific test mentioned in the Observation Definition
-
-**Organization**: The company/site that performed the testing or manufacturing
-
-**Plan Definition**: Describes the stability study protocol
+#### Resources
+<table>
+<tr><td>MedicinalProductDefinition</td><td>The drug product (Stelbat tablets, 20mg)</td></tr>
+<tr><td>Medication</td><td>Describes the batches that underwent testing</td></tr>
+<tr><td>Ingredient</td><td>The active ingredient (stelbatalol) or the ingredients that make up the drug product</td></tr>
+<tr><td>SubstanceDefinition</td><td>Chemical or biological details about substance(s) associated with the ingredient</td></tr>
+<tr><td>PlanDefinition</td><td>Describes the compatibility analysis protocol</td></tr>
+<tr><td>ObservationDefinition</td><td>Each individual  test and acceptance criteria; also used to group tests</td></tr>
+<tr><td>Observation</td><td>The results of a specific test mentioned in the ObservationDefinition</td></tr>
+<tr><td>DiagnosticReport</td><td>Contains all results as a group and captures conclusions</td></tr>
+</table>
 
 ### Examples
 **CTD section samples** (PDF):
 - 3.2.P.2 Pharmaceutical Development
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.2.6_Compatibility.pdf ">3.2.P.2.6 Compatibility</a>
 
+**XML and JSON examples** of synthetic CTD data:
+- <a href="Bundle-bundle-drug-product-compatibility-pq-ex1.xml.html">Product Batch Analysis example XML</a>
+- <a href="Bundle-bundle-drug-product-compatibility-pq-ex1.json.html">Product Batch Analysis example JSON</a>
+
 **HTML rendering** of synthetic CTD data:
 - <a href="compatibility_rend_p.html">Drug Product Compatibility</a>
 
-**FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Compatibility](artifacts.html#compatibility)
+### Profiles 
+See [Artifacts Index: Compatibility](artifacts.html#compatibility)
