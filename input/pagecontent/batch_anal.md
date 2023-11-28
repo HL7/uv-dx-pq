@@ -19,8 +19,8 @@ Details about drug substance and drug product batch release testing and results.
 <tr><td>Organization</td><td>(not illustrated above): The company/site that performed the testing or manufacturing</td></tr>
 </table>
 
-### Examples
-**CTD section samples** (PDF):
+#### Examples
+**eCTD section synthetic source data samples** (PDF):
 - 3.2.P.5 Control of Drug Product
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.5.4_Batch_Analyses.pdf ">3.2.P.5.4 Batch Analyses</a>
 
@@ -28,7 +28,7 @@ Details about drug substance and drug product batch release testing and results.
 - <a href="Bundle-bundle-batch-analysis-pq-ex1-prod.xml.html">Product Batch Analysis example XML</a>
 - <a href="Bundle-bundle-batch-analysis-pq-ex1-prod.json.html">Product Batch Analysis example JSON</a>
 
-**HTML rendering** of synthetic CTD data:
+**HTML presentation example** of synthetic CTD data:
 - <a href="batch_anal_rend_p.html">Product Batch Analysis</a>
 
 
