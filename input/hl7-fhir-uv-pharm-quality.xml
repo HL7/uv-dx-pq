@@ -43,26 +43,10 @@
         <version value="5.0.0"/>
     </dependsOn>
     <definition>
-        <!-- Ordered to match domains graphic-->
-        <grouping id="b1-id">
-            <name value="Identification"/>
-            <description value="FHIR artifacts that provide details about the drug substance and drug product nomenclature; structure; physicochemical properties; and manufacture."/>
-        </grouping>
-        <grouping id="b17-composition">
-            <name value="Composition"/>
-            <description value="FHIR artifacts that provide details about drug substance and drug product components, materials, and Quality reference standards."/>
-        </grouping>
-        <grouping id="b15-impurities">
-            <name value="Impurities"/>
-            <description value="FHIR artifacts that provide details about impurity identification and characterization."/>
-        </grouping>
-        <grouping id="b4-organizations">
-            <name value="Organizations"/>
-            <description value="FHIR artifacts that provide details about each facility or legal entity involved in the manufacture of the medicinal product. This includes but is not limited to: name, identifier, and location address, for marketing authorization holders, sponsors, regulatory authorities, manufacturers, supplier, test site, packaging site."/>
-        </grouping>
-        <grouping id="b8-batchinfo">
-            <name value="Batch or Lot Information"/>
-            <description value="FHIR artifacts that provide details about batch(es) of the  drug substance and drug product with identifiers."/>
+        <!-- Re-ordered to be alphabetical, rather than match domains graphic-->
+        <grouping id="b6-analytical">
+            <name value="Analytical Procedures"/>
+            <description value="FHIR artifacts that provide details about test methods used to analyze drug substances and drug products including compendial and non-compendial testing."/>
         </grouping>
         <grouping id="b9-batchanalyses">
             <name value="Batch Analysis"/>
@@ -72,34 +56,51 @@
             <name value="Batch Formula"/>
             <description value="FHIR artifacts that provide details about drug substance and drug product master batch properties and formula."/>
         </grouping>
-        <grouping id="b5-mnf">
-            <name value="Manufacturing Process"/>
-            <description value="FHIR artifacts that provide a manufacturing process description and details about unit operations, process parameters, and in-process controls."/>
-        </grouping>
-        <grouping id="b13-processvalidation">
-            <name value="Process Validation"/>
-            <description value="FHIR artifacts that provide details about manufacturing process validation protocols and results."/>
-        </grouping>
-        <grouping id="b6-analytical">
-            <name value="Analytical Procedures"/>
-            <description value="FHIR artifacts that provide details about test methods used to analyze drug substances and drug products including compendial and non-compendial testing."/>
-        </grouping>
-        <grouping id="b10-container">
-            <name value="Container Closure System"/>
-            <description value="FHIR artifacts that provide details about primary and secondary packaging components for drug substance and drug product."/>
-        </grouping>
-        <grouping id="b11-stabilitystudy">
-            <name value="Stability Study"/>
-            <description value="FHIR artifacts that provide details about a stability study including stability study design (tests and acceptance criteria), drug substance or drug product batches involved, test results, and conclusion."/>
-        </grouping>
-        <grouping id="b12-specification">
-            <name value="Drug Specification"/>
-            <description value="FHIR artifacts that provide details about drug substance or drug product release and stability specification (tests, acceptance criteria)."/>
+        <grouping id="b8-batchinfo">
+            <name value="Batch or Lot Information"/>
+            <description value="FHIR artifacts that provide details about batch(es) of the  drug substance and drug product with identifiers."/>
         </grouping>
         <grouping id="b14-compatibility">
             <name value="Compatibility"/>
             <description value="FHIR artifacts that provide details about compatibility studies and results."/>
         </grouping>
+        <grouping id="b17-composition">
+            <name value="Composition"/>
+            <description value="FHIR artifacts that provide details about drug substance and drug product components, materials, and Quality reference standards."/>
+        </grouping>
+        <grouping id="b10-container">
+            <name value="Container Closure System"/>
+            <description value="FHIR artifacts that provide details about primary and secondary packaging components for drug substance and drug product."/>
+        </grouping>
+        <grouping id="b12-specification">
+            <name value="Drug Specification"/>
+            <description value="FHIR artifacts that provide details about drug substance or drug product release and stability specification (tests, acceptance criteria)."/>
+        </grouping>
+        <grouping id="b1-id">
+            <name value="Identification"/>
+            <description value="FHIR artifacts that provide details about the drug substance and drug product nomenclature; structure; physicochemical properties; and manufacture."/>
+        </grouping>
+        <grouping id="b15-impurities">
+            <name value="Impurities"/>
+            <description value="FHIR artifacts that provide details about impurity identification and characterization."/>
+        </grouping>
+        <grouping id="b5-mnf">
+            <name value="Manufacturing Process"/>
+            <description value="FHIR artifacts that provide a manufacturing process description and details about unit operations, process parameters, and in-process controls."/>
+        </grouping>
+        <grouping id="b4-organizations">
+            <name value="Organizations"/>
+            <description value="FHIR artifacts that provide details about each facility or legal entity involved in the manufacture of the medicinal product. This includes but is not limited to: name, identifier, and location address, for marketing authorization holders, sponsors, regulatory authorities, manufacturers, supplier, test site, packaging site."/>
+        </grouping>
+        <grouping id="b13-processvalidation">
+            <name value="Process Validation"/>
+            <description value="FHIR artifacts that provide details about manufacturing process validation protocols and results."/>
+        </grouping>
+        <grouping id="b11-stabilitystudy">
+            <name value="Stability Study"/>
+            <description value="FHIR artifacts that provide details about a stability study including stability study design (tests and acceptance criteria), drug substance or drug product batches involved, test results, and conclusion."/>
+        </grouping>
+
         <!--        Additional Groupings -->
         <grouping id="building-blocks-1">
             <name value="Component Building Block Profiles"/>
