@@ -1,38 +1,55 @@
-### Objective
-Provide details about primary and secondary packaging components for drug substance and drug product.
+Details about primary and secondary packaging components for drug substance and drug product.
 
-### Component Diagram
-Product:
+### Product 
+
 <table>
 <tr><td><img src="container_closure_system.png" width="350"/></td></tr>
 </table>
-Product:
+#### Resources
+<table>
+<tr><td>MedicinalProductDefinition</td><td>The drug product (Stelbat tablets, 20mg)</td></tr> 
+
+
+<tr><td>PackagedProductDefinition</td><td>Information about the packaging for the drug product</td></tr>
+
+</table>
+
+#### Examples
+**eCTD section synthetic source data samples** (PDF):
+- <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.7_Container_Closure_System.pdf ">3.2.P.7 Container Closure System</a>
+
+**XML and JSON examples** of synthetic CTD data:
+- <a href="Bundle-bundle-container-closure-system-pq-ex1-prod.xml.html">Product Container Closure example XML</a>
+- <a href="Bundle-bundle-container-closure-system-pq-ex1-prod.json.html">Product Container Closure example JSON</a>
+
+**HTML presentation example** of synthetic CTD data:
+- <a href="container_rend_p.html">Product Container Closure System</a>
+### Substance
 <table>
 <tr><td><img src="container_closure_substance.png" width="425"/></td></tr>
 </table>
  
-### Description of Components
-**Ingredient**: The active ingredient (stelbatalol) or the ingredients that make up the drug substance or product
+#### Resources
+<table>
+<tr><td>Substance Definition</td><td>Definition of this drug substance itself (Stelbatolol)</td></tr> 
+<tr><td>Ingredient</td><td>Connection to the substance as something manufactured (used here mainly for linkage)</td></tr> 
+<tr><td>ManufacturedItem Definition</td><td>The substance as a physical type of substance that can be packaged (used here mainly for linkage)</td></tr> 
+<tr><td>PackagedProductDefinition</td><td>Information about the packaging for the drug substance</td></tr> 
+</table>
 
-**Manufactured Item Definition**: Information about the physical packaged medication item, such as a tablet or capsule
 
-**Medicinal Product Definition**: The drug product (Stelbat tablets, 20mg)
-
-**Observation Definition**: Each individual stability test and their acceptance criteria; also used to group tests
-
-**Packaged Product Definition**: Information about the packaging for a drug product or drug substance
-
-**Plan Definition**: Describes the stability study protocol
-
-**Substance Definition**: Chemical or biological details about substance(s) associated with the active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits) 
-
-### Examples
-**CTD section samples** (PDF):
-- <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.7_Container_Closure_System.pdf ">3.2.P.7 Container Closure System</a>
+#### Examples
+**eCTD section synthetic source data samples** (PDF):
 - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.6_Container_Closure_System.pdf ">3.2.S.6 Container Closure System</a>
 
-**HTML rendering** of synthetic CTD data:
-- <a href="container_rend_p.html">Drug Product Container Closure System</a>
-- <a href="container_rend_s.html">Drug Substance Container Closure System</a>
 
-**FHIR XML/JSON** profiles and validated Bundle examples in this guide, see [Artifacts Index: Container Closure System](artifacts.html#container-closure-system)
+
+**XML and JSON examples** of synthetic CTD data:
+- <a href="Bundle-bundle-container-closure-system-pq-ex2-sub.xml.html">Substance Container Closure example XML</a>
+- <a href="Bundle-bundle-container-closure-system-pq-ex2-sub.json.html">Substance  Container Closure example JSON</a>
+
+**HTML presentation example** of synthetic CTD data:
+- <a href="container_rend_s.html">Substance Container Closure System</a>
+
+### Profiles 
+See [Artifacts Index: Container Closure System](artifacts.html#container-closure-system)
