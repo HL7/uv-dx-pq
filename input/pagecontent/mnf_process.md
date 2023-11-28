@@ -2,10 +2,16 @@
 Provide a manufacturing process description and details about unit operations, process parameters, and in-process controls.
 
 ### Component Diagram
+Product:
 <table>
-<tr><td><img src="manufacturing_process_FHIR_resources.png" width="850"/></td></tr>
+<tr><td><img src="manufacturing_process_FHIR_resources.png" width="750"/></td></tr>
 </table>
- 
+
+Substance:
+<table>
+<tr><td><img src="substance_manufacturing_process_resources.png" width="750"/></td></tr>
+</table>
+  
 ### Description of Components
 **DeviceDefinition**: Information about devices/equipment used testing or manufacture
 

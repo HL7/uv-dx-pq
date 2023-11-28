@@ -2,10 +2,16 @@
 Provide details about drug substance and drug product batch release testing and results.
 
 ### Component Diagram
+Product:
 <table>
-<tr><td><img src="batch_analysis_FHIR_resources.png" width="850"/></td></tr>
+<tr><td><img src="batch_analysis_FHIR_resources.png" width="700"/></td></tr>
+</table>
+Substance:
+<table>
+<tr><td><img src=" substance_batch_analysis_resources.png" width="700"/></td></tr>
 </table>
  
+
 ### Description of Components
 **Diagnostic Report**: Contains all rest results as a group and captures conclusions
 

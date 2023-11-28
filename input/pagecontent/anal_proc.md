@@ -2,8 +2,13 @@
 Provide details about test methods used to analyze drug substances and drug products including compendial and non-compendial testing.
 
 ### Component Diagram
+Product:
 <table>
-<tr><td><img src="analytical procedures.png" width="850"/></td></tr>
+<tr><td><img src="analytical procedures.png" width="600"/></td></tr>
+</table>
+Substance:
+<table>
+<tr><td><img src="substance_analytical_procedures.png" width="650"/></td></tr>
 </table>
  
 ### Description of Components

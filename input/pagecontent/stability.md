@@ -2,9 +2,15 @@
 Provide details about a stability study including stability study design (tests and acceptance criteria), drug substance or drug product batches involved, test results, and conclusion.
 
 ### Component Diagram
+Product:
 <table>
 <tr><td><img src="stability_FHIR_resources.png" width="850"/></td></tr>
 </table>
+Substance:
+<table>
+<tr><td><img src="stability_substance_FHIR_resources.png" width="850"/></td></tr>
+</table>
+
 
 ### Description of Components
 **Activity Definition**: Contains the Observation Definition resources that establish the list of tests and their acceptance criteria

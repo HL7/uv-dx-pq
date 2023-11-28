@@ -2,8 +2,13 @@
 Provide details about manufacturing process validation protocols and results.
 
 ### Component Diagram
+Product:
 <table>
 <tr><td><img src="process_validation_FHIR_resources.png" width="850"/></td></tr>
+</table>
+Substance:
+<table>
+<tr><td><img src="substance_process_validation_resources.png" width="850"/></td></tr>
 </table>
 
 ### Description of Components

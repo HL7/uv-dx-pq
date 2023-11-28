@@ -2,8 +2,13 @@
 Provide details about primary and secondary packaging components for drug substance and drug product.
 
 ### Component Diagram
+Product:
 <table>
 <tr><td><img src="container_closure_system.png" width="425"/></td></tr>
+</table>
+Product:
+<table>
+<tr><td><img src="container_closure_substance.png" width="425"/></td></tr>
 </table>
  
 ### Description of Components

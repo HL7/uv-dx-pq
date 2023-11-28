@@ -2,8 +2,13 @@
 Provide details about drug substance or drug product release and stability specification (tests, acceptance criteria).
 
 ### Component Diagram
+Product:
 <table>
-<tr><td><img src="specification_FHIR_resources.png" width="850"/></td></tr>
+<tr><td><img src="specification_FHIR_resources.png" width="600"/></td></tr>
+</table>
+Substance:
+<table>
+<tr><td><img src="substance_specification_resources.png" width="600"/></td></tr>
 </table>
  
 ### Description of ComponentsComponent Building Blocks
