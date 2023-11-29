@@ -110,7 +110,7 @@
                             />                            
 <!-\-                            <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>-\->
                         </extension>-->
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                                     <code value="C133990"/>
                                     <display value="Commercial"/> 
                                 </coding>

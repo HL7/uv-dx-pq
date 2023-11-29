@@ -1701,7 +1701,7 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>
@@ -1769,7 +1769,7 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>
@@ -1837,7 +1837,7 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                         <code value="C133991"/>
                         <display value="Development"/>
                      </coding>

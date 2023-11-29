@@ -18,6 +18,6 @@
             <reference value="ObservationDefinition/Description"/>
         </hasMember>
         <hasMember>
-            <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex2"/>
+            <reference value="ObservationDefinition/Water"/>
         </hasMember>
 </ObservationDefinition>
