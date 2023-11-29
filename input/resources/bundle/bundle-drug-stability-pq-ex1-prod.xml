@@ -1287,7 +1287,8 @@
             </contained>
             <contained>
                <Observation>
-                  <id value="observation-test-result-drug-pq-ex1"/>
+                  <id value="observation-test-result-lt25c-i1-degradation-imp1"/>
+<!--                  <id value="observation-test-result-drug-pq-ex1"/>-->
                   <meta>
                      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
@@ -1664,7 +1665,8 @@
                <reference value="#LongTerm25C-initial-1-Description"/>
             </hasMember>
             <hasMember>
-               <reference value="#observation-test-result-drug-pq-ex1"/>
+               <reference value="#observation-test-result-lt25c-i1-degradation-imp1"/>
+<!--               <reference value="#observation-test-result-drug-pq-ex1"/>-->
             </hasMember>
             <hasMember>
                <reference value="#LongTerm25C-initial-1-Degradation-imp2"/>

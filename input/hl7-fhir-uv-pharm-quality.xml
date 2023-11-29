@@ -827,22 +827,22 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-                <display value="ObservationDefinition - Test Method"/>
-            </reference>
-            <name value="ObservationDefinition - Test Method"/>
-            <description value="This ObservationDefinition profile represents information about pharmaceutical quality (PQ) tests and acceptance criteria."/>
-            <isExample value="false"/>
-            <groupingId value="building-blocks-1"/>
-        </resource>
-
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Observation-test-result-drug-pq"/>
                 <display value="Observation - Test Result"/>
             </reference>
             <name value="Observation - Test Result"/>
             <description value="This Observation profile represents the result of a specific test defined by an ObservationDefinition resource."/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
+                <display value="ObservationDefinition - Test Method"/>
+            </reference>
+            <name value="ObservationDefinition - Test Method"/>
+            <description value="This ObservationDefinition profile represents information about pharmaceutical quality (PQ) tests and acceptance criteria."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -893,6 +893,17 @@
 
         <resource>
             <reference>
+                <reference value="StructureDefinition/Specimen-drug-pq"/>
+                <display value="Specimen - Drug"/>
+            </reference>
+            <name value="Specimen - Drug"/>
+            <description value="This Specimen profile represents identifying information about an individual specimen (an instance)."/>
+            <isExample value="false"/>
+            <groupingId value="building-blocks-1"/>
+        </resource>
+        
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/SpecimenDefinition-drug-pq"/>
                 <display value="SpecimenDefinition - Drug"/>
             </reference>
@@ -904,15 +915,15 @@
 
         <resource>
             <reference>
-                <reference value="StructureDefinition/Specimen-drug-pq"/>
-                <display value="Specimen - Drug"/>
+                <reference value="StructureDefinition/Substance-drug-pq"/>
+                <display value="Substance - Drug"/>
             </reference>
-            <name value="Specimen - Drug"/>
-            <description value="This Specimen profile represents identifying information about an individual specimen (an instance)."/>
+            <name value="Substance - Drug"/>
+            <description value="This Substance profile represents identifying information about an actual batch of aubstance (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-
+        
         <resource>
             <reference>
                 <reference value="StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
@@ -920,17 +931,6 @@
             </reference>
             <name value="SubstanceDefinition - Component Drug"/>
             <description value="This SubstanceDefinition profile represents the chemical or biological details about a substance associated with an active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits)."/>
-            <isExample value="false"/>
-            <groupingId value="building-blocks-1"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Substance-drug-pq"/>
-                <display value="Substance - Drug"/>
-            </reference>
-            <name value="Substance - Drug"/>
-            <description value="This Substance profile represents identifying information about an actual batch of aubstance (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -1057,7 +1057,7 @@
             <groupingId value="building-blocks-2"/>
         </resource>
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex1"/>
             </reference>
@@ -1066,9 +1066,9 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex2"/>
             </reference>
@@ -1077,9 +1077,9 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="Observation/observation-test-result-drug-pq-ex1"/>
             </reference>
@@ -1088,9 +1088,9 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>
+        </resource>-->
 
-        <resource>
+<!--        <resource>
             <reference>
                 <reference value="Observation/observation-test-result-drug-pq-ex2"/>
             </reference>
@@ -1099,8 +1099,52 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             <groupingId value="building-blocks-2"/>
+        </resource>-->
+
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-description"/>
+            </reference>
+            <name value="Observation - Test Result - example 1"/>
+            <description value="Example of Observation - Test Result of Degradation Product 'Impurity 1' description from longTerm25X test."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp1"/>
+            </reference>
+            <name value="Observation - Test Result - example 2"/>
+            <description value="Example of Observation - Test Result of Degradation Product 'Impurity 1' qualtity from longTerm25X test."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/longTerm25X"/>
+            </reference>
+            <name value="ObservationDefinition - Test Method - example 1, longTerm25X"/>
+            <description value="Example of ObservationDefinition - Test Method for longTerm25X test for stability."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="ObservationDefinition/Water"/>
+            </reference>
+            <name value="ObservationDefinition - Test Method - example 2, Water"/>
+            <description value="Example of ObservationDefinition - Test Method for Water Content test method."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="Organization/organization-drug-pq-ex1"/>
@@ -1198,6 +1242,18 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
+        
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-drug-pq-ex1"/>
+            </reference>
+            <name value="Specimen - Drug - example"/>
+            <description value="Example of Specimen - Drug."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
         <resource>
             <reference>
                 <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
@@ -1211,12 +1267,12 @@
 
         <resource>
             <reference>
-                <reference value="Specimen/specimen-drug-pq-ex1"/>
+                <reference value="Substance/substance-drug-pq-ex1"/>
             </reference>
-            <name value="Specimen - Drug - example"/>
-            <description value="Example of Specimen - Drug."/>
+            <name value="Substance - Drug - example"/>
+            <description value="Example of Substance - Drug."/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
@@ -1228,17 +1284,6 @@
             <description value="Example of SubstanceDefinition - Component Drug."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Substance/substance-drug-pq-ex1"/>
-            </reference>
-            <name value="Substance - Drug - example"/>
-            <description value="Example of Substance - Drug."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
@@ -1687,17 +1732,6 @@
 
         <resource>
             <reference>
-                <reference value="ObservationDefinition/longTerm25X"/>
-            </reference>
-            <name value="longTerm25X"/>
-            <description value="ObservationDefinition - longTerm25X"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
-        </resource>
-
-        <resource>
-            <reference>
                 <reference value="ObservationDefinition/longTerm25Y"/>
             </reference>
             <name value="longTerm25Y"/>
@@ -1816,16 +1850,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             <groupingId value="examples1"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="ObservationDefinition/Water"/>
-            </reference>
-            <name value="Water"/>
-            <description value="ObservationDefinition - Water"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
-        </resource>
+
 
         <!-- Additional Observation Examples (examples4)-->
 
@@ -1840,16 +1865,6 @@
             <groupingId value="examples4"/>
         </resource>
 
-        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp1"/>
-            </reference>
-            <name value="observation-test-result-lt25c-i1-degradation-imp1"/>
-            <description value="observation-test-result-lt25c-i1-degradation-imp1"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
-        </resource>
 
         <resource>
             <reference>
@@ -1890,17 +1905,6 @@
             </reference>
             <name value="observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
             <description value="observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-lt25c-i1-description"/>
-            </reference>
-            <name value="observation-test-result-lt25c-i1-description"/>
-            <description value="observation-test-result-lt25c-i1-description"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             <groupingId value="examples4"/>
