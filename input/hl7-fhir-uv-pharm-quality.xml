@@ -940,7 +940,7 @@
             <reference>
                 <reference value="ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
             </reference>
-            <name value="Example: ActivityDefinition - Test - example 1"/>
+            <name value="ActivityDefinition - Test - example 1"/>
             <description value="Example of ActivityDefinition - Test for test set: Long-term - 25°C/60% RH - XYZ."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
@@ -1248,7 +1248,7 @@
                 <reference value="Specimen/specimen-drug-pq-ex1"/>
             </reference>
             <name value="Specimen - Drug - example"/>
-            <description value="Example of Specimen - Drug."/>
+            <description value="Example of Specimen - Drug with collection date/time and processing descriptions."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1258,8 +1258,29 @@
             <reference>
                 <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
             </reference>
-            <name value="SpecimenDefinition - Drug - example"/>
-            <description value="Example of SpecimenDefinition - Drug."/>
+            <name value="SpecimenDefinition - Drug - example 1"/>
+            <description value="Example of SpecimenDefinition - Drug for specimen stored at 25°C."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
+            </reference>
+            <name value="SpecimenDefinition - Drug - example 2"/>
+            <description value="Example of SpecimenDefinition - Drug for specimen stored at 30°C."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="SpecimenDefinition/specimenDefStoredAt40"/>
+            </reference>
+            <name value="SpecimenDefinition - Drug - example 3"/>
+            <description value="Example of SpecimenDefinition - Drug for specimen stored at 40°C."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1280,12 +1301,34 @@
             <reference>
                 <reference value="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"/>
             </reference>
-            <name value="SubstanceDefinition - Component Drug - example"/>
-            <description value="Example of SubstanceDefinition - Component Drug."/>
+            <name value="SubstanceDefinition - Component Drug - example 1"/>
+            <description value="Example of SubstanceDefinition - Component Drug, Stelbatolol."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
+             
+        <resource>
+            <reference>
+                <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
+            </reference>
+            <name value="SubstanceDefinition - Component Drug - example 2"/>
+            <description value="Example of SubstanceDefinition - Component Drug, Stelbatolol Aqueous Solution."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        
+        <resource>
+            <reference>
+                <reference value="SubstanceDefinition/StelbatololGranules"/>
+            </reference>
+            <name value="SubstanceDefinition - Component Drug - example 3"/>
+            <description value="Example of SubstanceDefinition - Component Drug, Stelbatolol Granules."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>    
 
         <!--Extensions in alpha order -->
         <resource>
@@ -1943,51 +1986,6 @@
             <groupingId value="examples4"/>
         </resource>
 
-        <!-- Additional SpecimenDefinition Examples (examples2)-->
-        <resource>
-            <reference>
-                <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
-            </reference>
-            <name value="specimenDefStoredAt30"/>
-            <description value="specimenDefStoredAt30"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
-            <groupingId value="examples2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="SpecimenDefinition/specimenDefStoredAt40"/>
-            </reference>
-            <name value="specimenDefStoredAt40"/>
-            <description value="specimenDefStoredAt40"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
-            <groupingId value="examples2"/>
-        </resource>
-
-        <!-- Additional SubstanceDefinition Examples (examples3)-->
-
-        <resource>
-            <reference>
-                <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
-            </reference>
-            <name value="StelbatololAqueousSolution"/>
-            <description value="Stelbatolol Aqueous Solution"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
-            <groupingId value="examples3"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="SubstanceDefinition/StelbatololGranules"/>
-            </reference>
-            <name value="StelbatololGranules"/>
-            <description value="Stelbatolol Granules"/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
-            <groupingId value="examples3"/>
-        </resource>
 
 
         <!--Terminology-->
