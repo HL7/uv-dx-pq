@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="valueset-closure-type-terminology"/>
+  <id value="pqcmc-closure-type-terminology"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/valueset-closure-type-terminology"/>
+  <url value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-closure-type-terminology"/>
   <version value="0.1.15"/>
   <name value="ClosureTypeTerminology"/>
   <title value="Closure Type Terminology"/>
