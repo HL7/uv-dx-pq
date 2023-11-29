@@ -36,18 +36,30 @@
 
     <element id="PackagedProductDefinition.packaging.type">
       <path value="PackagedProductDefinition.packaging.type"/>
-      <mustSupport value="ture"/>
-      <mapping>
-        <identity value="idmp"/>
-        <map value="Package Item (Container).Package Item (Container) Type"/>
-      </mapping>
+      <mustSupport value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PackagingType"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="A high level categorisation of a package."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/packaging-type"/>
+      </binding>
     </element>
 
     <element id="PackagedProductDefinition.packaging.material">
       <path value="PackagedProductDefinition.packaging.material"/>
       <mustSupport value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PackageMaterial"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="A material used in the construction of packages and their components."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/package-material"/>
+      </binding>
     </element>
-
+    
     <element id="PackagedProductDefinition.packaging.shelfLifeStorage">
       <path value="PackagedProductDefinition.packaging.shelfLifeStorage"/>
       <mustSupport value="true"/>
@@ -61,6 +73,18 @@
     <element id="PackagedProductDefinition.packaging.property">
       <path value="PackagedProductDefinition.packaging.property"/>
       <mustSupport value="true"/>
+    </element>
+    <element id="PackagedProductDefinition.packaging.property.type">
+      <path value="PackagedProductDefinition.packaging.property.type"/>
+      <mustSupport value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProductCharacteristic"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Example of a locally defined value set of closure types."/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/valueset-closure-type-terminology"/>
+      </binding>
     </element>
 
     <element id="PackagedProductDefinition.packaging.containedItem">
