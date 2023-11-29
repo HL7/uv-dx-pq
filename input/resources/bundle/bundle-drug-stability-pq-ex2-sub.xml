@@ -3694,7 +3694,8 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <!--                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -3765,7 +3766,8 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <!--                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -3828,7 +3830,8 @@
                <extension url="batchUtilization"><!-- #161 -->
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <!--                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>-->
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
