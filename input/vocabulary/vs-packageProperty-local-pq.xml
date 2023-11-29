@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-packageProperty-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/packageProperty & http://example.accumulus.org/fhir/code/packageProperty -->
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-local-pq"/>
+    <name value="VsPackagePropertyLocalPQ"/>
+    <title value="ValueSet - Package Property Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains example codes for package property in PQ."/>
+
+<compose>
+    <include>
+        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+    <concept>
+        <code value="Color"/>
+        <display value="Color"/>
+    </concept>
+    <concept>
+        <code value="Quality Standard"/>
+        <display value="Quality Standard"/>
+    </concept>
+    <concept>
+        <code value="Thickness"/>
+        <display value="Thickness"/>
+    </concept>
+    <concept>
+        <code value="Quality Specification"/>
+        <display value="Quality Specification"/>
+    </concept>
+    <concept>
+        <code value="Narrative"/>
+        <display value="Narrative"/>
+    </concept>
+    <concept>
+        <code value="Container Size"/>
+        <display value="Container Size"/>
+    </concept>
+    <concept>
+        <code value="Functional"/>
+        <display value="Functional"/>
+    </concept>
+    </include>
+</compose>
+</ValueSet>
