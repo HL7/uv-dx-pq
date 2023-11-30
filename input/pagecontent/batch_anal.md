@@ -34,7 +34,7 @@ Details about drug substance and drug product batch release testing and results.
 
 ### Substance
 <table>
-<tr><td><img src=" substance_batch_analysis_resources.png" width="700"/></td></tr>
+<tr><td><img src="substance_batch_analysis_resources.png" width="700"/></td></tr>
 </table>
  
 
