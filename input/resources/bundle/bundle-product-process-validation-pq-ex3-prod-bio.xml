@@ -2186,7 +2186,8 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="minimum"/>
                            <display value="Minimum"/>
                         </coding>
@@ -2319,7 +2320,8 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
                         </coding>
@@ -2445,7 +2447,8 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
                         </coding>
@@ -2569,7 +2572,8 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
                         </coding>
@@ -2693,7 +2697,8 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
                         </coding>
@@ -2816,7 +2821,8 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                           <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="intermediate"/>
                            <display value="Intermediate"/>
                         </coding>
