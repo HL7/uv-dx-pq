@@ -19,13 +19,10 @@
     <element id="DeviceDefinition">
       <path value="DeviceDefinition"/>
     </element>
-   
-
     <element id="DeviceDefinition.deviceName">
       <path value="DeviceDefinition.deviceName"/>
       <mustSupport value="true"/>
     </element>
-    
 
     <element id="DeviceDefinition.classification">
       <path value="DeviceDefinition.classification"/>
@@ -34,6 +31,10 @@
     <element id="DeviceDefinition.classification.type">
       <path value="DeviceDefinition.classification.type"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-deviceType-local-pq"/>
+      </binding>
     </element>
  
     <element id="DeviceDefinition.property">
@@ -43,6 +44,10 @@
     <element id="DeviceDefinition.property.type">
       <path value="DeviceDefinition.property.type"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-deviceProperty-local-pq"/>
+      </binding>
     </element>
     <element id="DeviceDefinition.property.value[x]">
       <path value="DeviceDefinition.property.value[x]"/>
