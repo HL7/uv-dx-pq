@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManufacturedItemDefinition xmlns="http://hl7.org/fhir">
+    <!-- Contained in bundle-drug-product-pq-ex1 -->
+    <id value="manufactureditemdefinition-drug-pq-ex2"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
+    </meta>
+    <status value="active"/>
+    <name value="Stelbatolol 5mg tablet"/>
+    <manufacturedDoseForm>
+        <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="unsupported"/>
+        </extension>
+    </manufacturedDoseForm>
+    <property>
+        <type>
+            <coding>
+                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
+                <code value="overage-by-mass"/>
+                <display value="Overage by mass (%)"/>
+            </coding>
+        </type>
+        <valueQuantity>
+            <value value="5"/>
+            <unit value="%"/>
+        </valueQuantity>
+    </property>
+
+    <property>
+        <type>
+            <coding>
+                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
+                <code value="overage-reason"/>
+                <display value="Overage reason"/>
+            </coding>
+        </type>
+        <valueCodeableConcept>
+            <text value="Overage is necessary because..."/>
+        </valueCodeableConcept>
+    </property>
+</ManufacturedItemDefinition>
