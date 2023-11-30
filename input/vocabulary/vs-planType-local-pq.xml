@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-planType-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/planType-->
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-planType-local-pq"/>
+    <name value="VsPlanTypeLocalPQ"/>
+    <title value="ValueSet - Plan Type Local PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains local codes for plan type in PQ."/>
+
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+            <concept>
+                <code value="analytical-procedure"/>
+                <display value="Analytical Procedure"/>
+            </concept>
+            <concept>
+                <code value="manufacturing-process"/>
+                <display value="Manufacturing Process"/>
+            </concept>
+            <concept>
+                <code value="process-validation"/>
+                <display value="Process Validation"/>
+            </concept>
+            <concept>
+                <code value="container-specification"/>
+                <display value="Container Specification"/>
+            </concept>
+            <concept>
+                <code value="product-compatibility"/>
+                <display value="Product Compatibility"/>
+            </concept>
+            <concept>
+                <code value="elucidation-of-structure"/>
+                <display value="Elucidation of Structure"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

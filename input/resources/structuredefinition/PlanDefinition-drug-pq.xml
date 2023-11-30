@@ -41,10 +41,26 @@
             <path value="PlanDefinition.title"/>
             <mustSupport value="true"/>
         </element>
+    
         <element id="PlanDefinition.type">
             <path value="PlanDefinition.type"/>
             <mustSupport value="true"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+                    <valueString value="PlanDefinitionType"/>
+                </extension>
+                <strength value="extensible"/>
+                <description value="The type of PlanDefinition."/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/plan-definition-type"/>
+            </binding>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-planType-local-pq"/>
+            </binding>
         </element>
+        
+        
+        
         <element id="PlanDefinition.status">
             <path value="PlanDefinition.status"/>
             <mustSupport value="true"/>
@@ -68,6 +84,15 @@
         <element id="PlanDefinition.action">
             <path value="PlanDefinition.action"/>
             <mustSupport value="true"/>
+        </element>
+        
+        <element id="PlanDefinition.action.code">
+            <path value="PlanDefinition.action.code"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-local-pq"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

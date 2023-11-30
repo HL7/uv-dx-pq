@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-manufacturingStep-local-pq"/>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-manufacturingStep-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/manufacturingStep-->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
-    <name value="CsManufacturingStepLocalPQ"/>
-    <title value="CodeSystem - Manufacturing Step Local PQ"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-local-pq"/>
+    <name value="VsManufacturingStepLocalPQ"/>
+    <title value="ValueSet - Manufacturing Step Local PQ"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for manufacturing step in PQ."/>
+    <description value="This value set contains local codes for manufacturing step in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 
@@ -115,4 +115,4 @@
         <display value="Lyophilization Homogeneity Results"/>
     </concept>
 
-</CodeSystem>
+</ValueSet>
