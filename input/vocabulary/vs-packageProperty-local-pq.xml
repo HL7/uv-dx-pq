@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-packageProperty-local-pq"/>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-packageProperty-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/packageProperty & http://example.accumulus.org/fhir/code/packageProperty -->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-    <name value="CsPackagePropertyPQ"/>
-    <title value="CodeSystem - Package Property PQ"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-local-pq"/>
+    <name value="VsPackagePropertyPQ"/>
+    <title value="ValueSet - Package Property PQ"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for package property in PQ."/>
-    <caseSensitive value="true"/>
-    <content value="complete"/>
+    <description value="This value set contains example codes for package property in PQ."/>
 
+<compose>
+    <include>
+        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
     <concept>
         <code value="Color"/>
         <display value="Color"/>
@@ -39,4 +43,6 @@
         <code value="Functional"/>
         <display value="Functional"/>
     </concept>
-</CodeSystem>
+    </include>
+</compose>
+</ValueSet>

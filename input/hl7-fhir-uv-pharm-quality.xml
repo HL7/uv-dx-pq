@@ -1989,7 +1989,7 @@
 
 
         <!--Terminology-->
-
+<!--
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-local-codes-drug-pq"/>
@@ -2341,7 +2341,7 @@
             <isExample value="false"/>
             <groupingId value="term"/>
         </resource>
-
+-->
         <!-- Narrative pages      -->
         <page>
             <name value="index.html"/>

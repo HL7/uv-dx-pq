@@ -3,8 +3,8 @@
     <id value="cs-grade-local-pq"/>
     <!--    Replaces http://example.accumulus.org/fhir/code/grade & http://accumulus.org/fhir/code/grade-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
-    <name value="CsGradeLocalPQ"/>
-    <title value="CodeSystem - Grade Local PQ"/>
+    <name value="CsGradePQ"/>
+    <title value="CodeSystem - Grade PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for grade in PQ."/>

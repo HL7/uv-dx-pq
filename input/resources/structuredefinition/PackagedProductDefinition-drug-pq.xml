@@ -59,7 +59,7 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/package-material"/>
       </binding>
     </element>
-    
+
     <element id="PackagedProductDefinition.packaging.shelfLifeStorage">
       <path value="PackagedProductDefinition.packaging.shelfLifeStorage"/>
       <mustSupport value="true"/>
@@ -78,14 +78,12 @@
       <path value="PackagedProductDefinition.packaging.property.type"/>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProductCharacteristic"/>
-        </extension>
         <strength value="example"/>
-        <description value="Example of a locally defined value set of closure types."/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/valueset-closure-type-terminology"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-local-pq"/>
       </binding>
     </element>
+
+
 
     <element id="PackagedProductDefinition.packaging.containedItem">
       <path value="PackagedProductDefinition.packaging.containedItem"/>
@@ -100,7 +98,12 @@
     <element id="PackagedProductDefinition.packaging.packaging">
       <path value="PackagedProductDefinition.packaging.packaging"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-closure-type-terminology"/>
+      </binding>
     </element>
+
 
 
   </differential>

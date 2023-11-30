@@ -3,8 +3,8 @@
     <id value="cs-impurity-type-local-pq"/>
     <!--    Replaces http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq -->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
-    <name value="CsImpurityTypeLocalPQ"/>
-    <title value="CodeSystem - Impurity Type Local PQ"/>
+    <name value="CsImpurityTypePQ"/>
+    <title value="CodeSystem - Impurity Type PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for impurity type in PQ."/>

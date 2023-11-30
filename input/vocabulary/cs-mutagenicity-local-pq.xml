@@ -3,8 +3,8 @@
     <id value="cs-mutagenicity-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/mutagenicity-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
-    <name value="CsMutagenicityLocalPQ"/>
-    <title value="CodeSystem - Mutagenicity Local PQ"/>
+    <name value="CsMutagenicityPQ"/>
+    <title value="CodeSystem - Mutagenicity PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for mutagenicity in PQ."/>

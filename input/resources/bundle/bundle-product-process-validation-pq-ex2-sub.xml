@@ -62,6 +62,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
+                     <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="particleSizeReduction"/>
                      <display value="Particle Size Reduction"/>
@@ -134,7 +135,8 @@
                <title value="Step 1 In-Process Control Data"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="Step1In-ProcessControlData"/>
                      <display value="Step 1 In-Process Control Data"/>
                   </coding>
@@ -158,7 +160,8 @@
                <title value="Step 1 DS Release Testing Results"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="Step1DSReleaseTestingResults"/>
                      <display value="Step 1 DS Release Testing Results"/>
                   </coding>
@@ -198,6 +201,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
+                     <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="drying"/>
                      <display value="Drying"/>

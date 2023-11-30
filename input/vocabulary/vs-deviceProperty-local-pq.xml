@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-deviceProperty-local-pq"/>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-deviceProperty-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/deviceProperty-->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
-    <name value="CsDevicePropertyPQ"/>
-    <title value="CodeSystem - Device Property PQ"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-deviceProperty-local-pq"/>
+    <name value="VsDevicePropertyPQ"/>
+    <title value="ValueSet - Device Property PQ"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for device property in PQ."/>
-    <caseSensitive value="true"/>
-    <content value="complete"/>
+    <description value="This value set contains local codes for device property in PQ."/>
 
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
     <concept>
         <code value="Maximum Speed"/>
         <display value="Maximum Speed"/>
@@ -27,4 +28,6 @@
         <code value="Capacity"/>
         <display value="Capacity"/>
     </concept>
-</CodeSystem>
+        </include>
+    </compose>
+</ValueSet>
