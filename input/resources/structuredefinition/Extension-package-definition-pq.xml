@@ -6,6 +6,7 @@
     <name value="ExtensionPackageDefinitionPq"/>
     <title value="Extension - Package Definition PQ"/>
     <status value="active"/>
+    <description value="A reference to the packaging for a medication (PackagedProductDefinition)"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

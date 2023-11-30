@@ -6,6 +6,7 @@
     <name value="ExtensionTestCommentPq"/>
     <title value="Extension - Test Comment PQ"/>
     <status value="active"/>
+    <description value="A textual comment that further describes an aspect of a test requirement"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

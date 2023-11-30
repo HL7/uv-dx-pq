@@ -5,6 +5,7 @@
     <name value="ExtensionHistoryOfProcessPq"/>
     <title value="Extension - History of Process PQ"/>
     <status value="active"/>
+    <description value="An textual description of the previous versions, decisions and development of this process"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

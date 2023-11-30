@@ -5,6 +5,7 @@
     <name value="ExtensionProcessStepScalePq"/>
     <title value="Extension - Process Step Scale PQ"/>
     <status value="active"/>
+    <description value="A scale size description that applies to a process step, such as 'production' or 'testing'"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

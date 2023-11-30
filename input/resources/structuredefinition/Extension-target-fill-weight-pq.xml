@@ -6,6 +6,7 @@
     <name value="ExtensionTargetFillWeightPq"/>
     <title value="Extension Target Fill Weight PQ"/>
     <status value="active"/>
+    <description value="The desired amount of substance in each item to be made from the batch (e.g. a vial)"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

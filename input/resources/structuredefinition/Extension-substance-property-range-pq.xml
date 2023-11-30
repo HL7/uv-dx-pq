@@ -6,6 +6,7 @@
     <name value="ExtensionSubstancePropertyRangePq"/>
     <title value="Extension - Substance Property Range PQ"/>
     <status value="active"/>
+    <description value="Allows a characteristic or property to use a range datatype, instead of a single value"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

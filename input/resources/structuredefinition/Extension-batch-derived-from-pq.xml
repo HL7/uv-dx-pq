@@ -6,6 +6,8 @@
     <name value="ExtensionBatchDerivedFromPq"/>
     <title value="Extension - Batch Derived From PQ"/>
     <status value="active"/>
+    <description value="A reference to another batch that this batch is derived from"/>
+    
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

@@ -11,6 +11,7 @@
     <name value="ExtensionContainerOrientationPq"/>
     <title value="Extension - Container Orientation PQ"/>
     <status value="active"/>
+    <description value="The spatial orientaton of the container when tested, for instance horizontal or vertical"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

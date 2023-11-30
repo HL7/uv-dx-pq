@@ -6,6 +6,7 @@
     <name value="ExtensionActualYieldPq"/>
     <title value="Extension - Actual Yield PQ"/>
     <status value="active"/>
+    <description value="The actual weight of a batch"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

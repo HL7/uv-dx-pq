@@ -6,6 +6,7 @@
     <name value="ExtensionBatchNumberOfPartialShelvesPq"/>
     <title value="Extension - Batch Number of Partial Shelves PQ"/>
     <status value="active"/>
+    <description value="The number of partially filled shelves from which batches are selected for testing"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

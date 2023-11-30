@@ -11,6 +11,7 @@
     <name value="ExtensionStatisticalModelPq"/>
     <title value="Extension - Statistical Model PQ"/>
     <status value="active"/>
+    <description value="Information about the statistical model utilized to interpret results"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

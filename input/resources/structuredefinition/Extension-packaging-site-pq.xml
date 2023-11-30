@@ -6,6 +6,7 @@
     <name value="ExtensionPackagingSitePq"/>
     <title value="Extension - Packaging Site PQ"/>
     <status value="active"/>
+    <description value="The organization that packaged this batch (reference to an Organization)"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

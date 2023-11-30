@@ -6,6 +6,7 @@
     <name value="ExtensionNovelExcipientPq"/>
     <title value="Extension - Novel Excipient PQ"/>
     <status value="active"/>
+    <description value="Whether or not an excipient (inactive ingredient) in a product is considered 'novel'"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

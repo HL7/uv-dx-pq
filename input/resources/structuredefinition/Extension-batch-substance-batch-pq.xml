@@ -6,6 +6,7 @@
     <name value="ExtensionBatchSubstanceBatchPq"/>
     <title value="Extension - Batch Substance Batch PQ"/>
     <status value="active"/>
+    <description value="A reference to a substance that this batch consists of"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

@@ -6,7 +6,8 @@
     <name value="ExtensionBatchNumberOfVialsPq"/>
     <title value="Extension - Batch Number of Vials PQ"/>
     <status value="active"/>
-<fhirVersion value="5.0.0"/>
+    <description value="The count of vials selected for testing"/>
+    <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>

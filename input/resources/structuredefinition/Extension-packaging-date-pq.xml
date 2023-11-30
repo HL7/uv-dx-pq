@@ -6,6 +6,7 @@
     <name value="ExtensionPackagingDatePq"/>
     <title value="Extension - Packaging Date PQ"/>
     <status value="active"/>
+    <description value="The date when the batch was packaged"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

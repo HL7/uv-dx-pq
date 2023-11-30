@@ -5,7 +5,9 @@
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq"/>
     <name value="ExtensionBatchReleaseDatePq"/>
     <title value="Extension - Batch Release Date PQ"/>
+    
     <status value="active"/>
+    <description value="The date when a batch was made available"/>
 <!--    <fhirVersion value="5.0.0"/>-->
     <kind value="complex-type"/>
     <abstract value="false"/>

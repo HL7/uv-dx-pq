@@ -6,6 +6,7 @@
     <name value="ExtensionQualifiedValueCriticalityPq"/>
     <title value="Extension - Qualified Value Criticality PQ"/>
     <status value="active"/>
+    <description value="A measure of how important the control value of this process step is"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

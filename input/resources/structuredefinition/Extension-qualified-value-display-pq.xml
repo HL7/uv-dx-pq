@@ -5,6 +5,7 @@
     <name value="ExtensionQualifiedValueDisplayPq"/>
     <title value="Extension - Qualified Value Display PQ"/>
     <status value="active"/>
+    <description value="A displayable version of a qualified value, formatted for showing to a user"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

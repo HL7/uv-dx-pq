@@ -6,6 +6,7 @@
     <name value="ExtensionFormulationNumberPq"/>
     <title value="Extension - Formulation Number PQ"/>
     <status value="active"/>
+    <description value="An identifying number for the particular substance formulation in the batch"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

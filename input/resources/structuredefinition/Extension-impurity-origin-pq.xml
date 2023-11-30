@@ -6,6 +6,7 @@
     <name value="ExtensionImpurityOriginPq"/>
     <title value="Extension - Impurity Origin PQ"/>
     <status value="active"/>
+    <description value="The source of this impurity"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

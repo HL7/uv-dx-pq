@@ -5,6 +5,7 @@
     <name value="ExtensionManufacturingParticipantPq"/>
     <title value="Extension - Manufacturing Participant PQ"/>
     <status value="active"/>
+    <description value="A reference to a substance that takes part in a process step"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

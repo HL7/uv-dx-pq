@@ -5,6 +5,7 @@
     <name value="ExtensionProcessParametersPq"/>
     <title value="Extension - Process Parameters PQ"/>
     <status value="active"/>
+    <description value="A property value or setting that this process step must use e.g. a certain temperature or duration"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

@@ -6,6 +6,7 @@
     <name value="ExtensionQualifiedValueTextPq"/>
     <title value="Extension - Qualified Value Text PQ"/>
     <status value="active"/>
+    <description value="A string based acceptable range description"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

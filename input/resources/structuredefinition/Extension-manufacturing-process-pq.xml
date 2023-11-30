@@ -6,6 +6,7 @@
     <name value="ExtensionManufacturingProcessPq"/>
     <title value="Extension - Manufacturing Process PQ"/>
     <status value="active"/>
+    <description value="A reference to the process of manufacture of this batch (PlanDefinition)"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

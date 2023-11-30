@@ -6,6 +6,7 @@
     <name value="ExtensionBatchRetestDatePq"/>
     <title value="Extension - Batch Retest Date PQ"/>
     <status value="active"/>
+    <description value="The date that a batch is due to be tested again"/>
 <!--    <fhirVersion value="5.0.0"/>-->
     <kind value="complex-type"/>
     <abstract value="false"/>

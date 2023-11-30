@@ -6,6 +6,7 @@
     <name value="ExtensionSiteUtilizationPq"/>
     <title value="Extension - Site Utilization PQ"/>
     <status value="active"/>
+    <description value="The role that the site performs, in the overall context of manufacturing"/>
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

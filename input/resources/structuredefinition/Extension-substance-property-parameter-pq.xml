@@ -5,6 +5,7 @@
     <name value="ExtensionSubstancePropertyParameterPq"/>
     <title value="Extension - Substance Property Parameter PQ"/>
     <status value="active"/>
+    <description value="A parameter to a substance property, such as the concentration or pH at which the property value applies"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

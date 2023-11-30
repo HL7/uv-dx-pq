@@ -6,6 +6,7 @@
     <name value="ExtensionSuitabilityForUsePq"/>
     <title value="Extension - Suitability for Use PQ"/>
     <status value="active"/>
+    <description value="Whether an excipient is considered suitable for use in this product or item"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

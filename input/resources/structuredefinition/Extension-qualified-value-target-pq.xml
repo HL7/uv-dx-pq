@@ -6,6 +6,7 @@
     <name value="ExtensionQualifiedValueTargetPq"/>
     <title value="Extension - Qualified Value Target PQ"/>
     <status value="active"/>
+    <description value="A target, desired, amount for a qualified value, from within the allowable range"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
