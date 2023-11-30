@@ -27,5 +27,16 @@
       <mustSupport value="true"/>
     </element>
     
+    <element id="ManufacturedItemDefinition.property">
+      <path value="ManufacturedItemDefinition.property"/>
+    </element>
+    <element id="ManufacturedItemDefinition.property.type">
+      <path value="ManufacturedItemDefinition.property.type"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufactured-item-property-local-pq"/>
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
