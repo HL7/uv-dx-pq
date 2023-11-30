@@ -5,6 +5,7 @@
     <name value="ExtensionBatchDesignationPq"/>
     <title value="Extension - Batch Designation PQ"/>
     <status value="active"/>
+    <description value="A batch's type in terms of its general size"/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -29,14 +30,17 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri
-                value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq"/>
+            <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-batch-designation-local-pq"/> 
+            </binding>
         </element>
     </differential>
 </StructureDefinition>
