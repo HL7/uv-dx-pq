@@ -4,10 +4,10 @@
     <!--    Replaces http://example.accumulus.org/fhir/code/grade & http://accumulus.org/fhir/code/grade-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
     <name value="CsGradePQ"/>
-    <title value="CodeSystem - Grade PQ"/>
+    <title value="CodeSystem - Grade"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for grade in PQ."/>
+    <description value="This code system contains example codes for grade in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 

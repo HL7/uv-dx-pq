@@ -4,10 +4,10 @@
     <!--    Replaces http://example.accumulus.org/fhir/code/substance-property-solubility-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq"/>
     <name value="CsSubstancePropertySolubilityPQ"/>
-    <title value="CodeSystem - Substance Property Solubility PQ"/>
+    <title value="CodeSystem - Substance Property Solubility"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for substance property solubility in PQ."/>
+    <description value="This code system contains example codes for substance property solubility in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 

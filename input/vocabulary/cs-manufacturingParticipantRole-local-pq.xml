@@ -4,10 +4,10 @@
     <!--    Replaces http://accumulus.org/fhir/code/manufacturingParticipantRole-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
     <name value="CsManufacturingParticipantRolePQ"/>
-    <title value="CodeSystem - Manufacturing Participant Role PQ"/>
+    <title value="CodeSystem - Manufacturing Participant Role"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for manufacturing participant role in PQ."/>
+    <description value="This code system contains example codes for manufacturing participant role in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 

@@ -4,10 +4,10 @@
     <!--    Replaces http://accumulus.org/fhir/code/deviceType-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-deviceType-local-pq"/>
     <name value="VsDeviceTypePQ"/>
-    <title value="ValueSet - Device Type PQ"/>
+    <title value="ValueSet - Device Type"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This valueset contains local codes for device type in PQ."/>
+    <description value="This valueset contains example codes for device type in PQ."/>
 
     <compose>
         <include>

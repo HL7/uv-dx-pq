@@ -4,10 +4,10 @@
     <!--    Replaces http://accumulus.org/fhir/code/planType-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
     <name value="CsPlanTypePQ"/>
-    <title value="CodeSystem - Plan Type PQ"/>
+    <title value="CodeSystem - Plan Type"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for plan type in PQ."/>
+    <description value="This code system contains example codes for plan type in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     

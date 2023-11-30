@@ -4,10 +4,10 @@
     <!--    Replaces http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation -->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
     <name value="CsBatchDesignationPQ"/>
-    <title value="CodeSystem - Batch Designation PQ"/>
+    <title value="CodeSystem - Batch Designation"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for batch designation in PQ."/>
+    <description value="This code system contains example codes for batch designation in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 

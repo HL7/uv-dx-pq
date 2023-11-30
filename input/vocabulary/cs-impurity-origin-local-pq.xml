@@ -4,10 +4,10 @@
     <!--    Replaces http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
     <name value="CsImpurityOriginPQ"/>
-    <title value="CodeSystem - Impurity Origin PQ"/>
+    <title value="CodeSystem - Impurity Origin"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for impurity origin in PQ."/>
+    <description value="This code system contains example codes for impurity origin in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 

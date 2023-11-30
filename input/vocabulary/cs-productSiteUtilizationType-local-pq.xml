@@ -4,10 +4,10 @@
     <!--    Replaces http://accumulus.org/fhir/code/productSiteUtilizationType-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq"/>
     <name value="CsProductSiteUtilizationTypePQ"/>
-    <title value="CodeSystem - Product Site Utilization Type PQ"/>
+    <title value="CodeSystem - Product Site Utilization Type"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for product site utilization type in PQ."/>
+    <description value="This code system contains example codes for product site utilization type in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 

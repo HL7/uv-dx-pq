@@ -4,10 +4,10 @@
     <!--    Replaces http://accumulus.org/fhir/code/reportType-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
     <name value="CsReportTypePQ"/>
-    <title value="CodeSystem - Report Type PQ"/>
+    <title value="CodeSystem - Report Type"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for report type in PQ."/>
+    <description value="This code system contains example codes for report type in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 
