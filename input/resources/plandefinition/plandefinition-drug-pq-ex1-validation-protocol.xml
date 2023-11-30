@@ -29,7 +29,8 @@
                <title value="Formulation Buffer Preparation Process Parameter Step"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="FormulationBufferPreparationProcessParameterStep"/>
                      <display value="Formulation Buffer Preparation Process Parameter Step"/>
                   </coding>
@@ -57,7 +58,8 @@
                <title value="Formulation Buffer Preparation Performance Indicator Results"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="FormulationBufferPreparationPerformanceIndicatorStep"/>
                      <display value="Formulation Buffer Preparation Performance Indicator Results"/>
                   </coding>
@@ -92,7 +94,8 @@
                <title value="Thawing and Formulation Process Parameter Results"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="ThawingandFormulationProcessParameterResultsStep"/>
                      <display value="Thawing and Formulation Process Parameter Resultss"/>
                   </coding>
@@ -124,7 +127,8 @@
 					<title value="Thawing and Formulation Performance Indicator Results"/>
                     <code>
                         <coding>
-                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                             <code value="ThawingandFormulationPerformanceIndicatorResultsStep"/>
                             <display value="Thawing and Formulation Performance Indicator Results"/>
                         </coding>
@@ -161,7 +165,8 @@
                     <title value="Bioburden Reduction Filtration Process Parameter Results"/>
                     <code>
                         <coding>
-                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                             <code value="BioburdenReductionFiltrationProcessParameterResultsStep"/>
                             <display value="Bioburden Reduction Filtration Process Parameter Results"/>
                         </coding>
@@ -177,7 +182,8 @@
                     <title value="Bioburden Reduction Filtration Performance Indicator Results"/>
                     <code>
                         <coding>
-                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="BioburdenReductionFiltrationPerformanceIndicatorResultsStep"/>
                             <display value="Bioburden Reduction Filtration Performance Indicator Results"/>
                   </coding>
@@ -197,7 +203,8 @@
                     <title value="Media Challenge Hold Times"/>
                     <code>
                         <coding>
-                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                             <code value="MediaChallengeHoldTimesStep"/>
                             <display value="Media Challenge Hold Times"/>
                         </coding>
@@ -213,7 +220,8 @@
                     <title value="Media Challenge Results"/>
                     <code>
                         <coding>
-                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                             <code value="MediaChallengeResultsStep"/>
                             <display value="Media Challenge Results"/>
                         </coding>
@@ -232,7 +240,8 @@
                     <title value="Filtered Formulated Drug Product Performance Indicator Results"/>
                     <code>
                         <coding>
-                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                             <code value="FilteredFormulatedDrugProductPerformanceIndicatorResultsStep"/>
                             <display value="Filtered Formulated Drug Product Performance Indicator Results"/>
                         </coding>
@@ -256,7 +265,8 @@
             		<title value="Fill Weight Summary"/>
             		<code>
             			<coding>
-            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+            			    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
             				<code value="FillWeightSummaryStep"/>
             				<display value="Fill Weight Summary"/>
             			</coding>
@@ -272,7 +282,8 @@
             		<title value="Filling Homogeneity Quality Attributes"/>
             		<code>
             			<coding>
-            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+            			    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
             				<code value="FillingHomogeneityQualityAttributesStep"/>
             				<display value="Filling Homogeneity Quality Attributes"/>
             			</coding>
@@ -290,7 +301,8 @@
             		<title value="Filling Results Summary"/>
             		<code>
             			<coding>
-            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+            			    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
             				<code value="FillingResultsSummaryStep"/>
             				<display value="Filling Results Summary"/>
             			</coding>
@@ -310,7 +322,8 @@
             		<title value="Statistical Evaluation of Homogeneity Data"/>
             		<code>
             			<coding>
-            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+            			    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
             				<code value="StatisticalEvaluationOfHomogeneityDataStep"/>
             				<display value="Statistical Evaluation of Homogeneity Data"/>
             			</coding>
@@ -330,7 +343,8 @@
             		<title value="Consistency of the Lyophilization Process"/>
             		<code>
             			<coding>
-            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+            			    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
             				<code value="ConsistencyoftheLyophilizationProcessStep"/>
             				<display value="Consistency of the Lyophilization Process"/>
             			</coding>
@@ -350,7 +364,8 @@
              		<title value="Lyophilization Homogeneity"/>
             		<code>
             			<coding>
-            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+            			    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
             				<code value="LyophilizationHomogeneityStep"/>
             				<display value="Lyophilization Homogeneity Results"/>
             			</coding>
