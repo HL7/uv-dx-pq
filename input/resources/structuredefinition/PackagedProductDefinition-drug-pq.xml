@@ -98,7 +98,12 @@
     <element id="PackagedProductDefinition.packaging.packaging">
       <path value="PackagedProductDefinition.packaging.packaging"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-closure-type-terminology"/>
+      </binding>
     </element>
+
 
 
   </differential>
