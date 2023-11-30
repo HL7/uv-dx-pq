@@ -32,8 +32,13 @@
     <element id="Procedure.code">
       <path value="Procedure.code"/>
       <mustSupport value="true"/>
-    </element>
 
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-process-validation-procedure-pq"/>
+      </binding>
+    </element>
+    
     <element id="Procedure.subject">
       <path value="Procedure.subject"/>
       <mustSupport value="true"/>
