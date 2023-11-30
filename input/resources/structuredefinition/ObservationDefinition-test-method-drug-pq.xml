@@ -20,10 +20,6 @@
         <element id="ObservationDefinition.id">
             <path value="ObservationDefinition.id"/>
         </element>
-<!--        <element id="ObservationDefinition.category">
-            <path value="ObservationDefinition.category"/>
-            <mustSupport value="true"/>
-        </element>-->
         <element id="ObservationDefinition.code">
             <path value="ObservationDefinition.code"/>
             <mustSupport value="true"/>
@@ -38,7 +34,7 @@
         </element>
         <element id="ObservationDefinition.specimen">
             <path value="ObservationDefinition.specimen"/>
-            <mustSupport value="true"/>>
+            <mustSupport value="true"/>
         </element>
         <element id="ObservationDefinition.device">
             <path value="ObservationDefinition.device"/>
@@ -51,7 +47,7 @@
         </element>
         <element id="ObservationDefinition.qualifiedValue">
             <path value="ObservationDefinition.qualifiedValue"/>
-            <mustSupport value="true"/>>
+            <mustSupport value="true"/>
         </element>
         <element id="ObservationDefinition.hasMember">
             <path value="ObservationDefinition.hasMember"/>
