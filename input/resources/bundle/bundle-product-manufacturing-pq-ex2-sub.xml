@@ -124,7 +124,7 @@
                <code>
                   <coding>
                      <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="overall process"/>
                      <display value="Overall Process"/>
                   </coding>
@@ -160,7 +160,7 @@
                   <code>
                      <coding>
                         <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                         <code value="particleSizeReduction"/>
                         <display value="Particle Size Reduction"/>
                      </coding>
