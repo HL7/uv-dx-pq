@@ -4,10 +4,10 @@
     <!--    Replaces http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq -->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
     <name value="CsIchM7ClassificationPQ"/>
-    <title value="CodeSystem - ICH M7 Classification PQ"/>
+    <title value="CodeSystem - ICH M7 Classification"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains local codes for ICH M7 classification in PQ."/>
+    <description value="This code system contains example codes for ICH M7 classification in PQ."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 
