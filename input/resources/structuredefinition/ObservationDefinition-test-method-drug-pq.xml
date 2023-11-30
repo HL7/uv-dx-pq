@@ -20,12 +20,41 @@
         <element id="ObservationDefinition.id">
             <path value="ObservationDefinition.id"/>
         </element>
-        <element id="ObservationDefinition.category">
+<!--        <element id="ObservationDefinition.category">
             <path value="ObservationDefinition.category"/>
             <mustSupport value="true"/>
-        </element>
+        </element>-->
         <element id="ObservationDefinition.code">
             <path value="ObservationDefinition.code"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-test-method-local-pq"/>
+            </binding>
+        </element>
+        <element id="ObservationDefinition.method">
+            <path value="ObservationDefinition.method"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ObservationDefinition.specimen">
+            <path value="ObservationDefinition.specimen"/>
+            <mustSupport value="true"/>>
+        </element>
+        <element id="ObservationDefinition.device">
+            <path value="ObservationDefinition.device"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ObservationDefinition.qualifiedValue">
+            <path value="ObservationDefinition.qualifiedValue"/>
+            <mustSupport value="true"/>>
+        </element>
+        <element id="ObservationDefinition.hasMember">
+            <path value="ObservationDefinition.hasMember"/>
             <mustSupport value="true"/>
         </element>
     </differential>
