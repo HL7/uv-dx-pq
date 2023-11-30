@@ -237,7 +237,7 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-                <!--manufactureditemdefinition-pq-ex1-->
+            <!--manufactureditemdefinition-drug-pq-ex2-->
             <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <status value="active"/>
             <name value="Stelbatolol 5mg tablet"/>

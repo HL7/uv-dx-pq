@@ -1,14 +1,13 @@
 {
   "package-id" : "hl7.fhir.uv.pharm-quality",
-  "version" : "0.1.0",
-  "path" : "http://hl7.org/fhir/uv/pharm-quality",
+  "version" : "1.0.0-ballot",
+  "path" : "http://hl7.org/fhir/uv/pharm-quality/2024Jan",
   "mode" : "working",
-  "status" : "draft",
-  "sequence" : "Releases",
-  "desc" : "Continuous Integration Build (latest in version control)",
+  "status" : "ballot",
+  "sequence" : "STU1",
+  "desc" : "The January 2024 Ballot Version is the first ballot of this implementation guide.",
   "first" : "true",
-  "title" : "Biopharmaceutical Industry CMC Data Exchange",
+  "title" : "Pharmaceutical Quality (Industry)",
   "ci-build" : "http://build.fhir.org/ig/HL7/uv-dx-pq",
-  "category" : "Biomedical Research and Regulation",
-  "introduction" : "TBD"
+  "category" : "Biomedical Research and Regulation"
 }

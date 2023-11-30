@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-manufactured-item-property-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/manufacturingStep-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
+    <name value="CsManufacturedItemPropertyPQ"/>
+    <title value="CodeSystem - Manufactured Item Property"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains example codes for manufactured item property in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="overage-by-mass"/>
+        <display value="Overage by mass (%)"/>
+    </concept>
+    <concept>
+        <code value="overage-reason"/>
+        <display value="Overage reason"/>
+    </concept>
+</CodeSystem>

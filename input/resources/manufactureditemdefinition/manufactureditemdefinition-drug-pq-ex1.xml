@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ManufacturedItemDefinition xmlns="http://hl7.org/fhir">
-    <!-- Contained in Accumulus FHIR Substance Example - Container Closure System (2023-08-07) -->
+    <!-- Contained in Accumulus FHIR Substance Example - Container Closure System (2023-08-07) & bundle-container-closure-system-pq-ex2-sub -->
 <!--    <id value="packaged-item"/>-->
     <id value="manufactureditemdefinition-drug-pq-ex1"/>
     <meta>

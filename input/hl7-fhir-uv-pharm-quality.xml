@@ -1028,13 +1028,23 @@
             <reference>
                 <reference value="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1"/>
             </reference>
-            <name value="ManufacturedItemDefinition - Drug - example"/>
-            <description value="Example of ManufacturedItemDefinition - Drug."/>
+            <name value="ManufacturedItemDefinition - Drug - example 1"/>
+            <description value="Example of ManufacturedItemDefinition - Drug for an item contained by a closure system."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
 
+        <resource>
+            <reference>
+                <reference value="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex2"/>
+            </reference>
+            <name value="ManufacturedItemDefinition - Drug - example 2"/>
+            <description value="Example of ManufacturedItemDefinition - Drug for Stelbatolol 5mg tablet."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="Medication/medication-batch-information-drug-pq-ex1"/>

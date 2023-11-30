@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-test-method-local-pq"/>
+    <!--    Replaces http://accumulus.org/fhir/code/planType-->
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-test-method-local-pq"/>
+    <name value="VsTestMethodPQ"/>
+    <title value="ValueSet - Test Method"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains example codes for test methods in PQ."/>
+
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+            <concept>
+                <code value="SE-UHPLCHMW-15"/>
+                <display value="SE-UHPLC HMW - 15"/>
+            </concept>
+            <concept>
+                <code value="SE-UHPLCHMW-25"/>
+                <display value="SE-UHPLC HMW - 25"/>
+            </concept>
+            <concept>
+                <code value="SE-UHPLCMainPeak-15"/>
+                <display value="SE-UHPLC Main Peak - 15"/>
+            </concept>
+            <concept>
+                <code value="SE-UHPLCMainPeak-25"/>
+                <display value="SE-UHPLC Main Peak - 25"/>
+            </concept>
+            <concept>
+                <code value="SIZE"/>
+                <display value="Particle Size"/>
+            </concept>
+            <concept>
+                <code value="SOL"/>
+                <display value="Residual solvents"/>
+            </concept>
+            <concept>
+                <code value="SOLV"/>
+                <display value="Solvent"/>
+            </concept>
+            <concept>
+                <code value="SSE"/>
+                <display value="Statistically significant effects"/>
+            </concept>
+            <concept>
+                <code value="TEMP"/>
+                <display value="Temperature"/>
+            </concept>
+            <concept>
+                <code value="UCL"/>
+                <display value="Upper one-sided 95% confidence limit of Max Difference"/>
+            </concept>
+            <concept>
+                <code value="uniformity-dosage"/>
+                <display value="uniformity of dosage units (by weight)"/>
+            </concept>
+            <concept>
+                <code value="WWWH"/>
+                <display value="Water Content Homogeneity"/>
+            </concept>
+            <!--concept>
+    <code value="xxx"/>
+    <display value="Assay"/>
+  </concept-->
+            <concept>
+                <code value="SAMP"/>
+                <display value="Number of Samples"/>
+            </concept>
+            <concept>
+                <code value="DGP"/>
+                <display value="Degradation Products"/>
+            </concept>
+            <!--concept>
+    <code value="Drug Substance Related Organic impurities"/>
+    <display value="Drug Substance Related Organic impurities"/>
+  </concept-->
+            <concept>
+                <code value="DGP-s"/>
+                <display value="Drug Substance Related Organic impurities"/>
+            </concept>
+            <!--concept>
+    <code value="DGP-p"/>
+    <display value="Degradation Products"/>
+  </concept-->
+            <concept>
+                <code value="IMP"/>
+                <display value="Impurity"/>
+            </concept>
+            <concept>
+                <code value="Impurities"/>
+                <display value="Impurities"/>
+            </concept>
+            
+            <concept>
+                <code value="WWW"/>
+                <display value="Water Content"/>
+            </concept>
+            <!--concept>
+    <code value="XXX"/>
+    <display value="Assay"/>
+  </concept-->
+            <concept>
+                <code value="Microbiological Quality"/>
+                <display value="Microbiological Quality"/>
+            </concept>
+            <!--concept>
+    <code value="ZZZ"/>
+    <display value="Uniformity of dosage units (by weight)"/>
+  </concept-->
+            <!--concept>
+    <code value="AAA"/>
+    <display value="Assay"/>
+  </concept-->
+            <concept>
+                <code value="ASSAY"/>
+                <display value="Assay"/>
+            </concept>
+            <concept>
+                <code value="CEX-HPLCAcidicPeak"/>
+                <display value="CEX-HPLC Acidic Peak"/>
+            </concept>
+            <concept>
+                <code value="CEX-HPLCMainPeak"/>
+                <display value="CEX-HPLC Main Peak"/>
+            </concept>
+            <concept>
+                <code value="PART"/>
+                <display value="Particle size distribution"/>
+            </concept>
+            <!--  Used ONLY for ObservationDefinition-test-method-drug-pq examples-->
+            <concept>
+                <code value="ASSH"/>
+                <display value="Assay Content Homogeneity"/>
+            </concept>
+            <concept>
+                <code value="DESC"/>
+                <display value="Description"/>
+            </concept>
+            <concept>
+                <code value="Dissolution"/>
+                <display value="Dissolution"/>
+            </concept>
+            <concept>
+                <code value="Dissolution Quantity"/>
+                <display value="Dissolution Quantity"/>
+            </concept>
+            <concept>
+                <code value="ELE"/>
+                <display value="Elemental impurities"/>
+            </concept>
+            <concept>
+                <code value="enantiomeric-purity"/>
+                <display value="Enantiomeric purity"/>
+            </concept>
+            <concept>
+                <code value="IDT"/>
+                <display value="Identification"/>
+            </concept>
+            <concept>
+                <code value="NMR-C"/>
+                <display value="NMR-C"/>
+            </concept>
+            <concept>
+                <code value="NMR-H"/>
+                <display value="NMR-H"/>
+            </concept>
+            <concept>
+                <code value="CEX-HPLCAcidicPeak-15"/>
+                <display value="CEX-HPLC Acidic Peak - 15"/>
+            </concept>
+            
+            <concept>
+                <code value="CEX-HPLCAcidicPeak-25"/>
+                <display value="CEX-HPLC Acidic Peak - 25"/>
+            </concept>
+            
+            <concept>
+                <code value="CEX-HPLCMainPeak-15"/>
+                <display value="CEX-HPLC Main Peak - 15"/>
+            </concept>
+            
+            <concept>
+                <code value="CEX-HPLCMainPeak-25"/>
+                <display value="CEX-HPLC Main Peak - 25"/>
+            </concept>
+            <concept>
+                <code value="Homogeneity"/>
+                <display value="Homogeneity demonstrated"/>
+            </concept>
+            <concept>
+                <code value="LCL"/>
+                <display value="Lower one-sided 95% confidence limit of Max Difference"/>
+            </concept>
+            <concept>
+                <code value="LOC"/>
+                <display value="Number of Locations"/>
+            </concept>
+            <concept>
+                <code value="PARTS"/>
+                <display value="Particle size"/>
+            </concept>
+            <concept>
+                <code value="POS"/>
+                <display value="Structure Position"/>
+            </concept>
+
+        </include>
+    </compose>
+</ValueSet>
