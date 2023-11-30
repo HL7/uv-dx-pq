@@ -8,9 +8,10 @@
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains local codes for manufacturing step in PQ."/>
-    <caseSensitive value="true"/>
-    <content value="complete"/>
 
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
     <concept>
         <code value="Mixing of ingredients"/>
         <display value="Mixing of ingredients"/>
@@ -114,5 +115,6 @@
         <code value="LyophilizationHomogeneityStep"/>
         <display value="Lyophilization Homogeneity Results"/>
     </concept>
-
+        </include>
+    </compose>
 </ValueSet>
