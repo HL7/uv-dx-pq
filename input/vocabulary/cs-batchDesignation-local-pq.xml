@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-batchDesignation-local-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batchDesignation-local-pq"/>
+    <name value="CsBatchDesignationPQ"/>
+    <title value="CodeSystem - Batch Designation PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains local codes for batch designation in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="maximum"/>
+        <display value="Maximum"/>
+    </concept>
+    <concept>
+        <code value="minimum"/>
+        <display value="Minimum"/>
+    </concept>
+    <concept>
+        <code value="intermediate"/>
+        <display value="Intermediate"/>
+    </concept>
+</CodeSystem>
