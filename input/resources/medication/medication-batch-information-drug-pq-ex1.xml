@@ -37,7 +37,8 @@
                 <!--                <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
                 <valueCodeableConcept>
                     <coding>
-                                    <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>
+                        <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                         <code value="maximum"/>
                         <display value="Maximum"/>
                     </coding>

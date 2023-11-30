@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-batch-designation-local-pq"/>
+    <!--    Replaces http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation -->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-batch-designation-local-pq"/>
+    <name value="VsBatchDesignationPQ"/>
+    <title value="ValueSet - Batch Designation PQ"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains local codes for batch designation in PQ."/>
+
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
+            <concept>
+                <code value="maximum"/>
+                <display value="Maximum"/>
+            </concept>
+            <concept>
+                <code value="minimum"/>
+                <display value="Minimum"/>
+            </concept>
+            <concept>
+                <code value="intermediate"/>
+                <display value="Intermediate"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
