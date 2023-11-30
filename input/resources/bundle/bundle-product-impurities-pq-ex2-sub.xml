@@ -39,7 +39,8 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
+                     <!--                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>-->
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
@@ -68,7 +69,8 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
+<!--                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>-->
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
@@ -97,7 +99,8 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
+                     <!--                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>-->
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
@@ -127,7 +130,8 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
+                     <!--                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>-->
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
@@ -157,7 +161,8 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
+                     <!--                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>-->
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
