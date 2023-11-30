@@ -7,9 +7,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <description value="This value set contains example process validation procedure codes for use in PQ."/>
-  <caseSensitive value="true"/>
-  <content value="complete"/>
-  
+
   <compose>
     <include>
       <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
