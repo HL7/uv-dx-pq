@@ -3,8 +3,8 @@
     <id value="cs-packageProperty-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/packageProperty & http://example.accumulus.org/fhir/code/packageProperty -->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-    <name value="CsPackagePropertyLocalPQ"/>
-    <title value="CodeSystem - Package Property Local PQ"/>
+    <name value="CsPackagePropertyPQ"/>
+    <title value="CodeSystem - Package Property PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for package property in PQ."/>

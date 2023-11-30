@@ -3,8 +3,8 @@
     <id value="cs-qualifiedValueCriticality-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/qualifiedValueCriticality-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
-    <name value="CsQualifiedValueCriticalityLocalPQ"/>
-    <title value="CodeSystem - Qualified Value Criticality Local PQ"/>
+    <name value="CsQualifiedValueCriticalityPQ"/>
+    <title value="CodeSystem - Qualified Value Criticality PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for qualified value criticality in PQ."/>

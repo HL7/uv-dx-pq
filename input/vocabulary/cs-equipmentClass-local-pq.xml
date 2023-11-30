@@ -3,8 +3,8 @@
     <id value="cs-equipmentClass-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/equipmentClass-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
-    <name value="CsEquipmentClassLocalPQ"/>
-    <title value="CodeSystem - Equipment Class Local PQ"/>
+    <name value="CsEquipmentClassPQ"/>
+    <title value="CodeSystem - Equipment Class PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for equipment class in PQ."/>

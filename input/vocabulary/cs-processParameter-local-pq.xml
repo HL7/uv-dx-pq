@@ -3,8 +3,8 @@
     <id value="cs-processParameter-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/processParameter-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
-    <name value="CsProcessParameterLocalPQ"/>
-    <title value="CodeSystem - Process Parameter Local PQ"/>
+    <name value="CsProcessParameterPQ"/>
+    <title value="CodeSystem - Process Parameter PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for process parameter in PQ."/>

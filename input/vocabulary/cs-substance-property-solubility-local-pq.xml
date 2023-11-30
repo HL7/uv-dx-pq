@@ -3,8 +3,8 @@
     <id value="cs-substance-property-solubility-local-pq"/>
     <!--    Replaces http://example.accumulus.org/fhir/code/substance-property-solubility-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq"/>
-    <name value="CsSubstancePropertySolubilityLocalPQ"/>
-    <title value="CodeSystem - Substance Property Solubility Local PQ"/>
+    <name value="CsSubstancePropertySolubilityPQ"/>
+    <title value="CodeSystem - Substance Property Solubility PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for substance property solubility in PQ."/>

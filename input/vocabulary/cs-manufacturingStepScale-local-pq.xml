@@ -3,8 +3,8 @@
     <id value="cs-manufacturingStepScale-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/manufacturingStepScale-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
-    <name value="CsManufacturingStepScaleLocalPQ"/>
-    <title value="CodeSystem - Manufacturing Step Scale Local PQ"/>
+    <name value="CsManufacturingStepScalePQ"/>
+    <title value="CodeSystem - Manufacturing Step Scale PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for manufacturing step scale in PQ."/>

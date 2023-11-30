@@ -6,8 +6,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-local-pq"/>
-    <name value="VsPackagePropertyLocalPQ"/>
-    <title value="ValueSet - Package Property Local PQ"/>
+    <name value="VsPackagePropertyPQ"/>
+    <title value="ValueSet - Package Property PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for package property in PQ."/>

@@ -3,8 +3,8 @@
     <id value="cs-closureTypes-local-pq"/>
     <!--    Replaces http://example.accumulus.org/fhir/code/closureTypes-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
-    <name value="CsClosureTypesLocalPQ"/>
-    <title value="CodeSystem - Closure Types Local PQ"/>
+    <name value="CsClosureTypesPQ"/>
+    <title value="CodeSystem - Closure Types PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for closure types in PQ."/>

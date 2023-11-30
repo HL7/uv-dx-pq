@@ -3,8 +3,8 @@
     <id value="cs-substancePropertyType-local-pq"/>
     <!--    Replaces http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq"/>
-    <name value="CsSubstancePropertyTypeLocalPQ"/>
-    <title value="CodeSystem - Substance Property Type Local PQ"/>
+    <name value="CsSubstancePropertyTypePQ"/>
+    <title value="CodeSystem - Substance Property Type PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for substance property type in PQ."/>

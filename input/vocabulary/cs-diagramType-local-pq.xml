@@ -3,8 +3,8 @@
     <id value="cs-diagramType-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/diagramType-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
-    <name value="CsDiagramTypeLocalPQ"/>
-    <title value="CodeSystem - Diagram Type Local PQ"/>
+    <name value="CsDiagramTypePQ"/>
+    <title value="CodeSystem - Diagram Type PQ"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains local codes for diagram type in PQ."/>
