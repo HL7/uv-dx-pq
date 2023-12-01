@@ -1347,7 +1347,7 @@
                 <display value="Extension - Actual Yield"/>
             </reference>
             <name value="Extension - Actual Yield"/>
-            <description value="Extension - Actual Yield"/>
+            <description value="The actual weight of a batch"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1358,7 +1358,7 @@
                 <display value="Extension - Actual Yield Unfiltered"/>
             </reference>
             <name value="Extension - Actual Yield Unfiltered"/>
-            <description value="Extension - Actual Yield Unfiltered"/>
+            <description value="The actual weight of a batch, before filtering"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1369,7 +1369,7 @@
                 <display value="Extension - Batch Derived From"/>
             </reference>
             <name value="Extension - Batch Derived From"/>
-            <description value="Extension - Batch Derived From"/>
+            <description value="A reference to another batch that this batch is derived from"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1380,7 +1380,7 @@
                 <display value="Extension - Batch Designation"/>
             </reference>
             <name value="Extension - Batch Designation"/>
-            <description value="Extension - Batch Designation"/>
+            <description value="A batch's type in terms of its general size"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1391,7 +1391,7 @@
                 <display value="Extension - Batch Number of Full Shelves"/>
             </reference>
             <name value="Extension - Batch Number of Full Shelves"/>
-            <description value="Extension - Batch Number of Full Shelves"/>
+            <description value="The count of full shelves from which batches are selected for testing"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1402,7 +1402,7 @@
                 <display value="Extension - Batch Number of Partial Shelves"/>
             </reference>
             <name value="Extension - Batch Number of Partial Shelves"/>
-            <description value="Extension - Batch Number of Partial Shelves"/>
+            <description value="The number of partially filled shelves from which batches are selected for testing"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1413,7 +1413,7 @@
                 <display value="Extension - Batch Number of Vials"/>
             </reference>
             <name value="Extension - Batch Number of Vials"/>
-            <description value="Extension - Batch Number of Vials"/>
+            <description value="The count of vials selected for testing"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1424,7 +1424,7 @@
                 <display value="Extension - Batch Release Date"/>
             </reference>
             <name value="Extension - Batch Release Date"/>
-            <description value="Extension - Batch Release Date"/>
+            <description value="The date when a batch was made available"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1435,7 +1435,7 @@
                 <display value="Extension - Batch Retest Date"/>
             </reference>
             <name value="Extension - Batch Retest Date"/>
-            <description value="Extension - Batch Retest Date"/>
+            <description value="The date that a batch is due to be tested again"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1446,7 +1446,7 @@
                 <display value="Extension - Batch Storage Duration"/>
             </reference>
             <name value="Extension - Batch Storage Duration"/>
-            <description value="Extension - Batch Storage Duration"/>
+            <description value="The length of time for which a batch is stored, before being tested"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1457,7 +1457,7 @@
                 <display value="Extension - Batch Substance Batch"/>
             </reference>
             <name value="Extension - Batch Substance Batch"/>
-            <description value="Extension - Batch Substance Batch"/>
+            <description value="A reference to a substance that this batch consists of"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1468,7 +1468,7 @@
                 <display value="Extension - Container Orientation"/>
             </reference>
             <name value="Extension - Container Orientation"/>
-            <description value="Extension - Container Orientation"/>
+            <description value="The spatial orientaton of the container when tested, for instance horizontal or vertical"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1479,7 +1479,7 @@
                 <display value="Extension - Formulation Number"/>
             </reference>
             <name value="Extension - Formulation Number"/>
-            <description value="Extension - Formulation Number"/>
+            <description value="An identifying number for the particular substance formulation in the batch"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1490,7 +1490,7 @@
                 <display value="Extension - History of Process"/>
             </reference>
             <name value="Extension - History of Process"/>
-            <description value="Extension - History of Process"/>
+            <description value="An textual description of the previous versions, decisions and development of this process"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1498,7 +1498,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-impurity-origin-pq"/>
-                <display value="Extension - Impurity Origin"/>
+                <description value="The source of this impurity"/>
             </reference>
             <name value="Extension - Impurity Origin"/>
             <description value="Extension - Impurity Origin"/>
@@ -1512,7 +1512,7 @@
                 <display value="Extension - Manufacturing Participant"/>
             </reference>
             <name value="Extension - Manufacturing Participant"/>
-            <description value="Extension - Manufacturing Participant"/>
+            <description value="A reference to a substance that takes part in a process step"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1523,7 +1523,7 @@
                 <display value="Extension - Manufacturing Process"/>
             </reference>
             <name value="Extension - Manufacturing Process"/>
-            <description value="Extension - Manufacturing Process"/>
+            <description value="A reference to the process of manufacture of this batch (PlanDefinition)"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1534,7 +1534,7 @@
                 <display value="Extension - Medication Definition"/>
             </reference>
             <name value="Extension - Medication Definition"/>
-            <description value="Extension - Medication Definition"/>
+            <description value="The MedicinalProductDefinition that corresponds to a medication"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1545,7 +1545,7 @@
                 <display value="Extension - Novel Excipient"/>
             </reference>
             <name value="Extension - Novel Excipient"/>
-            <description value="Extension - Novel Excipient"/>
+            <description value="Whether or not an excipient (inactive ingredient) in a product is considered 'novel'"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1556,7 +1556,7 @@
                 <display value="Extension - Package Definition"/>
             </reference>
             <name value="Extension - Package Definition"/>
-            <description value="Extension - Package Definition"/>
+            <description value="A reference to the packaging for a medication (PackagedProductDefinition)"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1567,7 +1567,7 @@
                 <display value="Extension - Packaging Date"/>
             </reference>
             <name value="Extension - Packaging Date"/>
-            <description value="Extension - Packaging Date"/>
+            <description value="The date when the batch was packaged"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1578,7 +1578,7 @@
                 <display value="Extension - Packaging Site"/>
             </reference>
             <name value="Extension - Packaging Site"/>
-            <description value="Extension - Packaging Site"/>
+            <description value="The organization that packaged this batch (reference to an Organization)"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1589,7 +1589,7 @@
                 <display value="Extension - Plan Document Reference"/>
             </reference>
             <name value="Extension - Plan Document Reference"/>
-            <description value="Extension - Plan Document Reference"/>
+            <description value="A link to a doucment, or image, that describes the process of this plan"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1600,7 +1600,7 @@
                 <display value="Extension - Process Parameters"/>
             </reference>
             <name value="Extension - Process Parameters"/>
-            <description value="Extension - Process Parameters"/>
+            <description value="A property value or setting that this process step must use e.g. a certain temperature or duration"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1611,7 +1611,7 @@
                 <display value="Extension - Process Step Scale"/>
             </reference>
             <name value="Extension - Process Step Scale"/>
-            <description value="Extension - Process Step Scale"/>
+            <description value="A scale size description that applies to a process step, such as 'production' or 'testing'"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1622,7 +1622,7 @@
                 <display value="Extension - Qualified Value Criticality"/>
             </reference>
             <name value="Extension - Qualified Value Criticality"/>
-            <description value="Extension - Qualified Value Criticality"/>
+            <description value="A measure of how important the control value of this process step is"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1633,7 +1633,7 @@
                 <display value="Extension - Qualified Value Display"/>
             </reference>
             <name value="Extension - Qualified Value Display"/>
-            <description value="Extension - Qualified Value Display"/>
+            <description value="A displayable version of a qualified value, formatted for showing to a user"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1644,7 +1644,7 @@
                 <display value="Extension - Qualified Value Target"/>
             </reference>
             <name value="Extension - Qualified Value Target"/>
-            <description value="Extension - Qualified Value Target"/>
+            <description value="A target, desired, amount for a qualified value, from within the allowable range"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1655,7 +1655,7 @@
                 <display value="Extension - Qualified Value Text"/>
             </reference>
             <name value="Extension - Qualified Value Text"/>
-            <description value="Extension - Qualified Value Text"/>
+            <description value="A string based acceptable range description"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1666,7 +1666,7 @@
                 <display value="Extension - Site Utilization"/>
             </reference>
             <name value="Extension - Site Utilization"/>
-            <description value="Extension - Site Utilization"/>
+            <description value="The role that the site performs, in the overall context of manufacturing"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1677,7 +1677,7 @@
                 <display value="Extension - Statistical Model"/>
             </reference>
             <name value="Extension - Statistical Model"/>
-            <description value="Extension - Statistical Model"/>
+            <description value="Information about the statistical model utilized to interpret results"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1688,7 +1688,7 @@
                 <display value="Extension - Substance Property Parameter"/>
             </reference>
             <name value="Extension - Substance Property Parameter"/>
-            <description value="Extension - Substance Property Parameter"/>
+            <description value="A parameter to a substance property, such as the concentration or pH at which the property value applies"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1699,7 +1699,7 @@
                 <display value="Extension - Substance Property Range"/>
             </reference>
             <name value="Extension - Substance Property Range"/>
-            <description value="Extension - Substance Property Range"/>
+            <description value="Allows a characteristic or property to use a range datatype, instead of a single value"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1710,7 +1710,7 @@
                 <display value="Extension - Suitability For Use"/>
             </reference>
             <name value="Extension - Suitability For Use"/>
-            <description value="Extension - Suitability For Use"/>
+            <description value="Whether an excipient is considered suitable for use in this product or item"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1721,7 +1721,7 @@
                 <display value="Extension - Target Fill Weight"/>
             </reference>
             <name value="Extension - Target Fill Weight"/>
-            <description value="Extension - Target Fill Weight"/>
+            <description value="The desired amount of substance in each item to be made from the batch (e.g. a vial)"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1732,7 +1732,7 @@
                 <display value="Extension - Test Comment"/>
             </reference>
             <name value="Extension - Test Comment"/>
-            <description value="Extension - Test Comment"/>
+            <description value="A textual comment that further describes an aspect of a test requirement"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1743,7 +1743,7 @@
                 <display value="Extension - Time Point Description"/>
             </reference>
             <name value="Extension - Time Point Description"/>
-            <description value="Extension - Time Point Description"/>
+            <description value="A code that further describes a time point, such as 'delayed start'"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
