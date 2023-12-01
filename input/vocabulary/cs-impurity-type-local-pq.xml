@@ -11,10 +11,10 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
 
-    <concept>
+    <!--concept>
         <code value="impurity"/>
         <display value="Impurity Of"/>
-    </concept>
+    </concept-->
     <concept>
         <code value="CH-IMP"/>
         <display value="Chiral Impurity"/>
