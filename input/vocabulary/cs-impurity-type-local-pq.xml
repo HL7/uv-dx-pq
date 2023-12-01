@@ -12,10 +12,14 @@
     <content value="complete"/>
 
     <concept>
+        <code value="impurity"/>
+        <display value="Impurity Of"/>
+    </concept>
+    <concept>
         <code value="CH-IMP"/>
         <display value="Chiral Impurity"/>
     </concept>
-    
+
     <concept>
         <code value="INT-IMP"/>
         <display value="Process intermediate, forced degradation product"/>
@@ -28,5 +32,5 @@
         <code value="ST-IMP"/>
         <display value="Starting material, forced degradation product"/>
     </concept>
-    
+
 </CodeSystem>

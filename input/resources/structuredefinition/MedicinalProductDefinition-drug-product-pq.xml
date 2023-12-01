@@ -57,13 +57,30 @@
             <description value="Example codes for MedicinalProduct.characteristic.type"/>
             <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicinalproduct-characteristic-type"/>
           </binding>
-        </element>    
-        <element id="MedicinalProductDefinition.characteristic.valueQuantity.system">
-          <path value="MedicinalProductDefinition.characteristic.valueQuantity.system"/>
+        </element>
+        <element id="MedicinalProductDefinition.characteristic.value[x]">
+          <path value="MedicinalProductDefinition.characteristic.value[x]"/>
+          <slicing>
+            <discriminator>
+              <type value="type"/>
+              <path value="$this"/>
+            </discriminator>
+            <rules value="closed"/>
+          </slicing>
+        </element>
+        <element id="MedicinalProductDefinition.characteristic.value[x]:valueQuantity">
+          <path value="MedicinalProductDefinition.characteristic.value[x]"/>
+          <sliceName value="valueQuantity"/>
+          <type>
+            <code value="Quantity"/>
+          </type>
+        </element>
+        <element id="MedicinalProductDefinition.characteristic.value[x]:valueQuantity.system">
+          <path value="MedicinalProductDefinition.characteristic.value[x].system"/>
           <patternUri value="http://unitsofmeasure.org"/>
         </element>
-        <element id="MedicinalProductDefinition.characteristic.valueQuantity.code">
-          <path value="MedicinalProductDefinition.characteristic.valueQuantity.code"/> 
+        <element id="MedicinalProductDefinition.characteristic.value[x]:valueQuantity.code">
+          <path value="MedicinalProductDefinition.characteristic.value[x].code"/> 
           <binding>
             <strength value="required"/>
             <description value="UCUM codes for unit"/>

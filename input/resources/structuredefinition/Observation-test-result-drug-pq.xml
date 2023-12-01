@@ -33,6 +33,10 @@
         <element id="Observation.code">
             <path value="Observation.code"/>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-deviceProperty-local-pq"/>
+            </binding>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

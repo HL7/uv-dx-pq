@@ -10,7 +10,7 @@
         <valueCode value="brr"/>
     </extension>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ImplementationGuide/hl7-fhir-uv-pharm-quality"/>
-    <version value="0.1.0"/>
+    <version value="1.0.0-ballot"/>
     <name value="PharmaceuticalQualityIndustry"/>
     <title value="Pharmaceutical Quality (Industry)"/>
     <status value="active"/>
