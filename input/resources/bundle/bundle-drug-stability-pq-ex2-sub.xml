@@ -30,8 +30,11 @@
             </extension>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq">
                <valueCodeableConcept>
-                        <!-- #227 -->
-                        <!-- Considered ObservatioDefinition.usageContext -->
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq"/>
+                     <code value="horizontal"/>
+                     <display value="horizontal"/>
+                  </coding>
                   <text value="Horizontal"/>
                </valueCodeableConcept>
             </extension>
@@ -3609,7 +3612,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-site-utilization-pq"> <!-- #53 -->
                   <valueCoding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq"/>
-                     <code value="12334"/>
+                     <code value="Release stability"/>
                      <display value="Release stability"/>
                   </valueCoding>
                </extension>

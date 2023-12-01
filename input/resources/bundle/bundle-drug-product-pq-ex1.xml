@@ -239,6 +239,9 @@
          <ManufacturedItemDefinition>
             <!--manufactureditemdefinition-drug-pq-ex2-->
             <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
+            </meta>
             <status value="active"/>
             <name value="Stelbatolol 5mg tablet"/>
             <manufacturedDoseForm>
@@ -249,7 +252,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.org/fhir/code/manufactured-item-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
                      <code value="overage-by-mass"/>
                      <display value="Overage by mass (%)"/>
                   </coding>
@@ -263,7 +266,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.org/fhir/code/manufactured-item-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
                      <code value="overage-reason"/>
                      <display value="Overage reason"/>
                   </coding>

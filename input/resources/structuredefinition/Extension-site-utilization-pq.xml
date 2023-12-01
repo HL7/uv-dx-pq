@@ -36,6 +36,10 @@
             <type>
                 <code value="Coding"/>
             </type>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-productSiteUtilizationType-local-pq"/> 
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

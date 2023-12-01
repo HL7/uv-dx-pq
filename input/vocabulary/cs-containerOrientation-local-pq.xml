@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-containerOrientation-local-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq"/>
+    <name value="CsContainerOrientationPQ"/>
+    <title value="CodeSystem - Container Orientation"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains example codes for container orientation in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="horizontal"/>
+        <display value="Horizontal"/>
+    </concept>
+    <concept>
+        <code value="vertical"/>
+        <display value="Vertical"/>
+    </concept>
+</CodeSystem>
