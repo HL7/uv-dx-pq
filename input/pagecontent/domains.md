@@ -136,355 +136,358 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+.tg td {border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:13px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+.tg th {border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:13px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-0lax { text-align:left; vertical-align:top}
+ .vertical {writing-mode:vertical-rl;}
+ .centred {text-align:center; }
+ 
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <td class="tg-0lax">Pharmaceutical&nbsp;&nbsp;&nbsp;Quality (Industry) FHIR IG component profiles</td>
-    <td class="tg-0lax">1. Drug Identification </td>
-    <td class="tg-0lax">2. Composition</td>
-    <td class="tg-0lax">3. Impurities</td>
-    <td class="tg-0lax">4. Organizations </td>
-    <td class="tg-0lax">5. Batch/Lot Information</td>
-    <td class="tg-0lax">6. Batch Analysis</td>
-    <td class="tg-0lax">7. Batch Formula</td>
-    <td class="tg-0lax">8. Manufacturing Process</td>
-    <td class="tg-0lax">9. Process Validation</td>
-    <td class="tg-0lax">10. Analytical Procedures</td>
-    <td class="tg-0lax">11. Container Closure System</td>
-    <td class="tg-0lax">12. Stability Study</td>
-    <td class="tg-0lax">13. Drug Specification</td>
-    <td class="tg-0lax">14. Compatibility</td>
+    <td class="tg-0lax">Pharmaceutical Quality (Industry)<br/>FHIR IG component profiles</td>
+    <th class="tg-0lax vertical">1. Drug<br/>Identification</th>
+    <th class="tg-0lax vertical">2. Composition</th>
+    <th class="tg-0lax vertical">3. Impurities</th>
+    <th class="tg-0lax vertical">4. Organizations</th>
+    <th class="tg-0lax vertical">5. Batch/Lot<br/>Information</th>
+    <th class="tg-0lax vertical">6. Batch Analysis</th>
+    <th class="tg-0lax vertical">7. Batch Formula</th>
+    <th class="tg-0lax vertical">8. Manufacturing<br/>Process</th>
+    <th class="tg-0lax vertical">9. Process<br/>Validation</th>
+    <th class="tg-0lax vertical">10. Analytical<br/>Procedures</th>
+    <th class="tg-0lax vertical">11. Container<br/>Closure System</th>
+    <th class="tg-0lax vertical">12. Stability<br/>Study</th>
+    <th class="tg-0lax vertical">13. Drug<br/>Specification</th>
+    <th class="tg-0lax vertical">14. Compatibility</th>
   </tr>
   </thead>
   <tbody>
   <tr>
-    <td class="tg-0lax">ActivityDefinition&nbsp;&nbsp;&nbsp;- Test Drug PQ</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">ActivityDefinition - Test Drug PQ</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Composition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Composition - Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">DeviceDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">DeviceDefinition - Drug PQ</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">DiagnosticReport&nbsp;&nbsp;&nbsp;- Analysis Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">DiagnosticReport - Analysis Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">DocumentReference&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">DocumentReference - Drug PQ</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Ingredient&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Ingredient - Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">ManufacturedItemDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">ManufacturedItemDefinition - Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Medication&nbsp;&nbsp;&nbsp;- Batch Information Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">Medication - Batch Information Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">MedicinalProductDefinition&nbsp;&nbsp;&nbsp;- Drug Product PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">MedicinalProductDefinition - Drug Product PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Observation&nbsp;&nbsp;&nbsp;- Test Result Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">Observation - Test Result Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">ObservationDefinition&nbsp;&nbsp;&nbsp;- Test Method Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">ObservationDefinition - Test Method Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Organization&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">Organization - Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">PackagedProductDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">PackagedProductDefinition - Drug PQ</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">PlanDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">PlanDefinition - Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Procedure&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Procedure - Drug PQ</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">SpecimenDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">SpecimenDefinition - Drug PQ</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Specimen&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Specimen - Drug PQ</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">SubstanceDefinition&nbsp;&nbsp;&nbsp;- Component Substance Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">SubstanceDefinition - Component Substance Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Substance&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Substance - Drug PQ</td>
+    <td class="centred">X</td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
+    <td class="centred">X</td>
+    <td class="centred"></td>
+    <td class="centred"></td>
   </tr>
 </tbody>
 </table>
@@ -508,3 +511,9 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
   
   
 </map>
+
+### FHIR Resources Summary Diagram
+<table>
+<tr><td><img src="resources overview (complete).png" width="800"/></td></tr>
+</table>
+

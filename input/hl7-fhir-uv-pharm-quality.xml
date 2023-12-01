@@ -1611,7 +1611,7 @@
                 <display value="Extension - Process Step Scale"/>
             </reference>
             <name value="Extension - Process Step Scale"/>
-            <description value="A scale size description that applies to a process step, such as 'production' or 'testing'"/>
+            <description value="A scale size description that applies to a process step, such as 'production' or 'laboratory'"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
