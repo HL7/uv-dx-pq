@@ -44,6 +44,10 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-impurity-origin-local-pq"/> 
+            </binding>
         </element>
     </differential>
 </StructureDefinition>
