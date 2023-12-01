@@ -687,7 +687,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
-                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>">Extension: </span><span>Excipient has been certified for use in human medicinal products</span></div>
+                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>">Suitability for Use: </span><span>Excipient has been certified for use in human medicinal products</span></div>
 <div class="indent ingsub"><span title="
 <Bundle>
     <entry>
@@ -998,7 +998,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
-                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>">Extension: </span><span>Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.</span></div>
+                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>">Suitability for Use: </span><span>Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.</span></div>
 <div class="indent ingsub"><span title="
 <Bundle>
     <entry>
