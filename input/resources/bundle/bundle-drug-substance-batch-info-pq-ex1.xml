@@ -65,7 +65,7 @@
                   <valueDateTime value="2020-01"/>
                   <!-- #157 -->
                </extension>
-               <!--extension url="batchQuantity">
+               <extension url="batchQuantity">
                         <valueQuantity>
                             <value value="120"/>
                             <unit value="kg"/>
@@ -74,23 +74,21 @@
                     <extension url="batchUtilization">
                         <valueCodeableConcept>
                             <coding>
-                                <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                                    <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                                </extension>
                                 <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                                 <code value="C133990"/>
-                                <display value="Commercial"/>>
+                                <display value="Commercial"/>
                             </coding>
                             <text value="Production"/>
                         </valueCodeableConcept>
                     </extension>
                     <extension url="assignedManufacturer">
                         <valueReference>
-                            <reference value="Organization/substance-manufacturer"/>
+                            <!--Organization/substance-manufacturer-->
+                     <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                         </valueReference>
-                    </extension-->
+                    </extension>
                <!-- local extensions -->
-               <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                         <valueDateTime value="2019-09-08"/>                   
                     </extension>    
                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
@@ -106,7 +104,7 @@
                             <value value="4.8"/>
                             <unit value="kg"/>
                         </valueQuantity>
-                    </extension-->
+                    </extension>
             </extension>
             <identifier>
                <value value="CAT1"/>
@@ -132,7 +130,7 @@
                   <valueDateTime value="2020-02"/>
                   <!-- #159 -->
                </extension>
-               <!--extension url="batchQuantity">
+               <extension url="batchQuantity">
                         <valueQuantity>
                             <value value="120"/>
                             <unit value="kg"/>
@@ -141,9 +139,6 @@
                     <extension url="batchUtilization">
                         <valueCodeableConcept>
                             <coding>
-                                <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                                    <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                                </extension>
                                 <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                                 <code value="C133990"/>
                                 <display value="Commercial"/>
@@ -153,11 +148,12 @@
                     </extension>
                     <extension url="assignedManufacturer">
                         <valueReference>
-                            <reference value="Organization/substance-manufacturer"/>
+                            <!--Organization/substance-manufacturer-->
+                     <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                         </valueReference>
-                    </extension-->
+                    </extension>
                <!-- local extensions -->
-               <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                         <valueDateTime value="2019-09-08"/>                  
                     </extension>    
                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
@@ -168,7 +164,7 @@
                             <value value="4.8"/>
                             <unit value="kg"/>
                         </valueQuantity>
-                    </extension-->
+                    </extension>
             </extension>
             <identifier>
                <value value="CAT2"/>
@@ -193,7 +189,7 @@
                   <valueDateTime value="2020-03"/>
                   <!-- #159 -->
                </extension>
-               <!--extension url="batchQuantity">
+               <extension url="batchQuantity">
                         <valueQuantity>
                             <value value="120"/>
                             <unit value="kg"/>
@@ -202,9 +198,6 @@
                     <extension url="batchUtilization">
                         <valueCodeableConcept>
                             <coding>
-                                <extension url="http://nprogram.co.uk/fhir/extension/instanceComment">
-                                    <valueString value="Comment: This has a value set defined in PQ/CMC but no code system"/>
-                                </extension>
                                 <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                                 <code value="C133990"/>
                                 <display value="Commercial"/>
@@ -214,11 +207,12 @@
                     </extension>
                     <extension url="assignedManufacturer">
                         <valueReference>
-                            <reference value="Organization/substance-manufacturer"/>
+                            <!--Organization/substance-manufacturer-->
+                     <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                         </valueReference>
-                    </extension-->
+                    </extension>
                <!-- local extensions -->
-               <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                         <valueDateTime value="2019-09-08"/>                   
                     </extension>    
                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
@@ -229,7 +223,7 @@
                             <value value="4.8"/>
                             <unit value="kg"/>
                         </valueQuantity>
-                    </extension-->
+                    </extension>
             </extension>
             <identifier>
                <value value="CAT3"/>
