@@ -11,14 +11,6 @@
   <compose>
     <include>
       <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-  <concept>
-    <code value="LyophilizationHomogeneneity"/>
-    <display value="Lyophilization Homogeneneity"/>
-  </concept>
-  <concept>
-    <code value="MediaChallengeRun"/>
-    <display value="Media Challenge Run"/>
-  </concept>
     </include>
   </compose>
 </ValueSet>

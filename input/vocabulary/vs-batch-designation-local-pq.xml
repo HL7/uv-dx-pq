@@ -12,18 +12,6 @@
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
-            <concept>
-                <code value="maximum"/>
-                <display value="Maximum"/>
-            </concept>
-            <concept>
-                <code value="minimum"/>
-                <display value="Minimum"/>
-            </concept>
-            <concept>
-                <code value="intermediate"/>
-                <display value="Intermediate"/>
-            </concept>
         </include>
     </compose>
 </ValueSet>

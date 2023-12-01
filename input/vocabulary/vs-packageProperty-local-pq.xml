@@ -12,34 +12,6 @@
 <compose>
     <include>
         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
-    <concept>
-        <code value="Color"/>
-        <display value="Color"/>
-    </concept>
-    <concept>
-        <code value="Quality Standard"/>
-        <display value="Quality Standard"/>
-    </concept>
-    <concept>
-        <code value="Thickness"/>
-        <display value="Thickness"/>
-    </concept>
-    <concept>
-        <code value="Quality Specification"/>
-        <display value="Quality Specification"/>
-    </concept>
-    <concept>
-        <code value="Narrative"/>
-        <display value="Narrative"/>
-    </concept>
-    <concept>
-        <code value="Container Size"/>
-        <display value="Container Size"/>
-    </concept>
-    <concept>
-        <code value="Functional"/>
-        <display value="Functional"/>
-    </concept>
     </include>
 </compose>
 </ValueSet>

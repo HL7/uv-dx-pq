@@ -12,15 +12,6 @@
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
-
-            <concept>
-                <code value="overage-by-mass"/>
-                <display value="Overage by mass (%)"/>
-            </concept>
-            <concept>
-                <code value="overage-reason"/>
-                <display value="Overage reason"/>
-            </concept>
         </include>
     </compose>
 </ValueSet>

@@ -12,22 +12,6 @@
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
-    <concept>
-        <code value="Maximum Speed"/>
-        <display value="Maximum Speed"/>
-    </concept>
-    <concept>
-        <code value="Power"/>
-        <display value="Power"/>
-    </concept>
-    <concept>
-        <code value="Maximum capacity"/>
-        <display value="Maximum capacity"/>
-    </concept>
-    <concept>
-        <code value="Capacity"/>
-        <display value="Capacity"/>
-    </concept>
         </include>
     </compose>
 </ValueSet>

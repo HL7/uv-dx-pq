@@ -12,14 +12,6 @@
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-local-pq"/>
-            <concept>
-                <code value="mixing-vessel"/>
-                <display value="Mixing Vessel"/>
-            </concept>
-            <concept>
-                <code value="receiving-tank"/>
-                <display value="Receiving Tank"/>
-            </concept>
         </include>
     </compose>
 </ValueSet>
