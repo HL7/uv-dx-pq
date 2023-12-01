@@ -15,8 +15,4 @@
         <code value="Release stability"/>
         <display value="Release stability"/>
     </concept>
-    <concept>
-        <code value="12334"/>
-        <display value="Release stability"/>
-    </concept>
 </CodeSystem>
