@@ -24,8 +24,11 @@
    </extension>
    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq">
       <valueCodeableConcept>
-         <!-- #227 -->
-         <!-- Considered ObservatioDefinition.usageContext -->
+                         <coding>
+                             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq"/>
+                             <code value="horizontal"/>
+                             <display value="horizontal"/>
+                         </coding>
          <text value="Horizontal"/>
       </valueCodeableConcept>
    </extension>
