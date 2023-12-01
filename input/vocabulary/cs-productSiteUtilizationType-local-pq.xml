@@ -13,6 +13,23 @@
 
     <concept>
         <code value="Release stability"/>
-        <display value="Release stability"/>
+        <display value="Release Stability"/>
     </concept>
+    <concept>
+        <code value="Primary manufacturing"/>
+        <display value="Primary Manufacturing"/>
+    </concept>
+    <concept>
+        <code value="Secondary manufacturing"/>
+        <display value="Secondary Manufacturing"/>
+    </concept>
+    <concept>
+        <code value="Packaging and labeling"/>
+        <display value="Packaging and Labeling"/>
+    </concept>
+    <concept>
+        <code value="Distribution center"/>
+        <display value="Distribution center"/>
+    </concept>
+    
 </CodeSystem>
