@@ -3,8 +3,6 @@
     <id value="vs-planType-local-pq"/>
     <!--    Replaces http://accumulus.org/fhir/code/planType-->
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-    </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-planType-local-pq"/>
     <name value="VsPlanTypePQ"/>
     <title value="ValueSet - Plan Type"/>
