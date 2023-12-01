@@ -12,7 +12,23 @@
     <content value="complete"/>
 
     <concept>
-        <code value="ABCD"/>
-        <display value="Production Scale"/>
+        <code value="PROD"/>
+        <display value="Production Scale"/> <!-- or "Commercial" -->
+    </concept>
+    <concept>
+        <code value="LAB"/>
+        <display value="Laboratory Scale"/>
+    </concept>
+    <concept>
+        <code value="PILOT"/>
+        <display value="Pilot Scale"/>
+    </concept>
+    <concept>
+        <code value="SMALL"/>
+        <display value="Small Scale"/>
+    </concept>
+    <concept>
+        <code value="MEDIUM"/>
+        <display value="Medium Scale"/>
     </concept>
 </CodeSystem>

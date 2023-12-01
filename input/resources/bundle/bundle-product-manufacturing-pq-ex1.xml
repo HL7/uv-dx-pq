@@ -200,7 +200,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
-                     <code value="ABCD"/>
+                     <code value="PROD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
@@ -348,7 +348,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
-                     <code value="ABCD"/>
+                     <code value="PROD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
@@ -450,7 +450,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
-                     <code value="ABCD"/>
+                     <code value="PROD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
                </extension>
