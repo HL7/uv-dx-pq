@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Bundle xmlns="http://hl7.org/fhir">
     <!-- Product  Microbiological Attributes -->
    <id value="bundle-drug-product-microbiological-attributes-pq-ex1"/>
@@ -12,13 +11,13 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
       <resource>
          <DiagnosticReport>
-                <!-- focal resource -->
+                
             <id value="microbiologicalReport"/>
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://example.org/fhir/code/reportType"/>
-                  <code value="1131"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <code value="Microbiological Attributes Report"/>
                   <display value="Microbiological Attributes Report"/>
                </coding>
             </code>
@@ -125,8 +124,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="DESC"/>
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -171,8 +170,8 @@
                <productName value="Stelbat Tablets, 20mg"/>
                <type>
                   <coding>
-                     <system value="http://example.org/fhir/code/productNameType"/>
-                     <code value="1234"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
                </type>
@@ -197,12 +196,11 @@
          <Medication>
             <id value="medication-actual-batch"/>
             <code>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
-                            <!-- todo consider change this be the MID? -->
+                            
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
                      
-
                   </valueReference>
                </extension>
             </code>

@@ -1,45 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Manufacturing --><Bundle xmlns="http://hl7.org/fhir">
-   <id value="product-manufacturing"/>
+<?xml version="1.0" encoding="UTF-8"?><!-- Product Manufacturing -->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="bundle-product-manufacturing-pq-ex2-sub"/>
    <meta>
-      <profile value="http://accumulus.org/fhir/dx-cmc/manufacturing"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
+                
             <id value="manufacturingProcess-unlinked"/>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq">
                <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
+                        
                   <reference value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
                </valueReference>
             </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
                <valueMarkdown value="This can be text about the history"/>
             </extension>
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <type>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/planType"/>
-                  <code value="1244566"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <code value="manufacturing-process"/>
                   <display value="Manufacturing Process"/>
                </coding>
             </type>
             <status value="active"/>
-            <!-- #83 -->
+            
             <subjectReference>
                <reference value="SubstanceDefinition/substance1"/>
             </subjectReference>
             <description value="Narrative description of substance manufacturing process"/>
-            <!-- #85 -->
+            
             <goal id="goal-control-pH">
                <category>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -50,7 +51,7 @@
                </description>
                <priority>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/goalPriority"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
                      <code value="critical"/>
                      <display value="Critical"/>
                   </coding>
@@ -58,9 +59,9 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://dummy.loinc.org"/>
-                        <code value="PH"/>
-                        <display value="pH Level"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                        <code value="pH"/>
+                        <display value="pH"/>
                      </coding>
                      <text value="Long description of the acceptance criteria - pH must be in range 6.9 to 7.1"/>
                   </measure>
@@ -80,7 +81,7 @@
             <goal id="goal-control-temp">
                <category>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/testCategory"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -91,15 +92,15 @@
                </description>
                <priority>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/goalPriority"/>
-                     <code value="noncritical"/>
-                     <display value="Non Critical"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
+                     <code value="non-critical"/>
+                     <display value="Non-critical"/>
                   </coding>
                </priority>
                <target>
                   <measure>
                      <coding>
-                        <system value="http://dummy.loinc.org"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                         <code value="TEMP"/>
                         <display value="Temperature"/>
                      </coding>
@@ -120,24 +121,25 @@
             <action>
                <code>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="overall process"/>
+                     <display value="Overall Process"/>
                   </coding>
                   <text value="overall process"/>
                </code>
                <action>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                      <valueCoding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingStepScale"/>
-                        <code value="ABCD"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
+                        <code value="PROD"/>
                         <display value="Production Scale"/>
                      </valueCoding>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                      <extension url="parameter">
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://accumulus.org/fhir/code/processParameter"/>
+                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                               <code value="SPEED"/>
                               <display value="Mix speed"/>
                            </coding>
@@ -154,8 +156,8 @@
                   <description value="Description of this step"/>
                   <code>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingStep"/>
-                        <code value="2222"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                        <code value="particleSizeReduction"/>
                         <display value="Particle Size Reduction"/>
                      </coding>
                      <!--text value="Step 2 in the process - free text is possible"/-->
@@ -175,16 +177,16 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/equipmentClass"/>
-                           <code value="example"/>
-                           <!-- #88 Equipment class -->
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
+                           <code value="Compression Milling"/>
+                           
                            <display value="Compression Milling"/>
                         </coding>
                      </role>
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
                               <reference value="SubstanceDefinition/startingMaterial"/>
                            </valueReference>
@@ -192,15 +194,15 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
-                           <code value="example"/>
-                           <display value="StartingMaterial"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <code value="StartingMaterial"/>
+                           <display value="Starting Material"/>
                         </coding>
                      </role>
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
                               <reference value="SubstanceDefinition/processingMaterial"/>
                            </valueReference>
@@ -208,15 +210,15 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
-                           <code value="example"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <code value="ProcessingMaterial"/>
                            <display value="ProcessingMaterial"/>
                         </coding>
                      </role>
                   </participant>
                   <participant>
                      <typeReference>
-                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                            <valueReference>
                               <reference value="SubstanceDefinition/resultingMaterial"/>
                            </valueReference>
@@ -224,14 +226,24 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
-                           <code value="example"/>
-                           <display value="ResultingMaterial"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <code value="ResultingMaterial"/>
+                           <display value="Resulting Material"/>
                         </coding>
                      </role>
                   </participant>
-                  
-
+                  <!--action>
+                            <code>
+                                <text value="Control"/>
+                            </code>
+                            <definitionCanonical value="ObservationDefinition/ControlPH"/>
+                        </action>
+                        <action>
+                            <code>
+                                <text value="Control"/>
+                            </code>
+                            <definitionCanonical value="ObservationDefinition/ControlTemperature"/>
+                        </action-->
                </action>
             </action>
          </PlanDefinition>
@@ -245,15 +257,15 @@
             <id value="impeller"/>
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
-               <!-- #89 Equiment subclass -->
+               
                <type value="registered-name"/>
             </deviceName>
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/deviceProperty"/>
-                     <code value="121212"/>
-                     <!-- #90 Working capacity -->
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
+                     <code value="Maximum Speed"/>
+                     
                      <display value="Maximum Speed"/>
                   </coding>
                </type>
@@ -269,7 +281,7 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
-            <!-- #84 -->
+            
          <DocumentReference>
             <id value="DocumentReference-process-flow-diagram-dxpq-ex1"/>
             <meta>
@@ -278,20 +290,20 @@
                <source value="#n4xHiP0iat7deVDt"/>
             </meta>
             <identifier>
-               <system value="http://accumulus.org/fhir/identifier/document"/>
+               <system value="http://example.org/fhir/identifier/document"/>
                <value value="FLOW-001"/>
             </identifier>
             <status value="current"/>
             <type>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/diagramType"/>
-                  <code value="11111111111"/>
-                  <display value="ProcessFlowDiagram"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
+                  <code value="ProcessFlowDiagram"/>
+                  <display value="Process Flow Diagram"/>
                </coding>
             </type>
             <content>
                <attachment>
-                  <url value="https://accumulus.org/docStore/flow-001"/>
+                  <url value="https://example.org/docStore/flow-001"/>
                </attachment>
             </content>
          </DocumentReference>
@@ -299,9 +311,9 @@
    </entry>
    <!-- Section 5.1 - Manufacturing Process Overview - Process Flow Diagram -->
    <entry>
-      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fev"/>
+      <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fef"/>
       <resource>
-            <!-- #84 -->
+            
          <DocumentReference>
             <id value="DocumentReference-image"/>
             <status value="current"/>
@@ -323,7 +335,7 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
+               
             </name>
          </SubstanceDefinition>
       </resource>

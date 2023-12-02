@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Substance Analytical Procedure -->
+<?xml version="1.0" encoding="UTF-8"?><!-- Substance Analytical Procedure -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-analytical-procedure-dxpq-ex2-sub"/>
-   <!--   <id value="substance-analytical-procedure"/>-->
+   <id value="bundle-analytical-procedure-pq-ex2-sub"/>
+   
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                <!-- focal resource -->
+                
             <id value="analyticalProcedure"/>
             <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Analytical Procedure"/>
@@ -22,7 +21,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
                   <code value="analytical-procedure"/>
                   <display value="Analytical Procedure"/>
                </coding>
@@ -32,11 +31,11 @@
                <reference value="SubstanceDefinition/substance1"/>
             </subjectReference>
             <action>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <code value="OPTICAL"/>
                            <display value="Optical properties"/>
                         </coding>
@@ -46,11 +45,11 @@
                      <valueString value="Same as for blue light"/>
                   </extension>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <code value="THEORY"/>
                            <display value="Theory"/>
                         </coding>
@@ -60,11 +59,11 @@
                      <valueString value="MIE"/>
                   </extension>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq">
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://accumulus.org/fhir/code/processParameter"/>
+                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
                            <code value="STIR"/>
                            <display value="Stir Time"/>
                         </coding>
@@ -74,35 +73,25 @@
                      <valueQuantity>
                         <value value="1"/>
                         <unit value="minute"/>
-                        <!-- todo ucum -->
+                        
                      </valueQuantity>
                   </extension>
                </extension>
                <title value="Determination of Particle Size of Stelbat by Laser Diffraction (G1112)"/>
                <!-- can have device here or as ObsDef.device -->
-               <!--participant>
-                        <typeReference>
-                            <reference value="DeviceDefinition/laser"/>
-                        </typeReference>
-                        <role>
-                            <coding>
-                                <system value="http://accumulus.org/fhir/code/equipmentClass"/>
-                                <code value="example"/>
-                                <display value="Analyzer"/> 
-                            </coding>
-                        </role>
-                    </participant-->
+               
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                            <reference value="SubstanceDefinition/dispersant"/>
                         </valueReference>
                      </extension>
+                     <display value="Dispersant"/>
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="dispersant"/>
                         <display value="Dispersant"/>
                      </coding>
@@ -110,15 +99,16 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                            <reference value="SubstanceDefinition/resultingMaterial"/>
                         </valueReference>
                      </extension>
+                     <display value="Resulting material"/>
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="ResultingMaterial"/>
                         <display value="Resulting Material"/>
                      </coding>
@@ -241,15 +231,15 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Obscuration"/>
                   <display value="Obscuration"/>
                </coding>
                <text value="Obscuration (%)"/>
             </code>
             <qualifiedValue>
                <range>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-dxpq">
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-pq">
                      <valueQuantity>
                         <value value="15"/>
                         <unit value="%"/>
@@ -278,8 +268,8 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Refractive index"/>
                   <display value="Refractive index"/>
                </coding>
                <text value="Particle refractive index"/>
@@ -309,14 +299,14 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Particle Size RSD"/>
                   <display value="Particle Size RSD"/>
                </coding>
                <text value="Particle Size RSD"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="The %RSD for the D(v, 0.9) must be not more than 15%"/>
                </extension>
             </qualifiedValue>

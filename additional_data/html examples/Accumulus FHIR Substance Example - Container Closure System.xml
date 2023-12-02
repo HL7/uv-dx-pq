@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-container-closure-system-dxpq-ex2-sub"/>
+   <id value="bundle-container-closure-system-pq-ex2-sub"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -13,7 +12,7 @@
             <id value="substance1"/>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
+               
             </name>
          </SubstanceDefinition>
       </resource>
@@ -24,18 +23,18 @@
          <PackagedProductDefinition>
             <id value="packageDefinition"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
-            <!-- #176 -->
+            
             <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
             <!-- secondary packaging -->
-            <packaging> <!-- #189 -->
-               <type> <!-- #191 -->
+            <packaging> 
+               <type> 
                   <coding>
                      <system value="http://hl7.org/fhir/packaging-type"/>
                      <code value="100000073493"/>
                      <display value="Bag"/>
                   </coding>
                </type>
-               <material> <!-- #192 -->
+               <material> 
                   <coding>
                      <system value="http://hl7.org/fhir/package-material"/>
                      <code value="200000003216"/>
@@ -45,8 +44,8 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
-                        <code value="xxxx"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <code value="Quality Specification"/>
                         <display value="Quality Specification"/>
                      </coding>
                   </type>
@@ -57,8 +56,8 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/packageProperty"/>
-                        <code value="xxxx"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <code value="Quality Specification"/>
                         <display value="Quality Specification"/>
                      </coding>
                   </type>
@@ -69,7 +68,7 @@
                <containedItem>
                   <item>
                      <reference>
-                        <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+                        <reference value="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1"/>
                      </reference>
                   </item>
                </containedItem>
@@ -85,18 +84,18 @@
          <PackagedProductDefinition>
             <id value="packageDefinition2"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
-            <!-- #176 -->
+            
             <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
             <!-- secondary packaging -->
-            <packaging> <!-- #189 -->
-               <type> <!-- #191 -->
+            <packaging> 
+               <type> 
                   <coding>
                      <system value="http://hl7.org/fhir/packaging-type"/>
                      <code value="100000073497"/>
                      <display value="Bottle"/>
                   </coding>
                </type>
-               <material> <!-- #192 -->
+               <material> 
                   <coding>
                      <system value="http://hl7.org/fhir/package-material"/>
                      <code value="200000003215"/>
@@ -106,7 +105,7 @@
                <containedItem>
                   <item>
                      <reference>
-                        <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+                        <reference value="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1"/>
                      </reference>
                   </item>
                </containedItem>
@@ -120,9 +119,9 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-            <id value="manufactureditemdefinition-dxpq-ex1"/>
+            <id value="manufactureditemdefinition-drug-pq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
             </meta>
             <status value="active"/>
             <manufacturedDoseForm>
@@ -141,7 +140,7 @@
             <id value="ingredient1"/>
             <status value="active"/>
             <for>
-               <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+               <reference value="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1"/>
             </for>
             <role>
                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
@@ -164,8 +163,9 @@
       <resource>
          <PlanDefinition>
             <id value="packagingSpecification-unlinked"/>
-            
-
+            <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic">
+                    <valueBoolean value="true"/>
+                </extension-->
             <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Specification and Analytical Procedures"/>
             <type>
@@ -175,7 +175,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
                   <code value="container-specification"/>
                   <display value="Container Specification"/>
                </coding>
@@ -189,8 +189,8 @@
                <title value="Container Specification"/>
                <code>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/CodeSystem/specification-type"/>
-                     <code value="ContainerSpecification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq"/>
+                     <code value="Container Specification"/>
                      <display value="Container Specification"/>
                   </coding>
                   <text value="Container Specification"/>
@@ -230,13 +230,13 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="VisualInspection"/>
                   <display value="VisualInspection"/>
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>
@@ -253,13 +253,13 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="InfraredSpectroscopy"/>
                   <display value="InfraredSpectroscopy"/>
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Corresponds with reference"/>
                </extension>
             </qualifiedValue>
@@ -276,13 +276,13 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="SupplierCertificateofAnalysis"/>
                   <display value="SupplierCertificateofAnalysis"/>
                </coding>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Corresponds"/>
                </extension>
             </qualifiedValue>

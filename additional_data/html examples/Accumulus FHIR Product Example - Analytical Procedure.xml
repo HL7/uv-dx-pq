@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Analytical Procedure -->
+<?xml version="1.0" encoding="UTF-8"?><!-- Product Analytical Procedure -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-analytical-procedure-dxpq-ex1-prod"/>
+   <id value="bundle-analytical-procedure-pq-ex1-prod"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-dxpq"/>
-      
-
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                <!-- focal resource -->
+                
             <id value="analyticalProcedure"/>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Analytical Procedure"/>
@@ -23,7 +20,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/planType"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
                   <code value="analytical-procedure"/>
                   <display value="Analytical Procedure"/>
                </coding>
@@ -36,15 +33,16 @@
                <title value="Preparation and Analysis of Drug Product Samples"/>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                            <reference value="SubstanceDefinition/diluent"/>
                         </valueReference>
                      </extension>
+                     <display value="Diluent"/>
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="diluent"/>
                         <display value="Diluent"/>
                      </coding>
@@ -52,15 +50,16 @@
                </participant>
                <participant>
                   <typeReference>
-                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-dxpq">
+                     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">
                         <valueReference>
                            <reference value="SubstanceDefinition/resultingMaterial"/>
                         </valueReference>
                      </extension>
+                     <display value="Resulting material"/>
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/manufacturingParticipantRole"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
                         <code value="ResultingMaterial"/>
                         <display value="Resulting Material"/>
                      </coding>
@@ -203,14 +202,14 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="ASSAY"/>
                   <display value="Assay"/>
                </coding>
                <text value="Assay (w/w%)"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="The %RSD between the two assay results must be ≤ 1.5%"/>
                </extension>
             </qualifiedValue>
@@ -227,17 +226,17 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
-                  <display value="Identity"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="IDT"/>
+                  <display value="Identification"/>
                </coding>
                <text value="Identity"/>
             </code>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05."/>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm."/>
                </extension>
             </qualifiedValue>
@@ -289,8 +288,8 @@
                <productName value="Stelbat Tablets, 20mg"/>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/productNameType"/>
-                     <code value="1234"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
                </type>

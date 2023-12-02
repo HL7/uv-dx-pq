@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Substance Reference Standard -->
+<?xml version="1.0" encoding="UTF-8"?><!-- Substance Reference Standard -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="bundle-reference-standard-dxpq-ex2-sub"/>
+   <id value="bundle-drug-reference-standards-pq-ex2-sub"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-reference-standard-dxpq"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-reference-standards-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
@@ -12,7 +11,7 @@
          <PlanDefinition>
             <id value="referenceProtocol"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="S.2.S.5 Reference Standard Analysis"/>
@@ -83,6 +82,12 @@
                   </code>
                   <definitionCanonical value="ObservationDefinition/Elemental"/>
                </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <definitionCanonical value="ObservationDefinition/AssignedPurity"/>
+               </action>
             </action>
          </PlanDefinition>
       </resource>
@@ -97,8 +102,8 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Test Date"/>
                   <display value="Test Date"/>
                </coding>
                <text value="Test Date"/>
@@ -116,8 +121,8 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
                <text value="Appearance"/>
@@ -126,7 +131,7 @@
                <text value="Visual evaluation"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="White powder"/>
                </extension>
             </qualifiedValue>
@@ -143,8 +148,8 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Identification (FT-IR)"/>
                   <display value="Identification (FT-IR)"/>
                </coding>
                <text value="Identification (FT-IR)"/>
@@ -153,7 +158,7 @@
                <text value="FT-IR"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Consistent with structure at release; Conforms to standard at requalification"/>
                </extension>
             </qualifiedValue>
@@ -170,8 +175,8 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Identification (NMR)"/>
                   <display value="Identification (NMR)"/>
                </coding>
                <text value="Identification (NMR)"/>
@@ -180,7 +185,7 @@
                <text value="NMR spectrometry"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Consistent with structure"/>
                </extension>
             </qualifiedValue>
@@ -193,15 +198,15 @@
          <ObservationDefinition>
             <id value="Impurities"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
             <url value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
             <title value="Organic Impurities (w/w%)"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="DGP-s"/>
                   <display value="Drug Substance Related Organic impurities"/>
                </coding>
             </code>
@@ -255,7 +260,7 @@
             <component> <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -274,7 +279,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -283,7 +288,7 @@
                <text value="GC"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
                <appliesTo> <!-- could be a code -->
@@ -291,7 +296,7 @@
                </appliesTo>
             </qualifiedValue>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
                <appliesTo>
@@ -301,7 +306,7 @@
             <component> <!-- are expected to have a component that says what solvent this one is -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
@@ -320,8 +325,8 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="WWW"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>
@@ -330,7 +335,7 @@
                <text value="USP Karl Fischer titration"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
             </qualifiedValue>
@@ -347,7 +352,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="ELE"/>
                   <display value="Elemental impurities"/>
                </coding>
@@ -356,17 +361,43 @@
                <text value="ICP-MS"/>
             </method>
             <qualifiedValue>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
                   <valueString value="Report"/>
                </extension>
-               <appliesTo> <!-- could be a code -->
-                  <text value="Impurity - Elemental"/>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:0634020c-8729-99fc-7637-897a9d7c445b"/>
+      <resource>
+         <ObservationDefinition>
+            <id value="AssignedPurity"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+            <title value="Assigned Purity (w/w%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Calculation"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Report"/>
+               </extension>
+               <appliesTo>
+                  <text value="Assigned Purity"/>
                </appliesTo>
             </qualifiedValue>
             <component> <!-- are expected to have a component that says what impurity this one is -->
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -381,42 +412,42 @@
          <Substance>
             <id value="substance-dxpq-ex1"/>
             <!-- was actual-batch-substance -->
-            <!-- IGCOMMENT this is needed to make this recognised by tables -->
+            
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
+                  
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
+                  
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2020-01"/>
-                  <!-- #157 -->
+                  
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                   <valueReference>
                      <reference value="PlanDefinition/plandefinition-dxpq-ex4-mnf-process"/>
                   </valueReference>
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity"> 
                   <valueQuantity>
                      <value value="120"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
+                     
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                         <!-- could also be C185328 Stability Study? -->
@@ -424,7 +455,7 @@
                      <text value="Production"/>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer"> 
                   <valueReference>
                      <reference value="Organization/substance-manufacturer"/>
                   </valueReference>
@@ -432,7 +463,7 @@
             </extension>
             <identifier>
                <value value="CAT1"/>
-               <!-- #155 -->
+               
             </identifier>
             <instance value="true"/>
             <code>
@@ -449,10 +480,10 @@
          <Substance>
             <id value="actual-batch-substance-2"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
                </extension>
                <extension url="manufacturingDate">
@@ -464,7 +495,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                   <valueQuantity>
                      <value value="4.8"/>
                      <unit value="kg"/>
@@ -473,7 +504,7 @@
                <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology"/>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                         <code value="C133990"/>
                         <display value="Commercial"/>
                      </coding>
@@ -504,7 +535,6 @@
       <resource>
          <PlanDefinition>
                 
-
             <id value="plandefinition-dxpq-ex4-mnf-process"/>
             <url value="http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
             <title value="Process 1.1"/>
@@ -518,7 +548,7 @@
             <status value="active"/>
             <subjectReference>
                <reference value="SubstanceDefinition/substance1"/>
-               <!-- #83 -->
+               
             </subjectReference>
          </PlanDefinition>
       </resource>
@@ -533,7 +563,7 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
+               
             </name>
          </SubstanceDefinition>
       </resource>
@@ -577,7 +607,7 @@
       <fullUrl value="urn:uuid:01a5777c-4b48-a0df-2963-02cd63339006"/>
       <resource>
          <DiagnosticReport>
-			    <!-- focal resource -->
+			    
             <id value="referenceStandardReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
@@ -587,8 +617,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/reportType"/>
-                  <code value="1113"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <code value="Reference Standard Report"/>
                   <display value="Reference Standard Report"/>
                </coding>
             </code>
@@ -607,7 +637,7 @@
                <reference value="Observation/testDateSecond1"/>
             </result>
             <result>
-               <reference value="Observation/observation-test-result-dxpq-ex2"/>
+               <reference value="Observation/Observation-test-result-pq-ex2"/>
             </result>
             <result>
                <reference value="Observation/observationDescription2"/>
@@ -738,6 +768,19 @@
             <result>
                <reference value="Observation/observationWaterSecond"/>
             </result>
+            <result>
+               <reference value="Observation/observationAssignedPurity1"/>
+            </result>
+            <result>
+               <reference value="Observation/observationAssignedPurity2"/>
+            </result>
+            <result>
+               <reference value="Observation/observationAssignedPurity3"/>
+            </result>
+            <result>
+               <reference value="Observation/observationAssignedPurity1second"/>
+            </result>
+            
             <conclusion value="The samples have been assessed and the conclusion is..."/>
          </DiagnosticReport>
       </resource>
@@ -748,7 +791,7 @@
          <Observation>
             <id value="testDate1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -756,8 +799,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
-                  <code value="XXX-2"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Test Date"/>
                   <display value="Test Date"/>
                </coding>
                <text value="est Date"/>
@@ -780,7 +823,7 @@
             <id value="testDate2"/>
             <!-- was observationDescription -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -788,8 +831,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
-                  <code value="XXX-2"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Test Date"/>
                   <display value="Test Date"/>
                </coding>
                <text value="Test Date"/>
@@ -812,7 +855,7 @@
             <id value="testDate3"/>
             <!-- was observationDescription -->
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -820,8 +863,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
-                  <code value="XXX-2"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Test Date"/>
                   <display value="Test Date"/>
                </coding>
                <text value="Test Date"/>
@@ -843,7 +886,7 @@
          <Observation>
             <id value="testDateSecond1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/TestDate"/>
@@ -851,8 +894,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
-                  <code value="XXX-2"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Test Date"/>
                   <display value="Test Date"/>
                </coding>
                <text value="Test Date"/>
@@ -869,14 +912,13 @@
       </resource>
    </entry>
    
-
    <entry>
       <fullUrl value="urn:uuid:82f552f9-8458-3cf4-8379-eea5417a9de2"/>
       <resource>
          <Observation>
-            <id value="observation-test-result-dxpq-ex2"/>
+            <id value="Observation-test-result-pq-ex2"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/Appearance"/>
@@ -884,15 +926,14 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
-                  <code value="XXX-2"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
                <text value="Appearance"/>
             </code>
             <subject>
 					
-
                <reference value="Substance/substance-dxpq-ex1"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -914,8 +955,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="DESC"/>
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -942,8 +983,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="DESC"/>
                   <display value="Description"/>
                </coding>
                <text value="Description"/>
@@ -965,7 +1006,7 @@
          <Observation>
             <id value="observationDescriptionSecond1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             </meta>
             <instantiatesReference>
                <reference value="ObservationDefinition/Appearance"/>
@@ -973,15 +1014,14 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
-                  <code value="XXX-2"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
                <text value="Appearance"/>
             </code>
             <subject>
                     
-
                <reference value="Substance/actual-batch-substance-2"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1003,8 +1043,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -1031,8 +1071,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -1059,8 +1099,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -1089,8 +1129,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
                <text value="Identification"/>
@@ -1117,8 +1157,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Identification (NMR)"/>
                   <display value="Identification (NMR)"/>
                </coding>
                <text value="Identification (NMR)"/>
@@ -1145,8 +1185,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Identification (NMR)"/>
                   <display value="Identification (NMR)"/>
                </coding>
                <text value="Identification (NMR)"/>
@@ -1180,8 +1220,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Identification (NMR)"/>
                   <display value="Identification (NMR)"/>
                </coding>
                <text value="Identification (NMR)"/>
@@ -1215,8 +1255,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Identification (NMR)"/>
                   <display value="Identification (NMR)"/>
                </coding>
                <text value="Identification (NMR)"/>
@@ -1243,8 +1283,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1266,7 +1306,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1289,7 +1329,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
@@ -1312,7 +1352,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1335,8 +1375,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1358,7 +1398,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1381,8 +1421,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1404,7 +1444,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1427,8 +1467,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1450,7 +1490,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1473,8 +1513,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1496,7 +1536,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1519,8 +1559,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1542,7 +1582,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1565,8 +1605,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1588,7 +1628,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1611,8 +1651,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1634,7 +1674,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1657,8 +1697,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1680,7 +1720,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1703,8 +1743,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1726,7 +1766,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1749,8 +1789,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1772,7 +1812,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1795,8 +1835,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1818,9 +1858,9 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
-                     <display value="Ima"/>
+                     <display value="Impurity"/>
                   </coding>
                </code>
                <valueCodeableConcept>
@@ -1841,8 +1881,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1864,7 +1904,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1887,8 +1927,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1910,7 +1950,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -1934,8 +1974,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="DGP"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Impurities"/>
                   <display value="Impurities"/>
                </coding>
                <text value="Impurities"/>
@@ -1957,9 +1997,9 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
-                     <display value="Ima"/>
+                     <display value="Impurity"/>
                   </coding>
                </code>
                <valueCodeableConcept>
@@ -1980,8 +2020,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Elemental"/>
                   <display value="Elemental"/>
                </coding>
             </code>
@@ -1996,7 +2036,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -2019,8 +2059,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Elemental"/>
                   <display value="Elemental"/>
                </coding>
                <text value="Elemental"/>
@@ -2054,8 +2094,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Elemental"/>
                   <display value="Elemental"/>
                </coding>
                <text value="Elemental"/>
@@ -2089,8 +2129,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="Elemental"/>
                   <display value="Elemental"/>
                </coding>
             </code>
@@ -2105,7 +2145,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="IMP"/>
                      <display value="Impurity"/>
                   </coding>
@@ -2118,6 +2158,175 @@
       </resource>
    </entry>
    <entry>
+      <fullUrl value="urn:uuid:ff26533d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+            <id value="observationAssignedPurity1"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/AssignedPurity"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Substance/substance-dxpq-ex1"/>
+            </subject>
+            <effectiveDateTime value="2021-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.22"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26534d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+            <id value="observationAssignedPurity2"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/AssignedPurity"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Substance/substance-dxpq-ex1"/>
+            </subject>
+            <effectiveDateTime value="2022-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.33"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26544d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+            <id value="observationAssignedPurity3"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/AssignedPurity"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Substance/substance-dxpq-ex1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.44"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff36533d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+            <id value="observationAssignedPurity1second"/>
+            <instantiatesReference>
+               <reference value="ObservationDefinition/AssignedPurity"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+               <reference value="Substance/actual-batch-substance-2"/>
+            </subject>
+            <effectiveDateTime value="2021-01-01T12:00:00Z"/>
+            <performer>
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="75.22"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   
+   <entry>
       <fullUrl value="urn:uuid:f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
       <resource>
          <Observation>
@@ -2128,7 +2337,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2149,8 +2358,8 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="SOL"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2172,7 +2381,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2193,8 +2402,8 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="SOL"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2216,7 +2425,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2237,8 +2446,8 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="SOL"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2260,7 +2469,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2281,8 +2490,8 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="SOL"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2304,7 +2513,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2325,8 +2534,8 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="SOL"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2348,7 +2557,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2369,8 +2578,8 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="SOL"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2392,7 +2601,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2413,8 +2622,8 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="SOL"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2436,7 +2645,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                   <code value="SOL"/>
                   <display value="Residual solvents"/>
                </coding>
@@ -2457,8 +2666,8 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="SOL"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="SOLV"/>
                      <display value="Solvent"/>
                   </coding>
                </code>
@@ -2480,8 +2689,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="WWW"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>
@@ -2513,8 +2722,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="WWW"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>
@@ -2546,8 +2755,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>
@@ -2579,8 +2788,8 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://dummy.loinc.org"/>
-                  <code value="WWW"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <code value="WaterContent"/>
                   <display value="Water Content"/>
                </coding>
                <text value="Water Content"/>

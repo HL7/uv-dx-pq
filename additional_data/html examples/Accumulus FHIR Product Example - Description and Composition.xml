@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>
+   <id value="bundle-drug-product-composition-pq-ex1"/>
    <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-composition-dxpq"/>
+        <!--profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-composition-dxpq"/-->
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
    </meta>
    <type value="collection"/>
    <!-- MedicinalProductDefinition - the main resource in any product scenario -->
@@ -17,8 +18,8 @@
                <productName value="Stalbatolol"/>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/productNameType"/>
-                     <code value="1234"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
                </type>
@@ -33,12 +34,12 @@
          <PackagedProductDefinition>
             <id value="packagedproductdefinition-dxpq-ex1"/>
             <meta>
-               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-dxpq"/>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
             </meta>
             <packageFor>
                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </packageFor>
-            <!-- #174 -->
+            
             <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
          </PackagedProductDefinition>
       </resource>
@@ -72,7 +73,7 @@
                      <numerator>
                         <value value="15.2"/>
                         <unit value="mg"/>
-                        <!-- todo add ucum -->
+                        
                      </numerator>
                      <denominator>
                         <value value="1"/>
@@ -305,7 +306,7 @@
             <id value="substance1"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="in-house"/>
                   <display value="In-house"/>
                </coding>
@@ -323,7 +324,7 @@
             <id value="sd-excipient1"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -341,7 +342,7 @@
             <id value="sd-excipient2"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -359,7 +360,7 @@
             <id value="sd-excipient3"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -377,7 +378,7 @@
             <id value="sd-excipient4"/>
             <grade>
                <coding>
-                  <system value="http://accumulus.org/fhir/code/grade"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>

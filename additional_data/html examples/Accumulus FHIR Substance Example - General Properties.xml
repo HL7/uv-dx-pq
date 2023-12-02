@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Substance General Properties -->
+<?xml version="1.0" encoding="UTF-8"?><!-- Substance General Properties -->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-substance-general-properties-pq-ex1"/>
    <meta>
@@ -10,12 +9,12 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-                <!-- focal resource -->
-            <id value="substancedefinition-substance-dxpq-ex1"/>
+                
+            <id value="substancedefinition-substance-drug-pq-ex1"/>
             <property>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="appearance"/>
                      <display value="Appearance"/>
                   </coding>
@@ -27,14 +26,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-water-pheur"/>
                      <display value="Solubility purified water (PhEur)"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property-solubility"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq"/>
                      <code value="sol-free"/>
                      <display value="Freely soluble"/>
                   </coding>
@@ -42,7 +41,7 @@
                </valueCodeableConcept>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="23"/>
@@ -56,7 +55,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-water-pheur"/>
                      <display value="Solubility purified water (PhEur)"/>
                   </coding>
@@ -66,14 +65,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-acetone-pheur"/>
                      <display value="Solubility Acetone (PhEur)"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property-solubility"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq"/>
                      <code value="sol-slight"/>
                      <display value="Slightly soluble"/>
                   </coding>
@@ -81,7 +80,7 @@
                </valueCodeableConcept>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="2"/>
@@ -95,7 +94,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-acetone-pheur"/>
                      <display value="Solubility acetone (PhEur)"/>
                   </coding>
@@ -105,14 +104,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-ethanol-pheur"/>
                      <display value="Solubility Ethanol (PhEur)"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property-solubility"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq"/>
                      <code value="sol-soluble"/>
                      <display value="Soluble"/>
                   </coding>
@@ -120,7 +119,7 @@
                </valueCodeableConcept>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="15"/>
@@ -134,7 +133,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-ethanol-pheur"/>
                      <display value="Solubility ethanol (PhEur)"/>
                   </coding>
@@ -144,7 +143,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-aq-water-2h-approx"/>
                      <display value="Solubility at saturation in Purifed Water after 2 hours (approx)"/>
                   </coding>
@@ -157,7 +156,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-aq-glucose-2h-approx"/>
                      <display value="Solubility at saturation in Glucose (5%) after 2 hours (approx)"/>
                   </coding>
@@ -169,10 +168,10 @@
                </valueQuantity>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
-                        <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                         <code value="pH"/>
                         <display value="pH"/>
                      </valueCoding>
@@ -185,7 +184,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-usp-ph"/>
                      <display value="Solubility as a function of pH in USP buffers"/>
                   </coding>
@@ -196,10 +195,10 @@
                </valueQuantity>
             </property>
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
-                        <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                         <code value="pH"/>
                         <display value="pH"/>
                      </valueCoding>
@@ -212,7 +211,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-usp-ph"/>
                      <display value="Solubility as a function of pH in USP buffers"/>
                   </coding>
@@ -224,7 +223,7 @@
             </property>
             <!-- pH -->
             <property>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="6.7"/>
@@ -234,10 +233,10 @@
                      </high>
                   </valueRange>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
-                        <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                         <code value="concentration"/>
                         <display value="Concentration"/>
                      </valueCoding>
@@ -249,10 +248,10 @@
                      </valueQuantity>
                   </extension>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
-                        <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                         <code value="temperature"/>
                         <display value="Temperature"/>
                      </valueCoding>
@@ -266,7 +265,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="ph-aq"/>
                      <display value="pH in aqueous solution"/>
                   </coding>
@@ -275,14 +274,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="hygroscopy"/>
                      <display value="Hygroscopy"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="hygroscopy-hygroscopic"/>
                      <display value="Hygroscopic"/>
                   </coding>
@@ -296,7 +295,7 @@
             </structure>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
+               
             </name>
          </SubstanceDefinition>
       </resource>

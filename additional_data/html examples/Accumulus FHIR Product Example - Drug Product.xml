@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-pq-ex1"/>
    <meta>
@@ -16,11 +15,11 @@
                <text value="Product Note - Drug Components"/>
             </type>
             <subject>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </subject>
             <date value="2023-10-01"/>
             <author>
-               <reference value="Organization/organization-dxpq-ex1"/>
+               <reference value="Organization/organization-drug-pq-ex1"/>
             </author>
             <title value="3.2.P.2.1.1 - Components of the Drug Product"/>
             <section>
@@ -64,11 +63,11 @@
                <text value="Product Note - Formulation Development"/>
             </type>
             <subject>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </subject>
             <date value="2023-10-01"/>
             <author>
-               <reference value="Organization/organization-dxpq-ex1"/>
+               <reference value="Organization/organization-drug-pq-ex1"/>
             </author>
             <title value="3.2.P.2.2.1 - Formulation Development"/>
             <section>
@@ -152,11 +151,11 @@
                <text value="Product Note - Summary for Risk of Impurities"/>
             </type>
             <subject>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
+               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
             </subject>
             <date value="2023-10-01"/>
             <author>
-               <reference value="Organization/organization-dxpq-ex1"/>
+               <reference value="Organization/organization-drug-pq-ex1"/>
             </author>
             <title value="3.2.P.2.2.4 - Summary for Risk of Impurities"/>
             <section>
@@ -176,9 +175,9 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            <id value="medicinalproductdefinition-drug-product-dxpq-ex1"/>
+            <id value="medicinalproductdefinition-drug-product-pq-ex1"/>
             <comprisedOf>
-               <reference value="ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1"/>
+               <reference value="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex2"/>
             </comprisedOf>
             <name>
                <productName value="Stalbatolol"/>
@@ -186,7 +185,7 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="physicochemical"/>
                      <display value="Physicochemical properties"/>
                   </coding>
@@ -198,9 +197,9 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
-                     <code value="PH"/>
-                     <display value="pH Level"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <code value="pH"/>
+                     <display value="pH"/>
                   </coding>
                </type>
                <valueQuantity>
@@ -210,7 +209,7 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://dummy.loinc.org"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
                      <code value="ionic-strength"/>
                      <display value="Ionic Strength"/>
                   </coding>
@@ -227,7 +226,10 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-            <id value="manufactureditemdefinition-dxpq-ex1"/>
+            <id value="manufactureditemdefinition-drug-pq-ex2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
+            </meta>
             <status value="active"/>
             <name value="Stelbatolol 5mg tablet"/>
             <manufacturedDoseForm>
@@ -238,7 +240,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.org/fhir/code/manufactured-item-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
                      <code value="overage-by-mass"/>
                      <display value="Overage by mass (%)"/>
                   </coding>
@@ -252,7 +254,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://example.org/fhir/code/manufactured-item-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
                      <code value="overage-reason"/>
                      <display value="Overage reason"/>
                   </coding>
@@ -268,7 +270,7 @@
       <fullUrl value="urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d"/>
       <resource>
          <Organization>
-            <id value="organization-dxpq-ex1"/>
+            <id value="organization-drug-pq-ex1"/>
             <name value="AAA Molybdenum Products, Inc."/>
          </Organization>
       </resource>

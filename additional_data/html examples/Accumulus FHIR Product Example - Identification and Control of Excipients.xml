@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-excipients-pq-ex1"/>
    <meta>
@@ -32,14 +31,14 @@
                <productName value="Stalbatolol"/>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/productNameType"/>
-                     <code value="1234"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
                </type>
             </name>
             <characteristic>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-dxpq">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq">
                   <valueRange>
                      <low>
                         <value value="23"/>
@@ -53,7 +52,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
                      <code value="solubility-water"/>
                      <display value="Solubility purified water"/>
                   </coding>
@@ -62,8 +61,8 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://example.accumulus.org/fhir/code/substance-property"/>
-                     <code value="water-cotent"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <code value="water-content"/>
                      <display value="Water content"/>
                   </coding>
                </type>
@@ -122,14 +121,14 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6"/>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b"/>
       <resource>
          <Ingredient>
             <id value="ingredient1"/>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-dxpq">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-pq">
                <valueBoolean value="true"/>
             </extension>
-            <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq">
                <valueString value="Excipient has been certified for use in human medicinal products"/>
             </extension>
             <status value="active"/>
@@ -171,8 +170,9 @@
                <type>
                   <coding>
                      <system value="http://hl7.org/fhir/substance-source-material-type"/>
-                     <code value="NonBiological"/>
-                     <display value="Non-biological"/>
+                     <code value="Mineral"/>
+                     <display value="Mineral"/>
+                     <!-- to mean "non-biological" -->
                   </coding>
                </type>
                <countryOfOrigin>
@@ -187,11 +187,11 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b"/>
       <resource>
          <Ingredient>
             <id value="ingredient2"/>
-            <extension url="http://accumulus.org/fhir/extension/suitabilityForUse">
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq">
                <valueString value="Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials."/>
             </extension>
             <status value="active"/>

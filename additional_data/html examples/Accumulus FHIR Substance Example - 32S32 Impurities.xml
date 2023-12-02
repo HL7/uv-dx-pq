@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
     <!-- Substance Impurities -->
-   <id value="substance-impurities"/>
+   <id value="bundle-product-impurities-pq-ex2-sub"/>
    <meta>
-      <profile value="http://accumulus.org/fhir/dx-cmc/impurities-substance"/>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
       <resource>
          <SubstanceDefinition>
+                
             <id value="substance1"/>
             
             <manufacturer>
@@ -19,10 +20,10 @@
                <name value="Stelbatolol"/>
             </name>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="enantiomer"/>
                         <display value="Enantiomer"/>
                      </coding>
@@ -33,13 +34,14 @@
                   <reference value="SubstanceDefinition/impurityEnantiomer"/>
                </substanceDefinitionReference>
                <type>
+        	        	<!-- two codes here, one is more specialised than the other -->
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
-                     <code value="impurity"/>
+                     <system value="http://hl7.org/fhir/substance-relationship-type"/>
+                     <code value="Impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="CH-IMP"/>
                      <display value="Chiral Impurity"/>
                   </coding>
@@ -47,10 +49,10 @@
                <amountString value="ND"/>
             </relationship>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="process"/>
                         <display value="Process Impurity"/>
                      </coding>
@@ -62,12 +64,12 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
-                     <code value="impurity"/>
+                     <system value="http://hl7.org/fhir/substance-relationship-type"/>
+                     <code value="Impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="PR-IMP"/>
                      <display value="Process impurity"/>
                   </coding>
@@ -75,10 +77,10 @@
                <amountString value="Range: ND-0.2%"/>
             </relationship>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="process"/>
                         <display value="Process Impurity"/>
                      </coding>
@@ -90,12 +92,12 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
-                     <code value="impurity"/>
+                     <system value="http://hl7.org/fhir/substance-relationship-type"/>
+                     <code value="Impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="PR-IMP"/>
                      <display value="Process impurity"/>
                   </coding>
@@ -103,10 +105,10 @@
                <amountString value="Range: ND–0.3%"/>
             </relationship>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="starting-material"/>
                         <display value="Starting Material"/>
                      </coding>
@@ -118,12 +120,12 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
-                     <code value="impurity"/>
+                     <system value="http://hl7.org/fhir/substance-relationship-type"/>
+                     <code value="Impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="ST-IMP"/>
                      <display value="Starting material, forced degradation product"/>
                   </coding>
@@ -131,10 +133,10 @@
                <amountString value="Observed only during stress studies"/>
             </relationship>
             <relationship>
-               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://accumulus.org/fhir/code/impurity-origin"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
                         <code value="intermediate-material"/>
                         <display value="Intermediate Material"/>
                      </coding>
@@ -146,12 +148,12 @@
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>
-                     <code value="impurity"/>
+                     <system value="http://hl7.org/fhir/substance-relationship-type"/>
+                     <code value="Impurity"/>
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/impurity-type"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
                      <code value="INT-IMP"/>
                      <display value="Process intermediate, forced degradation product"/>
                   </coding>
@@ -179,14 +181,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -195,14 +197,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -211,14 +213,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -227,7 +229,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -285,14 +287,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -301,14 +303,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -317,14 +319,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -333,7 +335,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -391,14 +393,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -407,14 +409,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -423,14 +425,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -439,7 +441,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -502,14 +504,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -518,14 +520,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -534,14 +536,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -550,7 +552,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -647,14 +649,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="positive"/>
                      <display value="Positive"/>
                   </coding>
@@ -663,14 +665,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicity"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
                      <code value="positive"/>
                      <display value="Positive"/>
                   </coding>
@@ -679,14 +681,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/ich-m7-classification"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
                      <code value="class-2"/>
                      <display value="Class 2"/>
                   </coding>
@@ -695,7 +697,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://accumulus.org/fhir/code/mutagenicityClassificationType"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
