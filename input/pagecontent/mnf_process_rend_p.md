@@ -215,7 +215,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -357,7 +357,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -455,7 +455,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -1142,7 +1142,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -1284,7 +1284,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -1382,7 +1382,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -1740,7 +1740,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -1882,7 +1882,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -1980,7 +1980,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -3196,7 +3196,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentRefere
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -3397,7 +3397,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentRefere
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>">Scale: </span><span title="
 <Bundle>
@@ -3408,8 +3408,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentRefere
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
-                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
+                            <code value=&quot;PROD&quot;/>
+                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [PROD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
 <div class="summaryHiddenOff" title="
 <Bundle>
     <entry>
@@ -4516,7 +4516,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -4674,7 +4674,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>">Scale: </span><span title="
 <Bundle>
@@ -4685,8 +4685,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
-                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
+                            <code value=&quot;PROD&quot;/>
+                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [PROD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
 <div class="summaryHiddenOff" title="
 <Bundle>
     <entry>
@@ -5378,7 +5378,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>
                     </extension>
@@ -5532,7 +5532,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
+                            <code value=&quot;PROD&quot;/>
                             <display value=&quot;Production Scale&quot;/>
                         </valueCoding>">Scale: </span><span title="
 <Bundle>
@@ -5543,8 +5543,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
-                            <code value=&quot;ABCD&quot;/>
-                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [ABCD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
+                            <code value=&quot;PROD&quot;/>
+                            <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [PROD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
 <div class="summaryHiddenOff" title="
 <Bundle>
     <entry>
@@ -6709,6 +6709,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -7164,7 +7165,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:PlanDefinition
 		Single resource bundle:false

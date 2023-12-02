@@ -1661,7 +1661,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -7439,7 +7439,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -7538,7 +7538,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -7640,7 +7640,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -7653,9 +7653,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12396,6 +12396,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -12851,7 +12852,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:PlanDefinition
 		Single resource bundle:false

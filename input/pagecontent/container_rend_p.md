@@ -77,9 +77,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/exampleFileName&quot;>
-            		<valueString value=&quot;packagedproductdefinition/{id}.xml&quot;/>
-            	</extension-->
                 <packageFor>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </packageFor>
@@ -646,9 +643,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/exampleFileName&quot;>
-            		<valueString value=&quot;packagedproductdefinition/{id}.xml&quot;/>
-            	</extension-->
                 <packageFor>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </packageFor>
@@ -3820,6 +3814,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -4275,7 +4270,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:MedicinalProductDefinition
 		Single resource bundle:false

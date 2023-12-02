@@ -195,7 +195,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 <id value=&quot;medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 <comprisedOf>
-                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex2&quot;/>
                 </comprisedOf>
                 <name>
                     <productName value=&quot;Stalbatolol&quot;/>
@@ -244,7 +244,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <fullUrl value=&quot;urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44&quot;/>
         <resource>
             <ManufacturedItemDefinition>
-                <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
+                <id value=&quot;manufactureditemdefinition-drug-pq-ex2&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;/>
+                </meta>
                 <status value=&quot;active&quot;/>
                 <name value=&quot;Stelbatolol 5mg tablet&quot;/>
                 <manufacturedDoseForm>
@@ -255,7 +258,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
                             <display value=&quot;Overage by mass (%)&quot;/>
                         </coding>
@@ -269,7 +272,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-reason&quot;/>
                             <display value=&quot;Overage reason&quot;/>
                         </coding>
@@ -309,7 +312,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 <id value=&quot;medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 <comprisedOf>
-                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex2&quot;/>
                 </comprisedOf>
                 <name>
                     <productName value=&quot;Stalbatolol&quot;/>
@@ -538,13 +541,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 ...
                 <comprisedOf>
-                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-dxpq-ex1&quot;/>">Comprised Of</span><div class="indent man summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (MedicinalProductDefinition/comprisedOf, id: medicinalproductdefinition-drug-product-pq-ex1 fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ManufacturedItemDefinition (id: manufactureditemdefinition-dxpq-ex1)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
+                    <reference value=&quot;ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex2&quot;/>">Comprised Of</span><div class="indent man summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (MedicinalProductDefinition/comprisedOf, id: medicinalproductdefinition-drug-product-pq-ex1 fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ManufacturedItemDefinition (id: manufactureditemdefinition-drug-pq-ex2)(fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq 
 
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
-                <id value=&quot;manufactureditemdefinition-dxpq-ex1&quot;/>
+                <id value=&quot;manufactureditemdefinition-drug-pq-ex2&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;/>
+                </meta>
                 <status value=&quot;active&quot;/>
                 <name value=&quot;Stelbatolol 5mg tablet&quot;/>
                 <manufacturedDoseForm>
@@ -555,7 +562,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
                             <display value=&quot;Overage by mass (%)&quot;/>
                         </coding>
@@ -569,7 +576,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-reason&quot;/>
                             <display value=&quot;Overage reason&quot;/>
                         </coding>
@@ -577,7 +584,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <valueCodeableConcept>
                         <text value=&quot;Overage is necessary because...&quot;/>
                     </valueCodeableConcept>
-                </property>" id="ManufacturedItemDefinition-manufactureditemdefinition-dxpq-ex1">Manufactured Item</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/manufactureditemdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/manufactureditemdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/manufactureditemdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufactureditemdefinition-dxpq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44</div><span class="summaryShowsOff"></span><div><span title="
+                </property>" id="ManufacturedItemDefinition-manufactureditemdefinition-drug-pq-ex2">Manufactured Item</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/manufactureditemdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/manufactureditemdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/manufactureditemdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufactureditemdefinition-drug-pq-ex2</div><div class="debugOff"> fullUrl: urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44</div><div class="debugOff"></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ManufacturedItemDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq</span></div><span class="summaryShowsOff"></span><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -598,7 +611,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
                             <display value=&quot;Overage by mass (%)&quot;/>
                         </coding>
@@ -614,7 +627,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
                             <display value=&quot;Overage by mass (%)&quot;/>
                         </coding>">Type: <span title="
@@ -625,9 +638,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
-                            <display value=&quot;Overage by mass (%)&quot;/>">Overage by mass (%)<span class="greyOff"> [overage-by-mass]</span><span class="greyOff"> (http://example.org/fhir/code/manufactured-item-property)</span></span></span></div><div><span title="
+                            <display value=&quot;Overage by mass (%)&quot;/>">Overage by mass (%)<span class="greyOff"> [overage-by-mass]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq)</span></span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -654,7 +667,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-reason&quot;/>
                             <display value=&quot;Overage reason&quot;/>
                         </coding>
@@ -669,7 +682,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-reason&quot;/>
                             <display value=&quot;Overage reason&quot;/>
                         </coding>">Type: <span title="
@@ -680,9 +693,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://example.org/fhir/code/manufactured-item-property&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
                             <code value=&quot;overage-reason&quot;/>
-                            <display value=&quot;Overage reason&quot;/>">Overage reason<span class="greyOff"> [overage-reason]</span><span class="greyOff"> (http://example.org/fhir/code/manufactured-item-property)</span></span></span></div><div><span title="
+                            <display value=&quot;Overage reason&quot;/>">Overage reason<span class="greyOff"> [overage-reason]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq)</span></span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1879,6 +1892,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -2334,7 +2348,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:Composition
 		Single resource bundle:false

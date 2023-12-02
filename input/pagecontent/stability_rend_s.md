@@ -46,8 +46,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                 </extension>
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq&quot;>
                     <valueCodeableConcept>
-                        <!-- #227 -->
-                        <!-- Considered ObservatioDefinition.usageContext -->
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq&quot;/>
+                            <code value=&quot;horizontal&quot;/>
+                            <display value=&quot;horizontal&quot;/>
+                        </coding>
                         <text value=&quot;Horizontal&quot;/>
                     </valueCodeableConcept>
                 </extension>
@@ -3365,7 +3368,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #53 -->
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq&quot;/>
-                            <code value=&quot;12334&quot;/>
+                            <code value=&quot;Release stability&quot;/>
                             <display value=&quot;Release stability&quot;/>
                         </valueCoding>
                     </extension>
@@ -3448,7 +3451,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -3519,7 +3522,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -3582,7 +3585,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -4732,8 +4735,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                 </extension>
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq&quot;>
                     <valueCodeableConcept>
-                        <!-- #227 -->
-                        <!-- Considered ObservatioDefinition.usageContext -->
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq&quot;/>
+                            <code value=&quot;horizontal&quot;/>
+                            <display value=&quot;horizontal&quot;/>
+                        </coding>
                         <text value=&quot;Horizontal&quot;/>
                     </valueCodeableConcept>
                 </extension>
@@ -4923,10 +4929,23 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                 ...
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq&quot;>
                     <valueCodeableConcept>
-                        <!-- #227 -->
-                        <!-- Considered ObservatioDefinition.usageContext -->
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq&quot;/>
+                            <code value=&quot;horizontal&quot;/>
+                            <display value=&quot;horizontal&quot;/>
+                        </coding>
                         <text value=&quot;Horizontal&quot;/>
-                    </valueCodeableConcept>">Container Orientation: </span><span style="white-space:normal;">Horizontal</span></div>
+                    </valueCodeableConcept>">Container Orientation: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq&quot;>
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq&quot;/>
+                            <code value=&quot;horizontal&quot;/>
+                            <display value=&quot;horizontal&quot;/>">horizontal<span class="greyOff"> [horizontal]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq)</span></span><span style="white-space:normal;"> - Text: Horizontal</span></div>
 <div class="summaryHiddenOff"></div>
 <div><span title="
 <Bundle>
@@ -21158,7 +21177,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #53 -->
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq&quot;/>
-                            <code value=&quot;12334&quot;/>
+                            <code value=&quot;Release stability&quot;/>
                             <display value=&quot;Release stability&quot;/>
                         </valueCoding>
                     </extension>
@@ -21202,7 +21221,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #53 -->
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq&quot;/>
-                            <code value=&quot;12334&quot;/>
+                            <code value=&quot;Release stability&quot;/>
                             <display value=&quot;Release stability&quot;/>
                         </valueCoding>
                     </extension>
@@ -21216,7 +21235,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #53 -->
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq&quot;/>
-                            <code value=&quot;12334&quot;/>
+                            <code value=&quot;Release stability&quot;/>
                             <display value=&quot;Release stability&quot;/>
                         </valueCoding>">Site Utilization: </span><span title="
 <Bundle>
@@ -21227,8 +21246,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-site-utilization-pq&quot;>
                         <valueCoding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq&quot;/>
-                            <code value=&quot;12334&quot;/>
-                            <display value=&quot;Release stability&quot;/>">Release stability<span class="greyOff"> [12334]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq)</span></span></div><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:2e3a85b5-790a-a108-3627-edf0ec6f1210)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturer)(fullUrl: urn:uuid:62c1b1b4-8d15-26d2-57f9-25a2f60b6181)
+                            <code value=&quot;Release stability&quot;/>
+                            <display value=&quot;Release stability&quot;/>">Release stability<span class="greyOff"> [Release stability]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq)</span></span></div><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:2e3a85b5-790a-a108-3627-edf0ec6f1210)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturer)(fullUrl: urn:uuid:62c1b1b4-8d15-26d2-57f9-25a2f60b6181)
 
 <Bundle>
     <entry>
@@ -21373,7 +21392,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -21472,7 +21491,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -21583,7 +21602,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -21598,10 +21617,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
-                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: Production</span></div><div class="indent sbddetails2"><span title="
+                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: Production</span></div><div class="indent sbddetails2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -21779,7 +21798,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -21868,7 +21887,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -21972,7 +21991,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -21987,10 +22006,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
-                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: Production</span></div><div></div><span><span title="
+                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: Production</span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -22146,7 +22165,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -22238,7 +22257,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -22342,7 +22361,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -22357,10 +22376,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-st
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
-                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: Production</span></div><div></div><span><span title="
+                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: Production</span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -35627,7 +35646,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -35738,7 +35757,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -35854,7 +35873,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -35869,10 +35888,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
-                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: Production</span></div>
+                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: Production</span></div>
 <div class="indent sbddetails2"><span title="
 <Bundle>
     <entry>
@@ -36072,7 +36091,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -36173,7 +36192,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -36282,7 +36301,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -36297,10 +36316,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
-                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: Production</span></div>
+                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: Production</span></div>
 <div></div><span><span title="
 <Bundle>
     <entry>
@@ -36479,7 +36498,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -36583,7 +36602,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -36692,7 +36711,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
                                 <!-- could also be C185328 Stability Study? -->
@@ -36707,10 +36726,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133990&quot;/>
                                 <display value=&quot;Commercial&quot;/>
-                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: Production</span></div>
+                                <!-- could also be C185328 Stability Study? -->">Commercial<span class="greyOff"> [C133990]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: Production</span></div>
 <div></div><span><span title="
 <Bundle>
     <entry>
@@ -37190,6 +37209,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -37645,7 +37665,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefini
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:DiagnosticReport
 		Single resource bundle:false

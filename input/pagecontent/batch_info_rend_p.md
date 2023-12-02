@@ -53,7 +53,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -128,7 +128,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -190,7 +190,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -686,7 +686,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -755,7 +755,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -818,7 +818,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -951,7 +951,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -966,9 +966,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div><div class="indent medl4"><span title="
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div><div class="indent medl4"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1154,7 +1154,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -1220,7 +1220,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -1282,7 +1282,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -1409,7 +1409,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -1424,9 +1424,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div><div class="indent medl4"><span title="
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div><div class="indent medl4"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1606,7 +1606,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -1672,7 +1672,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -1734,7 +1734,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -1867,7 +1867,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -1882,9 +1882,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div><div class="indent medl4"><span title="
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div><div class="indent medl4"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2398,6 +2398,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -2853,7 +2854,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:Medication
 		Single resource bundle:false

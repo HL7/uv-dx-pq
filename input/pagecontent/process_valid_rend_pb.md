@@ -71,7 +71,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationProcessParameterStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                         </coding>
@@ -118,7 +118,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationPerformanceIndicatorStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                         </coding>
@@ -176,7 +176,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Thawing and Formulation Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>
                         </coding>
@@ -228,7 +228,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                         </coding>
@@ -286,7 +286,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                         </coding>
@@ -313,7 +313,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                         </coding>
@@ -352,7 +352,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Media Challenge Hold Times&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeHoldTimesStep&quot;/>
                             <display value=&quot;Media Challenge Hold Times&quot;/>
                         </coding>
@@ -388,7 +388,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Media Challenge Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeResultsStep&quot;/>
                             <display value=&quot;Media Challenge Results&quot;/>
                         </coding>
@@ -430,7 +430,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -469,7 +469,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Fill Weight Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillWeightSummaryStep&quot;/>
                             <display value=&quot;Fill Weight Summary&quot;/>
                         </coding>
@@ -493,7 +493,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingHomogeneityQualityAttributesStep&quot;/>
                             <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                         </coding>
@@ -531,7 +531,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Filling Results Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingResultsSummaryStep&quot;/>
                             <display value=&quot;Filling Results Summary&quot;/>
                         </coding>
@@ -573,7 +573,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;StatisticalEvaluationOfHomogeneityDataStep&quot;/>
                             <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                         </coding>
@@ -606,7 +606,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Consistency of the Lyophilization Process&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ConsistencyoftheLyophilizationProcessStep&quot;/>
                             <display value=&quot;Consistency of the Lyophilization Process&quot;/>
                         </coding>
@@ -648,7 +648,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <title value=&quot;Lyophilization Homogeneity&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;LyophilizationHomogeneityStep&quot;/>
                             <display value=&quot;Lyophilization Homogeneity Results&quot;/>
                         </coding>
@@ -2296,7 +2296,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;minimum&quot;/>
                                     <display value=&quot;Minimum&quot;/>
                                 </coding>
@@ -2362,7 +2362,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -2432,7 +2432,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -2492,7 +2492,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -2560,7 +2560,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -2613,7 +2613,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -2679,7 +2679,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -2732,7 +2732,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -2798,7 +2798,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -2851,7 +2851,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -2916,7 +2916,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;intermediate&quot;/>
                                     <display value=&quot;Intermediate&quot;/>
                                 </coding>
@@ -2969,7 +2969,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -5661,9 +5661,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/exampleFileName&quot;>
-                    <valueString value=&quot;substance/{id}.xml&quot;/>
-                </extension-->
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
@@ -5695,7 +5692,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -5756,7 +5753,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -5817,7 +5814,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -8312,7 +8309,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;minimum&quot;/>
                                     <display value=&quot;Minimum&quot;/>
                                 </coding>
@@ -8365,7 +8362,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -8401,7 +8398,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -8437,7 +8434,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -8473,7 +8470,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -8509,7 +8506,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;intermediate&quot;/>
                                     <display value=&quot;Intermediate&quot;/>
                                 </coding>
@@ -20756,7 +20753,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationProcessParameterStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                         </coding>
@@ -20803,7 +20800,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationPerformanceIndicatorStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                         </coding>
@@ -20861,7 +20858,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Thawing and Formulation Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>
                         </coding>
@@ -20913,7 +20910,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                         </coding>
@@ -20971,7 +20968,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                         </coding>
@@ -20998,7 +20995,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                         </coding>
@@ -21037,7 +21034,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Media Challenge Hold Times&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeHoldTimesStep&quot;/>
                             <display value=&quot;Media Challenge Hold Times&quot;/>
                         </coding>
@@ -21073,7 +21070,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Media Challenge Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeResultsStep&quot;/>
                             <display value=&quot;Media Challenge Results&quot;/>
                         </coding>
@@ -21115,7 +21112,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -21154,7 +21151,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Fill Weight Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillWeightSummaryStep&quot;/>
                             <display value=&quot;Fill Weight Summary&quot;/>
                         </coding>
@@ -21178,7 +21175,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingHomogeneityQualityAttributesStep&quot;/>
                             <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                         </coding>
@@ -21216,7 +21213,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filling Results Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingResultsSummaryStep&quot;/>
                             <display value=&quot;Filling Results Summary&quot;/>
                         </coding>
@@ -21258,7 +21255,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;StatisticalEvaluationOfHomogeneityDataStep&quot;/>
                             <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                         </coding>
@@ -21291,7 +21288,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Consistency of the Lyophilization Process&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ConsistencyoftheLyophilizationProcessStep&quot;/>
                             <display value=&quot;Consistency of the Lyophilization Process&quot;/>
                         </coding>
@@ -21333,7 +21330,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Lyophilization Homogeneity&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;LyophilizationHomogeneityStep&quot;/>
                             <display value=&quot;Lyophilization Homogeneity Results&quot;/>
                         </coding>
@@ -21470,7 +21467,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationProcessParameterStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                         </coding>
@@ -21517,7 +21514,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationPerformanceIndicatorStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                         </coding>
@@ -21575,7 +21572,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Thawing and Formulation Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>
                         </coding>
@@ -21627,7 +21624,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                         </coding>
@@ -21685,7 +21682,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                         </coding>
@@ -21712,7 +21709,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                         </coding>
@@ -21751,7 +21748,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Media Challenge Hold Times&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeHoldTimesStep&quot;/>
                             <display value=&quot;Media Challenge Hold Times&quot;/>
                         </coding>
@@ -21787,7 +21784,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Media Challenge Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeResultsStep&quot;/>
                             <display value=&quot;Media Challenge Results&quot;/>
                         </coding>
@@ -21829,7 +21826,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -21868,7 +21865,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Fill Weight Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillWeightSummaryStep&quot;/>
                             <display value=&quot;Fill Weight Summary&quot;/>
                         </coding>
@@ -21892,7 +21889,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingHomogeneityQualityAttributesStep&quot;/>
                             <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                         </coding>
@@ -21930,7 +21927,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filling Results Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingResultsSummaryStep&quot;/>
                             <display value=&quot;Filling Results Summary&quot;/>
                         </coding>
@@ -21972,7 +21969,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;StatisticalEvaluationOfHomogeneityDataStep&quot;/>
                             <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                         </coding>
@@ -22005,7 +22002,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Consistency of the Lyophilization Process&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ConsistencyoftheLyophilizationProcessStep&quot;/>
                             <display value=&quot;Consistency of the Lyophilization Process&quot;/>
                         </coding>
@@ -22047,7 +22044,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Lyophilization Homogeneity&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;LyophilizationHomogeneityStep&quot;/>
                             <display value=&quot;Lyophilization Homogeneity Results&quot;/>
                         </coding>
@@ -22450,9 +22447,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/exampleFileName&quot;>
-                    <valueString value=&quot;substance/{id}.xml&quot;/>
-                </extension-->
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
@@ -22484,7 +22478,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -22577,7 +22571,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -22679,7 +22673,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -22692,9 +22686,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -22861,7 +22855,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -22948,7 +22942,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -23050,7 +23044,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -23063,9 +23057,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -23232,7 +23226,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -23322,7 +23316,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -23424,7 +23418,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -23437,9 +23431,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -23589,7 +23583,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationProcessParameterStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                         </coding>
@@ -23634,9 +23628,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationProcessParameterStep&quot;/>
-                            <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>">Formulation Buffer Preparation Process Parameter Step<span class="greyOff"> [FormulationBufferPreparationProcessParameterStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span><span style="white-space:normal;"> - Text: Formulation Buffer Preparation Process Parameter Step</span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>">Formulation Buffer Preparation Process Parameter Step<span class="greyOff"> [FormulationBufferPreparationProcessParameterStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span><span style="white-space:normal;"> - Text: Formulation Buffer Preparation Process Parameter Step</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -23654,7 +23648,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationProcessParameterStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                         </coding>
@@ -23666,9 +23660,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationProcessParameterStep&quot;/>
-                            <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>">Formulation Buffer Preparation Process Parameter Step<span class="greyOff"> [FormulationBufferPreparationProcessParameterStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span><span style="white-space:normal;"> - Text: Formulation Buffer Preparation Process Parameter Step</span></div>
+                            <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>">Formulation Buffer Preparation Process Parameter Step<span class="greyOff"> [FormulationBufferPreparationProcessParameterStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span><span style="white-space:normal;"> - Text: Formulation Buffer Preparation Process Parameter Step</span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -24251,7 +24245,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationPerformanceIndicatorStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                         </coding>
@@ -24307,9 +24301,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationPerformanceIndicatorStep&quot;/>
-                            <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>">Formulation Buffer Preparation Performance Indicator Results<span class="greyOff"> [FormulationBufferPreparationPerformanceIndicatorStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>">Formulation Buffer Preparation Performance Indicator Results<span class="greyOff"> [FormulationBufferPreparationPerformanceIndicatorStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -24327,7 +24321,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationPerformanceIndicatorStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                         </coding>
@@ -24339,9 +24333,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationPerformanceIndicatorStep&quot;/>
-                            <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>">Formulation Buffer Preparation Performance Indicator Results<span class="greyOff"> [FormulationBufferPreparationPerformanceIndicatorStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>">Formulation Buffer Preparation Performance Indicator Results<span class="greyOff"> [FormulationBufferPreparationPerformanceIndicatorStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -25424,7 +25418,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Thawing and Formulation Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>
                         </coding>
@@ -25474,9 +25468,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationProcessParameterResultsStep&quot;/>
-                            <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>">Thawing and Formulation Process Parameter Resultss<span class="greyOff"> [ThawingandFormulationProcessParameterResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>">Thawing and Formulation Process Parameter Resultss<span class="greyOff"> [ThawingandFormulationProcessParameterResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -25494,7 +25488,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>
                         </coding>
@@ -25506,9 +25500,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationProcessParameterResultsStep&quot;/>
-                            <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>">Thawing and Formulation Process Parameter Resultss<span class="greyOff"> [ThawingandFormulationProcessParameterResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>">Thawing and Formulation Process Parameter Resultss<span class="greyOff"> [ThawingandFormulationProcessParameterResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -26353,7 +26347,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                         </coding>
@@ -26409,9 +26403,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationPerformanceIndicatorResultsStep&quot;/>
-                            <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>">Thawing and Formulation Performance Indicator Results<span class="greyOff"> [ThawingandFormulationPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>">Thawing and Formulation Performance Indicator Results<span class="greyOff"> [ThawingandFormulationPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -26429,7 +26423,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                         </coding>
@@ -26441,9 +26435,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationPerformanceIndicatorResultsStep&quot;/>
-                            <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>">Thawing and Formulation Performance Indicator Results<span class="greyOff"> [ThawingandFormulationPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>">Thawing and Formulation Performance Indicator Results<span class="greyOff"> [ThawingandFormulationPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -27520,7 +27514,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                         </coding>
@@ -27545,9 +27539,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationProcessParameterResultsStep&quot;/>
-                            <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>">Bioburden Reduction Filtration Process Parameter Results<span class="greyOff"> [BioburdenReductionFiltrationProcessParameterResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>">Bioburden Reduction Filtration Process Parameter Results<span class="greyOff"> [BioburdenReductionFiltrationProcessParameterResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -27565,7 +27559,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                         </coding>">Code: </span><span title="
@@ -27576,9 +27570,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationProcessParameterResultsStep&quot;/>
-                            <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>">Bioburden Reduction Filtration Process Parameter Results<span class="greyOff"> [BioburdenReductionFiltrationProcessParameterResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>">Bioburden Reduction Filtration Process Parameter Results<span class="greyOff"> [BioburdenReductionFiltrationProcessParameterResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -27794,7 +27788,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                         </coding>
@@ -27825,9 +27819,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationPerformanceIndicatorResultsStep&quot;/>
-                            <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>">Bioburden Reduction Filtration Performance Indicator Results<span class="greyOff"> [BioburdenReductionFiltrationPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>">Bioburden Reduction Filtration Performance Indicator Results<span class="greyOff"> [BioburdenReductionFiltrationPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -27845,7 +27839,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                         </coding>">Code: </span><span title="
@@ -27856,9 +27850,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationPerformanceIndicatorResultsStep&quot;/>
-                            <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>">Bioburden Reduction Filtration Performance Indicator Results<span class="greyOff"> [BioburdenReductionFiltrationPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>">Bioburden Reduction Filtration Performance Indicator Results<span class="greyOff"> [BioburdenReductionFiltrationPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -28268,7 +28262,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Media Challenge Hold Times&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeHoldTimesStep&quot;/>
                             <display value=&quot;Media Challenge Hold Times&quot;/>
                         </coding>
@@ -28293,9 +28287,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeHoldTimesStep&quot;/>
-                            <display value=&quot;Media Challenge Hold Times&quot;/>">Media Challenge Hold Times<span class="greyOff"> [MediaChallengeHoldTimesStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Media Challenge Hold Times&quot;/>">Media Challenge Hold Times<span class="greyOff"> [MediaChallengeHoldTimesStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -28313,7 +28307,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeHoldTimesStep&quot;/>
                             <display value=&quot;Media Challenge Hold Times&quot;/>
                         </coding>">Code: </span><span title="
@@ -28324,9 +28318,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeHoldTimesStep&quot;/>
-                            <display value=&quot;Media Challenge Hold Times&quot;/>">Media Challenge Hold Times<span class="greyOff"> [MediaChallengeHoldTimesStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Media Challenge Hold Times&quot;/>">Media Challenge Hold Times<span class="greyOff"> [MediaChallengeHoldTimesStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -28461,7 +28455,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Media Challenge Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeResultsStep&quot;/>
                             <display value=&quot;Media Challenge Results&quot;/>
                         </coding>
@@ -28492,9 +28486,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeResultsStep&quot;/>
-                            <display value=&quot;Media Challenge Results&quot;/>">Media Challenge Results<span class="greyOff"> [MediaChallengeResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Media Challenge Results&quot;/>">Media Challenge Results<span class="greyOff"> [MediaChallengeResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -28512,7 +28506,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeResultsStep&quot;/>
                             <display value=&quot;Media Challenge Results&quot;/>
                         </coding>">Code: </span><span title="
@@ -28523,9 +28517,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeResultsStep&quot;/>
-                            <display value=&quot;Media Challenge Results&quot;/>">Media Challenge Results<span class="greyOff"> [MediaChallengeResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Media Challenge Results&quot;/>">Media Challenge Results<span class="greyOff"> [MediaChallengeResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -29088,7 +29082,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -29125,9 +29119,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
-                            <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>">Filtered Formulated Drug Product Performance Indicator Results<span class="greyOff"> [FilteredFormulatedDrugProductPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>">Filtered Formulated Drug Product Performance Indicator Results<span class="greyOff"> [FilteredFormulatedDrugProductPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -29145,7 +29139,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>">Code: </span><span title="
@@ -29156,9 +29150,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
-                            <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>">Filtered Formulated Drug Product Performance Indicator Results<span class="greyOff"> [FilteredFormulatedDrugProductPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>">Filtered Formulated Drug Product Performance Indicator Results<span class="greyOff"> [FilteredFormulatedDrugProductPerformanceIndicatorResultsStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -29616,7 +29610,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Fill Weight Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillWeightSummaryStep&quot;/>
                             <display value=&quot;Fill Weight Summary&quot;/>
                         </coding>
@@ -29641,9 +29635,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillWeightSummaryStep&quot;/>
-                            <display value=&quot;Fill Weight Summary&quot;/>">Fill Weight Summary<span class="greyOff"> [FillWeightSummaryStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Fill Weight Summary&quot;/>">Fill Weight Summary<span class="greyOff"> [FillWeightSummaryStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -29661,7 +29655,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillWeightSummaryStep&quot;/>
                             <display value=&quot;Fill Weight Summary&quot;/>
                         </coding>">Code: </span><span title="
@@ -29672,9 +29666,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillWeightSummaryStep&quot;/>
-                            <display value=&quot;Fill Weight Summary&quot;/>">Fill Weight Summary<span class="greyOff"> [FillWeightSummaryStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Fill Weight Summary&quot;/>">Fill Weight Summary<span class="greyOff"> [FillWeightSummaryStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -30045,7 +30039,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingHomogeneityQualityAttributesStep&quot;/>
                             <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                         </coding>
@@ -30072,9 +30066,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingHomogeneityQualityAttributesStep&quot;/>
-                            <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>">Filling Homogeneity Quality Attributes<span class="greyOff"> [FillingHomogeneityQualityAttributesStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span><span style="white-space:normal;"> - Text: Filling Homogeneity Quality Attributes</span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>">Filling Homogeneity Quality Attributes<span class="greyOff"> [FillingHomogeneityQualityAttributesStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span><span style="white-space:normal;"> - Text: Filling Homogeneity Quality Attributes</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -30092,7 +30086,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingHomogeneityQualityAttributesStep&quot;/>
                             <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                         </coding>
@@ -30104,9 +30098,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingHomogeneityQualityAttributesStep&quot;/>
-                            <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>">Filling Homogeneity Quality Attributes<span class="greyOff"> [FillingHomogeneityQualityAttributesStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span><span style="white-space:normal;"> - Text: Filling Homogeneity Quality Attributes</span></div>
+                            <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>">Filling Homogeneity Quality Attributes<span class="greyOff"> [FillingHomogeneityQualityAttributesStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span><span style="white-space:normal;"> - Text: Filling Homogeneity Quality Attributes</span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -30241,7 +30235,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Filling Results Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingResultsSummaryStep&quot;/>
                             <display value=&quot;Filling Results Summary&quot;/>
                         </coding>
@@ -30272,9 +30266,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingResultsSummaryStep&quot;/>
-                            <display value=&quot;Filling Results Summary&quot;/>">Filling Results Summary<span class="greyOff"> [FillingResultsSummaryStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Filling Results Summary&quot;/>">Filling Results Summary<span class="greyOff"> [FillingResultsSummaryStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -30292,7 +30286,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingResultsSummaryStep&quot;/>
                             <display value=&quot;Filling Results Summary&quot;/>
                         </coding>">Code: </span><span title="
@@ -30303,9 +30297,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingResultsSummaryStep&quot;/>
-                            <display value=&quot;Filling Results Summary&quot;/>">Filling Results Summary<span class="greyOff"> [FillingResultsSummaryStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Filling Results Summary&quot;/>">Filling Results Summary<span class="greyOff"> [FillingResultsSummaryStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -31409,7 +31403,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;StatisticalEvaluationOfHomogeneityDataStep&quot;/>
                             <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                         </coding>
@@ -31440,9 +31434,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;StatisticalEvaluationOfHomogeneityDataStep&quot;/>
-                            <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>">Statistical Evaluation of Homogeneity Data<span class="greyOff"> [StatisticalEvaluationOfHomogeneityDataStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>">Statistical Evaluation of Homogeneity Data<span class="greyOff"> [StatisticalEvaluationOfHomogeneityDataStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -31460,7 +31454,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;StatisticalEvaluationOfHomogeneityDataStep&quot;/>
                             <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                         </coding>">Code: </span><span title="
@@ -31471,9 +31465,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;StatisticalEvaluationOfHomogeneityDataStep&quot;/>
-                            <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>">Statistical Evaluation of Homogeneity Data<span class="greyOff"> [StatisticalEvaluationOfHomogeneityDataStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>">Statistical Evaluation of Homogeneity Data<span class="greyOff"> [StatisticalEvaluationOfHomogeneityDataStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -32796,7 +32790,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <title value=&quot;Consistency of the Lyophilization Process&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ConsistencyoftheLyophilizationProcessStep&quot;/>
                             <display value=&quot;Consistency of the Lyophilization Process&quot;/>
                         </coding>
@@ -32827,9 +32821,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ConsistencyoftheLyophilizationProcessStep&quot;/>
-                            <display value=&quot;Consistency of the Lyophilization Process&quot;/>">Consistency of the Lyophilization Process<span class="greyOff"> [ConsistencyoftheLyophilizationProcessStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Consistency of the Lyophilization Process&quot;/>">Consistency of the Lyophilization Process<span class="greyOff"> [ConsistencyoftheLyophilizationProcessStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -32847,7 +32841,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ConsistencyoftheLyophilizationProcessStep&quot;/>
                             <display value=&quot;Consistency of the Lyophilization Process&quot;/>
                         </coding>">Code: </span><span title="
@@ -32858,9 +32852,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ConsistencyoftheLyophilizationProcessStep&quot;/>
-                            <display value=&quot;Consistency of the Lyophilization Process&quot;/>">Consistency of the Lyophilization Process<span class="greyOff"> [ConsistencyoftheLyophilizationProcessStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Consistency of the Lyophilization Process&quot;/>">Consistency of the Lyophilization Process<span class="greyOff"> [ConsistencyoftheLyophilizationProcessStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -33302,7 +33296,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefini
                     <title value=&quot;Lyophilization Homogeneity&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;LyophilizationHomogeneityStep&quot;/>
                             <display value=&quot;Lyophilization Homogeneity Results&quot;/>
                         </coding>
@@ -33335,9 +33329,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefini
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;LyophilizationHomogeneityStep&quot;/>
-                            <display value=&quot;Lyophilization Homogeneity Results&quot;/>">Lyophilization Homogeneity Results<span class="greyOff"> [LyophilizationHomogeneityStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Lyophilization Homogeneity Results&quot;/>">Lyophilization Homogeneity Results<span class="greyOff"> [LyophilizationHomogeneityStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -33355,7 +33349,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefini
                     ...
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;LyophilizationHomogeneityStep&quot;/>
                             <display value=&quot;Lyophilization Homogeneity Results&quot;/>
                         </coding>">Code: </span><span title="
@@ -33366,9 +33360,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefini
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;LyophilizationHomogeneityStep&quot;/>
-                            <display value=&quot;Lyophilization Homogeneity Results&quot;/>">Lyophilization Homogeneity Results<span class="greyOff"> [LyophilizationHomogeneityStep]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step)</span></span></div>
+                            <display value=&quot;Lyophilization Homogeneity Results&quot;/>">Lyophilization Homogeneity Results<span class="greyOff"> [LyophilizationHomogeneityStep]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -34171,7 +34165,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationProcessParameterStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Process Parameter Step&quot;/>
                         </coding>
@@ -34218,7 +34212,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FormulationBufferPreparationPerformanceIndicatorStep&quot;/>
                             <display value=&quot;Formulation Buffer Preparation Performance Indicator Results&quot;/>
                         </coding>
@@ -34276,7 +34270,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Thawing and Formulation Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Process Parameter Resultss&quot;/>
                         </coding>
@@ -34328,7 +34322,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ThawingandFormulationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Thawing and Formulation Performance Indicator Results&quot;/>
                         </coding>
@@ -34386,7 +34380,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationProcessParameterResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Process Parameter Results&quot;/>
                         </coding>
@@ -34413,7 +34407,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;BioburdenReductionFiltrationPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Bioburden Reduction Filtration Performance Indicator Results&quot;/>
                         </coding>
@@ -34452,7 +34446,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Media Challenge Hold Times&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeHoldTimesStep&quot;/>
                             <display value=&quot;Media Challenge Hold Times&quot;/>
                         </coding>
@@ -34488,7 +34482,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Media Challenge Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;MediaChallengeResultsStep&quot;/>
                             <display value=&quot;Media Challenge Results&quot;/>
                         </coding>
@@ -34530,7 +34524,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -34569,7 +34563,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Fill Weight Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillWeightSummaryStep&quot;/>
                             <display value=&quot;Fill Weight Summary&quot;/>
                         </coding>
@@ -34593,7 +34587,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingHomogeneityQualityAttributesStep&quot;/>
                             <display value=&quot;Filling Homogeneity Quality Attributes&quot;/>
                         </coding>
@@ -34631,7 +34625,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Filling Results Summary&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FillingResultsSummaryStep&quot;/>
                             <display value=&quot;Filling Results Summary&quot;/>
                         </coding>
@@ -34673,7 +34667,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;StatisticalEvaluationOfHomogeneityDataStep&quot;/>
                             <display value=&quot;Statistical Evaluation of Homogeneity Data&quot;/>
                         </coding>
@@ -34706,7 +34700,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Consistency of the Lyophilization Process&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;ConsistencyoftheLyophilizationProcessStep&quot;/>
                             <display value=&quot;Consistency of the Lyophilization Process&quot;/>
                         </coding>
@@ -34748,7 +34742,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <title value=&quot;Lyophilization Homogeneity&quot;/>
                     <code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;LyophilizationHomogeneityStep&quot;/>
                             <display value=&quot;Lyophilization Homogeneity Results&quot;/>
                         </coding>
@@ -34829,7 +34823,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;minimum&quot;/>
                                     <display value=&quot;Minimum&quot;/>
                                 </coding>
@@ -34895,7 +34889,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -35002,7 +34996,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;minimum&quot;/>
                                     <display value=&quot;Minimum&quot;/>
                                 </coding>
@@ -35068,7 +35062,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -35114,7 +35108,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;minimum&quot;/>
                                     <display value=&quot;Minimum&quot;/>
                                 </coding>
@@ -35180,7 +35174,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -35379,7 +35373,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -35394,9 +35388,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -35408,7 +35402,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;minimum&quot;/>
                                     <display value=&quot;Minimum&quot;/>
                                 </coding>
@@ -35423,9 +35417,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;minimum&quot;/>
-                                    <display value=&quot;Minimum&quot;/>">Minimum<span class="greyOff"> [minimum]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation)</span></span><span style="white-space:normal;"> - Text: Minimum</span></div>
+                                    <display value=&quot;Minimum&quot;/>">Minimum<span class="greyOff"> [minimum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Minimum</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -35664,7 +35658,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -35724,7 +35718,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -35836,7 +35830,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -35896,7 +35890,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -35947,7 +35941,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -36007,7 +36001,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -36206,7 +36200,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -36221,9 +36215,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -36235,7 +36229,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -36250,9 +36244,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
+                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
 <div class="indent medl4"><span title="
 <Bundle>
     <entry>
@@ -36478,7 +36472,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -36531,7 +36525,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -36638,7 +36632,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -36691,7 +36685,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -36739,7 +36733,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -36792,7 +36786,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -36981,7 +36975,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -36996,9 +36990,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -37010,7 +37004,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -37025,9 +37019,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
+                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
 <div class="indent medl4"><span title="
 <Bundle>
     <entry>
@@ -37242,7 +37236,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -37295,7 +37289,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -37402,7 +37396,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -37455,7 +37449,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -37503,7 +37497,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -37556,7 +37550,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -37745,7 +37739,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -37760,9 +37754,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -37774,7 +37768,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -37789,9 +37783,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
+                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
 <div class="indent medl4"><span title="
 <Bundle>
     <entry>
@@ -38015,7 +38009,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -38068,7 +38062,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -38175,7 +38169,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -38228,7 +38222,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -38276,7 +38270,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -38329,7 +38323,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -38518,7 +38512,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -38533,9 +38527,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -38547,7 +38541,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
                                     <display value=&quot;Maximum&quot;/>
                                 </coding>
@@ -38562,9 +38556,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
+                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
 <div class="indent medl4"><span title="
 <Bundle>
     <entry>
@@ -38779,7 +38773,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;intermediate&quot;/>
                                     <display value=&quot;Intermediate&quot;/>
                                 </coding>
@@ -38832,7 +38826,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -38939,7 +38933,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;intermediate&quot;/>
                                     <display value=&quot;Intermediate&quot;/>
                                 </coding>
@@ -38992,7 +38986,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -39040,7 +39034,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;intermediate&quot;/>
                                     <display value=&quot;Intermediate&quot;/>
                                 </coding>
@@ -39093,7 +39087,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -39282,7 +39276,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
                                     <display value=&quot;Stability Study&quot;/>
                                 </coding>
@@ -39297,9 +39291,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;batchUtilization&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                    <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                     <code value=&quot;C185328&quot;/>
-                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
+                                    <display value=&quot;Stability Study&quot;/>">Stability Study<span class="greyOff"> [C185328]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span><span style="white-space:normal;"> - Text: PPQ / Stability</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -39311,7 +39305,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;intermediate&quot;/>
                                     <display value=&quot;Intermediate&quot;/>
                                 </coding>
@@ -39326,9 +39320,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
                             <valueCodeableConcept>
                                 <coding>
-                                    <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation&quot;/>
+                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
                                     <code value=&quot;intermediate&quot;/>
-                                    <display value=&quot;Intermediate&quot;/>">Intermediate<span class="greyOff"> [intermediate]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation)</span></span><span style="white-space:normal;"> - Text: Intermediate</span></div>
+                                    <display value=&quot;Intermediate&quot;/>">Intermediate<span class="greyOff"> [intermediate]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Intermediate</span></div>
 <div class="indent medl4"><span title="
 <Bundle>
     <entry>
@@ -39700,9 +39694,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/exampleFileName&quot;>
-                    <valueString value=&quot;substance/{id}.xml&quot;/>
-                </extension-->
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
@@ -39734,7 +39725,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -39827,7 +39818,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -39929,7 +39920,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -39942,9 +39933,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -40111,7 +40102,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -40198,7 +40189,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -40300,7 +40291,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -40313,9 +40304,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -40482,7 +40473,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -40572,7 +40563,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -40674,7 +40665,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -40687,9 +40678,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -42174,9 +42165,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq&quot;/>
                 </meta>
-                <!--extension url=&quot;http://nprogram.co.uk/fhir/extension/exampleFileName&quot;>
-                    <valueString value=&quot;substance/{id}.xml&quot;/>
-                </extension-->
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
                         <valueDateTime value=&quot;2019-09-08&quot;/>
@@ -42208,7 +42196,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -42301,7 +42289,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -42403,7 +42391,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -42416,9 +42404,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-pq
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -42585,7 +42573,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -42672,7 +42660,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -42774,7 +42762,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -42787,9 +42775,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -42956,7 +42944,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -43046,7 +43034,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -43148,7 +43136,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                         <!-- #161 -->
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
                                 <display value=&quot;Development&quot;/>
                             </coding>
@@ -43161,9 +43149,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
                     <extension url=&quot;batchUtilization&quot;>
                         <valueCodeableConcept>
                             <coding>
-                                <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology&quot;/>
+                                <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
                                 <code value=&quot;C133991&quot;/>
-                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-utilization-terminology)</span></span></div><div></div><span><span title="
+                                <display value=&quot;Development&quot;/>">Development<span class="greyOff"> [C133991]</span><span class="greyOff"> (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl)</span></span></div><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -44580,6 +44568,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -45035,7 +45024,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-p
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:PlanDefinition
 		Single resource bundle:false

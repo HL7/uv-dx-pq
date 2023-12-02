@@ -54,9 +54,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <reference value=&quot;SubstanceDefinition/impurityEnantiomer&quot;/>
                     </substanceDefinitionReference>
                     <type>
+                        <!-- two codes here, one is more specialised than the other -->
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -83,8 +84,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -111,8 +112,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -139,8 +140,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -167,8 +168,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -798,7 +799,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 </div>
 </div>
 <div>
-<div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb)
+<div class="org indent"><span class="bold">Impurities Report - Substance, on Stelbatolol</span><br><br style="line-height:6px;"><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb)
 
 <Bundle>
     <entry>
@@ -830,9 +831,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <reference value=&quot;SubstanceDefinition/impurityEnantiomer&quot;/>
                     </substanceDefinitionReference>
                     <type>
+                        <!-- two codes here, one is more specialised than the other -->
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -859,8 +861,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -887,8 +889,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -915,8 +917,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -943,8 +945,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -1252,9 +1254,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <reference value=&quot;SubstanceDefinition/impurityEnantiomer&quot;/>
                     </substanceDefinitionReference>
                     <type>
+                        <!-- two codes here, one is more specialised than the other -->
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -1271,9 +1274,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <relationship>
                     ...
                     <type>
+                        <!-- two codes here, one is more specialised than the other -->
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -1288,9 +1292,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <relationship>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
-                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [impurity]</span><span class="greyOff"> (http://temp.hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
+                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [Impurity]</span><span class="greyOff"> (http://hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1860,8 +1864,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -1879,8 +1883,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -1895,9 +1899,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <relationship>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
-                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [impurity]</span><span class="greyOff"> (http://temp.hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
+                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [Impurity]</span><span class="greyOff"> (http://hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2442,8 +2446,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -2461,8 +2465,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -2477,9 +2481,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <relationship>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
-                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [impurity]</span><span class="greyOff"> (http://temp.hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
+                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [Impurity]</span><span class="greyOff"> (http://hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
 <Bundle>
     <entry>
         <resource>
@@ -3024,8 +3028,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -3043,8 +3047,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -3059,9 +3063,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <relationship>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
-                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [impurity]</span><span class="greyOff"> (http://temp.hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
+                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [Impurity]</span><span class="greyOff"> (http://hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
 <Bundle>
     <entry>
         <resource>
@@ -3807,8 +3811,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </substanceDefinitionReference>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -3826,8 +3830,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
                             <display value=&quot;Impurity Of&quot;/>
                         </coding>
                         <coding>
@@ -3842,9 +3846,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <relationship>
                     <type>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/substance-relationship-type&quot;/>
-                            <code value=&quot;impurity&quot;/>
-                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [impurity]</span><span class="greyOff"> (http://temp.hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
+                            <system value=&quot;http://hl7.org/fhir/substance-relationship-type&quot;/>
+                            <code value=&quot;Impurity&quot;/>
+                            <display value=&quot;Impurity Of&quot;/>">Impurity Of<span class="greyOff"> [Impurity]</span><span class="greyOff"> (http://hl7.org/fhir/substance-relationship-type)</span></span>, <span title="
 <Bundle>
     <entry>
         <resource>
@@ -4422,7 +4426,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 </div>
-<div class="summaryHiddenOff"></div>
+</div>
 </div>
 </div>
 </div>
@@ -4780,6 +4784,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -5235,7 +5240,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:SubstanceDefinition
 		Single resource bundle:false

@@ -81,7 +81,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -3811,7 +3811,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -3968,7 +3968,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -4032,7 +4032,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -5006,7 +5006,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <!-- needs some other code -->
                     <!--code>
                         <coding>
-                            <system value=&quot;http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
                             <code value=&quot;FilteredFormulatedDrugProductPerformanceIndicatorResultsStep&quot;/>
                             <display value=&quot;Filtered Formulated Drug Product Performance Indicator Results&quot;/>
                         </coding>
@@ -5618,6 +5618,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
 
 		window.onload=function()
 		{
+			// Rik
 			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
 			var nodesSpan = document.querySelectorAll("span");
 			for (var i=0; i < nodesSpan.length; i++) {
@@ -6073,7 +6074,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
 		}
 
       --></SCRIPT><!--
-		(Thanks for reading this far - Rik :-)
 		Status information:
 		First resource in bundle:PlanDefinition
 		Single resource bundle:false
