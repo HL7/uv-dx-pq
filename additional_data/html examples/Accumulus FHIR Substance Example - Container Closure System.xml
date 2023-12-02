@@ -163,9 +163,7 @@
       <resource>
          <PlanDefinition>
             <id value="packagingSpecification-unlinked"/>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/viewer/tabulateBatchesInRows-biologic">
-                    <valueBoolean value="true"/>
-                </extension-->
+            
             <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Specification and Analytical Procedures"/>
             <type>
