@@ -4,8 +4,3 @@ Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
 # Information messages about reference to draft status items
 Reference to draft item http://hl7.org/fhir/hl7-work-group|1.0.0
-
-# The US NIH National Cancer Institute (NCI) Thesaurus (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities. It is not yet listed by the HL7 Terminology Server (http://tx.fhir.org/r4/). It is listed by HL7 Terminology (THO) (https://terminology.hl7.org/CodeSystem-v3-nciThesaurus.html), but contains no codes there.
-Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
-The definition for the Code System with URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' doesnt provide any codes so the code cannot be validated
-Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: Resolved system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl (v3.0.0), but the definition is not complete)
