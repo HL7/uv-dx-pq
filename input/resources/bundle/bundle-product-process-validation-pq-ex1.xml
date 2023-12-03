@@ -36,7 +36,6 @@
                <title value="Compounding Step"/>
                <code>
                   <coding>
-<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="compounding"/>
                      <display value="Compounding Step"/>
@@ -82,7 +81,6 @@
                <title value="Filling Steps"/>
                <code>
                   <coding>
-<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="filling"/>
                      <display value="Filling Step"/>
@@ -162,7 +160,6 @@
                <title value="Lyophilization Step"/>
                <code>
                   <coding>
-<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="lyophilization"/>
                      <display value="Lyophilization Step"/>
@@ -215,7 +212,6 @@
                <title value="Release Step"/>
                <code>
                   <coding>
-<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="release"/>
                      <display value="Release Step"/>
@@ -1404,7 +1400,6 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
-                     <!-- #171 -->
                   </extension>
                   <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                             <valueReference>
@@ -1414,7 +1409,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-<!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
@@ -1441,7 +1435,7 @@
                      </valueReference>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                     <valueQuantity> <!-- #160 -->
+                     <valueQuantity>
                         <value value="4.81"/>
                         <unit value="kg"/>
                      </valueQuantity>
@@ -1467,7 +1461,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="batchUtilization"> <!-- #159 -->
+                  <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
                            <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -1478,7 +1472,7 @@
                      </valueCodeableConcept>
                   </extension>
                   <extension url="assignedManufacturer">
-                     <valueReference> <!-- #158 -->
+                     <valueReference> 
                             	<!--reference value="Organization/manufacturer"/-->
                             	<!--Organization/organization-drug-pq-ex1-->
                         <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -1490,7 +1484,6 @@
                      </extension>
                   </extension>
                </extension>
-               <!-- #153 -->
                <lotNumber value="33445"/>
             </batch>
          </Medication>
@@ -1524,7 +1517,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-                           <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
@@ -1632,7 +1624,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
-                           <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
                            <code value="maximum"/>
                            <display value="Maximum"/>
@@ -3985,15 +3976,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
@@ -4061,7 +4052,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>
@@ -4106,7 +4096,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>
@@ -4174,13 +4163,11 @@
                </coding>
             </type>
             <status value="active"/>
-            <!-- #83 -->
             <subjectReference>
                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
-            <!-- #85 -->
             <goal id="goal-control-pH">
                <category>
                   <coding>
@@ -4415,21 +4402,17 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
-                  <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
@@ -4438,7 +4421,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -4447,7 +4430,7 @@
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
                   <valueReference>
                             <!--Organization/organization-drug-pq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -4456,7 +4439,6 @@
             </extension>
             <identifier>
                <value value="CAT1"/>
-               <!-- #155 -->
             </identifier>
             <instance value="true"/>
             <code>
@@ -4477,21 +4459,17 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
-                  <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
@@ -4500,7 +4478,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -4509,7 +4487,7 @@
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
                   <valueReference>
                             <!--Organization/organization-drug-pq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -4538,21 +4516,17 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
-                  <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
@@ -4561,7 +4535,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -4570,7 +4544,7 @@
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
                   <valueReference>
                             <!--Organization/organization-drug-pq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -4579,7 +4553,6 @@
             </extension>
             <identifier>
                <value value="CAT3"/>
-               <!-- #155 -->
             </identifier>
             <instance value="true"/>
             <code>

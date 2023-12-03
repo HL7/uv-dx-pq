@@ -19,7 +19,7 @@
                <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
+                        
                     	<!--DocumentReference/documentreference-process-flow-diagram-pq-ex1-->
                   <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
@@ -43,13 +43,11 @@
                </coding>
             </type>
             <status value="active"/>
-            <!-- #83 -->
             <subjectReference>
                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
-            <!-- #85 -->
             <goal id="goal-control-pH">
                <category>
                   <coding>
@@ -244,8 +242,7 @@
                <description value="Mixing of ingredients"/>
                <code>
                   <coding>
-                     <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="Mixing of ingredients"/>
                      <display value="Mixing of ingredients"/>
                   </coding>
@@ -377,7 +374,6 @@
                <description value="Drying using a heater"/>
                <code>
                   <coding>
-                     <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="drying"/>
                      <display value="Drying"/>
@@ -475,7 +471,6 @@
                <description value="Particle Size Reduction by using a rotating impeller"/>
                <code>
                   <coding>
-                     <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="particleSizeReduction"/>
                      <display value="Particle Size Reduction"/>
@@ -500,7 +495,6 @@
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                         <code value="Compression Milling"/>
-                        <!-- #88 Equipment class -->
                         <display value="Compression Milling"/>
                      </coding>
                   </role>
@@ -559,7 +553,6 @@
             	</meta>-->
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
-               <!-- #89 Equiment subclass -->
                <type value="registered-name"/>
             </deviceName>
             <property>
@@ -567,7 +560,6 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="Maximum Speed"/>
-                     <!-- #90 Working capacity -->
                      <display value="Maximum Speed"/>
                   </coding>
                </type>
@@ -587,7 +579,6 @@
             <id value="82a39a18-91cf-a19d-76c1-a9e8bbd9494c"/>
             <deviceName>
                <name value="Heated dryer"/>
-               <!-- #89 Equiment subclass -->
                <type value="registered-name"/>
             </deviceName>
             <property>
@@ -636,13 +627,12 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
-            <!-- #84 -->
          <DocumentReference> 
             	<!--documentreference-process-flow-diagram-pq-ex1-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
             <!--<meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>       
-            	</meta>-->
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>       
+                </meta>-->
             <identifier>
                <system value="http://example.org/fhir/identifier/document"/>
                <value value="FLOW-001"/>
@@ -668,7 +658,6 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee"/>
       <resource>
-            <!-- #84 -->
          <DocumentReference> 
                 <!--DocumentReference-image-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41fee"/>
@@ -692,15 +681,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
@@ -768,7 +757,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>
@@ -784,7 +772,6 @@
             </meta>
             <name>
                <name value="Stelbatolol Granules"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>

@@ -4,7 +4,7 @@
    <id value="bundle-drug-stability-pq-ex1-prod"/>
    <!--   <id value="product-stability-study"/>-->
    <meta>
-        <!--profile value="http://accumulus.org/fhir/dx-cmc/stability"/-->
+        <!--profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-stability-dxpq"/-->
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
    </meta>
    <type value="collection"/>
@@ -26,7 +26,7 @@
             </extension>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-pq">
                <valueCodeableConcept>
-                         <!-- #223 -->
+                         
                          <!-- Want to use studyDesign, but problem is that this is CodeableConcept, which allows text. However when you use text, you then
                             have no place to put a context. Ideally this would be a code/code pair.
                             Code says "statistical model", code (or text) then says what it is -->
@@ -40,8 +40,7 @@
                      <code value="horizontal"/>
                      <display value="horizontal"/>
                   </coding>
-                         <!-- #227 -->
-                         <!-- Considered ObservatioDefinition.usageContext -->
+                  <!-- Considered ObservatioDefinition.usageContext -->
                   <text value="Horizontal"/>
                </valueCodeableConcept>
             </extension>
@@ -168,7 +167,7 @@
                      <action> <!-- the categories to do at this step -->
                         <title value="XYZ"/>
                         <!-- Long term -->
-                        <!--ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial-->
+                        <!--ActivityDefinition/activitydefinition-test-drug-pq-ex1-->
                         <definitionCanonical value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                      </action>
                   </action>
@@ -197,7 +196,7 @@
                      </timingTiming>
                      <action>
                         <title value="X"/>
-                        <!--ActivityDefinition/ActivityDefinition-test-drug-pq-ex1-->
+                        <!--ActivityDefinition/activitydefinition-stability-test-dxpq-ex1-->
                         <definitionCanonical value="ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
                      </action>
                   </action>
@@ -540,7 +539,7 @@
       <resource>
          <SpecimenDefinition>
                 <!--<id value="specimenDefStoredAt25"/>-->
-                <!--specimendefinition-stability-pq-ex1-->
+                <!--specimendefinition-drug-pq-ex1-->
             <id value="3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
@@ -562,7 +561,7 @@
       <resource>
          <ActivityDefinition>
                 <!-- <id value="activityLongTerm25X-3"/>-->
-                <!--ActivityDefinition-test-drug-pq-ex1-->
+                <!--activitydefinition-stability-test-dxpq-ex1-->
             <id value="610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
@@ -572,9 +571,8 @@
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
             <!-- changed here to not have url in front -->
-            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
+            <!--ObservationDefinition/longTerm25X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
-            <!-- longTerm25X -->
          </ActivityDefinition>
       </resource>
    </entry>
@@ -591,7 +589,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
+            <!--ObservationDefinition/longTerm25X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
          </ActivityDefinition>
       </resource>
@@ -609,7 +607,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
             <title value="Long-term - 25°C/60% RH - X"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
+            <!--ObservationDefinition/longTerm25X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
          </ActivityDefinition>
       </resource>
@@ -619,7 +617,7 @@
       <resource>
          <ActivityDefinition>
                 <!--id value="activityLongTerm25XYZ-Initial"/-->
-                <!--activitydefinition-test-longterm25c-25xyz-initial-->
+                <!--activitydefinition-test-drug-pq-ex1-->
             <id value="4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
@@ -628,7 +626,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
             <title value="Long-term - 25°C/60% RH - XYZ"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
+            <!--ObservationDefinition/longTerm25X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -650,7 +648,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
+            <!--ObservationDefinition/longTerm25X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -670,7 +668,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
+            <!--ObservationDefinition/longTerm25X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -690,7 +688,7 @@
             <url value="http://example-server.com/fhir/ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2"/>
             <title value="Long-term - 25°C/60% RH - XY"/>
             <status value="active"/>
-            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
+            <!--ObservationDefinition/longTerm25X-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <!--ObservationDefinition/longTerm25Y-->
             <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/b62b9524-53af-84ae-1071-2867a2169851"/>
@@ -701,9 +699,9 @@
       <fullUrl value="urn:uuid:d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
       <resource>
          <ObservationDefinition>
-                <!--id value="longTerm25X"/-->
-                <!--observationdefinition-test-method-drug-pq-ex1-->
+                <!--longTerm25X-->
             <id value="d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
+            <!--id value="observationdefinition-test-method-drug-pq-ex1"/-->
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
@@ -716,11 +714,10 @@
                <text value="Battery of tests 'X' at 25°C/60% RH"/>
             </code>
             <specimen>
-                    <!--SpecimenDefinition/specimendefinition-stability-pq-ex1-->
+                    <!--SpecimenDefinition/specimendefinition-drug-pq-ex1-->
                <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
-                    
                     <!--ObservationDefinition/Description-->
                <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
             </hasMember>
@@ -729,7 +726,7 @@
                <reference value="ObservationDefinition/2c5683d6-6e94-825b-056a-129a04c95e2f"/>
             </hasMember>
             <hasMember>
-                    <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
+                    <!--ObservationDefinition/Water-->
                <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             </hasMember>
             <!-- can have others -->
@@ -868,9 +865,9 @@
       <fullUrl value="urn:uuid:186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
       <resource>
          <ObservationDefinition>
-                <!-- <id value="Water"/> -->
-                <!--observationdefinition-test-method-drug-pq-ex2-->
+                <!--Water-->
             <id value="186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
+            <!--id value="observationdefinition-test-method-drug-pq-ex2"/-->
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
@@ -916,7 +913,7 @@
                <text value="Battery of tests 'Y' at 25°C/60% RH"/>
             </code>
             <specimen>
-                    <!--SpecimenDefinition/specimendefinition-stability-pq-ex1-->
+                    <!--SpecimenDefinition/specimendefinition-drug-pq-ex1-->
                <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
@@ -973,7 +970,7 @@
                <text value="Battery of tests 'Z' at 25°C/60% RH"/>
             </code>
             <specimen>
-                    <!--SpecimenDefinition/specimendefinition-stability-pq-ex1-->
+                    <!--SpecimenDefinition/specimendefinition-drug-pq-ex1-->
                <reference value="SpecimenDefinition/3a0cde98-4a73-6d67-1dfc-08e3fc9646a2"/>
             </specimen>
             <hasMember>
@@ -1115,7 +1112,7 @@
                <reference value="ObservationDefinition/1178fc31-0cfd-8c60-0b5b-9ae2850c6774"/>
             </hasMember>
             <hasMember>
-                    <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
+                    <!--ObservationDefinition/Water-->
                <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
             </hasMember>
             <!-- can have others -->
@@ -1183,7 +1180,7 @@
       <resource>
          <Specimen>
                 <!--id value="stabilityInitial-1"/-->
-                <!--specimen-stability-pq-ex1-->
+                <!--specimen-drug-pq-ex1-->
             <id value="b664977d-799d-a1ce-928a-5def2a9955bd"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
@@ -1293,7 +1290,6 @@
             <contained>
                <Observation>
                   <id value="observation-test-result-lt25c-i1-degradation-imp1"/>
-<!--                  <id value="observation-test-result-drug-pq-ex1"/>-->
                   <meta>
                      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
@@ -1545,8 +1541,7 @@
                      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
                   </meta>
                   <instantiatesReference>
-            		        
-            		        <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
+            		        <!--ObservationDefinition/Water-->
                      <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -1643,8 +1638,7 @@
             </contained>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-            		    
-            		    <!--ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial-->
+            		    <!--ActivityDefinition/activitydefinition-test-drug-pq-ex1-->
                   <reference value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                </valueReference>
             </extension>
@@ -1663,7 +1657,7 @@
                <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
             </performer>
             <specimen>
-    			    <!--Specimen/specimen-stability-pq-ex1-->
+    			    <!--Specimen/specimen-drug-pq-ex1-->
                <reference value="Specimen/b664977d-799d-a1ce-928a-5def2a9955bd"/>
             </specimen>
             <hasMember>
@@ -1671,7 +1665,6 @@
             </hasMember>
             <hasMember>
                <reference value="#observation-test-result-lt25c-i1-degradation-imp1"/>
-<!--               <reference value="#observation-test-result-drug-pq-ex1"/>-->
             </hasMember>
             <hasMember>
                <reference value="#LongTerm25C-initial-1-Degradation-imp2"/>
@@ -1827,7 +1820,7 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                        <!--ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial-->
+                        <!--ActivityDefinition/activitydefinition-test-drug-pq-ex1-->
                   <reference value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                </valueReference>
             </extension>
@@ -1893,7 +1886,7 @@
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
-					<!--Organization/tester-->
+        					<!--Organization/tester-->
                      <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
                   </performer>
                   <valueCodeableConcept>
@@ -1923,7 +1916,7 @@
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
-					<!--Organization/tester-->
+        					<!--Organization/tester-->
                      <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
                   </performer>
                   <valueQuantity>
@@ -1955,7 +1948,7 @@
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
-					<!--Organization/tester-->
+        					<!--Organization/tester-->
                      <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
                   </performer>
                   <valueCodeableConcept>
@@ -1984,7 +1977,7 @@
                   </subject>
                   <effectiveDateTime value="2023-01-01T12:00:00Z"/>
                   <performer>
-					<!--Organization/tester-->
+        					<!--Organization/tester-->
                      <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
                   </performer>
                   <valueCodeableConcept>
@@ -1996,7 +1989,7 @@
                      that would mean using sub-ActivityDefintions probably -->
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
-                        <!--ActivityDefinition/activitydefinition-test-longterm25c-25xyz-initial-->
+                        <!--ActivityDefinition/activitydefinition-test-drug-pq-ex1-->
                   <reference value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                </valueReference>
             </extension>
@@ -2394,7 +2387,7 @@
                <Observation>
                   <id value="LongTerm25C-18m-1-Water"/>
                   <instantiatesReference>
-                            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
+                            <!--ObservationDefinition/Water-->
                      <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3029,7 +3022,7 @@
                <Observation>
                   <id value="Accelerated40C-3-1-Water"/>
                   <instantiatesReference>
-                            <!--ObservationDefinition/observationdefinition-test-method-drug-pq-ex2-->
+                            <!--ObservationDefinition/Water-->
                      <reference value="ObservationDefinition/186eb33e-a01d-4252-166c-b5ba5e8a697c"/>
                   </instantiatesReference>
                   <status value="final"/>
@@ -3176,14 +3169,11 @@
       <resource>
          <Medication>
                 <!-- <id value="medication-actual-batch"/> -->
-                <!--medication-batch-information-pq-ex1-->
+                <!--medication-batch-information-drug-pq-ex1-->
             <id value="7ef62d57-7cc6-9211-66d6-abc7e096093c"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
             </meta>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
-                    <valueString value="medication/{id}.xml"/>
-                </extension-->
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference> <!-- todo consider change this be the MID? --> 
@@ -3197,18 +3187,17 @@
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
-                     <!-- #171 -->
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
                      <valueReference>
-                    		    <!--Substance/substance-drug-pq-ex1-->
+                    		    <!--Substance/substance-dxpq-ex1-->
                         <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
                      </valueReference>
                   </extension>
-                  <extension url="manufacturingDate"> <!-- #157 -->
+                  <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq"> <!-- #159 -->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
                      <valueDateTime value="2020-08"/>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
@@ -3219,18 +3208,18 @@
                   </extension>
                   <extension url="batchQuantity">
                      <valueQuantity>
-                                <!-- #26 --><!-- #155 --><!-- need to see if one of these needs changing -->
+                                <!-- need to see if one of these needs changing -->
                         <value value="100100"/>
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                     <valueQuantity> <!-- #160 -->
+                     <valueQuantity>
                         <value value="4.8"/>
                         <unit value="kg"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="batchUtilization"> <!-- #159 -->
+                  <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
                            <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -3242,7 +3231,7 @@
                      </valueCodeableConcept>
                   </extension>
                   <extension url="assignedManufacturer">
-                     <valueReference> <!-- #158 -->
+                     <valueReference> 
                             	<!--Organization/organization-drug-pq-ex1-->
                         <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                      </valueReference>
@@ -3258,7 +3247,6 @@
                      </extension>
                   </extension>
                </extension>
-               <!-- #153 -->
                <lotNumber value="33445"/>
             </batch>
          </Medication>
@@ -3502,15 +3490,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
@@ -3543,7 +3531,7 @@
       <resource>
          <Ingredient>
 				<!--id value="productIngredient"/-->
-			    <!--Ingredient-drug-pq-ex1-->
+			    <!--ingredient-drug-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-drug-pq"/>
@@ -3581,16 +3569,12 @@
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             </meta>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
-        	        <valueString value="substancedefinition/{id}.xml"/>
-        	    </extension-->
             <manufacturer>
         		    <!--Organization/organization-drug-pq-ex1-->
                <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>
@@ -3629,32 +3613,25 @@
       <resource>
          <Substance>
 			    <!--<id value="actual-batch-substance"/>-->
-			    <!--substance-drug-pq-ex1-->
+			    <!--substance-dxpq-ex1-->
             <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
-			        <valueString value="substance/{id}.xml"/>
-			    </extension-->
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
-                  <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
@@ -3663,7 +3640,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -3672,7 +3649,7 @@
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
                   <valueReference>
     					    <!--Organization/organization-drug-pq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -3681,7 +3658,6 @@
             </extension>
             <identifier>
                <value value="CAT1"/>
-               <!-- #155 -->
             </identifier>
             <instance value="true"/>
             <code>
@@ -3702,21 +3678,17 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
-                  <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
@@ -3725,7 +3697,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -3734,7 +3706,7 @@
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
                   <valueReference>
 						    <!--Organization/organization-drug-pq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -3763,21 +3735,17 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
-                  <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
@@ -3786,7 +3754,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -3795,7 +3763,7 @@
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
                   <valueReference>
 						    <!--Organization/organization-drug-pq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
@@ -3804,7 +3772,6 @@
             </extension>
             <identifier>
                <value value="CAT3"/>
-               <!-- #155 -->
             </identifier>
             <instance value="true"/>
             <code>

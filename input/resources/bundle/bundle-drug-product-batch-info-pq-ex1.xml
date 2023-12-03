@@ -36,7 +36,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-
                            <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
@@ -75,7 +74,6 @@
                      </valueReference>
                   </extension>
                </extension>
-               <!-- #153 -->
                <lotNumber value="33445"/>
             </batch>
          </Medication>
@@ -116,7 +114,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-
                            <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
@@ -183,7 +180,6 @@
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
-
                            <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
                            <code value="C185328"/>
                            <display value="Stability Study"/>
@@ -273,15 +269,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
