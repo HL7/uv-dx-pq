@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Product Batch Analysys -->
 <Bundle xmlns="http://hl7.org/fhir">
-   <!-- Based on file: Accumulus FHIR Product Example - Batch Analysis, posted on 05-31-2023 -->
-   <!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>-->
-
    <id value="bundle-batch-analysis-pq-ex1-prod"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"/>
@@ -308,7 +305,6 @@
             <!--<meta>
                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
                 </meta>-->
-            <!--url value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/-->
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay-->
             <url value="http://example-server.com/fhir/ObservationDefinition/39ffd548-bb3d-43b9-9ca9-83f26631712b"/>
             <title value="Assay"/>
@@ -839,7 +835,6 @@
                   <valueReference> <!-- todo consider change this be the MID? --> 
                             <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
             </code>
@@ -854,7 +849,7 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="batchUtilization"> <!-- #159 -->
+                  <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
                            <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -865,7 +860,8 @@
                      </valueCodeableConcept>
                   </extension>
                   <extension url="assignedManufacturer">
-                     <valueReference> <!-- #158 -->
+                     <valueReference> 
+                                <!--Organization/manufacturer-->
                         <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
@@ -943,6 +939,7 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference>
+                                <!--Organization/manufacturer-->
                         <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
@@ -1020,6 +1017,7 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference>
+                                <!--Organization/manufacturer-->
                         <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
                      </valueReference>
                   </extension>
@@ -2879,15 +2877,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
@@ -2955,7 +2953,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>
@@ -3002,13 +2999,13 @@
       <resource>
          <PlanDefinition>
                 <!--    <id value="manufacturingProcess"/>-->
-                <!--id value="plandefinition-mnf-process-pq-ex1"/-->
+                <!--id value="plandefinition-mnf-process-dxpq-ex1"/-->
                 <!--plandefinition-drug-pq-ex4-mnf-process-->
             <id value="246e9583-6253-6cc7-9c12-3b624f3308c1"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
-            <!-- added for IG, to differentiate from PlanDefinition-drug-specification-pq -->
+            <!-- added for IG, to differentiate from PlanDefinition-drug-specification-dxpq -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
                <valueMarkdown value="Process has no history recorded yet"/>
             </extension>
@@ -3023,7 +3020,6 @@
                </coding>
             </type>
             <status value="active"/>
-            <!-- #83 -->
             <subjectReference>
                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>

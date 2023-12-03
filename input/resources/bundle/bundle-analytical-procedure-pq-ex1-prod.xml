@@ -4,14 +4,12 @@
    <id value="bundle-analytical-procedure-pq-ex1-prod"/>
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
-      <!--profile value="http://accumulus.org/fhir/dx-cmc/analytical-procedure"/-->
    </meta>
    <type value="collection"/>
    <entry>
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                <!-- focal resource -->
             <id value="analyticalProcedure"/>
             <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
@@ -294,15 +292,15 @@
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
