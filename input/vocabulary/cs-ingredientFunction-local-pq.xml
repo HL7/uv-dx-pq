@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-ingredientFunction-local-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+    <name value="CsIngredientFunctionPQ"/>
+    <title value="CodeSystem - Ingredient Function"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains example codes for ingredient function in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="diluent"/>
+        <display value="Diluent"/>
+    </concept>
+    <concept>
+        <code value="disintegrant"/>
+        <display value="Disintegrant"/>
+    </concept>
+    <concept>
+        <code value="lubricant"/>
+        <display value="Lubricant"/>
+    </concept>
+
+
+</CodeSystem>
