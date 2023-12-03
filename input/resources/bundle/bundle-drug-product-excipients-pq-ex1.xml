@@ -11,7 +11,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            	<!--medicinalproductdefinition-drug-product-pq-ex1-->
+            	<!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side."/>
             <combinedPharmaceuticalDoseForm>
@@ -137,12 +137,12 @@
             </extension>
             <status value="active"/>
             <for>
-                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
+                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -205,12 +205,12 @@
             </extension>
             <status value="active"/>
             <for>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>

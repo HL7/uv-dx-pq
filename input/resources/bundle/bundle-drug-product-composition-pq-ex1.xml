@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-composition-pq-ex1"/>
-<!--   <id value="7a2809f8-d46b-4383-9cb7-93e4dca35314"/>-->
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
    </meta>
@@ -42,7 +41,6 @@
                 	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </packageFor>
-            <!-- #174 -->
             <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
          </PackagedProductDefinition>
       </resource>
@@ -61,7 +59,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072072"/>
                   <display value="Active"/>
                </coding>
@@ -69,6 +67,7 @@
             <substance>
                <code>
                   <reference>
+                            <!--SubstanceDefinition/substance1-->
                      <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
                      <display value="Stelbatolol"/>
                   </reference>
@@ -109,7 +108,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -124,6 +123,7 @@
             <substance>
                <code>
                   <reference>
+                            <!--SubstanceDefinition/sd-excipient1-->
                      <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380475"/>
                      <display value="Mannitol"/>
                   </reference>
@@ -163,7 +163,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -178,6 +178,7 @@
             <substance>
                <code>
                   <reference>
+                            <!--SubstanceDefinition/sd-excipient2-->
                      <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380476"/>
                      <display value="Maize starch"/>
                   </reference>
@@ -217,7 +218,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -232,6 +233,7 @@
             <substance>
                <code>
                   <reference>
+                            <!--SubstanceDefinition/sd-excipient3-->
                      <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380477"/>
                      <display value="Calcium carboxymethylcellulose"/>
                   </reference>
@@ -271,7 +273,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -286,6 +288,7 @@
             <substance>
                <code>
                   <reference>
+                            <!--SubstanceDefinition/sd-excipient4-->
                      <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380478"/>
                      <display value="Magnesium stearate"/>
                   </reference>
