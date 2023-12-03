@@ -251,16 +251,16 @@
                </type>
                <species>
                   <coding>
-                     <system value="https://spor.ema.europa.eu/v1/lists/200000000019"/>
-                     <code value="200000000249"/>
-                     <display value="Goat"/>
+                     <system value="http://hl7.org/fhir/substance-source-material-part"/>
+                     <code value="Animal"/>
+                     <display value="animal"/>
                   </coding>
                </species>
                <part>
                   <coding>
-                     <system value="https://spor.ema.europa.eu/v1/lists/100000072054"/>
-                     <code value="100000111138"/>
-                     <display value="Plasma"/>
+                     <system value="http://hl7.org/fhir/substance-source-material-type"/>
+                     <code value="Animal"/>
+                     <display value="animal"/>
                   </coding>
                </part>
                <countryOfOrigin>
