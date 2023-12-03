@@ -115,8 +115,8 @@
             </role>
             <function>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
-                  <code value="1000000720XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <code value="diluent"/>
                   <display value="Diluent"/>
                </coding>
             </function>
@@ -170,8 +170,8 @@
             </role>
             <function>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
-                  <code value="1000000720XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <code value="disintegrant"/>
                   <display value="Disintegrant"/>
                </coding>
             </function>
@@ -225,8 +225,8 @@
             </role>
             <function>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
-                  <code value="1000000720XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <code value="disintegrant"/>
                   <display value="Disintegrant"/>
                </coding>
             </function>
@@ -280,8 +280,8 @@
             </role>
             <function>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
-                  <code value="1000000720XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <code value="lubricant"/>
                   <display value="Lubricant"/>
                </coding>
             </function>
