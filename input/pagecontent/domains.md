@@ -508,3 +508,8 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
   
   
 </map>
+
+### Summary of Domain resources
+The resources that are used across all domains are summarised in this diagram:
+<table><tr><td><img src="resources overview (complete).png" width="800"/></td></tr></table>
+
