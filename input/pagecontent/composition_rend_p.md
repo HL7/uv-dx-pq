@@ -20,7 +20,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 <Bundle>
     <id value=&quot;bundle-drug-product-composition-pq-ex1&quot;/>
     <meta>
-        <!--profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-composition-dxpq&quot;/-->
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
@@ -57,7 +56,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <packageFor>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </packageFor>
-                <!-- #174 -->
                 <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. &quot;/>
             </PackagedProductDefinition>
         </resource>
@@ -74,7 +72,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072072&quot;/>
                         <display value=&quot;Active&quot;/>
                     </coding>
@@ -120,15 +118,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;diluent&quot;/>
                         <display value=&quot;Diluent&quot;/>
                     </coding>
                 </function>
@@ -172,15 +170,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>
                 </function>
@@ -224,15 +222,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>
                 </function>
@@ -276,15 +274,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;lubricant&quot;/>
                         <display value=&quot;Lubricant&quot;/>
                     </coding>
                 </function>
@@ -713,7 +711,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <packageFor>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </packageFor>
-                <!-- #174 -->
                 <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. &quot;/>" id="PackagedProductDefinition-packagedproductdefinition-dxpq-ex1"><a class="plainLink">Package</a></span><span class="summaryShowsOff"></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/packagedproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/packagedproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/packagedproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: packagedproductdefinition-dxpq-ex1</div>
 <div class="debugOff"> fullUrl: urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923</div>
 <div class="debugOff"></div>
@@ -747,7 +744,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072072&quot;/>
                         <display value=&quot;Active&quot;/>
                     </coding>
@@ -785,9 +782,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072072&quot;/>
-                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient1</div>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient1</div>
 <div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65</div>
 <div class="debugOff"><span title="
 <Bundle>
@@ -804,7 +801,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072072&quot;/>
                         <display value=&quot;Active&quot;/>
                     </coding>">Role: </span><span title="
@@ -814,9 +811,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072072&quot;/>
-                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
+                        <display value=&quot;Active&quot;/>">Active<span class="greyOff"> [100000072072]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
@@ -1019,15 +1016,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;diluent&quot;/>
                         <display value=&quot;Diluent&quot;/>
                     </coding>
                 </function>
@@ -1063,9 +1060,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient1</div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient1</div>
 <div class="debugOff"> fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a65</div>
 <div class="debugOff"><span title="
 <Bundle>
@@ -1082,7 +1079,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>">Role: </span><span title="
@@ -1092,9 +1089,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1103,8 +1100,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;diluent&quot;/>
                         <display value=&quot;Diluent&quot;/>
                     </coding>">Function: </span><span title="
 <Bundle>
@@ -1113,9 +1110,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
-                        <display value=&quot;Diluent&quot;/>">Diluent<span class="greyOff"> [1000000720XXX]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/1000000720XXX)</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;diluent&quot;/>
+                        <display value=&quot;Diluent&quot;/>">Diluent<span class="greyOff"> [diluent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
@@ -1314,15 +1311,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>
                 </function>
@@ -1358,9 +1355,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient2</div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient2</div>
 <div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-71a1-5a6572e73a65</div>
 <div class="debugOff"><span title="
 <Bundle>
@@ -1377,7 +1374,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>">Role: </span><span title="
@@ -1387,9 +1384,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1398,8 +1395,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>">Function: </span><span title="
 <Bundle>
@@ -1408,9 +1405,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
-                        <display value=&quot;Disintegrant&quot;/>">Disintegrant<span class="greyOff"> [1000000720XXX]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/1000000720XXX)</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;disintegrant&quot;/>
+                        <display value=&quot;Disintegrant&quot;/>">Disintegrant<span class="greyOff"> [disintegrant]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
@@ -1609,15 +1606,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>
                 </function>
@@ -1653,9 +1650,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient3</div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient3</div>
 <div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66</div>
 <div class="debugOff"><span title="
 <Bundle>
@@ -1672,7 +1669,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>">Role: </span><span title="
@@ -1682,9 +1679,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1693,8 +1690,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>">Function: </span><span title="
 <Bundle>
@@ -1703,9 +1700,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
-                        <display value=&quot;Disintegrant&quot;/>">Disintegrant<span class="greyOff"> [1000000720XXX]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/1000000720XXX)</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;disintegrant&quot;/>
+                        <display value=&quot;Disintegrant&quot;/>">Disintegrant<span class="greyOff"> [disintegrant]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
@@ -1904,15 +1901,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;lubricant&quot;/>
                         <display value=&quot;Lubricant&quot;/>
                     </coding>
                 </function>
@@ -1948,9 +1945,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient4</div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: excipient4</div>
 <div class="debugOff"> fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a66</div>
 <div class="debugOff"><span title="
 <Bundle>
@@ -1967,7 +1964,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>">Role: </span><span title="
@@ -1977,9 +1974,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1988,8 +1985,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;lubricant&quot;/>
                         <display value=&quot;Lubricant&quot;/>
                     </coding>">Function: </span><span title="
 <Bundle>
@@ -1998,9 +1995,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <function>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/1000000720XXX&quot;/>
-                        <code value=&quot;1000000720XXX&quot;/>
-                        <display value=&quot;Lubricant&quot;/>">Lubricant<span class="greyOff"> [1000000720XXX]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/1000000720XXX)</span></span></div>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <code value=&quot;lubricant&quot;/>
+                        <display value=&quot;Lubricant&quot;/>">Lubricant<span class="greyOff"> [lubricant]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
