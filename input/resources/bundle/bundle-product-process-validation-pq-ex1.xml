@@ -1430,6 +1430,7 @@
                      </extension>
                   </extension>
                </extension>
+               <!-- local extensions -->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
                </extension>
@@ -1448,7 +1449,7 @@
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
                   <valueReference>
-                           <!--Substance/substance-drug-pq-ex1-->
+                            <!--Substance/substance-drug-pq-ex1-->
                      <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
                   </valueReference>
                </extension>
@@ -1532,6 +1533,7 @@
                      </extension>
                   </extension>
                </extension>
+               <!-- local extensions -->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
                </extension>
@@ -1550,7 +1552,7 @@
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
                   <valueReference>
-                          <!--Substance/actual-batch-substance-2-->
+                            <!--Substance/actual-batch-substance-2-->
                      <reference value="Substance/cb31d747-2338-88d5-342c-8e9c097e4dad"/>
                   </valueReference>
                </extension>
@@ -1559,7 +1561,7 @@
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                   <valueReference>
-                             <!--Organization/packaging-->
+                            <!--Organization/packaging-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
                   </valueReference>
                </extension>
@@ -1634,6 +1636,7 @@
                      </extension>
                   </extension>
                </extension>
+               <!-- local exensions -->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
                </extension>
@@ -1655,13 +1658,13 @@
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
                   <valueReference>
-                          <!--Substance/actual-batch-substance-3-->
+                            <!--Substance/actual-batch-substance-3-->
                      <reference value="Substance/1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
                   </valueReference>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                   <valueReference>
-                             <!--Organization/packaging-->
+                            <!--Organization/packaging-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
                   </valueReference>
                </extension>
@@ -4409,6 +4412,7 @@
                   </valueReference>
                </extension>
             </extension>
+            <!-- local extensions -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                <valueDateTime value="2019-09-08"/>
             </extension>
@@ -4466,6 +4470,7 @@
                   </valueReference>
                </extension>
             </extension>
+            <!-- local extensions -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                <valueDateTime value="2019-09-08"/>
             </extension>
@@ -4523,6 +4528,7 @@
                   </valueReference>
                </extension>
             </extension>
+            <!-- local extensions -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                <valueDateTime value="2019-09-08"/>
             </extension>

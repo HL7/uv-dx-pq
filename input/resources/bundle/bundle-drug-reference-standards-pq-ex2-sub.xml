@@ -470,6 +470,7 @@
                   </valueReference>
                </extension>
             </extension>
+            <!-- local extensions -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                <valueDateTime value="2019-09-08"/>
             </extension>
@@ -478,7 +479,7 @@
             </extension>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                <valueReference>
-                         <!--PlanDefinition/plandefinition-dxpq-ex4-mnf-process-->
+			            <!--PlanDefinition/plandefinition-dxpq-ex4-mnf-process-->
                   <reference value="PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
                </valueReference>
             </extension>
@@ -534,6 +535,7 @@
                   </valueReference>
                </extension>
             </extension>
+            <!-- local extensions -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                <valueDateTime value="2019-09-08"/>
             </extension>

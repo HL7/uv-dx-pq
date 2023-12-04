@@ -1286,9 +1286,10 @@
                   </valueQuantity>
                </extension>
             </extension>
+            <!-- local extension -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                <valueReference>
-                  <!--Substance/actual-batch-substance-starting-1-->
+			            <!--Substance/actual-batch-substance-starting-1-->
                   <reference value="Substance/fc178762-81c5-5656-9744-13c7ad1e595b"/>
                </valueReference>
             </extension>
@@ -1322,9 +1323,10 @@
                   </valueQuantity>
                </extension>
             </extension>
+            <!-- local extension -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                <valueReference>
-                  <!--Substance/actual-batch-substance-starting-2-->
+			            <!--Substance/actual-batch-substance-starting-2-->
                   <reference value="Substance/fc178762-81d5-5656-9744-13c7ad1e595b"/>
                </valueReference>
             </extension>
@@ -1358,9 +1360,10 @@
                   </valueQuantity>
                </extension>
             </extension>
+            <!-- local extension -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                <valueReference>
-                         <!--Substance/actual-batch-substance-starting-3-->
+                        <!--Substance/actual-batch-substance-starting-3-->
                   <reference value="Substance/fc178762-81d5-5656-9744-23c7ad1e595b"/>
                </valueReference>
             </extension>
@@ -1525,9 +1528,10 @@
                   </valueQuantity>
                </extension>
             </extension>
+            <!-- local extension -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                <valueReference>
-                         <!--Substance/actual-batch-substance-starting-step2-1-->
+                        <!--Substance/actual-batch-substance-starting-step2-1-->
                   <reference value="Substance/fc178762-81c5-5656-9744-13c7ad2e595b"/>
                </valueReference>
             </extension>
@@ -1561,9 +1565,10 @@
                   </valueQuantity>
                </extension>
             </extension>
+            <!-- local extension -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                <valueReference>
-                         <!--Substance/actual-batch-substance-starting-step2-2-->
+                        <!--Substance/actual-batch-substance-starting-step2-2-->
                   <reference value="Substance/fc178762-81d5-5656-9744-13c7ad1e596b"/>
                </valueReference>
             </extension>
@@ -1597,9 +1602,10 @@
                   </valueQuantity>
                </extension>
             </extension>
+            <!-- local extension -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
                <valueReference>
-                         <!--Substance/actual-batch-substance-starting-step2-3-->
+                        <!--Substance/actual-batch-substance-starting-step2-3-->
                   <reference value="Substance/fc178762-81d5-5656-9744-23c7ad1e597b"/>
                </valueReference>
             </extension>
@@ -1693,6 +1699,7 @@
                   </valueReference>
                </extension>
             </extension>
+            <!-- local extension -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                <valueDateTime value="2019-09-08"/>
             </extension>
@@ -1757,6 +1764,7 @@
                   </valueReference>
                </extension>
             </extension>
+            <!-- local extensions -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                <valueDateTime value="2019-09-08"/>
             </extension>
@@ -1821,6 +1829,7 @@
                   </valueReference>
                </extension>
             </extension>
+            <!-- local extensions -->
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                <valueDateTime value="2019-09-08"/>
             </extension>

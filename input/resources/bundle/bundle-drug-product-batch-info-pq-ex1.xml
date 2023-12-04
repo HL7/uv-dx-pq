@@ -69,7 +69,7 @@
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
                   <valueReference>
-                              <!--Organization/packaging-->
+                            <!--Organization/packaging-->
                      <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b07"/>
                   </valueReference>
                </extension>
