@@ -27,7 +27,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:1f3ab002-429f-7f05-4dda-05467f2804d9&quot;/>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;manufacturer&quot;/>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -51,7 +50,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b&quot;/>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;manufacturer2&quot;/>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -75,7 +73,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0&quot;/>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;capManufacturer&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -98,7 +95,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28&quot;/>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;bottleManufacturer&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -121,7 +117,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:bc27122e-52b5-569e-1787-5d6d0f533516&quot;/>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;tester2&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -144,7 +139,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <fullUrl value=&quot;urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85&quot;/>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;tester&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -181,7 +175,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;manufacturer&quot;/>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -289,7 +282,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;manufacturer2&quot;/>
                 <identifier>
                     <!-- FDA establishment identifier -->
@@ -397,7 +389,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;capManufacturer&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -502,7 +493,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;bottleManufacturer&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -607,7 +597,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;tester2&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
@@ -712,7 +701,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
     <entry>
         <resource>
             <Organization>
-                <!-- focal resource -->
                 <id value=&quot;tester&quot;/>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>

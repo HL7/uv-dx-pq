@@ -28,7 +28,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <fullUrl value=&quot;urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb&quot;/>
         <resource>
             <SubstanceDefinition>
-                <!-- focal resource -->
                 <id value=&quot;substance1&quot;/>
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateSubstanceImpurities&quot;>
                     <valueBoolean value=&quot;true&quot;/>
@@ -805,7 +804,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <resource>
             <SubstanceDefinition>
-                <!-- focal resource -->
                 <id value=&quot;substance1&quot;/>
                 <extension url=&quot;http://nprogram.co.uk/fhir/extension/viewer/tabulateSubstanceImpurities&quot;>
                     <valueBoolean value=&quot;true&quot;/>

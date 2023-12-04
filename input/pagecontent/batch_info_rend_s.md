@@ -18,7 +18,6 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq 
 
 <Bundle>
-    <!--id value=&quot;substance-batch-analysis&quot;/-->
     <id value=&quot;bundle-drug-substance-batch-info-pq-ex1&quot;/>
     <meta>
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq&quot;/>
@@ -34,7 +33,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>
             </SubstanceDefinition>
         </resource>
@@ -72,7 +70,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-01&quot;/>
-                        <!-- #157 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
@@ -116,7 +113,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 </extension>
                 <identifier>
                     <value value=&quot;CAT1&quot;/>
-                    <!-- #155 -->
                 </identifier>
                 <instance value=&quot;true&quot;/>
                 <code>
@@ -135,7 +131,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-02&quot;/>
-                        <!-- #159 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
@@ -192,7 +187,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-03&quot;/>
-                        <!-- #159 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
@@ -231,7 +225,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 </extension>
                 <identifier>
                     <value value=&quot;CAT3&quot;/>
-                    <!-- #155 -->
                 </identifier>
                 <instance value=&quot;true&quot;/>
                 <code>
@@ -270,7 +263,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div>
 <div class="debugOff"> fullUrl: urn:uuid:8dae93e0-048d-35a4-71ea-7c603184a130</div>
 <div class="summaryHiddenOff">
@@ -429,7 +421,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-01&quot;/>
-                        <!-- #157 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
@@ -473,7 +464,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 </extension>
                 <identifier>
                     <value value=&quot;CAT1&quot;/>
-                    <!-- #155 -->
                 </identifier>
                 <instance value=&quot;true&quot;/>
                 <code>
@@ -493,16 +483,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Substance>
                 ...
                 <identifier>
-                    <value value=&quot;CAT1&quot;/>
-                    <!-- #155 -->">Identifier: </span><span title="
+                    <value value=&quot;CAT1&quot;/>">Identifier: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 ...
                 <identifier>
-                    <value value=&quot;CAT1&quot;/>
-                    <!-- #155 -->">CAT1</span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                    <value value=&quot;CAT1&quot;/>">CAT1</span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -520,7 +508,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-01&quot;/>
-                        <!-- #157 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
@@ -809,7 +796,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-02&quot;/>
-                        <!-- #159 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
@@ -892,7 +878,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-02&quot;/>
-                        <!-- #159 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
@@ -1158,7 +1143,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-03&quot;/>
-                        <!-- #159 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
@@ -1197,7 +1181,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 </extension>
                 <identifier>
                     <value value=&quot;CAT3&quot;/>
-                    <!-- #155 -->
                 </identifier>
                 <instance value=&quot;true&quot;/>
                 <code>
@@ -1217,16 +1200,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Substance>
                 ...
                 <identifier>
-                    <value value=&quot;CAT3&quot;/>
-                    <!-- #155 -->">Identifier: </span><span title="
+                    <value value=&quot;CAT3&quot;/>">Identifier: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
                 ...
                 <identifier>
-                    <value value=&quot;CAT3&quot;/>
-                    <!-- #155 -->">CAT3</span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                    <value value=&quot;CAT3&quot;/>">CAT3</span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1244,7 +1225,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2020-03&quot;/>
-                        <!-- #159 -->
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>

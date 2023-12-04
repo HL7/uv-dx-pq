@@ -27,13 +27,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <fullUrl value=&quot;urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
         <resource>
             <PlanDefinition>
-                <!-- focal resource -->
                 <id value=&quot;manufacturingProcess-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq&quot;>
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
                         <reference value=&quot;DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1&quot;/>
                     </valueReference>
                 </extension>
@@ -49,12 +47,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of substance manufacturing process&quot;/>
-                <!-- #85 -->
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
@@ -197,7 +193,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
                             </role>
@@ -275,7 +270,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <id value=&quot;impeller&quot;/>
                 <deviceName>
                     <name value=&quot;Rotating Impeller with 1.5mm screen&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>
                 </deviceName>
                 <property>
@@ -283,7 +277,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
                     </type>
@@ -299,7 +292,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <fullUrl value=&quot;urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb&quot;/>
         <resource>
-            <!-- #84 -->
             <DocumentReference>
                 <id value=&quot;DocumentReference-process-flow-diagram-dxpq-ex1&quot;/>
                 <meta>
@@ -331,7 +323,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <fullUrl value=&quot;urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fef&quot;/>
         <resource>
-            <!-- #84 -->
             <DocumentReference>
                 <id value=&quot;DocumentReference-image&quot;/>
                 <status value=&quot;current&quot;/>
@@ -353,7 +344,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>
             </SubstanceDefinition>
         </resource>
@@ -439,13 +429,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <resource>
             <PlanDefinition>
-                <!-- focal resource -->
                 <id value=&quot;manufacturingProcess-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq&quot;>
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
                         <reference value=&quot;DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1&quot;/>
                     </valueReference>
                 </extension>
@@ -461,12 +449,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of substance manufacturing process&quot;/>
-                <!-- #85 -->
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
@@ -609,7 +595,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
                             </role>
@@ -728,13 +713,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <resource>
             <PlanDefinition>
-                <!-- focal resource -->
                 <id value=&quot;manufacturingProcess-unlinked&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq&quot;>
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
                         <reference value=&quot;DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1&quot;/>
                     </valueReference>
                 </extension>
@@ -750,12 +733,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of substance manufacturing process&quot;/>
-                <!-- #85 -->
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
@@ -898,7 +879,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
                             </role>
@@ -976,7 +956,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
 <Bundle>
     <entry>
@@ -1290,7 +1269,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
                             </role>
@@ -1449,7 +1427,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
                             </role>
@@ -2151,7 +2128,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
                             </role>">Participant</span><div><span title="
@@ -2167,7 +2143,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>">Role: </span><span><span title="
 <Bundle>
@@ -2181,7 +2156,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <!-- #88 Equipment class -->
                                     <display value=&quot;Compression Milling&quot;/>">Compression Milling<span class="greyOff"> [Compression Milling]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: impeller)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c)
@@ -2193,7 +2167,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <id value=&quot;impeller&quot;/>
                 <deviceName>
                     <name value=&quot;Rotating Impeller with 1.5mm screen&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>
                 </deviceName>
                 <property>
@@ -2201,7 +2174,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
                     </type>
@@ -2220,7 +2192,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 ...
                 <deviceName>
                     <name value=&quot;Rotating Impeller with 1.5mm screen&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>">Name: </span><span>Rotating Impeller with 1.5mm screen</span><span> (name type: registered-name)</span></div>
 <div class="summaryHiddenOff">
 <div class="summaryHiddenOff">
@@ -2235,7 +2206,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
                     </type>
@@ -2252,7 +2222,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>">Type: <span title="
 <Bundle>
@@ -2264,7 +2233,6 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>">Maximum Speed<span class="greyOff"> [Maximum Speed]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq)</span></span></span></div>
 <div><span title="
 <Bundle>

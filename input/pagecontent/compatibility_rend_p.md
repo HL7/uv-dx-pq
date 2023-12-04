@@ -28,7 +28,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <fullUrl value=&quot;urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
         <resource>
             <PlanDefinition>
-                <!--id value=&quot;validationProtocol&quot;/-->
                 <id value=&quot;plandefinition-compatibility&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
@@ -170,7 +169,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <ObservationDefinition>
                 <id value=&quot;SE-UHPLCMainPeak&quot;/>
-                <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeak-->
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424&quot;/>
                 <title value=&quot;SE-UHPLC % Main Peak&quot;/>
                 <status value=&quot;active&quot;/>
@@ -208,7 +206,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <ObservationDefinition>
                 <id value=&quot;SE-UHPLCHMW&quot;/>
-                <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCHMW-->
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424&quot;/>
                 <title value=&quot;SE-UHPLC % HMW&quot;/>
                 <status value=&quot;active&quot;/>
@@ -246,7 +243,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <ObservationDefinition>
                 <id value=&quot;CEX-HPLCAcidicPeak&quot;/>
-                <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeak-->
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424&quot;/>
                 <title value=&quot;CEX-HPLC % Acidic Peak&quot;/>
                 <status value=&quot;active&quot;/>
@@ -284,7 +280,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <ObservationDefinition>
                 <id value=&quot;CEX-HPLCMainPeak&quot;/>
-                <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeak-->
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424&quot;/>
                 <title value=&quot;CEX-HPLC % Main Peak&quot;/>
                 <status value=&quot;active&quot;/>
@@ -764,33 +759,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <Medication>
                 <id value=&quot;medication-actual-batch-1&quot;/>
-                <!--contained>
-                    <PackagedProductDefinition>
-                        <id value=&quot;ppd1-nosubject&quot;/>
-                        <packaging>
-                            <type>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
-                                    <code value=&quot;100000073544&quot;/>
-                                    <display value=&quot;Pre-filled syringe&quot;/>
-                                </coding>
-                            </type>
-                        </packaging>
-                    </PackagedProductDefinition>
-                </contained-->
                 <code>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>
                     </extension>
                     <!-- can use an extension here to point to package, but currently just relying on medication-manufacturingBatch to have a text description -->
-                    <!--extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-dxpq&quot;>
-                        <valueReference>
-                            <reference value=&quot;#ppd1-nosubject&quot;/>
-                        </valueReference>
-                    </extension-->
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
@@ -3758,7 +3733,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--id value=&quot;validationProtocol&quot;/-->
                 <id value=&quot;plandefinition-compatibility&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
@@ -3915,7 +3889,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--id value=&quot;validationProtocol&quot;/-->
                 <id value=&quot;plandefinition-compatibility&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
@@ -4108,7 +4081,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 <id value=&quot;SE-UHPLCMainPeak&quot;/>
-                <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeak-->
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424&quot;/>
                 <title value=&quot;SE-UHPLC % Main Peak&quot;/>
                 <status value=&quot;active&quot;/>
@@ -4325,7 +4297,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 <id value=&quot;SE-UHPLCHMW&quot;/>
-                <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCHMW-->
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424&quot;/>
                 <title value=&quot;SE-UHPLC % HMW&quot;/>
                 <status value=&quot;active&quot;/>
@@ -4542,7 +4513,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 <id value=&quot;CEX-HPLCAcidicPeak&quot;/>
-                <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeak-->
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424&quot;/>
                 <title value=&quot;CEX-HPLC % Acidic Peak&quot;/>
                 <status value=&quot;active&quot;/>
@@ -4759,7 +4729,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 <id value=&quot;CEX-HPLCMainPeak&quot;/>
-                <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeak-->
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424&quot;/>
                 <title value=&quot;CEX-HPLC % Main Peak&quot;/>
                 <status value=&quot;active&quot;/>
@@ -4953,7 +4922,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--id value=&quot;validationProtocol&quot;/-->
                 <id value=&quot;plandefinition-compatibility&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
@@ -5076,33 +5044,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <Medication>
                 <id value=&quot;medication-actual-batch-1&quot;/>
-                <!--contained>
-                    <PackagedProductDefinition>
-                        <id value=&quot;ppd1-nosubject&quot;/>
-                        <packaging>
-                            <type>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
-                                    <code value=&quot;100000073544&quot;/>
-                                    <display value=&quot;Pre-filled syringe&quot;/>
-                                </coding>
-                            </type>
-                        </packaging>
-                    </PackagedProductDefinition>
-                </contained-->
                 <code>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>
                     </extension>
                     <!-- can use an extension here to point to package, but currently just relying on medication-manufacturingBatch to have a text description -->
-                    <!--extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-dxpq&quot;>
-                        <valueReference>
-                            <reference value=&quot;#ppd1-nosubject&quot;/>
-                        </valueReference>
-                    </extension-->
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
@@ -5122,7 +5070,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq&quot;>
                         <valueReference>
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>">Definition</span>: Stelbatolol (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div><div class="summaryHiddenOff"><div class="indent medl2 summaryUnit"><span title="
 <Bundle>
     <entry>

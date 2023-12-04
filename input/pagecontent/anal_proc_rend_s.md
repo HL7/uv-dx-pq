@@ -19,7 +19,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
 
 <Bundle>
     <id value=&quot;bundle-analytical-procedure-pq-ex2-sub&quot;/>
-    <!--   <id value=&quot;substance-analytical-procedure&quot;/>-->
     <meta>
         <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq&quot;/>
     </meta>
@@ -28,7 +27,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <fullUrl value=&quot;urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
         <resource>
             <PlanDefinition>
-                <!-- focal resource -->
                 <id value=&quot;analyticalProcedure&quot;/>
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Analytical Procedure&quot;/>
@@ -97,18 +95,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     </extension>
                     <title value=&quot;Determination of Particle Size of Stelbat by Laser Diffraction (G1112)&quot;/>
                     <!-- can have device here or as ObsDef.device -->
-                    <!--participant>
-                        <typeReference>
-                            <reference value=&quot;DeviceDefinition/laser&quot;/>
-                        </typeReference>
-                        <role>
-                            <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
-                                <code value=&quot;example&quot;/>
-                                <display value=&quot;Analyzer&quot;/> 
-                            </coding>
-                        </role>
-                    </participant-->
                     <participant>
                         <typeReference>
                             <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
@@ -412,7 +398,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
     <entry>
         <resource>
             <PlanDefinition>
-                <!-- focal resource -->
                 <id value=&quot;analyticalProcedure&quot;/>
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f&quot;/>
                 <title value=&quot;Analytical Procedure&quot;/>
@@ -481,18 +466,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     </extension>
                     <title value=&quot;Determination of Particle Size of Stelbat by Laser Diffraction (G1112)&quot;/>
                     <!-- can have device here or as ObsDef.device -->
-                    <!--participant>
-                        <typeReference>
-                            <reference value=&quot;DeviceDefinition/laser&quot;/>
-                        </typeReference>
-                        <role>
-                            <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
-                                <code value=&quot;example&quot;/>
-                                <display value=&quot;Analyzer&quot;/> 
-                            </coding>
-                        </role>
-                    </participant-->
                     <participant>
                         <typeReference>
                             <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>
@@ -667,18 +640,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     </extension>
                     <title value=&quot;Determination of Particle Size of Stelbat by Laser Diffraction (G1112)&quot;/>
                     <!-- can have device here or as ObsDef.device -->
-                    <!--participant>
-                        <typeReference>
-                            <reference value=&quot;DeviceDefinition/laser&quot;/>
-                        </typeReference>
-                        <role>
-                            <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
-                                <code value=&quot;example&quot;/>
-                                <display value=&quot;Analyzer&quot;/> 
-                            </coding>
-                        </role>
-                    </participant-->
                     <participant>
                         <typeReference>
                             <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq&quot;>

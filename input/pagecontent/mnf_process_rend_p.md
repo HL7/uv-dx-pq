@@ -39,7 +39,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
                         <reference value=&quot;DocumentReference/documentreference-drug-pq-process-flow-diagram&quot;/>
                     </valueReference>
                 </extension>
@@ -61,12 +60,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of manufacturing process (5)&quot;/>
-                <!-- #85 -->
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
@@ -366,7 +363,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
-                                    <!-- TODO LOINC? -->
                                     <code value=&quot;TEMP-MAX&quot;/>
                                     <display value=&quot;Maximum Temperature&quot;/>
                                 </coding>
@@ -502,7 +498,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                 <code value=&quot;Compression Milling&quot;/>
-                                <!-- #88 Equipment class -->
                                 <display value=&quot;Compression Milling&quot;/>
                             </coding>
                         </role>
@@ -558,7 +553,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </meta>
                 <deviceName>
                     <name value=&quot;Rotating Impeller with 1.5mm screen&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>
                 </deviceName>
                 <property>
@@ -566,7 +560,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
                     </type>
@@ -585,7 +578,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <id value=&quot;dryer&quot;/>
                 <deviceName>
                     <name value=&quot;Heated dryer&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>
                 </deviceName>
                 <property>
@@ -633,7 +625,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <fullUrl value=&quot;urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb&quot;/>
         <resource>
-            <!-- #84 -->
             <DocumentReference>
                 <id value=&quot;documentreference-drug-pq-process-flow-diagram&quot;/>
                 <meta>
@@ -664,7 +655,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
     <entry>
         <fullUrl value=&quot;urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee&quot;/>
         <resource>
-            <!-- #84 -->
             <DocumentReference>
                 <id value=&quot;DocumentReference-image&quot;/>
                 <status value=&quot;current&quot;/>
@@ -686,15 +676,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -757,7 +747,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>
             </SubstanceDefinition>
         </resource>
@@ -772,7 +761,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </meta>
                 <name>
                     <name value=&quot;Stelbatolol Granules&quot;/>
-                    <!-- #4 -->
                 </name>
             </SubstanceDefinition>
         </resource>
@@ -966,7 +954,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
                         <reference value=&quot;DocumentReference/documentreference-drug-pq-process-flow-diagram&quot;/>
                     </valueReference>
                 </extension>
@@ -988,12 +975,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of manufacturing process (5)&quot;/>
-                <!-- #85 -->
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
@@ -1293,7 +1278,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
-                                    <!-- TODO LOINC? -->
                                     <code value=&quot;TEMP-MAX&quot;/>
                                     <display value=&quot;Maximum Temperature&quot;/>
                                 </coding>
@@ -1429,7 +1413,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                 <code value=&quot;Compression Milling&quot;/>
-                                <!-- #88 Equipment class -->
                                 <display value=&quot;Compression Milling&quot;/>
                             </coding>
                         </role>
@@ -1564,7 +1547,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
                         <reference value=&quot;DocumentReference/documentreference-drug-pq-process-flow-diagram&quot;/>
                     </valueReference>
                 </extension>
@@ -1586,12 +1568,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </subjectReference>
                 <description value=&quot;Narrative description of manufacturing process (5)&quot;/>
-                <!-- #85 -->
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
@@ -1891,7 +1871,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
-                                    <!-- TODO LOINC? -->
                                     <code value=&quot;TEMP-MAX&quot;/>
                                     <display value=&quot;Maximum Temperature&quot;/>
                                 </coding>
@@ -2027,7 +2006,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                 <code value=&quot;Compression Milling&quot;/>
-                                <!-- #88 Equipment class -->
                                 <display value=&quot;Compression Milling&quot;/>
                             </coding>
                         </role>
@@ -2078,15 +2056,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -2184,8 +2162,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>">Route of Administration: </span><span title="
 <Bundle>
@@ -2194,9 +2172,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
-                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [20053000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2204,8 +2182,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>">Dose Form (combination of all parts): </span><span title="
 <Bundle>
@@ -2214,9 +2192,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
-                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [10225000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
 
 <Bundle>
     <entry>
@@ -2298,7 +2276,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-Stelbatolol">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Stelbatolol</div><div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
 <Bundle>
     <entry>
@@ -4525,7 +4502,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
-                                    <!-- TODO LOINC? -->
                                     <code value=&quot;TEMP-MAX&quot;/>
                                     <display value=&quot;Maximum Temperature&quot;/>
                                 </coding>
@@ -4880,7 +4856,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
-                                    <!-- TODO LOINC? -->
                                     <code value=&quot;TEMP-MAX&quot;/>
                                     <display value=&quot;Maximum Temperature&quot;/>
                                 </coding>
@@ -4908,7 +4883,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
-                                    <!-- TODO LOINC? -->
                                     <code value=&quot;TEMP-MAX&quot;/>
                                     <display value=&quot;Maximum Temperature&quot;/>
                                 </coding>
@@ -4924,7 +4898,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
-                                    <!-- TODO LOINC? -->
                                     <code value=&quot;TEMP-MAX&quot;/>
                                     <display value=&quot;Maximum Temperature&quot;/>">Maximum Temperature<span class="greyOff"> [TEMP-MAX]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq)</span></span><span style="white-space:normal;"> - Text: Process temperature must be below 40°C</span></div>
 <div><span title="
@@ -5066,7 +5039,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                 <id value=&quot;dryer&quot;/>
                 <deviceName>
                     <name value=&quot;Heated dryer&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>
                 </deviceName>
                 <property>
@@ -5092,7 +5064,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                 ...
                 <deviceName>
                     <name value=&quot;Heated dryer&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>">Name: </span><span>Heated dryer</span><span> (name type: registered-name)</span></div>
 <div class="summaryHiddenOff">
 <div class="summaryHiddenOff">
@@ -5337,7 +5308,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                 </meta>
                 <name>
                     <name value=&quot;Stelbatolol Granules&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-StelbatololGranules">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol Granules</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: StelbatololGranules</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113</div>
 <div class="debugOff"></div>
@@ -5425,7 +5395,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                 <code value=&quot;Compression Milling&quot;/>
-                                <!-- #88 Equipment class -->
                                 <display value=&quot;Compression Milling&quot;/>
                             </coding>
                         </role>
@@ -5873,7 +5842,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                 <code value=&quot;Compression Milling&quot;/>
-                                <!-- #88 Equipment class -->
                                 <display value=&quot;Compression Milling&quot;/>
                             </coding>
                         </role>">Participant</span><div><span title="
@@ -5888,7 +5856,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                 <code value=&quot;Compression Milling&quot;/>
-                                <!-- #88 Equipment class -->
                                 <display value=&quot;Compression Milling&quot;/>
                             </coding>">Role: </span><span><span title="
 <Bundle>
@@ -5901,7 +5868,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
                                 <code value=&quot;Compression Milling&quot;/>
-                                <!-- #88 Equipment class -->
                                 <display value=&quot;Compression Milling&quot;/>">Compression Milling<span class="greyOff"> [Compression Milling]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: devicedefinition-drug-pq-ex1)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c)
@@ -5917,7 +5883,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefiniti
                 </meta>
                 <deviceName>
                     <name value=&quot;Rotating Impeller with 1.5mm screen&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>
                 </deviceName>
                 <property>
@@ -5925,7 +5890,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefiniti
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
                     </type>
@@ -5952,7 +5916,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefiniti
                 ...
                 <deviceName>
                     <name value=&quot;Rotating Impeller with 1.5mm screen&quot;/>
-                    <!-- #89 Equiment subclass -->
                     <type value=&quot;registered-name&quot;/>">Name: </span><span>Rotating Impeller with 1.5mm screen</span><span> (name type: registered-name)</span></div>
 <div class="summaryHiddenOff">
 <div class="summaryHiddenOff">
@@ -5967,7 +5930,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefiniti
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
                     </type>
@@ -5984,7 +5946,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefiniti
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>">Type: <span title="
 <Bundle>
@@ -5996,7 +5957,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefiniti
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <!-- #90 Working capacity -->
                             <display value=&quot;Maximum Speed&quot;/>">Maximum Speed<span class="greyOff"> [Maximum Speed]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq)</span></span></span></div>
 <div><span title="
 <Bundle>
@@ -6097,7 +6057,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                 </meta>
                 <name>
                     <name value=&quot;Stelbatolol Granules&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-StelbatololGranules">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol Granules</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: StelbatololGranules</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821113</div>
 <div class="debugOff"></div>
@@ -6200,7 +6159,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-Stelbatolol">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Stelbatolol</div>
 <div class="debugOff"> fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152</div>
 <div class="summaryHiddenOff">

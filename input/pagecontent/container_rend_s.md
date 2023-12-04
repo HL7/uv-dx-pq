@@ -30,7 +30,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <id value=&quot;substance1&quot;/>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>
             </SubstanceDefinition>
         </resource>
@@ -41,13 +40,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
             <PackagedProductDefinition>
                 <id value=&quot;packageDefinition&quot;/>
                 <!-- no product referenced, instead link works via the contained manufactured item -->
-                <!-- #176 -->
                 <description value=&quot;Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance.&quot;/>
                 <!-- secondary packaging -->
                 <packaging>
-                    <!-- #189 -->
                     <type>
-                        <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
                             <code value=&quot;100000073493&quot;/>
@@ -55,7 +51,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                         </coding>
                     </type>
                     <material>
-                        <!-- #192 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003216&quot;/>
@@ -105,13 +100,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
             <PackagedProductDefinition>
                 <id value=&quot;packageDefinition2&quot;/>
                 <!-- no product referenced, instead link works via the contained manufactured item -->
-                <!-- #176 -->
                 <description value=&quot;Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance.&quot;/>
                 <!-- secondary packaging -->
                 <packaging>
-                    <!-- #189 -->
                     <type>
-                        <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
                             <code value=&quot;100000073497&quot;/>
@@ -119,7 +111,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                         </coding>
                     </type>
                     <material>
-                        <!-- #192 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003215&quot;/>
@@ -336,7 +327,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <id value=&quot;substance1&quot;/>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div>
 <div class="debugOff"> fullUrl: urn:uuid:878c2849-792c-6469-21a2-c2b920930962</div>
 <div class="summaryHiddenOff">
@@ -361,7 +351,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <id value=&quot;substance1&quot;/>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>">Used as</span><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient1)(fullUrl: urn:uuid:f26b997a-3ab9-7552-a6cc-fd771d1f1863)
 
 <Bundle>
@@ -463,9 +452,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <PackagedProductDefinition>
                 ...
                 <packaging>
-                    <!-- #189 -->
                     <type>
-                        <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
                             <code value=&quot;100000073493&quot;/>
@@ -473,7 +460,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                         </coding>
                     </type>
                     <material>
-                        <!-- #192 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003216&quot;/>
@@ -529,7 +515,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <PackagedProductDefinition>
                 <packaging>
                     <type>
-                        <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
                             <code value=&quot;100000073493&quot;/>
@@ -552,7 +537,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <packaging>
                     ...
                     <material>
-                        <!-- #192 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003216&quot;/>
@@ -672,9 +656,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <PackagedProductDefinition>
                 ...
                 <packaging>
-                    <!-- #189 -->
                     <type>
-                        <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
                             <code value=&quot;100000073497&quot;/>
@@ -682,7 +664,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                         </coding>
                     </type>
                     <material>
-                        <!-- #192 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003215&quot;/>
@@ -714,7 +695,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <PackagedProductDefinition>
                 <packaging>
                     <type>
-                        <!-- #191 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/packaging-type&quot;/>
                             <code value=&quot;100000073497&quot;/>
@@ -737,7 +717,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <packaging>
                     ...
                     <material>
-                        <!-- #192 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003215&quot;/>
