@@ -12,6 +12,7 @@
          <PlanDefinition>
                 <!--validationProtocol-->
             <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+            <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="DP PROCESS VALIDATION"/>
             <type>
@@ -1382,7 +1383,7 @@
       <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
       <resource>
          <Medication>
-            	<!--medication-batch-information-pq-ex2-->
+                <!--medication-batch-information-drug-pq-ex1-->
             <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"/>
@@ -1392,7 +1393,6 @@
                   <valueReference> <!-- todo consider change this be the MID? --> 
                             <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
             </code>
@@ -1401,11 +1401,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-pq-ex1"/>
-                            </valueReference>
-                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
@@ -1425,7 +1420,7 @@
                         <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
                      </valueReference>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq"> <!-- #159 -->
+                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
                      <valueDateTime value="2020-08"/>
                   </extension>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
@@ -1473,7 +1468,7 @@
                   </extension>
                   <extension url="assignedManufacturer">
                      <valueReference> 
-                            	<!--reference value="Organization/manufacturer"/-->
+                            	
                             	<!--Organization/organization-drug-pq-ex1-->
                         <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                      </valueReference>
@@ -1509,11 +1504,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-pq-ex1"/>
-                            </valueReference>
-                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
@@ -1616,11 +1606,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-pq-ex1"/>
-                            </valueReference>
-                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
@@ -1961,7 +1946,7 @@
                <text value="Identification"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2063,7 +2048,7 @@
                <text value="pH (adjustment of pre-clarification bulk solution)"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2174,7 +2159,7 @@
                <text value="pH (adjustment of pre-clarification bulk solution)"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2285,7 +2270,7 @@
                <text value="Assay (pre-clarification filtration) (mg/mL)"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2396,7 +2381,7 @@
                <text value="Assay (Post dilution bulk solution) (mg/mL)"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2507,7 +2492,7 @@
                <text value="Assay"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2618,7 +2603,7 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2768,7 +2753,7 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -2918,7 +2903,7 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3068,7 +3053,7 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3218,7 +3203,7 @@
                <text value="Degradation Products"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3368,7 +3353,7 @@
                <text value="Water Content"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3479,7 +3464,7 @@
                <text value="TAMC"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3586,7 +3571,7 @@
                <text value="Assay"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3688,7 +3673,7 @@
                <text value="Assay"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3829,7 +3814,7 @@
                <text value="Lyophilization Water Homogeneity"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -3910,7 +3895,7 @@
                <text value="Lyophilization Assay Homogeneity"/>
             </code>
             <subject>
-                    <!--Medication/medication-batch-information-pq-ex2-->
+                    <!--Medication/medication-batch-information-drug-pq-ex1-->
                <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -4134,7 +4119,6 @@
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
-                <!-- focal resource -->
             <id value="plandefinition-drug-pq-ex2-manufacturing-plan"/>
             <!-- indicate this is as subset of the resource. In practice it would have it all -->
             <meta>

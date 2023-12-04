@@ -29,7 +29,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-                	<!--SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1-->
+                	<!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
                <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
             </subjectReference>
             <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
@@ -755,7 +755,7 @@
                <text value="Elemental Analysis Carbon (%)"/>
             </code>
             <subject>
-            		<!--Substance/substance-drug-pq-ex1-unlinked-->
+            		<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -790,7 +790,7 @@
                <text value="Elemental Analysis Hydrogen (%)"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -825,7 +825,7 @@
                <text value="Elemental Analysis Nitrogen (%)"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -860,7 +860,7 @@
                <text value="Elemental Analysis Flourine (%)"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -895,7 +895,7 @@
                <text value="Ion Analysis Carbon (%)"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -945,7 +945,7 @@
                <text value="Ion Analysis Hydrogen (%)"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -995,7 +995,7 @@
                <text value="Ion Analysis Nitrogen (%)"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1045,7 +1045,7 @@
                <text value="Ion Analysis Flourine (%)"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1095,7 +1095,7 @@
                <text value="NMR"/>
             </code>
             <subject>
-            		<!--Substance/substance-drug-pq-ex1-unlinked-->
+            		<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1157,7 +1157,7 @@
                <text value="NMR"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1218,7 +1218,7 @@
                <text value="NMR"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1284,7 +1284,7 @@
                <text value="NMR"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1350,7 +1350,7 @@
                <text value="NMR"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1411,7 +1411,7 @@
                <text value="NMR"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1472,7 +1472,7 @@
                <text value="NMR"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1517,18 +1517,17 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-                <!--substancedefinition-component-substance-drug-pq-ex1-->
+                <!--substancedefinition-component-substance-dxpq-ex1-->
             <id value="57a9af63-315d-1585-a261-0e337b289390"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             </meta>
             <manufacturer>
-                    <!--Organization/organization-drug-pq-ex1-->
+                    <!--Organization/organization-dxpq-ex1-->
                <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>
@@ -1538,7 +1537,7 @@
       <resource>
          <Organization>
                 <!--id value="substance-manufacturer"/-->
-                <!--organization-drug-pq-ex1-->
+                <!--organization-dxpq-ex1-->
             <id value="49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
@@ -1578,7 +1577,7 @@
       <resource>
          <Substance>
                 <!--<id value="actual-batch-substance"/>-->
-                <!--substance-drug-pq-ex1-unlinked-->
+                <!--substance-dxpq-ex1-unlinked-->
             <id value="fc078762-81c5-5656-9744-13c7ad1e595b"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
@@ -1586,21 +1585,17 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
-                  <!-- #159 -->
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5.1"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
@@ -1609,7 +1604,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -1618,9 +1613,9 @@
                      </coding>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
                   <valueReference>
-                            <!--Organization/organization-drug-pq-ex1-->
+                            <!--Organization/organization-dxpq-ex1-->
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
@@ -1628,16 +1623,10 @@
             <identifier>
                <value value="SUB1Amgen"/>
             </identifier>
-            <!--identifier>
-            		<value value="SUB1SiteA"/>
-            		<assigner>
-            			<reference value="Organization/testerSiteA"/>
-            		</assigner>
-            	</identifier-->
             <instance value="true"/>
             <code>
                <reference>
-                        <!--SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1-->
+                        <!--SubstanceDefinition/substancedefinition-component-substance-dxpq-ex1-->
                   <reference value="SubstanceDefinition/57a9af63-315d-1585-a261-0e337b289390"/>
                </reference>
             </code>
@@ -1664,7 +1653,7 @@
                <text value="Chemical Structure"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1699,7 +1688,7 @@
                <text value="X-Ray Powder Diffractogram"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1734,7 +1723,7 @@
                <text value="MolecularStructure"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
@@ -1769,7 +1758,7 @@
                <text value="Absorption"/>
             </code>
             <subject>
-					<!--Substance/substance-drug-pq-ex1-unlinked-->
+					<!--Substance/substance-dxpq-ex1-unlinked-->
                <reference value="Substance/fc078762-81c5-5656-9744-13c7ad1e595b"/>
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>

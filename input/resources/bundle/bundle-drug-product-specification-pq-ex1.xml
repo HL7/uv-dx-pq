@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Product Specification -->
-<!-- Based on file Accumulus FHIR Product Example - Specification, posted 05-31-2023 -->
-<!-- For this example, changed <system value="http://loinc.org"/> to <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>-->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-specification-pq-ex1"/>
    <meta>
@@ -12,9 +10,8 @@
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
-                <!-- focal resource -->
                 <!-- <id value="specificationProtocol"/> -->
-                <!--id value="plandefinition-drug-specification-pq-ex1"/-->
+                <!--id value="plandefinition-drug-specification-dxpq-ex1"/-->
             <id value="plandefinition-drug-pq-ex3-drug-specification"/>
             <!--<meta>
                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>

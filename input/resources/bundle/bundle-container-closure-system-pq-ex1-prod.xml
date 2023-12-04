@@ -11,7 +11,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-            	<!--medicinalproductdefinition-drug-product-pq-ex1-->
+            	<!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -56,23 +56,19 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
       <resource>
          <PackagedProductDefinition>
-				<!--packagedproductdefinition-drug-pq-ex1-->
+				<!--packagedproductdefinition-dxpq-ex1-->
             <id value="88a068e2-1d97-337b-3b9c-4b3f14bc3923"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
             </meta>
-            <!--extension url="http://nprogram.co.uk/fhir/extension/exampleFileName">
-            		<valueString value="packagedproductdefinition/{id}.xml"/>
-            	</extension-->
             <packageFor>
-					<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
+					<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </packageFor>
             <containedItemQuantity>
                <value value="28"/>
                <unit value="tablets"/>
             </containedItemQuantity>
-            <!-- #174 -->
             <description value="The container closure system consists of a bottle and closure.  The bottle is manufactured from white high-density polyethylene (HDPE). The 2-piece child-resistant closure is manufactured from polypropylene (PP) and contains a multi-layer aluminum foil seal liner for tamper evidence.  The bottle and closure provide an adequate barrier to moisture and light, which protect the drug product.  The container closure system has demonstrated suitability for storage of the drug product based on stability studies shown in 3.2.P.8.3.      The HDPE bottle has demonstrated compliance with USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction and PhEur 3.1.3 Polyolefins.  The product contacting aluminum foil seal liner has demonstrated compliance with USP &lt;661&gt;. The vendor has confirmed compliance with 21 CFR 175.300, in addition to compliance with limitation of heavy metals per EU 94/62/EC, Article 11. The container closure system has demonstrated child resistance in compliance with 16 CFR 1700. Detailed information pertaining to the bottle and closure is described in 3.2.P.7."/>
             <packaging>
                <type>
@@ -82,7 +78,7 @@
                      <display value="Bottle"/>
                   </coding>
                </type>
-               <material> <!-- #178 -->
+               <material>
                   <coding>
                      <system value="http://hl7.org/fhir/package-material"/>
                      <code value="200000003215"/>
@@ -232,13 +228,13 @@
       <fullUrl value="urn:uuid:88a068e2-1d97-337b-3b9c-4b3f24bc3923"/>
       <resource>
          <PackagedProductDefinition>
-            	<!--packagedproductdefinition-drug-pq-ex2-->
+            	<!--packagedproductdefinition-dxpq-ex2-->
             <id value="88a068e2-1d97-337b-3b9c-4b3f24bc3923"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
             </meta>
             <packageFor>
-                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
+                	<!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </packageFor>
             <containedItemQuantity>
@@ -296,7 +292,7 @@
                      </coding>
                   </type>
                   <quantity value="2"/>
-                  <material> <!-- #178 -->
+                  <material>
                      <coding>
                         <system value="http://hl7.org/fhir/package-material"/>
                         <code value="200000003222"/>

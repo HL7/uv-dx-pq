@@ -13,7 +13,6 @@
             <id value="878c2849-792c-6469-21a2-c2b920930962"/>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>
@@ -25,18 +24,17 @@
                 <!--packageDefinition-->
             <id value="b107a2ba-32d8-0124-7855-4096057c52a9"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
-            <!-- #176 -->
             <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
             <!-- secondary packaging -->
-            <packaging> <!-- #189 -->
-               <type> <!-- #191 -->
+            <packaging>
+               <type>
                   <coding>
                      <system value="http://hl7.org/fhir/packaging-type"/>
                      <code value="100000073493"/>
                      <display value="Bag"/>
                   </coding>
                </type>
-               <material> <!-- #192 -->
+               <material>
                   <coding>
                      <system value="http://hl7.org/fhir/package-material"/>
                      <code value="200000003216"/>
@@ -70,7 +68,7 @@
                <containedItem>
                   <item>
                      <reference>
-                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1-->
+                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1-->
                         <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
                      </reference>
                   </item>
@@ -88,18 +86,17 @@
                 <!--packageDefinition2-->
             <id value="b107a2ba-32d8-0124-7855-4096057c52b9"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
-            <!-- #176 -->
             <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
             <!-- secondary packaging -->
-            <packaging> <!-- #189 -->
-               <type> <!-- #191 -->
+            <packaging>
+               <type>
                   <coding>
                      <system value="http://hl7.org/fhir/packaging-type"/>
                      <code value="100000073497"/>
                      <display value="Bottle"/>
                   </coding>
                </type>
-               <material> <!-- #192 -->
+               <material>
                   <coding>
                      <system value="http://hl7.org/fhir/package-material"/>
                      <code value="200000003215"/>
@@ -109,7 +106,7 @@
                <containedItem>
                   <item>
                      <reference>
-                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1-->
+                                        <!--ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1-->
                         <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
                      </reference>
                   </item>
@@ -124,7 +121,7 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-                <!--manufactureditemdefinition-pq-ex1-->
+                <!--manufactureditemdefinition-drug-pq-ex1-->
             <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
@@ -147,7 +144,7 @@
             <id value="f26b997a-3ab9-7552-a6cc-fd771d1f1863"/>
             <status value="active"/>
             <for>
-                    <!--ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1-->
+                    <!--ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1-->
                <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
             </for>
             <role>

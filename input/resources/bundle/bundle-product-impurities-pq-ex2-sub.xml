@@ -10,7 +10,6 @@
       <fullUrl value="urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb"/>
       <resource>
          <SubstanceDefinition>
-        		<!--substance1-->
             <id value="substance1"/>
             <manufacturer>
         			<!--Organization/substance-manufacturer-->
@@ -20,7 +19,6 @@
                <name value="Stelbatolol"/>
             </name>
             <relationship>
-<!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
@@ -38,7 +36,6 @@
                <type>
         	        	<!-- two codes here, one is more specialised than the other -->
                   <coding>
-                     <!--  <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>-->
                      <system value="http://hl7.org/fhir/substance-relationship-type"/>
                      <code value="Impurity"/>
                      <display value="Impurity Of"/>
@@ -52,7 +49,6 @@
                <amountString value="ND"/>
             </relationship>
             <relationship>
-               <!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
@@ -64,6 +60,7 @@
                   </valueCodeableConcept>
                </extension>
                <substanceDefinitionReference>
+        	            <!--SubstanceDefinition/impurity1-->
                   <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-80f9-647b0ea97ad2"/>
                </substanceDefinitionReference>
                <type>
@@ -81,7 +78,6 @@
                <amountString value="Range: ND-0.2%"/>
             </relationship>
             <relationship>
-               <!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
@@ -93,11 +89,11 @@
                   </valueCodeableConcept>
                </extension>
                <substanceDefinitionReference>
+        	            <!--SubstanceDefinition/impurity2-->
                   <reference value="SubstanceDefinition/03d68d1c-162c-8b6e-80f9-647b0ea97ad9"/>
                </substanceDefinitionReference>
                <type>
                   <coding>
-                     <!--                     <system value="http://temp.hl7.org/fhir/substance-relationship-type"/>-->
                      <system value="http://hl7.org/fhir/substance-relationship-type"/>
                      <code value="Impurity"/>
                      <display value="Impurity Of"/>
@@ -111,7 +107,6 @@
                <amountString value="Range: ND–0.3%"/>
             </relationship>
             <relationship>
-               <!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
@@ -141,7 +136,6 @@
                <amountString value="Observed only during stress studies"/>
             </relationship>
             <relationship>
-               <!--               <extension url="http://accumulus.org/fhir/extension/impurityOrigin">-->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
@@ -260,6 +254,7 @@
             <structure>
                <representation>
                   <document>
+                            <!--DocumentReference/impurityEnantiomerdoc-->
                      <reference value="DocumentReference/13d68d1c-162c-8b6e-80f9-647b0ea97ad1"/>
                   </document>
                </representation>
@@ -368,6 +363,7 @@
             <structure>
                <representation>
                   <document>
+                            <!--DocumentReference/impurity1doc-->
                      <reference value="DocumentReference/13d68d1c-162c-8b6e-80f9-647b0ea97ad2"/>
                   </document>
                </representation>
@@ -476,6 +472,7 @@
             <structure>
                <representation>
                   <document>
+                            <!--DocumentReference/impurity2doc-->
                      <reference value="DocumentReference/13d68d1c-162c-8b6e-80f9-647b0ea97ad9"/>
                   </document>
                </representation>

@@ -11,7 +11,6 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
       <resource>
          <DiagnosticReport>
-                <!-- focal resource -->
             <id value="microbiologicalReport"/>
             <status value="final"/>
             <code>
@@ -154,7 +153,7 @@
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
                 
-                <!--medicinalproductdefinition-drug-product-pq-ex1-->
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -205,9 +204,8 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
                             <!-- todo consider change this be the MID? -->
-                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
             </code>

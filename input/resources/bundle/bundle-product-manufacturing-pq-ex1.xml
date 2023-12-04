@@ -20,7 +20,7 @@
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
                         
-                    	<!--DocumentReference/documentreference-process-flow-diagram-pq-ex1-->
+                        <!--DocumentReference/documentreference-drug-pq-process-flow-diagram-->
                   <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
             </extension>
@@ -44,7 +44,7 @@
             </type>
             <status value="active"/>
             <subjectReference>
-                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
+                    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
@@ -488,7 +488,7 @@
                <participant>
                   <typeReference>
                                 <!-- this is new in R5 and is not in R4B -->
-                            	<!--DeviceDefinition/devicedefinition-pq-ex1-->
+                                <!--DeviceDefinition/devicedefinition-drug-pq-ex1-->
                      <reference value="DeviceDefinition/82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
                   </typeReference>
                   <role>
@@ -546,11 +546,11 @@
       <fullUrl value="urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
       <resource>
          <DeviceDefinition>
-            	<!--devicedefinition-pq-ex1-->
+            	<!--devicedefinition-drug-pq-ex1-->
             <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
             <!--<meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
-            	</meta>-->
+                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
+                </meta>-->
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
                <type value="registered-name"/>
@@ -628,7 +628,7 @@
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
          <DocumentReference> 
-            	<!--documentreference-process-flow-diagram-pq-ex1-->
+                <!--documentreference-drug-pq-process-flow-diagram-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
             <!--<meta>
                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"/>       
@@ -676,7 +676,7 @@
       <resource>
             <!-- Section 1.1 - DP Identification -->
          <MedicinalProductDefinition>
-                <!--medicinalproductdefinition-drug-product-pq-ex1-->
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
@@ -724,7 +724,7 @@
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d6"/>
             <status value="active"/>
             <for>
-				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
+				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>
             <role>

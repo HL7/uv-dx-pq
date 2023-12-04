@@ -445,15 +445,12 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
-                  <!-- #173 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
                   <valueDateTime value="2022-09-08"/>
-                  <!-- #221 -->
                </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2020-01"/>
-                  <!-- #157 -->
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
                   <valueReference>
@@ -461,11 +458,10 @@
                      <reference value="PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
                   </valueReference>
                </extension>
-               <extension url="batchQuantity"> <!-- #157 -->
+               <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="120"/>
                      <unit value="kg"/>
-                     <!-- #158 -->
                   </valueQuantity>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
@@ -474,7 +470,7 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="batchUtilization"><!-- #161 -->
+               <extension url="batchUtilization">
                   <valueCodeableConcept>
                      <coding>
                         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
@@ -485,7 +481,7 @@
                      <text value="Production"/>
                   </valueCodeableConcept>
                </extension>
-               <extension url="assignedManufacturer"> <!-- #160 -->
+               <extension url="assignedManufacturer">
                   <valueReference>
 							<!--Organization/substance-manufacturer-->
                      <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
@@ -494,7 +490,6 @@
             </extension>
             <identifier>
                <value value="CAT1"/>
-               <!-- #155 -->
             </identifier>
             <instance value="true"/>
             <code>
@@ -586,7 +581,6 @@
             <subjectReference>
             		<!--SubstanceDefinition/substance1-->
                <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
-               <!-- #83 -->
             </subjectReference>
          </PlanDefinition>
       </resource>
@@ -603,7 +597,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>
@@ -649,7 +642,6 @@
       <fullUrl value="urn:uuid:01a5777c-4b48-a0df-2963-02cd63339006"/>
       <resource>
          <DiagnosticReport>
-			    <!-- focal resource -->
             <id value="referenceStandardReport"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
                <valueReference>
@@ -875,12 +867,6 @@
 			        <!--Observation/observationAssignedPurity1second-->
                <reference value="Observation/ff36533d-88b8-7f18-a275-42dc1373a388"/>
             </result>
-            <!---result>
-			        <reference value="Observation/observationAssignedPurity2second"/>
-			    </result>
-			    <result>
-			        <reference value="Observation/observationAssignedPurity3second"/>
-			    </result-->
             <conclusion value="The samples have been assessed and the conclusion is..."/>
          </DiagnosticReport>
       </resource>
@@ -1031,37 +1017,6 @@
          </Observation>
       </resource>
    </entry>
-   <!--entry>
-        <fullUrl value="urn:uuid:83f552f7-8558-3cff-8379-eea5417a9de2"/>
-        <resource>
-            <Observation>
-                <id value="testDateSecond2"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-pq"/>
-                </meta>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/TestDate"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/CodeSystem-local-codes-dxpq"/>
-                        <code value="Test Date"/>
-                        <display value="Test Date"/>
-                    </coding>
-                    <text value="Test Date"/>
-                </code>
-                <subject>
-                    <reference value="Substance/actual-batch-substance-2"/>
-                </subject>
-                <effectiveDateTime value="2023-01-01T12:00:00Z"/>
-                <performer>
-                    <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-                </performer>
-                <valueDateTime value="2024-08"/>
-            </Observation>
-        </resource>
-    </entry-->
    <entry>
       <fullUrl value="urn:uuid:82f552f9-8458-3cf4-8379-eea5417a9de2"/>
       <resource>
@@ -1085,7 +1040,7 @@
                <text value="Appearance"/>
             </code>
             <subject>
-					<!--reference value="Substance/actual-batch-substance"/-->
+					
 				    <!--Substance/substance-dxpq-ex1-->
                <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
             </subject>
@@ -1186,7 +1141,7 @@
                <text value="Appearance"/>
             </code>
             <subject>
-                    <!--reference value="Substance/actual-batch-substance"/-->
+                    
                     <!--Substance/actual-batch-substance-2-->
                <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
             </subject>
@@ -2621,90 +2576,6 @@
          </Observation>
       </resource>
    </entry>
-   <!--entry>
-        <fullUrl value="urn:uuid:ff46534d-88b8-7f18-a275-42dc1373a388"/>
-        <resource>
-            <Observation>
-                <id value="observationAssignedPurity2second"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/AssignedPurity"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                        <code value="AssignedPurity"/>
-                        <display value="Assigned Purity"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Substance/actual-batch-substance-2"/>
-                </subject>
-                <effectiveDateTime value="2022-01-01T12:00:00Z"/>
-                <performer>
-                    <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-                </performer>
-                <valueQuantity>
-                    <value value="75.33"/>
-                    <unit value="%"/>
-                </valueQuantity>
-                <component>
-                    <code>
-                        <coding> 
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                            <code value="IMP"/>
-                            <display value="Impurity"/>
-                        </coding>
-                    </code>
-                    <valueCodeableConcept>
-                        <text value="Impurity - Elemental"/>
-                    </valueCodeableConcept>
-                </component>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="urn:uuid:ff56544d-88b8-7f18-a275-42dc1373a388"/>
-        <resource>
-            <Observation>
-                <id value="observationAssignedPurity3second"/>
-                <instantiatesReference>
-                    <reference value="ObservationDefinition/AssignedPurity"/>
-                </instantiatesReference>
-                <status value="final"/>
-                <code>
-                    <coding> 
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                        <code value="AssignedPurity"/>
-                        <display value="Assigned Purity"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Substance/actual-batch-substance-2"/>
-                </subject>
-                <effectiveDateTime value="2023-01-01T12:00:00Z"/>
-                <performer>
-                    <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
-                </performer>
-                <valueQuantity>
-                    <value value="75.44"/>
-                    <unit value="%"/>
-                </valueQuantity>
-                <component>
-                    <code>
-                        <coding> 
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
-                            <code value="IMP"/>
-                            <display value="Impurity"/>
-                        </coding>
-                    </code>
-                    <valueCodeableConcept>
-                        <text value="Impurity - Elemental"/>
-                    </valueCodeableConcept>
-                </component>
-            </Observation>
-        </resource>
-    </entry-->
    <entry>
       <fullUrl value="urn:uuid:f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
       <resource>

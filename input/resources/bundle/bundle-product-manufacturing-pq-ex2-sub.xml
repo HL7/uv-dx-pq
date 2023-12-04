@@ -15,7 +15,7 @@
                <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        <!-- #84 -->
+                        
                         <!--DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1-->
                   <reference value="DocumentReference/74d4c070-6596-8252-8ad9-afa515a41feb"/>
                </valueReference>
@@ -23,6 +23,7 @@
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
                <valueMarkdown value="This can be text about the history"/>
             </extension>
+            <!--http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a-->
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <type>
                <coding>
@@ -32,13 +33,11 @@
                </coding>
             </type>
             <status value="active"/>
-            <!-- #83 -->
             <subjectReference>
                     <!--SubstanceDefinition/substance1-->
                <reference value="SubstanceDefinition/c458791f-7cb8-428e-83f7-8a205f821152"/>
             </subjectReference>
             <description value="Narrative description of substance manufacturing process"/>
-            <!-- #85 -->
             <goal id="goal-control-pH">
                <category>
                   <coding>
@@ -123,7 +122,6 @@
             <action>
                <code>
                   <coding>
-                     <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                      <code value="overall process"/>
                      <display value="Overall Process"/>
@@ -159,7 +157,6 @@
                   <description value="Description of this step"/>
                   <code>
                      <coding>
-                        <!-- <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>--> 
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                         <code value="particleSizeReduction"/>
                         <display value="Particle Size Reduction"/>
@@ -185,7 +182,6 @@
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                            <code value="Compression Milling"/>
-                           <!-- #88 Equipment class -->
                            <display value="Compression Milling"/>
                         </coding>
                      </role>
@@ -257,7 +253,6 @@
             <id value="82a39a18-91cf-a19d-76c1-a9e8bad9494c"/>
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
-               <!-- #89 Equiment subclass -->
                <type value="registered-name"/>
             </deviceName>
             <property>
@@ -265,7 +260,6 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="Maximum Speed"/>
-                     <!-- #90 Working capacity -->
                      <display value="Maximum Speed"/>
                   </coding>
                </type>
@@ -281,7 +275,6 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
-            <!-- #84 -->
          <DocumentReference> 
                 <!--DocumentReference-process-flow-diagram-dxpq-ex1-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41feb"/>
@@ -314,7 +307,6 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fef"/>
       <resource>
-            <!-- #84 -->
          <DocumentReference> 
                 <!--DocumentReference-image-->
             <id value="74d4c070-6596-8252-8ad9-afa515a41fef"/>
@@ -339,7 +331,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>

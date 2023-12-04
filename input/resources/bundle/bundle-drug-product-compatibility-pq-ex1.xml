@@ -16,10 +16,7 @@
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
             </meta>
-            
-
-            
-
+            <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Drug Product Compatibility"/>
             <type>
@@ -45,7 +42,7 @@
                <!-- needs some other code -->
                <!--code>
                         <coding>
-                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>
+                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
                             <code value="FilteredFormulatedDrugProductPerformanceIndicatorResultsStep"/>
                             <display value="Filtered Formulated Drug Product Performance Indicator Results"/>
                         </coding>
@@ -141,7 +138,7 @@
          <ObservationDefinition>
 				<!--SE-UHPLCMainPeak-->
             <id value="64525a3d-5034-448a-9c19-938ce1958424"/>
-
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC % Main Peak"/>
             <status value="active"/>
@@ -180,7 +177,7 @@
          <ObservationDefinition>
                 <!--SE-UHPLCHMW-->
             <id value="64525a33-5034-448a-9c19-938ce1958424"/>
-
+            <!--http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC % HMW"/>
             <status value="active"/>
@@ -219,7 +216,7 @@
          <ObservationDefinition>
                 <!--CEX-HPLCAcidicPeak-->
             <id value="54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
-
+            <!--http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
             <title value="CEX-HPLC % Acidic Peak"/>
             <status value="active"/>
@@ -258,7 +255,7 @@
          <ObservationDefinition>
                 <!--CEX-HPLCMainPeak-->
             <id value="74525a3d-5034-448a-9c19-938ce1958424"/>
-
+            <!--http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="CEX-HPLC % Main Peak"/>
             <status value="active"/>
@@ -316,6 +313,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -372,6 +370,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -428,6 +427,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -484,6 +484,7 @@
             </subject>
             <effectiveDateTime value="2023-01-01T12:00:00Z"/>
             <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
                <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             </performer>
             <component>
@@ -787,12 +788,9 @@
                   <valueReference>
                             <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-
                   </valueReference>
                </extension>
                <!-- can use an extension here to point to package, but currently just relying on medication-manufacturingBatch to have a text description -->
-               
-
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
@@ -839,6 +837,7 @@
       <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
       <resource>
          <Organization>
+                <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
             <name value="Testing Lab"/>
          </Organization>

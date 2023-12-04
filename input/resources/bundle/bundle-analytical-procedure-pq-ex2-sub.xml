@@ -11,7 +11,6 @@
       <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                <!-- focal resource -->
             <id value="analyticalProcedure"/>
             <!--http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f-->
             <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
@@ -82,18 +81,6 @@
                </extension>
                <title value="Determination of Particle Size of Stelbat by Laser Diffraction (G1112)"/>
                <!-- can have device here or as ObsDef.device -->
-               <!--participant>
-                        <typeReference>
-                            <reference value="DeviceDefinition/laser"/>
-                        </typeReference>
-                        <role>
-                            <coding>
-                                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
-                                <code value="example"/>
-                                <display value="Analyzer"/> 
-                            </coding>
-                        </role>
-                    </participant-->
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">

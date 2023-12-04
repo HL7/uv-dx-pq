@@ -10,7 +10,6 @@
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                <!-- focal resource -->
                 <!--id value="validationProtocol"/-->
             <id value="plandefinition-drug-pq-ex1-validation-protocol"/>
             <!--<meta>
@@ -507,7 +506,6 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
       <resource>
          <DiagnosticReport>
-                <!-- focal resource -->
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
             <id value="processValidationReport"/>
@@ -622,8 +620,6 @@
             <result><!--Observation/proteinConcentration1-->
                <reference value="Observation/54aa47fd-9964-5f97-6495-b2bec8f161e8"/>
             </result>
-            <!--result><reference value="Observation/proteinConcentration2"/></result>
-            	<result><reference value="Observation/proteinConcentration3"/></result-->
             <result><!--Observation/polysorbate2-->
                <reference value="Observation/54aa47fd-9964-5f97-6495-b2bec8f162e8"/>
             </result>
@@ -673,7 +669,6 @@
          <ObservationDefinition>
                 <!--bufferVesselMixingSpeed-->
             <id value="fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/bufferVesselMixingSpeed-->
             <!--http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="Buffer vessel mixing speed (rpm)"/>
@@ -707,7 +702,6 @@
          <ObservationDefinition>
                 <!--formulationVesselMixingSpeed-->
             <id value="fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/formulationVesselMixingSpeed-->
             <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
             <title value="Formulation vessel mixing speed (rpm)"/>
@@ -741,7 +735,6 @@
          <ObservationDefinition>
                 <!--bufferVesselMixingTime-->
             <id value="fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/bufferVesselMixingTime-->
             <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
             <title value="Buffer vessel mixing time (min)"/>
@@ -779,7 +772,6 @@
          <ObservationDefinition>
                 <!--formulationVesselMixingTime-->
             <id value="fc27b5d5-9fe1-92c2-2d06-47cb5b295e73"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/formulationVesselMixingTime-->
             <!--http://example-server.com/fhir/ObservationDefinition/fc27b5d5-9fe1-92c2-2d06-47cb5b295e73-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b5d5-9fe1-92c2-2d06-47cb5b295e73"/>
             <title value="Formulation vessel mixing time (min)"/>
@@ -817,7 +809,6 @@
          <ObservationDefinition>
 				<!--ResidualMoisture-->
             <id value="fc27b6d6-9fe2-91c2-2d16-47cb5b295e72"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ResidualMoisture-->
             <!--http://example-server.com/fhir/ObservationDefinition/fc27b6d6-9fe2-91c2-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b6d6-9fe2-91c2-2d16-47cb5b295e72"/>
             <title value="Residual Moisture (%)"/>
@@ -876,7 +867,6 @@
          <ObservationDefinition>
                 <!--ThawingFBPPIpH-->
             <id value="fc27b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingFBPPIpH-->
             <!--http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
             <title value="pH"/>
@@ -914,7 +904,6 @@
          <ObservationDefinition>
                 <!--ThawingTime-->
             <id value="fc27b5d6-9fe2-91c2-2d16-47cb5b295e72"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingTime-->
             <!--http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe2-91c2-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe2-91c2-2d16-47cb5b295e72"/>
             <title value="Thaw Time"/>
@@ -946,7 +935,6 @@
          <ObservationDefinition>
                 <!--FBPPIpH-->
             <id value="fc17b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FBPPIpH-->
             <!--http://example-server.com/fhir/ObservationDefinition/fc17b5d6-9fe1-91c2-2d16-47cb5b295e72-->
             <url value="http://example-server.com/fhir/ObservationDefinition/fc17b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
             <title value="pH"/>
@@ -984,7 +972,6 @@
          <ObservationDefinition>
                 <!--Osmolality-->
             <id value="64525a3c-5034-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Osmolality-->
             <!--http://example-server.com/fhir/ObservationDefinition/64525a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Osmolality"/>
@@ -1020,7 +1007,6 @@
          <ObservationDefinition>
             	<!--SE-UHPLCMainPeakLyoph-->
             <id value="64525a3d-5134-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeakLyoph-->
             <!--http://example-server.com/fhir/ObservationDefinition/64525a3d-5134-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5134-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC Main Peak"/>
@@ -1082,7 +1068,6 @@
          <ObservationDefinition>
 				<!--SE-UHPLCHMWLyoph-->
             <id value="64525a3d-5144-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCHMWLyoph-->
             <!--http://example-server.com/fhir/ObservationDefinition/64525a3d-5144-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5144-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC HMW"/>
@@ -1144,7 +1129,6 @@
          <ObservationDefinition>
 				<!--SE-UHPLCMainPeak-->
             <id value="64525a3d-5034-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeak-->
             <!--http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC Main Peak"/>
@@ -1175,7 +1159,6 @@
          <ObservationDefinition>
                 <!--SE-UHPLCMainPeakGraph-->
             <id value="64525a4d-5034-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCMainPeakGraph-->
             <!--http://example-server.com/fhir/ObservationDefinition/64525a4d-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a4d-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC Main Peak Graph"/>
@@ -1197,7 +1180,6 @@
          <ObservationDefinition>
                 <!--SE-UHPLCHMW-->
             <id value="64525a33-5034-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/SE-UHPLCHMW-->
             <!--http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC HMW"/>
@@ -1228,7 +1210,6 @@
          <ObservationDefinition>
                 <!--conclusion-->
             <id value="22515a3c-5034-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/conclusion-->
             <!--http://example-server.com/fhir/ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Conclusion"/>
@@ -1250,7 +1231,6 @@
          <ObservationDefinition>
 				<!--conclusionHomogeneity-->
             <id value="22525a3c-5035-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/conclusionHomogeneity-->
             <!--http://example-server.com/fhir/ObservationDefinition/22525a3c-5035-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/22525a3c-5035-448a-9c19-938ce1958424"/>
             <title value="Conclusion"/>
@@ -1272,7 +1252,6 @@
          <ObservationDefinition>
                 <!--ThawingOsmolality-->
             <id value="64515a3c-5034-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingOsmolality-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Osmolality"/>
@@ -1308,7 +1287,6 @@
          <ObservationDefinition>
                 <!--ThawingTemp-->
             <id value="74515a3c-5034-448a-9c19-938ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingTemp-->
             <!--http://example-server.com/fhir/ObservationDefinition/74515a3c-5034-448a-9c19-938ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515a3c-5034-448a-9c19-938ce1958424"/>
             <title value="Thawing Temp"/>
@@ -1344,7 +1322,6 @@
          <ObservationDefinition>
                 <!--Conductivity-->
             <id value="64515a3c-5134-448a-9c19-939ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Conductivity-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c19-939ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c19-939ce1958424"/>
             <title value="Conductivity"/>
@@ -1379,7 +1356,6 @@
          <ObservationDefinition>
                 <!--ThawingConductivity-->
             <id value="74515a3c-5134-448a-9c19-939ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingConductivity-->
             <!--http://example-server.com/fhir/ObservationDefinition/74515a3c-5134-448a-9c19-939ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515a3c-5134-448a-9c19-939ce1958424"/>
             <title value="Conductivity"/>
@@ -1414,7 +1390,6 @@
          <ObservationDefinition>
                 <!--Bioburden-->
             <id value="64515b3c-5134-448a-9c19-939ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Bioburden-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958424"/>
             <title value="Bioburden"/>
@@ -1449,7 +1424,6 @@
          <ObservationDefinition>
                 <!--MediaBioburden-->
             <id value="64515b3c-5134-448a-9c19-939ce1958524"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/MediaBioburden-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958524"/>
             <title value="Bioburden"/>
@@ -1497,7 +1471,6 @@
          <ObservationDefinition>
 				<!--Polysorbate80Concentration-->
             <id value="74515b3c-5234-448a-9c19-939ce1958524"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Polysorbate80Concentration-->
             <!--http://example-server.com/fhir/ObservationDefinition/74515b3c-5234-448a-9c19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5234-448a-9c19-939ce1958524"/>
             <title value="Polysorbate 80 Concentration"/>
@@ -1586,7 +1559,6 @@
          <ObservationDefinition>
 				<!--ProteinConcentration-->
             <id value="74515b3c-5134-448a-9c19-939ce1958524"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ProteinConcentration-->
             <!--http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958524"/>
             <title value="Protein Concentration"/>
@@ -1675,7 +1647,6 @@
          <ObservationDefinition>
 				<!--ProteinConcentrationStats-->
             <id value="74515b3c-5134-448a-9c19-939ce1958534"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ProteinConcentrationStats-->
             <!--http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958534-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958534"/>
             <title value="Protein Concentration Stats"/>
@@ -1800,7 +1771,6 @@
          <ObservationDefinition>
 				<!--FillWeight-->
             <id value="64515b3c-5134-448a-9c19-939ce2958524"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FillWeight-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce2958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce2958524"/>
             <title value="Fill Weight"/>
@@ -1860,7 +1830,6 @@
          <ObservationDefinition>
                 <!--GrowthPromotion-->
             <id value="64515b3c-5134-448a-9d19-939ce1958524"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/GrowthPromotion-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9d19-939ce1958524-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9d19-939ce1958524"/>
             <title value="Growth Promotion"/>
@@ -1904,7 +1873,6 @@
          <ObservationDefinition>
                 <!--PreFiltrationBioburden-->
             <id value="64515b3c-5134-448a-9c19-939ce1958434"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/PreFiltrationBioburden-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958434"/>
             <title value="Pre-filtration Bioburden"/>
@@ -1934,7 +1902,6 @@
          <ObservationDefinition>
                 <!--BacterialEndotoxins-->
             <id value="64515b3c-5134-448a-9c19-949ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/BacterialEndotoxins-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958424"/>
             <title value="Bacterial Endotoxins"/>
@@ -1969,7 +1936,6 @@
          <ObservationDefinition>
                 <!--ThawingBacterialEndotoxins-->
             <id value="64515b4c-5134-448a-9c19-949ce1958424"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/ThawingBacterialEndotoxins-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515b4c-5134-448a-9c19-949ce1958424-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b4c-5134-448a-9c19-949ce1958424"/>
             <title value="Bacterial Endotoxins"/>
@@ -2004,7 +1970,6 @@
          <ObservationDefinition>
                 <!--FiltrationPressure-->
             <id value="74515b3c-5134-448a-9c19-949ce1958434"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/FiltrationPressure-->
             <!--http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-949ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-949ce1958434"/>
             <title value="Filtration Pressure"/>
@@ -2039,7 +2004,6 @@
          <ObservationDefinition>
                 <!--PostFiltrationFilterIntegrity-->
             <id value="75515b3c-5134-448a-9c19-949ce1958434"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/PostFiltrationFilterIntegrity-->
             <!--http://example-server.com/fhir/ObservationDefinition/75515b3c-5134-448a-9c19-949ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/75515b3c-5134-448a-9c19-949ce1958434"/>
             <title value="Post-filtration Filter Integrity (psig)"/>
@@ -2078,7 +2042,6 @@
          <ObservationDefinition>
                 <!--MediaHoldTime-->
             <id value="75515c3c-5134-448a-9c19-949ce1958434"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/MediaHoldTime-->
             <!--http://example-server.com/fhir/ObservationDefinition/75515c3c-5134-448a-9c19-949ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/75515c3c-5134-448a-9c19-949ce1958434"/>
             <title value="Media Challenge Hold Times (hours)"/>
@@ -2099,7 +2062,6 @@
          <ObservationDefinition>
                 <!--Polysorbate-->
             <id value="64515b3c-5134-448a-9c19-949ce1958434"/>
-            <!-- Previous url:http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Polysorbate-->
             <!--http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958434-->
             <url value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958434"/>
             <title value="Polysorbate 80"/>
@@ -2149,7 +2111,6 @@
                   <valueReference> <!-- todo consider change this be the MID? --> 
                             <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-pq">
@@ -2207,7 +2168,6 @@
                   </extension>
                   <extension url="batchQuantity">
                      <valueQuantity>
-                                <!-- need to see if one of these needs changing -->
                         <value value="100100"/>
                         <unit value="tablets"/>
                      </valueQuantity>
@@ -2277,7 +2237,6 @@
                   <valueReference> <!-- todo consider change this be the MID? --> 
                             <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-pq">
@@ -2294,11 +2253,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333224444"/>
                   </extension>
-                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
-                            </valueReference>
-                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
                      <valueCodeableConcept>
                         <coding>
@@ -2332,7 +2286,6 @@
                   </extension>
                   <extension url="batchQuantity">
                      <valueQuantity>
-                                <!-- need to see if one of these needs changing -->
                         <value value="100100"/>
                         <unit value="tablets"/>
                      </valueQuantity>
@@ -2416,11 +2369,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
-                            </valueReference>
-                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333225555"/>
                   </extension>
@@ -2540,11 +2488,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
-                            </valueReference>
-                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333225555"/>
                   </extension>
@@ -2664,11 +2607,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
-                            </valueReference>
-                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333226666"/>
                   </extension>
@@ -2787,11 +2725,6 @@
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                      <valueDateTime value="2019-09-08"/>
                   </extension>
-                  <!--extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-dxpq-ex1"/>
-                            </valueReference>
-                        </extension-->
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq">
                      <valueString value="1333226666"/>
                   </extension>
@@ -4831,7 +4764,6 @@
             <instantiatesReference>
 					<!--ObservationDefinition/SE-UHPLCMainPeakLyoph-->
                <reference value="ObservationDefinition/64525a3d-5134-448a-9c19-938ce1958424"/>
-               <!--reference value="ObservationDefinition/SE-UHPLCMainPeakLyophConclusion"/-->
                <!-- not using a separate one, % and conclusion are in one definition -->
             </instantiatesReference>
             <status value="final"/>

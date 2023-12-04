@@ -10,7 +10,6 @@
       <fullUrl value="urn:uuid:57a9af63-315d-1585-a261-0e337b289390"/>
       <resource>
          <SubstanceDefinition>
-                <!-- focal resource -->
             <id value="substancedefinition-substance-drug-pq-ex1"/>
             <property>
                <type>
@@ -296,7 +295,6 @@
             </structure>
             <name>
                <name value="Stelbatolol"/>
-               <!-- #4 -->
             </name>
          </SubstanceDefinition>
       </resource>

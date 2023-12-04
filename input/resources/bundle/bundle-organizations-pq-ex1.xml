@@ -121,7 +121,6 @@
       <fullUrl value="urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85"/>
       <resource>
          <Organization>
-            <!--tester-->
             <id value="tester"/>
             <identifier>
                <system value="urn:oid:2.16.840.1.113883.4.82"/>

@@ -4,7 +4,6 @@
    <id value="bundle-drug-stability-pq-ex1-prod"/>
    <!--   <id value="product-stability-study"/>-->
    <meta>
-        <!--profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-stability-dxpq"/-->
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
    </meta>
    <type value="collection"/>
@@ -115,7 +114,7 @@
             <!-- Section 11 - Stability Study - Protocol -->
          <PlanDefinition>
                 <!--<id value="stabilityStudyProtocol"/>-->
-                <!--id value="plandefinition-stability-study-protocol-pq-ex1"/-->
+                <!--id value="plandefinition-stability-study-protocol-dxpq-ex1"/-->
                 <!--plandefinition-drug-pq-ex5-stability-study-protocol-->
             <id value="c96cb248-1408-79fc-1f47-b17a6b2e4b54"/>
             <meta>
@@ -705,7 +704,6 @@
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             </meta>
-            <!--url value="http://example-server.com/fhir/ObservationDefinition/b40d24f0-1c09-4a46-8849-b73524ca8ab1"/-->
             <!--http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/observationdefinition-test-method-drug-pq-ex1-->
             <url value="http://example-server.com/fhir/ObservationDefinition/d1d252cf-9d58-43a0-85f6-56a7f7f92774"/>
             <title value="X"/>
@@ -3179,7 +3177,6 @@
                   <valueReference> <!-- todo consider change this be the MID? --> 
                             <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                      <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
-                     <!--reference value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/-->
                   </valueReference>
                </extension>
             </code>
@@ -3208,7 +3205,6 @@
                   </extension>
                   <extension url="batchQuantity">
                      <valueQuantity>
-                                <!-- need to see if one of these needs changing -->
                         <value value="100100"/>
                         <unit value="tablets"/>
                      </valueQuantity>
@@ -3538,7 +3534,7 @@
             </meta>
             <status value="active"/>
             <for>
-				    <!--reference value="MedicinalProductDefinition/product"/-->
+				    
 				    <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1-->
                <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             </for>

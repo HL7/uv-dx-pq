@@ -187,7 +187,7 @@
             	<!--medicinalproductdefinition-drug-product-pq-ex1-->
             <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
             <comprisedOf>
-                    <!--ManufacturedItemDefinition/manufactureditemdefinition-pq-ex1-->
+                    <!--ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex2-->
                <reference value="ManufacturedItemDefinition/1531c777-50c3-047d-2798-de3d001d2c44"/>
             </comprisedOf>
             <name>
@@ -237,7 +237,7 @@
       <fullUrl value="urn:uuid:1531c777-50c3-047d-2798-de3d001d2c44"/>
       <resource>
          <ManufacturedItemDefinition>
-            <!--manufactureditemdefinition-drug-pq-ex2-->
+                <!--manufactureditemdefinition-drug-pq-ex2-->
             <id value="1531c777-50c3-047d-2798-de3d001d2c44"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq"/>
