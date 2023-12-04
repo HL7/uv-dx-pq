@@ -27,7 +27,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
         <fullUrl value=&quot;urn:uuid:57a9af63-315d-1585-a261-0e337b289390&quot;/>
         <resource>
             <SubstanceDefinition>
-                <!-- focal resource -->
                 <id value=&quot;substancedefinition-substance-drug-pq-ex1&quot;/>
                 <property>
                     <type>
@@ -313,7 +312,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 </structure>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>
             </SubstanceDefinition>
         </resource>
@@ -336,7 +334,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
     <entry>
         <resource>
             <SubstanceDefinition>
-                <!-- focal resource -->
                 <id value=&quot;substancedefinition-substance-drug-pq-ex1&quot;/>
                 <property>
                     <type>
@@ -622,7 +619,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 </structure>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-substancedefinition-substance-drug-pq-ex1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent org">
 <div class="indent-no-border"><span><b>Drug Substance General Properties</b><br></span><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
 <tr>
