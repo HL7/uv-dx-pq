@@ -82,24 +82,24 @@
                      <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                   </valueReference>
                </extension>
-               <!-- local extensions -->
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                  <valueDateTime value="2019-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
-                  <valueDateTime value="2022-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
-                  <valueReference>
-                     <display value="Process 1.1"/>
-                  </valueReference>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                  <valueQuantity>
-                     <value value="4.8"/>
-                     <unit value="kg"/>
-                  </valueQuantity>
-               </extension>
+            </extension>
+            <!-- local extensions -->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
+               <valueReference>
+                  <display value="Process 1.1"/>
+               </valueReference>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
             </extension>
             <identifier>
                <value value="CAT1"/>
@@ -146,19 +146,19 @@
                      <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                   </valueReference>
                </extension>
-               <!-- local extensions -->
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                  <valueDateTime value="2019-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
-                  <valueDateTime value="2022-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                  <valueQuantity>
-                     <value value="4.8"/>
-                     <unit value="kg"/>
-                  </valueQuantity>
-               </extension>
+            </extension>
+            <!-- local extensions -->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
             </extension>
             <identifier>
                <value value="CAT2"/>
@@ -205,19 +205,19 @@
                      <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
                   </valueReference>
                </extension>
-               <!-- local extensions -->
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                  <valueDateTime value="2019-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
-                  <valueDateTime value="2022-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                  <valueQuantity>
-                     <value value="4.8"/>
-                     <unit value="kg"/>
-                  </valueQuantity>
-               </extension>
+            </extension>
+            <!-- local extensions -->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
             </extension>
             <identifier>
                <value value="CAT3"/>

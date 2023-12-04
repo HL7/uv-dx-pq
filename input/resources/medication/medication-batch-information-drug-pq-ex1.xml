@@ -23,68 +23,6 @@
     <!--    New order, with all Extensions custom to this IG at the top -->
     <batch>
         <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-            <!-- All Extensions custom for this IG -->
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                <valueDateTime value="2019-09-08"/>
-                <!-- #171 -->
-            </extension>
-            <!--extension url="http://accumulus.org/fhir/extension/manufacturingProcess">
-                            <valueReference>
-                                <reference value="PlanDefinition/plandefinition-mnf-process-pq-ex1"/>
-                            </valueReference>
-                        </extension-->
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
-                <!--                <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
-                <valueCodeableConcept>
-                    <coding>
-                        <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
-                        <code value="maximum"/>
-                        <display value="Maximum"/>
-                    </coding>
-                    <text value="Maximum"/>
-                </valueCodeableConcept>
-            </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq">
-                <!--                <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
-                <valuePositiveInt value="3"/>
-            </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
-                <!--                <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
-                <valueReference>
-                    <reference value="Substance/substance-drug-pq-ex1"/>
-                    <!--                    <reference value="Substance/actual-batch-substance"/>-->
-                </valueReference>
-            </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
-                            <valueDateTime value="2020-08"/>
-            </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
-                <!--                <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
-                <valueReference>
-                    <reference value="Organization/organization-drug-pq-ex1"/>
-                </valueReference>
-            </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                <valueQuantity>
-                    <!-- #160 -->
-                    <value value="4.81"/>
-                    <unit value="kg"/>
-                </valueQuantity>
-            </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq">
-                <valueQuantity>
-                    <value value="4.91"/>
-                    <unit value="kg"/>
-                </valueQuantity>
-            </extension>
-            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq">
-                <valueQuantity>
-                    <value value="30"/>
-                    <unit value="g"/>
-                </valueQuantity>
-            </extension>
-
             <!--  Base FHIR Extensions-->
             <extension url="manufacturingDate">
                 <!-- #157 -->
@@ -129,6 +67,67 @@
                     			<valueString value="100 cc HDPE Bottle 2 g desiccant"/>		
                     		</extension>
             </extension>
+        </extension>
+        <!-- All Extensions custom for this IG -->
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+            <valueDateTime value="2019-09-08"/>
+            <!-- #171 -->
+        </extension>
+        <!--extension url="http://accumulus.org/fhir/extension/manufacturingProcess">
+                        <valueReference>
+                            <reference value="PlanDefinition/plandefinition-mnf-process-pq-ex1"/>
+                        </valueReference>
+                    </extension-->
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq">
+            <!--                <extension url="http://accumulus.org/fhir/extension/batchDesignation">-->
+            <valueCodeableConcept>
+                <coding>
+                    <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
+                    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
+                    <code value="maximum"/>
+                    <display value="Maximum"/>
+                </coding>
+                <text value="Maximum"/>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq">
+            <!--                <extension url="http://accumulus.org/fhir/extension/batchNumberOfVials">-->
+            <valuePositiveInt value="3"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq">
+            <!--                <extension url="http://accumulus.org/fhir/extension/batchSubstanceBatch">-->
+            <valueReference>
+                <reference value="Substance/substance-drug-pq-ex1"/>
+                <!--                    <reference value="Substance/actual-batch-substance"/>-->
+            </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
+                        <valueDateTime value="2020-08"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
+            <!--                <extension url="http://accumulus.org/fhir/extension/packagingSite">-->
+            <valueReference>
+                <reference value="Organization/organization-drug-pq-ex1"/>
+            </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+            <valueQuantity>
+                <!-- #160 -->
+                <value value="4.81"/>
+                <unit value="kg"/>
+            </valueQuantity>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq">
+            <valueQuantity>
+                <value value="4.91"/>
+                <unit value="kg"/>
+            </valueQuantity>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq">
+            <valueQuantity>
+                <value value="30"/>
+                <unit value="g"/>
+            </valueQuantity>
         </extension>
         <!-- #153 -->
         <lotNumber value="33445"/>

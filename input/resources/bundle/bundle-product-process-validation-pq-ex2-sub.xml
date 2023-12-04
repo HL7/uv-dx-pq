@@ -1285,12 +1285,12 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
-                  <valueReference>
-							<!--Substance/actual-batch-substance-starting-1-->
-                     <reference value="Substance/fc178762-81c5-5656-9744-13c7ad1e595b"/>
-                  </valueReference>
-               </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+               <valueReference>
+                  <!--Substance/actual-batch-substance-starting-1-->
+                  <reference value="Substance/fc178762-81c5-5656-9744-13c7ad1e595b"/>
+               </valueReference>
             </extension>
             <identifier>
                <value value="Intermed1Amgen"/>
@@ -1321,12 +1321,12 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
-                  <valueReference>
-							<!--Substance/actual-batch-substance-starting-2-->
-                     <reference value="Substance/fc178762-81d5-5656-9744-13c7ad1e595b"/>
-                  </valueReference>
-               </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+               <valueReference>
+                  <!--Substance/actual-batch-substance-starting-2-->
+                  <reference value="Substance/fc178762-81d5-5656-9744-13c7ad1e595b"/>
+               </valueReference>
             </extension>
             <identifier>
                <value value="Intermed2Amgen"/>
@@ -1357,12 +1357,12 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
-                  <valueReference>
-                            <!--Substance/actual-batch-substance-starting-3-->
-                     <reference value="Substance/fc178762-81d5-5656-9744-23c7ad1e595b"/>
-                  </valueReference>
-               </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+               <valueReference>
+                         <!--Substance/actual-batch-substance-starting-3-->
+                  <reference value="Substance/fc178762-81d5-5656-9744-23c7ad1e595b"/>
+               </valueReference>
             </extension>
             <identifier>
                <value value="Intermed3Amgen"/>
@@ -1524,12 +1524,12 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
-                  <valueReference>
-                            <!--Substance/actual-batch-substance-starting-step2-1-->
-                     <reference value="Substance/fc178762-81c5-5656-9744-13c7ad2e595b"/>
-                  </valueReference>
-               </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+               <valueReference>
+                         <!--Substance/actual-batch-substance-starting-step2-1-->
+                  <reference value="Substance/fc178762-81c5-5656-9744-13c7ad2e595b"/>
+               </valueReference>
             </extension>
             <identifier>
                <value value="Intermed1Step2Amgen"/>
@@ -1560,12 +1560,12 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
-                  <valueReference>
-                            <!--Substance/actual-batch-substance-starting-step2-2-->
-                     <reference value="Substance/fc178762-81d5-5656-9744-13c7ad1e596b"/>
-                  </valueReference>
-               </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+               <valueReference>
+                         <!--Substance/actual-batch-substance-starting-step2-2-->
+                  <reference value="Substance/fc178762-81d5-5656-9744-13c7ad1e596b"/>
+               </valueReference>
             </extension>
             <identifier>
                <value value="Intermed2Step2Amgen"/>
@@ -1596,12 +1596,12 @@
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
-                  <valueReference>
-                            <!--Substance/actual-batch-substance-starting-step2-3-->
-                     <reference value="Substance/fc178762-81d5-5656-9744-23c7ad1e597b"/>
-                  </valueReference>
-               </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"><!-- assumes 1 to 1, could also be done via a Procedure but overkill -->
+               <valueReference>
+                         <!--Substance/actual-batch-substance-starting-step2-3-->
+                  <reference value="Substance/fc178762-81d5-5656-9744-23c7ad1e597b"/>
+               </valueReference>
             </extension>
             <identifier>
                <value value="Intermed3Step2Amgen"/>
@@ -1668,24 +1668,12 @@
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
             </meta>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                  <valueDateTime value="2019-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
-                  <valueDateTime value="2022-09-08"/>
-               </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
                </extension>
                <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5.1"/>
-                     <unit value="kg"/>
-                  </valueQuantity>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                  <valueQuantity>
-                     <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
@@ -1704,6 +1692,18 @@
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
             </extension>
             <identifier>
                <value value="SUB1Amgen"/>
@@ -1732,24 +1732,12 @@
                 <!--actual-batch-substance-2-unlinked-->
             <id value="cb31d747-2338-88d5-342c-8e9c097e4dad"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                  <valueDateTime value="2019-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
-                  <valueDateTime value="2022-09-08"/>
-               </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
                </extension>
                <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5.2"/>
-                     <unit value="kg"/>
-                  </valueQuantity>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                  <valueQuantity>
-                     <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
@@ -1768,6 +1756,18 @@
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
             </extension>
             <identifier>
                <value value="SUB2Amgen"/>
@@ -1796,24 +1796,12 @@
                 <!--actual-batch-substance-3-unlinked-->
             <id value="1551f97b-6f6d-825e-1fb3-44b0b090808c"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                  <valueDateTime value="2019-09-08"/>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
-                  <valueDateTime value="2022-09-08"/>
-               </extension>
                <extension url="manufacturingDate">
                   <valueDateTime value="2019-09-07"/>
                </extension>
                <extension url="batchQuantity">
                   <valueQuantity>
                      <value value="5.3"/>
-                     <unit value="kg"/>
-                  </valueQuantity>
-               </extension>
-               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                  <valueQuantity>
-                     <value value="4.8"/>
                      <unit value="kg"/>
                   </valueQuantity>
                </extension>
@@ -1832,6 +1820,18 @@
                      <reference value="Organization/49d2f0c0-4b28-9271-8aaf-2996a8b9739c"/>
                   </valueReference>
                </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
             </extension>
             <identifier>
                <value value="SUB3Amgen"/>

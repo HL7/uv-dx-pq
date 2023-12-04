@@ -6,14 +6,6 @@
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
-        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-            <valueDateTime value="2019-09-08"/>
-            <!-- #173 -->
-        </extension>
-        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
-            <valueDateTime value="2022-09-08"/>
-            <!-- #221 -->
-        </extension>
         <extension url="manufacturingDate">
             <valueDateTime value="2019-09-07"/>
             <!-- #159 -->
@@ -24,12 +16,6 @@
                 <value value="5"/>
                 <unit value="kg"/>
                 <!-- #158 -->
-            </valueQuantity>
-        </extension>
-        <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-            <valueQuantity>
-                <value value="4.8"/>
-                <unit value="kg"/>
             </valueQuantity>
         </extension>
         <extension url="batchUtilization">
@@ -50,6 +36,20 @@
                 <reference value="Organization/organization-drug-pq-ex1"/>
             </valueReference>
         </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+        <valueDateTime value="2019-09-08"/>
+        <!-- #173 -->
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+        <valueDateTime value="2022-09-08"/>
+        <!-- #221 -->
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+        <valueQuantity>
+            <value value="4.8"/>
+            <unit value="kg"/>
+        </valueQuantity>
     </extension>
     <identifier>
                     <value value="CAT1"/> 			        
