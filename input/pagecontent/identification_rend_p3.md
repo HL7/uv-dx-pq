@@ -33,15 +33,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -155,7 +155,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
@@ -189,7 +189,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
                             <code value=&quot;Mineral&quot;/>
-                            <display value=&quot;Mineral&quot;/>
+                            <display value=&quot;mineral&quot;/>
                             <!-- to mean &quot;non-biological&quot; -->
                         </coding>
                     </type>
@@ -218,7 +218,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
@@ -256,16 +256,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </type>
                     <species>
                         <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000019&quot;/>
-                            <code value=&quot;200000000249&quot;/>
-                            <display value=&quot;Goat&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-source-material-part&quot;/>
+                            <code value=&quot;Animal&quot;/>
+                            <display value=&quot;animal&quot;/>
                         </coding>
                     </species>
                     <part>
                         <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072054&quot;/>
-                            <code value=&quot;100000111138&quot;/>
-                            <display value=&quot;Plasma&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
+                            <code value=&quot;Animal&quot;/>
+                            <display value=&quot;animal&quot;/>
                         </coding>
                     </part>
                     <countryOfOrigin>
@@ -301,15 +301,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -412,8 +412,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 ...
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>">Route of Administration: </span><span title="
 <Bundle>
@@ -422,9 +422,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
-                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [20053000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -433,8 +433,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 ...
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>">Dose Form (combination of all parts): </span><span title="
 <Bundle>
@@ -443,9 +443,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
-                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [10225000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div>
 <div class="summaryHiddenOff">
 <div class="indent mpdl2"><span title="
 <Bundle>
@@ -595,6 +595,107 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <unit value=&quot;mg/mL&quot;/>">23 mg/mL</span></span></div>
 </div>
 </div>
+</div><br style="line-height:6px;"><div class="htmlTableRemove">
+<div class="indent org"><b>Excipients</b><div class="indent-no-border"><br style="line-height:6px;"><span>Novel Excipients</span><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+<tr>
+<th>Excipient</th>
+<th>Biological Source</th>
+<th>Country of Origin</th>
+<th>Manufacturer</th>
+<th>Suitability for Use</th>
+</tr>
+<tr>
+<td><a href="#SubstanceDefinition-pg" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Pegylated glucose&quot;>">Pegylated glucose</a></td>
+<td><a href="#SubstanceDefinition-pg" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <sourceMaterial>
+                    <type>
+                        <coding>
+                            <display value=&quot;mineral&quot;>">mineral</a></td>
+<td><a href="#SubstanceDefinition-pg" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <sourceMaterial>
+                    <countryOfOrigin>
+                        <coding>
+                            <display value=&quot;United Kingdom&quot;>">United Kingdom</a></td>
+<td><a href="#Organization-manufacturerPG" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <name value=&quot;Modified Sugar, Inc.&quot;>">Modified Sugar, Inc.</a></td>
+<td><a href="#Ingredient-ingredient1" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
+                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;>">Excipient has been certified for use in human medicinal products</a></td>
+</tr>
+</table><br style="line-height:6px;"></div>
+<div class="indent-no-border"><br style="line-height:6px;"><span>Excipients of Human or Animal Origin</span><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+<tr>
+<th>Excipient</th>
+<th>Biological Source</th>
+<th>Country of Origin</th>
+<th>Manufacturer</th>
+<th>Suitability for Use</th>
+</tr>
+<tr></tr>
+<tr>
+<td><a href="#SubstanceDefinition-dga" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Deactivated goat albumin&quot;>">Deactivated goat albumin</a></td>
+<td><a href="#SubstanceDefinition-dga" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <sourceMaterial>
+                    <type>
+                        <coding>
+                            <display value=&quot;animal&quot;>">animal</a></td>
+<td><a href="#SubstanceDefinition-dga" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <sourceMaterial>
+                    <countryOfOrigin>
+                        <coding>
+                            <display value=&quot;United States of America&quot;>">United States of America</a></td>
+<td><a href="#Organization-manufacturerDGA" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <name value=&quot;Plasma Source, Inc.&quot;>">Plasma Source, Inc.</a></td>
+<td><a href="#Ingredient-ingredient2" class="plainlink" title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
+                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;>">Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.</a></td>
+</tr>
+</table><br style="line-height:6px;"></div>
+</div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient1)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b)
@@ -616,7 +717,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
@@ -639,9 +740,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient1</div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient1</div>
 <div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b</div>
 <div class="debugOff"><span title="
 <Bundle>
@@ -658,7 +759,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 ...
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>">Role: </span><span title="
@@ -668,9 +769,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div>
 </div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
@@ -715,7 +816,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
                             <code value=&quot;Mineral&quot;/>
-                            <display value=&quot;Mineral&quot;/>
+                            <display value=&quot;mineral&quot;/>
                             <!-- to mean &quot;non-biological&quot; -->
                         </coding>
                     </type>
@@ -755,7 +856,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
                             <code value=&quot;Mineral&quot;/>
-                            <display value=&quot;Mineral&quot;/>
+                            <display value=&quot;mineral&quot;/>
                             <!-- to mean &quot;non-biological&quot; -->
                         </coding>">Type: </span><span><span title="
 <Bundle>
@@ -767,8 +868,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
                             <code value=&quot;Mineral&quot;/>
-                            <display value=&quot;Mineral&quot;/>
-                            <!-- to mean &quot;non-biological&quot; -->">Mineral<span class="greyOff"> [Mineral]</span><span class="greyOff"> (http://hl7.org/fhir/substance-source-material-type)</span></span></span></div>
+                            <display value=&quot;mineral&quot;/>
+                            <!-- to mean &quot;non-biological&quot; -->">mineral<span class="greyOff"> [Mineral]</span><span class="greyOff"> (http://hl7.org/fhir/substance-source-material-type)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -935,7 +1036,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </for>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>
@@ -958,9 +1059,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient2</div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></span><div class="summaryHiddenOff"><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/ingredient.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/ingredient.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/ingredient.html#tt-uml">R6</a>]</span><div class="debugOff">id: ingredient2</div>
 <div class="debugOff"> fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b</div>
 <div class="debugOff"><span title="
 <Bundle>
@@ -977,7 +1078,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 ...
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
                         <display value=&quot;Excipient&quot;/>
                     </coding>">Role: </span><span title="
@@ -987,9 +1088,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 <role>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/ingredient-role&quot;/>
                         <code value=&quot;100000072082&quot;/>
-                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072050)</span></span></div>
+                        <display value=&quot;Excipient&quot;/>">Excipient<span class="greyOff"> [100000072082]</span><span class="greyOff"> (http://hl7.org/fhir/ingredient-role)</span></span></div>
 </div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
@@ -1031,16 +1132,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </type>
                     <species>
                         <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000019&quot;/>
-                            <code value=&quot;200000000249&quot;/>
-                            <display value=&quot;Goat&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-source-material-part&quot;/>
+                            <code value=&quot;Animal&quot;/>
+                            <display value=&quot;animal&quot;/>
                         </coding>
                     </species>
                     <part>
                         <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072054&quot;/>
-                            <code value=&quot;100000111138&quot;/>
-                            <display value=&quot;Plasma&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
+                            <code value=&quot;Animal&quot;/>
+                            <display value=&quot;animal&quot;/>
                         </coding>
                     </part>
                     <countryOfOrigin>
@@ -1100,9 +1201,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     ...
                     <species>
                         <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000019&quot;/>
-                            <code value=&quot;200000000249&quot;/>
-                            <display value=&quot;Goat&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-source-material-part&quot;/>
+                            <code value=&quot;Animal&quot;/>
+                            <display value=&quot;animal&quot;/>
                         </coding>">Species: </span><span><span title="
 <Bundle>
     <entry>
@@ -1111,9 +1212,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <sourceMaterial>
                     <species>
                         <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000019&quot;/>
-                            <code value=&quot;200000000249&quot;/>
-                            <display value=&quot;Goat&quot;/>">Goat<span class="greyOff"> [200000000249]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000019)</span></span></span></div>
+                            <system value=&quot;http://hl7.org/fhir/substance-source-material-part&quot;/>
+                            <code value=&quot;Animal&quot;/>
+                            <display value=&quot;animal&quot;/>">animal<span class="greyOff"> [Animal]</span><span class="greyOff"> (http://hl7.org/fhir/substance-source-material-part)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1123,9 +1224,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     ...
                     <part>
                         <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072054&quot;/>
-                            <code value=&quot;100000111138&quot;/>
-                            <display value=&quot;Plasma&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
+                            <code value=&quot;Animal&quot;/>
+                            <display value=&quot;animal&quot;/>
                         </coding>">Part: </span><span><span title="
 <Bundle>
     <entry>
@@ -1134,9 +1235,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <sourceMaterial>
                     <part>
                         <coding>
-                            <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000072054&quot;/>
-                            <code value=&quot;100000111138&quot;/>
-                            <display value=&quot;Plasma&quot;/>">Plasma<span class="greyOff"> [100000111138]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000072054)</span></span></span></div>
+                            <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
+                            <code value=&quot;Animal&quot;/>
+                            <display value=&quot;animal&quot;/>">animal<span class="greyOff"> [Animal]</span><span class="greyOff"> (http://hl7.org/fhir/substance-source-material-type)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
