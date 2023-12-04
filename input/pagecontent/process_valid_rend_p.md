@@ -1352,53 +1352,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
-                            </valueReference>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
-                            </valueReference>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.81&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.91&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
-                            </valueQuantity>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
@@ -1429,6 +1382,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             </extension>
                         </extension>
                     </extension>
+                    <!-- local extensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.81&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.91&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
+                    </extension>
                     <lotNumber value=&quot;33445&quot;/>
                 </batch>
             </Medication>
@@ -1449,60 +1450,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;4&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
-                            </valueReference>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100050&quot;/>
                                 <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.82&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.92&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
@@ -1525,6 +1479,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                 <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
                             </extension>
                         </extension>
+                    </extension>
+                    <!-- local extensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;4&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/packaging&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.82&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.92&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
                     </extension>
                     <lotNumber value=&quot;33446&quot;/>
                 </batch>
@@ -1546,60 +1548,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
-                            </valueReference>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100125&quot;/>
                                 <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.83&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.93&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
@@ -1622,6 +1577,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                 <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
                             </extension>
                         </extension>
+                    </extension>
+                    <!-- local exensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/packaging&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.83&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.93&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
                     </extension>
                     <lotNumber value=&quot;33447&quot;/>
                 </batch>
@@ -4091,24 +4094,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -4126,6 +4117,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
                         </valueReference>
                     </extension>
+                </extension>
+                <!-- local extensions -->
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>
+                    </valueQuantity>
                 </extension>
                 <identifier>
                     <value value=&quot;CAT1&quot;/>
@@ -4145,24 +4149,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Substance>
                 <id value=&quot;actual-batch-substance-2&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -4180,6 +4172,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
                         </valueReference>
                     </extension>
+                </extension>
+                <!-- local extensions -->
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>
+                    </valueQuantity>
                 </extension>
                 <identifier>
                     <value value=&quot;CAT2&quot;/>
@@ -4199,24 +4204,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <Substance>
                 <id value=&quot;actual-batch-substance-3&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -4234,6 +4227,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
                         </valueReference>
                     </extension>
+                </extension>
+                <!-- local extensions -->
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>
+                    </valueQuantity>
                 </extension>
                 <identifier>
                     <value value=&quot;CAT3&quot;/>
@@ -23500,53 +23506,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
-                            </valueReference>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
-                            </valueReference>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.81&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.91&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
-                            </valueQuantity>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
@@ -23576,6 +23535,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                                 <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
                             </extension>
                         </extension>
+                    </extension>
+                    <!-- local extensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.81&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.91&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
                     </extension>
                     <lotNumber value=&quot;33445&quot;/>
                 </batch>" id="Medication-medication-batch-information-drug-pq-ex1">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-batch-information-drug-pq-ex1</div>
@@ -23607,53 +23614,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                 ...
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
-                            </valueReference>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
-                            </valueReference>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.81&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.91&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
-                            </valueQuantity>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
@@ -23684,6 +23644,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
                             </extension>
                         </extension>
                     </extension>
+                    <!-- local extensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.81&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.91&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
+                    </extension>
                     <lotNumber value=&quot;33445&quot;/>">Batch</span><div><span title="
 <Bundle>
     <entry>
@@ -23700,53 +23708,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
             <Medication>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
-                            </valueReference>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
-                            </valueReference>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.81&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.91&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
-                            </valueQuantity>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
@@ -23798,34 +23759,30 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -23853,80 +23810,72 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.81&quot;/>
-                                <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.81&quot;/>
+                            <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.81&quot;/>
-                                <unit value=&quot;kg&quot;/>">4.81 kg</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.81&quot;/>
+                            <unit value=&quot;kg&quot;/>">4.81 kg</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.91&quot;/>
-                                <unit value=&quot;kg&quot;/>">Actual Yield Unfiltered: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.91&quot;/>
+                            <unit value=&quot;kg&quot;/>">Actual Yield Unfiltered: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.91&quot;/>
-                                <unit value=&quot;kg&quot;/>">4.91 kg</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.91&quot;/>
+                            <unit value=&quot;kg&quot;/>">4.91 kg</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>">Target Fill Weight: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>">Target Fill Weight: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>">30 g</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>">30 g</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;>">Number of Vials: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;>">Number of Vials: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;>">3</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;>">3</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -23962,29 +23911,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-bat
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>">Designation: </span><span title="
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>">Designation: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
 <div class="indent medl4"><span title="
 <Bundle>
     <entry>
@@ -24135,18 +24082,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <contact>
                     <address>
                         ...
-                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span><div></div><span><span title="
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div>
+<div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
-                            </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-batch-information-drug-pq-ex1 fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-batch-information-drug-pq-ex1 fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-drug-pq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-drug-pq-ex1 fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2 fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3 fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-drug-pq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
+                        </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-batch-information-drug-pq-ex1 fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-batch-information-drug-pq-ex1 fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-drug-pq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-drug-pq-ex1 fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-2 fullUrl: urn:uuid:cb31d747-2338-88d5-342c-8e9c097e4dad)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: actual-batch-substance-3 fullUrl: urn:uuid:1551f97b-6f6d-825e-1fb3-44b0b090808c)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-drug-pq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
@@ -24269,13 +24216,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
-                            </valueReference>">Substance Batch</span>: CAT1 (<a href="#Substance-substance-drug-pq-ex1" title="click to see target - id=substance-drug-pq-ex1">Substance</a>)<span class="debugOff"> id: substance-drug-pq-ex1</span></span></div>
-</div>
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/substance-drug-pq-ex1&quot;/>
+                        </valueReference>">Substance Batch</span>: CAT1 (<a href="#Substance-substance-drug-pq-ex1" title="click to see target - id=substance-drug-pq-ex1">Substance</a>)<span class="debugOff"> id: substance-drug-pq-ex1</span></span></div>
 </div>
 </div>
 </div>
@@ -24309,60 +24254,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;4&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
-                            </valueReference>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100050&quot;/>
                                 <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.82&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.92&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
@@ -24385,6 +24283,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                                 <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
                             </extension>
                         </extension>
+                    </extension>
+                    <!-- local extensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;4&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/packaging&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.82&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.92&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
                     </extension>
                     <lotNumber value=&quot;33446&quot;/>
                 </batch>" id="Medication-medication-actual-batch-2">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch-2</div>
@@ -24407,60 +24353,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 ...
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;4&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
-                            </valueReference>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100050&quot;/>
                                 <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.82&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.92&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
@@ -24484,6 +24383,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             </extension>
                         </extension>
                     </extension>
+                    <!-- local extensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;4&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/packaging&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.82&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.92&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
+                    </extension>
                     <lotNumber value=&quot;33446&quot;/>">Batch</span><div><span title="
 <Bundle>
     <entry>
@@ -24500,60 +24447,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Medication>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;4&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
-                            </valueReference>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100050&quot;/>
                                 <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.82&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.92&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
@@ -24598,34 +24498,30 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -24653,80 +24549,72 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.82&quot;/>
-                                <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.82&quot;/>
+                            <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.82&quot;/>
-                                <unit value=&quot;kg&quot;/>">4.82 kg</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.82&quot;/>
+                            <unit value=&quot;kg&quot;/>">4.82 kg</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.92&quot;/>
-                                <unit value=&quot;kg&quot;/>">Actual Yield Unfiltered: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.92&quot;/>
+                            <unit value=&quot;kg&quot;/>">Actual Yield Unfiltered: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.92&quot;/>
-                                <unit value=&quot;kg&quot;/>">4.92 kg</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.92&quot;/>
+                            <unit value=&quot;kg&quot;/>">4.92 kg</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>">Target Fill Weight: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>">Target Fill Weight: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>">30 g</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>">30 g</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;4&quot;>">Number of Vials: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;4&quot;>">Number of Vials: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;4&quot;>">4</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;4&quot;>">4</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -24762,29 +24650,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>">Designation: </span><span title="
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>">Designation: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
 <div class="indent medl4"><span title="
 <Bundle>
     <entry>
@@ -24915,18 +24801,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <contact>
                     <address>
                         ...
-                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span><div></div><span><span title="
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div>
+<div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: packaging)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07)
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/packaging&quot;/>
+                        </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: packaging)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07)
 
 <Bundle>
     <entry>
@@ -24945,13 +24831,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
-                            </valueReference>">Substance Batch</span>: CAT2 (<a href="#Substance-actual-batch-substance-2" title="click to see target - id=actual-batch-substance-2">Substance</a>)<span class="debugOff"> id: actual-batch-substance-2</span></span></div>
-</div>
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/actual-batch-substance-2&quot;/>
+                        </valueReference>">Substance Batch</span>: CAT2 (<a href="#Substance-actual-batch-substance-2" title="click to see target - id=actual-batch-substance-2">Substance</a>)<span class="debugOff"> id: actual-batch-substance-2</span></span></div>
 </div>
 </div>
 </div>
@@ -24985,60 +24869,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
-                            </valueReference>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100125&quot;/>
                                 <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.83&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.93&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
@@ -25061,6 +24898,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                                 <valueString value=&quot;100 cc HDPE Bottle 2 g desiccant&quot;/>
                             </extension>
                         </extension>
+                    </extension>
+                    <!-- local exensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/packaging&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.83&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.93&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
                     </extension>
                     <lotNumber value=&quot;33447&quot;/>
                 </batch>" id="Medication-medication-actual-batch-3">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch-3</div>
@@ -25083,60 +24968,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 ...
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
-                            </valueReference>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100125&quot;/>
                                 <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.83&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.93&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
@@ -25160,6 +24998,54 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             </extension>
                         </extension>
                     </extension>
+                    <!-- local exensions -->
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;/>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/packaging&quot;/>
+                        </valueReference>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.83&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.93&quot;/>
+                            <unit value=&quot;kg&quot;/>
+                        </valueQuantity>
+                    </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>
+                        </valueQuantity>
+                    </extension>
                     <lotNumber value=&quot;33447&quot;/>">Batch</span><div><span title="
 <Bundle>
     <entry>
@@ -25176,60 +25062,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Medication>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
-                            </valueReference>
-                        </extension>
                         <extension url=&quot;manufacturingDate&quot;>
                             <valueDateTime value=&quot;2020-06&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;/>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;100125&quot;/>
                                 <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.83&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.93&quot;/>
-                                <unit value=&quot;kg&quot;/>
-                            </valueQuantity>
-                        </extension>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
@@ -25274,34 +25113,30 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                            <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                        <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;>">Packaging Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
-                            <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq&quot;>
+                        <valueDateTime value=&quot;2020-08&quot;>">2020-08</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -25329,80 +25164,72 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.83&quot;/>
-                                <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.83&quot;/>
+                            <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.83&quot;/>
-                                <unit value=&quot;kg&quot;/>">4.83 kg</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.83&quot;/>
+                            <unit value=&quot;kg&quot;/>">4.83 kg</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.93&quot;/>
-                                <unit value=&quot;kg&quot;/>">Actual Yield Unfiltered: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.93&quot;/>
+                            <unit value=&quot;kg&quot;/>">Actual Yield Unfiltered: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;4.93&quot;/>
-                                <unit value=&quot;kg&quot;/>">4.93 kg</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;4.93&quot;/>
+                            <unit value=&quot;kg&quot;/>">4.93 kg</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>">Target Fill Weight: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>">Target Fill Weight: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
-                            <valueQuantity>
-                                <value value=&quot;30&quot;/>
-                                <unit value=&quot;g&quot;/>">30 g</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;30&quot;/>
+                            <unit value=&quot;g&quot;/>">30 g</span></div>
 <div><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;>">Number of Vials: </span><span title="
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;>">Number of Vials: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
-                            <valuePositiveInt value=&quot;3&quot;>">3</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq&quot;>
+                        <valuePositiveInt value=&quot;3&quot;>">3</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -25438,29 +25265,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>
-                                </coding>
-                                <text value=&quot;Maximum&quot;/>
-                            </valueCodeableConcept>">Designation: </span><span title="
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>
+                            </coding>
+                            <text value=&quot;Maximum&quot;/>
+                        </valueCodeableConcept>">Designation: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
-                                    <code value=&quot;maximum&quot;/>
-                                    <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq&quot;>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq&quot;/>
+                                <code value=&quot;maximum&quot;/>
+                                <display value=&quot;Maximum&quot;/>">Maximum<span class="greyOff"> [maximum]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq)</span></span><span style="white-space:normal;"> - Text: Maximum</span></div>
 <div class="indent medl4"><span title="
 <Bundle>
     <entry>
@@ -25591,18 +25416,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                 <contact>
                     <address>
                         ...
-                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span><div></div><span><span title="
+                        <country value=&quot;USA&quot;>">USA</span></div></div></div></div></span></div>
+<div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Organization/packaging&quot;/>
-                            </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: packaging)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07)
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Organization/packaging&quot;/>
+                        </valueReference>">Packager</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: packaging)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b07)
 
 <Bundle>
     <entry>
@@ -25621,13 +25446,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        ...
-                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
-                            <valueReference>
-                                <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
-                            </valueReference>">Substance Batch</span>: CAT3 (<a href="#Substance-actual-batch-substance-3" title="click to see target - id=actual-batch-substance-3">Substance</a>)<span class="debugOff"> id: actual-batch-substance-3</span></span></div>
-</div>
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq&quot;>
+                        <valueReference>
+                            <reference value=&quot;Substance/actual-batch-substance-3&quot;/>
+                        </valueReference>">Substance Batch</span>: CAT3 (<a href="#Substance-actual-batch-substance-3" title="click to see target - id=actual-batch-substance-3">Substance</a>)<span class="debugOff"> id: actual-batch-substance-3</span></span></div>
 </div>
 </div>
 </div>
@@ -25990,24 +25813,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq&quot;/>
                 </meta>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -26025,6 +25836,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                             <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
                         </valueReference>
                     </extension>
+                </extension>
+                <!-- local extensions -->
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>
+                    </valueQuantity>
                 </extension>
                 <identifier>
                     <value value=&quot;CAT1&quot;/>
@@ -26076,24 +25900,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -26129,30 +25941,26 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -26175,20 +25983,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -26348,24 +26154,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Substance>
                 <id value=&quot;actual-batch-substance-2&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -26383,6 +26177,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
                         </valueReference>
                     </extension>
+                </extension>
+                <!-- local extensions -->
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>
+                    </valueQuantity>
                 </extension>
                 <identifier>
                     <value value=&quot;CAT2&quot;/>
@@ -26428,24 +26235,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -26481,30 +26276,26 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -26527,20 +26318,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -26700,24 +26489,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Substance>
                 <id value=&quot;actual-batch-substance-3&quot;/>
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -26735,6 +26512,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <reference value=&quot;Organization/organization-drug-pq-ex1&quot;/>
                         </valueReference>
                     </extension>
+                </extension>
+                <!-- local extensions -->
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;/>
+                </extension>
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>
+                    </valueQuantity>
                 </extension>
                 <identifier>
                     <value value=&quot;CAT3&quot;/>
@@ -26780,24 +26570,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
             <Substance>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;/>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;/>
-                    </extension>
                     <extension url=&quot;manufacturingDate&quot;>
                         <valueDateTime value=&quot;2019-09-07&quot;/>
                     </extension>
                     <extension url=&quot;batchQuantity&quot;>
                         <valueQuantity>
                             <value value=&quot;5&quot;/>
-                            <unit value=&quot;kg&quot;/>
-                        </valueQuantity>
-                    </extension>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
                             <unit value=&quot;kg&quot;/>
                         </valueQuantity>
                     </extension>
@@ -26833,30 +26611,26 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;>">Release Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
-                        <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq&quot;>
+                    <valueDateTime value=&quot;2019-09-08&quot;>">2019-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;>">Retest Date: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
-                        <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq&quot;>
+                    <valueDateTime value=&quot;2022-09-08&quot;>">2022-09-08</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -26879,20 +26653,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>">Actual Yield: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <Substance>
-                <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
-                        <valueQuantity>
-                            <value value=&quot;4.8&quot;/>
-                            <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq&quot;>
+                    <valueQuantity>
+                        <value value=&quot;4.8&quot;/>
+                        <unit value=&quot;kg&quot;/>">4.8 kg</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>

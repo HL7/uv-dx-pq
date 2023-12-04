@@ -16,7 +16,7 @@ Details about drug product master batch properties and formula.
 
 ### Examples
 **CTD section samples** (PDF):
-- 3.2.P.3 Manufacture</li>
+- 3.2.P.3 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.2_Batch_Formula.pdf ">3.2.P.3.2 Batch Formula</a>
 
 **XML and JSON examples** of synthetic CTD data:

@@ -51,6 +51,7 @@ Details about drug substance or drug product release and stability specification
 **XML and JSON examples** of synthetic CTD data:
 - <a href="Bundle-bundle-drug-substance-specification-pq-ex1.xml.html">Substance Specification example XML</a>
 - <a href="Bundle-bundle-drug-substance-specification-pq-ex1.json.html">Substance Specification example JSON</a>
+
 **HTML presentation example** of synthetic CTD data:
 - <a href="drug_specification_rend_s.html">Substance Specification</a>
 
