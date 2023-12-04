@@ -33,15 +33,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -84,7 +84,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                     <value value=&quot;28&quot;/>
                     <unit value=&quot;tablets&quot;/>
                 </containedItemQuantity>
-                <!-- #174 -->
                 <description value=&quot;The container closure system consists of a bottle and closure.  The bottle is manufactured from white high-density polyethylene (HDPE). The 2-piece child-resistant closure is manufactured from polypropylene (PP) and contains a multi-layer aluminum foil seal liner for tamper evidence.  The bottle and closure provide an adequate barrier to moisture and light, which protect the drug product.  The container closure system has demonstrated suitability for storage of the drug product based on stability studies shown in 3.2.P.8.3.      The HDPE bottle has demonstrated compliance with USP <661> Plastic Packaging Systems and Their Materials of Construction and PhEur 3.1.3 Polyolefins.  The product contacting aluminum foil seal liner has demonstrated compliance with USP <661>. The vendor has confirmed compliance with 21 CFR 175.300, in addition to compliance with limitation of heavy metals per EU 94/62/EC, Article 11. The container closure system has demonstrated child resistance in compliance with 16 CFR 1700. Detailed information pertaining to the bottle and closure is described in 3.2.P.7.&quot;/>
                 <packaging>
                     <type>
@@ -95,7 +94,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                         </coding>
                     </type>
                     <material>
-                        <!-- #178 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003215&quot;/>
@@ -165,7 +163,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                         <material>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                <!-- TODO use EMA ones -->
                                 <code value=&quot;200000003219&quot;/>
                                 <display value=&quot;PolyPropylene&quot;/>
                             </coding>
@@ -306,7 +303,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                         </type>
                         <quantity value=&quot;2&quot;/>
                         <material>
-                            <!-- #178 -->
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                                 <code value=&quot;200000003222&quot;/>
@@ -401,7 +397,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                             <material>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                    <!-- TODO use EMA ones -->
                                     <code value=&quot;200000003200&quot;/>
                                     <display value=&quot;Aluminium&quot;/>
                                 </coding>
@@ -483,15 +478,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -596,8 +591,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 ...
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>">Route of Administration: </span><span title="
 <Bundle>
@@ -606,9 +601,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
             <MedicinalProductDefinition>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
-                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [20053000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -617,8 +612,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
                 ...
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>">Dose Form (combination of all parts): </span><span title="
 <Bundle>
@@ -627,9 +622,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-contain
             <MedicinalProductDefinition>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
-                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [10225000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="indent ppd summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this PackagedProductDefinition resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via PackagedProductDefinition.packageFor">↸</sup><span class="debugOff">arrow indicates that this PackagedProductDefinition resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via PackagedProductDefinition.packageFor<br></span><span class="bold" title="PackagedProductDefinition (id: packagedproductdefinition-dxpq-ex1)(fullUrl: urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923)
@@ -650,7 +645,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                     <value value=&quot;28&quot;/>
                     <unit value=&quot;tablets&quot;/>
                 </containedItemQuantity>
-                <!-- #174 -->
                 <description value=&quot;The container closure system consists of a bottle and closure.  The bottle is manufactured from white high-density polyethylene (HDPE). The 2-piece child-resistant closure is manufactured from polypropylene (PP) and contains a multi-layer aluminum foil seal liner for tamper evidence.  The bottle and closure provide an adequate barrier to moisture and light, which protect the drug product.  The container closure system has demonstrated suitability for storage of the drug product based on stability studies shown in 3.2.P.8.3.      The HDPE bottle has demonstrated compliance with USP <661> Plastic Packaging Systems and Their Materials of Construction and PhEur 3.1.3 Polyolefins.  The product contacting aluminum foil seal liner has demonstrated compliance with USP <661>. The vendor has confirmed compliance with 21 CFR 175.300, in addition to compliance with limitation of heavy metals per EU 94/62/EC, Article 11. The container closure system has demonstrated child resistance in compliance with 16 CFR 1700. Detailed information pertaining to the bottle and closure is described in 3.2.P.7.&quot;/>
                 <packaging>
                     <type>
@@ -661,7 +655,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         </coding>
                     </type>
                     <material>
-                        <!-- #178 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003215&quot;/>
@@ -731,7 +724,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <material>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                <!-- TODO use EMA ones -->
                                 <code value=&quot;200000003219&quot;/>
                                 <display value=&quot;PolyPropylene&quot;/>
                             </coding>
@@ -853,7 +845,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         </coding>
                     </type>
                     <material>
-                        <!-- #178 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003215&quot;/>
@@ -923,7 +914,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <material>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                <!-- TODO use EMA ones -->
                                 <code value=&quot;200000003219&quot;/>
                                 <display value=&quot;PolyPropylene&quot;/>
                             </coding>
@@ -1034,7 +1024,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <packaging>
                     ...
                     <material>
-                        <!-- #178 -->
                         <coding>
                             <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                             <code value=&quot;200000003215&quot;/>
@@ -1306,7 +1295,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <material>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                <!-- TODO use EMA ones -->
                                 <code value=&quot;200000003219&quot;/>
                                 <display value=&quot;PolyPropylene&quot;/>
                             </coding>
@@ -1431,7 +1419,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <material>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                <!-- TODO use EMA ones -->
                                 <code value=&quot;200000003219&quot;/>
                                 <display value=&quot;PolyPropylene&quot;/>
                             </coding>">Material: </span><span title="
@@ -1444,7 +1431,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <material>
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                <!-- TODO use EMA ones -->
                                 <code value=&quot;200000003219&quot;/>
                                 <display value=&quot;PolyPropylene&quot;/>">PolyPropylene<span class="greyOff"> [200000003219]</span><span class="greyOff"> (http://hl7.org/fhir/package-material)</span></span></div>
 <div class="summaryHiddenOff">
@@ -1896,7 +1882,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         </type>
                         <quantity value=&quot;2&quot;/>
                         <material>
-                            <!-- #178 -->
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                                 <code value=&quot;200000003222&quot;/>
@@ -1991,7 +1976,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <material>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                    <!-- TODO use EMA ones -->
                                     <code value=&quot;200000003200&quot;/>
                                     <display value=&quot;Aluminium&quot;/>
                                 </coding>
@@ -2138,7 +2122,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         </type>
                         <quantity value=&quot;2&quot;/>
                         <material>
-                            <!-- #178 -->
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                                 <code value=&quot;200000003222&quot;/>
@@ -2233,7 +2216,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <material>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                    <!-- TODO use EMA ones -->
                                     <code value=&quot;200000003200&quot;/>
                                     <display value=&quot;Aluminium&quot;/>
                                 </coding>
@@ -2453,7 +2435,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         </type>
                         <quantity value=&quot;2&quot;/>
                         <material>
-                            <!-- #178 -->
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                                 <code value=&quot;200000003222&quot;/>
@@ -2548,7 +2529,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <material>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                    <!-- TODO use EMA ones -->
                                     <code value=&quot;200000003200&quot;/>
                                     <display value=&quot;Aluminium&quot;/>
                                 </coding>
@@ -2675,7 +2655,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                     <packaging>
                         ...
                         <material>
-                            <!-- #178 -->
                             <coding>
                                 <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
                                 <code value=&quot;200000003222&quot;/>
@@ -3040,7 +3019,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <material>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                    <!-- TODO use EMA ones -->
                                     <code value=&quot;200000003200&quot;/>
                                     <display value=&quot;Aluminium&quot;/>
                                 </coding>
@@ -3154,7 +3132,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <material>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                    <!-- TODO use EMA ones -->
                                     <code value=&quot;200000003200&quot;/>
                                     <display value=&quot;Aluminium&quot;/>
                                 </coding>">Material: </span><span title="
@@ -3168,7 +3145,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <material>
                                 <coding>
                                     <system value=&quot;http://hl7.org/fhir/package-material&quot;/>
-                                    <!-- TODO use EMA ones -->
                                     <code value=&quot;200000003200&quot;/>
                                     <display value=&quot;Aluminium&quot;/>">Aluminium<span class="greyOff"> [200000003200]</span><span class="greyOff"> (http://hl7.org/fhir/package-material)</span></span></div>
 <div class="indent ppdl3"><span title="

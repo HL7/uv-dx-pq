@@ -35,7 +35,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <valueReference>
                             <!-- todo consider change this be the MID? -->
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>
                     </extension>
                 </code>
@@ -89,7 +88,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             </valueReference>
                         </extension>
                     </extension>
-                    <!-- #153 -->
                     <lotNumber value=&quot;33445&quot;/>
                 </batch>
             </Medication>
@@ -274,15 +272,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -506,15 +504,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -619,8 +617,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 ...
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>">Route of Administration: </span><span title="
 <Bundle>
@@ -629,9 +627,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
-                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [20053000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -640,8 +638,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 ...
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>">Dose Form (combination of all parts): </span><span title="
 <Bundle>
@@ -650,9 +648,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <MedicinalProductDefinition>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
-                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [10225000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -668,7 +666,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <valueReference>
                             <!-- todo consider change this be the MID? -->
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>
                     </extension>
                 </code>
@@ -722,7 +719,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             </valueReference>
                         </extension>
                     </extension>
-                    <!-- #153 -->
                     <lotNumber value=&quot;33445&quot;/>
                 </batch>" id="Medication-medication-actual-batch">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch</div><div class="debugOff"> fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51</div><span class="summaryShowsOff"><b> - 33445</b></span><div><span title="
 <Bundle>
@@ -734,7 +730,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <valueReference>
                             <!-- todo consider change this be the MID? -->
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>">Definition</span>: Stelbat Tablets, 20mg (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-dxpq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-dxpq-ex1</span></div><div class="summaryHiddenOff"><div class="indent medl2 summaryUnit"><span title="
 <Bundle>
     <entry>
@@ -791,7 +786,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             </valueReference>
                         </extension>
                     </extension>
-                    <!-- #153 -->
                     <lotNumber value=&quot;33445&quot;/>">Batch</span><div><span title="
 <Bundle>
     <entry>

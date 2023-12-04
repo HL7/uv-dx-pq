@@ -295,7 +295,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
         </resource>
     </entry>
     <entry>
-        <!--fullUrl value=&quot;http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay&quot;/-->
         <fullUrl value=&quot;urn:uuid:39ffd548-bb3d-43b9-9ca9-83f26631712b&quot;/>
         <resource>
             <ObservationDefinition>
@@ -813,27 +812,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                         <valueReference>
                             <!-- todo consider change this be the MID? -->
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>
                     </extension>
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;manufacturingDate&quot;>
-                            <!-- #157 -->
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
-                                <!-- #26 -->
-                                <!-- #155 -->
-                                <!-- need to see if one of these needs changing -->
                                 <value value=&quot;100100&quot;/>
                                 <unit value=&quot;tablets&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
-                            <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
@@ -845,7 +838,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                         </extension>
                         <extension url=&quot;assignedManufacturer&quot;>
                             <valueReference>
-                                <!-- #158 -->
                                 <reference value=&quot;Organization/manufacturer&quot;/>
                             </valueReference>
                         </extension>
@@ -878,7 +870,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                             </valueReference>
                         </extension>
                     </extension>
-                    <!-- #153 -->
                     <lotNumber value=&quot;33445&quot;/>
                 </batch>
             </Medication>
@@ -1068,7 +1059,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
         <fullUrl value=&quot;urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd&quot;/>
         <resource>
             <DiagnosticReport>
-                <!-- focal resource -->
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
                 <id value=&quot;batchAnalysisReport&quot;/>
@@ -2652,15 +2642,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -2723,7 +2713,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>
             </SubstanceDefinition>
         </resource>
@@ -2767,13 +2756,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
         <fullUrl value=&quot;urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1&quot;/>
         <resource>
             <PlanDefinition>
-                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
-                <!--id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-drug-pq-ex4-mnf-process&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!-- added for IG, to differentiate from PlanDefinition-drug-specification-dxpq -->
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
                     <valueMarkdown value=&quot;Process has no history recorded yet&quot;/>
                 </extension>
@@ -2787,7 +2773,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 </subjectReference>
@@ -3005,7 +2990,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-a
     <entry>
         <resource>
             <DiagnosticReport>
-                <!-- focal resource -->
                 <!-- ideally this wants a subject, but it can only be a Medication (batch) and we have multiple. 
                      however the observations themselves do have subjects -->
                 <id value=&quot;batchAnalysisReport&quot;/>
@@ -11527,15 +11511,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -11633,8 +11617,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>">Route of Administration: </span><span title="
 <Bundle>
@@ -11643,9 +11627,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
-                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [20053000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11653,8 +11637,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>">Dose Form (combination of all parts): </span><span title="
 <Bundle>
@@ -11663,9 +11647,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
-                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [10225000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
 
 <Bundle>
     <entry>
@@ -11747,7 +11731,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
 <Bundle>
     <entry>
@@ -16378,27 +16361,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <valueReference>
                             <!-- todo consider change this be the MID? -->
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>
                     </extension>
                 </code>
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;manufacturingDate&quot;>
-                            <!-- #157 -->
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
-                                <!-- #26 -->
-                                <!-- #155 -->
-                                <!-- need to see if one of these needs changing -->
                                 <value value=&quot;100100&quot;/>
                                 <unit value=&quot;tablets&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
-                            <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
@@ -16410,7 +16387,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         </extension>
                         <extension url=&quot;assignedManufacturer&quot;>
                             <valueReference>
-                                <!-- #158 -->
                                 <reference value=&quot;Organization/manufacturer&quot;/>
                             </valueReference>
                         </extension>
@@ -16443,7 +16419,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             </valueReference>
                         </extension>
                     </extension>
-                    <!-- #153 -->
                     <lotNumber value=&quot;33445&quot;/>
                 </batch>" id="Medication-medication-actual-batch">Medication</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/medication.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/medication.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/medication.html#tt-uml">R6</a>]</span><div class="debugOff">id: medication-actual-batch</div>
 <div class="debugOff"> fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51</div><span class="summaryShowsOff"><b> - 33445</b></span><div><span title="
@@ -16456,7 +16431,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <valueReference>
                             <!-- todo consider change this be the MID? -->
                             <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
-                            <!--reference value=&quot;urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5&quot;/-->
                         </valueReference>">Definition</span>: Stelbat Tablets, 20mg (<a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-pq-ex1" title="click to see target - id=medicinalproductdefinition-drug-product-pq-ex1">MedicinalProductDefinition</a>)<span class="debugOff"> id: medicinalproductdefinition-drug-product-pq-ex1</span></div>
 <div class="summaryHiddenOff">
 <div class="indent medl2 summaryUnit"><span title="
@@ -16468,20 +16442,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;manufacturingDate&quot;>
-                            <!-- #157 -->
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
-                                <!-- #26 -->
-                                <!-- #155 -->
-                                <!-- need to see if one of these needs changing -->
                                 <value value=&quot;100100&quot;/>
                                 <unit value=&quot;tablets&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
-                            <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
@@ -16493,7 +16462,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         </extension>
                         <extension url=&quot;assignedManufacturer&quot;>
                             <valueReference>
-                                <!-- #158 -->
                                 <reference value=&quot;Organization/manufacturer&quot;/>
                             </valueReference>
                         </extension>
@@ -16526,7 +16494,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             </valueReference>
                         </extension>
                     </extension>
-                    <!-- #153 -->
                     <lotNumber value=&quot;33445&quot;/>">Batch</span><div><span title="
 <Bundle>
     <entry>
@@ -16544,20 +16511,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <batch>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;manufacturingDate&quot;>
-                            <!-- #157 -->
                             <valueDateTime value=&quot;2020-06&quot;/>
                         </extension>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
-                                <!-- #26 -->
-                                <!-- #155 -->
-                                <!-- need to see if one of these needs changing -->
                                 <value value=&quot;100100&quot;/>
                                 <unit value=&quot;tablets&quot;/>
                             </valueQuantity>
                         </extension>
                         <extension url=&quot;batchUtilization&quot;>
-                            <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
@@ -16569,7 +16531,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         </extension>
                         <extension url=&quot;assignedManufacturer&quot;>
                             <valueReference>
-                                <!-- #158 -->
                                 <reference value=&quot;Organization/manufacturer&quot;/>
                             </valueReference>
                         </extension>
@@ -16660,9 +16621,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
-                                <!-- #26 -->
-                                <!-- #155 -->
-                                <!-- need to see if one of these needs changing -->
                                 <value value=&quot;100100&quot;/>
                                 <unit value=&quot;tablets&quot;/>">Quantity: </span><span title="
 <Bundle>
@@ -16673,9 +16631,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
-                                <!-- #26 -->
-                                <!-- #155 -->
-                                <!-- need to see if one of these needs changing -->
                                 <value value=&quot;100100&quot;/>
                                 <unit value=&quot;tablets&quot;/>">100100 tablets</span></div>
 <div><span title="
@@ -16708,7 +16663,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         ...
                         <extension url=&quot;batchUtilization&quot;>
-                            <!-- #159 -->
                             <valueCodeableConcept>
                                 <coding>
                                     <system value=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl&quot;/>
@@ -16761,7 +16715,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         ...
                         <extension url=&quot;assignedManufacturer&quot;>
                             <valueReference>
-                                <!-- #158 -->
                                 <reference value=&quot;Organization/manufacturer&quot;/>
                             </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-2 fullUrl: urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Medication/valueReference, id: medication-actual-batch-3 fullUrl: urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: manufacturer)(fullUrl: urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a)
 
@@ -16878,13 +16831,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
-                <!--id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-drug-pq-ex4-mnf-process&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!-- added for IG, to differentiate from PlanDefinition-drug-specification-dxpq -->
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
                     <valueMarkdown value=&quot;Process has no history recorded yet&quot;/>
                 </extension>
@@ -16898,7 +16848,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 </subjectReference>" id="PlanDefinition-plandefinition-drug-pq-ex4-mnf-process">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: plandefinition-drug-pq-ex4-mnf-process</div><div class="debugOff"> fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff"></div><div class="debugOff"><span title="
@@ -16951,13 +16900,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
-                <!--id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-drug-pq-ex4-mnf-process&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!-- added for IG, to differentiate from PlanDefinition-drug-specification-dxpq -->
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
                     <valueMarkdown value=&quot;Process has no history recorded yet&quot;/>
                 </extension>
@@ -16971,7 +16917,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 </subjectReference>">Subject</span><div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-pq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
@@ -16984,15 +16929,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -17090,8 +17035,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>">Route of Administration: </span><span title="
 <Bundle>
@@ -17100,9 +17045,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
-                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [20053000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -17110,8 +17055,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>">Dose Form (combination of all parts): </span><span title="
 <Bundle>
@@ -17120,9 +17065,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
-                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [10225000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
 
 <Bundle>
     <entry>
@@ -17204,7 +17149,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
 <Bundle>
     <entry>
@@ -17847,13 +17791,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
-                <!--id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-drug-pq-ex4-mnf-process&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!-- added for IG, to differentiate from PlanDefinition-drug-specification-dxpq -->
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
                     <valueMarkdown value=&quot;Process has no history recorded yet&quot;/>
                 </extension>
@@ -17867,7 +17808,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 </subjectReference>" id="PlanDefinition-plandefinition-drug-pq-ex4-mnf-process">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: plandefinition-drug-pq-ex4-mnf-process</div><div class="debugOff"> fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff"></div><div class="debugOff"><span title="
@@ -17920,13 +17860,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
-                <!--id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-drug-pq-ex4-mnf-process&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!-- added for IG, to differentiate from PlanDefinition-drug-specification-dxpq -->
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
                     <valueMarkdown value=&quot;Process has no history recorded yet&quot;/>
                 </extension>
@@ -17940,7 +17877,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 </subjectReference>">Subject</span><div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-pq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
@@ -17953,15 +17889,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -18059,8 +17995,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>">Route of Administration: </span><span title="
 <Bundle>
@@ -18069,9 +18005,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
-                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [20053000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -18079,8 +18015,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>">Dose Form (combination of all parts): </span><span title="
 <Bundle>
@@ -18089,9 +18025,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
-                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [10225000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
 
 <Bundle>
     <entry>
@@ -18173,7 +18109,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
 <Bundle>
     <entry>
@@ -18816,13 +18751,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
-                <!--id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-drug-pq-ex4-mnf-process&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!-- added for IG, to differentiate from PlanDefinition-drug-specification-dxpq -->
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
                     <valueMarkdown value=&quot;Process has no history recorded yet&quot;/>
                 </extension>
@@ -18836,7 +18768,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 </subjectReference>" id="PlanDefinition-plandefinition-drug-pq-ex4-mnf-process">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: plandefinition-drug-pq-ex4-mnf-process</div><div class="debugOff"> fullUrl: urn:uuid:246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff">url (canonical): http://example-server.com/fhir/PlanDefinition/246e9583-6253-6cc7-9c12-3b624f3308c1</div><div class="debugOff"></div><div class="debugOff"><span title="
@@ -18889,13 +18820,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
     <entry>
         <resource>
             <PlanDefinition>
-                <!--    <id value=&quot;manufacturingProcess&quot;/>-->
-                <!--id value=&quot;plandefinition-mnf-process-dxpq-ex1&quot;/-->
                 <id value=&quot;plandefinition-drug-pq-ex4-mnf-process&quot;/>
                 <meta>
                     <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;/>
                 </meta>
-                <!-- added for IG, to differentiate from PlanDefinition-drug-specification-dxpq -->
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
                     <valueMarkdown value=&quot;Process has no history recorded yet&quot;/>
                 </extension>
@@ -18909,7 +18837,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     </coding>
                 </type>
                 <status value=&quot;active&quot;/>
-                <!-- #83 -->
                 <subjectReference>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1&quot;/>
                 </subjectReference>">Subject</span><div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-pq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
@@ -18922,15 +18849,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <description value=&quot;Textual description of the product&quot;/>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>
                 </combinedPharmaceuticalDoseForm>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>
                 </route>
@@ -19028,8 +18955,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
                         <display value=&quot;Oral use&quot;/>
                     </coding>">Route of Administration: </span><span title="
 <Bundle>
@@ -19038,9 +18965,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <route>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot;/>
-                        <code value=&quot;100000073619&quot;/>
-                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [100000073619]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/100000073345)</span></span></div><div><span title="
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;20053000&quot;/>
+                        <display value=&quot;Oral use&quot;/>">Oral use<span class="greyOff"> [20053000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -19048,8 +18975,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
                         <display value=&quot;Gastro-resistant tablet&quot;/>
                     </coding>">Dose Form (combination of all parts): </span><span title="
 <Bundle>
@@ -19058,9 +18985,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <MedicinalProductDefinition>
                 <combinedPharmaceuticalDoseForm>
                     <coding>
-                        <system value=&quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot;/>
-                        <code value=&quot;100000073667&quot;/>
-                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [100000073667]</span><span class="greyOff"> (https://spor.ema.europa.eu/v1/lists/200000000004)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
+                        <system value=&quot;http://standardterms.edqm.eu&quot;/>
+                        <code value=&quot;10225000&quot;/>
+                        <display value=&quot;Gastro-resistant tablet&quot;/>">Gastro-resistant tablet<span class="greyOff"> [10225000]</span><span class="greyOff"> (http://standardterms.edqm.eu)</span></span></div></div><div class="summaryHiddenOff"></div><div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: productIngredient)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)
 
 <Bundle>
     <entry>
@@ -19142,7 +19069,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 </manufacturer>
                 <name>
                     <name value=&quot;Stelbatolol&quot;/>
-                    <!-- #4 -->
                 </name>" id="SubstanceDefinition-substance1">Substance</span></a><span class="summaryShowsOff"><b> - Stelbatolol</b></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/substancedefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/substancedefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/substancedefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: substance1</div><div class="debugOff"> fullUrl: urn:uuid:6eb94d34-48b4-5bb0-4c05-e183d2ea3e95</div><div class="summaryHiddenOff"><div class="indent sbddetails"><div><span title="
 <Bundle>
     <entry>
