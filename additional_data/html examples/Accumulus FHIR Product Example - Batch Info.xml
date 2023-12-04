@@ -16,7 +16,6 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference> 
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-                     
                   </valueReference>
                </extension>
             </code>
@@ -51,26 +50,25 @@
                         <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
                      </extension>
                   </extension>
-                  <!-- local extensions -->
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                     <valueDateTime value="2019-09-08"/>
-                  </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                     <valueQuantity>
-                        <value value="4.8"/>
-                        <unit value="kg"/>
-                     </valueQuantity>
-                  </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
-                     <valueDateTime value="2020-08"/>
-                  </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
-                     <valueReference>
-                        <reference value="Organization/packaging"/>
-                     </valueReference>
-                  </extension>
                </extension>
-               
+               <!-- local extensions -->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+                  <valueDateTime value="2019-09-08"/>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
+                  <valueDateTime value="2020-08"/>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
+                  <valueReference>
+                     <reference value="Organization/packaging"/>
+                  </valueReference>
+               </extension>
                <lotNumber value="33445"/>
             </batch>
          </Medication>
@@ -100,12 +98,6 @@
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                     <valueQuantity>
-                        <value value="4.8"/>
-                        <unit value="kg"/>
-                     </valueQuantity>
-                  </extension>
                   <extension url="batchUtilization">
                      <valueCodeableConcept>
                         <coding>
@@ -126,18 +118,24 @@
                         <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
                      </extension>
                   </extension>
-                  <!-- local extensions -->
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                     <valueDateTime value="2019-09-08"/>
-                  </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
-                     <valueDateTime value="2020-08"/>
-                  </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
-                     <valueReference>
-                        <reference value="Organization/packaging"/>
-                     </valueReference>
-                  </extension>
+               </extension>
+               <!-- local extensions -->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+                  <valueDateTime value="2019-09-08"/>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
+                  <valueDateTime value="2020-08"/>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
+                  <valueReference>
+                     <reference value="Organization/packaging"/>
+                  </valueReference>
                </extension>
                <lotNumber value="33446"/>
             </batch>
@@ -188,24 +186,24 @@
                         <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
                      </extension>
                   </extension>
-                  <!-- local extensions -->
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
-                     <valueDateTime value="2019-09-08"/>
-                  </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
-                     <valueDateTime value="2020-08"/>
-                  </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
-                     <valueReference>
-                        <reference value="Organization/packaging"/>
-                     </valueReference>
-                  </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
-                     <valueQuantity>
-                        <value value="4.8"/>
-                        <unit value="kg"/>
-                     </valueQuantity>
-                  </extension>
+               </extension>
+               <!-- local extensions -->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+                  <valueDateTime value="2019-09-08"/>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
+                  <valueDateTime value="2020-08"/>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq">
+                  <valueReference>
+                     <reference value="Organization/packaging"/>
+                  </valueReference>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+                  <valueQuantity>
+                     <value value="4.8"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
                </extension>
                <lotNumber value="33447"/>
             </batch>
@@ -255,15 +253,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>

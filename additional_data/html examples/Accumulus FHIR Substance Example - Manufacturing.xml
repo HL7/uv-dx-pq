@@ -9,13 +9,11 @@
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
-                
             <id value="manufacturingProcess-unlinked"/>
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq">
                <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        
                   <reference value="DocumentReference/DocumentReference-process-flow-diagram-dxpq-ex1"/>
                </valueReference>
             </extension>
@@ -31,12 +29,10 @@
                </coding>
             </type>
             <status value="active"/>
-            
             <subjectReference>
                <reference value="SubstanceDefinition/substance1"/>
             </subjectReference>
             <description value="Narrative description of substance manufacturing process"/>
-            
             <goal id="goal-control-pH">
                <category>
                   <coding>
@@ -179,7 +175,6 @@
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                            <code value="Compression Milling"/>
-                           
                            <display value="Compression Milling"/>
                         </coding>
                      </role>
@@ -257,7 +252,6 @@
             <id value="impeller"/>
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
-               
                <type value="registered-name"/>
             </deviceName>
             <property>
@@ -265,7 +259,6 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="Maximum Speed"/>
-                     
                      <display value="Maximum Speed"/>
                   </coding>
                </type>
@@ -281,7 +274,6 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
-            
          <DocumentReference>
             <id value="DocumentReference-process-flow-diagram-dxpq-ex1"/>
             <meta>
@@ -313,7 +305,6 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fef"/>
       <resource>
-            
          <DocumentReference>
             <id value="DocumentReference-image"/>
             <status value="current"/>
@@ -335,7 +326,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               
             </name>
          </SubstanceDefinition>
       </resource>

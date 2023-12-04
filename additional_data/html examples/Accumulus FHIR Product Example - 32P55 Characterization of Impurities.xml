@@ -9,8 +9,6 @@
       <fullUrl value="urn:uuid:6f4a3311-92c5-2b4a-533e-76341e414c63"/>
       <resource>
          <DiagnosticReport>
-                
-                
             <id value="diagnosticreport-product-impurities"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
@@ -119,19 +117,17 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference> 
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-                     
                   </valueReference>
                </extension>
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="assignedManufacturer">
-                     <valueReference> 
+                     <valueReference>
                         <reference value="Organization/manufacturer"/>
                      </valueReference>
                   </extension>
                </extension>
-               
                <lotNumber value="33445"/>
             </batch>
          </Medication>
@@ -1544,15 +1540,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>

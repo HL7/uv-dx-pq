@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- Substance Analytical Procedure -->
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-analytical-procedure-pq-ex2-sub"/>
-   
    <meta>
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
    </meta>
@@ -10,7 +9,6 @@
       <fullUrl value="urn:uuid:2138e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                
             <id value="analyticalProcedure"/>
             <url value="http://example-server.com/fhir/PlanDefinition/2138e4c7-22b8-4c56-2d28-6c077648763f"/>
             <title value="Analytical Procedure"/>
@@ -79,7 +77,6 @@
                </extension>
                <title value="Determination of Particle Size of Stelbat by Laser Diffraction (G1112)"/>
                <!-- can have device here or as ObsDef.device -->
-               
                <participant>
                   <typeReference>
                      <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq">

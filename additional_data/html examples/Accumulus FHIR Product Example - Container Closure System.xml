@@ -15,15 +15,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
@@ -66,7 +66,6 @@
                <value value="28"/>
                <unit value="tablets"/>
             </containedItemQuantity>
-            
             <description value="The container closure system consists of a bottle and closure.  The bottle is manufactured from white high-density polyethylene (HDPE). The 2-piece child-resistant closure is manufactured from polypropylene (PP) and contains a multi-layer aluminum foil seal liner for tamper evidence.  The bottle and closure provide an adequate barrier to moisture and light, which protect the drug product.  The container closure system has demonstrated suitability for storage of the drug product based on stability studies shown in 3.2.P.8.3.      The HDPE bottle has demonstrated compliance with USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction and PhEur 3.1.3 Polyolefins.  The product contacting aluminum foil seal liner has demonstrated compliance with USP &lt;661&gt;. The vendor has confirmed compliance with 21 CFR 175.300, in addition to compliance with limitation of heavy metals per EU 94/62/EC, Article 11. The container closure system has demonstrated child resistance in compliance with 16 CFR 1700. Detailed information pertaining to the bottle and closure is described in 3.2.P.7."/>
             <packaging>
                <type>
@@ -76,7 +75,7 @@
                      <display value="Bottle"/>
                   </coding>
                </type>
-               <material> 
+               <material>
                   <coding>
                      <system value="http://hl7.org/fhir/package-material"/>
                      <code value="200000003215"/>
@@ -146,7 +145,6 @@
                   <material>
                      <coding>
                         <system value="http://hl7.org/fhir/package-material"/>
-                        
                         <code value="200000003219"/>
                         <display value="PolyPropylene"/>
                      </coding>
@@ -288,7 +286,7 @@
                      </coding>
                   </type>
                   <quantity value="2"/>
-                  <material> 
+                  <material>
                      <coding>
                         <system value="http://hl7.org/fhir/package-material"/>
                         <code value="200000003222"/>
@@ -383,7 +381,6 @@
                      <material>
                         <coding>
                            <system value="http://hl7.org/fhir/package-material"/>
-                           
                            <code value="200000003200"/>
                            <display value="Aluminium"/>
                         </coding>

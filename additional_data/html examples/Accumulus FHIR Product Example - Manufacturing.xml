@@ -19,7 +19,6 @@
                <valueReference>
                         <!-- Process flow diagram -->
                         <!-- or could be a Binary -->
-                        
                   <reference value="DocumentReference/documentreference-drug-pq-process-flow-diagram"/>
                </valueReference>
             </extension>
@@ -41,12 +40,10 @@
                </coding>
             </type>
             <status value="active"/>
-            
             <subjectReference>
                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </subjectReference>
             <description value="Narrative description of manufacturing process (5)"/>
-            
             <goal id="goal-control-pH">
                <category>
                   <coding>
@@ -346,7 +343,6 @@
                      <valueCodeableConcept>
                         <coding>
                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
-                           
                            <code value="TEMP-MAX"/>
                            <display value="Maximum Temperature"/>
                         </coding>
@@ -481,7 +477,6 @@
                      <coding>
                         <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
                         <code value="Compression Milling"/>
-                        
                         <display value="Compression Milling"/>
                      </coding>
                   </role>
@@ -537,7 +532,6 @@
             </meta>
             <deviceName>
                <name value="Rotating Impeller with 1.5mm screen"/>
-               
                <type value="registered-name"/>
             </deviceName>
             <property>
@@ -545,7 +539,6 @@
                   <coding>
                      <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
                      <code value="Maximum Speed"/>
-                     
                      <display value="Maximum Speed"/>
                   </coding>
                </type>
@@ -564,7 +557,6 @@
             <id value="dryer"/>
             <deviceName>
                <name value="Heated dryer"/>
-               
                <type value="registered-name"/>
             </deviceName>
             <property>
@@ -612,7 +604,6 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41feb"/>
       <resource>
-            
          <DocumentReference>
             <id value="documentreference-drug-pq-process-flow-diagram"/>
             <meta>
@@ -643,7 +634,6 @@
    <entry>
       <fullUrl value="urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fee"/>
       <resource>
-            
          <DocumentReference>
             <id value="DocumentReference-image"/>
             <status value="current"/>
@@ -665,15 +655,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
@@ -736,7 +726,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               
             </name>
          </SubstanceDefinition>
       </resource>
@@ -751,7 +740,6 @@
             </meta>
             <name>
                <name value="Stelbatolol Granules"/>
-               
             </name>
          </SubstanceDefinition>
       </resource>

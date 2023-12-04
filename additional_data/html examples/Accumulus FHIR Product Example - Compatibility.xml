@@ -10,7 +10,6 @@
       <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
       <resource>
          <PlanDefinition>
-                
             <id value="plandefinition-compatibility"/>
             <meta>
                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
@@ -129,7 +128,6 @@
       <resource>
          <ObservationDefinition>
             <id value="SE-UHPLCMainPeak"/>
-            
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC % Main Peak"/>
             <status value="active"/>
@@ -167,7 +165,6 @@
       <resource>
          <ObservationDefinition>
             <id value="SE-UHPLCHMW"/>
-            
             <url value="http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
             <title value="SE-UHPLC % HMW"/>
             <status value="active"/>
@@ -205,7 +202,6 @@
       <resource>
          <ObservationDefinition>
             <id value="CEX-HPLCAcidicPeak"/>
-            
             <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="CEX-HPLC % Acidic Peak"/>
             <status value="active"/>
@@ -243,7 +239,6 @@
       <resource>
          <ObservationDefinition>
             <id value="CEX-HPLCMainPeak"/>
-            
             <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
             <title value="CEX-HPLC % Main Peak"/>
             <status value="active"/>
@@ -723,16 +718,13 @@
       <resource>
          <Medication>
             <id value="medication-actual-batch-1"/>
-            
             <code>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
                   <valueReference>
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-                     
                   </valueReference>
                </extension>
                <!-- can use an extension here to point to package, but currently just relying on medication-manufacturingBatch to have a text description -->
-               
             </code>
             <batch>
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">

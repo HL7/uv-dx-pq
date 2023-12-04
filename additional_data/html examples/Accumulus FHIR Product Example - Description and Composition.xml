@@ -2,7 +2,6 @@
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="bundle-drug-product-composition-pq-ex1"/>
    <meta>
-        <!--profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-composition-dxpq"/-->
       <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
    </meta>
    <type value="collection"/>
@@ -39,7 +38,6 @@
             <packageFor>
                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </packageFor>
-            
             <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
          </PackagedProductDefinition>
       </resource>
@@ -56,7 +54,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072072"/>
                   <display value="Active"/>
                </coding>
@@ -102,15 +100,15 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
             </role>
             <function>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
-                  <code value="1000000720XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <code value="diluent"/>
                   <display value="Diluent"/>
                </coding>
             </function>
@@ -154,15 +152,15 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
             </role>
             <function>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
-                  <code value="1000000720XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <code value="disintegrant"/>
                   <display value="Disintegrant"/>
                </coding>
             </function>
@@ -206,15 +204,15 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
             </role>
             <function>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
-                  <code value="1000000720XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <code value="disintegrant"/>
                   <display value="Disintegrant"/>
                </coding>
             </function>
@@ -258,15 +256,15 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
             </role>
             <function>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/1000000720XXX"/>
-                  <code value="1000000720XXX"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <code value="lubricant"/>
                   <display value="Lubricant"/>
                </coding>
             </function>

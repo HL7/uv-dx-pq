@@ -12,7 +12,6 @@
             <id value="substance1"/>
             <name>
                <name value="Stelbatolol"/>
-               
             </name>
          </SubstanceDefinition>
       </resource>
@@ -23,18 +22,17 @@
          <PackagedProductDefinition>
             <id value="packageDefinition"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
-            
             <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
             <!-- secondary packaging -->
-            <packaging> 
-               <type> 
+            <packaging>
+               <type>
                   <coding>
                      <system value="http://hl7.org/fhir/packaging-type"/>
                      <code value="100000073493"/>
                      <display value="Bag"/>
                   </coding>
                </type>
-               <material> 
+               <material>
                   <coding>
                      <system value="http://hl7.org/fhir/package-material"/>
                      <code value="200000003216"/>
@@ -84,18 +82,17 @@
          <PackagedProductDefinition>
             <id value="packageDefinition2"/>
             <!-- no product referenced, instead link works via the contained manufactured item -->
-            
             <description value="Any textual comments that describe the sum of container closure system (CCS) components that together contain and protect the dosage form or drug substance."/>
             <!-- secondary packaging -->
-            <packaging> 
-               <type> 
+            <packaging>
+               <type>
                   <coding>
                      <system value="http://hl7.org/fhir/packaging-type"/>
                      <code value="100000073497"/>
                      <display value="Bottle"/>
                   </coding>
                </type>
-               <material> 
+               <material>
                   <coding>
                      <system value="http://hl7.org/fhir/package-material"/>
                      <code value="200000003215"/>

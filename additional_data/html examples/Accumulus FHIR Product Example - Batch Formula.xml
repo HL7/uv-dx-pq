@@ -36,7 +36,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072072"/>
                   <display value="Active"/>
                </coding>
@@ -75,7 +75,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -113,7 +113,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -151,7 +151,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -189,7 +189,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>

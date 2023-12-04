@@ -9,7 +9,6 @@
       <fullUrl value="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"/>
       <resource>
          <PlanDefinition>
-                
             <id value="specificationProtocol"/>
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <title value="SPECIFICATION FOR DRUG SUBSTANCE"/>
@@ -161,14 +160,14 @@
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
                      <code value="%"/>
-                     <!-- not sure this is a correct ucum code -->
+                     
                   </low>
                   <high>
                      <value value="102"/>
                      <unit value="% w/w"/>
                      <system value="http://unitsofmeasure.org"/>
                      <code value="%"/>
-                     <!-- not sure this is a correct ucum code -->
+                     
                   </high>
                </range>
             </qualifiedValue>
@@ -485,7 +484,6 @@
             </manufacturer>
             <name>
                <name value="Stelbatolol"/>
-               
             </name>
          </SubstanceDefinition>
       </resource>

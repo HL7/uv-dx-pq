@@ -15,15 +15,15 @@
             <description value="Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side."/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
@@ -137,7 +137,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -171,7 +171,7 @@
                   <coding>
                      <system value="http://hl7.org/fhir/substance-source-material-type"/>
                      <code value="Mineral"/>
-                     <display value="Mineral"/>
+                     <display value="mineral"/>
                      <!-- to mean "non-biological" -->
                   </coding>
                </type>
@@ -200,7 +200,7 @@
             </for>
             <role>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000072050"/>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
                   <code value="100000072082"/>
                   <display value="Excipient"/>
                </coding>
@@ -238,16 +238,16 @@
                </type>
                <species>
                   <coding>
-                     <system value="https://spor.ema.europa.eu/v1/lists/200000000019"/>
-                     <code value="200000000249"/>
-                     <display value="Goat"/>
+                     <system value="http://hl7.org/fhir/substance-source-material-part"/>
+                     <code value="Animal"/>
+                     <display value="animal"/>
                   </coding>
                </species>
                <part>
                   <coding>
-                     <system value="https://spor.ema.europa.eu/v1/lists/100000072054"/>
-                     <code value="100000111138"/>
-                     <display value="Plasma"/>
+                     <system value="http://hl7.org/fhir/substance-source-material-type"/>
+                     <code value="Animal"/>
+                     <display value="animal"/>
                   </coding>
                </part>
                <countryOfOrigin>

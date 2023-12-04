@@ -11,7 +11,6 @@
       <fullUrl value="urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd"/>
       <resource>
          <DiagnosticReport>
-                
             <id value="microbiologicalReport"/>
             <status value="final"/>
             <code>
@@ -154,15 +153,15 @@
             <description value="Textual description of the product"/>
             <combinedPharmaceuticalDoseForm>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/200000000004"/>
-                  <code value="100000073667"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
                   <display value="Gastro-resistant tablet"/>
                </coding>
             </combinedPharmaceuticalDoseForm>
             <route>
                <coding>
-                  <system value="https://spor.ema.europa.eu/v1/lists/100000073345"/>
-                  <code value="100000073619"/>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
                   <display value="Oral use"/>
                </coding>
             </route>
@@ -200,7 +199,6 @@
                   <valueReference>
                             
                      <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
-                     
                   </valueReference>
                </extension>
             </code>
