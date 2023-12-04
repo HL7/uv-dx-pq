@@ -1606,9 +1606,6 @@
                   <extension url="manufacturingDate">
                      <valueDateTime value="2020-06"/>
                   </extension>
-                  <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
-                     <valueDateTime value="2020-08"/>
-                  </extension>
                   <extension url="batchQuantity">
                      <valueQuantity>
                         <value value="100125"/>
@@ -1649,6 +1646,9 @@
                      </coding>
                      <text value="Maximum"/>
                   </valueCodeableConcept>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq">
+                  <valueDateTime value="2020-08"/>
                </extension>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq">
                   <valuePositiveInt value="3"/>
