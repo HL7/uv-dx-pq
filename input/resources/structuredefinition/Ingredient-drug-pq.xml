@@ -30,6 +30,14 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/ingredient-role"/> 
       </binding>
     </element>
+    <element id="Ingredient.role">
+      <path value="Ingredient.function"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: antioxidant, alkalizing agent."/> 
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-ingredientFunction-local-pq"/> 
+      </binding>
+    </element>
     <element id="Ingredient.substance.code">
       <path value="Ingredient.substance.code"/>
       <short value="Ingredient Substance"/>
