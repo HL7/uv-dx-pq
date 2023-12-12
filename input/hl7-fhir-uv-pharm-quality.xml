@@ -2634,27 +2634,6 @@
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="special-url"/>
             </code>
-            <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-pharmaceutical-dosage-form-terminology"/>
-        </parameter>
-        <parameter>
-            <code>
-                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-                <code value="special-url"/>
-            </code>
-            <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/spl-drug-route-of-administration-terminology"/>
-        </parameter>
-        <parameter>
-            <code>
-                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-                <code value="special-url"/>
-            </code>
-            <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-batch-utilization-terminology"/>
-        </parameter>
-        <parameter>
-            <code>
-                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-                <code value="special-url"/>
-            </code>
             <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-closure-type-terminology"/>
         </parameter>
     </definition>
