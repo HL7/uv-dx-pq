@@ -54,9 +54,6 @@
       <mustSupport value="true"/>
     </element>
 
-
-
-
     <element id="Ingredient.identifier">
       <path value="Ingredient.identifier"/>
       <mustSupport value="true"/>
