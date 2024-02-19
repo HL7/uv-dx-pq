@@ -17,6 +17,19 @@
         <element id="DiagnosticReport">
             <path value="DiagnosticReport"/>
         </element>
+        
+        <element id="DiagnosticReport.extension">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="extension-time-point-description"/>
+            <short value="A code that further describes a time point, such as ‘delayed start’."/>
+            <definition value="A code that further describes a time point, such as ‘delayed start’."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
         <element id="DiagnosticReport.id">
             <path value="DiagnosticReport.id"/>
 <!--            <short value="TBD"/>
@@ -34,7 +47,7 @@
             <!--            <short value="TBD"/>
             <definition value="TBD"/>-->
             <mustSupport value="true"/>
-        </element>
+        </element>       
         <element id="DiagnosticReport.status">
             <path value="DiagnosticReport.status"/>
             <!--            <short value="TBD"/>
