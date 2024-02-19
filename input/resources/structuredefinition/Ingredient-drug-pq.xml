@@ -7,8 +7,8 @@
   <title value="Ingredient - Drug Pq"/>
   <status value="active"/>
   <description value="This Ingredient profile represents the active ingredient(s) of a drug substance or product. It references one SubstanceDefinition resource and can include the strength or concentration of that substance."/>
- <fhirVersion value="5.0.0"/>
- <kind value="resource"/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="resource"/>
   <abstract value="false"/>
   <type value="Ingredient"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Ingredient"/>
@@ -16,7 +16,47 @@
   <differential>
     <element id="Ingredient">
       <path value="Ingredient"/>
-   </element>
+    </element>
+
+    <element id="Ingredient.extension">
+      <path value="Ingredient.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Ingredient.extension:novel-excipient">
+      <path value="Ingredient.extension"/>
+      <sliceName value="novel-excipient"/>
+      <short value="novel-excipient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-pq"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Ingredient.extension:suitability-for-use">
+      <path value="Ingredient.extension"/>
+      <sliceName value="suitability-for-use"/>
+      <short value="suitability-for-use"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+
+
+
+
     <element id="Ingredient.identifier">
       <path value="Ingredient.identifier"/>
       <mustSupport value="true"/>
@@ -26,16 +66,29 @@
       <binding>
         <strength value="preferred"/>
         <description value="A classification of the ingredient identifying its purpose within the product,
-         e.g. active, inactive."/> 
-        <valueSet value="http://hl7.org/fhir/ValueSet/ingredient-role"/> 
+         e.g. active, inactive."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/ingredient-role"/>
       </binding>
     </element>
-    <element id="Ingredient.role">
+    <element id="Ingredient.role.extension:data-absent-reason">
+      <path value="Ingredient.role.extension"/>
+      <sliceName value="data-absent-reason"/>
+      <short value="data-absent-reason"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="Ingredient.function">
       <path value="Ingredient.function"/>
       <binding>
         <strength value="preferred"/>
-        <description value="A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: antioxidant, alkalizing agent."/> 
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-ingredientFunction-local-pq"/> 
+        <description value="A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: antioxidant, alkalizing agent."/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-ingredientFunction-local-pq"/>
       </binding>
     </element>
     <element id="Ingredient.substance.code">
@@ -43,8 +96,7 @@
       <short value="Ingredient Substance"/>
       <type>
         <code value="CodeableReference"/>
-        <targetProfile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
+        <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -52,5 +104,5 @@
       <path value="Ingredient.substance.strength.referenceStrength"/>
       <mustSupport value="true"/>
     </element>
- </differential>
+  </differential>
 </StructureDefinition>
