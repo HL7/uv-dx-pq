@@ -29,9 +29,122 @@
             <path value="Medication.code"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Medication.code.extension">
+            <path value="Medication.code.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Medication.code.extension:medication-definition">
+            <path value="Medication.code.extension"/>
+            <sliceName value="medication-definition"/>
+            <short value="medication-definition"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
+        
         <element id="Medication.batch">
             <path value="Medication.batch"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Medication.batch.extension">
+            <path value="Medication.batch.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Medication.batch.extension:actual-yield">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="actual-yield"/>
+            <short value="actual-yield"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:actual-yield-unfiltered">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="actual-yield-unfiltered"/>
+            <short value="actual-yield-unfiltered"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:batch-release-date">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="batch-release-date"/>
+            <short value="batch-release-date"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:manufacturing-process">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="manufacturing-process"/>
+            <short value="manufacturing-process"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:packaging-date">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="packaging-date"/>
+            <short value="packaging-date"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:packaging-site">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="packaging-site"/>
+            <short value="packaging-site"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
+        
+        
+        CODE
+        
     </differential>
 </StructureDefinition>
