@@ -106,7 +106,7 @@
             <mustSupport value="true"/>
         </element>
         
-<!--        <element id="DiagnosticReport.effective[x].extension:extension-time-point-description">
+        <element id="DiagnosticReport.effective[x].extension:extension-time-point-description">
             <path value="DiagnosticReport.effective[x].extension"/>
             <sliceName value="extension-time-point-description"/>
             <short value="A code that further describes a time point, such as ‘delayed start’."/>
@@ -118,7 +118,7 @@
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-pq"/>
             </type>
             <mustSupport value="true"/>
-        </element>-->
+        </element>
         
         <element id="DiagnosticReport.performer">
             <path value="DiagnosticReport.performer"/>
