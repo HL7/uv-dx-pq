@@ -20,12 +20,51 @@
         
         <element id="DiagnosticReport.extension">
             <path value="DiagnosticReport.extension"/>
-            <sliceName value="extension-time-point-description"/>
-            <short value="A code that further describes a time point, such as ‘delayed start’."/>
-            <definition value="A code that further describes a time point, such as ‘delayed start’."/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="DiagnosticReport.extension:workflow-triggeredBy">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="workflow-triggeredBy"/>
+            <short value="A ‘step’ dictated within the protocol."/>
+            <definition value="A ‘step’ dictated within the protocol."/>
+            <min value="0"/>
+            <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-pq"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:statistical-model">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="statistical-model"/>
+            <short value="Information about the statistical model utilized to interpret results."/>
+            <definition value="Information about the statistical model utilized to interpret results."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:container-orientation">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="container-orientation"/>
+            <short value="The spatial orientaton of the container when tested, for instance horizontal or vertical."/>
+            <definition value="The spatial orientaton of the container when tested, for instance horizontal or vertical."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -66,6 +105,21 @@
             <definition value="TBD"/>-->
             <mustSupport value="true"/>
         </element>
+        
+<!--        <element id="DiagnosticReport.effective[x].extension:extension-time-point-description">
+            <path value="DiagnosticReport.effective[x].extension"/>
+            <sliceName value="extension-time-point-description"/>
+            <short value="A code that further describes a time point, such as ‘delayed start’."/>
+            <definition value="A code that further describes a time point, such as ‘delayed start’."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>-->
+        
         <element id="DiagnosticReport.performer">
             <path value="DiagnosticReport.performer"/>
             <!--            <short value="TBD"/>
