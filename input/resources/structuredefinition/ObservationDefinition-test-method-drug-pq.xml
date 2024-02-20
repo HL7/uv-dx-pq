@@ -81,8 +81,8 @@
             <path value="ObservationDefinition.qualifiedValue.extension"/>
             <sliceName value="qualified-value-text"/>
             <short value="qualified-value-text"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq"/>
