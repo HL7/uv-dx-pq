@@ -89,7 +89,30 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
+        <element id="ObservationDefinition.qualifiedValue.extension:qualified-value-display">
+            <path value="ObservationDefinition.qualifiedValue.extension"/>
+            <sliceName value="qualified-value-display"/>
+            <short value="qualified-value-display"/>
+            <!--            <min value="0"/>
+            <max value="1"/>-->
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ObservationDefinition.qualifiedValue.extension:qualified-value-target">
+            <path value="ObservationDefinition.qualifiedValue.extension"/>
+            <sliceName value="qualified-value-target"/>
+            <short value="qualified-value-target"/>
+            <!--            <min value="0"/>
+            <max value="1"/>-->
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element> 
         <element id="ObservationDefinition.qualifiedValue.range">
             <path value="ObservationDefinition.qualifiedValue.range"/>
             <mustSupport value="true"/>
