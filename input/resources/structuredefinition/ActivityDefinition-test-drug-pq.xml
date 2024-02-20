@@ -24,6 +24,10 @@
     </element>
     <element id="ActivityDefinition.observationRequirement">
       <path value="ActivityDefinition.observationRequirement"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
+      </type>
       <mustSupport value="true"/>
     </element>
   </differential>
