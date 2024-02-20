@@ -52,7 +52,18 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
+        <element id="Medication.code.extension:package-definition">
+            <path value="Medication.code.extension"/>
+            <sliceName value="package-definition"/>
+            <short value="package-definition"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-package-definition-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         
         <element id="Medication.batch">
             <path value="Medication.batch"/>
@@ -117,6 +128,18 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Medication.batch.extension:formulation-number">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="formulation-number"/>
+            <short value="formulation-number"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Medication.batch.extension:batch-designation">
             <path value="Medication.batch.extension"/>
             <sliceName value="batch-designation"/>
@@ -138,6 +161,30 @@
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:batch-number-of-full-shelves">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="batch-number-of-full-shelves"/>
+            <short value="batch-number-of-full-shelves"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-full-shelves-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:batch-number-of-partial-shelves">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="batch-number-of-partial-shelves"/>
+            <short value="batch-number-of-partial-shelves"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-partial-shelves-pq"/>
             </type>
             <mustSupport value="true"/>
         </element>
