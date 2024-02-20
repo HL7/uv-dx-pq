@@ -50,6 +50,31 @@
         <element id="MedicinalProductDefinition.characteristic">
           <path value="MedicinalProductDefinition.characteristic"/>
         </element>
+      
+      <element id="MedicinalProductDefinition.characteristic.extension">
+        <path value="MedicinalProductDefinition.characteristic.extension"/>
+        <slicing>
+          <discriminator>
+            <type value="value"/>
+            <path value="url"/>
+          </discriminator>
+          <ordered value="false"/>
+          <rules value="open"/>
+        </slicing>
+      </element>
+      <element id="MedicinalProductDefinition.characteristic.extension:substance-property-range">
+        <path value="MedicinalProductDefinition.characteristic.extension"/>
+        <sliceName value="substance-property-range"/>
+        <short value="substance-property-range"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type>
+          <code value="Extension"/>
+          <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq"/>
+        </type>
+        <mustSupport value="true"/>
+      </element>
+
         <element id="MedicinalProductDefinition.characteristic.type">
           <path value="MedicinalProductDefinition.characteristic.type"/>
           <binding>
