@@ -141,10 +141,5 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
-        
-        
-        CODE
-        
     </differential>
 </StructureDefinition>
