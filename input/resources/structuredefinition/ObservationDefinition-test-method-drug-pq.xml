@@ -25,8 +25,8 @@
         </element>
         <element id="ObservationDefinition.title.extension:test-comment-title">
             <path value="ObservationDefinition.title.extension"/>
-            <sliceName value="data-absent-reason"/>
-            <short value="data-absent-reason"/>
+            <sliceName value="test-comment-title"/>
+            <short value="test-comment-title"/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -165,10 +165,10 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="ObservationDefinition.qualifiedValue.appliesTo.extension:test-comment-qualifiedValue">
+        <element id="ObservationDefinition.qualifiedValue.appliesTo.extension:test-comment">
             <path value="ObservationDefinition.qualifiedValue.appliesTo.extension"/>
-            <sliceName value="qualified-value-target"/>
-            <short value="qualified-value-target"/>
+            <sliceName value="test-comment"/>
+            <short value="test-comment"/>
             <min value="0"/>
             <max value="1"/>
             <type>
