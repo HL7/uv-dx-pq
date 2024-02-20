@@ -49,6 +49,60 @@
             <path value="ObservationDefinition.qualifiedValue"/>
             <mustSupport value="true"/>
         </element>
+        
+        <element id="ObservationDefinition.qualifiedValue.extension">
+            <path value="ObservationDefinition.qualifiedValue.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="ObservationDefinition.qualifiedValue.extension:qualified-value-text">
+            <path value="ObservationDefinition.qualifiedValue.extension"/>
+            <sliceName value="qualified-value-text"/>
+            <short value="qualified-value-text"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
+        <element id="ObservationDefinition.qualifiedValue.range">
+            <path value="ObservationDefinition.qualifiedValue.range"/>
+            <mustSupport value="true"/>
+        </element>
+        
+        <element id="ObservationDefinition.qualifiedValue.range.extension">
+            <path value="ObservationDefinition.qualifiedValue.range.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="ObservationDefinition.qualifiedValue.range.extension:qualified-value-target">
+            <path value="ObservationDefinition.qualifiedValue.range.extension"/>
+            <sliceName value="qualified-value-target"/>
+            <short value="qualified-value-target"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
         <element id="ObservationDefinition.hasMember">
             <path value="ObservationDefinition.hasMember"/>
             <mustSupport value="true"/>
