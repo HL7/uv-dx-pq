@@ -41,7 +41,7 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-<!--      <min value="1"/>-->
+      <min value="7"/>
       <mustSupport value="true"/>
     </element>
     

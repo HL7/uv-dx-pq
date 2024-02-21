@@ -43,7 +43,7 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-<!--      <min value="1"/>-->
+      <min value="5"/>
       <mustSupport value="true"/>
     </element>
     
