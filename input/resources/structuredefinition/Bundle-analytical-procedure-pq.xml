@@ -49,11 +49,13 @@
     <element id="Bundle.entry:Product-Identification">
       <path value="Bundle.entry"/>
       <sliceName value="Product-Identification"/>
+      <min value="0"/>
+      <max value="1"/>
     </element>
     <element id="Bundle.entry:Product-Identification.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="0"/>
-      <max value="1"/>
+<!--      <min value="0"/>
+      <max value="1"/>-->
       <type>
         <code value="MedicinalProductDefinition"/>
         <profile
@@ -66,11 +68,13 @@
     <element id="Bundle.entry:Component-substance">
       <path value="Bundle.entry"/>
       <sliceName value="Component-substance"/>
+      <min value="1"/>
+      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Component-substance.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-<!--      <max value="*"/>-->
+<!--      <min value="1"/>
+<!-\-      <max value="*"/>-\->-->
       <type>
         <code value="SubstanceDefinition"/>
         <profile
@@ -82,11 +86,13 @@
     <element id="Bundle.entry:Specimen-Definition">
       <path value="Bundle.entry"/>
       <sliceName value="Specimen-Definition"/>
+      <min value="1"/>
+      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Specimen-Definition.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-<!--      <max value="*"/>-->
+<!--      <min value="1"/>
+<!-\-      <max value="*"/>-\->-->
       <type>
         <code value="SpecimenDefinition"/>
         <profile
@@ -98,11 +104,13 @@
     <element id="Bundle.entry:Protocol">
       <path value="Bundle.entry"/>
       <sliceName value="Protocol"/>
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="Bundle.entry:Protocol.resource">
       <path value="Bundle.entry.resource"/>      
-      <min value="1"/>
-      <max value="1"/>
+<!--      <min value="1"/>
+      <max value="1"/>-->
       <type>
         <code value="PlanDefinition"/>
         <profile
@@ -114,11 +122,13 @@
     <element id="Bundle.entry:Test-Method">
       <path value="Bundle.entry"/>
       <sliceName value="Test-Method"/>
+      <min value="1"/>
+      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Test-Method.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-<!--      <max value="*"/>-->
+<!--      <min value="1"/>
+<!-\-      <max value="*"/>-\->-->
       <type>
         <code value="ObservationDefinition"/>
         <profile
@@ -130,11 +140,13 @@
     <element id="Bundle.entry:Test-Device">
       <path value="Bundle.entry"/>
       <sliceName value="Test-Device"/>
+      <min value="0"/>
+      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Test-Device.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="0"/>
-<!--      <max value="*"/>-->
+<!--      <min value="0"/>
+<!-\-      <max value="*"/>-\->-->
       <type>
         <code value="DeviceDefinition"/>
         <profile
