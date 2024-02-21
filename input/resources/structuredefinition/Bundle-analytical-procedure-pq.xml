@@ -70,7 +70,7 @@
     <element id="Bundle.entry:Component-substance.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
-      <max value="*"/>
+<!--      <max value="*"/>-->
       <type>
         <code value="SubstanceDefinition"/>
         <profile
@@ -86,7 +86,7 @@
     <element id="Bundle.entry:Specimen-Definition.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
-      <max value="*"/>
+<!--      <max value="*"/>-->
       <type>
         <code value="SpecimenDefinition"/>
         <profile
@@ -118,7 +118,7 @@
     <element id="Bundle.entry:Test-Method.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
-      <max value="*"/>
+<!--      <max value="*"/>-->
       <type>
         <code value="ObservationDefinition"/>
         <profile
@@ -133,8 +133,8 @@
     </element>
     <element id="Bundle.entry:Test-Device.resource">
       <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <max value="*"/>
+      <min value="0"/>
+<!--      <max value="*"/>-->
       <type>
         <code value="DeviceDefinition"/>
         <profile
