@@ -42,40 +42,43 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <min value="1"/>
+<!--      <min value="1"/>-->
       <mustSupport value="true"/>
     </element>
 
     <element id="Bundle.entry:Component-Substance">
       <path value="Bundle.entry"/>
       <sliceName value="Component-Substance"/>
+      <min value="1"/>
+      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Component-Substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="SubstanceDefinition"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"
-        />  
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
       </type>
     </element>
-    
+
     <element id="Bundle.entry:Actual-Batch-Substance">
       <path value="Bundle.entry"/>
       <sliceName value="Actual-Batch-Substance"/>
+      <min value="1"/>
+      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Actual-Batch-Substance.resource">
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Substance"/>
-        <profile
-          value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"/>
       </type>
     </element>
 
     <element id="Bundle.entry:Organizations">
       <path value="Bundle.entry"/>
       <sliceName value="Organizations"/>
+      <min value="1"/>
+      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Organizations.resource">
       <path value="Bundle.entry.resource"/>
@@ -84,6 +87,6 @@
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
       </type>
     </element>
-    
+
   </differential>
 </StructureDefinition>
