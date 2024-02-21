@@ -65,7 +65,7 @@
     <element id="Bundle.entry:Drug-Ingredient">
       <path value="Bundle.entry"/>
       <sliceName value="Drug-Ingredient"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Drug-Ingredient.resource">
       <path value="Bundle.entry.resource"/>
@@ -95,7 +95,7 @@
     <element id="Bundle.entry:Batch-Lot-Information">
       <path value="Bundle.entry"/>
       <sliceName value="Batch-Lot-Information"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Batch-Lot-Information.resource">
       <path value="Bundle.entry.resource"/>
@@ -124,7 +124,7 @@
       <path value="Bundle.entry"/>
       <sliceName value="Protocol"/>
       <min value="1"/>
-      <max value="1"/>
+<!--      <max value="1"/>-->
     </element>
     <element id="Bundle.entry:Protocol.resource">
       <path value="Bundle.entry.resource"/>
@@ -137,7 +137,7 @@
     <element id="Bundle.entry:Test-Set">
       <path value="Bundle.entry"/>
       <sliceName value="Test-Set"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Test-Set.resource">
       <path value="Bundle.entry.resource"/>
@@ -166,7 +166,7 @@
     <element id="Bundle.entry:Test-Device">
       <path value="Bundle.entry"/>
       <sliceName value="Test-Device"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Test-Device.resource">
       <path value="Bundle.entry.resource"/>
@@ -196,7 +196,7 @@
     <element id="Bundle.entry:Step-Performance-Procedure">
       <path value="Bundle.entry"/>
       <sliceName value="Step-Performance-Procedure"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Step-Performance-Procedure.resource">
       <path value="Bundle.entry.resource"/>

@@ -77,7 +77,7 @@
       <path value="Bundle.entry"/>
       <sliceName value="Protocol"/>
       <min value="1"/>
-      <max value="1"/>
+<!--      <max value="1"/>-->
     </element>
     <element id="Bundle.entry:Protocol.resource">
       <path value="Bundle.entry.resource"/>

@@ -80,7 +80,7 @@
     <element id="Bundle.entry:Batch-Lot-Information">
       <path value="Bundle.entry"/>
       <sliceName value="Batch-Lot-Information"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Batch-Lot-Information.resource">
       <path value="Bundle.entry.resource"/>
@@ -95,7 +95,7 @@
     <element id="Bundle.entry:Report">
       <path value="Bundle.entry"/>
       <sliceName value="Report"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Report.resource">
       <path value="Bundle.entry.resource"/>
@@ -111,7 +111,7 @@
     <element id="Bundle.entry:Result-Observations">
       <path value="Bundle.entry"/>
       <sliceName value="Result-Observations"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Result-Observations.resource">
       <path value="Bundle.entry.resource"/>
@@ -126,7 +126,7 @@
     <element id="Bundle.entry:Process-Diagram">
       <path value="Bundle.entry"/>
       <sliceName value="Process-Diagram"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Process-Diagram.resource">
       <path value="Bundle.entry.resource"/>

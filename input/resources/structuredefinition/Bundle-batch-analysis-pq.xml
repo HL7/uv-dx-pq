@@ -42,7 +42,7 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <min value="9"/>
+      <min value="6"/>
       <mustSupport value="true"/>
     </element>
 
@@ -65,7 +65,7 @@
     <element id="Bundle.entry:Product-Ingredient">
       <path value="Bundle.entry"/>
       <sliceName value="Product-Ingredient"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
       <!--<max value="*"/>-->
     </element>
     <element id="Bundle.entry:Product-Ingredient.resource">
@@ -97,7 +97,7 @@
     <element id="Bundle.entry:Batch-Lot-Information">
       <path value="Bundle.entry"/>
       <sliceName value="Batch-Lot-Information"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
       <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Batch-Lot-Information.resource">
@@ -113,7 +113,7 @@
     <element id="Bundle.entry:Actual-Batch-Substance">
       <path value="Bundle.entry"/>
       <sliceName value="Actual-Batch-Substance"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
       <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Actual-Batch-Substance.resource">
@@ -129,7 +129,7 @@
       <path value="Bundle.entry"/>
       <sliceName value="Protocol"/>
       <min value="1"/>
-      <max value="1"/>
+<!--      <max value="1"/>-->
     </element>
     <element id="Bundle.entry:Protocol.resource">
       <path value="Bundle.entry.resource"/>

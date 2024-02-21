@@ -65,7 +65,7 @@
     <element id="Bundle.entry:Drug-Ingredient">
       <path value="Bundle.entry"/>
       <sliceName value="Drug-Ingredient"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Drug-Ingredient.resource">
       <path value="Bundle.entry.resource"/>
@@ -80,7 +80,7 @@
     <element id="Bundle.entry:Component-Substance">
       <path value="Bundle.entry"/>
       <sliceName value="Component-Substance"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Component-Substance.resource">
       <path value="Bundle.entry.resource"/>
@@ -95,8 +95,8 @@
     <element id="Bundle.entry:Protocol">
       <path value="Bundle.entry"/>
       <sliceName value="Protocol"/>
-      <min value="1"/>
-      <max value="1"/>
+<!--      <min value="1"/>
+      <max value="1"/>-->
     </element>
     <element id="Bundle.entry:Protocol.resource">
       <path value="Bundle.entry.resource"/>
@@ -111,7 +111,7 @@
     <element id="Bundle.entry:Test-Method">
       <path value="Bundle.entry"/>
       <sliceName value="Test"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Test-Method.resource">
       <path value="Bundle.entry.resource"/>
@@ -141,7 +141,7 @@
     <element id="Bundle.entry:Packaged-Item">
       <path value="Bundle.entry"/>
       <sliceName value="Packaged-Item"/>
-      <min value="1"/>
+<!--      <min value="1"/>-->
     </element>
     <element id="Bundle.entry:Packaged-Item.resource">
       <path value="Bundle.entry.resource"/>
