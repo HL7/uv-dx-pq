@@ -64,7 +64,6 @@
     <element id="Bundle.entry:Product-Ingredient">
       <path value="Bundle.entry"/>
       <sliceName value="Product-Ingredient"/>
-<!--      <min value="1"/>-->
     </element>
     
     <element id="Bundle.entry:Batch-Lot-Information">

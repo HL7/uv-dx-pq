@@ -54,8 +54,6 @@
     </element>
     <element id="Bundle.entry:Product-Identification.resource">
       <path value="Bundle.entry.resource"/>
-<!--      <min value="0"/>
-      <max value="1"/>-->
       <type>
         <code value="MedicinalProductDefinition"/>
         <profile
@@ -69,12 +67,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Component-substance"/>
       <min value="1"/>
-      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Component-substance.resource">
       <path value="Bundle.entry.resource"/>
-<!--      <min value="1"/>
-<!-\-      <max value="*"/>-\->-->
       <type>
         <code value="SubstanceDefinition"/>
         <profile
@@ -87,12 +82,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Specimen-Definition"/>
       <min value="1"/>
-      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Specimen-Definition.resource">
       <path value="Bundle.entry.resource"/>
-<!--      <min value="1"/>
-<!-\-      <max value="*"/>-\->-->
       <type>
         <code value="SpecimenDefinition"/>
         <profile
@@ -109,8 +101,6 @@
     </element>
     <element id="Bundle.entry:Protocol.resource">
       <path value="Bundle.entry.resource"/>      
-<!--      <min value="1"/>
-      <max value="1"/>-->
       <type>
         <code value="PlanDefinition"/>
         <profile
@@ -123,12 +113,9 @@
       <path value="Bundle.entry"/>
       <sliceName value="Test-Method"/>
       <min value="1"/>
-      <!--      <max value="*"/>-->
     </element>
     <element id="Bundle.entry:Test-Method.resource">
       <path value="Bundle.entry.resource"/>
-<!--      <min value="1"/>
-<!-\-      <max value="*"/>-\->-->
       <type>
         <code value="ObservationDefinition"/>
         <profile
@@ -141,12 +128,10 @@
       <path value="Bundle.entry"/>
       <sliceName value="Test-Device"/>
       <min value="0"/>
-      <!--      <max value="*"/>-->
+
     </element>
     <element id="Bundle.entry:Test-Device.resource">
       <path value="Bundle.entry.resource"/>
-<!--      <min value="0"/>
-<!-\-      <max value="*"/>-\->-->
       <type>
         <code value="DeviceDefinition"/>
         <profile
