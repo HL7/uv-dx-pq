@@ -41,13 +41,15 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <min value="1"/>
+<!--      <min value="1"/>-->
       <mustSupport value="true"/>
     </element>
 
     <element id="Bundle.entry:Product-Identification">
       <path value="Bundle.entry"/>
       <sliceName value="Product-Identification"/>
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="Bundle.entry:Product-Identification.resource">
       <path value="Bundle.entry.resource"/>
@@ -61,6 +63,7 @@
     <element id="Bundle.entry:Packaged-Item">
       <path value="Bundle.entry"/>
       <sliceName value="Packaged-Item"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Packaged-Item.resource">
       <path value="Bundle.entry.resource"/>
@@ -74,6 +77,7 @@
     <element id="Bundle.entry:Text-Section">
       <path value="Bundle.entry"/>
       <sliceName value="Text-Section"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Text-Section.resource">
       <path value="Bundle.entry.resource"/>
@@ -86,6 +90,7 @@
     <element id="Bundle.entry:Organization">
       <path value="Bundle.entry"/>
       <sliceName value="Organization"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Organization.resource">
       <path value="Bundle.entry.resource"/>

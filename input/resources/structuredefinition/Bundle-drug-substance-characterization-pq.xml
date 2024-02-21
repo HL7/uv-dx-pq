@@ -42,13 +42,14 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <min value="1"/>
+<!--      <min value="1"/>-->
       <mustSupport value="true"/>
     </element>
 
     <element id="Bundle.entry:Component-Substance">
       <path value="Bundle.entry"/>
       <sliceName value="Component-Substance"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Component-Substance.resource">
       <path value="Bundle.entry.resource"/>
@@ -62,6 +63,7 @@
     <element id="Bundle.entry:Actual-Batch-Substance">
       <path value="Bundle.entry"/>
       <sliceName value="Actual-Batch-Substance"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Actual-Batch-Substance.resource">
       <path value="Bundle.entry.resource"/>
@@ -74,6 +76,8 @@
     <element id="Bundle.entry:Protocol">
       <path value="Bundle.entry"/>
       <sliceName value="Protocol"/>
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="Bundle.entry:Protocol.resource">
       <path value="Bundle.entry.resource"/>
@@ -86,6 +90,7 @@
     <element id="Bundle.entry:Test-Method">
       <path value="Bundle.entry"/>
       <sliceName value="Test-Method"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Test-Method.resource">
       <path value="Bundle.entry.resource"/>
@@ -98,6 +103,7 @@
     <element id="Bundle.entry:Report">
       <path value="Bundle.entry"/>
       <sliceName value="Report"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Report.resource">
       <path value="Bundle.entry.resource"/>
@@ -112,6 +118,7 @@
     <element id="Bundle.entry:Result-Observations">
       <path value="Bundle.entry"/>
       <sliceName value="Result-Observations"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Result-Observations.resource">
       <path value="Bundle.entry.resource"/>
@@ -125,6 +132,7 @@
     <element id="Bundle.entry:Organization">
       <path value="Bundle.entry"/>
       <sliceName value="Organization"/>
+      <min value="1"/>
     </element>
     <element id="Bundle.entry:Organization.resource">
       <path value="Bundle.entry.resource"/>
