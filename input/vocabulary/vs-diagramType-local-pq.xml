@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-diagramType-local-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-diagramType-local-pq"/>
+    <name value="VsDiagramTypePQ"/>
+    <title value="ValueSet - Diagram Type"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This valueset contains example codes for diagram type in PQ."/>
+
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
+        </include>
+    </compose>
+</ValueSet>
