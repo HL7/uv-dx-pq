@@ -65,7 +65,7 @@
             <path value="Medication.batch"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Medication.batch.extension">
+        <element id="Medication.batch.extension">http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch
             <path value="Medication.batch.extension"/>
             <slicing>
                 <discriminator>
@@ -76,13 +76,23 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Medication.batch.extension:manufacturing-batch">
+        <element id="Medication.batch.extension:manufacturing-batch-weight">
             <path value="Medication.batch.extension"/>
-            <sliceName value="manufacturing-batch"/>
-            <short value="manufacturing-batch"/>
+            <sliceName value="manufacturing-batch-weight"/>
+            <short value="manufacturing-batch-weight"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch"/>
+                <profile value=""/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:manufacturing-batch-number-of-items">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="manufacturing-batch-number-of-items"/>
+            <short value="manufacturing-batch-number-of-items"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq"/>
             </type>
             <mustSupport value="true"/>
         </element>
