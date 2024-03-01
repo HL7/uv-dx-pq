@@ -1391,7 +1391,7 @@
                 <display value="Extension - Batch Number of Items"/>
             </reference>
             <name value="Extension - Batch Number of Items"/>
-            <description value="The numer of items produced in a manufacturing batch."/>
+            <description value="The numer of items (e.g., tablets) produced in a manufacturing batch."/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>

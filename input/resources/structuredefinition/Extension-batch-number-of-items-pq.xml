@@ -6,7 +6,7 @@
     <name value="ExtensionBatchNumberOfItemsPq"/>
     <title value="Extension - Batch Number of Items PQ"/>
     <status value="active"/>
-    <description value="The numer of items produced in a manufacturing batch."/>
+    <description value="The numer of items (e.g., tablets) produced in a manufacturing batch."/>
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
