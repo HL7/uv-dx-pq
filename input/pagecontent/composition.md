@@ -23,7 +23,7 @@ Provide details about drug substance and drug product components, materials, and
 - <a href="Bundle-bundle-drug-product-composition-pq-ex1.json.html">Product Composition example JSON</a>
 
 **HTML presentation example** of synthetic CTD data:
-- <a href="composition_rend_s.html">Drug Substance Reference Standards or Materials</a>
+- <a href="composition_rend_s.html">Product Composition</a>
 
 
 ### Drug Reference Standards
@@ -49,7 +49,7 @@ Provide details about drug substance and drug product components, materials, and
 - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.5_Reference_Standards_or_Materials.pdf ">3.2.S.5 Reference Standards or Materials</a> (3.2.P.6 Reference Standards or Materials is similar.)
 
 **XML and JSON examples** of synthetic CTD data:
-- <a href="Bundle-bundle-drug-reference-standards-pq-ex2-sub.xml.html"> Substance Reference Standards or Materials example XML</a>
+- <a href="Bundle-bundle-drug-reference-standards-pq-ex2-sub.xml.html">Substance Reference Standards or Materials example XML</a>
 - <a href="Bundle-bundle-drug-reference-standards-pq-ex2-sub.json.html">Substance Reference Standards or Materials example JSON</a>
 
 **HTML presentation example** of synthetic CTD data:
