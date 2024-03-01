@@ -80,10 +80,22 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Medication.batch.extension:manufacturing-batch">
+        <element id="Medication.batch.extension:manufacturing-batch-size">
             <path value="Medication.batch.extension"/>
-            <sliceName value="manufacturing-batch"/>
-            <short value="manufacturing-batch"/>
+            <sliceName value="manufacturing-batch-size"/>
+            <short value="manufacturing-batch-size"/>
+            <!--            <min value="0"/>
+            <max value="1"/>-->
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Medication.batch.extension:manufacturing-batch-quantity">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="manufacturing-batch-quantity"/>
+            <short value="manufacturing-batch-quantity"/>
 <!--            <min value="0"/>
             <max value="1"/>-->
             <type>
@@ -96,8 +108,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="actual-yield"/>
             <short value="actual-yield"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq"/>
@@ -108,8 +120,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="actual-yield-unfiltered"/>
             <short value="actual-yield-unfiltered"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-unfiltered-pq"/>
@@ -120,8 +132,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="batch-release-date"/>
             <short value="batch-release-date"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq"/>
@@ -132,8 +144,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="formulation-number"/>
             <short value="formulation-number"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-formulation-number-pq"/>
@@ -144,8 +156,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="batch-designation"/>
             <short value="batch-designation"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-designation-pq"/>
@@ -156,8 +168,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="batch-number-of-vials"/>
             <short value="batch-number-of-vials"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-vials-pq"/>
@@ -168,8 +180,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="batch-number-of-full-shelves"/>
             <short value="batch-number-of-full-shelves"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-full-shelves-pq"/>
@@ -180,8 +192,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="batch-number-of-partial-shelves"/>
             <short value="batch-number-of-partial-shelves"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-partial-shelves-pq"/>
@@ -192,8 +204,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="batch-substance-batch"/>
             <short value="batch-substance-batch"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-substance-batch-pq"/>
@@ -204,8 +216,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="target-fill-weight"/>
             <short value="target-fill-weight"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-target-fill-weight-pq"/>
@@ -216,8 +228,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="manufacturing-process"/>
             <short value="manufacturing-process"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq"/>
@@ -228,8 +240,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="packaging-date"/>
             <short value="packaging-date"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-date-pq"/>
@@ -240,8 +252,8 @@
             <path value="Medication.batch.extension"/>
             <sliceName value="packaging-site"/>
             <short value="packaging-site"/>
-            <min value="0"/>
-            <max value="1"/>
+ <!--           <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-packaging-site-pq"/>
