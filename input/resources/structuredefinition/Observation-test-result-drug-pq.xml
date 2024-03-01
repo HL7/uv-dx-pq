@@ -22,6 +22,27 @@
         <element id="Observation">
             <path value="Observation"/>
         </element>
+        <element id="Observation.extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.extension:workflow-triggeredBy">
+            <path value="Observation.extension"/>
+            <sliceName value="workflow-triggeredBy"/>
+            <short value="workflow-triggeredBy"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Observation.id">
             <path value="Observation.id"/>
             <mustSupport value="true"/>
