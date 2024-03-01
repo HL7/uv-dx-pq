@@ -535,15 +535,22 @@
                </strengthQuantity>
             </ingredient>
             <batch>
-               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+<!--               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
                   <extension url="batchQuantity">
                      <valueQuantity>
                         <value value="371000"/>
                         <unit value="tablets"/>
                      </valueQuantity>
                   </extension>
-               </extension>
+               </extension>-->
+               <!--            NEW Extension-->
                <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <valueQuantity>
+                     <value value="371000"/>
+                     <unit value="tablets"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq">
                   <extension url="batchQuantity">
                      <valueQuantity>
                         <value value="65"/>
@@ -551,6 +558,7 @@
                      </valueQuantity>
                   </extension>
                </extension>
+
             </batch>
          </Medication>
       </resource>
