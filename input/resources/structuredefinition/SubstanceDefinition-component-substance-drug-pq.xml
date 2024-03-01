@@ -39,9 +39,101 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <element id="SubstanceDefinition.manufacturer.extension">
+      <path value="SubstanceDefinition.manufacturer.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="SubstanceDefinition.manufacturer:site-utilization">
+      <path value="SubstanceDefinition.manufacturer.extension"/>
+      <sliceName value="site-utilization"/>
+      <short value="site-utilization"/>
+      <!--            <min value="0"/>
+            <max value="1"/>-->
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-site-utilization-pq"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="SubstanceDefinition.property">
+      <path value="SubstanceDefinition.property"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="SubstanceDefinition.property.extension">
+      <path value="SubstanceDefinition.property.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="SubstanceDefinition.property.extension:substance-property-range">
+      <path value="SubstanceDefinition.property.extension"/>
+      <sliceName value="substance-property-range"/>
+      <short value="substance-property-range"/>
+      <!--            <min value="0"/>
+            <max value="1"/>-->
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="SubstanceDefinition.property.extension:substance-property-parameter">
+      <path value="SubstanceDefinition.property.extension"/>
+      <sliceName value="substance-property-parameter"/>
+      <short value="substance-property-parameter"/>
+      <!--            <min value="0"/>
+            <max value="1"/>-->
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
     
     <element id="SubstanceDefinition.name">
       <path value="SubstanceDefinition.name"/>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="SubstanceDefinition.relationship">
+      <path value="SubstanceDefinition.relationship"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="SubstanceDefinition.relationship.extension">
+      <path value="SubstanceDefinition.relationship.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="SubstanceDefinition.relationship.extension:impurity-origin">
+      <path value="SubstanceDefinition.relationship.extension"/>
+      <sliceName value="impurity-origin"/>
+      <short value="impurity-origin"/>
+      <!--            <min value="0"/>
+            <max value="1"/>-->
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq"/>
+      </type>
       <mustSupport value="true"/>
     </element>
     
@@ -49,5 +141,9 @@
       <path value="SubstanceDefinition.sourceMaterial"/>
       <mustSupport value="true"/>
     </element>
+    
+    
+    
+    
   </differential>
 </StructureDefinition>
