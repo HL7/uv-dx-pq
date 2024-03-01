@@ -21,5 +21,43 @@
       <path value="Specimen.subject"/>
       <mustSupport value="true"/>
     </element>
+    
+    
+    <element id="Specimen.processing">
+      <path value="Specimen.processing"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.processing.time[x]">
+      <path value="Specimen.processing.time[x]"/>
+<!--      <type>
+        <code value="dateTime"/>
+      </type>-->
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="Specimen.processing.time[x].extension">
+      <path value="Specimen.processing.time[x].extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Specimen.processing.time[x].extension:batch-storage-duration">
+      <path value="Specimen.processing.time[x].extension"/>
+      <sliceName value="batch-storage-duration"/>
+      <short value="batch-storage-duration"/>
+<!--      <min value="0"/>
+      <max value="1"/>-->
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-storage-duration-pq"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
   </differential>
 </StructureDefinition>
