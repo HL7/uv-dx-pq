@@ -36,8 +36,8 @@
         <code value="Period"/>
       </type>
     </element>
-    <element id="Specimen.processing.time[x].extension">
-      <path value="Specimen.processing.time[x].extension"/>
+    <element id="Specimen.processing.time[x].Period.extension">
+      <path value="Specimen.processing.time[x].Period.extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -47,8 +47,8 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="Specimen.processing.time[x].extension:batch-storage-duration">
-      <path value="Specimen.processing.time[x].extension"/>
+    <element id="Specimen.processing.time[x].Period.extension:batch-storage-duration">
+      <path value="Specimen.processing.time[x].Period.extension"/>
       <sliceName value="batch-storage-duration"/>
       <short value="batch-storage-duration"/>
 <!--      <min value="0"/>
