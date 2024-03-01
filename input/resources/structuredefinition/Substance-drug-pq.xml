@@ -17,6 +17,78 @@
         <element id="Substance">
             <path value="Substance"/>
         </element>
+        
+        <element id="Substance.extension">
+            <path value="Substance.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Substance.extension:medication-manufacturingBatch">
+            <path value="Substance.extension"/>
+            <sliceName value="medication-manufacturingBatch"/>
+            <short value="medication-manufacturingBatch"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Substance.extension:batch-release-date">
+            <path value="Substance.extension"/>
+            <sliceName value="batch-release-date"/>
+            <short value="batch-release-date"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Substance.extension:batch-retest-date">
+            <path value="Substance.extension"/>
+            <sliceName value="batch-retest-date"/>
+            <short value="batch-retest-date"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Substance.extension:manufacturing-process">
+            <path value="Substance.extension"/>
+            <sliceName value="manufacturing-process"/>
+            <short value="manufacturing-process"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Substance.extension:actual-yield">
+            <path value="Substance.extension"/>
+            <sliceName value="actual-yield"/>
+            <short value="actual-yield"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Substance.extension:batch-derived-from">
+            <path value="Substance.extension"/>
+            <sliceName value="batch-derived-from"/>
+            <short value="batch-derived-from"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-derived-from-pq"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Substance.identifier">
             <path value="Substance.identifier"/>
             <mustSupport value="true"/>

@@ -24,8 +24,8 @@ Details about compatibility studies and results.
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.2.6_Compatibility.pdf ">3.2.P.2.6 Compatibility</a>
 
 **XML and JSON examples** of synthetic CTD data:
-- <a href="Bundle-bundle-drug-product-compatibility-pq-ex1.xml.html">Product Batch Analysis example XML</a>
-- <a href="Bundle-bundle-drug-product-compatibility-pq-ex1.json.html">Product Batch Analysis example JSON</a>
+- <a href="Bundle-bundle-drug-product-compatibility-pq-ex1.xml.html">Product Compatibility example XML</a>
+- <a href="Bundle-bundle-drug-product-compatibility-pq-ex1.json.html">Product Compatibility example JSON</a>
 
 **HTML rendering** of synthetic CTD data:
 - <a href="compatibility_rend_p.html">Drug Product Compatibility</a>
