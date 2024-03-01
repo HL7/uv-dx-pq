@@ -29,9 +29,9 @@
     </element>
     <element id="Specimen.processing.time[x]">
       <path value="Specimen.processing.time[x]"/>
-<!--      <type>
+      <type>
         <code value="dateTime"/>
-      </type>-->
+      </type>
       <type>
         <code value="Period"/>
       </type>
