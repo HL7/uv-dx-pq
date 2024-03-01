@@ -80,10 +80,10 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Medication.batch.extension:manufacturing-batch-size">
+        <element id="Medication.batch.extension:manufacturing-batch">
             <path value="Medication.batch.extension"/>
-            <sliceName value="manufacturing-batch-size"/>
-            <short value="manufacturing-batch-size"/>
+            <sliceName value="manufacturing-batch"/>
+            <short value="manufacturing-batch"/>
             <!--            <min value="0"/>
             <max value="1"/>-->
             <type>
@@ -92,18 +92,30 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Medication.batch.extension:manufacturing-batch-quantity">
+<!--        <element id="Medication.batch.extension:manufacturing-batch-size">
             <path value="Medication.batch.extension"/>
-            <sliceName value="manufacturing-batch-quantity"/>
-            <short value="manufacturing-batch-quantity"/>
-<!--            <min value="0"/>
-            <max value="1"/>-->
+            <sliceName value="manufacturing-batch-size"/>
+            <short value="manufacturing-batch-size"/>
+            <!-\-            <min value="0"/>
+            <max value="1"/>-\->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch"/>
             </type>
             <mustSupport value="true"/>
-        </element>
+        </element>-->
+<!--        <element id="Medication.batch.extension:manufacturing-batch-quantity">
+            <path value="Medication.batch.extension"/>
+            <sliceName value="manufacturing-batch-quantity"/>
+            <short value="manufacturing-batch-quantity"/>
+<!-\-            <min value="0"/>
+            <max value="1"/>-\->
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>-->
         <element id="Medication.batch.extension:actual-yield">
             <path value="Medication.batch.extension"/>
             <sliceName value="actual-yield"/>
