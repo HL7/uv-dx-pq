@@ -66,8 +66,8 @@ Details about a stability study including stability study design (tests and acce
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.7.3_Stability_Data.pdf ">3.2.S.7.3 Stability Data</a>
 
 **XML and JSON examples** of synthetic CTD data:
-- <a href="Bundle-bundle-container-closure-system-pq-ex2-sub.xml.html">Substance Stability example XML</a>
-- <a href="Bundle-bundle-container-closure-system-pq-ex2-sub.json.html">Substance Stability example JSON</a>
+- <a href="Bundle-bundle-drug-stability-pq-ex2-sub.xml.html">Substance Stability example XML</a>
+- <a href="Bundle-bundle-drug-stability-pq-ex2-sub.json.html">Substance Stability example JSON</a>
 
 **HTML presentation example** of synthetic CTD data:
 - <a href="stability_rend_s.html">Drug Substance Stability</a>
