@@ -65,7 +65,7 @@
             <path value="Medication.batch"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Medication.batch.extension">http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch
+        <element id="Medication.batch.extension">
             <path value="Medication.batch.extension"/>
             <slicing>
                 <discriminator>
@@ -82,7 +82,7 @@
             <short value="manufacturing-batch-weight"/>
             <type>
                 <code value="Extension"/>
-                <profile value=""/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch"/>
             </type>
             <mustSupport value="true"/>
         </element>
