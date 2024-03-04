@@ -18,3 +18,4 @@ INFORMATION: Bundle/bundle-drug-product-pq-ex1: Bundle.entry[3].resource/*Medici
 
 # Information messages and Warnings about example code systems
 A definition for CodeSystem 'http://example.org/fhir/code/planType' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
