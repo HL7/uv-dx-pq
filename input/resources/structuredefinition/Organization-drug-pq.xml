@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="Organization-drug-pq"/>
     <meta>
         <versionId value="4"/>
@@ -19,8 +18,117 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Organization">
-            <path value="Organization"/>
+        <element id="Organization.identifier">
+            <path value="Organization.identifier"/>
+            <min value="1"/>
+        </element>
+        <element id="Organization.identifier.system">
+            <path value="Organization.identifier.system"/>
+            <min value="1"/>
+        </element>
+        <element id="Organization.identifier.value">
+            <path value="Organization.identifier.value"/>
+            <min value="1"/>
+        </element>
+        <element id="Organization.active">
+            <path value="Organization.active"/>
+            <short value="Whether this organization's record is in active use"/>
+        </element>
+        <element id="Organization.type">
+            <path value="Organization.type"/>
+            <short value="Type of organization"/>
+            <definition value="Organization type clarifies what purpose or busines operation this organization performs in relation to the ePI and the associated authorized medicinal products mentioned."/>
+            <min value="1"/>
+        </element>
+        <element id="Organization.name">
+            <path value="Organization.name"/>
+            <short value="Organization's legal name"/>
+        </element>
+        <element id="Organization.alias">
+            <path value="Organization.alias"/>
+            <short value="A list of alternate names for this organization"/>
+        </element>
+        <element id="Organization.description">
+            <path value="Organization.description"/>
+            <short value="Additional details about the Organization"/>
+        </element>
+        <element id="Organization.contact.telecom">
+            <path value="Organization.contact.telecom"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="system"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Organization.contact.telecom:phone">
+            <path value="Organization.contact.telecom"/>
+            <sliceName value="phone"/>
+            <short value="Phone"/>
+            <definition value="Corporate phone contact information for the local representative of the marketing authorization holder. International dialling code followed by the area code and telephone number."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Organization.contact.telecom:phone.system">
+            <path value="Organization.contact.telecom.system"/>
+            <min value="1"/>
+            <patternCode value="phone"/>
+        </element>
+        <element id="Organization.contact.telecom:email">
+            <path value="Organization.contact.telecom"/>
+            <sliceName value="email"/>
+            <short value="email"/>
+            <definition value="Corporate email contact information for the local representative of the marketing authorization holder."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Organization.contact.telecom:email.system">
+            <path value="Organization.contact.telecom.system"/>
+            <min value="1"/>
+            <patternCode value="email"/>
+        </element>
+        <element id="Organization.contact.telecom:url">
+            <path value="Organization.contact.telecom"/>
+            <sliceName value="url"/>
+            <short value="Web Site"/>
+            <definition value="Website of the local health authority and market authorization holder website "/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Organization.contact.telecom:url.system">
+            <path value="Organization.contact.telecom.system"/>
+            <min value="1"/>
+            <patternCode value="url"/>
+        </element>
+        <element id="Organization.contact.address.use">
+            <path value="Organization.contact.address.use"/>
+            <short value="home | work | temp | old | billing"/>
+            <patternCode value="work"/>
+        </element>
+        <element id="Organization.contact.address.type">
+            <path value="Organization.contact.address.type"/>
+            <short value="postal|physical|both"/>
+        </element>
+        <element id="Organization.contact.address.text">
+            <path value="Organization.contact.address.text"/>
+            <short value="Text representation of the address."/>
+        </element>
+        <element id="Organization.contact.address.line">
+            <path value="Organization.contact.address.line"/>
+            <min value="1"/>
+        </element>
+        <element id="Organization.contact.address.city">
+            <path value="Organization.contact.address.city"/>
+            <min value="1"/>
+        </element>
+        <element id="Organization.contact.address.country">
+            <path value="Organization.contact.address.country"/>
+            <min value="1"/>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/uv/emedicinal-product-info/ValueSet/country"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>
