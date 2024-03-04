@@ -2528,11 +2528,11 @@
                         <name value="impurities_rend_p.html"/>
                         <title value="Impurities: synthetic data rendering - drug product"/>
                         <generation value="markdown"/>
-                        <page>
-                            <name value="impurities_rend_s.html"/>
-                            <title value="Impurities: synthetic data rendering - drug substance"/>
-                            <generation value="markdown"/>
-                        </page>
+                    </page>
+                    <page>
+                        <name value="impurities_rend_s.html"/>
+                        <title value="Impurities: synthetic data rendering - drug substance"/>
+                        <generation value="markdown"/>
                     </page>
                 </page>
 
