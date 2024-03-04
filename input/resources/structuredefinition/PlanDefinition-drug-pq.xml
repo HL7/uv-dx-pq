@@ -162,10 +162,6 @@
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-local-pq"/>
             </binding>
-            <binding>
-                <strength value="example"/>
-                <codesystem value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
-            </binding>
         </element>
         
 <!--        <element id="PlanDefinition.action.participant">
