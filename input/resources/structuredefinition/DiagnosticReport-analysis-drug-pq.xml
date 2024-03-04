@@ -29,7 +29,7 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="DiagnosticReport.extension:workflow-triggeredBy">
+<!--        <element id="DiagnosticReport.extension:workflow-triggeredBy">
             <path value="DiagnosticReport.extension"/>
             <sliceName value="workflow-triggeredBy"/>
             <short value="A ‘step’ dictated within the protocol."/>
@@ -46,7 +46,7 @@
                     <code value="Reference"/>
                     <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
                 </type>
-        </element>
+        </element>-->
         <element id="DiagnosticReport.extension:statistical-model">
             <path value="DiagnosticReport.extension"/>
             <sliceName value="statistical-model"/>

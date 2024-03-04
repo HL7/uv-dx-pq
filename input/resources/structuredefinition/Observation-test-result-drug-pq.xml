@@ -33,7 +33,7 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Observation.extension:workflow-triggeredBy">
+        <!--<element id="Observation.extension:workflow-triggeredBy">
             <path value="Observation.extension"/>
             <sliceName value="workflow-triggeredBy"/>
             <short value="workflow-triggeredBy"/>
@@ -42,7 +42,7 @@
                 <profile value="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy"/>
             </type>
             <mustSupport value="true"/>
-        </element>
+        </element>-->
         <element id="Observation.id">
             <path value="Observation.id"/>
             <mustSupport value="true"/>
