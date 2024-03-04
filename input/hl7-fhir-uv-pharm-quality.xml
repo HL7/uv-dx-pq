@@ -2367,6 +2367,126 @@
                 <title value="Domains Overview"/>
                 <generation value="markdown"/>
 
+                <!--Analytical Procedures-->
+                <page>
+                    <name value="anal_proc.html"/>
+                    <title value="Analytical Procedures"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="anal_proc_rend_p.html"/>
+                    <title value="Analytical Procedures: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="anal_proc_rend_s.html"/>
+                    <title value="Analytical Procedures: CMC synthetic data rendering - drug substance"/>
+                    <generation value="markdown"/>
+                </page>
+                
+                <!--Batch Analysis-->
+                <page>
+                    <name value="batch_anal.html"/>
+                    <title value="Batch Analysis"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="batch_anal_rend_p.html"/>
+                    <title value="Batch Analysis: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="batch_anal_rend_s.html"/>
+                    <title value="Batch Analysis: CMC synthetic data rendering - drug substance"/>
+                    <generation value="markdown"/>
+                </page>
+                <!--Batch Formula-->
+                <page>
+                    <name value="batch_formula.html"/>
+                    <title value="Batch Formula"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="batch_formula_rend_p.html"/>
+                    <title value="Batch Formula: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <!--Batch/Lot Information-->
+                <page>
+                    <name value="batch_info.html"/>
+                    <title value="Batch/Lot Information"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="batch_info_rend_p.html"/>
+                    <title value="Batch/Lot Information: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="batch_info_rend_s.html"/>
+                    <title value="Batch/Lot Information: CMC synthetic data rendering - drug substance"/>
+                    <generation value="markdown"/>
+                </page>
+                <!--Compatibility-->
+                <page>
+                    <name value="compatibility.html"/>
+                    <title value="Compatibility"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="compatibility_rend_p.html"/>
+                    <title value="Compatibility: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <!--Composition-->
+                <page>
+                    <name value="composition.html"/>
+                    <title value="Composition"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="composition_rend_p.html"/>
+                    <title value="Composition: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="composition_rend_s.html"/>
+                    <title value="Composition: CMC synthetic data rendering - drug substance"/>
+                    <generation value="markdown"/>
+                </page>
+                <!--Container Closure System-->
+                <page>
+                    <name value="container.html"/>
+                    <title value="Container Closure System"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="container_rend_p.html"/>
+                    <title value="Container Closure System: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="container_rend_s.html"/>
+                    <title value="Container Closure System: CMC synthetic data rendering - drug substance"/>
+                    <generation value="markdown"/>
+                </page>
+                <!--Specification-->
+                <page>
+                    <name value="drug_specification.html"/>
+                    <title value="Drug Specification"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="drug_specification_rend_p.html"/>
+                    <title value="Drug Specification: CMC synthetic data rendering - drug product"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="drug_specification_rend_s.html"/>
+                    <title value="Drug Specification: CMC synthetic data rendering - drug substance"/>
+                    <generation value="markdown"/>
+                </page>
+                <!--Identification-->
                 <page>
                     <name value="identification.html"/>
                     <title value="Identification"/>
@@ -2397,23 +2517,7 @@
                     <title value="Identification: CMC synthetic data rendering - drug substance"/>
                     <generation value="markdown"/>
                 </page>
-
-                <page>
-                    <name value="composition.html"/>
-                    <title value="Composition"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="composition_rend_p.html"/>
-                    <title value="Composition: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="composition_rend_s.html"/>
-                    <title value="Composition: CMC synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
-                </page>
-
+                <!--Impurities-->
                 <page>
                     <name value="impurities.html"/>
                     <title value="Impurities"/>
@@ -2429,61 +2533,8 @@
                         <generation value="markdown"/>
                     </page>
                 </page>
-
-                <page>
-                    <name value="organizations.html"/>
-                    <title value="Organizations"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="organizations_rend.html"/>
-                    <title value="Organizations: CMC synthetic data rendering"/>
-                    <generation value="markdown"/>
-                </page>
-
-                <page>
-                    <name value="batch_info.html"/>
-                    <title value="Batch/Lot Information"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="batch_info_rend_p.html"/>
-                    <title value="Batch/Lot Information: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="batch_info_rend_s.html"/>
-                    <title value="Batch/Lot Information: CMC synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
-                </page>
-
-                <page>
-                    <name value="batch_anal.html"/>
-                    <title value="Batch Analysis"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="batch_anal_rend_p.html"/>
-                    <title value="Batch Analysis: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="batch_anal_rend_s.html"/>
-                    <title value="Batch Analysis: CMC synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
-                </page>
-
-                <page>
-                    <name value="batch_formula.html"/>
-                    <title value="Batch Formula"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="batch_formula_rend_p.html"/>
-                    <title value="Batch Formula: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-
+                
+                <!--Manufacturing Process-->
                 <page>
                     <name value="mnf_process.html"/>
                     <title value="Manufacturing Process"/>
@@ -2499,7 +2550,18 @@
                     <title value="Manufacturing Process: CMC synthetic data rendering - drug substance"/>
                     <generation value="markdown"/>
                 </page>
-
+                <!--Organizations -->
+                <page>
+                    <name value="organizations.html"/>
+                    <title value="Organizations"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <name value="organizations_rend.html"/>
+                    <title value="Organizations: CMC synthetic data rendering"/>
+                    <generation value="markdown"/>
+                </page>
+                <!--Process Validation-->
                 <page>
                     <name value="process_valid.html"/>
                     <title value="Process Validation"/>
@@ -2520,39 +2582,7 @@
                     <title value="Process Validation: CMC synthetic data rendering - drug substance"/>
                     <generation value="markdown"/>
                 </page>
-
-                <page>
-                    <name value="anal_proc.html"/>
-                    <title value="Analytical Procedures"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="anal_proc_rend_p.html"/>
-                    <title value="Analytical Procedures: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="anal_proc_rend_s.html"/>
-                    <title value="Analytical Procedures: CMC synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
-                </page>
-
-                <page>
-                    <name value="container.html"/>
-                    <title value="Container Closure System"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="container_rend_p.html"/>
-                    <title value="Container Closure System: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="container_rend_s.html"/>
-                    <title value="Container Closure System: CMC synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
-                </page>
-
+                <!--Stability Study-->
                 <page>
                     <name value="stability.html"/>
                     <title value="Stability Study"/>
@@ -2569,32 +2599,9 @@
                     <generation value="markdown"/>
                 </page>
 
-                <page>
-                    <name value="drug_specification.html"/>
-                    <title value="Drug Specification"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="drug_specification_rend_p.html"/>
-                    <title value="Drug Specification: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="drug_specification_rend_s.html"/>
-                    <title value="Drug Specification: CMC synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
-                </page>
 
-                <page>
-                    <name value="compatibility.html"/>
-                    <title value="Compatibility"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="compatibility_rend_p.html"/>
-                    <title value="Compatibility: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
+
+
             </page>
 
             <page>
