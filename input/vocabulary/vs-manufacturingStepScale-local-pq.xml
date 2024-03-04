@@ -3,7 +3,7 @@
     <id value="vs-manufacturingStepScale-local-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStepScale-local-pq"/>
     <name value="VsManufacturingStepScalePQ"/>
-    <title value="ValueSet - Manufacturing Step Scale"/>
+    <title value="Manufacturing Step Scale"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for manufacturing step scale in PQ."/>

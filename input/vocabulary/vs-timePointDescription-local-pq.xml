@@ -3,7 +3,7 @@
     <id value="vs-timePointDescription-local-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-timePointDescription-local-pq"/>
     <name value="VsTimePointDescriptionPQ"/>
-    <title value="ValueSet - Time Point Description"/>
+    <title value="Time Point Description"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for time point description in PQ."/>

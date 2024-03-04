@@ -4,7 +4,7 @@
     <!--    Replaces http://accumulus.org/fhir/code/planType-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-planType-local-pq"/>
     <name value="VsPlanTypePQ"/>
-    <title value="ValueSet - Plan Type"/>
+    <title value="Plan Type"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for plan type in PQ."/>

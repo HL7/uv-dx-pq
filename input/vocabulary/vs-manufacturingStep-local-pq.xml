@@ -4,7 +4,7 @@
     <!--    Replaces http://accumulus.org/fhir/code/manufacturingStep-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-local-pq"/>
     <name value="VsManufacturingStepPQ"/>
-    <title value="ValueSet - Manufacturing Step"/>
+    <title value="Manufacturing Step"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for manufacturing step in PQ."/>

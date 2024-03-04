@@ -3,7 +3,7 @@
     <id value="vs-qualifiedValueCriticality-local-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-qualifiedValueCriticality-local-pq"/>
     <name value="VsQualifiedValueCriticalityPQ"/>
-    <title value="ValueSet - Qualified Value Criticality"/>
+    <title value="Qualified Value Criticality"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for qualified value criticality in PQ."/>

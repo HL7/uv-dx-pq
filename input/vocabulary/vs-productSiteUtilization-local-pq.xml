@@ -3,7 +3,7 @@
     <id value="vs-productSiteUtilizationType-local-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-productSiteUtilizationType-local-pq"/>
     <name value="VsProductSiteUtilizationPQ"/>
-    <title value="ValueSet - Product Site Utilization"/>
+    <title value="Product Site Utilization"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for product site utilization type in PQ."/>
