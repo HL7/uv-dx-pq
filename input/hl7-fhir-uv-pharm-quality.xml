@@ -2056,17 +2056,6 @@
 
         <resource>
             <reference>
-                <reference value="CodeSystem/cs-controlCriticality-local-pq"/>
-                <display value="CodeSystem - Control Criticality example codes"/>
-            </reference>
-            <name value="CodeSystem - Control Criticality example codes"/>
-            <description value="This code system contains local codes for control criticality in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
                 <reference value="CodeSystem/cs-deviceProperty-local-pq"/>
                 <display value="CodeSystem - Device Property example codes"/>
             </reference>
