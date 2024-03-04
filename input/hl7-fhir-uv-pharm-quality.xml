@@ -835,7 +835,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
@@ -901,7 +901,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/SpecimenDefinition-drug-pq"/>
@@ -923,7 +923,7 @@
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
@@ -1067,7 +1067,7 @@
             <groupingId value="building-blocks-2"/>
         </resource>
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex1"/>
             </reference>
@@ -1078,7 +1078,7 @@
             <groupingId value="building-blocks-2"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex2"/>
             </reference>
@@ -1089,7 +1089,7 @@
             <groupingId value="building-blocks-2"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="Observation/observation-test-result-drug-pq-ex1"/>
             </reference>
@@ -1100,7 +1100,7 @@
             <groupingId value="building-blocks-2"/>
         </resource>-->
 
-<!--        <resource>
+        <!--        <resource>
             <reference>
                 <reference value="Observation/observation-test-result-drug-pq-ex2"/>
             </reference>
@@ -1121,7 +1121,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp1"/>
@@ -1143,7 +1143,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="ObservationDefinition/Water"/>
@@ -1154,7 +1154,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Organization/organization-drug-pq-ex1"/>
@@ -1252,7 +1252,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Specimen/specimen-drug-pq-ex1"/>
@@ -1263,7 +1263,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
@@ -1274,7 +1274,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
@@ -1317,7 +1317,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-             
+
         <resource>
             <reference>
                 <reference value="SubstanceDefinition/StelbatololAqueousSolution"/>
@@ -1328,7 +1328,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="SubstanceDefinition/StelbatololGranules"/>
@@ -1338,7 +1338,7 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource>    
+        </resource>
 
         <!--Extensions in alpha order -->
         <resource>
@@ -1548,7 +1548,7 @@
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/Extension-novel-excipient-pq"/>
@@ -2009,7 +2009,7 @@
 
 
         <!--Terminology-->
-<!--
+        <!--
         <resource>
             <reference>
                 <reference value="CodeSystem/cs-local-codes-drug-pq"/>
@@ -2372,18 +2372,19 @@
                     <name value="anal_proc.html"/>
                     <title value="Analytical Procedures"/>
                     <generation value="markdown"/>
+
+                    <page>
+                        <name value="anal_proc_rend_p.html"/>
+                        <title value="Analytical Procedures: CMC synthetic data rendering - drug product"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <name value="anal_proc_rend_s.html"/>
+                        <title value="Analytical Procedures: CMC synthetic data rendering - drug substance"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
-                <page>
-                    <name value="anal_proc_rend_p.html"/>
-                    <title value="Analytical Procedures: CMC synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="anal_proc_rend_s.html"/>
-                    <title value="Analytical Procedures: CMC synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
-                </page>
-                
+
                 <!--Batch Analysis-->
                 <page>
                     <name value="batch_anal.html"/>
@@ -2533,7 +2534,7 @@
                         <generation value="markdown"/>
                     </page>
                 </page>
-                
+
                 <!--Manufacturing Process-->
                 <page>
                     <name value="mnf_process.html"/>
@@ -2628,13 +2629,13 @@
             </code>
             <value value="version"/>
         </parameter>-->
-		<parameter>
+        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="releaselabel"/>
             </code>
-			<value value="ballot"/>
-		</parameter>
+            <value value="ballot"/>
+        </parameter>
         <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
