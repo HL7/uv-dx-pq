@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="organization-drug-pq-ex1"/>
+    <id value="organization-drug-pq-ex2"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
     </meta>
     <identifier>
         <!-- FDA establishment identifier -->
         <system value="urn:oid:2.16.840.1.113883.4.82"/>
-        <value value="3003040516"/>
+        <value value="2246707"/>
     </identifier>
     <active value="true"/>
     <type>
@@ -17,14 +17,13 @@
             <display value="Manufacturer"/>
         </coding>
     </type>
-    <name value="AAA Molybdenum Products, Inc."/>
+    <name value="AAA Pharmaceutical, Inc."/>
     <contact>
         <address>
-            <line value="7233 W 116th Pl"/>
-            <line value="Ste C"/>
-            <city value="Broomfield"/>
-            <state value="Colorado"/>
-            <postalCode value="80020"/>
+            <line value="157-160 West Jefferson Street"/>
+            <city value="Paulsboro"/>
+            <state value="New Jersey"/>
+            <postalCode value="08066"/>
             <country value="USA"/>
         </address>
     </contact>

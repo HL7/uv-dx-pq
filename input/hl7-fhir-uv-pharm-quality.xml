@@ -1159,7 +1159,47 @@
             <reference>
                 <reference value="Organization/organization-drug-pq-ex1"/>
             </reference>
-            <name value="Organization - Drug - example"/>
+            <name value="Organization - Drug - example 1, manufacturer"/>
+            <description value="Example of Organization - Drug."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-drug-pq-ex2"/>
+            </reference>
+            <name value="Organization - Drug - example 2, manufacturer"/>
+            <description value="Example of Organization - Drug."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-drug-pq-ex3"/>
+            </reference>
+            <name value="Organization - Drug - example 3, packaging"/>
+            <description value="Example of Organization - Drug."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-drug-pq-ex4"/>
+            </reference>
+            <name value="Organization - Drug - example 4, packaging"/>
+            <description value="Example of Organization - Drug."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
+            <groupingId value="building-blocks-2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-drug-pq-ex5"/>
+            </reference>
+            <name value="Organization - Drug - example 5, testing lab"/>
             <description value="Example of Organization - Drug."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
