@@ -34,21 +34,24 @@
             <sliceName value="workflow-triggeredBy"/>
             <short value="A ‘step’ dictated within the protocol."/>
             <definition value="A ‘step’ dictated within the protocol."/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy"/>
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="DiagnosticReport.extension:workflow-triggeredBy.value[x]">
+            <path value="DiagnosticReport.extension:workflow-triggeredBy.value[x]"/>
+                <type>
+                    <code value="Reference"/>
+                    <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
+                </type>
+        </element>
         <element id="DiagnosticReport.extension:statistical-model">
             <path value="DiagnosticReport.extension"/>
             <sliceName value="statistical-model"/>
             <short value="Information about the statistical model utilized to interpret results."/>
             <definition value="Information about the statistical model utilized to interpret results."/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-statistical-model-pq"/>
@@ -60,8 +63,6 @@
             <sliceName value="container-orientation"/>
             <short value="The spatial orientaton of the container when tested, for instance horizontal or vertical."/>
             <definition value="The spatial orientaton of the container when tested, for instance horizontal or vertical."/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq"/>
