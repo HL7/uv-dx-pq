@@ -2445,11 +2445,11 @@
                     <name value="composition.html"/>
                     <title value="Composition"/>
                     <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="composition_rend_p.html"/>
-                    <title value="Composition: synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
+                    <page>
+                        <name value="composition_rend_p.html"/>
+                        <title value="Composition: synthetic data rendering - drug product"/>
+                        <generation value="markdown"/>
+                    </page>
                     <page>
                         <name value="composition_rend_s.html"/>
                         <title value="Composition: synthetic data rendering - drug substance"/>
@@ -2541,64 +2541,65 @@
                     <name value="mnf_process.html"/>
                     <title value="Manufacturing Process"/>
                     <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="mnf_process_rend_p.html"/>
-                    <title value="Manufacturing Process: synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="mnf_process_rend_s.html"/>
-                    <title value="Manufacturing Process: synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
+                    <page>
+                        <name value="mnf_process_rend_p.html"/>
+                        <title value="Manufacturing Process: synthetic data rendering - drug product"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <name value="mnf_process_rend_s.html"/>
+                        <title value="Manufacturing Process: synthetic data rendering - drug substance"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
                 <!--Organizations -->
                 <page>
                     <name value="organizations.html"/>
                     <title value="Organizations"/>
                     <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="organizations_rend.html"/>
-                    <title value="Organizations: synthetic data rendering"/>
-                    <generation value="markdown"/>
+                    <page>
+                        <name value="organizations_rend.html"/>
+                        <title value="Organizations: synthetic data rendering"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
                 <!--Process Validation-->
                 <page>
                     <name value="process_valid.html"/>
                     <title value="Process Validation"/>
                     <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="process_valid_rend_p.html"/>
-                    <title value="Process Validation: synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="process_valid_rend_pb.html"/>
-                    <title value="Process Validation: synthetic data rendering - drug product, biologic"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="process_valid_rend_s.html"/>
-                    <title value="Process Validation: synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
+                    <page>
+                        <name value="process_valid_rend_p.html"/>
+                        <title value="Process Validation: synthetic data rendering - drug product"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <name value="process_valid_rend_pb.html"/>
+                        <title value="Process Validation: synthetic data rendering - drug product, biologic"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <name value="process_valid_rend_s.html"/>
+                        <title value="Process Validation: synthetic data rendering - drug substance"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
                 <!--Stability Study-->
                 <page>
                     <name value="stability.html"/>
                     <title value="Stability Study"/>
                     <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="stability_rend_p.html"/>
-                    <title value="Stability Study: synthetic data rendering - drug product"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <name value="stability_rend_s.html"/>
-                    <title value="Stability Study: synthetic data rendering - drug substance"/>
-                    <generation value="markdown"/>
+
+                    <page>
+                        <name value="stability_rend_p.html"/>
+                        <title value="Stability Study: synthetic data rendering - drug product"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <name value="stability_rend_s.html"/>
+                        <title value="Stability Study: synthetic data rendering - drug substance"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
             </page>
 
