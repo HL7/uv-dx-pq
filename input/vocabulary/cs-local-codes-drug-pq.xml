@@ -3,7 +3,7 @@
   <id value="cs-local-codes-drug-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
   <name value="CsLocalCodesDrugPQ"/>
-  <title value="CodeSystem - Example Local Codes - Drug"/>
+  <title value="Example Local Codes - Drug"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="This code system contains temporary example codes for use in PQ."/>

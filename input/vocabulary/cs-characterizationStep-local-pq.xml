@@ -4,7 +4,7 @@
     <!--    Replaces http://accumulus.org/fhir/code/characterizationStep-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
     <name value="CsCharacterizationStepPQ"/>
-    <title value="CodeSystem - Characterization Step"/>
+    <title value="Characterization Step"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for characterization step in PQ."/>

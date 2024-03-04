@@ -4,7 +4,7 @@
     <!--    Replaces http://accumulus.org/fhir/code/goalPriority-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
     <name value="CsGoalPriorityPQ"/>
-    <title value="CodeSystem - Goal Priority"/>
+    <title value="Goal Priority"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for goal priority in PQ."/>

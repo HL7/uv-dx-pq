@@ -4,7 +4,7 @@
     <!--    Replaces http://accumulus.org/fhir/code/timePointDescription-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-timePointDescription-local-pq"/>
     <name value="CsTimePointDescriptionPQ"/>
-    <title value="CodeSystem - Time Point Description"/>
+    <title value="Time Point Description"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for time point description in PQ."/>

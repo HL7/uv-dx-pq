@@ -4,7 +4,7 @@
     <!--    Replaces http://accumulus.org/fhir/code/productNameType-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
     <name value="CsProductNameTypePQ"/>
-    <title value="CodeSystem - Product Name Type"/>
+    <title value="Product Name Type"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for product name type in PQ."/>

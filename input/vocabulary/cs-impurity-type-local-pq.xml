@@ -4,7 +4,7 @@
     <!--    Replaces http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq -->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
     <name value="CsImpurityTypePQ"/>
-    <title value="CodeSystem - Impurity Type"/>
+    <title value="Impurity Type"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for impurity type in PQ."/>

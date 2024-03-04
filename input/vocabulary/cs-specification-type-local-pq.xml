@@ -4,7 +4,7 @@
     <!--    Replaces http://temp.hl7.org/fhir/CodeSystem/specification-type-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq"/>
     <name value="CsSpecificationTypePQ"/>
-    <title value="CodeSystem - Specification Type"/>
+    <title value="Specification Type"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for specification type in PQ."/>
