@@ -168,13 +168,13 @@
             <binding>
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-local-pq"/>
-            </binding>
+<!--            </binding>
             <binding>
-                <strength value="example"/>
+                <strength value="example"/>-->
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-characterizationStep-local-pq"/>
-            </binding>
+<!--            </binding>
             <binding>
-                <strength value="example"/>
+                <strength value="example"/>-->
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-specification-type-local-pq"/>
             </binding>
         </element>
