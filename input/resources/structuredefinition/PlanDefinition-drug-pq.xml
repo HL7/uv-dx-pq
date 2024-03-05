@@ -164,34 +164,48 @@
         
         <element id="PlanDefinition.action.code">
             <path value="PlanDefinition.action.code"/>
+        </element>
+        <element id="PlanDefinition.action.code.coding">
+            <path value="PlanDefinition.action.code.coding"/>
             <slicing>
                 <discriminator>
-                    <type value="pattern"/>
-                    <path value="$this"/>
+                    <type value="value"/>
+                    <path value="code"/>
                 </discriminator>
+                <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
         </element>
-        <element id="PlanDefinition.action.code:coding-manufacturing-step">
-            <path value="PlanDefinition.action.code"/>
+        
+        <element id="PlanDefinition.action.code.coding:coding-manufacturing-step">
+            <path value="PlanDefinition.action.code.coding"/>
             <sliceName value="coding-manufacturing-step"/>
+            <type>
+                <code value="Coding"/>
+            </type>
             <binding>
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-local-pq"/>
             </binding>
         </element>
-        <element id="PlanDefinition.action.code:coding-characterization-step">
-            <path value="PlanDefinition.action.code"/>
+        <element id="PlanDefinition.action.code.coding:coding-characterization-step">
+            <path value="PlanDefinition.action.code.coding"/>
             <sliceName value="coding-characterization-step"/>
+            <type>
+                <code value="Coding"/>
+            </type>
             <binding>
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-characterizationStep-local-pq"/>
             </binding>
         </element>
-        <element id="PlanDefinition.action.code:coding-specification-type">
-            <path value="PlanDefinition.action.code"/>
+        <element id="PlanDefinition.action.code.coding:coding-specification-type">
+            <path value="PlanDefinition.action.code.coding"/>
             <sliceName value="coding-specification-type"/>
+            <type>
+                <code value="Coding"/>
+            </type>
             <binding>
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-specification-type-local-pq"/>
