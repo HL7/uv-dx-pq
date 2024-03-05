@@ -113,8 +113,15 @@
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
-            <min value="0"/>
-            <max value="0"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-processParameter-local-pq"/> 
+            </binding>
         </element>
+        
+        
     </differential>
 </StructureDefinition>
