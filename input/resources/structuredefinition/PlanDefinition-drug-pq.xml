@@ -79,20 +79,10 @@
             <path value="PlanDefinition.type"/>
             <mustSupport value="true"/>
             <binding>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-                    <valueString value="PlanDefinitionType"/>
-                </extension>
-                <strength value="extensible"/>
-                <description value="The type of PlanDefinition."/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/plan-definition-type"/>
-            </binding>
-            <binding>
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-planType-local-pq"/>
             </binding>
         </element>
-        
-        
         
         <element id="PlanDefinition.status">
             <path value="PlanDefinition.status"/>
@@ -114,6 +104,23 @@
             <path value="PlanDefinition.goal"/>
             <mustSupport value="true"/>
         </element>
+        <element id="PlanDefinition.goal.category">
+            <path value="PlanDefinition.goal.category"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-equipmentClass-local-pq"/>
+            </binding>
+        </element>
+        
+        <element id="PlanDefinition.actor.option.role">
+            <path value="PlanDefinition.actor.option.role"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-testCategory-local-pq"/>
+            </binding>
+        </element>
+        
         <element id="PlanDefinition.action">
             <path value="PlanDefinition.action"/>
             <mustSupport value="true"/>
@@ -162,11 +169,16 @@
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-local-pq"/>
             </binding>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-characterizationStep-local-pq"/>
+            </binding>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-specification-type-local-pq"/>
+            </binding>
         </element>
         
-<!--        <element id="PlanDefinition.action.participant">
-            <path value="PlanDefinition.action.participant"/>
-        </element>-->
         <element id="PlanDefinition.action.participant.typeReference.extension">
             <path value="PlanDefinition.action.participant.typeReference.extension"/>
             <slicing>
@@ -182,13 +194,24 @@
             <path value="PlanDefinition.action.participant.typeReference.extension"/>
             <sliceName value="manufacturing-participant"/>
             <short value="manufacturing-participant"/>
-            <min value="0"/>
-            <max value="1"/>
+<!--            <min value="0"/>
+            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq"/>
             </type>
             <mustSupport value="true"/>
         </element>
+        
+        <element id="PlanDefinition.action.participant.role">
+            <path value="PlanDefinition.action.participant.role"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingParticipantRole-local-pq"/>
+            </binding>
+        </element>
+        
+        
     </differential>
 </StructureDefinition>
