@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="vs-specification-type-local-pq"/>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/vs-specification-type-local-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-specification-type-local-pq"/>
     <name value="VsSpecificationTypePQ"/>
     <title value="Specification Type"/>
     <status value="active"/>
