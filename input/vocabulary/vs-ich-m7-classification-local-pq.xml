@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-ich-m7-classification-local-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-ich-m7-classification-local-pq"/>
+    <name value="VsIchM7ClassificationPQ"/>
+    <title value="ICH M7 Classification"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains example codes for ICH M7 classification in PQ."/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+        </include>
+    </compose>
+</ValueSet>

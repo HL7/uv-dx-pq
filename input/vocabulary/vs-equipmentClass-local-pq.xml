@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-equipmentClass-local-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-equipmentClass-local-pq"/>
+    <name value="VsEquipmentClassPQ"/>
+    <title value="Equipment Class"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains example codes for equipment class in PQ."/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
+        </include>
+    </compose>
+</ValueSet>

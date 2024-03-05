@@ -12,5 +12,4 @@
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
         </include>
     </compose>
-    
 </ValueSet>

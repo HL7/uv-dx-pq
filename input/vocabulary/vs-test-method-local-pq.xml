@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="vs-test-method-local-pq"/>
-    <!--    Replaces http://accumulus.org/fhir/code/planType-->
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-test-method-local-pq"/>
     <name value="VsTestMethodPQ"/>
     <title value="Test Method"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for test methods in PQ."/>
-
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
