@@ -33,8 +33,6 @@
             <path value="PlanDefinition.extension"/>
             <sliceName value="plan-document-reference"/>
             <short value="plan-document-reference"/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq"/>
@@ -45,8 +43,6 @@
             <path value="PlanDefinition.extension"/>
             <sliceName value="history-of-process"/>
             <short value="history-of-process"/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq"/>
@@ -141,8 +137,6 @@
             <path value="PlanDefinition.action.extension"/>
             <sliceName value="process-parameters"/>
             <short value="process-parameters"/>
-<!--            <min value="0"/>
-            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq"/>
@@ -153,8 +147,7 @@
             <path value="PlanDefinition.action.extension"/>
             <sliceName value="process-step-scale"/>
             <short value="process-step-scale"/>
-            <min value="0"/>
-            <max value="1"/>
+
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq"/>
@@ -175,9 +168,7 @@
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
-            <min value="1"/>
         </element>
-        
         <element id="PlanDefinition.action.code.coding:coding-manufacturing-step">
             <path value="PlanDefinition.action.code.coding"/>
             <sliceName value="coding-manufacturing-step"/>
@@ -227,8 +218,6 @@
             <path value="PlanDefinition.action.participant.typeReference.extension"/>
             <sliceName value="manufacturing-participant"/>
             <short value="manufacturing-participant"/>
-<!--            <min value="0"/>
-            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-participant-pq"/>
