@@ -128,7 +128,7 @@
       </type>-\->
     </element>-->
     
-    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding">
+<!--    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding">
       <path value="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding"/>
       <slicing>
         <discriminator>
@@ -140,8 +140,8 @@
       <type>
         <code value="Coding"/>
       </type>
-    </element>
-    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding:pharmaceutical-grade">
+    </element>-->
+<!--    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding:pharmaceutical-grade">
       <path value="PackagedProductDefinition.packaging.property.value[x].coding"/>
       <sliceName value="pharmaceutical-grade"/>
       <type>
@@ -151,7 +151,7 @@
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-local-pq"/>
       </binding>
-    </element>
+    </element>-->
 
     <element id="PackagedProductDefinition.packaging.containedItem">
       <path value="PackagedProductDefinition.packaging.containedItem"/>
