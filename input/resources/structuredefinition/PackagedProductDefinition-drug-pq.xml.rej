@@ -1,0 +1,33 @@
+diff a/input/resources/structuredefinition/PackagedProductDefinition-drug-pq.xml b/input/resources/structuredefinition/PackagedProductDefinition-drug-pq.xml	(rejected hunks)
+@@ -83,7 +83,30 @@
+       </binding>
+     </element>
+ 
+-
++    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding">
++      <path value="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding"/>
++      <slicing>
++        <discriminator>
++          <type value="pattern"/>
++          <path value="$this"/>
++        </discriminator>
++        <rules value="open"/>
++      </slicing>
++      <type>
++        <code value="Coding"/>
++      </type>
++    </element>
++    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding:pharmaceutical-grade">
++      <path value="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding"/>
++      <sliceName value="pharmaceutical-grade"/>
++      <type>
++        <code value="Coding"/>
++      </type>
++      <binding>
++        <strength value="example"/>
++        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-local-pq"/>
++      </binding>
++    </element>
+ 
+     <element id="PackagedProductDefinition.packaging.containedItem">
+       <path value="PackagedProductDefinition.packaging.containedItem"/>

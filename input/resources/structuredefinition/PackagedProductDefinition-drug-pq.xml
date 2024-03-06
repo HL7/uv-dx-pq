@@ -82,7 +82,7 @@
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-local-pq"/>
       </binding>
     </element>
-
+<!--
     <element id="PackagedProductDefinition.packaging.property.value[x]">
       <path value="PackagedProductDefinition.packaging.property.value[x]"/>
       <slicing>
@@ -93,7 +93,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <type>
+     <!-\- <type>
         <code value="Quantity"/>
       </type>
       <type>
@@ -125,11 +125,11 @@
       </type>
       <type>
         <code value="Period"/>
-      </type>
-    </element>
+      </type>-\->
+    </element>-->
     
     <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding">
-      <path value="PackagedProductDefinition.packaging.property.value[x].coding"/>
+      <path value="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding"/>
       <slicing>
         <discriminator>
           <type value="pattern"/>
