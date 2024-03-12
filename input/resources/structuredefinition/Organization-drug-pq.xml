@@ -36,9 +36,12 @@
         </element>
         <element id="Organization.type">
             <path value="Organization.type"/>
-            <short value="Type of organization"/>
-            <definition value="Organization type clarifies what purpose or busines operation this organization performs in relation to the ePI and the associated authorized medicinal products mentioned."/>
             <min value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-pharmaceutical-organization-type"/>
+            </binding>
         </element>
         <element id="Organization.name">
             <path value="Organization.name"/>
