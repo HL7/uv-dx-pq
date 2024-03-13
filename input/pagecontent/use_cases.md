@@ -31,7 +31,7 @@ The testing lab conducts the stability study as per the study details and collec
 
 **Step 5: Return stability study results to the sponsor**
 
-The testing lab creates a collection of Observation resources to capture the results of each test. The testing lab also uses the DiagnosticReport resource to capture additional conclusions or other details about the strudy results.
+The testing lab creates a collection of Observation resources to capture the results of each test. The testing lab also uses the DiagnosticReport resource to capture additional conclusions or other details about the study results.
 
 The testing lab creates a Bundle resource and returns the results to the sponsor via RESTful API.
 
@@ -43,7 +43,8 @@ The sponsor’s system receives the Bundle with the results via RESTful API. The
 
 The sponsor creates a final study report by creating a DiagnosticReport resource to capture their conclusions and any other necessary details.
 
-This complete stability study can be bundled and transformed into an output format that is acceptable to any given regulator; e.g., XML, JSON, PDF or Word.
+If needed, this complete stability study can be bundled and transformed into an output format that is acceptable to any given national regulator responsible for the authorization of medicinal products; e.g., XML, JSON, PDF or Word.
+
 
 ### Stability Update (18 to 24 months)
 A sponsor plans to submit a request to a health authority to update the shelf life for their medicinal product from 18 months at 5 °C to 24 months at 5 °C, with supporting stability data to provide rationale for the change. Using a FHIR-based exchange mechanism, the sponsor takes the following approach:
@@ -64,11 +65,13 @@ The sponsor’s PQ data repository creates new versions of the existing resource
 
 **Step 3: Send to regulator**
 
-The sponsor submits the updated Stability Bundle to the health authority for review. Submission occurs via a RESTful API.
+The stability update can be bundled and transformed into an output format that is acceptable to any given national regulator responsible for the authorization of medicinal products; e.g., XML, JSON, PDF or Word.
+
+The sponsor submits the updated Stability Bundle to the health authority for review (refer to local regulatory guidance for detail on acceptable submission requirements and methods).
 
 **Step 4: Receive health authority receipt notification**
 
-The regulator’s API automatically sends a receipt notification, received by the manufacturer in real–time (milliseconds).
+The regulator confirms receipt of the update.
 
 **Step 5: Receive health authority questions**
 
@@ -107,12 +110,8 @@ Once the specification is created according to the sponsors’ need, it can be p
 
 The test results would be sent back to the sponsor in the same FHIR format via RESTful API, and the sponsor would update the Specification and Batch Analyses bundles with any additional contextual information or metadata. 
 
-Once final, the FHIR datasets can be bundled and stored until needed again or the bundle can be submitted to a health authority.
-
 **Step 5: Send to regulator**
-
-Once the data has been deemed acceptable for health authority review, the data can be submitted to a health authority for review via RESTful API, in which case the sponsor’s content management systems would engage in an API-to-API two-way communication with the regulator’s systems.
-
+Once the data has been deemed ready for health authority review, the data can be transformed to meet national regulatory requirements and submitted to a health authority for review.
 
 ### Facility Change
 Organization or facility information can be repetitive and challenging to manage throughout a product’s lifecycle and across jurisdictions, as global regulators may have different addresses and/or facility identifiers on file. In this scenario, a sponsor company wants to document a change to a testing facility’s address that is captured in the Organization resource.
