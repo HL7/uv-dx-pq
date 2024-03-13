@@ -10,7 +10,8 @@
         <valueCode value="brr"/>
     </extension>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ImplementationGuide/hl7-fhir-uv-pharm-quality"/>
-    <version value="1.0.0-ballot"/>
+<!--    <version value="1.0.0-ballot"/>-->
+    <version value="1.0.0"/>
     <name value="PharmaceuticalQualityIndustry"/>
     <title value="Pharmaceutical Quality (Industry)"/>
     <status value="active"/>
@@ -2644,8 +2645,8 @@
             </page>
 
             <page>
-                <name value="best_practices.html"/>
-                <title value="Best Practices, Resources"/>
+                <name value="general_design.html"/>
+                <title value="General Principles &amp; Design"/>
                 <generation value="markdown"/>
             </page>
             <page>
@@ -2667,7 +2668,8 @@
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="releaselabel"/>
             </code>
-            <value value="ballot"/>
+<!--            <value value="ballot"/>-->
+            <value value="trial-use"/>
         </parameter>
         <parameter>
             <code>
