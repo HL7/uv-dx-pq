@@ -1,14 +1,14 @@
-The Quality sections of regulatory applications are organized into a table of contents that includes sections and sub-sections under the titles “Drug Substance” and “Drug Product”. The structure is defined in the *Common Technical Document for the Registration of Pharmaceuticals for Human Use*, or CTD (see [References](best_practices.html)). This structure is designed for unstructured PDF and Word documents.
+The Quality sections of regulatory applications are organized into a table of contents that includes sections and sub-sections under the titles “Drug Substance” and “Drug Product”. The structure is defined in the ICH [*Common Technical Document for the Registration of Pharmaceuticals for Human Use*](https://database.ich.org/sites/default/files/M4Q_R1_Guideline.pdf). This structure is designed for unstructured PDF and Word documents.
 
 Rather than recreating the legacy table of contents format in FHIR, pharmaceutical quality data represented by FHIR in this guide are organized into 14 new domains (see figure below). These 14 domains are designed to maximize the use of structured data and deliver benefits in terms of flexibility, efficiency, and data reuse.
 
 Each domain has a page that describes its objective and provides a component diagram (where applicable), description of components, and examples.
 
-### Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains
+## Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains
 The 14 PQ domains and their supporting sub-domains, in which each domain is based on a major PQ concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.
 <table><tr><td><img src="all-domains-dx-PQ.png" usemap="#hotspots"/></td></tr></table>
 
-### Table: Mapping the legacy CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains
+## Table: Mapping the legacy CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -132,7 +132,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
 </tbody>
 </table>
 
-### Matrix: Reuse of FHIR Component Building Blocks Across PQ Domains
+## Matrix: Reuse of FHIR Component Building Blocks Across PQ Domains
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -509,7 +509,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
   
 </map>
 
-### Summary of Domain resources
+## Summary of Domain Resources
 The resources that are used across all domains are summarised in this diagram:
 <table><tr><td><img src="resources overview (complete).png" width="800"/></td></tr></table>
 
