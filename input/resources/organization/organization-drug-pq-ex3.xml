@@ -11,7 +11,7 @@
     <active value="true"/>
     <type>
         <coding>
-            <system value="http://example.org"/>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
             <code value="packaging"/>
             <display value="Packaging"/>
         </coding>

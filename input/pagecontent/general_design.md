@@ -11,6 +11,7 @@ This IG prioritizes international standards where they exist. In this case, ISO 
 This has the added benefit of supporting industry’s intended use case for data alignment/reuse across PQ, clinical, ePI, artwork, and defect reporting to name a few. This also facilitates industry’s implementation since most regulatory information management (RIM) software developers are already pre-loading their systems with this terminology to facilitate compliance with the EMA’s IDMP implementation through their SPOR program.
 
 ### Cross Version Analysis
+*(None available.)*
 
 {% include cross-version-analysis.xhtml %}
 

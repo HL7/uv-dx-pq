@@ -11,9 +11,16 @@
     <active value="true"/>
     <type>
         <coding>
-            <system value="http://example.org"/>
-            <code value="testing-lab"/>
-            <display value="Testing Lab"/>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+            <code value="analytical-testing-stability"/>
+            <display value="Analytical Testing - Stability"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+            <code value="analytical-testing-release"/>
+            <display value="Analytical Testing - Release"/>
         </coding>
     </type>
     <name value="Advanced Analytical Testing Laboratories Inc."/>
