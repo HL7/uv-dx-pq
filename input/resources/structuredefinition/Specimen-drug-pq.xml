@@ -21,23 +21,21 @@
       <path value="Specimen.subject"/>
       <mustSupport value="true"/>
     </element>
-    
-    
     <element id="Specimen.processing">
       <path value="Specimen.processing"/>
       <mustSupport value="true"/>
     </element>
     <element id="Specimen.processing.time[x]">
       <path value="Specimen.processing.time[x]"/>
-      <type>
+<!--      <type>
         <code value="dateTime"/>
       </type>
       <type>
         <code value="Period"/>
-      </type>
+      </type>-->
     </element>
-    <element id="Specimen.processing.time[x].timePeriod.extension">
-      <path value="Specimen.processing.time[x].timePeriod.extension"/>
+    <element id="Specimen.processing.time[x].extension">
+      <path value="Specimen.processing.time[x].extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -47,8 +45,8 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="Specimen.processing.time[x].timePeriod.extension:batch-storage-duration">
-      <path value="Specimen.processing.time[x].timePeriod.extension"/>
+    <element id="Specimen.processing.time[x].extension:batch-storage-duration">
+      <path value="Specimen.processing.time[x].extension"/>
       <sliceName value="batch-storage-duration"/>
       <short value="batch-storage-duration"/>
 <!--      <min value="0"/>
