@@ -20,16 +20,18 @@
         
         <element id="DiagnosticReport.extension">
             <path value="DiagnosticReport.extension"/>
-            <slicing>
+<!--            <slicing>
                 <discriminator>
                     <type value="value"/>
                     <path value="url"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
-            </slicing>
+            </slicing>-->
         </element>
-<!--        <element id="DiagnosticReport.extension:workflow-triggeredBy">
+        
+        
+        <element id="DiagnosticReport.extension:workflow-triggeredBy">
             <path value="DiagnosticReport.extension"/>
             <sliceName value="workflow-triggeredBy"/>
             <short value="A ‘step’ dictated within the protocol."/>
@@ -40,13 +42,16 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="DiagnosticReport.extension:workflow-triggeredBy.value[x]">
+        
+<!--        <element id="DiagnosticReport.extension:workflow-triggeredBy.value[x]">
             <path value="DiagnosticReport.extension:workflow-triggeredBy.value[x]"/>
                 <type>
                     <code value="Reference"/>
                     <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
                 </type>
         </element>-->
+        
+        
         <element id="DiagnosticReport.extension:statistical-model">
             <path value="DiagnosticReport.extension"/>
             <sliceName value="statistical-model"/>
