@@ -10,10 +10,10 @@
     <description value="The MedicinalProductDefinition that corresponds to a medication"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
-    <context>
+<!--    <context>
         <type value="element"/>
         <expression value="Bundle"/>
-    </context>
+    </context>-->
     <context>
         <type value="element"/>
         <expression value="Medication.code"/>
