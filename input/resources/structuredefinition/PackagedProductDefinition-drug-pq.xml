@@ -84,6 +84,7 @@
     
     <element id="PackagedProductDefinition.packaging.property:color">
       <path value="PackagedProductDefinition.packaging.property:color"/>
+      <sliceName value="color"/>
       <mustSupport value="true"/>
     </element>
 <!--    <element id="PackagedProductDefinition.packaging.property:color.type">
@@ -102,7 +103,8 @@
     </element>-->
     
     <element id="PackagedProductDefinition.packaging.property:quality-standard">
-      <path value="PackagedProductDefinition.packaging.property:color"/>
+      <path value="PackagedProductDefinition.packaging.property:quality-standard"/>
+      <sliceName value="quality-standard"/>
       <mustSupport value="true"/>
     </element>
     
