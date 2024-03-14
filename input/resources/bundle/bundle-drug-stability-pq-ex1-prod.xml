@@ -3453,6 +3453,18 @@
          <Organization>
                 <!--packaging-->
             <id value="2dd49242-4bf1-9ec1-5f1e-22ba8d4d5ccc"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3008816891"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="packaging"/>
+                  <display value="Packaging"/>
+               </coding>
+            </type>
             <name value="MySite"/>
          </Organization>
       </resource>

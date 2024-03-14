@@ -86,6 +86,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3010027651"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="Modified Sugar, Inc."/>
             <contact>
                <address>
@@ -110,6 +118,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3012027651"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="Plasma Source, Inc."/>
             <contact>
                <address>
