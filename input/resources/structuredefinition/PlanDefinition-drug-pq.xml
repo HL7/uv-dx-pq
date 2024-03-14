@@ -161,8 +161,11 @@
             <path value="PlanDefinition.action.code.coding"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="$this"/>
+                    <type value="pattern"/>
+                    <path value="code"/>
+<!--                    <type value="value"/>-->
+<!--                    <path value="$this"/>-->
+<!--                    <path value="$this"/>-->
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
