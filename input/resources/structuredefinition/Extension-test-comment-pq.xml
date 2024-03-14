@@ -10,7 +10,7 @@
     <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
-    <context>
+<!--    <context>
         <type value="element"/>
         <expression value="Bundle"/>
     </context>
@@ -21,7 +21,7 @@
     <context>
         <type value="element"/>
         <expression value="Extension"/>
-    </context>
+    </context>-->
     <context>
         <type value="element"/>
         <expression value="ObservationDefinition.qualifiedValue.appliesTo.text"/>
