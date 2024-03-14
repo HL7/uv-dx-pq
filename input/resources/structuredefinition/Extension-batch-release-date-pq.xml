@@ -28,6 +28,10 @@
         <type value="element"/>
         <expression value="Bundle.entry.resource/*Substance"/>
     </context> 
+    <context>
+        <type value="element"/>
+        <expression value="Bundle"/>
+    </context> 
     
     
     <type value="Extension"/>
