@@ -15,6 +15,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3010027650"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="drug-product-manufacture"/>
+                  <display value="Drug Product Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Pharmaceutical, Inc."/>
             <contact>
                <address>
@@ -38,6 +46,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="2246707"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="drug-product-manufacture"/>
+                  <display value="Drug Product Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Pharmaceutical, Inc."/>
             <contact>
                <address>
@@ -60,6 +76,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3008816891"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="packaging"/>
+                  <display value="Packaging"/>
+               </coding>
+            </type>
             <name value="A+ Secure Packaging, LLC"/>
             <contact>
                <address>
@@ -82,6 +106,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="2244725"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="packaging"/>
+                  <display value="Packaging"/>
+               </coding>
+            </type>
             <name value="Acupac Packaging Inc."/>
             <contact>
                <address>
@@ -126,6 +158,21 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3007270600"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="analytical-testing-stability"/>
+                  <display value="Analytical Testing - Stability"/>
+               </coding>
+            </type>
+            <type>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <code value="analytical-testing-release"/>
+                  <display value="Analytical Testing - Release"/>
+               </coding>
+            </type>
             <name value="Advanced Analytical Testing Laboratories Inc."/>
             <contact>
                <address>
