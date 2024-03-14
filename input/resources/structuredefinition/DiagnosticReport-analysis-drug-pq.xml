@@ -42,8 +42,8 @@
             </type>
             <mustSupport value="true"/>
         </element>
-<!--        The next part may not work-->
-        <element id="DiagnosticReport.extension:workflow-triggeredBy.value[x]">
+<!--        The next part does not work-->
+<!--        <element id="DiagnosticReport.extension:workflow-triggeredBy.value[x]">
             <path value="DiagnosticReport.extension:workflow-triggeredBy.value[x]"/>
             <type>
                 <code value="Reference"/>
@@ -52,7 +52,7 @@
             <type>
                 <code value="uri"/>
             </type>
-        </element>
+        </element>-->
         
    
         

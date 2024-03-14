@@ -23,6 +23,19 @@
         <element id="ObservationDefinition.title">
             <path value="ObservationDefinition.title"/>
         </element>
+
+        <element id="ObservationDefinition.title.extension">
+            <path value="ObservationDefinition.title.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        
         <element id="ObservationDefinition.title.extension:test-comment-title">
             <path value="ObservationDefinition.title.extension"/>
             <sliceName value="test-comment-title"/>
