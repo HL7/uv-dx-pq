@@ -86,22 +86,25 @@
       <path value="PackagedProductDefinition.packaging.property:color"/>
       <mustSupport value="true"/>
     </element>
-    <element id="PackagedProductDefinition.packaging.property:color.type">
+<!--    <element id="PackagedProductDefinition.packaging.property:color.type">
       <path value="PackagedProductDefinition.packaging.property:color.type"/>
       <mustSupport value="true"/>
-<!--      <binding>
+<!-\-      <binding>
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-local-pq"/>
-      </binding>-->
+      </binding>-\->
     </element>
     <element id="PackagedProductDefinition.packaging.property:color.value[x]">
       <path value="PackagedProductDefinition.packaging.property:color.value[x]"/>
       <type>
         <code value="CodeableConcept"/>
       </type>
-    </element>
+    </element>-->
     
-
+    <element id="PackagedProductDefinition.packaging.property:quality-standard">
+      <path value="PackagedProductDefinition.packaging.property:color"/>
+      <mustSupport value="true"/>
+    </element>
     
 
 
