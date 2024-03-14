@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="PlanDefinition-drug-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
     <name value="PlanDefinitionDrugPq"/>
@@ -17,7 +16,7 @@
         <element id="PlanDefinition">
             <path value="PlanDefinition"/>
         </element>
-        
+
         <element id="PlanDefinition.extension">
             <path value="PlanDefinition.extension"/>
             <slicing>
@@ -49,7 +48,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
+
         <element id="PlanDefinition.id">
             <path value="PlanDefinition.id"/>
             <mustSupport value="true"/>
@@ -70,7 +69,7 @@
             <path value="PlanDefinition.title"/>
             <mustSupport value="true"/>
         </element>
-    
+
         <element id="PlanDefinition.type">
             <path value="PlanDefinition.type"/>
             <mustSupport value="true"/>
@@ -79,7 +78,7 @@
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-planType-local-pq"/>
             </binding>
         </element>
-        
+
         <element id="PlanDefinition.status">
             <path value="PlanDefinition.status"/>
             <mustSupport value="true"/>
@@ -108,7 +107,7 @@
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-equipmentClass-local-pq"/>
             </binding>
         </element>
-        
+
         <element id="PlanDefinition.actor.option.role">
             <path value="PlanDefinition.actor.option.role"/>
             <binding>
@@ -116,12 +115,12 @@
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-testCategory-local-pq"/>
             </binding>
         </element>
-        
+
         <element id="PlanDefinition.action">
             <path value="PlanDefinition.action"/>
             <mustSupport value="true"/>
         </element>
-        
+
         <element id="PlanDefinition.action.extension">
             <path value="PlanDefinition.action.extension"/>
             <slicing>
@@ -154,7 +153,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
+
         <element id="PlanDefinition.action.code">
             <path value="PlanDefinition.action.code"/>
         </element>
@@ -162,7 +161,8 @@
             <path value="PlanDefinition.action.code.coding"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <!--                    <type value="value"/>-->
+                    <type value="Coding"/>
                     <path value="code"/>
                 </discriminator>
                 <ordered value="false"/>
@@ -224,7 +224,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
+
         <element id="PlanDefinition.action.participant.role">
             <path value="PlanDefinition.action.participant.role"/>
             <mustSupport value="true"/>
@@ -233,7 +233,7 @@
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingParticipantRole-local-pq"/>
             </binding>
         </element>
-        
-        
+
+
     </differential>
 </StructureDefinition>
