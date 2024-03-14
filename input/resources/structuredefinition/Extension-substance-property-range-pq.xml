@@ -14,11 +14,11 @@
 <!--    <context>
         <type value="element"/>
         <expression value="MedicinalProductDefinition"/>
-    </context>
+    </context>-->
     <context>
         <type value="element"/>
         <expression value="MedicinalProductDefinition.characteristic"/>
-    </context>-->
+    </context>
 <!--    <context>
         <type value="element"/>
         <expression value="SubstanceDefinition"/>
@@ -30,11 +30,11 @@
 <!--    <context>
         <type value="element"/>
         <expression value="Bundle"/>
-    </context>
+    </context>-->
     <context>
         <type value="element"/>
         <expression value="Bundle.entry.resource"/>
-    </context> --> 
+    </context>  
     
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
