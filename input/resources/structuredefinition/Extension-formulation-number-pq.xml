@@ -11,14 +11,14 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
 
-<!--    <context>
+    <context>
         <type value="element"/>
         <expression value="Medication"/>
     </context>
     <context>
         <type value="element"/>
         <expression value="Medication.batch"/>
-    </context>-->
+    </context>
     <context>
         <type value="element"/>
         <expression value="Medication.batch.extension"/>
@@ -26,11 +26,11 @@
 <!--    <context>
         <type value="element"/>
         <expression value="Bundle"/>
-    </context>
+    </context>-->
     <context>
         <type value="element"/>
         <expression value="Bundle.entry.resource"/>
-    </context> -->   
+    </context>  
     
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
