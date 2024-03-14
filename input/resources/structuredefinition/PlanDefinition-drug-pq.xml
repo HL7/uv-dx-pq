@@ -162,10 +162,9 @@
             <slicing>
                 <discriminator>
                     <type value="pattern"/>
-                    <path value="code"/>
+<!--                    <path value="code"/>-->
 <!--                    <type value="value"/>-->
-<!--                    <path value="$this"/>-->
-<!--                    <path value="$this"/>-->
+                    <path value="$this"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
