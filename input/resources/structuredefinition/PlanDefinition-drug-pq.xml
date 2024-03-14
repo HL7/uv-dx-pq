@@ -160,11 +160,10 @@
         <element id="PlanDefinition.action.code.coding">
             <path value="PlanDefinition.action.code.coding"/>
             <slicing>
-                <discriminator>
-                    <!--                    <type value="value"/>-->
-                    <type value="Coding"/>
+<!--                <discriminator>
+                    <type value="value"/>
                     <path value="code"/>
-                </discriminator>
+                </discriminator>-->
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
