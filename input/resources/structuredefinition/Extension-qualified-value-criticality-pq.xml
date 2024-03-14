@@ -11,15 +11,15 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
 
-    <context>
+<!--    <context>
         <type value="element"/>
         <expression value="ObservationDefinition"/>
-    </context>
+    </context>-->
     <context>
         <type value="element"/>
         <expression value="ObservationDefinition.qualifiedValue"/>
     </context>
-    <context>
+<!--    <context>
         <type value="element"/>
         <expression value="Bundle"/>
     </context>
@@ -30,7 +30,7 @@
     <context>
         <type value="element"/>
         <expression value="BackboneElement.resource.qualifiedValue"/>
-    </context>
+    </context>-->
     
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
