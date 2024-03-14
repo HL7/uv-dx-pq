@@ -18,7 +18,7 @@
             <path value="PlanDefinition"/>
         </element>
         
-        <element id="PlanDefinition.extension">
+        <!--<element id="PlanDefinition.extension">
             <path value="PlanDefinition.extension"/>
             <slicing>
                 <discriminator>
@@ -28,7 +28,7 @@
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
-        </element>
+        </element>-->
         <element id="PlanDefinition.extension:plan-document-reference">
             <path value="PlanDefinition.extension"/>
             <sliceName value="plan-document-reference"/>
