@@ -42,15 +42,19 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
-<!--        <element id="DiagnosticReport.extension:workflow-triggeredBy.value[x]">
+<!--        The next part may not work-->
+        <element id="DiagnosticReport.extension:workflow-triggeredBy.value[x]">
             <path value="DiagnosticReport.extension:workflow-triggeredBy.value[x]"/>
-                <type>
-                    <code value="Reference"/>
-                    <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
-                </type>
-        </element>-->
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
+            </type>
+            <type>
+                <code value="uri"/>
+            </type>
+        </element>
         
+   
         
         <element id="DiagnosticReport.extension:statistical-model">
             <path value="DiagnosticReport.extension"/>
