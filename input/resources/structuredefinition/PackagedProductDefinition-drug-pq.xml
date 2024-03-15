@@ -201,7 +201,7 @@
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-local-pq"/>
       </binding>
     </element>
-    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding:quality-standard">
+<!--    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding:quality-standard">
       <path value="PackagedProductDefinition.packaging.property.value[x].coding"/>
       <sliceName value="quality-standard"/>
       <short value="quality-standard"/>
@@ -212,7 +212,7 @@
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-local-pq"/>
       </binding>
-    </element>
+    </element>-->
 
 <!--END-->
     <element id="PackagedProductDefinition.packaging.containedItem">
