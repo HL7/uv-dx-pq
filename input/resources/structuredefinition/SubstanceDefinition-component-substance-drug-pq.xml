@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="SubstanceDefinition-component-substance-drug-pq"/>
   <url
@@ -31,8 +30,6 @@
     
     <element id="SubstanceDefinition.manufacturer">
       <path value="SubstanceDefinition.manufacturer"/>
-<!--      <min value="1"/>
-      <max value="1"/>-->
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"/>
@@ -54,8 +51,6 @@
       <path value="SubstanceDefinition.manufacturer.extension"/>
       <sliceName value="site-utilization"/>
       <short value="site-utilization"/>
-      <!--            <min value="0"/>
-            <max value="1"/>-->
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-site-utilization-pq"/>
@@ -83,8 +78,6 @@
       <path value="SubstanceDefinition.property.extension"/>
       <sliceName value="substance-property-range"/>
       <short value="substance-property-range"/>
-      <!--            <min value="0"/>
-            <max value="1"/>-->
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-range-pq"/>
@@ -95,8 +88,6 @@
       <path value="SubstanceDefinition.property.extension"/>
       <sliceName value="substance-property-parameter"/>
       <short value="substance-property-parameter"/>
-      <!--            <min value="0"/>
-            <max value="1"/>-->
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq"/>
@@ -106,21 +97,20 @@
     
     <element id="SubstanceDefinition.property.type">
       <path value="SubstanceDefinition.property.type"/>
+      <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-<!--        <description value="This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/product-characteristic-codes"/>-->
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-substance-property-local-pq"/>
       </binding>
     </element>
     
     <element id="SubstanceDefinition.property.value[x]">
       <path value="SubstanceDefinition.property.value[x]"/>
+      <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-substance-property-value-local-pq"/>
       </binding>
-
     </element>
     
     <element id="SubstanceDefinition.name">
@@ -147,8 +137,6 @@
       <path value="SubstanceDefinition.relationship.extension"/>
       <sliceName value="impurity-origin"/>
       <short value="impurity-origin"/>
-      <!--            <min value="0"/>
-            <max value="1"/>-->
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq"/>
@@ -158,38 +146,17 @@
     
     <element id="SubstanceDefinition.relationship.type">
       <path value="SubstanceDefinition.relationship.type"/>
-      <!--<short value="For example &quot;salt to parent&quot;, &quot;active moiety&quot;"/>
-      <definition value="For example &quot;salt to parent&quot;, &quot;active moiety&quot;, &quot;starting material&quot;, &quot;polymorph&quot;, &quot;impurity of&quot;."/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>-->
       <mustSupport value="true"/>
-      <!--<isModifier value="false"/>
-      <isSummary value="true"/>-->
       <binding>
-<!--        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="SubstanceRelationshipType"/>
-        </extension>-->
         <strength value="example"/>
-<!--        <description value="The relationship between two substance types."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/substance-relationship-type"/>-->
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-impurity-type-local-pq"/>
       </binding>
-<!--      <mapping>
-        <identity value="idmp-substance"/>
-        <map value="Substance_Relationship.Relationship_Type"/>
-      </mapping>-->
     </element>
     
     <element id="SubstanceDefinition.sourceMaterial">
       <path value="SubstanceDefinition.sourceMaterial"/>
       <mustSupport value="true"/>
     </element>
-    
-    
-    
     
   </differential>
 </StructureDefinition>
