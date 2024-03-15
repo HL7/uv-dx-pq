@@ -33,7 +33,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="sol-free"/>
                      <display value="Freely soluble"/>
                   </coding>
@@ -72,7 +72,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="sol-slight"/>
                      <display value="Slightly soluble"/>
                   </coding>
@@ -111,7 +111,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="sol-soluble"/>
                      <display value="Soluble"/>
                   </coding>
