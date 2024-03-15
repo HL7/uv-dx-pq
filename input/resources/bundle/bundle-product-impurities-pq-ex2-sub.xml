@@ -225,7 +225,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -334,7 +334,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -443,7 +443,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -557,7 +557,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -705,7 +705,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="class-2"/>
                      <display value="Class 2"/>
                   </coding>
