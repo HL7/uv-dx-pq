@@ -105,8 +105,10 @@
         </element>
         <element id="DiagnosticReport.code">
             <path value="DiagnosticReport.code"/>
-            <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-reportType-local-pq"/>
+            </binding>
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.effective[x]">
