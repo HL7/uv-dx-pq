@@ -148,12 +148,12 @@
     <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding">
       <path value="PackagedProductDefinition.packaging.property.value[x].coding"/>
       <slicing>
-        <discriminator>
+<!--        <discriminator>
           <type value="value"/>
-<!--          <path value="url"/>-->
-<!--          <type value="pattern"/>-->
+<!-\-          <path value="url"/>-\->
+<!-\-          <type value="pattern"/>-\->
           <path value="$this"/>
-        </discriminator>
+        </discriminator>-->
         <rules value="open"/>
       </slicing>
       <type>
