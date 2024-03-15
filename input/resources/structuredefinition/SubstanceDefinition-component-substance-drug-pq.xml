@@ -137,6 +137,33 @@
       <mustSupport value="true"/>
     </element>
     
+    <element id="SubstanceDefinition.relationship.type">
+      <path value="SubstanceDefinition.relationship.type"/>
+      <!--<short value="For example &quot;salt to parent&quot;, &quot;active moiety&quot;"/>
+      <definition value="For example &quot;salt to parent&quot;, &quot;active moiety&quot;, &quot;starting material&quot;, &quot;polymorph&quot;, &quot;impurity of&quot;."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>-->
+      <mustSupport value="true"/>
+      <!--<isModifier value="false"/>
+      <isSummary value="true"/>-->
+      <binding>
+<!--        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SubstanceRelationshipType"/>
+        </extension>-->
+        <strength value="example"/>
+<!--        <description value="The relationship between two substance types."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/substance-relationship-type"/>-->
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-impurity-type-local-pq"/>
+      </binding>
+<!--      <mapping>
+        <identity value="idmp-substance"/>
+        <map value="Substance_Relationship.Relationship_Type"/>
+      </mapping>-->
+    </element>
+    
     <element id="SubstanceDefinition.sourceMaterial">
       <path value="SubstanceDefinition.sourceMaterial"/>
       <mustSupport value="true"/>
