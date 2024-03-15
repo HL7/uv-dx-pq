@@ -17,7 +17,14 @@
     <element id="PackagedProductDefinition">
       <path value="PackagedProductDefinition"/>
     </element>
-
+    <element id="PackagedProductDefinition.type">
+      <path value="PackagedProductDefinition.type"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/package-type"/>
+      </binding>
+    </element>
     <element id="PackagedProductDefinition.packageFor">
       <path value="PackagedProductDefinition.packageFor"/>
       <mustSupport value="true"/>
@@ -74,56 +81,22 @@
 
     <element id="PackagedProductDefinition.packaging.property">
       <path value="PackagedProductDefinition.packaging.property"/>
-<!--      <short value="General characteristics of this item"/>
-      <definition value="General characteristics of this item."/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="BackboneElement"/>
-      </type>-->
       <mustSupport value="true"/>
-<!--      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="idmp"/>
-        <map value="Package Item (Container).Physical Characteristics"/>
-      </mapping>-->
     </element>
     
     <element id="PackagedProductDefinition.packaging.property.type">
       <path value="PackagedProductDefinition.packaging.property.type"/>
-<!--      <short value="A code expressing the type of characteristic"/>
-      <definition value="A code expressing the type of characteristic."/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>-->
       <mustSupport value="true"/>
-<!--      <isModifier value="false"/>
-      <isSummary value="true"/>-->
       <binding>
-<!--        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProductCharacteristic"/>
-        </extension>-->
         <strength value="example"/>
-<!--        <description value="This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set."/>-->
 <!--        <valueSet value="http://hl7.org/fhir/ValueSet/product-characteristic-codes"/>-->
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-local-pq"/>
       </binding>
-<!--      <mapping>
-        <identity value="idmp"/>
-        <map value="Physical Characteristics, all attributes"/>
-      </mapping>-->
     </element>
     
     <element id="PackagedProductDefinition.packaging.property.value[x]">
       <path value="PackagedProductDefinition.packaging.property.value[x]"/>
-<!--      <short value="A value for the characteristic"/>
-      <definition value="A value for the characteristic."/>
-      <min value="0"/>
-      <max value="1"/>-->
-      <type>
+<!--      <type>
         <code value="CodeableConcept"/>
       </type>
       <type>
@@ -137,19 +110,18 @@
       </type>
       <type>
         <code value="Attachment"/>
-      </type>
+      </type>-->
       <mustSupport value="true"/>
-<!--      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="idmp"/>
-        <map value="Physical Characteristics, attribute's value"/>
-      </mapping>-->
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-local-pq"/>
+      </binding>
+<!--      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-local-pq"/>
+      </binding-->>
     </element>
 
-
-
-    
     <element id="PackagedProductDefinition.packaging.containedItem">
       <path value="PackagedProductDefinition.packaging.containedItem"/>
       <mustSupport value="true"/>
