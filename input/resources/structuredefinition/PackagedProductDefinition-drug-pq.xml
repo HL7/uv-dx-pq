@@ -116,39 +116,6 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <type>
-        <code value="Quantity"/>
-      </type>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <type>
-        <code value="string"/>
-      </type>
-      <type>
-        <code value="boolean"/>
-      </type>
-      <type>
-        <code value="integer"/>
-      </type>
-      <type>
-        <code value="Range"/>
-      </type>
-      <type>
-        <code value="Ratio"/>
-      </type>
-      <type>
-        <code value="SampledData"/>
-      </type>
-      <type>
-        <code value="time"/>
-      </type>
-      <type>
-        <code value="dateTime"/>
-      </type>
-      <type>
-        <code value="Period"/>
-      </type>
     </element>        
     
     <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept">
