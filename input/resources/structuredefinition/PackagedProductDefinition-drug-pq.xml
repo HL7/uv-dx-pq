@@ -116,10 +116,10 @@
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-local-pq"/>
       </binding>
-<!--      <binding>
+      <binding>
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-local-pq"/>
-      </binding-->>
+      </binding>
     </element>
 
     <element id="PackagedProductDefinition.packaging.containedItem">
@@ -136,6 +136,10 @@
       <binding>
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-closure-type-terminology"/>
+      </binding>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-closureTypes-local-pq"/>
       </binding>
     </element>
   </differential>
