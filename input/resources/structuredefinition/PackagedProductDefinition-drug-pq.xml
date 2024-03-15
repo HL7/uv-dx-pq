@@ -96,31 +96,17 @@
     
     <element id="PackagedProductDefinition.packaging.property.value[x]">
       <path value="PackagedProductDefinition.packaging.property.value[x]"/>
-<!--      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <type>
-        <code value="Quantity"/>
-      </type>
-      <type>
-        <code value="date"/>
-      </type>
-      <type>
-        <code value="boolean"/>
-      </type>
-      <type>
-        <code value="Attachment"/>
-      </type>-->
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-local-pq"/>
-      </binding>
+<!--      </binding>
       <binding>
-        <strength value="example"/>
+        <strength value="example"/>-->
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-local-pq"/>
       </binding>
     </element>
+    
 
     <element id="PackagedProductDefinition.packaging.containedItem">
       <path value="PackagedProductDefinition.packaging.containedItem"/>
