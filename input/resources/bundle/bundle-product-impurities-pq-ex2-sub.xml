@@ -193,7 +193,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -209,7 +209,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -302,7 +302,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -318,7 +318,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -411,7 +411,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -427,7 +427,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -525,7 +525,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -541,7 +541,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -673,7 +673,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="positive"/>
                      <display value="Positive"/>
                   </coding>
@@ -689,7 +689,7 @@
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
                      <code value="positive"/>
                      <display value="Positive"/>
                   </coding>
