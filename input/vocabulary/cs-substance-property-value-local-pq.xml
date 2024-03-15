@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cs-substance-property-value-local-pq"/>
+    <!--    Replaces http://example.accumulus.org/fhir/code/substance-property-solubility-->
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
+    <name value="CsSubstancePropertyValuePQ"/>
+    <title value="Substance Property Value"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains example codes for substance property values in PQ."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="sol-free"/>
+        <display value="Freely soluble"/>
+    </concept>
+    <concept>
+        <code value="sol-slight"/>
+        <display value="Slightly soluble"/>
+    </concept>
+    <concept>
+        <code value="sol-soluble"/>
+        <display value="Soluble"/>
+    </concept>
+    
+    
+    <concept>
+        <code value="negative-mutagenicity"/>
+        <display value="Negative Mutagenicity"/>
+    </concept>
+    <concept>
+        <code value="positive-mutagenicity"/>
+        <display value="Positive Mutagenicity"/>
+    </concept>
+    
+    
+    <concept>
+        <code value="ICH-M7-class-2"/>
+        <display value="ICH M7 classification = Class 2"/>
+    </concept>
+    
+    <concept>
+        <code value="ICH-M7-class-5"/>
+        <display value="ICH M7 classification = Class 5"/>
+    </concept>
+</CodeSystem>
