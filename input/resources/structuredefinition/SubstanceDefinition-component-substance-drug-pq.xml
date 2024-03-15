@@ -104,6 +104,25 @@
       <mustSupport value="true"/>
     </element>
     
+    <element id="SubstanceDefinition.property.type">
+      <path value="SubstanceDefinition.property.type"/>
+      <binding>
+        <strength value="example"/>
+<!--        <description value="This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/product-characteristic-codes"/>-->
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-substance-property-local-pq"/>
+      </binding>
+    </element>
+    
+    <element id="SubstanceDefinition.property.value[x]">
+      <path value="SubstanceDefinition.property.value[x]"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-substance-property-value-local-pq"/>
+      </binding>
+
+    </element>
+    
     <element id="SubstanceDefinition.name">
       <path value="SubstanceDefinition.name"/>
       <mustSupport value="true"/>
