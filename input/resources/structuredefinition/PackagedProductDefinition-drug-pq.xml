@@ -199,10 +199,6 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-closure-type-terminology"/>
-      </binding>
-      <binding>
-        <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-closureTypes-local-pq"/>
       </binding>
     </element>

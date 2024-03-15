@@ -10,6 +10,8 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v3-Observati
 # Chemical abstract codes (CAS) code system is specified as content 'not-present' in THO, so the code cannot be validated
 The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/CAS' doesnt provide any codes so the code cannot be validated
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could not be found, so the code cannot be validated (from http://tx.fhir.org/r4)
+A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could not be found, so the code cannot be validated
+
 
 # MedicinalProductDefinition.characteristic.value[x] is a polymorphic (choice type) element, with allowed types including
 # Quantity, CodeableConcept and others.  The only slice defined in the profile is for valueQuantity, but the data in this
@@ -18,7 +20,6 @@ INFORMATION: Bundle/bundle-drug-product-pq-ex1: Bundle.entry[3].resource/*Medici
 
 # Information messages and Warnings about example code systems
 A definition for CodeSystem 'http://example.org/fhir/code/planType' could not be found, so the code cannot be validated
-A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.org/fhir/code/closureTypes' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.org/fhir/code/material' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.org/fhir/code/closureProperties' could not be found, so the code cannot be validated

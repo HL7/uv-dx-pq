@@ -2671,12 +2671,12 @@
 <!--            <value value="ballot"/>-->
             <value value="trial-use"/>
         </parameter>
-        <parameter>
+<!--        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="special-url"/>
             </code>
             <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-closure-type-terminology"/>
-        </parameter>
+        </parameter>-->
     </definition>
 </ImplementationGuide>
