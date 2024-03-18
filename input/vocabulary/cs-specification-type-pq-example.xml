@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-specification-type-local-pq"/>
-    <!--    Replaces http://temp.hl7.org/fhir/CodeSystem/specification-type-->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq"/>
+    <id value="cs-specification-type-pq-example"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-pq-example"/>
     <name value="CsSpecificationTypePQ"/>
     <title value="Specification Type"/>
     <status value="active"/>

@@ -9,7 +9,7 @@
     <description value="This value set contains example codes for substance property values in PQ."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-local-pq"/>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
         </include>
     </compose>
 </ValueSet>

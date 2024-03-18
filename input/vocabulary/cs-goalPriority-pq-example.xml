@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-goalPriority-local-pq"/>
-    <!--    Replaces http://accumulus.org/fhir/code/goalPriority-->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
+    <id value="cs-goalPriority-pq-example"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
     <name value="CsGoalPriorityPQ"/>
     <title value="Goal Priority"/>
     <status value="active"/>

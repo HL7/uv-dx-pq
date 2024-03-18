@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-deviceType-local-pq"/>
-    <!--    Replaces http://accumulus.org/fhir/code/deviceType-->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-local-pq"/>
+    <id value="cs-deviceType-pq-example"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-pq-example"/>
     <name value="CsDeviceTypePQ"/>
     <title value="Device Type"/>
     <status value="active"/>

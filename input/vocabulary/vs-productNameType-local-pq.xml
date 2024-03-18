@@ -9,7 +9,7 @@
     <description value="This value set contains example codes for product name type in PQ."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>
         </include>
     </compose>
 </ValueSet>

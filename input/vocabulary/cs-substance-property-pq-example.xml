@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-substance-property-local-pq"/>
-    <!--    Replaces http://example.accumulus.org/fhir/code/substance-property-->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+    <id value="cs-substance-property-pq-example"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
     <name value="CsSubstancePropertyPQ"/>
     <title value="Substance Property"/>
     <status value="active"/>

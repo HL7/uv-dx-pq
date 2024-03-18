@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-manufactured-item-property-local-pq"/>
-    <!--    Replaces http://accumulus.org/fhir/code/manufacturingStep-->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
+    <id value="cs-manufactured-item-property-pq-example"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example"/>
     <name value="CsManufacturedItemPropertyPQ"/>
     <title value="Manufactured Item Property"/>
     <status value="active"/>

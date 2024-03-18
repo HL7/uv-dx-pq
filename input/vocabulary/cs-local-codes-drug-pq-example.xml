@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="cs-local-codes-drug-pq"/>
-  <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+  <id value="cs-local-codes-drug-pq-example"/>
+  <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
   <name value="CsLocalCodesDrugPQ"/>
   <title value="Example Local Codes - Drug"/>
   <status value="active"/>

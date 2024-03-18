@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cs-productNameType-local-pq"/>
-    <!--    Replaces http://accumulus.org/fhir/code/productNameType-->
-    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+    <id value="cs-productNameType-pq-example"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>
     <name value="CsProductNameTypePQ"/>
     <title value="Product Name Type"/>
     <status value="active"/>
