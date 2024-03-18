@@ -39,7 +39,7 @@
             </type>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStepScale-local-pq"/> 
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStepScale-pq"/> 
             </binding>
         </element>
     </differential>

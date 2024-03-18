@@ -100,7 +100,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-substance-property-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-substance-property-pq"/>
       </binding>
     </element>
     
@@ -109,7 +109,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-substance-property-value-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-substance-property-value-pq"/>
       </binding>
     </element>
     
@@ -149,7 +149,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-impurity-type-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-impurity-type-pq"/>
       </binding>
     </element>
     

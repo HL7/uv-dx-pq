@@ -75,7 +75,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-planType-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-planType-pq"/>
             </binding>
         </element>
 
@@ -104,7 +104,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-equipmentClass-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-equipmentClass-pq"/>
             </binding>
         </element>
 
@@ -112,7 +112,7 @@
             <path value="PlanDefinition.actor.option.role"/>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-testCategory-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-testCategory-pq"/>
             </binding>
         </element>
 
@@ -178,7 +178,7 @@
             </type>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-pq"/>
             </binding>
         </element>
         <element id="PlanDefinition.action.code.coding:coding-characterization-step">
@@ -189,7 +189,7 @@
             </type>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-characterizationStep-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-characterizationStep-pq"/>
             </binding>
         </element>
         <element id="PlanDefinition.action.code.coding:coding-specification-type">
@@ -200,7 +200,7 @@
             </type>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-specification-type-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-specification-type-pq"/>
             </binding>
         </element>
 
@@ -231,7 +231,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingParticipantRole-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingParticipantRole-pq"/>
             </binding>
         </element>
 

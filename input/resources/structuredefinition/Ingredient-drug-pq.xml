@@ -86,7 +86,7 @@
         <!--        <strength value="preferred"/>  FHIR-44302-->
         <strength value="example"/>
         <description value="A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: antioxidant, alkalizing agent."/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-ingredientFunction-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-ingredientFunction-pq"/>
       </binding>
     </element>
     <element id="Ingredient.substance.code">

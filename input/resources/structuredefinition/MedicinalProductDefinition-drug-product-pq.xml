@@ -52,7 +52,7 @@
         <mustSupport value="true"/>
         <binding>
           <strength value="example"/>
-          <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-productNameType-local-pq"/>
+          <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-productNameType-pq"/>
         </binding>
       </element>
      

@@ -42,7 +42,7 @@
       </binding>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-diagramType-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-diagramType-pq"/>
       </binding>
     </element>
     <element id="DocumentReference.content">

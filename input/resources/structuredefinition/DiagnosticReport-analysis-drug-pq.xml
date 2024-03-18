@@ -107,7 +107,7 @@
             <path value="DiagnosticReport.code"/>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-reportType-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-reportType-pq"/>
             </binding>
             <mustSupport value="true"/>
         </element>

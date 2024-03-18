@@ -54,7 +54,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-test-method-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-test-method-pq"/>
             </binding>
         </element>
         <element id="ObservationDefinition.method">

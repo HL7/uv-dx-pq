@@ -50,7 +50,7 @@
             </type>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-qualifiedValueCriticality-local-pq"/> 
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-qualifiedValueCriticality-pq"/> 
             </binding>
         </element>
     </differential>

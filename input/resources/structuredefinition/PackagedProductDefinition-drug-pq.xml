@@ -90,7 +90,7 @@
       <binding>
         <strength value="example"/>
 <!--        <valueSet value="http://hl7.org/fhir/ValueSet/product-characteristic-codes"/>-->
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-pq"/>
       </binding>
     </element>
     
@@ -100,7 +100,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
       </binding>
     </element>-->
 <!--    END-->
@@ -169,7 +169,7 @@
       </type>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
       </binding>
     </element>
     <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding:quality-standard">
@@ -181,7 +181,7 @@
       </type>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
       </binding>
     </element>
 
@@ -199,7 +199,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-closureTypes-local-pq"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-closureTypes-pq"/>
       </binding>
     </element>
   </differential>

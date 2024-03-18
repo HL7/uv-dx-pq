@@ -56,7 +56,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-deviceProperty-local-pq"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-deviceProperty-pq"/>
             </binding>
         </element>
         <element id="Observation.value[x]">
