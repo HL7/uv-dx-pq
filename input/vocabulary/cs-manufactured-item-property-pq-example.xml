@@ -6,7 +6,7 @@
     <title value="Manufactured Item Property - example"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains example codes for manufactured item property in PQ."/>
+    <description value="This example code system contains example codes for manufactured item property used in pharmaceutical quality industry."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 

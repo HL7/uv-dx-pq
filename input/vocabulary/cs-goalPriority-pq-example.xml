@@ -6,7 +6,7 @@
     <title value="Goal Priority - example"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This code system contains example codes for goal priority in PQ."/>
+    <description value="This example code system contains example codes for goal priority used in pharmaceutical quality industry."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
   

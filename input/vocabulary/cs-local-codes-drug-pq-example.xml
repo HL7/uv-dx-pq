@@ -6,7 +6,7 @@
   <title value="Example Local Codes - Drug"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="This code system contains temporary example codes for use in PQ."/>
+  <description value="This example code system contains temporary example codes used in pharmaceutical quality industry."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <!-- The following concepts were originally assigned to code system http://dummy.loinc.org -->
