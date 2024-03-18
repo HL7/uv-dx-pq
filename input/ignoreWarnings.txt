@@ -12,7 +12,6 @@ The definition for the Code System with URI 'http://terminology.hl7.org/CodeSyst
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could not be found, so the code cannot be validated (from http://tx.fhir.org/r4)
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could not be found, so the code cannot be validated
 
-
 # MedicinalProductDefinition.characteristic.value[x] is a polymorphic (choice type) element, with allowed types including
 # Quantity, CodeableConcept and others.  The only slice defined in the profile is for valueQuantity, but the data in this
 # instance is valueCodeableConcept, which is not expected to match the slice definition.
@@ -36,3 +35,6 @@ This element does not match any known slice defined in the profile http://hl7.or
 
 # Slicing issue in PlanDefinition profile
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# Information message on code systems moving to THO. This IG contains example code systems.
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book)

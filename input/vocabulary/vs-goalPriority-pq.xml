@@ -2,8 +2,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="vs-goalPriority-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-goalPriority-pq"/>
-    <name value="VsGradePQ"/>
-    <title value="Grades"/>
+    <name value="VsGoalPriorityPQ"/>
+    <title value="Goal Priority"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for goal priority used in pharmaceutical quality industry."/>
