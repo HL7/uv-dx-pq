@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="drug-substance-or-product-color"/>
+    <url value="http://terminology.hl7.org/CodeSystem/drug-substance-or-product-color"/>
+    <name value="CsDrugSubstanceProductColor"/>
+    <title value="Drug Substance or Product Color"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for color in drug substances or products."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="white"/>
+        <display value="White"/>
+    </concept>
+</CodeSystem>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="product-site-utilization-type"/>
+    <url value="http://terminology.hl7.org/CodeSystem/product-site-utilization-type"/>
+    <name value="CsProductSiteUtilizationType"/>
+    <title value="Product Site Utilization Type"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for product site utilization type."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Release stability"/>
+        <display value="Release Stability"/>
+    </concept>
+    <concept>
+        <code value="Primary manufacturing"/>
+        <display value="Primary Manufacturing"/>
+    </concept>
+    <concept>
+        <code value="Secondary manufacturing"/>
+        <display value="Secondary Manufacturing"/>
+    </concept>
+    <concept>
+        <code value="Packaging and labeling"/>
+        <display value="Packaging and Labeling"/>
+    </concept>
+    <concept>
+        <code value="Distribution center"/>
+        <display value="Distribution center"/>
+    </concept>
+    
+</CodeSystem>

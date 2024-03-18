@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="structure-characterization-technique"/>
+    <url value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
+    <name value="CsStructureCharacterizationTechnique"/>
+    <title value="Structure Characterization Technique"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for structure characterization technique in pharmaceutical quality."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="absorption"/>
+        <display value="Absorption"/>
+    </concept>
+    <concept>
+        <code value="diffractogram"/>
+        <display value="Diffractogram"/>
+    </concept>
+    <concept>
+        <code value="elemental-analyis"/>
+        <display value="Elemental Analyis"/>
+    </concept>
+    <concept>
+        <code value="ion-analyis"/>
+        <display value="Ion Analyis"/>
+    </concept>
+    <concept>
+        <code value="MolecularStructure"/>
+        <display value="Molecular Structure"/>
+    </concept>
+    <concept>
+        <code value="nmr"/>
+        <display value="NMR"/>
+    </concept>
+    <concept>
+        <code value="structure"/>
+        <display value="Structure"/>
+    </concept>
+</CodeSystem>

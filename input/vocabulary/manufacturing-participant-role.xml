@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="manufacturing-participant-role"/>
+    <url value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
+    <name value="CsManufacturingParticipantRole"/>
+    <title value="Manufacturing Participant Role"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for manufacturing participant role."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="diluent"/>
+        <display value="Diluent"/>
+    </concept>
+    <concept>
+        <code value="dispersant"/>
+        <display value="Dispersant"/>
+    </concept>
+    <concept>
+        <code value="StartingMaterial"/>
+        <display value="Starting Material"/>
+    </concept>
+    <concept>
+        <code value="ProcessingMaterial"/>
+        <display value="Processing Material"/>
+    </concept>
+    <concept>
+        <code value="IntermediateMaterial"/>
+        <display value="Intermediate Material"/>
+    </concept>
+    <concept>
+        <code value="ResultingMaterial"/>
+        <display value="Resulting Material"/>
+    </concept>
+</CodeSystem>

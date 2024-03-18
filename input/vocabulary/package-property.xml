@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="package-property"/>
+    <url value="http://terminology.hl7.org/CodeSystem/package-property"/>
+    <name value="CsPackageProperty"/>
+    <title value="Package Property"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for package property."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Color"/>
+        <display value="Color"/>
+    </concept>
+    <concept>
+        <code value="Quality Standard"/>
+        <display value="Quality Standard"/>
+    </concept>
+    <concept>
+        <code value="Thickness"/>
+        <display value="Thickness"/>
+    </concept>
+    <concept>
+        <code value="Quality Specification"/>
+        <display value="Quality Specification"/>
+    </concept>
+    <concept>
+        <code value="Narrative"/>
+        <display value="Narrative"/>
+    </concept>
+    <concept>
+        <code value="Container Size"/>
+        <display value="Container Size"/>
+    </concept>
+    <concept>
+        <code value="Functional"/>
+        <display value="Functional"/>
+    </concept>
+</CodeSystem>

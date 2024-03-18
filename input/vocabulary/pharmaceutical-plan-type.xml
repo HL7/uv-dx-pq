@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="pharmaceutical-plan-type"/>
+    <url value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
+    <name value="CsPharmPlanType"/>
+    <title value="Pharmaceutical Plan Type"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for pharmaceutical plan type."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    
+    <concept>
+        <code value="analytical-procedure"/>
+        <display value="Analytical Procedure"/>
+    </concept>
+    <concept>
+        <code value="manufacturing-process"/>
+        <display value="Manufacturing Process"/>
+    </concept>
+    <concept>
+        <code value="process-validation"/>
+        <display value="Process Validation"/>
+    </concept>
+    <concept>
+        <code value="container-specification"/>
+        <display value="Container Specification"/>
+    </concept>
+<concept>
+    <code value="product-compatibility"/>
+    <display value="Product Compatibility"/>
+</concept>
+    <concept>
+        <code value="elucidation-of-structure"/>
+        <display value="Elucidation of Structure"/>
+    </concept>
+</CodeSystem>

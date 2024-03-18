@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="manufacturing-step-scale"/>
+    <url value="http://terminology.hl7.org/CodeSystem/manufacturing-step-scale"/>
+    <name value="CsManufacturingStepScale"/>
+    <title value="Manufacturing Step Scale"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for manufacturing step scale."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="PROD"/>
+        <display value="Production Scale"/> <!-- or "Commercial" -->
+    </concept>
+    <concept>
+        <code value="LAB"/>
+        <display value="Laboratory Scale"/>
+    </concept>
+    <concept>
+        <code value="PILOT"/>
+        <display value="Pilot Scale"/>
+    </concept>
+    <concept>
+        <code value="SMALL"/>
+        <display value="Small Scale"/>
+    </concept>
+    <concept>
+        <code value="MEDIUM"/>
+        <display value="Medium Scale"/>
+    </concept>
+</CodeSystem>

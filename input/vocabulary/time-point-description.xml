@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="time-point-description"/>
+    <url value="http://terminology.hl7.org/CodeSystem/time-point-description"/>
+    <name value="CsTimePointDescription"/>
+    <title value="Time Point Description"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for time point description."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="Delayed Start Code"/>
+        <display value="Delayed Start Code"/>
+    </concept>
+</CodeSystem>

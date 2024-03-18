@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="impurity-type"/>
+    <url value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
+    <name value="CsImpurityType"/>
+    <title value="Impurity Type"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for impurity type."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <!--concept>
+        <code value="impurity"/>
+        <display value="Impurity Of"/>
+    </concept-->
+    <concept>
+        <code value="CH-IMP"/>
+        <display value="Chiral Impurity"/>
+    </concept>
+
+    <concept>
+        <code value="INT-IMP"/>
+        <display value="Process intermediate, forced degradation product"/>
+    </concept>
+    <concept>
+        <code value="PR-IMP"/>
+        <display value="Process impurity"/>
+    </concept>
+    <concept>
+        <code value="ST-IMP"/>
+        <display value="Starting material, forced degradation product"/>
+    </concept>
+
+</CodeSystem>

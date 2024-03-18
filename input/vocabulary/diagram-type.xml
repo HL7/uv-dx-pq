@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="diagram-type"/>
+    <url value="http://terminology.hl7.org/CodeSystem/diagram-type"/>
+    <name value="CsDiagramType"/>
+    <title value="Diagram Type"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for diagram type."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="ProcessFlowDiagram"/>
+        <display value="Process Flow Diagram"/>
+    </concept>
+</CodeSystem>

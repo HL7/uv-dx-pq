@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="pharmaceutical-test-category"/>
+    <url value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
+    <name value="CsPharmTestCategory"/>
+    <title value="Pharmaceutical Test Category"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for pharmaceutical test category."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="C123456"/>
+        <display value="Physical Property"/>
+    </concept>
+
+</CodeSystem>

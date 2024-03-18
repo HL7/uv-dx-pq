@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="container-orientation"/>
+    <url value="http://terminology.hl7.org/CodeSystem/container-orientation"/>
+    <name value="CsContainerOrientation"/>
+    <title value="Container Orientation"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for container orientation."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="horizontal"/>
+        <display value="Horizontal"/>
+    </concept>
+    <concept>
+        <code value="vertical"/>
+        <display value="Vertical"/>
+    </concept>
+</CodeSystem>

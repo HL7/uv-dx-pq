@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="impurity-origin"/>
+    <url value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
+    <name value="CsImpurityOrigin"/>
+    <title value="Impurity Origin"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This code system contains codes for impurity origin."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+
+    <concept>
+        <code value="enantiomer"/>
+        <display value="Enantiomer"/>
+    </concept>
+    <concept>
+        <code value="process"/>
+        <display value="Process Impurity"/>
+    </concept>
+    <concept>
+        <code value="starting-material"/>
+        <display value="Starting Material"/>
+    </concept>
+    <concept>
+        <code value="intermediate-material"/>
+        <display value="Intermediate Material"/>
+    </concept>
+</CodeSystem>
