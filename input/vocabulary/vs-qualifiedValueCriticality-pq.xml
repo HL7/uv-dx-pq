@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-qualifiedValueCriticality-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-qualifiedValueCriticality-pq"/>
+    <name value="VsQualifiedValueCriticalityPQ"/>
+    <title value="Qualified Value Criticality"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains example codes for qualified value criticality in PQ."/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
+        </include>
+    </compose>
+</ValueSet>

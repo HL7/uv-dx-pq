@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="vs-closureTypes-pq"/>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-closureTypes-pq"/>
+    <name value="VsClosureTypesPQ"/>
+    <title value="Closure Types"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <description value="This value set contains example codes for closure types in PQ."/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+        </include>
+    </compose>
+</ValueSet>
