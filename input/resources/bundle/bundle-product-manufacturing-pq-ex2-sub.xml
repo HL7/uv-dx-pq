@@ -52,7 +52,7 @@
                </description>
                <priority>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
                      <code value="critical"/>
                      <display value="Critical"/>
                   </coding>
@@ -93,7 +93,7 @@
                </description>
                <priority>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
                      <code value="non-critical"/>
                      <display value="Non-critical"/>
                   </coding>
