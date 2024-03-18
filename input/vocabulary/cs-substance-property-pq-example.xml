@@ -3,7 +3,7 @@
     <id value="cs-substance-property-pq-example"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
     <name value="CsSubstancePropertyPQ"/>
-    <title value="Substance Property"/>
+    <title value="Substance Property - example"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for substance property types in PQ."/>

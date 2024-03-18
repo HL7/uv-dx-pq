@@ -3,7 +3,7 @@
     <id value="cs-manufactured-item-property-pq-example"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example"/>
     <name value="CsManufacturedItemPropertyPQ"/>
-    <title value="Manufactured Item Property"/>
+    <title value="Manufactured Item Property - example"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for manufactured item property in PQ."/>

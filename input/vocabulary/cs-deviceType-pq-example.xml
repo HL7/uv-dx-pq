@@ -3,7 +3,7 @@
     <id value="cs-deviceType-pq-example"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-pq-example"/>
     <name value="CsDeviceTypePQ"/>
-    <title value="Device Type"/>
+    <title value="Device Type - example"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains example codes for device type in PQ."/>
