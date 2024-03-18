@@ -3,7 +3,7 @@
     <id value="vs-impurity-type-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-impurity-type-pq"/>
     <name value="VsImpurityTypePQ"/>
-    <title value="Impurity Type"/>
+    <title value="Impurity Types"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for impurity type in PQ."/>    

@@ -3,7 +3,7 @@
     <id value="vs-equipmentClass-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-equipmentClass-pq"/>
     <name value="VsEquipmentClassPQ"/>
-    <title value="Equipment Class"/>
+    <title value="Equipment Classes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for equipment class in PQ."/>

@@ -3,7 +3,7 @@
     <id value="vs-grade-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
     <name value="VsGradePQ"/>
-    <title value="Grade"/>
+    <title value="Grades"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for grade in PQ."/>

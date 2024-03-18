@@ -3,7 +3,7 @@
     <id value="vs-color-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
     <name value="VsColorPQ"/>
-    <title value="Color"/>
+    <title value="Colors"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for color in PQ."/>

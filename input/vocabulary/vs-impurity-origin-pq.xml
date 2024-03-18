@@ -3,7 +3,7 @@
     <id value="vs-impurity-origin-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-impurity-origin-pq"/>
     <name value="VsImpurityOriginPQ"/>
-    <title value="Impurity Origin"/>
+    <title value="Impurity Origins"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for impurity origin in PQ."/>

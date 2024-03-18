@@ -3,7 +3,7 @@
     <id value="vs-characterizationStep-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-characterizationStep-pq"/>
     <name value="VsCharacterizationStepPQ"/>
-    <title value="Characterization Step"/>
+    <title value="Characterization Steps"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for characterization step in PQ."/>

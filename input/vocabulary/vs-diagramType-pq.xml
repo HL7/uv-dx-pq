@@ -3,7 +3,7 @@
     <id value="vs-diagramType-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-diagramType-pq"/>
     <name value="VsDiagramTypePQ"/>
-    <title value="Diagram Type"/>
+    <title value="Diagram Types"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This valueset contains example codes for diagram type in PQ."/>

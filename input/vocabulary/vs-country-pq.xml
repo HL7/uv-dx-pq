@@ -3,7 +3,7 @@
   <id value="vs-country-pq"/>
   <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-country-pq"/>
   <name value="VsCountryPQ"/>
-  <title value="ISO Country two letter code"/>
+  <title value="ISO Country two letter codes"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="This value set contains example codes for ISO Country two letter code in PQ."/>

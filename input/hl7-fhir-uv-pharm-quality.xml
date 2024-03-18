@@ -55,65 +55,6 @@
         <grouping id="domain-bundle-examples">
             <name value="Domain Bundle Examples"/>
         </grouping>
-
-        <!-- Re-ordered to be alphabetical, rather than match domains graphic-->
-        <!--<grouping id="b6-analytical">
-            <name value="Analytical Procedures"/>
-            <description value="FHIR artifacts that provide details about test methods used to analyze drug substances and drug products including compendial and non-compendial testing."/>
-        </grouping>
-        <grouping id="b9-batchanalyses">
-            <name value="Batch Analysis"/>
-            <description value="FHIR artifacts that provide details about drug substance and drug product batch release testing and results."/>
-        </grouping>
-        <grouping id="b7-batchformula">
-            <name value="Batch Formula"/>
-            <description value="FHIR artifacts that provide details about drug substance and drug product master batch properties and formula."/>
-        </grouping>
-        <grouping id="b8-batchinfo">
-            <name value="Batch or Lot Information"/>
-            <description value="FHIR artifacts that provide details about batch(es) of the  drug substance and drug product with identifiers."/>
-        </grouping>
-        <grouping id="b14-compatibility">
-            <name value="Compatibility"/>
-            <description value="FHIR artifacts that provide details about compatibility studies and results."/>
-        </grouping>
-        <grouping id="b17-composition">
-            <name value="Composition"/>
-            <description value="FHIR artifacts that provide details about drug substance and drug product components, materials, and Quality reference standards."/>
-        </grouping>
-        <grouping id="b10-container">
-            <name value="Container Closure System"/>
-            <description value="FHIR artifacts that provide details about primary and secondary packaging components for drug substance and drug product."/>
-        </grouping>
-        <grouping id="b12-specification">
-            <name value="Drug Specification"/>
-            <description value="FHIR artifacts that provide details about drug substance or drug product release and stability specification (tests, acceptance criteria)."/>
-        </grouping>
-        <grouping id="b1-id">
-            <name value="Identification"/>
-            <description value="FHIR artifacts that provide details about the drug substance and drug product nomenclature; structure; physicochemical properties; and manufacture."/>
-        </grouping>
-        <grouping id="b15-impurities">
-            <name value="Impurities"/>
-            <description value="FHIR artifacts that provide details about impurity identification and characterization."/>
-        </grouping>
-        <grouping id="b5-mnf">
-            <name value="Manufacturing Process"/>
-            <description value="FHIR artifacts that provide a manufacturing process description and details about unit operations, process parameters, and in-process controls."/>
-        </grouping>
-        <grouping id="b4-organizations">
-            <name value="Organizations"/>
-            <description value="FHIR artifacts that provide details about each facility or legal entity involved in the manufacture of the medicinal product. This includes but is not limited to: name, identifier, and location address, for marketing authorization holders, sponsors, regulatory authorities, manufacturers, supplier, test site, packaging site."/>
-        </grouping>
-        <grouping id="b13-processvalidation">
-            <name value="Process Validation"/>
-            <description value="FHIR artifacts that provide details about manufacturing process validation protocols and results."/>
-        </grouping>
-        <grouping id="b11-stabilitystudy">
-            <name value="Stability Study"/>
-            <description value="FHIR artifacts that provide details about a stability study including stability study design (tests and acceptance criteria), drug substance or drug product batches involved, test results, and conclusion."/>
-        </grouping>-->
-
         <grouping id="building-blocks-1">
             <name value="Component Building Block Profiles"/>
             <description value="FHIR artifacts used across many pharmaceutical quality domains."/>
@@ -125,23 +66,6 @@
             <name value="Extensions"/>
         </grouping>
 
-<!--        <grouping id="examples1">
-            <name value="Additional ObservationDefinition Examples"/>
-        </grouping>
-        <grouping id="examples2">
-            <name value="Additional SpecimenDefinition Examples"/>
-        </grouping>
-        <grouping id="examples3">
-            <name value="Additional SubstanceDefinition Examples"/>
-        </grouping>
-        <grouping id="examples4">
-            <name value="Additional Observation Examples"/>
-        </grouping>-->
-<!--        <grouping id="term">
-            <name value="Terminology: Example Code Systems"/>
-            <description value="Examples of code systems that may be defined and used within a local implementation, such as within one organization."/>
-        </grouping>
--->
         <!-- Domain Bundle Profiles (domain-bundle-profiles)-->
         <resource>
             <reference>
@@ -1693,7 +1617,7 @@
         </resource>
 
         <!--Additional Examples -->
-        <!-- Additional ObservationDefinition Examples (examples1)-->
+        <!-- Additional ObservationDefinition Examples (building-blocks-2)-->
         <resource>
             <reference>
                 <reference value="ObservationDefinition/accelerated40X"/>
@@ -1702,7 +1626,7 @@
             <description value="ObservationDefinition - accelerated40X"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1713,7 +1637,7 @@
             <description value="ObservationDefinition - accelerated40Y"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1724,7 +1648,7 @@
             <description value="ObservationDefinition - accelerated40Z"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1735,7 +1659,7 @@
             <description value="ObservationDefinition - longTerm25Y"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1746,7 +1670,7 @@
             <description value="ObservationDefinition - longTerm25Z"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1757,7 +1681,7 @@
             <description value="ObservationDefinition - longTerm30X"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1768,7 +1692,7 @@
             <description value="ObservationDefinition - longTerm30Y"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1779,7 +1703,7 @@
             <description value="ObservationDefinition - Assay"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1790,7 +1714,7 @@
             <description value="ObservationDefinition - Degradation"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1801,7 +1725,7 @@
             <description value="ObservationDefinition - Description"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1812,7 +1736,7 @@
             <description value="ObservationDefinition - Identification"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1823,7 +1747,7 @@
             <description value="ObservationDefinition - Impurities"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1834,7 +1758,7 @@
             <description value="ObservationDefinition - Microbiological"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1845,11 +1769,11 @@
             <description value="ObservationDefinition - Uniformity"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="examples1"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
 
-        <!-- Additional Observation Examples (examples4)-->
+        <!-- Additional Observation Examples (building-blocks-2)-->
 
         <resource>
             <reference>
@@ -1859,7 +1783,7 @@
             <description value="observation-test-result-longterm25c-initial-1"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
 
@@ -1871,7 +1795,7 @@
             <description value="observation-test-result-lt25c-i1-degradation-imp2"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1882,7 +1806,7 @@
             <description value="observation-test-result-lt25c-i1-degradation-imp3"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1893,7 +1817,7 @@
             <description value="observation-test-result-lt25c-i1-degradation-imp-total"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1904,7 +1828,7 @@
             <description value="observation-test-result-lt25c-i1-degradation-imp-unspecified"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1915,7 +1839,7 @@
             <description value="observation-test-result-lt25c-i1-microbiological"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1926,7 +1850,7 @@
             <description value="observation-test-result-lt25c-i1-uniformity"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
+            <groupingId value="building-blocks-2"/>
         </resource>
 
         <resource>
@@ -1937,354 +1861,9 @@
             <description value="observation-test-result-lt25c-i1-water"/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="examples4"/>
-        </resource>
-
-
-
-        <!--Terminology-->
-        <!--
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-local-codes-drug-pq"/>
-                <display value="CodeSystem - Example Codes - Drug"/>
-            </reference>
-            <name value="CodeSystem - Example Codes - Drug"/>
-            <description value="This code system contains temporary example codes for use in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-characterizationStep-local-pq"/>
-                <display value="CodeSystem - Characterization Step example codes"/>
-            </reference>
-            <name value="CodeSystem - Characterization Step example codes"/>
-            <description value="This code system contains local codes for characterization step in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-closureTypes-local-pq"/>
-                <display value="CodeSystem - Closure Types example codes"/>
-            </reference>
-            <name value="CodeSystem - Closure Types example codes"/>
-            <description value="This code system contains local codes for closure types in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-color-local-pq"/>
-                <display value="CodeSystem - Color example codes"/>
-            </reference>
-            <name value="CodeSystem - Color example codes"/>
-            <description value="This code system contains local codes for color in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-deviceProperty-local-pq"/>
-                <display value="CodeSystem - Device Property example codes"/>
-            </reference>
-            <name value="CodeSystem - Device Property example codes"/>
-            <description value="This code system contains local codes for device property in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-deviceType-local-pq"/>
-                <display value="CodeSystem - Device Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Device Type example codes"/>
-            <description value="This code system contains local codes for device type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-diagramType-local-pq"/>
-                <display value="CodeSystem - Diagram Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Diagram Type example codes"/>
-            <description value="This code system contains local codes for diagram type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-equipmentClass-local-pq"/>
-                <display value="CodeSystem - Equipment Class example codes"/>
-            </reference>
-            <name value="CodeSystem - Equipment Class example codes"/>
-            <description value="This code system contains local codes for equipment class in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-goalPriority-local-pq"/>
-                <display value="CodeSystem - Goal Priority example codes"/>
-            </reference>
-            <name value="CodeSystem - Goal Priority example codes"/>
-            <description value="This code system contains local codes for goal priority in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-grade-local-pq"/>
-                <display value="CodeSystem - Grade example codes"/>
-            </reference>
-            <name value="CodeSystem - Grade example codes"/>
-            <description value="This code system contains local codes for grade in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-ich-m7-classification-local-pq"/>
-                <display value="CodeSystem - ICH M7 Classification example codes"/>
-            </reference>
-            <name value="CodeSystem - ICH M7 Classification example codes"/>
-            <description value="This code system contains local codes for ICH M7 classification in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-impurity-origin-local-pq"/>
-                <display value="CodeSystem - Impurity Origin example codes"/>
-            </reference>
-            <name value="CodeSystem - Impurity Origin example codes"/>
-            <description value="This code system contains local codes for impurity origin in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-impurity-type-local-pq"/>
-                <display value="CodeSystem - Impurity Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Impurity Type example codes"/>
-            <description value="This code system contains local codes for impurity type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
-                <display value="CodeSystem - Manufacturing Participant Role example codes"/>
-            </reference>
-            <name value="CodeSystem - Manufacturing Participant Role example codes"/>
-            <description value="This code system contains local codes for manufacturing participant role in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-manufacturingStep-local-pq"/>
-                <display value="CodeSystem - Manufacturing Step example codes"/>
-            </reference>
-            <name value="CodeSystem - Manufacturing Step example codes"/>
-            <description value="This code system contains local codes for manufacturing step in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-manufacturingStepScale-local-pq"/>
-                <display value="CodeSystem - Manufacturing Step Scale example codes"/>
-            </reference>
-            <name value="CodeSystem - Manufacturing Step Scale example codes"/>
-            <description value="This code system contains local codes for manufacturing step scale in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
-                <display value="CodeSystem - Mutagenicity Classification Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Mutagenicity Classification Type example codes"/>
-            <description value="This code system contains local codes for mutagenicity classification type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-mutagenicity-local-pq"/>
-                <display value="CodeSystem - Mutagenicity example codes"/>
-            </reference>
-            <name value="CodeSystem - Mutagenicity example codes"/>
-            <description value="This code system contains local codes for mutagenicity in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-packageProperty-local-pq"/>
-                <display value="CodeSystem - Package Property example codes"/>
-            </reference>
-            <name value="CodeSystem - Package Property example codes"/>
-            <description value="This code system contains local codes for package property in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-planType-local-pq"/>
-                <display value="CodeSystem - Plan Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Plan Type example codes"/>
-            <description value="This code system contains local codes for plan type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-processParameter-local-pq"/>
-                <display value="CodeSystem - Process Parameter example codes"/>
-            </reference>
-            <name value="CodeSystem - Process Parameter example codes"/>
-            <description value="This code system contains local codes for process parameter in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-productNameType-local-pq"/>
-                <display value="CodeSystem - Product Name Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Product Name Type example codes"/>
-            <description value="This code system contains local codes for product name type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-productSiteUtilizationType-local-pq"/>
-                <display value="CodeSystem - Product Site Utilization Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Product Site Utilization Type example codes"/>
-            <description value="This code system contains local codes for product site utilization type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
-                <display value="CodeSystem - Qualified Value Criticality example codes"/>
-            </reference>
-            <name value="CodeSystem - Qualified Value Criticality example codes"/>
-            <description value="This code system contains local codes for qualified value criticality in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-reportType-local-pq"/>
-                <display value="CodeSystem - Report Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Report Type example codes"/>
-            <description value="This code system contains local codes for report type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-specification-type-local-pq"/>
-                <display value="CodeSystem - Specification Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Specification Type example codes"/>
-            <description value="This code system contains local codes for specification type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-substance-property-local-pq"/>
-                <display value="CodeSystem - Substance Property example codes"/>
-            </reference>
-            <name value="CodeSystem - Substance Property example codes"/>
-            <description value="This code system contains local codes for substance property in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-substance-property-solubility-local-pq"/>
-                <display value="CodeSystem - Substance Property Solubility example codes"/>
-            </reference>
-            <name value="CodeSystem - Substance Property Solubility example codes"/>
-            <description value="This code system contains local codes for substance property solubility in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-substancePropertyType-local-pq"/>
-                <display value="CodeSystem - Substance Property Type example codes"/>
-            </reference>
-            <name value="CodeSystem - Substance Property Type example codes"/>
-            <description value="This code system contains local codes for substance property type in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-testCategory-local-pq"/>
-                <display value="CodeSystem - Test Category example codes"/>
-            </reference>
-            <name value="CodeSystem - Test Category example codes"/>
-            <description value="This code system contains local codes for test category in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="CodeSystem/cs-timePointDescription-local-pq"/>
-                <display value="CodeSystem - Time Point Description example codes"/>
-            </reference>
-            <name value="CodeSystem - Time Point Description example codes"/>
-            <description value="This code system contains local codes for time point description in PQ."/>
-            <isExample value="false"/>
-            <groupingId value="term"/>
-        </resource>
--->
+            <groupingId value="building-blocks-2"/>
+        </resource> 
+        
         <!-- Narrative pages      -->
         <page>
             <name value="index.html"/>
@@ -2549,13 +2128,6 @@
             </page>
         </page>
 
-        <!--        <parameter>
-            <code>
-                <system value="http://hl7.org/fhir/guide-parameter-code"/>
-                <code value="apply"/>
-            </code>
-            <value value="version"/>
-        </parameter>-->
         <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -2564,12 +2136,6 @@
             <!--            <value value="ballot"/>-->
             <value value="trial-use"/>
         </parameter>
-        <!--        <parameter>
-            <code>
-                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-                <code value="special-url"/>
-            </code>
-            <value value="http://hl7.org/fhir/us/pq-cmc/ValueSet/pqcmc-closure-type-terminology"/>
-        </parameter>-->
+
     </definition>
 </ImplementationGuide>

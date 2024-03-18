@@ -3,7 +3,7 @@
     <id value="vs-deviceProperty-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-deviceProperty-pq"/>
     <name value="VsDevicePropertyPQ"/>
-    <title value="Device Property"/>
+    <title value="Device Properties"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for device property in PQ."/>

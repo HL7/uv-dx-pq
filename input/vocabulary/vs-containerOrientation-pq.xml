@@ -3,7 +3,7 @@
     <id value="vs-containerOrientation-pq"/>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-containerOrientation-pq"/>
     <name value="VsContainerOrientationPQ"/>
-    <title value="Container Orientation"/>
+    <title value="Container Orientations"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This value set contains example codes for container orientation in PQ."/>
