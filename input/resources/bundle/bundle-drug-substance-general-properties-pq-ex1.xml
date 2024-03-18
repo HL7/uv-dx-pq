@@ -14,7 +14,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="appearance"/>
                      <display value="Appearance"/>
                   </coding>
@@ -26,7 +26,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-water-pheur"/>
                      <display value="Solubility purified water (PhEur)"/>
                   </coding>
@@ -55,7 +55,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-water-pheur"/>
                      <display value="Solubility purified water (PhEur)"/>
                   </coding>
@@ -65,7 +65,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-acetone-pheur"/>
                      <display value="Solubility Acetone (PhEur)"/>
                   </coding>
@@ -94,7 +94,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-acetone-pheur"/>
                      <display value="Solubility acetone (PhEur)"/>
                   </coding>
@@ -104,7 +104,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-ethanol-pheur"/>
                      <display value="Solubility Ethanol (PhEur)"/>
                   </coding>
@@ -133,7 +133,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-ethanol-pheur"/>
                      <display value="Solubility ethanol (PhEur)"/>
                   </coding>
@@ -143,7 +143,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-aq-water-2h-approx"/>
                      <display value="Solubility at saturation in Purifed Water after 2 hours (approx)"/>
                   </coding>
@@ -156,7 +156,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-aq-glucose-2h-approx"/>
                      <display value="Solubility at saturation in Glucose (5%) after 2 hours (approx)"/>
                   </coding>
@@ -171,7 +171,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                         <code value="pH"/>
                         <display value="pH"/>
                      </valueCoding>
@@ -184,7 +184,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-usp-ph"/>
                      <display value="Solubility as a function of pH in USP buffers"/>
                   </coding>
@@ -198,7 +198,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                         <code value="pH"/>
                         <display value="pH"/>
                      </valueCoding>
@@ -211,7 +211,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-usp-ph"/>
                      <display value="Solubility as a function of pH in USP buffers"/>
                   </coding>
@@ -236,7 +236,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                         <code value="concentration"/>
                         <display value="Concentration"/>
                      </valueCoding>
@@ -251,7 +251,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq">
                   <extension url="parameter">
                      <valueCoding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                         <code value="temperature"/>
                         <display value="Temperature"/>
                      </valueCoding>
@@ -265,7 +265,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="ph-aq"/>
                      <display value="pH in aqueous solution"/>
                   </coding>
@@ -274,14 +274,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="hygroscopy"/>
                      <display value="Hygroscopy"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="hygroscopy-hygroscopic"/>
                      <display value="Hygroscopic"/>
                   </coding>

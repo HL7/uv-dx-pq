@@ -1423,7 +1423,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="impurityClassificationMCP"/>
                      <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
                   </coding>
@@ -1453,7 +1453,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="impurityClassificationMCP"/>
                      <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
                   </coding>
@@ -1483,7 +1483,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="impurityClassificationMCP"/>
                      <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
                   </coding>
@@ -1513,7 +1513,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="impurityClassificationMCP"/>
                      <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
                   </coding>
@@ -1543,7 +1543,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="impurityClassificationMCP"/>
                      <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
                   </coding>
@@ -1573,7 +1573,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="impurityClassificationMCP"/>
                      <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
                   </coding>
@@ -1603,7 +1603,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="impurityClassificationMCP"/>
                      <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
                   </coding>
@@ -1633,7 +1633,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="impurityClassificationMCP"/>
                      <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
                   </coding>
