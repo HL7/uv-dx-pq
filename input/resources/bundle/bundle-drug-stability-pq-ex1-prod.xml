@@ -35,7 +35,7 @@
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq">
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/container-orientation"/>
                      <code value="horizontal"/>
                      <display value="horizontal"/>
                   </coding>
@@ -50,7 +50,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
                   <code value="Stability Study Report - 18 months"/>
                   <display value="Stability Study Report - 18 months"/>
                </coding>
@@ -59,7 +59,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-timePointDescription-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/time-point-description"/>
                         <code value="Delayed Start Code"/>
                         <display value="Delayed Start Code"/>
                      </coding>
@@ -3426,7 +3426,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-product-manufacture"/>
                   <display value="Drug Product Manufacture"/>
                </coding>
@@ -3460,7 +3460,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="packaging"/>
                   <display value="Packaging"/>
                </coding>
@@ -3484,7 +3484,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="analytical-testing-stability"/>
                   <display value="Analytical Testing - Stability"/>
                </coding>
@@ -3624,7 +3624,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-substance-manufacture"/>
                   <display value="Drug Substance Manufacture"/>
                </coding>

@@ -22,7 +22,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
                   <code value="Impurities Report"/>
                   <display value="Impurities Report"/>
                </coding>
@@ -235,7 +235,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-product-manufacture"/>
                   <display value="Drug Product Manufacture"/>
                </coding>
@@ -1762,7 +1762,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="analytical-testing-release"/>
                   <display value="Analytical Testing - Release"/>
                </coding>

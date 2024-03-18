@@ -23,7 +23,7 @@
                     <display value="Workflow Definition"/>
                 </coding>
                 <coding>
-                    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                     <code value="manufacturing-process"/>
                     <display value="Manufacturing Process"/>
                 </coding>
@@ -38,7 +38,7 @@
             <goal id="goal-control-pH">
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                         <code value="C123456"/>
                         <display value="Physical Property"/>
                     </coding>
@@ -79,7 +79,7 @@
             <goal id="goal-control-water-content">
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                         <code value="C123456"/>
                         <display value="Physical Property"/>
                     </coding>
@@ -116,7 +116,7 @@
             <goal id="goal-control-particle-size">
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                         <code value="C123456"/>
                         <display value="Physical Property"/>
                     </coding>
@@ -156,7 +156,7 @@
                     </typeReference>
                     <role>
                         <coding>
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class"/>
                             <code value="mixing-vessel"/>
                             <display value="Mixing Vessel"/>
                         </coding>
@@ -170,7 +170,7 @@
                     </typeReference>
                     <role>
                         <coding>
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class"/>
                             <code value="receiving-vessel"/>
                             <display value="Receiving Vessel"/>
                         </coding>

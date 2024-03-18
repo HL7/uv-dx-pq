@@ -44,7 +44,7 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Quality Specification"/>
                         <display value="Quality Specification"/>
                      </coding>
@@ -56,7 +56,7 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Quality Specification"/>
                         <display value="Quality Specification"/>
                      </coding>
@@ -183,7 +183,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="container-specification"/>
                   <display value="Container Specification"/>
                </coding>

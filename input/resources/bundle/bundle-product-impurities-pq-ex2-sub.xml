@@ -22,7 +22,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="enantiomer"/>
                         <display value="Enantiomer"/>
                      </coding>
@@ -41,7 +41,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="CH-IMP"/>
                      <display value="Chiral Impurity"/>
                   </coding>
@@ -52,7 +52,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="process"/>
                         <display value="Process Impurity"/>
                      </coding>
@@ -70,7 +70,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="PR-IMP"/>
                      <display value="Process impurity"/>
                   </coding>
@@ -81,7 +81,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="process"/>
                         <display value="Process Impurity"/>
                      </coding>
@@ -99,7 +99,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="PR-IMP"/>
                      <display value="Process impurity"/>
                   </coding>
@@ -110,7 +110,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="starting-material"/>
                         <display value="Starting Material"/>
                      </coding>
@@ -128,7 +128,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="ST-IMP"/>
                      <display value="Starting material, forced degradation product"/>
                   </coding>
@@ -139,7 +139,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="intermediate-material"/>
                         <display value="Intermediate Material"/>
                      </coding>
@@ -157,7 +157,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="INT-IMP"/>
                      <display value="Process intermediate, forced degradation product"/>
                   </coding>
@@ -776,7 +776,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-substance-manufacture"/>
                   <display value="Drug Substance Manufacture"/>
                </coding>

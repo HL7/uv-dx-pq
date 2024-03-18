@@ -91,14 +91,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Color"/>
                         <display value="Color"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-color-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/drug-substance-or-product-color"/>
                         <code value="white"/>
                         <display value="White"/>
                      </coding>
@@ -107,14 +107,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Quality Standard"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                         <code value="USP"/>
                         <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
                      </coding>
@@ -123,14 +123,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Quality Standard"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                         <code value="PhEur"/>
                         <display value="PhEur 3.1.3 Polyolefins"/>
                      </coding>
@@ -139,7 +139,7 @@
                <packaging>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/container-closure-type"/>
                         <code value="Child Proof Cap"/>
                         <display value="Child Proof Cap"/>
                      </coding>
@@ -156,14 +156,14 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                            <code value="Quality Standard"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                            <code value="16CFR1700"/>
                            <display value="16 CFR 1700"/>
                         </coding>
@@ -172,7 +172,7 @@
                   <packaging>
                      <type>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/container-closure-type"/>
                            <code value="Multi-layer Foil Seal Liner"/>
                            <display value="Multi-layer Foil Seal Liner"/>
                         </coding>
@@ -188,14 +188,14 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                               <code value="Quality Standard"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                               <code value="21CFR175.300"/>
                               <display value="21 CFR 175.300"/>
                            </coding>
@@ -204,14 +204,14 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                               <code value="Quality Standard"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                               <code value="EU-94-62-EC"/>
                               <display value="EU 94/62/EC"/>
                            </coding>
@@ -252,14 +252,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Quality Standard"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                         <code value="EU1935-2004"/>
                         <display value="European Commission Regulation 1935/2004"/>
                      </coding>
@@ -269,14 +269,14 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Quality Standard"/>
                         <display value="Quality Standard"/>
                      </coding>
                   </type>
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                         <code value="EU78-142"/>
                         <display value="European Union Council Directive 78/142/EEC"/>
                      </coding>
@@ -285,7 +285,7 @@
                <packaging>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/container-closure-type"/>
                         <code value="Blister"/>
                         <display value="Blister"/>
                         <!-- the actual blister -->
@@ -305,7 +305,7 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                            <code value="Thickness"/>
                            <display value="Thickness"/>
                         </coding>
@@ -319,14 +319,14 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                            <code value="Quality Standard"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                            <code value="USP"/>
                            <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
                         </coding>
@@ -335,14 +335,14 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                            <code value="Quality Standard"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                            <code value="PhEur3111"/>
                            <display value="Materials Based on Non-Plasticised Poly Vinyl Chloride for Containers for Solid Dosage Forms and Oral Administration"/>
                         </coding>
@@ -351,14 +351,14 @@
                   <property>
                      <type>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                            <code value="Quality Standard"/>
                            <display value="Quality Standard"/>
                         </coding>
                      </type>
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                            <code value="PhEur322"/>
                            <display value="Plastic Containers and Closures for Pharmaceutical Use"/>
                         </coding>
@@ -378,7 +378,7 @@
                   <packaging>
                      <type>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/container-closure-type"/>
                            <code value="Blister Foil Lidding"/>
                            <display value="Blister Foil Lidding"/>
                         </coding>
@@ -398,14 +398,14 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                               <code value="Quality Standard"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                               <code value="USP"/>
                               <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
                            </coding>
@@ -414,14 +414,14 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                               <code value="Quality Standard"/>
                               <display value="Quality Standard"/>
                            </coding>
                         </type>
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                               <code value="EU10-2011"/>
                               <display value="European Union Regulation 10/2011"/>
                            </coding>
@@ -430,7 +430,7 @@
                      <property>
                         <type>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                               <code value="Thickness"/>
                               <display value="Thickness"/>
                            </coding>

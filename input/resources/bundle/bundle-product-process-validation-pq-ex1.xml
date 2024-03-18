@@ -22,7 +22,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="process-validation"/>
                   <display value="Process Validation"/>
                </coding>
@@ -37,7 +37,7 @@
                <title value="Compounding Step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="compounding"/>
                      <display value="Compounding Step"/>
                   </coding>
@@ -82,7 +82,7 @@
                <title value="Filling Steps"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="filling"/>
                      <display value="Filling Step"/>
                   </coding>
@@ -161,7 +161,7 @@
                <title value="Lyophilization Step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="lyophilization"/>
                      <display value="Lyophilization Step"/>
                   </coding>
@@ -213,7 +213,7 @@
                <title value="Release Step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="release"/>
                      <display value="Release Step"/>
                   </coding>
@@ -1706,7 +1706,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-product-manufacture"/>
                   <display value="Drug Product Manufacture"/>
                </coding>
@@ -1737,7 +1737,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="packaging"/>
                   <display value="Packaging"/>
                </coding>
@@ -1760,7 +1760,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="analytical-testing-release"/>
                   <display value="Analytical Testing - Release"/>
                </coding>
@@ -1786,7 +1786,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
                   <code value="Process Validation Report"/>
                   <display value="Process Validation Report"/>
                </coding>
@@ -4090,7 +4090,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-substance-manufacture"/>
                   <display value="Drug Substance Manufacture"/>
                </coding>
@@ -4146,7 +4146,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-substance-manufacture"/>
                   <display value="Drug Substance Manufacture"/>
                </coding>
@@ -4192,7 +4192,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="manufacturing-process"/>
                   <display value="Manufacturing Process"/>
                </coding>
@@ -4206,7 +4206,7 @@
             <goal id="goal-control-pH">
                <category>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -4247,7 +4247,7 @@
             <goal id="goal-control-water-content">
                <category>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -4284,7 +4284,7 @@
             <goal id="goal-control-particle-size">
                <category>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -4325,7 +4325,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class"/>
                         <code value="mixing-vessel"/>
                         <display value="Mixing Vessel"/>
                      </coding>
@@ -4340,7 +4340,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class"/>
                         <code value="receiving-vessel"/>
                         <display value="Receiving Vessel"/>
                      </coding>
@@ -4374,7 +4374,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/device-property"/>
                      <code value="Capacity"/>
                      <display value="Capacity"/>
                      <!-- seems a little different to "maximum capacity -->
@@ -4410,7 +4410,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/device-property"/>
                      <code value="Capacity"/>
                      <display value="Capacity"/>
                      <!-- seems a little different to "maximum capacity -->

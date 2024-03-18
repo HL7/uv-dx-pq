@@ -26,7 +26,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="product-compatibility"/>
                   <display value="Product Compatibility"/>
                </coding>
@@ -42,7 +42,7 @@
                <!-- needs some other code -->
                <!--code>
                         <coding>
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                             <code value="FilteredFormulatedDrugProductPerformanceIndicatorResultsStep"/>
                             <display value="Filtered Formulated Drug Product Performance Indicator Results"/>
                         </coding>
@@ -98,7 +98,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
                   <code value="Product Compatibility Report"/>
                   <display value="Product Compatibility Report"/>
                </coding>
@@ -846,7 +846,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="analytical-testing-release"/>
                   <display value="Analytical Testing - Release"/>
                </coding>

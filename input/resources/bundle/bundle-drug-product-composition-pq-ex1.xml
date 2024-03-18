@@ -115,7 +115,7 @@
             </role>
             <function>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/ingredient-function"/>
                   <code value="diluent"/>
                   <display value="Diluent"/>
                </coding>
@@ -170,7 +170,7 @@
             </role>
             <function>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/ingredient-function"/>
                   <code value="disintegrant"/>
                   <display value="Disintegrant"/>
                </coding>
@@ -225,7 +225,7 @@
             </role>
             <function>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/ingredient-function"/>
                   <code value="disintegrant"/>
                   <display value="Disintegrant"/>
                </coding>
@@ -280,7 +280,7 @@
             </role>
             <function>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/ingredient-function"/>
                   <code value="lubricant"/>
                   <display value="Lubricant"/>
                </coding>
@@ -323,7 +323,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="in-house"/>
                   <display value="In-house"/>
                </coding>
@@ -342,7 +342,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380475"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -361,7 +361,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380476"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -380,7 +380,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380477"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -399,7 +399,7 @@
             <id value="4cf2cbba-33e6-1124-9bf2-1c6756380478"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>

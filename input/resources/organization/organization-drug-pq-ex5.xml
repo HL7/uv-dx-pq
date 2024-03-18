@@ -11,14 +11,14 @@
     <active value="true"/>
     <type>
         <coding>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
             <code value="analytical-testing-stability"/>
             <display value="Analytical Testing - Stability"/>
         </coding>
     </type>
     <type>
         <coding>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
             <code value="analytical-testing-release"/>
             <display value="Analytical Testing - Release"/>
         </coding>

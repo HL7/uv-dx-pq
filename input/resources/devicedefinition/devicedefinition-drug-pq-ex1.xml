@@ -15,7 +15,7 @@
     <property>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
+                <system value="http://terminology.hl7.org/CodeSystem/device-property"/>
                             <code value="Maximum Speed"/>
                 <!-- #90 Working capacity -->
                 <display value="Maximum Speed"/>

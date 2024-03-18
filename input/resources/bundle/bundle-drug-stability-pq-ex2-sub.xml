@@ -30,7 +30,7 @@
             <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq">
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-containerOrientation-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/container-orientation"/>
                      <code value="horizontal"/>
                      <display value="horizontal"/>
                   </coding>
@@ -44,7 +44,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
                   <code value="Stability Study Report"/>
                   <display value="Stability Study Report"/>
                </coding>
@@ -53,7 +53,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-time-point-description-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-timePointDescription-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/time-point-description"/>
                         <code value="Delayed Start Code"/>
                         <display value="Delayed Start Code"/>
                      </coding>
@@ -3549,7 +3549,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-substance-manufacture"/>
                   <display value="Drug Substance Manufacture"/>
                </coding>
@@ -3583,7 +3583,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="analytical-testing-stability"/>
                   <display value="Analytical Testing - Stability"/>
                </coding>
@@ -3614,7 +3614,7 @@
             <manufacturer>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-site-utilization-pq">
                   <valueCoding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productSiteUtilizationType-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/product-site-utilization-type"/>
                      <code value="Release stability"/>
                      <display value="Release stability"/>
                   </valueCoding>
@@ -3642,7 +3642,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-substance-manufacture"/>
                   <display value="Drug Substance Manufacture"/>
                </coding>
@@ -3675,7 +3675,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="analytical-testing-stability"/>
                   <display value="Analytical Testing - Stability"/>
                </coding>

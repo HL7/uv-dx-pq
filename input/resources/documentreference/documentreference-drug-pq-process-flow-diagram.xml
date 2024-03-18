@@ -13,7 +13,7 @@
                 <status value="current"/>
                 <type>
                     <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/diagram-type"/>
                         <code value="ProcessFlowDiagram"/>
                         <display value="Process Flow Diagram"/>
                     </coding>

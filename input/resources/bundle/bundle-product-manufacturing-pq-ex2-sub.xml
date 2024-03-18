@@ -27,7 +27,7 @@
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="manufacturing-process"/>
                   <display value="Manufacturing Process"/>
                </coding>
@@ -41,7 +41,7 @@
             <goal id="goal-control-pH">
                <category>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -82,7 +82,7 @@
             <goal id="goal-control-temp">
                <category>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -122,7 +122,7 @@
             <action>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="overall process"/>
                      <display value="Overall Process"/>
                   </coding>
@@ -131,7 +131,7 @@
                <action>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                      <valueCoding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step-scale"/>
                         <code value="PROD"/>
                         <display value="Production Scale"/>
                      </valueCoding>
@@ -140,7 +140,7 @@
                      <extension url="parameter">
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/process-parameter"/>
                               <code value="SPEED"/>
                               <display value="Mix speed"/>
                            </coding>
@@ -157,7 +157,7 @@
                   <description value="Description of this step"/>
                   <code>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                         <code value="particleSizeReduction"/>
                         <display value="Particle Size Reduction"/>
                      </coding>
@@ -180,7 +180,7 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class"/>
                            <code value="Compression Milling"/>
                            <display value="Compression Milling"/>
                         </coding>
@@ -197,7 +197,7 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                            <code value="StartingMaterial"/>
                            <display value="Starting Material"/>
                         </coding>
@@ -214,7 +214,7 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                            <code value="ProcessingMaterial"/>
                            <display value="ProcessingMaterial"/>
                         </coding>
@@ -231,7 +231,7 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                            <code value="ResultingMaterial"/>
                            <display value="Resulting Material"/>
                         </coding>
@@ -258,7 +258,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/device-property"/>
                      <code value="Maximum Speed"/>
                      <display value="Maximum Speed"/>
                   </coding>
@@ -290,7 +290,7 @@
             <status value="current"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/diagram-type"/>
                   <code value="ProcessFlowDiagram"/>
                   <display value="Process Flow Diagram"/>
                </coding>
@@ -349,7 +349,7 @@
             <active value="true"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
                   <code value="drug-substance-manufacture"/>
                   <display value="Drug Substance Manufacture"/>
                </coding>

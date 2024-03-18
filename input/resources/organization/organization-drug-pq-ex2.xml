@@ -12,7 +12,7 @@
     <active value="true"/>
     <type>
         <coding>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
             <code value="drug-product-manufacture"/>
             <display value="Drug Product Manufacture"/>
         </coding>
