@@ -23,3 +23,6 @@ A definition for CodeSystem 'http://example.org/fhir/code/planType' could not be
 A definition for CodeSystem 'http://example.org/fhir/code/closureTypes' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.org/fhir/code/material' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.org/fhir/code/closureProperties' could not be found, so the code cannot be validated
+
+# Code system http://standardterms.edqm.eu needs to be addressed
+No definition can be found for the system http://standardterms.edqm.eu, and the property 'class' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
