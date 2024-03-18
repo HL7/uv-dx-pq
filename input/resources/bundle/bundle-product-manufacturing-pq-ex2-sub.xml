@@ -60,7 +60,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                         <code value="pH"/>
                         <display value="pH"/>
                      </coding>
@@ -101,7 +101,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                         <code value="TEMP"/>
                         <display value="Temperature"/>
                      </coding>
