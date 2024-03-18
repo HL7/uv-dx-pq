@@ -18,7 +18,7 @@
                <productName value="Stalbatolol"/>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>
                      <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
