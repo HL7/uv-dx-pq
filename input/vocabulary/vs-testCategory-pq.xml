@@ -6,10 +6,10 @@
     <title value="Test Category"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains example codes for test category in PQ."/>
+    <description value="This value set contains codes for test category."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
         </include>
     </compose>
 </ValueSet>

@@ -6,7 +6,7 @@
     <title value="Product Name Type"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains example codes for product name type in PQ."/>
+    <description value="This value set contains example codes for product name type in pharmaceutical quality industry."/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>

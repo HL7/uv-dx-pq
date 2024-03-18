@@ -6,7 +6,7 @@
     <title value="Test Method"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains example codes for test methods in PQ."/>
+    <description value="This value set contains example codes for test methods in pharmaceutical quality industry."/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>

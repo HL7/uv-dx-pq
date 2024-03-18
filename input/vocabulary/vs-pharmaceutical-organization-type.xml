@@ -6,10 +6,10 @@
     <title value="Pharmaceutical Organization Type"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains  codes for pharmaceutical organization types."/>
+    <description value="This value set contains codes for pharmaceutical organization types."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-pharmaceutical-organization-type"/>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
         </include>
     </compose>
 </ValueSet>

@@ -6,10 +6,10 @@
     <title value="Report Type"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains example codes for report type in PQ."/>
+    <description value="This value set contains codes for pharmaceutical report type."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
         </include>
     </compose>
 </ValueSet>

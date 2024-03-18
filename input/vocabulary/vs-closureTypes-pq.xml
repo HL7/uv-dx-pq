@@ -6,10 +6,10 @@
     <title value="Closure Types"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains example codes for closure types in PQ."/>
+    <description value="This value set contains codes for closure types."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-closureTypes-local-pq"/>
+            <system value="http://terminology.hl7.org/CodeSystem/container-closure-type"/>
         </include>
     </compose>
 </ValueSet>

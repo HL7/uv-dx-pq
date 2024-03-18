@@ -6,10 +6,10 @@
     <title value="Manufacturing Step"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains example codes for manufacturing step in PQ."/>
+    <description value="This value set contains codes for manufacturing step."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
         </include>
     </compose>
 </ValueSet>

@@ -6,11 +6,11 @@
     <title value="Diagram Types"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This valueset contains example codes for diagram type in PQ."/>
+    <description value="This valueset contains codes for diagram type."/>
 
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
+            <system value="http://terminology.hl7.org/CodeSystem/diagram-type"/>
         </include>
     </compose>
 </ValueSet>
