@@ -26,3 +26,12 @@ A definition for CodeSystem 'http://example.org/fhir/code/closureProperties' cou
 
 # Code system http://standardterms.edqm.eu needs to be addressed
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'class' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
+
+# Slicing issue in PackagedProductDefinition profile
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# Slicing issue in MedicinalProductDefinition profile
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# Slicing issue in PlanDefinition profile
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
