@@ -83,7 +83,7 @@
             <valueCodeableConcept>
                 <coding>
                     <!--                           <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-batch-designation"/>-->
-                    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/batch-designation"/>
                     <code value="maximum"/>
                     <display value="Maximum"/>
                 </coding>

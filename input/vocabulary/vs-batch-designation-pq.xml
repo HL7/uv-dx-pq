@@ -6,10 +6,10 @@
     <title value="Batch Designation"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This value set contains example codes for batch designation in PQ."/>
+    <description value="This value set contains codes for batch designation in pharmaceutical quality."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-batch-designation-local-pq"/>
+            <system value="http://terminology.hl7.org/CodeSystem/batch-designation"/>
         </include>
     </compose>
 </ValueSet>
