@@ -10,7 +10,7 @@
         <valueCode value="brr"/>
     </extension>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ImplementationGuide/hl7-fhir-uv-pharm-quality"/>
-<!--    <version value="1.0.0-ballot"/>-->
+    <!--    <version value="1.0.0-ballot"/>-->
     <version value="1.0.0"/>
     <name value="PharmaceuticalQualityIndustry"/>
     <title value="Pharmaceutical Quality (Industry)"/>
@@ -44,8 +44,20 @@
         <version value="5.0.0"/>
     </dependsOn>
     <definition>
+        <!-- New groupings to satisfy FHIR-44114 -->
+
+        <grouping id="domain-bundle-profiles">
+            <name value="Domain Bundle Profiles"/>
+            <description value="This page provides a list of the FHIR artifacts defined as part of this implementation guide. 
+                Note that the mention of CTD sections, and the use of CTD style templates in the examples, are as a points of reference for implementers and are to facilitate implementer’s ability to map the new 14 domain/subdomain granular structure to traditional CTD style templates. That mapping is also meant to facilitate the design of transformers for converting from the default FHIR XML or JSON format to the relevant format needed to comply with the requirements stipulated by national competent authority responsible for authorizing medicinal products. 
+                As noted in section 1.2 scope, sponsors are expected to reference and adhere to the relevant national regulatory guidance when preparing data for a regulatory application."/>
+        </grouping>
+        <grouping id="domain-bundle-examples">
+            <name value="Domain Bundle Examples"/>
+        </grouping>
+
         <!-- Re-ordered to be alphabetical, rather than match domains graphic-->
-        <grouping id="b6-analytical">
+        <!--<grouping id="b6-analytical">
             <name value="Analytical Procedures"/>
             <description value="FHIR artifacts that provide details about test methods used to analyze drug substances and drug products including compendial and non-compendial testing."/>
         </grouping>
@@ -100,12 +112,11 @@
         <grouping id="b11-stabilitystudy">
             <name value="Stability Study"/>
             <description value="FHIR artifacts that provide details about a stability study including stability study design (tests and acceptance criteria), drug substance or drug product batches involved, test results, and conclusion."/>
-        </grouping>
+        </grouping>-->
 
-        <!--        Additional Groupings -->
         <grouping id="building-blocks-1">
             <name value="Component Building Block Profiles"/>
-            <description value="FHIR artifacts used across many PQ domains."/>
+            <description value="FHIR artifacts used across many pharmaceutical quality domains."/>
         </grouping>
         <grouping id="building-blocks-2">
             <name value="Component Building Block Examples"/>
@@ -114,7 +125,7 @@
             <name value="Extensions"/>
         </grouping>
 
-        <grouping id="examples1">
+<!--        <grouping id="examples1">
             <name value="Additional ObservationDefinition Examples"/>
         </grouping>
         <grouping id="examples2">
@@ -125,135 +136,83 @@
         </grouping>
         <grouping id="examples4">
             <name value="Additional Observation Examples"/>
-        </grouping>
-        <grouping id="term">
+        </grouping>-->
+<!--        <grouping id="term">
             <name value="Terminology: Example Code Systems"/>
             <description value="Examples of code systems that may be defined and used within a local implementation, such as within one organization."/>
         </grouping>
-
-        <!-- Identification (b1-id)-->
-        <!--        ID Profiles-->
+-->
+        <!-- Domain Bundle Profiles (domain-bundle-profiles)-->
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-pq"/>
-                <display value="Bundle – Drug Product"/>
+                <reference value="StructureDefinition/Bundle-analytical-procedure-pq"/>
+                <display value="Bundle – Analytical Procedure"/>
             </reference>
-            <name value="Profile: Bundle - Drug Product"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product."/>
+            <name value="Bundle - Analytical Procedure"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.2 Analytical Procedures and section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures. (Analytical Procedure domain"/>
             <isExample value="false"/>
-            <groupingId value="b1-id"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
-                <display value="Bundle – Product Microbiological Attributes"/>
+                <reference value="StructureDefinition/Bundle-batch-analysis-pq"/>
+                <display value="Bundle – Batch Analysis"/>
             </reference>
-            <name value="Profile: Bundle - Product Microbiological Attributes"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.5 Microbiological Attributes."/>
+            <name value="Bundle - Batch Analysis"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses
+                and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses. (Batch Analysis domain"/>
             <isExample value="false"/>
-            <groupingId value="b1-id"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
-                <display value="Bundle – Product Excipients"/>
+                <reference value="StructureDefinition/Bundle-batch-formula-pq"/>
+                <display value="Bundle – Batch Formula"/>
             </reference>
-            <name value="Profile: Bundle - Product Excipients"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin and 3.2.P.4.6 Novel Excipients."/>
+            <name value="Bundle - Batch Formula"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.2 Batch Formula. (Batch Formula domain"/>
             <isExample value="false"/>
-            <groupingId value="b1-id"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
-                <display value="Bundle – Substance General Properties"/>
+                <reference value="StructureDefinition/Bundle-drug-product-batch-info-pq"/>
+                <display value="Bundle – Product Batch Information"/>
             </reference>
-            <name value="Profile: Bundle - Substance General Properties"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.1 General Information, subsection 3.2.S.1.3 General Properties."/>
+            <name value="Bundle - Product Batch Information"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses. (Batch/Lot Information domain"/>
             <isExample value="false"/>
-            <groupingId value="b1-id"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
-                <display value="Bundle – Substance Characterization"/>
+                <reference value="StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
+                <display value="Bundle – Substance Batch Information"/>
             </reference>
-            <name value="Profile: Bundle - Substance Characterization"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.1 – Elucidation of Structure and Other Characteristics."/>
+            <name value="Bundle - Substance Batch Information"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses. (Batch/Lot Information domain"/>
             <isExample value="false"/>
-            <groupingId value="b1-id"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-        <!--        ID Examples-->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-drug-product-pq-ex1"/>
+                <reference value="StructureDefinition/Bundle-drug-product-compatibility-pq"/>
+                <display value="Bundle - Product Compatibility"/>
             </reference>
-            <name value="Example: Bundle – Drug Product"/>
-            <description value="Example of Bundle – Drug Product."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq"/>
-            <groupingId value="b1-id"/>
+            <name value="Bundle - Product Compatibility"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.6 Compatibility. (Compatibility domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-product-microbiological-attributes-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Product Microbiological Attributes"/>
-            <description value="Example of Bundle – Product Microbiological Attributes."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
-            <groupingId value="b1-id"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-product-excipients-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Product Excipients"/>
-            <description value="Example of Bundle – Product Excipients."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq"/>
-            <groupingId value="b1-id"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-substance-general-properties-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Substance General Properties"/>
-            <description value="Example of Bundle – Substance General Properties."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
-            <groupingId value="b1-id"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-substance-characterization-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Substance Characterization"/>
-            <description value="Example of Bundle – Substance Characterization."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
-            <groupingId value="b1-id"/>
-        </resource>
-
-        <!--Composition (b17-composition)-->
-        <!--Composition Profiles-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-drug-product-composition-pq"/>
                 <display value="Bundle – Product Composition"/>
             </reference>
-            <name value="Profile: Bundle - Product Composition"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.1 Description and Composition of the Drug Product."/>
+            <name value="Bundle - Product Composition"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.1 Description and Composition of the Drug Product. (Composition domain)"/>
             <isExample value="false"/>
-            <groupingId value="b17-composition"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
 
         <resource>
@@ -261,160 +220,165 @@
                 <reference value="StructureDefinition/Bundle-drug-reference-standards-pq"/>
                 <display value="Bundle – Reference Standards"/>
             </reference>
-            <name value="Profile: Bundle - Reference Standards"/>
-            <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.6 Reference Standards or Materials and 3.2.S.5 Reference Standards or Materials."/>
+            <name value="Bundle - Reference Standards"/>
+            <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.6 Reference Standards or Materials and 3.2.S.5 Reference Standards or Materials. (Composition domain"/>
             <isExample value="false"/>
-            <groupingId value="b17-composition"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
-        <!--Composition Examples-->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-drug-product-composition-pq-ex1"/>
+                <reference value="StructureDefinition/Bundle-container-closure-system-pq"/>
+                <display value="Bundle - Container Closure System"/>
             </reference>
-            <name value="Example: Bundle – Product Composition"/>
-            <description value="Example of Bundle – Product Composition."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
-            <groupingId value="b17-composition"/>
+            <name value="Bundle - Container Closure System"/>
+            <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.7 Container Closure System and 3.2.S.6 Container Closure System. (Container Closure System domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
         <resource>
             <reference>
-                <reference value="Bundle/bundle-drug-reference-standards-pq-ex2-sub"/>
+                <reference value="StructureDefinition/Bundle-drug-product-specification-pq"/>
+                <display value="Bundle – Product Specification"/>
             </reference>
-            <name value="Example: Bundle – Reference Standards, substance"/>
-            <description value="Example of Bundle – Reference Standards for drug substance."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-reference-standards-pq"/>
-            <groupingId value="b17-composition"/>
+            <name value="Bundle - Product Specification"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.1 Specification(s). (Specification domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
-        <!--Impurities (b15-impurities)-->
-        <!--Impurities Profiles-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-substance-specification-pq"/>
+                <display value="Bundle – Substance Specification"/>
+            </reference>
+            <name value="Bundle - Substance Specification"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification. (Specification domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-product-pq"/>
+                <display value="Bundle – Drug Product"/>
+            </reference>
+            <name value="Bundle - Drug Product"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product. (Identification domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
+                <display value="Bundle – Product Microbiological Attributes"/>
+            </reference>
+            <name value="Bundle - Product Microbiological Attributes"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.5 Microbiological Attributes. (Identification domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-product-excipients-pq"/>
+                <display value="Bundle – Product Excipients"/>
+            </reference>
+            <name value="Bundle - Product Excipients"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin and 3.2.P.4.6 Novel Excipients. (Identification domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
+                <display value="Bundle – Substance General Properties"/>
+            </reference>
+            <name value="Bundle - Substance General Properties"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.1 General Information, subsection 3.2.S.1.3 General Properties. (Identification domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-substance-characterization-pq"/>
+                <display value="Bundle – Substance Characterization"/>
+            </reference>
+            <name value="Bundle - Substance Characterization"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.1 – Elucidation of Structure and Other Characteristics. (Identification domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-product-impurities-pq"/>
                 <display value="Bundle - Impurities"/>
             </reference>
-            <name value="Profile: Bundle - Impurities"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities and CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities."/>
+            <name value="Bundle - Impurities"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities and CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities. (Impurities domain)"/>
             <isExample value="false"/>
-            <groupingId value="b15-impurities"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
-        <!--Impurities Examples-->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-product-impurities-pq-ex1"/>
+                <reference value="StructureDefinition/Bundle-product-manufacturing-pq"/>
+                <display value="Bundle - Manufacturing"/>
             </reference>
-            <name value="Example: Bundle - Impurities, product"/>
-            <description value="Example of Bundle - Impurities for drug product."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
-            <groupingId value="b15-impurities"/>
+            <name value="Bundle - Manufacturing"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.3 Description of Manufacturing Process and Process Controls and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.2 Description of Manufacturing Process and Process Controls. (Manufacturing Process domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-product-impurities-pq-ex2-sub"/>
-            </reference>
-            <name value="Example: Bundle - Impurities, substance"/>
-            <description value="Example of Bundle - Impurities for drug substance."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
-            <groupingId value="b15-impurities"/>
-        </resource>
-
-        <!--Organizations (b4-organizations)-->
-        <!--Organization Profiles-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-organizations-pq"/>
                 <display value="Bundle - Organizations"/>
             </reference>
-            <name value="Profile: Bundle - Organizations"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s) and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s)."/>
+            <name value="Bundle - Organizations"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s) and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s). (Organizations domain)"/>
             <isExample value="false"/>
-            <groupingId value="b4-organizations"/>
+            <groupingId value="domain-bundle-profiles"/>
         </resource>
-
-        <!--Organization Examples -->
         <resource>
             <reference>
-                <reference value="Bundle/bundle-organizations-pq-ex1"/>
+                <reference value="StructureDefinition/Bundle-product-process-validation-pq"/>
+                <display value="Bundle - Process Validation"/>
             </reference>
-            <name value="Example: Bundle - Organizations"/>
-            <description value="Example of Bundle - Organizations for either drug product or drug substance."/>
+            <name value="Bundle - Process Validation"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.5 Process Validation and/or Evaluation and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.5 Process Validation and/or Evaluation. (Process Validation domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-drug-stability-pq"/>
+                <display value="Bundle – Stability"/>
+            </reference>
+            <name value="Bundle - Stability"/>
+            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.8 Stability, subsection 3.2.P.8.3 Stability Data, and CTD section 3.2.S.7 Stability, subsection 3.2.S.7.3 Stability Data. (Stability Study domain)"/>
+            <isExample value="false"/>
+            <groupingId value="domain-bundle-profiles"/>
+        </resource>
+
+        <!--Domain Bundle Examples (domain-bundle-examples) -->
+        <!--Analytical Procedures Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-analytical-procedure-pq-ex1-prod"/>
+            </reference>
+            <name value="Example: Bundle – Analytical Procedure, product"/>
+            <description value="Example of Bundle – Analytical Procedure for drug product."/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq"/>
-            <groupingId value="b4-organizations"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
-        <!--Batch or Lot Information (b8-batchinfo)-->
-        <!--Batch or Lot Information Profiles-->
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-batch-info-pq"/>
-                <display value="Bundle – Product Batch Information"/>
+                <reference value="Bundle/bundle-analytical-procedure-pq-ex2-sub"/>
             </reference>
-            <name value="Profile: Bundle - Product Batch Information"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses."/>
-            <isExample value="false"/>
-            <groupingId value="b8-batchinfo"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
-                <display value="Bundle – Substance Batch Information"/>
-            </reference>
-            <name value="Profile: Bundle - Substance Batch Information"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses."/>
-            <isExample value="false"/>
-            <groupingId value="b8-batchinfo"/>
-        </resource>
-
-        <!--Batch or Lot Information Examples-->
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-product-batch-info-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Product Batch Information"/>
-            <description value="Example of Bundle – Product Batch Information."/>
+            <name value="Example: Bundle – Analytical Procedure, substance"/>
+            <description value="Example of Bundle – Analytical Procedure for drug substance."/>
             <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
-            <groupingId value="b8-batchinfo"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-substance-batch-info-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Substance Batch Information"/>
-            <description value="Example of Bundle – Substance Batch Information."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
-            <groupingId value="b8-batchinfo"/>
-        </resource>
-
-        <!--Batch Analysis (b9-batchanalyses)-->
-        <!--Batch Analysis Profiles -->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-batch-analysis-pq"/>
-                <display value="Bundle – Batch Analysis"/>
-            </reference>
-            <name value="Profile: Bundle - Batch Analysis"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses
-                and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses."/>
-            <isExample value="false"/>
-            <groupingId value="b9-batchanalyses"/>
-        </resource>
-
         <!--Batch Analysis Examples -->
-
         <resource>
             <reference>
                 <reference value="Bundle/bundle-batch-analysis-pq-ex1-prod"/>
@@ -423,7 +387,7 @@
             <description value="Example of Bundle – Batch Analysis for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"/>
-            <groupingId value="b9-batchanalyses"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
 
         <resource>
@@ -434,22 +398,8 @@
             <description value="Example of Bundle – Batch Analysis for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"/>
-            <groupingId value="b9-batchanalyses"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
-        <!--Batch Formula (b7-batchformula)-->
-        <!--Batch Formula Profiles -->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-batch-formula-pq"/>
-                <display value="Bundle – Batch Formula"/>
-            </reference>
-            <name value="Profile: Bundle - Batch Formula"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.2 Batch Formula."/>
-            <isExample value="false"/>
-            <groupingId value="b7-batchformula"/>
-        </resource>
-
         <!--Batch Formula Example-->
         <resource>
             <reference>
@@ -459,22 +409,175 @@
             <description value="Example of Bundle - Batch Formula for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq"/>
-            <groupingId value="b7-batchformula"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
-        <!--Manufacturing Process (b5-mnf)-->
-        <!--Manufacturing Process Profiles-->
+        <!--Batch or Lot Information Examples-->
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-product-manufacturing-pq"/>
-                <display value="Bundle - Manufacturing"/>
+                <reference value="Bundle/bundle-drug-product-batch-info-pq-ex1"/>
             </reference>
-            <name value="Profile: Bundle - Manufacturing"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.3 Description of Manufacturing Process and Process Controls and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.2 Description of Manufacturing Process and Process Controls."/>
-            <isExample value="false"/>
-            <groupingId value="b5-mnf"/>
+            <name value="Example: Bundle – Product Batch Information"/>
+            <description value="Example of Bundle – Product Batch Information."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-substance-batch-info-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Substance Batch Information"/>
+            <description value="Example of Bundle – Substance Batch Information."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <!--Compatibility Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-compatibility-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Product Compatibility"/>
+            <description value="Example of Bundle – Product Compatibility."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <!--Composition Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-composition-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Product Composition"/>
+            <description value="Example of Bundle – Product Composition."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-reference-standards-pq-ex2-sub"/>
+            </reference>
+            <name value="Example: Bundle – Reference Standards, substance"/>
+            <description value="Example of Bundle – Reference Standards for drug substance."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-reference-standards-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <!--Container Closure System Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-container-closure-system-pq-ex1-prod"/>
+            </reference>
+            <name value="Example: Bundle - Container Closure System, product"/>
+            <description value="Example of Bundle - Container Closure System for drug product."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-container-closure-system-pq-ex2-sub"/>
+            </reference>
+            <name value="Example: Bundle - Container Closure System, substance"/>
+            <description value="Example of Bundle - Container Closure System for drug substance."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <!--        Specification Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-specification-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Product Specification"/>
+            <description value="Example of Bundle – Product Specification."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-substance-specification-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Substance Specification"/>
+            <description value="Example of Bundle – Substance Specification."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <!--        ID Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Drug Product"/>
+            <description value="Example of Bundle – Drug Product."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-microbiological-attributes-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Product Microbiological Attributes"/>
+            <description value="Example of Bundle – Product Microbiological Attributes."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-product-excipients-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Product Excipients"/>
+            <description value="Example of Bundle – Product Excipients."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-substance-general-properties-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Substance General Properties"/>
+            <description value="Example of Bundle – Substance General Properties."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-drug-substance-characterization-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle – Substance Characterization"/>
+            <description value="Example of Bundle – Substance Characterization."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <!--Impurities Examples-->
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-impurities-pq-ex1"/>
+            </reference>
+            <name value="Example: Bundle - Impurities, product"/>
+            <description value="Example of Bundle - Impurities for drug product."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-product-impurities-pq-ex2-sub"/>
+            </reference>
+            <name value="Example: Bundle - Impurities, substance"/>
+            <description value="Example of Bundle - Impurities for drug substance."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
+            <groupingId value="domain-bundle-examples"/>
+        </resource>
         <!--Manufacturing Process Examples-->
         <resource>
             <reference>
@@ -484,9 +587,8 @@
             <description value="Example of Bundle - Manufacturing for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
-            <groupingId value="b5-mnf"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
         <resource>
             <reference>
                 <reference value="Bundle/bundle-product-manufacturing-pq-ex2-sub"/>
@@ -495,19 +597,18 @@
             <description value="Example of Bundle - Manufacturing for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"/>
-            <groupingId value="b5-mnf"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-        <!--Process Validation (b13-processvalidation)-->
-        <!--Process Validation Profiles-->
+        <!--Organization Examples -->
         <resource>
             <reference>
-                <reference value="StructureDefinition/Bundle-product-process-validation-pq"/>
-                <display value="Bundle - Process Validation"/>
+                <reference value="Bundle/bundle-organizations-pq-ex1"/>
             </reference>
-            <name value="Profile: Bundle - Process Validation"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.5 Process Validation and/or Evaluation and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.5 Process Validation and/or Evaluation."/>
-            <isExample value="false"/>
-            <groupingId value="b13-processvalidation"/>
+            <name value="Example: Bundle - Organizations"/>
+            <description value="Example of Bundle - Organizations for either drug product or drug substance."/>
+            <isExample value="true"/>
+            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
         <!--Process Validation Examples-->
         <resource>
@@ -518,9 +619,8 @@
             <description value="Example of Bundle - Process Validation for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
-            <groupingId value="b13-processvalidation"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
         <resource>
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex3-prod-bio"/>
@@ -529,9 +629,8 @@
             <description value="Example of Bundle - Process Validation for biologic drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
-            <groupingId value="b13-processvalidation"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
         <resource>
             <reference>
                 <reference value="Bundle/bundle-product-process-validation-pq-ex2-sub"/>
@@ -540,94 +639,8 @@
             <description value="Example of Bundle - Process Validation for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"/>
-            <groupingId value="b13-processvalidation"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
-        <!--Analytical Procedures (b6-analytical)-->
-        <!--Analytical Procedures Profiles-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-analytical-procedure-pq"/>
-                <display value="Bundle – Analytical Procedure"/>
-            </reference>
-            <name value="Profile: Bundle - Analytical Procedure"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.2 Analytical Procedures and section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures."/>
-            <isExample value="false"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
-
-        <!--Analytical Procedures Examples-->
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-analytical-procedure-pq-ex1-prod"/>
-            </reference>
-            <name value="Example: Bundle – Analytical Procedure, product"/>
-            <description value="Example of Bundle – Analytical Procedure for drug product."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-analytical-procedure-pq-ex2-sub"/>
-            </reference>
-            <name value="Example: Bundle – Analytical Procedure, substance"/>
-            <description value="Example of Bundle – Analytical Procedure for drug substance."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"/>
-            <groupingId value="b6-analytical"/>
-        </resource>
-
-        <!--Container Closure System (b10-container)-->
-        <!--Container Closure System Profiles-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-container-closure-system-pq"/>
-                <display value="Bundle - Container Closure System"/>
-            </reference>
-            <name value="Profile: Bundle - Container Closure System"/>
-            <description value="This Bundle profile represents the structured data in CTD sections 3.2.P.7 Container Closure System and 3.2.S.6 Container Closure System."/>
-            <isExample value="false"/>
-            <groupingId value="b10-container"/>
-        </resource>
-
-        <!--Container Closure System Examples-->
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-container-closure-system-pq-ex1-prod"/>
-            </reference>
-            <name value="Example: Bundle - Container Closure System, product"/>
-            <description value="Example of Bundle - Container Closure System for drug product."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
-            <groupingId value="b10-container"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-container-closure-system-pq-ex2-sub"/>
-            </reference>
-            <name value="Example: Bundle - Container Closure System, substance"/>
-            <description value="Example of Bundle - Container Closure System for drug substance."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"/>
-            <groupingId value="b10-container"/>
-        </resource>
-
-        <!--Stability (b11-stabilitystudy)-->
-        <!--        Stability Profiles-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-stability-pq"/>
-                <display value="Bundle – Stability"/>
-            </reference>
-            <name value="Profile: Bundle - Stability"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.8 Stability, subsection 3.2.P.8.3 Stability Data, and CTD section 3.2.S.7 Stability, subsection 3.2.S.7.3 Stability Data."/>
-            <isExample value="false"/>
-            <groupingId value="b11-stabilitystudy"/>
-        </resource>
-
         <!--        Stability Examples-->
         <resource>
             <reference>
@@ -637,9 +650,8 @@
             <description value="Example of Bundle – Stability for drug product."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
-            <groupingId value="b11-stabilitystudy"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
         <resource>
             <reference>
                 <reference value="Bundle/bundle-drug-stability-pq-ex2-sub"/>
@@ -648,85 +660,10 @@
             <description value="Example of Bundle – Stability for drug substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"/>
-            <groupingId value="b11-stabilitystudy"/>
+            <groupingId value="domain-bundle-examples"/>
         </resource>
-
-        <!--Specification (b12-specification)-->
-        <!--        Specification Profiles-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-specification-pq"/>
-                <display value="Bundle – Product Specification"/>
-            </reference>
-            <name value="Profile: Bundle - Product Specification"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.1 Specification(s)."/>
-            <isExample value="false"/>
-            <groupingId value="b12-specification"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-substance-specification-pq"/>
-                <display value="Bundle – Substance Specification"/>
-            </reference>
-            <name value="Profile: Bundle - Substance Specification"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification."/>
-            <isExample value="false"/>
-            <groupingId value="b12-specification"/>
-        </resource>
-
-        <!--        Specification Examples-->
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-product-specification-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Product Specification"/>
-            <description value="Example of Bundle – Product Specification."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq"/>
-            <groupingId value="b12-specification"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-substance-specification-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Substance Specification"/>
-            <description value="Example of Bundle – Substance Specification."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-specification-pq"/>
-            <groupingId value="b12-specification"/>
-        </resource>
-
-        <!--Compatibility (b14-compatibility)-->
-        <!--Compatibility Profiles-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-drug-product-compatibility-pq"/>
-                <display value="Bundle - Product Compatibility"/>
-            </reference>
-            <name value="Profile: Bundle - Product Compatibility"/>
-            <description value="This Bundle profile represents the structured data in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.6 Compatibility."/>
-            <isExample value="false"/>
-            <groupingId value="b14-compatibility"/>
-        </resource>
-
-        <!--Compatibility Examples-->
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-drug-product-compatibility-pq-ex1"/>
-            </reference>
-            <name value="Example: Bundle – Product Compatibility"/>
-            <description value="Example of Bundle – Product Compatibility."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"/>
-            <groupingId value="b14-compatibility"/>
-        </resource>
-
         <!--Building Blocks-->
         <!--Building Block Profiles (building-blocks-1) -->
-
         <resource>
             <reference>
                 <reference value="StructureDefinition/ActivityDefinition-test-drug-pq"/>
@@ -936,7 +873,7 @@
             <groupingId value="building-blocks-1"/>
         </resource>
 
-        <!--Building Block Examples -->
+        <!--Building Block Examples (building-blocks-2) -->
         <resource>
             <reference>
                 <reference value="ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
@@ -1067,51 +1004,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-
-        <!--        <resource>
-            <reference>
-                <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex1"/>
-            </reference>
-            <name value="ObservationDefinition - Test Method - example 1"/>
-            <description value="Example of ObservationDefinition - Test Method for test method X."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="ObservationDefinition/observationdefinition-test-method-drug-pq-ex2"/>
-            </reference>
-            <name value="ObservationDefinition - Test Method - example 2"/>
-            <description value="Example of ObservationDefinition - Test Method for Water Content test method."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-drug-pq-ex1"/>
-            </reference>
-            <name value="Observation - Test Result - Example 1"/>
-            <description value="Example of Observation - Test Result for result of Degradation Products test."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
-        <!--        <resource>
-            <reference>
-                <reference value="Observation/observation-test-result-drug-pq-ex2"/>
-            </reference>
-            <name value="Observation - Test Result - Example 2"/>
-            <description value="Example of Observation - Test Result for result of Description test."/>
-            <isExample value="true"/>
-            <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
-            <groupingId value="building-blocks-2"/>
-        </resource>-->
-
+        
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-description"/>
@@ -2668,10 +2561,10 @@
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="releaselabel"/>
             </code>
-<!--            <value value="ballot"/>-->
+            <!--            <value value="ballot"/>-->
             <value value="trial-use"/>
         </parameter>
-<!--        <parameter>
+        <!--        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="special-url"/>
