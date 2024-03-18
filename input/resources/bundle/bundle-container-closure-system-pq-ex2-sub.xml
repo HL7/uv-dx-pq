@@ -198,7 +198,7 @@
                <title value="Container Specification"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-pq-example"/>
                      <code value="Container Specification"/>
                      <display value="Container Specification"/>
                   </coding>
