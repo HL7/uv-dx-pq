@@ -4365,7 +4365,7 @@
             <classification>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-pq-example"/>
                      <code value="mixing-vessel"/>
                      <display value="Mixing Vessel"/>
                   </coding>
@@ -4401,7 +4401,7 @@
             <classification>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceType-pq-example"/>
                      <code value="receiving-tank"/>
                      <display value="Receiving Tank"/>
                   </coding>
