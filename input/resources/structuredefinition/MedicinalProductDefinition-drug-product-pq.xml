@@ -31,7 +31,7 @@
             <binding>
                 <strength value="preferred"/>
                 <description value="EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes."/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicine-doseform"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-medicine-doseform"/>
               </binding>
             <mustSupport value="true"/>
         </element>
@@ -40,7 +40,7 @@
             <binding>
                 <strength value="preferred"/>
                 <description value="EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes."/>
-                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicine-route-of-administration"/>
+                <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-medicine-route-of-administration"/>
               </binding>
         </element>
         <element id="MedicinalProductDefinition.name">
@@ -89,7 +89,7 @@
           <binding>
             <strength value="example"/>
             <description value="Example codes for MedicinalProduct.characteristic.type"/>
-            <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/medicinalproduct-characteristic-type"/>
+            <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-medicinalproduct-characteristic-type"/>
           </binding>
         </element>
         <element id="MedicinalProductDefinition.characteristic.value[x]">
