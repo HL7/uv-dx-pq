@@ -15,7 +15,7 @@
     <property>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
+                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example"/>
                 <code value="overage-by-mass"/>
                 <display value="Overage by mass (%)"/>
             </coding>
@@ -29,7 +29,7 @@
     <property>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
+                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example"/>
                 <code value="overage-reason"/>
                 <display value="Overage reason"/>
             </coding>
