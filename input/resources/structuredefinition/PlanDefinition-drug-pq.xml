@@ -115,7 +115,7 @@
             </type>
             <mustSupport value="true"/>
             <binding>
-<!--                <strength value="preferred"/>
+                <!--                <strength value="preferred"/>
                 <description value="Indicates the level of importance associated with reaching or sustaining a goal."/>
                 <valueSet value="http://hl7.org/fhir/ValueSet/goal-priority"/>-->
                 <strength value="example"/>
@@ -178,12 +178,13 @@
         <element id="PlanDefinition.action.code.coding">
             <path value="PlanDefinition.action.code.coding"/>
             <slicing>
-<!--                <discriminator>
-                    <type value="pattern"/>
-<!-\-                    <path value="code"/>-\->
-<!-\-                    <type value="value"/>-\->
+                <discriminator>
+                    <!--                    <type value="pattern"/> -->
+                    <!--                    "pattern" has been depricated-->
+                    <type value="value"/>
+                    <!--                    <path value="code"/>-->
                     <path value="$this"/>
-                </discriminator>-->
+                </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>

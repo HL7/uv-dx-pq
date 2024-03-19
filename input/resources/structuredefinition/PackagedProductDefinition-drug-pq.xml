@@ -89,7 +89,6 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-<!--        <valueSet value="http://hl7.org/fhir/ValueSet/product-characteristic-codes"/>-->
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-packageProperty-pq"/>
       </binding>
     </element>
@@ -104,7 +103,7 @@
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
       </binding>
-    </element-->>
+    </element>  -->
 <!--    END-->
     
 <!--    SLICING PATTERN-->
@@ -135,7 +134,7 @@
           </extension>
           <extension url="valueSet">
             <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
-          </extension>>
+          </extension>
         </extension>
 <!--        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
           <extension url="purpose">
