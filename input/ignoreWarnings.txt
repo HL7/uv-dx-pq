@@ -1,11 +1,4 @@
 == Suppressed Messages ==
-# Information messages about reference to deprecated items
-Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
-
-# Information messages about reference to draft status items
-Reference to draft CodeSystem http://hl7.org/fhir/hl7-work-group|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/plan-definition-type|0.1.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v3-ObservationValue|2.1.0
 
 # Chemical abstract codes (CAS) code system is specified as content 'not-present' in THO, so the code cannot be validated
 The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/CAS' doesnt provide any codes so the code cannot be validated
@@ -17,24 +10,3 @@ A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could no
 # instance is valueCodeableConcept, which is not expected to match the slice definition.
 INFORMATION: Bundle/bundle-drug-product-pq-ex1: Bundle.entry[3].resource/*MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5*/.characteristic[0].value.ofType(CodeableConcept): This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# Information messages and Warnings about example code systems
-A definition for CodeSystem 'http://example.org/fhir/code/planType' could not be found, so the code cannot be validated
-A definition for CodeSystem 'http://example.org/fhir/code/closureTypes' could not be found, so the code cannot be validated
-A definition for CodeSystem 'http://example.org/fhir/code/material' could not be found, so the code cannot be validated
-A definition for CodeSystem 'http://example.org/fhir/code/closureProperties' could not be found, so the code cannot be validated
-
-# Code system http://standardterms.edqm.eu needs to be addressed
-No definition can be found for the system http://standardterms.edqm.eu, and the property 'class' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
-No definition can be found for the system http://standardterms.edqm.eu, and the property 'domain' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
-
-# Slicing issue in PackagedProductDefinition profile
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-
-# Slicing issue in MedicinalProductDefinition profile
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-
-# Slicing issue in PlanDefinition profile
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-
-# Information message on code systems moving to THO. This IG contains example code systems.
-Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book)
