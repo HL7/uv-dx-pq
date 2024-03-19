@@ -2133,6 +2133,14 @@
         <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+                <code value="special-url"/>
+            </code>
+            <value value="http://terminology.hl7.org/CodeSystem/batch-designation"/>
+        </parameter>
+        
+        <parameter>
+            <code>
+                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="releaselabel"/>
             </code>
             <!--            <value value="ballot"/>-->
