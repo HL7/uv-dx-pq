@@ -19,15 +19,15 @@ Manufacturing process description and details about unit operations, process par
 </table>
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.P.3 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.3_Description_Manufacturing.pdf ">3.2.P.3.3 Description of Manufacturing Process and Process Controls</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-product-manufacturing-pq-ex1.xml.html">Product Manufacturing Process example XML</a>
 - <a href="Bundle-bundle-product-manufacturing-pq-ex1.json.html">Product Manufacturing Process example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
+**HTML presentation example** of synthetic quality data:
 - <a href="mnf_process_rend_p.html">Product Manufacturing Process</a>
 
 ### Substance
@@ -48,13 +48,12 @@ Manufacturing process description and details about unit operations, process par
 - 3.2.S.2 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.2_Description_Manufacturing.pdf ">3.2.S.2.2 Description of Manufacturing Process and Process Controls</a>
 
-
 **XML and JSON examples** of synthetic CTD data:
 - <a href="Bundle-bundle-product-manufacturing-pq-ex2-sub.xml.html">Substance Manufacturing Process example XML</a>
 - <a href="Bundle-bundle-product-manufacturing-pq-ex2-sub.json.html">Substance Manufacturing Process example JSON</a>
 
 **HTML presentation example** of synthetic CTD data:
-- <a href="mnf_process_rend_s.html">Substance Manufacturing Process</a>
+- <a href="mnf_process_rend_s.html">Substance Manufacturing Process</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Manufacturing Process](artifacts.html#manufacturing-process)

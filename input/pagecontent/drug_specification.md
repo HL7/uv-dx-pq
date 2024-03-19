@@ -19,16 +19,16 @@ Details about drug substance or drug product release and stability specification
 
 </table>
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.P.5 Control of Drug Product
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2P.5.1_Specification(s).pdf ">3.2.P.5.1 Specification(s)</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-product-specification-pq-ex1.xml.html">Product Specification example XML</a>
 - <a href="Bundle-bundle-drug-product-specification-pq-ex1.json.html">Product Specification example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="drug_specification_rend_p.html">Product Specification</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="drug_specification_rend_p.html">Product Specification</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Substance
 <table>
@@ -44,16 +44,16 @@ Details about drug substance or drug product release and stability specification
 </table>
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.S.4 Control of Drug Substance
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.4.1_Specification.pdf ">3.2.S.4.1 Specification</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-substance-specification-pq-ex1.xml.html">Substance Specification example XML</a>
 - <a href="Bundle-bundle-drug-substance-specification-pq-ex1.json.html">Substance Specification example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="drug_specification_rend_s.html">Substance Specification</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="drug_specification_rend_s.html">Substance Specification</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Drug Specification](artifacts.html#drug-specification)

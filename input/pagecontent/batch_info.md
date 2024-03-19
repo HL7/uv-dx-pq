@@ -18,13 +18,13 @@ Details about batches of the drug product and substance, with identifiers.
 - 3.2.P.5 Control of Drug Product
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.5.4_Batch_Analyses.pdf ">3.2.P.5.4 Batch Analyses</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-product-batch-info-pq-ex1.xml.html">Product Batch or Lot information example XML</a>
 - <a href="Bundle-bundle-drug-product-batch-info-pq-ex1.json.html">Product Batch or Lot information example JSON</a>
 
 
-**HTML rendering** of synthetic CTD data:
-- <a href="batch_info_rend_p.html">Drug Product Batch or Lot Information</a>
+**HTML rendering** of synthetic quality data:
+- <a href="batch_info_rend_p.html">Drug Product Batch or Lot Information</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Substance
 <table>
@@ -42,11 +42,12 @@ Details about batches of the drug product and substance, with identifiers.
 - 3.2.S.4 Control of Drug Substance
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.4.4_Batch_Analyses.pdf ">3.2.S.4.4 Batch Analyses</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-substance-batch-info-pq-ex1.xml.html">Substance Batch or Lot information example XML</a>
 - <a href="Bundle-bundle-drug-substance-batch-info-pq-ex1.json.html">Substance Batch or Lot information example JSON</a>
 
-**HTML rendering** of synthetic CTD data:
-- <a href="batch_info_rend_s.html">Drug Substance Batch or Lot Information</a>
+**HTML rendering** of synthetic quality data:
+- <a href="batch_info_rend_s.html">Drug Substance Batch or Lot Information</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
+
 ### Profiles 
 See [Artifacts Index: Batch or Lot Information](artifacts.html#batch-or-lot-information)

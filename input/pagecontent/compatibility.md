@@ -23,12 +23,12 @@ Details about compatibility studies and results.
 - 3.2.P.2 Pharmaceutical Development
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.2.6_Compatibility.pdf ">3.2.P.2.6 Compatibility</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-product-compatibility-pq-ex1.xml.html">Product Compatibility example XML</a>
 - <a href="Bundle-bundle-drug-product-compatibility-pq-ex1.json.html">Product Compatibility example JSON</a>
 
-**HTML rendering** of synthetic CTD data:
-- <a href="compatibility_rend_p.html">Drug Product Compatibility</a>
+**HTML rendering** of synthetic quality data:
+- <a href="compatibility_rend_p.html">Drug Product Compatibility</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Compatibility](artifacts.html#compatibility)

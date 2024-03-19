@@ -19,12 +19,12 @@ Details about drug product master batch properties and formula.
 - 3.2.P.3 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.2_Batch_Formula.pdf ">3.2.P.3.2 Batch Formula</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-batch-formula-pq-ex1.xml.html">Batch Formula example XML</a>
 - <a href="Bundle-bundle-batch-formula-pq-ex1.json.html">Batch Formula example JSON</a>
 
-**HTML rendering** of synthetic CTD data:
-- <a href="batch_formula_rend_p.html">Drug Product Batch Formula</a>
+**HTML rendering** of synthetic quality data:
+- <a href="batch_formula_rend_p.html">Drug Product Batch Formula</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Batch Formula](artifacts.html#batch-formula)

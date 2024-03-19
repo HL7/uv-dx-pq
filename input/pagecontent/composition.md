@@ -15,15 +15,15 @@ Provide details about drug substance and drug product components, materials, and
 
 </table>
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.1_Description_Composition.pdf ">3.2.P.1 Description and Composition of the Drug Product</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-product-composition-pq-ex1.xml.html">Product Composition example XML</a>
 - <a href="Bundle-bundle-drug-product-composition-pq-ex1.json.html">Product Composition example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="composition_rend_s.html">Product Composition</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="composition_rend_s.html">Product Composition</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 
 ### Drug Reference Standards
@@ -45,15 +45,15 @@ Provide details about drug substance and drug product components, materials, and
 
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.5_Reference_Standards_or_Materials.pdf ">3.2.S.5 Reference Standards or Materials</a> (3.2.P.6 Reference Standards or Materials is similar.)
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-reference-standards-pq-ex2-sub.xml.html">Substance Reference Standards or Materials example XML</a>
 - <a href="Bundle-bundle-drug-reference-standards-pq-ex2-sub.json.html">Substance Reference Standards or Materials example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="composition_rend_s.html">Substance Reference Standards or Materials</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="composition_rend_s.html">Substance Reference Standards or Materials</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Composition](artifacts.html#composition)

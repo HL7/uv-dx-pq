@@ -20,16 +20,16 @@ Details about drug substance and drug product batch release testing and results.
 </table>
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.P.5 Control of Drug Product
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.5.4_Batch_Analyses.pdf ">3.2.P.5.4 Batch Analyses</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-batch-analysis-pq-ex1-prod.xml.html">Product Batch Analysis example XML</a>
 - <a href="Bundle-bundle-batch-analysis-pq-ex1-prod.json.html">Product Batch Analysis example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="batch_anal_rend_p.html">Product Batch Analysis</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="batch_anal_rend_p.html">Product Batch Analysis</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 
 ### Substance
@@ -49,16 +49,16 @@ Details about drug substance and drug product batch release testing and results.
 <tr><td>Organization</td><td>(not illustrated above): The company/site that performed the testing or manufacturing</td></tr>
 </table>
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.S.4 Control of Drug Substance
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.4.4_Batch_Analyses.pdf ">3.2.S.4.4 Batch Analyses</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-batch-analysis-pq-ex2-sub.xml.html">Substance Batch Analysis example XML</a>
 - <a href="Bundle-bundle-batch-analysis-pq-ex2-sub.json.html">Substance Batch Analysis example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="batch_anal_rend_s.html">Substance Batch Analyses</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="batch_anal_rend_s.html">Substance Batch Analyses</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Batch Analysis](artifacts.html#batch-analysis)

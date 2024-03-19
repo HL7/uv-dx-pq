@@ -25,17 +25,17 @@ Details about a stability study including stability study design (tests and acce
 </table>
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.P.8 Stability
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.8.1_Stability_Summary_and_Conclusions.pdf ">3.2.P.8.1 Stability Summary and Conclusions</a>
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.8.3_Stability_Data.pdf ">3.2.P.8.3 Stability Data</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-stability-pq-ex1-prod.xml.html">Product Stability example XML</a>
 - <a href="Bundle-bundle-drug-stability-pq-ex1-prod.json.html">Product Stability example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="stability_rend_p.html">Drug Product Stability</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="stability_rend_p.html">Drug Product Stability</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Substance
 <table>
@@ -60,17 +60,17 @@ Details about a stability study including stability study design (tests and acce
 <tr><td>Substance</td><td>Identifying information about an actual batch of substance (an instance)</td></tr>
 </table>
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.S.7 Stability
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.7.1_Stability_Summary_and_Conclusions.pdf ">3.2.S.7.1 Stability Summary and Conclusions</a>
   - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.7.3_Stability_Data.pdf ">3.2.S.7.3 Stability Data</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-drug-stability-pq-ex2-sub.xml.html">Substance Stability example XML</a>
 - <a href="Bundle-bundle-drug-stability-pq-ex2-sub.json.html">Substance Stability example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="stability_rend_s.html">Drug Substance Stability</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="stability_rend_s.html">Drug Substance Stability</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Stability Study](artifacts.html#stability-study)

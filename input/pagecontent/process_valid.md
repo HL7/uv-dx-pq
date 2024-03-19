@@ -27,20 +27,22 @@ Details about manufacturing process validation protocols and results.
 </table>
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.P.3 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.5_Process_Validation.pdf ">3.2.P.3.5 Process Validation and/or Evaluation</a>
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.5_Process_Validation_and-or_Evaluation_BIO.pdf ">3.2.P.3.5 Process Validation and/or Evaluation - Biologic Example</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-product-process-validation-pq-ex1.xml.html">Product Process Validation example XML</a>
 - <a href="Bundle-bundle-product-process-validation-pq-ex1.json.html">Product Process Validation example JSON</a>
 - <a href="Bundle-bundle-product-process-validation-pq-ex3-prod-bio.xml.html">Product Process Validation Biological example XML</a>
 - <a href="Bundle-bundle-product-process-validation-pq-ex3-prod-bio.json.html">Product Process Validation Biological example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
+**HTML presentation example** of synthetic quality data:
 - <a href="process_valid_rend_p.html">Drug Product Process Validation</a>
 - <a href="process_valid_rend_pb.html">Drug Product Process Validation - Biologic</a>
+
+Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 
 ### Substance
@@ -63,16 +65,16 @@ Details about manufacturing process validation protocols and results.
 </table>
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.S.2 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.5_Process_Validation_and-or_Evaluation.pdf ">3.2.S.2.5 Process Validation and/or Evaluation</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-product-process-validation-pq-ex2-sub.xml.html">Substance Process Validation example XML</a>
 - <a href="Bundle-bundle-product-process-validation-pq-ex2-sub.json.html">Substance Process Validation example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="process_valid_rend_s.html">Substance Process Validation</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="process_valid_rend_s.html">Substance Process Validation</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Process Validation](artifacts.html#process-validation)

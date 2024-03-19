@@ -18,16 +18,16 @@ Details about impurity identification and characterization.
 </table>
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.P.5 Control of Drug Product
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.5.5_Characterisation_of_Impurities.pdf ">3.2.P.5.5 Characterisation of Impurities</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-product-impurities-pq-ex1.xml.html">Product Impurities example XML</a>
 - <a href="Bundle-bundle-product-impurities-pq-ex1.json.html">Product Impurities example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="impurities_rend_p.html">Product Impurities example HTML</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="impurities_rend_p.html">Product Impurities example HTML</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Substance
 <table>
@@ -42,16 +42,16 @@ Details about impurity identification and characterization.
 
 #### Examples
 
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.S.3 Characterisation
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.3.2_Impurities.pdf ">3.2.S.3.2 Impurities</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-product-impurities-pq-ex2-sub.xml.html">Substance Impurities example XML</a>
 - <a href="Bundle-bundle-product-impurities-pq-ex2-sub.json.html">Substance Impurities example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="impurities_rend_s.html">Substance Impurities example HTML</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="impurities_rend_s.html">Substance Impurities example HTML</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Impurities](artifacts.html#impurities)

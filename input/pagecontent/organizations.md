@@ -10,18 +10,18 @@ Details about each facility or legal entity involved in the manufacture of the m
 </table>
 
 ### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - 3.2.P.3 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.1_Manufacturer(s).pdf">3.2.P.3.1 Manufacturer(s)</a>
 - 3.2.S.2 Manufacture
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.1_Manufacturer(s).pdf">3.2.S.2.1 Manufacturer(s)</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-organizations-pq-ex1.xml.html">Organization example XML</a>
 - <a href="Bundle-bundle-organizations-pq-ex1.json.html">Organization example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="organizations_rend.html">Drug Substance or Product Organizations</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="organizations_rend.html">Drug Substance or Product Organizations</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Organizations](artifacts.html#organizations)

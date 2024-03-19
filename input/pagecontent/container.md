@@ -15,15 +15,16 @@ Details about primary and secondary packaging components for drug substance and 
 </table>
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.7_Container_Closure_System.pdf ">3.2.P.7 Container Closure System</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-container-closure-system-pq-ex1-prod.xml.html">Product Container Closure example XML</a>
 - <a href="Bundle-bundle-container-closure-system-pq-ex1-prod.json.html">Product Container Closure example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="container_rend_p.html">Product Container Closure System</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="container_rend_p.html">Product Container Closure System</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
+
 ### Substance
 <table>
 <tr><td><img src="container_closure_substance.png" width="425"/></td></tr>
@@ -39,17 +40,15 @@ Details about primary and secondary packaging components for drug substance and 
 
 
 #### Examples
-**eCTD section synthetic source data samples** (PDF):
+**CTD section synthetic source data samples** (PDF):
 - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.6_Container_Closure_System.pdf ">3.2.S.6 Container Closure System</a>
 
-
-
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-container-closure-system-pq-ex2-sub.xml.html">Substance Container Closure example XML</a>
 - <a href="Bundle-bundle-container-closure-system-pq-ex2-sub.json.html">Substance  Container Closure example JSON</a>
 
-**HTML presentation example** of synthetic CTD data:
-- <a href="container_rend_s.html">Substance Container Closure System</a>
+**HTML presentation example** of synthetic quality data:
+- <a href="container_rend_s.html">Substance Container Closure System</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Container Closure System](artifacts.html#container-closure-system)
