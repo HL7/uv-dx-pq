@@ -4,11 +4,11 @@ Rather than recreating the legacy table of contents format in FHIR, pharmaceutic
 
 Each domain has a page that describes its objective and provides a component diagram (where applicable), description of components, and examples.
 
-## Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains
+### Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains
 The 14 PQ domains and their supporting sub-domains, in which each domain is based on a major PQ concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.
 <table><tr><td><img src="all-domains-dx-PQ.png" usemap="#hotspots"/></td></tr></table>
 
-## Table: Mapping the legacy CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains
+### Table: Mapping the legacy ICH Common Technical Document (CTD) Drug Substance and Drug Product sections to the new FHIR Quality Domains
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -132,7 +132,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
 </tbody>
 </table>
 
-## Matrix: Reuse of FHIR Component Building Blocks Across PQ Domains
+### Matrix: Reuse of FHIR Component Building Blocks Across PQ Domains
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -509,7 +509,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
   
 </map>
 
-## Summary of Domain Resources
+### Summary of Domain Resources
 The resources that are used across all domains are summarised in this diagram:
 <table><tr><td><img src="resources overview (complete).png" width="800"/></td></tr></table>
 
