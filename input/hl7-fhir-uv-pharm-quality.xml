@@ -930,7 +930,7 @@
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"/>
             <groupingId value="building-blocks-2"/>
         </resource>
-        
+
         <resource>
             <reference>
                 <reference value="Observation/observation-test-result-lt25c-i1-description"/>
@@ -1864,8 +1864,8 @@
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             <groupingId value="building-blocks-2"/>
-        </resource> 
-        
+        </resource>
+
         <!-- Narrative pages      -->
         <page>
             <name value="index.html"/>
@@ -2129,7 +2129,16 @@
                 <generation value="markdown"/>
             </page>
         </page>
+        <!-- Parameters for assigning OIDs -->
+        <parameter>
+            <code>
+                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+                <code value="auto-oid-root"/>
+            </code>
+            <value value="true"/>
+        </parameter>
 
+        <!-- Special URL parameters for provisional THO code systems -->
         <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -2137,7 +2146,8 @@
             </code>
             <value value="http://terminology.hl7.org/CodeSystem/batch-designation"/>
         </parameter>
-        
+
+        <!-- Labeling parameters -->
         <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
