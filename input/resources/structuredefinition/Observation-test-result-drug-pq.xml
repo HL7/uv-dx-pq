@@ -39,7 +39,7 @@
             <short value="workflow-triggeredBy"/>
             <type>
                 <code value="Extension"/>
-                <profile value="https://hl7.org/fhir/StructureDefinition/workflow-triggeredBy"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy"/>
             </type>
             <mustSupport value="true"/>
         </element>
