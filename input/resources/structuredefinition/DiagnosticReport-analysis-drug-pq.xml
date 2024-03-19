@@ -20,16 +20,15 @@
         
         <element id="DiagnosticReport.extension">
             <path value="DiagnosticReport.extension"/>
-<!--            <slicing>
+            <slicing>
                 <discriminator>
                     <type value="value"/>
                     <path value="url"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
-            </slicing>-->
+            </slicing>
         </element>
-        
         
         <element id="DiagnosticReport.extension:workflow-triggeredBy">
             <path value="DiagnosticReport.extension"/>
@@ -42,20 +41,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-<!--        The next part does not work-->
-<!--        <element id="DiagnosticReport.extension:workflow-triggeredBy.value[x]">
-            <path value="DiagnosticReport.extension:workflow-triggeredBy.value[x]"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
-            </type>
-            <type>
-                <code value="uri"/>
-            </type>
-        </element>-->
-        
-   
-        
+
         <element id="DiagnosticReport.extension:statistical-model">
             <path value="DiagnosticReport.extension"/>
             <sliceName value="statistical-model"/>
@@ -81,26 +67,18 @@
         
         <element id="DiagnosticReport.id">
             <path value="DiagnosticReport.id"/>
-<!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.contained">
             <path value="DiagnosticReport.contained"/>
-            <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.identifier">
             <path value="DiagnosticReport.identifier"/>
-            <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
             <mustSupport value="true"/>
         </element>       
         <element id="DiagnosticReport.status">
             <path value="DiagnosticReport.status"/>
-            <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.code">
@@ -111,10 +89,9 @@
             </binding>
             <mustSupport value="true"/>
         </element>
+        
         <element id="DiagnosticReport.effective[x]">
             <path value="DiagnosticReport.effective[x]"/>
-            <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
             <mustSupport value="true"/>
         </element>
         
@@ -134,14 +111,10 @@
         
         <element id="DiagnosticReport.performer">
             <path value="DiagnosticReport.performer"/>
-            <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.result">
             <path value="DiagnosticReport.result"/>
-<!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
@@ -150,8 +123,6 @@
         </element>
         <element id="DiagnosticReport.conclusion">
             <path value="DiagnosticReport.conclusion"/>
-            <!--            <short value="TBD"/>
-            <definition value="TBD"/>-->
             <mustSupport value="true"/>
         </element>
     </differential>
