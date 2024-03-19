@@ -95,19 +95,20 @@
     </element>
     
     <!--    SIMPLE PATTERN for 2 packaging.property.value[x]-->
-    <element id="PackagedProductDefinition.packaging.property.value[x]">
+<!--    <element id="PackagedProductDefinition.packaging.property.value[x]">
       <path value="PackagedProductDefinition.packaging.property.value[x]"/>
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
+<!-\-        Listing 2 value sets here does not work. Only one shows-\->
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
       </binding>
-    </element>
+    </element-->>
 <!--    END-->
     
 <!--    SLICING PATTERN-->
- <!--   <element id="PackagedProductDefinition.packaging.property.value[x]">
+    <element id="PackagedProductDefinition.packaging.property.value[x]">
       <path value="PackagedProductDefinition.packaging.property.value[x]"/>
       <slicing>
         <discriminator>
@@ -130,32 +131,24 @@
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
           <extension url="purpose">
-            <valueCode value="candidate"/>
+            <valueCode value="extensible"/>
           </extension>
           <extension url="valueSet">
             <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
           </extension>>
         </extension>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+<!--        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
           <extension url="purpose">
-            <valueCode value="candidate"/>
+            <valueCode value="extensible"/>
           </extension>
           <extension url="valueSet">
             <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
           </extension>
-        </extension>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="candidate"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/results-microorganism-snomed-ct-ips-free-set"/>
-          </extension>
-        </extension>
+        </extension>-->
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-coded-values-laboratory-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
       </binding>
-    </element>-->
+    </element>
     <!--    END-->
     
 <!--    EXAMPLE from IPS Lab Observation-->
