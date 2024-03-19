@@ -26,8 +26,7 @@ Details about test methods used to analyze substances and products, including co
 - <a href="Bundle-bundle-analytical-procedure-pq-ex1-prod.json.html">Product Analytical Procedure example JSON</a>
 
 **HTML presentation examples** of synthetic quality data:
-- <a href="anal_proc_rend_p.html">Drug Product Analytical Procedures</a>
-Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
+- <a href="anal_proc_rend_p.html">Drug Product Analytical Procedures</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Substance
 <table>
@@ -50,12 +49,12 @@ Note that HTML examples represent ways to create human-readable output using str
 - 3.2.S.4 Control of Drug Substance
     - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.4.2_Analytical_Procedures-G1112-PSD-Method.pdf ">3.2.S.4.2 Analytical Procedures</a>
 
-**XML and JSON examples** of synthetic CTD data:
+**XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-analytical-procedure-pq-ex2-sub.xml.html">Substance Analytical Procedure example XML</a>
 - <a href="Bundle-bundle-analytical-procedure-pq-ex2-sub.json.html">Substance Analytical Procedure example JSON</a>
 
-**HTML rendering** of synthetic CTD data:
-- <a href="anal_proc_rend_s.html">Drug Substance Analytical Procedures</a>
+**HTML rendering** of synthetic quality data:
+- <a href="anal_proc_rend_s.html">Drug Substance Analytical Procedures</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
 See [Artifacts Index: Analytical Procedure](artifacts.html#analytical-procedures)
