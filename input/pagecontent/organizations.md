@@ -24,4 +24,4 @@ Details about each facility or legal entity involved in the manufacture of the m
 - <a href="organizations_rend.html">Drug Substance or Product Organizations</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Organizations](artifacts.html#organizations)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

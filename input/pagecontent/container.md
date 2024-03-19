@@ -51,4 +51,4 @@ Details about primary and secondary packaging components for drug substance and 
 - <a href="container_rend_s.html">Substance Container Closure System</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Container Closure System](artifacts.html#container-closure-system)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

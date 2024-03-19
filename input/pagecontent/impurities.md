@@ -54,4 +54,4 @@ Details about impurity identification and characterization.
 - <a href="impurities_rend_s.html">Substance Impurities example HTML</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Impurities](artifacts.html#impurities)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

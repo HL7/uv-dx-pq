@@ -57,4 +57,4 @@ Details about test methods used to analyze substances and products, including co
 - <a href="anal_proc_rend_s.html">Drug Substance Analytical Procedures</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Analytical Procedure](artifacts.html#analytical-procedures)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

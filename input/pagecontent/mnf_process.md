@@ -56,4 +56,4 @@ Manufacturing process description and details about unit operations, process par
 - <a href="mnf_process_rend_s.html">Substance Manufacturing Process</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Manufacturing Process](artifacts.html#manufacturing-process)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

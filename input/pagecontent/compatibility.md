@@ -31,4 +31,4 @@ Details about compatibility studies and results.
 - <a href="compatibility_rend_p.html">Drug Product Compatibility</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Compatibility](artifacts.html#compatibility)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

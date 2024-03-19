@@ -61,4 +61,4 @@ Details about drug substance and drug product batch release testing and results.
 - <a href="batch_anal_rend_s.html">Substance Batch Analyses</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Batch Analysis](artifacts.html#batch-analysis)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

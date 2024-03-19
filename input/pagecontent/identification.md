@@ -135,4 +135,4 @@ Details about the drug substance and drug product nomenclature; structure; physi
 - <a href="identification_rend_s1.html">Substance Characterisation: Elucidation of Structure</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Identification](artifacts.html#identification)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

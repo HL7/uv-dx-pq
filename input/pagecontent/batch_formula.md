@@ -27,4 +27,4 @@ Details about drug product master batch properties and formula.
 - <a href="batch_formula_rend_p.html">Drug Product Batch Formula</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Batch Formula](artifacts.html#batch-formula)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

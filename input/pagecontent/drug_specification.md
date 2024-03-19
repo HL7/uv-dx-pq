@@ -56,4 +56,4 @@ Details about drug substance or drug product release and stability specification
 - <a href="drug_specification_rend_s.html">Substance Specification</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Drug Specification](artifacts.html#drug-specification)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

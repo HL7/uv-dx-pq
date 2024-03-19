@@ -73,4 +73,4 @@ Details about a stability study including stability study design (tests and acce
 - <a href="stability_rend_s.html">Drug Substance Stability</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Stability Study](artifacts.html#stability-study)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

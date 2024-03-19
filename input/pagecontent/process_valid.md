@@ -77,4 +77,4 @@ Note that HTML examples represent ways to create human-readable output using str
 - <a href="process_valid_rend_s.html">Substance Process Validation</a> - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Process Validation](artifacts.html#process-validation)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)

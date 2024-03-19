@@ -56,4 +56,4 @@ Provide details about drug substance and drug product components, materials, and
 - <a href="composition_rend_s.html">Substance Reference Standards or Materials</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 ### Profiles 
-See [Artifacts Index: Composition](artifacts.html#composition)
+See [Artifacts Index: Domain Bundle Profiles](artifacts.html#domain-bundle-profiles)
