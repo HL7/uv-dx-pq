@@ -278,8 +278,10 @@
 
                 <type>
                     <coding>
-                        <system value="http://example.org/fhir/code/closureTypes"/>
-                        <code value="112344"/>
+<!--                        <system value="http://example.org/fhir/code/closureTypes"/>-->
+                        <system value="http://terminology.hl7.org/CodeSystem/container-closure-type"/>
+<!--                        <code value="112344"/>-->
+                        <code value="Child Proof Cap"/>
                         <display value="Child Proof Cap"/>
                     </coding>
                 </type>
@@ -289,7 +291,8 @@
                 <material>
                     <coding>
 
-                        <system value="http://example.org/fhir/code/material"/>
+<!--                        <system value="http://example.org/fhir/code/material"/>-->
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                         <code value="112344ss"/>
                         <display value="PVC"/>
                     </coding>
