@@ -4,7 +4,7 @@
     <id value="Water"/>
     <meta>
         <profile
-            value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"        />
+            value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Water"/>
     <title value="Water Content (% w/w) (Mean)"/>
